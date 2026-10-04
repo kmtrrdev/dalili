@@ -3,6 +3,8 @@ import { Globe } from "./globe.js";
 
 const data = JSON.parse(document.getElementById("book-data").textContent);
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+// Leaflet tooltips are HTML: place names come from third-party listings, so they are always escaped.
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 
 // ---------------------------------------------------------------- globe cover
 let globe = null;
@@ -30,6 +32,8 @@ document.getElementById("themeToggle")?.addEventListener("click", () => {
   try { localStorage.setItem("theme", next); } catch (_) { /* storage unavailable */ }
   globe?.setTheme(next);
 });
+
+document.getElementById("printBook")?.addEventListener("click", () => window.print());
 
 // ---------------------------------------------------------------- scroll: globe fade + progress
 const cover = document.querySelector(".cover");
@@ -80,13 +84,13 @@ function buildMap(el) {
   const hotel = (day && day.hotel) || data.hotel;
   if (hotel) {
     const h = [hotel.lat, hotel.lon];
-    L.marker(h, { icon: pin('<div class="pin hotel"><b>H</b></div>') }).addTo(map).bindTooltip(hotel.name);
+    L.marker(h, { icon: pin('<div class="pin hotel"><b>H</b></div>') }).addTo(map).bindTooltip(esc(hotel.name));
     pts.push(h);
   }
   for (const p of (day ? day.points : [])) {
     const ll = [p.lat, p.lon];
     pts.push(ll);
-    L.marker(ll, { icon: pin(`<div class="pin ${p.kind}"><b>${p.n}</b></div>`) }).addTo(map).bindTooltip(p.title);
+    L.marker(ll, { icon: pin(`<div class="pin ${esc(p.kind)}"><b>${esc(p.n)}</b></div>`) }).addTo(map).bindTooltip(esc(p.title));
   }
   if (pts.length > 1) {
     L.polyline(pts, { color: "#0b1220", weight: 7, opacity: 0.7 }).addTo(map);

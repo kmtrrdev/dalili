@@ -5,15 +5,18 @@ Run:  uvicorn travel_agent.api:app --reload
 
 from __future__ import annotations
 
+import base64
+import hashlib
 import json
 import logging
+import re
 from datetime import date
 from typing import Literal
 
 from fastapi import Depends, FastAPI, HTTPException, Request, Response
 from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, PlainTextResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from . import llm, seo, tripbook
 from .auth import GUEST_COOKIE, GUEST_RE, SESSION_COOKIE, SESSION_DAYS, Accounts, AuthError, Identity, new_guest_id
@@ -22,6 +25,7 @@ from .mcp_hub import SERVERS, get_hub
 from .nlu import Action
 import httpx
 
+from .security import MAX_MESSAGE_CHARS, client_ip, is_admin, limit_expensive, limit_light
 from .service import TravelAgentService
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
@@ -62,6 +66,10 @@ async def web_basics(request: Request, call_next):
     if new_guest:
         response.set_cookie(GUEST_COOKIE, new_guest, max_age=365 * 86400, httponly=True, samesite="lax",
                             secure=request.url.scheme == "https", path="/")
+    if "text/html" in response.headers.get("content-type", ""):
+        response = await _with_csp(response, framable=path.endswith("/book"))
+    if request.url.scheme == "https":
+        response.headers.setdefault("Strict-Transport-Security", "max-age=31536000; includeSubDomains")
     response.headers.setdefault("X-Content-Type-Options", "nosniff")
     response.headers.setdefault("Referrer-Policy", "strict-origin-when-cross-origin")
     if not path.endswith("/book"):
@@ -73,6 +81,36 @@ async def web_basics(request: Request, call_next):
     if path.startswith("/api/auth") or path.startswith("/api/me"):
         response.headers["Cache-Control"] = "no-store"
     return response
+
+
+_INLINE_SCRIPT = re.compile(r"<script(?![^>]*\bsrc=)([^>]*)>(.*?)</script>", re.S | re.I)
+
+
+async def _with_csp(response, framable: bool):
+    """Content-Security-Policy for an HTML page: scripts only from this site plus the page's own inline scripts
+    (allowed by their hash), so an injected <script> or handler from third-party data can never run."""
+    body = b"".join([chunk async for chunk in response.body_iterator])
+    hashes = []
+    for attrs, code in _INLINE_SCRIPT.findall(body.decode("utf-8", "replace")):
+        if re.search(r"type=[\"']application/(ld\+)?json", attrs, re.I):
+            continue  # data blocks are never executed
+        digest = base64.b64encode(hashlib.sha256(code.encode()).digest()).decode()
+        hashes.append(f"'sha256-{digest}'")
+    policy = "; ".join([
+        "default-src 'self'",
+        "script-src 'self' " + " ".join(sorted(set(hashes))),
+        "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+        "font-src 'self' https://fonts.gstatic.com",
+        "img-src 'self' data: blob: https:",
+        "connect-src 'self' https://en.wikipedia.org",
+        "object-src 'none'", "base-uri 'self'", "form-action 'self'",
+        "frame-ancestors 'self'" if framable else "frame-ancestors 'none'",
+    ])
+    out = Response(content=body, status_code=response.status_code, media_type=response.media_type)
+    out.raw_headers = [(k, v) for k, v in response.raw_headers if k.lower() != b"content-length"] + \
+        [(b"content-length", str(len(body)).encode())]
+    out.headers["Content-Security-Policy"] = policy
+    return out
 
 
 def _session_token(request: Request) -> str | None:
@@ -103,7 +141,7 @@ async def auth_error(_request: Request, exc: AuthError):
 
 
 class ChatIn(BaseModel):
-    message: str
+    message: str = Field(max_length=MAX_MESSAGE_CHARS)
     trip_id: str | None = None
     route_decision: Literal["accept"] | None = None  # the "Plan this route" button
 
@@ -121,7 +159,7 @@ class SuggestIn(BaseModel):
     occasion: Literal["solo", "couple", "honeymoon", "family", "friends"] | None = None
     direct_only: bool = False
     max_flight_hours: float | None = None
-    notes: str = ""
+    notes: str = Field("", max_length=1000)
     lang: Literal["en", "ar"] = "en"
     destination: str = ""  # optional "To": a country / region or a city; empty = anywhere
 
@@ -155,7 +193,10 @@ def _trip_or_404(trip_id: str, who: Identity):
 
 
 @app.get("/api/health")
-async def health():
+async def health(request: Request):
+    """Liveness for the platform and CI. Provider / model details only for the operator (X-Admin-Token)."""
+    if not is_admin(request):
+        return {"status": "ok"}
     keys = {"serpapi": bool(settings.serpapi_key), "openrouteservice": bool(settings.ors_key),
             "opentripmap": bool(settings.opentripmap_key), "geoapify": bool(settings.geoapify_key)}
     return {"status": "ok", "llm": llm.available(), "llm_provider": llm.provider(), "model": llm.model_name(),
@@ -165,38 +206,43 @@ async def health():
 
 
 @app.get("/api/quota")
-async def quota():
-    """SerpApi plan usage (the account endpoint is free and does not count as a search)."""
+async def quota(request: Request):
+    """SerpApi plan usage (the account endpoint is free and does not count as a search). Operator only."""
+    if not is_admin(request):
+        raise HTTPException(404, "Not found")
     if not settings.serpapi_key:
         return {"configured": False}
     try:
         async with httpx.AsyncClient(timeout=10) as c:
             a = (await c.get("https://serpapi.com/account.json", params={"api_key": settings.serpapi_key})).json()
-    except httpx.HTTPError as exc:
-        raise HTTPException(502, f"SerpApi unreachable: {exc}")
+    except httpx.HTTPError:
+        raise HTTPException(502, "SerpApi unreachable")
     return {"configured": True, "plan": a.get("plan_name"), "searches_per_month": a.get("searches_per_month"),
             "searches_left": a.get("total_searches_left"), "used_this_month": a.get("this_month_usage"),
             "per_turn_cap": settings.serpapi_calls_per_turn}
 
 
 @app.get("/api/mcp/tools")
-async def mcp_tools():
+async def mcp_tools(request: Request):
+    if not is_admin(request):
+        raise HTTPException(404, "Not found")
     hub = get_hub()
     return {name: await hub.list_tools(name) for name in SERVERS}
 
 
 class ParseIn(BaseModel):
-    text: str
+    text: str = Field(max_length=MAX_MESSAGE_CHARS)
 
 
 @app.post("/api/parse")
-async def parse_request(body: ParseIn):
+async def parse_request(body: ParseIn, request: Request, who: Identity = Depends(identity)):
     """Understand a free-text trip description (any language) without starting a trip: the home page turns it
     into editable fields. Model only - no live searches, no trip is created."""
     from .nlu import interpret
 
     if not body.text.strip():
         raise HTTPException(400, "Empty text")
+    limit_expensive(request, who.id)
     interp, _ = await interpret(body.text[:1000], False, {}, {"has_plan": False})
     r = interp.requirements
     dests = r.destinations or ([r.destination] if r.destination else [])
@@ -210,10 +256,11 @@ async def parse_request(body: ParseIn):
 
 
 @app.post("/api/suggest")
-async def suggest_trips(body: SuggestIn):
+async def suggest_trips(body: SuggestIn, request: Request, who: Identity = Depends(identity)):
     """Trip ideas that fit a budget (real fares and hotel prices from the traveller's airport)."""
     if body.budget <= 0:
         raise HTTPException(400, "Budget must be positive")
+    limit_expensive(request, who.id)
     if body.start_date and body.end_date:
         if body.end_date <= body.start_date:
             raise HTTPException(400, "The return date must be after the departure date")
@@ -276,10 +323,11 @@ async def hotel_offers(trip_id: str, hotel_id: str, who: Identity = Depends(iden
 
 
 @app.get("/api/trips/{trip_id}/hotel-offers/go")
-async def hotel_offer_redirect(trip_id: str, hotel_id: str, who: Identity = Depends(identity)):
+async def hotel_offer_redirect(trip_id: str, hotel_id: str, request: Request, who: Identity = Depends(identity)):
     """One click from the Trip Book: straight to the booking page at the plan's price (Google Hotels if none)."""
     from fastapi.responses import RedirectResponse
 
+    limit_expensive(request, who.id)  # a GET that spends a live search
     d = await hotel_offers(trip_id, hotel_id, who)
     match = next((o for o in d["offers"] if o.get("matches_plan")), None)
     return RedirectResponse(match["link"] if match else d["google_hotels"], status_code=302)
@@ -293,18 +341,20 @@ def _chat_trip(body: ChatIn, who: Identity) -> str | None:
 
 
 @app.post("/api/chat")
-async def chat(body: ChatIn, who: Identity = Depends(identity)):
+async def chat(body: ChatIn, request: Request, who: Identity = Depends(identity)):
     if not body.message.strip():
         raise HTTPException(400, "Empty message")
+    limit_expensive(request, who.id)
     trip, reply = await service.chat(body.message, _chat_trip(body, who), who.id, body.route_decision)
     return {"trip_id": trip.trip_id, "reply": reply, "trip": public(trip)}
 
 
 @app.post("/api/chat/stream")
-async def chat_stream(body: ChatIn, who: Identity = Depends(identity)):
+async def chat_stream(body: ChatIn, request: Request, who: Identity = Depends(identity)):
     """Server-Sent Events: live LangGraph nodes and MCP tool calls, then the final reply + trip."""
     if not body.message.strip():
         raise HTTPException(400, "Empty message")
+    limit_expensive(request, who.id)
     trip_id = _chat_trip(body, who)
 
     async def events():
@@ -343,16 +393,18 @@ async def select(trip_id: str, body: SelectIn, who: Identity = Depends(identity)
 
 
 @app.post("/api/trips/{trip_id}/whatif")
-async def what_if(trip_id: str, body: WhatIfIn, who: Identity = Depends(identity)):
+async def what_if(trip_id: str, body: WhatIfIn, request: Request, who: Identity = Depends(identity)):
     _trip_or_404(trip_id, who)
+    limit_expensive(request, who.id)
     if body.budget_delta is None and body.budget is None:
         raise HTTPException(400, "Provide budget_delta or budget")
     return await service.what_if(trip_id, body.budget_delta, body.budget, body.apply)
 
 
 @app.post("/api/trips/{trip_id}/replan")
-async def replan(trip_id: str, body: ReplanIn, who: Identity = Depends(identity)):
+async def replan(trip_id: str, body: ReplanIn, request: Request, who: Identity = Depends(identity)):
     _trip_or_404(trip_id, who)
+    limit_expensive(request, who.id)
     trip, reply = await service.replan(trip_id, body.actions)
     return {"trip_id": trip.trip_id, "reply": reply, "trip": public(trip)}
 
@@ -423,7 +475,7 @@ def _start_session(request: Request, response: Response, user: dict) -> dict:
 
 
 def _client_ip(request: Request) -> str:
-    return request.client.host if request.client else "unknown"
+    return client_ip(request)  # the proxy-appended address, not a client-supplied one
 
 
 @app.post("/api/auth/signup")
@@ -517,7 +569,7 @@ async def dashboard(who: Identity = Depends(signed_in)):
 
 class ActivityIn(BaseModel):
     kind: Literal["search", "view", "dismiss", "like"]
-    city: str
+    city: str = Field(max_length=80)
 
 
 def _recommender():
@@ -557,7 +609,8 @@ async def recommendations(limit: int = 8, who: Identity = Depends(identity)):
 
 
 @app.get("/api/recommendations/similar")
-async def similar_places(city: str, limit: int = 6, who: Identity = Depends(identity)):
+async def similar_places(city: str, request: Request, limit: int = 6, who: Identity = Depends(identity)):
+    limit_light(request)  # an unknown city is embedded on the fly (CPU): bounded per client
     return await _recommender().similar(city[:80], max(1, min(limit, 12)))
 
 

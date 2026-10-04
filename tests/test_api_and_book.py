@@ -8,8 +8,10 @@ from .conftest import ROME_REQUEST
 client = TestClient(app)
 
 
-def test_end_to_end_api():
-    h = client.get("/api/health").json()
+def test_end_to_end_api(monkeypatch):
+    monkeypatch.setenv("DALILI_ADMIN_TOKEN", "t0ken")
+    assert client.get("/api/health").json() == {"status": "ok"}  # public: liveness only
+    h = client.get("/api/health", headers={"X-Admin-Token": "t0ken"}).json()
     assert h["status"] == "ok" and h["http_mode"] in ("replay", "cache")
     data = client.post("/api/chat", json={"message": ROME_REQUEST}).json()
     trip_id = data["trip_id"]

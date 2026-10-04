@@ -4,6 +4,8 @@ import { closeDash, initAccount, logActivity, onTripPlanned, refreshAccountLangu
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+// Links come from third-party data: only http(s) URLs are ever put in an href.
+const safeUrl = (u) => (/^https?:\/\//i.test(String(u || "").trim()) ? esc(String(u).trim()) : "#");
 
 // ------------------------------------------------------------------ icons
 const P = {
@@ -462,7 +464,7 @@ function itinerary(plan) {
   return `<div class="days">${pills}</div>
     <div class="day-view"><div><h3 class="day-title">${esc(d.title)}</h3><div class="day-meta">${meta}</div></div>
     <div class="map" id="dayMap"></div>
-    ${route ? `<a class="route-link" href="${esc(route)}" target="_blank" rel="noopener">${icon("route")}${t("dayRoute")}</a>` : ""}
+    ${route ? `<a class="route-link" href="${safeUrl(route)}" target="_blank" rel="noopener">${icon("route")}${t("dayRoute")}</a>` : ""}
     ${d.notes.map((x) => `<div class="note">${esc(x)}</div>`).join("")}
     <div class="timeline">${items}</div></div>`;
 }
@@ -482,7 +484,7 @@ function wireItinerary(plan) {
   const hotel = stop ? stop.hotel : plan.hotel;
   if (hotel && !d.travel_day) {
     const h = [hotel.location.lat, hotel.location.lon];
-    L.marker(h, { icon: L.divIcon({ className: "", html: '<div class="pin hotel"><b>H</b></div>', iconSize: [24, 24], iconAnchor: [12, 24] }), title: hotel.name }).addTo(map).bindTooltip(hotel.name);
+    L.marker(h, { icon: L.divIcon({ className: "", html: '<div class="pin hotel"><b>H</b></div>', iconSize: [24, 24], iconAnchor: [12, 24] }), title: hotel.name }).addTo(map).bindTooltip(esc(hotel.name));
     pts.push(h);
   }
   let n = 0;
@@ -492,7 +494,7 @@ function wireItinerary(plan) {
     const p = [i.location.lat, i.location.lon];
     pts.push(p);
     L.marker(p, { icon: L.divIcon({ className: "", html: `<div class="pin ${i.kind}"><b>${n}</b></div>`, iconSize: [24, 24], iconAnchor: [12, 24] }) })
-      .addTo(map).bindTooltip(`${i.start} · ${i.title}`);
+      .addTo(map).bindTooltip(esc(`${i.start} · ${i.title}`));
   }
   if (d.travel_day) {
     // Moving day: show the arrival city's side of the day (the journey itself is on the globe).
@@ -500,7 +502,7 @@ function wireItinerary(plan) {
     pts.length = 0;
     if (stop && stop.hotel) {
       const h = [stop.hotel.location.lat, stop.hotel.location.lon];
-      L.marker(h, { icon: L.divIcon({ className: "", html: '<div class="pin hotel"><b>H</b></div>', iconSize: [24, 24], iconAnchor: [12, 24] }) }).addTo(map).bindTooltip(stop.hotel.name);
+      L.marker(h, { icon: L.divIcon({ className: "", html: '<div class="pin hotel"><b>H</b></div>', iconSize: [24, 24], iconAnchor: [12, 24] }) }).addTo(map).bindTooltip(esc(stop.hotel.name));
       pts.push(h);
     }
     pts.push(...here);
@@ -526,10 +528,10 @@ function mapsUrl(p) {
 }
 function placeLinks(p) {
   if (!p) return "";
-  const links = [`<a href="${esc(mapsUrl(p))}" target="_blank" rel="noopener">${icon("pin")}${t("mapsLink")}</a>`];
-  if (p.website) links.push(`<a href="${esc(p.website)}" target="_blank" rel="noopener">${icon("globe")}${t("website")}</a>`);
-  if (p.menu_url) links.push(`<a href="${esc(p.menu_url)}" target="_blank" rel="noopener">${icon("fork")}${t("menu")}</a>`);
-  if (p.booking_url) links.push(`<a class="hot" href="${esc(p.booking_url)}" target="_blank" rel="noopener">${icon(p.kind === "attraction" ? "star" : "fork")}${t(p.kind === "attraction" ? "tickets" : "reserve")}</a>`);
+  const links = [`<a href="${safeUrl(mapsUrl(p))}" target="_blank" rel="noopener">${icon("pin")}${t("mapsLink")}</a>`];
+  if (p.website) links.push(`<a href="${safeUrl(p.website)}" target="_blank" rel="noopener">${icon("globe")}${t("website")}</a>`);
+  if (p.menu_url) links.push(`<a href="${safeUrl(p.menu_url)}" target="_blank" rel="noopener">${icon("fork")}${t("menu")}</a>`);
+  if (p.booking_url) links.push(`<a class="hot" href="${safeUrl(p.booking_url)}" target="_blank" rel="noopener">${icon(p.kind === "attraction" ? "star" : "fork")}${t(p.kind === "attraction" ? "tickets" : "reserve")}</a>`);
   return `<div class="t-links">${links.join("")}</div>`;
 }
 /** The whole day as a Google Maps route: hotel -> each stop, in order. */
@@ -575,7 +577,7 @@ async function openOffers(hotelId) {
   }
   const cur = d.currency;
   const gallery = (d.images || []).slice(0, 6).map((u) => `<div style="background-image:url('${esc(u)}')"></div>`).join("");
-  const rows = d.offers.map((o) => `<a class="offer ${o.matches_plan ? "match" : ""}" href="${esc(o.link)}" target="_blank" rel="noopener">
+  const rows = d.offers.map((o) => `<a class="offer ${o.matches_plan ? "match" : ""}" href="${safeUrl(o.link)}" target="_blank" rel="noopener">
       ${o.logo ? `<img src="${esc(o.logo)}" alt="" loading="lazy">` : `<span class="logo-ph">${icon("bed")}</span>`}
       <div class="o-src"><b>${esc(o.source)}</b>
         <div class="o-tags">${o.matches_plan ? `<span class="badge ok">${t("matchesPlan")}</span>` : ""}${o.official ? `<span class="badge info">${t("official")}</span>` : ""}${o.free_cancellation ? `<span class="badge ok">${t("freeCancel")}</span>` : ""}</div></div>
@@ -587,8 +589,8 @@ async function openOffers(hotelId) {
       <p class="eyebrow">${t("offersTitle")}</p><h3>${esc(d.hotel)}</h3>
       <p class="muted">${esc(d.city)} · ${fmtDate(d.check_in)} → ${fmtDate(d.check_out)} · ${t("nights", d.nights)} · ${t("travellers", d.adults)}</p>
       ${rows ? `<div class="offers">${rows}</div><p class="muted small">${t("offersNote")}</p>` : `<p class="muted">${t("noOffers")}</p>`}
-      <div class="modal-links"><a class="btn" href="${esc(d.google_hotels)}" target="_blank" rel="noopener">${icon("globe")}${t("compareGoogle")}</a>
-        ${d.hotel_website ? `<a class="btn ghost" href="${esc(d.hotel_website)}" target="_blank" rel="noopener">${icon("link")}${t("hotelSite")}</a>` : ""}</div>
+      <div class="modal-links"><a class="btn" href="${safeUrl(d.google_hotels)}" target="_blank" rel="noopener">${icon("globe")}${t("compareGoogle")}</a>
+        ${d.hotel_website ? `<a class="btn ghost" href="${safeUrl(d.hotel_website)}" target="_blank" rel="noopener">${icon("link")}${t("hotelSite")}</a>` : ""}</div>
     </div>`;
 }
 
@@ -600,7 +602,7 @@ function openBooking() {
   const flightRows = legs.map((f, i) => `<div class="bk-row"><span class="bk-n">${i + 1}</span>
       <div><b>${esc(f.origin)} → ${esc(f.destination)}</b><small>${esc(f.airline)} ${esc(f.flight_number)} · ${fmtDate(f.depart_at.slice(0, 10))} ${f.depart_at.slice(11, 16)}</small></div>
       <div class="bk-price">${costLabel(f.price_per_person)}<small>${t("perPerson").trim()}</small></div>
-      ${f.booking_url ? `<a class="btn" href="${esc(f.booking_url)}" target="_blank" rel="noopener">${t("book")}</a>` : `<span class="muted small">${t("bookLocally")}</span>`}</div>`).join("");
+      ${f.booking_url ? `<a class="btn" href="${safeUrl(f.booking_url)}" target="_blank" rel="noopener">${t("book")}</a>` : `<span class="muted small">${t("bookLocally")}</span>`}</div>`).join("");
   const hotelRows = hotels.map(({ h, label, nights }, i) => `<div class="bk-row"><span class="bk-n">${legs.length + i + 1}</span>
       <div><b>${esc(h.name)}</b><small>${esc(label)} · ${t("nights", nights)}</small></div>
       <div class="bk-price">${costLabel(h.price_per_night)}<small>${t("perNight").trim()}</small></div>
@@ -630,7 +632,7 @@ function flightCard(f, label, key, plan) {
     ${f.segments?.length > 1 ? `<div class="segments">${f.segments.map(esc).join("<br>")}</div>` : ""}
     <div class="segments">${esc(f.baggage)}</div>
     ${why(plan.explanations[key])}
-    ${f.booking_url ? `<a class="link" href="${esc(f.booking_url)}" target="_blank" rel="noopener">${icon("link")}${t("bookFlights")}</a>` : ""}</div>`;
+    ${f.booking_url ? `<a class="link" href="${safeUrl(f.booking_url)}" target="_blank" rel="noopener">${icon("link")}${t("bookFlights")}</a>` : ""}</div>`;
 }
 function groundCard(f, label) {
   const dur = `${Math.floor(f.duration_minutes / 60)}h${String(f.duration_minutes % 60).padStart(2, "0")}`;

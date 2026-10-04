@@ -30,6 +30,7 @@ from .model import Doc2Vec, unit
 from .train import MODEL_PATH, REPORT_PATH, interest_matrix
 
 log = logging.getLogger(__name__)
+INFERRED_MAX = 2000  # technical limit: cities embedded on the fly kept in memory
 
 WEIGHTS = {"planned": 1.0, "like": 1.0, "search": 0.6, "view": 0.35, "dismiss": -0.5}
 INTEREST_WEIGHT = 0.8
@@ -111,6 +112,9 @@ class Recommender:
         except Exception as exc:  # a missing guide just means this city adds no signal
             log.info("no vector for %s: %s", city, exc)
         with self._lock:
+            if len(self._inferred) >= INFERRED_MAX:  # bounded memory: forget the oldest inferred cities
+                for k in list(self._inferred)[: INFERRED_MAX // 10]:
+                    del self._inferred[k]
             self._inferred[key] = vec
         return vec
 

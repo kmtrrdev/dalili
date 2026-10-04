@@ -661,7 +661,7 @@ def render_html(trip: TripState) -> str:
     <p class="dates">{c.start_date:%a %d %b} → {c.end_date:%a %d %b %Y}</p>
     <div class="cover-kpis">{ring}<div class="kpis">{kpis}</div></div>
     <div class="cover-actions"><a class="btn primary" href="#s6">{ic('route')}Day by day</a>
-      <button class="btn" type="button" onclick="window.print()">{ic('print')}Print / save PDF</button></div>
+      <button class="btn" type="button" id="printBook">{ic('print')}Print / save PDF</button></div>
   </div>
   <a class="scroll-hint" href="#s1" aria-label="Scroll to the book"><span></span></a>
 </header>

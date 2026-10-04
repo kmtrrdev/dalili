@@ -8,9 +8,9 @@ from __future__ import annotations
 
 import uuid
 from datetime import date, datetime, timezone
-from typing import Any, Literal
+from typing import Annotated, Any, Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, BeforeValidator, Field
 
 from .engine.knobs import PlanKnobs
 from .utils import SERVED_STALE, fetch_time
@@ -32,6 +32,17 @@ MealType = Literal["breakfast", "lunch", "coffee", "dinner", "dessert"]
 CheckStatus = Literal["PASS", "WARN", "FAIL"]
 
 PLANNING_MODES: tuple[PlanningMode, ...] = ("balanced", "budget", "comfort", "experience")
+
+
+def _web_url(v: Any) -> str | None:
+    """Links shown to travellers come from third-party data: only http(s) ever passes (no javascript:, data:, file:)."""
+    if not isinstance(v, str) or not v.strip():
+        return None
+    v = v.strip()
+    return v if v.lower().startswith(("http://", "https://")) else None
+
+
+WebUrl = Annotated[str | None, BeforeValidator(_web_url)]
 
 
 def utcnow() -> datetime:
@@ -67,7 +78,7 @@ class Metadata(BaseModel):
     retrieved_at: datetime = Field(default_factory=lambda: fetch_time().replace(microsecond=0))
     stale: bool = Field(default_factory=lambda: SERVED_STALE.get())  # served from an expired cache (provider down)
     confidence: float = 1.0
-    source_url: str | None = None
+    source_url: WebUrl = None
     is_demo_data: bool = False
     notes: str | None = None
 
@@ -281,7 +292,7 @@ class FlightOption(BaseModel):
     segments: list[str] = Field(default_factory=list)
     layovers: list[str] = Field(default_factory=list)
     carbon_kg: float | None = None
-    booking_url: str | None = None
+    booking_url: WebUrl = None
     metadata: Metadata
 
 
@@ -323,7 +334,7 @@ class HotelOption(BaseModel):
     check_in_time: str | None = None
     check_out_time: str | None = None
     property_token: str | None = None
-    link: str | None = None
+    link: WebUrl = None
     images: list[str] = Field(default_factory=list)
     room_types: list[str] = Field(default_factory=list)
     amenities: list[str] = Field(default_factory=list)
@@ -361,9 +372,9 @@ class Place(BaseModel):
     day_trip: bool = False          # outside the city: needs a dedicated (half) day and real travel time
     reviews_count: int = 0
     address: str = ""
-    website: str | None = None
-    booking_url: str | None = None   # reserve a table / buy tickets, when the provider lists one
-    menu_url: str | None = None      # the restaurant's menu (found by web search) - where its meal price comes from
+    website: WebUrl = None
+    booking_url: WebUrl = None   # reserve a table / buy tickets, when the provider lists one
+    menu_url: WebUrl = None      # the restaurant's menu (found by web search) - where its meal price comes from
     google_place_id: str | None = None
     google_data_id: str | None = None
     thumbnail: str | None = None
@@ -464,7 +475,7 @@ class ItineraryItem(BaseModel):
     alternatives: list[str] = Field(default_factory=list)
     explanation: list[str] = Field(default_factory=list)
     optional: bool = False
-    link: str | None = None  # e.g. the restaurant's menu
+    link: WebUrl = None  # e.g. the restaurant's menu
 
 
 class DayPlan(BaseModel):
