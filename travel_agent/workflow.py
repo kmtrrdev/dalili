@@ -141,6 +141,9 @@ async def understand(state: GraphState) -> GraphState:
         trip.metadata["hypothetical"] = True  # plan it (on the service's copy), then show the comparison
     # A free-text "add_place" without a place name carries nothing to add ("add more things" is a density change).
     interp.actions = [a for a in interp.actions if not (a.action in ("add_place", "replace_item") and not (a.text or "").strip())]
+    if interp.requirements.budget_amount:
+        # The new total is already in the requirements: an adjust/set action on top would apply it twice.
+        interp.actions = [a for a in interp.actions if a.action not in ("adjust_budget", "set_budget")]
     if interp.requirements.return_to:
         # "Fly home to Cairo instead": the last flight is searched again anyway. Don't also swap the outbound
         # flight (change_flight would exclude it) - the traveller didn't ask for that.
@@ -658,11 +661,12 @@ def _lost_icons(trip: TripState, before: TripPlan | None, after: TripPlan | None
     """World-famous sights in the plan before a refinement that are gone after it (the score can't see that)."""
     if not before or not after or not trip.research:
         return []
-    from .engine.ranking import fame
+    from .engine.ranking import icon_ids
 
     kept = {i.place_id for d in after.days for i in d.items if i.place_id}
     had = {i.place_id for d in before.days for i in d.items if i.place_id}
-    return [p.name for p in trip.research.attractions if p.id in had - kept and fame(p) >= 0.8]
+    icons = icon_ids(trip.research.attractions)
+    return [p.name for p in trip.research.attractions if p.id in had - kept and p.id in icons]
 
 
 async def critic_node(state: GraphState) -> GraphState:

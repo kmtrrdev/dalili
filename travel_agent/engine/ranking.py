@@ -183,6 +183,14 @@ def fame(a: Place) -> float:
     return clamp((math.log10(n) - 3.0) / 2.7) if n > 0 else 0.0
 
 
+def icon_ids(attractions: list[Place], top: int = 3) -> set[str]:
+    """The destination's icons: its most-reviewed in-city sights (relative - the Burj Khalifa in Dubai, the Pyramids in
+    Cairo) plus any world-famous landmark. Never dropped to save money, never removed by the critic."""
+    city = [a for a in attractions if not a.day_trip and "overnight_trip" not in a.categories]
+    ranked = sorted(city, key=lambda a: -(a.reviews_count or 0))
+    return {a.id for a in ranked[:top] if (a.reviews_count or 0) >= 5000} | {a.id for a in city if fame(a) >= 0.8}
+
+
 def score_attraction(a: Place, profile: TravelerProfile, contract: TripContract | None, mode: PlanningMode,
                      boosts: dict[str, float] | None = None) -> Ranked:
     reasons, trade = [], []

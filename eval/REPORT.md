@@ -17,10 +17,10 @@ Real API responses (recorded) - see eval/run_eval.py.
 | preference_satisfaction | 100.0% |
 | cost_backed_by_published_prices | 54.7% |
 | scheduled_places_with_verified_hours | 90.8% |
-| avg_turn_latency_ms (replay) | 669 |
-| p95_turn_latency_ms (replay) | 1229 |
+| avg_turn_latency_ms (replay) | 713 |
+| p95_turn_latency_ms (replay) | 1258 |
 | plans_audited | 60 |
-| total_runtime_s | 15.3 |
+| total_runtime_s | 16.1 |
 | data | recorded real API responses |
 | nlu | rules |
 

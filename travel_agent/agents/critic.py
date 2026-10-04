@@ -23,7 +23,7 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 from .. import llm
-from ..engine.ranking import fame
+from ..engine.ranking import icon_ids
 from ..models import TripState
 from ..nlu import Action
 from . import trace
@@ -118,7 +118,8 @@ def safe_fixes(trip: TripState, critique: Critique) -> list[tuple[Issue, Action]
     titles = {i.title.lower() for d in (plan.days if plan else []) for i in d.items if i.kind == "activity"}
     names = {x.name.lower() for x in (r.attractions if r else [])}
     # The destination's icons are never removed on the critic's own initiative (the traveller can still ask).
-    icons = {x.name.lower() for x in (r.attractions if r else []) if fame(x) >= 0.8}
+    ids = icon_ids(r.attractions) if r else set()
+    icons = {x.name.lower() for x in (r.attractions if r else []) if x.id in ids}
     out: list[tuple[Issue, Action]] = []
     for issue in critique.issues:
         a = issue.fix

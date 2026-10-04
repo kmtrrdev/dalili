@@ -40,7 +40,7 @@ from .ranking import (
     Ranked,
     dietary_ok,
     expand_interests,
-    fame,
+    icon_ids,
     must_have_terms,
     score_attraction,
     score_flight,
@@ -469,13 +469,14 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
     pool: list[Ranked] = []
     must_terms = must_have_terms(ctx.contract)
     must_ids = set(ctx.knobs.must_include)
+    icons = icon_ids(ctx.research.attractions)
     for a in ctx.research.attractions:
         forced = a.id in must_ids  # named by the traveller: no category / price filters
         if a.id in excluded or (set(a.categories) & avoid and not forced):
             continue
         over_cap = ctx.knobs.activity_cost_cap_local is not None and a.cost_per_person.amount > ctx.knobs.activity_cost_cap_local
         # Must-have experiences and the city's icons (nobody goes to Rome to skip the Colosseum) survive the price cap.
-        if over_cap and not forced and not (must_terms & expand_interests(a.categories)) and fame(a) < 0.8:
+        if over_cap and not forced and not (must_terms & expand_interests(a.categories)) and a.id not in icons:
             continue
         if "overnight_trip" in a.categories:
             continue  # suggested in the reply / Trip Book, never squeezed into a day

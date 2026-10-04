@@ -41,21 +41,16 @@ def repair(plan: TripPlan, report: ValidationReport, knobs: PlanKnobs, research:
             ladder.insert(0, FIRST_RUNG[hint])
         floor = travel_floor(plan, research)
         b = plan.budget
-        # What cutting the experience could save at most: every ticket, half the food, half the local transport.
-        cuttable = b.activities + 0.5 * b.food + 0.5 * b.transport
-        if (floor is not None and floor > b.limit) or b.total - cuttable > b.limit:
-            # Stripping meals and sights would ruin the trip and still not fit (the gap is flights / hotel).
-            # Keep the experience, trim only the painless extras, and say so.
+        if floor is not None and floor > b.limit:
+            # Even the cheapest flights + hotel exceed the budget: stripping meals and sights would ruin the trip and
+            # still not fit. Keep the experience, trim only the painless extras, and say so. (Otherwise the full
+            # ladder runs - food and sights can shrink a lot - and the city's icons are protected by the planner.)
             ladder = [s for s in ladder if s in PAINLESS_STEPS]
             marker = "floor_noted"
             if marker not in k.budget_steps:
                 k.budget_steps.append(marker)
-                if floor is not None and floor > b.limit:
-                    log.append(f"Budget: the cheapest flights and hotel alone cost about {floor:,.0f} {b.currency}, "
-                               f"more than the {b.limit:,.0f} budget - kept the sights instead of stripping the trip.")
-                else:
-                    log.append("Budget: the gap is in flights and hotel, so cutting sights or meals wouldn't close it - "
-                               "kept the experience.")
+                log.append(f"Budget: the cheapest flights and hotel alone cost about {floor:,.0f} {b.currency}, "
+                           f"more than the {b.limit:,.0f} budget - kept the sights instead of stripping the trip.")
         for step in ladder:
             if rungs <= 0:
                 break
