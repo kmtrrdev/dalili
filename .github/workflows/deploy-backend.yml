@@ -47,6 +47,15 @@ jobs:
             --name "${{ vars.AZURE_CONTAINER_APP }}" \
             --resource-group "${{ vars.AZURE_RESOURCE_GROUP }}" \
             --image "${{ vars.AZURE_ACR_NAME }}.azurecr.io/dalili:${{ github.sha }}"
+      - name: Wait until the new revision serves the traffic
+        run: |
+          for i in $(seq 1 40); do
+            read latest ready <<< $(az containerapp show -n "${{ vars.AZURE_CONTAINER_APP }}" -g "${{ vars.AZURE_RESOURCE_GROUP }}" \
+              --query "[properties.latestRevisionName, properties.latestReadyRevisionName]" -o tsv | tr '\n' ' ')
+            [ -n "$latest" ] && [ "$latest" = "$ready" ] && { echo "serving $latest"; sleep 15; exit 0; }
+            sleep 10
+          done
+          echo "The new revision never became ready" && exit 1
       - name: Smoke test
         run: |
           url=$(az containerapp show -n "${{ vars.AZURE_CONTAINER_APP }}" -g "${{ vars.AZURE_RESOURCE_GROUP }}" \
