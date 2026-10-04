@@ -631,4 +631,15 @@ async def sitemap(request: Request):
     return Response(seo.sitemap(_base(request)), media_type="application/xml")
 
 
+@app.get("/indexnow.txt", response_class=PlainTextResponse)
+async def indexnow_key():
+    """IndexNow ownership key (public by design): lets each deploy notify Bing / Yandex of new pages at once."""
+    import os
+
+    key = os.getenv("INDEXNOW_KEY")
+    if not key:
+        raise HTTPException(404, "Not configured")
+    return PlainTextResponse(key)
+
+
 app.mount("/static", StaticFiles(directory=FRONTEND), name="static")

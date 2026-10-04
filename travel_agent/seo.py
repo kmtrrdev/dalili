@@ -280,6 +280,12 @@ HOME = {
 }
 
 
+def _verification_tags() -> str:
+    """Search Console / Bing Webmaster ownership tags, from the environment (set once in the hosting settings)."""
+    tags = {"google-site-verification": os.getenv("GOOGLE_SITE_VERIFICATION"), "msvalidate.01": os.getenv("BING_SITE_VERIFICATION")}
+    return "".join(f'\n  <meta name="{n}" content="{escape(v)}">' for n, v in tags.items() if v)
+
+
 @lru_cache(maxsize=4)
 def _index_html() -> str:
     return (PROJECT_DIR / "frontend" / "index.html").read_text(encoding="utf-8")
@@ -304,7 +310,7 @@ def index_page(lang: str, base: str) -> str:
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#070b14">
   <link rel="manifest" href="/static/manifest.webmanifest">
-  <link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="/static/apple-touch-icon.png">{_verification_tags()}
   {_ld({"@context": "https://schema.org", "@type": "WebApplication", "name": APP_NAME if lang == "en" else APP_NAME_AR,
         "url": url, "applicationCategory": "TravelApplication", "operatingSystem": "Web, iOS, Android",
         "inLanguage": ["en", "ar"], "description": h["desc"],
