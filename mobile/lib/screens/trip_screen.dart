@@ -361,7 +361,7 @@ class _TimelineItemState extends State<_TimelineItem> {
                       Pill(est ? tr('est') : (it['link'] != null ? tr('menuPrice') : '✓'), color: est ? DC.violet : DC.green),
                       if (it['link'] != null) ...[
                         const Spacer(),
-                        TextButton.icon(onPressed: () => openLink(it['link'] as String), icon: const Icon(Icons.restaurant_menu_rounded, size: 16), label: Text(tr('menu'))),
+                        TextButton(onPressed: () => openLink(it['link'] as String), child: Text(tr('menu'))),
                       ],
                     ]),
                   ],
