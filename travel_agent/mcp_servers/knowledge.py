@@ -35,13 +35,17 @@ async def get_destination_info(city: str, country: str, country_code: str) -> di
     """Currency, languages, dinner norms and the Wikivoyage guide for a destination."""
     q = {"city": city, "country": country}
     meta = geo.country_meta(country_code)
+    extra = {}
     try:
         guide = await knowledge.destination_guide(city, country, meta["languages"])
     except net.ProviderError as exc:
-        return error("destination_info", "knowledge_mcp", q, str(exc))
+        # The guide is enrichment, not a requirement: currency, languages and dinner norms come from country data,
+        # so the trip still plans when Wikivoyage is down (tips and local prices are simply missing).
+        guide, extra = {"source": None, "overview": "", "sections": {}, "local_tips": [], "phrases": [],
+                        "emergency": []}, {"degraded": f"guide unavailable: {exc}"}
     return envelope("destination_info", "knowledge_mcp", q, info={
         "name": city, "country": country, "country_code": country_code.upper(), "currency": meta["currency"],
-        "languages": meta["languages"], "dinner_time": geo.dinner_time(country_code), "knowledge": guide})
+        "languages": meta["languages"], "dinner_time": geo.dinner_time(country_code), "knowledge": guide}, **extra)
 
 
 @server.tool()

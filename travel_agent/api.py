@@ -533,7 +533,8 @@ def _interests(who: Identity) -> list[str]:
     """Interests the user picked in their account, plus those learned from their trips."""
     picked = list((who.user or {}).get("prefs", {}).get("interests") or [])
     prof = service.store.load_profile(who.id)
-    return picked + (list(prof.activity_preferences) if prof else [])
+    learned = prof.learned.get("activity_preferences") if prof else None
+    return picked + (list(learned.value or []) if learned else [])
 
 
 @app.post("/api/activity")

@@ -201,7 +201,8 @@ async def design(trip: TripState) -> Strategies:
         return DEFAULTS
     key = f"{c.route_name}|{c.start_date}|{c.end_date}|{c.travelers}|{c.budget.currency}|{p.model_dump_json(exclude={'learned'})}"
     cached = trip.metadata.get("strategies")
-    if cached and cached.get("key") == key:
+    # During the critic's refinement the strategies stay as they were (its edits must not re-design the plans).
+    if cached and (cached.get("key") == key or trip.metadata.get("strategies_locked")):
         try:
             return Strategies.model_validate(cached["value"])
         except ValueError:

@@ -69,10 +69,12 @@ def repair(plan: TripPlan, report: ValidationReport, knobs: PlanKnobs, research:
                 k.exclude_on_day[v.day].append(v.place_id)
                 log.append(f"Moved '{v.item_title}' off day {v.day} (closed at that time).")
         elif v.check == "schedule" and v.place_id and v.day:
-            k.exclude_on_day.setdefault(v.day, []).append(v.place_id)
-            log.append(f"Removed '{v.item_title}' from day {v.day} to fix a timing conflict.")
+            day_ex = k.exclude_on_day.setdefault(v.day, [])
+            if v.place_id not in day_ex:
+                day_ex.append(v.place_id)
+                log.append(f"Removed '{v.item_title}' from day {v.day} to fix a timing conflict.")
         elif v.check == "schedule" and v.day:
-            k.day_capacity_override[v.day] = max(0, k.day_capacity_override.get(v.day, 2) - 1)
+            k.day_capacity_override[v.day] = max(0, k.day_capacity_override.get(v.day, _load(plan, v.day)) - 1)
             log.append(f"Freed up time on day {v.day} to keep the schedule feasible.")
         elif v.check == "distance":
             if k.walk_tolerance_override != "low":
@@ -85,7 +87,7 @@ def repair(plan: TripPlan, report: ValidationReport, knobs: PlanKnobs, research:
             k.avoid_outdoor_days.append(v.day)
             log.append(f"Swapped outdoor plans on day {v.day} for indoor ones (rain forecast).")
         elif v.check == "energy" and v.day:
-            k.day_capacity_override[v.day] = max(1, k.day_capacity_override.get(v.day, 3) - 1)
+            k.day_capacity_override[v.day] = max(1, k.day_capacity_override.get(v.day, _load(plan, v.day)) - 1)
             log.append(f"Lightened day {v.day}.")
         elif v.check == "preferences" and v.place_id:
             if v.place_id.startswith("fl_"):
@@ -100,6 +102,12 @@ def repair(plan: TripPlan, report: ValidationReport, knobs: PlanKnobs, research:
     return k, [m for m in log if m]
 
 
+def _load(plan: TripPlan, day: int) -> int:
+    """How many activities the plan really has on that day (the starting point for lightening it)."""
+    d = next((x for x in plan.days if x.day == day), None)
+    return d.activity_count if d else 1
+
+
 def travel_floor(plan: TripPlan, research: ResearchBundle) -> float | None:
     """The least the trip can cost in the budget currency: cheapest outbound + return (or round-trip ticket) for
     everyone, plus the cheapest hotel for every night. None for multi-city trips or missing data."""
@@ -108,7 +116,7 @@ def travel_floor(plan: TripPlan, research: ResearchBundle) -> float | None:
         return None
 
     def user(m) -> float:
-        return m.amount * (1.0 if m.currency.upper() == b.currency.upper() else research.fx_rates.get(m.currency.upper(), 1.0))
+        return _user(m, plan, research)
 
     one_ways = min(user(f.price_per_person) for f in research.flights_outbound) + \
         min(user(f.price_per_person) for f in research.flights_return)
@@ -120,6 +128,12 @@ def travel_floor(plan: TripPlan, research: ResearchBundle) -> float | None:
     return tickets * travelers + hotel
 
 
+def _user(m, plan: TripPlan, research: ResearchBundle) -> float:
+    """An amount in the trip's budget currency (every cap and comparison below uses it)."""
+    cur = plan.budget.currency.upper() if plan.budget else m.currency.upper()
+    return m.amount * (1.0 if m.currency.upper() == cur else research.fx_rates.get(m.currency.upper(), 1.0))
+
+
 def _apply_budget_step(step: str, plan: TripPlan, k: PlanKnobs, research: ResearchBundle,
                        profile: TravelerProfile | None) -> str:
     if step == "cheaper_restaurants":
@@ -129,15 +143,15 @@ def _apply_budget_step(step: str, plan: TripPlan, k: PlanKnobs, research: Resear
         k.price_pressure = max(k.price_pressure, 1)
         return "Budget: switched to more affordable restaurants."
     if step == "cap_activity_prices":
-        paid = sorted(a.cost_per_person.amount for a in research.attractions if a.cost_per_person.amount > 0)
+        paid = sorted(_user(a.cost_per_person, plan, research) for a in research.attractions if a.cost_per_person.amount > 0)
         if paid:
             cap = paid[int(len(paid) * 0.6)]
             k.activity_cost_cap_local = cap if k.activity_cost_cap_local is None else min(cap, k.activity_cost_cap_local)
         return "Budget: skipped the priciest tours and tickets."
     if step == "cheaper_hotel" and plan.hotel:
-        price = plan.hotel.price_per_night.amount
+        price = _user(plan.hotel.price_per_night, plan, research)
         marker = f"hotel_tried:{plan.hotel.id}"
-        if marker in k.budget_steps or not any(h.price_per_night.amount < price for h in research.hotels):
+        if marker in k.budget_steps or not any(_user(h.price_per_night, plan, research) < price for h in research.hotels):
             return ""  # already tried from this hotel, or nothing cheaper exists
         k.budget_steps.append(marker)
         k.hotel_max_price_local = price * 0.85
@@ -158,7 +172,7 @@ def _apply_budget_step(step: str, plan: TripPlan, k: PlanKnobs, research: Resear
                           and (x.depart_at.hour >= 7 or f.depart_at.hour < 7)  # never trade into a red-eye to save money
                           and (profile is None or not profile.avoid_early_flights or x.depart_at.hour >= 8)
                           and (profile is None or profile.flight_preference != "direct" or x.stops == 0)]
-            if any(x.price_per_person.amount < f.price_per_person.amount for x in acceptable):
+            if any(_user(x.price_per_person, plan, research) < _user(f.price_per_person, plan, research) for x in acceptable):
                 k.flight_exclude.append(f.id)
                 changed = True
         if not changed:

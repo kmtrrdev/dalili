@@ -23,6 +23,7 @@ from typing import Any
 import httpx
 
 from .config import settings
+from .utils import FETCHED_AT, SERVED_STALE
 
 # httpx / httpcore log full request URLs at INFO, and several providers take the API key as a
 # query parameter: keep them quiet for every entry point (server, scripts, tests, evals).
@@ -149,6 +150,13 @@ def serpapi_calls_this_turn() -> int:
     return _serpapi_calls
 
 
+def _served(data: Any, fetched: float, stale: bool = False) -> Any:
+    """Record the provenance of what is returned (read by Metadata while the caller parses it)."""
+    FETCHED_AT.set(fetched)
+    SERVED_STALE.set(stale)
+    return data
+
+
 async def fetch_json(service: str, url: str, params: dict | None = None, *, ttl_s: float, method: str = "GET",
                      json_body: Any = None, headers: dict | None = None) -> Any:
     params = {k: v for k, v in (params or {}).items() if v is not None}
@@ -159,7 +167,7 @@ async def fetch_json(service: str, url: str, params: dict | None = None, *, ttl_
         cache().log(service, url, True, 0.0)
         if isinstance(hit[0], dict) and "Unsupported" in str(hit[0].get("error", "")):
             raise ProviderError(f"SerpApi: {hit[0]['error']}")  # remembered: don't spend a call re-asking
-        return hit[0]
+        return _served(hit[0], hit[1])
     if mode == "replay":
         raise ReplayMiss(f"{service}: no recorded response for {url} {json.dumps({k: v for k, v in params.items() if k not in SECRET_PARAMS})}")
     global _serpapi_calls
@@ -169,7 +177,7 @@ async def fetch_json(service: str, url: str, params: dict | None = None, *, ttl_
         if _serpapi_calls >= _turn_cap:
             if hit is not None:  # stale beats nothing when the quota guard trips
                 log.warning("SerpApi per-turn cap reached; serving stale cache for %s", url)
-                return hit[0]
+                return _served(hit[0], hit[1], stale=True)
             raise QuotaExceeded(f"SerpApi per-turn call cap ({_turn_cap}) reached")
         _serpapi_calls += 1
     started = time.perf_counter()
@@ -178,8 +186,8 @@ async def fetch_json(service: str, url: str, params: dict | None = None, *, ttl_
     except httpx.HTTPError as exc:
         if hit is not None:
             log.warning("%s unreachable, serving stale cache: %s", service, redact(str(exc)))
-            return hit[0]
-        raise ProviderError(f"{service} unreachable: {exc}") from exc
+            return _served(hit[0], hit[1], stale=True)
+        raise ProviderError(f"{service} unreachable: {type(exc).__name__}") from exc
     ms = (time.perf_counter() - started) * 1000
     cache().log(service, url, False, ms)
     if resp.status_code == 400 and service == "serpapi" and "Unsupported" in resp.text:
@@ -188,15 +196,16 @@ async def fetch_json(service: str, url: str, params: dict | None = None, *, ttl_
     if resp.status_code >= 400:
         if hit is not None:
             log.warning("%s returned %s, serving stale cache", service, resp.status_code)
-            return hit[0]
-        raise ProviderError(f"{service} HTTP {resp.status_code}: {resp.text[:300]}")
+            return _served(hit[0], hit[1], stale=True)
+        log.warning("%s HTTP %s: %s", service, resp.status_code, redact(resp.text[:300]))
+        raise ProviderError(f"{service} HTTP {resp.status_code}")  # the body stays in the server log, not the UI
     data = resp.json()
     if service == "serpapi" and isinstance(data, dict) and data.get("error"):
         # SerpApi reports "no results" as an error; that is a valid, cacheable answer.
         if "hasn't returned any results" not in data["error"]:
             raise ProviderError(f"SerpApi: {data['error']}")
     cache().put(key, service, url, params, data)
-    return data
+    return _served(data, time.time())
 
 
 BROWSER_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36 "
@@ -204,22 +213,48 @@ BROWSER_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHT
 MAX_PAGE_BYTES = 1_500_000
 
 
+def _public_ip(ip) -> bool:
+    return not (ip.is_private or ip.is_loopback or ip.is_link_local or ip.is_reserved or ip.is_multicast
+                or ip.is_unspecified)
+
+
 def _public_http_url(url: str) -> bool:
-    """Only public http(s) pages: no local / private hosts (the URLs come from third-party data)."""
+    """Only public http(s) pages on standard ports: no local / private hosts (the URLs come from third-party data).
+    Syntax only - _resolves_public() also checks where the name really points."""
     from ipaddress import ip_address
     from urllib.parse import urlparse
 
     u = urlparse(url)
     if u.scheme not in ("http", "https") or not u.hostname:
         return False
-    host = u.hostname.lower()
-    if host in ("localhost",) or host.endswith((".local", ".internal")):
+    try:
+        if u.port not in (None, 80, 443):
+            return False
+    except ValueError:
+        return False
+    host = u.hostname.lower().rstrip(".")
+    if host in ("localhost",) or host.endswith((".local", ".internal", ".localhost")):
         return False
     try:
-        ip = ip_address(host)
-        return not (ip.is_private or ip.is_loopback or ip.is_link_local or ip.is_reserved)
+        return _public_ip(ip_address(host))
     except ValueError:
-        return True  # a domain name
+        # Not dotted notation - but "2130706433", "0x7f000001" or "0177.0.0.1" are IPv4 addresses in disguise.
+        parts = host.split(".")
+        return not all(p.isdigit() or p.startswith("0x") for p in parts)
+
+
+async def _resolves_public(url: str) -> bool:
+    """Every address the host name resolves to must be public (blocks DNS names pointing at internal services)."""
+    import socket
+    from ipaddress import ip_address
+    from urllib.parse import urlparse
+
+    host = urlparse(url).hostname or ""
+    try:
+        infos = await asyncio.get_running_loop().getaddrinfo(host, None, type=socket.SOCK_STREAM)
+    except (OSError, UnicodeError):
+        return False
+    return bool(infos) and all(_public_ip(ip_address(info[4][0].split("%")[0])) for info in infos)
 
 
 async def fetch_page(url: str, ttl_s: float = 30 * 86400) -> dict[str, Any]:
@@ -230,24 +265,47 @@ async def fetch_page(url: str, ttl_s: float = 30 * 86400) -> dict[str, Any]:
     mode = settings.http_mode
     hit = cache().get(key) if mode in ("cache", "replay") else None
     if hit is not None and (mode == "replay" or time.time() - hit[1] < ttl_s):
-        return hit[0]
+        return _served(hit[0], hit[1])
     if mode == "replay":
         raise ReplayMiss(f"page: no recorded response for {url}")
     started = time.perf_counter()
+    current = url
     try:
-        resp = await _http().get(url, headers={"User-Agent": BROWSER_UA, "Accept": "text/html,application/xhtml+xml",
-                                               "Accept-Language": "en,*;q=0.5"}, timeout=12)
+        # Redirects are followed by hand, one checked hop at a time: a public page must not bounce the server to an
+        # internal address (cloud metadata, a private network).
+        for _ in range(5):
+            if not _public_http_url(current) or not await _resolves_public(current):
+                raise ProviderError(f"refused to fetch {current}")
+            req = _http().build_request("GET", current, headers={
+                "User-Agent": BROWSER_UA, "Accept": "text/html,application/xhtml+xml", "Accept-Language": "en,*;q=0.5"},
+                timeout=12)
+            resp = await _http().send(req, stream=True, follow_redirects=False)
+            try:
+                if resp.is_redirect and resp.headers.get("location"):
+                    current = str(resp.url.join(resp.headers["location"]))
+                    continue
+                ctype = resp.headers.get("content-type", "")
+                if resp.status_code >= 400 or "html" not in ctype:
+                    raise ProviderError(f"page HTTP {resp.status_code} ({ctype.split(';')[0] or 'unknown type'})")
+                body = bytearray()
+                async for chunk in resp.aiter_bytes():
+                    body += chunk
+                    if len(body) >= MAX_PAGE_BYTES:
+                        break  # enough to read the prices; never load an unbounded body
+                text = body[:MAX_PAGE_BYTES].decode(resp.encoding or "utf-8", errors="replace")
+                break
+            finally:
+                await resp.aclose()
+        else:
+            raise ProviderError("page: too many redirects")
     except httpx.HTTPError as exc:
         if hit is not None:
-            return hit[0]
+            return _served(hit[0], hit[1], stale=True)
         raise ProviderError(f"page unreachable: {type(exc).__name__}") from exc
     cache().log("page", url, False, (time.perf_counter() - started) * 1000)
-    ctype = resp.headers.get("content-type", "")
-    if resp.status_code >= 400 or "html" not in ctype:
-        raise ProviderError(f"page HTTP {resp.status_code} ({ctype.split(';')[0] or 'unknown type'})")
-    page = {"url": str(resp.url), "html": resp.text[:MAX_PAGE_BYTES]}
+    page = {"url": current, "html": text}
     cache().put(key, "page", url, {}, page)
-    return page
+    return _served(page, time.time())
 
 
 async def serpapi(engine: str, ttl_s: float, **params: Any) -> dict:

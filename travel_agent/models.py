@@ -13,6 +13,7 @@ from typing import Any, Literal
 from pydantic import BaseModel, Field
 
 from .engine.knobs import PlanKnobs
+from .utils import SERVED_STALE, fetch_time
 
 # ---------------------------------------------------------------------------
 # Primitives
@@ -62,7 +63,9 @@ class Metadata(BaseModel):
 
     source: str
     provider: str
-    retrieved_at: datetime = Field(default_factory=utcnow)
+    # When the provider really answered (a cached response keeps its original time - never "now").
+    retrieved_at: datetime = Field(default_factory=lambda: fetch_time().replace(microsecond=0))
+    stale: bool = Field(default_factory=lambda: SERVED_STALE.get())  # served from an expired cache (provider down)
     confidence: float = 1.0
     source_url: str | None = None
     is_demo_data: bool = False
@@ -75,9 +78,14 @@ class Metadata(BaseModel):
 
 
 class LearnedPreference(BaseModel):
+    """One remembered preference (see preferences.py for how confidence is computed)."""
     value: Any
-    confidence: float = 0.5
-    evidence: list[str] = Field(default_factory=list)
+    confidence: float = 0.5           # last computed confidence (preferences.confidence() recomputes it with decay)
+    evidence: list[str] = Field(default_factory=list)  # the most recent supporting observations
+    source: Literal["stated", "inferred"] = "inferred"
+    support: float = 0.0              # weighted observations for this value
+    against: float = 0.0              # weighted observations contradicting it
+    updated_at: datetime | None = None
 
 
 class TravelerProfile(BaseModel):
@@ -471,6 +479,7 @@ class DayPlan(BaseModel):
     notes: list[str] = Field(default_factory=list)
     city: str = ""              # multi-city: where the day ends (the new city on a travel day)
     travel_day: bool = False    # multi-city: moving between two stops today
+    capacity: int | None = None  # activities the plan agreed for this day (pace, mode, the traveller's own changes)
 
 
 class BudgetBreakdown(BaseModel):

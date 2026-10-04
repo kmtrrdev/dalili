@@ -17,6 +17,7 @@ import asyncio
 import logging
 import operator
 import time
+import uuid
 from typing import Annotated, Any, TypedDict
 
 from langgraph.graph import END, START, StateGraph
@@ -31,7 +32,7 @@ from .engine.planner import PlanContext, build_plan, plan_activity_ids
 from .engine.repair import repair
 from .engine.scoring import score_plan
 from .engine.validators import validate_plan
-from .mcp_hub import MCPToolError, get_hub
+from .mcp_hub import CURRENT_TURN, MCPToolError, get_hub
 from .memory import recent_turns
 from .models import PLANNING_MODES, ChatMessage, ResearchBundle, TripPlan, TripState
 from .nlu import Action, TurnInterpretation, interpret
@@ -436,10 +437,20 @@ async def collect(state: GraphState) -> GraphState:
     trip = state["trip"]
     old = trip.research or ResearchBundle()
 
+    domain_of = {"r_flights": "flights", "r_hotels": "hotels", "r_restaurants": "restaurants",
+                 "r_activities": "activities", "r_weather": "weather"}
+
     def pick(key: str, fallback):
-        return state.get(key) if state.get(key) is not None else fallback
+        # Old research is reused only where it is still valid. A domain that needed refreshing (new dates, a new city)
+        # and failed stays empty and is reported - never silently filled with results for other dates or places.
+        if state.get(key) is not None:
+            return state.get(key)
+        return [] if _dirty(state, domain_of[key]) else fallback
 
     fl = state.get("r_flights")
+    if fl is None and _dirty(state, "flights"):
+        fl = {"outbound": [], "return": [], "round_trips": [], "insights": {}, "legs": [[] for _ in range(len(c.stops) + 1)]
+              if (c := trip.trip_contract) and c.is_multi else []}
     c = trip.trip_contract
     if c.is_multi:
         k = len(c.stops)
@@ -449,6 +460,8 @@ async def collect(state: GraphState) -> GraphState:
             value = state.get(key)
             if value is not None and len(value) == k:
                 return value[i]
+            if _dirty(state, domain_of[key]):
+                return []  # needed refreshing and failed: never reuse another route's or dates' results
             return getattr(old_stops[i], attr) if old_stops else []
 
         legs = fl["legs"] if fl else old.legs
@@ -746,6 +759,7 @@ async def critic_node(state: GraphState) -> GraphState:
     trip = state["trip"]
     backup = state.get("critic_backup")
     if backup:  # second pass: keep the refined plan only if it is at least as good
+        trip.metadata.pop("strategies_locked", None)
         before, after = backup["plans"][backup["mode"]], trip.selected_plan
         crit = trip.metadata.get("critique") or {}
         lost = _lost_icons(trip, before, after)
@@ -757,6 +771,7 @@ async def critic_node(state: GraphState) -> GraphState:
             trip.pinned_days, trip.excluded_ids = backup["pins"], backup["excluded"]
             trip.draft.must_visit = backup["must_visit"]
             trip.metadata["expert_added"] = backup["expert_added"]
+            trip.metadata.update({k: v for k, v in (backup.get("meta") or {}).items() if v is not None})
             for i in crit.get("issues", []):
                 i["applied"] = False
             trace.step(trip, "critic", "decision",
@@ -799,9 +814,12 @@ async def critic_node(state: GraphState) -> GraphState:
               "pins": dict(trip.pinned_days), "excluded": list(trip.excluded_ids),
               "must_visit": list(trip.draft.must_visit)}
     backup["expert_added"] = list(trip.metadata.get("expert_added", []))
+    # The refinement is compared against the same strategies (the critic's edits must not re-design the plans).
+    backup["meta"] = {k: trip.metadata.get(k) for k in ("strategies", "signature_ids", "budget_stretch")}
+    trip.metadata["strategies_locked"] = True
     # Places the critic adds go through the must-visit mechanism, but they are the expert's picks, not the traveller's.
     trip.metadata["expert_added"] = backup["expert_added"] + [a.text for _, a in fixes if a.action == "add_place" and a.text]
-    _, notes, _ = apply_actions(trip, [a for _, a in fixes])
+    _, notes, _ = apply_actions(trip, [a for _, a in fixes], by_traveller=False)  # the expert's edits, not the traveller's
     for issue, a in fixes:
         trace.step(trip, "critic", "fix", f"{a.action}({a.text or a.category or a.day or ''}) for: {issue.problem}")
     trip.emit("plan.self_review", quality=critique.quality, fixes=notes)
@@ -949,8 +967,12 @@ async def run_turn_stream(trip: TripState, message: str = "", preset_actions: li
     queue: asyncio.Queue = asyncio.Queue()
     hub = get_hub()
 
+    turn_id = uuid.uuid4().hex
+
     def on_tool(event: dict) -> None:
-        queue.put_nowait({"type": "tool", **event})
+        if event.get("turn") != turn_id:
+            return  # another user's turn: never leaked into this stream
+        queue.put_nowait({"type": "tool", **{k: v for k, v in event.items() if k != "turn"}})
 
     final: dict = {}
 
@@ -965,13 +987,17 @@ async def run_turn_stream(trip: TripState, message: str = "", preset_actions: li
                 else:
                     final.update(chunk)
         except Exception as exc:  # surfaced to the UI instead of a silent hang
-            log.exception("turn failed")
-            queue.put_nowait({"type": "error", "message": net.redact(str(exc))})
+            log.exception("turn failed: %s", net.redact(str(exc)))  # details stay in the server log
+            queue.put_nowait({"type": "error", "message": "Something went wrong while planning - please try again."})
         finally:
             queue.put_nowait(None)
 
     hub.listeners.append(on_tool)
-    task = asyncio.create_task(runner())
+    token = CURRENT_TURN.set(turn_id)  # copied into the runner task and every node/tool call it starts
+    try:
+        task = asyncio.create_task(runner())
+    finally:
+        CURRENT_TURN.reset(token)
     try:
         while (event := await queue.get()) is not None:
             yield event

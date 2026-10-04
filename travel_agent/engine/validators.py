@@ -188,11 +188,13 @@ def validate_preferences(plan: TripPlan, contract: TripContract, profile: Travel
 
 
 def validate_energy(plan: TripPlan, profile: TravelerProfile) -> list[Violation]:
+    """Each day is checked against the capacity the planner agreed for it (pace, mode, the traveller's own "pack more
+    into day 2"), so a day the traveller filled on purpose is never flagged and then emptied again by repair."""
     out = []
     count, minutes, _ = STYLE_CAPACITY[profile.travel_style]
     for day in plan.days:
         acts = [i for i in day.items if i.kind == "activity"]
-        if day_load([to_min(i.end) - to_min(i.start) for i in acts]) > count + 1:
+        if day_load([to_min(i.end) - to_min(i.start) for i in acts]) > max(count, day.capacity or 0) + 1:
             out.append(Violation(check="energy", severity="error", day=day.day,
                                  message=f"Day {day.day}: {len(acts)} activities is too dense for a {profile.travel_style} pace."))
         busy = sum(to_min(i.end) - to_min(i.start) for i in acts)
@@ -229,9 +231,11 @@ def validate_reality(plan: TripPlan, research: ResearchBundle) -> list[Violation
     hotel_ids = {h.id for h in research.hotels}
     flight_ids = {f.id for f in research.flights_outbound + research.flights_return}
     flight_ids |= {f.id for rt in research.round_trips for f in (rt.outbound, rt.inbound)}
-    if plan.hotel and plan.hotel.id not in hotel_ids:
-        out.append(Violation(check="reality", severity="error", message=f"Hotel {plan.hotel.name} is not in the research data."))
-    for f in (plan.outbound_flight, plan.return_flight):
+    # Every city's hotel on a multi-city journey, not only the first one.
+    for h in {h.id: h for h in [plan.hotel] + [s.hotel for s in plan.stops] if h}.values():
+        if h.id not in hotel_ids:
+            out.append(Violation(check="reality", severity="error", message=f"Hotel {h.name} is not in the research data."))
+    for f in {f.id: f for f in [plan.outbound_flight, plan.return_flight] + list(plan.legs) if f}.values():
         if f and f.id not in flight_ids:
             out.append(Violation(check="reality", severity="error", message=f"Flight {f.flight_number} is not in the research data."))
     for day in plan.days:

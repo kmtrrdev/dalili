@@ -15,10 +15,12 @@ server = MCPServer("currency_mcp", instructions="Central-bank exchange rates and
 async def get_exchange_rates(base: str, quotes: list[str]) -> dict:
     """Units of each quote currency per 1 base."""
     try:
-        rates, meta = await currency.rates(base, quotes)
+        rates, meta = await currency.rates(base, quotes, allow_missing=True)
     except net.ProviderError as exc:
         return error("exchange_rates", "currency_mcp", {"base": base}, str(exc))
-    return envelope("exchange_rates", "currency_mcp", {"base": base, "quotes": quotes}, rates=rates, provider=meta.provider)
+    missing = sorted({q.upper() for q in quotes} - set(rates))
+    return envelope("exchange_rates", "currency_mcp", {"base": base, "quotes": quotes}, rates=rates, provider=meta.provider,
+                    missing=missing)
 
 
 @server.tool()

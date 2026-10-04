@@ -12,6 +12,7 @@ from pydantic import BaseModel, Field
 class PlanKnobs(BaseModel):
     max_price_level: int = 4            # restaurants
     price_pressure: int = 0             # 0..3, pushes every choice cheaper
+    # Price caps are in the trip's budget currency (prices in other currencies are converted before comparing).
     hotel_max_price_local: float | None = None
     hotel_exclude: list[str] = Field(default_factory=list)
     flight_exclude: list[str] = Field(default_factory=list)

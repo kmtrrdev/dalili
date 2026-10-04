@@ -211,7 +211,8 @@ def select_core(ctx: PlanContext) -> tuple[Ranked | None, Ranked | None, Ranked 
     if ctx.profile.noise_tolerance == "low":
         hotels = [h for h in hotels if h.noise_level != "noisy"] or hotels
     if ctx.knobs.hotel_max_price_local is not None:
-        hotels = [h for h in hotels if h.price_per_night.amount <= ctx.knobs.hotel_max_price_local] or hotels
+        hotels = [h for h in hotels if h.price_per_night.amount * ctx.fx(h.price_per_night.currency)
+                  <= ctx.knobs.hotel_max_price_local] or hotels  # caps are in the budget currency
     anchors = _anchor_points(ctx)
 
     def avg_km(h: HotelOption) -> float:
@@ -429,6 +430,8 @@ def build_slots(ctx: PlanContext, out: FlightOption | None, ret: FlightOption | 
         if kind == "arrival" and out is not None:
             arr = out.arrive_at.astimezone(ctx.tz)
             at_hotel = arr.hour * 60 + arr.minute + arrival_processing(out) + tmin_in + 30
+            if arr.date() > d:
+                at_hotel = end  # lands after midnight: day one has no free time (nothing assigned, nothing lost)
             start = max(start, at_hotel)
             avail = end - start
             cnt = min(count, max(0, avail // 100))
@@ -511,7 +514,8 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
         forced = a.id in must_ids  # named by the traveller (or a signature experience): no category / price filters
         if a.id in excluded or (set(a.categories) & avoid and not forced):
             continue
-        over_cap = ctx.knobs.activity_cost_cap_local is not None and a.cost_per_person.amount > ctx.knobs.activity_cost_cap_local
+        over_cap = ctx.knobs.activity_cost_cap_local is not None and \
+            a.cost_per_person.amount * ctx.fx(a.cost_per_person.currency) > ctx.knobs.activity_cost_cap_local
         # Must-have experiences and the city's icons (nobody goes to Rome to skip the Colosseum) survive the price cap.
         if over_cap and not forced and not (must_terms & expand_interests(a.categories)) and a.id not in icons:
             continue
@@ -660,13 +664,21 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
             for donor in donors:
                 if len(donor.activities) < 2:
                     continue
-                movable = [r for r in donor.activities if _fits_day(r.item, empty)
-                           and not (empty.high_rain and not r.item.indoor)]
-                if movable:
-                    r = min(movable, key=lambda x: x.score)
+                # The weakest stop that the empty day really accepts - the same rules as any placement, so a
+                # repair (a stop excluded that day, a day capped at zero, no outdoor plans in the rain) is never undone.
+                for r in sorted(donor.activities, key=lambda x: x.score):
+                    if r.item.id in must_ids or not _fits_day(r.item, empty):
+                        continue
                     donor.activities.remove(r)
-                    empty.activities.append(r)
-                    moved = True
+                    used.discard(r.item.id)
+                    ok = allowed(empty, r) and not (empty.high_rain and not r.item.indoor)
+                    used.add(r.item.id)
+                    if ok:
+                        empty.activities.append(r)
+                        moved = True
+                        break
+                    donor.activities.append(r)
+                if moved:
                     break
         if not moved:
             break
@@ -678,7 +690,7 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
     if interest != "low":
         evenings = [r for r in pool if _is_evening(r.item) and r.item.id not in used and limit_ok(r.item)]
         step = 1 if interest == "high" else 2
-        for slot in [s for s in slots if s.kind == "full"][::step]:
+        for slot in [s for s in slots if s.kind == "full" and s.evening is None][::step]:  # never replace a requested one
             for r in evenings:
                 if r.item.id not in used and open_windows(r.item.opening_hours, slot.date) and (not r.item.dates or slot.date in r.item.dates):
                     slot.evening = r
@@ -718,7 +730,9 @@ class DayBuilder:
     def leg_to(self, loc: GeoPoint) -> TransportLeg | None:
         if haversine_km(self.here.lat, self.here.lon, loc.lat, loc.lon) < 0.05:
             return None
-        return self.ctx.leg(self.here, loc, prefer_taxi=self.ctx.mode == "comfort")
+        # The plan's transport choice (taxi for a comfort strategy) comes from its knobs - the same legs the stop order
+        # was optimised on, so the schedule matches the route.
+        return self.ctx.leg(self.here, loc)
 
     def add(self, item: ItineraryItem, leg: TransportLeg | None, loc: GeoPoint | None) -> None:
         item.transport_from_previous = leg
@@ -1184,7 +1198,7 @@ def build_day(ctx: PlanContext, slot: DaySlot, hotel: HotelOption | None, out: F
             notes.append("Did not fit today: " + ", ".join(names))
     day = DayPlan(day=slot.index + 1, date=slot.date, title=title, items=b.items, weather=weather,
                   walking_km=round(b.walk_km, 2), activity_count=sum(1 for i in b.items if i.kind == "activity"),
-                  notes=notes)
+                  notes=notes, capacity=slot.max_count)
     if day.activity_count:
         top = [i.title for i in b.items if i.kind == "activity"][:2]
         day.title = f"{title}: " + " & ".join(top) if slot.kind == "full" else day.title

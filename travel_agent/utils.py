@@ -4,9 +4,20 @@ from __future__ import annotations
 
 import hashlib
 import math
-from datetime import date
+from contextvars import ContextVar
+from datetime import date, datetime, timezone
 
 WEEKDAYS = ("mon", "tue", "wed", "thu", "fri", "sat", "sun")
+
+# Provenance of the HTTP response being parsed right now (set by net.py on every return, read by Metadata):
+# when it was really fetched (a cache hit keeps its original time) and whether it was served stale.
+FETCHED_AT: ContextVar[float | None] = ContextVar("fetched_at", default=None)
+SERVED_STALE: ContextVar[bool] = ContextVar("served_stale", default=False)
+
+
+def fetch_time() -> datetime:
+    ts = FETCHED_AT.get()
+    return datetime.fromtimestamp(ts, timezone.utc) if ts else datetime.now(timezone.utc)
 
 
 def to_min(hhmm: str) -> int:

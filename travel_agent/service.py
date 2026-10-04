@@ -2,23 +2,14 @@
 
 from __future__ import annotations
 
-from .models import ChatMessage, LearnedPreference, PlanningMode, TravelerProfile, TripState
+from . import preferences
+from .models import ChatMessage, PlanningMode, TripState
 from .narrative import money
 from .nlu import Action
 from .replanner import diff_plans
+from .config import settings
 from .store import Store
 from .workflow import run_turn, run_turn_stream
-
-
-def _fresh_profile(stored: TravelerProfile | None) -> TravelerProfile:
-    """New trips inherit learned preferences but not trip-specific explicit choices."""
-    if stored is None:
-        return TravelerProfile()
-    p = TravelerProfile(learned=stored.learned)
-    for key, lp in stored.learned.items():
-        if lp.confidence >= 0.5 and hasattr(p, key):
-            setattr(p, key, lp.value)
-    return p
 
 
 class TravelAgentService:
@@ -26,14 +17,23 @@ class TravelAgentService:
         self.store = store or Store()
 
     def new_trip(self, user_id: str = "default") -> TripState:
-        return TripState(user_id=user_id, traveler_profile=_fresh_profile(self.store.load_profile(user_id)))
+        """A new trip starts from the traveller's preference memory (never from another trip's one-off choices)."""
+        trip = TripState(user_id=user_id, traveler_profile=preferences.fresh_profile(self.store.load_profile(user_id)))
+        mode = trip.traveler_profile.learned.get("preferred_mode")
+        if mode and mode.value in ("balanced", "budget", "comfort", "experience") \
+                and preferences.confidence(mode) >= settings.preference_apply_threshold:
+            trip.selected_mode = mode.value  # the plan type this traveller keeps choosing is shown first
+        return trip
 
     def get(self, trip_id: str) -> TripState | None:
         return self.store.load_trip(trip_id)
 
     def _save(self, trip: TripState) -> None:
         self.store.save_trip(trip)
-        self.store.save_profile(trip.user_id, trip.traveler_profile)
+        # Only the preference memory goes to the account, merged by recency - one trip's choices or the critic's
+        # edits never overwrite who the traveller is.
+        self.store.save_profile(trip.user_id, preferences.long_term(self.store.load_profile(trip.user_id),
+                                                                    trip.traveler_profile))
 
     async def chat(self, message: str, trip_id: str | None = None, user_id: str = "default",
                    route_decision: str | None = None) -> tuple[TripState, str]:
@@ -125,11 +125,18 @@ class TravelAgentService:
             raise KeyError(trip_id)
         trip.selected_mode = mode
         trip.emit("plan.selected", mode=mode)
-        # Selections are a learning signal (low confidence until repeated).
-        lp = trip.traveler_profile.learned.get("preferred_mode") or LearnedPreference(value=mode, confidence=0.0)
-        lp.confidence = min(0.9, lp.confidence + 0.2) if lp.value == mode else 0.2
-        lp.value = mode
-        trip.traveler_profile.learned["preferred_mode"] = lp
+        # Selections are evidence about the traveller (used once repeated; see new_trip).
+        # One trip counts once (its latest choice), however often the cards are clicked.
+        if trip.metadata.get("mode_observed") != mode:
+            lp = trip.traveler_profile.learned.get("preferred_mode")
+            if trip.metadata.get("mode_observed") and lp and lp.source == "inferred":
+                # The earlier choice in this trip is withdrawn before the new one counts.
+                if lp.value == trip.metadata["mode_observed"]:
+                    lp.support = max(0.0, lp.support - 1)
+                else:
+                    lp.against = max(0.0, lp.against - 1)
+            preferences.observe(trip.traveler_profile, "preferred_mode", mode, f"chose the {mode} plan")
+            trip.metadata["mode_observed"] = mode
         self._save(trip)
         return trip
 

@@ -225,7 +225,9 @@ def _localize_knobs(knobs, first_day: int, num_days: int, hotel_scale: float):
 
 
 def _median_hotel(b: ResearchBundle) -> float:
-    prices = [h.price_per_night.amount for h in b.hotels if h.price_per_night.amount > 0]
+    # In the traveller's currency: cities can price hotels in different currencies.
+    prices = [h.price_per_night.amount * b.fx_rates.get(h.price_per_night.currency.upper(), 1.0)
+              for h in b.hotels if h.price_per_night.amount > 0]
     return statistics.median(prices) if prices else 0.0
 
 

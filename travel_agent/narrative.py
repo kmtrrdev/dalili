@@ -8,7 +8,7 @@ from typing import Any
 
 from pydantic import BaseModel, Field
 
-from . import knowledge, llm
+from . import knowledge, llm, preferences
 from .memory import recent_turns
 from .models import Money, TripPlan, TripState
 
@@ -214,7 +214,7 @@ def unknown_preferences(trip: TripState) -> list[str]:
     """Preferences that would change the plan and that the traveller hasn't told us - on this trip or an earlier
     one (long-term memory). The reply model decides whether any is worth asking now."""
     p = trip.traveler_profile
-    known = set(p.explicit_fields) | {k for k, lp in p.learned.items() if lp.confidence >= 0.5}
+    known = preferences.known(p)
     if p.transport_preference or "walking_tolerance" in known:
         known.add("transport_preference")
     return [hint for field, hint in UNKNOWN_HINTS.items() if field not in known]

@@ -24,29 +24,35 @@ async def search_flights(origin: str, destination: str, departure_date: str, ret
          "currency": currency, "return_to": return_to}
     home, home_tz, home_name = (return_to, return_timezone or origin_timezone, return_name or origin_name) if return_to \
         else (origin, origin_timezone, origin_name)
+    # Each direction stands on its own: a failed return search never throws away the live outbound results.
+    live_errors: dict[str, str] = {}
     try:
         out, out_ins = await flights.search_one_way(origin, destination, date.fromisoformat(departure_date), currency,
                                                     "outbound", origin_timezone, destination_timezone, travel_class)
+    except net.ProviderError as exc:
+        out, out_ins, live_errors["outbound"] = [], {}, str(exc)
+    try:
         back, back_ins = await flights.search_one_way(destination, home, date.fromisoformat(return_date), currency,
                                                       "return", destination_timezone, home_tz, travel_class)
     except net.ProviderError as exc:
-        if ai_fallback.available():  # live search failed (e.g. quota used up): AI estimates, clearly labelled
-            out = await ai_fallback.flights(origin, destination, date.fromisoformat(departure_date), "outbound",
-                                            origin_timezone, destination_timezone, origin_name, destination_name)
-            back = await ai_fallback.flights(destination, home, date.fromisoformat(return_date), "return",
-                                             destination_timezone, home_tz, destination_name, home_name)
-            if out and back:
-                return envelope("flight_search_result", "flight_mcp", q, outbound=out, **{"return": back},
-                                price_insights={}, fallback="ai_knowledge", live_error=str(exc))
-        return error("flight_search_result", "flight_mcp", q, str(exc))
-    if (not out or not back) and ai_fallback.available():
-        # One direction came back empty: fill just that direction with estimates.
+        back, back_ins, live_errors["return"] = [], {}, str(exc)
+    fallback = []
+    if ai_fallback.available():
+        # A direction that failed or came back empty: AI estimates for just that direction, clearly labelled.
         if not out:
             out = await ai_fallback.flights(origin, destination, date.fromisoformat(departure_date), "outbound",
                                             origin_timezone, destination_timezone, origin_name, destination_name)
+            fallback += ["outbound"] if out else []
         if not back:
             back = await ai_fallback.flights(destination, home, date.fromisoformat(return_date), "return",
                                              destination_timezone, home_tz, destination_name, home_name)
+            fallback += ["return"] if back else []
+    if not out or not back:
+        return error("flight_search_result", "flight_mcp", q, "; ".join(f"{d}: {e}" for d, e in live_errors.items())
+                     or "no flights found")
+    extra = {"fallback": "ai_knowledge", "fallback_directions": fallback} if fallback else {}
+    if live_errors:
+        extra["live_error"] = "; ".join(f"{d}: {e}" for d, e in live_errors.items())
     # A round-trip ticket is often cheaper than two one-ways: keep it when it beats the cheapest pair of one-ways.
     # (Only for a trip that ends where it started - an open-jaw trip is two one-ways by definition.)
     round_trips = []
@@ -70,7 +76,7 @@ async def search_flights(origin: str, destination: str, departure_date: str, ret
     return envelope("flight_search_result", "flight_mcp", q, outbound=out, **{"return": back}, round_trips=round_trips,
                     price_insights={"outbound": out_ins, "return": back_ins,
                                     "cheapest_one_way_pair": None if one_way_min == float("inf") else one_way_min,
-                                    "cheapest_round_trip": pairs[0][2] if pairs else None})
+                                    "cheapest_round_trip": pairs[0][2] if pairs else None}, **extra)
 
 
 @server.tool()

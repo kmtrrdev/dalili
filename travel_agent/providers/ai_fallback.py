@@ -19,7 +19,7 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from urllib.parse import quote_plus
 from zoneinfo import ZoneInfo
 
@@ -48,8 +48,9 @@ def available() -> bool:
 
 
 def _meta(conf: float = 0.35, url: str | None = None) -> Metadata:
+    # Generated now, not fetched: never inherits the time / stale flag of an HTTP response parsed earlier in this task.
     return Metadata(source=SOURCE, provider="AI estimate (live search unavailable)", confidence=conf,
-                    source_url=url, notes=NOTE)
+                    source_url=url, notes=NOTE, retrieved_at=datetime.now(timezone.utc).replace(microsecond=0), stale=False)
 
 
 def _key(*parts) -> str:

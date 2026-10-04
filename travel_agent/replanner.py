@@ -15,7 +15,6 @@ from .engine.planner import plan_activity_ids
 from .models import (
     Budget,
     FeedbackItem,
-    LearnedPreference,
     RequirementDraft,
     TravelerProfile,
     TripContract,
@@ -23,6 +22,7 @@ from .models import (
     TripState,
 )
 from .nlu import Action, FeedbackNote, Requirements
+from . import preferences
 from .config import settings
 from .journey import build_stops
 
@@ -131,7 +131,7 @@ def apply_requirements(trip: TripState, req: Requirements) -> list[str]:
         explicit.add(field)
         if field in DURABLE_PREFERENCES:
             # Long-term memory: what the traveller says about themselves carries over to their next trips.
-            p.learned[field] = LearnedPreference(value=value, confidence=0.8, evidence=["stated by the traveller"])
+            preferences.state(p, field, value)
 
     setp("travel_style", req.travel_style)
     setp("food_preferences", req.food_preferences)
@@ -291,18 +291,13 @@ def learn_from_feedback(trip: TripState, notes: list[FeedbackNote], raw: str) ->
         value = None
         if n.attribute == "noise" and n.sentiment == "negative":
             key, value = "noise_tolerance", "low"
-        elif n.attribute == "density" and n.sentiment == "negative":
-            key, value = "travel_style", STYLES[max(0, STYLES.index(p.travel_style) - 1)]
+        # (pace complaints are learned once, by apply_actions' reduce_density - not here a second time)
         elif n.attribute == "walking" and n.sentiment == "negative":
             key, value = "walking_tolerance", "low"
         if key:
-            lp = p.learned.get(key, LearnedPreference(value=value, confidence=0.0))
-            lp.value = value
-            lp.confidence = min(0.95, lp.confidence + 0.35 * max(n.severity, 0.3))
-            lp.evidence.append(raw[:120])
-            p.learned[key] = lp
-            if key not in p.explicit_fields and lp.confidence >= 0.5:
-                setattr(p, key, value)
+            # Evidence, not a verdict: a severe complaint weighs a full observation, a mild one half.
+            preferences.observe(p, key, value, raw, weight=0.5 + 0.5 * min(max(n.severity, 0.0), 1.0))
+    preferences.apply(p)
 
 
 def _all_flights(trip: TripState) -> list:
@@ -344,8 +339,10 @@ def _count_category(plan: TripPlan | None, category: str, trip: TripState) -> in
     return n
 
 
-def apply_actions(trip: TripState, actions: list[Action]) -> tuple[set[str], list[str], bool]:
-    """Apply replan actions. Returns (dirty research domains, notes, needs_replan)."""
+def apply_actions(trip: TripState, actions: list[Action], by_traveller: bool = True) -> tuple[set[str], list[str], bool]:
+    """Apply replan actions. Returns (dirty research domains, notes, needs_replan).
+    by_traveller=False (the critic's fixes): the plan changes, but nothing is learned about the traveller and no
+    field is marked as their explicit choice."""
     p, k, c = trip.traveler_profile, trip.user_knobs, trip.trip_contract
     plan = trip.selected_plan
     dirty: set[str] = set()
@@ -371,6 +368,8 @@ def apply_actions(trip: TripState, actions: list[Action]) -> tuple[set[str], lis
                 p.travel_style = STYLES[STYLES.index(p.travel_style) - 1]  # type: ignore[assignment]
                 explicit.add("travel_style")
                 notes.append(f"Switched to a {p.travel_style.replace('_', ' ')} pace with fewer activities per day.")
+                if by_traveller:
+                    preferences.observe(p, "travel_style", p.travel_style, "asked for fewer activities")
         elif name == "increase_density":
             if a.day and plan:
                 current = next((d.activity_count for d in plan.days if d.day == a.day), 2)
@@ -386,11 +385,9 @@ def apply_actions(trip: TripState, actions: list[Action]) -> tuple[set[str], lis
             explicit.add("travel_style")
             k.extra_rest = False
             unpin_all = True
-            # Long-term memory: this traveller likes full days (inherited by their next trips).
-            lp = p.learned.get("travel_style", LearnedPreference(value=p.travel_style, confidence=0.0))
-            lp.value, lp.confidence = p.travel_style, min(0.95, lp.confidence + 0.35)
-            lp.evidence.append("asked for more activities")
-            p.learned["travel_style"] = lp
+            if by_traveller and not a.day:
+                # Long-term memory: this traveller likes full days (inherited by their next trips).
+                preferences.observe(p, "travel_style", p.travel_style, "asked for more activities")
         elif name == "more_free_time":
             k.extra_rest = True
             notes.append("Added more rest and free time.")
@@ -523,7 +520,8 @@ def apply_actions(trip: TripState, actions: list[Action]) -> tuple[set[str], lis
         elif name == "select_mode" and a.text in ("balanced", "budget", "comfort", "experience"):
             trip.selected_mode = a.text  # type: ignore[assignment]
             notes.append(f"Switched to the {a.text} plan.")
-    p.explicit_fields = sorted(explicit)
+    if by_traveller:
+        p.explicit_fields = sorted(explicit)
 
     # Stability: keep previous activity assignments unless the change needs a reshuffle.
     if plan and needs_replan:

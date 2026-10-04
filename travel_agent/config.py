@@ -58,13 +58,18 @@ class Settings:
     hotel_review_lookups: int = int(os.getenv("TRAVEL_AGENT_HOTEL_REVIEW_LOOKUPS", "2"))
 
     mcp_transport: str = os.getenv("TRAVEL_AGENT_MCP_TRANSPORT", "inmemory")
+    mcp_call_timeout: float = float(os.getenv("TRAVEL_AGENT_MCP_TIMEOUT", "150"))
     db_path: str = os.getenv("TRAVEL_AGENT_DB", str(PROJECT_DIR / "travel_agent.db"))
     default_origin: str = os.getenv("TRAVEL_AGENT_DEFAULT_ORIGIN", "Cairo")
     language: str = os.getenv("TRAVEL_AGENT_LANGUAGE", "en")
 
     # Planner knobs
-    budget_buffer_ratio: float = 0.05
+    budget_buffer_ratio: float = float(os.getenv("TRAVEL_AGENT_BUDGET_BUFFER", "0.05"))
     max_repair_iterations: int = 6
+    # Preference memory (preferences.py): when an inferred preference is trusted enough to use, and how fast old
+    # behaviour fades. Fallback values, configurable.
+    preference_apply_threshold: float = float(os.getenv("TRAVEL_AGENT_PREF_THRESHOLD", "0.5"))
+    preference_half_life_days: float = float(os.getenv("TRAVEL_AGENT_PREF_HALF_LIFE_DAYS", "180"))
     extra: dict = field(default_factory=dict)
 
 

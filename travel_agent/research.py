@@ -49,9 +49,18 @@ async def resolve_place(hub: MCPHub, text: str) -> PlaceRef:
 async def research_destination(hub: MCPHub, contract: TripContract) -> dict[str, Any]:
     ref = contract.destination_ref
     assert ref is not None
-    res = await hub.call("knowledge", "get_destination_info",
-                         {"city": ref.name, "country": ref.country, "country_code": ref.country_code})
-    info = res["info"]
+    try:
+        res = await hub.call("knowledge", "get_destination_info",
+                             {"city": ref.name, "country": ref.country, "country_code": ref.country_code})
+        info = res["info"]
+    except MCPToolError as exc:
+        # Never fail the whole trip on destination facts: what the resolved place already tells us is enough to plan.
+        log.warning("destination info for %s unavailable: %s", ref.name, exc)
+        from .providers import geo
+        meta = geo.country_meta(ref.country_code or "")
+        info = {"name": ref.name, "country": ref.country, "country_code": (ref.country_code or "").upper(),
+                "currency": meta.get("currency") or contract.budget.currency, "languages": meta.get("languages", []),
+                "dinner_time": geo.dinner_time(ref.country_code or ""), "knowledge": {}}
     info.update({"center": {"lat": ref.lat, "lon": ref.lon}, "timezone": ref.timezone, "airports": ref.airports,
                  "airport_names": ref.airport_names, "city_id": ref.city_id})
     return info
@@ -244,7 +253,11 @@ async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, re
         res = await hub.call("currency", "get_exchange_rates", {"base": user, "quotes": sorted(_currencies(bundle) | extra_cur)})
         per_user = res["rates"]
         bundle.fx_rates = {c: (1.0 / v if c != user else 1.0) for c, v in per_user.items() if v}
-        bundle.fx_metadata = Metadata(source="currency_mcp", provider=res.get("provider", "Frankfurter"), confidence=0.95)
+        bundle.fx_metadata = Metadata(source="currency_mcp", provider=res.get("provider", "Frankfurter"), confidence=0.95,
+                                      source_url="https://frankfurter.dev")
+        if res.get("missing"):
+            bundle.errors.append(f"currency: no exchange rate for {', '.join(res['missing'])} - "
+                                 "prices in it can't be converted reliably")
     except MCPToolError as exc:
         bundle.errors.append(f"currency: {exc}")
         bundle.fx_rates = {user: 1.0}

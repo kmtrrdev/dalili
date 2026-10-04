@@ -13,6 +13,8 @@ import logging
 import os
 import sys
 import time
+from collections import OrderedDict, deque
+from contextvars import ContextVar
 from typing import Any
 
 from mcp.client.client import Client
@@ -39,16 +41,23 @@ class MCPToolError(RuntimeError):
     pass
 
 
+# The chat turn a tool call belongs to: live progress events go only to that turn's stream, never to other users'.
+CURRENT_TURN: ContextVar[str | None] = ContextVar("current_turn", default=None)
+CACHE_MAX_ENTRIES = 2000   # technical limit: bounded memory for the result cache
+CALL_LOG_MAX = 500
+
+
 class MCPHub:
     def __init__(self, transport: str | None = None, cache_ttl_s: int = 900):
         self.transport = transport or settings.mcp_transport
         self.cache_ttl_s = cache_ttl_s
-        self._cache: dict[str, tuple[float, dict[str, Any]]] = {}
-        self.call_log: list[dict[str, Any]] = []
+        self._cache: OrderedDict[str, tuple[float, dict[str, Any]]] = OrderedDict()
+        self.call_log: deque[dict[str, Any]] = deque(maxlen=CALL_LOG_MAX)
         # Callbacks notified after every tool call (used to stream live progress to the UI).
         self.listeners: list = []
 
     def _notify(self, event: dict[str, Any]) -> None:
+        event = {**event, "turn": CURRENT_TURN.get()}
         for fn in list(self.listeners):
             try:
                 fn(event)
@@ -75,8 +84,16 @@ class MCPHub:
         if use_cache and cached and time.time() - cached[0] < self.cache_ttl_s:
             return cached[1]
         started = time.perf_counter()
-        async with Client(self._target(server)) as client:
-            result = await client.call_tool(tool, args)
+        try:
+            # A hung provider must never hang the whole turn (tools with AI fallbacks can be slow, hence generous).
+            async with asyncio.timeout(settings.mcp_call_timeout):
+                async with Client(self._target(server)) as client:
+                    result = await client.call_tool(tool, args)
+        except TimeoutError as exc:
+            elapsed_ms = round((time.perf_counter() - started) * 1000, 1)
+            self.call_log.append({"server": server, "tool": tool, "ok": False, "ms": elapsed_ms, "timeout": True})
+            self._notify({"server": server, "tool": tool, "ok": False, "ms": elapsed_ms})
+            raise MCPToolError(f"{server}.{tool} timed out after {settings.mcp_call_timeout:.0f}s") from exc
         elapsed_ms = round((time.perf_counter() - started) * 1000, 1)
         if result.is_error:
             text = " ".join(getattr(c, "text", "") for c in result.content)
@@ -90,6 +107,9 @@ class MCPHub:
         if not ok:
             raise MCPToolError(f"{server}.{tool}: {payload.get('error')}")
         self._cache[key] = (time.time(), payload)
+        self._cache.move_to_end(key)
+        while len(self._cache) > CACHE_MAX_ENTRIES:
+            self._cache.popitem(last=False)
         return payload
 
     async def call_many(self, calls: list[tuple[str, str, dict[str, Any]]]) -> list[dict[str, Any] | Exception]:
