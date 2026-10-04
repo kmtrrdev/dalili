@@ -46,7 +46,8 @@ def plan_facts(trip: TripState) -> dict[str, Any]:
                       "vs_your_budget": (money(p.budget.total - c.budget.amount, p.budget.currency) if p.budget
                                          and p.budget.total > c.budget.amount else "within"),
                       "rating_of_hotel": p.hotel.rating if p.hotel else None,
-                      "hotel": f"{p.hotel.name} ({p.hotel.rating}/5)" if p.hotel else None,
+                      "hotel": ("; ".join(f"{s.name}: {s.hotel.name} ({s.hotel.rating}/5)" for s in p.stops if s.hotel)
+                                if p.stops else f"{p.hotel.name} ({p.hotel.rating}/5)" if p.hotel else None),
                       "airline": p.outbound_flight.airline if p.outbound_flight else None,
                       "score": p.score.total if p.score else None, "within_budget": p.within_budget}
                   for m, p in trip.plans.items()},

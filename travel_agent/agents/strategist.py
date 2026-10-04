@@ -61,8 +61,15 @@ class ActivityPrefs(BaseModel):
     paid_ok: bool = Field(True, description="False = prefer free sights (the city's icons always stay)")
     pace_delta: int = Field(0, description="-1 calmer, 0 as the traveller likes, +1 fuller days")
     signature_experiences: list[str] = Field(default_factory=list, description=(
-        "Only for experience (and optionally comfort): 2-4 real, famous, bookable experiences that define this "
+        "Only for experience (empty for the other plans): 2-4 real, famous, bookable experiences that define this "
         "destination (e.g. 'Desert safari Dubai', 'Bosphorus dinner cruise Istanbul'), named so Google Maps finds them"))
+
+
+class CityPicks(BaseModel):
+    city: str = Field(description="The city, exactly as in 'cities'")
+    hotel_shortlist: list[str] = Field(default_factory=list, description="Up to 4 exact hotel names from that city's list")
+    signature_experiences: list[str] = Field(default_factory=list, description=(
+        "Experience plan only (empty for the others): 1-3 real, famous, bookable experiences that define THIS city"))
 
 
 class ModeStrategy(BaseModel):
@@ -73,6 +80,9 @@ class ModeStrategy(BaseModel):
     food: FoodPrefs = Field(default_factory=FoodPrefs)
     activities: ActivityPrefs = Field(default_factory=ActivityPrefs)
     transport: Literal["public", "mixed", "taxi"] = "mixed"
+    cities: list[CityPicks] = Field(default_factory=list, description=(
+        "Multi-city trips only: one entry per city in 'cities' with this plan's hotel shortlist (and, for "
+        "experience, signature experiences) for that city. Empty for a single-city trip"))
     budget_stretch: float = Field(0.0, description=(
         "0-0.5: how far over the traveller's budget this plan may go to deliver its promise (an upgrade shown with "
         "its real extra cost). Always 0 for budget and balanced."))
@@ -103,11 +113,15 @@ restaurant price levels, top sights). Make the four plans clearly DIFFERENT:
   bookable - e.g. a desert safari in Dubai, a Bosphorus cruise in Istanbul, a cooking class in Rome), a characterful
   well-rated hotel in the most atmospheric area (rating_weight ~0.6, location_weight ~0.8), famous local food
   (levels 1-3, min_rating ~4.5, food price_weight ~0.2), pace_delta +1, mixed transport, budget_stretch 0.15-0.4.
+Multi-city trip ('cities' present): fill 'cities' in every plan - for each city its own hotel shortlist from that
+city's hotels_list and, for experience, 1-3 signature experiences of THAT city (e.g. a gondola ride in Venice, a
+Florence cooking class) - and leave the top-level shortlist and signature_experiences empty.
 For every plan also shortlist the hotels (by exact name from hotels_list) that truly fit it - judge by name, brand,
 type and rating, not only the numbers (a "hostel" is never a comfort hotel, even if listed as 4-star). Comfort and
 experience are upgrades: they keep their promise even when the traveller's budget is tight - the traveller sees
 exactly how much more they cost and decides. Make each plan's hotel and flights differ from budget's whenever the
-data offers a real alternative.
+data offers a real alternative. For comfort and experience, include in each shortlist at least one hotel that
+keeps the plan within the budget plus its budget_stretch when the data has one, so the upgrade stays reachable.
 Respect the traveller: never contradict their stated preferences (e.g. 'direct flights only', dietary needs, a
 low walking tolerance). Keep thresholds achievable with the options in the data. Headlines are short and concrete."""
 
@@ -143,20 +157,41 @@ def _research_summary(trip: TripState) -> dict:
     for f in r.flights_outbound + r.flights_return:
         for name in f.airline.split(" + "):
             airlines[name] = min(airlines.get(name, 1e12), f.price_per_person.amount)
-    hotels = sorted(r.hotels, key=lambda h: h.price_per_night.amount)
-    return {
+    def city(b, limit: int) -> dict:
+        hotels = sorted(b.hotels, key=lambda h: h.price_per_night.amount)
+        half = limit // 2
+        return {
+            "hotels": {"count": len(hotels),
+                       "nightly_price_range": [round(hotels[0].price_per_night.amount), round(hotels[-1].price_per_night.amount)] if hotels else None,
+                       "ratings": sorted({round(h.rating, 1) for h in hotels if h.rating})[-8:],
+                       "stars_available": sorted({h.stars for h in hotels if h.stars})},
+            "hotels_list": [{"name": h.name, "rating": h.rating, "stars": h.stars, "per_night": round(h.price_per_night.amount),
+                             "type": h.style or None} for h in (hotels if len(hotels) <= limit else hotels[:half + 1] + hotels[-half:])],
+            "restaurant_price_levels": sorted({p.price_level for p in b.restaurants}),
+            "top_sights": [a.name for a in sorted(b.attractions, key=lambda a: -(a.reviews_count or 0))[:10]],
+        }
+
+    base = {
         "destination": c.destination_name, "nights": c.nights, "travelers": c.travelers,
         "budget": f"{c.budget.amount:,.0f} {c.budget.currency}",
         "airlines_found": [{"airline": a, "cheapest_fare": round(p)} for a, p in sorted(airlines.items(), key=lambda x: x[1])][:12],
-        "hotels": {"count": len(hotels),
-                   "nightly_price_range": [round(hotels[0].price_per_night.amount), round(hotels[-1].price_per_night.amount)] if hotels else None,
-                   "ratings": sorted({round(h.rating, 1) for h in hotels if h.rating})[-8:],
-                   "stars_available": sorted({h.stars for h in hotels if h.stars})},
-        "hotels_list": [{"name": h.name, "rating": h.rating, "stars": h.stars, "per_night": round(h.price_per_night.amount),
-                         "type": h.style or None} for h in (hotels if len(hotels) <= 25 else hotels[:13] + hotels[-12:])],
-        "restaurant_price_levels": sorted({p.price_level for p in r.restaurants}),
-        "top_sights": [a.name for a in sorted(r.attractions, key=lambda a: -(a.reviews_count or 0))[:10]],
     }
+    if c.is_multi and r.stops:
+        # Each city with its own hotels and sights: the plans shortlist hotels and experiences city by city.
+        base["cities"] = [{"city": s.name, "nights": s.nights, **city(b, 16)} for s, b in zip(c.stops, r.stops)]
+        return base
+    return {**base, **city(r, 25)}
+
+
+def for_city(strategy: ModeStrategy, city: str) -> ModeStrategy:
+    """One plan's strategy for one city of a multi-city trip: that city's hotel shortlist and signature experiences."""
+    name = city.strip().lower()
+    picks = next((p for p in strategy.cities if p.city.strip().lower() in name or name in p.city.strip().lower()), None)
+    if picks is None:
+        return strategy
+    return strategy.model_copy(update={
+        "hotel": strategy.hotel.model_copy(update={"shortlist": picks.hotel_shortlist}),
+        "activities": strategy.activities.model_copy(update={"signature_experiences": picks.signature_experiences})})
 
 
 async def design(trip: TripState) -> Strategies:

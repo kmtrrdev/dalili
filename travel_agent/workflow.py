@@ -512,10 +512,19 @@ async def plan(state: GraphState) -> GraphState:
     strategies = await strategist.design(trip)
     if not state.get("iteration"):
         sig: dict[str, list[str]] = {}
-        for mode in PLANNING_MODES:
-            names = getattr(strategies, mode).activities.signature_experiences
-            if names:
-                sig[mode] = await research.find_places(get_hub(), trip, names)
+        for mode in ("experience",):  # signature experiences are what the experience plan is about
+            strat = getattr(strategies, mode)
+            if trip.trip_contract.is_multi:
+                # Each city's own signature experiences, found in that city (ids are per stop; a stop ignores others').
+                ids: list[str] = []
+                for i, stop in enumerate(trip.trip_contract.stops):
+                    names = strategist.for_city(strat, stop.name).activities.signature_experiences
+                    if names and strat.cities:
+                        ids += await research.find_places(get_hub(), trip, names, stop=i)
+                if ids:
+                    sig[mode] = ids
+            elif strat.activities.signature_experiences:
+                sig[mode] = await research.find_places(get_hub(), trip, strat.activities.signature_experiences)
         trip.metadata["signature_ids"] = sig
 
     def build(mode: str, pins: dict) -> TripPlan:
@@ -584,19 +593,24 @@ async def plan(state: GraphState) -> GraphState:
 
     # Four cards that are really one plan help no one: an upgrade that came out with the same hotel and flights as a
     # cheaper plan is rebuilt without that hotel (it then shows what the upgrade really costs).
+    def hotels_of(p: TripPlan) -> list[str]:
+        # Every city's hotel on a multi-city trip, else the one hotel.
+        return [s.hotel.id for s in p.stops if s.hotel] if p.stops else ([p.hotel.id] if p.hotel else [])
+
     def core(p: TripPlan) -> tuple:
-        return (p.hotel.id if p.hotel else None, p.outbound_flight.id if p.outbound_flight else None,
-                p.return_flight.id if p.return_flight else None)
+        return (tuple(hotels_of(p)), tuple(f.id for f in p.legs) if p.legs else
+                (p.outbound_flight.id if p.outbound_flight else None, p.return_flight.id if p.return_flight else None))
 
     _budget_is_cheapest(candidates)  # first, so a plan copied onto the budget card is then made different below
-    if not state.get("iteration") and not c.is_multi:
+    if not state.get("iteration"):
         for mode in ("comfort", "experience"):
             twin = next((m for m in ("budget", "balanced", "comfort") if m != mode and m in candidates
                          and core(candidates[m]) == core(candidates[mode])), None)
-            others = [h for h in trip.research.hotels if candidates[mode].hotel and h.id != candidates[mode].hotel.id]
-            if twin is None or not others or stretch[mode] <= 1:
+            mine = hotels_of(candidates[mode])
+            others = [h for h in trip.research.hotels if h.id not in mine]
+            if twin is None or not mine or not others or stretch[mode] <= 1:
                 continue
-            knobs[mode] = knobs[mode].model_copy(update={"hotel_exclude": knobs[mode].hotel_exclude + [candidates[mode].hotel.id]})
+            knobs[mode] = knobs[mode].model_copy(update={"hotel_exclude": knobs[mode].hotel_exclude + mine})
             real = c.budget.amount
             c.budget.amount = real * stretch[mode]
             try:

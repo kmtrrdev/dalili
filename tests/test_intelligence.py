@@ -250,6 +250,18 @@ def test_menu_search_gives_a_link_and_a_meal_built_from_quoted_prices(monkeypatc
     assert anyio.run(menus.menu_price, "N'EVET", "Istanbul") is None  # prices not in the sources: never shown
 
 
+def test_each_city_of_a_journey_gets_its_own_picks():
+    from travel_agent.agents.strategist import DEFAULTS, CityPicks, for_city
+
+    exp = DEFAULTS.experience.model_copy(update={"cities": [
+        CityPicks(city="Venice", hotel_shortlist=["Hotel Danieli"], signature_experiences=["Gondola ride"]),
+        CityPicks(city="Florence", hotel_shortlist=["Hotel Brunelleschi"], signature_experiences=["Cooking class"])]})
+    venice = for_city(exp, "Venice")
+    assert venice.hotel.shortlist == ["Hotel Danieli"] and venice.activities.signature_experiences == ["Gondola ride"]
+    assert for_city(exp, "Florence").hotel.shortlist == ["Hotel Brunelleschi"]
+    assert for_city(exp, "Milan") is exp  # a city the strategist didn't cover keeps the plan's general strategy
+
+
 def test_nice_amount():
     from travel_agent.replanner import nice_amount
 

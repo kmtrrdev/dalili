@@ -476,18 +476,21 @@ async def ensure_must_visit(hub: MCPHub, trip) -> list[str]:
     return notes
 
 
-async def find_places(hub: MCPHub, trip, names: list[str]) -> list[str]:
+async def find_places(hub: MCPHub, trip, names: list[str], stop: int | None = None) -> list[str]:
     """Real places for names the strategist suggested (signature experiences): researched data first, else one Google
-    Maps lookup each (cached per destination). Never invents a place; overnight-distance results are skipped."""
-    r, c = trip.research, trip.trip_contract
-    if not names or r is None or c is None or c.is_multi:
+    Maps lookup each (cached per destination). Never invents a place; overnight-distance results are skipped.
+    stop: the city of a multi-city trip to search in (its places are added to that city's research too)."""
+    merged, c = trip.research, trip.trip_contract
+    if not names or merged is None or c is None or (c.is_multi and (stop is None or stop >= len(merged.stops))):
         return []
+    r = merged.stops[stop] if c.is_multi else merged
+    ref = c.stops[stop].ref if c.is_multi else c.destination_ref
     info = r.destination_info
-    center = info.get("center") or {"lat": c.destination_ref.lat, "lon": c.destination_ref.lon}
+    center = info.get("center") or {"lat": ref.lat, "lon": ref.lon}
     cache: dict[str, str] = trip.metadata.setdefault("place_lookup", {})
     ids: list[str] = []
     for name in names[:4]:
-        key = f"{c.route_name}|{name}"
+        key = f"{ref.name}|{name}" if c.is_multi else f"{c.route_name}|{name}"
         pid = cache.get(key)
         if pid and r.place(pid):
             ids.append(pid)
@@ -510,6 +513,8 @@ async def find_places(hub: MCPHub, trip, names: list[str]) -> list[str]:
                     found = next((x for x in r.attractions if x.id == p.id), None)
                     if found is None:
                         r.attractions.append(p)
+                        if r is not merged and not any(x.id == p.id for x in merged.attractions):
+                            merged.attractions.append(p)  # the whole journey's bundle sees it too
                     hit = found or p
         cache[key] = hit.id if hit else ""
         if hit:
