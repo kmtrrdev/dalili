@@ -1,0 +1,227 @@
+{
+ "slug": "nice",
+ "name": "Nice",
+ "country": "France",
+ "tags": [
+  "beach",
+  "food",
+  "relax"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Nice",
+ "en": {
+  "city_name": "Nice",
+  "country_name": "France",
+  "title": "Nice travel guide: what to see, eat and know",
+  "meta_description": "Practical travel guide to Nice: top sights (Promenade, Vieux Nice, museums), local foods, transport tips, budget advice and a 3-day itinerary.",
+  "h1": "Nice travel guide: what to see, eat and know",
+  "intro": [
+   "Nice is a major city on the French Riviera known for its long seaside promenade, lively old town and diverse cultural heritage. The waterfront and a large part of the city are recognised by UNESCO, and the city combines beachside leisure with museums, markets and hilltop views.",
+   "Originally centered around the Gallo‑Roman settlement at Cimiez, Nice grew into an international resort and port. You will find elegant promenades along the Baie des Anges, a labyrinthine Vieux Nice with markets and churches, and a mix of French and local Nissart influences — though French is the common language, and a few polite words of French are appreciated."
+  ],
+  "best_time": "Nice is pleasant in spring and autumn when temperatures are comfortable and the city is less crowded than in high summer. Summer draws the largest crowds for beachside activities and events, while winter is milder than inland and quieter for sightseeing.",
+  "top_sights": [
+   {
+    "name": "Promenade des Anglais",
+    "why": "This famous waterfront walk stretches for several kilometres along the Baie des Anges and offers the classic views associated with Nice; bring comfortable shoes and allow time for a long stroll or people‑watching."
+   },
+   {
+    "name": "Vieux Nice (Old Town) and Cours Saleya",
+    "why": "A maze of narrow streets with boutiques, cafés and the daily flower and fruit market on Cours Saleya; explore on foot and enter Place Sainte-Réparate to see the Baroque Cathédrale Sainte-Réparate if the doors are open."
+   },
+   {
+    "name": "Colline du Château (Castle Hill)",
+    "why": "A hilltop park with sweeping views over the Baie des Anges and the harbour reached by stairs or a lift; go before sunset but note the park closes around sunset and visitors are asked to leave."
+   },
+   {
+    "name": "Musée Matisse",
+    "why": "Housed in a 17th‑century Genoese villa in Cimiez, this museum shows paintings, drawings and sculptures by Matisse and is worthwhile for fans of the artist and modern art."
+   },
+   {
+    "name": "Musée Marc Chagall",
+    "why": "A specialized museum highlighting the work of Marc Chagall, including stained glass and large compositions; recommended even for visitors less focused on art for its singular collection."
+   },
+   {
+    "name": "Museum of Modern and Contemporary Art (MAMAC)",
+    "why": "A modern art complex with four connected towers and rooftop terraces providing both exhibitions of contemporary artists and excellent panoramic views of the city."
+   },
+   {
+    "name": "Musée des Arts Asiatiques",
+    "why": "A museum with collections from India, China and Southeast Asia set in notable architecture beside a lake; the setting and collections make it a distinct contrast to Nice's Mediterranean museums."
+   },
+   {
+    "name": "Cimiez archaeological area and museums",
+    "why": "The Cimiez quarter contains the Gallo‑Roman ruins and an archaeology museum documenting ancient local life; it also sits in the older, hillier part of town that was once favoured by visitors such as Queen Victoria."
+   }
+  ],
+  "getting_around": "Nice is compact enough for many sights to be reached on foot, especially along the Promenade and in the old town. Buses and local transit serve hillier neighbourhoods such as Cimiez and Mont Boron; check routes for connections to coastal towns and attractions. The Promenade runs east toward the airport, and the city has regular bus connections to nearby towns like Villefranche and Èze.",
+  "food": [
+   {
+    "name": "Socca",
+    "note": "A warm chickpea‑flour pancake often sold to go and enjoyed standing or on a bench with sea views."
+   },
+   {
+    "name": "Pan bagnat",
+    "note": "A sandwich with tuna, olives, hard‑boiled egg and fresh vegetables — a classic picnic choice from market produce."
+   },
+   {
+    "name": "Pissaladière",
+    "note": "A regional tart topped with caramelised onions, olives and anchovies, offering a savoury alternative to tomato‑based pizzas."
+   },
+   {
+    "name": "Tourte aux blettes",
+    "note": "A local sweet tart made with Swiss chard, raisins and nuts — an unusual regional specialty worth trying."
+   },
+   {
+    "name": "Glace at Fenocchio",
+    "note": "Traditional gelato with a large variety of flavours; Fenocchio in the Old Town is famous for its many options."
+   }
+  ],
+  "budget_tips": [
+   "Buy the City of Nice museums pass for multi‑museum access if you plan to visit several participating sites (a 4‑day pass price is listed in the museums information).",
+   "Use markets and street food for cheaper meals — items like socca and pan bagnat make filling, affordable lunches.",
+   "Walk the Promenade des Anglais and explore Vieux Nice on foot instead of taking paid tours; many of the best views and experiences are free.",
+   "Compare postcard and souvenir prices before buying; similar items are sold at a wide range of prices across shops."
+  ],
+  "safety": [
+   "Watch your belongings in crowded places such as markets, the Promenade and public transport, as pickpocketing can happen in busy tourist areas.",
+   "If you plan to swim, be aware that the public beaches are pebble (gallet) beaches and the sea can drop steeply with strong tidal pull; swim where you feel comfortable and confident.",
+   "Respect local norms: a few street signs may be bilingual in French and Nissart, but French is the everyday language — a polite attempt at French will be appreciated.",
+   "Be mindful of park opening times such as Colline du Château which closes around sunset and requires visitors to leave when it closes."
+  ],
+  "itinerary": [
+   "Day 1: Walk the Promenade des Anglais and relax by the sea, then explore Vieux Nice and Cours Saleya market, visit Place Sainte‑Réparate and try local street foods like socca and pan bagnat.",
+   "Day 2: Spend the morning on Colline du Château for panoramic views, visit nearby museums such as MAMAC or Musée Marc Chagall in the afternoon, and finish with gelato in the Old Town.",
+   "Day 3: Head up to Cimiez to see the Gallo‑Roman ruins and Musée Matisse, stroll through the Cimiez district and, time permitting, visit the Musée des Arts Asiatiques or Parc Phoenix."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Nice?",
+    "a": "Three days gives you time to enjoy the Promenade, explore Vieux Nice and visit a selection of museums, while also allowing a short excursion to hilltop viewpoints or nearby towns."
+   },
+   {
+    "q": "Is Nice expensive?",
+    "a": "Costs can be high in central tourist areas, but you can save by eating at markets or street stalls, walking between sights, and using the multi‑museum pass if you plan several visits."
+   },
+   {
+    "q": "Is Nice safe for tourists?",
+    "a": "Nice is generally safe, but be cautious with belongings in crowded places and be aware of rocky beaches and steep drop‑offs when swimming; follow local signage and park opening hours."
+   },
+   {
+    "q": "Which area is best to stay in Nice?",
+    "a": "Staying near the Promenade des Anglais or in/around Vieux Nice keeps you within easy walking distance of major attractions, markets and the beachfront."
+   },
+   {
+    "q": "How do I get to nearby villages like Èze or Villefranche?",
+    "a": "Local buses run to neighbouring towns; for Èze, use buses that stop at Èze Village rather than Èze Gare if you want the village itself, and for Villefranche a local bus connects the town in about 20 minutes from Nice."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "نيس",
+  "country_name": "فرنسا",
+  "title": "دليل السفر إلى نيس، فرنسا",
+  "meta_description": "دليل نيس: أهم المعالم على كورنيش Promenade des Anglais، طعام محلي، متاحف، نصائح ميزانية وخطة لثلاثة أيام.",
+  "h1": "دليل نيس: ماذا ترى وتفعل وتذوق",
+  "intro": [
+   "نيِس مدينة كبيرة على الريفييرا الفرنسية تشتهر بكورنيشها الشهير Promenade des Anglais ومينائها المتعدد الثقافات. المدينة مناسبة لزوار من مختلف الأعمار وتجمع بين شواطئ من الحصى وأحياء تاريخية ومتاحف فنية مهمة.",
+   "جزء كبير من الواجهة البحرية ومناطق من المدينة مدرجة على قائمة التراث العالمي لليونسكو (2021). أصل المدينة يعود إلى بقايا رومانية في حي سيميي (Cimiez) على التلال، ولا تزال آثار التاريخ والثقافة الإيطالية والنيزارية واضحة في بعض أحياءها."
+  ],
+  "best_time": "أبرز الزيارة تكون في فصلي الربيع والصيف عندما تكون أمواج البحر والطقس مناسبين للمشي على الكورنيش والجلوس في الهواء الطلق؛ مع ذلك تكون الشواطئ العامة حجريّة مما يجعلها أقل ملاءمة للعائلات التي تبحث عن رمال ناعمة. إذا أردت شواطئ رملية، ففكر في رحلات يومية إلى بلدات قريبة مثل فيلفرانش-سور-مير أو كان.",
+  "top_sights": [
+   {
+    "name": "كورنيش Promenade des Anglais",
+    "why": "الممشى المطل على البحر يمتد لعدة كيلومترات ويقدّم أفضل مناظر للبحر والواجهة البحرية؛ أنسب نشاط هو المشي أو الجلوس لمشاهدة الغروب والتحف المعمارية على الواجهة."
+   },
+   {
+    "name": "المدينة القديمة (Vieux Nice) وCours Saleya",
+    "why": "متاهة شوارع ضيقة مع بيوت ملونة وأسواق يومية للزهور والفاكهة، المكان رائع لتذوق أطعمة الشارع والتجول؛ ادخل إلى كاتدرائية سانت ريبارات إذا كانت الأبواب مفتوحة."
+   },
+   {
+    "name": "تل القصر (Colline du Château)",
+    "why": "تلة تطل على خليج الملائكة والميناء وتمنح إطلالة بانورامية على نيس؛ الصعود سيرا أو استخدام المصعد الجزئي يوصِل إلى منصات المراقبة، والحديقة تقفل عند الغروب."
+   },
+   {
+    "name": "متحف ماتيس (Musée Matisse)",
+    "why": "مجموعة لطيفة من لوحات ورسومات ونحت ماتيس في فيلا جنوية من القرن السابع عشر؛ مناسب لعشاق الفن والمهتمين بتاريخ إقامة الفنان في المدينة."
+   },
+   {
+    "name": "متحف مارك شاغال (Musée Marc Chagall)",
+    "why": "يضم أعمال شاغال ومن بينها نوافذ زجاجية ملونة مميزة؛ يوصى به حتى لغير المتخصصين في الفن لتجربة بصرية فريدة."
+   },
+   {
+    "name": "متحف الفنون الحديثة والمعاصرة (MAMAC)",
+    "why": "متحف يخص الفن الحديث والمعاصر مع أبراج متصلة وتراسات خارجية توفر بانورامات للمدينة، مناسب لمن يبحث عن فن معاصر ومشاهد على السطح."
+   },
+   {
+    "name": "مواقع سيميي الأثرية ومتحف علم الآثار (Cimiez)",
+    "why": "أطلال رومانية وتلال هادئة ومتاحف توثّق الحياة الغالورومانية، مكان جيد لفهم أصل المدينة وللزيارة العائلية والتعليمية."
+   },
+   {
+    "name": "Parc Phoenix",
+    "why": "حديقة نباتية كبيرة بها نحو 2500 نوع من النباتات وبيت زجاجي استوائي بالإضافة إلى بعض الحيوانات، مناسبة للزوار المهتمين بالنباتات والعائلات."
+   }
+  ],
+  "getting_around": "المشي على الكورنيش وفي المدينة القديمة هو الأنسب للاستمتاع بالمشاهد، وتتوفر حافلات محلية لربط التلال والمناطق البعيدة مثل مون بُورون وسيميي. من وإلى المطار يمكن الاستمرار على طول كورنيش Promenade des Anglais الذي يصل إلى المطار؛ استخدم الحافلات المحلية أو وسائل النقل العام المتاحة داخل المدينة.",
+  "food": [
+   {
+    "name": "Socca",
+    "note": "خبز مسطّح من دقيق الحمص يُقلى ويُقدّم ساخناً كوجبة خفيفة على الطريق وغالباً يُؤكل ممتنعاً أثناء التنقل."
+   },
+   {
+    "name": "Pan bagnat",
+    "note": "سندويش تونة مع زيتون وبيض مسلوق وخضراوات طازجة يمثل نسخة نيسية من السندويشات المتوسطية."
+   },
+   {
+    "name": "Pissaladière",
+    "note": "نوع من الفطائر المملوءة بالبصل المكرمل والزيتون والأنشوجا دون جبن أو طماطم، نكهة مالحة وحلوة متوازنة."
+   },
+   {
+    "name": "Tourtes aux blettes",
+    "note": "فطيرة حلوة محلية تُحضّر بالبوطشو (السلق السويسري) والزبيب والمكسرات مع طبقة سكر بودرة."
+   },
+   {
+    "name": "آيس كريم فينوتشيو (Fennocchio)",
+    "note": "محل مثلجات شهير في المدينة القديمة يقدم تشكيلة واسعة من النكهات الإيطالية التقليدية والغير تقليدية."
+   }
+  ],
+  "budget_tips": [
+   "اشترِ بطاقة دخول متحف المدينة (City of Nice museums pass) إذا كنت تخطط لزيارة عدة متاحف؛ توفر الدخول لأربع أيام إلى متاحف متعددة ضمن باص واحد.",
+   "تسوّق بالأسواق المحلية مثل Cours Saleya لشراء مأكولات للنزهات بدلاً من تناول كل الوجبات في المطاعم.",
+   "استخدم الحافلات المحلية للرحلات القصيرة إلى تلال المدينة والقرى المجاورة بدلاً من سيارات الأجرة.",
+   "قارن أسعار البطاقات البريدية والهدايا قبل الشراء لأن الأسعار تختلف بين المتاجر."
+  ],
+  "safety": [
+   "احذر من المشي على شواطئ الحصى دون أحذية مناسبة؛ ارتدِ صنادل أو أحذية شاطئية لحماية قدميك.",
+   "التزم بمواعيد إغلاق الحدائق مثل تل القصر حيث يُطلب من الزوار المغادرة عند الغروب.",
+   "لا تفترض أن كل السكان يتحدثون الإنجليزية؛ مجهود بسيط للتحدث بالفرنسية مرحب به.",
+   "انتبه إلى تيارات البحر عند السباحة فالشاطئ ينخفض بسرعة وقد تكون السباحة غير مناسبة للمبتدئين."
+  ],
+  "itinerary": [
+   "اليوم الأول: امشِ على Promenade des Anglais صباحاً، تذوّق Socca على الواجهة البحرية، ثم تجوّل في المدينة القديمة (Vieux Nice) وزُر سوق Cours Saleya، وأنهِ اليوم بكاتدرائية سانت ريبارات ومطعم محلي.",
+   "اليوم الثاني: اصعد إلى تل القصر (Colline du Château) للصباح، ثم زُر متحف ماتيس ومتحف مارك شاغال أو متحف الفنون الحديثة بحسب اهتماماتك، وقت المساء للتنزّه في شارع Jean Médecin والتسوق.",
+   "اليوم الثالث: قم برحلة قصيرة إلى سيميي (Cimiez) لزيارة الآثار الرومانية والمتاحف، أو اختر التوجّه إلى Parc Phoenix أو الاستفادة من الحافلة لزيارة قرى قريبة مثل Èze أو فيلفرانش-سور-مير لشاطئ أكثر رمالاً."
+  ],
+  "faq": [
+   {
+    "q": "كم يوم أحتاج في نيس؟",
+    "a": "ثلاثة أيام تمنحك وقتاً جيداً للمشي على الكورنيش، تجوّل في المدينة القديمة، زيارة بعض المتاحف وقضاء نصف يوم في التلال أو رحلة قصيرة لقرية مجاورة."
+   },
+   {
+    "q": "هل نيس مدينة مُكلفة؟",
+    "a": "تكلفة الزيارة تعتمد على اختياراتك؛ يمكن التوفير عبر تناول طعام الشارع والأسواق المحلية واستخدام الحافلات، كما أن شراء بطاقة متاحف المدينة قد يوفر إذا كنت تزور عدة متاحف."
+   },
+   {
+    "q": "هل الشاطئ في نيس مناسب للسباحة مع الأطفال؟",
+    "a": "الشواطئ العامة في نيس مكونة من حصى كبيرة والبحر ينخفض بسرعة، لذلك قد لا تكون الأنسب للأطفال؛ الشواطئ الرملية الأقرب توجد في بلدات مثل فيلفرانش-سور-مير أو كان."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "المنطقة القريبة من Promenade des Anglais أو المدينة القديمة مناسبة لمن يريد المشي والاستمتاع بالواجهة البحرية والوصول السهل إلى المحلات والمتاحف."
+   },
+   {
+    "q": "كيف أصل إلى إيكس أو إيْز (Èze) من نيس؟",
+    "a": "يمكن الوصول إلى إيْز بالحافلات المحلية؛ استخدم الحافلة المتجهة إلى Eze Village (مثل رقم 82 أو 602 حسب الجداول)، وتجنّب النزول في Eze Gare إذا كنت تريد قرية Eze ذات المناظر والحديقة."
+   }
+  ]
+ }
+}

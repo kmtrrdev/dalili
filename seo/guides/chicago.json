@@ -1,0 +1,224 @@
+{
+ "slug": "chicago",
+ "name": "Chicago",
+ "country": "United States",
+ "tags": [
+  "culture",
+  "food"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Chicago",
+ "en": {
+  "city_name": "Chicago",
+  "country_name": "United States",
+  "title": "Chicago travel guide: what to see, eat and know",
+  "meta_description": "Practical guide to Chicago: top architecture, museums, beaches, food, budget tips and a 3-day itinerary for first-time visitors.",
+  "h1": "Chicago travel guide: what to see, eat and know",
+  "intro": [
+   "Chicago is a major American city on the shores of Lake Michigan known for its influential architecture, world-class museums, lively music scene and long civic history. Its skyline, beaches and parks give a first impression that leads to neighborhoods full of food, culture and public art.",
+   "As the hub of the Midwest, Chicago offers miles of lakefront, a remarkable concentration of modern and historic buildings, and museums that can fill days of exploration. Visitors should be prepared to walk, use rapid transit and dress warmly if visiting in winter."
+  ],
+  "best_time": "Summer and early fall are the most popular times to visit for warm weather, beaches and outdoor festivals; expect larger crowds then. Winters are cold and require warm clothing, and shoulder seasons can offer fewer crowds and better museum availability.",
+  "top_sights": [
+   {
+    "name": "Millennium Park",
+    "why": "Home to public artworks like Cloud Gate and the Crown Fountain, this compact park is great for photos and people-watching; visit in the morning or evening to avoid peak crowds."
+   },
+   {
+    "name": "Art Institute of Chicago",
+    "why": "One of the world's leading art museums with important collections of Impressionist, modern and classical works; allow several hours and check for any timed-entry options."
+   },
+   {
+    "name": "Museum Campus (Adler Planetarium, Field Museum, Shedd Aquarium)",
+    "why": "A lakeside trio of major institutions offering astronomy, natural history and marine life; combine two or more in a day for efficient sightseeing and lakefront views."
+   },
+   {
+    "name": "Museum of Science and Industry",
+    "why": "A richly interactive museum in Hyde Park known for hands-on exhibits about transportation, weather and industry; it's especially popular with families and school groups."
+   },
+   {
+    "name": "Navy Pier",
+    "why": "A long lakeside pier with rides, theaters, restaurants and panoramic views of the skyline; it's a convenient spot for a casual outing and city views from the water."
+   },
+   {
+    "name": "The Magnificent Mile",
+    "why": "Chicago's famous stretch of Michigan Avenue with shopping, dining and notable architecture; stroll north–south to sample stores and stop at galleries or cafés along the way."
+   },
+   {
+    "name": "Sears Tower (Willis Tower) and the John Hancock Center",
+    "why": "Two of Chicago's most recognizable skyscrapers that show the city's history as a birthplace of the modern high-rise; admire them from the ground or visit observation areas if you want city vistas."
+   },
+   {
+    "name": "Lincoln Park and the lakefront",
+    "why": "A lengthy green corridor with beaches, paths, harbors and museums, ideal for cycling, walking and beach time; explore different sections for both active recreation and quieter views."
+   }
+  ],
+  "getting_around": "Chicago is a regional transport hub with extensive transit serving the city; expect to combine rapid transit, buses and walking to move between downtown, neighborhoods and the lakefront. For sightseeing, downtown and major museum areas are well connected by public transit, and the lakefront is best experienced on foot or by bike.",
+  "food": [
+   {
+    "name": "Polish sausages and Polish restaurants",
+    "note": "Chicago's Polish neighborhoods and old-style restaurants are known for hearty sausages and traditional fare, especially around Jackowo and Belmont-Central."
+   },
+   {
+    "name": "Pączki (Polish doughnuts)",
+    "note": "A popular pastry sold at neighborhood bakeries, especially sought after on Fat Tuesday and by those exploring Polish culinary traditions."
+   },
+   {
+    "name": "Steakhouse meal",
+    "note": "Chicago has an excellent steakhouse scene that appeals to beef lovers and is a classic choice for a special-occasion meal."
+   },
+   {
+    "name": "Jamaican/Jerk cuisine",
+    "note": "A number of Jamaican restaurants and jerk spots reflect the city's diverse immigrant food culture and are found across neighborhoods."
+   },
+   {
+    "name": "Neighborhood fast food and sausage shops",
+    "note": "Chicago's plentiful cheap and greasy local fast-food joints and sausages are part of the city's everyday culinary character and available across neighborhoods."
+   }
+  ],
+  "budget_tips": [
+   "Consider discount packages such as the Chicago CityPASS and programs like Bank of America's Museums to Go to save on museum admissions and skip lines.",
+   "Stay outside the most central blocks of downtown if you want lower accommodation costs; Chicago is generally more affordable than New York or San Francisco for hotels.",
+   "Eat in neighborhood restaurants away from major tourist strips to get authentic food at lower prices.",
+   "Avoid obvious tourist-trap restaurants on main thoroughfares; walk a few blocks into neighborhoods for better value and quality."
+  ],
+  "safety": [
+   "Dress warmly in winter and be prepared for cold winds off the lake when outdoors.",
+   "Watch your belongings in busy tourist areas and on transit, as in any large city.",
+   "Some downtown shops have policies requiring children under 18 to be accompanied by a guardian 21 or older; check store rules before shopping."
+  ],
+  "itinerary": [
+   "Day 1: Walk the Loop to see landmark architecture and public sculpture, visit the Art Institute of Chicago, then stroll through Millennium Park and along the Magnificent Mile.",
+   "Day 2: Spend the day on Museum Campus visiting the Field Museum, Shedd Aquarium and Adler Planetarium; finish with an evening at Navy Pier for skyline views.",
+   "Day 3: Explore a neighborhood for food—try Polish, Jamaican or other ethnic corridors—then relax or bike along Lincoln Park and the lakefront beaches."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Chicago?",
+    "a": "A long weekend covers the city's main highlights—architecture, a major museum and a neighborhood meal—but a week lets you explore multiple museums, neighborhoods and the lakefront at a relaxed pace."
+   },
+   {
+    "q": "Is Chicago an expensive city to visit?",
+    "a": "Chicago can be more affordable than some other major U.S. cities for accommodation and dining, but costs vary by neighborhood and your choice of attractions; using city passes and eating in neighborhoods can reduce expenses."
+   },
+   {
+    "q": "Is Chicago safe for tourists?",
+    "a": "Chicago is a large, busy city; take the usual precautions like watching belongings, staying aware on transit and following local advice about areas to avoid after dark. Dress appropriately for winter weather when visiting in the cold months."
+   },
+   {
+    "q": "What is the best area to stay in Chicago?",
+    "a": "Downtown areas near the Loop, Near North and the Magnificent Mile are convenient for first-time visitors who want close access to museums, architecture and the lakefront, while staying a bit farther out can lower accommodation costs."
+   },
+   {
+    "q": "How do I get to the city from the airport?",
+    "a": "Chicago is an aviation hub with multiple airports serving the region; allow time for transit into the city and choose transport options that connect directly to your neighborhood or downtown."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "شيكاغو (Chicago)",
+  "country_name": "الولايات المتحدة",
+  "title": "دليل السفر إلى شيكاغو: sights, food, practical tips",
+  "meta_description": "دليل لشيكاغو يقدّم أهم المعالم والمتاحف، أماكن لتناول الطعام، نصائح لتوفير المال وخطة لثلاثة أيام في المدينة.",
+  "h1": "دليل شيكاغو: ماذا ترى وتأكل وتعرف",
+  "intro": [
+   "شيكاغو مدينة كبرى على بحيرة ميتشغان تشتهر بمشهد الجاز والبلوز، وبمكانتها كمعقل للعمارة الحديثة وولادة ناطحات السحاب. أفقها يمتد على الواجهة البحرية ويضم متاحف من الطراز العالمي وشواطئ وحدائق ومسارات مشي وتراكات قطارات مرتفعة تعرّف المدينة لهويتها.",
+   "المدينة مناسبة لزيارات قصيرة أو طويلة بفضل تنوع أحيائها ومعالمها: من متاحف ومشاهد معمارية إلى شواطئ عامة وساحات عامة مثل ميلينيوم بارك. استعد للمشي وارتداء ملابس دافئة في الشتاء لأن تجربة شيكاغو تُفهم بالمشي والتنقل داخل المدينة."
+  ],
+  "best_time": "أفضل وقت للزيارة هو الصيف وحتى بداية الخريف للاستمتاع بالشواطئ والأنشطة الخارجية والمهرجانات، بينما تكون الشتاء باردًا جداً لذا يتطلب ملابس دافئة. أوقات الذروة السياحية تجلب حشودًا أكبر في المناطق القريبة من البحيرة والمتاحف.",
+  "top_sights": [
+   {
+    "name": "معسكر المتاحف (Museum Campus)",
+    "why": "مجمع يضم متاحف بارزة على الواجهة البحرية مثل Adler Planetarium وField Museum وShedd Aquarium؛ مكان جيد لزيارة عدة مؤسسات ثقافية قرب بعضها، ونصيحة عملية: خطط ليوم كامل لزيارة أكثر من مؤسسة."
+   },
+   {
+    "name": "معهد الفن في شيكاغو (Art Institute of Chicago)",
+    "why": "مجموعات فنية عالمية تشمل الانطباعية والحديثة والكلاسيكية، وهو من أهم متاحف المدينة، نصيحة: تحقق من معروضات خاصة وجولات لتقليل وقت الانتظار."
+   },
+   {
+    "name": "متحف العلم والصناعة (Museum of Science and Industry)",
+    "why": "متحف تفاعلي شهير في هايد بارك يقدّم معارض عن النقل والطقس وتجارب عملية ومساحات مناسبة للعائلات؛ خصص وقتًا أطول للأطفال والمهتمين بالتجارب العملية."
+   },
+   {
+    "name": "نقطة المياه وممشى Navy Pier",
+    "why": "رصيف ترفيهي تاریخی يضم معالم مثل عجلة فيريس ومطاعم ومسارح وإطلالات على أفق المدينة، مناسب للنزهة العائلية والمشاهد البحرية."
+   },
+   {
+    "name": "ميلينيوم بارك (Cloud Gate وCrown Fountain)",
+    "why": "حديقة حضرية مركزية تضم الأعمال العامة الأكثر تصويرًا في المدينة مثل 'Cloud Gate'، مكان مناسب للتصوير والراحة في قلب المدينة؛ انتبه للأحداث الموسمية والاحتفالات هناك."
+   },
+   {
+    "name": "أكواريوم شيد (Shedd Aquarium)",
+    "why": "مؤسسة بحرية كبيرة تعرض دلافين وأسماك وأساليب الحياة البحرية؛ مناسبة للعائلات ومحبي الحياة البحرية، وتوجد ضمن معسكر المتاحف قرب البحيرة."
+   },
+   {
+    "name": "متحف فيلد للتاريخ الطبيعي (Field Museum)",
+    "why": "يحتوي على مجموعات طبيعية بارزة بما في ذلك هيكل تعتبره المدينة من أبرز معروضاتها، وهو خيار ممتاز لعشّاق التاريخ الطبيعي والآثار."
+   },
+   {
+    "name": "المشهد المعماري في الوسط التجاري (The Loop) والمبانى التاريخية",
+    "why": "الوسط التجاري يضم مجموعة مميزة من ناطحات السحاب وعمارة الرائحين مثل أعمال لويس سوليفان ومرتكزين على تطور ناطحات السحاب؛ جولة سيرا على الأقدام تمنحك نظرة شاملة على تاريخ العمارة في المدينة."
+   }
+  ],
+  "getting_around": "من السهل التنقل عبر المترو والقطارات المرتفعة والحافلات داخل المدينة، بينما الواجهة البحرية والمناطق المركزية قابلة للاستكشاف سيرًا على الأقدام. بإمكان الزوار الوصول إلى معظم المعالم الرئيسية باستخدام المواصلات العامة أو مشيًا من مناطق مركزيّة مثل Loop وNear North.",
+  "food": [
+   {
+    "name": "البيتزا على الطريقة العميقة (Chicago deep-dish pizza)",
+    "note": "طبق شهير محليًا بسعرات عالية وقطعة كبيرة تناسب المشاركة، وهو تجربة طعام مميزة في المدينة."
+   },
+   {
+    "name": "الستيك (Steakhouse)",
+    "note": "شيكاغو معروفة بمطاعم ستيك ممتازة؛ تناول ستيك في إحدى المطاعم المتخصصة تجربة تستحق لمحبي اللحوم."
+   },
+   {
+    "name": "مشاهد الطعام العرقي حسب الأحياء",
+    "note": "الأحياء تقدم مأكولات متخصصة: تشاينا تاون، جريكتاون، والحارات الشرق أوسطية والبولندية وغيرها، فاستكشف الحي المناسب لنكهتك المفضلة."
+   },
+   {
+    "name": "الطعام السريع والنابض بالحياة",
+    "note": "المدينة مشهورة بمشهد طعام الشارع والمطاعم الرخيصة والجيدة التي تقدم وجبات دسمة وبأسعار معقولة."
+   },
+   {
+    "name": "المخبوزات البولندية مثل الباتشكي (pączki)",
+    "note": "حلويات ومخبوزات محلية تنتشر في الأحياء البولندية، وتعتبر تقليدًا في أيام محددة مثل Fat Tuesday."
+   }
+  ],
+  "budget_tips": [
+   "اشترِ بطاقات دخول مجمّعة مثل CityPASS قبل الوصول لتغطية عدة متاحف وتجنّب الطوابير في بعض الأماكن.",
+   "استفد من البرامج والعروض المجانية أو أوقات الدخول المجانية التي تقدّمها بعض المتاحف لتقليل تكاليف التذاكر.",
+   "تناول الطعام في أحياء محلية وبعيدة قليلاً عن مناطق السياحة الرئيسية حيث تكون الخيارات الأرخص والأصيلة.",
+   "استعمل المواصلات العامة والمشي بدلاً من سيارات الأجرة لتقليل تكاليف التنقّل داخل المدينة."
+  ],
+  "safety": [
+   "كون حذرًا في المناطق المزدحمة من حيث السرقات المحمولة وحافظ على مقتنياتك الشخصية في الأماكن السياحية.",
+   "تجنّب المشي وحيدًا في أحياء غير معروفة ليلًا وكن على دراية بمسار التنقّل والخيارات الآمنة للعودة إلى مكان الإقامة.",
+   "احترم قواعد استخدام الشواطئ والمناطق العامة ولا تُعرّض نفسك للمجازفة عند السباحة إذا كانت الشواطئ مغلقة أو لا توجد خدمات إنقاذ."
+  ],
+  "itinerary": [
+   "اليوم الأول: جولة في وسط المدينة (The Loop) لزيارة معاهد الفن والأبنية التاريخية، زيارة ميلينيوم بارك والتجول حول نهر شيكاغو، وإنهاء اليوم على طول Magnificent Mile.",
+   "اليوم الثاني: تخصيص يوم كامل لمجمع المتاحف على الواجهة البحرية لزيارة Adler Planetarium وField Museum وShedd Aquarium، ثم نزهة ومساء في Navy Pier.",
+   "اليوم الثالث: زيارة متحف العلوم والصناعة في هايد بارك واستكشاف أحياء مثل لينكولن بارك أو هايد بارك لتناول الطعام المحلي وتجربة الشواطئ والحدائق على الواجهة البحریة."
+  ],
+  "faq": [
+   {
+    "q": "كم يوم أحتاج لرؤية معالم شيكاغو الأساسية؟",
+    "a": "يمكن رؤية أبرز المعالم خلال 2–4 أيام إذا تخطّطت جيدًا، لكن المتاحف والأحياء المتنوعة تكفي لأسبوع أو أكثر إذا رغبت في زيارات أكثر تفصيلاً."
+   },
+   {
+    "q": "هل شيكاغو مدينة مكلفة؟",
+    "a": "بالمقارنة مع مدن أمريكية كبرى أخرى، قد تكون الإقامة أرخص نسبيًا، ويمكن التحكم في الميزانية باختيار الطعام المحلي والمواصلات العامة والمعارض المجانية أو المخفضة."
+   },
+   {
+    "q": "هل شيكاغو آمنة للسياح؟",
+    "a": "مثل أي مدينة كبيرة، هناك مواقع أكثر أمانًا وأخرى أقل أمانًا؛ اتبع الاحتياطات العامة في المناطق المزدحمة وتجنّب المشي في أحياء غير مألوفة ليلاً."
+   },
+   {
+    "q": "ما أفضل منطقة للإقامة للسياح؟",
+    "a": "المناطق القريبة من Loop وNear North وLincoln Park مناسبة للسياح لأنها قريبة من المتاحف والمعالم وواجهة البحيرة، وتيسّر المشي والوصول للمواصلات العامة."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط المدينة؟",
+    "a": "هناك خيارات مواصلات عامة وتوصيلات خاصة إلى وسط المدينة ومناطقها الرئيسية؛ تحقق من خيارات المطار التي تهبط فيها واختر الأنسب لجدولك وميزانيتك."
+   }
+  ]
+ }
+}

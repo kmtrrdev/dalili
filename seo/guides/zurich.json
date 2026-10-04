@@ -1,0 +1,225 @@
+{
+ "slug": "zurich",
+ "name": "Zurich",
+ "country": "Switzerland",
+ "tags": [
+  "shopping",
+  "culture"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Zurich",
+ "en": {
+  "city_name": "Zurich",
+  "country_name": "Switzerland",
+  "title": "Zurich travel guide: what to see, eat and know",
+  "meta_description": "Practical Zurich travel guide with top sights, food to try, transport tips, budget advice and a 3-day itinerary for first-time visitors.",
+  "h1": "Zurich travel guide: what to see, eat and know",
+  "intro": [
+   "Zurich is Switzerland's largest city and a major international financial and cultural centre, positioned where the Limmat meets Lake Zurich. Many visitors pass through Zürich on their way to the Alps, but the city itself offers historic neighbourhoods, museums and lakefront leisure that reward a stay.",
+   "The city combines Swiss-German traditions with a cosmopolitan feel thanks to international businesses, universities and organizations based here. Zurich is efficient, clean and compact, making it easy to explore on foot, by tram or by short train journeys."
+  ],
+  "best_time": "Summer is popular for lakeside promenades, river bathing and steam-ship cruises, while winter is convenient for day trips to nearby ski resorts by train; expect larger crowds in the warm months. Note that most shops and supermarkets are closed on Sundays, so plan shopping for Saturdays or weekdays.",
+  "top_sights": [
+   {
+    "name": "Bahnhofstrasse",
+    "why": "One of the world's best-known shopping streets, running from the main station to the lake; it's a must-see for window-shopping and people-watching, though many shops close on Sundays so schedule visits accordingly."
+   },
+   {
+    "name": "Lindenhof",
+    "why": "A hill in the heart of the old town offering a pleasant view over the city and the site of a former Roman fort; it's a good short stop for orientation and photos."
+   },
+   {
+    "name": "Lake Promenade",
+    "why": "A lakeside boardwalk ideal for evening strolls or relaxing on sunny days and popular with locals; start at Bellevue and walk toward Tiefenbrunnen for the full stretch."
+   },
+   {
+    "name": "Grossmünster",
+    "why": "An imposing Romanesque church associated with the Reformation; you can climb the tower for expansive city views, but be prepared for narrow, steep stairs."
+   },
+   {
+    "name": "Fraumünster",
+    "why": "A historic Gothic church known for its Chagall stained-glass windows; photography is not permitted inside, so enjoy the artworks quietly."
+   },
+   {
+    "name": "Niederdorf",
+    "why": "The old-town quarter with narrow alleys, restaurants and nightlife aimed at a younger crowd; it's lively in the evenings and good for exploring bars and eateries."
+   },
+   {
+    "name": "Uetliberg",
+    "why": "A hill overlooking Zurich with panoramic views and a tall viewing tower; hike up or take the S10 train from the main station for a short journey to the summit and start of the Planetenweg."
+   },
+   {
+    "name": "Zurich Zoo",
+    "why": "A large zoo that includes the Masoala Rainforest Hall, making it an engaging visit for families and animal lovers interested in immersive exhibits."
+   }
+  ],
+  "getting_around": "Zurich is well connected by trains and trams; the city centre and old town are easy to reach on foot or by public transport. For airport connections and regional travel, the city's main railway station links to wider Swiss rail services, and short trains serve nearby hills and ski destinations.",
+  "food": [
+   {
+    "name": "Zürcher Geschnetzeltes",
+    "note": "Sliced veal in a creamy wine sauce, considered a classic Zurich dish often served with potatoes or rösti."
+   },
+   {
+    "name": "Rösti",
+    "note": "A Swiss potato pancake, crispy on the outside and commonly paired with meat dishes or eggs."
+   },
+   {
+    "name": "Street bratwurst",
+    "note": "Grilled sausages from stands, usually served in a crusty roll with mustard for a quick local snack."
+   },
+   {
+    "name": "Müesli",
+    "note": "A Swiss breakfast cereal invented locally; try it in cafés for a traditional start to the day."
+   },
+   {
+    "name": "Swiss chocolates and patisserie",
+    "note": "Zurich offers a wide range of chocolates and pastries from confectioneries and bakeries worth sampling."
+   }
+  ],
+  "budget_tips": [
+   "Plan shopping for Saturday because most shops and supermarkets are closed on Sundays.",
+   "Use supermarkets like Migros or Coop to assemble affordable meals and sample local products rather than eating out for every meal.",
+   "Take advantage of short train journeys and public transport to reach nearby hiking or lake attractions instead of guided tours.",
+   "Visit free or low-cost public sights such as the Lindenhof, lake promenade and walking the old town to enjoy the city without high expenses."
+  ],
+  "safety": [
+   "Zurich is generally safe and very clean, but ordinary precautions against pickpocketing in busy tourist areas are sensible.",
+   "Langstrasse is a multicultural and lively area with nightlife; be alert in the evenings as it can attract more police and incidents than other parts of town.",
+   "When swimming in the Limmat or at public river baths bring suitable footwear and locks for lockers when provided; follow local rules at bathing spots."
+  ],
+  "itinerary": [
+   "Day 1: Explore the old town on foot—walk Bahnhofstrasse down to the lake, visit the Lindenhof, see Fraumünster and Grossmünster, then relax along the Lake Promenade in the late afternoon.",
+   "Day 2: Take the Polybahn up to ETH, enjoy the terrace views, visit nearby museums such as the Kunsthaus or Landesmuseum, then discover Niederdorf's narrow streets and evening bars.",
+   "Day 3: Head to Uetliberg for panoramic views and a section of the Planetenweg, or take a boat trip on the Zürichsee in season; finish with a visit to the Zoo or the China Garden by the lake."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Zurich?",
+    "a": "Two to three days lets you see the main sights in the old town, enjoy the lakefront and take one short excursion such as Uetliberg or a boat trip."
+   },
+   {
+    "q": "Is Zurich expensive?",
+    "a": "Zurich has a high standard of living and prices tend to be higher than in many other cities; budgeting with supermarket meals and free outdoor activities helps control costs."
+   },
+   {
+    "q": "Is Zurich safe for tourists?",
+    "a": "Zurich is generally very safe and well-maintained; stay aware in nightlife areas such as Langstrasse and use normal urban precautions against petty crime."
+   },
+   {
+    "q": "Which area is best to stay in Zurich?",
+    "a": "Staying near the old town or close to the main railway station provides easy access to major sights, trams and regional trains for day trips."
+   },
+   {
+    "q": "How do I get from the main station to the lake or hill viewpoints?",
+    "a": "The main station is within walking distance of Bahnhofstrasse and the lake; take the Polybahn or short trams and local trains to reach hill viewpoints such as ETH terraces or Uetliberg."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "زوريخ",
+  "country_name": "سويسرا",
+  "title": "دليل سفر زوريخ: ماذا ترى وتفعل وتذوق",
+  "meta_description": "دليل زوريخ يُغطي أهم المعالم، أنشطة على البحيرة والتلال، أطباق محلية، نصائح للميزانية وخطة سفر لثلاثة أيام.",
+  "h1": "دليل السفر إلى زوريخ: معالم، طعام ونصائح عملية",
+  "intro": [
+   "زوريخ هي أكبر مدن سويسرا ومركز مالي وثقافي في الناطقين بالألمانية، وتقع عند نقطة التقاء نهر ليمات وبحيرة زيورخ. كثير من الزوار يمرون عبرها للوصول إلى جبال الألب القريبة، لكن المدينة نفسها تستحق وقتًا للاستكشاف.",
+   "المدينة تجمع بين كفاءة خدمات عامة عالية ومعيشة نظيفة ومنظمة، وهي موطن لجامعات ومؤسسات دولية وشركات كبيرة، ما يجعل أجواءها متعددة الثقافات وتستقبل لغات وخبرات متنوعة."
+  ],
+  "best_time": "أفضل وقت لزيارة زوريخ هو الربيع وحتى أوائل الخريف للاستفادة من أنشطة البحيرة والرحلات النهرية، كما أن الشتاء مناسب إذا أردت الجمع بين زيارة المدينة والتزلج في منتجعات قريبة. انتبه أن معظم المتاجر مغلقة يوم الأحد.",
+  "top_sights": [
+   {
+    "name": "شارع Bahnhofstrasse",
+    "why": "شارع رئيسي للتسوّق يمتد من محطة القطار إلى البحيرة ويشتهر بمحلات راقية؛ مرّ به لتجربة المشي والتسوق أو لمجرد المشاهدة."
+   },
+   {
+    "name": "ليندنهوف (Lindenhof)",
+    "why": "تل وسط المدينة القديمة يوفر منظرًا جميلًا على المدينة ومكانًا له جذور رومانية؛ مناسب للاستراحة ولالتقاط صور للمدينة."
+   },
+   {
+    "name": "كورنيش البحيرة (Lake Promenade)",
+    "why": "ممشى على طول البحيرة مثالي للنزهات الصيفية ومشاهدة الغروب، ويمتد من بلفيو نحو تيفينبرونن مع مساحات عشبية مزدحمة في الأيام المشمسة."
+   },
+   {
+    "name": "Grossmünster",
+    "why": "كنيسة رومانسكية قديمة ومرموزة للإصلاح البروتستانتي؛ يمكن الصعود إلى البرج لإطلالة بانورامية وإن كانت السلالم ضيقة."
+   },
+   {
+    "name": "Fraumünster",
+    "why": "كنيسة قوطية سابقة مع نوافذ رسمها مارك شاغال؛ الزيارة داخلها قيمة ثقافية وممنوع التصوير و التصوير بالفيديو داخلها."
+   },
+   {
+    "name": "Uetliberg",
+    "why": "تل يطل على زوريخ ويمكن الوصول إليه سيرًا أو بالقطار S10 من محطة هوبتباهنهوف خلال حوالي 20 دقيقة؛ يوفر مسارات مشي وإطلالات 360 درجة وبرج مشاهدة."
+   },
+   {
+    "name": "نيدردورف (Niederdorf)",
+    "why": "البلدة القديمة ذات الأزقة والمطاعم والمتاجر والمقاهي، وحي ليلي شاب مليء بالحياة الشعبية والبارات."
+   },
+   {
+    "name": "زوريخ زيولوجيكال بارك (Zoo) وبركة ماسوالا",
+    "why": "حديقة الحيوانات متطورة ويستحق قسم غابة الماسوالا المطرية الجديدة الزيارة للقاء حيوانات وبيئات استوائية مصممة بعناية."
+   }
+  ],
+  "getting_around": "المطار ومحطة القطار الرئيسية تجعل زوريخ نقطة دخول سهلة إلى سويسرا وتوفر وصلات ممتازة بالقطارات المحلية والإقليمية. داخل المدينة يعتمد الكثيرون على الترام والحافلات والمشي؛ المناطق المركزية متصلة جيدًا وملائمة للاستكشاف سيرًا.",
+  "food": [
+   {
+    "name": "Zürcher Geschnetzeltes",
+    "note": "طبق كلاسيكي من شرائح العجل مع صلصة كريمية وغالبًا يقدم مع البطاطس أو الرösti."
+   },
+   {
+    "name": "رösti",
+    "note": "فطيرة بطاطس سويسرية مقلية ومقرمشة تُقدم كطبق جانبي مع أطباق اللحم."
+   },
+   {
+    "name": "براتفورست من أكشاك الشارع",
+    "note": "نقانق مشوية تقدم عادة في رغيف خبز خشن مع خردل، وجبة سريعة تقليدية."
+   },
+   {
+    "name": "müesli على الإفطار",
+    "note": "حوض حبوب منشأه سويسريًا مع حليب وفواكه يعد خيار إفطار شائع وصحي."
+   },
+   {
+    "name": "شوكولاتة ومخبوزات محلية",
+    "note": "مجموعة واسعة من الشوكولاتة والحلويات والخبز الطازج المتاح في المخابز والمتاجر المتخصصة."
+   }
+  ],
+  "budget_tips": [
+   "خطط مشترياتك قبل يوم الأحد لأن معظم المتاجر مغلقة في ذلك اليوم.",
+   "استخدم المتاجر الكبيرة والسوبرماركت (مثل Migros أو Coop) لتجميع وجبات اقتصادية بدلًا من تناول الطعام في المطاعم طوال الوقت.",
+   "استفد من المشي والترام داخل المركز بدلًا من الاعتماد الدائم على سيارات الأجرة.",
+   "ابحث عن التذاكر المشتركة للقطار والأنشطة الموسمية مثل تذاكر 'snow'n'rail' عند الرغبة بالذهاب للتزلج من زوريخ."
+  ],
+  "safety": [
+   "زوريخ آمنة عمومًا لكن كن حذرًا في منطقة لانغشتراسه المسائية لأنها أكثر حيوية وتتضمن أنشطة ليلية؛ احفظ متعلقاتك الشخصية.",
+   "احترم قواعد التصوير داخل مواقع مثل فراومونستر حيث يُمنع التصوير داخل الكنيسة.",
+   "التزم بقوانين النقل العام واستخدم الممرات والأرصفة بشكل آمن؛ البنية التحتية منظمة وتوقع دقة المواعيد.",
+   "احترم العادات المحلية مثل إغلاق المحلات يوم الأحد وخفض الضوضاء في الأحياء السكنية في المساء."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشف المدينة القديمة؛ ابدأ من محطة هوبتباهنهوف وتمشّ على Bahnhofstrasse نحو البحيرة، زر ليندنهوف، وزيارة Grossmünster وFraumünster ثم نزهة على كورنيش البحيرة.",
+   "اليوم الثاني: اخصصه للمتحف والحدائق؛ زر Landesmuseum وKunsthaus أو Rietberg حسب اهتمامك، ثم قم بزيارة China Garden وPavillon Le Corbusier إذا رغبت، وأنهِ اليوم بمنطقة Niederdorf للمطاعم والبارات.",
+   "اليوم الثالث: انطلق إلى Uetliberg للمشي أو ركوب القطار S10 والاستمتاع بالإطلالات، وبعد العودة جرّب قاربًا أو رحلة نهرية على البحيرة أو استئجار زورق صغير للاسترخاء على الماء."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لزيارة زوريخ؟",
+    "a": "ثلاثة أيام تكفي لمعرفة معالم المدينة الرئيسية، زيارة متحف أو اثنين والقيام برحلة إلى Uetliberg أو قضاء وقت عند البحيرة. يمكنك تمديد الزيارة إذا أردت رحلات تزلج أو استكشاف مناطق قريبة."
+   },
+   {
+    "q": "هل زوريخ مدينة مكلفة؟",
+    "a": "زوريخ تميل لأن تكون باهظة الثمن مقارنة بوجهات أخرى، لكن يمكنك تقليل النفقات باستخدام السوبرماركت، المشي ووسائل النقل العام والاستفادة من الأنشطة المجانية في الهواء الطلق."
+   },
+   {
+    "q": "هل زوريخ آمنة للسياح؟",
+    "a": "عمومًا آمنة للغاية ومريحة، لكن من الأفضل توخي الحذر في بعض الأحياء الليلية مثل لانغشتراسه وحفظ الأغراض الشخصية كما في أي مدينة كبيرة."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "المركز التاريخي قرب البحيرة ومحطة القطار مناسبان للزوار لأنهما يضعانك بالقرب من معظم المعالم والترام والقطارات. اختر حيًا قريبًا من وسائل النقل العامة لتسهيل الوصول إلى المطارات والرحلات اليومية."
+   },
+   {
+    "q": "كيف أصل من محطة القطار إلى وسط زوريخ؟",
+    "a": "محطة هوبتباهنهوف تقع في قلب المدينة ومتصلة بشبكة ترام وحافلات واسعة تسمح بسهولة الوصول للمشي إلى مناطق البحيرة والبلدة القديمة."
+   }
+  ]
+ }
+}

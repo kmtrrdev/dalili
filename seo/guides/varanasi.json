@@ -1,0 +1,226 @@
+{
+ "slug": "varanasi",
+ "name": "Varanasi",
+ "country": "India",
+ "tags": [
+  "culture",
+  "history"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Varanasi",
+ "en": {
+  "city_name": "Varanasi",
+  "country_name": "India",
+  "title": "Varanasi travel guide: Ghats, food and 3-day itinerary",
+  "meta_description": "Practical guide to Varanasi: top ghats and sights, local food, budget tips and a 3-day itinerary for first-time visitors.",
+  "h1": "Varanasi travel guide: what to see, eat and know",
+  "intro": [
+   "Varanasi (also called Banaras or Kashi) is a major pilgrimage city on the banks of the Ganges in Uttar Pradesh and one of India’s oldest continuously inhabited places. The riverfront life—pilgrims bathing, priests performing rites, and centuries-old temples—is the heart of the visitor experience.",
+   "The city draws visitors for its spiritual significance in Hinduism, Jainism and its connections to Buddhism, its dense network of alleyways, and the long ribbon of ghats along the western bank of the Ganges. Most sightseeing here is atmospheric: watching life and ritual at the river and exploring the old city’s lanes."
+  ],
+  "best_time": "Sunrise and sunset are the most atmospheric times to see the ghats and river ceremonies; boat trips are especially striking at these times. Mornings around the ghats are busy with bathing and rituals, while evenings are notable for the aarti ceremonies.",
+  "top_sights": [
+   {
+    "name": "Dasashwamedh Ghat",
+    "why": "Often regarded as the main ghat, it is the site of the large evening aarti ceremony that starts after sunset and lasts about 45 minutes; arrive early for a good view or watch from a boat on the river."
+   },
+   {
+    "name": "Manikarnika Ghat",
+    "why": "The principal cremation ghat, where funeral rites are performed in public view; visitors should remain respectful, keep quiet and avoid taking photographs while on or near the ghat."
+   },
+   {
+    "name": "Assi Ghat",
+    "why": "A popular area for tourists and long-term visitors with many hotels, restaurants and internet cafés close by; the morning aarti (Subah e Banars) is held here, making it a convenient base for early-riser activities."
+   },
+   {
+    "name": "Kedar Ghat",
+    "why": "Known for its brightly painted stripes and busy bathing areas, it is a photogenic spot to observe everyday river life—best seen from a short boat trip or while walking the riverside."
+   },
+   {
+    "name": "Jantar Mantar (Varanasi)",
+    "why": "A small observatory made of masonry instruments for astronomical measurement, with six instruments of five types and an attached Man Mahal that houses a Virtual Experiential Museum and an interactive musical gallery."
+   },
+   {
+    "name": "Rajghat (archaeological site)",
+    "why": "An archaeological site discovered during railway works in the 1940s that revealed structures dating back to the 2nd century BCE and evidence of continuous habitation since the 8th century BCE; useful for visitors interested in the city’s ancient past."
+   },
+   {
+    "name": "Rani Laxmibai Janmasthali",
+    "why": "A small gallery at the birthplace of Rani Laxmibai featuring a statue of her on horseback and gallery panels that depict her life, with most explanatory text in Hindi."
+   },
+   {
+    "name": "Tulsi and Panchganga Ghats",
+    "why": "Tulsi Ghat is notable for a large water purification plant and Panchganga Ghat marks the meeting of five rivers; both are part of the continuous sequence of ghats that define Varanasi’s riverfront and are best seen on foot or by boat."
+   }
+  ],
+  "getting_around": "Most sightseeing is done on foot through the old city’s alleys and along the ghats; walking tours are widely available and help locate markets and hidden sights. Boats can be chartered from ghats for sunrise or sunset trips and are the recommended way to view the ghats from the river.",
+  "food": [
+   {
+    "name": "Benares Dum Aloo",
+    "note": "A local version of dum aloo where potatoes are stuffed and cooked with jaggery, fennel and chilli paste, giving it a distinctive sweet‑spicy flavour."
+   },
+   {
+    "name": "Aloo chaat and street chaat",
+    "note": "Varanasi is known for lively street-food chaat stalls serving tangy and spicy snacks such as aloo chaat."
+   },
+   {
+    "name": "Varanasi paan",
+    "note": "A famous betel-leaf preparation available in sweet and tobacco versions; prices vary widely depending on ingredients."
+   },
+   {
+    "name": "Lassi from Pahalwan Lassi",
+    "note": "Pahalwan Lassi at Ravidas Gate in Lanka is known for its lassi, malaiyyo and rabri—traditional local dairy treats."
+   },
+   {
+    "name": "Rabri Malai Balai",
+    "note": "A popular dessert made with milk, sugar, almonds and pistachios, commonly found in small sweet shops."
+   }
+  ],
+  "budget_tips": [
+   "Haggle when shopping for Banarasi silk and other textiles—compare stalls in markets such as Gowdalia Chowk before buying.",
+   "Use walking tours to find affordable local eateries and markets rather than relying on restaurants near the main ghats.",
+   "Stay or base yourself near Assi Ghat if you want easier access to budget hotels, cafés and morning aarti events.",
+   "Bargain for boat rides; boatmen commonly accept negotiated fares (the guide notes typical bargaining to around ₹50/person per hour)."
+  ],
+  "safety": [
+   "Bathing in the Ganges carries health risks because of possible contamination; the guide recommends bathing further upstream (for example, Rishikesh) if concerned.",
+   "Be respectful and discreet at cremation ghats like Manikarnika — remain quiet and avoid photography; watch for scams in these areas.",
+   "Keep valuables secure in crowded alleys and markets; the narrow lanes are busy and include motorbikes and bicycles.",
+   "Avoid throwing non-biodegradable items into the river and refuse offers from boats that encourage pollutive 'offerings'."
+  ],
+  "itinerary": [
+   "Day 1: Walk the main ghats from north to south starting before sunrise, take a morning boat ride to watch bathing and rituals, then explore the alleys behind Dashashwamedh Ghat visiting the flower market, silk stalls and local chai shops.",
+   "Day 2: Take a guided walking tour to find hidden spots such as the Ayurvedic Herb Market and local bookshops, visit Jantar Mantar and the Man Mahal museum, and in the evening attend the Dasashwamedh aarti from the ghat or a boat.",
+   "Day 3: Visit Rajghat archaeological site and Rani Laxmibai Janmasthali, sample local sweets and lassi (for example at Pahalwan Lassi or Madhur Jalpan), and spend late afternoon exploring markets like Gowdalia Chowk for silk and handicrafts."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Varanasi?",
+    "a": "Three days lets you experience the ghats at sunrise and sunset, take a boat ride, explore the old city alleys and visit a few nearby sights such as Jantar Mantar and Rajghat."
+   },
+   {
+    "q": "Is Varanasi expensive?",
+    "a": "Costs vary: there are budget hotels and inexpensive street-food options, and also pricier riverfront restaurants and silk shops; haggle when shopping and choose local eateries to save money."
+   },
+   {
+    "q": "Is it safe to bathe in the Ganges in Varanasi?",
+    "a": "Bathing in Varanasi’s Ganges carries infection risks due to contamination; the guide suggests bathing further upstream if you wish to minimise health concerns and notes government-established barricades for men and women at some spots."
+   },
+   {
+    "q": "What is the best area to stay in Varanasi?",
+    "a": "Assi Ghat is popular with tourists and long-term visitors and offers many hotels, restaurants and internet cafés, plus easy access to the morning aarti."
+   },
+   {
+    "q": "How do I get around the ghats and old city?",
+    "a": "Most visitors walk the ghats and narrow alleys or join walking tours; boats are commonly chartered from the ghats for sunrise and sunset views and are an efficient way to see the riverfront."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "فاراناسي (Varanasi / بنارس)",
+  "country_name": "الهند",
+  "title": "فاراناسي travel guide: دليل السفر إلى بنارس",
+  "meta_description": "دليل سفر إلى فاراناسي: أهم المعالم على ضفاف الغانج، مأكولات محلية، نصائح للميزانية وبرنامج لثلاثة أيام.",
+  "h1": "دليل سفر فاراناسي (بنارس): ماذا ترى، تأكل وتعرف",
+  "intro": [
+   "فاراناسي (المعروفة أيضاً باسم بنارس أو كاشي) مدينة مقدسة تقع على ضفاف نهر الغانج في ولاية أتر برديش بالهند، وتعد أهم مقصد للحج في الهند لدى الهندوس والجاينيين ولها مكانة تاريخية في البوذية. المدينة من أقدم المدن المأهولة باستمرار في العالم وكان عدد سكانها حوالي 1.2 مليون نسمة حسب تعداد 2011.",
+   "الزيارة إلى فاراناسي هي تجربة حسية قوية: الطقوس على الغات عند شروق الشمس، القوارب على النهر، وسيناريوهات الاحتراق أمام الجمهور كلها جزء من الحياة اليومية. التجول في الأزقة القديمة ومشاهدة المدارس والمعابد والمهن التقليدية يكشف عن طابع المدينة العريق."
+  ],
+  "best_time": "أفضل الأوقات للزيارة تكون خارج ذروة الصيف الحارّ، والفترات حول الشِتاء والمواسم المعتدلة تكون أكثر راحة وتقلّ فيها الحشود. تجنب الأوقات شديدة الحرارة إذا كنت تريد التجول طويلاً في الأزقة أو ركوب قارب عند الشروق.",
+  "top_sights": [
+   {
+    "name": "الغانج والغات (Ghats of the Ganges)",
+    "why": "السلسلة المستمرة من 84 غات على الضفة الغربية بطول نحو 6.8 كم تمثل قلب المدينة، وهي المكان الأفضل لمشاهدة الطقوس الصباحية والمسائية؛ نصيحة عملية: احجز ركوب قارب عند الشروق أو الغروب لرؤية الغات من النهر."
+   },
+   {
+    "name": "منيكارنيكا غات (Manikarnika Ghat)",
+    "why": "أهم غات للحداد والاحتراق؛ مكان حساس ومؤثر تاريخياً ودينياً، يجب التحلي بالاحترام والهدوء وتجنّب التصوير عند الاقتراب."
+   },
+   {
+    "name": "داشاشواميد غات (Dashashwamedh Ghat)",
+    "why": "يُعرف بطقس الأارتي الكبير مساءً الذي يبدأ بعد الغروب ويستمر لحوالي 45 دقيقة؛ الوصول مبكراً يمنحك مكاناً أفضل للمشاهدة سواء من الشاطئ أو من القارب."
+   },
+   {
+    "name": "آسي غات (Assi Ghat)",
+    "why": "من الغات الشعبية بين السياح والطلاب المطولين، وتحيط بها فنادق ومقاهي ومطاعم؛ مناسب لمن يريد الإقامة قرب أنشطة النهر."
+   },
+   {
+    "name": "جانتر منتر فاراناسي (Jantar Mantar)",
+    "why": "مرصد نجمي مُكوّن من مجموعة أدوات حجرية لقياس الظواهر الفلكية، أصغر من نظائرته في دلهي وجايبور، ويضم متحف تجريبي مع عروض ضوئية وصوتية ونماذج عن حياة فاراناسي."
+   },
+   {
+    "name": "راجغات (Rajghat)",
+    "why": "موقع أثري اكتُشف أثناء توسيع محطة السكة الحديد في الأربعينيات ويحتوي على بقايا تاريخية تعود لعصور قديمة؛ مفيد للمهتمين بالتاريخ الأثري للمدينة."
+   },
+   {
+    "name": "معبد ومتحف راني لاكشميباي (Rani Laxmibai Janmasthali)",
+    "why": "مكان مولد راني لاكشميباي تحوّل إلى معرض صغير يحكي حياة البطلة عبر تماثيل وصور وكتابات، غالباً باللغة الهندية؛ مناسب لمن يهتم بالتاريخ السياسي والاجتماعي."
+   },
+   {
+    "name": "سوق السيلك والحرف (Gowdalia Chowk & silk markets)",
+    "why": "فاراناسي مشهورة بصناعة الحرير وفساتين الساري المزخرفة بالزري؛ التسوق هنا يمنح فرصة لمقارنة الجودة والأسعار والمساومة للحصول على صفقة أفضل."
+   }
+  ],
+  "getting_around": "الطريقة الكلاسيكية لرؤية الغات هي بركوب قارب تجدّيفي أو قارب بمحرك عند الشروق أو الغروب، كما أن المشي في الأزقة هو أفضل وسيلة لاكتشاف المتاجر والأسواق الصغيرة؛ استخدم الجولات المنظمة سيراً على الأقدام إذا رغبت في معرفة مواقع خفية ومعلومات محلية.",
+  "food": [
+   {
+    "name": "دوم ألو بناريسي (Benares Dum Aloo)",
+    "note": "طبق بطاطس محشوّة ومطبوخة بمرق يُنكّه بخليط من الجاجري (سكر الخام) والشمر ومعجون الفلفل الحار."
+   },
+   {
+    "name": "التشات والباذنجان البطاطس (Aloo chaat)",
+    "note": "طعام شارع شعبي وحارّ حلو، يُباع على نطاق واسع في البازارات والأزقة."
+   },
+   {
+    "name": "بان (Banarasi Paan)",
+    "note": "ورقة بتل محشوة بنكهات حلوة أو مع تبغ؛ النسخة الحلوة تُؤكل بوضع الورقة كاملة في الفم ومضغها."
+   },
+   {
+    "name": "لاسي من محلات شهيرة (Lassi — Pahalwan Lassi)",
+    "note": "لاسي غني بالملاصق والربري، متجر Pahalwan Lassi عند بوابة Ravidas معروف بتقديم لاسي ومالايو ورابري."
+   },
+   {
+    "name": "رابري مالاي بالاي (Rabri Malai Balai)",
+    "note": "حلوى محلية من الحليب والسكر واللوز والفستق، تُقدّم في محلات الحلويات التقليدية."
+   }
+  ],
+  "budget_tips": [
+   "تسوّق الحرير والحرف في أسواق مثل Gowdalia Chowk وقارن بين البائعين ومارس المساومة للحصول على سعر أفضل.",
+   "ركوب القارب المشترك عند الشروق أو الغروب أسهل على الميزانية من استئجار قارب خاص، وتفاوض على السعر قبل الإقلاع.",
+   "اعتمد على مطاعم محلية وبائعين في الشوارع لتناول الطعام بدل المطاعم السياحية القريبة من الغات للحد من الإنفاق.",
+   "شارك في جولات مشي جماعية بدل الجولات الخاصة المكلفة للوصول إلى أسواق وزوايا المدينة الخفية."
+  ],
+  "safety": [
+   "اظهر الاحترام عند زيارة الغات ومواقع الاحتراق: التزم بالهدوء ولا تصور الأشخاص في لحظات الطقوس أو الاحتراق.",
+   "انتبه للمخاطر الصحية عند السباحة في النهر بسبب التلوث والمخاطر البيولوجية، وفكر بالاستحمام في أماكن أكثر أماناً إذا رغبت بذلك.",
+   "راقب جيوبك في الأزقة المزدحمة وتجنب حمل مجوهرات ثمينة أو مبالغ نقدية كبيرة أثناء التجول.",
+   "كن حذراً من العروض المفاجئة والصفقات التي تبدو جيدة للغاية، خصوصاً عند مواقع الجذب حيث تنتشر عمليات الاحتيال."
+  ],
+  "itinerary": [
+   "اليوم 1: ابدأ بركوب قارب عند الشروق لرؤية الغات والطقوس الصباحية، ثم تجوّل في الغات الشمالية وزُر داشاشواميد غات مساءً لمشاهدة طقس الأارتي.",
+   "اليوم 2: امشِ في الأزقة خلف داشاشواميد وزُر أسواق الحرير ومحلات الحلويات مثل Madhur Jalpan، واستكشف متاجر الكتب التقليدية ومحلات العطور والأدوات الموسيقية.",
+   "اليوم 3: زر جانتر منتر والمعارض المتصلة به، ثم قم بزيارة راجغات ومتحف راني لاكشميباي، وأنهِ اليوم في آسي غات أو أحد المقاهي القريبة للاسترخاء."
+  ],
+  "faq": [
+   {
+    "q": "كم يوم أحتاج في فاراناسي؟",
+    "a": "ثلاثة أيام تمنحك وقتاً جيداً لرؤية الغات الرئيسية، تجربة ركوب القارب عند الشروق، والتجوّل في الأزقة وزيارة بعض المتاحف والأسواق المحلية."
+   },
+   {
+    "q": "هل فاراناسي مدينة مكلفة للزيارة؟",
+    "a": "فاراناسي تقدم خيارات واسعة من الميزانية إلى الفاخرة؛ يمكن تقليل التكاليف بتناول الطعام في محلات الشارع، استخدام القوارب المشتركة والتسوق بالمساومة في الأسواق."
+   },
+   {
+    "q": "هل فاراناسي آمنة للسياح؟",
+    "a": "المدينة عامة مشهورة بالسياحة لكن يجب توخي الحذر كالمعتاد: راقب الأغراض الشخصية، تجنّب التصوير في مواقع الاحتراق، وانتبه للاحتيال في مناطق الجذب."
+   },
+   {
+    "q": "ما أفضل مكان للإقامة؟",
+    "a": "الاقامة قرب آسي غات مناسبة للسائحين والطلاب طويل الأمد بفضل وجود فنادق ومقاهي وخدمات قريبة، أما من يريد رؤية الأارتي فيفضل الاقتراب من داشاشواميد غات."
+   },
+   {
+    "q": "كيف أصل من المطار إلى المدينة؟",
+    "a": "يوجد اتصال للنقل إلى المدينة عبر طرق برية ومواصلات محلية؛ عند الوصول اتبع وسائل النقل الرسمية أو ترتيبات النقل المسبقة للوصول بأمان إلى الغات ومناطق الإقامة."
+   }
+  ]
+ }
+}

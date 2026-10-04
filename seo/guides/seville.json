@@ -1,0 +1,226 @@
+{
+ "slug": "seville",
+ "name": "Seville",
+ "country": "Spain",
+ "tags": [
+  "history",
+  "culture",
+  "food"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Seville",
+ "en": {
+  "city_name": "Seville",
+  "country_name": "Spain",
+  "title": "Seville travel guide: what to see, eat and know",
+  "meta_description": "Practical Seville travel guide with top sights (Alcázar, Cathedral, Plaza de España), tapas, budget tips, safety and a 3-day itinerary.",
+  "h1": "Seville travel guide: what to see, eat and know",
+  "intro": [
+   "Seville (Sevilla) is the capital of Andalusia, a city shaped by its Islamic past, the Age of Discovery and a vibrant flamenco culture. The city blends monumental architecture, lively festivals and a busy nightlife with well-developed tourist facilities.",
+   "Visitors will find a compact historic centre clustered around the Guadalquivir River, easily explored on foot, with major highlights from the cathedral and Alcázar to atmospheric neighbourhoods like Barrio Santa Cruz and Triana."
+  ],
+  "best_time": "Spring and autumn are popular for pleasant temperatures and lively festivals; summers are very hot and can be crowded, while winter is milder and quieter. Consider festival dates if you want to experience Semana Santa or the Feria de Abril, but expect larger crowds then.",
+  "top_sights": [
+   {
+    "name": "Cathedral and La Giralda",
+    "why": "A massive 15th-century cathedral built on the site of the great mosque; it contains Columbus's tomb and offers panoramic views from La Giralda, the former minaret — buy combined tickets at the nearby Church of Salvador if there are long queues at the cathedral."
+   },
+   {
+    "name": "Real Alcázar",
+    "why": "A Mudéjar palace with lavish rooms, courtyards and gardens that reflect centuries of history; it can be a cool refuge in summer and gets busy in high season, so purchase tickets in advance from the official website and enter through the tourist 'Lion's Gate' near the cathedral."
+   },
+   {
+    "name": "Plaza de España",
+    "why": "A grand semi-circular plaza built for the 1929 exhibition with tiled maps representing Spain's regions and cinematic associations; visit early on a weekday or near closing time for quieter views."
+   },
+   {
+    "name": "Barrio Santa Cruz",
+    "why": "The old Jewish Quarter of narrow, winding lanes east of the cathedral and north of the Alcázar; it's the city's most picturesque area with many bars and restaurants but also the most tourist-oriented."
+   },
+   {
+    "name": "Torre del Oro",
+    "why": "A 13th-century river tower that once guarded the port and now houses a maritime museum; river cruises depart nearby beneath the tower for a different view of the city."
+   },
+   {
+    "name": "Parque María Luisa",
+    "why": "A landscaped park created for the 1929 World's Fair, containing monuments and museums and bordering the historic centre; a pleasant place to stroll after visiting nearby sights."
+   },
+   {
+    "name": "Real Fábrica de Tabacos (University of Seville)",
+    "why": "An imposing 18th-century building that was once Spain's largest industrial site and inspired scenes in the opera Carmen; the complex houses university functions—be respectful and avoid disturbing academic activities."
+   },
+   {
+    "name": "Palacio de Las Dueñas",
+    "why": "A historic 15th-century palace with Renaissance and Gothic-Mudéjar elements, notable collections of art and furniture, and links to local history and literary figures; it offers insight into Andalusian customs."
+   }
+  ],
+  "getting_around": "Seville's historic centre is compact and best explored on foot; many attractions are within walking distance of each other. River cruises leave from beneath the Torre del Oro, and horse-drawn carriages operate near the cathedral (avoid rides in the heat of the day for the animals' sake).",
+  "food": [
+   {
+    "name": "Tapas",
+    "note": "Small plates are the local norm — try ordering several to share; typical items include tortilla española, patatas bravas and jamón."
+   },
+   {
+    "name": "Pulpo gallego",
+    "note": "Galician-style octopus is commonly served as a tapa and is a regional favourite you can find in many bars."
+   },
+   {
+    "name": "Queso manchego",
+    "note": "Aged sheep's milk cheese from La Mancha, often offered as a tapa with bread or olives."
+   },
+   {
+    "name": "Local olives and cured ham",
+    "note": "Simple, high-quality staples widely available at bars and markets across the city."
+   },
+   {
+    "name": "Sangria or local drinks in riverside bars",
+    "note": "Riverside spots offer views but may be pricier or less focused on food quality compared with inland bars."
+   }
+  ],
+  "budget_tips": [
+   "Eat at local bars away from the main tourist streets; places without English menus often have lower prices and good food.",
+   "Buy Alcázar tickets online in advance from the official site to avoid queues and ensure entry at busy times.",
+   "Use the compact city centre on foot to save on transport costs — many top sights are close together.",
+   "Shop at local supermarkets (M.A.S., Dia) or markets for groceries rather than larger department stores to save money."
+  ],
+  "safety": [
+   "Be mindful of pickpockets in crowded tourist areas such as the cathedral, Plaza de España and Barrio Santa Cruz.",
+   "Avoid leaving horses in carriages exposed to direct sun during the hottest part of summer; consider other transport options for animal welfare.",
+   "Respect university buildings and private property—do not enter closed rooms or disrupt lectures at the Real Fábrica de Tabacos.",
+   "If you have dietary restrictions, be explicit with staff (for example, specify no fish if you want a true vegetarian meal) to avoid misunderstandings."
+  ],
+  "itinerary": [
+   "Day 1: Start at the Cathedral and climb La Giralda, then explore Barrio Santa Cruz, have tapas near the cathedral and finish with an evening flamenco show in El Arenal or at a dedicated venue like La Casa del Flamenco.",
+   "Day 2: Spend the morning at the Real Alcázar and its gardens, walk through Parque María Luisa to Plaza de España, then visit the Real Fábrica de Tabacos and stroll across to Triana for ceramics and riverside bars.",
+   "Day 3: Visit Palacio de Las Dueñas and the Hospital de los Venerables, take a short Guadalquivir river cruise from beneath the Torre del Oro, and wander the Alameda de Hércules for a less touristy dining scene."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Seville?",
+    "a": "Three full days lets you see the major monuments (Cathedral, Alcázar, Plaza de España), experience flamenco and explore neighbourhoods like Barrio Santa Cruz and Triana at a relaxed pace."
+   },
+   {
+    "q": "Is Seville expensive?",
+    "a": "Seville offers a range of options; eating in local bars and shopping at markets or supermarkets can keep costs low, while riverside restaurants and tourist-oriented venues tend to be pricier."
+   },
+   {
+    "q": "Is Seville safe for tourists?",
+    "a": "Seville is generally safe, but take usual urban precautions against pickpockets in crowded areas and be mindful around busy tourist sites and public transport hubs."
+   },
+   {
+    "q": "Where is the best area to stay?",
+    "a": "Staying in or near the historic centre (around the cathedral, Barrio Santa Cruz or El Arenal) puts you within walking distance of most attractions and many tapas bars."
+   },
+   {
+    "q": "How do I get from the airport to the city?",
+    "a": "The city gained improved links after the 1992 exposition, including a new airport; from the airport you can use public transport or other standard airport transfer options to reach the city centre."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "إشبيلية (Seville)",
+  "country_name": "إسبانيا",
+  "title": "إشبيلية سفر: دليل السفر إلى Seville",
+  "meta_description": "دليل إشبيلية: أهم المعالم (كاتدرائية، الألكازار، بلازا دي إسبانيا)، أكل التاباس، نصائح للميزانية وخطة لثلاثة أيام.",
+  "h1": "دليل إشبيلية: ماذا ترى وتأكل وتعرف في Seville",
+  "intro": [
+   "إشبيلية هي عاصمة الأندلس ومدينة غنية بالتراث العربي وعصور الاكتشاف، وتشتهر بمشهد الفلامنكو وحياة ليلية نشطة ومهرجانات ملونة. مرافق السياحة فيها متطورة وتجعلها وجهة مناسبة للزوار لأول مرة.",
+   "يمر عبر المدينة نهر الوادي الكبير (Guadalquivir) الذي شكل دورها التجاري منذ العصر الروماني، ولا تزال آثار العصور الإسلامية والعهد الإسباني الذهبي واضحة في العمارة والمتاحف والساحات."
+  ],
+  "best_time": "أفضل مواسم الزيارة هي الربيع والخريف عندما تكون درجات الحرارة معقولة والمهرجانات مثل أسبوع الآلام (Semana Santa) ومهرجان أبريل (Feria de Abril) تعطي المدينة أجواء مميزة؛ في الصيف ترتفع حرارة المدينة ويزدحم المركز بالزوار.",
+  "top_sights": [
+   {
+    "name": "كاتدرائية إشبيلية (Cathedral) وLa Giralda",
+    "why": "كاتدرائية ضخمة مبنية على موقع المسجد الكبير السابق وتضم قبر كريستوفر كولومبوس؛ يمكن الصعود برامب إلى برج لا جيرالدا لمشاهدة إطلالة على المدينة. إن كان هناك طابور تذاكر، اشترِ تذكرة مشتركة من كنيسة السلفادور القريبة."
+   },
+   {
+    "name": "قصر الألكازار الملكي (Real Alcázar)",
+    "why": "قصر مزخرف بأسلوب موديخار من العصور الوسطى مع حدائق واسعة وممرات متشابكة وهو ملاذ بارد في الصيف؛ يُنصح بحجز التذاكر مسبقًا من الموقع الرسمي وتفادي الصفوف، ومدخل \"بوابة الأسد\" السياحي يواجه الكاتدرائية."
+   },
+   {
+    "name": "حي باريو سانتا كروز",
+    "why": "الحي اليهودي القديم ذو أزقة ضيقة وساحات صغيرة، ممتع للمشي وتجد فيه مطاعم وبارات عديدة؛ كونه الأكثر جذباً للسياح فابتعد عن الشوارع الأكثر ازدحاماً للعثور على مقاهي أهدأ."
+   },
+   {
+    "name": "برج الذهب (Torre del Oro)",
+    "why": "برج من القرن الثالث عشر يقع على نهر الوادي الكبير ويحتوي اليوم على متحف بحري؛ تجول قرب الضفة ثم اطلع على المتحف للتعرف على تاريخ الميناء."
+   },
+   {
+    "name": "بارك ماريا لويزا (Parque María Luisa)",
+    "why": "حديقة عامة أنشئت لمعرض 1929 بها نصب وطرق ظليلة ومتاحف مجاورة، مكان جيد للهروب من ضوضاء المدينة والتنزه أو ركوب عربة صغيرة حول المنتزه."
+   },
+   {
+    "name": "بلازا دي إسبانيا (Plaza de España)",
+    "why": "ميدان شبه دائري تزينه بلاطات خزفية تمثل أقاليم إسبانيا واستخدم كموقع تصوير لأعمال سينمائية؛ لالتقاط صور جيدة تجده هادئاً في الصباح الباكر أو قبيل الإغلاق."
+   },
+   {
+    "name": "مستشفى لوس فينيرابليس (Hospital de los Venerables)",
+    "why": "مبنى من القرن السابع عشر يمثل قمة العمارة الأندلسية مع كنيسة باروكية وقطع فنية كلوحة سانتا روفينا لفيلاثكيث؛ زيارة كنيسة الموقع موصى بها بشدة."
+   },
+   {
+    "name": "قصر لاس دويناس (Palacio de Las Dueñas)",
+    "why": "قصر يعود للقرن الخامس عشر مرتبط بعائلة ألبا ويضم مجموعة فنية ومخطوطات ومنزل شاعر أنطونيو ماتشادو؛ يوفر فهماً جيداً للتقاليد والتاريخ المحلي."
+   }
+  ],
+  "getting_around": "يخدم مطار المدينة ومحطة القطار محيط المدينة بعدة وصلات وتم تطوير البنية التحتية بعد معرض 1992. داخل المدينة المشي هو أفضل وسيلة للتجول في المركز التاريخي، وتتوفر أيضاً ترام وحافلات وتاكسي للتنقل بين الأحياء.",
+  "food": [
+   {
+    "name": "التاباس",
+    "note": "حجم الطبق قد يكون تابة أو نصف حصة أو حصة كاملة؛ جرب أصنافاً متعددة حول الكاتدرائية لاكتشاف المفضل لديك."
+   },
+   {
+    "name": "تورتيلا إسبانيولا (omelet البطاطس)",
+    "note": "أومليت البطاطس طبق تاباس كلاسيكي موجود في معظم البارات ويعتبر وجبة خفيفة مشبعة."
+   },
+   {
+    "name": "پولبو غاليغو (أخطبوط)",
+    "note": "طبق مأكولات بحرية تقليدي يُعرض في العديد من حانات التاباس ويستحق التجربة."
+   },
+   {
+    "name": "خنزير إيبيري (jamón)",
+    "note": "شرائح من لحم الخنزير المدخن تُعرض عادة فوق البار وتعد من نكهات إشبيلية المميزة."
+   },
+   {
+    "name": "مشروبات محلية وسانغريا",
+    "note": "السقف الحار يجعل المشروبات الباردة والسانغريا خياراً منعشاً في الجلوس عند البارات القريبة من النهر."
+   }
+  ],
+  "budget_tips": [
+   "تناول الطعام في البارات المحلية التي لا تقدم قوائم بالإنجليزية للحصول على أسعار أدنى وجودة جيدة.",
+   "تسوق في سوبرماركتات مثل M.A.S. وDia لشراء مواد التموين بأرخص من المتاجر الكبرى.",
+   "اشترِ تذاكر معالم مثل الألكازار والكاتدرائية مسبقاً عبر المواقع الرسمية لتجنب الطوابير وإمكانية ارتفاع الأسعار السياحية.",
+   "امشِ في المركز التاريخي وزُر المتنزهات والساحات العامة مثل بلازا دي إسبانيا لتقليل نفقات النشاطات المدفوعة."
+  ],
+  "safety": [
+   "احترس من النشل في المناطق السياحية المزدحمة واحفظ مستنداتك الثمينة في مكان آمن.",
+   "تجنّب ركوب عربات الخيول في أشد ساعات الحرارة من باب توفير الراحة للحيوانات ولأن جودة الرحلة تتأثر بالحرارة.",
+   "كونك في مدينة سياحية، التزم بقواعد احترام الأماكن العامة والمباني الجامعية مثل عدم دخول غرف مغلقة أو مقاطعة المحاضرات."
+  ],
+  "itinerary": [
+   "اليوم الأول: ابدأ بجولة مشي في حي باريو سانتا كروز، زر الكاتدرائية وصعد إلى لا جيرالدا، ثم اشترِ تذكرة مشتركة لزيارة كنيسة السلفادور إذا كان هناك طابور؛ اختتم اليوم بعشاء تاباس حول الساحة.",
+   "اليوم الثاني: خصص الصباح لزيارة قصر الألكازار وحدائقه، ثم تمشى عبر بارك ماريا لويزا وزُر بلازا دي إسبانيا، وفي المساء حضر عرض فلامنكو في أحد الأماكن التقليدية بمنطقة إيل أرنال.",
+   "اليوم الثالث: ابدأ بزيارة برج الذهب والمتحف البحري، ثم تجول في حي تريانا عبر جسر النهر لزيارة ورش الفخار وشراء بلاطات تقليدية، وأنهِ اليوم بجولة بالقارب على نهر الوادي الكبير أو بجولة بعربة تجرها الخيول إلى المتنزه."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لزيارة إشبيلية؟",
+    "a": "ثلاثة أيام تكفي لتغطية أهم معالم المركز التاريخي مثل الكاتدرائية والألكازار وبلازا دي إسبانيا مع وقت لتجربة الفلامنكو وتذوق التاباس."
+   },
+   {
+    "q": "هل إشبيلية مدينة مكلفة؟",
+    "a": "تكلفة الزيارة متوسطة؛ يمكنك التحكم بالمصروف بالتسوق في أسواق ومحلات البقالة المحلية وتناول الطعام في البارات التقليدية للحصول على قيمة جيدة."
+   },
+   {
+    "q": "هل إشبيلية آمنة للسياح؟",
+    "a": "عمومًا المدينة آمنة لكن يجب أخذ الحيطة من النشل في الأماكن المزدحمة والحفاظ على المقتنيات الشخصية، مع احترام القوانين المحلية والأماكن الجامعية."
+   },
+   {
+    "q": "ما أفضل منطقة للإقامة؟",
+    "a": "المركز التاريخي القريب من الكاتدرائية وحي سانتا كروز مناسب للمشاهدة سيرًا على الأقدام، وهو عملي لزيارة معظم المعالم والمطاعم."
+   },
+   {
+    "q": "كيف أصل من المطار إلى المدينة؟",
+    "a": "المطار محسن بعد مشاريع 1992 ويوجد وصلات إلى وسط المدينة عبر وسائل النقل العام والقطارات والحافلات، ويمكن أيضًا استخدام تاكسي أو خدمات النقل عند الحاجة."
+   }
+  ]
+ }
+}

@@ -1,0 +1,225 @@
+{
+ "slug": "miami",
+ "name": "Miami",
+ "country": "United States",
+ "tags": [
+  "beach",
+  "nightlife"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Miami",
+ "en": {
+  "city_name": "Miami",
+  "country_name": "United States",
+  "title": "Miami travel guide: what to see, eat and know",
+  "meta_description": "Practical Miami travel guide with top sights, food (Nuevo Latino, Cuban), money-saving tips, 3-day itinerary and transport advice.",
+  "h1": "Miami travel guide: what to see, eat and know",
+  "intro": [
+   "Miami is a major city in southeastern United States and the second most populous city in Florida, at the heart of a large metropolitan area. The city itself is distinct from the well-known resort municipality of Miami Beach, which lies on a barrier island across Biscayne Bay.",
+   "This guide focuses on the city of Miami: its neighbourhoods, food scene and city attractions. Some iconic names associated with Miami—like the Miami Zoo or certain professional sports teams—are actually located in suburbs of Miami‑Dade County or in neighbouring Broward County."
+  ],
+  "best_time": "Miami has mild, temperate weather year‑round, so beaches and outdoor activities are possible most months; however water can be cooler in winter. Expect higher crowds and activity during spring and late winter events, while summer brings heat and humidity.",
+  "top_sights": [
+   {
+    "name": "Virginia Key Beach Park (Virginia Beach)",
+    "why": "The only beach inside Miami city limits and a convenient place to enjoy sand and sea without crossing to Miami Beach; check local conditions before swimming as water temperature and currents vary."
+   },
+   {
+    "name": "Little Havana",
+    "why": "A neighbourhood long associated with Cuban culture and life in Miami, offering food, music and street life; plan time to walk and sample Cuban-influenced cuisine and cafés."
+   },
+   {
+    "name": "Downtown Miami",
+    "why": "The city's commercial and cultural centre where major venues and the Miami Heat play; it's a good base for museums, dining and waterfront views—wear comfortable shoes for walking between attractions."
+   },
+   {
+    "name": "Hard Rock Stadium and Miami International Autodrome area (Miami Gardens)",
+    "why": "Hard Rock Stadium hosts major sports and events, and the temporary Miami International Autodrome (used for Formula One) is set up at the stadium complex; check event schedules in advance as major events draw large crowds."
+   },
+   {
+    "name": "Design District",
+    "why": "Known for galleries, boutiques and restaurants, the Design District mixes retail and dining; it's an easy neighbourhood to combine with a meal and window shopping."
+   },
+   {
+    "name": "Coral Gables / University of Miami area",
+    "why": "Home to the University of Miami and leafy residential streets, this area offers a different, quieter side of the region and is where many college sports teams and university life are based."
+   },
+   {
+    "name": "Sports venues across the metro area",
+    "why": "Miami’s major league teams and college programs play in a number of nearby venues and suburbs, so sports fans should check which stadium or arena is hosting their event before travelling."
+   },
+   {
+    "name": "Biscayne Bay waterfront",
+    "why": "The bay defines much of Miami’s geography and offers scenic waterfronts and views toward Miami Beach and the barrier islands; strolls along the bay are a relaxing city activity."
+   }
+  ],
+  "getting_around": "Greater Miami is spread across many neighbourhoods and nearby suburbs, so allow time for travel between areas. The region is served by several transport options and airport connections; many visitors use a mix of public transit, rideshares or private cars depending on where they are staying and what they want to see.",
+  "food": [
+   {
+    "name": "Nuevo Latino / New World / Florribean cuisine",
+    "note": "A fusion cuisine that blends Latin American, Caribbean and local ingredients with European techniques and remains influential in many Miami restaurants."
+   },
+   {
+    "name": "Cuban cuisine",
+    "note": "A central part of Miami’s culinary identity, especially in neighbourhoods with Cuban heritage such as Little Havana."
+   },
+   {
+    "name": "Floribbean seafood",
+    "note": "Local seafood prepared with Caribbean and Latin flavours is a common offering across the city’s restaurants."
+   },
+   {
+    "name": "Restaurant Month (Miami Spice)",
+    "note": "A seasonal restaurant promotion in August and September when many restaurants offer special menus that can make dining at higher-end venues more accessible."
+   },
+   {
+    "name": "International cuisines",
+    "note": "Miami’s dining scene includes a wide range of global restaurants—Japanese, Middle Eastern, Italian and more—reflecting the city’s diversity."
+   }
+  ],
+  "budget_tips": [
+   "Plan visits during Miami Spice (Restaurant Month) in August–September to access fixed-price menus at many restaurants.",
+   "Buy groceries and basics from major supermarket chains available in the city to cut meal costs.",
+   "Be mindful of the city’s 7% sales tax when budgeting for shopping and purchases.",
+   "Mix free or low-cost activities—walking waterfronts, neighbourhood strolls and beaches within city limits—with a few paid attractions to manage daily expenses."
+  ],
+  "safety": [
+   "Stay aware of your surroundings in busy tourist areas and when using waterfront promenades; keep valuables secure.",
+   "Check local conditions before swimming at beaches as water temperature and currents can vary with the season.",
+   "Respect neighbourhood boundaries: Miami Beach is a separate municipality from Miami, so verify addresses and transit routes to avoid confusion."
+  ],
+  "itinerary": [
+   "Day 1: Explore Downtown Miami and the waterfront—visit museums, walk along Biscayne Bay, and sample Cuban-influenced cafés and restaurants in Little Havana.",
+   "Day 2: Spend time at Virginia Key Beach Park to enjoy the only beach inside city limits, then explore the Design District for galleries, boutiques and dining.",
+   "Day 3: Take a day for sports or events—check schedules for games at Hard Rock Stadium or local arenas—and visit nearby neighbourhoods such as Coral Gables and the University of Miami campus."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Miami?",
+    "a": "A long weekend (2–4 days) lets you see downtown, a neighbourhood like Little Havana, and enjoy a beach day; add more time if you plan to attend sports events or explore surrounding suburbs."
+   },
+   {
+    "q": "Is Miami expensive to visit?",
+    "a": "Costs vary by neighbourhood and activity; dining offers everything from affordable local eateries to high‑end restaurants, and a 7% sales tax applies to purchases—using supermarkets and seasonal promotions like Miami Spice can lower costs."
+   },
+   {
+    "q": "Is Miami safe for tourists?",
+    "a": "Many visitors travel safely—stay alert in busy areas, secure valuables, and follow standard urban safety practices; also be mindful of beach conditions before swimming."
+   },
+   {
+    "q": "What is the best area to stay in Miami?",
+    "a": "Choose a neighbourhood based on your interests: downtown for museums and venues, Little Havana for Cuban culture, or stay near the bay if you want waterfront access; remember Miami Beach is a separate municipality across Biscayne Bay."
+   },
+   {
+    "q": "How do I get from the airport to the city?",
+    "a": "Miami International Airport serves the region and is close to parts of the city; travellers use a range of transport options to reach different neighbourhoods—choose the mode that best fits your schedule and luggage needs."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "Miami",
+  "country_name": "الولايات المتحدة",
+  "title": "ميامي (Miami) - دليل سفر شامل",
+  "meta_description": "دليل ميامي: أهم المعالم، المأكولات مثل Nuevo Latino والكوباين، نصائح توفير، وخطة سفر لثلاثة أيام في مدينة جنوب فلوريدا.",
+  "h1": "دليل ميامي (Miami): ماذا ترى وتذوق وتعرف قبل السفر",
+  "intro": [
+   "ميامي مدينة رئيسية في جنوب شرق الولايات المتحدة وثاني أكبر مدينة في ولاية فلوريدا من حيث عدد السكان. منطقة ميترُوبوليتان ميامي الكبرى هي الأكبر في الولاية وتضم ملايين السكان، وتجذب الزوار بفضل مناخها المعتدل وتنوعها الثقافي.",
+   "على الرغم من أن كثيرين يربطون ميامي بشِبه جزيرة ميامي بيتش (Miami Beach)، إلا أن ميامي مدينة مستقلة والمقال يركز على حدود مدينة ميامي نفسها؛ معظم شواطئ المنتجع والحياة الليلية الشهيرة تقع على جزيرة الحاجز المواجهة لخليج بيسكاين."
+  ],
+  "best_time": "الطقس في ميامي معتدل إلى دافئ معظم العام، ما يجعل المدينة مناسبة للزيارة على مدار الفصول. إذا كنت تفضل حرارة أقل وحشوداً أضعف فالمواسم الانتقالية أفضل، أما موسم الشواطئ والحفلات في ميامي بيتش فيميل إلى أن يكون أكثر ازدحاماً.",
+  "top_sights": [
+   {
+    "name": "فيرجينيا بيتش (Virginia Beach)",
+    "why": "الشاطئ الوحيد داخل حدود مدينة ميامي، مناسب لقضاء وقت على الرمال والتمتع بالمناظر البحرية؛ خذ معك مستلزمات الشاطئ لأن مياه الخليج قد تكون باردة نسبياً في الشتاء."
+   },
+   {
+    "name": "ليتل هافانا (Little Havana)",
+    "why": "حي تاريخي ذو طابع كوبي قوي ويضم نشاطات ثقافية ومطاعم؛ منطقة يرتادها محبو الثقافة والطعام الكوبي، فخطط لزيارة سيراً على الأقدام للاستمتاع بالمقاهي والمتاجر."
+   },
+   {
+    "name": "وسط المدينة (Downtown Miami)",
+    "why": "مركز أعمال وترفيه يضم أماكن مثل صالات كرة السلة وحي الأعمال؛ متصل جيداً بباقي أجزاء المدينة ويعد نقطة انطلاق للعديد من الجولات."
+   },
+   {
+    "name": "هارد روك ستاديوم ومضمار ميامي الدولي (Hard Rock Stadium / Miami International Autodrome)",
+    "why": "موقع المباريات الكبرى مثل كرة السلة والبيسبول ومكان إقامة سباق الفورمولا 1 السنوي؛ تحقق من الفعاليات الموسمية عندما تخطط للزيارة لأن الموقع مؤقت لاستضافة سباقات ومهرجانات رياضية."
+   },
+   {
+    "name": "ملعب مارلينز في ليتل هافانا (Marlins ballpark)",
+    "why": "مقر فريق البيسبول ميامي مارلينز داخل حي ليتل هافانا، خيار جيد لحضور مباراة محلية وتجربة أجواء رياضية أمريكية؛ راجع جداول المباريات قبل الذهاب."
+   },
+   {
+    "name": "جامعة ميامي وحرم كورال جابلز (University of Miami, Coral Gables)",
+    "why": "حرم جامعي بارز للرياضات الجامعية والثقافة المحلية، ويستفيد الزائرون من الأحداث الرياضية والمعالم الجامعية إن كانت تقام فعاليات خلال زيارتك."
+   },
+   {
+    "name": "الحي التصميمي (Design District)",
+    "why": "منطقة معروفة بالمعارض والمطاعم العصرية والحياة الليلية، مكان مناسب للبحث عن مطاعم نوّار لاتينو ومفاهيم طعام معاصرة؛ ارتد حذاء مريح للتجول بين المتاجر والمعارض."
+   },
+   {
+    "name": "الطريق الخارجي (Overseas Highway) والارتباط بالمفاتيح",
+    "why": "طريق تاريخي يصل فلوريدا بالمفاتيح ويعكس جانباً من تطور المنطقة منذ بناء سكة حديد فلاغلر؛ يمكن اعتبار الرحلة بالسيارة عبر أجزاء من الطريق تجربة ذات مناظر بحرية مميزة."
+   }
+  ],
+  "getting_around": "ميامي تخدمها طرق سريعة ومناطق موزعة، والتنقل بين الأحياء الكبرى غالباً يكون بالسيارة أو وسائل النقل العام الإقليمية. اقتران زيارة المدينة بجولة سريعة إلى جزيرة ميامي بيتش يتطلب عبور خليج بيسكاين عبر الجسور أو استخدام خدمات النقل الخاصة.",
+  "food": [
+   {
+    "name": "المطبخ نيو وورلد / نوڤو لاتينو (New World / Nuevo Latino)",
+    "note": "مزيج إبداعي من النكهات اللاتينية والكاريبية مع تقنيات مطبخ أوروبية، وأصوله تعود إلى مطابخ مشاهير الطهاة في ميامي."
+   },
+   {
+    "name": "المطبخ الكوبي",
+    "note": "مأكولات كوبية تقليدية منتشرة في أحياء مثل ليتل هافانا، جزء مهم من المشهد الغذائي المحلي."
+   },
+   {
+    "name": "المأكولات الفلوريبية (Floribbean) والمأكولات البحرية",
+    "note": "أطباق بحرية محلية متأثرة بنكهات الكاريبي واللاتينية، شائعة في مطاعم المدينة."
+   },
+   {
+    "name": "تجربة المطاعم التي تتحول إلى نوادي ليلية",
+    "note": "ميامي تشتهر بأماكن تجمع بين تناول الطعام والحياة الليلية، فغالباً ما تجد مطاعم تعمل كأندية بعد وقت العشاء."
+   },
+   {
+    "name": "مهرجان ميامي سبايس (Miami Spice) - تجربة تناول بتكلفة أقل",
+    "note": "فعالية سنوية تتيح تذوق مطاعم راقية بعروض خاصة، وهي فرصة جيدة لتجربة مطاعم مشهورة بميزانية معقولة."
+   }
+  ],
+  "budget_tips": [
+   "اشترِ مستلزماتك من سلاسل السوبرماركت المحلية مثل Publix أو Walmart أو Aldi لتقليل تكاليف الطعام.",
+   "خطط لزيارة خلال فعالية Miami Spice للاستفادة من قوائم طعام بتكلفة مخفّضة في مطاعم عالية الجودة.",
+   "استخدم التجول سيرا ووسائل النقل العامة للمناطق المركزية بدلاً من الاعتماد الدائم على سيارات الأجرة.",
+   "ابحث عن المولات المحلية ومتاجر السلسلة لشراء الهدايا والتذكارات بأسعار ثابتة بدلاً من المتاجر السياحية المرتفعة."
+  ],
+  "safety": [
+   "احفظ أمتعتك الشخصية في الأماكن المزدحمة وتجنّب ترك الأغراض قابلة للرؤية داخل السيارة.",
+   "كن على دراية بمحيطك ليلاً، خصوصاً في المناطق الترفيهية، وابتعد عن الشوارع الخالية إذا شعرت بعدم الأمان.",
+   "احترم العادات المحلية والقوانين المتعلقة بالتجمعات العامة واللوائح على الشاطئ، ولا تفترض أن قواعد الشاطئ في ميامي بيتش تنطبق داخل حدود مدينة ميامي.",
+   "تحقق من وسائل النقل المحلية وأوقات الفعاليات الرياضية لتجنب الزحام غير المتوقع عند الدخول أو الخروج من الملاعب."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشف وسط المدينة وزُر معالم ليتل هافانا وتناول الطعام الكوبي ثم احضر مباراة بيسبول في ملعب مارلينز إن توافرت مباراة.",
+   "اليوم الثاني: خصص اليوم للشاطئ داخل المدينة عند فيرجينيا بيتش، ثم توجّه إلى الحي التصميمي (Design District) لتناول العشاء والتسوّق.",
+   "اليوم الثالث: زور حرم جامعة ميامي في كورال جابلز، وتابع بجولة إلى هارد روك ستاديوم إذا كان هناك حدث أو لمشاهدة محيط الملاعب والأنشطة الرياضية."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لزيارة ميامي؟",
+    "a": "ثلاثة أيام تكفي لتغطية أبرز معالم المدينة مثل وسط المدينة، ليتل هافانا، وشاطئ فيرجينيا مع وقت للاستمتاع بالمطاعم المحلية والحي التصميمي."
+   },
+   {
+    "q": "هل ميامي مدينة مكلفة؟",
+    "a": "تكلفة الزيارة تختلف بحسب تفضيلاتك؛ توجد خيارات باقات طعام وأسواق سوبرماركت اقتصادية إلى جانب مطاعم راقية، ويمكن التوفير عبر التخطيط للمطاعم خلال فعاليات مثل Miami Spice."
+   },
+   {
+    "q": "هل ميامي آمنة للسياح؟",
+    "a": "ميامي مدينة سياحية كبيرة ومعقولة الأمان، لكن من الأفضل اتباع احتياطات عادية مثل حفظ الأغراض الشخصية وتجنب الشوارع الخالية ليلاً."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "الاختيار يعتمد على اهتماماتك؛ وسط المدينة مناسب للفعاليات والأعمال، بينما السكن القريب من ليتل هافانا مفيد لمحبي الثقافة والكوباين، وشواطئ ميامي بيتش تقع على جزيرة مجاورة إذا أردت الوصول السريع للرمال والحياة الليلية."
+   },
+   {
+    "q": "كيف أذهب من وإلى مفاتيح فلوريدا (Florida Keys)؟",
+    "a": "الطريق الخارجي (Overseas Highway) يربط الجزيرة بسلسلة مفاتيح فلوريدا ويوفر مساراً بالسيارة من ميامي نحو المفاتيح، وتعتبر الرحلة بالسيارة تجربة ذات مناظر بحرية مميزة."
+   }
+  ]
+ }
+}

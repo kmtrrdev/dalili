@@ -1,0 +1,227 @@
+{
+ "slug": "costa-rica",
+ "name": "Costa Rica",
+ "country": "Costa Rica",
+ "tags": [
+  "nature",
+  "adventure",
+  "beach"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Costa_Rica",
+ "en": {
+  "city_name": "Costa Rica",
+  "country_name": "Costa Rica",
+  "title": "Costa Rica travel guide: parks, beaches and volcanoes",
+  "meta_description": "Practical travel guide to Costa Rica: top national parks, volcanoes, beaches, food, budget tips and a 3-day itinerary for first-time visitors.",
+  "h1": "Costa Rica travel guide: what to see, eat and know",
+  "intro": [
+   "Costa Rica is a small country with extraordinary natural variety: rainforests, dry and cloud forests, volcanoes, high mountains, marshy lowlands and beaches on both the Pacific and Caribbean coasts. It is a leading destination for nature and ecotourism, with a high proportion of land set aside in national parks and protected areas.",
+   "Costa Rica is politically stable and peaceful compared with much of the region, and it is known for strong environmental performance and wide biodiversity. The country can be pricier than some nearby Central American destinations, but it offers exceptional wildlife, beaches and accessible volcanoes."
+  ],
+  "best_time": "Timing depends on what you want to do: the country has varied climates, so dry and wet seasons affect different regions differently. Consider local weather and crowd patterns for the specific coast or park you plan to visit.",
+  "top_sights": [
+   {
+    "name": "Arenal Volcano (Volcán Arenal)",
+    "why": "Arenal was long Costa Rica's most active volcano and remains an iconic volcanic landscape near La Fortuna; it is a popular destination for volcano views and nearby nature activities, so plan visits with local guides and check current activity reports."
+   },
+   {
+    "name": "Irazú Volcano (Volcán Irazú)",
+    "why": "Irazú is a complex stratovolcano near Cartago known for its dramatic summit and crater; allow time for cooler, windy conditions at higher elevations and verify access before you go."
+   },
+   {
+    "name": "Poás Volcano (Volcán Poás)",
+    "why": "Poás features a frequently active crater within Poás Volcano National Park about 40 km from Alajuela and is notable for repeated historical eruptions; follow park rules and safety guidance while visiting."
+   },
+   {
+    "name": "Turrialba Volcano",
+    "why": "Turrialba is a very active volcano in the Central Valley region and has had many eruptions in recent years; check local advisories and organized tours if you wish to see volcanic features safely."
+   },
+   {
+    "name": "Manuel Antonio National Park",
+    "why": "Manuel Antonio combines a compact national park with clear-water beaches and abundant wildlife, making it an accessible spot to see tropical animals and coast in a single visit; arrive early to avoid crowds."
+   },
+   {
+    "name": "Corcovado National Park (Osa Peninsula)",
+    "why": "Corcovado is one of the most biodiverse areas in Costa Rica with rainforest meeting black-sand Pacific beaches; it rewards visitors who travel off the beaten path and explore with local guides."
+   },
+   {
+    "name": "Nicoya Peninsula: Montezuma",
+    "why": "Montezuma offers a bohemian coastal experience popular with surfers and backpackers and provides nearby beaches and a relaxed atmosphere; expect an informal, laid-back vibe and local surf culture."
+   },
+   {
+    "name": "Guanacaste and Tamarindo / Playa Grande",
+    "why": "Guanacaste's beaches such as Tamarindo and Playa Grande are known for good surfing and important turtle nesting sites; plan visits around surf seasons and, for turtle watching, follow conservation guidelines."
+   }
+  ],
+  "getting_around": "Costa Rica has well-known tourist corridors linking volcanoes, national parks and both coasts; many visitors travel by bus, car or organized shuttles between major destinations. For specific airport transfers and intercoastal journeys, arrange reputable transport in advance and allow extra time for winding mountain roads or busy coastal routes.",
+  "food": [
+   {
+    "name": "Gallo pinto",
+    "note": "A staple mix of rice and beans commonly eaten at breakfast but also served other times, often with cilantro or onion."
+   },
+   {
+    "name": "Casado",
+    "note": "The typical lunch plate combining rice, beans, a protein and salad, usually accompanied by fried plantain."
+   },
+   {
+    "name": "Plato del día",
+    "note": "A daily set meal—often a casado—offered at many eateries and markets, a practical choice for an affordable lunch."
+   },
+   {
+    "name": "Tres leches",
+    "note": "A rich dessert cake soaked in three kinds of milk, commonly found in local bakeries and sodas."
+   },
+   {
+    "name": "Fresh tropical fruit",
+    "note": "Costa Rica offers abundant ripe fruit such as pineapple and mango at mercados and roadside stalls—an inexpensive, refreshing choice."
+   }
+  ],
+  "budget_tips": [
+   "Eat at sodas and mercados for inexpensive, local meals such as the plato del día rather than tourist restaurants.",
+   "Use public buses or shared shuttles between towns when possible instead of private transfers to lower transport costs.",
+   "Choose one region per trip (for example, a volcano area or one coast) to reduce long-range travel expenses between coasts.",
+   "Book popular national parks and guided wildlife tours in advance to secure standard rates and avoid last-minute premiums."
+  ],
+  "safety": [
+   "Costa Rica is relatively peaceful and stable, but standard travel caution applies: watch belongings in busy tourist areas and on beaches.",
+   "Follow park rules and stay on marked trails; wildlife encounters are best managed with experienced local guides.",
+   "Check local advisories about volcanic activity before visiting active volcanoes and respect closures and safety perimeters.",
+   "If you rent a vehicle, be mindful of changing road conditions, especially in rainy weather or on rural routes."
+  ],
+  "itinerary": [
+   "Day 1: Arrive and explore a nearby national park or wildlife reserve—look for monkeys, sloths and abundant birdlife, and enjoy a meal at a local soda.",
+   "Day 2: Visit a notable volcano such as Arenal or Poás with an organized tour or guided walk; include hot springs or a nature hike if available.",
+   "Day 3: Spend the day on the coast—choose a Pacific surf beach or a Caribbean shoreline for swimming, snorkeling or turtle-watching, and ask locals about quieter nearby beaches."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Costa Rica?",
+    "a": "A short trip of three to seven days lets you experience a volcano or national park plus one coastal area; more time is needed to visit both coasts or explore remote parks thoroughly."
+   },
+   {
+    "q": "Is Costa Rica expensive to visit?",
+    "a": "Costa Rica is generally pricier than some neighboring Central American countries due to established tourism and higher local costs, but dining at sodas and using public transport can keep expenses down."
+   },
+   {
+    "q": "Is Costa Rica safe for tourists?",
+    "a": "Costa Rica is one of the more stable and peaceful countries in the region, but visitors should still take normal precautions against petty theft and follow safety rules in national parks and near active volcanoes."
+   },
+   {
+    "q": "What is the best area to stay in Costa Rica?",
+    "a": "The best area depends on interests: choose a national-park-adjacent town for wildlife and hiking, or a Pacific or Caribbean beach town for surf and relaxation; consider proximity to the activities you prioritize."
+   },
+   {
+    "q": "How do I get from the airport to tourist areas?",
+    "a": "Many visitors use buses, private shuttles or rented cars to reach destinations from airports; arrange reliable transfers ahead if you have tight connections or are heading to remote parks."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "كوستاريكا",
+  "country_name": "كوستاريكا",
+  "title": "كوستاريكا: دليل السفر — ماذا ترى وتأكل وتعرف",
+  "meta_description": "دليل كوستاريكا يشمل أهم المعالم الطبيعية والشواطئ، مأكولات محلية، نصائح لتقليل الإنفاق وخطة لثلاثة أيام.",
+  "h1": "دليل السفر إلى كوستاريكا: ما الذي تراه وتتناوله وتعرفه",
+  "intro": [
+   "كوستاريكا بلد صغير لكنه متنوع للغاية في المناخ والمناظر والطبيعة: من غابات مطيرة وغابات ضبابية وغابات جافة، إلى براكين وشواطئ على المحيط الهادئ والبحر الكاريبي وجبال وأراضٍ منخفضة غمرها الماء. هذه التنوعات تجعلها واحدة من أبرز وجهات السياحة البيئية والطبيعة في العالم.",
+   "بالمقارنة مع كثير من جيرانها في أمريكا الوسطى، تُعد كوستاريكا مستقرة سياسياً وآمنة نسبياً، وتتمتع بشبكة واسعة من المتنزهات والمحميات التي تغطي نسبة كبيرة من أراضيها، مما يجعلها مكاناً جيداً لمشاهدة الحياة البرية والتمتع بالشواطئ النزهية والرحلات البركانية."
+  ],
+  "best_time": "أفضل أوقات الزيارة تعتمد على رغبتك: موسم الجفاف مناسب لأنشطة الشاطئ وركوب الأمواج، أما موسم الأمطار فمناسب لمراقبة الطيور والحياة النباتية ويقل فيه الازدحام. لأن البلد صغير المسافات بين السواحل قصيرة، يمكنك عادة التخطيط لزيارة جانبي البلاد في رحلة واحدة.",
+  "top_sights": [
+   {
+    "name": "منتزه مانويل أنطونيو الوطني (Manuel Antonio National Park)",
+    "why": "منتزه صغير لكنه مشهور بشواطئه الصافية والحياة البرية القريبة من الشاطئ؛ جيد للمشى القصير ومشاهدة الحيوانات. نصيحة عملية: اذهب مبكراً لتفادي الحشود والحرارة."
+   },
+   {
+    "name": "كوركوفادو (Corcovado)",
+    "why": "من أكثر المناطق تنوعاً حيوياً في كوستاريكا، يقع في شبه جزيرة أوسا ويقدم تجارب طبيعية بعيدة عن المسارات السياحية الرئيسية. نصيحة عملية: خطط للوصول مع مرشد محلي وكن مستعداً لرحلات في غابة كثيفة."
+   },
+   {
+    "name": "جاكو (Jacó)",
+    "why": "وجهة مشهورة لركوب الأمواج والحياة الليلية، وتقع قريبة من محميات مثل كارارا. نصيحة عملية: مناسب لمن يريد مزيجاً من الشاطئ والنشاطات الليلية."
+   },
+   {
+    "name": "مونتيزالوما (Montezuma)",
+    "why": "خيار بوهيمي على شبه جزيرة نيكويا يجذب راكبي الأمواج والمجتمعات البديلة؛ يوفر شواطئ وبيئة مريحة. نصيحة عملية: توقع أجواء غير رسمية وثقافة شاطئية مريحة."
+   },
+   {
+    "name": "تاماريندو (Tamarindo)",
+    "why": "من الخيارات الراقية على ساحل المحيط الهادئ مع شواطئ جميلة وبنية تحتية سياحية متطورة. نصيحة عملية: مناسب للعائلات والباحثين عن خدمات سياحية واسعة."
+   },
+   {
+    "name": "بلايا غراندي (Playa Grande)",
+    "why": "شاطئ رملي أبيض معروف كموقع تعشيش لسلاحف البحر الجلدية ومقصد جيد لركوب الأمواج في غواناكاستي. نصيحة عملية: احترم مواسم التعشيش ولا تزعج السلاحف."
+   },
+   {
+    "name": "بركان أرينال (Arenal)",
+    "why": "بركان كان نشطاً لسنوات ويقع قرب لافورتونا، وهو وجهة شهيرة للرحلات البركانية والأنشطة المحيطة. نصيحة عملية: تحقق من حالة النشاط البركاني والمحميات المحلية قبل الزيارة."
+   },
+   {
+    "name": "بركان بواس (Poás)",
+    "why": "بركان نشط يقع في متنزه بركان بواس قرب ألاجويلا وله تاريخ من الانفجارات المتكررة، ويجذب الزوار لمناظره البركانية. نصيحة عملية: توقع تغييرات في إمكانية الوصول تبعاً للنشاط البركاني."
+   }
+  ],
+  "getting_around": "المسافات بين السواحل والأماكن السياحية في كوستاريكا قصيرة نسبياً، لذلك يمكن التنقل بالسيارة أو الحافلات المحلية والرحلات الداخلية للوصول إلى مناطق بعيدة. في المناطق المحمية والجبال قد تحتاج إلى مرشد أو استخدام طرق محلية؛ خطط لوقت إضافي للحركة لأن الطرق قد تكون بطيئة في بعض المناطق.",
+  "food": [
+   {
+    "name": "جالو بينتو (Gallo pinto)",
+    "note": "طبق من الأرز والفاصولياء يقدم عادة على الإفطار ويمكن تذوقه أيضاً في وجبات أخرى."
+   },
+   {
+    "name": "كاسادو (Casado)",
+    "note": "وجبة غداء نموذجية تتكون من أرز وفاصولياء مع لحم أو دجاج أو سمك وسلطة وموز مقلي."
+   },
+   {
+    "name": "بلاتو دل ديا (Plato del día)",
+    "note": "طبق اليوم الذي يكون غالباً نوعاً من الكاسادو ويُقدّم عادة في السوداس كخيار اقتصادي."
+   },
+   {
+    "name": "تريس ليشيس (Tres leches)",
+    "note": "كعكة غنية مصنوعة بثلاثة أنواع من الحليب وتعد الحلوى التقليدية في البلاد."
+   },
+   {
+    "name": "فواكه طازجة وعصائر",
+    "note": "الفواكه الاستوائية، لا سيما الأناناس والمانجو والموز، متوفرة بكثرة وبنكهات مميزة يمكن تذوقها في الأسواق."
+   }
+  ],
+  "budget_tips": [
+   "اشترِ الطعام والفاكهة من الأسواق المحلية (mercados) والسودات لتوفير المال وتجربة أطباق محلية.",
+   "اطلب الأسعار بالكولون وأقارنها بالدولار لأن بعض الأماكن تعرض الأسعار بالدولار وقد تكون الأسعار أرخص عند الدفع بالكولون.",
+   "اختر طبق اليوم (plato del día) كخيار غداء اقتصادي ومشبِع؛ يقدم عادة كمكمل للوجبات المحلية.",
+   "ابحث عن شواطئ ومتنزهات محلية مجانية أو منخفضة التكلفة بدلاً من الجولات المكلفة للحد من النفقات."
+  ],
+  "safety": [
+   "كوستاريكا دولة مستقرة سياسياً وتُعد آمنة نسبياً للسياح مقارنة بالمنطقة، لكن كالمعتاد راقب متعلقاتك في الأماكن المزدحمة.",
+   "كن واعياً للحساسيات المحلية مثل توترات هجرة بعض الجيران الإقليميين؛ تجنب المناقشات السياسية الحادة مع الغرباء.",
+   "احترم مواسم تعشيش الحيوانات البحرية وابتعد عن مضايقة الحياة البرية داخل المتنزهات والمحميات.",
+   "إذا كنت لا تحب الكزبرة (cilantro)، اطلب أن تُحذف من الطبق—هذه من مسلمات الطعام المحلية التي قد لا يعرفها الطهاة دائماً."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشاف محيط العاصمة أو الوصول إلى منطقة قريبة مثل لافورتونا والقيام بجولة مشاهدة طبيعية حول بركان أرينال أو الينابيع الحرارية المجاورة.",
+   "اليوم الثاني: التوجه إلى أحد شواطئ المحيط الهادئ الشعبية مثل جاكو أو تاماريندو للسباحة وركوب الأمواج وتجربة الحياة الليلية المحلية.",
+   "اليوم الثالث: زيارة متنزه وطني مثل مانويل أنطونيو أو كوركوفادو لمشاهدة الحياة البرية في الغابة والاسترخاء على الشاطئ."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام التي أحتاجها لزيارة كوستاريكا؟",
+    "a": "مدة الزيارة تعتمد على اهتماماتك: لرحلة سريعة لاكتشاف شاطئ وبركان ومتنزه وطني يكفي 3–5 أيام، أما لاستكشاف مناطق متعددة فخصص أسبوعاً أو أكثر لأن التنقل بين الوجهات قد يستغرق وقتاً."
+   },
+   {
+    "q": "هل كوستاريكا مكلفة؟",
+    "a": "بالمقارنة مع جيرانها في أمريكا الوسطى قد تكون كوستاريكا أكثر كلفة خصوصاً في المناطق السياحية، لكن يمكنك تقليل النفقات بتناول الطعام في السوداس والأسواق واختيار النقل المحلي."
+   },
+   {
+    "q": "هل كوستاريكا بلد آمن للسياح؟",
+    "a": "تُعد كوستاريكا مستقرة وآمنة نسبياً مقارنة بالمنطقة، ومع ذلك ينبغي توخي الحذر الاعتيادي من السرقة الصغيرة والحفاظ على مقتنياتك في الأماكن العامة."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة إن رغبت بالشواطئ والحياة الليلية؟",
+    "a": "مناطق مثل جاكو وتاماريندو معروفة بشواطئها وبنيتها التحتية السياحية وحياتها الليلية، أما للعزلة والطبيعة فأنصح بالبحث عن منتجعات ومتنزهات أقرب إلى كوركوفادو أو مانويل أنطونيو."
+   },
+   {
+    "q": "كيف أتعامل مع المال وما العملة المستخدمة؟",
+    "a": "العملة المحلية هي الكولون، لكن الدولار الأمريكي يُستخدم على نطاق واسع في الأماكن السياحية؛ قارن الأسعار بالدولار والكولون لأن الدفع بالكولون قد يكون أرخص أحياناً."
+   }
+  ]
+ }
+}

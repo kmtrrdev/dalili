@@ -1,0 +1,226 @@
+{
+ "slug": "lyon",
+ "name": "Lyon",
+ "country": "France",
+ "tags": [
+  "food",
+  "culture",
+  "history"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Lyon",
+ "en": {
+  "city_name": "Lyon",
+  "country_name": "France",
+  "title": "Lyon travel guide: things to do, food and tips",
+  "meta_description": "Practical guide to Lyon: top sights, food (bouchons, pralines), transport tips, budget advice and a 3-day itinerary for first-time visitors.",
+  "h1": "Lyon travel guide: what to see, eat and know",
+  "intro": [
+   "Lyon is the capital of the Auvergne-Rhône-Alpes region and France's third-largest city by population, with around 470,000 residents and a metropolitan area of about 1.2 million. The city blends Roman ruins, Renaissance streets and modern districts, reflecting more than 2,000 years of uninterrupted urban history.",
+   "Renowned as France's gastronomic centre, Lyon offers a high concentration of restaurants and a lively cultural scene. Its mix of preserved historic quarters, parks and neighbourhoods shaped by the silk trade makes it a rewarding place to explore on foot, by bike or via the city's public transport network."
+  ],
+  "best_time": "Lyon is pleasant outside peak festival days; spring and early autumn offer comfortable weather and fewer crowds than summer. The city is busiest during events such as the Fête des Lumières, so avoid those dates if you prefer quieter visits.",
+  "top_sights": [
+   {
+    "name": "Basilica of Notre-Dame de Fourvière",
+    "why": "A dominant landmark on Fourvière hill offering panoramic views of the city; visit early in the day to avoid crowds and enjoy the vista over Lyon."
+   },
+   {
+    "name": "Vieux Lyon and its traboules",
+    "why": "A large Renaissance district with narrow cobbled streets and hidden passageways (traboules) that reveal historic courtyards; explore in the morning to appreciate the architecture before terraces and tourists fill the lanes."
+   },
+   {
+    "name": "St Jean Cathedral (Cathédrale Saint-Jean-Baptiste)",
+    "why": "A mostly Gothic cathedral dating from the 12th–15th centuries housing an impressive astronomical clock; listen for the bells that ring on the hour in the midday afternoon period."
+   },
+   {
+    "name": "Musée Gadagne",
+    "why": "A museum in Vieux Lyon covering the city's history and puppetry; a good stop to deepen your understanding of Lyon's urban and cultural past."
+   },
+   {
+    "name": "Parc de la Tête d'Or",
+    "why": "A major urban park ideal for a stroll, relaxation and green space within the city; it offers a peaceful contrast to historic neighbourhoods and is suitable for families."
+   },
+   {
+    "name": "Traboules of Croix-Rousse",
+    "why": "Distinctive covered passageways in the silk-weaving district that illustrate Lyon's industrial and urban history; they reward patient exploration away from the main tourist routes."
+   },
+   {
+    "name": "View from Fourvière and Roman remains",
+    "why": "Fourvière hill holds well-preserved Roman traces and viewpoints over Lyon, connecting the city's Roman origins with its later development; combine the archaeological sites with the basilica visit."
+   },
+   {
+    "name": "Musée urbain Tony Garnier and États-Unis neighbourhood",
+    "why": "An offbeat architectural attraction showcasing early 20th-century urban housing and murals; a good choice if you want to see a different side of Lyon beyond the historic centre."
+   }
+  ],
+  "getting_around": "Lyon is compact enough to explore on foot in many neighbourhoods, and the city is increasingly friendly to pedestrians and cyclists. The public transport network covers the city well; the Lyon City Card (sold by the tourist office and some hotels) includes unlimited public transport and may be useful if you plan museum visits and guided tours.",
+  "food": [
+   {
+    "name": "Bouchon dining",
+    "note": "Traditional Lyonnaise restaurants serving hearty local dishes; eating in a good bouchon is considered a must-do."
+   },
+   {
+    "name": "Salade lyonnaise",
+    "note": "A classic starter of greens with bacon, croutons and a poached egg frequently found on local menus."
+   },
+   {
+    "name": "Quenelle de brochet",
+    "note": "A pike dumpling typically served with a creamy or Nantua (crayfish) sauce, often seen in traditional menus."
+   },
+   {
+    "name": "Saucisson chaud and other sausages",
+    "note": "Hot boiled or breaded sausages, sometimes cooked with wine, are common local options in casual places."
+   },
+   {
+    "name": "Praline rose and tarte aux pralines",
+    "note": "Pink candied-almond sweets and pastries are Lyon's signature confectionery and make easy souvenirs."
+   }
+  ],
+  "budget_tips": [
+   "Many attractions such as churches, traboules and parks are free—prioritise these to save on entrance fees.",
+   "Compare the Lyon City Card price to your planned museum visits and transport needs before buying; it includes unlimited public transport and discounted or free museum entry and guided tours.",
+   "Buy a detailed street map from a bookshop or newsagent to find lesser-known restaurants and sights that aren't on simplified tourist maps.",
+   "Eat at local mid-range places and bouchons where menus are displayed outside so you can check prices before entering; tipping is not obligatory in France."
+  ],
+  "safety": [
+   "Pickpocketing can occur in crowded tourist areas—keep valuables secure and be cautious on busy streets and public transport.",
+   "Be aware of cyclists and increasing pedestrianised zones when walking; some streets may be shared with bikes.",
+   "Follow usual urban safety precautions at night and avoid poorly lit or deserted areas, especially if you are alone."
+  ],
+  "itinerary": [
+   "Day 1: Explore Vieux Lyon in the morning—visit St Jean Cathedral, wander the traboules and Musée Gadagne; in the afternoon stroll the riverside and enjoy an evening meal at a bouchon.",
+   "Day 2: Climb or take transport to Fourvière to see the basilica, Roman remains and panoramic views; in the afternoon visit the Croix-Rousse area and its traboules and markets.",
+   "Day 3: Spend time in Parc de la Tête d'Or for a relaxed morning, then visit an offbeat museum such as Musée urbain Tony Garnier or explore neighbourhoods like Gratte-ciel in Villeurbanne and Parc de Gerland."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Lyon?",
+    "a": "Three days lets you see the main historic districts (Vieux Lyon, Fourvière, Croix-Rousse), a major park and a museum or two at a comfortable pace."
+   },
+   {
+    "q": "Is Lyon expensive?",
+    "a": "Lyon has a range of options; many attractions are free and menus display prices outside restaurants, so you can choose budget or upscale dining. Consider whether a Lyon City Card matches your museum and transport plans before purchasing."
+   },
+   {
+    "q": "Is Lyon safe for tourists?",
+    "a": "Lyon is a typical European city; take normal precautions against pickpocketing in crowded areas and be cautious at night in poorly lit places."
+   },
+   {
+    "q": "What is the best area to stay in Lyon?",
+    "a": "Staying near Vieux Lyon or the Presqu'île keeps you close to many sights, restaurants and transport links, while Croix-Rousse offers a more local, historic atmosphere."
+   },
+   {
+    "q": "How do I get around from the airport and within the city?",
+    "a": "Public transport serves Lyon and is included in the Lyon City Card; within the city, walk and cycle where possible as many attractions are close together and pedestrian-friendly."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "ليون (Lyon)",
+  "country_name": "فرنسا",
+  "title": "ليون دليل السفر: معالم، طعام وخريطة لزيارة مدينة ليون",
+  "meta_description": "دليل عملي لليون: أهم المعالم، أطباق محلية، نصائح لتوفير المال وخطة ثلاثية الأيام لزيارة العاصمة الجاسترونومية الفرنسية.",
+  "h1": "دليل السفر إلى ليون: ماذا ترى وتأكل وتعرف",
+  "intro": [
+   "ليون هي عاصمة منطقة أوفيرني-رون ألب الفرنسية ومركز حضري يضم نحو نصف مليون ساكن داخل المدينة، وأكثر من مليون في منطقة غراند ليون. تشتهر المدينة كمركز للطبخ الفرنسي وتضم واحداً من أعلى تراكيز المطاعم بالنسبة لعدد السكان.",
+   "تعود جذور ليون إلى العهد الروماني وتتميز بمزيج معماري من الآثار الرومانية وحيّ النهضة والعمارة المعاصرة؛ كما تُعرف بماضيها في صناعة الحرير وتتمتع بوضع مديني نشط من حيث الثقافة والتعليم والاقتصاد."
+  ],
+  "best_time": "بشكل عام زيارة ليون مناسبة معظم السنة. لتفادي الازدحام في أحياء مثل فورفيير وڤيو ليون، الصباح يكون أفضل لزيارة المواقع التاريخية. خلال فعالية Fête des Lumières يزداد عدد الزوار بشكل كبير.",
+  "top_sights": [
+   {
+    "name": "بازيليك فورفيير (Basilica of Fourvière)",
+    "why": "كنيسة كبيرة تطل على المدينة وتقدّم مناظر بانورامية على ليون؛ الوصول سهل سيرًا أو بوسائل النقل المحلية، والموقع جيد لبدء جولة في التلال الرومانية."
+   },
+   {
+    "name": "حي ڤيو ليون (Vieux Lyon)",
+    "why": "من أكبر مناطق عصر النهضة في أوروبا بطرق مرصوفة ومبانٍ من القرنين الخامس عشر والسابع عشر؛ الأفضل زيارته صباحًا لتفادي الحشود والتمتع بالعمارة وورش الحرفيين."
+   },
+   {
+    "name": "كاتدرائية سان جان (St Jean Cathedral)",
+    "why": "كاتدرائية غوثية بها أجزاء رومانسكية وساعة فلكية تاريخية، تستحق الزيارة خصوصًا للاستماع إلى أجراسها التي تدق على الساعة في أوقات معينة."
+   },
+   {
+    "name": "التراس الأثرية لسان جان (St Jean archaeological garden)",
+    "why": "حديقة صغيرة تعرض بقايا مبانٍ دينية سابقة تعود إلى القرن الرابع، نقطة جيدة لفهم الطبقات التاريخية لموقع الكاتدرائية."
+   },
+   {
+    "name": "التربول (Traboules)",
+    "why": "ممرات داخل الأبنية تصل شارعاً بآخر وتعد خاصية معمارية مميزة في ليون؛ المشي عبرها يكشف ساحات داخلية وواجهات ذات طابع إيطالي."
+   },
+   {
+    "name": "متحف غادان (Musée Gadagne)",
+    "why": "متحف مهم في منطقة الڤيو ليون يعرض تاريخ المدينة؛ مناسب لمن يريد تعمقًا في تراث ليون الثقافي والمعماري."
+   },
+   {
+    "name": "بارك دو لا تيت دور (Parc de la Tête d'Or)",
+    "why": "واحد من أكبر الحدائق الحضرية في المدينة ومكان ممتاز للاسترخاء والنزهة، مناسب للعائلات والباحثين عن فسحة خضراء."
+   },
+   {
+    "name": "كروا روس (Croix-Rousse) وتربولاته",
+    "why": "حي مرتبط بتاريخ صناعة الحرير ويضم تربولات فريدة؛ التجول فيه يعطي فكرة عن الجانب الحِرَفي والتجاري للمدينة."
+   }
+  ],
+  "getting_around": "معظم المعالم مركزية ويمكن الوصول إليها سيرًا أو بالدراجات. شبكة النقل العام تغطي المدينة وتُدرج في بطاقة Lyon City Card إذا قررت شرائها؛ للحصول على خريطة مفصّلة اشترِ خريطة شارع بمؤشر من مكتبة أو بائع صحف لأن بعض الشوارع والأماكن الصغيرة لا تظهر في الخرائط المبسطة.",
+  "food": [
+   {
+    "name": "البوشون (bouchon)",
+    "note": "مطاعم تقليدية لِيون تقدّم أطباقًا محلية كلاسيكية ويُنصح بتجربة واحدة منها أثناء الزيارة."
+   },
+   {
+    "name": "سالاد lyonnaise (Salade lyonnaise)",
+    "note": "سلطة خضراء مع مكعبات لحم الخنزير المحمّر، خبز محمّص وبيضة مسلوقة على الوجه."
+   },
+   {
+    "name": "كوينيل دو بروشيت (Quenelle de brochet)",
+    "note": "زلابية مصنوعة من سمك السلور تقدم عادة مع صلصة نانتوا، طبق محلي مميز."
+   },
+   {
+    "name": "تابليه دو سابور (Tablier de sapeur)",
+    "note": "طبق من أحشية البقر متبل ومغطى بالبقسماط ثم مقلي، من الأطباق التقليدية التي قد يتردد بعض الزوار في تجربتها."
+   },
+   {
+    "name": "البراهلين الوردية (praline rose) وحلوياتها",
+    "note": "حلوى مميزة في ليون، تُباع كحبات مغطاة بالسكر أو مدمجة في معجنات مثل تارت أو Praluline من Pralus."
+   }
+  ],
+  "budget_tips": [
+   "كثير من المعالم مثل الكنائس والتربول والحدائق يمكن زيارتها مجانًا، فاستغل المشي لاستكشاف المدينة دون إنفاق.",
+   "قبل شراء Lyon City Card احسب المتاحف والرحلات التي تنوي القيام بها لأن البطاقة تشمل مواصلات ودخول متاحف لكنها قد لا تكون صفقة إذا لم تخطط لزيارات كثيرة.",
+   "اشترِ خريطة شارع مفصّلة من مكتبة أو بائع صحف لتجد مطاعم ومحلات في شوارع صغيرة بدلاً من الاعتماد على خرائط مبسطة.",
+   "تناول الوجبات في أوقات الغداء في مطاعم محلية أو جرب البوشون لتجربة محلية غالبًا بأسعار أفضل من المطاعم السياحية المسقوفة."
+  ],
+  "safety": [
+   "ليون مدينة عامة آمنة نسبيًا، مع ذلك احرص على الحيطة في المناطق المزدحمة من حيث النشل خصوصًا حول المعالم السياحية.",
+   "لاحظ أوقات الازدحام في فورفيير وڤيو ليون وفضل صباح الزيارة للاستمتاع بالمعالم بهدوء.",
+   "لاحترام التقاليد المحلية، لا حاجة لتقديم بقشيش كبير في المطاعم لأن الخدمة مشمولة عادةً؛ يمكن ترك بقشيش رمزي إذا رغبت بذلك.",
+   "كن حذرًا عند التنقل بالدراجة والمشي لأن المدينة تتوسع لتصبح أكثر ودًّا للمشاة والدراجات، لكن ذلك يجعل حركة المشاة والدراجات مزدحمة أحيانًا."
+  ],
+  "itinerary": [
+   "اليوم الأول: ابدأ بجولة صباحية في فورفيير وزيارة البازيليك للاستمتاع بالإطلالة، نزُلًا إلى الڤيو ليون لاستكشاف الشوارع المرصوفة والتربول وكاتدرائية سان جان ومتحف غادان.",
+   "اليوم الثاني: خصصه لحي كروا روس والمشي بين تربولاته وأسواقه، ثم زيارة متحف أو منطقة سكنية حديثة مثل Gratte-ciel في فيلنوفان لمشاهدة الجانب المعماري المعاصر.",
+   "اليوم الثالث: استرخِ في Parc de la Tête d'Or، تذوّق أطباق محلية في بوشون، وانهي اليوم بحضور عرض موسيقي أو مسرحي بعد الحجز المسبق لأن العروض الكبرى تُباع مبكرًا."
+  ],
+  "faq": [
+   {
+    "q": "كم من الوقت أحتاج لزيارة ليون؟",
+    "a": "ثلاثة أيام تكفي لرؤية المعالم الأساسية مثل فورفيير، الڤيو ليون، كروا روس وحديقة تيت دور مع وقت لتذوق المأكولات المحلية؛ يومان قد يكونان كافيين للزائر السريع."
+   },
+   {
+    "q": "هل ليون مكلفة أم رخيصة؟",
+    "a": "تكاليف الزيارة تعتمد على نمطك: العديد من المعالم العامة مجانية، لكن زيارات المتاحف والمطاعم الراقية قد تزيد النفقات؛ قارن أسعار تذاكر المتاحف مع Lyon City Card قبل الشراء."
+   },
+   {
+    "q": "هل ليون آمنة للسياح؟",
+    "a": "عمومًا نعم، ليون مدينة آمنة نسبيًا لكن احذر من النشل في الأماكن المزدحمة واتبع الحيطة المعتادة للتجوال ليلاً."
+   },
+   {
+    "q": "ما أفضل منطقة للإقامة؟",
+    "a": "المناطق القريبة من الڤيو ليون وفورفيير ومركز المدينة مناسبة لسهول الوصول إلى المعالم والمطاعم، أما كروا روس فتقدّم تجربة محلية أكثر علاقة بالصناعة والحرف."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط المدينة؟",
+    "a": "الدليل يشير إلى أن شبكة النقل العام تغطي المدينة وأن Lyon City Card تشمل مواصلات غير محدودة إذا اشتريتها، وللحصول على تفاصيل الوصول الدقيق من المطار يُنصح بالاطلاع على إرشادات مكتب السياحة أو خدمات النقل المحلية."
+   }
+  ]
+ }
+}

@@ -1,0 +1,225 @@
+{
+ "slug": "edinburgh",
+ "name": "Edinburgh",
+ "country": "United Kingdom",
+ "tags": [
+  "history",
+  "culture"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Edinburgh",
+ "en": {
+  "city_name": "Edinburgh",
+  "country_name": "United Kingdom",
+  "title": "Edinburgh travel guide",
+  "meta_description": "Practical travel guide to Edinburgh: top sights, food, budget tips and a 3-day itinerary for the capital of Scotland.",
+  "h1": "Edinburgh travel guide: what to see, eat and know",
+  "intro": [
+   "Edinburgh is Scotland's capital, a compact city where a dramatic volcanic landscape meets medieval streets and elegant Georgian squares. The Old and New Towns form a UNESCO World Heritage Site and the city combines historic sites like the castle and Royal Mile with modern institutions such as the Scottish Parliament and National Museum of Scotland.",
+   "The city has a lively cultural scene and hosts major arts festivals in summer, plus a wide range of restaurants, pubs and shops across neighbourhoods from the Old Town to Leith. Whether you want museum afternoons, hill walks or lively performances, Edinburgh offers a strong mix of history and contemporary life."
+  ],
+  "best_time": "Summer is the busiest period, when the city becomes a major festival centre and streets are full of performances and events in August; expect big crowds then. Spring and autumn still offer good weather for walking and sightseeing with fewer visitors, while winter can be atmospheric for museums and Hogmanay celebrations but is colder and darker.",
+  "top_sights": [
+   {
+    "name": "Edinburgh Castle",
+    "why": "The castle crowns Castle Rock and dominates the skyline, offering history and views; book tickets in advance in summer when entry often sells out."
+   },
+   {
+    "name": "Royal Mile (High Street)",
+    "why": "This historic street runs from the castle to Holyrood Palace and is lined with medieval closes and attractions; explore the upper, traffic-free section for the best atmosphere and access to alleyways."
+   },
+   {
+    "name": "Holyrood Palace",
+    "why": "The royal residence at the foot of the Royal Mile contains richly furnished rooms and royal history; combine it with a visit to the nearby Scottish Parliament and Holyrood Park."
+   },
+   {
+    "name": "Arthur's Seat",
+    "why": "An extinct volcano rising above the city that rewards hikers with panoramic views; for the simplest ascent, approach from the far side of the hill."
+   },
+   {
+    "name": "National Museum of Scotland",
+    "why": "A large, free museum with collections that can absorb an afternoon and cover Scottish history, science and global objects; it's located on Chambers Street south of the High Street."
+   },
+   {
+    "name": "Princes Street and the National Gallery area",
+    "why": "Princes Street offers one of the clearest views of the Old Town and is flanked midway by the National Gallery and National Portrait Gallery, good for art lovers and city vistas."
+   },
+   {
+    "name": "Calton Hill",
+    "why": "A convenient, smaller hill at the east end of Princes Street that provides fine city panoramas and is easier to reach than larger summits."
+   },
+   {
+    "name": "Royal Yacht Britannia and Leith",
+    "why": "The former royal yacht is permanently moored in Leith and makes for an interesting visit combined with exploring the harbour area."
+   }
+  ],
+  "getting_around": "Edinburgh is compact and walkable in the city centre, with many key sights close together between the Old Town and New Town. Trains and buses serve the city and Waverley Station sits at the foot of the Royal Mile; local buses and trams extend travel options to suburbs and Leith. For hill walks and quieter neighbourhoods, allow time to reach trailheads or take a short bus or taxi ride.",
+  "food": [
+   {
+    "name": "Fish and chips (chippy experience)",
+    "note": "Try a traditional Edinburgh chippy and sample the local salt'n'sauce condiment, which is commonly served instead of salt and vinegar."
+   },
+   {
+    "name": "Deep-fried Scottish specialties",
+    "note": "Local takeaways sometimes offer deep-fried items such as deep-fried haggis, black pudding or even Mars bars for an adventurous snack."
+   },
+   {
+    "name": "Scottish confectionery: Edinburgh Rock",
+    "note": "A soft, sugar-based sweet with traditional flavours like peppermint and ginger often sold in tartan packaging in tourist shops."
+   },
+   {
+    "name": "Pub folk-music nights",
+    "note": "Enjoy traditional folk sessions in Old Town or Leith pubs paired with hearty pub fare."
+   },
+   {
+    "name": "Value street food",
+    "note": "Areas such as Elm Row, Rose and Thistle streets, South Bridge and Forrest Road offer more affordable and varied options across cuisines and dietary needs."
+   }
+  ],
+  "budget_tips": [
+   "Avoid dining on the Royal Mile, Princes Street and the Grassmarket if you want better value; these areas tend to be more expensive.",
+   "Choose food in neighbourhoods noted for value—Elm Row, Rose and Thistle streets, South Bridge, Forrest Road, Tollcross and around Haymarket—rather than tourist-heavy streets.",
+   "If you plan to visit many historic sites, consider membership of heritage organisations to save on repeated admissions, and check reciprocity rules for National Trust and other bodies.",
+   "Look out for Doors Open Day and Scotland's Gardens events which open buildings and private gardens, often free or charitable, providing unique low-cost visits; Doors Open Day is usually on the last weekend in September."
+  ],
+  "safety": [
+   "Edinburgh is generally safe for visitors; stay aware of your surroundings in busy tourist areas where pickpocketing can occur and keep valuables secure.",
+   "When walking on cobbled streets and steep closes, wear sensible footwear and take care in wet or icy conditions.",
+   "If hiking Arthur's Seat or exploring open hills, check weather and bring warm, waterproof layers; paths can be exposed and conditions change quickly."
+  ],
+  "itinerary": [
+   "Day 1: Explore the Old Town—start at Edinburgh Castle, walk down the Royal Mile, visit the National Museum of Scotland and finish with a folk-music evening in an Old Town pub.",
+   "Day 2: Discover the New Town and galleries—stroll Princes Street and George Street, visit the National Gallery and National Portrait Gallery, then climb Calton Hill for views.",
+   "Day 3: Outdoor day—ascend Arthur's Seat for panoramic views, walk part of the Water of Leith, and if time visit Royal Yacht Britannia in Leith or Craigmillar Castle to the south."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Edinburgh?",
+    "a": "Three days gives time to see the main highlights: the castle, Royal Mile, a major museum and at least one hill walk, with extra days allowing for more museums, galleries or day trips."
+   },
+   {
+    "q": "Is Edinburgh expensive to visit?",
+    "a": "Some central tourist areas and attractions can be pricey, but there are many affordable food areas and free museums like the National Museum of Scotland to help manage costs."
+   },
+   {
+    "q": "Is Edinburgh safe for tourists?",
+    "a": "Edinburgh is generally safe, but standard precautions apply—watch for pickpockets in busy zones and take care on steep or cobbled streets and exposed hill paths."
+   },
+   {
+    "q": "What is the best area to stay in?",
+    "a": "Staying in or near the Old Town or New Town puts you within walking distance of many sights; Leith offers a different harbour atmosphere and good options for exploring the Royal Yacht Britannia."
+   },
+   {
+    "q": "How do I get from the airport to the city centre?",
+    "a": "The city centre is well connected by public transport; check local rail and bus services to reach Waverley Station or central stops, then walk or use buses and trams to reach your accommodation."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "إدنبرة",
+  "country_name": "المملكة المتحدة",
+  "title": "إدنبرة: دليل السفر إلى العاصمة الأسكتلندية",
+  "meta_description": "دليل لإدنبرة يشمل أهم المعالم (القلعة، شارع الملكي)، أطعمة محلية، نصائح للميزانية وخطة لثلاثة أيام.",
+  "h1": "دليل السفر إلى إدنبرة: ماذا ترى، تأكل وتعرف",
+  "intro": [
+   "إدنبرة (بالغيلية: Dùn Èideann) هي عاصمة أسكتلندا وتقع في الحزام المركزي للبلاد. المدينة تجمع بين طابع سكوتلندي مميز وحياة حضرية مع مبانٍ تاريخية من العصور الوسطى ومظاهر جورجية ومعاصرة.",
+   "التضاريس البركانية القديمة تمنح إدنبرة مناظر درامية، مع القلعة على صخرة بركانية مرتفعة وكتل بارزة مثل Arthur's Seat، وتستضيف المدينة برنامجا غنيا من المهرجانات والموسيقى والمسرح طوال العام."
+  ],
+  "best_time": "أفضل وقت للزيارة هو خلال فصل الصيف عندما تتحول إدنبرة إلى مدينة مهرجانات مع جو نشط وفعاليات كثيرة، أما الربيع والخريف فمناسبان لمن يريد أجواء أقل ازدحاماً؛ الطقس قد يتغير بسرعة لذلك توقع ريحاً وبرودة نسبية حتى في أشهر دافئة.",
+  "top_sights": [
+   {
+    "name": "قلعة إدنبرة (Edinburgh Castle)",
+    "why": "قلعة مدنية على صخرة مرتفعة تشكل أيقونة المدينة وموقعاً تاريخياً مهماً؛ يفضل حجز التذاكر مقدماً في الصيف لأن الزيارات قد تمتلئ."
+   },
+   {
+    "name": "الطريق الملكي (Royal Mile)",
+    "why": "شارع طويل يربط القلعة بقصر هوليرود ويضم أجزاء من الحياة الوسطى مثل الأزقة (closes)؛ تجول في الجزء العلوي المسمّى High Street للاستمتاع بالمشهد التاريخي."
+   },
+   {
+    "name": "قصر هوليرود (Holyrood Palace)",
+    "why": "قصر رسمي لا يزال يستخدم لأغراض ملكية ويعرض أثاثاً فاخراً ومقتنيات تاريخية؛ يتماشى زيارته مع جولة في نهاية الطريق الملكي."
+   },
+   {
+    "name": "مبنى البرلمان الأسكتلندي (Scottish Parliament)",
+    "why": "مبنى حديث للحياة السياسية في إدنبرة يمكن مشاهدة الجلسات وسبر لمحة عن العمارة المعاصرة في المدينة؛ تحقق من إمكانية الدخول لمتابعة مناقشات عامة."
+   },
+   {
+    "name": "آرثرس سيت (Arthur's Seat)",
+    "why": "بركان منقرض يطل على المدينة ويوفر طرق صعود بسيطة ومناظراً واسعة لإدنبرة؛ اتجه إلى الجانب البعيد من التلة لبدء المسار الأسهل."
+   },
+   {
+    "name": "المتحف الوطني لأسكتلندا (National Museum of Scotland)",
+    "why": "متحف واسع وجذاب على شارع تشامبرز يضم مجموعات متعددة ويستحق نصف يوم على الأقل، والدخول مجاني مما يجعله خياراً ممتازاً لعائلة أو زائر عام."
+   },
+   {
+    "name": "تل كالتون (Calton Hill)",
+    "why": "تل صغير بقرب نهاية برينسيس ستريت يوفر نقاط رؤية ممتازة على المدينة وبديل أسهل للوصول من Arthur's Seat عند رغبتك بمنظر سريع."
+   },
+   {
+    "name": "الحدائق النباتية (Botanic Gardens)",
+    "why": "حدائق واسعة في منطقة Canonmills مناسبة للنزهة والاسترخاء؛ لاحظ أن البيوت الزجاجية مغلقة حتى عام 2025."
+   }
+  ],
+  "getting_around": "الوصول إلى وسط المدينة عادة يتم عبر السكك أو الطرق من محطات رئيسية مثل ويفرلي، والتنقل داخل المدينة ميسّر بالمشي بين الأحياء التاريخية أو بالحافلات المحلية للمدى الأطول؛ استخدام خرائط النقل العام والمحطات كافٍ للتخطيط اليومي.",
+  "food": [
+   {
+    "name": "أسماك ورقائق (Fish and chips) مع salt'n'sauce",
+    "note": "تجربة محلية مميزة في شوارع إدنبرة حيث يقدم معظم محلات 'chippy' صلصة ملحية بدلاً من الخل كخيار افتراضي."
+   },
+   {
+    "name": "هاغيس مقلي (Deep fried haggis)",
+    "note": "نسخة مقلاة من الطبق الأسكتلندي التقليدي وهي جزء من ثقافة الأطعمة المقلية في المدينة."
+   },
+   {
+    "name": "حلويات إدنبرة روك (Edinburgh Rock)",
+    "note": "حلوى ناعمة مصنوعة من السكر ونكهة القليل من التارتار، متوفرة غالباً في المتاجر السياحية."
+   },
+   {
+    "name": "موسيقى فولك في الحانات مع طعام محلي",
+    "note": "الانضمام إلى جلسات الموسيقى الشعبية في حانات الداون تاون أو ليث يجمع بين تجربة الطهي والترفيه المحلي."
+   },
+   {
+    "name": "خيارات عالمية ومطاعم نباتية وحلال",
+    "note": "المدينة متنوعة غذائياً وتلبي احتياجات النباتيين والصائمين والمطالبين بخيارات خالية من الغلوتين."
+   }
+  ],
+  "budget_tips": [
+   "استفد من المتاحف المجانية مثل المتحف الوطني لأسكتلندا لرحلات ثقافية دون تكلفة دخول.",
+   "تجنب تناول الطعام عند المعالم السياحية الرئيسة (الطريق الملكي، برينسيس ستريت) للحد من الإنفاق على الوجبات.",
+   "ابحث عن مقاهي وحانات في مناطق Elm Row وForrest Road وWest End للخيارات ذات القيمة الأفضل.",
+   "إذا كنت مقيمًا لفترة، ففكر في عضوية منظمات تراثية محلية عند زيارتك لعدة مواقع مدفوعة لتوفير بدلاً من شراء تذاكر منفصلة."
+  ],
+  "safety": [
+   "إدنبرة مدينة آمنة نسبياً لكن انتبه للنشل في المناطق المزدحمة والمهرجانات واستعمل حقيبة محكمة الإغلاق.",
+   "الطقس يمكن أن يتقلب فجأة فاحمل معك معطفاً مضاداً للمطر ولباساً متعدد الطبقات خاصة عند صعود التلال.",
+   "احترم القواعد المحلية في الأماكن الدينية والحكومية، وكن واعياً لكتابات وإشارات المواقع التاريخية.",
+   "أثناء الفعاليات والمهرجانات احترم حشود الجمهور وتجنب المناطق المكتظة إذا شعرت بعدم راحة."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشف قلعة إدنبرة والطريق الملكي وصولاً إلى قصر هوليرود، وأوقف عند المتحف الوطني لأسكتلندا في طريقك.",
+   "اليوم الثاني: تمش في نيو تاون، زر برينسيس ستريت والمعارض الوطنية، ثم اطلع على مناظر المدينة من تل كالتون وسوق فيكتوريا أوكبورن.",
+   "اليوم الثالث: اصعد Arthur's Seat صباحاً للاستمتاع بإطلالة واسعة، ثم امشِ على طول مجرى Water of Leith أو زر الحدائق النباتية والنهايات البحرية في ليث وزيارة Royal Yacht Britannia."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام المناسبة لزيارة إدنبرة؟",
+    "a": "ثلاثة أيام تمنحك وقتاً جيداً لرؤية أبرز معالم المدينة مثل القلعة والطريق الملكي والمتاحف والاستمتاع بتل كالتون أو Arthur's Seat، ويمكن تمديد الزيارة إذا رغبت بجولات خارجية أطول."
+   },
+   {
+    "q": "هل إدنبرة مدينة مكلفة؟",
+    "a": "تكلفة الزيارة تتفاوت؛ توجد خيارات مجانية مثل بعض المتاحف والمشي في المدينة، بينما تميل المناطق السياحية والمهرجانات إلى أن تكون أغلى، لذا اختيار أماكن تناول طعام وخيارات نقل بديلة يساعد على التحكم بالنفقات."
+   },
+   {
+    "q": "هل إدنبرة آمنة للسياح؟",
+    "a": "نعم، المدينة آمنة نسبياً لكن كن حذراً من النشل في المناطق المزدحمة وكن مستعداً لتقلبات الطقس أثناء التنقلات الخارجية."
+   },
+   {
+    "q": "ما أفضل منطقة للإقامة؟",
+    "a": "الاختيار يعتمد على الأولوية: الإقامة في أولد تاون تضعك قرب المعالم التاريخية والفعاليات، أما نيو تاون فتمنحك وصولاً سهلاً إلى التسوق والمعارض ومواقف النقل."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط المدينة؟",
+    "a": "يمكن الوصول إلى وسط إدنبرة من المطار عبر وسائل النقل العام مثل الحافلات وخيارات النقل الأرضي العامة، ومن المفيد مراجعة جداول وخيارات النقل عند الوصول لتحديد الأفضل حسب وقت وصالة الوصول."
+   }
+  ]
+ }
+}

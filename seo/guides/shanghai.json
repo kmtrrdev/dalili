@@ -1,0 +1,226 @@
+{
+ "slug": "shanghai",
+ "name": "Shanghai",
+ "country": "China",
+ "tags": [
+  "shopping",
+  "food",
+  "nightlife"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Shanghai",
+ "en": {
+  "city_name": "Shanghai",
+  "country_name": "China",
+  "title": "Shanghai travel guide: what to see, eat and know",
+  "meta_description": "Practical travel guide to Shanghai: top sights in Puxi and Pudong, where to eat, budget tips, safety advice and a 3-day itinerary.",
+  "h1": "Shanghai travel guide: what to see, eat and know",
+  "intro": [
+   "Shanghai is China's largest and most developed city, a global centre for finance, fashion and trade. The city blends historic Chinese neighbourhoods and shikumen houses with extensive Western-style and Art Deco buildings, reflecting its international role since the 19th century.",
+   "The Huangpu River divides Shanghai into Puxi (the older city centre) and Pudong (the newer high-rise district); most tourist attractions, hotels and nightlife are clustered in the central districts on both sides. This guide gives an overview of the municipality and points you to the main areas visitors choose to explore."
+  ],
+  "best_time": "Spring and autumn are generally the most pleasant times to visit for comfortable weather and manageable crowds; summer can be hot and busy, while winter is colder and quieter. Plan around major Chinese holidays if you want to avoid peak domestic travel periods.",
+  "top_sights": [
+   {
+    "name": "The Bund and the International Settlement",
+    "why": "A waterfront parade of early 20th-century European-style buildings that shows Shanghai’s colonial-era architecture and history; visit for riverside views and a sense of the city’s past. Walk the promenade at different times of day for changing light and skyline views."
+   },
+   {
+    "name": "Yuyuan Gardens and the Old City",
+    "why": "A historic Chinese garden complex and the surrounding Old City area offer traditional architecture, narrow streets and market stalls; it's a compact place to experience classical garden design. Expect many visitors around the gardens and explore nearby lanes for snacks and souvenirs."
+   },
+   {
+    "name": "People's Square",
+    "why": "A central urban park that was once a racecourse and now sits above one of Shanghai’s busiest metro interchanges; it's a practical base for museums, shops and nearby Nanjing Road. Use the metro interchange here to reach many parts of central Shanghai."
+   },
+   {
+    "name": "Nanjing Road (East and West)",
+    "why": "Shanghai’s best-known commercial street, running from the Bund west past People’s Square and beyond, with major shopping and pedestrianised sections. Allocate time for window-shopping and the side streets for more local finds."
+   },
+   {
+    "name": "French Concession and Huaihai Road",
+    "why": "A stylish district known for tree-lined streets, boutique shops, cafes and many international restaurants; Huaihai Road is a favoured upmarket shopping street. Wander the lanes to find small galleries, craft shops and cafés off the main thoroughfares."
+   },
+   {
+    "name": "Pudong skyline and modern districts",
+    "why": "Pudong showcases Shanghai’s rapid recent development with very tall skyscrapers, huge malls and contemporary architecture; it’s the place for modern cityscapes and large commercial complexes. Visit across the river from the Bund for dramatic skyline photos."
+   },
+   {
+    "name": "M50 art district",
+    "why": "A converted factory complex in Putuo District that hosts many contemporary Chinese art studios and galleries, ideal for seeing modern local artists. Check gallery opening times before you go and allow time to explore smaller studios."
+   },
+   {
+    "name": "Classical gardens (Yuyuan, Guyi, Qiuxia, Qushui, Zuibai Pond)",
+    "why": "A collection of traditional Chinese gardens preserved within the city that showcase historic landscape design and quieter green spaces. Combine a garden visit with nearby neighbourhoods to contrast old and new Shanghai."
+   }
+  ],
+  "getting_around": "Shanghai has an extensive metro network with major interchange stations in central areas; the metro is often the fastest way to move around the city. Taxis and ride-hailing services are widely available for journeys that are less convenient by metro; check local transit apps and allow extra time during rush hours when stations and trains can be very busy.",
+  "food": [
+   {
+    "name": "Shanghai cuisine",
+    "note": "Local flavours emphasise regional Shanghai dishes—seek out neighbourhood restaurants to sample the city’s culinary character."
+   },
+   {
+    "name": "Sichuan cuisine",
+    "note": "Spicy Sichuan restaurants are popular across the city, ranging from cheap hole-in-the-wall places to well-known sit-down restaurants on major streets."
+   },
+   {
+    "name": "Street food and local bakeries",
+    "note": "Street stalls and small bakeries offer inexpensive snacks such as roasted sweet potatoes and baked goods that make for low-cost, low-risk eating options."
+   },
+   {
+    "name": "International restaurants in the French Concession",
+    "note": "The French Concession concentrates many higher-end international dining options and boutique cafés along streets like Hengshan Road and Huaihai Road."
+   },
+   {
+    "name": "Coffee chains and casual café dining",
+    "note": "Chains such as Wagas and Baker & Spice are common downtown and offer Wi‑Fi and light western-style meals, popular with locals and visitors working on laptops."
+   }
+  ],
+  "budget_tips": [
+   "Eat at street stalls, hole-in-the-wall restaurants and local bakeries for inexpensive, filling meals.",
+   "Use the metro for most journeys; it reaches central hubs and is faster than surface transport during peak times.",
+   "Explore pedestrianised shopping streets and local markets instead of only visiting high-end malls to find cheaper souvenirs and snacks.",
+   "Check the municipal Shanghai Cultural Information website and local apps (Meituan, Amap, Baidu) for free or low-cost events and up-to-date listings."
+  ],
+  "safety": [
+   "Be aware that major metro interchanges and central areas can be extremely crowded; keep belongings secure and allow extra time for travel.",
+   "Tap into local apps and official websites for event and transit information rather than relying solely on printed guides, especially for schedule changes.",
+   "Use licensed taxis or reputable ride‑hailing services and check the route on a map if you do not speak Chinese.",
+   "When dining, especially at popular restaurants, expect waits at peak times and plan accordingly rather than risking rushed or stressful visits."
+  ],
+  "itinerary": [
+   "Day 1: Start at the Bund for riverside views and the Bund’s buildings, walk along Nanjing Road East to People’s Square, then explore nearby museums, department stores and the pedestrian shopping streets.",
+   "Day 2: Spend the day in the French Concession—stroll Huaihai Road, wander the lanes of the French Concession for boutiques and cafés, and visit Fuxing Park or a nearby garden.",
+   "Day 3: Cross to Pudong to see the modern skyline and skyscrapers, visit large malls and contemporary cultural venues, and finish with an art district or converted industrial gallery space such as M50."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Shanghai?",
+    "a": "Three days covers the main contrasts: the Bund and Nanjing Road, the French Concession, and Pudong’s modern skyline, while extra days allow time for museums, galleries and day trips. Adjust your stay depending on whether you want a relaxed pace or to visit many indoor attractions."
+   },
+   {
+    "q": "Is Shanghai expensive to visit?",
+    "a": "Costs vary widely: street food, local bakeries and metro travel are inexpensive, while international restaurants and large malls and attractions can be pricier. You can control costs by choosing local eateries and using public transport."
+   },
+   {
+    "q": "Is Shanghai safe for tourists?",
+    "a": "Shanghai is generally safe, but central transport hubs and tourist streets can be very crowded; keep an eye on your belongings and use licensed transport options. Consulting local apps and official sites helps avoid disruptions and crowded times."
+   },
+   {
+    "q": "What is the best area to stay in Shanghai?",
+    "a": "Most visitors stay in central districts on the Puxi side—around the Bund, People’s Square, Nanjing Road or the French Concession—for easy access to attractions, shops and restaurants. Pudong is convenient if you prefer modern high-rise hotels and quick access to business districts or large malls."
+   },
+   {
+    "q": "How do I get from the airport to the city?",
+    "a": "Shanghai’s airports are linked to the city by metro, express trains and road connections; major metro interchanges and central stations make onward travel straightforward. Choose the option that best fits your arrival time, luggage and final destination in the city."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "شنغهاي (Shanghai)",
+  "country_name": "الصين",
+  "title": "دليل سفر شنغهاي: sights وطبخ ومسار 3 أيام",
+  "meta_description": "دليل شنغهاي يتضمن أهم المعالم في بوشي وبودونغ، أماكن للأكل، نصائح توفير، و مسار مقترح لثلاثة أيام.",
+  "h1": "دليل سفر شنغهاي: ما الذي يجب رؤيته وتذوقه ومعرفته",
+  "intro": [
+   "شنغهاي أكبر مراكز الصين المالية والموضة، ومدينة ذات أهمية عالمية وكثافة سكانية عالية. تُظهر المدينة مزيجًا جذابًا من العمارة التقليدية الصينية والتأثيرات الغربية من فترات التنازل الاستعماري، مع أحياء تحتوي على مبانٍ آرت ديكو وبيوت شِيكومِن المميزة.",
+   "نهر هوانغبو يقسم المدينة إلى بوشي (Puxi) التاريخية وغربها، وبودونغ (Pudong) الحديثة المليئة بالأبراج شرقًا. هذا الدليل يعطي لمحة عامة للمناطق المركزية التي تحتوي على معظم الفنادق والمطاعم والمعالم السياحية."
+  ],
+  "best_time": "الوقت الأفضل للزيارة يعتمد على تفضيلاتك للمناخ والحشود؛ المناطق المركزية تكون ملائمة طوال العام لكن مواسم الفعاليات قد تجذب المزيد من الزوار. تحقق من جداول المترو والفعاليات المحلية قبل الرحلة، واستخدم تطبيقات محلية للفعاليات إن أمكن.",
+  "top_sights": [
+   {
+    "name": "الbund (الواجهة النهرية)",
+    "why": "مجمع مبانٍ تاريخية على طراز كلاسيكي وآرت ديكو يطل على نهر هوانغبو، مكان رائع للمشي ورؤية مزيج العمارة الغربية والشرقية؛ انطلق مشيًا من نانجينغ رود شرقًا للتجربة الكاملة."
+   },
+   {
+    "name": "المدينة القديمة وحديقة ييوآن (Yuyuan)",
+    "why": "منطقة تاريخية صينية قديمة تضم حدائق تقليدية وأسواق؛ مثالية لرؤية فن الحدائق الصينية والأنشطة السياحية، فاحرص على زيارة الحديقة والممرات المحيطة."
+   },
+   {
+    "name": "شارع نانجينغ (Nanjing Road)",
+    "why": "أشهر شوارع التسوق الرئيسية في شنغهاي يمتد من الواجهة النهرية إلى ساحة الشعب، مناسب للتسوق والنزهة والاستفادة من محطات المترو المتصلة به."
+   },
+   {
+    "name": "ساحة الشعب (People's Square)",
+    "why": "حديقة مركزية كبيرة ومركز رئيسي لمترو المدينة يحيط بها متاحف ومراكز تسوق؛ محطة المترو أسفل الساحة تسهّل التنقل بين الخطوط الرئيسية."
+   },
+   {
+    "name": "الحزمة الفرنسية (الكونسيشن الفرنسية) وشارع هوايهاي",
+    "why": "منطقة أنيقة بها شوارع تسوق بوتيكية ومقاهي ومطاعم راقية، مناسبة للتجول في محلات التصميم والاستمتاع بمطاعم متنوعة على طول هوايهاي وهينغشان."
+   },
+   {
+    "name": "منطقة Xintiandi وشِيكومِن",
+    "why": "مثالٌ واضح لمنازل الشيكومِن المُعاد تطويرها مع مطاعم ومتاجر؛ تقدم مزيجًا بين الهندسة المعمارية التقليدية والتجارب الحضرية الحديثة."
+   },
+   {
+    "name": "مركز الفنون والتصوير المعاصر (Power Station of Art)",
+    "why": "متحف للفن المعاصر في محطة طاقة قديمة على نهر هوانغبو، مكان مناسب لعرض الفن المعاصر والمعارض المؤقتة؛ تحقّق من برنامج المعروضات قبل الزيارة."
+   },
+   {
+    "name": "منطقة M50 للفن الحديث وتيانزيفانغ",
+    "why": "أحياء فنية داخل مصانع مُعاد استخدامها واستوديوهات ومعارض معاصرة؛ مفيدة لمحبي الفن المعاصر والتعرف على المشهد الفني المحلي."
+   }
+  ],
+  "getting_around": "شنغهاي لديها شبكة مترو واسعة تربط بين الأحياء الرئيسية مع محطات مركزية مثل ساحة الشعب ونانجينغ رود وجينغان. من المطار يمكن استخدام المترو أو وسائل النقل الموثوقة؛ داخل المدينة المترو والتاكسي وخدمات الركوب عبر التطبيقات شائعة ومريحة.",
+  "food": [
+   {
+    "name": "الوجبات المحلية والخبز الصغير (المخابز المحلية)",
+    "note": "المخابز المحلية تقدم معجنات وقهوة بأسعار معقولة وهي خيار شائع للوجبات الخفيفة."
+   },
+   {
+    "name": "المأكولات الحارة من سيتشوان (Sichuan)",
+    "note": "مطاعم السيتشوان شائعة، وتجد منها خيارات من مطاعم الشارع إلى مطاعم راقية مثل Spicy Joint على شارع هوايهاي."
+   },
+   {
+    "name": "نُودلز مسلمية من غرب الصين",
+    "note": "مطاعم نودلز مسلمة من مناطق غرب الصين توفر طعامًا بسيطًا ورخيصًا ومليئًا بالنكهات."
+   },
+   {
+    "name": "سلاسل غربية ومقاهي (Wagas، Baker & Spice)",
+    "note": "سلاسل مثل Wagas توفر مقاهي ومأكولات غربية وخيارات للعمل مع الواي فاي، منتشرة في الأحياء المركزية."
+   },
+   {
+    "name": "الوجبات السريعة الغربية والشبكات الدولية",
+    "note": "سلاسل مثل ماكدونالدز وستاربكس وKFC منتشرة، وتوجد أيضًا سلاسل يابانية مثل Coco Ichibanya وأماكن برغر مثل Carl's Jr."
+   }
+  ],
+  "budget_tips": [
+   "استخدم المترو للتنقل فهو يغطي معظم المعالم المركزية ويكون أسرع من حركة الشوارع.",
+   "تناول الطعام في المطاعم الصغيرة أو أطباق الشارع والمخابز المحلية لتقليل المصاريف.",
+   "تجنب فترات الذروة للزيارات الشهيرة لتوفير الوقت والحد من الانتظار، خاصة عند المطاعم الشهيرة.",
+   "استفِد من المشي في أحياء مثل الواجهة النهرية والكونسيشن الفرنسية بدلاً من التنقّل بسيارات أجرة لمسافات قصيرة."
+  ],
+  "safety": [
+   "شنغهاي مدينة حضرية كبيرة؛ احفظ متعلقاتك الشخصية في الأماكن المزدحمة خصوصًا في مناطق التسوق والمحطات.",
+   "التزام بقواعد المرور عند عبور الشوارع واستخدم المعابر والممرات المخصصة للمشاة.",
+   "كن محترمًا للعادات المحلية في الأماكن العامة والمعبدّات، وراجع لافتات وشروط الدخول في المواقع الدينية والثقافية."
+  ],
+  "itinerary": [
+   "اليوم الأول: تجول في الواجهة النهرية (The Bund) ثم مشي على شارع نانجينغ وزيارة ساحة الشعب والمراكز التجارية المحيطة.",
+   "اليوم الثاني: استكشاف المدينة القديمة وحديقة ييوآن، ثم جولة في الحي الفرنسي (French Concession) وشارع هوايهاي ومنطقة Xintiandi.",
+   "اليوم الثالث: زيارة مناطق الفن المعاصر مثل M50 وتيانزيفانغ ومحطة طاقة الفن (Power Station of Art)، مع وقت للتسوق في مراكز تسوق كبيرة أو جولة في حدائق المدينة."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لزيارة شنغهاي؟",
+    "a": "ثلاثة أيام تكفي لرؤية المعالم الرئيسية في الأجزاء المركزية مثل الواجهة النهرية، المدينة القديمة والحي الفرنسي، مع وقت لزيارة متاحف أو مناطق فنية إضافية."
+   },
+   {
+    "q": "هل شنغهاي مدينة مكلفة؟",
+    "a": "تكاليف الزيارة تتفاوت؛ هناك خيارات رخيصة للطعام والنقل ومقاهي متوسطة السعر، كما توجد مطاعم ومتاجر فاخرة في أحياء مثل هوايهاي والبودونغ."
+   },
+   {
+    "q": "هل شنغهاي آمنة للسياح؟",
+    "a": "عمومًا شنغهاي مدينة حضرية آمنة، لكن يُنصح بتوخي الحذر المعتاد في الأماكن المزدحمة وحفظ الأمتعة وحماية الوثائق."
+   },
+   {
+    "q": "ما هي أفضل المناطق للإقامة؟",
+    "a": "المناطق المركزية في بوشي مثل هوانغبو والحي الفرنسي وجينغان مناسبة للإقامة لقربها من المعالم والتسوق والنقل العام."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط المدينة؟",
+    "a": "يمكن الوصول باستخدام المترو أو خدمات النقل البرّية والتاكسي؛ المترو خيار عملي وشائع للوصل إلى المحطات المركزية وفق شبكات المترو التي تخدم المدينة."
+   }
+  ]
+ }
+}

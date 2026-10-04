@@ -1,0 +1,227 @@
+{
+ "slug": "paris",
+ "name": "Paris",
+ "country": "France",
+ "tags": [
+  "culture",
+  "history",
+  "food",
+  "shopping"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Paris",
+ "en": {
+  "city_name": "Paris",
+  "country_name": "France",
+  "title": "Paris travel guide: sights, food, budget & itinerary",
+  "meta_description": "Practical Paris travel guide with top sights, food highlights, money-saving tips, getting around and a 3-day itinerary for first-time visitors.",
+  "h1": "Paris travel guide: what to see, eat and know",
+  "intro": [
+   "Paris is the cosmopolitan capital of France, famous for its culture, art, fashion, food and historic landmarks. The city—called the City of Light and the City of Love—contains world-class museums, haute couture houses and UNESCO-listed riverside streets.",
+   "Paris is densely packed with attractions from the Eiffel Tower to the Louvre, but it is also a living city with busy streets, traffic and crowds; realistic plans and time for quiet strolls off the main routes will make a visit more enjoyable."
+  ],
+  "best_time": "The fall is particularly lively after the summer holidays through the pre-Christmas season when cultural venues are busiest; avoid August and February if you expect many local businesses to be closed because many Parisians travel then. Major events such as the French Open happen at set times of year and will bring crowds, so plan around them if you prefer quieter visits.",
+  "top_sights": [
+   {
+    "name": "Eiffel Tower",
+    "why": "Paris's most iconic monument and a must-see for first-time visitors; consider booking access or arriving early to reduce waiting in tourist seasons."
+   },
+   {
+    "name": "Arc de Triomphe",
+    "why": "A grand triumphal arch offering a central viewpoint over the city; approach via the Champs-Élysées for the classic perspective but use pedestrian crossings and underpasses for safety."
+   },
+   {
+    "name": "Louvre Museum",
+    "why": "One of the world's great art museums and home to the Mona Lisa, with enough collection to require multiple visits; use a plan or the Paris Museum Pass to skip some queues and focus your visit."
+   },
+   {
+    "name": "Notre Dame Cathedral (Île de la Cité)",
+    "why": "A landmark Gothic cathedral that inspired Victor Hugo; visit the island and nearby streets, bearing in mind sections may be affected by restoration or access rules."
+   },
+   {
+    "name": "Sacré-Cœur and Montmartre",
+    "why": "A basilica on Paris's highest point with wide city views and an artists' quarter behind it; walk the side streets of Montmartre for a quieter, more local atmosphere."
+   },
+   {
+    "name": "Musée d'Orsay",
+    "why": "Housed in a former railway station, it showcases major 19th-century works including Monet and Renoir; plan your visit around the collection you most want to see to make the most of limited time."
+   },
+   {
+    "name": "Père-Lachaise Cemetery",
+    "why": "An ornate cemetery with historic graves including Jim Morrison, Oscar Wilde and Chopin; bring a map or notes to find particular graves among winding lanes."
+   },
+   {
+    "name": "Sainte-Chapelle",
+    "why": "A chapel renowned for its stained glass interior, often considered more visually striking inside than nearby Notre Dame; expect tight spaces and consider visiting outside peak hours."
+   }
+  ],
+  "getting_around": "Paris is centred on the River Seine and has extensive public transport including Métro and RER trains that serve the city core and suburbs. For major attractions and airport transfers use a combination of Métro, RER and official airport services; walking is often the quickest way between nearby sights in central arrondissements.",
+  "food": [
+   {
+    "name": "Bistro dining",
+    "note": "Traditional bistros with sidewalk terraces offer simple, often meat-centred meals and are a good budget-friendly option."
+   },
+   {
+    "name": "Haute cuisine and Michelin-starred restaurants",
+    "note": "Paris has a very large number of Michelin-starred restaurants and is a global fine-dining destination, though quality varies and reservations are often required."
+   },
+   {
+    "name": "Pastries and patisseries",
+    "note": "Classic French pastries, bakeries and café culture are everywhere—great for casual snacks during sightseeing."
+   },
+   {
+    "name": "Ethnic and modern cuisine",
+    "note": "Immigrant communities and modern chefs have diversified Parisian dining—look beyond tourist streets for creative, well-executed meals."
+   },
+   {
+    "name": "Casual bistros and terraces",
+    "note": "Small neighbourhood bistros can offer good value, but researching reviews or getting local recommendations helps avoid tourist traps."
+   }
+  ],
+  "budget_tips": [
+   "Buy a Paris Museum Pass to access many museums and monuments and to skip long ticket queues; passes come in 2-, 4- and 6-day consecutive options.",
+   "Use the Métro and RER for most travel within the city rather than taxis to save money.",
+   "Eat at small bistros, bakeries or neighbourhood cafés instead of tourist-focused restaurants on major avenues to reduce meal costs.",
+   "Plan ahead and book popular attractions and restaurant reservations in advance to avoid last-minute premium charges or disappointment."
+  ],
+  "safety": [
+   "Be aware of pickpockets in crowded tourist areas and on public transport; keep valuables secure and stay vigilant in busy stations and at major sights.",
+   "Expect the normal downsides of a large city—traffic, noise and occasional litter—and plan routes and timing accordingly to avoid stressful moments.",
+   "Learn a few basic French phrases and be polite; realistic expectations and respectful behaviour reduce frustration and cultural misunderstandings."
+  ],
+  "itinerary": [
+   "Day 1: Start at the Eiffel Tower, walk along the Seine toward the Louvre, and spend the afternoon exploring the Louvre collection or the Jardin des Tuileries and nearby Musée de l'Orangerie.",
+   "Day 2: Visit Île de la Cité to see Notre Dame and Sainte-Chapelle, then head to the Latin Quarter and Musée d'Orsay, finishing the day in Saint-Germain or on the Champs-Élysées toward the Arc de Triomphe.",
+   "Day 3: Explore Montmartre and Sacré-Cœur in the morning, then choose a cemetery or museum such as Père-Lachaise or the Musée Rodin, and finish with shopping in Le Marais or the Palais-Royal arcades."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Paris?",
+    "a": "Three days lets you see key highlights and a few museums, but Paris has enough to fill many visits; be selective and save some sights for a return trip."
+   },
+   {
+    "q": "Is Paris expensive to visit?",
+    "a": "Paris can be costly, especially at tourist-focused restaurants and high-end shops, but budget options exist such as bistros, bakeries and public transport to keep costs down."
+   },
+   {
+    "q": "Is Paris safe for tourists?",
+    "a": "Paris is generally safe but has the usual urban issues like pickpocketing and busy traffic; stay alert in crowded areas and secure your belongings to avoid common problems."
+   },
+   {
+    "q": "What is the best area to stay in Paris?",
+    "a": "Central arrondissements give easy access to major sights; choosing a neighbourhood depends on whether you prefer museums, nightlife, shopping, or quieter streets—research areas and pick one that fits your priorities."
+   },
+   {
+    "q": "How do I get from the airports to central Paris?",
+    "a": "Use RER trains, airport express services or official airport transport to reach the city; public rail services and the Métro connect central Paris with the wider region efficiently."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "باريس (Paris)",
+  "country_name": "فرنسا",
+  "title": "باريس: دليل السفر لزيارة معالم المدينة",
+  "meta_description": "دليل عملي لباريس: أهم المعالم، متاحف، طعام، نصائح لتوفير المال وخطة 3 أيام لزيارة أبرز الأماكن.",
+  "h1": "دليل السفر إلى باريس: ماذا ترى وتتذوق وتعرف",
+  "intro": [
+   "باريس هي العاصمة الكوزموبوليتية لفرنسا وتُعرف بجمالها وتاريخها وتأثيرها في مجالات الفن، الموضة والمأكولات. تضم المدينة معالم أيقونية مثل برج إيفل، متحف اللوفر وحي مونمارتر، كما أن ضفاف نهر السين جزء من مواقع التراث العالمي.",
+   "المدينة تجذب ملايين الزوار سنوياً وتشتهر بالمطاعم الحائزة على نجوم ميشلان والمحلات الراقية، لكن التوقعات العالية والازدحام والأسعار قد يخيبان أحياناً آمال بعض الزوار؛ التخطيط الواقعي واختيار الزيارات يساعدان على الاستمتاع أكثر."
+  ],
+  "best_time": "أفضل وقت للزيارة يعتمد على ما تريد: موسم الخريف حافل بالعروض والثقافة، ومواسم العطل الكبرى تجذب حشوداً. تجنّب ذروة الإجازات إن أردت طوابير أقصر وأسعار أقل، وخذ بعين الاعتبار أن بعض السكان يغادرون المدينة في أغسطس وفبراير.",
+  "top_sights": [
+   {
+    "name": "برج إيفل (Eiffel Tower)",
+    "why": "أشهر رمز لباريس ويستحق الزيارة لمشهد المدينة؛ توقع طوابير في المواسم المزدحمة وخطط للحجز أو الزيارة في أوقات أقل ازدحاماً."
+   },
+   {
+    "name": "قوس النصر (Arc de Triomphe de l'Étoile)",
+    "why": "نصب يوفّر رؤية مركزية للعاصمة ويجسّد الفخامة الحضرية؛ الوصول إلى القمة يعطيك إطاراً ممتازاً لالتقاط صور للشانزليزيه والمحاور المدينة."
+   },
+   {
+    "name": "الشانزليزيه (Champs-Élysées)",
+    "why": "من أشهر الشوارع في العالم للتسوق والمشي؛ توقع متاجر فاخرة وزيارات سياحية كثيفة، فالمشي على الحي يمنحك إحساساً بالباريسية رغم الازدحام."
+   },
+   {
+    "name": "كاتدرائية نوتردام (Notre Dame Cathedral)",
+    "why": "كاتدرائية قوطية تاريخية ملهمة ومرتبطة بالأدب الفرنسي؛ المساحات المحيطة والجزر في السين تستحق الاستكشاف نظراً لأهميتها العمرانية."
+   },
+   {
+    "name": "سقُرِ كور (Sacré-Cœur)",
+    "why": "كنيسة تقع على أعلى نقطة في باريس وتقدم إطلالات بانورامية، مع حي الفنانين خلفها الذي يستحق التجول على الأقدام."
+   },
+   {
+    "name": "أوبرا غارنييه (Opéra Garnier)",
+    "why": "تحفة معمارية مسرحية من القرن التاسع عشر ومكان مهم لعشاق الهندسة والمعمار؛ جولات داخلية متاحة وتُظهر الفخامة الداخلية للمسرح."
+   },
+   {
+    "name": "متحف اللوفر (The Louvre)",
+    "why": "أحد أهم متاحف الفن في العالم ويحتوي على مجموعات هائلة ومن أشهرها لوحة (مونا ليزا)؛ ضع في الحسبان حجم المتحف وخطط لقضاء وقت كافٍ أو زيارتين."
+   },
+   {
+    "name": "متحف أورسيه (Musée d'Orsay)",
+    "why": "يضم مجموعة رائعة للفن في القرن التاسع عشر موضوعة في محطة سكة حديد سابقة؛ مناسب لعشاق الانطباعية ويكمل زيارة اللوفر لعرض أطر زمنية فنية مختلفة."
+   }
+  ],
+  "getting_around": "باريس مزوّدة بشبكة نقل عام واسعة تشمل مترو وقطارات RER والحافلات؛ من السهل التنقل داخل المدينة بهذه الوسائل. للوصول من المطارات الكبرى ينبغي التحقق من خيارات القطار أو الحافلات الموازية أو سيارات الأجرة مسبقاً، وخذ بعين الاعتبار الازدحام وموعد وصولك.",
+  "food": [
+   {
+    "name": "المأكولات الراقية (Haute cuisine)",
+    "note": "باريس تضم عدداً كبيراً من المطاعم الحائزة على نجوم ميشلان وتعتبر مركزاً مهماً للمطبخ الرفيع."
+   },
+   {
+    "name": "البيسترو الفرنسي التقليدي",
+    "note": "مئات البيستروهات تقدم وجبات بسيطة ومركزة على اللحوم بأسعار معقولة نسبياً مقارنة بالمطاعم الراقية."
+   },
+   {
+    "name": "التراس والمقاهي على الأرصفة",
+    "note": "الجلوس في مقهى على الرصيف تجربة باريسية كلاسيكية، خاصة في أحياء مثل اللاتين وكانال سانت مارتن."
+   },
+   {
+    "name": "المخابز الباريسية",
+    "note": "المخابز المحلية تقدم خبزاً ومعجنات طازجة تُعد جزءاً أساسياً من تجربة الأكل اليومية في المدينة."
+   },
+   {
+    "name": "تنوّع المطابخ العالمية",
+    "note": "بفضل الجاليات المهاجرة، تجد في باريس مزيجاً من المطابخ الأجنبية والخبرات الطهوية المتجددة."
+   }
+  ],
+  "budget_tips": [
+   "استفد من دخول المتاحف والمواقع الوطنية مجاناً كل أول يوم أحد من الشهر لتخفيض تكاليف الزيارات.",
+   "فكّر في شراء بطاقة Paris Museum Pass لدخول المئات من المتاحف والمعالم وتجنب الطوابير الطويلة؛ البطاقات المتاحة في أغسطس 2024 كانت لأجل 2، 4 و6 أيام بمعدلات معلنة.",
+   "تناول الطعام في البيستروهات التقليدية أو اشترِ معجنات وسندويتشات من المخابز لتقليل مصاريف الطعام مقابل تناول الطعام في المطاعم الراقية.",
+   "خطط لزيارة المعالم الشهيرة خارج ساعات الذروة أو اشترِ التذاكر مسبقاً لتقليص وقت الانتظار وتحسين إدارة وقتك."
+  ],
+  "safety": [
+   "كن واقعياً بتوقعاتك ولا تدع الرومانسية المتوقعة تخيفك من اتخاذ الاحتياطات الأساسية في مدينة كبيرة.",
+   "راقب متعلقاتك الشخصية في المناطق المزدحمة لأن السرقات البسيطة شائعة في مناطق السياح.",
+   "تجنّب المواقف المشبوهة واحرص على نسخ من الوثائق المهمة والاحتفاظ بها في مكان منفصل عن النسخ الأصلية.",
+   "إذا شعرت بضغط نفسي شديد أو صدمة ثقافية مفرطة، اطلب مساعدة طبية أو اتصالاً بمصادر دعم محلية، فهناك حالات من صدمة ثقافية شديدة أُبلغ عنها بين زوار المدينة."
+  ],
+  "itinerary": [
+   "اليوم الأول: ابدأ ببرج إيفل ثم تمشّى على طول ضفاف السين نحو متحف اللوفر، خصص وقتاً لزيارة مكان واحد أو قسم واحد داخل اللوفر لتجنب الإرهاق.",
+   "اليوم الثاني: استكشف أوبرا غارنييه وشارع الشانزليزيه وقم بزيارة قوس النصر، وأنهِ اليوم بجولة في حي مونمارتر وزيارة كنيسة سكر-كور للمشاهدة البانورامية.",
+   "اليوم الثالث: خصصه للمتاحف — متحف أورسيه في الصباح ومتحف اللوفر أو متحف صغير متخصّص بعد الظهر، أو قم بجولة إلى المقابر التاريخية مثل بير لاشيز إذا رغبت في تنوع."
+  ],
+  "faq": [
+   {
+    "q": "كم يوم أحتاج لزيارة باريس؟",
+    "a": "الأمر يعتمد على أولوياتك؛ لزيارة المعالم الرئيسية يفي بها 2–3 أيام، أما للاستمتاع بالمتحاف والحيّز البطيء فستحتاج إلى أيام أكثر. خطط بعناية ولا تحاول رؤية كل شيء في زيارة واحدة."
+   },
+   {
+    "q": "هل باريس مكلفة؟",
+    "a": "باريس يمكن أن تكون مكلفة خاصة للمطاعم الراقية والتسوّق الفاخر، لكن هناك خيارات اقتصادية مثل البيستروهات والمخابز وزيارات المتاحف المجانية في أول أحد من الشهر."
+   },
+   {
+    "q": "هل باريس آمنة للسياح؟",
+    "a": "باريس عامةً آمنة لكنها مدينة كبيرة؛ احذر من السرقات البسيطة في المناطق المزدحمة، وكن واعياً لتجنب المواقف المشبوهة واتّبع الاحتياطات المعتادة."
+   },
+   {
+    "q": "ما هو أفضل مكان للإقامة في باريس؟",
+    "a": "الاختيار يعتمد على اهتماماتك—الحيّ التاريخي والبارات والمطاعم متوفرة في عدة مناطق مثل اللاتين ولو ماريه والحي الثامن للتسوق الراقي؛ اختر موقعاً متمكناً من مواصلات عامة لتسهيل التنقّل."
+   },
+   {
+    "q": "كيف أتمكّن من تفادي طوابير المتاحف؟",
+    "a": "اشترِ تذاكر الدخول أو بطاقة Paris Museum Pass مسبقاً حيث تتيح الدخول الأسرع إلى العديد من المواقع، كما حاول الزيارة خارج ساعات الذروة أو شراء البطاقة قبل يوم الزيارة."
+   }
+  ]
+ }
+}

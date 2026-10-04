@@ -1,0 +1,225 @@
+{
+ "slug": "hawaii",
+ "name": "Hawaii",
+ "country": "United States",
+ "tags": [
+  "beach",
+  "nature",
+  "relax"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Hawaii",
+ "en": {
+  "city_name": "Hawaii",
+  "country_name": "United States",
+  "title": "Hawaii travel guide: islands, sights and tips",
+  "meta_description": "Practical travel guide to Hawaii: top sights across the islands, what to eat, how to save money, safety tips and a 3-day sample itinerary.",
+  "h1": "Hawaii travel guide: what to see, eat and know",
+  "intro": [
+   "Hawaii is the 50th U.S. state, located near the center of the North Pacific and forming the northeastern edge of Polynesia. The state is made up of several islands with diverse landscapes — beaches, rainforests, volcanoes and strong cultural ties to Native Hawaiian and Polynesian history.",
+   "Honolulu on Oahu is the largest city and the cultural and transport hub, while the less populated Neighbor Islands offer many of the islands' best natural attractions. English and Hawaiian are the official languages and tourism plays a central role in the islands' economy."
+  ],
+  "best_time": "Timing depends on what you want: winter brings big surf to Oahu's North Shore and more dramatic waves for watching, while winter also overlaps the humpback whale season around Maui (mid-December to mid-April). For calmer seas and lower chance of storms, consider the low-tourist shoulder seasons, but expect popular places to remain busy year-round.",
+  "top_sights": [
+   {
+    "name": "Waikiki",
+    "why": "World-famous beach area in Honolulu offering beaches, hotels and easy access to city amenities; great base if you want beaches, dining and convenient day trips to nearby hikes."
+   },
+   {
+    "name": "Pearl Harbor",
+    "why": "Historic site with museums and memorials important to U.S. and world history; plan time for exhibits and tours to understand its significance."
+   },
+   {
+    "name": "Diamond Head",
+    "why": "Iconic volcanic crater near Waikiki that offers panoramic views after a relatively short hike; bring sun protection and water for the exposed trail."
+   },
+   {
+    "name": "Oahu North Shore",
+    "why": "Renowned surfing coastline that becomes the global center for big-wave surfing in winter; visit in summer for calmer water or winter to watch the surf scene from shore."
+   },
+   {
+    "name": "Haleakala (Maui)",
+    "why": "Large volcanic summit on Maui known for dramatic sunrises and otherworldly landscapes; rising early rewards you with unique light and cooler summit temperatures."
+   },
+   {
+    "name": "Road to Hana (Maui)",
+    "why": "Scenic coastal drive with many waterfalls, bridges and viewpoints along eastern Maui; take your time to stop at viewpoints and trails and be prepared for many turns."
+   },
+   {
+    "name": "Hawaii Volcanoes National Park (Big Island)",
+    "why": "Expansive volcanic landscape where you can learn about the islands' geologic origins and see volcanic features; guided and aerial tours are common ways to explore volcanic areas."
+   },
+   {
+    "name": "Waimea Canyon (Kauai)",
+    "why": "A deep, colorful canyon often called the 'Grand Canyon of the Pacific' offering dramatic vistas and hiking; aerial or land viewpoints both show its scale and beauty."
+   }
+  ],
+  "getting_around": "Inter-island travel is primarily by air between the major islands, with most visitors flying into Honolulu on Oahu as a common gateway. Within islands, rental cars, local buses and organized tours are the usual ways to move between beaches, parks and towns; some rural areas have limited public transport.",
+  "food": [
+   {
+    "name": "Plate lunch",
+    "note": "A generous meal typically featuring meat or fish with rice and macaroni salad, widely available from lunch wagons and casual eateries."
+   },
+   {
+    "name": "Fresh Pacific seafood and poke",
+    "note": "Local seafood is commonly served raw or lightly seasoned; poke bowls and other seafood dishes are island staples."
+   },
+   {
+    "name": "Tropical fruits",
+    "note": "Pineapple, mango, papaya and other tropical fruits are commonly sold and eaten fresh across the islands."
+   },
+   {
+    "name": "Local coffee",
+    "note": "Coffee grown on islands such as the Big Island and Kauai is a common local specialty."
+   },
+   {
+    "name": "Fusion cuisine",
+    "note": "Hawaii's contemporary cuisine blends Hawaiian, Portuguese, American and Asia-Pacific influences into creative dishes."
+   }
+  ],
+  "budget_tips": [
+   "Eat at local lunch wagons, food courts and markets rather than tourist restaurants to save on meals.",
+   "Use public buses or shared tours for day trips instead of booking private transport when possible.",
+   "Book inter-island flights and accommodations in advance to get better availability and choices.",
+   "Bring essentials with you or shop at larger stores in cities, as goods can be more expensive on remote parts of islands."
+  ],
+  "safety": [
+   "Be aware of natural hazards: strong surf, rip currents and sudden weather changes can be dangerous—check local conditions before entering the water.",
+   "Respect protected areas and endangered species; many tours operate in sensitive habitats and there are laws to protect wildlife and plants.",
+   "Some areas experienced severe wildfires in 2023 and restrictions or closures may remain in place; follow local guidance and stay informed about access and safety advisories."
+  ],
+  "itinerary": [
+   "Day 1: Base yourself in Honolulu or Waikiki, visit Waikiki Beach, hike Diamond Head for views, and explore Pearl Harbor or a local museum to learn about Hawaiian history.",
+   "Day 2: Take a day tour around Oahu to see the North Shore, surf spots, and the Dole Plantation, or fly to a Neighbor Island for a half-day introduction to its highlights.",
+   "Day 3: Visit a Neighbor Island—options include driving sections of the Road to Hana and seeing waterfalls on Maui, touring volcanic sites or taking an aerial flight on the Big Island, or exploring Waimea Canyon or helicopter/land tours on Kauai."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Hawaii?",
+    "a": "Three to seven days is common for a first visit if you plan to stay mostly on one island; allow extra time if you want to visit multiple islands since inter-island travel takes time."
+   },
+   {
+    "q": "Is Hawaii expensive to visit?",
+    "a": "Hawaii can be pricier than many mainland destinations because of island logistics; choosing local food options, public transport and booking ahead can help control costs."
+   },
+   {
+    "q": "Is it safe to swim and surf in Hawaii?",
+    "a": "Swimming and surfing are popular but conditions vary; strong surf and rip currents occur, especially in winter on exposed shores—always check local advisories and heed lifeguards' guidance."
+   },
+   {
+    "q": "Which island should I stay on for a first visit?",
+    "a": "Oahu is a good choice for first-time visitors who want city conveniences with easy access to beaches and attractions, while Neighbor Islands offer quieter access to many natural wonders if you prefer a slower pace."
+   },
+   {
+    "q": "How do I get from one island to another?",
+    "a": "Most travelers use short inter-island flights to move between the main islands; organize transfers and any onward travel in advance to make connections smoother."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "هاواي",
+  "country_name": "الولايات المتحدة",
+  "title": "هاواي: دليل سفر شامل",
+  "meta_description": "دليل هاواي: معالم طبيعية وشواطئ وأماكن لتناول الطعام ونصائح للميزانية وخطة لثلاثة أيام للمسافرين.",
+  "h1": "دليل هاواي: ماذا ترى وتفعل وتاكل وتعرف",
+  "intro": [
+   "هاواي (Hawaiʻi) هي الولاية رقم 50 للولايات المتحدة وتقع في وسط المحيط الهادئ كنقطة تقاطع لبولينيزيا. تشتهر بجمالها الطبيعي من شواطئ وبراري وشلالات وبراكين، وتبدو مختلفة بين جزرها الكبيرة والمدن الساحلية المزدحمة.",
+   "هونولولو هي العاصمة والمركز الحضري الأكبر، بينما تقدم الجزر الأخرى (جزر الجوار) تجربة أبطأ وأكثر اتصالاً بالطبيعة: من كاواي ذات الأخاديد والوديان إلى ماوي وساحلها الخلاب والجزيرة الكبيرة (Big Island) بمتنزهاتها البركانية."
+  ],
+  "best_time": "الفصل الأفضل يعتمد على ما تبحث عنه: الشتاء يجلب أمواجاً كبيرة في الشاطئ الشمالي لأواهو ويجذب راكبي الأمواج، أما موسم رؤية الحوت الأحدب في ماوي من 15 ديسمبر إلى 15 أبريل فهو وقت مميز. عمومًا يمكن زيارة الجزر على مدار العام، لكن توقع اختلافات بكمية الزوار والطقس بين الموسم الجاف والرطب.",
+  "top_sights": [
+   {
+    "name": "متنزه بيرل هاربر (Pearl Harbor)",
+    "why": "موقع تاريخي مهم يضم متاحف ومعالم تذكارية عن هجوم 1941؛ مناسب لمن يهتمون بالتاريخ الحديث. خطط لزيارة ضمن الجولة المنظمة للحصول على سياق تاريخي كامل."
+   },
+   {
+    "name": "شاطئ وايكيكي (Waikiki Beach)",
+    "why": "أحد أشهر شواطئ العالم ويقع قرب هونولولو، يوفّر سهولة الوصول إلى المطاعم والفنادق ومسارات المشي، ويمثل نقطة انطلاق للأنشطة المائية مثل الغطس وركوب الأمواج للمبتدئين."
+   },
+   {
+    "name": "دهيموند هيد (Diamond Head)",
+    "why": "فوهة بركانية قريبة من وايكيكي تقدم مشاهد بانورامية للمدينة والمحيط؛ المشي إلى الحافة يمنح مشهداً جيداً، فارتد أحذية مناسبة واحمل ماء."
+   },
+   {
+    "name": "الشاطئ الشمالي لأواهو (North Shore)",
+    "why": "منطقة عالمية لممارسة ركوب الأمواج بالشتاء عندما تتشكل موجات كبيرة، كما أنها هادئة وصالحة للمشاهدة والرحلات البرية في باقي فصول السنة؛ تحقق من حالة البحر قبل الاقتراب من الماء."
+   },
+   {
+    "name": "مزرعة الأناناس ودول بلامنتيشن (Dole Plantation)",
+    "why": "مزارع أناناس وتعرف بمنتجاتها وتجارب الزوار المتعلقة بالأناناس؛ مكان مناسب لتذوق منتجات محلية والتعرّف على زراعة الأناناس."
+   },
+   {
+    "name": "وادي وايميا كانيون (Waimea Canyon) — كاواي",
+    "why": "خانق طبيعي واسع يُعرف بلقب 'Grand Canyon of the Pacific' ويعرض مناظر درامية وشلالات؛ استكشفه سيرًا أو من خلال رحلات جوية لرؤية الامتداد الكامل."
+   },
+   {
+    "name": "هايليكالا (Haleakalā) — ماوي",
+    "why": "بركان وتيارات جبلية على ماوي توفر مظاهر فريدة للمناظر الطبيعية وشروق الشمس في الأعلى؛ التخطيط المسبق مهم لأن بعض طرق الوصول محمية وتتطلب الحضور مبكراً للاستمتاع بالشروق."
+   },
+   {
+    "name": "منتزه براكين هاواي الوطني (Hawaii Volcanoes National Park) — الجزيرة الكبيرة",
+    "why": "موقع بركاني فريد يتيح مشاهدة التضاريس البركانية والنشاط الجيولوجي وتجارب المشي؛ تحقق من قيود الوصول وجولات المشاهدة المسموح بها قبل الزيارة."
+   }
+  ],
+  "getting_around": "الانتقال بين الجزر يعتمد على الطيران الداخلي والعبّارات بين بعض الجزر، أما داخل كل جزيرة فالمحركات الخاصة وتأجير السيارات شائعان لتغطية المعالم المنتشرة؛ في أواهو يمكن أيضاً استخدام النقل العام والجولات المنظمة للوصول لسواحل ومواقع سياحية رئيسية.",
+  "food": [
+   {
+    "name": "طبق الغداء (Plate lunch)",
+    "note": "وجبة محلية شائعة مكونة عادة من لحم أو سمك مع رز وسلطة المعكرونة، متوفرة في عربات الطعام والمطاعم الشعبية."
+   },
+   {
+    "name": "مأكولات البحر الطازجة",
+    "note": "الأسماك والمأكولات البحرية طازجة ومتاحة في معظم الجزر، وغالبًا ما تعرض بنكهات محلية."
+   },
+   {
+    "name": "قهوة جزيرة هاواي",
+    "note": "تزرع القهوة في جزيرة هاواي وكاواي وتُعد من منتجات الجزيرة الطازجة التي يستحسن تجربتها."
+   },
+   {
+    "name": "فواكه استوائية",
+    "note": "الأناناس والمانجو والبابايا متوفرة على نطاق واسع، ويمكن العثور عليها حتى في عربات الطعام والأسواق المحلية."
+   },
+   {
+    "name": "سوق عربات الطعام (Lunch wagons) والمطاعم المحلية",
+    "note": "عربات الطعام تقدم وجبات محلية بأسعار معتدلة وهي طريقة جيدة لتجربة أطعمة محلية وشعبية."
+   }
+  ],
+  "budget_tips": [
+   "توقع أسعارًا أعلى على معظم السلع بسبب كلفة النقل إلى الجزر، فخطط لميزانية أكبر للأشياء المادية.",
+   "تناول الوجبات في عربات الطعام وسلاسل الوجبات المحلية مثل أماكن الغداء للحصول على وجبات اقتصادية وشائعة لدى السكان المحليين.",
+   "استخدم خدمات النقل العام أو الجولات المنظمة في المدن لتجنب تكاليف وقوف السيارات وتأجير المركبات الطويلة.",
+   "احرص على السكن في مواقع مركزية لتقليل التنقلات، وخاصة إذا كنت تزور أواهو وتخطط لزيارات يومية إلى مناطق قريبة مثل وايكيكي ودهيموند هيد."
+  ],
+  "safety": [
+   "احذر من ظروف البحر القوية والموجات الكبيرة لا سيما على الشاطئ الشمالي في فصل الشتاء؛ راقب لافتات التحذير وحالة البحر قبل السباحة.",
+   "احترام القوانين واللوائح البيئية مهم؛ كثير من الجولات تتعامل مع حيوانات ونباتات مهددة، فتأكد من اختيار مزودين يحترمون الحماية البيئية.",
+   "احرص على حمل ماء وواقي شمس وارتداء أحذية مناسبة عند المشي في المناطق البرية والبركانية، فخدمات الطوارئ قد تكون بعيدة في بعض المناطق الريفية."
+  ],
+  "itinerary": [
+   "اليوم الأول — هونولولو وأواهو: تجول في وايكيكي، اصعد إلى دهيموند هيد لعرض بانورامي، وزر متاحف بيرل هاربر أو انضم لجولة تاريخية حسب اهتماماتك.",
+   "اليوم الثاني — جولة حول أواهو: قم بزيارة الشاطئ الشمالي لمشاهدة مشهد ركوب الأمواج، توقف في مزرعة دول لتجربة منتجات الأناناس، واستكشف شواطئ وبلدات الساحل الشمالي.",
+   "اليوم الثالث — جزيرة طبيعية (اختر ماوي أو كاواي أو الجزيرة الكبيرة): في ماوي اختَر رحلة لمشاهدة الحيتان الموسمية أو زيارة هايلكالا، في كاواي استكشف وادي وايميا، وفي الجزيرة الكبيرة زر متنزه البراكين لمشاهدة التضاريس البركانية."
+  ],
+  "faq": [
+   {
+    "q": "كم يوم أحتاج لزيارة هاواي؟",
+    "a": "ذلك يعتمد على عدد الجزر التي تود زيارتها؛ للإحساس بالجزيرة الواحدة يكفي 3–5 أيام، ولتجربة أكثر من جزيرة تحتاج أسبوعًا أو أكثر لأن التنقل بين الجزر يستغرق وقتًا."
+   },
+   {
+    "q": "هل هاواي مكلفة؟",
+    "a": "نعم، تكاليف السلع والخدمات عادة أعلى من البرّ الرئيسي للولايات المتحدة بسبب تكاليف نقل البضائع، لذا خطط لميزانية سفر مرتفعة إلى متوسطة حسب نمط الإنفاق."
+   },
+   {
+    "q": "هل هاواي آمنة للسياح؟",
+    "a": "بشكل عام الجزر مرحّبة وآمنة للزوار، لكن يجب الحذر من ظروف البحر القوية واتباع إرشادات السلامة البيئية والمحلية عند ممارسة الأنشطة الخارجية."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "هونولولو ووايكيكي مناسبة لمن يريد سهولة الوصول إلى المطاعم والأنشطة الحضرية، أما من يبحث عن هدوء وطبيعة فالاختيار يكون في جزر الجوار مثل ماوي أو كاواي أو الجزيرة الكبيرة."
+   },
+   {
+    "q": "كيف أصل من المطار إلى المدينة؟",
+    "a": "يختلف النقل حسب الجزيرة، لكن عادة توجد خيارات من المطار تشمل تأجير السيارات وخدمات النقل والجولات المنظمة، وفي المدن الكبرى مثل هونولولو تتوفر وسائل نقل عام وخيارات نقل خاصة."
+   }
+  ]
+ }
+}

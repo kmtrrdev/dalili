@@ -1,0 +1,226 @@
+{
+ "slug": "lisbon",
+ "name": "Lisbon",
+ "country": "Portugal",
+ "tags": [
+  "culture",
+  "food",
+  "history"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Lisbon",
+ "en": {
+  "city_name": "Lisbon",
+  "country_name": "Portugal",
+  "title": "Lisbon travel guide: things to see, eat and know",
+  "meta_description": "Practical travel guide to Lisbon: top sights (Alfama, Belém, Bairro Alto), food, budget tips, getting around and a 3-day itinerary.",
+  "h1": "Lisbon travel guide: what to see, eat and know",
+  "intro": [
+   "Lisbon (Portuguese: Lisboa) is Portugal's capital, built on seven hills at the mouth of the Tagus River where it meets the Atlantic. The city mixes a long maritime history with lively contemporary culture, from bleached limestone façades and narrow alleys to modern waterfront districts.",
+   "Greater Lisbon includes nearby highlights such as Sintra, Cascais and Almada (home to the Cristo Rei statue), all linked by good public transport. Expect contrasts between elegant downtown squares, hilltop neighbourhoods like Alfama and the youthful nightlife of Bairro Alto."
+  ],
+  "best_time": "Lisbon is a popular year‑round destination with cultural events and nightlife throughout the year. Because the city is hilly and compact, many visitors plan activities that combine sightseeing with meals and evening entertainment rather than long outdoor treks.",
+  "top_sights": [
+   {
+    "name": "Belém",
+    "why": "A riverside district with several major monuments including Torre de Belém, the Monument to the Discoveries and Jerónimos Monastery; visit here to combine history with museums such as the National Coach Museum. Plan time for the nearby pastry shops that serve the famous pastéis de nata."
+   },
+   {
+    "name": "Alfama",
+    "why": "Lisbon's oldest district survived the 1755 earthquake and offers narrow lanes, historic charm and major sights such as Lisbon Cathedral and St. George's Castle; take a historic yellow tram or be prepared to climb steep streets on foot."
+   },
+   {
+    "name": "Bairro Alto and Chiado",
+    "why": "Bairro Alto is the city's lively nightlife quarter while Chiado has theatres, shops and historic landmarks; start with dinner or a fado show around Praça Camões and move uphill as the night develops."
+   },
+   {
+    "name": "Baixa",
+    "why": "The downtown area rebuilt after the 1755 earthquake in a grid pattern, home to Praça do Comércio and other notable squares; use the Santa Justa Lift to connect to Chiado and enjoy riverfront views."
+   },
+   {
+    "name": "Parque das Nações",
+    "why": "The modern Expo '98 district features the Oceanarium, the Pavilion of Knowledge and a riverside esplanade with cable cars, making it a family‑friendly contrast to the old city."
+   },
+   {
+    "name": "25th of April Bridge and Vasco da Gama Bridge",
+    "why": "Two landmark bridges that frame Lisbon's river crossings: the 25th of April Bridge is visually reminiscent of the San Francisco bridge while the Vasco da Gama Bridge is a modern long-span crossing from Expo '98."
+   },
+   {
+    "name": "Cristo Rei (Almada)",
+    "why": "A large statue of Christ the King on the south bank of the Tagus visible from Lisbon; include a riverside crossing to Almada for views back towards the city and the bridges."
+   },
+   {
+    "name": "Gulbenkian Museum and Parque Eduardo VII",
+    "why": "Northern Lisbon attractions that offer art and green space; good options when you want museums and parks away from the busiest tourist districts."
+   }
+  ],
+  "getting_around": "Lisbon's tram network, metro and buses provide efficient city travel but the seven hills make many streets steep, so expect climbs or use the historic trams for hillier districts. Greater Lisbon and nearby destinations such as Sintra, Cascais and Almada are connected by reliable public transport links; bridges span the Tagus to southern suburbs.",
+  "food": [
+   {
+    "name": "Pastel de nata",
+    "note": "Portugal's famous custard tart is especially associated with Belém and available at many pastry shops across the city."
+   },
+   {
+    "name": "Pratos do dia (dishes of the day)",
+    "note": "Many family restaurants post a daily special on a board; these are often fresher and cheaper than other menu items."
+   },
+   {
+    "name": "Traditional Portuguese small restaurants",
+    "note": "Modest family-run places in neighbourhoods like Castelo and Alfama serve home-style meals and are popular with locals."
+   },
+   {
+    "name": "Seafood on Rua das Portas de Santo Antão",
+    "note": "This area near Praça dos Restauradores has a concentration of seafood restaurants, though other parts of Baixa can be touristy."
+   },
+   {
+    "name": "Dining with fado",
+    "note": "Fado-themed restaurants near Praça Camões offer music with dinner—start there in the early evening before Bairro Alto fills up."
+   }
+  ],
+  "budget_tips": [
+   "Choose pratos do dia or family-run restaurants away from the main tourist squares to save money on meals.",
+   "Avoid restaurants pushed by taxi drivers, as they often lead to pricier tourist-oriented venues.",
+   "Shop with a Lisbon Shopping Card for discounts in many Baixa, Chiado and Avenida da Liberdade stores; 24‑hour and 72‑hour cards are available for the stated prices.",
+   "Walk or use public transport rather than taxis for short trips; historic trams and the metro connect most central neighbourhoods."
+  ],
+  "safety": [
+   "Be prepared for steep streets and many steps—wear comfortable shoes and take care on uneven pavements and stairways.",
+   "Respect local dining customs: couvert items brought to your table are not free unless stated, so check your bill if you didn't request them.",
+   "Nightlife areas such as Bairro Alto get very busy—keep an eye on your belongings in crowded streets and on public transport.",
+   "When seeking restaurant recommendations, avoid asking taxi drivers to prevent being taken to commission-based tourist venues."
+  ],
+  "itinerary": [
+   "Day 1: Explore Baixa and Chiado—visit Praça do Comércio, walk Rua Augusta, take the Santa Justa Lift to Chiado, have dinner and a fado show near Praça Camões, then go up to Bairro Alto for nightlife.",
+   "Day 2: Spend the day in Belém—see Torre de Belém, the Monument to the Discoveries and Jerónimos Monastery, visit museums along the river and sample pastéis de nata at a local pastry shop.",
+   "Day 3: Discover Alfama and the Castle—ride a historic tram or walk the narrow lanes to Lisbon Cathedral and St. George's Castle, then head to Parque das Nações or take public transport for a short trip to Sintra or the coastal resorts."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Lisbon?",
+    "a": "Three days gives you time to see the main districts—Baixa, Chiado, Alfama and Belém—and to enjoy an evening in Bairro Alto, with options for a short excursion to nearby Sintra or the coast."
+   },
+   {
+    "q": "Is Lisbon expensive?",
+    "a": "Lisbon offers a wide range of prices: many small family restaurants and daily specials are inexpensive, while upscale hotels and riverfront dining can be costly. Choosing local eateries and using discounts such as the Lisbon Shopping Card can reduce costs."
+   },
+   {
+    "q": "Is Lisbon safe for tourists?",
+    "a": "Lisbon is generally perceived as less frantic than many large cities and is suitable for visitors, but be cautious on steep streets and in crowded nightlife areas, and mind your belongings in busy places."
+   },
+   {
+    "q": "What is the best area to stay in?",
+    "a": "Baixa and Chiado are convenient for first‑time visitors because of central locations and transport links; Alfama offers historic atmosphere while Lapa is known for higher‑end dining and accommodations."
+   },
+   {
+    "q": "How do I get from the airport to the city?",
+    "a": "Lisbon is well connected by public transport; options include metro, buses and other services that link the airport with central neighbourhoods and the wider region. For specific routes and schedules check local transport information before travel."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "لشبونة (Lisbon)",
+  "country_name": "البرتغال",
+  "title": "لشبونة: دليل السفر إلى Lisbon",
+  "meta_description": "دليل لشبونة يتضمن أهم المعالم، أشياء يجب تجربتها، نصائح توفير وميزانية، وخطة زيارات لثلاثة أيام.",
+  "h1": "دليل السفر إلى لشبونة: ماذا ترى وتأكل وتعرف",
+  "intro": [
+   "لشبونة، عاصمة البرتغال، مبنية على سبعة تلال عند مصب نهر التاجة (Tejo) حيث يلتقي بالمحيط الأطلسي، وتمتزج فيها المباني الحجرية البيضاء والأزقة الضيقة مع حياة معاصرة نابضة. المدينة تتمتع بمزيج من التاريخ الغني والثقافة الحية ما يجعلها وجهة ممتعة على مدار العام.",
+   "تضم منطقة لشبونة الكبرى وجهات قريبة شهيرة مثل سينترا، إستوريل وكاشكايش، بالإضافة إلى ألمادا حيث نصب Cristo Rei؛ كلها مترابطة جيدًا بشبكة نقل عام تتيح الوصول السهل من وإلى العاصمة."
+  ],
+  "best_time": "لشبونة وجهة مناسبة على مدار السنة لكن الطقس معتدلًا والمدينة أقل زحامًا خارج موسم الذروة الصيفي؛ فصول الربيع والخريف توفر طقسًا لطيفًا وزحامًا أقل. لاحظ أن المدينة مبنية على تلال كثيرة لذا اختر أحذية مريحة للمشي في أي وقت من السنة.",
+  "top_sights": [
+   {
+    "name": "الحي الألفاما (Alfama)",
+    "why": "أقدم أحياء لشبونة التي نجت إلى حد كبير من زلزال 1755، تستحق الزيارة لأزقتها الضيقة والمرتفعات التي تقود إلى كاتدرائية لشبونة وقلعة ساو جورج؛ استخدم الترام الأصفر التاريخي إذا رغبت بتجنب الصعود الطويل."
+   },
+   {
+    "name": "بايرو ألتو (Bairro Alto) وشيادو (Chiado)",
+    "why": "منطقة حيوية للحياة الليلية والمطاعم والمقاهي الأنيقة، مناسبة للبدايات المسائية مع انتقال تدريجي إلى نوادي وبارات أعلى التل؛ ابدأ بوجبة فادو قرب ساحة كامويش ثم اطلع إلى الشوارع الأعلى."
+   },
+   {
+    "name": "بايشا (Baixa) وساحة التجارة (Praça do Comércio)",
+    "why": "المركز التاريخي الذي أعيد بناؤه بنمط شبكي بعد زلزال 1755، تضم ساحات بارزة ومصاعد مثل مصعد سانتا جوستا الذي يربط البايشا بمنطقة شيادو؛ جيدة للتجول واستكشاف المتاجر والمقاهي."
+   },
+   {
+    "name": "بيليم (Belém)",
+    "why": "منطقة غنية بالمعالم النهرية مثل برج بيليم، ونصب الاكتشافات، ودير جيرونيموس ومتاحف مهمة؛ اذهب إلى هنا لتجربة معالم عصر الاكتشافات وتذوق الباستل دي ناتا الأصلي."
+   },
+   {
+    "name": "جسر 25 أبريل (Ponte 25 de Abril)",
+    "why": "جسر ملاحي بارز يتشابه تصميمه مع جسر خليج سان فرانسيسكو، يبدو بارزًا من واجهة النهر ويشكل خلفية جيدة لصور الواجهة البحرية؛ تجنّب القيادة في ساعات الذروة إذا أمكن."
+   },
+   {
+    "name": "جسر الفاسكو دا غاما (Ponte Vasco da Gama)",
+    "why": "أطول جسر في أوروبا، شُيّد لمعرض إكسبو 98 ويقع عند الضفة الشرقية للنهر، يبرُز كرمز للبنية التحتية الحديثة في المنطقة."
+   },
+   {
+    "name": "باركيه داش ناسيونيس (Parque das Nações) والأكواريوم",
+    "why": "منطقة إكسبو '98 المتجددة بها الأكواريوم الكبير ومركز العلوم والواجهة النهرية الحديثة؛ مناسبة للعائلات والمشي على الكورنيش مع مناظر حديثة للمدينة."
+   },
+   {
+    "name": "كريستو ري (Cristo Rei) في ألمادا",
+    "why": "تمثال ضخم للمسيح على قاعدة مرتفعة في ضفة النهر المقابلة للمدينة، يوفر رؤية بانورامية لشبونة وجسر 25 أبريل؛ يصل إليه عبر مواصلات عبر النهر من العاصمة."
+   }
+  ],
+  "getting_around": "المدينة مبنية على تلال كثيرة لذا المشي قد يكون مرهقًا في بعض المناطق؛ الترامات التاريخية والميترو وخطوط الحافلات تغطي معظم الوجهات، وتربط الضواحي مثل سينترا وكاشكايش بالمدينة. لجولات عبر النهر أو الوصول إلى ألمادا يمكن استخدام العبارات ووسائل النقل العامة المتاحة.",
+  "food": [
+   {
+    "name": "باسطيل دي ناتا (Pastel de Nata)",
+    "note": "فطيرة كاسترد برتغالية شهيرة يمكن تذوقها في المخابز خصوصًا في بيليم."
+   },
+   {
+    "name": "المطاعم التقليدية في بايرو ألتو وشيادو",
+    "note": "تنتشر المطاعم العائلية التي تقدم أطباقًا محلية وخيارات يومية غالبًا بأسعار معقولة."
+   },
+   {
+    "name": "القوائم اليومية (Pratos do dia)",
+    "note": "مطاعم كثيرة تضع طبق اليوم على ورقة عند الباب، وهو خيار غالبًا أرخص وأطيب للمسافرين."
+   },
+   {
+    "name": "مأكولات البحر في رويزا داس بورتاس دي سانتو أنطونيو",
+    "note": "شارع معروف بالمأكولات البحرية بالقرب من بايشا حيث تكثر الخيارات المطعمية المخصصة للسياح والمحليين."
+   },
+   {
+    "name": "الأماكن المنزلية في حي القلعة (Castelo)",
+    "note": "مقاهي ومطاعم صغيرة تقدم طعامًا منزليًا رخيصًا وغالبًا لا تتحدث الإنجليزية بكثرة."
+   }
+  ],
+  "budget_tips": [
+   "اختر أطباق اليوم (pratos do dia) في المطاعم المحلية لتقليل التكلفة والحصول على طعام طازج.",
+   "تجنّب المطاعم السياحية ذات القوائم المصفّحة في بايشا إذا كنت تبحث عن أسعار أفضل.",
+   "اشترِ بطاقة Lisbon Shopping Card للاستفادة من خصومات المتاجر الرسمية، وهي متاحة لفترتي 24 أو 72 ساعة بتكلفة معلنة في الدليل.",
+   "استخدم الترام والميترو والحافلات للتنقل بدلًا من سيارات الأجرة خصوصًا عند التنقل بين الأحياء الترفيهية والأنشطة النهرية."
+  ],
+  "safety": [
+   "لشبونة أقل فوضوية من بعض العواصم الكبرى، ومع ذلك انتبه لِسقوط الأمتعة أو النشل في مناطق الزحام خاصة في الترامات والساحات السياحية.",
+   "ارتدِ أحذية مريحة وتوخّ الحذر عند المشي في الأزقة المرصوفة والحجارة عند صعود التلال لأن الانزلاق ممكن.",
+   "تجنّب سؤال سائقي التاكسي عن مطاعم (هم قد يوجهونك إلى أماكن سياحية مكلفة مقابل عمولة) واختر توصيات من مصادر موثوقة أو مراجعات."
+  ],
+  "itinerary": [
+   "اليوم الأول: تجول في بايشا وساحة التجارة ثم اصعد بمصعد سانتا جوستا إلى شيادو، تناول العشاء في مطعم يقدم فادو في منطقة كامويش.",
+   "اليوم الثاني: اكتشف حي ألفاما وزُر كاتدرائية لشبونة وقلعة ساو جورج، جرّب الرحلات بالترام الأصفر وامضِ المساء في مطاعم القلعة أو بايرو ألتو.",
+   "اليوم الثالث: اذهب إلى بيليم لزيارة برج بيليم ودير جيرونيموس وتذوق الباستيل دي ناتا ثم اتجه إلى منطقة باركيه داس ناسيونيس لزيارة الأكواريوم وممشى الواجهة النهرية."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لزيارة لشبونة؟",
+    "a": "ثلاثة أيام تكفي لرؤية أبرز معالم وسط المدينة مثل بايشا وشيادو وألفاما وبيليم، مع يوم إضافي إذا رغبت بزيارة سينترا أو الشواطئ المجاورة."
+   },
+   {
+    "q": "هل لشبونة مدينة مكلفة؟",
+    "a": "تعتمد التكلفة على اختياراتك؛ توجد مطاعم ومقاهي رخيصة ومحلية خاصة في أحياء مثل القلعة وبايرو ألتو، بينما تقدم الفنادق والمطاعم الراقية أسعارًا أعلى."
+   },
+   {
+    "q": "هل لشبونة آمنة للسياح؟",
+    "a": "بشكل عام المدينة تُعتبر آمنة لكن التنبه للنشل في الأماكن المزدحمة واتخاذ الاحتياطات المعتادة ضروريان."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "الاختيار يعتمد على الاهتمامات: بايشا وشيادو مناسبان للتسوق والوصول للمطاعم، بايرو ألتو مناسب للحياة الليلية، والقلعة مناسب لمن يبحث عن أجواء محلية هادئة."
+   },
+   {
+    "q": "كيف أصل من وسط لشبونة إلى ألمادا أو سينترا؟",
+    "a": "يمكن الوصول إلى ألمادا وعنوان Cristo Rei عبر وسائل النقل العام والعبّارات التي تعبر النهر، أما سينترا فتربطها بالمدينة شبكة مواصلات عامة جيدة تغادر من محطات رئيسية."
+   }
+  ]
+ }
+}

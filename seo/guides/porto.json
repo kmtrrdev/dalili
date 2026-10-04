@@ -1,0 +1,225 @@
+{
+ "slug": "porto",
+ "name": "Porto",
+ "country": "Portugal",
+ "tags": [
+  "food",
+  "culture",
+  "history"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Porto",
+ "en": {
+  "city_name": "Porto",
+  "country_name": "Portugal",
+  "title": "Porto travel guide: sights, food, budget and 3-day itinerary",
+  "meta_description": "Practical Porto travel guide: top sights, food to try, transport tips, money-saving ideas and a 3-day itinerary for first-time visitors.",
+  "h1": "Porto travel guide: what to see, eat and know",
+  "intro": [
+   "Porto is Portugal's second largest city and the capital of the Northern region, set on the northern bank of the Douro River estuary. Its historic centre is a compact, cliff-backed area with medieval and modern architecture, declared a World Heritage site in 1996 and continuously inhabited since antiquity.",
+   "The city is lively but not huge in population, and it shares a metropolitan area with nearby towns such as Vila Nova de Gaia across the river. Porto rewards slow exploration: wander its alleys, riverside quarters and viewpoints, and sample its food and wine traditions."
+  ],
+  "best_time": "Spring and autumn offer pleasant weather and fewer crowds than summer; summer brings busy tourist seasons and beach activity at Foz do Douro. Winters are milder than inland Portugal but can be wet, so plan indoor museum time if traveling off-season.",
+  "top_sights": [
+   {
+    "name": "Palácio da Bolsa",
+    "why": "A 19th-century stock exchange building standing on the site of former cloisters, notable for its richly decorated interiors including an impressive Arab Room; visit for guided rooms and the on-site Port wine tasting room when offered."
+   },
+   {
+    "name": "Sé do Porto (Porto Cathedral)",
+    "why": "A Romanesque cathedral built on a hill with later Baroque alterations, offering both historic architecture and strong views over the Douro; it's worth climbing to the terraces for panoramic photos."
+   },
+   {
+    "name": "Ribeira and the Douro riverside",
+    "why": "The historic riverside quarter by the Douro is atmospheric for wandering, dining and starting river cruises; cross to Vila Nova de Gaia for views of the Port wine cellars opposite."
+   },
+   {
+    "name": "Livraria Lello",
+    "why": "An ornate historic bookshop famed for its interior and spiral staircase; it can become extremely crowded, so visit early to avoid long waits and claustrophobic conditions."
+   },
+   {
+    "name": "Torre dos Clérigos",
+    "why": "A baroque tower with panoramic city views reached by 226 steps; arrive early because the viewing platform has limited space and queues can form to climb the stairs."
+   },
+   {
+    "name": "Fundação de Serralves",
+    "why": "A contemporary art museum set within extensive gardens and an Art Deco villa, offering exhibitions, park walks and on-site dining and shops; combine an exhibition visit with time in the gardens."
+   },
+   {
+    "name": "Casa da Música",
+    "why": "A modern concert hall designed by OMA with guided tours available seasonally in English; check tour schedules if you want to see backstage areas and hear about the building's architecture."
+   },
+   {
+    "name": "Mercado do Bolhão",
+    "why": "A traditional market of fruit, vegetables, fish and meat restored and open after refurbishment; visit to experience local produce and the market atmosphere."
+   }
+  ],
+  "getting_around": "From the coast and metro network you can reach central Porto and nearby Matosinhos; the metro line A serves Matosinhos for beach restaurants. Within the city expect steep streets and many stairways, so allow time for walking between historic areas and use public transport or the metro for longer trips.",
+  "food": [
+   {
+    "name": "Tripas à moda do Porto",
+    "note": "A traditional tripe dish tied to Porto's history; it's a local specialty and reflects the city's culinary identity."
+   },
+   {
+    "name": "Port wine tasting",
+    "note": "Visit the Port wine cellars in Vila Nova de Gaia or the Museu do Vinho do Porto to sample and learn about Porto's signature fortified wine."
+   },
+   {
+    "name": "Pratos do dia (set menus)",
+    "note": "Many local restaurants offer three-course daily menus with soup, a main, dessert and coffee; these can be a filling, good-value way to dine like a local."
+   },
+   {
+    "name": "Fresh seafood in Matosinhos",
+    "note": "Matosinhos near the coast is known for high-quality seafood restaurants and is reachable by the blue metro line A."
+   },
+   {
+    "name": "Bica (espresso)",
+    "note": "Finish meals with a small strong coffee known locally as a bica, commonly served at cafes throughout the city."
+   }
+  ],
+  "budget_tips": [
+   "Use the Porto Card if you plan to visit several museums; it can include free museum entry and discounts, and offers optional public transport access.",
+   "Choose lunchtime pratos do dia at local restaurants for good-value three-course meals that often include drink and coffee.",
+   "Eat at family-run riverside restaurants in the Ribeira for affordable, hearty meals and a lively atmosphere rather than more tourist-focused venues.",
+   "Walk the city centre where possible to save on transport and enjoy many historic sights without paying entrance fees."
+  ],
+  "safety": [
+   "Porto is generally safe for visitors; stay aware of your belongings in crowded tourist spots such as Livraria Lello, the Ribeira and markets.",
+   "Watch your step on steep streets and stone stairways—good footwear will make exploration more comfortable and reduce the risk of slips.",
+   "Respect local dining customs and polite behaviour in restaurants; small gestures of appreciation to staff and chefs are valued."
+  ],
+  "itinerary": [
+   "Day 1: Explore the historic centre—visit the Sé do Porto, wander the Ribeira, cross to Vila Nova de Gaia to see Port wine cellars, and finish with a riverside dinner.",
+   "Day 2: Start at Mercado do Bolhão, see Palácio da Bolsa and Igreja de São Francisco, then climb Torre dos Clérigos and visit Livraria Lello; end with a Fado show in the São Bento area.",
+   "Day 3: Visit Fundação de Serralves and its gardens, then head to Matosinhos for a seafood lunch and a walk or cycle along the Foz do Douro seafront."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Porto?",
+    "a": "Three full days lets you see the main historic sites, enjoy a riverside meal, visit a museum or two and take time for a day trip to Matosinhos or Serralves. Add extra days if you want a longer Douro river cruise upriver."
+   },
+   {
+    "q": "Is Porto expensive to visit?",
+    "a": "Porto offers a range of prices: inexpensive local eateries with set menus provide good value, while some seaside and tourist-focused restaurants charge higher prices. Choosing local markets and family-run restaurants helps keep costs down."
+   },
+   {
+    "q": "Is Porto safe for tourists?",
+    "a": "Porto is broadly safe for visitors, but normal precautions against pickpocketing in busy tourist areas are sensible. Be careful on steep streets and stairs, especially in wet weather."
+   },
+   {
+    "q": "Which area is best to stay in?",
+    "a": "Staying in or near the historic centre or the Ribeira puts you close to major sights, dining and riverfront views; Boavista is a good option for access to Casa da Música and modern venues."
+   },
+   {
+    "q": "How do I get from the airport to the city centre?",
+    "a": "The metro and other public transport link the airport with central Porto; once in the city, steep streets mean a mix of walking and public transport is often the most efficient way to explore."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "بورتو",
+  "country_name": "البرتغال",
+  "title": "بورتو (Porto) — دليل السفر",
+  "meta_description": "دليل عملي لبورتو: أهم معالم المدينة، أطباق محلية، نصائح لتقليل التكاليف وخطة لثلاثة أيام في المدينة التاريخية على مضيق نهر دورو.",
+  "h1": "دليل سفر بورتو: ماذا ترى وتأكل وتعرف",
+  "intro": [
+   "بورتو هي ثاني أكبر مدن البرتغال وعاصمة الإقليم الشمالي، تقع على مرتفعات تطل على مصب نهر دورو. المدينة صغيرة نسبياً من حيث عدد السكان داخل الحدود البلدية، لكنها جزء من منطقة حضرية أكبر تضم نحو 1.8 مليون نسمة في نطاق 50 كم، بما في ذلك فيلا نوفا دي غايا والمناطق الساحلية المجاورة.",
+   "المركز التاريخي لبورتو مدرج ضمن مواقع التراث العالمي ويعكس تراكماً تاريخياً يعود إلى ما قبل العصر الروماني؛ مبانيها تجمع بين الطرز القوطية والباروكية والحديثة، وشوارعها المنحدرة وسلالمها الحجرية تمنح الزائر جولات مشي مجزية بصرياً لكنها مجهدة بدنياً."
+  ],
+  "best_time": "المدينة تتمتع بجاذبية طول السنة، لكن أفضل وقت للزيارة هو عندما يكون الطقس معتدلاً وتقل الحشود، خاصة إذا رغبت بالمشي في الأحياء القديمة أو مشاهدة غروب الشمس في فوز دو دورو. خذ بعين الاعتبار أن بعض المعالم قد تكون أكثر ازدحاماً في عطلات نهاية الأسبوع والمواسم السياحية.",
+  "top_sights": [
+   {
+    "name": "Palácio da Bolsa",
+    "why": "قصر بورصة القرن التاسع عشر مُقام على أرض دير قديم ويضم قاعة عربية داخلية بارزة وغرفة لتذوق نبيذ البورت؛ مفيد الحضور في جولة مرشدة لمشاهدة الزخارف وتفاصيل العمارة."
+   },
+   {
+    "name": "Sé do Porto (الكاتدرائية)",
+    "why": "كاتدرائية رومانسكية جزئياً مع إضافات باروكية تقدم إطلالات واسعة من أعلى التلة؛ توقع سلالم وممرات حجرية ومناظر جيدة للنهر."
+   },
+   {
+    "name": "Igreja de São Francisco",
+    "why": "كنيسة قوطية مع داخلية مزخرفة بالأسلوب الباروكي وتعد من المعالم البارزة في المدينة القديمة، فاحترم الهدوء داخلها عند الزيارة."
+   },
+   {
+    "name": "Livraria Lello",
+    "why": "مكتبة تاريخية مشهورة بتصميم داخلي وحلزون درج مذهل؛ المكان قد يصبح ضيقاً ومزدحماً جداً، فالأفضل التوجه مبكراً لتجنب الطوابير والاختناق."
+   },
+   {
+    "name": "Torre dos Clérigos",
+    "why": "برج باروكي يوفر منبر مشاهدة بانورامي للمدينة بعد صعود درجات كثيرة؛ الوصول مبكراً يساعد على تقليل وقت الانتظار على منصة الرؤية."
+   },
+   {
+    "name": "Ribeira",
+    "why": "الحي المطِل على النهر حيث تبدأ زيارة منطقة التراث العالمي، مناسب للتجول على الرصيف والاستمتاع بالمطاعم المطلة على دورو وركوب القوارب النهرية من الأرصفة القريبة."
+   },
+   {
+    "name": "Port Wine Institute",
+    "why": "مركز صغير يشرح عملية تصنيف نبيذ البورت وتاريخه، ويتيح شراء عينات وتنسيق جولات تذوق ومختبرات إن رغبت بذلك."
+   },
+   {
+    "name": "Casa da Música",
+    "why": "مبنى حديث مصمّم من قبل معماريين مشهورين ويُقدّم جولات إرشادية منظمة؛ تحقق من مواقيت الجولات الموسمية المتاحة باللغة الإنجليزية قبل الزيارة."
+   }
+  ],
+  "getting_around": "المدينة تنتشر على تلال ومنحدرات، ولذلك المشي يظل الوسيلة الأفضل لاستكشاف المركز التاريخي رغم التعب البدني. نظام المترو والقطارات يخدم الوصول إلى أحياء خارج المركز مثل ماتوسينيوس ومناطق الميناء، ومحطة الاستاد وملعب دراغاو لها محطة مترو خاصة بها. تذاكر الرحلات النهرية تُباع غالباً من مكاتب السياحة في منطقة ساو بنتو أو من الأرصفة نفسها.",
+  "food": [
+   {
+    "name": "Tripas à moda do Porto",
+    "note": "طبق تقليدي من الكرشة مرتبط بتاريخ المدينة ويعتبر تخصصاً محلياً يجب تذوقه."
+   },
+   {
+    "name": "قهوة بِيكا (bica)",
+    "note": "إسبريسو برتغالي يُقدّم عادة في نهاية الوجبة، شائع في المقاهي المحلية."
+   },
+   {
+    "name": "نبيذ البورت (Port wine)",
+    "note": "منطقة غايا على الضفة الجنوبية لنهر دورو مركز شراء وتذوق نبيذ البورت الأصيل."
+   },
+   {
+    "name": "أسواق المطاعم العائلية في الريبيرا",
+    "note": "مطاعم صغيرة عائلية على الواجهة النهرية تقدّم وجبات محلية بأسعار معقولة وجو محلي مضياف."
+   },
+   {
+    "name": "المأكولات البحرية في ماتوسينيوس",
+    "note": "مطاعم قرب الشاطئ في ماتوسينيوس تشتهر بالمأكولات البحرية الطازجة وتمريرة المترو تسهل الوصول إليها."
+   }
+  ],
+  "budget_tips": [
+   "استخدم بطاقة Porto Card إذا كنت تخطط لزيارة عدة متاحف للحصول على دخول مجاني وخصومات على خدمات مختلفة.",
+   "تناول وجبات 'Pratos do dia' في المطاعم المحلية داخل المدينة القديمة للاستفادة من قوائم متكلفة ومعقولة الحجم توفر حسماً مقابل السعر.",
+   "ابحث عن المطاعم العائلية في الريبيرا بدل المطاعم السياحية على الواجهة النهرية إذا رغبت بتجربة محلية وبسعر أقل.",
+   "خطط لزيارة المعالم المبكرة في اليوم لتجنب طوابير الدخول الانتظار الذي قد يستهلك وقتك ويجبرك على خيارات أكثر تكلفة لاحقاً."
+  ],
+  "safety": [
+   "بورتو مدينة عمرانية على تلال وسلالم حجرية كثيرة؛ ارتدِ أحذية مريحة واحذر من الأرصفة والمنحدرات لتفادي التعثر.",
+   "كن حذراً في الأماكن المزدحمة مثل مكتبة ليلو ومنطقة الريبيرا لأن الظواهر المعتادة في مناطق الجذب تشمل النشالين.",
+   "احترم قواعد الهدوء والزي المناسب داخل الكنائس والحفلات الموسيقية والفادو، وكن لبقاً مع العاملين في الأماكن التقليدية."
+  ],
+  "itinerary": [
+   "اليوم الأول: ابدأ في وسط المدينة بزيارة Sé do Porto ثم Igreja de São Francisco وPalácio da Bolsa، واختتم المساء بجولة في حي Ribeira وتجربة مطعم محلي على الواجهة النهرية.",
+   "اليوم الثاني: خصصه للمتاحف والمعالم في البايكسا وغرب البايكسا—تجوّل إلى Livraria Lello مبكراً، اصعد Torre dos Clérigos ثم زر Casa da Música أو متحف Soares dos Reis حسب اهتمامك.",
+   "اليوم الثالث: خذ مترو بلو لاين إلى ماتوسينيوس لتناول المأكولات البحرية قرب الشاطئ، ثم عد إلى فوز دو دورو لمشاهدة غروب الشمس أو قم برحلة نهرية قصيرة للتعرّف على جسور دورو ومناظر الواجهة."
+  ],
+  "faq": [
+   {
+    "q": "كم يوم أحتاج في بورتو؟",
+    "a": "ثلاثة أيام تتيح لك رؤية أهم معالم المركز التاريخي وزيارة بعض المتاحف وتجربة الواجهة النهرية وجزء من مناطق الشاطئ مثل ماتوسينيوس وفوز دو دورو، أما زيارة معمقة للمناطق المحيطة فتحتاج وقتاً أطول."
+   },
+   {
+    "q": "هل بورتو مدينة مكلفة؟",
+    "a": "بورتو تقدم خيارات متنوعة؛ يمكنك تناول وجبات جيدة بأسعار معقولة في المطاعم العائلية وأسواق اليوم، بينما تقدم المطاعم السياحية والمناطق الشاطئية خيارات أعلى سعراً، لذا يمكن التحكم بالميزانية عبر اختيار أماكن الأكل والنشاطات."
+   },
+   {
+    "q": "هل بورتو آمنة للسياح؟",
+    "a": "بورتو مدينة آمنة نسبياً لكن يجب توخي الحذر في الأماكن المزدحمة لعدم التعرض للنشل، كما أن التضاريس الحادة تتطلب اهتماماً لتفادي السقوط خصوصاً على السلالم والأرصفة الحجرية."
+   },
+   {
+    "q": "ما أفضل منطقة للإقامة؟",
+    "a": "الإقامة في المركز التاريخي (Baixa/Ribeira) تسهّل الوصول سيراً إلى معظم المعالم والواجهات النهرية، بينما توفر مناطق مثل Boavista وصولاً جيداً لثقافة الموسيقى والفعاليات الحديثة، وماتوسينيوس مناسب لمن يريد قرب الشاطئ."
+   },
+   {
+    "q": "كيف أصل من المطار إلى المدينة؟",
+    "a": "تتوفر وسائل نقل عام تربط المطار بوسط المدينة مثل مترو ووسائل برية أخرى، كما أن شبكة المترو والقطارات المحلية تسهل الانتقال داخل المدينة إلى أحياء الاستاد والميناء."
+   }
+  ]
+ }
+}

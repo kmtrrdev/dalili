@@ -1,0 +1,227 @@
+{
+ "slug": "hong-kong",
+ "name": "Hong Kong",
+ "country": "China",
+ "tags": [
+  "food",
+  "shopping",
+  "nightlife"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Hong_Kong",
+ "en": {
+  "city_name": "Hong Kong",
+  "country_name": "China",
+  "title": "Hong Kong travel guide: what to see, eat and know",
+  "meta_description": "Practical travel guide to Hong Kong: top sights, food to try, getting around, money tips and a 3-day itinerary for first-time visitors.",
+  "h1": "Hong Kong travel guide: what to see, eat and know",
+  "intro": [
+   "Hong Kong is a densely populated, culturally layered city where Cantonese traditions meet visible British influence and a steady flow of international arrivals. It serves as a global financial centre, a major tourist hub and a gateway for travellers heading deeper into China and Asia.",
+   "Beyond its skyline and busy streets, Hong Kong contains large areas of countryside, rocky islands and country parks that offer surprisingly wild scenery for visitors willing to explore. The territory also benefits from a highly regarded international airport, making it an easy first stop for many itineraries."
+  ],
+  "best_time": "Hong Kong has a subtropical climate with distinct seasons; plan according to your comfort with heat and humidity or cooler, drier weather, and expect busier periods when local and mainland tourists travel. Consider shoulder seasons to avoid the largest crowds while still enjoying pleasant conditions.",
+  "top_sights": [
+   {
+    "name": "Victoria Peak",
+    "why": "The Peak offers some of the most famous panoramic views over Hong Kong Island and Victoria Harbour; visit the Peak Tower observation platform and mall for sweeping vistas and combine the trip with a walk on nearby trails. Expect crowds at peak times, so go early or late in the day for better light and fewer people."
+   },
+   {
+    "name": "Happy Valley Racecourse",
+    "why": "Horse racing remains a major local pastime with lively race nights and an atmospheric finish-line beer garden; races are held most Wednesdays and at weekends outside the summer break. Bring your passport to take advantage of the tourist entry rate and arrive by MTR for convenience."
+   },
+   {
+    "name": "Sha Tin Racecourse",
+    "why": "Sha Tin hosts larger and international races and is another principal venue for Hong Kong racing fans; it offers a different scale and programme to Happy Valley and is well connected by public transport. Check the race schedule to pick a day with top-level events."
+   },
+   {
+    "name": "Kowloon Walled City Park",
+    "why": "This park preserves the site and remnants of the former Kowloon Walled City and presents a compact open-air museum that tells a unique chapter of Hong Kong's urban history; it’s an accessible stop when exploring Kowloon’s heritage sites."
+   },
+   {
+    "name": "Ping Shan Heritage Trail and Tsang Tai Uk",
+    "why": "The Ping Shan Heritage Trail links several historic structures in the New Territories, including traditional Hakka architecture like the walled village of Tsang Tai Uk, giving insight into rural and clan-based life in the territory. Wear comfortable shoes and allow time to walk between sites."
+   },
+   {
+    "name": "Tai O stilt houses",
+    "why": "The fishing village of Tai O on Lantau Island showcases traditional stilt houses and coastal life, offering a contrast to the city’s urban areas; combine it with other Lantau attractions for a fuller day exploring rural islands."
+   },
+   {
+    "name": "Po Lin Monastery and Tian Tan Buddha",
+    "why": "Po Lin Monastery and the large Tian Tan Buddha statue are major spiritual and tourist draws on Lantau, worth visiting for their religious significance and the surrounding mountain scenery. Expect a climb or a cable-car approach to reach the site, so plan accordingly."
+   },
+   {
+    "name": "Hong Kong Museum of History",
+    "why": "This museum provides a thorough overview of Hong Kong’s past and is particularly useful for visitors who want historical context; note that only an abridged permanent exhibition may be on display during renovation periods."
+   }
+  ],
+  "getting_around": "Hong Kong's international airport is widely regarded as one of the world's best and provides excellent onward connections. Within the territory, public transport is comprehensive and convenient; use contactless Octopus cards for small purchases and transit, but keep some cash on hand for street vendors and most taxis that may still expect cash.",
+  "food": [
+   {
+    "name": "Cantonese cuisine",
+    "note": "The dominant regional cuisine, featuring dim sum, fresh seafood and dishes that emphasize texture and subtle seasoning familiar to Guangdong diners."
+   },
+   {
+    "name": "Dim sum and tea-house dining",
+    "note": "Small plates and shared dishes are central to local food culture; popular venues can have long queues and usually require registering and waiting for a table."
+   },
+   {
+    "name": "Curry-influenced dishes",
+    "note": "Indian immigrants introduced curries and curry-style condiments adapted to local Cantonese tastes with milder spice levels."
+   },
+   {
+    "name": "Hakka and Teochew specialities",
+    "note": "These regional Chinese cuisines are well represented in Hong Kong and offer alternatives to mainstream Cantonese fare."
+   },
+   {
+    "name": "Cakes and pastries",
+    "note": "British culinary influence shows in the popularity of baked goods and pastries, which sit alongside local sweet treats."
+   }
+  ],
+  "budget_tips": [
+   "Use an Octopus card for frequent small purchases and public transport—it is commonly accepted in convenience stores and transit systems.",
+   "Carry some Hong Kong dollars in cash for street vendors and most taxis, as cards are not universally accepted in these situations.",
+   "Bring your passport when attending races at Happy Valley to access the tourist entry rate and lower the cost of admission.",
+   "Avoid waiting for peak mealtimes at popular local eateries by registering early or visiting outside main dining hours to reduce queue time."
+  ],
+  "safety": [
+   "Wear comfortable, supportive shoes and plan for a lot of walking, as public seating is limited and quick table turnover is common in restaurants.",
+   "Carry your passport or ID when required for event entry or official checks and to take advantage of tourist rates where available.",
+   "Be aware that laws and public order rules have changed in recent years; avoid participating in political demonstrations and follow local regulations.",
+   "When visiting crowded tourist and transit hubs, keep personal belongings secure and be mindful of your surroundings."
+  ],
+  "itinerary": [
+   "Day 1: Explore Hong Kong Island — take in views from Victoria Peak, walk through Central, visit nearby museums and finish with a harbourfront stroll.",
+   "Day 2: Kowloon and heritage — spend the day at Kowloon museums and heritage sites such as Kowloon Walled City Park and the Ping Shan trail, and consider an evening at Happy Valley for live horse racing.",
+   "Day 3: Lantau and the countryside — head to Lantau to see Po Lin Monastery, the Tian Tan Buddha and the traditional stilt houses at Tai O, with time for coastal walking or a village visit."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Hong Kong?",
+    "a": "Three days will allow you to see the city's main highlights and a bit of the countryside; add more time if you want to explore extra islands or spend more time hiking in country parks."
+   },
+   {
+    "q": "Is Hong Kong expensive to visit?",
+    "a": "Hong Kong is a major financial centre and costs can be high in some areas, but payment methods are varied—credit cards are widely accepted for larger purchases while Octopus cards and cash are useful for smaller spending."
+   },
+   {
+    "q": "Is Hong Kong safe for tourists?",
+    "a": "Hong Kong is generally safe, but laws and public-order regulations have changed recently; avoid demonstrations, follow local rules and keep identification with you when needed."
+   },
+   {
+    "q": "What is the best area to stay in Hong Kong?",
+    "a": "Central on Hong Kong Island is convenient for business and many top attractions, while Kowloon offers good access to museums, markets and cross-harbour viewpoints; choose based on the sights you want to prioritise."
+   },
+   {
+    "q": "How do I get to and from the airport?",
+    "a": "Hong Kong's airport is internationally renowned and provides excellent onward connections; from the airport you can use public transport and airport services to reach the city quickly—plan according to your arrival time and luggage needs."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "هونغ كونغ",
+  "country_name": "الصين",
+  "title": "هونغ كونغ: دليل السفر لأهم المعالم والطعام والخبرات",
+  "meta_description": "دليل هونغ كونغ: معالم مثل فيكتوريا بيك وتماثيل بوذا، مطبخ كانتوني وحيل للتوفير وخطة ثلاثية الأيام للتنقل بين المدينة والطبيعة.",
+  "h1": "دليل هونغ كونغ: ما الذي يجب رؤيته، أكله ومعرفته",
+  "intro": [
+   "هونغ كونغ مدينة متعددة الوجوه تجمع تأثيرات صينية وبريطانية مع تيارات من ثقافات أخرى، وتُعرف محليًا باسم Hēunggóng. تُعتبر مركزًا ماليًا عالميًا وتجذب السياح ورجال الأعمال من أنحاء آسيا والعالم.",
+   "إلى جانب الميناء وأفق الأبراج، توفر الإقليم جبالًا ضبابية وجزرًا صخرية ومناظر ريفية ملفتة، مع نسبة كبيرة من المساحة مصنفة كمتنزهات وطنية، كما يملك مطارًا من بين الأفضل في العالم مما يجعلها بوابة مناسبة إلى الصين وباقي آسيا."
+  ],
+  "best_time": "للهواة الطقس المعتدل، الربيع والخريف يوفران طقسًا مريحًا وحشودًا أقل من عطلات نهاية الأسبوع في مواسم الذروة؛ الصيف حار ورطب وقد يشهد فترات راحة في سباقات الخيل، والشتاء معتدل نسبيًا. اختر الموسم الذي يناسب راحتك من الحرارة والرطوبة وكن مستعدًا للكثير من المشي.",
+  "top_sights": [
+   {
+    "name": "فيكتوريا بيك (Victoria Peak)",
+    "why": "أعلى نقطة تطل على أفق هونغ كونغ وميناء فيكتوريا، وتضم مركزًا تجاريًا ومنصة مراقبة؛ نصيحة عملية: ارتدِ حذاء مريح وتوقع حشوداً عند غروب الشمس."
+   },
+   {
+    "name": "مضمار هابي فالي لسباقات الخيل (Happy Valley Racecourse)",
+    "why": "موقع تاريخي لسباقات الخيل يجذب الجماهير والمراهنين، ويمنح تجربة محلية مميزة؛ تحقق من مواعيد السباقات واصطحب جواز سفرك لدخول الزوار."
+   },
+   {
+    "name": "مضمار شاطن (Sha Tin Racecourse)",
+    "why": "مضمار أكبر يستضيف سباقات دولية وفعاليات رئيسية؛ الوصول سهل عبر المواصلات العامة، وهو خيار جيد إذا رغبت في سباقات بمستوى أعلى."
+   },
+   {
+    "name": "حديقة مدينة كاولون المسورة (Kowloon Walled City Park)",
+    "why": "موقع ذو بقايا تاريخية وحدائق ومتحف في الهواء الطلق يروي قصة الحي السابق؛ يأخذك المكان عبر طبقات من تاريخ المنطقة ويستحق الزيارة للمهتمين بالتراث."
+   },
+   {
+    "name": "مسار تراث بينغ شان (Ping Shan Heritage Trail)",
+    "why": "طريق يمر بجملة مواقع أثرية وقروية تقليدية في الإقليم الجديد، مناسب لمَن يريد مشاهدة العمارة والقلاع المحلية، ويفضل ارتداء ملابس مناسبة للمشي."
+   },
+   {
+    "name": "بيوت على ركائز في تاي أو (Tai O stilt houses)",
+    "why": "قرية صيد تقليدية على لانتاو تعرض نمط حياة قائم على الماء ومنازل على ركائز؛ تجول في الأزقة وجرب مشاهدة مناظر البحر والحياة المحلية."
+   },
+   {
+    "name": "تمثال بوذا تين تان (Tian Tan Buddha)",
+    "why": "تمثال ضخم ودير بولين على لانتاو يجذب الزوار لسبب ديني وسياحي؛ استعد لصعود الدرجات للاستمتاع بإطلالاتٍ واسعة على المحيط ودير بولين القريب."
+   },
+   {
+    "name": "متحف تاريخ هونغ كونغ (Hong Kong Museum of History)",
+    "why": "يعرض نظرة شاملة على ماضي هونغ كونغ وتطوره الاجتماعي والثقافي؛ تحقق من الحالة الجزئية للمعروضات أثناء التجديدات قبل الزيارة."
+   }
+  ],
+  "getting_around": "مطار هونغ كونغ معروف بجودته ويعد نقطة انطلاق ممتازة للوصول إلى المدينة؛ وسائل النقل العامة متطورة وتشمل مترو (MTR) وحافلات وعربات الترام ووسائل دفع إلكترونية شائعة مثل بطاقة Octopus للمشتريات والتنقل. المشي مطلوب كثيرًا داخل أحياء المدينة لذا جهز نفسك بحذاء مريح.",
+  "food": [
+   {
+    "name": "المطبخ الكانتوني",
+    "note": "الركيزة الأساسية للمأكولات المحلية مع تشكيلة واسعة من الأطباق والنكهات التي تعكس تراث جوانجدونغ."
+   },
+   {
+    "name": "الكاري على الطريقة المحلية",
+    "note": "تأثر الطهي المحلي بالمهاجرين الهنود وتحولت الصلصات إلى نكهات أكثر اعتدالًا مناسبة للمذاق الكانتوني."
+   },
+   {
+    "name": "المعجنات والكعك المأثورة",
+    "note": "تأثير بريطاني يظهر في شعبية الحلويات والمعجنات المحلية التي تناسب عشاق المأكولات الغربية."
+   },
+   {
+    "name": "أطباق هكا وتيوتشيو",
+    "note": "موجودة بوفرة نتيجة هجرات الطهاة من مناطق مختلفة في الصين وتقدم تنويعات إقليمية مميزة."
+   },
+   {
+    "name": "خيارات عالمية ومطابخ اندماجية",
+    "note": "يمكن العثور بسهولة على مأكولات آسيوية وغربية ومطابخ مدمجة تلبي أذواق المسافرين."
+   }
+  ],
+  "budget_tips": [
+   "استخدم بطاقة Octopus ووسائل النقل العام مثل مترو MTR لتقليل تكاليف التنقل بدلاً من الاعتماد على سيارات الأجرة دائماً.",
+   "تناول الطعام في مطاعم الأحياء أو الأكشاك المحلية بدلًا من المطاعم العريقة لتوفير المال، مع توقع صفوف وانتظار في أماكن الشهرة.",
+   "استكشف المتنزهات والريف المجاني، فجزء كبير من الإقليم مغطى بمناظر طبيعية لا تتطلب تذاكر دخول باهظة.",
+   "اشترِ المستلزمات الصغيرة والمشروبات من المتاجر الصغيرة أو محطات الخدمة بدلاً من المطاعم السياحية لتقليل المصروفات اليومية."
+  ],
+  "safety": [
+   "احترم القوانين المحلية وتعليمات السلطات؛ الوضع القانوني والسياسي تغير في السنوات الأخيرة لذا التزام القواعد أمر مهم.",
+   "انتبه لمقتنياتك في الأماكن المزدحمة مثل الأسواق والمواصلات العامة وتجنب إظهار مقتنيات ثمينة بلا ضرورة.",
+   "في الأماكن الدينية أو التراثية التزم بالآداب المحلية مثل التصرف بهدوء وملابس مناسبة، وتجنب التصرفات غير الملائمة.",
+   "احمل حذاء مريح وتوقع الوقوف والمشي لفترات طويلة؛ توفر المقاعد محدودة في الشوارع والمطاعم الرخيصة."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشاف جزيرة هونغ كونغ — اصعد إلى فيكتوريا بيك، تجول في سنترال، زر متاحف صغيرة مثل متحف البحرية أو متحف الطب، وانهي المساء عند واجهة الميناء.",
+   "اليوم الثاني: كولون (Kowloon) وتراث المدينة — زر متحف تاريخ هونغ كونغ، استكشف حديقة المدينة المسورة، وتجول في الأسواق والأماكن على الواجهة البحرية في وست كولون.",
+   "اليوم الثالث: لانتاو والطبيعة — توجه إلى لانتاو لزيارة دير بولين وتمثال بوذا تين تان، ثم تابع إلى قرية تاي أو ذات البيوت على الركائز أو استمتع بأحد المتنزهات الطبيعية والشواطئ."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لزيارة هونغ كونغ؟",
+    "a": "ثلاثة إلى أربعة أيام تكفي لرؤية المعالم الرئيسية في الجزيرة وكولون وجزيرة لانتاو، لكن لمحبي المشي والاكتشاف الريفي يمكن أن تمتد الزيارة أكثر للاستمتاع بالطبيعة."
+   },
+   {
+    "q": "هل هونغ كونغ مكلفة للزيارة؟",
+    "a": "هونغ كونغ تُعد من الوجهات ذات التكلفة المتوسطة إلى العالية مقارنة بمدن آسيوية أخرى، لكن يمكن التوفير باستخدام المواصلات العامة وتناول الطعام في مطاعم الأحياء والأسواق."
+   },
+   {
+    "q": "هل هونغ كونغ مكان آمن للسياح؟",
+    "a": "بصورة عامة آمنة من ناحية الجريمة اليومية، مع ذلك من المهم الالتزام بالقوانين المحلية واحترام التعليمات الرسمية، وأخذ الحيطة في الأماكن المزدحمة."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة كسائح؟",
+    "a": "المناطق المركزية مثل سنترال ومنطقة تسيم شا تسوي في كولون مناسبة للإقامة لأنها توفر وصولًا سهلاً إلى المواصلات والمعالم والمتاجر والمطاعم."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط المدينة؟",
+    "a": "مطار هونغ كونغ يعتبر من الأفضل في المنطقة ويوفر وسائل وصول فعالة إلى المدينة؛ يمكنك استخدام وسائل النقل العامة أو المطار السريع ووسائل دفع إلكترونية مثل بطاقة Octopus لتسهيل التنقل."
+   }
+  ]
+ }
+}

@@ -1,0 +1,225 @@
+{
+ "slug": "beijing",
+ "name": "Beijing",
+ "country": "China",
+ "tags": [
+  "history",
+  "culture"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Beijing",
+ "en": {
+  "city_name": "Beijing",
+  "country_name": "China",
+  "title": "Beijing travel guide: what to see, eat and know",
+  "meta_description": "Practical Beijing travel guide with top sights (Forbidden City, Great Wall), foods, budget tips, safety and a 3-day itinerary.",
+  "h1": "Beijing travel guide: what to see, eat and know",
+  "intro": [
+   "Beijing is China’s capital and a vast metropolis where imperial history and modern urban life meet. The city’s layout is notable for its concentric ring roads and a clear Central Axis that organizes many of its best-known landmarks.",
+   "Visitors can expect grand imperial sites, narrow traditional hutongs and lively dining districts across the 2nd and 3rd Ring Roads; locals may seem reserved at first but are warm once you engage, and a basic awareness of local customs will make your visit smoother."
+  ],
+  "best_time": "Spring and autumn are generally the most pleasant times to visit because temperatures are moderate and the air is often clearer; these seasons also tend to be less crowded than peak holiday periods. Winter can be cold while summer may be hot and busier at major attractions.",
+  "top_sights": [
+   {
+    "name": "Great Wall (various sections)",
+    "why": "The Great Wall is Beijing’s must-see and offers vastly different experiences depending on the section — from heavily restored and crowded Badaling to calmer Mutianyu, and more rugged stretches like Jiankou, Jinshanling and Huanghuacheng; check transport options and take care with guided tours and local advice if you visit remote sections."
+   },
+   {
+    "name": "Forbidden City (Palace Museum)",
+    "why": "The Forbidden City is the imperial palace complex at the heart of Beijing’s Central Axis and a highlight for its architecture and historical importance; arrive early or allow plenty of time to explore the extensive grounds."
+   },
+   {
+    "name": "Tiananmen Square",
+    "why": "Tiananmen Square sits just south of the Forbidden City on the Central Axis and is surrounded by major national buildings, offering a dramatic introduction to Beijing’s civic architecture; be prepared for large crowds around the square."
+   },
+   {
+    "name": "Temple of Heaven",
+    "why": "The Temple of Heaven is an iconic ceremonial complex on the Central Axis where emperors prayed for good harvests and today the surrounding park is popular with locals practising tai chi and other morning activities; plan time to walk the park and observe local life."
+   },
+   {
+    "name": "Drum and Bell Towers (Gulou)",
+    "why": "These medieval timekeeping towers stand at the northern end of the Central Axis and give a sense of Beijing’s historic urban core; they also make a good starting point for exploring nearby hutongs."
+   },
+   {
+    "name": "Summer Palace and Old Summer Palace",
+    "why": "Built as imperial retreats by the Qing, these palace complexes showcase garden design and lakeside scenery and are key to understanding later imperial life; allow time for walking the grounds and enjoying the water views."
+   },
+   {
+    "name": "Hutongs (including Nanluoguxiang)",
+    "why": "Beijing’s hutongs are traditional alleyways with courtyard homes that date back to the Yuan and Ming eras; areas such as Nanluoguxiang are very popular with visitors, so explore quieter sections by bike or on foot if you prefer a calmer experience."
+   },
+   {
+    "name": "National Centre for the Performing Arts",
+    "why": "The striking egg-shaped performing arts centre in Xicheng District hosts opera, concerts and theatre and is notable both for its modern architecture and the performances on offer; even viewing the exterior is worthwhile if you do not attend a show."
+   }
+  ],
+  "getting_around": "Beijing’s urban plan is organized around its ring roads and a strong central axis, which makes navigation relatively straightforward. Trains and buses connect the city to nearby Great Wall sections; within the city you can move between major areas by public transport, taxis or bicycle in many central neighbourhoods.",
+  "food": [
+   {
+    "name": "Peking duck",
+    "note": "Beijing’s signature roast duck is served at many dedicated restaurants and is a classic local specialty to try during your visit."
+   },
+   {
+    "name": "Guijie (food street)",
+    "note": "This long dining street in Dongcheng District hosts numerous restaurants and is a lively place to sample a wide range of Chinese dishes."
+   },
+   {
+    "name": "Sanlitun and Chaoyang international dining",
+    "note": "Chaoyang District, especially around Sanlitun, offers a broad selection of international restaurants, cafes and more westernised food options."
+   },
+   {
+    "name": "Niujie halal cuisine",
+    "note": "The Niujie area is the centre of Beijing’s Hui Muslim community and a good place to find halal butchers and restaurants."
+   },
+   {
+    "name": "Regional Chinese cuisines",
+    "note": "Beijing’s restaurants also showcase food from across China, including Sichuan, Hunan, Cantonese, Yunnan and Xinjiang styles."
+   }
+  ],
+  "budget_tips": [
+   "Use public buses or trains where practical for trips outside the city, as many Great Wall sections are reachable by public transport.",
+   "Eat at busy local restaurants and street-food streets such as Guijie to get varied meals without paying for tourist-oriented venues.",
+   "Explore attractions along the Central Axis on foot or by bicycle to save on transport between close sites in the city centre.",
+   "Choose less crowded Great Wall sections or combine public transport with a shorter paid transfer to avoid tourist-heavy, pricier services."
+  ],
+  "safety": [
+   "Be alert for unsolicited offers of transport or guided trips to the Great Wall and check arrangements carefully, as bus scams have been reported.",
+   "Respect local customs and social norms; Beijing is cosmopolitan but social expectations may differ from your home country.",
+   "Watch your belongings in crowded tourist areas such as popular hutongs, Tiananmen Square and major market streets.",
+   "When hiking or camping on remote sections of the Great Wall, take appropriate gear and local guidance because some wild sections can be dangerous."
+  ],
+  "itinerary": [
+   "Day 1: Explore the Central Axis — start at the Drum and Bell Towers, walk south through the Forbidden City and Tiananmen Square, then continue to nearby sights such as Qianmen and the Inner City Wall park.",
+   "Day 2: Visit a Great Wall section — choose a restored and accessible section like Mutianyu or a more remote section for hiking; combine hiking with local village homestays or guided trips if you plan to camp overnight.",
+   "Day 3: Experience hutong life and modern culture — cycle or walk through hutongs including Nanluoguxiang, visit markets and finish with an evening performance or visit to the National Centre for the Performing Arts."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Beijing?",
+    "a": "Three full days let you cover the city’s major highlights including a Great Wall visit, the Central Axis (Forbidden City and Tiananmen) and the hutongs with time for a cultural performance."
+   },
+   {
+    "q": "Is Beijing expensive?",
+    "a": "Beijing offers a wide range of options from budget street food and public transport to upscale shopping and dining, so costs depend largely on your choices and neighbourhoods."
+   },
+   {
+    "q": "Is Beijing safe for tourists?",
+    "a": "Beijing is generally safe for visitors, but take usual precautions in crowded areas and be wary of unsolicited transport or tour offers to some Great Wall sections."
+   },
+   {
+    "q": "What is the best area to stay in Beijing?",
+    "a": "Staying within or near the 2nd and 3rd Ring Roads gives easy access to many central sights and dining districts; Chaoyang is a good choice for international restaurants and nightlife."
+   },
+   {
+    "q": "How do I get to the Great Wall from the city?",
+    "a": "Many sections of the Great Wall are reachable by train or bus from Beijing; research the specific section you plan to visit and check transport connections and reputable tour options in advance."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "بكين (北京 Běijīng)",
+  "country_name": "الصين",
+  "title": "بكين — دليل السفر: معالم، طعام وخطة 3 أيام",
+  "meta_description": "دليل لبكين: أهم المعالم من سور الصين إلى المدينة المحرمة، أين تأكل، نصائح للميزانية وأفضل برنامج لثلاثة أيام.",
+  "h1": "بكين: ما الذي تراه وتتناوله وتعرفه قبل السفر",
+  "intro": [
+   "بكين عاصمة الصين وثاني أكبر مدنها، مدينة حديثة تقع على شبكة من الحلقات الطرقية وتشتهر بتراثها الإمبراطوري الطويل. هنا يلتقي القديم بالجديد بين أحياء الحوائج التقليدية ومشاريع التكنولوجيا والمباني الحديثة داخل الحلقة الثانية والثالثة.",
+   "تضم المدينة معالم قيّمة على طول المحور المركزي التاريخي، ومنها المدينة المحرمة وساحة تيان آن من، كما تعد نقطة انطلاق لزيارة أجزاء من سور الصين القريب. سكان بكين قد يبدون كتومين للوهلة الأولى لكنهم ودودون بعد التعارف، ومن المفيد التعرف على قواعد وآداب محلية أساسية أثناء الزيارة."
+  ],
+  "best_time": "أفضل وقت للزيارة يعتمد على تفضيلك للمناخ والازدحام؛ فالمواسم الوسطى تكون معتدلة ومناسبة للمعالم الخارجية مثل سور الصين، بينما قد تكون أشهر الذروة أكثر ازدحامًا حول المواقع الشهيرة. ضع في الحسبان اختلافات الطقس الموسمية عند التخطيط للرحلات خارج المدينة.",
+  "top_sights": [
+   {
+    "name": "سور الصين العظيم (Great Wall)",
+    "why": "الوجهة الأبرز عند زيارة بكين وتستحق زيارات متكررة لأن كل مقطع يقدم مناظر ومسارات مختلفة؛ المتاح زيارتها بالقطار أو الحافلة من المدينة. نصيحة عملية: اختَر أجزاء أقل ازدحامًا مثل Mutianyu أو Jinshanling إذا رغبت بمنظر أهدأ."
+   },
+   {
+    "name": "المحور المركزي لمدينة بكين (Central Axis)",
+    "why": "خط تاريخي يمر عبر قلب المدينة ويجمع معالم رئيسية من الشمال إلى الجنوب، مثل الأبراج والطريق إلى المدينة المحرمة ومعبد السماء؛ التجوال على هذا المحور يعطيك فهمًا لتخطيط المدينة وطبقات تاريخها."
+   },
+   {
+    "name": "المدينة المحرمة (Forbidden City / 故宫博物院)",
+    "why": "قصر إمبراطوري ضخم ومركز السلطة في فترات مينغ وتشينغ، يعد تحفة في العمارة الصينية التقليدية؛ احجز وقتًا كافيًا للتجول بين الأفنية والقصور."
+   },
+   {
+    "name": "ساحة تيان آن من (Tiananmen Square)",
+    "why": "أكبر ساحة عامة في العالم محاطة بمباني رسمية ومتاحف ونصب تذكارية، وتشكّل المدخل الكبير إلى المدينة المحرمة؛ توقع حشودًا خاصة حول نقاط الجذب الكبرى."
+   },
+   {
+    "name": "معبد السماء (Temple of Heaven / 天坛)",
+    "why": "مجمع عبادات ملكي محاط بحديقة نشطة حيث يمارس السكان المحليون رياضات صباحية مثل التاي تشي؛ مناسب لزيارة تجمعات محلية ومشاهدة العمارة الطقسية."
+   },
+   {
+    "name": "الهوتونغ ونانلوجو شيانغ (Hutongs — Nanluoguxiang)",
+    "why": "أزقة تاريخية وصروح سكنية تقليدية تعكس نمط السكن بمنزل الساحة (siheyuan) وتقدم لمحة عن الحياة المحلية؛ يزدحم Nanluoguxiang أحيانًا فافضّل زيارتها خارج أوقات الذروة."
+   },
+   {
+    "name": "أبراج الطبول والجرس (Drum and Bell Towers)",
+    "why": "بقايا المدينة الوسيطة كانت تُستخدم كمراكز لضبط الوقت عبر العصور، وتقع في حي Gulou وتمنحك شعورًا بتاريخ المدينة وطبقاتها الزمنية؛ اختَر زيارة في وقت هادئ للتصوير."
+   },
+   {
+    "name": "القصر الصيفي (Summer Palace)",
+    "why": "منتجع إمبراطوري شُيّد كملاذ صيفي لأباطرة تشينغ ويضم حدائق وبحيرات ومناظر جميلة؛ يسهل الدمج بين زيارته وبرامج نصف يوم خارج المركز التاريخي."
+   }
+  ],
+  "getting_around": "الوصول إلى معالم بكين يتم عادةً بالقطار والحافلات ووسائل النقل العام داخل المدينة؛ انتبه لأن بعض مقاطع سور الصين تبعد ساعة إلى ساعة ونصف بالحافلة أو القطار عن المدينة. داخل المركز استخدم المترو أو الدراجات أو المشي لاستكشاف الحيّز التاريخي للحلقة الثانية.",
+  "food": [
+   {
+    "name": "بط بكين (Peking duck / 北京烤鸭)",
+    "note": "طبق مميّز في بكين تُقدم به البط المشوي مع لفائف رقيقة وحشوات وتقنيات تقطيع خاصة، وله مطاعم متخصّصة تقدّم التجربة."
+   },
+   {
+    "name": "شارع غي جيه (Guijie / 簋街) تجربة طعام ليلية",
+    "note": "منطقة مطاعم ممتلئة بالمطاعم المتنوّعة ومكان جيد لتجربة أصناف صينية محلية وإقليمية في جو صاخب ونشط."
+   },
+   {
+    "name": "مطبخ حلال حول مسجد نيوجييه (Niujie)",
+    "note": "منطقة مسلمة في بكين تشتهر بالمطاعم الحلال وبالمنتجات التابعة للجالية الهوي وتقدّم مأكولات مختلفة."
+   },
+   {
+    "name": "المطاعم الدولية في سانليتون (Sanlitun)",
+    "note": "مركز الحياة الليلية والمطاعم الدولية حيث تجد مأكولات غربية وقوائم من مناطق متعددة من العالم."
+   },
+   {
+    "name": "مأكولات شارع وانغفوجينغ (Wangfujing) ووجبات الشارع",
+    "note": "منطقة تسوّق مع خيارات للطعام السريع وتجربة أطعمة الشوارع الشعبية إلى جانب مطاعم رسمية."
+   }
+  ],
+  "budget_tips": [
+   "استخدم المترو للحركة داخل المدينة لتقليل تكلفة التنقل مقارنة بسيارات الأجرة.",
+   "تجنّب الجولات الحافلية المشبوهة إلى سور الصين وفضّل الوصول بالقطار أو الحافلة العامّة الموثوقة أو عبر منظمين ذوي سمعة جيدة.",
+   "تناول الطعام في أحياء المطاعم الشعبية مثل Guijie أو أكشاك طعام الشارع لتخفيض فاتورة الوجبات مقارنة بالمطاعم الراقية.",
+   "قارن بين متاجر الكتب والأسواق قبل شراء هدايا تذكارية، واختر أسواقاً معروفة مثل Wangfujing وHongqiao لخيارات أوسع."
+  ],
+  "safety": [
+   "انتبه لعمليات الاحتيال المتعلقة بالحافلات السياحية إلى سور الصين؛ استخدم مزوّدين موثوقين أو وسائط النقل العامة.",
+   "احترم القواعد المحلية في الأماكن العامة والمواقع الرسمية، وابتعد عن التصرفات التي قد تُفسَّر كمخالفة للآداب العامة.",
+   "راجع متطلبات الدخول أو اللوائح الخاصة في مواقع حسّاسة مثل المتاحف والساحات العامة قبل الزيارة، واحتفظ بمستنداتك ومقتنياتك الشخصية بأمان."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشاف المحور المركزي — ابدأ من أبراج الطبول والجرس في Gulou، تجول في الهوتونغ وNanluoguxiang، ثم انطلق نحو المدينة المحرمة وساحة تيان آن من.",
+   "اليوم الثاني: زيارة معبد السماء وصباح النشاطات المحلية في الحديقة، ثم تسوّق وغداء في Wangfujing أو Guijie بعد الظهر وفي المساء تجربة حياة ليلية أو مطاعم Sanlitun.",
+   "اليوم الثالث: رحلة إلى سور الصين (اختر مقطعًا مثل Mutianyu أو Juyongguan أو مقطعًا أقل ازدحامًا) وتخصيص وقت للمشي أو التزحلق أو التخييم حسب رغبتك."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لزيارة بكين؟",
+    "a": "ثلاثة إلى خمسة أيام تكفي لرؤية المعالم الرئيسية داخل المدينة وإضافة رحلة قصيرة إلى سور الصين، بينما إذا رغبت بجولات ميدانية أعمق قد تحتاج لأيام إضافية."
+   },
+   {
+    "q": "هل بكين مدينة مكلفة؟",
+    "a": "تكلفة الزيارة متغيرة؛ تتوفر خيارات اقتصادية مثل المترو وأكشاك الطعام، وفي المقابل يوجد قطاع فاخر واسع. يمكنك التحكم في الميزانية باختيار وسائل نقل وطعام أقل كلفة."
+   },
+   {
+    "q": "هل بكين آمنة للسياح؟",
+    "a": "بشكل عام آمنة للسياح لكن انتبه للاحتيالات السياحية خاصة المتعلقة بالحافلات إلى سور الصين واحفظ متعلقاتك الشخصية في الأماكن المزدحمة."
+   },
+   {
+    "q": "ما أفضل منطقة للإقامة؟",
+    "a": "الإقامة قرب الحلقة الثانية أو الثالثة توفر وصولًا مريحًا إلى مراكز المعالم والمطاعم؛ مناطق مثل Dongcheng وChaoyang ملائمة لقربها من المواقع السياحية والحياة الليلية."
+   },
+   {
+    "q": "كيف أصل إلى سور الصين من بكين؟",
+    "a": "عدة أقسام من السور تقع على مسافة تتراوح بين ساعة إلى ساعة ونصف بالقطار أو الحافلة من المدينة؛ استخدم وسائل نقل عامة موثوقة أو منظمي رحلات ذوي سمعة جيدة وتجنّب العروض المشبوهة."
+   }
+  ]
+ }
+}

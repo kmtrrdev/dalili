@@ -1,0 +1,226 @@
+{
+ "slug": "rio-de-janeiro",
+ "name": "Rio de Janeiro",
+ "country": "Brazil",
+ "tags": [
+  "beach",
+  "nightlife",
+  "culture"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Rio_de_Janeiro",
+ "en": {
+  "city_name": "Rio de Janeiro",
+  "country_name": "Brazil",
+  "title": "Rio de Janeiro travel guide: sights, food and tips",
+  "meta_description": "Practical travel guide to Rio de Janeiro: top sights, beach culture, food to try, money-saving tips and a 3-day itinerary.",
+  "h1": "Rio de Janeiro travel guide: what to see, eat and know",
+  "intro": [
+   "Rio de Janeiro is Brazil's second-largest city, set on the South Atlantic coast and known for dramatic mountains, wide beaches and a vibrant cultural life. The city's Carioca landscapes, which combine mountains, forest and sea, are recognised by UNESCO.",
+   "Visitors arrive for iconic sites such as Christ the Redeemer, Sugarloaf Mountain and the famous beaches of Copacabana and Ipanema, as well as events like Carnaval; Rio also hosted the 2014 FIFA World Cup and the 2016 Summer Olympics."
+  ],
+  "best_time": "Visit during the southern-hemisphere spring and autumn for warm weather and fewer crowds, while summer brings peak beach life and the busiest Carnaval period. Expect higher visitor numbers and hotter temperatures in December–March.",
+  "top_sights": [
+   {
+    "name": "Cristo Redentor (Corcovado)",
+    "why": "This Art Deco statue atop the Corcovado peak offers sweeping views over the city and harbour; take the funicular from Cosme Velho for the classic approach, or hike the trail from Parque Lage if you prefer a rainforest walk."
+   },
+   {
+    "name": "Sugarloaf Mountain (Pão de Açúcar)",
+    "why": "Rio's signature twin peaks reached by a two-stage aerial tramway give spectacular panoramas, especially at sunset; consider timing your visit to catch evening light and quieter conditions."
+   },
+   {
+    "name": "Copacabana and Ipanema beaches",
+    "why": "These world-famous beaches showcase Rio's seaside lifestyle, sunbathing and promenade culture; arrive early to find space and to enjoy vendors and local cafés along the shore."
+   },
+   {
+    "name": "Maracanã Stadium",
+    "why": "One of football's historic stadiums and former World Cup venue with an attached soccer museum; check current access and tour availability before you go as operations have changed since the Olympics."
+   },
+   {
+    "name": "Lagoa Rodrigo de Freitas",
+    "why": "A large lagoon in the South Zone with views of Corcovado and nearby beaches, popular for jogging, cycling and pedal boats; walk or cycle the path around the lagoon for a relaxed outing."
+   },
+   {
+    "name": "Jardim Botânico (Botanical Garden)",
+    "why": "A 19th-century botanical park and research collection with diverse plants and tranquil paths; it's a good place to escape the city bustle and see tree-lined avenues and greenhouses."
+   },
+   {
+    "name": "Parque Lage",
+    "why": "A small park at the foot of Corcovado with interesting concrete structures and trail access to the Corcovado hike; it makes a pleasant starting point for exploring the Tijuca Forest."
+   },
+   {
+    "name": "Santa Teresa streetcar and Lapa Arches (Arcos da Lapa)",
+    "why": "Ride Brazil's surviving metropolitan heritage streetcar through bohemian Santa Teresa and visit the colonial aqueduct of Lapa, both offering atmosphere, views and links to downtown nightlife."
+   }
+  ],
+  "getting_around": "From the airport to the city centre and between neighbourhoods you can use taxis, ride-hailing services and public transport; many landmarks in the South Zone are within walking distance of each other. The city also has funiculars and an historic streetcar in Santa Teresa for short scenic trips—always plan routes in advance and allow extra time for traffic.",
+  "food": [
+   {
+    "name": "Feijoada",
+    "note": "A hearty black-bean stew with various meats and typical side dishes, traditionally enjoyed with a caipirinha."
+   },
+   {
+    "name": "Caipirinha",
+    "note": "Brazil's classic cocktail, commonly paired with local dishes and often served at bars and restaurants."
+   },
+   {
+    "name": "Rodízio (churrascaria)",
+    "note": "All-you-can-eat grilled meat service where servers bring skewers of different cuts to your table; a filling local dining experience."
+   },
+   {
+    "name": "Fresh seafood",
+    "note": "Coastal Rio offers many shrimp, squid, shellfish and fish preparations—look for seafood specialties in restaurants around the city."
+   },
+   {
+    "name": "Pastries and street food",
+    "note": "Cafeterias and street vendors serve Portuguese-influenced pastries and quick bites perfect for a snack between sightseeing."
+   }
+  ],
+  "budget_tips": [
+   "Choose buffet-style ‘comida a kilo’ restaurants where you pay by the weight of your plate to control meal costs.",
+   "Shop for souvenirs and bargains at informal street markets like the hippie fair in Praça General Osório, and bargain with vendors in open-air markets.",
+   "Use public transport and walk between nearby South Zone landmarks to save on taxis; many attractions in the South Zone are close together.",
+   "Avoid buying high-cost imported electronics locally since import duties make them expensive; buy locally made clothing and crafts for better value."
+  ],
+  "safety": [
+   "Be aware that Rio has areas affected by crime and drug-related violence; stay in well-known tourist neighbourhoods and avoid risky areas, especially after dark.",
+   "Keep valuables discreet and use hotel safes when available; be cautious with phones and cameras on busy beaches and public transport.",
+   "When visiting favelas or less-touristed areas, go only with a reputable guide and check current local advice before you go."
+  ],
+  "itinerary": [
+   "Day 1: Explore the South Zone—start at Copacabana or Ipanema beach, walk the promenade, then visit Lagoa Rodrigo de Freitas and end the afternoon at Parque Lage or the Botanical Garden.",
+   "Day 2: Visit Corcovado and Cristo Redentor via the funicular or the Parque Lage hiking route, then head to Sugarloaf Mountain later in the day to catch the sunset views.",
+   "Day 3: Discover downtown and Lapa—see the Arcos da Lapa, ride the Santa Teresa streetcar, visit historic buildings such as the Paço Imperial and the CCBB, and soak up evening samba or nightlife in Lapa."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Rio de Janeiro?",
+    "a": "Three to five days lets you see the main highlights—beaches, Corcovado, Sugarloaf and a mix of downtown and neighbourhoods—while leaving time to relax and enjoy local food."
+   },
+   {
+    "q": "Is Rio de Janeiro expensive to visit?",
+    "a": "Costs vary: meals at local buffets and street food can be affordable while tourist shows and upscale dining are pricier; shopping for local clothing and using public transport helps control expenses."
+   },
+   {
+    "q": "Is Rio de Janeiro safe for tourists?",
+    "a": "Many visitors enjoy Rio safely by staying in well-known neighbourhoods, avoiding risky areas after dark, safeguarding belongings and following local guidance about where to go."
+   },
+   {
+    "q": "What is the best area to stay in Rio?",
+    "a": "The South Zone concentrates most major landmarks and beaches and hosts the bulk of hotels and hostels, making it a convenient base for first-time visitors."
+   },
+   {
+    "q": "How do I get from the airport to the city?",
+    "a": "Options include taxis, ride-hailing services and public transport; choose licensed services and allow extra time for traffic, and check with your accommodation for recommended transfer options."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "ريو دي جانيرو",
+  "country_name": "البرازيل",
+  "title": "ريو دي جانيرو دليلك السياحي: sights, food, itinerary",
+  "meta_description": "دليل ريو دي جانيرو: أهم المعالم مثل كوركوفادو وباو دي أسوكار، أطعمة محلية، نصائح لتوفير الميزانية ومسار لثلاثة أيام.",
+  "h1": "دليل ريو دي جانيرو: ماذا ترى وتتناول وتعرف",
+  "intro": [
+   "ريو دي جانيرو مدينة ساحلية كبيرة على المحيط الأطلسي تشتهر بمناظرها الطبيعية الخلابة وثقافة الشواطئ والكرنفال السنوي. منطقة 'المناظر الكاريوقية بين الجبل والبحر' مدرجة ضمن مواقع التراث العالمي لليونسكو.",
+   "الميناء محاط بميزات جغرافية مميزة مثل جبل باو دي أسوكار (Pão de Açúcar) وقمة كوركوفادو (Cristo Redentor) وتلال تيجوكا، وهي عوامل تجعل منظر الميناء من الأعاجيب الطبيعية. استضافت المدينة مباريات كأس العالم 2014 والألعاب الأولمبية الصيفية 2016."
+  ],
+  "best_time": "أفضل وقت للزيارة يعتمد على تفضيلك للطقس والفعاليات: موسم الكرنفال يجذب حشوداً كبيرة ويقدّم تجربة لا مثيل لها، أما الأشهر الأقل ازدحاماً فتمنحك سهولة تحرك وراحة أكبر على الشواطئ والمعالم.",
+  "top_sights": [
+   {
+    "name": "كوركوفادو (Corcovado) وتمثال المسيح المخلص (Cristo Redentor)",
+    "why": "قمة صخرية مميزة في غابة تيجوكا تضم تمثال المسيح الذي يطل على المدينة؛ الرحلة بالقطار الجبلي تمنح مناظر واسعة، واحذر من طوابير الانتظار عند محطة القطار في كوزمي فيلهو."
+   },
+   {
+    "name": "باو دي أسوكار (Pão de Açúcar) - جبل بازلوق",
+    "why": "معلم بارز يُصعد إليه بوساطة تلفريك ذي مرحلتين ويوفر إطلالات رائعة، ويعد وقت الغروب لحظة مميزة ينبغي تجربتها."
+   },
+   {
+    "name": "شواطئ كوباكابانا وإيبانيما",
+    "why": "من أشهر شواطئ ريو حيث الحياة الشاطئية النابضة والمشي على الكورنيش؛ استمتع بالمشي أو الجلوس ومراقبة الناس والمشهد البرازيلي على الواجهة البحرية."
+   },
+   {
+    "name": "لاغوا رودريغو دي فريتاس (Lagoa Rodrigo de Freitas)",
+    "why": "بحيرة كبيرة وسط المنطقة الجنوبية تطل على كوركوفادو وتسمح بالجري وركوب الدراجات وتأجير قوارب صغيرة للترفيه."
+   },
+   {
+    "name": "متنزه تيجوكا وغابة باركيه لاجيم",
+    "why": "مساحات خضراء في قلب المدينة تتضمن مسارات مشي ومناظر نباتية، وتبدأ منها بعض مسارات المشي نحو كوركوفادو."
+   },
+   {
+    "name": "ملعب ماراكانا (Maracanã) ومتحف كرة القدم",
+    "why": "أحد أشهر ملاعب كرة القدم في العالم، يمكن زيارة المتحف المتواجد داخله للتعرف على تاريخ اللعبة في البرازيل، مع ملاحظة أن الجولات اليومية قد تكون معلقة أحياناً."
+   },
+   {
+    "name": "سيارا سانتا تيريزا (ترام سانتا تيريزا)",
+    "why": "الترام التراثي المتبقي في البرازيل يمر عبر حي تاريخي ومناظر بانورامية، تجربة جيدة للتنقل ورؤية أجزاء من المدينة القديمة."
+   },
+   {
+    "name": "الحدائق والمتاحف—جارديم بوتانيكو وباركي لاجى ومراكز ثقافية",
+    "why": "الحديقة النباتية من القرن التاسع عشر تضم مجموعات نباتية مهمة، ومراكز ثقافية مثل CCBB تقدّم معارض وعروضاً قديمة وحديثة مع معلومات عن الفعاليات الحالية."
+   }
+  ],
+  "getting_around": "وسائل النقل داخل ريو متنوعة؛ من السهل الوصول إلى معظم معالم المنطقة الجنوبية سيراً أو بوسائل نقل عامة. تحقق من خيارات النقل العام أو الترامات للانتقال بين أحياء المدينة، وخطط وقتك لتفادي ذروة الازدحام والانتظار الطويل عند نقاط جذب شعبية.",
+  "food": [
+   {
+    "name": "فِيجوادا (Feijoada)",
+    "note": "يخنة الفاصوليا السوداء مع قطع لحم متنوعة تُعتبر من أشهر أطباق البرازيل وتُقدّم في أطباق تقليدية مع مرافقة مناسبة."
+   },
+   {
+    "name": "كايبِيرينيا (Caipirinha)",
+    "note": "المشروب الوطني البرازيلي المصنوع من كاشاصا والليمون محليّاً، يُعد رفيقاً شائعاً للأطباق المحلية."
+   },
+   {
+    "name": "روديزيو الشوراكساريا (Rodízio / Churrascaria)",
+    "note": "نظام تقديم لحوم على طريقة الخدمة المستمرة من النادل حيث تُجرب عدة أنواع من اللحوم المشوية."
+   },
+   {
+    "name": "مأكولات بحرية محلية",
+    "note": "نظرًا لموقع المدينة الساحلي، تتوفر أطباق جمبري وسمك ومأكولات بحرية طازجة في مطاعم عدة."
+   },
+   {
+    "name": "حلويات ومخبوزات ومأكولات شارع",
+    "note": "تراث برتغالي وأوروبي يظهر في مخابز المدينة وأسواق الشارع حيث تُقدّم وجبات خفيفة وحلويات محلية."
+   }
+  ],
+  "budget_tips": [
+   "ابحث عن مطاعم بنظام 'comida a kilo' حيث تدفع على وزن ما تضعه في الطبق لتوفير المال على الوجبات.",
+   "تجنب الأسواق السياحية أو المبيعات على الشاطئ دون المساومة؛ في أسواق الشارع مثل ساارا المساومة متوقعة وقد تخفض السعر.",
+   "استخدم وسائل النقل العام حيث أمكن بدل الاعتماد الدائم على سيارات الأجرة لتقليل التكاليف.",
+   "احصل على معلومات الفعاليات والمعارض المجانية من المراكز الثقافية والصحف المحلية لتستمتع بأنشطة منخفضة التكلفة أو مجانية."
+  ],
+  "safety": [
+   "كن حذراً بالأحياء المعروفة بوجود مشاكل اجتماعية وابعِد عن المناطق غير المأهولة ليلاً، واطلع على نصائح محلية قبل زيارة حي جديد.",
+   "لا تظهِر مقتنيات ثمينة على الشاطئ أو في الأماكن العامة، واحتفظ بنُسخة من مستنداتك الهامة في مكان آمن.",
+   "استخدم وسائل النقل الرسمية وابتعد عن العروض غير الرسمية للرحلات، واطلب نصيحة الفندق أو مكتب الاستقبال بشأن التنقل الآمن.",
+   "تعامَل باحترام مع السكان المحليين والعادات الاجتماعية لتجنب سوء التفاهمات."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشف منطقة الجنوب بدءًا من شواطئ كوباكابانا وإيبانيما، ثم اذهب إلى لاغوا رودريغو دي فريتاس للمشي أو ركوب الدراجة، واختتم اليوم بمشاهدة غروب الشمس من باو دي أسوكار.",
+   "اليوم الثاني: زر كوركوفادو واصعد بالقطار إلى تمثال المسيح، وبعدها تجول في حديقة جارديم بوتانيكو، وأنهِ اليوم في حي سانتا تيريزا بركوب الترَّام واستكشاف المقاهي والمعارض.",
+   "اليوم الثالث: خصصه لزيارة وسط المدينة التاريخي: معالم مثل القصر الإمبراطوري، كاتدرائية القرن العشرين، مراكز ثقافية ومتاحف كرة القدم ثم تمضية المساء في منطقة لابا للاستمتاع بالموسيقى الحية."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لرؤية ريو دي جانيرو؟",
+    "a": "ثلاثة أيام تكفي لزيارة أبرز معالم المنطقة الجنوبية مثل الشواطئ وكوركوفادو وباو دي أسوكار، بينما تحتاج أكثر لاستكشاف الأحياء والمتحاف بالتفصيل."
+   },
+   {
+    "q": "هل ريو دي جانيرو مدينة مكلفة؟",
+    "a": "التكلفة تختلف بحسب اختياراتك؛ يمكن توفير المال باستخدام مطاعم 'comida a kilo' ووسائل النقل العام، بينما تميل المطاعم الراقية وصفوف السياحة إلى أن تكون أغلى."
+   },
+   {
+    "q": "هل ريو دي جانيرو آمنة للسياح؟",
+    "a": "كما في مدن كبيرة أخرى، هناك مناطق أكثر أمانًا وأخرى أقل أمانًا؛ اتبع نصائح السلامة المحلية وتجنب التنقل في مناطق مجهولة ليلاً واحتفظ بمسؤولياتك عن مقتنياتك."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة في ريو؟",
+    "a": "المنطقة الجنوبية تجمع معظم المعالم والشواطئ والفنادق، وهي خيار عملي للسياح الراغبين في سهولة الوصول إلى المعالم الشهيرة."
+   },
+   {
+    "q": "كيف أصل من المطار إلى مركز ريو؟",
+    "a": "يوجد في المدينة خيارات متعددة للنقل من وإلى المطار تشمل وسائل نقل برية عامة وخاصة؛ استفسر في نقطة الوصول عن الخيارات المتاحة في يوم وصولك لاختيار الأنسب بناءً على أمانك وميزانيتك."
+   }
+  ]
+ }
+}

@@ -1,0 +1,226 @@
+{
+ "slug": "cape-town",
+ "name": "Cape Town",
+ "country": "South Africa",
+ "tags": [
+  "nature",
+  "food",
+  "beach",
+  "adventure"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Cape_Town",
+ "en": {
+  "city_name": "Cape Town",
+  "country_name": "South Africa",
+  "title": "Cape Town travel guide: what to see, eat and know",
+  "meta_description": "Practical Cape Town travel guide: top sights, food to try, money-saving tips and a 3-day itinerary for first-time visitors.",
+  "h1": "Cape Town travel guide: what to see, eat and know",
+  "intro": [
+   "Cape Town is the legislative capital of South Africa and the main city of the Western Cape Province, set on the southwestern coast near the Cape of Good Hope. The city sits beneath Table Mountain and serves as the gateway to the celebrated Cape Winelands, including Stellenbosch, Franschhoek and Paarl.",
+   "Known locally as the Mother City, Cape Town mixes European-influenced architecture and relaxed coastal life with diverse neighbourhoods such as the colourful Bo-Kaap and the busy Victoria & Alfred (V&A) Waterfront. It is a compact central city with attractions reachable from a small downtown area as well as a sprawling metro that reaches out to the Cape Peninsula and surrounding suburbs."
+  ],
+  "best_time": "Cape Town's character changes with the seasons: summers are popular for outdoor activities and concerts while other seasons highlight different plants and birdlife in the botanical gardens. Weather on Table Mountain and along the coast can differ sharply from the city below, so check conditions and pack layers.",
+  "top_sights": [
+   {
+    "name": "Table Mountain (Cable Car & hiking routes)",
+    "why": "Table Mountain is the city's iconic backdrop; you can take a wheelchair-accessible cable car to the top or climb via popular routes such as Platteklip Gorge. Tip: even on warm days bring warm clothing and water because conditions at the summit change rapidly."
+   },
+   {
+    "name": "Bo-Kaap",
+    "why": "A historic, hilly neighbourhood noted for its brightly painted houses, mosques and Cape Malay culture, with street food and the Bo-Kaap Museum. Tip: explore the streets for photography and visit Atlas Trading for traditional spices; allow about an hour to wander the quarter."
+   },
+   {
+    "name": "Victoria & Alfred (V&A) Waterfront",
+    "why": "A large harbour-side complex of shops, restaurants and tourist attractions with harbour tours and departures for Robben Island. Tip: it has wide accessibility but can be crowded and often more expensive than other dining and shopping areas."
+   },
+   {
+    "name": "Kirstenbosch National Botanical Garden",
+    "why": "One of the world’s outstanding botanical gardens showcasing plants from every South African bioregion, with walking paths, an indigenous nursery and seasonal outdoor concerts. Tip: arrive early to find a good spot for a picnic or a concert in the amphitheatre."
+   },
+   {
+    "name": "Castle of Good Hope",
+    "why": "The oldest surviving building in South Africa housing military artefacts, period furniture and an art collection, with a cafe and restaurant on site. Tip: combine a visit here with a walk around the old city centre to see nearby historic streets and gardens."
+   },
+   {
+    "name": "Two Oceans Aquarium",
+    "why": "An aquarium that exhibits marine life from the Indian and Atlantic oceans, including local penguins, kelp forest displays and daily feeding events. Tip: check the daily events schedule to time your visit for live feedings and interactive exhibits."
+   },
+   {
+    "name": "Rhodes Memorial",
+    "why": "A hilltop memorial with views and picnic spots that also serves as a trailhead for hikes and bike rides toward Devil's Peak. Tip: if you plan to hike from here, don't go alone and avoid carrying valuables on the trails."
+   },
+   {
+    "name": "South African Houses of Parliament",
+    "why": "Cape Town hosts the national legislature; guided tours introduce visitors to the country's modern political institutions and history. Tip: tours are offered several times per day in various languages—check availability locally."
+   }
+  ],
+  "getting_around": "Visitor centres across the city (for example at the V&A Waterfront, City Bowl and Green Point) are useful first stops for maps, tours and local transport advice. From the waterfront you can join harbour tours and Robben Island departures; within the city expect to use taxis, shuttle services and public transport options while walking is often practical in the central areas.",
+  "food": [
+   {
+    "name": "Karoo lamb",
+    "note": "A regional speciality prized for tender flavour; commonly featured on many restaurant menus."
+   },
+   {
+    "name": "Local linefish (yellowtail, kingklip, cape salmon, cod)",
+    "note": "Fresh catches are served widely—ask about the day's linefish for a local seafood experience."
+   },
+   {
+    "name": "Oysters",
+    "note": "Seasonal oysters, both farmed and wild, are highly regarded when in season."
+   },
+   {
+    "name": "South African wines",
+    "note": "The surrounding Winelands produce celebrated wines—many estates offer food and tastings if you have a car."
+   },
+   {
+    "name": "Crayfish",
+    "note": "Fresh crayfish is available on the peninsula but can be costly; always confirm the price before ordering."
+   }
+  ],
+  "budget_tips": [
+   "Use visitor centres to find free or low-cost walking tours, maps and local advice to avoid expensive tourist traps.",
+   "Avoid relying solely on the V&A Waterfront for dining and souvenirs if you want cheaper options; explore Kloof Street, Long Street and local markets instead.",
+   "Visit the Green Point market (held on Sundays) for more affordable and authentic souvenirs where prices are usually negotiable.",
+   "Always ask and confirm prices for rare seafood and delicacies before ordering, as some items may not be listed on menus and can be very expensive."
+  ],
+  "safety": [
+   "Check weather and wind conditions before visiting Table Mountain or using the cable car; summit weather can change quickly.",
+   "When hiking routes such as Platteklip Gorge or trails from Rhodes Memorial, do not go alone and avoid carrying valuables.",
+   "Be mindful in crowded tourist areas such as the V&A Waterfront and Long Street; keep an eye on belongings to reduce the risk of petty theft."
+  ],
+  "itinerary": [
+   "Day 1: Explore the city centre—visit the Castle of Good Hope, City Hall and the Bo-Kaap, then head to the V&A Waterfront for shops, harbour views and an aquarium visit or a Robben Island departure.",
+   "Day 2: Ascend Table Mountain: take the cable car or hike via Platteklip Gorge, enjoy the summit views and rock dassies, then relax at Kirstenbosch National Botanical Garden in the afternoon.",
+   "Day 3: Spend time on the Cape Peninsula—visit seaside towns such as Kalk Bay or Simon's Town for fresh fish and penguins, or drive into the Cape Winelands for wine estates and regional dining if you have a car."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Cape Town?",
+    "a": "Three days gives you a solid introduction: central sights, a trip up Table Mountain and a day for the peninsula or nearby Winelands. More time lets you explore wineries, additional beaches and hiking trails at a relaxed pace."
+   },
+   {
+    "q": "Is Cape Town expensive?",
+    "a": "Parts of Cape Town, especially the V&A Waterfront and trendy dining areas like Camps Bay, tend to be pricier. You can save money by using visitor centres for recommendations, eating outside the main tourist hubs and shopping at local markets."
+   },
+   {
+    "q": "Is Cape Town safe for tourists?",
+    "a": "Many areas are popular with visitors, but standard precautions apply: secure valuables, be cautious in crowded places, and avoid hiking alone. Follow local advice at visitor centres for up-to-date safety guidance."
+   },
+   {
+    "q": "What is the best area to stay in Cape Town?",
+    "a": "Staying near the City Bowl, V&A Waterfront, Green Point or De Waterkant places you close to major sights, dining and transport options. Visitor centres in these areas can help with tours and local tips."
+   },
+   {
+    "q": "How do I get to Robben Island and harbour tours?",
+    "a": "Harbour tours and Robben Island departures operate from the V&A Waterfront, where you can also find ticketing and visitor information. Check local schedules and book in advance through official outlets."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "كيب تاون (Cape Town)",
+  "country_name": "جنوب أفريقيا",
+  "title": "كيب تاون دليل السفر: معالم أكل وخريطة 3 أيام",
+  "meta_description": "دليل كيب تاون يقدّم المعالم الرئيسية (Table Mountain، V&A Waterfront، Bo‑Kaap)، أفضل الأطعمة، نصائح لتوفير المال وخطة لثلاثة أيام.",
+  "h1": "دليل كيب تاون: ماذا ترى وتأكل وتعرف",
+  "intro": [
+   "كيب تاون هي المدينة الثانية من حيث عدد السكان في جنوب أفريقيا وعاصمة مقاطعة Western Cape، وتقع على الساحل الجنوبي الغربي قرب رأس الرجاء الصالح. تعد المدينة أقصى نقطة جنوبية في القارة الأفريقية وتشكّل بوابة إلى مناطق كروم العنب الشهيرة حول فرانسهوك وستيلينبوش وبارل.",
+   "تشتهر كيب تاون بجوها الهادئ مقارنةً بجوهانسبرغ وبمزيج من المناظر الطبيعية الساحرة والمعمار الكيبي دوتش وحيّ Bo‑Kaap الملون. مركز المدينة محصور بين خليج Table Bay وجبل Table Mountain مع امتداد لمدن وأحياء واسعة حوله."
+  ],
+  "best_time": "الفصول الدافئة والربيعية مناسبة للأنشطة الخارجية وحدائق كيرستن بوش والحفلات الصيفية، لأن الحدائق والمعالم الطبيعية تتغيّر عبر الفصول. تحسبوا أيضاً لارتفاع أعداد السياح في موسم الذروة واحرصوا على ملابس دافئة عند الصعود إلى Table Mountain بسبب تغيرات الطقس السريعة.",
+  "top_sights": [
+   {
+    "name": "Table Mountain (جبل التلفريك)",
+    "why": "رمز كيب تاون وتصاعد الهواء يغيّر الحالة الجوية سريعاً؛ يستحق الصعود عبر التلفريك للمشاهد البانورامية، احمل معك جاكيت وماء لأن القمة أبرد من القاع."
+   },
+   {
+    "name": "V&A Waterfront (الواجهة البحرية فيكتوريا وألفريد)",
+    "why": "مركز تسوق وترفيه كبير في الميناء ينطلق منه جولات الميناء وروبن آيلاند ويحتوي على مطاعم ومتاجر ومرافق للزوار؛ مناسب للتجوال والعثور على خدمات سياحية."
+   },
+   {
+    "name": "Bo‑Kaap",
+    "why": "حي تاريخي ملون مرتبط بمجتمع الملايو المسلمين وذا طابع سينمائي، مفيد للمشي، تذوّق أطعمة الشارع وزيارة متحف Bo‑Kaap للتعرّف على الحياة المحلية في القرن التاسع عشر."
+   },
+   {
+    "name": "Castle of Good Hope (قلعة النعمة)",
+    "why": "أقدم مبنى باقٍ في جنوب أفريقيا يعرض معدات عسكرية ومجموعة فنون ومقتنيات تاريخية، ويضم مقهى ومطعم للزوار؛ جيد لمن يهتم بالتاريخ الاستعماري."
+   },
+   {
+    "name": "Kirstenbosch National Botanical Garden",
+    "why": "حدائق نباتية عالمية تعرض نباتات من كل أقاليم جنوب أفريقيا، مع مسارات ومطاعم وعروض موسيقية صيفية؛ تصل مبكراً لتأمين مكان جيد للحفلات في المدرج العشبي."
+   },
+   {
+    "name": "Rhodes Memorial",
+    "why": "نصب تذكاري على سفوح Devil's Peak ويوفر مناظر ومواضع نزهة وبداية لمسارات الدراجة والمشي؛ لا تسل أحداً بمفرده على المسارات واحفظ مقتنياتك."
+   },
+   {
+    "name": "South African Houses of Parliament",
+    "why": "مقر التشريع الوطني ويُقدَّم فيه جولات تعريفية عن النظام السياسي والتاريخ الحديث لجنوب أفريقيا بعدة لغات؛ مفيد لفهم السياق السياسي للبلاد."
+   },
+   {
+    "name": "Two Oceans Aquarium",
+    "why": "حوض يعرض تنوّع المحيطين الهندي والأطلسي بما في ذلك بطاريق، أسماك قرش وأنشطة إطعام حية، ويستغرق التجوال فيه حوالي ساعة مع جدول فعاليات يومي."
+   }
+  ],
+  "getting_around": "مراكز زوار متعددة في مناطق مثل V&A Waterfront وCity Bowl وGreen Point توفر معلومات حول الجولات والمطاعم. التنقل داخل المدينة يتم بالحافلات ووسائل النقل السياحية والرحلات البحرية من الواجهة البحرية، وتوجد مرافق وصول لذوي الاحتياجات الخاصة في مواقع رئيسية مثل التلفريك وV&A.",
+  "food": [
+   {
+    "name": "المأكولات البحرية المحلية",
+    "note": "أسماك خط الصيد والمحار وبلح البحر طازجة ومشهورة، اسأل عن نوع السمك المحلي (مثل yellowtail أو kingklip) قبل الطلب."
+   },
+   {
+    "name": "لحم الضأن من كارّو (Karoo lamb)",
+    "note": "لحم خروف الكارّو محلي معروف بنكهته ويقدّم في مطاعم متخصّصة في المدينة وحولها."
+   },
+   {
+    "name": "مطاعم منطقة V&A وKloof Street وDe Waterkant",
+    "note": "مجموعة واسعة من المطاعم من المطابخ الراقية إلى المقاهي المريحة، لكن مناطق الواجهة البحرية تميل لأن تكون مزدحمة وغالية."
+   },
+   {
+    "name": "مطبخ Franschhoek وStellenbosch (كروم العنب)",
+    "note": "مناطق الكروم القريبة تقدّم تجارب طعام راقية ومطاعم متناغمة مع مصانع النبيذ المحلية."
+   },
+   {
+    "name": "خيارات نباتية/نباتية صارمة",
+    "note": "المدينة صديقة للنباتيين وغالبية المطاعم تقدم أصنافاً نباتية أو تصبح مرنة لإعداد أطباق مناسبة عند الطلب."
+   }
+  ],
+  "budget_tips": [
+   "استخدم مراكز الزوار للحصول على نصائح محلية مجانية حول الأنشطة والرحلات بدلاً من حجز كل شيء عبر وكالات سياحية مكلفة.",
+   "تجول مشياً في الأحياء المركزية مثل Long Street وBo‑Kaap بدلاً من الجولات المدفوعة للحصول على تجربة محلية مجانية إلى حد كبير.",
+   "اشترِ تذكاراتك من أسواق نهاية الأسبوع مثل سوق Green Point للحصول على خيارات أكثر أصالة وأسعار قابلة للتفاوض.",
+   "قارن قوائم المطاعم خارج منطقة الواجهة البحرية لتجد خيارات أرخص بنفس جودة الطعام، واطلب توضيح الأسعار قبل أن تطلب أطباقاً بحرية نادرة."
+  ],
+  "safety": [
+   "كن حذراً على المسارات الطبيعية ويفضل ألا تنطلق بمفردك خصوصاً في ممرات المشي وركوب الدراجات الجبلية واحفظ مقتنياتك بعيداً عن العرضة.",
+   "تجنّب إبراز مقتنيات ثمينة في الأماكن السياحية المكتظة أو أثناء التنقّل العام لتقليل خطر السطو الصغير.",
+   "احترم العادات المحلية والمجتمعات الدينية في أماكن مثل Bo‑Kaap، واطلب الإذن قبل تصوير الأشخاص أو المساجد."
+  ],
+  "itinerary": [
+   "اليوم الأول: تجوّل في مركز المدينة، زر Castle of Good Hope وCity Hall، ثم امشِ في Long Street وانهِ اليوم في V&A Waterfront حيث يمكنك ركوب قارب أو زيارة Two Oceans Aquarium.",
+   "اليوم الثاني: ابدأ بصعود Table Mountain عبر التلفريك أو عبر Platteklip Gorge للمشي، بعد الظهر زر Bo‑Kaap ومتحفه، وانتهِ بمشاهدة غروب الشمس من Rhodes Memorial أو أحد شواطئ Camps Bay.",
+   "اليوم الثالث: اقضِ نصف اليوم في Kirstenbosch للاستمتاع بالحدائق والمسارات وربما بحفل صيفي، ثم توجّه إلى منطقة الكروم خارج المدينة إذا كان لديك سيارة أو خذ وقتاً للاستمتاع بمطاعم De Waterkant وKloof Street."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام المناسبة لزيارة كيب تاون؟",
+    "a": "ثلاثة أيام كافية لرؤية المعالم الأساسية مثل Table Mountain وV&A وBo‑Kaap وحديقة Kirstenbosch، أما للاستمتاع بمنطقة كروم العنب فستحتاج إلى يوم إضافي أو يومين."
+   },
+   {
+    "q": "هل كيب تاون مدينة مكلفة؟",
+    "a": "توجد خيارات باهظة في مناطق مثل V&A Waterfront وCamps Bay، لكن يمكنك العثور على طعام وسوق وهياكل سياحية بأسعار معقولة خارج هذه المناطق."
+   },
+   {
+    "q": "هل كيب تاون آمنة للسياح؟",
+    "a": "مثل أي مدينة كبيرة، يوجد فيها مناطق آمنة ومناطق تتطلب حذرًا؛ تجنب المشي الليلي بمفردك في مناطق غير مأهولة واحفظ مقتنياتك بعيداً عن الأنظار."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "المركز القريب من V&A Waterfront أو City Bowl وDe Waterkant مناسب للسياح بسبب القرب من الخدمات والمعالم، لكن اختر حيًا يتناسب مع ميزانيتك واحتياجات الوصول."
+   },
+   {
+    "q": "كيف أصل من الميناء إلى المعالم؟",
+    "a": "الواجهة البحرية V&A هي نقطة انطلاق لرحلات الميناء وجولات روبن آيلاند وتحتوي على مراكز معلومات يمكنها توجيهك لوسائل النقل المحلية والرحلات السياحية."
+   }
+  ]
+ }
+}

@@ -1,0 +1,225 @@
+{
+ "slug": "phuket",
+ "name": "Phuket",
+ "country": "Thailand",
+ "tags": [
+  "beach",
+  "nightlife"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Phuket",
+ "en": {
+  "city_name": "Phuket",
+  "country_name": "Thailand",
+  "title": "Phuket travel guide: beaches, diving, food and tips",
+  "meta_description": "Practical guide to Phuket: main sights, diving and island trips, local dishes, money-saving tips and a 3-day itinerary for first-time visitors.",
+  "h1": "Phuket travel guide: what to see, eat and know",
+  "intro": [
+   "Phuket is Thailand's largest island, lying off the west coast in the Andaman Sea and connected to the mainland by two road bridges. The island stretches roughly 48 km in length and combines busy western beaches, a historic Phuket Town to the southeast and quieter interior landscapes of hills, mangroves and plantations.",
+   "Tourism is now the island's main industry, so you'll find a wide range of services, dive and boat operators, restaurants and shops; expect prices to be somewhat higher than on the Thai mainland. While the west coast is famed for its beaches, the island also serves as a convenient base for diving and island excursions into nearby bays and reef areas."
+  ],
+  "best_time": "Diving and island activities are best from mid‑October to May when seas are calmer and rain is less frequent. Peak tourist periods bring larger crowds and higher prices, while the monsoon season brings rougher seas and fewer boat trips.",
+  "top_sights": [
+   {
+    "name": "Patong and the west coast beaches",
+    "why": "The west coast is where most visitors go for sand, sun and water sports; beach centres also concentrate accommodation, dining and nightlife—choose quieter beaches if you prefer less crowded shores."
+   },
+   {
+    "name": "Phuket Town",
+    "why": "The island's main urban centre offers local shops, markets and craftstuffs such as pearls and niello ware; it's a good place to explore local food and buy souvenirs away from the beach centres."
+   },
+   {
+    "name": "Chalong Bay",
+    "why": "A hub for dive shops and boat operators serving nearby reefs and islands; many day trips and diving departures originate here, so it's practical for arranging water activities."
+   },
+   {
+    "name": "Racha Yai",
+    "why": "A well-known dive site with sloping rocky reefs and abundant corals, offering clear water and marine life—suitable for many diver levels and commonly visited on day trips from Phuket."
+   },
+   {
+    "name": "Racha Noi",
+    "why": "A deeper, more challenging dive area with strong currents and dramatic granite boulders, recommended for experienced divers seeking bigger rewards underwater."
+   },
+   {
+    "name": "Ko Doc Mai",
+    "why": "A steep limestone island just off Phuket with diverse fish life where you can encounter leopard sharks, moray eels, octopus and turtles—good for people interested in marine wildlife."
+   },
+   {
+    "name": "Phang Nga Bay",
+    "why": "The nearby bay is famous for sea canoeing through grottoes and dramatic karst scenery accessible by small boats and canoes; many trips depart from Phuket to explore its caves and islands."
+   },
+   {
+    "name": "The island interior",
+    "why": "Away from the beaches, Phuket's hilly interior features mangrove forests, fishing villages, rubber and pineapple plantations and small Muslim communities, offering a quieter, more local side of the island."
+   }
+  ],
+  "getting_around": "Phuket's airport is in the northern part of the island and two road bridges connect Phuket to the mainland. Most visitors get around by road; beach centres, Phuket Town and dive operators are all linked by local roads and many boat trips depart from Chalong Bay and beach piers.",
+  "food": [
+   {
+    "name": "Fried or boiled noodle dishes (หมี่ผัด/หมี่น้ำ)",
+    "note": "Common local noodle preparations often include pork or chicken and are widely available in Phuket Town noodle shops."
+   },
+   {
+    "name": "Khanom Jin (ขนมจีน)",
+    "note": "Rice noodles typically eaten for breakfast with a spicy curry sauce and fresh vegetables."
+   },
+   {
+    "name": "Nam Phrik Kung Siap (น้ำพริกกุ้งเสียบ)",
+    "note": "A chilli and smoked shrimp mixture served with fresh vegetables as a local savoury accompaniment."
+   },
+   {
+    "name": "Cashew nuts",
+    "note": "Grown locally and sold dried, fried or coated—readily available on the island."
+   },
+   {
+    "name": "Phuket pineapple",
+    "note": "Locally grown pineapples are noted for being sweet and firm and are available year round."
+   }
+  ],
+  "budget_tips": [
+   "Expect overall prices to be higher than on the mainland and budget accordingly for accommodation and activities.",
+   "If having clothing tailored, inspect work quality, choose your own fabric, insist on multiple fittings and avoid shops that promise extremely fast turnaround.",
+   "Eat at local noodle shops and market stalls rather than only tourist restaurants to save money and taste authentic dishes.",
+   "Compare prices and services among dive shops and boat operators before booking to find the best value for trips and courses."
+  ],
+  "safety": [
+   "Phuket's west coast was severely affected by the 2004 tsunami but most visible evidence has been removed; follow local advice and signage about water and coastal safety.",
+   "Watersports and diving carry inherent risks—use reputable operators, check equipment and choose activities suited to your experience level.",
+   "Be cautious with aggressive vendors and high-pressure sales situations, especially with tailoring and souvenir shopping; always check workmanship before paying."
+  ],
+  "itinerary": [
+   "Day 1: Explore a west coast beach for swimming and water sports, then visit nearby shops and beach restaurants in the evening; if interested, arrange a snorkel or introductory Snuba trip through a local operator.",
+   "Day 2: Spend the day diving or taking a boat trip to islands such as Racha Yai or Ko Doc Mai, using Chalong Bay as a departure point; enjoy fresh seafood on return and an evening stroll in Phuket Town.",
+   "Day 3: Take a sea canoe or island cruise into Phang Nga Bay or explore the island interior—visit viewpoints, small villages and local markets, and shop for pearls or local crafts in Phuket Town."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Phuket?",
+    "a": "Three to five days lets you sample the main beaches, take at least one island or diving trip, and explore Phuket Town and the island interior at a relaxed pace."
+   },
+   {
+    "q": "Is Phuket expensive compared with the rest of Thailand?",
+    "a": "Yes; tourism has made Phuket one of Thailand's wealthiest provinces, so prices for accommodation, dining and activities are generally higher than on the mainland."
+   },
+   {
+    "q": "Is it safe to go diving in Phuket?",
+    "a": "Diving is popular around Phuket and generally safe when done with reputable operators; choose sites that match your certification and experience, and follow guides' instructions."
+   },
+   {
+    "q": "Which area is best to stay in for beaches and nightlife?",
+    "a": "The west coast beach centres concentrate most of the island's resorts, activities and nightlife, while quieter beaches and Phuket Town offer a more relaxed or local experience."
+   },
+   {
+    "q": "How do I get between Phuket and the mainland?",
+    "a": "Phuket is connected to the mainland by two road bridges, so travel by road is straightforward; the island's airport is in the north for air arrivals."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "بوكيت (Phuket)",
+  "country_name": "تايلاند",
+  "title": "بوكيت دليل السفر: ماذا ترى وتفعل وتتناول",
+  "meta_description": "دليل بوكيت: شواطئ، غوص، أطعمة محلية، نصائح لتوفير المال وخطة سفر لثلاثة أيام في جزيرة تايلاندية على بحر أندامان.",
+  "h1": "دليل السفر إلى بوكيت: ما الذي تراه وتفعله وتأكله",
+  "intro": [
+   "بوكيت أكبر جزيرة في تايلاند وتمتد على ساحل بحر أندامان في الجنوب الغربي للبلاد؛ تقع الجزيرة شمال مدينة فانغ نغا ومتصلة بالبرّ بجسرين طفيفين لكنها بارزان. تشتهر الجزيرة بشواطئها المتنوعة وساحلها الغربي الذي يجذب أعداداً كبيرة من الزوار، بينما تقع مدينة بوكيت (Phuket Town) في الجنوب الشرقي والمطار في الشمال.",
+   "أصل اسم الجزيرة مرتبط بكلمة ملايوية تعني \"التل\" ما يعكس تضاريسها الجبلية الداخلية التي تضم غابات مانغروف وقرى صيد ومزارع مطاط وأناناس؛ كانت ثروتها تاريخياً من القصدير والمطاط، أما اليوم فالسياحة هي المورد الرئيسي وتؤثر في أسعار السلع مقارنة بالبرّ الرئيسي."
+  ],
+  "best_time": "أفضل موسم للغوص والأيام الخالية من الأمطار يمتد بشكل عام من منتصف أكتوبر إلى مايو، عندما تكون البحار هادئة والرؤية تحت الماء جيدة. في المواسم الأخرى قد تكون الأنشطة البحرية محدودة أكثر بسبب الطقس والرياح.",
+  "top_sights": [
+   {
+    "name": "شواطئ الساحل الغربي",
+    "why": "سلسلة شواطئ متنوعة من الهادئة إلى المكتظة توفر سباحة ورياضات بحرية؛ نصيحة عملية: اختر شاطئاً أقل شهرة إذا أردت هدوءاً بعيداً عن حشود السياح."
+   },
+   {
+    "name": "مدينة بوكيت (Phuket Town)",
+    "why": "مركز حضري تاريخي يقدم أسواقاً ومحلات وورش حرفية مثل صناعة اللؤلؤ والفضيات؛ تجول في شوارع المدينة للعثور على سلع محلية ومطاعم متنوعة."
+   },
+   {
+    "name": "داخل الجزيرة (الغابات والقرى والمزارع)",
+    "why": "مناظر داخلية خصبة تضم غابات مانغروف وقرى صيد ومزارع مطاط وأناناس، وتعرض جانباً هادئاً من حياة الجزيرة؛ يمكن استكشافها بالسيارة أو عبر جولات محلية."
+   },
+   {
+    "name": "خليج تشالونج (Chalong Bay)",
+    "why": "مركز لعدد كبير من مدارس الغوص وقوارب الرحلات البحرية، وهو نقطة انطلاق لشواطئ وغوص محليّين؛ إن كنت ستغوص، ستجد هنا معظم مكاتب الغوص."
+   },
+   {
+    "name": "جزيرة راتشا ياي (Racha Yai)",
+    "why": "أشهر موقع غوص في المنطقة بمرابط صخرية وشعاب مرجانية وكائنات بحرية غنية؛ تصلها رحلات قصيرة بالقارب من بوكيت وتناسب معظم مستويات الغواصين."
+   },
+   {
+    "name": "جزيرة راتشا نوي (Racha Noi)",
+    "why": "موقع غوص أقوى للغواصين المتمرسين بسبب أعماق أكبر والتيارات، ويتميز بتضاريس صخرية كبيرة تقدم غوصاً أكثر تحدياً ومكافآت تحت الماء."
+   },
+   {
+    "name": "كو دوك ماي (Ko Doc Mai)",
+    "why": "جزيرة جيرية ترتفع عمودياً من قاع البحر وتعرف بتنوّع أسماكها وإمكانية مشاهدة أسماك النمر والسلحفاة والرخويات؛ مكان مناسب لرحلات الغوص والسنوركل."
+   },
+   {
+    "name": "خليج فانغ نغا (Phang Nga Bay)",
+    "why": "منطقة شهيرة للقيام برحلات كانو بحرية بين المغاور والصخور الجيرية التي لا يمكن الوصول إليها إلا بالقوارب الصغيرة؛ يوفّر خليج فانغ نغا مناظر طبيعية بحرية مميزة."
+   }
+  ],
+  "getting_around": "المطار موجود في شمال الجزيرة بينما تقع المدينة الرئيسية في الجنوب الشرقي والشواطئ الكبرى على الساحل الغربي؛ الجزيرة مرتبطة بالبرّ عبر جسرين، والتنقل داخلياً يتم بالسيارة أو الحافلات المحلية وسيارات الأجرة ووسائل النقل البحري للرحلات إلى الجزر القريبة. تعد منطقة خليج تشالونج مركزاً لغواصين ورحلات القوارب.",
+  "food": [
+   {
+    "name": "أطباق النودلز المقلية أو المغلية",
+    "note": "تتوفر بأنواع متعددة في مطاعم نودلز وسط مدينة بوكيت وغالباً مع لحم الخنزير أو الدجاج."
+   },
+   {
+    "name": "خانوم جين (Khanom Jin)",
+    "note": "نوع من النودلز تؤكل عادة على الفطور مع صلصة كاري حارة وخضروات طازجة."
+   },
+   {
+    "name": "نام فريك كونغ سياب (Nam Phrik Kung Siap)",
+    "note": "خليط من الفلفل الحار والروبيان المدخن يقدم مع خضروات طازجة كطبق جانبي محلي."
+   },
+   {
+    "name": "الكاجو المحلي",
+    "note": "يتوفر في بوكيت مجففاً أو مقلياً أو مغطىً بنكهات مختلفة ويعد منتجاً زراعياً محلياً."
+   },
+   {
+    "name": "الأناناس المحلي",
+    "note": "أناناس بوكيت معروف بحلاوته وملمسه المتماسك ويُباع طازجاً على مدار السنة."
+   }
+  ],
+  "budget_tips": [
+   "توقّع أسعاراً أعلى قليلاً مقارنة بالبرّ الرئيسي لأن السياحة هي المورد الرئيسي في الجزيرة.",
+   "اشتَر الفواكه والمكسرات من الباعة المحليين بدلاً من المتاجر السياحية لتوفير المال والحصول على منتجات طازجة.",
+   "إذا رغبت بخياط أو بدلات مفصلة، اشترِ القماش بنفسك واطلب أكثر من قياس وتحقق من جودة الخياطة قبل التسليم لتجنب القطع الرديئة.",
+   "قارن عروض مكاتب الغوص وورش الرحلات البحرية واطلب معلومات عن مستوى الخبرة والتجهيز قبل الحجز للحصول على قيمة أفضل."
+  ],
+  "safety": [
+   "تأثرت السواحل الغربية بأحداث تسونامي 2004 لكن لا تكاد توجد آثار ظاهرة الآن؛ راجع دائماً إرشادات السلامة المحلية المتعلقة بالبحر والطقس.",
+   "تحقّق من حالة البحر والرياح قبل الانخراط في أنشطة بحرية أو في الرحلات بالقوارب أو الرياضات المائية.",
+   "كن حذراً مع الباعة المُلحّين وورش الخياطة التي تعد بصناعة سريعة دون فحوصات جودة، واطلب دائماً معاينات متعددة.",
+   "احترم المجتمعات المحلية، بما في ذلك الجاليات المسلمة الصغيرة في الجزيرة، خاصة عند زيارة أماكن العبادة أو الأحياء التقليدية."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشف أحد شواطئ الساحل الغربي للسباحة والرياضات المائية ثم تجوّل في مركز شاطئي مثل باتونغ أو كاتا لتناول مأكولات بحرية ومشاهدة الحياة السياحية.",
+   "اليوم الثاني: انطلق في رحلة غوص أو سنوركل إلى مواقع قريبة مثل جزيرة راتشا ياي، أو احجز غوصاً متقدماً إلى راتشا نوي أو زيارة كو دوك ماي لمشاهدة التنوع البحري.",
+   "اليوم الثالث: تجوّل في مدينة بوكيت التاريخية لزيارة الأسواق وورش الحرف وشراء اللآلئ والفضيات، ثم استغل الوقت لزيارة داخل الجزيرة (قرى الصيد، مزارع الأناناس والمانغروف)."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام التي أحتاجها لزيارة بوكيت؟",
+    "a": "ثلاثة أيام تكفي لرؤية الشواطئ الأساسية، تجربة غوص أو سنوركل، واستكشاف مدينة بوكيت والداخلية، لكن يمكنك تمديد الإقامة إذا رغبت بمزيد من الرحلات البحرية أو الغوص."
+   },
+   {
+    "q": "هل بوكيت مدينة مكلفة؟",
+    "a": "أسعار السلع والخدمات تميل لأن تكون أعلى من البرّ الرئيسي لأن السياحة هي النشاط الاقتصادي الرئيسي، لذا خطط ميزانيتك مع توقع بعض الفروقات."
+   },
+   {
+    "q": "هل الغوص جيد في بوكيت ومتى أفضل وقت له؟",
+    "a": "المنطقة تقدم مواقع غوص جيدة مثل راتشا ياي وراتشا نوي وكو دوك ماي، وأفضل موسم للغوص عادة من منتصف أكتوبر حتى مايو عندما تكون البحار هدئة والرؤية تحت الماء جيدة."
+   },
+   {
+    "q": "ما هو أفضل مكان للإقامة في بوكيت؟",
+    "a": "يعتمد الاختيار على اهتمامك: الشواطئ على الساحل الغربي مناسبة لمن يريد البحر والأنشطة المائية، بينما مدينة بوكيت تناسب من يريد أسواقاً ومطاعم وخدمات حضرية."
+   },
+   {
+    "q": "كيف أصل إلى بوكيت من البرّ أو المطار؟",
+    "a": "المطار يقع في شمال الجزيرة والطرق تربط بوكيت بالبرّ عبر جسرين؛ الوصول عادةً برا أو جوّاً ثم داخل الجزيرة بالسيارة أو الحافلات المحلية والقطاعات البحرية للرحلات إلى الجزر المجاورة."
+   }
+  ]
+ }
+}

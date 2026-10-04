@@ -1,0 +1,225 @@
+{
+ "slug": "medellin",
+ "name": "Medellín",
+ "country": "Colombia",
+ "tags": [
+  "culture",
+  "nightlife"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Medell%C3%ADn",
+ "en": {
+  "city_name": "Medellín",
+  "country_name": "Colombia",
+  "title": "Medellín travel guide: sights, food, safety and 3-day plan",
+  "meta_description": "Practical guide to Medellín: top sights (Museo de Antioquia, Plaza Botero, Metrocable), what to eat, budget tips, safety advice and a 3-day itinerary.",
+  "h1": "Medellín travel guide: what to see, eat and know",
+  "intro": [
+   "Medellín is Colombia's second-largest city and the capital of the department of Antioquia, set in a north–south valley and home to about 2.62 million people (2024). Known as the \"city of the eternal spring,\" it is noted for a pleasant climate and accessible cultural highlights such as the Antioquia Museum with its extensive Fernando Botero collection and the Plaza Botero sculptures.",
+   "Once infamous in the 1980s and 1990s, Medellín has undergone major change and today forms part of a larger metropolitan area that includes nine neighbouring towns. The city blends modernist architecture, a metro system with cable-car (Metrocable) extensions, lively street life in the centre, and active cultural and university scenes."
+  ],
+  "best_time": "Medellín's mild, spring-like climate makes it a comfortable destination year-round. Major crowd peaks occur during December–January when the city is decorated with Los Alumbrados (Christmas lights), so plan accordingly if you prefer fewer tourists.",
+  "top_sights": [
+   {
+    "name": "Museo de Antioquia",
+    "why": "Home to a large collection of Fernando Botero works and contemporary art; the adjacent Plaza Botero displays several large Botero sculptures free to the public—visit during museum hours and combine both stops on the same walk."
+   },
+   {
+    "name": "Plaza Botero",
+    "why": "Open-air plaza featuring multiple oversized Botero sculptures that are easy to view and photograph; it sits directly in front of Museo de Antioquia and is pedestrian-friendly."
+   },
+   {
+    "name": "Metrocable (Line K and L)",
+    "why": "Cable-car extensions of the Metro offer panoramic views of the Aburrá valley and access to working-class neighbourhoods and Parque Arví; the cable-car fare is included with a metroticket for Line K, and the L line can take you onward toward Parque Arví."
+   },
+   {
+    "name": "Pueblito Paisa (Cerro Nutibara)",
+    "why": "A reconstruction of a small Antioquia village on Cerro Nutibara with city views and the nearby Museum of the City; the walk uphill is long so consider taking a taxi from Industriales station if you prefer not to hike."
+   },
+   {
+    "name": "Comuna 13",
+    "why": "A formerly dangerous neighbourhood transformed by community projects, now known for vibrant street art, graffiti and cultural tours; go with a recommended local guide or follow established tour routes."
+   },
+   {
+    "name": "Museo Universidad de Antioquia",
+    "why": "Part of the university campus, notable for its Anthropology Collection that houses a large number of pre-Columbian ceramic pieces, making it of particular interest to visitors interested in archaeology and history."
+   },
+   {
+    "name": "Biblioteca España",
+    "why": "A striking modern library perched on the hillside and accessible via Metro Acevedo and the Metrocable to Santo Domingo; it is one of the architectural library projects built to serve neighbourhoods."
+   },
+   {
+    "name": "Metropolitan Cathedral (Catedral Metropolitana)",
+    "why": "A monumental brick cathedral in Bolívar Park notable for its vast use of bricks and central location in the historic downtown near Prado metro station."
+   }
+  ],
+  "getting_around": "Medellín's Metro is the core of public transport and is complemented by Metrocable lines that reach hillside neighbourhoods; the Metrocable is included on the metroticket for certain lines and is useful for sightseeing. Taxis, buses and walking in central areas round out local transport; for uphill sights such as Pueblito Paisa a taxi can save a steep walk.",
+  "food": [
+   {
+    "name": "Bandeja paisa",
+    "note": "A hearty Antioquian platter with many components and a signature local meal, often available at traditional restaurants such as Hatoviejo."
+   },
+   {
+    "name": "Arepas with cheese (arepa con queso)",
+    "note": "Common for breakfast or as a snack—flat corn arepas topped with fresh white cheese and butter are widely enjoyed in Medellín."
+   },
+   {
+    "name": "Empanadas and street snacks",
+    "note": "Fried turnovers and other street foods are sold at stands and near Metrocable stations—good for a casual, budget bite."
+   },
+   {
+    "name": "Colombian coffee",
+    "note": "Locally produced coffee is available across the city, from specialist shops to Juan Valdez outlets offering a range of Colombian beans."
+   },
+   {
+    "name": "Local fruits and fruit mixes (Salpicón)",
+    "note": "Colombia has many tropical fruits—order a salpicón, a marinated mixed-fruit drink, to sample varied flavours."
+   }
+  ],
+  "budget_tips": [
+   "Use the Metro and Metrocable for economical travel and scenic views rather than taxis for longer journeys.",
+   "Eat at local markets, street stalls and traditional eateries outside the tourist zone for lower prices and authentic food.",
+   "Visit free public attractions such as Plaza Botero and public parks rather than paid tours for parts of your stay.",
+   "Choose neighbourhoods outside El Poblado’s Zona Rosa for cheaper accommodation and dining; Laureles and Envigado are alternatives mentioned in the city layout."
+  ],
+  "safety": [
+   "Medellín experienced very high violence in the 1980s–90s but has improved substantially; remain aware of your surroundings, especially after dark in unfamiliar areas.",
+   "When using Metrocable lines that serve working-class neighbourhoods, enjoy the views but avoid straying far from the top stations or off marked tourist routes.",
+   "Keep valuables out of sight in crowded places and use hotel safes for passports and extra cash.",
+   "Prefer daytime visits to downtown pedestrian streets like Carabobo and use registered taxis or the Metro at night."
+  ],
+  "itinerary": [
+   "Day 1: Start in the historic centre—walk Carabobo street to Plaza Botero and Museo de Antioquia, visit the Metropolitan Cathedral and browse the Junín pedestrian area for cafés and shops.",
+   "Day 2: Take the Metrocable from Acevedo to Santo Domingo and onward on Line L toward Parque Arví for city views and green space; return to visit Comuna 13 with a community-led tour or mural walk.",
+   "Day 3: Visit Pueblito Paisa on Cerro Nutibara for panoramic views and the Museum of the City, then spend the afternoon in a neighbourhood like Laureles or El Poblado sampling typical dishes and coffee."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Medellín?",
+    "a": "Three days provides time to see major museum highlights, ride the Metrocable to Parque Arví and explore neighbourhoods like Comuna 13 and Pueblito Paisa; add more days if you want slower-paced excursions or day trips into the region."
+   },
+   {
+    "q": "Is Medellín expensive to visit?",
+    "a": "Relative to some international cities, Medellín can be affordable if you use public transport, eat at local restaurants and avoid the pricier Zona Rosa in El Poblado; there are options across budgets."
+   },
+   {
+    "q": "Is Medellín safe for tourists?",
+    "a": "Security has improved significantly since the 1990s, but standard urban precautions still apply: stay in well-traveled areas, avoid wandering off in unfamiliar neighbourhoods at night, and keep valuables secure."
+   },
+   {
+    "q": "What is the best area to stay in Medellín?",
+    "a": "El Poblado is popular for nightlife and restaurants, while Laureles and Envigado offer more traditional neighbourhood atmosphere; choose based on whether you prioritise nightlife or a quieter local feel."
+   },
+   {
+    "q": "How do I get from the airport to the city?",
+    "a": "Medellín is about an hour by air from Bogotá; from José María Córdova or Enrique Olaya Herrera airports you can reach the city by taxi, shuttle or bus services that connect with the metro system—plan transport ahead and confirm current options locally."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "ميديلين (Medellín)",
+  "country_name": "كولومبيا",
+  "title": "ميديلين - دليل السفر: معالم، طعام وخطة 3 أيام",
+  "meta_description": "دليل ميديلين: أهم المعالم مثل متحف أنتيوقيا وبلاثا بوتيرو، طعام محلي، نصائح توفير، وأجندة لثلاثة أيام.",
+  "h1": "دليل ميديلين: ماذا ترى وتفعل وتعرف قبل السفر",
+  "intro": [
+   "ميديلين هي ثاني أكبر مدينة في كولومبيا وعاصمة إقليم أنتيوقيا، ويبلغ عدد سكانها 2.62 مليون (2024). المدينة ممتدة في وادٍ من الشمال إلى الجنوب وتبعد ساعة طيران تقريباً عن بوغوتا.",
+   "تشتهر ميديلين بمتحف أنتيوقيا ومجموعة أعمال فرناندو بوتيرو داخل المتحف وتماثيله في ساحة البلاثا بوتيرو، كما تعرف بمناخها المعتدل الذي أكسبها لقب مدينة الربيع الأبدي."
+  ],
+  "best_time": "الطقس في ميديلين معتدل مقارنة بباقي كولومبيا، لذلك يمكن زيارتها معظم العام؛ مواسم العطلات مثل احتفالات أعياد الميلاد تجذب زواراً كثر بسبب أضواء Los Alumbrados، فالتدفّق السياحي يرتفع في ديسمبر.",
+  "top_sights": [
+   {
+    "name": "متحف أنتيوقيا (Museo de Antioquia)",
+    "why": "متحف رئيسي لمشاهدة أعمال فرناندو بوتيرو داخل المتحف وتماثيله الكبيرة في ساحة البلاثا بوتيرو أمامه؛ نصيحة عملية: ادخل إلى الساحة مجاناً لالتقاط صور مع التماثيل قبل زيارة المتحف."
+   },
+   {
+    "name": "ساحة بلاثا بوتيرو (Plaza Botero)",
+    "why": "ساحة عامة تضم عدة تماثيل ضخمة لارتداء بوتيرو وتكمل زيارة متحف أنتيوقيا؛ المكان مناسب للتصوير والتنقّل سيراً بين المتحف والمباني المحيطة."
+   },
+   {
+    "name": "بويبليتو بايسا (Pueblito Paisa) على تل نوتيبارا",
+    "why": "إعادة بناء لقريّة تقليدية من أنتيوقيا مع إطلالة جيدة على المدينة والمتحف الصغير لمدينة ميديلين على القمة؛ قد تحتاج سيارة أجرة للصعود إذا لم ترغب بالمشي الشاق صعوداً."
+   },
+   {
+    "name": "المترو وكابلات المترو (Metrocable)",
+    "why": "نظام الكابل امتداد للمترو يوفّر مناظر شاملة للمدينة ويصل أحياء جبلية مثل سانتو دومينغو والبارك أرڤي؛ استخدم التذكرة الموحدة للمترو والكابلات واذهب نهاراً للمشي الآمن عند المحطة العليا."
+   },
+   {
+    "name": "كومونا 13",
+    "why": "حي كان سابقاً خطيراً لكنه أصبح مقصد سياحي لفن الجرافيتي وجولات المجتمع والسلالم الخارجية المغطاة؛ احجز جولة منظمة أو انضم إلى مرشد محلي للاستفادة القصوى والأمان."
+   },
+   {
+    "name": "كاتدرائية متروبوليتانا (Metropolitan Cathedral)",
+    "why": "كاتدرائية تاريخية قرب حديقة بوليفار وتُعد من المباني المصنوعة بملايين الطوب، وتقع في قلب المدينة القديمة؛ زيارة سريعة توفّر لمحة عن البنية الدينية والتاريخية للمدينة."
+   },
+   {
+    "name": "متحف الجامعة (Museo Universidad de Antioquia)",
+    "why": "يعرض مجموعات متعددة تشمل مجموعة أنثروبولوجية كبيرة من القطع قبل الكولومبية، ويقع في حرم الجامعة لذا يمكن دمج الزيارة مع التجول الجامعي."
+   },
+   {
+    "name": "متحف الفن المعاصر (MAMM) في سيوداد دل ريو",
+    "why": "متحف للفن المعاصر يضم موقعاً رئيسياً في مستودع صناعي متحوّل مع مقهى ومطعم؛ مناسب لعشّاق الفن المعاصر وزيارات في منطقة سيوداد دل ريو القريبة من محطة مترو Industriales."
+   }
+  ],
+  "getting_around": "ميديلين لديها نظام مترو والكابلات المرتبطة به، ويمكن استخدامهما للوصول إلى أجزاء كثيرة من الوادي والمرتفعات؛ سيارات الأجرة والحافلات تخدم بقية الأحياء، والانتقال من وإلى المطار يتم عادةً عبر سيارات الأجرة أو خدمات النقل المكوكية.",
+  "food": [
+   {
+    "name": "بانديا بايسا (Bandeja Paisa)",
+    "note": "وجبة غنية من المطبخ الأنثيوي التقليدي تشمل مكونات مثل الفاصولياء واللحم والأرز والبيض والبطاطا المقلية."
+   },
+   {
+    "name": "أريبا مع الجبن (Arepa con queso)",
+    "note": "فطيرة ذرة مشوية أو مخبوزة تُقدّم غالباً مع جبن طازج وتعد جزءاً أساسياً من الإفطار المحلي."
+   },
+   {
+    "name": "إمبانادا (Empanada)",
+    "note": "فطاير مقلية بحشوات لحمية شائعة جداً كطعام شارع سريع ومتاح في أنحاء المدينة."
+   },
+   {
+    "name": "قهوة كولومبية",
+    "note": "قهوة عالية الجودة متوفرة في المقاهي المحلية وسلاسل مثل Juan Valdez، وهي منتج شائع للشراء كهدايا."
+   },
+   {
+    "name": "مشروبات الفواكه الاستوائية (مثل Salpicón)",
+    "note": "خليط فواكه طازجة مع عصائر محليّة يُعدّ منعشاً ويعرض تنوّع الفواكه الكولومبية."
+   }
+  ],
+  "budget_tips": [
+   "استخدم المترو والكابلات للتنقل فهي تغطي أجزاء كبيرة من المدينة وتكون أقل كلفة من سيارات الأجرة.",
+   "تناول الطعام في المطاعم المحليّة وأسواق الشارع للحصول على وجبات تقليدية بسعر معقول بدلاً من المناطق السياحية الراقية.",
+   "زور المتاحف والساحات العامة مثل بلاثا بوتيرو حيث يمكن مشاهدة تماثيل بوتيرو مجاناً قبل دفع ثمن دخول المتاحف.",
+   "تفادى السفر في مواسم الذروة إن أمكن، والاكتفاء بالأنشطة النهارية لتقليل تكاليف الجولات المنظمة والنقل."
+  ],
+  "safety": [
+   "شهدت ميديلين تحسناً أمنياً كبيراً منذ التسعينيات، لكن من الحكمة البقاء في المناطق المأهولة نهاراً وتجنّب المشي وحدك بعيداً عن المسارات السياحية.",
+   "استخدم المترو والكابلات وابقَ على الطرق المألوفة، وإذا زرت أحياء مثل كومونا 13 فاختر جولة مرشدة منظمة.",
+   "احفظ ممتلكاتك الثمينة بعيداً عن الأنظار خصوصاً في المناطق المزدحمة والسوقية، وتجنّب حمل مبالغ نقدية كبيرة."
+  ],
+  "itinerary": [
+   "اليوم الأول: جولة في مركز المدينة تشمل ساحة بلاثا بوتيرو، متحف أنتيوقيا، شارع كارابوبو والمباني التاريخية حول حديقة بوليفار.",
+   "اليوم الثاني: اصعد بكابلات المترو إلى سانتو دومينغو ثم تابع إلى خط L أو Parque Arví للاستمتاع بالإطلالات والطبيعة، وبعدها زيارة بويبليتو بايسا على تل نوتيبارا.",
+   "اليوم الثالث: زيارة متاحف مثل MAMM ومتحف الجامعة، وتجول في أحياء إل بوبلا دو أو لوريليس للمطاعم والحياة الليلية المعتدلة."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لزيارة ميديلين؟",
+    "a": "ثلاثة أيام تسمح برؤية أهم معالم المدينة مثل متحف أنتيوقيا، ركوب المترو والكابلات، وجولة في الميادين والأحياء الرئيسية مع بعض الوقت لزيارة المتاحف."
+   },
+   {
+    "q": "هل ميديلين مدينة مكلفة؟",
+    "a": "التكاليف معتدلة مقارنة بالوجهات الكبرى؛ التنقل بالمترو والكابلات والطعام المحلي في الأسواق يوفر نفقات مقارنة بالمطاعم الراقية في أحياء مثل إل بوبلادو."
+   },
+   {
+    "q": "هل ميديلين آمنة للزوار؟",
+    "a": "الأمن تحسّن كثيراً منذ التسعينيات، لكن يُنصح باتباع الاحتياطات العادية مثل تجنّب المناطق غير المأهولة ليلاً وحفظ المتعلقات الشخصية بعيداً عن الأنظار."
+   },
+   {
+    "q": "ما أفضل منطقة للإقامة للمسافرين؟",
+    "a": "أحياء مثل إل بوبلادو ولوريليس معروفة بوجود مطاعم وخيارات ليلية ونمط حياة مريح، بينما يمكن أن تكون إقامة قريبة من محطات المترو مريحة للتنقل."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط المدينة؟",
+    "a": "عادةً ينقل الزوار من المطار بسيارات الأجرة أو خدمات النقل المكوكية إلى وسط المدينة؛ داخل المدينة يُعدّ المترو والكابلات وسيلة فعالة للتنقل."
+   }
+  ]
+ }
+}

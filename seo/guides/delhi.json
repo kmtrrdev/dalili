@@ -1,0 +1,228 @@
+{
+ "slug": "delhi",
+ "name": "Delhi",
+ "country": "India",
+ "tags": [
+  "history",
+  "culture",
+  "food",
+  "shopping"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Delhi",
+ "en": {
+  "city_name": "Delhi",
+  "country_name": "India",
+  "title": "Delhi travel guide: what to see, eat and know",
+  "meta_description": "Practical guide to Delhi: top sights (Red Fort, Qutb Minar, India Gate), where to eat, budget tips, safety and a 3-day itinerary.",
+  "h1": "Delhi travel guide: what to see, eat and know",
+  "intro": [
+   "Delhi, the largest city in northern India and home to New Delhi, is the region's political, cultural and commercial hub. With layers of history stretching back millennia, the metropolis contains an outstanding collection of forts, mosques and tombs from successive empires alongside modern government buildings.",
+   "The wider National Capital Region is one of the world's largest urban areas. Visitors should expect a lively, crowded city with strong contrasts of old and new; planning for weather, air quality and basic comforts will make sightseeing far more enjoyable."
+  ],
+  "best_time": "Avoid the late spring and early summer if you dislike extreme heat; those months are scorchingly hot. Because air pollution can be severe for much of the year, choose periods when air quality is typically better and plan indoor rest between outings.",
+  "top_sights": [
+   {
+    "name": "Red Fort",
+    "why": "The 17th-century palace of the Mughal emperor is one of Delhi's most visited historic monuments and a focal point for national ceremonies; allow time to see its ramparts and courtyards and arrive prepared for security checks."
+   },
+   {
+    "name": "Jama Masjid",
+    "why": "This vast 17th-century congregational mosque in Old Delhi is notable for its scale and atmosphere; modest dress is advised and mornings or late afternoons are often best for fewer crowds."
+   },
+   {
+    "name": "Qutb Minar",
+    "why": "A 13th-century tower known for intricate carvings and historic significance; combine a visit with nearby archaeological remains and bring sun protection as there is limited shade."
+   },
+   {
+    "name": "Humayun's Tomb",
+    "why": "A large 16th-century Mughal tomb set in formal gardens and an important precursor to later Mughal architecture; expect to spend time exploring the grounds and photographic views."
+   },
+   {
+    "name": "India Gate",
+    "why": "A prominent ceremonial arch in New Delhi set on broad boulevards and parkland; it forms part of the planned civic axis and is easy to include in a walks-based tour of central New Delhi."
+   },
+   {
+    "name": "Rashtrapati Bhavan",
+    "why": "The presidential palace at the head of New Delhi's government precincts is an imposing example of the city's planned colonial-era core; view it from the outside along the national mall and plan for restricted access at times."
+   },
+   {
+    "name": "Lotus Temple",
+    "why": "A modern Bahá'í house of worship shaped like a flower and among the city's most visited buildings; expect heavy visitor numbers and observe rules for quiet and respectful behaviour inside."
+   },
+   {
+    "name": "Akshardham",
+    "why": "A modern cultural and spiritual complex in East Delhi with striking contemporary architecture and exhibitions; check visitor guidelines before you go and allow time for the site's displays and gardens."
+   }
+  ],
+  "getting_around": "Delhi is a major transit hub and the centre of a vast metropolitan region, so journeys can be long depending on where you stay. Prepaid tourist SIM cards are available at the airport arrivals hall and in convenience stores, which helps with navigation and ride services; plan travel times conservatively and allow extra time for traffic and crowds.",
+  "food": [
+   {
+    "name": "Parathas at Paranthe Wali Gali",
+    "note": "Chandni Chowk's Paranthe Wali Gali is famous for shops serving numerous stuffed parathas and is a classic Old Delhi food experience."
+   },
+   {
+    "name": "Delhi street food",
+    "note": "The city is renowned for its street food variety, but pick vendors or restaurants carefully to avoid unhygienic options."
+   },
+   {
+    "name": "Vegetarian, chicken and mutton dishes",
+    "note": "Being far from the sea, Delhi's menus emphasise vegetarian, chicken and mutton preparations rather than seafood."
+   },
+   {
+    "name": "Organised food walks",
+    "note": "Local foodie groups and guided food tours run walks that sample classic street dishes and historic food joints across Old and upscale markets."
+   },
+   {
+    "name": "International and upscale dining",
+    "note": "Alongside traditional Indian cuisine there is a growing number of international restaurants, often positioned at the higher end of the market."
+   }
+  ],
+  "budget_tips": [
+   "Shop in bazaars in central Delhi and be ready to bargain; haggling is common in street markets.",
+   "Use malls and branded stores in South and South East Delhi for fixed prices when you prefer no-haggle shopping.",
+   "Avoid peak crowd times in popular shopping districts—many are busiest on Saturdays and some stores close on Sundays.",
+   "Join local food walks or non-commercial foodie groups to discover excellent local eats in a cost-effective and safe way."
+  ],
+  "safety": [
+   "Air pollution can reach unhealthy levels for much of the day; check local air quality forecasts and limit strenuous outdoor activity when pollution is high.",
+   "Delhi can be very hot in late spring and early summer; stay hydrated, use sun protection and rest in an air-conditioned or shaded place during the hottest hours.",
+   "Be aware of common travel scams and take standard precautions with valuables and transport arrangements.",
+   "Public parks are closed after sunset, so avoid planning evening visits to parks and prefer well-lit, populated areas at night."
+  ],
+  "itinerary": [
+   "Day 1: Explore Old Delhi—visit the Red Fort and Jama Masjid, wander Chandni Chowk and taste parathas on Paranthe Wali Gali; expect busy streets and narrow lanes.",
+   "Day 2: Discover New Delhi—walk the civic axis around India Gate and Kartavya Path, view Rashtrapati Bhavan and allow time for a museum in the government district.",
+   "Day 3: Visit historic complexes—see Qutb Minar and Humayun's Tomb, then choose a modern landmark such as the Lotus Temple or Akshardham for contrasting architecture."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Delhi?",
+    "a": "Three days lets you cover Old Delhi, the New Delhi civic core and some major tombs and towers; add more days if you want a relaxed pace or to explore satellite cities in the region."
+   },
+   {
+    "q": "Is Delhi expensive to visit?",
+    "a": "Costs vary: traditional bazaars and street food can be very affordable, while international restaurants and upscale malls are pricier; budget accordingly and choose areas that match your spending style."
+   },
+   {
+    "q": "Is Delhi safe for first-time visitors?",
+    "a": "Delhi can be chaotic and crowded, and visitors should be mindful of air pollution, heat and petty scams; taking common-sense precautions, staying in a decent hotel and reading up on local tips will reduce most risks."
+   },
+   {
+    "q": "What is the best area to stay in Delhi?",
+    "a": "Stay somewhere that gives you comfort between outings—New Delhi offers a planned, central area near government sights while other central districts provide easy access to bazaars and historic sites; pick based on whether you prioritise old-city atmosphere or quieter, planned streets."
+   },
+   {
+    "q": "Can I get a SIM card at the airport?",
+    "a": "Yes—prepaid SIM cards for tourists are available in the airport arrivals hall and at convenience stores, providing generous data packages that help with navigation and booking services."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "دلهي",
+  "country_name": "الهند",
+  "title": "دليـه دليل السفر: معالم وطعام وخطط زيارة",
+  "meta_description": "دليل دلهي: أهم المعالم (القلعة الحمراء، قطب منار، ضريح هميون)، أكل الشارع، نصائح للميزانية وخطة زيارة لثلاثة أيام.",
+  "h1": "دليل دلهي: ماذا ترى وتفعل وتأكل وتعرف قبل السفر",
+  "intro": [
+   "دلهي هي أكبر مدينة في شمال الهند ومركز حضري ضخم يضم العاصمة نيودلهي (New Delhi). المدينة مركز محوري للفنون والتجارة والتعليم والسياحة والنقل، وتجمع بين مواقع تاريخية محفوظة جيدًا وآثار من عصور مختلفة امتدت لآلاف السنين.",
+   "المدينة جزء من منطقة العاصمة الوطنية (NCR) وتضم مواقع شهيرة مثل القلعة الحمراء ومسجد الجامع وقطب منار وضريح هميون، وهي وجهة مناسبة للمسافرين الباحثين عن تاريخ غني وتجارب ثقافية متنوعة، رغم ازدحامها وتحديات البيئة الحضرية."
+  ],
+  "best_time": "الشتاء والصيف المتأخر لكل منهما له مزايا: تجنب أوقات الحر الشديد في أواخر الربيع/الصيف، وكن حذرًا من التلوث الهوائي الذي يؤثر على جودة الهواء معظم أيام السنة. اختر فترات الطقس المعتدل والمواسم السياحية خارج ذروة الحرارة لتجربة أكثر راحة.",
+  "top_sights": [
+   {
+    "name": "القلعة الحمراء (Red Fort)",
+    "why": "قلعة القرن السابع عشر كانت مقر إمبراطورية المغول وتعد من أشهر معالم دلهي؛ تستحق الزيارة للتاريخ والهندسة المعمارية، ونصيحة عملية: استعد للمشي وارتدِ أحذية مريحة."
+   },
+   {
+    "name": "جاما مسجد (Jama Masjid)",
+    "why": "مسجد واسع وجميل من القرن السابع عشر في الجزء القديم من المدينة؛ قيمة للزوار المهتمين بالعمارة الإسلامية، ويفضّل زيارة أوقات غير الصلاة لتفادي الازدحام."
+   },
+   {
+    "name": "قطب منار (Qutb Minar)",
+    "why": "برج يبلغ ارتفاعه 73 متراً يعود للقرن الثالث عشر ومزخرف بنقوش دقيقة، وهو موقع تراث عالمي ويعرض أمثلة مبكرة على فنون البناء في المنطقة."
+   },
+   {
+    "name": "ضريح هميون (Humayun's Tomb)",
+    "why": "ضريح كبير من القرن السادس عشر يمثل نموذجًا لمعماريات المقابر المغولية ويستحق الزيارة لأولئك المهتمين بالحدائق التاريخية والتصميم المعماري."
+   },
+   {
+    "name": "باب المدينة القديم / بورانا قيلا (Purana Qila)",
+    "why": "حصن مغولي يعود للقرن السادس عشر ويقدم لمحة عن تاريخ تحصينات المدينة؛ مكان جيد للتجول والتعرف على طبقات التاريخ الدلهي."
+   },
+   {
+    "name": "بوابة الهند ومسار كارتافيا (India Gate وKartavya Path)",
+    "why": "معالم مركزية في نيودلهي مخططة في العصر البريطاني، مناسبة لنزهة في الحدائق ومشاهدة المباني الحكومية مثل رشترباتي بهافان."
+   },
+   {
+    "name": "معبد اللوتس البهائي (Lotus Temple)",
+    "why": "مبنى حديث ذو تصميم زهري ويعد من أكثر المباني زيارة في المدينة؛ مناسب للزوار الباحثين عن تجربة معمارية وروحية هادئة."
+   },
+   {
+    "name": "أكشردام (Akshardham)",
+    "why": "مزار حديث في شرق المدينة معروف بتصميمه المعاصر وعرضه الثقافي والديني، ويجذب الكثير من الزوار المهتمين بالعمارة الدينية الحديثة."
+   }
+  ],
+  "getting_around": "يمكن الوصول إلى دلهي عبر مطاراتها وتتوفر خدمات لشراء شرائح اتصال مسبقة الدفع في صالة الوصول. داخل المدينة تنتشر وسائل النقل العامة والتاكسي ومترو دلهي، وهي طريقة فعالة للتنقل بين المناطق الرئيسية إذا أردت تجنب زحمة الطرق.",
+  "food": [
+   {
+    "name": "الباراثا في شارع Paranthe Wali Gali",
+    "note": "شارع في تشاندني تشوك مخصص لمحبي الباراثا، تجربة محلية شهيرة لعشّاق الخبز المحشو."
+   },
+   {
+    "name": "أكل الشارع (Street food)",
+    "note": "دلهي تقدم بعضًا من أفضل مأكولات الشارع في الهند، لكن ينبغي اختيار بائعين ذوي نظافة جيدة لتقليل مخاطر التعرض لمشكلات صحية."
+   },
+   {
+    "name": "الأطباق النباتية والدجاج والماعز (mutton)",
+    "note": "قرب المدينة من الداخل يجعّل هذه الأصناف هي السائدة في المطاعم وتشكّل جوهر المأكولات المحلية."
+   },
+   {
+    "name": "جولات الطعام المنظمة (مثل Food Tour In Delhi)",
+    "note": "هناك جولات طعام منظمة تقودها خبراء وشيفات تغطي مطاعم وحوانيت عريقة وتوفّر خيارًا آمنًا ومنسقًا لتذوّق أطباق الشارع."
+   },
+   {
+    "name": "مجموعات عشّاق الطعام (Food Enthusiasts of Delhi)",
+    "note": "مجموعات غير تجارية تنظم رحلات طعام منتظمة لاكتشاف مطاعم ومقاهي محلية عبر أنحاء المدينة."
+   }
+  ],
+  "budget_tips": [
+   "تفاوض على السعر في الأسواق الشعبية حيث يكون المزاد شائعاً لتخفيض التكلفة.",
+   "استخدم المترو ووسائل النقل العامة لتقليل تكلفة التنقل بدلاً من سيارات الأجرة الخاصة.",
+   "تناول طعام الشارع من بائعين ذوي سمعة جيدة أو انضم إلى جولة طعام منظمة لتقليل مخاطر الإنفاق غير المجدي أو التسمم.",
+   "تجنّب القيام بالتسوّق في أيام الازدحام أو الأسواق المغلقة لتوفير الوقت والمساومة على أسعار أفضل."
+  ],
+  "safety": [
+   "تجنّب التعرض الطويل لتلوث الهواء واعتبر ارتداء قناع إذا كانت جودة الهواء سيئة.",
+   "تجنّب التنقّل سيرًا بعد غروب الشمس في المناطق غير المأهولة لأن معظم الحدائق تُغلق بعد الغسق.",
+   "تعرف على حيل ونصائح الأمن المحلي لتجنّب الاحتيال ولا تُظهر متعلقات ثمينة علناً في الأماكن المزدحمة.",
+   "اشترِ شريحة هاتف مسبقة الدفع في المطار لتبقى متصلاً ولتسهيل التواصل في حالات الطوارئ."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشاف القديم — ابدأ بقلعة دلهي (القلعة الحمراء) ثم زر مسجد الجامع وتجوّل في أسواق تشاندني تشوك وتذوق باراثا في Paranthe Wali Gali.",
+   "اليوم الثاني: مواقع التراث — قم بزيارة قطب منار وضريح هميون، ثم استرخِ في حدائق نيودلهي وقم بجولة حول India Gate ومسار Kartavya Path.",
+   "اليوم الثالث: معالم حديثة وثقافية — زور معبد اللوتس (البهائي) ثم اكشردام أو متاحف في نيودلهي، وأنهِ اليوم بتجربة طعام منظمة أو جولة شارع."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام التي أحتاجها لزيارة دلهي؟",
+    "a": "ثلاثة أيام تمنحك نظرة جيدة على المعالم الرئيسية في القديم والحديث، لكن يمكنك تمديد الزيارة إذا رغبت في استكشاف المزيد من الأحياء أو الذهاب لرحلات نهارية إلى الضواحي."
+   },
+   {
+    "q": "هل دلهي مدينة مكلفة للزيارة؟",
+    "a": "تكلفة الزيارة تختلف حسب اختيارك للسكن والطعام والنشاطات؛ يمكنك التوفير باستخدام المترو، تناول طعام الشارع من بائعين موثوقين والتسوّق بالتفاوض في الأسواق."
+   },
+   {
+    "q": "هل دلهي آمنة للزوار؟",
+    "a": "دلهي مدينة كبيرة قد تواجه بعض مشكلات مثل الازدحام والاحتيال البسيط وتلوث الهواء، فالتزام الاحتياطات الأساسية كالحذر في الأماكن المزدحمة وتجنّب التجوال ليلاً يقلل المخاطر."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة في دلهي؟",
+    "a": "النيودلهي ومناطق مركزية أخرى توفر سهولة الوصول إلى مواقع الحكومة والمتاحف والمعالم المخططة، أما المناطق الجنوبية فتوجد بها مراكز تسوق ومطاعم أكثر حداثة."
+   },
+   {
+    "q": "كيف أحصل على اتصال هاتفي عند الوصول؟",
+    "a": "شركات الاتصالات تبيع شرائح مسبقة الدفع للمسافرين في صالة وصول المطار ومحلات السوبرماركت، وهي طريقة سهلة للحصول على بيانات واتصال محلي."
+   }
+  ]
+ }
+}

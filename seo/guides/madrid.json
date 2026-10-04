@@ -1,0 +1,227 @@
+{
+ "slug": "madrid",
+ "name": "Madrid",
+ "country": "Spain",
+ "tags": [
+  "culture",
+  "food",
+  "nightlife",
+  "shopping"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Madrid",
+ "en": {
+  "city_name": "Madrid",
+  "country_name": "Spain",
+  "title": "Madrid travel guide: what to see, eat and know",
+  "meta_description": "Practical Madrid travel guide with top sights, food to try, budget tips and a 3-day itinerary for Spain's capital.",
+  "h1": "Madrid travel guide: what to see, eat and know",
+  "intro": [
+   "Madrid is Spain's capital and largest city, shaped by centuries of history and home to grand avenues, plazas, royal buildings and world-class art museums. It offers famous football clubs, notable cultural events and a nightlife that often lasts until dawn.",
+   "Often overlooked by visitors who head to other Spanish hotspots, Madrid rewards those who explore beyond the main tourist lines with impressive museums, varied neighbourhoods and unexpectedly rich culinary experiences."
+  ],
+  "best_time": "Spring and autumn are generally pleasant for walking the city and visiting outdoor sights, while summer brings warm weather and lively evenings but larger crowds; winter is quieter though cold on the plateau. Plan around major events if you want to avoid or experience peak crowds.",
+  "top_sights": [
+   {
+    "name": "Museo del Prado, Thyssen-Bornemisza and Reina Sofía (Museum Triangle)",
+    "why": "Three world-class museums clustered along Paseo del Prado covering classical to modern art; visit the Prado for Goya and the Reina Sofía for modern masters. Buy tickets in advance for busy days and allow several hours for each major museum."
+   },
+   {
+    "name": "Royal Palace",
+    "why": "An enormous royal palace and one of Madrid's most emblematic buildings used for state ceremonies; its scale and historic interiors illustrate Spain's royal past. Check visiting options and combine a palace visit with nearby sights in the old city."
+   },
+   {
+    "name": "Plaza Mayor",
+    "why": "A central historic square and a main stop on most itineraries, surrounded by arcades with cafés and shops. It's an obvious meeting point so expect crowds and many tourist-oriented businesses nearby."
+   },
+   {
+    "name": "Puerta del Sol",
+    "why": "The heart of Madrid and a major transport hub featuring landmarks like the Bear and the Strawberry Tree and the main Post Office clock; it's lively and often hosts festivals and demonstrations. Keep an eye on belongings here as it's a magnet for pickpockets and street performers."
+   },
+   {
+    "name": "Gran Vía",
+    "why": "One of Madrid's busiest avenues, known for cinemas, shopping and big illuminated billboards — a good area for theatre and evening strolls. Explore side streets for restaurants and access to major shopping stores."
+   },
+   {
+    "name": "Plaza de Cibeles",
+    "why": "A major roundabout in the city centre with the neoclassical Cybele Fountain and the impressive Cibeles Palace, which houses the municipal government. It's a key city landmark and a common celebratory gathering point."
+   },
+   {
+    "name": "Mercado de San Miguel",
+    "why": "A historic iron-and-glass market offering a lively food atmosphere and a convenient place to sample Spanish tapas and seafood. Use it to try small plates but expect a tourist-oriented ambience near Plaza Mayor."
+   },
+   {
+    "name": "Parque del Retiro",
+    "why": "Madrid's main park, ideal for a restful break from sightseeing and for attending summer performances such as drum circles near the Alfonso XII monument. Bring water and comfortable shoes for walking or renting a boat on the pond if available."
+   }
+  ],
+  "getting_around": "Madrid's centre concentrates most tourist sites and is well served by the local transit network, with Puerta del Sol a major hub. The Metro reaches many suburbs such as Vallecas and areas near stadiums, making it useful for getting to sports venues and surrounding neighbourhoods.",
+  "food": [
+   {
+    "name": "Cocido madrileño",
+    "note": "A chickpea stew served in stages—soup, chickpeas and meats—typical of Madrid and great for a hearty meal."
+   },
+   {
+    "name": "Callos a la madrileña",
+    "note": "A spicy beef tripe stew, a traditional rich dish typical of Madrid's local cuisine."
+   },
+   {
+    "name": "Gallinejas and entresijos",
+    "note": "Fried lamb chitterlings prepared in their fat, a very traditional and local snack in the city."
+   },
+   {
+    "name": "Sobrino de Botín dining experience",
+    "note": "Visit the historic Sobrino de Botín restaurant to see the world's oldest continuously running restaurant that dates back to 1725."
+   },
+   {
+    "name": "Seafood and mariscada",
+    "note": "Madrid offers high-quality seafood, and while it can be expensive, trying a seafood platter can be worthwhile for visitors."
+   }
+  ],
+  "budget_tips": [
+   "Avoid cheap paella kiosks around Sol and Plaza Mayor; look for mid-range sit-down restaurants for better quality or eat in neighbourhood bars where portions can be shared.",
+   "Use bars and mesones for affordable tapas-style eating rather than paying tourist prices at main squares.",
+   "Visit cinemas on viewer days (often Mondays or Wednesdays) when tickets are sometimes cheaper.",
+   "Buy takeaway from deli-style shops along streets such as Calle Arenal or eat in La Latina for more reasonably priced options than the central plazas."
+  ],
+  "safety": [
+   "Puerta del Sol is very busy and attracts pickpockets—keep valuables secure and be aware in crowds.",
+   "When using credit or debit cards you may be asked for photo ID; carry your passport or another photo ID to present if required.",
+   "Be mindful in nightlife areas: Madrid is lively late into the night, so plan reliable transport back to your accommodation and stay in well-lit areas."
+  ],
+  "itinerary": [
+   "Day 1: Start in the historic centre with Puerta del Sol and Plaza Mayor, then visit Mercado de San Miguel for lunch. In the afternoon explore the Royal Palace and Catedral de la Almudena, finishing with an evening walk along Gran Vía.",
+   "Day 2: Dedicate a full day to the Museum Triangle—Prado in the morning and Thyssen or Reina Sofía in the afternoon—then relax in Parque del Retiro in the late afternoon.",
+   "Day 3: Explore neighbourhoods such as La Latina for tapas on Cava Baja, visit Plaza de Cibeles and Plaza de España, and end the day at Templo de Debod or Parque del Oeste for sunset views."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Madrid?",
+    "a": "Three days gives you time to visit the main museums and central sights while leaving room for neighbourhood walks; longer stays let you explore more museums, sports events and suburbs."
+   },
+   {
+    "q": "Is Madrid expensive to visit?",
+    "a": "Costs vary—everyday dining and bars can be affordable, but high-quality seafood and tourist restaurants in central plazas tend to be pricier. Choosing neighbourhood eateries and deli takeaways can save money."
+   },
+   {
+    "q": "Is Madrid safe for tourists?",
+    "a": "Madrid is generally safe, but busy tourist hubs like Puerta del Sol attract pickpockets, so remain vigilant in crowds and secure your belongings. Standard city precautions are usually sufficient."
+   },
+   {
+    "q": "What is the best area to stay in Madrid?",
+    "a": "Staying in or near the central area around Puerta del Sol, Plaza Mayor and Gran Vía keeps you close to many top sights, shopping and transit connections. La Latina is a good option if you prefer tapas and a slightly quieter atmosphere near the centre."
+   },
+   {
+    "q": "How do I get from the airport to the city?",
+    "a": "Madrid's transport network connects the city with outer districts and suburbs, and central hubs like Puerta del Sol link to local transit; plan to use metro and suburban train services to reach central areas and neighbourhoods."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "مدريد",
+  "country_name": "إسبانيا",
+  "title": "دليل السفر إلى مدريد: دليل سياحي عملي",
+  "meta_description": "دليل لمدريد يضم أهم المعالم (متحف برادو والمثلث الفني والقصر والحدائق)، مأكولات محلية، نصائح لتوفير المال وخطة ثلاثية الأيام.",
+  "h1": "دليل مدريد: ما الذي تراه وتذوقه وتحتاج معرفته",
+  "intro": [
+   "مدريد هي عاصمة إسبانيا وأكبر مدنها، ذات تراث ثقافي ومعماري غني يشمل شوارع واسعة وساحات وقصور ومتاحف فنية من الطراز العالمي، كما تعرف بمشهد طعام حي وحياة ليلية طويلة تمتد حتى الفجر.",
+   "لا تجذب مدريد نفس قدر الاهتمام السياحي الذي تحظى به مدن إسبانية أخرى، لكنها مخزون ضخم من المفاجآت للحضور المستعدين للخروج قليلاً عن المسارات المزدحمة، وستُكافَأ بالمعمار والمتاحف والطابع المحلي."
+  ],
+  "best_time": "الربيع والخريف عادةً الأفضل للزيارة لأن الطقس معتدل وتكون المدينة أقل حرارة واكتظاظاً مما هي عليه في الصيف، أما الشتاء فهادئ نسبياً لكن قد يبرد. إذا أردت حياة ليلية ومهرجانات فالمواسم الدافئة توفر المزيد من أنشطة الهواء الطلق.",
+  "top_sights": [
+   {
+    "name": "متحف برادو (Museo del Prado)",
+    "why": "أحد أرقى متاحف الفن في العالم ويحتوي على مجموعات ملكية تاريخية مهمة؛ خصص وقتاً كافياً واذهب في الصباح لتجنب الحشود الأكبر."
+   },
+   {
+    "name": "ريينا صوفيا (Museo Reina Sofía)",
+    "why": "متحف الفن الحديث الذي يضم أعمالاً بارزة مثل لوحة غوارنيكا؛ يجدر بك زيارة المعرض المخصص لفترة ما بعد الكلاسيكية بعد جولة في برادو."
+   },
+   {
+    "name": "ثيسن-بورنيميزا (Thyssen-Bornemisza)",
+    "why": "مجموعة خاصة من الفن الكلاسيكي والمعاصر تكمل مثلث المتاحف في شارع برادو؛ مناسب لمن يريد رؤية طيف واسع من المدارس الفنية في موقع واحد."
+   },
+   {
+    "name": "القصر الملكي (Royal Palace)",
+    "why": "قصر ضخم ويعد من أبرز مباني مدريد التاريخية ويُستخدم للاحتفالات الرسمية؛ تفقد المناطق المفتوحة للزوار وكن متوقعاً لمساحات معمارية واسعة."
+   },
+   {
+    "name": "ساحة بلازا مايور (Plaza Mayor)",
+    "why": "ساحة مركزية تاريخية تُعد محطة أساسية للزائرين ومناسبة للمشي وتناول مشروب في أحد المقاهي المحيطة؛ احذر من المطاعم السياحية ذات الجودة المتفاوتة حولها."
+   },
+   {
+    "name": "بويرتا ديل سول (Puerta del Sol)",
+    "why": "قلب مدريد وملتقى مواصلاتها وموطن تمثال الدب وشجرة الفراولة ومربع الكيلومتر صفر؛ كن منتبهاً لوجود نواصب ونشالين في الأماكن المزدحمة."
+   },
+   {
+    "name": "غراند فيا (Gran Vía)",
+    "why": "شارع رئيسي نابض بالسينمات والمتاجر واللافتات الضخمة، مكان جيد للتسوّق ومشاهدة الحياة الحضرية؛ تجول على الأقدام لترى هندسة المباني وصالات العرض."
+   },
+   {
+    "name": "حديقة ريتيرو (Parque del Retiro)",
+    "why": "الحديقة العامة الرئيسية للاسترخاء والنزهات وقاعات الأداء الصيفية؛ مثالية لهروب قصير من صخب المدينة واقتناء بعض الراحة في القارب أو السير بين المسارات."
+   }
+  ],
+  "getting_around": "تتوفر في مدريد شبكة مواصلات داخلية واسعة تتضمن مترو وحافلات تربط المركز بالضواحي والملاعب؛ مناطق وسط المدينة مثل سول وبلازا مايور قابلة للاستكشاف سيراً على الأقدام. يمكنك الوصول إلى ضواحي مدريد والملاعب عبر مترو وضواحي متصلة بشبكة المدينة المحلية.",
+  "food": [
+   {
+    "name": "كوكيدو مادريلينيو (Cocido madrileño)",
+    "note": "يقدّم هذا اليخنة التقليدية من الحمص واللحوم والخضروات على مراحل، وهو طبق قوي يعكس المطبخ المحلي."
+   },
+   {
+    "name": "جالينهاخاس وإنتريسيجوس (Gallinejas y entresijos)",
+    "note": "أطعمة تقليدية من أمعاء الخروف مقلية في دهنها، مرتبطة بعادات طعام مدريد القديمة."
+   },
+   {
+    "name": "كايّوس ألا مادريلينيا (Callos a la madrileña)",
+    "note": "طاجن حار من كرش البقر يُقدم ساخناً وغني بالتوابل ويعد طبقاً محلياً شهيراً."
+   },
+   {
+    "name": "سوبا دي أجو (Sopa de ajo)",
+    "note": "شوربة بالثوم والبابريكا والخبز المقلي والبيضة المقطوفة، مناسبة للأيام الباردة."
+   },
+   {
+    "name": "مطعم سوبرينو دي بوتين (Sobrino de Botín)",
+    "note": "أقدم مطعم يعمل دون انقطاع منذ 1725 ويشكّل تجربة تاريخية وطعاماً تقليدياً في المدينة."
+   }
+  ],
+  "budget_tips": [
+   "تجنّب المطاعم السياحية في سول وبلازا مايور إذا أردت جودة أفضل بسعر معقول.",
+   "اتجه إلى حي لا لاتينا وخاصة شارع كالي كافا بادا لتجربة تذوق أرخص وأكثر أصالة.",
+   "اطلب أطباقاً على هيئة 'راثيون' أو 'تاباس' في الحانات لتجربة عدة أطباق وبإنفاق أقل.",
+   "اشترِ وجبات جاهزة من محلات الكارنيثرات الصغيرة في شوارع أرينال بدل القوائم السياحية الباهظة."
+  ],
+  "safety": [
+   "كن يقظاً في الأماكن المزدحمة مثل بويرتا ديل سول لأن النشّالة تستغل الازدحام.",
+   "احمل معك وثيقة هوية مطبوعة أو جواز السفر لأن بعض المتاجر قد تطلب إثباتاً عند الدفع ببطاقة.",
+   "تجنّب السير بمفردك في الأزقة المعزولة ليلاً واملأ جدول رحلاتك بأنشطة في مناطق نابضة بالحياة.",
+   "أخذ نسخة إلكترونية من وثائق السفر مفيد في حال فقدان الأصل."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشاف مثلث المتاحف (برادو، ثيسن، ريينا صوفيا) ثم نزهة مسائية في حديقة ريتيرو للاستراحة بعد المتاحف.",
+   "اليوم الثاني: زيارة القصر الملكي وكاتدرائية ألمودينا ثم التنقل إلى بلازا مايور وبويرتا ديل سول وتناول التاباس في لا لاتينا.",
+   "اليوم الثالث: التجول على غراند فيا لمشاهدة المتاجر والسينمات ثم التوجه إلى معالم مثل تمبلو دي ديبود وساحات مركزية أخرى، وإنهاء اليوم بعشاء في حي محلي."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لزيارة مدريد؟",
+    "a": "ثلاثة أيام تسمح برؤية أهم المتاحف والساحات والحديقة وتجربة الحياة المحلية، بينما خمسة أيام توفر وقتاً إضافياً للغوص في أحياء ومتاحف أصغر."
+   },
+   {
+    "q": "هل مدريد مدينة باهظة الثمن؟",
+    "a": "هناك خيارات للسياحة الرخيصة والمكلفة؛ يمكن التوفير بتجنب المطاعم السياحية، تناول التاباس ومشاركة الأطباق، واختيار وسائل النقل العام."
+   },
+   {
+    "q": "ما أفضل منطقة للإقامة للسياح؟",
+    "a": "الوسط التاريخي حول سول وبلازا مايور مناسب للوصول السريع إلى المعالم، بينما أحياء مجاورة مثل لا لاتينا توفر خيارات طعام أصيلة وقريبة."
+   },
+   {
+    "q": "هل من أمور أمان خاصة يجب أن أعرفها؟",
+    "a": "المدينة آمنة نسبياً لكن انتبه للسرقات في الأماكن المزدحمة واحتفظ بوثائقك ومقتنياتك الثمينة بعيداً عن الأنظار."
+   },
+   {
+    "q": "كيف أصل من وإلى ضواحي المدينة والملاعب؟",
+    "a": "شبكة المترو والحافلات تصل إلى معظم الضواحي والملاعب، ويمكن الوصول إلى فرق مثل ريال مدريد وأتلتيكو مدريد عبر خطوط تربط المدينة بالمناطق الشمالية والشرقية."
+   }
+  ]
+ }
+}

@@ -1,0 +1,226 @@
+{
+ "slug": "london",
+ "name": "London",
+ "country": "United Kingdom",
+ "tags": [
+  "culture",
+  "history",
+  "shopping",
+  "nightlife"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/London",
+ "en": {
+  "city_name": "London",
+  "country_name": "United Kingdom",
+  "title": "London travel guide: top sights, food, budget tips",
+  "meta_description": "Practical travel guide to London: top sights, what to eat, money-saving tips and a 3-day itinerary for first-time visitors.",
+  "h1": "London travel guide: what to see, eat and know",
+  "intro": [
+   "Vibrant and deeply multicultural, London is the capital and largest city of the United Kingdom, straddling the River Thames in south‑east England. As a leading global city it blends major cultural institutions, music, fashion, finance and politics with neighbourhood life and a long historical legacy.",
+   "Visitors find an endless choice of museums, historic landmarks, theatres, parks and restaurants. London’s royal landmarks, world-class galleries and diverse food scene make it rewarding for first-time visitors as well as repeat travellers."
+  ],
+  "best_time": "London is busy year-round; spring and summer bring milder weather and long daylight, while autumn and winter are quieter and often cheaper. Expect crowds around major attractions at all times, so plan indoor museum or theatre visits for wet days.",
+  "top_sights": [
+   {
+    "name": "Buckingham Palace",
+    "why": "The official royal residence in Westminster and a focal point for ceremonial occasions; worth seeing from the outside and timing a visit to observe the Changing of the Guard if schedules align. Arrive early to secure a good viewing spot."
+   },
+   {
+    "name": "Westminster Abbey and Palace of Westminster (Houses of Parliament)",
+    "why": "Historic heart of British state and monarchy, with coronations at the abbey and the iconic Elizabeth Tower and parliamentary buildings nearby; tours and parliamentary viewing are available when Parliament is in recess. Check availability before planning a visit."
+   },
+   {
+    "name": "Tower of London",
+    "why": "A medieval fortress on the Thames with centuries of royal history, home to the Crown Jewels and guarded by the Yeoman Warders; guided talks and exhibitions explain its past and atmosphere. Allow time for queues and the site's extensive grounds."
+   },
+   {
+    "name": "Tower Bridge",
+    "why": "A visually iconic 19th‑century bridge beside the Tower of London with a walkable exhibition inside the bridge structure; visitors can view the high towers and learn about its engineering and history. Tickets for the exhibition are available online or at the bridge."
+   },
+   {
+    "name": "St Paul's Cathedral",
+    "why": "Christopher Wren’s masterpiece with a commanding dome and acoustic highlights like the Whispering Gallery, plus viewpoints over the surrounding City. Arrive prepared for steps and check access to viewing areas."
+   },
+   {
+    "name": "The London Eye",
+    "why": "A giant observation wheel on the South Bank offering panoramic views across the Thames toward the Houses of Parliament and the city skyline; it’s an easy way to get an orientation of London from above. Expect queues at peak times."
+   },
+   {
+    "name": "The Shard",
+    "why": "The UK’s tallest building on the South Bank with a public viewing deck and restaurants offering skyline views; booking online is recommended for the viewing platform. The area also provides riverside walking opportunities."
+   },
+   {
+    "name": "Piccadilly Circus and Trafalgar Square",
+    "why": "Two central public spaces that capture different sides of London: Piccadilly Circus for its neon signage and bustling West End energy, Trafalgar Square for landmarks like Nelson’s Column and proximity to the National Gallery. Both are good starting points for exploring nearby theatres, shops and museums."
+   }
+  ],
+  "getting_around": "London is served by extensive public transport including the Tube, trains and buses that connect airports and districts; central attractions are also reachable on foot from many central stations. For planning journeys, use official transport maps and allow extra time for busy periods and peak-hour congestion.",
+  "food": [
+   {
+    "name": "British pub food",
+    "note": "Pubs range from basic tourist outlets to high-quality gastro‑pubs; look for places frequented by locals rather than heavily touristed streets."
+   },
+   {
+    "name": "Multicultural cuisine",
+    "note": "London offers virtually every world cuisine across neighbourhoods, so explore ethnic areas for authentic and often good‑value meals."
+   },
+   {
+    "name": "Brick Lane beigels (bagels)",
+    "note": "Brick Lane is known for its beigel shops and longstanding bakeries that are a popular local snack or light meal option."
+   },
+   {
+    "name": "Chicken shops and takeaway in suburban areas",
+    "note": "In many suburbs and ethnic quarters you can find competitive, budget-friendly takeaway deals not usually found near major tourist sites."
+   },
+   {
+    "name": "Live music venue food and drink",
+    "note": "Many music venues and small pubs serve inexpensive food alongside performances, offering both entertainment and casual dining."
+   }
+  ],
+  "budget_tips": [
+   "Avoid dining in the streets immediately around major tourist attractions (Leicester Square, Piccadilly Circus, British Museum) where prices are often inflated.",
+   "Use ATMs to withdraw local currency rather than exchanging cash at bureaux de change, and avoid obvious tourist exchange booths in Leicester Square and Tottenham Court Road.",
+   "Eat in suburban neighbourhoods or ethnic districts where local competition brings down prices compared with central tourist areas.",
+   "Pick up a local cultural listings magazine like Time Out to find free or low-cost events, many live music gigs and lower‑cost theatre or exhibitions."
+  ],
+  "safety": [
+   "Be aware of your belongings in crowded areas and on public transport—London is a very busy city and pickpocketing can occur in tourist hotspots.",
+   "Avoid obvious tourist-trap venues for food; look for places with local customers and simple single-language menus to find better value and quality.",
+   "When photographing private buildings in the City, be prepared to move on if security staff request it, especially near modern commercial sites."
+  ],
+  "itinerary": [
+   "Day 1: Explore Westminster — see Buckingham Palace from nearby parks, walk past Westminster Abbey and the Houses of Parliament, then head to Trafalgar Square and the National Gallery.",
+   "Day 2: City and East Bank — visit the Tower of London and Tower Bridge, walk across to St Paul’s Cathedral and the Millennium Bridge, and spend the evening in the City or explore the Shard area.",
+   "Day 3: South Bank and West End — ride the London Eye for panoramic views, browse South Bank attractions and markets, then enjoy a West End theatre show or live music at a local venue."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in London?",
+    "a": "Three days will let you see many major highlights and get a feel for different neighbourhoods, though London’s breadth means you could spend weeks exploring museums, galleries and districts."
+   },
+   {
+    "q": "Is London expensive to visit?",
+    "a": "London is one of the more expensive cities, especially around major tourist sites and central shopping areas, but you can cut costs by eating in suburbs, choosing free museums and using public transport."
+   },
+   {
+    "q": "Is London safe for tourists?",
+    "a": "London is generally safe for visitors, but it is busy—take normal big‑city precautions such as watching your belongings in crowded places and being aware after dark in quieter streets."
+   },
+   {
+    "q": "What is the best area to stay in London?",
+    "a": "Central areas such as Westminster, the South Bank and parts of the City put you close to major sights and transport links; consider what you want to see and pick a neighbourhood that saves on travel time."
+   },
+   {
+    "q": "How do I get from the airport to central London?",
+    "a": "All major London airports connect to the city by public transport and rail services; plan journeys in advance and allow extra time for luggage and peak‑hour travel."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "لندن",
+  "country_name": "المملكة المتحدة",
+  "title": "دليل سفر لندن: أهم المعالم ونصائح الزيارة",
+  "meta_description": "دليل عملي إلى لندن: معالم رئيسية، طعام متنوّع، نصائح لتوفير المال وخطة لثلاثة أيام في المدينة.",
+  "h1": "دليل لندن للسفر: ماذا ترى وتفعل وتعرف",
+  "intro": [
+   "لندن مدينة نابضة ومتعددة الثقافات على نهر التمز في جنوب شرق إنجلترا، وتعد العاصمة وأكبر مدن المملكة المتحدة. المدينة مركز عالمي للثقافة والموسيقى والتعليم والموضة والمال، وتستقبل زواراً يبحثون عن تاريخها الملكي وحياتها الحضرية الحيوية.",
+   "لدى الزائر مجموعة واسعة من الخيارات بين المواقع التاريخية والمتاحف والمعارض والمطاعم والحياة الليلية، كما تعكس المدينة تاريخها الممتد منذ العصور الرومانية والأنجلوسكسونية وحتى الحقبة الإمبراطورية التي شكّلت هويتها العالمية."
+  ],
+  "best_time": "يمكن زيارة لندن طوال العام؛ يجذب الصيف زوار المتاحف والحدائق والجولات الخارجية لكن يزداد الازدحام حول المعالم السياحية. المواسم الأقل ازدحاماً مناسبة لمن يفضلون طقساً أكثر اعتدالاً وتجربة أقل ازدحاماً داخل المتاحف والمسارح.",
+  "top_sights": [
+   {
+    "name": "قصر بكنغهام",
+    "why": "المقر الرسمي للملك في وستمنستر ووجهة رمزية للزوار؛ يمكن مشاهدة مراسم تبادل الحرس من المناطق القريبة، ويفضل التحقق من مواعيد الزيارة الموسمية قبل التخطيط."
+   },
+   {
+    "name": "عجلة لندن (London Eye)",
+    "why": "عجلة مراقبة كبرى على الضفة الجنوبية لنهر التمز توفر مشاهد بانورامية للمدينة؛ مناسب للزوار الذين يريدون رؤية أفق لندن من ارتفاع معتدل، ويمكن الوصول إليها عبر محطة لندن ووترلو."
+   },
+   {
+    "name": "كاتدرائية سانت بول (St Paul's Cathedral)",
+    "why": "تحفة هندسية لسر كريستوفر رين مع قبة بارزة ومعرض همس داخلها؛ هناك منطقة مشاهدة تطل على محيط الكاتدرائية ويُنصح بزيارة الجسر القريب (Millennium Bridge)."
+   },
+   {
+    "name": "جسر البرج (Tower Bridge)",
+    "why": "جسر أيقوني من القرن التاسع عشر بقلاع وبرج يمكن الدخول إلى معارضه الداخلية عبر عرض جسر البرج، وهو مناسب للقاءات تصويرية عند منطقة برج لندن."
+   },
+   {
+    "name": "برج لندن (Tower of London)",
+    "why": "حصن ملكي تاريخي يضم الجواهر الملكية ويعود لأكثر من 900 عام؛ مكان غني بالتاريخ ويمكن الانضمام إلى جولات مرشدة عند توفرها، كما توجد مرافق طعام ضمن الموقع."
+   },
+   {
+    "name": "الويستمنستر وآبي وقصر الويستمنستر",
+    "why": "مركز الحياة السياسية والطقوس الملكية في المملكة المتحدة، ويعرض المبنى جلسات برلمانية بوجود الجمهور في أوقات محددة، كما يحتوي الدير على مرافق طعام للزوار."
+   },
+   {
+    "name": "ذا شارد (The Shard)",
+    "why": "أطول مبنى في المملكة المتحدة مع منصة مشاهدة في الطوابق العليا ومطاعم وفندق فاخر؛ يجب حجز تذاكر منصة المشاهدة عبر الموقع قبل الزيارة."
+   },
+   {
+    "name": "بيكاديللي سيركس (Piccadilly Circus) وترافالغار سكوير (Trafalgar Square)",
+    "why": "مساحات عامة مركزية مع تماثيل ولوحات إعلانية أيقونية تمثل نبض وسط المدينة، وحولها مراكز تسوق ومسارح ومتاحف مثل المعرض الوطني القريب."
+   }
+  ],
+  "getting_around": "القسم المركزي من لندن مخدوم جيداً بمترو الأنفاق (Tube) ومحطات قريبة للمعالم الرئيسية المذكورة. للتنقل داخل المدينة استخدم المترو والقطارات الحضرية ووسائل النقل العام المحلية، واحرص على معرفة أقرب محطة مترو لكل وجهة لأن العديد من المعالم تُذكر مع محطاتها.",
+  "food": [
+   {
+    "name": "المأكولات المتعددة الثقافات",
+    "note": "لندن توفر أطيافًا واسعة من المطابخ العالمية بفضل طابعها المتعدد الثقافات، ما يجعلها مناسبة لتجربة أطعمة من مناطق مختلفة."
+   },
+   {
+    "name": "الحانات والبوب (Pubs / gastro-pubs)",
+    "note": "تنتشر الحانات التقليدية والمطاعم العصرية الغاسترو-بوب عبر المدينة؛ انتقِ الحانات التي يرتادها السكان المحليون لتجنب خيارات سياحية ضعيفة."
+   },
+   {
+    "name": "بَيْغل شارع بريك لين (Beigel على Brick Lane)",
+    "note": "من أشهر تجارب الطعام المحليّة في شرق لندن، حيث تبقى بعض محلات البايغل معلماً معروفاً للزوار."
+   },
+   {
+    "name": "متاجر الدجاج في الضواحي",
+    "note": "في الضواحي مثل شرق لندن توجد متاجر دجاج ووجبات سريعة محلية بأسعار أقل مقارنة بمناطق وسط المدينة."
+   },
+   {
+    "name": "خيارات بأسعار متفاوتة بالقرب من المعالم",
+    "note": "تزداد الأسعار قرب المعالم السياحية، لذا يفضّل الابتعاد قليلاً للعثور على مطاعم أفضل أسعاراً وخدمة محلية."
+   }
+  ],
+  "budget_tips": [
+   "تجنّب المطاعم والمتاجر حول المتاحف وحيّ وست إند حيث ترتفع الأسعار وتكثر الفخاخ السياحية.",
+   "استخدم ماكينات السحب (ATM) بدل تبديل العملات في مكاتب الصرافة المعروفة بأسعار سيئة.",
+   "ابحث عن العروض في الضواحي، خصوصاً في المناطق ذات الجاليات الكبيرة حيث تكون الأسعار تنافسية.",
+   "اطلع على مصادر الأحداث الثقافية مثل مجلة Time Out لاختيار فعاليات مجانية أو أقل تكلفة مثل حفلات صغيرة أو معارض."
+  ],
+  "safety": [
+   "احترس عند التقاط الصور قرب مبانٍ خاصة مثل مبنى 'ذا جيركين' لأن حراس الأمن قد يطلبون منك التوقف أو المغادرة.",
+   "تجنّب المطاعم التي تعرض قوائم بلغات متعددة في المناطق السياحية كقاعدة عامة فقد تشير إلى فخ سياحي.",
+   "اتبع إرشادات المرور والعبور في الشوارع المزدحمة وكن حذراً من الدراجات والحافلات الكبيرة في وسط المدينة."
+  ],
+  "itinerary": [
+   "اليوم الأول: جولة مركّزة في وسط لندن — زيارة قصر بكنغهام، المشي إلى تراfalgar سكوير، ثم زيارة كاتدرائية سانت بول وجسر البرج عند الغروب.",
+   "اليوم الثاني: استكشاف الضفة الجنوبية — ركوب عجلة لندن، جولة في الشانك والمنطقة المحيطة بذا شارد، وحضور عرض مسرحي أو حفلة موسيقية مسائية.",
+   "اليوم الثالث: أجواء محلية ومعروضات — قضاء الصباح في سوق أو شارع مثل بريك لين لتجربة الطعام المحلي، وبعد الظهر زيارة برج لندن وتجول على ضفاف النهر."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام اللازم لقضاء عطلة معقولة في لندن؟",
+    "a": "ثلاثة أيام تعطيك فرصة لرؤية أبرز المعالم المركزية والاستمتاع ببعض العروض والثقافة المحلية، أما زيارات أطول فستتيح استكشاف متاحف وأحياء أكثر بتؤدة."
+   },
+   {
+    "q": "هل لندن مدينة مكلفة؟",
+    "a": "لندن تعتبر من المدن المكلفة خاصة في المناطق السياحية والمطاعم القريبة من المعالم، لكن يمكن خفض التكاليف بالبحث عن مطاعم في الضواحي وفعاليات مجانية أو منخفضة التكلفة."
+   },
+   {
+    "q": "هل لندن آمنة للسائحين؟",
+    "a": "عموماً لندن آمنة للزوار لكن مثل أي مدينة كبيرة ينصح بالحذر من الازدحام ومراعاة قواعد السلامة العامة واتباع إرشادات الأمن حول المباني الخاصة."
+   },
+   {
+    "q": "ما أفضل منطقة للإقامة للسائح؟",
+    "a": "القرار يعتمد على اهتماماتك؛ الإقامة في وسط المدينة تسهل الوصول إلى معظم المعالم الشهيرة، بينما الضواحي توفر خيارات طعام أرخص وأجواء محلية أكثر هدوءاً."
+   },
+   {
+    "q": "كيف أعرف ما الذي يُقام من عروض وحفلات خلال الزيارة؟",
+    "a": "راجع مصادر ثقافية محلية مثل مجلة Time Out ومواقع الحفلات لتعرف المواعيد والأماكن، فهناك مشهد موسيقي حي وحفلات في أماكن كبيرة وصغيرة معظم الأسابيع."
+   }
+  ]
+ }
+}

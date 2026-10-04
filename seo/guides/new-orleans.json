@@ -1,0 +1,226 @@
+{
+ "slug": "new-orleans",
+ "name": "New Orleans",
+ "country": "United States",
+ "tags": [
+  "food",
+  "nightlife",
+  "culture"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/New_Orleans",
+ "en": {
+  "city_name": "New Orleans",
+  "country_name": "United States",
+  "title": "New Orleans travel guide: what to see, eat and know",
+  "meta_description": "Practical New Orleans travel guide: top sights, Creole food, budget tips, 3-day itinerary and safety advice for first-time visitors.",
+  "h1": "New Orleans travel guide: what to see, eat and know",
+  "intro": [
+   "New Orleans (La Nouvelle-Orléans) is a unique American city where French, Spanish and African-American influences combine with Southern riverfront culture. It is famous for jazz, Creole cuisine, lively festivals and distinctive historic neighborhoods.",
+   "Visitors come for Mardi Gras and Jazz Fest but the city offers year-round music, street life, museums, river views and culinary experiences. Expect relaxed hospitality, abundant live music and neighborhoods full of historic architecture."
+  ],
+  "best_time": "Festival season around Mardi Gras and Jazz Fest draws the biggest crowds and requires booking in advance; outside those peaks, spring and autumn offer more comfortable weather than the hot, humid summer months. Winter is milder but still popular for events and parades.",
+  "top_sights": [
+   {
+    "name": "French Quarter",
+    "why": "The city's oldest district, notable for colonial-era buildings, live music venues and lively streets; wander Bourbon Street and the riverfront and expect plentiful dining and nightlife—visit early or late to avoid peak daytime crowds."
+   },
+   {
+    "name": "St. Louis Cathedral",
+    "why": "An iconic landmark in the French Quarter that holds regular Catholic services; stop by for its architecture and the activity around Jackson Square."
+   },
+   {
+    "name": "National World War II Museum",
+    "why": "A major museum in the Central Business District focusing on the Second World War; plan for several hours to see core exhibits and special displays."
+   },
+   {
+    "name": "Garden District & St. Charles Avenue",
+    "why": "Home to grand Victorian mansions and the oldest continuously operating streetcar line; take the St. Charles streetcar for an easy architectural sightseeing route."
+   },
+   {
+    "name": "Mardi Gras World",
+    "why": "Where many of the city's parade floats and sculptured props are made, offering a behind-the-scenes look at Mardi Gras craftsmanship—good for year-round Mardi Gras atmosphere."
+   },
+   {
+    "name": "Historic cemeteries (Cities of the Dead)",
+    "why": "Distinctive above-ground burial sites found in Uptown, Tremé and Mid-City; combine cemetery visits with neighborhood walks and guided tours for historical context."
+   },
+   {
+    "name": "Audubon Zoo and Audubon Park",
+    "why": "A family-friendly attraction in the Audubon & University District with animals and parkland; pair it with a visit to nearby attractions for a full day out."
+   },
+   {
+    "name": "Mississippi River waterfront and Algiers ferry",
+    "why": "Offers broad views of the river and skyline; take the pedestrian ferry from Canal Street to Algiers Point for a budget-friendly riverside perspective."
+   }
+  ],
+  "getting_around": "From downtown, the pedestrian ferry at Canal Street crosses the Mississippi to Algiers Point and back and provides good river views; streetcars—especially St. Charles and Canal routes—are pleasant for sightseeing, and buses and local transit covers much of the city. Many neighborhoods are walkable but expect to use rideshares or transit for longer hops.",
+  "food": [
+   {
+    "name": "Beignets",
+    "note": "Hot fried pastries typically served with powdered sugar and a popular local treat."
+   },
+   {
+    "name": "Po' boy sandwiches",
+    "note": "Classic New Orleans sandwiches often made with fried seafood or roast meats on crusty French bread."
+   },
+   {
+    "name": "Oysters",
+    "note": "Served raw, fried, in po' boys or Rockefeller-style, usually sourced from Gulf Coast beds."
+   },
+   {
+    "name": "Crawfish",
+    "note": "A regional favorite commonly boiled or served in stews and other Creole preparations."
+   },
+   {
+    "name": "Creole and Creole-Italian dishes",
+    "note": "Rich dishes using roux and the 'trinity' of onion, celery and bell pepper, often blending French, Spanish and Italian influences."
+   }
+  ],
+  "budget_tips": [
+   "Use the pedestrian ferry to Algiers Point for low-cost river views instead of pricier riverboat cruises.",
+   "Ride the St. Charles or Canal streetcars for affordable sightseeing rather than taxis for short routes.",
+   "Look for casual eateries and cash-only spots for authentic food that can be cheaper than tourist restaurants.",
+   "Book accommodation well in advance for major festivals like Mardi Gras and Jazz Fest to avoid steep last-minute rates."
+  ],
+  "safety": [
+   "Stay aware of your surroundings in busy nightlife areas and keep valuables secure; the city is lively after dark and pickpocketing can occur.",
+   "Follow local advice about which neighborhoods are best explored by day versus at night and consider guided tours for unfamiliar areas.",
+   "Respect cultural and religious sites such as St. Louis Cathedral and historic cemeteries—observe rules about photography and conduct.",
+   "If attending parades or large festivals, plan meeting points with your group and carry minimal cash and ID."
+  ],
+  "itinerary": [
+   "Day 1: Explore the French Quarter—visit Jackson Square and St. Louis Cathedral, stroll Bourbon Street and the riverfront, and try beignets and a po' boy at local cafes; finish with a riverfront walk or ferry trip to Algiers Point.",
+   "Day 2: Take the St. Charles streetcar through the Garden District to admire Victorian mansions and visit Lafayette Cemetery; spend the afternoon at the National World War II Museum and check out Mardi Gras World near the Central Business District.",
+   "Day 3: Choose family-friendly options like Audubon Zoo and City Park with Storyland, or take a riverboat cruise or walking tour (jazz, voodoo, or architectural) to learn more about the city's music and cultural history."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in New Orleans?",
+    "a": "Three days gives you time to see the French Quarter, a major museum, a streetcar ride and at least one neighborhood; more time lets you explore parks, the zoo and take river outings."
+   },
+   {
+    "q": "Is New Orleans expensive to visit?",
+    "a": "Costs vary by season and activity: festivals and riverboat cruises can raise prices, but there are many budget-friendly options like streetcar rides, the pedestrian ferry and casual eateries."
+   },
+   {
+    "q": "Is New Orleans safe for tourists?",
+    "a": "Many areas are safe for visitors, especially the main tourist districts, but it's wise to stay alert in crowded nightlife spots, secure valuables and follow local guidance about areas best visited in daylight."
+   },
+   {
+    "q": "What is the best area to stay in New Orleans?",
+    "a": "The French Quarter and nearby Central Business District put you within walking distance of major sights, music venues and riverfront attractions; other neighborhoods like the Garden District offer a quieter atmosphere with streetcar access."
+   },
+   {
+    "q": "How do I get from the airport to the city center?",
+    "a": "Public transit, shuttle services and rideshares connect the airport to downtown neighborhoods; from the city center, streetcars, buses and the pedestrian ferry provide local transport options."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "نيو أورلينز (New Orleans)",
+  "country_name": "الولايات المتحدة",
+  "title": "نيو أورلينز دليل السفر: ماذا ترى وتفعل وتذوق",
+  "meta_description": "دليل نيو أورلينز: أهم المعالم مثل الحي الفرنسي والمتاحف والمأكولات الكريولية، نصائح ميزانية ومسار لثلاثة أيام.",
+  "h1": "دليل نيو أورلينز: ماذا ترى وتأكل وتعرف",
+  "intro": [
+   "نيو أورلينز مدينة فريدة تجمع بين جذور الجاز والثقافة الكريولية مع نفحات فرنسية وإسبانية وأفريقية. المدينة تشتهر بأجوائها الاحتفالية، هندستها التاريخية ومأكولاتها الغنية، وهي من أشهر وجهات السياحة في الولايات المتحدة.",
+   "سواء كنت تود التجول في الحي الفرنسي، الاستماع إلى فرق الجاز، ركوب الباخرة على المسيسيبي أو تذوق المأكولات المحلية، ستجد في نيو أورلينز تجربة مختلفة لا تشبه أي مكان آخر. استعد لثقافة تحتفل بالحياة على مدار العام، مع ذروة النشاط أثناء مهرجاني Mardi Gras وJazz Fest."
+  ],
+  "best_time": "المناسبات الكبرى مثل Mardi Gras وJazz Fest تجلب أعداداً كبيرة من الزوار لذلك احجز مبكراً إذا أردت الحضور. عموماً المدينة حارة ورطبة خلال الصيف، والمهرجانات تخلق كثافة زوار في أوقات محددة طوال العام.",
+  "top_sights": [
+   {
+    "name": "كاتدرائية سانت لويس (St. Louis Cathedral)",
+    "why": "رمز تاريخي في الحي الفرنسي ويستضيف قداديس كاثوليكية منتظمة؛ يقف في قلب ساحة السوق ويستحق الزيارة لصلاحيته التاريخية وإطلالته على الساحة."
+   },
+   {
+    "name": "الحي الفرنسي (French Quarter) والهندسة التاريخية",
+    "why": "شبكة شوارع قديمة مع عمائر فرنسية وإسبانية مزخرفة وأجواء حيوية، مناسب للتجول والمراقبة البشرية—انطلق سيرا على الأقدام لرؤية التفاصيل المعمارية والمتاجر المحلية."
+   },
+   {
+    "name": "متحف الحرب العالمية الثانية الوطني (National World War II Museum)",
+    "why": "من أهم المتاحف في المدينة يقدّم معارض حول الحرب العالمية الثانية ويجذب المهتمين بالتاريخ؛ خطط لوقت كافٍ للزيارة لأن المعروضات واسعة."
+   },
+   {
+    "name": "حديقة حيوانات أودوبون (Audubon Zoo)",
+    "why": "واحدة من مناطق الجذب العائلية البارزة مع عروض للحياة البرية وبرامج للأطفال؛ مريحة للزيارة مع العائلة ومذكورة ضمن مناطق الجذب الرئيسية."
+   },
+   {
+    "name": "متحف نيو أورلينز للفنون وحديقة المدينة (New Orleans Museum of Art & City Park)",
+    "why": "مركز فني وفضاء أخضر مناسب للمشي ومشاهدة مجموعة فنية ومتنزه واسع—اجمع بين الثقافة والطبيعة في زيارة واحدة."
+   },
+   {
+    "name": "السوپردوم ومركز سموذي كينغ (Superdome & Smoothie King Center)",
+    "why": "مركزان رياضيان وترفيهيان بارزان في الحي التجاري المركزي تستضيفان فعاليات كبرى ومباريات، مفيدان لعشاق الرياضة والحفلات."
+   },
+   {
+    "name": "عالم ماردي غرا (Mardi Gras World)",
+    "why": "مكان عرض الدمى والديكورات الضخمة المستخدمة في مواكب ماردي غرا، يمنحك شعور الاحتفال على مدار العام ويفتح نافذة على صناعة المواكب."
+   },
+   {
+    "name": "المقابر التاريخية (Cities of the Dead)",
+    "why": "مقابر فريدة بأسلوب مقابر فوق الأرض منتشرة في أحياء Uptown وTremé وMid-City؛ زيارة مفيدة للتعرف على تقاليد دفن محلية وتاريخ المدينة."
+   }
+  ],
+  "getting_around": "المدينة مريحة للمشي في الحي الفرنسي والأحياء التاريخية، كما أن عربات الترام (streetcars) مثل خط St. Charles تعد تجربة ممتازة وممتعة. للعبور عبر المسيسيبي توجد عبّارة للمشاة من قدم شارع Canal إلى Algiers Point وهي بديل اقتصادي للرحلات النهرية، والتذاكر المفردة للعبّارة مذكورة في المصادر المحلية، كما توجد رحلات على باخرات نهرية لمشاهدة المدينة من الماء.",
+  "food": [
+   {
+    "name": "المأكولات الكريولية",
+    "note": "القاعدة الأساسية للمطبخ المحلي بمزيج فرنسي وإسباني وغربي إفريقي ونكهات تُبنى على الرّو والـ'ترينيتي' (فلفل أخضر وبصل وكرفس)."
+   },
+   {
+    "name": "البيجنِت (beignets)",
+    "note": "حلوى مقلية مغطاة بالسكر البودرة، من أشهر ما تُقدّم في نيو أورلينز وغالباً تُقدّم في المقاهي."
+   },
+   {
+    "name": "المحار (Oysters)",
+    "note": "يُقدّم محلياً بعدة طرق: نيئاً أو مقلياً أو في ساندويتشات Po' boy أو بنكهة روكفلر، والمحار المحلي من الخليج مشهور بحجمه وطعمه."
+   },
+   {
+    "name": "السرطان النهري (Crawfish)",
+    "note": "طبق شعبي محلياً يُقدَّم بطرق موسمية ومناسب لتجربة تقاليد تناول الطعام المحلية."
+   },
+   {
+    "name": "التمساح (Alligator)",
+    "note": "تجد قطع لحم التمساح في بعض القوائم كطبق غريب المذاق يصفه البعض بأنه يشبه الدجاج ولكنه أقسى قليلاً."
+   }
+  ],
+  "budget_tips": [
+   "احجز الفنادق مبكراً إذا كنت تخطط للحضور خلال Mardi Gras أو Jazz Fest لأن الطلب مرتفع في تلك الفترات.",
+   "استخدم العبّارة عبر النهر كخيار اقتصادي للحصول على مناظر جيدة للمدينة بدلاً من الرحلات النهرية الأغلى.",
+   "ضع في حسبانك أن بعض المطاعم تعمل بنظام 'نقد فقط' لذا احتفظ ببعض النقود في متناول اليد.",
+   "استكشف الأحياء سيراً على الأقدام أو باستخدام ترام الشارع للاستمتاع بالمعمار وتوفير تكاليف التنقل."
+  ],
+  "safety": [
+   "كن واعياً لمحيطك في المناطق السياحية وخاصة في المساء، واحرص على مراقبة مقتنياتك الشخصية.",
+   "لوحظت بعض أنشطة الفودو في الليل؛ تعامل باحترام مع الممارسات المحلية وابتعد عن أي مواقف قد تبدو غير آمنة.",
+   "احترم الاحتفالات المحلية والموكبّات—اتّبع تعليمات السلطات ومراكز الفعاليات لتجنب المشاكل."
+  ],
+  "itinerary": [
+   "اليوم الأول: تجوّل في الحي الفرنسي، زيارة كاتدرائية سانت لويس، تذوق البيجنِت، ثم جولة قصيرة على باخرة نهرية أو عبّارة لمشاهدة المسيسيبي.",
+   "اليوم الثاني: زيارة متحف الحرب العالمية الثانية الوطني ومتاحف الحي التجاري، ثم جولة بعربة الترام عبر St. Charles ومشاهدة القصور في Uptown.",
+   "اليوم الثالث: زيارة حديقة المدينة ومتحف نيو أورلينز للفنون أو زيارة حديقة حيوانات أودوبون، وختاماً استكشاف أحياء مثل Marigny وBywater للمشي ورصد الفنون المحلية."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لزيارة نيو أورلينز؟",
+    "a": "ثلاثة أيام تمنحك وقتاً جيداً لرؤية أبرز معالم الحي الفرنسي والمتحف الرئيسي وبعض الأحياء التاريخية، مع إمكانية تمديد الزيارة لاستكشاف المزيد من المتاحف أو المناطق الطبيعية المحيطة."
+   },
+   {
+    "q": "هل نيو أورلينز مدينة مكلفة؟",
+    "a": "تكلفة الزيارة تتفاوت حسب الموسم والفعاليات؛ مهرجانا Mardi Gras وJazz Fest يزيدان الطلب على الفنادق. كما توجد خيارات اقتصادية مثل العبّارات والجولات المشيّة والمطاعم متنوعة الأسعار."
+   },
+   {
+    "q": "هل نيو أورلينز آمنة للسياح؟",
+    "a": "المدينة ذات مناطق سياحية نابضة بالحياة لكنها تتطلب الحذر كالمدن الكبرى: راقب متعلقاتك، تجنّب المشي بمفردك في أوقات ومناطق غير مألوفة وبادر باتباع تعليمات الجهات المحلية خلال الفعاليات والموكبّات."
+   },
+   {
+    "q": "ما أفضل منطقة للإقامة؟",
+    "a": "الحي الفرنسي ومحيط الحي المالي (Central Business District) شائعان لسهولة الوصول إلى المعالم والمطاعم والملاهي. اختر حسب أولوياتك بين قرب الفعاليات والحياة الليلية أو هدوء الأحياء السكنية القريبة مثل Uptown."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط المدينة؟",
+    "a": "هناك عدة خيارات للنقل العام والخاص للوصول إلى وسط المدينة؛ نظراً لتنوّع البدائل يفضّل التخطيط مسبقاً والتحقق من وسائل النقل المتاحة عند وصولك."
+   }
+  ]
+ }
+}

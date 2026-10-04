@@ -1,0 +1,225 @@
+{
+ "slug": "mauritius",
+ "name": "Mauritius",
+ "country": "Mauritius",
+ "tags": [
+  "beach",
+  "relax"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Mauritius",
+ "en": {
+  "city_name": "Mauritius",
+  "country_name": "Mauritius",
+  "title": "Mauritius travel guide: sights, food and practical tips",
+  "meta_description": "Practical guide to Mauritius: top sights, beaches, local food, money tips and a 3-day itinerary for first-time visitors.",
+  "h1": "Mauritius travel guide: what to see, eat and know",
+  "intro": [
+   "Mauritius is an island nation in the Indian Ocean known for its beaches, varied landscapes and multi-ethnic culture. Visitors come for the natural scenery, water sports and the island’s mix of French, Indian, Chinese and African culinary and cultural influences.",
+   "The country includes the main island of Mauritius and several smaller islands such as Rodrigues, the Agalegas and the Cargados Carajos shoals; this guide focuses on attractions and practical information for the main island."
+  ],
+  "best_time": "Mauritius has a tropical climate that supports beach and water activities year-round. Consider local crowd patterns when planning: some beaches and marine parks are much busier at weekends, so weekdays are often quieter for popular coastal sites.",
+  "top_sights": [
+   {
+    "name": "Grand Bay (Grand Baie)",
+    "why": "A lively northern resort with shopping, nightlife and a range of watersports; visit La Cuvette and Pereybere for swimming and seaside dining, and expect a buzzy evening scene with restaurants and bars."
+   },
+   {
+    "name": "SSR Botanical Garden, Pamplemousses",
+    "why": "The oldest botanical garden in the Southern Hemisphere, founded in the 18th century and noted for unique flora, fish, deer and tortoises; bring comfortable shoes for walking the roughly 37 ha grounds."
+   },
+   {
+    "name": "Île aux Cerfs",
+    "why": "A small island famed for its beautiful beach and watersports; boats leave from Trou d'Eau Douce and many tours include a barbecue and visits to the nearby waterfall—bring your own food if you want cheaper options."
+   },
+   {
+    "name": "Mahebourg",
+    "why": "A historic fishing village on Grand Port Bay with a large Monday market and coastal character; nearby Ile aux Aigrettes is notable for conservation work and rare endemic species."
+   },
+   {
+    "name": "Blue Bay",
+    "why": "Known for very clear, blue water and white sand, with part of the area designated a Marine Park whose snorkelling and glass-bottom-boat trips are popular; try to visit on a weekday to avoid local weekend crowds."
+   },
+   {
+    "name": "Trou aux Biches",
+    "why": "A long, white sandy beach on the west coast prized for swimming and relaxation; it has been recognised internationally and is a good base for beach activities."
+   },
+   {
+    "name": "Le Morne and Le Morne Beach",
+    "why": "A dramatic western headland shared by several resorts and attractive for its setting and watersports; coastal currents here create rich fishing grounds and strong marine life nearby."
+   },
+   {
+    "name": "Flic en Flac and Tamarin",
+    "why": "West-coast destinations with long beaches, diving and surfing: Flic en Flac offers scuba diving and amenities, while Tamarin is known for surfing, a resident dolphin pod and views of an extinct volcano."
+   }
+  ],
+  "getting_around": "Major towns and beaches are linked by public transport and local boats for island transfers; many visitors use boats for trips to small islands such as Île aux Cerfs. On the main island taxis, local buses and hired vehicles are common ways to move between coastal resorts and inland attractions.",
+  "food": [
+   {
+    "name": "Dholl puri",
+    "note": "A local flatbread snack of Indian origin that is widely eaten and often enjoyed like a casual street food staple."
+   },
+   {
+    "name": "Biryani",
+    "note": "A spiced rice dish prepared by the Muslim community, typically combining meat, rice and potatoes for a hearty meal."
+   },
+   {
+    "name": "Gateaux piments",
+    "note": "A popular spicy fritter sold as a street snack, similar to the Indian vadai and commonly eaten around the island."
+   },
+   {
+    "name": "Rougaille",
+    "note": "A tomato-and-onion based dish that accompanies meat or seafood and reflects French and Creole culinary influence."
+   },
+   {
+    "name": "Mauritian sweets and cakes",
+    "note": "A wide variety of cakes and sweet treats are available, reflecting both French patisserie and Indian dessert traditions."
+   }
+  ],
+  "budget_tips": [
+   "Buy snacks or light food before check-in at the airport if you want to avoid expensive options after passport control.",
+   "Expect only modest bargaining at shops and markets; many merchants do not reduce prices by much, so aim for small percentage haggling.",
+   "All beaches are public, so you can enjoy coastal areas without paying for private beach access—look for public stretches between resorts.",
+   "Look for locally made clothing and factory overruns for better deals on brand-name items manufactured on the island."
+  ],
+  "safety": [
+   "Wear water shoes in some shallow areas—many beaches, especially near reefs, have sea urchins that can be painful to step on.",
+   "Be aware that popular marine and beach areas can be crowded at weekends; visit on weekdays for a quieter experience.",
+   "Respect local custom when visiting towns and markets—dress appropriately for markets and religious sites and follow local norms.",
+   "When booking boat trips or fishing charters, choose operators who display safety equipment and clear safety procedures."
+  ],
+  "itinerary": [
+   "Day 1: Explore the north—visit Grand Bay for shopping and watersports, relax on La Cuvette or Pereybere beach, and finish at the SSR Botanical Garden in Pamplemousses.",
+   "Day 2: Head to the east—take a boat from Trou d'Eau Douce to Île aux Cerfs for beaches and water activities, or spend time at Centre de Flacq market and nearby coastal restaurants.",
+   "Day 3: Discover the south and west—visit Mahebourg and Blue Bay for marine park snorkelling, then drive west to Trou aux Biches or Flic en Flac for sunsets, diving or surfing experiences."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Mauritius?",
+    "a": "A short trip of 3 days lets you sample beaches, a botanical garden and one island excursion; a week or more gives time to explore multiple coasts, inland parks and more island trips."
+   },
+   {
+    "q": "Is Mauritius expensive?",
+    "a": "Costs vary: there are high-end resorts and dining options, but also local markets, public beaches and modest restaurants; you can save by using public beaches, shopping local markets and bringing snacks for boat trips."
+   },
+   {
+    "q": "Is Mauritius safe for tourists?",
+    "a": "Mauritius is a popular tourist destination; normal travel precautions apply, such as watching for sea urchins in shallow water, choosing reputable operators for boat trips and protecting valuables in crowded areas."
+   },
+   {
+    "q": "What is the best area to stay in Mauritius?",
+    "a": "Choices depend on your priorities: the north (Grand Bay) is lively with nightlife and watersports, the east suits island excursions and resorts, and the west offers long beaches, diving and surfing."
+   },
+   {
+    "q": "What currency is used in Mauritius?",
+    "a": "The currency is the Mauritian rupee (MUR), often written Rs. or ₨; banknotes and coins are used in several denominations, so familiarise yourself with local notes and coins when paying."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "موريشيوس",
+  "country_name": "موريشيوس",
+  "title": "موريشيوس: دليل السفر إلى الجزيرة",
+  "meta_description": "دليل موريشيوس: ما تراه من شواطئ وحدائق وسوق، ماذا تأكل، نصائح لتوفير المال ومسار مقترح لثلاثة أيام.",
+  "h1": "دليل موريشيوس: ماذا ترى وتفعل وتأكل وتعرف",
+  "intro": [
+   "موريشيوس جزيرة في المحيط الهندي مشهورة بجمالها الطبيعي وشواطئها الرملية والأنشطة المائية وتنوعها الثقافي. يستمتع الزوار بالمناخ الاستوائي وبمزيج مطبخ متأثر بفرنسا والهند والصين وأفريقيا.",
+   "تتكون الدولة من الجزيرة الرئيسية موريشيوس وعدة جزر أصغر مثل رودريغز وAgalegas وCargados Carajos، وتقدّم الوجهة مزيجاً من المنتجعات الفاخرة والقرى الساحلية والأسواق المحلية وحدائق طبيعية محمية."
+  ],
+  "best_time": "أفضل وقت للزيارة هو عندما يكون الطقس جافاً ومشمساً لتستمتع بالشواطئ والأنشطة البحرية؛ تجنّب فترات الأمطار والرياح الشديدة إذا كنت تخطط للغوص أو الرياضات المائية. المواسم السياحية قد تزيد من الحشود في المناطق الشمالية والغربية.",
+  "top_sights": [
+   {
+    "name": "جراند باي (Grand Bay)",
+    "why": "منطقة ذات حياة ليلية ومرافق تسوق وترفيه ومركز للرياضات المائية؛ زر شاطئ لا كوفيت (La Cuvette) أو شاطئ بيريبير (Pereybere) للاستمتاع بالمياه الصافية ونزهة مسائية."
+   },
+   {
+    "name": "حديقة السّير سيدني روبير (SSR) النباتية، بامبل موسس (Pamplemousses)",
+    "why": "أقدم حديقة نباتية في نصف الكرة الجنوبي وتضم نباتات محلية ونادرة وحيوانات صغيرة مثل السلاحف والأسماك، وهي مكان مناسب للمشي والالتقاطات الفوتوغرافية."
+   },
+   {
+    "name": "إيل او سيرف (Ile aux Cerfs)",
+    "why": "جزيرة صغيرة تشتهر بشواطئها الجميلة ورياضات مائية متنوعة، تغادر القوارب من قرية ترو دو أو دوس (Trou d'Eau Douce); تأكد من تنظيم الطعام والشراب لأن المرافق على الجزيرة تستهدف غالباً السياح ذوي الإنفاق العالي."
+   },
+   {
+    "name": "ماهيبورغ (Mahebourg)",
+    "why": "قرية صيد تاريخية على خليج جراند بورت تتميز بسوق أسبوعي كبير يوم الاثنين ومحطات حافلات قريبة، وهي نقطة جيدة للتعرّف على الحياة المحلية وزيارة محميات الطبيعة القريبة."
+   },
+   {
+    "name": "بلو باي (Blue Bay)",
+    "why": "شاطئ بمياه زرقاء ورمال بيضاء وجزء منه محمي كمحمية بحرية؛ الرحلات بالقوارب ذات القاع الزجاجي ورحلات الغطس تُعدُّ تجربة ممتازة لمشاهدة الشعاب المرجانية والحياة البحرية."
+   },
+   {
+    "name": "ترو او بيش (Trou aux Biches)",
+    "why": "واحد من أفضل شواطئ الجزيرة برمال بيضاء ممتدة ومياه هادئة تناسب السباحة والغطس؛ مكان مناسب لقضاء يوم شاطئي هادئ بعيداً عن المنتجعات الكبيرة."
+   },
+   {
+    "name": "لو مورن (Le Morne) وشواطئ الغرب",
+    "why": "ساحل غربي معروف بالمنتجعات الفاخرة وبيئة بحرية مناسبة لصيد الأسماك العميق والرياضات المائية، وتشكّل التيارات حول لو مورن منطقة جيدة لصيد الأسماك الكبيرة."
+   },
+   {
+    "name": "فليك ان فلاك (Flic en Flac) وتامارين (Tamarin)",
+    "why": "ساحل غربي طويل يشتهر بالغوص وركوب الأمواج ومواقع مشاهدة الدلافين، وفي فليك ان فلاك يوجد تنوع في خيارات الإقامة والمطاعم بينما تامارين معروف بموجاته وخليجه."
+   }
+  ],
+  "getting_around": "الوصول إلى الجزر الصغيرة يتم بالقوارب من موانئ مثل ترو دو أو دوس، والتنقّل على الجزيرة الرئيسية ممكن بالحافلات المحلية وخدمات النقل الخاصة وسيارات الأجرة. معظم الشواطئ عامة ويمكن الوصول إليها بالسيارة أو الحافلات المحلية والطرق بين المناطق السياحية جيدة نسبياً.",
+  "food": [
+   {
+    "name": "دولّ بورّي (Dholl Puri)",
+    "note": "فطيرة محشوة بالعدس المهروس أصبحت من الوجبات الشعبية السريعة بين السكان المحليين."
+   },
+   {
+    "name": "برياني (Biryani)",
+    "note": "طبق أرز متبل من التراث المغولي يقدّم مع اللحوم والبطاطس ويعدّ من أطباق الجالية المسلمة."
+   },
+   {
+    "name": "روغاى (Rougaille)",
+    "note": "طبق يعتمد على صلصة الطماطم والبصل ويُطهى مع اللحم أو المأكولات البحرية، شائع جداً في الموائد المحلية."
+   },
+   {
+    "name": "جاتو بيمنتس (Gateaux Piments) والساموسا",
+    "note": "وجبات خفيفة تُباع في الشوارع ومحبوبة لتناولها أثناء التجوّل."
+   },
+   {
+    "name": "حلويات محلية (مثل الغلاب جامون والراسلجولا)",
+    "note": "الحلوى المحلية متأثرة بالمطبخ الهندي والفرنسي وتلائم من لديهم ميل للحلويات."
+   }
+  ],
+  "budget_tips": [
+   "تسوّق في الأسواق المحلية للحصول على منتجات غذائية وتذكارات بأسعار أفضل من المتاجر السياحية.",
+   "تناول الوجبات في مطاعم القرى والأسواق للاستفادة من نكهات محلية وأسعار أدنى من مطاعم المنتجعات.",
+   "استخدم الحافلات المحلية للتنقّل داخل الجزيرة حيث تكون أرخص من سيارات الأجرة أو الاستئجار الخاص.",
+   "خطط لزيارة الشواطئ العامة والحدائق بدلاً من الاعتماد حصراً على الأنشطة المدفوعة في المنتجعات."
+  ],
+  "safety": [
+   "احترس من الأشواك البحرية عند السباحة في مياه ضحلة في بعض الشواطئ وارتد حذاء مائياً حيث ذُكرت أشواك بحرية في مناطق مثل فليك ان فلاك.",
+   "اتبع إرشادات مشغلي الرحلات البحرية والأنشطة المائية بشأن معدات السلامة عند الغوص أو الصيد البحري.",
+   "احترم العادات المحلية ومجتمعات الصيد الصغيرة، واطلب الإذن قبل تصوير الأشخاص في الأسواق أو القرى."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشف شمال الجزيرة بدءاً من جراند باي، تمشّ في المتاجر والمطاعم، وزِر شواطئ لا كوفيت وبيريبير، وأنهِ اليوم بجولة مسائية في المنطقة.",
+   "اليوم الثاني: توجه إلى شرق الجزيرة من ترو دو أو دوس للانطلاق إلى إيل او سيرف وممارسة الرياضات المائية، وفي المساء قم بزيارة سوق Centre de Flacq إذا كنت مهتماً بالتسوق المحلي.",
+   "اليوم الثالث: اكتشف الجنوب والجنوب الشرقي بزيارة ماهيبورغ وأسواقه، ثم التوقف عند بلو باي للغطس أو رحلة بالقارب ذو القاع الزجاجي، ويمكن إنهاء اليوم برؤية ساحل غريس غريس أو حدائق الصدّ."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام التي أحتاجها لزيارة موريشيوس؟",
+    "a": "ثلاثة إلى خمسة أيام تكفي للتعرّف على الشواطئ الرئيسية وبعض المعالم الداخلية، أما للإطلاع العميق على الجزر الصغيرة والأنشطة المتنوعة فأسابيع قليلة أفضل."
+   },
+   {
+    "q": "هل موريشيوس مكلّفة؟",
+    "a": "الوجهة تضم خيارات من منتجعات فاخرة وخيارات محلية أكثر اقتصاداً؛ يمكن ضبط الميزانية بتناول الطعام في أسواق القرى واستخدام الحافلات المحلية والابتعاد عن الأنشطة الفندقية المكلفة."
+   },
+   {
+    "q": "هل موريشيوس آمنة للسياح؟",
+    "a": "بشكل عام آمنة للسياح لكن كأي وجهة سياحية من الأفضل اتباع إجراءات السلامة على الشواطئ والأنشطة البحرية واحترام نصائح مشغلي الرحلات."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "المناطق الشمالية والغربية شهيرة بوجود مرافق سياحية ومطاعم وشواطئ واسعة، بينما توفر القرى الشرقية والجنوبية تجربة أكثر هدوءاً وتواصلاً مع السكان المحليين؛ اختر وفق ما تفضّل من نشاط أو استرخاء."
+   },
+   {
+    "q": "كيف أصل إلى إيل او سيرف؟",
+    "a": "تنطلق القوارب إلى إيل او سيرف من قرية ترو دو أو دوس في الساحل الشرقي، وتتوافر بضائع وخدمات القوارب المختلفة بما في ذلك قوارب الكاتاماران واليخوت."
+   }
+  ]
+ }
+}

@@ -1,0 +1,227 @@
+{
+ "slug": "bangkok",
+ "name": "Bangkok",
+ "country": "Thailand",
+ "tags": [
+  "food",
+  "nightlife",
+  "shopping",
+  "culture"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Bangkok",
+ "en": {
+  "city_name": "Bangkok",
+  "country_name": "Thailand",
+  "title": "Bangkok travel guide: what to see, eat and know",
+  "meta_description": "Practical guide to Bangkok: top sights (Grand Palace, Wat Pho, Wat Arun), food, festivals, money tips and a 3-day itinerary for first-time visitors.",
+  "h1": "Bangkok travel guide: what to see, eat and know",
+  "intro": [
+   "Bangkok is Thailand's capital and largest city, a sprawling tropical metropolis where modern skyscrapers sit alongside historic temples and busy canals. The city can feel overwhelming at first — heat, traffic and neon — but it rewards those who look beyond the surface with grand palaces, lively markets and a rich cultural life.",
+   "Founded as the national capital in the late 18th century, Bangkok grew from a riverside trading post into the country's political, cultural and commercial heart. Visitors will find world-class museums, ornate Buddhist temples, and a nightlife and dining scene that ranges from humble street stalls to lavish international restaurants."
+  ],
+  "best_time": "Bangkok is a tropical city with high humidity and warm temperatures year-round; choose months when you tolerate heat and crowds best. Festivals such as Songkran in April and Loy Krathong in November are lively highlights but bring large crowds.",
+  "top_sights": [
+   {
+    "name": "Grand Palace and Wat Phra Kaew",
+    "why": "The Grand Palace complex is vast and includes Wat Phra Kaew, home to Thailand's most sacred Emerald Buddha; allow several hours to explore and keep your entry ticket safe as it can provide additional access to other royal sites."
+   },
+   {
+    "name": "Wat Pho",
+    "why": "Wat Pho houses the world's largest reclining Buddha image and is known for its traditional massage school; combine a temple visit with a restorative Thai massage if you wish."
+   },
+   {
+    "name": "Wat Arun (Temple of Dawn)",
+    "why": "Set on the Thonburi bank of the Chao Phraya River, Wat Arun is famed for its tall prang decorated with broken Chinese porcelain; take the ferry across the river for the best views."
+   },
+   {
+    "name": "National Museum and Rattanakosin museums",
+    "why": "Rattanakosin's museums focus on Thai history and culture and include interactive displays that explain both old and modern city life; plan visits if you want context for the temples and palaces."
+   },
+   {
+    "name": "Jim Thompson House",
+    "why": "A collection of traditional Thai-style houses assembled near Siam Square, the Jim Thompson House offers insight into traditional architecture and an interesting personal story to accompany the collection."
+   },
+   {
+    "name": "Lumphini Park",
+    "why": "The largest park in central Bangkok provides a leafy escape from traffic and fumes and is a pleasant place for a walk or people-watching during cooler parts of the day."
+   },
+   {
+    "name": "Bang Pa-In Palace (via Grand Palace ticket)",
+    "why": "The Bang Pa-In royal summer palace can be visited using the Grand Palace entry ticket, making it a convenient addition if you kept your original ticket after touring the Grand Palace."
+   },
+   {
+    "name": "Mahanakhon observation deck",
+    "why": "For expansive views over Bangkok from above, the Mahanakhon skyscraper's observation deck is a prime spot to see the city's scale and patchwork of neighborhoods."
+   }
+  ],
+  "getting_around": "Bangkok's streets are often congested, so expect slow road travel during peak times and plan accordingly. The Chao Phraya River and its ferries are a useful way to reach riverside temples such as Wat Arun; many central sights are concentrated around Rattanakosin and are walkable in parts, while parks and canals offer pleasant alternatives to busy roads.",
+  "food": [
+   {
+    "name": "Street food and noodles",
+    "note": "Street stalls serve a huge variety of simple Thai dishes and noodle soups; cheap options are widely available and many vendors will adapt dishes for vegetarians on request."
+   },
+   {
+    "name": "Khao pad (fried rice)",
+    "note": "A ubiquitous, satisfying dish that can be ordered vegetarian by asking for 'khao pad jay'; check for oyster sauce if you need a stricter vegetarian option."
+   },
+   {
+    "name": "Halal food in Bang Rak and Ramkhamhaeng",
+    "note": "Areas around Haroon Mosque and the Ramkhamhaeng Night Market offer many halal stalls and restaurants catering to Muslim diners."
+   },
+   {
+    "name": "Thai desserts and fruit-flavoured ice cream",
+    "note": "Bangkok is full of cold treats to beat the heat, including fruit-flavoured ice creams and shaved-ice desserts popular with local young people."
+   },
+   {
+    "name": "International and fine dining",
+    "note": "Sukhumvit and Silom feature many upscale and international restaurants, offering almost every cuisine imaginable alongside high-end hotel dining."
+   }
+  ],
+  "budget_tips": [
+   "Eat from street stalls and budget restaurants—many good meals are available for low local prices.",
+   "Keep your Grand Palace entry ticket if you plan to visit Bang Pa-In Palace, as the ticket can grant access.",
+   "Use reputable currency exchange operators such as well-known Superrich branches for competitive rates.",
+   "Obtain cash advances at bank branches if you want to avoid multiple ATM withdrawal fees rather than carrying large amounts of exchanged cash."
+  ],
+  "safety": [
+   "Bangkok is generally safe for visitors, but be alert to petty theft and pickpocketing in crowded areas and on public transport.",
+   "Respect local customs at temples: dress modestly with shoulders and knees covered and remove shoes where required.",
+   "If visiting animal attractions, research welfare standards beforehand; some facilities in Thailand may not meet high welfare expectations."
+  ],
+  "itinerary": [
+   "Day 1: Explore Rattanakosin (Old City): visit the Grand Palace and Wat Phra Kaew, then walk to Wat Pho and finish with a river crossing to Wat Arun.",
+   "Day 2: Museum and cultural day: start at the National Museum or Rattanakosin museums, visit Jim Thompson House or the Bangkok Art and Culture Centre, and relax in Lumphini Park in the late afternoon.",
+   "Day 3: Mix markets and views: spend the morning at a riverside market or wandering traditional neighborhoods, then head to a high-rise observation deck such as Mahanakhon for sunset city views."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Bangkok?",
+    "a": "Three days gives you time to see the major temples, a museum or two, and an observation deck, while leaving room to sample local food; longer stays let you explore neighborhoods, markets and nearby day trips."
+   },
+   {
+    "q": "Is Bangkok expensive?",
+    "a": "Prices vary widely: street food and budget restaurants are very affordable, while international and hotel restaurants can be pricey; overall the city offers options for most budgets."
+   },
+   {
+    "q": "Is Bangkok safe for tourists?",
+    "a": "Bangkok is generally safe but petty crime like pickpocketing can occur in crowded areas, so remain cautious with valuables and be mindful in busy markets and transport hubs."
+   },
+   {
+    "q": "What is the best area to stay in Bangkok?",
+    "a": "Choose a neighborhood based on your priorities: stay near Rattanakosin for temple access, Siam for museums and shopping, or Sukhumvit and Silom for dining and nightlife."
+   },
+   {
+    "q": "How do I visit Wat Arun from the Grand Palace area?",
+    "a": "Take a short ferry across the Chao Phraya River to reach Thonburi where Wat Arun stands; the river crossing gives excellent photo opportunities of the temple."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "بانكوك (Bangkok)",
+  "country_name": "تايلاند",
+  "title": "دليل سفر بانكوك: ما ترى وتفعل وتعرفه",
+  "meta_description": "دليل بانكوك يقدم أفضل المعالم، المأكولات، نصائح لتوفير المال وخطة رحلة لثلاثة أيام للمسافرين لأول مرة.",
+  "h1": "دليل بانكوك: ما تراه وتأكله وتعرفه قبل السفر",
+  "intro": [
+   "بانكوك هي عاصمة تايلاند وأكبر مدنها، مدينة مترامية تضم ملايين السكان وتُعد المركز السياسي والثقافي والتجاري للبلاد. رغم ناطحات السحاب والاختناقات المرورية والحرارة الشديدة، تكتشف في المدينة معابد وقصوراً وقنوات وأسواقاً ومراكز تسوّق حية تجعلها واحدة من أكثر المدن الآسيوية تنوّعاً.",
+   "تأسست بانكوك كميناء تجاري صغير على نهر تشاو فرايا ثم اختارتها الأسرة الحاكمة عاصمة لسيام في 1782، ومنذ ذلك الحين نمت لتصبح مخزوناً وطنياً من التراث والعمارة والثقافة التي تستقبل زوارها بابتسامة تايلندية وروح نابضة بالحياة."
+  ],
+  "best_time": "المناخ مداري وحار على مدار السنة مع رطوبة مرتفعة، ما يجعل أشهر الجفاف والمواسم الأقل رطوبة أنسب للاستكشاف. احتفالات مثل سونغكران في أبريل أو لوي كراثونغ في نوفمبر تجذب حشوداً، فانتبه للزحام إذا أردت تجربة هذه المهرجانات.",
+  "top_sights": [
+   {
+    "name": "القصر الكبير (Grand Palace)",
+    "why": "مجمع ضخم من المباني المهيبة وموقع معبد وات فرا كايو الذي يضم التمثال المقدس للإمردالد بودا؛ خصص صباحاً أو بعد الظهر لرؤية التفاصيل والزخارف، واحتفظ بتذكرة الدخول."
+   },
+   {
+    "name": "معبد وات فو (Wat Pho)",
+    "why": "يضم أكبر تمثال بوذا مستلقٍ في العالم ومشهور بمدرسة التدليك فيه؛ مناسب لزيارة هادئة وتجربة مساج على الطريقة التايلاندية."
+   },
+   {
+    "name": "معبد وات أروُن (Wat Arun)",
+    "why": "يقع عبر نهر تشاو فرايا في تونبوري ويشتهر برَكنه المركزي المكسو بمقتنيات خزفية ملونة؛ استقل العَبّارة لعبور النهر ورؤية الزخرفة عن قرب."
+   },
+   {
+    "name": "جِم تومبسون هاوس (Jim Thompson's House)",
+    "why": "قصر مكوّن من منازل تايلاندية تقليدية جمعها رجل أعمال أمريكي ويعرض تصاميم ومقتنيات محلية؛ يقع قرب ساحة سيام ويعطي لمحة عن الهندسة المعمارية التقليدية."
+   },
+   {
+    "name": "متحف راثاناكوسين والميثولوجيا التاريخية",
+    "why": "متحف يقدّم عروضاً تفاعلية عن تاريخ الحياة القديمة والحديثة في رتاناكوسين؛ مفيد لفهم تحول بانكوك العاصمة."
+   },
+   {
+    "name": "حديقة لومبيني (Lumphini Park)",
+    "why": "أكبر حديقة في وسط بانكوك وملاذ من انبعاثات المدينة ودرجة حرارة الشوارع؛ مكان جيد للمشي أو الاسترخاء بعيداً عن الضوضاء."
+   },
+   {
+    "name": "مركز سيام للفنون والثقافة (Bangkok Art and Culture Centre)",
+    "why": "مركز فني في ساحة سيام يستضيف معارض مؤقتة ويعكس المشهد الفني المحلي؛ مناسب لزوار يهتمون بالفن المعاصر."
+   },
+   {
+    "name": "مركز مانهكون (Mahanakhon) — منصة المشاهدة",
+    "why": "شاهد بانكوك من ارتفاع شاهق عبر منصة المراقبة في ناطحة سحاب مانهكون للحصول على مناظر بانورامية للمدينة."
+   }
+  ],
+  "getting_around": "للوصول لعبور نهر تشاو فرايا تُستخدم العَبّارات لزيارة معابد تونبوري مثل وات أروُن؛ شبكة مواصلات المدينة متنوعة وتغطي معظم المعالم. محطة فيايا ثاي (Phaya Thai) هي نهاية خط السكة الحديدية السريع المتجه للمطار وتضم مبدّلي عملة منافسين حسب الدليل.",
+  "food": [
+   {
+    "name": "أطباق الشوارع التايلاندية",
+    "note": "العشرات من الباعة يقدمون أطباقاً بسيطة ومشتركة بأسعار منخفضة نسبيّاً، وهي طريقة ممتازة لتذوق مأكولات محلية."
+   },
+   {
+    "name": "طعام نباتي (jay)",
+    "note": "المناطق السياحية بها مطاعم نباتية، ويمكن طلب 'khao pad jay' كبديل نباتي لأرز مقلي شائع."
+   },
+   {
+    "name": "المأكولات الحلال في حي بانغ راك",
+    "note": "حول مسجد هارون تجد أطباقاً حلالاً تُقدّم من عائلات مسلمة، ما يسهل العثور على خيارات للحجاج المسلمين."
+   },
+   {
+    "name": "آيس كريم بنكهة الفواكه",
+    "note": "متاجر محلية مثل Iberry تقدم نكهات فاكهية غريبة ومناسبة لطقس بانكوك الحار."
+   },
+   {
+    "name": "الوافل أو الآيسكريم على الطريقة الكورية",
+    "note": "محلات مثل After You وشبكات الآيس كريم الغربية متاحة في مراكز التسوق وتشتهر بين الشباب."
+   }
+  ],
+  "budget_tips": [
+   "تناول الطعام من عربات الشوارع والمطاعم البسيطة لتقليل تكاليف الوجبات.",
+   "استخدم فروع البنوك (مثل عمليات السحب النقدي عبر بطاقة الائتمان في البنك) لتفادي رسوم سحب مرتفعة من الصراف الآلي.",
+   "استفد من صرافات العملة التنافسية مثل Superrich في منطقة فياثوم وان عند الحاجة لتغيير العملات.",
+   "احتفظ بتذكرة دخول القصر الكبير لأن الدليل يشير إلى أنها تمنح دخولاً مجانياً إلى قصر بانغ با-إن."
+  ],
+  "safety": [
+   "المدينة عامةً آمنة لكن انتبه للسرقات البسيطة وراقب ممتلكاتك في الأماكن المزدحمة.",
+   "تجنّب شرب ماء الحنفية وفضل المياه المعلّبة خصوصاً في الطقس الحار والرطب.",
+   "احترم اللباس والسلوك عند زيارة المعابد: ارتدِ ملابس محتشمة وازرع الاحترام تجاه الرهبان والطقوس.",
+   "كن واعياً لموضوع رعاية الحيوانات: بعض مناطق الجذب الحيواني قد تعاني من ظروف سيئة، فاطلع قبل الزيارة."
+  ],
+  "itinerary": [
+   "اليوم الأول: ابدأ بجولة في جزيرة رتاناكوسين — زُر القصر الكبير ووات فو ثم تجوّل في المتاحف القريبة.",
+   "اليوم الثاني: اركب العَبّارة إلى تونبوري لزيارة وات أروُن، ثم عد إلى سيام لزيارة جيم تومبسون ووسط المنطقة الفنية.",
+   "اليوم الثالث: استرخِ في حديقة لومبيني صباحاً، وتجوّل في أسواق المدينة أو جرّب تجربة طعام شارع في سوخومفيت أو سيليم مساءً."
+  ],
+  "faq": [
+   {
+    "q": "كم يوم أحتاج في بانكوك؟",
+    "a": "ثلاثة أيام تكفي لزيارة المعالم الرئيسية في رتاناكوسين وسوقيّ سيام وبعض التجارب المحلية، أما لإضافة جولات نهارية ومزيد من المتاحف فخصص وقتاً أطول."
+   },
+   {
+    "q": "هل بانكوك مدينة مكلفة؟",
+    "a": "التكاليف تتفاوت؛ الأكل في الشوارع والخيارات الاقتصادية يجعلها مناسبة للميزانيات المحدودة، بينما المطاعم الفاخرة والفنادق الراقية قد تكون مكلفة."
+   },
+   {
+    "q": "هل بانكوك آمنة للسياح؟",
+    "a": "عمومًا آمنة لكن الحذر مطلوب في الأماكن المزدحمة لتجنب السرقات البسيطة، واتباع الاحتياطات العادية يضمن رحلة مريحة."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "المدينة واسعة وتناسب مناطق متعددة حسب اهتماماتك؛ ساحة سيام وسوكومفيت مناسبة للتسوق والمطاعم، وحي رتاناكوسين مناسب لمن يريد البقاء قرب المعالم التاريخية."
+   },
+   {
+    "q": "كيف أصل من المطار إلى المدينة؟",
+    "a": "تتوفر خدمة السكة الحديدية السريعة إلى بانكوك وينتهي أحد مساراتها في محطة Phaya Thai التي ذُكرت في الدليل، وهناك خيارات مواصلات متنوعة للوصول إلى مناطق المدينة."
+   }
+  ]
+ }
+}

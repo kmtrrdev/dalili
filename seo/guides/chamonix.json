@@ -1,0 +1,226 @@
+{
+ "slug": "chamonix",
+ "name": "Chamonix",
+ "country": "France",
+ "tags": [
+  "ski",
+  "nature",
+  "adventure"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Chamonix",
+ "en": {
+  "city_name": "Chamonix (Chamonix-Mont-Blanc)",
+  "country_name": "France",
+  "title": "Chamonix travel guide: things to see, eat and know",
+  "meta_description": "Practical travel guide to Chamonix: mountain sights, cable cars, Mer de Glace, Savoyard food, money-saving tips and a 3-day itinerary.",
+  "h1": "Chamonix travel guide: what to see, eat and know",
+  "intro": [
+   "Chamonix (officially Chamonix-Mont-Blanc) sits in Haute-Savoie at the foot of Mont Blanc and is widely regarded as one of the birthplaces and capitals of mountaineering. The town grew around guiding, scientific curiosity and later tourism, and remains a gateway for high Alpine adventures.",
+   "Visitors come for the mountains and glaciers that dominate the town — many of the best sights are natural and free — while cable cars, mountain railways and museums let you explore higher ground and the region's climbing history."
+  ],
+  "best_time": "Chamonix draws visitors year-round: winter brings skiing and snow sports, while summer is best for mountaineering, hiking and high-altitude views. Weather can change quickly at altitude, so plan flexibly and check conditions before heading up.",
+  "top_sights": [
+   {
+    "name": "Mont Blanc massif and surrounding mountains",
+    "why": "The dominating natural feature of the area; the peaks and glaciers are the main attraction and can be admired from different cable cars and viewpoints. Tip: check webcams and weather before ascending — conditions change rapidly."
+   },
+   {
+    "name": "Mer de Glace (Montenvers)",
+    "why": "One of Europe's largest glaciers, usually viewed from the Hotel de Montenvers reached by the rack railway; there are museums and an ice cave to explore. Tip: expect a lot of steps to reach lower glacier areas or take the short cable car where available."
+   },
+   {
+    "name": "Brévent / Planpraz cable car",
+    "why": "A valley-side cable car that rises from Chamonix centre to Planpraz and higher, offering excellent views across to the Mont Blanc massif. Tip: the valley station is in town centre, so it's an easy first ascent for views."
+   },
+   {
+    "name": "La Flégère cable car",
+    "why": "Ascends from Les Praz to La Flégère and links to higher chair lifts for expansive mountain scenery and hiking access. Tip: south-facing slopes lose snow early, making some walks possible in shoulder seasons."
+   },
+   {
+    "name": "Bellevue (Les Houches) cable cars",
+    "why": "Two cable cars from Les Houches rise to Bellevue ridge for panoramic views of the Chamonix valley and Mont Blanc. Tip: Les Houches lies about 5 km down the valley from Chamonix town."
+   },
+   {
+    "name": "Musée Alpin",
+    "why": "Housed in an early 20th-century hotel, it traces the development of alpinism from the first ascent of Mont Blanc to modern climbing with paintings, photos and maps. Tip: also look out for temporary exhibitions."
+   },
+   {
+    "name": "Musée des Cristaux – Espace Tairraz",
+    "why": "A notable collection of crystals, many local to Chamonix, that explains regional geology and crystal formation. Tip: it's a good indoor option on poor-weather days."
+   },
+   {
+    "name": "Jacques Balmat and Michel-Gabriel Paccard memorials",
+    "why": "Statues and memorials celebrate the first ascent of Mont Blanc in 1786 and the local figures involved; Balmat's statue provides a classic photo viewpoint with Mont Blanc behind. Tip: Paccard's statue stands near the Alpine Museum on ave Michel Croz."
+   }
+  ],
+  "getting_around": "The town is a base for many cable cars and mountain railways that take you up to viewpoints and glaciers; check times and conditions at base stations before setting off. Les Houches lies about 5 km down the valley and hosts Bellevue cable cars, while the Montenvers rack railway serves the Mer de Glace from near town.",
+  "food": [
+   {
+    "name": "Fondue",
+    "note": "A communal melted-cheese dish typical of the region and a classic Alpine winter meal."
+   },
+   {
+    "name": "Raclette",
+    "note": "Melted cheese served with potatoes and cold cuts, another hearty multi-person Savoyard favourite."
+   },
+   {
+    "name": "Tartiflette",
+    "note": "A gratin of potatoes and bacon with melted Reblochon-style cheese, ideal after a day on the slopes."
+   },
+   {
+    "name": "Pierrade (Pierre chaude)",
+    "note": "Slices of meat cooked at the table on a hot piece of slate for an interactive alpine dining experience."
+   },
+   {
+    "name": "Croute savoyarde",
+    "note": "Toasted bread soaked in white wine and baked with cheese and often mushrooms or tomatoes for a rich, regional snack."
+   }
+  ],
+  "budget_tips": [
+   "Many of Chamonix's most impressive sights are the mountains and glaciers themselves, which can be enjoyed for free from viewpoints around town.",
+   "If you plan to take more than one cable-car ride, consider the Mont-Blanc multipass (available for 1–10 days) rather than buying single returns; a 1-day pass and 2-day pass prices are published for comparison.",
+   "Check webcams and base-station conditions before paying for an ascent to avoid a wasted trip when the upper summits are in cloud or bad weather.",
+   "Buy simple provisions from a supermarket for days out; the guide suggests humble supermarket meals can be satisfying after a long hike."
+  ],
+  "safety": [
+   "Weather at altitude can be cold, windy and change quickly; always carry warm layers, waterproofs, gloves and sunglasses even in summer.",
+   "Cable cars and lifts can be popular and occasionally affected by conditions; check operator information and be prepared for delays or interruptions.",
+   "Glaciers and high routes pose objective hazards such as crevasses and storms — stick to marked routes, use guides or established transport links for access, and respect local advice."
+  ],
+  "itinerary": [
+   "Day 1: Explore Chamonix town — visit the Jacques Balmat memorial and alpine museums (Musée Alpin and Musée des Cristaux), wander Rue du Docteur Paccard for outdoor shops and local cafés.",
+   "Day 2: Take the Brévent/Planpraz and La Flégère cable cars for close-up views of the Mont Blanc massif and alpine walks; dress warmly and check the webcams and weather before you go.",
+   "Day 3: Ride the Montenvers rack railway to the Mer de Glace, visit the small museums and descend to the ice cave or view the glacier from Hotel de Montenvers."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Chamonix?",
+    "a": "A three-day visit lets you see the town, visit at least one cable car area and make the trip to the Mer de Glace; more time is needed for extended hikes or technical mountaineering."
+   },
+   {
+    "q": "Is Chamonix expensive?",
+    "a": "Touristy restaurants and mountain facilities can be pricey, but there are budget options such as supermarket meals and free mountain viewpoints to keep costs down."
+   },
+   {
+    "q": "Is it safe to go up the cable cars and visit glaciers?",
+    "a": "Yes, many lifts and the Montenvers railway are standard tourist transport, but mountain weather and glacier terrain present hazards, so check conditions, dress appropriately and follow local guidance."
+   },
+   {
+    "q": "What is the best area to stay in Chamonix?",
+    "a": "Staying in or near Chamonix town centre is convenient for access to the Brévent valley station, shops on Rue du Docteur Paccard and links to trains and buses serving mountain lifts."
+   },
+   {
+    "q": "How do I reach the Mer de Glace?",
+    "a": "Take the Montenvers rack railway from its station near town up to Hotel de Montenvers, where you can access museums, viewpoints and the ice cave."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "شاموني",
+  "country_name": "فرنسا",
+  "title": "دليل سفر شاموني (Chamonix) - ما ترى وتفعل وتعرفه",
+  "meta_description": "دليل شاموني: معالم الجبل والأنهار الجليدية، أطعمة محلية، نصائح لتوفير المال، ومسار مقترح لثلاثة أيام عند سفح مون بلان.",
+  "h1": "دليل شاموني: ماذا ترى وتأكل وتعرف في شاموني-مون-بلان",
+  "intro": [
+   "شاموني (المعروفة رسمياً باسم شاموني-مون-بلان) منتجع جبلي في إقليم هوت سافوا في فرنسا، يقع عند سفح مون بلان وعلى الحدود مع إيطاليا. تُعتبر شاموني مهد تسلق الجبال وواحدة من عواصم الرياضات الجبلية في ألپس.",
+   "تطوّر المجتمع المحلي من أعمال الصيد والرعي وقيادة المسافرين عبر الممرّات إلى مركز عالمّي لتسلق الجبال والسياحة الجبلية بعد صعود مون بلان في أواخر القرن الثامن عشر، ومع تطوّر خطوط السكك والرافعات أصبحت المنطقة أكثر سهولة ومتاحة للزوّار."
+  ],
+  "best_time": "الأجواء في المنطقة جبلية ومتقلبة؛ الصيف يتيح وصولاً أفضل إلى المرافق العالية لكن الطقس قد يتغير فجأة، والشتاء يجذب متزلّجي الثلج. تحقق من حالة الطقس والويب كام قبل الصعود لأن الضباب والعاصفة قد تحجب الرؤية في أي وقت من السنة.",
+  "top_sights": [
+   {
+    "name": "الجبال والأنهار الجليدية",
+    "why": "مشاهد الطبيعة الألفية في شاموني هي أبرز ما يميز المكان؛ كثيرة مجانية ولا تُفوّت. للوصول قرباً إلى الأنهار الجليدية استخدم القِطارات الجبلية أو التلفريك للتمتع بمناظر أفضل."
+   },
+   {
+    "name": "نُصب جاك بالما (Jacques Balmat)",
+    "why": "تمثال تذكاري لشخصية من أوائل من وصلوا إلى قمة مون بلان ويحظى بخلفية تصوير رائعة؛ ابحث عن تماثيل أخرى في المدينة تروي تاريخ الصعود."
+   },
+   {
+    "name": "متحف الألبين (Musée Alpin)",
+    "why": "متحف يقع في فندق من أوائل القرن العشرين، يعرض تطور تسلق الجبال في المنطقة من صعود مون بلان الأول حتى حقبة المتسلّقين الحديثين، وهو مفيد لفهم تراث المدينة."
+   },
+   {
+    "name": "متحف البلّورات - إسباس تيرا (Musée des Cristaux - Espace Tairraz)",
+    "why": "مجموعات رائعة من البلّورات، معظمها من شاموني، وتشرح الجيولوجيا وعمليات تكوّن المعادن، مناسب لمن يهتم بالعلم والطبيعة."
+   },
+   {
+    "name": "بحر الجليد (Mer de Glace)",
+    "why": "أحد أكبر الأنهار الجليدية في أوروبا ويمكن مشاهدته عادة من فندق مونتنفير عند طرف سكة حديد مونتنفير، كما توجد متاحف وكهف جليدي يمكن زيارته عبر السلالم أو المصعد القصير."
+   },
+   {
+    "name": "تلفريك برِفونت (Brévent)",
+    "why": "ينطلق من مركز المدينة نحو بلانبراز ويعطي مناظراً ممتازة لوجه مون بلان من الجانب الشمالي؛ خذ طبقات دافئة لأن القمّة قد تكون باردة وعاصفة."
+   },
+   {
+    "name": "تلفريك لا فليجِير (La Flégère)",
+    "why": "يصعد من قرية لو برا إلى موقع على ارتفاع جيد للتمشّي ومشاهدة المناظر، ويكمل بمصعد كُرسي نحو ارتفاع أعلى؛ مناسب للمشي والتصوير."
+   },
+   {
+    "name": "تلفريك بلفيو وباريون (Bellevue & Parion) من ليس أوش",
+    "why": "يعبران من ليس أوش، على بعد نحو 5 كلم أسفل الوادي عن شاموني، ويوفّران إطلالات واسعة على وادي شاموني والجبال المحيطة."
+   }
+  ],
+  "getting_around": "المكان يخدمه نظام من التلفريكات والسكك الجبلية التي توصلك إلى مواقع مشاهدة رئيسية مثل مونتنفير وبلانبراز ولا فليجِير، ومحطات تلفريك برِفونت تقع في مركز المدينة. تاريخياً ساهمت خطوط السكك في جعل المنطقة أكثر سهولة للوصول؛ داخل الوادي تتحرّك بين نقاط الانطلاق بالقطارات الجبلية والتلفريك والمشي المحلي.",
+  "food": [
+   {
+    "name": "فوندو (Fondue)",
+    "note": "طبق جبن مذاب مشترك تقليدي في مطاعم المنطقة، مناسب لتجربة ألبنوية كاملة."
+   },
+   {
+    "name": "بياّرد أو بيار شوود (Pierrade / Pierre chaude)",
+    "note": "حجر ساخن يوضع على الطاولة لطهي شرائح اللحم بنفسك، تجربة ممتعة للمجموعات."
+   },
+   {
+    "name": "راكلِت (Raclette)",
+    "note": "طبق جبن مُذاب يقدم مع البطاطا والسلطات واللحوم الباردة ويصلح لتناول جماعي."
+   },
+   {
+    "name": "تارتيفليت (Tartiflette)",
+    "note": "طريقة محلية لبطاطا مع لحم مقدد وجبن مبعثرة، طعام دافئ ومغذي بعد المشي الطويل."
+   },
+   {
+    "name": "سلطة جبن الماعز المحمصة",
+    "note": "سلطة خفيفة تحتوي جبن الماعز المحمّص والمكسرات، خيار جيد للوجبات الأصغر."
+   }
+  ],
+  "budget_tips": [
+   "اشترِ بعض المشتريات من المتاجر والسوبرماركت بدل تناول كل وجباتك في المطاعم السياحية — حتى علبة معلبة قد تكون وجبة جيدة بعد يوم طويل.",
+   "يوجد في الشوارع الرئيسية ومتاجر المدينة معروضات بأسعار منخفضة، وتشمل بعض الفراءات القطنية (fleece) بأسعار رخيصة كما ذُكر في المتجر المحلي.",
+   "إذا كنت ستستقل التلفريكات أكثر من مرة، ففكّر في شراء تمريرة Mont-Blanc متعددة الأيام بدلاً من تذاكر ذهاب وإياب منفصلة لأنها عادة أرخص عند استخدامات متعددة.",
+   "احجز أماكنك في التلفريك قبل المواسم المزدحمة لأن المقاعد قد تُنهي بسرعة وقد تضطر لدفع أكثر أو الانتظار."
+  ],
+  "safety": [
+   "ارتدِ ملابس دافئة متعددة الطبقات واحمل معك سترة واقية وقفازات ونظارات شمسية لأن القمم أبرد وعاصف حتى في الصيف.",
+   "تحقق من حالة الطقس أو الويب كام في محطات القاعدة قبل الصعود؛ الضباب والثلوج والعواصف تتشكل بسرعة في الجبال.",
+   "اتبع المسارات المحددة وإشارات الأمان وامتنع عن الاقتراب من حواف الأنهار الجليدية بدون دليل أو معدات مناسبة.",
+   "إن تعطل التلفريك أو تغيّر الطقس فجأة ممكن أن يجعل العودة صعبة، فخطّط دائماً لوقت احتياطي ومواد طوارئ بسيطة."
+  ],
+  "itinerary": [
+   "اليوم الأول: تجوّل في وسط المدينة لالتقاط صور النُصب التذكارية وزيارة متحف الألبين ومتحف البلّورات، وتسوّق على طول شارع روي دوكتور باكارد.",
+   "اليوم الثاني: اصعد بتلفريك برِفونت وبلانبراز للاستمتاع بمناظر وجه مون بلان، ثم انتقل إلى لا فليجِير للمشي الخفيف والتصوير على الارتفاعات.",
+   "اليوم الثالث: اركب سكة مونتنفير لزيارة فندق مونتنفير ومشاهدة بحر الجليد، نزولاً إلى الكهف الجليدي والمتاحف الصغيرة المحيطة."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام المناسبة لزيارة شاموني؟",
+    "a": "ثلاثة أيام تسمح بجولة جيدة في المدينة، زيارة المتاحف، وصعود أحد التلفريكات ورؤية بحر الجليد، لكن يمكن تكثيف الزيارة أو تمديدها حسب نشاطات المشي والتسلق التي تختارها."
+   },
+   {
+    "q": "هل شاموني مكلفة؟",
+    "a": "المطاعم السياحية في المركز يمكن أن تكون مكلفة، لكن هناك خيارات أقل سعراً في المتاجر والسوبرماركت، ومن الممكن تقليل المصاريف بشراء تمريرات التلفريك متعددة الأيام واختيار وجبات بسيطة أحياناً."
+   },
+   {
+    "q": "هل من أخطار يجب معرفتها قبل الصعود بالتلفريك؟",
+    "a": "نعم؛ الطقس الجبلي يتغير بسرعة وقد تهب رياح قوية أو شفق أو ضباب، لذلك من الضروري ارتداء طبقات دافئة والتحقق من حالة الطقس أو الويب كام في محطات القاعدة قبل الصعود."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة في شاموني؟",
+    "a": "الإقامة قرب مركز المدينة تسهّل الوصول إلى محطات التلفريك والمتاحف والمحال التجارية، كما أن بعض محطات القاعدة لتلفريكات مثل برِفونت تقع في مركز المدينة لسهولة الوصول."
+   },
+   {
+    "q": "كيف أصل إلى مواقع مثل مير دو غلاس أو مونتنفير؟",
+    "a": "يمكن الوصول إلى مير دو غلاس عادة عبر سكة حديد مونتنفير وصعود الموقع إلى فندق مونتنفير حيث تُعرض مناظر الجليد وهناك متاحف وكهف جليدي؛ اعرف مواعيد وسائل النقل الجبلية قبل الخروج."
+   }
+  ]
+ }
+}

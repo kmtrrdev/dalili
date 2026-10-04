@@ -1,0 +1,227 @@
+{
+ "slug": "new-york-city",
+ "name": "New York City",
+ "country": "United States",
+ "tags": [
+  "culture",
+  "shopping",
+  "food",
+  "nightlife"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/New_York_City",
+ "en": {
+  "city_name": "New York City",
+  "country_name": "United States",
+  "title": "New York City travel guide",
+  "meta_description": "Practical travel guide to New York City: top sights, where to eat, budget tips, safety advice and a 3-day itinerary for first-time visitors.",
+  "h1": "New York City travel guide: what to see, eat and know",
+  "intro": [
+   "New York City is a global hub for finance, media, art, fashion and culture, and one of the world’s most influential and densely populated cities. Its neighborhoods, skyline and institutions are iconic, offering a mix of landmark sights, diverse food and vibrant street life.",
+   "From the Statue of Liberty and Ellis Island in the harbor to the skyscrapers of Manhattan, the city rewards visitors with world-class museums, theatre, music venues and neighbourhoods shaped by immigrants from around the globe."
+  ],
+  "best_time": "Spring and fall generally offer pleasant weather and comfortable walking conditions with fewer summer crowds; winters can be cold and summers hot and busy. Expect notably heavier travel during typical business rush hours, which makes sightseeing less comfortable then.",
+  "top_sights": [
+   {
+    "name": "Statue of Liberty",
+    "why": "The island statue is an enduring national symbol and a focal point of the harbor; consider alternatives such as the Staten Island Ferry if you want a harbor view without long lines."
+   },
+   {
+    "name": "Empire State Building",
+    "why": "A defining Manhattan skyscraper with observation decks that give expansive city views; visiting late at night can be much quieter than daytime."
+   },
+   {
+    "name": "Central Park",
+    "why": "A large urban green space offering walking, relaxation and seasonal activities; use it as a pleasant break from the dense city streets."
+   },
+   {
+    "name": "Times Square and the Theater District",
+    "why": "The bright signs and concentration of Broadway theatres make this the entertainment heart of the city; if you have assigned seats, arrive near curtain time to avoid long lines at the entrance."
+   },
+   {
+    "name": "One World Trade Center and the 9/11 Memorial",
+    "why": "The site commemorates a pivotal moment in recent history and includes a prominent modern tower and reflective memorials; allow time for reflective visits rather than rushed stops."
+   },
+   {
+    "name": "Wall Street and Federal Hall",
+    "why": "The Financial District showcases historic sites tied to the nation's early government and modern commerce; stroll the narrow streets to combine history and contemporary landmarks."
+   },
+   {
+    "name": "Ellis Island",
+    "why": "The immigration station preserves the history of millions of arrivals to the United States and pairs naturally with a Statue of Liberty visit for a fuller harbor experience."
+   },
+   {
+    "name": "Coney Island and Yankee Stadium",
+    "why": "Both are emblematic neighborhood attractions: Coney Island for seaside amusements and boardwalk culture, and Yankee Stadium as a major sports venue in the Bronx — good options to see a different side of the metropolis."
+   }
+  ],
+  "getting_around": "The city has an extensive subway network and bus services that are often the fastest way to get around, while ferries provide useful harbor crossings. Expect heavy congestion and crowded transit during evening rush hours; for many short trips in central Manhattan walking is often quicker than buses or taxis.",
+  "food": [
+   {
+    "name": "New York pizza",
+    "note": "Thin-crust cheese pizza by the slice is a quintessential on-the-go meal; many corner pizzerias offer slices and whole pies with a variety of toppings."
+   },
+   {
+    "name": "Street hot dogs",
+    "note": "Hot dog vendors are a ubiquitous and quick city snack found throughout Manhattan and other boroughs."
+   },
+   {
+    "name": "Middle Eastern halal carts",
+    "note": "Halal food trucks and carts offer hearty rice-and-meat plates at many street corners, providing a filling and affordable option."
+   },
+   {
+    "name": "Deli and bodega sandwiches",
+    "note": "Thousands of delis and bodegas across the city serve a wide range of sandwiches and prepared foods for quick, inexpensive meals."
+   },
+   {
+    "name": "Seasonal fruit stalls",
+    "note": "In spring through fall, street fruit vendors sell ready-to-eat produce that makes a cheap, healthy snack while exploring."
+   }
+  ],
+  "budget_tips": [
+   "Use inexpensive street food like pizza slices, halal carts and deli sandwiches instead of sit-down restaurants to keep meal costs low.",
+   "Buy a supermarket or convenience-store meal when you need a bathroom; many establishments allow customer restroom use after a purchase.",
+   "Avoid peak times and long queues at major attractions by visiting early, late or choosing alternatives such as the Staten Island Ferry instead of the Statue of Liberty landing.",
+   "Consider one of the multi-attraction passes mentioned (GoCity passes, New York Pass, CityPASS) if you plan to visit many paid attractions, as they can save money and offer line-skipping benefits."
+  ],
+  "safety": [
+   "Expect crowded sidewalks, subway cars and tourist areas — keep personal belongings secure and be alert in busy places.",
+   "Plan travel to avoid the evening rush-hour crush on subways and roads when possible, as trains and streets are much busier then.",
+   "Public restroom facilities are limited; carrying tissues or planning stops at purchased meals or museums will help avoid discomfort.",
+   "Observe local queuing etiquette: stand in line orderly and be patient when entering popular attractions or shows."
+  ],
+  "itinerary": [
+   "Day 1: Midtown highlights — visit the Empire State Building area, stroll through Times Square and explore nearby theaters; finish the day with a Broadway or Off-Broadway show.",
+   "Day 2: Lower Manhattan and the harbor — take a harbor trip for Statue of Liberty views (or the Staten Island Ferry as an alternative), visit Ellis Island, then walk through the Financial District to see Wall Street, Federal Hall and the 9/11 Memorial/One World Trade Center site.",
+   "Day 3: Parks and neighbourhood culture — spend the morning in Central Park, visit a major museum such as the Metropolitan Museum of Art, and use the afternoon to experience a borough attraction like Coney Island or a major sports venue if events are scheduled."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in New York City?",
+    "a": "Three to five days lets you see the main landmarks and sample different neighbourhoods; if you want to visit many museums and see multiple shows, plan for more time."
+   },
+   {
+    "q": "Is New York City expensive to visit?",
+    "a": "Yes—New York is among the world’s most expensive cities for many costs. You can reduce spending by using street food, supermarkets, and attraction passes and by avoiding peak-priced dining and entertainment."
+   },
+   {
+    "q": "Is it safe to walk around New York?",
+    "a": "Many areas are busy and well-patrolled, but crowded sidewalks and transit require normal precautions: watch your belongings, stay aware of your surroundings, and avoid poorly lit isolated areas at night."
+   },
+   {
+    "q": "What is the best area to stay for a first-time visitor?",
+    "a": "Manhattan is centrally located for most major sights and theatres, making it a convenient base for first-time visitors who want to minimize transit time between top attractions."
+   },
+   {
+    "q": "How can I avoid long lines at attractions?",
+    "a": "Visit popular sites early or late when they are quieter, use multi-attraction passes that offer line-skipping, and consider alternatives such as ferry views rather than full monument landings to save time."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "نيويورك (New York City)",
+  "country_name": "الولايات المتحدة الأمريكية",
+  "title": "دليل سفر نيويورك: معالم، طعام وخطة 3 أيام",
+  "meta_description": "دليل نيويورك يقدّم أهم المعالم (تمثال الحرية، إمباير ستيت، سنترال بارك)، نصائح طعام، توفير المال وخطة زيارة لثلاثة أيام.",
+  "h1": "دليل نيويورك: ماذا ترى وتاكل وتعرف",
+  "intro": [
+   "نيويورك، المعروفة أيضاً باسم «المدينة الكبيرة» (The Big Apple) و«نيويورك سيتي»، هي مركز عالمي للإعلام والترفيه والفن والمال والتجارة. المدينة تضم أفقاً أيقونياً ومعالم مشهورة عالمياً من تمثال الحرية إلى مبنى إمباير ستيت، كما تمتد حياتها اليومية من مترو الأنفاق إلى شوارع والستريت المزدحمة.",
+   "سكانها من أكثر من 180 دولة تجعل منها مدينة متعددة الثقافات، ويُنجذب الزوار إلى حيويتها ومتاحفها الكبرى ومسارحها ومطاعمها المتنوعة. هذه الصفحة تقدم لمحة عملية للمسافرين عن أهم ما يجب رؤيته وأين يأكلون وكيف يدبرون نفقاتهم داخل المدينة."
+  ],
+  "best_time": "يمكن زيارة نيويورك طوال العام، لكن ضع في الحسبان أن فترات الذروة السياحية تكون مزدحمة خاصة في الصيف وعطلات نهاية العام؛ لتجنب الطوابير اختر مواقيت مبكرة أو متأخرة وزر المعالم الأكثر شهرة خارج أوقات الذروة.",
+  "top_sights": [
+   {
+    "name": "تمثال الحرية (Statue of Liberty)",
+    "why": "رمز وطني مطل على الميناء وواحد من أشهر معالم المدينة؛ قد تواجه طوابير طويلة للوصول إلى الجزيرة أو لتأمين تذاكر للصعود إلى التاج، لذا فكر في بدائل أو احجز مقدماً."
+   },
+   {
+    "name": "مبنى إمباير ستيت (Empire State Building)",
+    "why": "أفق كلاسيكي في مانهاتن يوفر إطلالات على المدينة؛ لتقليل الانتظار زُر وقت متأخر في الليل عندما يكون المكان أهدأ."
+   },
+   {
+    "name": "تايمز سكوير (Times Square)",
+    "why": "مركز ضوئي للترفيه والمسارح ومشهد حيوي لا يفوّت في مانهاتن؛ توقع حشوداً كبيرة وكن مستعداً للمشي أو التنقل سيراً لتفادي التوقفات المرورية."
+   },
+   {
+    "name": "سنترال بارك (Central Park)",
+    "why": "مساحة طبيعية كبيرة في قلب مانهاتن مناسبة للمشي والاسترخاء ولقطات فنية؛ ضع في خط سيرك وقتاً للتمشية أو نزهة بين المعالم داخل الحديقة."
+   },
+   {
+    "name": "موقع مركز التجارة العالمي ونصب 11 سبتمبر التذكاري (One World Trade Center & 9/11 Memorial)",
+    "why": "موقع يحيي ذكرى أحداث مهمة في التاريخ الحديث ويمثل جزءاً مهماً من المشهد الحضري؛ توقع طوابير عند المواقع التذكارية وخطط زيارتك مبكراً."
+   },
+   {
+    "name": "وال ستريت وفيدرال هول (Wall Street & Federal Hall)",
+    "why": "قلب القطاع المالي الأمريكي ومكان تاريخي حيث أدت أحداث سياسية حاسمة دورها؛ امشِ في الشوارع الضيقة لتشعر بأجواء الحي وتوقف لالتقاط صور مع رمز الثور الشهير."
+   },
+   {
+    "name": "متحف متروبوليتان للفنون (Metropolitan Museum of Art)",
+    "why": "أحد أكبر المتاحف الفنية في المدينة ويجمع مجموعات عالمية؛ خصص وقتاً كافياً للزيارة لأن المتحف واسع جداً وغالباً ما يتطلب جولات مطوّلة."
+   },
+   {
+    "name": "حي برودواي والعروض المسرحية (Broadway)",
+    "why": "مركز المسرح التجاري العالمي حيث تُعرض أشهر الموسيقات والعروض الدرامية؛ لتفادي الطوابير أدخل إلى العرض إذا كان لديك مقعد معين أو اشترِ التذاكر مقدماً."
+   }
+  ],
+  "getting_around": "التنقل داخل المدينة متاح بوسائل متعددة؛ مترو الأنفاق هو أسرع وسيلة للتنقل لمسافات طويلة داخل المدينة بينما المشي غالباً يكون أفضل للتنقل عرضياً في مانهاتن. تجنّب الاعتماد على الحافلات كوسيلة عابرة للعاصمة خلال ساعات الذروة لأن الحركة المرورية قد تجعلها بطيئة، واحسب وقتك أثناء ازدحام المساء من حوالي 4:30 إلى 6:30 مساءً.",
+  "food": [
+   {
+    "name": "بيتزا نيويوركية",
+    "note": "شريحة رقيقة وكبيرة يجب طيها لتناولها بأريحية؛ توجد محلات تقليدية تحظى بشعبية كبيرة مثل بعض المخابز التاريخية في المدينة."
+   },
+   {
+    "name": "بائعو الهوت دوغ في الشارع",
+    "note": "طعام شارع شهير ومتاح على مدار اليوم ويعطي تجربة سريعة وتقليدية أثناء التجول."
+   },
+   {
+    "name": "عربات الطعام الحلال (Halal trucks)",
+    "note": "خيارات مأكولات جاهزة ومشبعة موجودة في أحياء متعددة وتقدم وجبات أرخص نسبياً مثل الأرز مع اللحم والخضار."
+   },
+   {
+    "name": "الديلّيز والبوديغاس (Delis & bodegas)",
+    "note": "محلات صغيرة عند كل زاوية تقدم ساندويتشات، مشروبات واحتياجات سريعة مناسبة للميزانية."
+   },
+   {
+    "name": "أكشاك الفاكهة الموسمية",
+    "note": "تظهر من الربيع حتى الخريف وتوفر فواكه طازجة جاهزة للأكل بأسعار معقولة."
+   }
+  ],
+  "budget_tips": [
+   "استخدم العبارات والبدائل المجانية أو الرخيصة مثل ركوب عبّارة ستاتن آيلاند لرؤية تمثال الحرية بدلاً من الرحلات السياحية المدفوعة.",
+   "فكّر بشراء بطاقة جذب سياحية إذا كنت تخطط لزيارة عدة معالم كبيرة (مثل GoCity أو New York Pass أو CityPASS) لتوفير الوقت والمال.",
+   "تناول الطعام من عربات الطعام والدِيلّيز واشتَر ساندويتشات أو شرائح بيتزا بدلاً من المطاعم الراقية لتقليل المصاريف اليومية.",
+   "تجنّب الركوب بالحافلات عبر المدينة خلال الذروة إذا أمكن وامشِ أو استخدم المترو لتوفير الوقت وتكاليف التاكسي المرتفعة عند الازدحام."
+  ],
+  "safety": [
+   "كن حذراً من الازدحام في المعالم السياحية وراوغ الحشود بحجز مواعيد أو زيارة في أوقات أقل ازدحاماً لتقليل التعرض للزِحام.",
+   "راقب متعلقاتك الشخصية في المناطق المزدحمة ووسائل النقل العام، فالمزدحمات تسهل فقدان أو سرقة الأغراض.",
+   "التزم بالسلوك العام واحترام القوانين المحلية؛ المدن الكبيرة تتطلب اليقظة العامة لكنها عادة آمنة للزوار الذين يتصرفون بحذر."
+  ],
+  "itinerary": [
+   "اليوم الأول: ابدأ في ميدان تايمز سكوير ثم تجول في Midtown لزيارة مبنى إمباير ستيت وشارع والستريت ومن ثم اختتم اليوم بمشاهدة عرض برودواي أو نزهة مسائية في المنطقة.",
+   "اليوم الثاني: خصص اليوم للمتاحف والحدائق—زر متحف المتروبوليتان أو متحف التاريخ الطبيعي وتمشَّ في سنترال بارك، ثم اختتم بزيارة لينكولن سنتر أو كارنيغي هول إذا رغبت بعرض موسيقي.",
+   "اليوم الثالث: اصعد إلى منطقة الميناء لرؤية موقع مركز التجارة العالمي ونصب 11 سبتمبر، استخدم عبّارة ستاتن آيلاند لمشاهدة تمثال الحرية من البحر، ويمكنك بعد الظهر استكشاف أحياء برونكس أو بروكلين أو شاطئ كوني آيلاند إذا كان الوقت يسمح."
+  ],
+  "faq": [
+   {
+    "q": "كم من الوقت أحتاج لزيارة نيويورك؟",
+    "a": "ثلاثة أيام تكفي لمشاهدة أبرز المعالم في مانهاتن، لكن لمن يرغب بالتعمق في المتاحف والأحياء المختلفة يفضّل تخصيص أسبوع أو أكثر."
+   },
+   {
+    "q": "هل نيويورك مدينة مكلفة؟",
+    "a": "نيويورك واحدة من أغلى المدن العالمية، لكن تتوفر خيارات اقتصادية كثيرة مثل عربات الطعام والدِيلّيز وشرائح البيتزا والتخطيط الذكي لاستخدام بطاقات المزارات لتقليل التكاليف."
+   },
+   {
+    "q": "هل نيويورك آمنة للزوار؟",
+    "a": "المدينة تستقبل ملايين السائحين سنوياً ومعظم الزيارات تكون آمنة، ومع ذلك اتخذ الحيطة في الأماكن المزدحمة واحفظ متعلقاتك الشخصية دائماً."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة للسائح؟",
+    "a": "مانهاتن (وسط المدينة أو ميدتاون) مناسبة للمرة الأولى لأن الكثير من المعالم والمسارح والمحلات قريبة، أما من يريد أسعاراً أقل فيمكن البحث عن خيارات في أحياء بعيدة قليلاً أو في بروكلين."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط المدينة؟",
+    "a": "هناك عدة مطارات تخدم المدينة ويُتاح الوصول إلى وسط المدينة بواسطة وسائل نقل مختلفة منها الحافلات والقطارات والمترو وسيارات الأجرة؛ اختر الوسيلة التي تناسب ميزانيتك وكمية أمتعتك."
+   }
+  ]
+ }
+}

@@ -1,0 +1,225 @@
+{
+ "slug": "orlando",
+ "name": "Orlando",
+ "country": "United States",
+ "tags": [
+  "shopping",
+  "relax"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Orlando",
+ "en": {
+  "city_name": "Orlando",
+  "country_name": "United States",
+  "title": "Orlando travel guide: parks, museums and where to eat",
+  "meta_description": "Practical guide to Orlando: top theme parks, gardens, museums, where to eat, budget tips and a 3-day itinerary for first-time visitors.",
+  "h1": "Orlando travel guide: what to see, eat and know",
+  "intro": [
+   "Orlando is best known as a global centre for theme parks, attracting millions of visitors each year. While the resorts around the city dominate tourism, Orlando also offers downtown neighbourhoods, museums, gardens and pockets of wilderness worth exploring.",
+   "Many major attractions sit just outside the city core: Universal Orlando is inside the city limits, while Walt Disney World, SeaWorld and other resorts are in the surrounding towns such as Lake Buena Vista and Kissimmee. The area’s hotel and restaurant scene is built around both leisure visitors and large conventions."
+  ],
+  "best_time": "Orlando is a year-round destination for theme-park visitors, but consider local crowds and your tolerance for heat and humidity when choosing dates. Peak attendance typically coincides with school holidays and major events, while shoulder seasons can offer fewer crowds.",
+  "top_sights": [
+   {
+    "name": "Walt Disney World",
+    "why": "The largest resort complex in the area with multiple theme parks, water parks, hotels and entertainment; plan which parks you want to prioritise before you go, as the resort is extensive and not all of it sits within Orlando city limits."
+   },
+   {
+    "name": "Universal Orlando",
+    "why": "A major resort inside Orlando that includes two theme parks, a water park, hotels and a dining and entertainment district; arrive early for popular attractions and expect busy periods on weekends and holidays."
+   },
+   {
+    "name": "SeaWorld Orlando",
+    "why": "A landscaped marine park featuring rides, exhibits and companion parks such as Discovery Cove and Aquatica; combine a SeaWorld visit with nearby attractions for a varied day out."
+   },
+   {
+    "name": "Discovery Cove",
+    "why": "An all-inclusive, limited-capacity experience connected to SeaWorld that includes equipment and food and a scheduled interaction with dolphins; book in advance because daily admission is restricted."
+   },
+   {
+    "name": "Gatorland",
+    "why": "A long-standing, smaller attraction focused on alligators and other reptiles that pre-dates the major resorts; good for visitors wanting a historic, compact themed park experience."
+   },
+   {
+    "name": "Fun Spot America - Orlando",
+    "why": "A small, unthemed amusement park with go-karts and roller coasters, including the area's wooden coaster; it’s a good option for a lower-key day of rides away from the big resorts."
+   },
+   {
+    "name": "UCF Arboretum",
+    "why": "An 80-acre arboretum and botanical garden with hundreds of plant species and several cultivated garden areas; visit for a quieter, natural contrast to the busy theme parks."
+   },
+   {
+    "name": "Harry P. Leu Gardens",
+    "why": "Nearly 50 acres of landscaped gardens with diverse plant collections and a historic house museum on the grounds; check for special events and any temporary closures before visiting."
+   }
+  ],
+  "getting_around": "Many visitors rely on rental cars, rideshares or taxis to reach the major resorts and spread-out attractions; large parks and shopping districts also operate internal transit and shuttles. Plan transfers in advance if you are visiting several parks or staying in different neighbourhoods.",
+  "food": [
+   {
+    "name": "CityWalk dining (Universal Orlando)",
+    "note": "A variety of restaurants and chain venues are grouped together in Universal’s entertainment district for dining after park hours."
+   },
+   {
+    "name": "Disney Springs",
+    "note": "An expansive shopping and dining destination on Disney property with many chain and themed restaurant options."
+   },
+   {
+    "name": "Texas de Brazil",
+    "note": "A downtown Brazilian steakhouse offering a range of grilled meats and other preparations in the city centre."
+   },
+   {
+    "name": "Boston's Fish House",
+    "note": "A family-run restaurant serving New England–style seafood and popular with locals and visitors seeking fresh fish dishes."
+   },
+   {
+    "name": "Cafe Mineiro (Brazilian steakhouse)",
+    "note": "A Brazilian churrascaria that serves multiple cuts of meat carved at the table along with traditional sides."
+   }
+  ],
+  "budget_tips": [
+   "Decide which parks are must-sees and prioritise a smaller number of parks rather than trying to visit them all in one trip.",
+   "Look for combination passes or multi-attraction passes that bundle several attractions into a single purchase.",
+   "Use off-site restaurants and grocery stores for some meals rather than eating every meal inside theme-park complexes.",
+   "Visit museums, gardens and smaller attractions between park days to get varied experiences without additional big-ticket admissions."
+  ],
+  "safety": [
+   "Be prepared for hot and humid weather; stay hydrated and protect yourself from sun exposure during long days outdoors.",
+   "Keep track of personal belongings in crowded tourist areas and on park transit to reduce the risk of loss or theft.",
+   "Follow posted rules and staff instructions at parks and wildlife attractions for your own safety and that of animals and other visitors."
+  ],
+  "itinerary": [
+   "Day 1: Spend the day at a major theme park of your choice—Universal Orlando if you want parks inside the city, or a Disney park if you prefer the Disney experience; finish the evening with dinner at a nearby dining district.",
+   "Day 2: Visit a different park or a more relaxed attraction such as SeaWorld or Discovery Cove; alternatively, choose Fun Spot America for a shorter, lower-key day of rides and go-karts.",
+   "Day 3: Explore downtown Orlando and cultural sites—visit a museum such as the Orlando Museum of Art or the Orlando Science Center, then unwind in the UCF Arboretum or Harry P. Leu Gardens and enjoy dinner downtown."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Orlando?",
+    "a": "If your focus is theme parks, several days are typical because individual parks are large and offer many attractions; combine park days with a quieter day for museums or gardens if your schedule allows."
+   },
+   {
+    "q": "Is Orlando expensive to visit?",
+    "a": "Theme-park visits and resort-area dining can be one of the larger costs of a trip, but you can reduce expenses by prioritising fewer parks, using combination passes, and choosing off-site meals or free outdoor attractions."
+   },
+   {
+    "q": "Is Orlando safe for tourists?",
+    "a": "Orlando is a major tourist destination with extensive visitor services; common-sense precautions such as watching belongings in crowds, staying hydrated and following attraction safety rules will help ensure a safe trip."
+   },
+   {
+    "q": "What is the best area to stay in Orlando?",
+    "a": "Many visitors stay near the theme-park resorts and along the International Drive corridor for quick access to attractions, while downtown offers more cultural and dining options; choose based on which attractions you plan to prioritise."
+   },
+   {
+    "q": "How do I get from the airport to the theme parks?",
+    "a": "Common options include rental cars, taxis and rideshare services; many hotels near the parks also offer shuttle services, so check your accommodation for transfer options."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "أورلاندو (Orlando)",
+  "country_name": "الولايات المتحدة",
+  "title": "أورلاندو دليل السفر: أهم المعالم والمطاعم وخطة 3 أيام",
+  "meta_description": "دليل أورلاندو يتضمن المعالم السياحية الكبرى والحدائق والمتاحف والمطاعم ونصائح التوفير وخطة سفر لثلاثة أيام.",
+  "h1": "دليل أورلاندو: ماذا ترى وتفعل وتأكل وتعرف",
+  "intro": [
+   "تُعرف أورلاندو بأنها عاصمة متنزهات الألعاب الترفيهية في العالم، ويزورها ملايين السياح سنوياً لاحتوائها على منتجعات ضخمة مثل Walt Disney World وUniversal Orlando بالإضافة إلى العديد من متنزهات ومنتجعات أصغر ومناطق جذب سياحية أخرى.",
+   "خارج مجمع المتنزهات السياحية تنتظرك مدينة توفر متاحف وحدائق ومحميات طبيعية ومناطق تاريخية ومشهد ممتع للحياة الليلية والمطاعم، كما أن أغلب المعالم الكبرى تقع في الضواحي القريبة مثل Lake Buena Vista وKissimmee وWinter Park."
+  ],
+  "best_time": "المدينة مزدحمة طوال العام بسبب جذب المتنزهات، اختَر فترات خارج العطل المدرسية والأعياد إذا رغبت بتقليل الازدحام. الطقس في فلوريدا حار ورطب صيفاً وأقل حدة في أشهر الشتاء، فاختر الموسم الذي يناسب تحمّلك للحرارة والحشود.",
+  "top_sights": [
+   {
+    "name": "Walt Disney World",
+    "why": "أكبر مجمع ترفيهي خاص في العالم يضم أربعة متنزهات رئيسية ومنتجعات وفنادق ومرافق ترفيهية؛ مناسب لقضاء يومين أو أكثر وتخطيط الزيارة مسبقاً يساعد في تقليل وقت الانتظار."
+   },
+   {
+    "name": "Universal Orlando",
+    "why": "مجمع ترفيهي متكامل يضم متنزهين رئيسيين ومنطقة مخصصة لهاري بوتر ومنتجعاً للتسوق والطعام، وهو ضمن حدود المدينة ويستحق زيارة لعشاق الألعاب والسينما؛ تحقق من خيارات التذاكر المتعددة قبل الشراء."
+   },
+   {
+    "name": "SeaWorld Orlando",
+    "why": "منتزه بحري كبير يجمع بين الألعاب والعروض والمعارض المائية، يقدم بديلاً أقل صخباً عن المنتزهات الأكبر؛ جيد للعائلات التي تبحث عن مزيج من الترفيه والتعليم."
+   },
+   {
+    "name": "Discovery Cove",
+    "why": "منتزه ترفيهي محدود السعة يتضمن تجارب مائية شاملة وتفاعلات مع الدلافين، وغالباً ما تُباع تذاكره بكميات محدودة فالحجز المسبق ضروري."
+   },
+   {
+    "name": "Gatorland",
+    "why": "منتزه صغير مخصص للتماسيح والزواحف ويُعد من أقدم مناطق الجذب في المنطقة، ملائم لزيارة سريعة للاطلاع على جانب محلي وتراثي من السياحة."
+   },
+   {
+    "name": "Fun Spot America - Orlando",
+    "why": "منتزه محلي غير موضوعي يضم ألعاباً سريعة ومسارات للذهاب كارت ولاسيما أول وأحد المزالق الخشبية في المنطقة، خيار جيد لزيارة قصيرة وبأسلوب ممتع ومباشر."
+   },
+   {
+    "name": "Harry P. Leu Gardens",
+    "why": "حدائق منسقة غنيّة بالنباتات والأشجار والتصاميم المائية تمتد على مساحات واسعة وتضم مجموعة كبيرة من الورود والكاميليا؛ مكان هادئ للهروب من صخب المنتزهات ويفضل زيارته في الصباح الباكر."
+   },
+   {
+    "name": "Orlando Science Center",
+    "why": "مركز علمي تفاعلي يضم معارض عملية وقبة سينما كبيرة ومناظير فلكية، ممتع للعائلات والأطفال ومحطة تعليمية وترفيهية في آن واحد."
+   }
+  ],
+  "getting_around": "المنطقة تخدمها شبكة واسعة من الطرق والطرق السريعة والعديد من مجمعات المنتزهات تتطلب تنقلاً بسيارة أو حافلة منتظمة بين المجمعات. داخل المجمعات السياحية والمنتجعات توجد خدمات نقل داخلية ومواقف واسعة؛ في منطقة International Drive تتوفر خيارات تاكسي وخدمات مشاركة الرحلات.",
+  "food": [
+   {
+    "name": "مطاعم CityWalk في Universal (مثل Margaritaville وHard Rock Cafe)",
+    "note": "مجموعة كبيرة من خيارات الطعام ضمن منطقة الترفيه والتسوق لدى Universal، مناسبة لعشاء بعد زيارة المنتزه."
+   },
+   {
+    "name": "مطاعم Disney Springs (مثل Rainforest Cafe وPlanet Hollywood)",
+    "note": "منطقة تسوق وطعام في ممتلكات ديزني تضم مطاعم وساحات طعام متنوعة تناسب العائلات والزوار بعد المتنزهات."
+   },
+   {
+    "name": "Texas de Brazil",
+    "note": "شريحة برازيليّة مشهورة في قلب وسط المدينة تقدم تشكيلة من اللحوم المشوية وتناسب من يبحث عن عشاء غني."
+   },
+   {
+    "name": "Boston's Fish House",
+    "note": "مطعم عائلي يشتهر بمأكولات بحرية على طراز نيو إنجلاند، معروف بجودة طعامه وتجربة تناول مميزة."
+   },
+   {
+    "name": "Cafe Mineiro Brazilian Steak House",
+    "note": "مطعم ستيك هاوس برازيلي يقدم تجربة تقديم اللحوم المتتابعة وأكثر من أصناف إلى جانب أطباق جانبية تقليدية."
+   }
+  ],
+  "budget_tips": [
+   "استخدم بطاقات دخول مجمعة مثل Go Orlando City Pass لزيارة عدة معالم بسعر موحَّد بدلاً من شراء تذاكر منفردة لكل موقع.",
+   "خطط لزيارة المنتزهات خارج أيام الذروة المدرسية والعطل لتقليل وقت الانتظار وتكلفة بعض الخدمات المرتبطة بالذروة.",
+   "استفد من عروض ومناطق الطعام المجانية أو الأرخص خارج مجمعات المتنزهات الرئيسية عند الإمكان، مثل المطاعم المحلية أو مراكز التسوق.",
+   "نظم جدولك بحيث تستفيد من مواقف مجانية أو مواعيد إيقاف مجانية حيث تتوفر، وتحقق من سياسات مواقف المولات والمجمعات قبل الزيارة."
+  ],
+  "safety": [
+   "كن حذراً من الحرارة والرطوبة خصوصاً في فصل الصيف واحمل ماء ووقاية شمسية، وخذ فترات راحة داخل الأماكن المكيفة عند الحاجة.",
+   "احرص على مراقبة متعلقاتك الشخصية في المناطق المكتظة وتجنّب ترك الأغراض الثمينة في السيارات دون رقابة.",
+   "اتباع الإشارات والتعليمات في المتنزهات والمساحات المائية مهم لسلامتك وسلامة العائلة؛ احترم قواعد السلامة المعلنة.",
+   "في الأماكن الطبيعية أو التي تضم حيوانات (مثل Gatorland) اتّبع تعليمات الأمن ولا تقترب من الحيوانات دون وجود مرشد."
+  ],
+  "itinerary": [
+   "اليوم الأول: ركِّز على زيارة أحد المنتجعات الكبرى (مثل Universal Orlando) واستكشف CityWalk مساءً لتناول الطعام والتسوق.",
+   "اليوم الثاني: خصصه لمنتزه آخر أو Walt Disney World إن رغبت، أو بديل أكثر هدوءًا مثل SeaWorld أو Discovery Cove إذا رغبت بتجربة مائية منظمة.",
+   "اليوم الثالث: استكشف وسط المدينة والمتاحف مثل Orlando Science Center وOrlando Museum of Art، ثم ختام بزيارة لحدائق مثل Harry P. Leu Gardens أو التسوق في Mall at Millenia أو The Florida Mall."
+  ],
+  "faq": [
+   {
+    "q": "كم تحتاج من أيام لزيارة أورلاندو؟",
+    "a": "يعتمد ذلك على اهتماماتك: لمن يهدف لزيارة منتزه واحد أو اثنين يكفي يوم أو يومين لكل متنزه، وللاطلاع على المتاحف والحدائق ووسط المدينة يوصى بإضافة يوم أو يومين، لذا جدول بين 3 إلى 5 أيام شائع."
+   },
+   {
+    "q": "هل أورلاندو مكلفة للسياحة؟",
+    "a": "تكلفة الزيارة تتفاوت بحسب اختيار المنتزهات والإقامة وطريقة تناول الطعام؛ تذاكر المتنزهات والفنادق داخل المجمعات تميل لأن تكون الأعلى، لذا استخدام بطاقات مجمعة والبحث عن مطاعم خارج المنتزه يساعدان في التوفير."
+   },
+   {
+    "q": "هل أورلاندو آمنة للعائلات؟",
+    "a": "المنطقة آمنة نسبياً للسياح والعائلات مع توفر خدمات سياحية ومرافق طبية؛ اتّبع احتياطات السلامة المعتادة في الأماكن المزدحمة ومناطق الجذب وراقب الأطفال دائماً في المتنزهات والمساحات المائية."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "الاختيار يعتمد على خط سيرك؛ معظم الزوار يفضلون الإقامة قرب منتزهات Lake Buena Vista أو International Drive لتقليل زمن التنقل إلى Universal أو Disney، بينما من يريد وسط مدينة هادئاً يختار الإقامة في قلب أورلاندو قرب المتاحف والمطاعم."
+   },
+   {
+    "q": "كيف أصل من المطار إلى المنتزهات؟",
+    "a": "تتوفر خيارات نقل متعددة مثل سيارات الأجرة وخدمات مشاركة الرحلات وحافلات ومنتجات نقل خاص تؤمن الوصول إلى الفنادق ومجمعات المنتزهات؛ تحقق من خيارات الناقلين عند وصولك واختر الأنسب لعددكم وكمية الأمتعة."
+   }
+  ]
+ }
+}

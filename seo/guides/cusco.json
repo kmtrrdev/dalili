@@ -1,0 +1,226 @@
+{
+ "slug": "cusco",
+ "name": "Cusco",
+ "country": "Peru",
+ "tags": [
+  "history",
+  "culture",
+  "adventure"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Cusco",
+ "en": {
+  "city_name": "Cusco",
+  "country_name": "Peru",
+  "title": "Cusco travel guide: things to see, eat and know",
+  "meta_description": "Practical guide to Cusco: top sights, museums, food, budget tips and a 3-day itinerary for visiting the city and nearby Inca sites.",
+  "h1": "Cusco travel guide: what to see, eat and know",
+  "intro": [
+   "Cusco (also spelled Cuzco or Qosqo) sits high in the Southern Sierras and was the capital of the Inca Empire. Today it is a lively city with well‑preserved colonial architecture built on top of Inca stonework and serves as the main base for visits to Machu Picchu, the Sacred Valley and many nearby archaeological sites.",
+   "The city is a center of Quechua culture; traditional dress and indigenous presence are common on the streets, while a busy tourist scene supports museums, markets, restaurants and nightlife. At 3,400 m above sea level, altitude sickness is a serious concern, so plan to acclimatize and take health precautions."
+  ],
+  "best_time": "Cusco is crowded year‑round because it is the gateway to Machu Picchu, so consider shoulder seasons to avoid the heaviest tourist flows. Weather can change with altitude, so bring layers and allow time to acclimatize after arrival.",
+  "top_sights": [
+   {
+    "name": "Qoricancha (Koricancha / Temple of the Sun)",
+    "why": "Once the Incas' most important temple, its lower Inca masonry survives beneath the colonial Santo Domingo church, offering a striking contrast of Inca and Spanish construction; allow several hours and consider a guided tour to understand the site's archaeology and history."
+   },
+   {
+    "name": "Museo Machu Picchu (Casa Concha)",
+    "why": "Houses the largest collection of Machu Picchu artifacts returned to Peru and explains the site's discovery and study; a visit helps contextualize any trip you make later to the ruins."
+   },
+   {
+    "name": "Museo Inka",
+    "why": "Extensive displays of pre‑Inca, Inca and colonial artifacts with labels in Spanish and English; good for a deeper archaeological overview of the region."
+   },
+   {
+    "name": "Museo del Centro de Textiles Tradicionales de Cusco",
+    "why": "A free museum that explains traditional Andean textile techniques and meanings, and connects visitors directly with high‑quality, fairly traded textiles available for purchase."
+   },
+   {
+    "name": "Museo Histórico Regional",
+    "why": "Housed in the former home of Garcilaso de la Vega, this museum traces pre‑Hispanic and colonial history and is suitable for a one‑hour visit to get a historical overview."
+   },
+   {
+    "name": "Plaza de Armas and Cusco Cathedral",
+    "why": "The city’s central square is surrounded by colonial churches, shops and restaurants; the cathedral contains colonial religious art (note that photography is not allowed inside and admission applies unless you attend mass)."
+   },
+   {
+    "name": "Santa Catalina Convent",
+    "why": "A historic convent with religious art collections that is included on common tourist routes and the city’s attraction passes."
+   },
+   {
+    "name": "Museo del Sitio del Qoricancha and ChocoMuseo",
+    "why": "The small site museum near Qoricancha presents pre‑Columbian artifacts and modified skulls, while ChocoMuseo offers free cacao history displays and paid chocolate workshops—both are good complementary stops for culture and local foodways."
+   }
+  ],
+  "getting_around": "Cusco is a compact city centre best explored on foot, though steep streets mean wear comfortable shoes and watch your pace while acclimatising. Taxis are common for longer hops within the city; if you need services at the airport there are food and basic facilities just outside, and some travelers use taxis or arranged transfers to downtown hotels.",
+  "food": [
+   {
+    "name": "Alpaca",
+    "note": "Alpaca steaks or alpaca pizza are common on menus and a widely recommended local meat option."
+   },
+   {
+    "name": "Cuy (guinea pig)",
+    "note": "Traditional regional specialty often served whole in restaurants around Plaza de Armas and at dedicated cuyerías."
+   },
+   {
+    "name": "Sopa de zapallo",
+    "note": "A local pumpkin soup noted for being especially good in the region's cuisine."
+   },
+   {
+    "name": "Lomo saltado / aji de gallina / papa rellena",
+    "note": "Classic Peruvian dishes available in many restaurants; try lomo saltado, aji de gallina and stuffed papa rellena for traditional flavors."
+   },
+   {
+    "name": "Chicha morada and Inca Kola",
+    "note": "Chicha morada is a non‑alcoholic spiced purple‑corn drink; Inca Kola is a popular local soda worth trying."
+   }
+  ],
+  "budget_tips": [
+   "Eat at the city’s mercados and simple local eateries where traditional dishes are among the cheapest options.",
+   "Look for modest restaurants like the listed vegetarian and budget spots, which offer meal deals or menus that include soup and a main course.",
+   "Buy textiles and souvenirs at markets such as Mercado San Pedro or fair‑trade outlets to compare quality and price rather than only shopping around Plaza de Armas.",
+   "Consider the boleto turístico (tourist pass) where available for access to multiple museums and sites to save on individual admissions."
+  ],
+  "safety": [
+   "Altitude sickness can develop unpredictably at 3,400 m; rest on arrival, stay hydrated and seek medical advice if symptoms worsen.",
+   "Keep an eye on belongings in busy markets and around the Plaza de Armas, as some areas are crowded and pickpocketing can occur.",
+   "Respect local customs and be aware that catcalling can happen; dress and act conservatively when visiting religious sites and be prepared to decline unwelcome attention.",
+   "Note that photography is restricted in some religious sites such as the Cusco Cathedral—observe posted rules."
+  ],
+  "itinerary": [
+   "Day 1: Start at the Plaza de Armas to get oriented, visit the Cathedral and nearby colonial sights, then explore the Museo Histórico Regional and the Museo Inka for historical context.",
+   "Day 2: Spend a day visiting Qoricancha and its site museum, the Museo Machu Picchu (Casa Concha), and the Museo del Centro de Textiles Tradicionales de Cusco; finish with a chocolate workshop or a local dinner featuring alpaca or regional soups.",
+   "Day 3: Visit Mercado San Pedro in the morning for local food and shopping, take a salsa class or try traditional games and nightlife in the evening, and if time allows walk up to nearby ruins such as Sacsayhuamán to appreciate Inca stonework."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Cusco?",
+    "a": "Plan at least two to three days to explore the city’s main museums, markets and nearby ruins and to allow time for altitude acclimatisation; more days are useful if you plan excursions to Machu Picchu or the Sacred Valley."
+   },
+   {
+    "q": "Is Cusco expensive?",
+    "a": "Costs vary: tourist areas and attractions can be pricier and Machu Picchu‑related travel pushes prices up, but markets, local eateries and budget restaurants offer affordable meals and shopping options."
+   },
+   {
+    "q": "Is Cusco safe to visit?",
+    "a": "Cusco is a popular tourist city with many visitors; use normal precautions such as guarding belongings in crowded markets, be cautious with altitude sickness, and follow local guidance at archaeological and religious sites."
+   },
+   {
+    "q": "What is the best area to stay in Cusco?",
+    "a": "Stay near the historic centre and Plaza de Armas for easy walking access to museums, restaurants and tour departures; this area is the most convenient for first‑time visitors."
+   },
+   {
+    "q": "How do I get from the airport to the city?",
+    "a": "There are taxi and transfer options from the airport to downtown; the area outside the airport has basic facilities and a food outlet popular with travelers if you need a last stop before heading into the city."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "كوسكو (Cusco)",
+  "country_name": "بيرو",
+  "title": "دليل سفر كوسكو (Cusco) — أفضل ما تراه وتأكله وخطط الرحلات",
+  "meta_description": "دليل كوسكو: أهم المعالم مثل ساسايهومان وماتشو بيتشو، متاحف وأسواق، نصائح ميزانية وصحة، وخطة لثلاثة أيام.",
+  "h1": "دليل سفر كوسكو: ماذا ترى وتفعل وتأكل وتعرف",
+  "intro": [
+   "كوسكو (قوسقو بالكيشوا) كانت عاصمة إمبراطورية الإنكا وتقف اليوم كبوابة رئيسية لزيارة ماتشو بيتشو ووادي الإنكا ومواقع أثرية أخرى في جنوب جبال الأنديز.",
+   "المدينة تجمع بين هندسة حجرية إنكية محفوظة ومباني استعمارية إسبانية، ولها ثقافة كيشوا نشطة وحياة ليلية مرتفعة السمع. بسبب الارتفاع عند نحو 3,400 متر يجب أن تخطط للتماشي مع مشاكل ارتفاع المكان."
+  ],
+  "best_time": "الفترات المناخية الأفضل تكون عندما يكون الطقس مستقراً وجافاً، بعيداً عن موسم الأمطار؛ هذا يقلل من احتمال إغلاق مسارات مثل خط الإنكا ويجعل زيارة المواقع الأثرية أكثر راحة. في المواسم السياحية تزداد الحشود والأسعار، فضع ذلك بعين الاعتبار عند التخطيط.",
+  "top_sights": [
+   {
+    "name": "ماتشو بيتشو (Machu Picchu)",
+    "why": "واحدة من أشهر مواقع أمريكا اللاتينية، تستحق الزيارة بسبب قيمتها التاريخية والمناظر الخلابة؛ احجز تذاكرك وخيارات النقل مبكراً لأن الإقبال كبير والأسعار ترتفع."
+   },
+   {
+    "name": "ساسايهومان (Sacsayhuamán)",
+    "why": "أطلال إنكية ضخمة على تلة تطل المدينة، مشهورة بحجارة ضخمة ومحطة معركة 1536؛ ارتدِ حذاءً مريحاً واستعد لصعود تلال شديدة الانحدار."
+   },
+   {
+    "name": "قوريكانتشا (Qoricancha) / سانتو دومينغو",
+    "why": "معبد الإنكا المركزي الذي بنت فوقه إسبانيا كنيسة سانتو دومينغو؛ يجمع بين بقايا إنكية وهندسة استعمارية ويستحق جولة مع مرشد لفهم الطبقات التاريخية."
+   },
+   {
+    "name": "كاتدرائية كوسكو (Cusco Cathedral)",
+    "why": "كنيسة كبرى مليئة بلوحات دينية من الحقبة الاستعمارية وتوجد أمام ساحة بلازا دي آرماس؛ الدخول السياحي برسوم دخول محددة، والمشاركة في قداس صباحي قد تكون مجانية."
+   },
+   {
+    "name": "متحف ماتشو بيتشو (Machu Picchu Museum / Casa Concha)",
+    "why": "يضم أكبر مجموعة من قطع أثرية من ماتشو بيتشو، وهو مفيد لفهم الاكتشافات الأثرية قبل زيارة الموقع نفسه."
+   },
+   {
+    "name": "متحف إنكا (Museo Inka)",
+    "why": "متحف موسع يعرض آثار ما قبل الإنكا والإنكا والفترة الاستعمارية، مع لوحات تعريفية باللغتين الإسبانية والإنكليزية لتسهيل الفهم."
+   },
+   {
+    "name": "متحف النسيج التقليدي (Centro de Textiles Tradicionales de Cusco)",
+    "why": "متحف مجاني داخل متجر يعرض تقاليد نسج كيشوا وتقنيات التصنيع، وهو مكان ممتاز لشراء نسيج يدوي تُعاد أرباحه غالباً لصانعاته."
+   },
+   {
+    "name": "ساحة بلازا دي آرماس (Plaza de Armas)",
+    "why": "مركز المدينة التاريخي محاط بكنائس ومقاهي ومطاعم، مكان مناسب للمشاهدة العامة والبدء في التجول، لكن توقع بائعين متجولين كثيرين حول الساحة."
+   }
+  ],
+  "getting_around": "المدينة صغيرة نسبياً ويمكن استكشاف مركزها سيراً على الأقدام، مع شوارع تتضمن تلالاً كثيرة فلا تتردد في استخدام سيارات الأجرة للرحلات القصيرة. عند الوصول من المطار أو للرحلات إلى ماتشو بيتشو والوادي المقدس استخدم خيارات السكك الحديدية أو الحافلات المرتبطة بمشغلي السياحة، وخطط لرحلاتك مبكراً نظراً للطلب العالي.",
+  "food": [
+   {
+    "name": "شرائح لحم الألباكا (alpaca steak)",
+    "note": "لحم الألباكا يُقدم في مطاعم المدينة ويعتبر خياراً محلياً شائعاً وغالباً مطهو بطريقة مشابهة للستيك."
+   },
+   {
+    "name": "سوبا دي زابالو (sopa de zapallo)",
+    "note": "حساء اليقطين المحلي الذي يحظى بشعبية ويُعتبر من أطباق الحساء الطيبة في المنطقة."
+   },
+   {
+    "name": "لو مو سالتادو (lomo saltado)",
+    "note": "طبق بيروفي شعبي من شرائح اللحم المقلية مع طماطم وبصل ويقدم عادة مع أرز وبطاطس مقلية."
+   },
+   {
+    "name": "كوي (cuy / سُنجاب الهامستر البري)",
+    "note": "الطبق التقليدي للمناسبات في المنطقة، يُباع في مطاعم حول بلازا دي آرماس وهناك مطاعم متخصصة ('cuyerias') بأسعار مختلفة."
+   },
+   {
+    "name": "تشيشا مورادا (chicha morada) و إنكا كولا (Inca Kola)",
+    "note": "مشروبات محلية؛ التشيشا مورادا شراب غير كحولي مصنوع من الذرة البنفسجية، وإنكا كولا غازية بطعم مميز شائع في بيرو."
+   }
+  ],
+  "budget_tips": [
+   "تسوق وتناول الطعام في أسواق المدينة مثل سوق سان بيدرو حيث تجد خيارات طعام محلية وأرخص من المطاعم السياحية.",
+   "اشترِ تذاكر المواقع والجولات مبكراً لتجنب ارتفاع الأسعار الموسمية وحجز الأماكن التي لها قيود دخول.",
+   "ابحث عن مطاعم محلية ومطابخ نباتية ووجبات اليوم التي تقدم قوائم متكاملة بأسعار معقولة بدل تناول الطعام في قلب المناطق السياحية.",
+   "استخدم النقل المحلي والتجول سيراً عند الإمكان لتقليل تكلفة سيارات الأجرة القصيرة."
+  ],
+  "safety": [
+   "ضع في اعتبارك تأثير الارتفاع؛ خذ وقتاً للتأقلم وتجنب مجهود بدني شديد في الأيام الأولى لتقليل مخاطر مرض الارتفاع.",
+   "انتبه لأغراضك الشخصية في الأسواق والمناطق المزدحمة مثل بلازا دي آرماس وسوق سان بيدرو، فالسرقة صغيرة الحجم ممكنة.",
+   "احترم العادات المحلية ولبس السكان التقليديين، وكن مهذباً عند التقاط صور للأشخاص أو الأحداث التقليدية."
+  ],
+  "itinerary": [
+   "اليوم 1: استهل بزيارة بلازا دي آرماس وكاتدرائية كوسكو ثم استكشف قوريكانتش ومتاحف مركز المدينة مثل متحف إنكا ومتحف النسيج.",
+   "اليوم 2: خصص يومًا لزيارة ساسايهومان والأطلال المحيطة ثم عد لتجربة المقاهي في بلازا سان فرانسيسكو وتسوق في سوق سان بيدرو.",
+   "اليوم 3: قم برحلة إلى ماتشو بيتشو أو ابدأ تنظيم زيارة الوادي المقدس، وزر متحف ماتشو بيتشو (Casa Concha) لفهم أفضل للآثار قبل الرحلة."
+  ],
+  "faq": [
+   {
+    "q": "كم يومًا أحتاج في كوسكو؟",
+    "a": "ثلاثة أيام تمنحك وقتًا جيدًا لاستكشاف مركز المدينة والمتحفيات والآثار القريبة، إضافة إلى يوم مخصص لزيارة ماتشو بيتشو أو الوادي المقدس."
+   },
+   {
+    "q": "هل كوسكو مدينة مكلفة؟",
+    "a": "المدن السياحية مثل كوسكو تشهد ارتفاعاً في الأسعار لوجهات مشهورة مثل ماتشو بيتشو، لكن توجد خيارات اقتصادية في الأسواق والمطاعم المحلية لتقليل النفقات."
+   },
+   {
+    "q": "هل كوسكو آمنة للسياح؟",
+    "a": "بشكل عام آمنة لكن الاحتيال والسرقات الصغيرة ممكنة في المناطق المزدحمة، فالمتابعة الحذرة للممتلكات والابتعاد عن التصرفات المندفعة تكون حكيمة."
+   },
+   {
+    "q": "ما أفضل منطقة للإقامة؟",
+    "a": "المنطقة المحيطة ببلازا دي آرماس مناسبة للسياح لأنها قريبة من المعالم والمطاعم ووسائل النقل، لكن توقع ازدحام وباعة متجولين في الأوقات السياحية."
+   },
+   {
+    "q": "كيف أصل من المطار إلى مركز المدينة؟",
+    "a": "يمكن الوصول عبر سيارات الأجرة أو خدمات النقل المرتبطة بالمطار أو عبر وسائط نقل سياحية؛ خطط وصولك مبكراً وناقش التعرفة مع السائقين أو اطلب توصية من مكتب الفندق."
+   }
+  ]
+ }
+}

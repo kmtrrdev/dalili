@@ -1,0 +1,225 @@
+{
+ "slug": "san-francisco",
+ "name": "San Francisco",
+ "country": "United States",
+ "tags": [
+  "culture",
+  "food"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/San_Francisco",
+ "en": {
+  "city_name": "San Francisco",
+  "country_name": "United States",
+  "title": "San Francisco travel guide: things to do, food and tips",
+  "meta_description": "Practical travel guide to San Francisco: top sights, neighborhood walks, local food (Mission burrito, cioppino), budget tips and a 3-day itinerary.",
+  "h1": "San Francisco travel guide: what to see, eat and know",
+  "intro": [
+   "The centerpiece of the Bay Area, San Francisco is a compact city famed for its scenic setting, steep streets and diverse neighbourhoods. Built on a small peninsula between the Pacific Ocean and San Francisco Bay, the city combines dramatic coastal scenery with distinct cultural districts such as Chinatown, the Castro and the Mission.",
+   "San Francisco is also the urban hub of a much larger metropolitan region and is an excellent base for exploring nearby towns across the bay or north and south along the coast. There is more to see here than most visitors can fit into a single trip, from waterfront attractions and island views to leafy parks, quirky neighbourhoods and a lively food scene."
+  ],
+  "best_time": "Late spring through early fall usually offers the most reliably clear weather for views of the Bay and the Golden Gate, though fog can roll in even on otherwise sunny days. Summer sees the highest visitor numbers, so travel in shoulder seasons if you want fewer crowds while still enjoying mild temperatures.",
+  "top_sights": [
+   {
+    "name": "Golden Gate Bridge",
+    "why": "San Francisco's most iconic landmark spans the entrance to the Bay and offers striking views from the Marina, Crissy Field and the Presidio; plan to walk or cycle part of the bridge and bring a sweater because the bay can be chilly."
+   },
+   {
+    "name": "Alcatraz Island (viewed by harbor tour)",
+    "why": "The former federal prison is best appreciated from the water on a harbor or island tour that circles Alcatraz and provides photo opportunities; only specific island tours land there, so book island visits separately if you want to go ashore."
+   },
+   {
+    "name": "Palace of Fine Arts",
+    "why": "A graceful Beaux-Arts structure at the edge of the Marina District that's popular for strolls and photos; it's an easy addition to a longer walk that continues into the Presidio or along Crissy Field."
+   },
+   {
+    "name": "The Presidio and Crissy Field",
+    "why": "A large parkland with shoreline paths that give excellent perspectives of the Bay and Golden Gate Bridge; start at Fort Mason and walk west along the marina to reach the Palace of Fine Arts and Presidio trails."
+   },
+   {
+    "name": "Telegraph Hill and Coit Tower",
+    "why": "Steep, stair-lined streets lead up to Coit Tower with rewarding views of the skyline and the Bay; include the Greenwich and Filbert Steps for a scenic, if strenuous, ascent and watch for the wild parrots that sometimes appear on the hill."
+   },
+   {
+    "name": "Chinatown",
+    "why": "One of the oldest and busiest Chinese neighbourhoods in the U.S., centred on Grant Avenue and offering shops, markets and restaurants; walk Grant between Bush and Broadway for the busiest stretch and use parallel streets like Stockton or Powell to see local life and specialty shops."
+   },
+   {
+    "name": "Haight‑Ashbury",
+    "why": "The historic centre of 1960s counterculture where Haight Street's shops and cafés remain lively; continue toward Golden Gate Park via Stanyan for a quieter walk and access to park attractions."
+   },
+   {
+    "name": "Lands End and Ocean Beach",
+    "why": "Coastal trails along Lands End provide dramatic cliffside views, shipwrecks and access to Sutro Baths ruins and the Legion of Honor museum, while Ocean Beach offers a long, windswept shoreline for walks; the trail links to the upscale Sea Cliff neighbourhood and China Beach."
+   }
+  ],
+  "getting_around": "Many major sights are walkable with some steep hills, and scenic walks connect several neighbourhoods and waterfront areas. Ferries and regular boat services link San Francisco with towns such as Sausalito, Tiburon and Alameda, and most harbor tours depart from Fisherman's Wharf near Pier 39; consider ferries for a cheaper bay crossing and buy popular tour tickets in advance in summer.",
+  "food": [
+   {
+    "name": "Mission burrito",
+    "note": "A big, rice-filled burrito style that originated in the Mission District; different taquerias specialise in different meats, so check reviews to pick one you'll like."
+   },
+   {
+    "name": "Cioppino",
+    "note": "A tomato-and-wine based seafood stew with roots in North Beach's fisher community, typically served with bread to soak up the broth."
+   },
+   {
+    "name": "Sushi burrito",
+    "note": "A San Francisco innovation blending sushi and burrito formats; originally popularised locally as a fast-casual option."
+   },
+   {
+    "name": "Artisanal and farmers' produce at the Ferry Building",
+    "note": "The Ferry Building showcases local artisanal food and fresh produce drawn from nearby farms and is a good place to sample Bay Area food culture."
+   },
+   {
+    "name": "Vegetarian and vegan options",
+    "note": "Most restaurants in San Francisco offer vegetarian choices and many have solid vegan menus, making the city easy to navigate for plant-based diets."
+   }
+  ],
+  "budget_tips": [
+   "Take a ferry across the bay to places like Sausalito, Tiburon or Alameda for similar views to pricier tours at a lower cost.",
+   "Consider a CityPASS if you plan to visit multiple paid attractions and want bundled admission discounts.",
+   "Join a free neighbourhood tour from San Francisco City Guides and donate if you enjoyed the walk to save on guided-tour costs.",
+   "Buy harbor tour tickets a day or two in advance during the summer high season to secure a spot and avoid higher prices at the last minute."
+  ],
+  "safety": [
+   "Even on sunny days the bay can be chilly and windy — bring a warm layer when visiting waterfronts or taking boat trips.",
+   "Watch your belongings in busy tourist areas such as Fisherman's Wharf and popular walking routes, and be mindful of crowded sidewalks.",
+   "Follow basic urban safety practices: stay in well-lit areas at night, keep valuables secured, and check local advice for any neighbourhood-specific concerns."
+  ],
+  "itinerary": [
+   "Day 1: Explore the waterfront—start at Fisherman's Wharf and Pier 39, take a harbour tour that circles Alcatraz, then stroll through North Beach for cafés and views toward the Financial District.",
+   "Day 2: Walk the Marina and Presidio—begin at Fort Mason, visit the Palace of Fine Arts, follow Crissy Field toward the Golden Gate Bridge, then return via scenic stops such as Lands End or the Legion of Honor if time permits.",
+   "Day 3: Experience diverse neighbourhoods—wander through Chinatown along Grant Street, head to Haight‑Ashbury for shops and Victorian homes, and finish in the Mission or Castro to sample local food and nightlife."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in San Francisco?",
+    "a": "Three days will let you see major highlights like the waterfront, the Golden Gate area and a selection of neighbourhoods, but the region offers enough variety to keep you busy for much longer if you have time."
+   },
+   {
+    "q": "Is San Francisco expensive?",
+    "a": "Yes, San Francisco is one of the more expensive U.S. cities, with high costs for dining, groceries and accommodation; budget by using ferries, free walking tours and attraction passes where suitable."
+   },
+   {
+    "q": "Is San Francisco safe for tourists?",
+    "a": "San Francisco is generally safe for visitors who take normal city precautions such as securing valuables and avoiding poorly lit areas at night; be especially mindful of belongings in crowded tourist spots."
+   },
+   {
+    "q": "What is the best area to stay in for first-time visitors?",
+    "a": "Staying near the waterfront or centrally located neighbourhoods lets you access major sights and harbour departures easily; choose a location that suits the walking routes you plan to do."
+   },
+   {
+    "q": "How do I get from the airport to the city?",
+    "a": "San Francisco has multiple transport options into the city; for travel over water, ferries connect to nearby towns, and many harbour tours and boat services operate from downtown docks—check local transit resources for airport-specific routes."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "سان فرانسيسكو (San Francisco)",
+  "country_name": "الولايات المتحدة",
+  "title": "دليل السفر لسان فرانسيسكو: معالم، طعام وخطة 3 أيام",
+  "meta_description": "دليل لسان فرانسيسكو يتضمن أهم المعالم، ما يأكل، نصائح لتوفير المال، والسلامة وخطة مفصلة لثلاثة أيام.",
+  "h1": "دليل سان فرانسيسكو: ماذا ترى وتاكل وتعرف",
+  "intro": [
+   "سان فرانسيسكو هي القلب الحضاري لمنطقة الخليج وواحدة من أكثر المدن زيارة في العالم بفضل مزيجها من المناظر الطبيعية والثقافة المميزة. المدينة الصغيرة بين خليج سان فرانسيسكو والمحيط الهادئ تقدم تلالاً مطلة على مناظر خلابة وأحياء متنوعة تعكس تركيبات عرقية وثقافية متعددة.",
+   "تُمكنك سان فرانسيسكو من الوصول بسهولة إلى أماكن بارزة عبر الجسور والمتنزهات والمناطق الحضرية المتباينة؛ وهي أيضاً قاعدة جيدة لاستكشاف مدن خليج سان فرانسيسكو المحيطة. هناك ما يكفي لرؤية المدينة لوقت طويل، وستفهم سبب جذبها المتكرر للزوار."
+  ],
+  "best_time": "فصول الربيع والصيف تشهد عادة أنشطة سياحية أكثر، لكن المدينة معروفة بضبابها وطقسها المتقلب طوال العام، ما يجعل أي يوم قد يكون بارداً حتى لو بدا مشمساً. توقع ازدحاماً أكبر في شهور الذروة الصيفية وخطط لحجز الأنشطة الشعبية مسبقاً.",
+  "top_sights": [
+   {
+    "name": "جسر البوابة الذهبية (Golden Gate Bridge)",
+    "why": "رمز المدينة وإطلالات رائعة على الخليج والمحيط؛ سير أو ركوب الدراجة على أجزاء منه يمنحك تجربة مميزة. نصيحة عملية: المناظر تتغير مع الضباب فراجع الطقس واختر نقطة مشاهدة على الطرف الشمالي أو على Crissy Field."
+   },
+   {
+    "name": "جزيرة ألكاتراز (Alcatraz)",
+    "why": "السجن الفيدرالي السابق الذي يُطل على الخليج هو موقع تاريخي مهم ويمكن رؤيته من جولة بحرية؛ الجولات الرسمية للهبوط إلى الجزيرة محددة ويُنصح بحجز التذاكر مبكراً في موسم الذروة."
+   },
+   {
+    "name": "قصر الفنون الجميلة (Palace of Fine Arts)",
+    "why": "مبنى كلاسيكي جميل وحديقة محيطة تقدم مشهداً هادئاً مناسباً للتصوير والتنزه، ويمكن الوصول إليه بسهولة من منطقة المارينا أو طريق المشاة الواقع على الواجهة البحرية."
+   },
+   {
+    "name": "رصيف الصيادين ومرسى Pier 39 (Fisherman's Wharf / Pier 39)",
+    "why": "منطقة جذب سياحية تضم متاجر ومطاعم ومحطات انطلاق جولات الميناء التي تمنح مشاهد للمدينة والجسور وجزيرة ألكاتراز؛ نصيحة: كاونترات التذاكر على الواجهة البحرية تبيع تذاكر الجولات وغالباً ما يكون الحجز قبل أيام في الصيف ضرورياً."
+   },
+   {
+    "name": "حي تشايناتاون (Chinatown)",
+    "why": "واحد من أكبر الأحياء الصينية خارج آسيا، شارع Grant يوفر أجواء سوقية ومطاعم ومحلات متخصصة لشراء الشاي والأعشاب؛ للمشي، جرب أيضاً الشوارع المتوازية للحصول على تجربة أقل ازدحاماً."
+   },
+   {
+    "name": "مهمة دولوريس والمنطقة (Mission District / Mission Dolores)",
+    "why": "موطن لمهمة سان فرانسيسكو التاريخية ومكان ولادة الـMission burrito، المنطقة تقدم طابعاً ثقافياً حيوياً ومطاعم تاكرويد محلية. نصيحة: اختَر تاكريّا بعناية لأن كل واحدة تشتهر بمكونٍ مختلف."
+   },
+   {
+    "name": "تل تيليغراف وCoit Tower (Telegraph Hill / Coit Tower)",
+    "why": "سلالم مخفية وحدائق وأزقة تؤدي إلى Coit Tower مع إطلالات على الخليج وأحياء المدينة؛ قد تصادف طيور الببغاء البرية خلال الصعود على بعض الدرجات."
+   },
+   {
+    "name": "حديقة الخليج وOcean Beach وLands End (Golden Gate Park / Ocean Beach / Lands End)",
+    "why": "مساحات خضراء واسعة، شاطئ طويل ومسارات ساحلية درامية مع أماكن مثل أطلال Sutro Baths وLegion of Honor؛ للمشي الساحلي اختر مسار Lands End للتمتع بالمناظر البحرية والمنحدرات."
+   }
+  ],
+  "getting_around": "المدينة صغيرة نسبياً وتُستكشف جيداً سيراً على الأقدام في الأحياء المركزية، كما تسهل الحافلات والترام والكابل كار الوصول إلى تلال المدينة. للرحلات عبر الخليج، العبارات خيار ميسور وتقدم مناظر ممتازة إلى الجسور والمدينة؛ تأكد من معرفة نقاط الانطلاق في الواجهة البحرية.",
+  "food": [
+   {
+    "name": "Mission burrito",
+    "note": "لفائف كبيرة اختُرعت في حي Mission وتحتوي عادة على الأرز ومكونات مكسيكية أخرى؛ كل تاكريّا لها أسلوبها المميز."
+   },
+   {
+    "name": "Cioppino",
+    "note": "مرق بحري من أصل صائدين في North Beach يعتمد على الطماطم والنبيذ الأبيض مع مزيج من الأسماك والمأكولات البحرية ويؤكل مع الخبز."
+   },
+   {
+    "name": "Sushirrito (السوشي بوريتو)",
+    "note": "ابتكار محلي يمزج بين السوشي والمكونات المكسيكية في لفائف بحجم البرِيتو، يعرفه سكان المدينة عبر سلسلة Sushirrito."
+   },
+   {
+    "name": "الطعام الحرفي في Ferry Building",
+    "note": "سوق مبنى العبّارات يقدم منتجات طازجة ومأكولات حرفية تركّز على الإنتاج المحلي وجودة المكونات."
+   },
+   {
+    "name": "خيارات نباتية ونباتية صارمة",
+    "note": "توفر المدينة تشكيلة واسعة من المطاعم التي تقدم أطباقاً نباتية ونباتية مع تنوع جيد في القوائم."
+   }
+  ],
+  "budget_tips": [
+   "استعمل العبارات العامة للعبور إلى ساوساليتو أو تبوِرُون أو الموانئ المجاورة بدل الجولات السياحية المدفوعة لتوفير تكلفة وتحصل على نفس المنظر.",
+   "انضم إلى جولات San Francisco City Guides المجانية؛ هي جولات إرشادية مجتمعية تقبل التبرعات وتغطي أحياء ومواضيع متنوعة.",
+   "فكر في شراء بطاقات المترَكِز السياحية (مثل CityPASS) إذا كنت تخطط لزيارة العديد من المتاحف والجولات فهي تقدم تخفيضات على دخول باقات معينة.",
+   "تسوق وجبات خفيفة أو مياه من محلات البقالة بدل شراء كل شيء من الأكشاك السياحية على الأرصفة لتقليل النفقات اليومية."
+  ],
+  "safety": [
+   "الطقس المتقلب يعني أن برداً مفاجئاً قد يجعل الرحلات على الشاطئ أو الجسر غير مريحة، أحضر معطفاً خفيفاً حتى في الأيام المشمسة.",
+   "كن واعياً لممتلكاتك في المناطق المزدحمة مثل الموانئ ووسائل النقل العام لأن السرقات بالانسحاب تحدث في المدن الكبيرة.",
+   "احترم خصوصية سكان الأحياء عند التجول بين الشوارع الضيقة والسلالم السكنية، وابتعد عن الدخول إلى ممتلكات خاصة.",
+   "تعرّف على مقرّات خدمات الطوارئ المحلية لتكون مستعداً إذا احتجت مساعدة في أي وقت."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشف منطقة Fisherman's Wharf وPier 39، احجز جولة في الميناء لمشاهدة ألكاتراز من البحر، وامشِ إلى North Beach لتناول العشاء.",
+   "اليوم الثاني: تجول في المارينا عبر Crissy Field باتجاه جسر البوابة الذهبية، زر قصر الفنون الجميلة ثم ادخل منطقة Presidio أو Golden Gate Park لاستراحة ومساحات خضراء.",
+   "اليوم الثالث: اكتشف أحياء المدينة: ابدأ في Chinatown ثم اتجه إلى North Beach وTelegraph Hill، وبعد الظهر قم بزيارة Mission District لتجربة طعام محلي وثقافة حيّية."
+  ],
+  "faq": [
+   {
+    "q": "كم يوماً أحتاج لزيارة سان فرانسيسكو؟",
+    "a": "ثلاثة أيام تكفي لرؤية المعالم الرئيسية مثل الموانئ، الجسر، بعض الأحياء المتنوعة والمتاحف الأساسية، لكن لاستكشاف المنطقة بأوسع نطاق ستحتاج لأيام إضافية."
+   },
+   {
+    "q": "هل سان فرانسيسكو مدينة مكلفة؟",
+    "a": "نعم، تُعتبر من أغلى المدن الأميركية من حيث المعيشة والسياحة، لكن يمكن تقليل التكاليف باستخدام العبارات العامة، الجولات المجانية وشراء بطاقات الدخول المجمعة."
+   },
+   {
+    "q": "هل من الآمن التجول في شوارع سان فرانسيسكو؟",
+    "a": "المدينة آمنة نسبياً في المناطق السياحية خلال النهار لكن كن حذراً من السرقات في الأماكن المزدحمة وتجنّب المشي وحيداً في أماكن غير مأهولة ليلاً."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "اختيار المنطقة يعتمد على ما تريد رؤيته؛ السكن قرب الواجهة البحرية أو وسط المدينة يسهل الوصول إلى المعالم السياحية، بينما الأحياء مثل Marina أو Mission تمنح طابعاً أكثر محلية."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط المدينة؟",
+    "a": "هناك خيارات متعددة تشمل وسائل النقل العام والعبّارات وخدمات النقل التشاركي؛ المسافات في المدينة قصيرة نسبياً، لكن تحقق من خياراتك قبل الوصول حسب ميزانيتك ووقتك."
+   }
+  ]
+ }
+}

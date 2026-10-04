@@ -1,0 +1,226 @@
+{
+ "slug": "madeira",
+ "name": "Madeira",
+ "country": "Portugal",
+ "tags": [
+  "nature",
+  "adventure"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Madeira",
+ "en": {
+  "city_name": "Madeira",
+  "country_name": "Portugal",
+  "title": "Madeira travel guide: what to see, eat and know",
+  "meta_description": "Practical travel guide to Madeira: top sights (levadas, Pico Ruivo, Cabo Girão), food (espetada, bolo de mel, Madeira wine), budget tips and a 3-day itinerary.",
+  "h1": "Madeira travel guide: what to see, eat and know",
+  "intro": [
+   "Madeira is a sub-tropical archipelago in the Atlantic and an autonomous region of Portugal. The group includes the populated islands of Madeira and Porto Santo and the uninhabited Desertas and Selvagens groups; it is known for a mild year‑round climate and dramatic landscapes.",
+   "Visitors come for a mix of sea, mountain and town experiences: gardens and levadas that keep the island green, high volcanic peaks such as Pico Ruivo and Pico do Arieiro, coastal cliffs like Cabo Girão, and cultural highlights around Funchal."
+  ],
+  "best_time": "Madeira enjoys a consistently mild, springlike climate throughout the year, so it is a good destination almost any time. Choose dates according to activities: hiking and levada walks are pleasant outside periods of heavy rain, while coastal and festival experiences are year‑round.",
+  "top_sights": [
+   {
+    "name": "Levadas",
+    "why": "An extensive network of watercourses built to distribute mountain water to farmland; the levada maintenance paths provide many scenic, mostly level hiking routes—wear good walking shoes and check local trail conditions before setting out."
+   },
+   {
+    "name": "Pico Ruivo",
+    "why": "One of the island's highest peaks offering sweeping mountain views; a popular hiking destination reachable on established trails and by road to nearby trailheads."
+   },
+   {
+    "name": "Pico do Arieiro",
+    "why": "A high peak with spectacular panoramas and access to mountain walks; you can drive close and take short walks to viewpoints for dramatic scenery."
+   },
+   {
+    "name": "Cabo Girão",
+    "why": "A dramatic ocean cliff near Câmara de Lobos known for its height and views over the sea and coast; visit the skywalk area for sweeping coastal vistas."
+   },
+   {
+    "name": "São Vicente Caves",
+    "why": "Volcanic caves where lava tubes are visible and visitors can learn about the island's volcanic origins; guided cave visits show the geological formations safely."
+   },
+   {
+    "name": "Monte Palace Tropical Garden",
+    "why": "A large, well‑maintained garden outside Funchal showcasing exotic plants and landscape design; combine a garden visit with a ride or walk into Monte for the best experience."
+   },
+   {
+    "name": "Laurisilva of Madeira",
+    "why": "A unique subtropical laurel forest found on the island and recognised for its ecological importance; visit preserved forest areas to see native flora and enjoy cool, shaded walks."
+   },
+   {
+    "name": "Curral das Freiras",
+    "why": "An isolated village set in a steep mountain hollow near Câmara de Lobos, notable for its dramatic setting and views; drive or join an excursion to experience the remote landscape."
+   }
+  ],
+  "getting_around": "Madeira is reached by air from mainland Portugal and other parts of Europe; flights are short compared with transatlantic travel. On the island, rental cars, buses and organised tours are common ways to move between Funchal, mountain trailheads and coastal attractions—plan time for winding roads and steep terrain.",
+  "food": [
+   {
+    "name": "Espetada",
+    "note": "A traditional Madeiran barbecue dish, typically served on skewers and often enjoyed at local restaurants."
+   },
+   {
+    "name": "Bolo de mel",
+    "note": "A traditional Madeiran cake associated with local celebrations and known for its rich, spiced flavours."
+   },
+   {
+    "name": "Madeira wine",
+    "note": "A famous regional fortified wine available in many varieties and sold widely in shops and supermarkets."
+   },
+   {
+    "name": "Madeiran cuisine",
+    "note": "Local dishes emphasise island produce and Atlantic influences; sampling regional specialities at markets and small restaurants gives a good overview."
+   },
+   {
+    "name": "Seafood and coastal dishes",
+    "note": "Seafood features widely on Madeira thanks to its Atlantic location and is commonly available in coastal towns and restaurants."
+   }
+  ],
+  "budget_tips": [
+   "Use public buses and shared transfer options rather than taxis for longer journeys to save on transport costs.",
+   "Buy Madeira wine and other local products in supermarkets or specialist shops instead of tourist outlets for better value.",
+   "Plan hikes and outdoor activities independently where safe and practical rather than always booking guided tours.",
+   "Visit viewpoints and natural attractions, many of which are free or low cost, to get the island experience without large expenses."
+  ],
+  "safety": [
+   "Expect steep and narrow roads in places; drive cautiously and allow extra time for mountain routes.",
+   "Take care on levada paths—some trails are narrow and exposed; wear appropriate footwear and check local trail information.",
+   "In coastal and boat activities follow the safety briefings from operators and choose reputable companies for whale watching or water sports.",
+   "Respect local signs and protected areas, especially in laurisilva forest and other ecologically sensitive sites."
+  ],
+  "itinerary": [
+   "Day 1: Explore Funchal—visit Monte Palace Tropical Garden, walk parts of the marina and town, and sample local specialities such as espetada and Madeira wine.",
+   "Day 2: Head into the mountains—drive or take transport to Pico do Arieiro and Pico Ruivo for high‑level views and short walks; include a visit to Curral das Freiras if time permits.",
+   "Day 3: Experience levadas and coast—hike a levada route suited to your fitness, visit Cabo Girão skywalk and, if interested, join a boat trip for whale and dolphin watching or enjoy water activities."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Madeira?",
+    "a": "Three to five days gives you time to see Funchal, enjoy at least one levada or mountain walk and visit coastal cliffs or a boat trip; more time lets you explore further afield."
+   },
+   {
+    "q": "Is Madeira expensive?",
+    "a": "Costs vary by activity and accommodation; choosing public transport, local eateries and self‑guided outdoor activities helps keep expenses moderate."
+   },
+   {
+    "q": "Is Madeira safe for hiking?",
+    "a": "Hiking on levadas and mountain trails is popular and generally safe when you follow marked paths, use proper footwear and check local conditions before setting out."
+   },
+   {
+    "q": "What is the best area to stay in Madeira?",
+    "a": "Funchal is a convenient base for most visitors, offering access to gardens, restaurants, transport links and tours; staying here makes day trips to mountains and coastal sights straightforward."
+   },
+   {
+    "q": "How do I get from the airport to the main towns?",
+    "a": "Madeira is serviced by flights from mainland Portugal and Europe; from the airport you can use shared transfers, buses, taxis or rental cars to reach Funchal and other destinations—choose an option that fits your itinerary and luggage."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "ماديرا",
+  "country_name": "البرتغال",
+  "title": "ماديرا: دليل سفر عملي إلى الجزيرة والأنشطة",
+  "meta_description": "دليل ماديرا: أهم المعالم (ليفادات، قمم، حدائق)، طعام محلي، نصائح للميزانية وخطة رحلة لثلاثة أيام.",
+  "h1": "دليل ماديرا: ماذا ترى، تأكل وتعرف",
+  "intro": [
+   "ماديرا مجموعة جزر شبه استوائية في المحيط الأطلسي وهي منطقة ذات حكم ذاتي تابعة للبرتغال. تتكوّن الأرخبيل من جزيرتين مأهولتين (ماديرا وبورتو سانتو) ومجموعتين غير مأهولتين (ديسرتاس وسيلفاجنس).",
+   "تشتهر ماديرا بمناخها المعتدل طوال العام ما يجعلها تُدعى «جزيرة الحديقة» أو «لؤلؤة الأطلسي»، ويمكن الجمع فيها بين عطلات الشاطئ والجبال والحياة الحضرية؛ كما أنها موطن اللاعب كريستيانو رونالدو. تبعد حوالى ساعة ونصف عن البر الرئيسي للبرتغال وحوالي أربع ساعات من وسط أوروبا."
+  ],
+  "best_time": "ماديرا تتمتع بمناخ ربيع دائم تقريباً لذلك يمكن زيارتها في أي وقت من السنة؛ الفترات التي تجذب عدد زوار أكبر تتزامن مع عطلات رأس السنة والأشهر السياحية، بينما تظل الجزر هادئة ومناسبة للمشي والطبيعة خلال الأشهر الأخرى.",
+  "top_sights": [
+   {
+    "name": "ليفادات (Levadas)",
+    "why": "شبكة قنوات مائية تاريخية تنقل المياه من الشمال الرطب إلى الجنوب الجاف وتوفر مسارات مشي مسطّحة عبر الجبال والريف؛ مناسبة للمشي الهادئ مع مناظر طبيعية ويُنصح بارتداء أحذية مناسبة للمسارات."
+   },
+   {
+    "name": "بيكو رويڤو (Pico Ruivo)",
+    "why": "أحد أعلى القمم في الجزر ويوفّر مناظر واسعة للمناظر الجبلية؛ يمكن الوصول إلى نقطة انطلاق المشي بالسيارة ثم متابعة مسار قصير للمشاهدة."
+   },
+   {
+    "name": "بيكو دو أرييرو (Pico do Arieiro)",
+    "why": "قمة جبلية بارزة توفر إطلالات درامية ولها مسارات قريبة مناسبة لرؤية التضاريس العالية؛ يمكن القيادة إلى الموقع والمشي في أجزاء قصيرة للاستمتاع بالمشهد."
+   },
+   {
+    "name": "كابو جيراو (Cabo Girão)",
+    "why": "واحد من أعلى المنحدرات البحرية في العالم بالقرب من كامارا دي لوبوس، موقع مميز لمشاهدة المنحدرات والمحيط ويحتوي على ممشى زجاجي قريب (Skywalk)."
+   },
+   {
+    "name": "كهوف ساو فيسنتي (São Vicente Caves)",
+    "why": "كهوف بركانية تضم أنابيب الحمم وسياحة جيولوجية ممتعة للتعرّف على النشأة البركانية للجزيرة؛ زيارة الكهوف تمنح منظوراً مختلفاً عن التضاريس الخارجية."
+   },
+   {
+    "name": "حديقة مونتي بالاس (Monte Palace Tropical Garden)",
+    "why": "حدائق استوائية واسعة قرب فونشال تحتوي نباتات متنوعة ومناظر مريحة؛ مناسبة لنزهة هادئة بعيداً عن صخب المدينة."
+   },
+   {
+    "name": "جارديم أوركيديا (Jardim Orquídea)",
+    "why": "حديقة متخصصة في نبات الأوركيد تمنح فرصة لرؤية مجموعات نباتية نادرة ومناسبة لمحبي النباتات والتصوير."
+   },
+   {
+    "name": "كورال داس فريراس (Curral das Freiras)",
+    "why": "بلدة معزولة محاطة بمنحدرات شاهقة وقمم، تقدم تجربة للتعرف على حياة الجزيرة التقليدية والمناظر الجبلية الخلابة."
+   }
+  ],
+  "getting_around": "يمكن الوصول إلى ماديرا بطيران قصير من البر الرئيسي للبرتغال (حوالي ساعة ونصف) ومن أوروبا الوسطى بحوالي أربع ساعات. داخل الجزيرة يُنصح باستعمال السيارة للوصول إلى نقاط الانطلاق للمشات والمسارات الجبلية، وتتوفر أيضاً حافلات ومحطات نقل محلية تربط فونشال بالقرى والمواقع السياحية.",
+  "food": [
+   {
+    "name": "إسبيتادا (Espetada)",
+    "note": "شواء ماديرا التقليدي عبارة عن لحم مشوَى على أسياخ وهو من أطباق الجزيرة المعروفة."
+   },
+   {
+    "name": "بولو دي ميل (Bolo de Mel)",
+    "note": "كعكة العسل التقليدية المرتبطة بموسم عيد الميلاد في ماديرا."
+   },
+   {
+    "name": "نبيذ ماديرا",
+    "note": "نبيذ ماديرا متوفر في أصناف متنوعة ويمكن شراءه من السوبرماركت والمتاجر المتخصصة."
+   },
+   {
+    "name": "مأكولات بحرية محلية",
+    "note": "تتوفر في ماديرا خيارات من الأسماك والمأكولات البحرية الطازجة في مطاعم الساحل والموانئ."
+   },
+   {
+    "name": "منتجات محلية وتذكارات من العنب والنبيذ",
+    "note": "محلات الجزيرة تبيع زجاجات نبيذ ماديرا ومتعلقات متعلقة بالإنتاج المحلي كخيار للهديا."
+   }
+  ],
+  "budget_tips": [
+   "استفد من المشي على مسارات الليفادات المجانية بدلاً من الأنشطة المدفوعة للاستمتاع بالطبيعة.",
+   "اشترِ النبيذ والمنتجات المحلية من السوبرماركت أو المتاجر المتخصصة بدلاً من المتاجر السياحية لتوفير المال.",
+   "خطّط لزيارة خارج فترات الذروة حول رأس السنة وأيام العطل لتجنّب ارتفاع أسعار الإقامة.",
+   "استخدم الحافلات المحلية للمسافات القصيرة بدلاً من مواقف خاصة أو رحلات سياحية منظمة لتقليل النفقات."
+  ],
+  "safety": [
+   "المشي في الليفادات آمن عادةً، لكن ارتدِ أحذية مريحة ومناسبات للطبيعة وتحقّق من حالة الطقس قبل الانطلاق.",
+   "في المناطق الجبلية والمنحدرات مثل كابو جيراو احذر من القمم والمنحدرات وابقَ ضمن المسارات المحددة.",
+   "احترم القوانين المحلية والبيئة الطبيعية، ولا تترك نفايات في الغابات أو على الشواطئ.",
+   "في الأنشطة البحرية مثل مشاهدة الحيتان أو الغوص اتبع تعليمات شركات الجولات ومرشديها لسلامتك."
+  ],
+  "itinerary": [
+   "اليوم 1: استكشف فونشال والمناطق المحيطة—زيارة حدائق مونتي والحديقة الاستوائية، تجوال في المارينا ومشاهدة معالم المدينة، وتذوق إسبيتادا ونبيذ ماديرا في مطعم محلي.",
+   "اليوم 2: قم برحلة إلى الليفادات—اختر مساراً مسطحاً عبر قنوات المياه للاستمتاع بالمشي والمناظر، ثم تواصل إلى كابو جيراو لمشاهدة المنحدرات وممشى السماء القريب.",
+   "اليوم 3: توجه إلى المناطق الجبلية واطلع على بيكو دو أرييرو وبيكو رويڤو أو زر كورال داس فريراس؛ اختتم اليوم بجولة بحرية لمراقبة الدلافين والحيتان أو بجولة ساحلية."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام المثالية لزيارة ماديرا؟",
+    "a": "ثلاثة إلى خمسة أيام تكفي لتغطية المعالم الرئيسية: فونشال والحدائق، بعض الليفادات ومسارات المشي، وزيارات للقمم أو السواحل."
+   },
+   {
+    "q": "هل ماديرا مكلفة؟",
+    "a": "التكاليف تعتمد على نمط السفر؛ يمكن توفير المال بالمشي على الليمادات، تناول الطعام في أماكن محلية وشراء النبيذ من المتاجر بدلاً من المواقع السياحية."
+   },
+   {
+    "q": "هل ماديرا آمنة للسائحين؟",
+    "a": "بشكل عام ماديرا آمنة، لكن يجب اتخاذ الحيطة على المسارات الجبلية والمنحدرات واتباع تعليمات المرشدين في الأنشطة البحرية."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "فونشال تُعد قاعدة مريحة لقربها من المرافق والحدائق والموانئ وتسهيل الوصول إلى الجولات المحلية والمواصلات."
+   },
+   {
+    "q": "كيف أصل من البر الرئيسي للبرتغال إلى ماديرا؟",
+    "a": "يمكن الوصول جواً إلى ماديرا من البر الرئيسي للبرتغال؛ الرحلة تستغرق نحو ساعة ونصف حسب نقطة الانطلاق."
+   }
+  ]
+ }
+}

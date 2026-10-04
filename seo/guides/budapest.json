@@ -1,0 +1,227 @@
+{
+ "slug": "budapest",
+ "name": "Budapest",
+ "country": "Hungary",
+ "tags": [
+  "history",
+  "culture",
+  "nightlife",
+  "relax"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Budapest",
+ "en": {
+  "city_name": "Budapest",
+  "country_name": "Hungary",
+  "title": "Budapest travel guide: sights, food and tips",
+  "meta_description": "Practical travel guide to Budapest: top sights, thermal baths, food, getting around, budget tips and a 3-day itinerary.",
+  "h1": "Budapest travel guide: what to see, eat and know",
+  "intro": [
+   "Budapest is Hungary's capital, formed from two historic cities on opposite banks of the Danube: hilly Buda with its castle and flat Pest with grand 19th-century buildings. The city's riverside setting and varied architecture have earned it the nickname 'Paris of the East'.",
+   "Visitors find a youthful cultural scene, strong classical-music traditions, lively nightlife and a famous tradition of thermal baths. Most major sights cluster on Castle Hill, in downtown Pest and along the Danube riverfront, which are pleasant to explore on foot."
+  ],
+  "best_time": "Spring and early autumn are great for walking the city and enjoying outdoor cafés with mild weather and fewer crowds; summer brings the liveliest nightlife but also more visitors, while winter is atmospheric and offers ice-skating on the City Park lake and warm baths.",
+  "top_sights": [
+   {
+    "name": "Buda Castle (Royal Palace)",
+    "why": "The dominant historic site on Castle Hill housing the National Gallery and Budapest History Museum; allow time for the palace complex and the views across the Danube from nearby viewpoints."
+   },
+   {
+    "name": "Parliament Building",
+    "why": "A Neo-Gothic landmark on the Pest riverside that is impressive from both outside and inside; plan a visit to see its architecture and setting by the river."
+   },
+   {
+    "name": "Fisherman's Bastion and Matthias Church",
+    "why": "A dramatic terrace and a Neo‑Gothic church that crown Castle Hill, offering one of the best panoramic views over the Danube to Pest — visit at sunset for particularly photogenic vistas."
+   },
+   {
+    "name": "Gellért Hill / Citadella",
+    "why": "A prominent hill on the Buda side providing sweeping panoramas of the river and city; it's a popular spot for evening views and photography."
+   },
+   {
+    "name": "Széchenyi Spa and City Park (Városliget)",
+    "why": "The park is a family‑friendly green space with attractions like Vajdahunyad Castle and an adjacent thermal spa; in winter the lake becomes a large ice rink."
+   },
+   {
+    "name": "State Opera House and Andrássy Avenue",
+    "why": "Andrássy Avenue is a grand boulevard with historic buildings, embassies and cultural institutions including the ornate State Opera House; it's ideal for a cultured stroll or an evening performance."
+   },
+   {
+    "name": "Heroes' Square and Museum of Fine Arts",
+    "why": "A monumental square marking the end of Andrássy Avenue, paired with the Museum of Fine Arts, which houses a broad range of European art — combine them for a full cultural visit."
+   },
+   {
+    "name": "Dohány Street Synagogue and the Jewish Quarter",
+    "why": "The largest Jewish place of worship in the area and part of a historic quarter with museums and memorials; it's central to understanding Budapest's cultural history."
+   }
+  ],
+  "getting_around": "Budapest is compact enough that many central sights are reachable on foot; public transport includes metro lines and trams that connect key areas. From the airports and major train stations, use public transport or licensed taxis to reach the centre, and consider river boats for a scenic perspective on the Danube.",
+  "food": [
+   {
+    "name": "Gulyás (goulash soup)",
+    "note": "A hearty beef and potato soup flavoured with paprika; commonly served as a substantial starter or main."
+   },
+   {
+    "name": "Paprikás (chicken or veal)",
+    "note": "Meat simmered in a creamy paprika sauce, usually not spicy and served with noodles or dumplings."
+   },
+   {
+    "name": "Halászlé (fishermen's soup)",
+    "note": "A regional river fish soup that varies by preparation and is a local speciality along the Danube."
+   },
+   {
+    "name": "Kürtőskalács (chimney cake)",
+    "note": "A sweet, spit‑baked pastry coated in sugar and toppings — a popular street treat."
+   },
+   {
+    "name": "Somlói galuska and Gundel palacsinta",
+    "note": "Classic Hungarian desserts: a layered sponge with cream and chocolate, and a filled crepe with a rum‑raisin‑walnut filling respectively."
+   }
+  ],
+  "budget_tips": [
+   "Circle the sights you most want to see on a map and explore on foot to save on transport and get the best sense of the city.",
+   "Buy tickets for museums and attractions in advance where possible to avoid queues and ensure availability.",
+   "Eat away from the main tourist sites: neighbourhood cafés and markets offer good food at lower prices than riverside or Castle Hill restaurants.",
+   "Compare exchange rates at multiple bureaux or ATMs in the city centre rather than at tourist hotspots; the guide notes good bureaux near Deák Ferenc tér."
+  ],
+  "safety": [
+   "Watch your belongings in crowded areas and on public transport where pickpocketing can occur; keep valuables secure.",
+   "Confirm you receive Hungarian currency when given change from taxis, and check bills to avoid obsolete or foreign notes.",
+   "Be respectful at religious and memorial sites: dress appropriately and keep noise low inside churches and synagogues.",
+   "Ask locals for directions or advice when in doubt—residents are generally willing to help and can point out areas to avoid."
+  ],
+  "itinerary": [
+   "Day 1: Explore Buda — visit Buda Castle, Matthias Church and Fisherman's Bastion, then walk or take the funicular for views; finish with sunset at Gellért Hill.",
+   "Day 2: Discover Pest — tour the Parliament exterior and interior, visit St Stephen's Basilica, walk Andrássy Avenue to Heroes' Square and explore the Museum of Fine Arts or the State Opera House.",
+   "Day 3: Relax and roam — enjoy the thermal baths and City Park (Városliget), visit the Vajdahunyad Castle and the Budapest Zoo; in the evening wander the riverside or take a Danube cruise."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Budapest?",
+    "a": "Three full days lets you see the main highlights on both Buda and Pest, visit a museum or two and experience a thermal bath; a longer stay gives more time for relaxed exploration and day trips."
+   },
+   {
+    "q": "Is Budapest expensive?",
+    "a": "Budapest is generally cheaper than many Western European capitals; the guide notes moderate prices for meals and affordable local options, though upscale places are also available."
+   },
+   {
+    "q": "Is Budapest safe for tourists?",
+    "a": "Budapest is broadly safe for visitors, but standard precautions apply: watch for pickpockets in busy areas, secure valuables and be cautious when taking taxis or exchanging money."
+   },
+   {
+    "q": "What is the best area to stay in Budapest?",
+    "a": "Staying near the city centre or along the Danube is convenient for sightseeing, with easy access to Castle Hill in Buda and the historic streets and museums of Pest."
+   },
+   {
+    "q": "How do I get from the airport to the city centre?",
+    "a": "Use public transport or licensed taxis to reach the centre; major train stations and metro lines connect the city, and from terminals it's straightforward to continue by metro, tram or bus to central Budapest."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "بودابست",
+  "country_name": "المجر",
+  "title": "بودابست: دليل السفر — ما تراه وتفعل وتأكل",
+  "meta_description": "دليل لمدينة بودابست يشمل أهم المعالم على جانبي الدانوب، الحمامات الحرارية، المأكولات المحلية، نصائح لتوفير المال وخطة لثلاثة أيام.",
+  "h1": "دليل سفر بودابست: ماذا ترى وتفعل وتأكل",
+  "intro": [
+   "بودابست هي عاصمة المجر وتقع على ضفتي نهر الدانوب؛ تتسم بجو شبابي وحياة موسيقية وكذا حياة ليلية مزدهرة ومرافق استحمام حراري طبيعية تجعلها واحدة من أكثر مدن أوروبا متعة للزيارة. منظر المدينة الخلاب وعمارتها الأنيقة أكسباها لقب \"باريس الشرق\".",
+   "المدينة الحديثة نتجت عن اندماج مدينتين تاريخيتين تفصل بينهما مياه الدانوب: بودا على الضفة الغربية مع التلال وقصر بودا، وبيست على الضفة الشرقية المسطحة حيث يقع البرلمان وشوارع القرن التاسع عشر. كثير من مواقع المدينة مدرجة ضمن التراث العالمي لليونسكو بسبب ضفاف الدانوب وحي قلعة بودا وجادة أندراشي."
+  ],
+  "best_time": "أفضل الأوقات للزيارة هي فصلي الربيع والخريف عندما يكون الطقس مناسبًا للتجول والمدن أقل ازدحامًا مقارنة بصيف الذروة؛ ليلية المدينة خاصة عند ضفاف الدانوب تكون ذات طابع رومانسي. في الشتاء تتحول بعض الأماكن إلى مناظر ثلجية وهنا يجد الزوار متعة في التزلج على الجليد في حديقة المدينة.",
+  "top_sights": [
+   {
+    "name": "الدانوب (Danube)",
+    "why": "قلب المشهد الحضري في بودابست يمر عبره النهر ويمنح المدينة مناظر بانورامية مميزة؛ أنسب طريقة للاستمتاع به هي من نقاط تطل مثل حصن الصيادين أو تلة جيليرت أو من قارب على النهر، ونصيحة عملية: لا تتأخر لمشاهدة الأضواء الليلية للمدينة."
+   },
+   {
+    "name": "قصر بودا الملكي (Royal Palace / Buda Castle)",
+    "why": "هو المعلم الرئيس على تل بودا ويحتوي على معرض وطني ومتحف تاريخي يشرح تاريخ المدينة؛ احجز وقتًا لزيارة ساحات القصر وللاطلاع على المناظر المطلة على بيست."
+   },
+   {
+    "name": "كنيسة ماتياس (Matthias Church)",
+    "why": "كنيسة ذات طراز قوطي حديث تبرز بقبابها المزخرفة وهي نقطة محورية في أفق بودا، وقريبة من قدرات مشاهدة بانورامية مهمة على نهر الدانوب."
+   },
+   {
+    "name": "حصن الصيادين (Fisherman's Bastion)",
+    "why": "تراسات مطلة تسمح برؤية رائعة عبر الدانوب إلى بيست؛ مكان مثالي للصور، ويفضل الزيارة قبيل الغروب للاستفادة من ضوء المساء."
+   },
+   {
+    "name": "جسر السلاسل (Chain Bridge / Széchenyi Lánchíd)",
+    "why": "الجسر الأكثر شهرة في المدينة ويعرف بشكله المعلق المميز؛ المرور عليه سيرًا أو مشاهدته من الضفة يعطي إحساسًا بحيوية نهر الدانوب."
+   },
+   {
+    "name": "البرلمان (Parliament / Országház)",
+    "why": "مبنى نيوسقوطي ضخم على ضفة النهر ويعد من أبرز معالم بيست؛ يوصى بدخول المبنى للتعرّف على تاريخه ومعروضاته إن أمكن."
+   },
+   {
+    "name": "كاتدرائية القديس ستيفن (St Stephen's Basilica)",
+    "why": "الكنيسة الرئيسية في بودابست ومثال مهم على العمارة النيوكلاسيكية؛ تستحق زيارة داخلها والسير في الساحات المحيطة."
+   },
+   {
+    "name": "الدار الأوبرا (State Opera House / Opera)",
+    "why": "دار أوبرا جميلة تاريخيًا وتعد من أجمل دور الأوبرا في العالم؛ تجربة حضور عرض أو حتى جولة قصيرة داخله تضيف بعدًا ثقافيًا للزيارة."
+   }
+  ],
+  "getting_around": "النقل داخل المدينة يشمل مترو أنفاق ذكر منها خط M3، وخط ترام رئيسي مثل الترام 2 على الضفة الجنوبية، وهناك رحلات بالقوارب السياحية ومصاعد مثل التلفريك إلى قصر بودا. استئجار دراجة خيار شائع وموفر للحركة داخل المدينة، كما توجد خدمات رحلات بالقارب لتجربة مشاهدة المعالم من النهر.",
+  "food": [
+   {
+    "name": "جولياس (Gulyás) — حساء الغولاش",
+    "note": "حساء لحم غني بالبطاطا والبابريكا يُقدَّم كطبق رئيسي أو فاتح شهية."
+   },
+   {
+    "name": "بابريكاش (Paprikás) — لحم في صلصة البابريكا",
+    "note": "طبق لحم دجاج أو عجل مع صلصة كريمية وبابريكا غير حارة عادةً."
+   },
+   {
+    "name": "بروشولت (Pörkölt) — يخنة اللحم",
+    "note": "يخنة لحم مع بصل وبابريكا تشبه ما يُسمى غولاش في الخارج."
+   },
+   {
+    "name": "كورتوشكالاش (Kürtőskalács) — كعكة المدخنة",
+    "note": "معجنات حلزونية تُطهى على سيخ وتُغطى بالسكر أو القرفة وتُؤكل ساخنة."
+   },
+   {
+    "name": "سوملوي جالوسكا وغندل بانكايك",
+    "note": "حلويات نمطية مثل سوملوي جالوسكا ولفائف غندل ذات نكهات جوزية وشوكولاتة يجب تذوقها."
+   }
+  ],
+  "budget_tips": [
+   "استقل الترام والمترو عند الممكن بدلاً من الجولات المنظمة للتقليل من المصاريف.",
+   "تجنّب المطاعم الواقعة مباشرة عند المعالم السياحية وابحث عن مقاهٍ ومطاعم صغيرة في الشوارع الجانبية لتقليل التكاليف.",
+   "استأجر دراجة لنصف يوم لاستكشاف مساحات كبيرة مثل ضفاف الدانوب وجزيرة مارغريت بدلاً من عدة رحلات بالتاكسي.",
+   "استعلم عن محلات صرف العملة بالقرب من محطة ميترو ديك فيرناتش وأقرب مكاتب تبادل عملات في وسط المدينة للحصول على معدلات جيدة."
+  ],
+  "safety": [
+   "انتبه للمال عند استلام الباقي من التاكسي—تأكد من أن العملة مجرية حقيقية لأن حالات تسليم نقود قديمة سُجلت.",
+   "احفظ أغراضك الشخصية في الأماكن المزدحمة خاصة حول المعالم الكبرى ووسائل النقل العام.",
+   "السكان المحليون ودودون، ولا تتردد في سؤالهم عن الاتجاهات أو التوصيات لكن تجنب النقاشات السياسية الحادة في الأماكن العامة."
+  ],
+  "itinerary": [
+   "اليوم الأول: ابدأ بجولة في بيست تزور مبنى البرلمان وكاتدرائية القديس ستيفن ثم تجول في الحي اليهودي وزر معبد الدهاني لتتعرف على تاريخ المنطقة، وأنهِ اليوم بنزهة على ضفاف الدانوب عند الغروب.",
+   "اليوم الثاني: انتقل إلى بودا لصعود التلفريك إلى قصر بودا، زور كنيسة ماتياس وحصن الصيادين وتمشَّ على التلال للاستمتاع بمناظر المدينة من الأعلى.",
+   "اليوم الثالث: امضِ الصباح في جولة بالدراجة أو سيرًا إلى جزيرة مارغريت ثم توجه إلى جادة أندراشي لزيارة دار الأوبرا وميدان الأبطال، وأنهِ اليوم بزيارة أحد الحمامات الحرارية أو برحلة نهرية ليلية."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام التي أحتاجها لزيارة بودابست؟",
+    "a": "ثلاثة أيام كافية لرؤية أبرز معالم بيست وبودا والاستمتاع ببعض الأنشطة مثل جولة بالدراجة أو رحلة نهرية، بينما زيارات أطول تمنحك وقتًا أهدأ للاستكشاف والتجارب الثقافية."
+   },
+   {
+    "q": "هل بودابست مدينة مكلفة للسائح؟",
+    "a": "بالمقارنة مع غرب أوروبا تعتبر بودابست أقل تكلفة؛ يوجد طيف واسع من الخيارات من مطاعم اقتصادية إلى أماكن فاخرة، ويمكن التحكم بالميزانية عبر اختيار وسائل النقل العامة والمطاعم خارج المناطق السياحية."
+   },
+   {
+    "q": "هل بودابست آمنة للسياح؟",
+    "a": "بصفة عامة المدينة آمنة لكن مثل أي مدينة سياحية يجب الحذر من النشّالين في المناطق المزدحمة والتأكد من صحة النقود عند استلام الباقي من التاكسي."
+   },
+   {
+    "q": "ما أفضل منطقة للإقامة؟",
+    "a": "المركز القديم في بيست (Belváros) ملائم للوصول إلى معظم المعالم والمواصلات، بينما الإقامة في بودا خيار هادئ مع مناظر جيدة على المدينة."
+   },
+   {
+    "q": "كيف أصل إلى وسط المدينة؟",
+    "a": "تتوفر وسائل نقل عامة متعددة داخل المدينة بما في ذلك المترو والترام، كما يمكن استخدام القوارب السياحية لاستكشاف المعالم من النهر، والاستئجار المؤقت للدراجات طريقة مرنة للتنقل."
+   }
+  ]
+ }
+}

@@ -1,0 +1,225 @@
+{
+ "slug": "stockholm",
+ "name": "Stockholm",
+ "country": "Sweden",
+ "tags": [
+  "culture",
+  "history"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Stockholm",
+ "en": {
+  "city_name": "Stockholm",
+  "country_name": "Sweden",
+  "title": "Stockholm travel guide: sights, food and practical tips",
+  "meta_description": "Practical Stockholm travel guide: top sights (Gamla Stan, Vasa, Drottningholm), food, budget tips, 3-day itinerary and transport advice.",
+  "h1": "Stockholm travel guide: what to see, eat and know",
+  "intro": [
+   "Stockholm is Sweden's capital and largest city, spread across 14 islands where Lake Mälaren meets the brackish Baltic Sea. Much of the city is water or green space, and it hosts around 70 museums and the annual Nobel Prize ceremony.",
+   "The city is the main rail and bus hub for Sweden and sits near two of the country's busiest airports, making it a convenient base for exploring the rest of the country and the vast Stockholm archipelago of islands, islets and skerries."
+  ],
+  "best_time": "Summer is the most popular time to visit for mild weather, long daylight and boat trips around the islands, but expect more crowds. Shoulder seasons offer cooler weather with fewer tourists and still many attractions open. Stockholm's waterways and parks are enjoyable outside winter if you prefer quieter visits.",
+  "top_sights": [
+   {
+    "name": "Gamla Stan (Old Town) and Stockholm Palace",
+    "why": "The well-preserved medieval centre is best explored on foot and is dominated by the royal palace; wander narrow streets and visit nearby historic churches. Practical tip: allow time to move between attractions on foot rather than by car."
+   },
+   {
+    "name": "Storkyrkan (Stockholm Cathedral)",
+    "why": "A historic cathedral used for coronations, weddings and funerals, offering insight into Sweden's religious and royal traditions. Tip: combine a visit with a stroll around Gamla Stan."
+   },
+   {
+    "name": "Riddarholmskyrkan",
+    "why": "A medieval church notable for royal tombs and well-preserved architecture, set among former mansions on a small island adjacent to Gamla Stan. Tip: good for history enthusiasts and photography of old stonework."
+   },
+   {
+    "name": "Drottningholm Palace",
+    "why": "A royal palace on Ekerö and the residence of the royal family with extensive grounds worth exploring; boats run from the City Hall quay in summer. Tip: take a summer boat from Stadshuskajen for a scenic trip to the palace."
+   },
+   {
+    "name": "Vasa Museum",
+    "why": "Home to the 17th-century warship Vasa, salvaged from Stockholm harbour and displayed with objects from the era, this museum illuminates Sweden's maritime history. Tip: Djurgården hosts several major museums, so plan enough time for more than one."
+   },
+   {
+    "name": "Skansen (open-air museum and zoo)",
+    "why": "An open-air museum showcasing Swedish cultural heritage and native fauna with historic buildings and a 19th-century tower that offers views. Tip: combine Skansen with nearby museums on Djurgården for a full day."
+   },
+   {
+    "name": "Skogskyrkogården (The Woodland Cemetery)",
+    "why": "A UNESCO World Heritage site in Söderort notable as a 20th-century landscape and cemetery design. Tip: it's a calm place for reflective walks away from the central tourist areas."
+   },
+   {
+    "name": "Avicii Arena (the Globe) and Stockholm City Hall tower",
+    "why": "The Globe is a distinctive spherical arena and a focal point for the Sweden Solar System scale model, while City Hall's tower offers well-known city views and hosts the Nobel banquet hall. Tip: check for events and combine a tower visit with nearby attractions."
+   }
+  ],
+  "getting_around": "Stockholm is the country's main rail and bus hub and is served by two of Sweden's busiest airports nearby, so it's easy to arrive and travel onward. Inside the city, many central sights are best reached on foot, by boat or via public transit; boat services connect the inner-city quays to islands like Djurgården and Drottningholm in summer.",
+  "food": [
+   {
+    "name": "Dagens rätt (lunch offers)",
+    "note": "Many restaurants serve a fixed-price lunch on weekdays, typically including bread, salad and coffee, and these offers are often a good value option in the centre."
+   },
+   {
+    "name": "Julbord (Christmas buffet)",
+    "note": "A seasonal festive buffet of traditional Swedish dishes such as ham and pickled herring; common in December and usually requires booking in advance."
+   },
+   {
+    "name": "Husmanskost (traditional Swedish dishes)",
+    "note": "Classic everyday Swedish cooking can be found in some restaurants and food wagons, offering traditional flavours like fried herring in historic spots such as Kornhamnstorg."
+   },
+   {
+    "name": "Seafood",
+    "note": "Large supermarkets and restaurants offer a wide selection of fresh local seafood reflective of Stockholm's maritime setting."
+   },
+   {
+    "name": "Vegetarian and vegan options",
+    "note": "Stockholm has a strong vegetarian and vegan community; many Indian, Thai and Vietnamese restaurants also offer plant-based choices."
+   }
+  ],
+  "budget_tips": [
+   "Use weekday lunch offers (dagens rätt) to get a full meal at lower cost compared with dinner prices.",
+   "Buy groceries and self-cater when possible—supermarkets have a good range of fresh food and are a cheaper option than dining out.",
+   "Many museums had free entrance as of 2016; check current museum admission policies to find which are free or reduced.",
+   "Explore parks, viewpoints and historic districts like Gamla Stan on foot—many top sights can be enjoyed without paid entry."
+  ],
+  "safety": [
+   "Stockholm is generally a safe and calm city, but follow normal urban precautions and be aware of your surroundings.",
+   "Drones are prohibited above Gamla Stan, Norrmalm, and parts of Östermalm and Kungsholmen; Södermalm and Djurgården are recommended for drone flying.",
+   "Many restaurants' kitchens close around 22:00, so plan evening activities and transport accordingly to avoid being stranded."
+  ],
+  "itinerary": [
+   "Day 1: Explore Gamla Stan on foot—visit the Stockholm Palace, Storkyrkan and Riddarholmskyrkan, then walk to viewpoints nearby and finish with a riverside stroll.",
+   "Day 2: Spend a full day on Djurgården visiting the Vasa Museum, Skansen and Nordiska Museet; include time for other museums or a relaxed park picnic.",
+   "Day 3: Head to Södermalm for elevated views from Fjällgatan and Fåfängan, visit Fotografiska and sample neighbourhood cafés; if the season allows, take a summer boat trip to Drottningholm or out into the archipelago."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Stockholm?",
+    "a": "Three days gives you time to see central highlights—Gamla Stan, a day on Djurgården for museums, and time for Södermalm viewpoints and neighbourhoods. Add more days to visit islands in the archipelago or nearby historic sites."
+   },
+   {
+    "q": "Is Stockholm expensive to visit?",
+    "a": "Stockholm can be pricey for sit-down dinners, though weekday lunch offers and supermarkets make food more affordable. Accommodation and fine dining tend to be the costliest items."
+   },
+   {
+    "q": "Is Stockholm safe for tourists?",
+    "a": "Stockholm is generally safe and calm; usual city precautions apply. Be aware of local rules such as drone restrictions over central districts."
+   },
+   {
+    "q": "What is the best area to stay in Stockholm?",
+    "a": "Most attractions are in the inner city islands and districts like Gamla Stan, Norrmalm and Östermalm, which are convenient for first-time visitors; many residents live in suburbs if you prefer quieter or budget accommodation."
+   },
+   {
+    "q": "How do I get from the airport to the city centre?",
+    "a": "Stockholm is served by two of the country's busiest airports nearby, and the city is a hub for rail and bus traffic; a range of onward rail, bus and boat connections link the airports with the city and wider region."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "ستوكهولم (Stockholm)",
+  "country_name": "السويد",
+  "title": "دليل سفر ستوكهولم: ماذا ترى وتذوق وتخطط",
+  "meta_description": "دليل ستوكهولم يقدم أهم المعالم، متاحف، أطعمة محلية، نصائح لتوفير المال وخطة 3 أيام لتجربة المدينة والجزر المحيطة.",
+  "h1": "دليل ستوكهولم: ما الذي تراه وتذوقه وتعرفه",
+  "intro": [
+   "ستوكهولم هي عاصمة السويد وأكبر مدنها، وتقع على 14 جزيرة عند التقاء بحيرة مالمارن مع بحر البلطيق، وتضم منطقة العاصمة أكثر من مليوني نسمة. المدينة محاطة بأرخبيل ضخم من الجزر الصغيرة والجيوب الصخرية، وتشتهر بكثرة المناطق الخضراء والمسطحات المائية وجودة الهواء والمياه.",
+   "ستوكهولم مركز النقل الرئيسي في السويد مع مطارين رئيسيين ومحطات قطار وحافلات تربطها بباقي البلاد، وتحتوي على نحو 70 متحفاً وتستضيف احتفالات جوائز نوبل منذ 1901، مما يجعلها نقطة انطلاق ممتازة لاكتشاف السويد وتاريخها الثقافي."
+  ],
+  "best_time": "فصل الصيف مناسب لرحلات القوارب وزيارات القصور والحدائق والخروج للمشاهد المفتوحة، كما تنتشر خدمات القوارب الموسمية إلى جزُر مثل دروتنينغهولم وبِركا. الربيع والخريف يمنحان طقساً لطيفاً وعدداً أقل من السائحين، والشتاء بارد لكنه مناسب للأنشطة الداخلية والمتاحف.",
+  "top_sights": [
+   {
+    "name": "البلدة القديمة (Gamla Stan) وقصر ستوكهولم",
+    "why": "قلب المدينة التاريخي مع شوارع مرصوفة ومباني من العصور الوسطى وقصر ستوكهولم؛ أفضل طريقة للاستكشاف هي سيراً على الأقدام، وتحقق من مواعيد دخول القصر قبل الزيارة."
+   },
+   {
+    "name": "متحف فاسا (Vasa Museum)",
+    "why": "يعرض السفينة الحربية فاسا من القرن السابع عشر التي غرقت ورفعت لاحقاً، وهو عرض فريد لتاريخ الإمبراطورية السويدية؛ يوجَّه بزيارة منظمة داخل الجزيرة الدجورغاردن."
+   },
+   {
+    "name": "سكانسن (Skansen)",
+    "why": "متحف مفتوح وحديقة حيوانات تُعرض فيها التراث السويدي ومبانٍ معاد بناؤها من القرن التاسع عشر وما قبله؛ مفيد للعائلات ويحوي برج Bredablick لإطلالات على المنطقة."
+   },
+   {
+    "name": "قصر دروتنينغهولم (Drottningholm Palace)",
+    "why": "قصر ملكي تقيم فيه العائلة المالكة ويُفتح جزء منه للزوار، ويستحق التجول في الحدائق المحيطة؛ في الصيف توجد خدمة قوارب منتظمة من رصيف البلدية (Stadshuskajen)."
+   },
+   {
+    "name": "بلدية ستوكهولم وبرج المراقبة (Stockholms stadshus)",
+    "why": "مبنى بارز يُعرف بقاعة الحفل الخاصة بجوائز نوبل وبرج بارز للإطلالات؛ مناسب لتصوير المدينة ومكان مركزي للجولات."
+   },
+   {
+    "name": "مقبرة الغابة (Skogskyrkogården)",
+    "why": "موقع تراث عالمي لليونسكو يعود للقرن العشرين ويقدّم تصميماً وبيئة هادئة تستحق الزيارة للتاريخ والفن المعماري؛ ارتدِ ملابس مناسبة لاحترام المكان."
+   },
+   {
+    "name": "الصُحْفة (Avicii Arena / Globen)",
+    "why": "مبنى كروي أبيض يستعمل للمباريات والحفلات ويشكّل مركز نظام نموذج المجموعة الشمسية الذي يعرض نماذج للكواكب في مواقع متفرقة بالمدينة، وتتوفر زيارة Skyview إلى قمة القبة (تتوفر معلومات سعرية في بعض المصادر)."
+   },
+   {
+    "name": "مرتفعات سوديرمالم (Fjällgatan وFåfängan) ومنصات المطاعم",
+    "why": "مناظر بانورامية للمدينة القديمة والمسطحات المائية؛ اختَر مطبخاً أو باراً مع إطلالة مثل Gondolen أو Herman's لمشاهدة الأفق أثناء الغروب."
+   }
+  ],
+  "getting_around": "ستوكهولم مركز شبكة السكك الحديدية والحافلات في السويد، وتتوفر رحلات داخلية إلى المدن والمطارات الرئيسيين؛ داخل المدينة يُنصح بالاعتماد على وسائل النقل العام والمشي والقوارب للانتقال بين الجزر. خدمة القوارب الموسمية والرحلات المنظمة تصل إلى مواقع مثل دروتنينغهولم وبيوركٌيْو.",
+  "food": [
+   {
+    "name": "Dagens rätt (طبق الغداء اليومي)",
+    "note": "عرض غداء شائع أيام الأسبوع يتضمن عادة مشروباً وسلطة وخبز وقهوة، وهو خيار اقتصادي لتناول وجبة في ساعات الظهيرة."
+   },
+   {
+    "name": "Julbord (بوفيه عيد الميلاد السويدي)",
+    "note": "بوفيه موسمي في ديسمبر يقدم أطباق عيد الميلاد التقليدية مثل لحم الخنزير المملح والرنجة المخللة، وهو تجربة تقليدية تستلزم الحجز مسبقاً."
+   },
+   {
+    "name": "Nystekt strömming (الرنجة المقلية الطازجة)",
+    "note": "وجبة تقليدية متاحة في عربات طعام ومواقع مثل Kornhamnstorg في البلدة القديمة، تمثل نكهة محلية بسيطة."
+   },
+   {
+    "name": "المأكولات البحرية الطازجة",
+    "note": "السوبرماركت والمطاعم في ستوكهولم توفر خيارات واسعة من الأسماك والمأكولات البحرية الطازجة، مما يعكس التراث البحري للمدينة."
+   },
+   {
+    "name": "خيارات نباتية/نباتية صارمة",
+    "note": "المدينة تضم مشهد طعام نباتي قوياً، كما أن المطاعم الهندية والتايلاندية والفيتنامية تقدم بدائل نباتية جيدة."
+   }
+  ],
+  "budget_tips": [
+   "ابحث عن عروض dagens rätt في وقت الغداء للحصول على وجبة كاملة بسعر أدنى من العشاء.",
+   "فكر في الطهي الذاتي أو السوبرماركت لتقليل نفقات الوجبات إذا كنت على ميزانية ضيقة.",
+   "تحقق من المتاحف التي تقدم دخولاً مجانياً أو عروضاً خاصة (ذكر أن عدداً منها كان مجانيًا في 2016).",
+   "استخدم البطاقات المصرفية الشائعة: ستوكهولم مدينة معتمدة على الدفع بالبطاقات، مما يسهل التسوق دون حمل نقد كبير."
+  ],
+  "safety": [
+   "ستوكهولم عامة آمنة وهادئة، مع نصيحة الاعتياد على الحذر العادي في الأماكن المزدحمة مثل أي عاصمة.",
+   "ممنوع التدخين في جميع الأماكن المغلقة بما في ذلك المطاعم والبارات، فأحضر بدائل إن لزم الأمر.",
+   "حظر طائرات الدرون مطبق فوق أجزاء من البلدة القديمة ونورمالم وقطاعات من أوسترمالم وكنغشولمن؛ تأكد من مواقع الطيران المسموح بها قبل الإقلاع.",
+   "احترم الأماكن الدينية والمواقع التذكارية بالمظهر والسلوك الهادئ، خصوصاً في المقابر والكنائس والقصور الملكية."
+  ],
+  "itinerary": [
+   "اليوم الأول: تجوّل في البلدة القديمة (Gamla Stan) وزُرّ قصر ستوكهولم وكاتدرائية Storkyrkan، ثم قم بجولة بالقارب حول الممرات المائية أو جولة \"تحت جسور ستوكهولم\" لمشاهدة المدينة من الماء.",
+   "اليوم الثاني: خصّصه لجزيرة دجورغاردن لزيارة متحف فاسا وسكانسن ومتحف نورديشكا أو متحف ABBA إذا رغبت، وخذ وقتاً للتنزه في الحدائق والمتنزهات.",
+   "اليوم الثالث: استكشف مناطق سوديرمالم ومرتفعات Fjällgatan وFåfängan للمناظر، ثم قم بجولة في مترو ستوكهولم لرؤية الفن العام، وأنهِ اليوم برحلة إلى قصر دروتنينغهولم إذا كانت خدمة القوارب تعمل صيفاً."
+  ],
+  "faq": [
+   {
+    "q": "كم يوم أحتاج في ستوكهولم؟",
+    "a": "ثلاثة أيام كافية لتغطية أبرز معالم البلدة القديمة ودجورغاردن وبعض المتاحف والمناظر، مع المزيد من الأيام لرحلات إلى الأرخبيل أو زيارة متاحف إضافية."
+   },
+   {
+    "q": "هل ستوكهولم مدينة مكلفة؟",
+    "a": "التكاليف متغيرة: توجد خيارات باهظة في المطاعم الراقية، لكن يمكن التوفير عبر عروض الغداء (dagens rätt)، والطبخ الذاتي، وزيارات المتاحف المجانية أو الخصومات."
+   },
+   {
+    "q": "هل ستوكهولم آمنة للسائحين؟",
+    "a": "نعم، المدينة عامة آمنة وهادئة؛ مع ذلك اتبع الاحتياطات العادية في الأماكن السياحية واحترم القوانين المحلية مثل حظر التدخين ومناطق حظر الدرون."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "المعالم الرئيسية مركزة في البلدة القديمة والمناطق المحيطة بها (نورمالم، أوسترمالم، سوديرمالم)، وكل منها يوفّر وصولاً سهلاً إلى المتاحف والقطارات والقوارب."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط المدينة؟",
+    "a": "ستوكهولم مركز رئيسي للقطارات والحافلات مع مطارين رئيسيين، والمدينة موصولة جيداً بوسائل النقل العام والقِوى الأرضية والبحرية؛ تحقق من خيارات القطار والحافلات والتاكسي المتاحة من مطار الوصول."
+   }
+  ]
+ }
+}

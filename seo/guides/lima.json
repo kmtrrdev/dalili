@@ -1,0 +1,224 @@
+{
+ "slug": "lima",
+ "name": "Lima",
+ "country": "Peru",
+ "tags": [
+  "food",
+  "culture"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Lima",
+ "en": {
+  "city_name": "Lima",
+  "country_name": "Peru",
+  "title": "Lima travel guide: sights, food, budget & 3-day plan",
+  "meta_description": "Practical Lima travel guide with top sights, best food to try, money-saving tips and a 3-day itinerary for first-time visitors.",
+  "h1": "Lima travel guide: what to see, eat and know",
+  "intro": [
+   "Lima is Peru's capital and largest city, founded in 1535 by Francisco Pizarro. The modern metropolis mixes colonial architecture and important museums with extensive more recent urban growth and large peripheral settlements.",
+   "The city is the best place to sample Peruvian cuisine, drawing on ingredients from the coast, the Andes and the Amazon; the cold Pacific current keeps local seafood especially rich and fresh."
+  ],
+  "best_time": "Choose months with milder skies and less coastal fog if you want clearer views and more outdoor time; Lima's climate is shaped by the cold Humboldt current so the coast can be cool and overcast even outside winter. Peak tourist periods bring larger crowds in popular districts like Miraflores and Barranco.",
+  "top_sights": [
+   {
+    "name": "Historic downtown (Centro Histórico)",
+    "why": "A UNESCO World Heritage area with colonial churches, monasteries and plazas that show Lima's role as the seat of Spanish rule; plan time to walk the main square and explore the cathedral and nearby religious buildings."
+   },
+   {
+    "name": "Museo Larco",
+    "why": "A major museum that presents Peru's pre-Columbian cultures and archaeological collections, useful for understanding Lima's long human history; check the museum's visitor information before you go."
+   },
+   {
+    "name": "Huaca Pucllana",
+    "why": "A pre-Inca pyramid and archaeological site in Miraflores dating to the Lima culture (around 500 AD); guided tours are required and the site is closed on Tuesdays and Sundays, with specified opening hours and an entrance fee noted in the guide."
+   },
+   {
+    "name": "Parque Kennedy",
+    "why": "A central park in Miraflores at the heart of an entertainment and dining district and known for its resident cats; it's a convenient meeting point for restaurants, markets and nightlife."
+   },
+   {
+    "name": "Circuito Mágico del Agua (Parque de la Reserva)",
+    "why": "A large fountain and light display popular with visitors for evening visits; allow time for the full fountain show and nearby park areas."
+   },
+   {
+    "name": "Parque del Amor and the Costa Verde",
+    "why": "Miraflores' romantic park overlooking the ocean and the long stretch of green coastline known as the Costa Verde offer scenic sea views and access to coastal walks and beaches."
+   },
+   {
+    "name": "Barranco district",
+    "why": "A tourist-friendly neighborhood with art, nightlife and the Museo Pedro de Osma; it's a good area to explore galleries, cafes and coastal vistas."
+   },
+   {
+    "name": "Pueblo Libre and its museums",
+    "why": "A district with historical sites including museums such as the Museo Rafael Larco and the national archaeology museum, offering context on Peruvian civilizations and colonial-era landmarks."
+   }
+  ],
+  "getting_around": "Mirabus and themed bus or road-train tours operate around the main tourist areas and can be convenient for sight-seeing. Within the city, districts like Miraflores, Barranco and Centro are walkable in parts, while taxis, ride-hailing apps and local buses cover longer distances; arrange reliable airport and long-distance transfers through known providers or your accommodation.",
+  "food": [
+   {
+    "name": "Ceviche",
+    "note": "Peru's signature seafood dish and a must-try in Lima; cevicherías are common across neighborhoods."
+   },
+   {
+    "name": "Chifa (Peruvian Chinese food)",
+    "note": "Widespread, down-to-earth Chinese-Peruvian restaurants offering seafood and chicken dishes with local twists."
+   },
+   {
+    "name": "Peruvian-Japanese cuisine",
+    "note": "More upscale restaurants blending Japanese technique with abundant local seafood, reflecting Lima's strong nikkei tradition."
+   },
+   {
+    "name": "Street and market snacks",
+    "note": "Try regional specialities and sandwiches from local stalls and markets for an affordable taste of everyday Peruvian food."
+   },
+   {
+    "name": "Peruvian-style burgers and fast food",
+    "note": "Local chains and international fast-food outlets are common, with some Peruvian takes on burgers and sandwiches found in areas like Miraflores."
+   }
+  ],
+  "budget_tips": [
+   "Change euros or U.S. dollars rather than smaller regional currencies; many exchange desks and banks are limited in what they accept.",
+   "When using street money changers (cambistas), only deal with those wearing the official vest uniform, compare rates and ask clearly for the 'tipo de cambio'.",
+   "Use public or shared transport for short trips and reserve taxis or ride-hailing services for late-night or long rides for safety and convenience.",
+   "Choose neighborhood eateries and market stalls for authentic meals at lower cost than upscale restaurants; cevicherías and chifas can be good value."
+  ],
+  "safety": [
+   "Be aware that Lima is a very large city with significant economic inequality and extensive peripheral settlements; take common-sense precautions in crowded areas and at night.",
+   "Use official, marked cambistas if changing cash on the street and avoid isolated ATMs or showing large amounts of money in public.",
+   "Keep valuables secure and use licensed taxis or ride-hailing apps rather than hailing unknown cars off the street, especially after dark."
+  ],
+  "itinerary": [
+   "Day 1: Explore Lima's historic downtown—visit the main square, the cathedral and San Francisco area—then join an evening visit to the Circuito Mágico del Agua for the fountain and light show.",
+   "Day 2: Spend the day in Miraflores and Barranco: walk Parque Kennedy and Parque del Amor, visit Huaca Pucllana with a guided tour, and wander coastal paths on the Costa Verde; consider a food tour or ceviche lunch.",
+   "Day 3: Visit museums and cultural sites in Pueblo Libre and Barranco such as the Museo Larco and Museo Pedro de Osma, or take a half-day excursion to Pachacamac and nearby heritage attractions."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Lima?",
+    "a": "Two to four days gives you time to see the historic centre, visit Miraflores and Barranco, sample the city's cuisine and visit a few museums or nearby archaeological sites."
+   },
+   {
+    "q": "Is Lima expensive to visit?",
+    "a": "Costs vary widely depending on where you eat and stay; upscale restaurants and some Japanese venues are pricier, while market food, chifas and neighborhood eateries offer good value."
+   },
+   {
+    "q": "Is Lima safe for tourists?",
+    "a": "Many visitors travel safely, but Lima is a large city with areas of poverty and informal settlements; take normal urban precautions, avoid poorly lit or deserted areas at night and use licensed transport."
+   },
+   {
+    "q": "Which neighbourhood is best to stay in?",
+    "a": "Tourist-friendly districts include Miraflores and Barranco for dining, nightlife and coastal views, while Centro is convenient for historic sites and museums."
+   },
+   {
+    "q": "How do I get from the airport to the city?",
+    "a": "Airport transfers are best arranged through reliable transport providers, your hotel or a ride-hailing app; public buses and unofficial shuttles are available but check safety and schedules in advance."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "ليما",
+  "country_name": "بيرو",
+  "title": "ليما: دليل السفر إلى العاصمة بيرو",
+  "meta_description": "دليل عملي لليما: أهم المعالم، أين تأكل أفضل سيفيتشي، نصائح توفير، وخطة 3 أيام لزيارة المدينة ومحيطها.",
+  "h1": "دليل ليما: ما الذي تراه وتأكله وتحتاج معرفته",
+  "intro": [
+   "ليما هي عاصمة بيرو وأكبر مدنها، تأسست عام 1535 على يد الفاتح الإسباني فرانسيسكو بيزارّو. المدينة تجمع بين مركز تاريخي استعماري غني بالأديرة والكنائس ومناطق حضرية حديثة ومناطق عريضة من الأحياء الفقيرة والهادف إليها الباحثون عن عمل.",
+   "ليما تُعد أفضل مكان لتجربة المطبخ البيروفي بفضل تنوع مكوناته من الساحل والجبال والأمازون، وتستفيد من تيار بحري بارد يجعل السواحل غنية بالأسماك والمأكولات البحرية."
+  ],
+  "best_time": "لا توجد معلومات مفصّلة عن المواسم في النص المتاح، لكن يُنصح بالابتعاد عن مواسم ازدحام العطل المحلية إذا رغبت بتجربة أهدأ. اختَر أوقات زيارة تتيح الاستمتاع بالشواطئ في كوستا فيردي والمشي في الأحياء السياحية مثل ميرا فلوريس وبارانكو.",
+  "top_sights": [
+   {
+    "name": "الوسط التاريخي (Historic Centre)",
+    "why": "مركز مدينـي مصنّف ضمن مواقع التراث العالمي لليونسكو، يحتوي على عمارة استعماريـة رائعة وكنائس ودور عبادة؛ من الأفضل استكشافه سيرًا مع مرشد للتعرف على التاريخ."
+   },
+   {
+    "name": "متحف لاركو (Museo Larco)",
+    "why": "متحف بارز يروي تاريخ حضارات الساحل والجبال في بيرو ويعرض مجموعات أثرية مهمة؛ زيارتـه مفيدة لفهم ما قبل الحقبة الإسبانية."
+   },
+   {
+    "name": "هوكا بوكليانا (Huaca Pucllana)",
+    "why": "موقع أثري قبل إنكاوي من ثقافة ليما يقع في ميرا فلوريس؛ يستحق الزيارة لروعة البقايا الأثرية، ويُذكر أنه مُفتوح معظم أيام الأسبوع باستثناء الثلاثاء والأحد، ويتطلب جولة مرشدة."
+   },
+   {
+    "name": "باركيو كنيدي (Parque Kennedy)",
+    "why": "ساحة مركزية في ميرا فلوريس تشتهر بحياة الترفيه والأسواق الصغيرة والمقاهي، ومكان جيد لتجربة المأكولات المحلية ولقاءات ثقافية."
+   },
+   {
+    "name": "كريستو ماريو (Circuito Mágico del Agua)",
+    "why": "عرض نوافير ومؤثرات ضوئية في حديقة ريزيزرفا وفيرمين تانجيز، تجربة مسائية ممتعة خاصة للعائلات وزوار المدينة."
+   },
+   {
+    "name": "كوستا فيردي (Costa Verde)",
+    "why": "امتداد ساحلي أخضر من سان ميغيل إلى تشوريّيوس يوفر مناظر بحرية جيدة وأنشطة على الشاطئ مثل ركوب الأمواج في ميرا فلوريس."
+   },
+   {
+    "name": "متحف بيدرو دي أوزما (Museo Pedro de Osma) وبقيّة متاحف بارانكو",
+    "why": "مجموعة متاحف في منطقة بارانكو تعرض الفن والتاريخ المحلي وتمنح نظرة على ثقافة الأحياء الفنية بالمدينة."
+   },
+   {
+    "name": "كنائس ليما التاريخية (كاتدرائية ليما، سان فرانسيسكو، سانتو دومينغو، إلخ)",
+    "why": "سلسلة من الكنائس والأديرة تستعرض الفن الديني والعمارة الاستعمارية، مناسبة لجولة ثقافية في مركز المدينة."
+   }
+  ],
+  "getting_around": "يمكن التنقل بين المعالم الرئيسة عبر حافلات المدينة وخدمات التاكسي، كما توجد جولات منظمة بالحافلة مثل Mirabus والقطار السياحي الصغير الذي يجوب وسط المدينة. للحركات القصيرة داخل ميرا فلوريس وبارانكو يفضل المشي أو استخدام الدراجات في الجولات المنظمة.",
+  "food": [
+   {
+    "name": "سيفيتشي (Ceviche)",
+    "note": "الطبق الوطني يجب تجربته في ليما بفضل تنوع المأكولات البحرية الطازجة المتوفرة على الساحل."
+   },
+   {
+    "name": "الشيفاس (Chifa) — المطبخ الصيني المتأصل محليًا",
+    "note": "مطاعم صينية محلية منتشرة وتقدّم أطباقًا متأثرة بالمأكولات البحرية والدجاج بأسعار معقولة."
+   },
+   {
+    "name": "المطاعم اليابانية",
+    "note": "موجودة في المدينة وتشتهر بتقديم أسماك طازجة وغالبًا ما تكون أكثر رفاهية من الشيفاس."
+   },
+   {
+    "name": "مأكولات الشرق الأوسط في باركيو كنيدي",
+    "note": "مقهى في الحديقة يقدم فلافل وشاورما بأسعار معقولة كخيار بديل للوجبات السريعة."
+   },
+   {
+    "name": "البرغر على الطريقة البيروفية (مثل Bembos)",
+    "note": "سلسلة محلية تقدم نسخًا بيروفية من البرغر وتنتشر في أنحاء المدينة."
+   }
+  ],
+  "budget_tips": [
+   "غيّر النقود بالدولار الأمريكي أو اليورو لأنهما العملات الأسهل للاستبدال في ليما.",
+   "تجنّب مكاتب الصرافة في المطار إن أمكن لأن بعضها يفرض عمولات مرتفعة أو أسعار صرف سيئة.",
+   "استخدم الصرّافين المرخّصين (cambistas) في ميرا فلوريس واطلب رؤية سِجلات التفويض واطلب دائمًا معرفة سعر الصرف قبل إجراء الصفقة.",
+   "قارن عروض عدة من الصرّافين عند تغيير مبالغ كبيرة ولا تقبل عروض تبدو أفضل من غيرها دون تحقق."
+  ],
+  "safety": [
+   "كن على وعي بأن المدينة تضم مناطق فقيرة وأحيـاء عشوائية في الأطراف؛ تجنّب التجوال وحيدًا في الأحياء غير المعروفة خصوصًا ليلًا.",
+   "احرص على متعلقاتك الشخصية في المناطق السياحية والمزدحمة لأن النشل قد يحدث في أماكن الترفيه والأسواق.",
+   "استفسر محليًا عن الأحياء الآمنة للإقامة والتنقّل ولا تُظهر مبالغ نقدية كبيرة في الأماكن العامة."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشاف الوسط التاريخي وزيارة الكاتدرائية والأديرة المتحفية والمشي في الساحات الرئيسة، ثم زيارة متحف لاركو إذا رغبت بفهم أعمق لتاريخ ما قبل العصر الإسباني.",
+   "اليوم الثاني: جولة في ميرا فلوريس—زيارة هوكا بوكليانا (جولة مرشدة) وباركيو كنيدي وممشى كوستا فيردي، مع تجربة ركوب الأمواج أو مشاهدة الساحل، وإن أمكن تجربة جولة طعام أو دراجة مسائية.",
+   "اليوم الثالث: نزهة في بارانكو للفن والمقاهي، وزيارة مواقع أثرية خارجية مثل باتشاكاماك في لورين (حوالي نصف ساعة من ميرا فلوريس) أو حضور عرض فولكلوري/عرض خيول في أماكن سياحية محلية."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الموصى بها لزيارة ليما؟",
+    "a": "ثلاثة أيام تكفي لمعرفة المعالم الرئيسية في الوسط التاريخي وميرا فلوريس وبارانكو وتجربة المأكولات المحلية، ويمكن تمديد الزيارة ليوم إضافي لرحلة إلى باتشاكاماك أو مواقع أثرية أخرى."
+   },
+   {
+    "q": "هل ليما مدينة مكلفة؟",
+    "a": "تتراوح التكاليف حسب نمط السفر؛ توجد خيارات طعام اقتصادية وشيفاس منتشرة وأسواق ومقاهي بأسعار معقولة، بينما المطاعم اليابانية أو بعض المطاعم الراقية قد تكون أغلى."
+   },
+   {
+    "q": "هل ليما آمنة للسياح؟",
+    "a": "يمكن أن تكون آمنة في المناطق السياحية مثل ميرا فلوريس وبارانكو إذا اتبعت الاحتياطات العامة: تجنّب المشي ليلاً في الأحياء غير المألوفة، واحفظ مقتنياتك بعيدًا عن الأنظار."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "مناطق ميرا فلوريس وبارانكو وسنترو تُعد مريحة للسياح؛ ميرا فلوريس مناسبة خصوصًا لمن يريد قرب الشاطئ والحياة الليلية، بينما بارانكو مشهور بالثقافة والمقاهي."
+   },
+   {
+    "q": "كيف أصل من المطار إلى المدينة؟",
+    "a": "تتوفر حافلات وخدمات تاكسي وحزم نقل خاصة إلى أجزاء المدينة؛ كما توجد جولات سياحية منظمة مثل Mirabus التي تسهل الوصول إلى المعالم، ومن الأفضل ترتيب النقل الموثوق قبل الوصول."
+   }
+  ]
+ }
+}
