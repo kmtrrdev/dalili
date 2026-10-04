@@ -447,7 +447,8 @@ MAX_RESTAURANT_KM = 25
 
 
 async def restaurants(city: str, center: GeoPoint, local_currency: str, dietary: list[str]) -> list[Place]:
-    queries = [("restaurants", 15), ("cafes and bakeries for breakfast", 15)]
+    # Everyday places plus the city's best tables, so a comfort plan has real upscale options to choose from.
+    queries = [("restaurants", 15), ("cafes and bakeries for breakfast", 15), ("best fine dining restaurants", 14)]
     if "vegetarian" in dietary or "vegan" in dietary:
         queries.append(("vegetarian restaurants", 14))
     # Restaurants and cafés change slowly: three weeks of cache.

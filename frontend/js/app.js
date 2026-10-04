@@ -388,8 +388,10 @@ function renderModes() {
   const order = ["balanced", "budget", "comfort", "experience"];
   $("modes").innerHTML = order.filter((m) => trip.plans[m]).map((m) => {
     const p = trip.plans[m];
+    const pitch = getLang() === "ar" ? (p.pitch_ar || p.pitch) : p.pitch;
     return `<button class="mode ${m === trip.selected_mode ? "active" : ""}" data-mode="${m}" type="button">
       <div class="m-name">${t("mode")[m]}</div>
+      ${pitch ? `<div class="m-pitch" title="${esc(pitch)}">${esc(pitch)}</div>` : ""}
       <div class="m-row">${ring(p.score ? p.score.total : 0)}<div><div class="m-total">${money(p.budget.total, p.budget.currency)}</div>
       <span class="badge ${p.within_budget ? "ok" : "bad"}">${p.within_budget ? t("inBudget") : t("overBudget")}</span></div></div>
       <div class="m-hotel">${esc(isMulti(p) ? t("hotelsLegs", p.stops.length, p.legs.length) : (p.hotel ? p.hotel.name : ""))}</div></button>`;

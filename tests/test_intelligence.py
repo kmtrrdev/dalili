@@ -195,6 +195,27 @@ def test_find_cheapest_sets_the_budget_to_the_cheapest_plan(monkeypatch):
     assert trip.metadata["found_budget"] == nice_amount(trip.metadata["found_budget"])
 
 
+def test_four_plans_follow_their_strategies(monkeypatch):
+    """Budget = cheapest flights and hotel; comfort = the best-rated hotel and better restaurants; each has a pitch."""
+    from travel_agent.workflow import plan as plan_node, run_turn
+    from tests.conftest import ROME_REQUEST
+
+    rome, _ = anyio.run(run_turn, TripState(), ROME_REQUEST)
+    out = anyio.run(plan_node, {"trip": rome.model_copy(deep=True)})
+    plans = out["candidates"]
+
+    def meal_spend(p):
+        costs = [i.cost.amount for d in p.days for i in d.items
+                 if i.kind == "meal" and i.meal_type in ("lunch", "dinner") and i.cost.amount > 0]
+        return sum(costs) / max(len(costs), 1)
+
+    b, c = plans["budget"], plans["comfort"]
+    assert b.hotel.price_per_night.amount <= min(p.hotel.price_per_night.amount for p in plans.values())
+    assert c.hotel.rating >= max(p.hotel.rating for p in plans.values()) - 0.05
+    assert meal_spend(c) >= meal_spend(b)
+    assert all(p.pitch and p.pitch_ar for p in plans.values())
+
+
 def test_nice_amount():
     from travel_agent.replanner import nice_amount
 

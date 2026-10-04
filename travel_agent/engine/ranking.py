@@ -62,7 +62,9 @@ def expand_interests(interests: list[str]) -> set[str]:
 # ---------------------------------------------------------------------------
 
 
-def score_flight(f: FlightOption, pool: list[FlightOption], profile: TravelerProfile, mode: PlanningMode) -> Ranked:
+def score_flight(f: FlightOption, pool: list[FlightOption], profile: TravelerProfile, mode: PlanningMode,
+                 prefs=None) -> Ranked:
+    """prefs: the strategist's FlightPrefs for this mode (price weight, preferred airlines); None = mode defaults."""
     prices = [p.price_per_person.amount for p in pool] or [f.price_per_person.amount]
     durations = [p.duration_minutes for p in pool] or [f.duration_minutes]
     lo, hi = min(prices), max(prices)
@@ -93,9 +95,18 @@ def score_flight(f: FlightOption, pool: list[FlightOption], profile: TravelerPro
     else:
         trade.append(f"{f.stops} stop via {f.via}")
 
-    w = {"balanced": (0.35, 0.2, 0.2, 0.25), "budget": (0.6, 0.1, 0.1, 0.2),
-         "comfort": (0.15, 0.25, 0.3, 0.3), "experience": (0.3, 0.25, 0.2, 0.25)}[mode]
+    if prefs is not None:
+        pw = clamp(prefs.price_weight)
+        w = (pw, (1 - pw) * 0.3, (1 - pw) * 0.35, (1 - pw) * 0.35)
+    else:
+        w = {"balanced": (0.35, 0.2, 0.2, 0.25), "budget": (0.6, 0.1, 0.1, 0.2),
+             "comfort": (0.15, 0.25, 0.3, 0.3), "experience": (0.3, 0.25, 0.2, 0.25)}[mode]
     score = w[0] * price_s + w[1] * dur_s + w[2] * direct_s + w[3] * clamp(time_s)
+    if prefs is not None and prefs.preferred_airlines:
+        names = [a.lower() for a in prefs.preferred_airlines if a]
+        if any(n in f.airline.lower() for n in names):
+            score += 0.25
+            reasons.append(f"{f.airline}: an airline this plan prefers")
     if price_s > 0.85:
         reasons.append("Among the cheapest fares")
     return Ranked(f, round(score, 4), reasons, trade)
@@ -107,7 +118,8 @@ def score_flight(f: FlightOption, pool: list[FlightOption], profile: TravelerPro
 
 
 def score_hotel(h: HotelOption, anchors: list[GeoPoint], profile: TravelerProfile, mode: PlanningMode,
-                nightly_budget_local: float) -> Ranked:
+                nightly_budget_local: float, prefs=None) -> Ranked:
+    """prefs: the strategist's HotelPrefs (how much price / location / rating matter); None = mode defaults."""
     reasons, trade = [], []
     rating_s = clamp((h.rating - 3.4) / 1.5)
     avg_km = sum(distance_km(h.location, a) for a in anchors) / max(len(anchors), 1)
@@ -149,8 +161,12 @@ def score_hotel(h: HotelOption, anchors: list[GeoPoint], profile: TravelerProfil
     if h.rating >= 4.5:
         reasons.append(f"Highly rated ({h.rating}/5)")
 
-    w = {"balanced": (0.3, 0.3, 0.3), "budget": (0.2, 0.25, 0.55),
-         "comfort": (0.45, 0.35, 0.1), "experience": (0.3, 0.4, 0.25)}[mode]
+    if prefs is not None:
+        raw = (clamp(prefs.rating_weight), clamp(prefs.location_weight), clamp(prefs.price_weight))
+        w = tuple(x / max(sum(raw), 1e-9) for x in raw)
+    else:
+        w = {"balanced": (0.3, 0.3, 0.3), "budget": (0.2, 0.25, 0.55),
+             "comfort": (0.45, 0.35, 0.1), "experience": (0.3, 0.4, 0.25)}[mode]
     score = w[0] * rating_s + w[1] * loc_s + w[2] * price_s + 0.08 * extras + style_s - noise_pen - far_pen
     return Ranked(h, round(score, 4), reasons, trade)
 
@@ -262,10 +278,13 @@ def dietary_ok(p: Place, profile: TravelerProfile) -> bool:
     return True
 
 
-def score_restaurant(r: Place, profile: TravelerProfile, mode: PlanningMode, price_pressure: int = 0) -> Ranked:
+def score_restaurant(r: Place, profile: TravelerProfile, mode: PlanningMode, price_pressure: int = 0,
+                     prefs=None, typical_cost: float = 0.0) -> Ranked:
+    """prefs: the strategist's FoodPrefs (price levels and rating bar for this plan); None = mode defaults.
+    typical_cost: the city's median meal price per person (same currency as r.cost_per_person), 0 = unknown."""
     reasons, trade = [], []
-    prefs = {c.lower() for c in profile.food_preferences}
-    match = prefs & set(r.cuisine)
+    liked = {c.lower() for c in profile.food_preferences}
+    match = liked & set(r.cuisine)
     score = 0.35 * clamp((r.rating - 3.8) / 1.0)
     if match:
         score += 0.35
@@ -274,10 +293,32 @@ def score_restaurant(r: Place, profile: TravelerProfile, mode: PlanningMode, pri
         score += 0.05
     if r.rating >= 4.5:
         reasons.append(f"Highly rated ({r.rating}/5)")
-    level_pen = {"budget": 0.12, "balanced": 0.05, "comfort": 0.0, "experience": 0.0}[mode] + 0.06 * price_pressure
-    score -= level_pen * (r.price_level - 1)
-    if mode in ("experience", "comfort") and r.price_level >= 3:
-        score += 0.08
+    if prefs is not None:
+        # The plan's food tier: below it (comfort skipping fast food) or above it (budget skipping fine dining) costs.
+        if r.price_level < prefs.min_price_level:
+            score -= 0.15 * (prefs.min_price_level - r.price_level)
+        if r.price_level > prefs.max_price_level:
+            score -= 0.2 * (r.price_level - prefs.max_price_level)
+        if r.rating and r.rating < prefs.min_rating:
+            score -= 0.3
+        elif r.rating >= max(prefs.min_rating, 4.5):
+            score += 0.08
+        # Price vs quality as the plan wants it: budget pulls toward cheap eats, comfort toward the best tables.
+        pw = clamp(getattr(prefs, "price_weight", 0.3))
+        # How pricey this place is for the city: the real meal price vs the city's median when known (Google's
+        # price level is coarse - a 40 and a 600 a head can both be "$$"), else the price level.
+        if typical_cost > 0 and r.cost_per_person.amount > 0:
+            tier = max(-2.0, min(2.0, math.log2(r.cost_per_person.amount / typical_cost)))
+        else:
+            tier = r.price_level - 2.0
+        score -= 0.15 * pw * tier
+        score += (1 - pw) * (0.2 * clamp((r.rating - 4.2) / 0.7) + 0.05 * tier)
+        score -= 0.06 * price_pressure * (r.price_level - 1)
+    else:
+        level_pen = {"budget": 0.12, "balanced": 0.05, "comfort": 0.0, "experience": 0.0}[mode] + 0.06 * price_pressure
+        score -= level_pen * (r.price_level - 1)
+        if mode in ("experience", "comfort") and r.price_level >= 3:
+            score += 0.08
     if r.price_level <= 1:
         reasons.append("Budget-friendly")
     if r.requires_reservation:

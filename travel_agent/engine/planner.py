@@ -86,6 +86,8 @@ class PlanContext:
     buffer_ratio: float = 0.05
     pinned_days: dict[int, list[str]] = field(default_factory=dict)
     auto_picks: list[str] = field(default_factory=list)  # guaranteed from an interest (a beach day), not named by the user
+    # What this mode means for this trip (agents.strategist.ModeStrategy), designed by the model. None = defaults.
+    strategy: object | None = None
 
     @property
     def dest(self) -> str:
@@ -140,9 +142,11 @@ def capacity(ctx: PlanContext) -> tuple[int, int, int]:
 
 
 def _rank_flights(pool: list[FlightOption], ctx: PlanContext, leaving: bool = False) -> list[Ranked]:
+    fprefs = ctx.strategy.flights if ctx.strategy is not None else None
     picked = [f for f in pool if f.id in ctx.knobs.flight_pins]
     if picked:  # the traveller chose this flight: no filter overrides that
-        return [score_flight(f, pool, ctx.profile, ctx.mode) for f in picked]
+        return [score_flight(f, pool, ctx.profile, ctx.mode, fprefs) for f in picked]
+    red_eye_ok = bool(fprefs and fprefs.allow_red_eye) and not ctx.profile.avoid_early_flights
     # Exclusions (repairs, "change my flight") must never leave a leg with no way to travel at all.
     pool = [f for f in pool if f.id not in ctx.knobs.flight_exclude] or pool
     flights = [f for f in pool if f.mode == "flight"]
@@ -151,7 +155,9 @@ def _rank_flights(pool: list[FlightOption], ctx: PlanContext, leaving: bool = Fa
         # real saving: keep trains / coaches only when they are within ~4 h of the fastest flight.
         fastest = min(f.duration_minutes for f in flights)
         pool = [f for f in pool if f.mode == "flight" or f.duration_minutes <= fastest + 240]
-    if leaving:
+    if red_eye_ok:
+        pass  # this plan takes night / dawn flights when they're cheaper (the price weight decides)
+    elif leaving:
         # A pre-07:00 departure means checking out in the middle of the night: only if nothing else exists.
         civil = [f for f in pool if f.depart_at.hour >= 7]
         pool = civil or pool
@@ -166,7 +172,7 @@ def _rank_flights(pool: list[FlightOption], ctx: PlanContext, leaving: bool = Fa
     if ctx.profile.flight_preference == "direct":
         direct = [f for f in pool if f.stops == 0]
         pool = direct or pool
-    ranked = [score_flight(f, pool, ctx.profile, ctx.mode) for f in pool]
+    ranked = [score_flight(f, pool, ctx.profile, ctx.mode, fprefs) for f in pool]
     return sorted(ranked, key=lambda r: -r.score)
 
 
@@ -181,6 +187,7 @@ def _anchor_points(ctx: PlanContext) -> list[GeoPoint]:
 def select_core(ctx: PlanContext) -> tuple[Ranked | None, Ranked | None, Ranked | None, list[str], dict[str, list[str]]]:
     """Joint flight + hotel choice under the budget. Returns (out, ret, hotel, notes, alternatives)."""
     notes: list[str] = []
+    fprefs = ctx.strategy.flights if ctx.strategy is not None else None
     outs = _rank_flights(ctx.research.flights_outbound, ctx)
     rets = _rank_flights(ctx.research.flights_return, ctx, leaving=True)
     c = ctx.contract
@@ -208,13 +215,24 @@ def select_core(ctx: PlanContext) -> tuple[Ranked | None, Ranked | None, Ranked 
 
     # More than ~10 km from the sights means hours of commuting a day: only if nothing closer exists.
     hotels = [h for h in hotels if avg_km(h) <= MAX_HOTEL_KM_FROM_SIGHTS] or hotels
-    hranked = sorted((score_hotel(h, anchors, ctx.profile, ctx.mode, nightly_user / max(ctx.fx(h.price_per_night.currency), 1e-9))
-                      for h in hotels), key=lambda r: -r.score)
+    hprefs = ctx.strategy.hotel if ctx.strategy is not None else None
+    if hprefs is not None:
+        # The plan's quality bar (e.g. comfort: 4.4+ rating, 4+ stars), kept only if enough hotels clear it.
+        good = [h for h in hotels if (h.rating or 0) >= hprefs.min_rating and (not hprefs.min_stars or h.stars >= hprefs.min_stars)]
+        if len(good) < 3:
+            good = [h for h in hotels if (h.rating or 0) >= hprefs.min_rating]
+        hotels = good if len(good) >= 3 else hotels
+    hranked = sorted((score_hotel(h, anchors, ctx.profile, ctx.mode, nightly_user / max(ctx.fx(h.price_per_night.currency), 1e-9),
+                                  hprefs) for h in hotels), key=lambda r: -r.score)
     if not (outs and rets and hranked):
         notes.append("Missing flight or hotel candidates - the plan is partial.")
         return (outs[0] if outs else None, rets[0] if rets else None, hranked[0] if hranked else None, notes, {})
 
     weights = {"balanced": (1.0, 1.4, 1.0), "budget": (0.6, 0.8, 2.2), "comfort": (1.0, 2.0, 0.3), "experience": (0.8, 1.2, 0.8)}[ctx.mode]
+    if ctx.strategy is not None:
+        # How much the total price weighs against flight and hotel quality, as the strategist set it for this plan.
+        pw = (ctx.strategy.flights.price_weight + ctx.strategy.hotel.price_weight) / 2
+        weights = (weights[0], weights[1], 0.2 + 2.2 * pw)
     # How much an extra hour on the ground is worth: a short trip lives or dies by its arrival and departure times.
     hour_weight = {"balanced": 0.5, "budget": 0.25, "comfort": 0.5, "experience": 0.8}[ctx.mode] / max(c.num_days, 1)
     best, best_obj, cheapest, cheapest_total = None, -math.inf, None, math.inf
@@ -245,8 +263,8 @@ def select_core(ctx: PlanContext) -> tuple[Ranked | None, Ranked | None, Ranked 
             continue
         if pins and not pinned_rt and (pins & {x.item.id for x in outs + rets}):
             continue  # one-way flights were picked: no round-trip ticket replaces them
-        o = score_flight(rt.outbound, [x.item for x in outs] + [rt.outbound], ctx.profile, ctx.mode)
-        r = score_flight(rt.inbound, [x.item for x in rets] + [rt.inbound], ctx.profile, ctx.mode)
+        o = score_flight(rt.outbound, [x.item for x in outs] + [rt.outbound], ctx.profile, ctx.mode, fprefs)
+        r = score_flight(rt.inbound, [x.item for x in rets] + [rt.inbound], ctx.profile, ctx.mode, fprefs)
         o.reasons.append("Round-trip ticket: cheaper than two one-way fares")
         pairs.append((o, r))
 
@@ -468,10 +486,12 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
         boosts["food"] = boosts.get("food", 0) + 0.3
     pool: list[Ranked] = []
     must_terms = must_have_terms(ctx.contract)
-    must_ids = set(ctx.knobs.must_include)
+    signature = set(ctx.knobs.signature_picks)
+    must_ids = set(ctx.knobs.must_include) | signature
     icons = icon_ids(ctx.research.attractions)
+    act_prefs = ctx.strategy.activities if ctx.strategy is not None else None
     for a in ctx.research.attractions:
-        forced = a.id in must_ids  # named by the traveller: no category / price filters
+        forced = a.id in must_ids  # named by the traveller (or a signature experience): no category / price filters
         if a.id in excluded or (set(a.categories) & avoid and not forced):
             continue
         over_cap = ctx.knobs.activity_cost_cap_local is not None and a.cost_per_person.amount > ctx.knobs.activity_cost_cap_local
@@ -486,7 +506,15 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
             if a.popularity != "must_see":
                 ranked.score -= 0.1 * a.distance_km / 60
             ranked.reasons.append(f"Day trip ~{a.distance_km:.0f} km from the city")
-        if forced and a.id in ctx.knobs.expert_picks:
+        if act_prefs is not None and not act_prefs.paid_ok and a.cost_per_person.amount > 0 and a.id not in icons \
+                and not forced:
+            ranked.score -= 0.2  # this plan favours free sights; the city's icons are worth their ticket
+            ranked.tradeoffs.append("Paid entry (this plan favours free sights)")
+        if a.id in signature:
+            ranked.score += 0.9
+            city = ctx.research.destination_info.get("name", ctx.dest)
+            ranked.reasons.insert(0, f"Signature experience of {city}")
+        elif forced and a.id in ctx.knobs.expert_picks:
             ranked.score += 0.1  # the critic's idea: welcome if it fits, never at the cost of a better stop
             ranked.reasons.insert(0, "You asked to visit this place")  # relabelled as an expert pick after planning
         elif forced:
@@ -563,7 +591,7 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
         return 0.15 * km + 0.25 * len(slot.activities) / max(slot.max_count, 1) + (0.5 if slot.kind != "full" else 0) \
             + (1.5 if slot.high_rain and not a.indoor else 0)
 
-    for pid in ctx.knobs.must_include:
+    for pid in list(dict.fromkeys(ctx.knobs.must_include + ctx.knobs.signature_picks)):
         r = by_id.get(pid)
         if r is None or pid in used:
             continue
@@ -840,7 +868,7 @@ class DayBuilder:
         day_excluded = set(ctx.knobs.exclude_on_day.get(self.slot.index + 1, []))
         # A moderate traveller still wants breathing room: one extra stop per gap; active travellers want them all.
         per_gap = {"moderate": 1, "active": 3, "very_active": 6}.get(style, 1) + max(0, ctx.knobs.density_delta)
-        must = set(ctx.knobs.must_include)
+        must = set(ctx.knobs.must_include) | set(ctx.knobs.signature_picks)
         added = 0
         while until - self.t >= 30 and added < per_gap:
             load = day_load([to_min(i.end) - to_min(i.start) for i in self.items if i.kind == "activity"])
@@ -1187,9 +1215,19 @@ def build_plan(ctx: PlanContext) -> TripPlan:
              else choose_transfer(ctx, r_f.origin if r_f else None))
     slots = build_slots(ctx, plan.outbound_flight, plan.return_flight, t_in, t_out)
     unused, _ = assign_activities(ctx, slots, plan.hotel)
-    restaurant_rank = {x.id: score_restaurant(x, ctx.profile, ctx.mode, ctx.knobs.price_pressure) for x in ctx.research.restaurants}
+    food_prefs = ctx.strategy.food if ctx.strategy is not None else None
+    # The city's typical meal price (per currency), so "cheap" and "upscale" are judged against this city.
+    by_cur: dict[str, list[float]] = {}
+    for x in ctx.research.restaurants:
+        if x.cost_per_person.amount > 0 and x.kind == "restaurant":
+            by_cur.setdefault(x.cost_per_person.currency, []).append(x.cost_per_person.amount)
+    typical = {cur: sorted(v)[len(v) // 2] for cur, v in by_cur.items()}
+    restaurant_rank = {x.id: score_restaurant(x, ctx.profile, ctx.mode, ctx.knobs.price_pressure, food_prefs,
+                                              typical.get(x.cost_per_person.currency, 0.0))
+                       for x in ctx.research.restaurants}
     used_restaurants: dict[str, int] = {}
-    must_ids = set(ctx.knobs.must_include) - set(ctx.knobs.expert_picks)  # the critic's picks never evict others
+    # The traveller's requests and the plan's signature experiences survive the timeline; the critic's picks never evict.
+    must_ids = (set(ctx.knobs.must_include) - set(ctx.knobs.expert_picks)) | set(ctx.knobs.signature_picks)
     # Everything already given a day; the rest can fill idle hours (gap filling) on any day.
     taken = {r.item.id for s in slots for r in s.activities} | {s.evening.item.id for s in slots if s.evening}
     for n, slot in enumerate(slots):

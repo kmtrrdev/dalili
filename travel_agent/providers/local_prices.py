@@ -291,7 +291,9 @@ TARIFF_SYSTEM = (
     "text - never estimate or use outside knowledge. For each value, copy into 'quote' the exact clause of the text "
     "that states it, verbatim (same spelling and symbols), long enough to show WHAT the price is for - at least 6 "
     "words, e.g. 'The Leonardo Express costs €14 each way', not just '€14'. If a value is not stated, leave it null. "
-    "Use daytime / standard adult fares; skip prices the text marks as old. At most one airport fare per mode "
+    "Use daytime / standard adult fares; skip prices the text marks as old. transit_single_ticket and the day pass "
+    "are for rides WITHIN the city (metro, bus, tram, city ferry) - never an intercity or international train, coach, "
+    "ferry or flight fare (e.g. 'a single from Sofia is €26' is NOT a city ticket). At most one airport fare per mode "
     "(taxi, bus, train...) and airport. Currency as an ISO code (€ -> EUR, LE / E£ -> EGP, TL -> TRY, etc.)."
 )
 FIELD_WORDS = {

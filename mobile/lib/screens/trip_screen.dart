@@ -119,6 +119,14 @@ class _TripScreenState extends State<TripScreen> {
                 ),
               ),
             ),
+            if (((isArabic ? plan['pitch_ar'] : null) ?? plan['pitch'] ?? '').toString().isNotEmpty)
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 2, 16, 8),
+                  child: Text(((isArabic ? plan['pitch_ar'] : null) ?? plan['pitch']).toString(),
+                      style: TextStyle(fontSize: 13, color: context.muted)),
+                ),
+              ),
             SliverPersistentHeader(
               pinned: true,
               delegate: _TabsHeader(TabBar(

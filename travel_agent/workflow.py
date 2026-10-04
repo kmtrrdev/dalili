@@ -22,7 +22,7 @@ from typing import Annotated, Any, TypedDict
 from langgraph.graph import END, START, StateGraph
 
 from . import journey, narrative, net, research, route_design
-from .agents import concierge, critic, trace
+from .agents import concierge, critic, strategist, trace
 from .providers import geo
 from .config import settings
 from .engine.budget import compute_budget
@@ -508,20 +508,38 @@ async def plan(state: GraphState) -> GraphState:
     expert_ids = [pid for key, pid in (trip.metadata.get("must_visit") or {}).items()
                   if pid and key.split("|", 1)[-1].lower() in expert]
 
+    # What each plan means for THIS trip: designed by the strategist from the real options, then applied by the engine.
+    strategies = await strategist.design(trip)
+    if not state.get("iteration"):
+        sig: dict[str, list[str]] = {}
+        for mode in PLANNING_MODES:
+            names = getattr(strategies, mode).activities.signature_experiences
+            if names:
+                sig[mode] = await research.find_places(get_hub(), trip, names)
+        trip.metadata["signature_ids"] = sig
+
     def build(mode: str, pins: dict) -> TripPlan:
+        strat = getattr(strategies, mode)
         mode_knobs = trip.user_knobs.merged(knobs[mode])
         mode_knobs.expert_picks = expert_ids
-        if mode == "budget":
-            # The budget plan spends the least on everything: casual meals, the cheapest transfer, no extras.
-            mode_knobs.max_price_level = min(mode_knobs.max_price_level, 2)
+        mode_knobs.max_price_level = min(mode_knobs.max_price_level, strat.food.max_price_level)
+        mode_knobs.density_delta += strat.activities.pace_delta
+        if strat.transport == "taxi":
+            mode_knobs.prefer_taxi = True
+        elif strat.transport == "public":
             mode_knobs.transfer_mode = mode_knobs.transfer_mode or "bus"
-            mode_knobs.skip_snacks = True
+        if mode == "budget":
+            mode_knobs.skip_snacks = True  # no optional coffee / dessert stops on the money-saving plan
+        mode_knobs.signature_picks = list((trip.metadata.get("signature_ids") or {}).get(mode, []))
         if trip.trip_contract.is_multi:
-            return journey.plan_journey(trip.trip_contract, trip.traveler_profile, trip.research, mode,
-                                        mode_knobs, settings.budget_buffer_ratio, pins)
-        return build_plan(PlanContext(
-            contract=trip.trip_contract, profile=trip.traveler_profile, research=trip.research, mode=mode,
-            knobs=mode_knobs, buffer_ratio=settings.budget_buffer_ratio, pinned_days=pins))
+            plan_ = journey.plan_journey(trip.trip_contract, trip.traveler_profile, trip.research, mode,
+                                         mode_knobs, settings.budget_buffer_ratio, pins, strat)
+        else:
+            plan_ = build_plan(PlanContext(
+                contract=trip.trip_contract, profile=trip.traveler_profile, research=trip.research, mode=mode,
+                knobs=mode_knobs, buffer_ratio=settings.budget_buffer_ratio, pinned_days=pins, strategy=strat))
+        plan_.pitch, plan_.pitch_ar = strat.headline, strat.headline_ar
+        return plan_
 
     c = trip.trip_contract
     finding = trip.draft.find_cheapest and not trip.draft.budget_amount
@@ -537,22 +555,27 @@ async def plan(state: GraphState) -> GraphState:
                    f"Cheapest good plan costs {cheapest.budget.total:,.0f} {c.budget.currency}: budget set to "
                    f"{c.budget.amount:,.0f}.")
 
+    # Upgrades: comfort / experience may spend a bit more than the budget to keep their promise (the strategist sets
+    # how much; after "the cheapest trip possible" every other mode may spend up to 30% more than the cheapest).
+    # They are planned and validated against that limit, then measured against the real budget, so the cards show
+    # honestly what each upgrade costs. The budget and balanced plans always respect the budget.
+    stretch = {m: (1.3 if finding else 1 + getattr(strategies, m).budget_stretch) if m not in ("budget", "balanced")
+               else 1.0 for m in PLANNING_MODES}
+    trip.metadata["budget_stretch"] = stretch
     for mode in PLANNING_MODES:
         existing = candidates.get(mode)
         if existing and existing.validation and existing.validation.result == "PASS":
             continue
         pins = trip.pinned_days if mode == trip.selected_mode else {}
-        if finding and mode != "budget":
-            # Upgrades: the other modes may spend up to 30% more than the cheapest trip, then are measured against
-            # it (a soft limit), so the cards show honestly what each upgrade costs.
-            found = c.budget.amount
-            c.budget.amount = found * 1.3
+        if stretch[mode] > 1:
+            real = c.budget.amount
+            c.budget.amount = real * stretch[mode]
             try:
                 new = build(mode, pins)
             finally:
-                c.budget.amount = found
+                c.budget.amount = real
             new.budget = compute_budget(new, c, trip.research.fx_rates, settings.budget_buffer_ratio)
-            new.within_budget = new.budget.total <= found
+            new.within_budget = new.budget.total <= real
         else:
             new = build(mode, pins)
         if existing:
@@ -563,10 +586,15 @@ async def plan(state: GraphState) -> GraphState:
 
 async def validate(state: GraphState) -> GraphState:
     trip = state["trip"]
+    c = trip.trip_contract
     for mode, p in state["candidates"].items():
         walk = trip.user_knobs.merged(state["knobs"][mode]).walk_tolerance_override
-        p.validation = validate_plan(p, trip.trip_contract, trip.traveler_profile, trip.research,
-                                     settings.budget_buffer_ratio, walk)
+        real = c.budget.amount
+        c.budget.amount = real * (trip.metadata.get("budget_stretch") or {}).get(mode, 1.0)  # an upgrade's own limit
+        try:
+            p.validation = validate_plan(p, c, trip.traveler_profile, trip.research, settings.budget_buffer_ratio, walk)
+        finally:
+            c.budget.amount = real
     return {}
 
 
@@ -616,7 +644,7 @@ def _budget_is_cheapest(plans: dict[str, TripPlan]) -> None:
     cheaper = min((p for m, p in plans.items() if m != "budget" and p.budget), key=lambda p: p.budget.total, default=None)
     if cheaper is not None and cheaper.budget.total < b.budget.total - 0.5:
         copy = cheaper.model_copy(deep=True)
-        copy.mode = "budget"
+        copy.mode, copy.pitch, copy.pitch_ar = "budget", b.pitch, b.pitch_ar
         copy.repair_log.append(f"Budget plan: the {cheaper.mode} plan came out cheaper, so it is the budget plan now.")
         plans["budget"] = copy
 

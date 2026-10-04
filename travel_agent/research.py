@@ -194,6 +194,11 @@ def apply_local_prices(bundle: ResearchBundle, prices: dict, user: str) -> None:
         return round(q["amount"] * rate, 2) if rate else None
 
     single = t.get("transit_single_ticket")
+    usd = bundle.fx_rates.get("USD")
+    if single and (v := to_user(single)) is not None and usd and v / usd > 10:
+        # No city's single ride costs more than ~$10: the guide's number is an intercity fare misread as a ticket.
+        log.info("transit fare %s %s rejected as implausible: %s", single["amount"], single["currency"], single["quote"])
+        single = None
     if single and (v := to_user(single)) is not None:
         bundle.fares["transit"], bundle.fares["transit_verified"] = v, 1.0
         bundle.fare_sources["transit"] = f'Wikivoyage: "{single["quote"]}"'
@@ -469,6 +474,47 @@ async def ensure_must_visit(hub: MCPHub, trip) -> list[str]:
     trip.user_knobs.must_include = sights
     trip.user_knobs.meal_requests = meals
     return notes
+
+
+async def find_places(hub: MCPHub, trip, names: list[str]) -> list[str]:
+    """Real places for names the strategist suggested (signature experiences): researched data first, else one Google
+    Maps lookup each (cached per destination). Never invents a place; overnight-distance results are skipped."""
+    r, c = trip.research, trip.trip_contract
+    if not names or r is None or c is None or c.is_multi:
+        return []
+    info = r.destination_info
+    center = info.get("center") or {"lat": c.destination_ref.lat, "lon": c.destination_ref.lon}
+    cache: dict[str, str] = trip.metadata.setdefault("place_lookup", {})
+    ids: list[str] = []
+    for name in names[:4]:
+        key = f"{c.route_name}|{name}"
+        pid = cache.get(key)
+        if pid and r.place(pid):
+            ids.append(pid)
+            continue
+        if pid == "":
+            continue  # looked up before, nothing usable
+        hit = match_place(name, r.attractions)
+        if hit is None:
+            try:
+                res = await hub.call("activities", "find_place", {
+                    "name": name, "city": info.get("name", c.destination), "lat": center["lat"], "lon": center["lon"],
+                    "local_currency": info.get("currency", "USD"), "zoom": 11})
+                p = Place.model_validate(res["result"]) if res.get("result") else None
+            except MCPToolError as exc:
+                log.warning("find_place %s failed: %s", name, exc)
+                p = None
+            if p is not None:
+                places_provider.tag_distance(p, GeoPoint(lat=center["lat"], lon=center["lon"]), info.get("name", c.destination))
+                if "overnight_trip" not in p.categories and p.kind not in ("restaurant", "cafe"):
+                    found = next((x for x in r.attractions if x.id == p.id), None)
+                    if found is None:
+                        r.attractions.append(p)
+                    hit = found or p
+        cache[key] = hit.id if hit else ""
+        if hit:
+            ids.append(hit.id)
+    return ids
 
 
 ROUTING_RADIUS_KM = 45  # day-trip sites further out use intercity estimates; far points break walking matrices

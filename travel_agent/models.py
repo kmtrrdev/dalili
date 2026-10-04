@@ -546,6 +546,8 @@ class StopPlan(BaseModel):
 class TripPlan(BaseModel):
     plan_id: str = Field(default_factory=lambda: new_id("plan"))
     mode: PlanningMode = "balanced"
+    pitch: str = ""       # what this plan optimises for this trip (from the strategist), English
+    pitch_ar: str = ""    # the same in Arabic
     outbound_flight: FlightOption | None = None
     return_flight: FlightOption | None = None
     hotel: HotelOption | None = None

@@ -25,12 +25,12 @@ def scripted(monkeypatch, handler):
     """A fake model: handler(system, payload_dict, schema) -> instance | None. Free text is left to templates."""
     calls = []
 
-    async def parse(system, user, schema, max_tokens=16000):
+    async def parse(system, user, schema, max_tokens=16000, effort=None):
         payload = json.loads(user) if user.strip().startswith("{") else user
         calls.append((schema.__name__, payload))
         return handler(system, payload, schema)
 
-    async def text(system, user, max_tokens=4000):
+    async def text(system, user, max_tokens=4000, effort=None):
         return None
 
     monkeypatch.setattr(llm, "available", lambda: True)

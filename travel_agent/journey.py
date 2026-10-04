@@ -230,7 +230,7 @@ def _median_hotel(b: ResearchBundle) -> float:
 
 
 def plan_journey(contract: TripContract, profile: TravelerProfile, research: ResearchBundle, mode, knobs,
-                 buffer_ratio: float, pinned_days: dict[int, list[str]]) -> TripPlan:
+                 buffer_ratio: float, pinned_days: dict[int, list[str]], strategy=None) -> TripPlan:
     from .engine.budget import compute_budget
     from .engine.planner import PlanContext, build_plan
 
@@ -266,6 +266,7 @@ def plan_journey(contract: TripContract, profile: TravelerProfile, research: Res
             knobs=_localize_knobs(knobs, first_day, stop.nights + 1, scale or 1.0), buffer_ratio=buffer_ratio,
             pinned_days={d - first_day + 1: ids for d, ids in pinned_days.items()
                          if first_day <= d <= first_day + stop.nights},
+            strategy=strategy,
         )
         p = build_plan(ctx)
         subs.append((ctx, p))

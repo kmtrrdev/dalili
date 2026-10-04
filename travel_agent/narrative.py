@@ -41,7 +41,10 @@ def plan_facts(trip: TripState) -> dict[str, Any]:
         "outbound": plan.outbound_flight.flight_number + f" {plan.outbound_flight.depart_at:%H:%M}->{plan.outbound_flight.arrive_at:%H:%M}" if plan.outbound_flight else None,
         "return": plan.return_flight.flight_number + f" {plan.return_flight.depart_at:%H:%M}->{plan.return_flight.arrive_at:%H:%M}" if plan.return_flight else None,
         "days": [f"Day {d.day}: {d.title}" for d in plan.days],
-        "modes": {m: {"total": money(p.budget.total, p.budget.currency) if p.budget else None,
+        "selected_plan_idea": plan.pitch,
+        "modes": {m: {"idea": p.pitch, "total": money(p.budget.total, p.budget.currency) if p.budget else None,
+                      "hotel": f"{p.hotel.name} ({p.hotel.rating}/5)" if p.hotel else None,
+                      "airline": p.outbound_flight.airline if p.outbound_flight else None,
                       "score": p.score.total if p.score else None, "within_budget": p.within_budget}
                   for m, p in trip.plans.items()},
         "changes": trip.last_changes, "assumptions": trip.assumptions,
@@ -352,7 +355,9 @@ estimates to double-check before booking. If 'multi_city_route' is present, show
 If 'overnight_side_trip_ideas' is non-empty, add one line suggesting them as an optional overnight side trip.
 If 'self_review' is present, one short line: you double-checked the plan like an experienced planner and what you
 improved. Places in 'highlights_added_by_expert_review' were YOUR picks - never say the traveller asked for them.
-Mention the TripScore and the other plan modes only briefly (one line), only if useful.
+Open with what this plan is about ('selected_plan_idea', in the traveller's language). Mention the other plan modes
+in one line using their 'idea' and what really differs (price, hotel, airline) - e.g. "Comfort: a 4.6-star hotel and
+Turkish Airlines for 3,000 more" - only if useful. The TripScore only if useful.
 Questions: 'unknown_preferences' lists what you don't know about this traveller yet. If knowing one or two of them
 would clearly change this plan, end with one or two short, friendly questions about them. Don't ask what
 'recent_conversation' shows you already asked, and don't ask anything if the plan doesn't need it.
