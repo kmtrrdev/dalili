@@ -35,6 +35,7 @@ parser.add_argument("--llm", action="store_true")
 parser.add_argument("--record", action="store_true")
 ARGS = parser.parse_args()
 os.environ["TRAVEL_AGENT_LLM"] = "1" if ARGS.llm else "0"
+os.environ["TRAVEL_AGENT_RULES_FALLBACK"] = "0" if ARGS.llm else "1"  # offline: the keyword parser stands in
 os.environ["TRAVEL_AGENT_HTTP_MODE"] = "cache" if ARGS.record else "replay"
 os.environ["TRAVEL_AGENT_HTTP_CACHE"] = str(ROOT / "tests" / "fixtures" / "http_cache.sqlite")
 os.environ["TRAVEL_AGENT_TODAY"] = "2026-09-27"

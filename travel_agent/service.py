@@ -2,17 +2,12 @@
 
 from __future__ import annotations
 
-import re
-
 from .models import ChatMessage, LearnedPreference, PlanningMode, TravelerProfile, TripState
 from .narrative import money
 from .nlu import Action
 from .replanner import diff_plans
 from .store import Store
 from .workflow import run_turn, run_turn_stream
-
-WHAT_IF = re.compile(r"^\s*(what if|what would happen if|how about if|suppose)\b", re.I)
-APPLY = re.compile(r"^\s*(yes|yep|sure|ok|okay|apply( it)?|do it|go ahead|let'?s do (it|that)|sounds good)\b[.! ]*$", re.I)
 
 
 def _fresh_profile(stored: TravelerProfile | None) -> TravelerProfile:
@@ -44,64 +39,63 @@ class TravelAgentService:
                    route_decision: str | None = None) -> tuple[TripState, str]:
         trip = self.get(trip_id) if trip_id else None
         trip = trip or self.new_trip(user_id)
-
-        pending = trip.metadata.get("pending_whatif")
-        if pending and APPLY.match(message):
-            applied = TripState.model_validate(pending)
-            applied.metadata.pop("pending_whatif", None)
-            applied.conversation = trip.conversation
-            reply = "Done - I applied that change.\n\n" + "\n".join(f"- {c}" for c in applied.last_changes)
-            applied.conversation.append(ChatMessage(role="user", content=message))
-            applied.conversation.append(ChatMessage(role="assistant", content=reply))
-            self._save(applied)
-            return applied, reply
-        trip.metadata.pop("pending_whatif", None)
-
-        if WHAT_IF.match(message) and trip.plans:
-            return await self._what_if_chat(trip, message)
-
-        trip, reply = await run_turn(trip, message, route_decision=route_decision)
-        self._save(trip)
-        return trip, reply
+        # Every turn runs on a copy; what happens to the real trip is settled afterwards from the AI's reading of the
+        # message (apply the change, keep it as a what-if comparison, or accept a pending comparison).
+        work, reply = await run_turn(trip.model_copy(deep=True), message, route_decision=route_decision)
+        return self._settle(trip, work, message, reply)
 
     async def chat_stream(self, message: str, trip_id: str | None = None, user_id: str = "default",
                           route_decision: str | None = None):
         """Streaming variant of chat(): yields live node/tool events, then {"type": "done", ...}."""
         trip = self.get(trip_id) if trip_id else None
         trip = trip or self.new_trip(user_id)
-        special = (trip.metadata.get("pending_whatif") and APPLY.match(message)) or (WHAT_IF.match(message) and trip.plans)
-        if special:
-            # Apply / what-if run on copies; stream them as a single step.
-            yield {"type": "node", "node": "what_if" if WHAT_IF.match(message) else "apply", "ms": 0}
-            trip, reply = await self.chat(message, trip_id, user_id)
-            yield {"type": "done", "trip": trip, "reply": reply}
-            return
-        trip.metadata.pop("pending_whatif", None)
-        async for event in run_turn_stream(trip, message, route_decision=route_decision):
+        async for event in run_turn_stream(trip.model_copy(deep=True), message, route_decision=route_decision):
             if event["type"] == "done":
-                self._save(event["trip"])
+                settled, reply = self._settle(trip, event["trip"], message, event["reply"])
+                event = {"type": "done", "trip": settled, "reply": reply}
             yield event
 
-    async def _what_if_chat(self, trip: TripState, message: str) -> tuple[TripState, str]:
-        """Plan the hypothetical on a copy; keep the real trip unchanged until the user confirms."""
-        copy = trip.model_copy(deep=True)
-        copy, _ = await run_turn(copy, message)
-        before, after = trip.selected_plan, copy.selected_plan
-        lines = ["**What-if comparison** (not applied yet)"]
-        if before and after and before.budget and after.budget:
-            lines.append(f"- Total: {money(before.budget.total, before.budget.currency)} -> "
-                         f"{money(after.budget.total, after.budget.currency)}")
-            if before.score and after.score:
-                lines.append(f"- TripScore: {before.score.total} -> {after.score.total}")
-        lines += [f"- {c}" for c in diff_plans(before, after) if not c.startswith(("Total cost", "TripScore"))]
-        lines.append("\nSay **apply it** to switch to this version, or keep chatting to leave the plan as is.")
-        reply = "\n".join(lines)
-        copy.metadata.pop("pending_whatif", None)
-        trip.metadata["pending_whatif"] = copy.model_dump(mode="json")
-        trip.conversation.append(copy.conversation[-2])
-        trip.conversation.append(copy.conversation[-1].model_copy(update={"content": reply}))
-        self._save(trip)
-        return trip, reply
+    def _settle(self, original: TripState, work: TripState, message: str, reply: str) -> tuple[TripState, str]:
+        arabic = any("؀" <= ch <= "ۿ" for ch in message)
+        pending = original.metadata.get("pending_whatif")
+        if work.metadata.pop("apply_whatif", False) and pending:
+            # The traveller accepted the comparison: switch to the version planned last turn.
+            applied = TripState.model_validate(pending)
+            for k in ("pending_whatif", "pending_whatif_summary", "hypothetical"):
+                applied.metadata.pop(k, None)
+            head = "تمام، طبّقت التغيير:" if arabic else "Done - I applied that change:"
+            reply = head + "\n\n" + "\n".join(f"- {c}" for c in applied.last_changes)
+            applied.conversation = list(original.conversation) + [ChatMessage(role="user", content=message),
+                                                                  ChatMessage(role="assistant", content=reply)]
+            self._save(applied)
+            return applied, reply
+        if work.metadata.pop("hypothetical", False) and original.plans and work.plans:
+            # A what-if: show the comparison, keep the real plan until the traveller accepts.
+            before, after = original.selected_plan, work.selected_plan
+            changes = [c for c in diff_plans(before, after) if not c.startswith(("Total cost", "TripScore"))]
+            lines = ["**مقارنة - لسه ماتطبقتش**" if arabic else "**What-if comparison** (not applied yet)"]
+            if before and after and before.budget and after.budget:
+                lines.append(f"- {'الإجمالي' if arabic else 'Total'}: {money(before.budget.total, before.budget.currency)}"
+                             f" -> {money(after.budget.total, after.budget.currency)}")
+                if before.score and after.score:
+                    lines.append(f"- TripScore: {before.score.total} -> {after.score.total}")
+            lines += [f"- {c}" for c in changes]
+            lines.append("\nلو عايز تطبّقها قولي **نفّذها**، أو كمّل كلام والخطة تفضل زي ما هي." if arabic else
+                         "\nSay **apply it** to switch to this version, or keep chatting to leave the plan as is.")
+            reply = "\n".join(lines)
+            for k in ("pending_whatif", "pending_whatif_summary"):
+                work.metadata.pop(k, None)
+            original.metadata["pending_whatif"] = work.model_dump(mode="json")
+            original.metadata["pending_whatif_summary"] = ("; ".join(lines[1:-1]))[:500]
+            original.conversation += [ChatMessage(role="user", content=message),
+                                      ChatMessage(role="assistant", content=reply)]
+            self._save(original)
+            return original, reply
+        # A normal turn: the copy becomes the trip; any older comparison is no longer on the table.
+        for k in ("pending_whatif", "pending_whatif_summary", "apply_whatif"):
+            work.metadata.pop(k, None)
+        self._save(work)
+        return work, reply
 
     async def what_if(self, trip_id: str, budget_delta: float | None = None, budget: float | None = None,
                       apply: bool = False) -> dict:

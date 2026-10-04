@@ -110,11 +110,16 @@ async def understand(state: GraphState) -> GraphState:
         "traveller_profile": trip.traveler_profile.model_dump(include={"travel_style", "walking_tolerance",
                                                                        "transport_preference", "activity_preferences"}),
         "recent_conversation": recent_turns(trip),   # short-term memory: what was just said
+        "pending_what_if": trip.metadata.get("pending_whatif_summary"),
     }
     interp, notes = None, []
     if has_plan and not pending:
         # The trip agent decides what the message needs: look things up and answer, or change the trip.
         result = await concierge.converse(trip, message)
+        if result is not None and result.apply_what_if:
+            # Accepting the comparison: the service swaps in the plan it kept aside (nothing to plan here).
+            trip.metadata["apply_whatif"] = True
+            return {"route": "answer", "reply": "-", "interpretation": TurnInterpretation(intent="feedback", source="agent")}
         if result is not None and result.changes is None:
             trip.metadata["suggestions"] = result.follow_ups
             trip.emit("message.interpreted", intent="question", source="agent")
@@ -124,9 +129,16 @@ async def understand(state: GraphState) -> GraphState:
             ch = result.changes
             interp = TurnInterpretation(intent="feedback", actions=ch.actions, requirements=ch.requirements,
                                         feedback=ch.feedback, route_change_request=ch.route_change_request,
-                                        source="agent")
+                                        hypothetical=ch.hypothetical, source="agent")
     if interp is None:
         interp, notes = await interpret(message, has_plan, names, context)
+    if interp.source == "unavailable":
+        return {"route": "answer", "reply": narrative.unavailable_reply(message), "interpretation": interp}
+    if has_plan and interp.apply_pending and trip.metadata.get("pending_whatif_summary"):
+        trip.metadata["apply_whatif"] = True
+        return {"route": "answer", "reply": "-", "interpretation": interp}
+    if has_plan and interp.hypothetical:
+        trip.metadata["hypothetical"] = True  # plan it (on the service's copy), then show the comparison
     # A free-text "add_place" without a place name carries nothing to add ("add more things" is a density change).
     interp.actions = [a for a in interp.actions if not (a.action in ("add_place", "replace_item") and not (a.text or "").strip())]
     if interp.requirements.return_to:

@@ -30,6 +30,9 @@ class Settings:
     model: str = os.getenv("TRAVEL_AGENT_MODEL", "claude-opus-5")
     effort: str = os.getenv("TRAVEL_AGENT_EFFORT", "medium")
     llm_enabled: bool = _bool("TRAVEL_AGENT_LLM", True)
+    # The keyword parser is NOT used in production: understanding is the model's job. It stays only as the offline
+    # test harness (tests / eval run without a model and turn this on).
+    rules_fallback: bool = _bool("TRAVEL_AGENT_RULES_FALLBACK", False)
     llm_provider: str = os.getenv("TRAVEL_AGENT_LLM_PROVIDER", "auto")  # auto | azure | anthropic
     # Azure AI Foundry, e.g. gpt-5-mini on .../openai/v1/responses (Responses API) or a chat-completions endpoint
     azure_key: str = os.getenv("AZURE_AI_KEY", "")

@@ -436,6 +436,13 @@ def compose_questions(trip: TripState) -> str:
     return intro + " A couple of things before I research:\n" + "\n".join(f"- {q}" for q in qs)
 
 
+def unavailable_reply(message: str) -> str:
+    """The model couldn't be reached: say so plainly instead of guessing what the traveller meant."""
+    if any("؀" <= ch <= "ۿ" for ch in message):
+        return "معلش، مساعد الذكاء الاصطناعي مش متاح دلوقتي لحظات. جرّب تبعت رسالتك تاني بعد شوية."
+    return "Sorry - the AI assistant is briefly unavailable. Please send your message again in a moment."
+
+
 OFF_TOPIC_SYSTEM = """You are Dalili, a travel planner. The traveller asked something outside travel (you are not told
 what). In one or two friendly sentences, in the language given by 'language', say you only help with travel - trips,
 flights, hotels, restaurants, places to visit - and offer one concrete thing you can do (about 'trip' if present).

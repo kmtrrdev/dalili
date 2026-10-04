@@ -14,6 +14,7 @@ os.environ["TRAVEL_AGENT_HTTP_MODE"] = "cache" if os.getenv("RECORD") == "1" els
 os.environ["TRAVEL_AGENT_HTTP_CACHE"] = str(ROOT / "tests" / "fixtures" / "http_cache.sqlite")
 os.environ["TRAVEL_AGENT_TODAY"] = "2026-09-27"
 os.environ["TRAVEL_AGENT_LLM"] = "0"
+os.environ["TRAVEL_AGENT_RULES_FALLBACK"] = "1"  # offline harness: the keyword parser stands in for the model
 os.environ["TRAVEL_AGENT_DB"] = ":memory:"
 if os.getenv("RECORD") != "1":
     # Replay never sends a request, but providers refuse to run without a key: placeholders let the suite run

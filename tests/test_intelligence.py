@@ -310,6 +310,38 @@ def test_agent_answers_with_tools_without_touching_the_plan(monkeypatch):
     assert trip.selected_plan.days == rome.selected_plan.days
 
 
+def test_no_keyword_guessing_in_production(monkeypatch):
+    """Without the model, production says so; it never falls back to keyword rules."""
+    from travel_agent.config import settings
+    from travel_agent.workflow import run_turn
+
+    monkeypatch.setattr(settings, "rules_fallback", False)
+    trip, reply = anyio.run(run_turn, TripState(), "عايز اروح روما يومين من 14/10 بـ 20 الف جنيه")
+    assert "مش متاح" in reply and trip.trip_contract is None and not trip.plans
+
+
+def test_agent_what_if_compares_then_applies_on_acceptance(monkeypatch):
+    from travel_agent.agents import concierge
+    from travel_agent.service import TravelAgentService
+    from travel_agent.store import Store
+    from tests.conftest import ROME_REQUEST
+
+    svc = TravelAgentService(Store(":memory:"))
+    trip, _ = anyio.run(svc.chat, ROME_REQUEST)  # model off: the offline harness builds the plan
+    before = trip.trip_contract.budget.amount
+
+    _scripted_agent(monkeypatch, [concierge.Step(
+        thought="A what-if.", tool="change_plan",
+        changes=concierge.PlanChange(actions=[Action(action="adjust_budget", amount=1000)], hypothetical=True))])
+    trip, reply = anyio.run(svc.chat, "لو زودت الميزانية 1000 دولار هيحصل ايه؟", trip.trip_id)
+    assert "ماتطبقتش" in reply and svc.get(trip.trip_id).trip_contract.budget.amount == before
+
+    _scripted_agent(monkeypatch, [concierge.Step(thought="They accept.", tool="apply_what_if")])
+    trip, reply = anyio.run(svc.chat, "تمام نفذها", trip.trip_id)
+    assert svc.get(trip.trip_id).trip_contract.budget.amount == before + 1000
+    assert "طبّقت" in reply
+
+
 def test_chosen_flight_is_kept(rome_research, rome_contract, profile):
     pricey = max(rome_research.flights_outbound, key=lambda f: f.price_per_person.amount)
     plan = build_plan(_ctx(rome_contract, rome_research, profile, flight_pins=[pricey.id]))

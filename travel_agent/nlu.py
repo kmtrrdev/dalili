@@ -15,6 +15,7 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 from . import llm
+from .config import settings
 from .config import today as _today
 
 
@@ -128,6 +129,11 @@ class TurnInterpretation(BaseModel):
     route_decision: Literal["accept", "change"] | None = Field(default=None, description=(
         "Only when a route proposal is pending (see context): 'accept' if the user agrees or lets you decide, "
         "'change' if they want something different (cities, nights, order, adding/dropping a place)."))
+    hypothetical: bool = Field(default=False, description=(
+        "True when the change is a question to compare, not to apply yet: 'what if my budget were $500 more?', "
+        "'لو زودت الميزانية 500 هيحصل ايه؟', 'how much would it cost with 2 more days?'"))
+    apply_pending: bool = Field(default=False, description=(
+        "True when the user accepts the what-if comparison the assistant just showed ('apply it', 'تمام نفذها')"))
     source: str = "rules"
 
 
@@ -643,8 +649,16 @@ def interpret_rules(text: str, has_plan: bool, place_names: dict[str, str], toda
         intent = "feedback"
     else:
         intent = "smalltalk"
+    hypothetical = has_plan and bool(WHAT_IF_RE.match(text))
+    apply_pending = has_plan and bool(APPLY_RE.match(text))
     return TurnInterpretation(intent=intent, requirements=req, feedback=fb, actions=actions,
-                              question=text if intent == "question" else None, source="rules"), notes
+                              question=text if intent == "question" else None, hypothetical=hypothetical,
+                              apply_pending=apply_pending, source="rules"), notes
+
+
+# Offline test harness only (the model decides this in production).
+WHAT_IF_RE = re.compile(r"^\s*(what if|what would happen if|how about if|suppose)\b", re.I)
+APPLY_RE = re.compile(r"^\s*(yes|yep|sure|ok|okay|apply( it)?|do it|go ahead|let'?s do (it|that)|sounds good)\b[.! ]*$", re.I)
 
 
 # ---------------------------------------------------------------------------
@@ -687,6 +701,9 @@ Convert the user's latest message into the TurnInterpretation schema.
     context's plan_total rounded up to a round number.
 - If a plan exists and the message asks to change it, use intent=feedback with actions (requirements may also be set).
 - intent=question when the user asks for information about travel rather than changing the trip.
+- A hypothetical change to compare, not apply yet ("what if my budget were $500 more?", "لو زودت يومين هتبقى بكام؟"):
+  express the change normally and set hypothetical = true. If the context shows a pending_what_if and the user accepts
+  it ("apply it", "تمام نفذها", "ok go with that"), set apply_pending = true.
 - intent=off_topic when the message is outside the travel scope below (e.g. "who is Messi?", "write me Python code").
 """ + SCOPE_RULE + """
 - The context's recent_conversation holds the last few messages (oldest first). Use it to resolve references to what was just said ("the second one", "that hotel", "yes, do that", "نفس المكان", "اللي قلته") into concrete values or actions.
@@ -716,8 +733,9 @@ async def interpret(text: str, has_plan: bool, place_names: dict[str, str], cont
     if llm.available():
         result = await interpret_llm(text, context, today)
         if result is not None:
-            # The model understands the message (any language). The rule-based parser never runs alongside it:
-            # its guesses (e.g. an assumed start date) must not leak into a turn the model understood.
+            # The model understands the message (any language); no keyword rules run alongside it.
             return result, []
-    # Offline safety net only: the model is unreachable or failed.
-    return interpret_rules(text, has_plan, place_names, today)
+    if settings.rules_fallback:  # offline test harness only (never in production)
+        return interpret_rules(text, has_plan, place_names, today)
+    # No guessing with keywords: say the assistant is briefly unavailable instead.
+    return TurnInterpretation(intent="smalltalk", source="unavailable"), []

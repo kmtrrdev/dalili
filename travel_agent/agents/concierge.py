@@ -35,7 +35,7 @@ log = logging.getLogger(__name__)
 
 MAX_STEPS = 5
 ToolName = Literal["plan_lookup", "search_nearby", "find_place", "weather", "directions", "convert_currency",
-                   "travel_guide", "flight_options", "final_answer", "change_plan"]
+                   "travel_guide", "flight_options", "final_answer", "change_plan", "apply_what_if"]
 
 TOOLS_DOC = """Tools (pick exactly one per step):
 - plan_lookup {"day": int|null}: the traveller's current plan (hotel, flights, each day's schedule and weather).
@@ -49,7 +49,10 @@ TOOLS_DOC = """Tools (pick exactly one per step):
 - travel_guide {"query": str}: the Wikivoyage guide for the destination (customs, safety, tipping, transport...).
 - flight_options {}: every researched flight (and round-trip ticket) with price, times and stops, plus the chosen ones.
 - final_answer {}: put the reply in 'answer' (and optional 'follow_ups').
-- change_plan {}: put the structured changes in 'changes'; the planner rebuilds, checks and explains the new plan."""
+- change_plan {}: put the structured changes in 'changes'; the planner rebuilds, checks and explains the new plan.
+  For a question to COMPARE rather than apply ("what if my budget were 500 more?", "لو زودت يومين هتبقى بكام؟") set
+  changes.hypothetical = true: the traveller sees the comparison and the plan stays as it is until they accept.
+- apply_what_if {}: only when context.pending_what_if exists and the traveller accepts it ("apply it", "تمام نفذها")."""
 
 SYSTEM = f"""You are Dalili, an expert travel planner agent with live tools. The traveller already has a trip plan.
 Read their latest message (any language or dialect - understand the intent, not keywords) and decide what it needs:
@@ -98,6 +101,7 @@ class PlanChange(BaseModel):
     requirements: Requirements = Field(default_factory=Requirements)
     feedback: list[FeedbackNote] = Field(default_factory=list)
     route_change_request: str | None = None
+    hypothetical: bool = Field(default=False, description="True for a what-if to compare, not to apply yet")
 
 
 class Step(BaseModel):
@@ -114,6 +118,7 @@ class ConciergeResult(BaseModel):
     follow_ups: list[str] = []
     steps: int = 0
     changes: PlanChange | None = None  # set when the agent decided to change the trip instead of answering
+    apply_what_if: bool = False        # the traveller accepted the pending what-if comparison
 
 
 MODES = {"best": 6, "transit": 3, "walking": 2, "driving": 0}
@@ -245,6 +250,7 @@ async def converse(trip: TripState, message: str, allow_changes: bool = True) ->
     context["day_titles"] = [f"Day {d.day} ({d.date:%a %d %b}): {d.title}" for d in plan.days] if plan else []
     context["plan_total"] = f"{plan.budget.total:,.0f} {plan.budget.currency}" if plan and plan.budget else None
     context["today"] = today().isoformat()
+    context["pending_what_if"] = trip.metadata.get("pending_whatif_summary")
     context["recent_conversation"] = recent_turns(trip)  # so "and the second one?" follows the last answer
     for n in range(MAX_STEPS):
         last = n == MAX_STEPS - 1
@@ -256,6 +262,13 @@ async def converse(trip: TripState, message: str, allow_changes: bool = True) ->
         if step is None:
             return None
         trace.step(trip, "concierge", "thought", step.thought)
+        if step.tool == "apply_what_if" and allow_changes:
+            if trip.metadata.get("pending_whatif_summary"):
+                trace.step(trip, "concierge", "decision", "Applying the what-if comparison the traveller accepted.")
+                return ConciergeResult(apply_what_if=True, steps=n + 1)
+            scratch.append({"thought": step.thought, "tool": step.tool, "args": {},
+                            "observation": "There is no pending what-if to apply."})
+            continue
         if step.tool == "change_plan" and allow_changes:
             changes = step.changes or PlanChange()
             if not (changes.actions or changes.feedback or changes.route_change_request
