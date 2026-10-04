@@ -10,6 +10,7 @@ from __future__ import annotations
 import asyncio
 import json
 import logging
+import os
 import sys
 import time
 from typing import Any
@@ -57,7 +58,10 @@ class MCPHub:
     def _target(self, server: str):
         module = SERVERS[server]
         if self.transport == "stdio":
-            return StdioServerParameters(command=sys.executable, args=["-m", module.__name__], cwd=str(PROJECT_DIR))
+            # The SDK gives child processes a minimal environment by default; the servers need the keys, which in
+            # production come from environment variables (not a .env file).
+            return StdioServerParameters(command=sys.executable, args=["-m", module.__name__], cwd=str(PROJECT_DIR),
+                                         env=dict(os.environ))
         return module.server
 
     async def list_tools(self, server: str) -> list[str]:

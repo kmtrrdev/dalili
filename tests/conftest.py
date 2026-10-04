@@ -15,6 +15,11 @@ os.environ["TRAVEL_AGENT_HTTP_CACHE"] = str(ROOT / "tests" / "fixtures" / "http_
 os.environ["TRAVEL_AGENT_TODAY"] = "2026-09-27"
 os.environ["TRAVEL_AGENT_LLM"] = "0"
 os.environ["TRAVEL_AGENT_DB"] = ":memory:"
+if os.getenv("RECORD") != "1":
+    # Replay never sends a request, but providers refuse to run without a key: placeholders let the suite run
+    # anywhere (CI has no .env). Recorded cache keys never include API keys, so lookups still match.
+    for key in ("SERPAPI_API_KEY", "ORS_API_KEY", "OPENTRIPMAP_API_KEY", "GEOAPIFY_API_KEY"):
+        os.environ[key] = "replay-placeholder"
 sys.path.insert(0, str(ROOT))
 
 from datetime import date  # noqa: E402
