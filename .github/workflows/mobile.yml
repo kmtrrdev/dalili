@@ -59,6 +59,8 @@ jobs:
           path: mobile/build/app/outputs/bundle/release/app-release.aab
 
   ios:
+    # Off until the Apple Developer account and signing secrets exist (repository variable IOS_ENABLED=true).
+    if: vars.IOS_ENABLED == 'true'
     runs-on: macos-latest
     defaults:
       run:
