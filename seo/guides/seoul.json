@@ -1,0 +1,227 @@
+{
+ "slug": "seoul",
+ "name": "Seoul",
+ "country": "South Korea",
+ "tags": [
+  "food",
+  "shopping",
+  "culture",
+  "nightlife"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Seoul",
+ "en": {
+  "city_name": "Seoul",
+  "country_name": "South Korea",
+  "title": "Seoul travel guide: what to see, eat and know",
+  "meta_description": "Practical Seoul travel guide with top sights, food to try, budget tips and a 3-day itinerary for first-time visitors.",
+  "h1": "Seoul travel guide: what to see, eat and know",
+  "intro": [
+   "Seoul is the capital and largest city of South Korea, a sprawling metropolis where centuries-old palaces and temples sit alongside gleaming skyscrapers and busy shopping districts. The city is a cultural and financial hub with a dynamic street-food culture, lively nightlife and a constant flow of new trends.",
+   "Visitors will find sharp contrasts throughout Seoul: serene Buddhist temples and historic royal sites coexist with high-tech neighborhoods, huge shopping malls and densely packed residential towers. You can see many of the city's main sights in a few days, but there are neighbourhoods, parks and hiking routes enough to keep a dedicated traveller busy for much longer."
+  ],
+  "best_time": "Spring and autumn are popular for pleasant weather and clearer skies, while summer can be hot and humid and winter cold; peak visitor numbers often rise during the nicer seasons. If you want fewer crowds, consider visiting outside public holiday periods and the busiest weekend periods.",
+  "top_sights": [
+   {
+    "name": "Gyeongbokgung Palace",
+    "why": "Seoul's grandest palace and centrepiece of the Joseon era, offering restored palace buildings and museums; practical tip: guided English tours run daily and the palace is closed one weekday, so check which day before you plan a visit."
+   },
+   {
+    "name": "Changdeokgung and the Secret Garden",
+    "why": "A favourite royal residence noted for its harmonious palace buildings and the Secret Garden, a landscaped royal retreat; practical tip: allow extra time if you want to visit the Secret Garden, which is a distinct highlight."
+   },
+   {
+    "name": "Jongmyo Shrine",
+    "why": "A historic royal shrine where Joseon kings are enshrined and traditional ancestral rites take place; practical tip: visit to experience one of Seoul's most solemn historic sites and to learn about royal ceremonies."
+   },
+   {
+    "name": "Jogyesa Temple and Bongeunsa Temple",
+    "why": "Two important Buddhist temples in the city where visitors can observe Korean Buddhist practice and find moments of calm; practical tip: these temples are good places to experience religious culture without leaving central Seoul."
+   },
+   {
+    "name": "Hangang Citizen's Park (Banpo and Yeouido areas)",
+    "why": "Parks lining the Han River popular for walking, cycling and riverside leisure, with notable spots such as Banpo and floating Some Sevit; practical tip: bring a light jacket for evenings and consider renting a bike to cover more of the riverside paths."
+   },
+   {
+    "name": "Seoul Forest",
+    "why": "A large urban park redeveloped from a racecourse, featuring greenery, a greenhouse and free-roaming deer areas; practical tip: it's a pleasant alternative to the river parks and good for a relaxed day outdoors."
+   },
+   {
+    "name": "Bukhansan and other city mountains",
+    "why": "Mountains within easy reach of the city offering hiking routes and natural scenery, with peaks ranging up to about 800 m accessible by public transport; practical tip: choose a trail that matches your fitness and bring suitable footwear and water."
+   },
+   {
+    "name": "Large shopping malls and university neighbourhoods (COEX, Lotte World Mall, Hongdae)",
+    "why": "Major malls offer extensive shopping and dining under one roof while university areas like Hongdae showcase youth-driven fashion and creative boutiques; practical tip: weekends are busiest, so visit earlier in the day for a quieter experience."
+   }
+  ],
+  "getting_around": "Seoul has an extensive subway and bus network that serves most attractions and neighbourhoods; many of the city's highlights are reachable by public transport. For short trips within districts, taxis and walking are convenient; plan more time for journeys during peak commuting hours when the subway and roads are very busy.",
+  "food": [
+   {
+    "name": "Korean barbecue",
+    "note": "A ubiquitous dining experience where grilled pork and beef are often shared with many side dishes, making it a social meal and a taste of local dining culture."
+   },
+   {
+    "name": "Banchan and kimchi",
+    "note": "Most meals come with multiple side dishes such as kimchi and pickled vegetables; these are served alongside the main dish and are central to Korean dining."
+   },
+   {
+    "name": "24-hour restaurants and late-night street food",
+    "note": "Seoul has many late-night spots offering mandu, odeng, ddeokbokki, naengmyeon, udon and ramyeon, making it easy to eat at any hour."
+   },
+   {
+    "name": "Jjajangmyeon and tangsuyuk delivery",
+    "note": "Ordering jjajangmyeon with tangsuyuk for delivery is a common local ritual, often enjoyed at home while doing leisure activities."
+   },
+   {
+    "name": "Department store basement food courts",
+    "note": "Large department stores have basement food halls that serve a wide range of dishes and are a reliable place for varied meals, often at reasonable prices."
+   }
+  ],
+  "budget_tips": [
+   "Buy meals in department store basements or similar food halls where a good lunch can cost ₩5,000 or less.",
+   "Use 24-hour or late-night restaurants for inexpensive options—many menu items are affordable and available late into the night.",
+   "Take advantage of public parks and free outdoor attractions like the Han River parks and city mountains to enjoy the city without spending much.",
+   "Look for free guided tours at major sites when available and consider informational pamphlets that are inexpensive for deeper context (for example, palace pamphlets)."
+  ],
+  "safety": [
+   "Public trash bins are uncommon in Seoul, so carry a small bag for rubbish until you can dispose of it at a convenience store or your accommodation.",
+   "When dining alone at places that commonly serve shared plates, politely ask if solo dining is acceptable by saying 'han myung' to indicate one person.",
+   "Be prepared for large crowds on public transport during rush hours; keep personal belongings secure and be patient when stations and trains are busy."
+  ],
+  "itinerary": [
+   "Day 1: Explore the historic heart — visit Gyeongbokgung, stroll to nearby palaces such as Changdeokgung (including the Secret Garden if you can), and finish with a temple visit or a walk through the Jongno district.",
+   "Day 2: Spend time outdoors — cycle or walk along the Han River parks (Banpo/Yeouido), visit Seoul Forest or another large park, and in the evening experience a lively dining area or a night market.",
+   "Day 3: Discover neighbourhood culture — browse shops and cafés in Hongdae or university areas, explore a large mall like COEX or Lotte World Mall for shopping and dining, and choose an evening activity such as a baseball or football match if available."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Seoul?",
+    "a": "A few days will let you see the main palaces, a temple and a riverside park, but a week or more gives time to explore neighbourhoods, large parks and take multiple hikes or museum visits."
+   },
+   {
+    "q": "Is Seoul expensive to visit?",
+    "a": "Seoul can be done on a budget by eating in basement food courts or 24-hour restaurants and using public transport, while high-end dining and large malls offer more costly options for shoppers."
+   },
+   {
+    "q": "Is Seoul safe for tourists?",
+    "a": "Seoul is generally safe for visitors; standard precautions apply in crowded places and on busy public transport. Be mindful of personal belongings during rush hour and carry a small bag for rubbish because public bins are scarce."
+   },
+   {
+    "q": "What is the best area to stay in Seoul?",
+    "a": "Stay near central districts like Jongno or near major subway lines for easy access to palaces and museums, or choose neighbourhoods such as Hongdae for nightlife and youthful culture—pick a location that suits your interests and transport needs."
+   },
+   {
+    "q": "How do I get around the city?",
+    "a": "Use Seoul's extensive subway and bus networks to reach most attractions; for short journeys within districts, taxis and walking are convenient, but expect crowded trains during peak commuting hours."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "سيول (Seoul)",
+  "country_name": "كوريا الجنوبية",
+  "title": "سيول دليل سفر: ما تُشاهده وتأكله وتتعلم عنه",
+  "meta_description": "دليل سيول يتضمن أهم المعالم التاريخية والحدائق والطعام وميزانية مختصرة وخطة لثلاثة أيام.",
+  "h1": "دليل سفر سيول: ما ترى وتفعل وتأكل وتعرف",
+  "intro": [
+   "سيول (서울) هي عاصمة كوريا الجنوبية وأكبر مدنها، مدينة ضخمة تمزج بين تقاليد قديمة وتكنولوجيات رقمية متقدمة، وتجمع أسواق طعام الشوارع وحياة ليلية نشطة مع معابد هادئة ومناظر جبلية حضرية.",
+   "يمكن رؤية معظم المعالم الأساسية في بضعة أيام، لكن المدينة تتغير بسرعة وتستحق مزيداً من الوقت للاستكشاف، خصوصاً أزقتها التاريخية، قصورها الملكية، وحدائقها ونشاطات الثقافة الشعبية."
+  ],
+  "best_time": "تختلف تجربة الزيارة حسب الموسم؛ الربيع والخريف عادة مريحان للتمشي والتنزّه في الحدائق والجبال وتجنب ازدحام الصيف، بينما كل موسم يجذب زواراً لفعاليات مختلفة لذا خطط حسب نشاطك المفضل.",
+  "top_sights": [
+   {
+    "name": "قصر كيونغبكغونغ (Gyeongbokgung)",
+    "why": "أكبر وأهم قصور فترة جوسون ويضم متحف القصر ومتحف التراث الكوري؛ مفيد الانضمام للجولات المرشدة المجانية المتاحة يومياً (الجولة الإنجليزية 11:00، 13:30، 15:30) ويفتح باستثناء أيام الثلاثاء، وتُقام أحياناً زيارات ليلية تتطلب حجزاً عبر الإنترنت."
+   },
+   {
+    "name": "قصر تشانغدوكغونغ (Changdeokgung)",
+    "why": "قصر سكني مفضّل لعائلة جوسون الملكية ويشتهر بحديقة السرية (الحديقة المحرّمة)؛ يوفّر تجربة أقرب لحياة البلاط الملكي ويناسب من يحب الحدائق التاريخية."
+   },
+   {
+    "name": "قصر تشانغييونغغونغ (Changgyeonggung)",
+    "why": "قصر تاريخي تضرَّر بعد سقوط جوسون وكان له استخدامات متعددة لاحقاً؛ يُكمل جولة القصور الكبرى لمن يريد فهم تطور المدينة عبر التاريخ."
+   },
+   {
+    "name": "قصر جيونغهويغونغ (Gyeonghuigung)",
+    "why": "قصر آخر من حقبة جوسون تعرض لأضرار كبيرة وتم استغلاله لأغراض مدنية لاحقة، إضافة مهمة لمن يهتم بالعمارة التاريخية وإعادة الإعمار."
+   },
+   {
+    "name": "قصر دوكسوغونغ (Deoksugung)",
+    "why": "قسّم بين الطرازين التقليدي والغربي ويعكس سنوات نهاية الملكية؛ مكان مناسب لمشاهدة تباين العمارة في فترة الانتقال."
+   },
+   {
+    "name": "مزار جونغميو (Jongmyo)",
+    "why": "مزار يؤمّن تكريماً لملوك جوسون ويقام فيه طقس جونغميو جيري التقليدي؛ مهم لمن يهتم بالطقوس الملكية والتاريخ الديني."
+   },
+   {
+    "name": "معبدا جوكيسا (Jogyesa) وبونغيونسا (Bongeunsa)",
+    "why": "معابد بوذية بارزة تتيح الاطلاع على جانب من الممارسات الدينية والتأمل داخل المدينة؛ مناسبة لتجربة هادئة بعيداً عن صخب الأحياء التجارية."
+   },
+   {
+    "name": "منتزهات على نهر الهان (Hangang) وحديقة بانبو",
+    "why": "شبكة كبيرة من المتنزهات على طول نهر الهان توفر مسارات للمشي وركوب الدراجات وأسواق ليلية؛ بانبو مميّز لعرض نافورة جسر بانبو ولجزيرة Some Sevit العائمة."
+   }
+  ],
+  "getting_around": "سيول تخدّم بشبكة مترو ضخمة تُعد من الأكبر في العالم وتستخدم بكثافة يومياً؛ الوصول إلى المعالم سهل بالمواصلات العامة (مثلاً محطة قصر كيونغبكغونغ الخروج 5 على الخط 3) وتوجد أيضاً حافلات سياحية مدينة وخيارات نقل عام مريحة إلى الجبال والحدائق.",
+  "food": [
+   {
+    "name": "الباربكيو الكوري (Korean BBQ)",
+    "note": "تجربة اجتماعية شهيرة تقدم لحم الخنزير أو البقري مع أطباق جانبية كثيرة وغالباً ما تُقدم في مطاعم تعمل حتى وقت متأخر."
+   },
+   {
+    "name": "ججاخانغميون وتانغسويك",
+    "note": "أطباق شعبية تُذكر في الدليل كأساسيات للطلب للتوصيل مع أجواء منزلية ومألوفة."
+   },
+   {
+    "name": "البانتشان والكيمتشي",
+    "note": "أطباق جانبية متنوّعة تُقدم مع معظم الوجبات، وهي جزء لا يتجزأ من تجربة الطعام الكوري."
+   },
+   {
+    "name": "مطاعم 24 ساعة والطعام السريع المحلي",
+    "note": "توفر خيارات رخيصة ومتنوعة مثل ماندو وأودين وتوكبوكي ورامن، مفيدة للزيارة ليلًا أو عند الحاجة لوجبة سريعة."
+   },
+   {
+    "name": "المخابز وقاعات الطعام في الطوابق السفلية",
+    "note": "موجودة في كل مكان وتقدّم خيارات مخبوزات ووجبات سريعة، أما قاعات الطعام في طوابق الدوائر الكبرى فتوفر تنوّعاً كبيراً للوجبات."
+   }
+  ],
+  "budget_tips": [
+   "ابحث عن طعام رخيص في قاعات الطعام بالطوابق السفلية للمحال الكبيرة لتوفير المال على الوجبات.",
+   "تستفيد من المطاعم المفتوحة 24 ساعة وأسواق الطعام لتناول وجبات بأسعار منخفضة نسبيًا.",
+   "الانضمام للجولة المرشدة المجانية في قصر كيونغبكغونغ يوفر سياق تاريخي دون تكلفة إضافية، وهناك كتيبات معلومات موسّعة متاحة مقابل مبلغ رمزي.",
+   "استخدم المترو والحافلات للتنقل بدل التاكسي لتقليل نفقات التنقل."
+  ],
+  "safety": [
+   "احترم قواعد الأكل الجماعي والتقاليد المحلية؛ إذا كنت ستأكل بمفردك، اسأل مسبقاً بإخباره «هان ميونغ» إن كان مسموحاً بالجلوس لشخص واحد.",
+   "لا تتوقع سلات نفايات عامة بكثرة، احتفظ بنفاياتك حتى تجد مكان إلقاء مناسب.",
+   "كن حذراً في الأماكن المزدحمة خصوصاً في محطات المترو وأسواق التجزئة واحفظ أغراضك الثمينة.",
+   "التزم بقوانين وأنظمة الحدائق ومسارات المشي في الجبال للحفاظ على السلامة والطبيعة."
+  ],
+  "itinerary": [
+   "اليوم الأول: جولة في حي جونغنو لزيارة القصور الخمسة (بدءاً بكيوingbokgung ثم تشانغدوكغونغ ودوكسوغونغ) وزيارة مزار جونغميو للتاريخ الملكي.",
+   "اليوم الثاني: استكشاف حدائق نهر الهان (مثل بانبو) وزيارة بعض المتنزهات المتميزة كسيول فورست أو أولمبيك بارك وصعود جبل قريب للمشي أو لمشاهدة المدينة من الأعلى.",
+   "اليوم الثالث: اكتشف أحياء التسوق والشباب مثل هونغدي أو ميوندونغ، وتذوّق طعام الشارع، وأنهِ الزيارة بحضور مباراة كرة قدم أو بيسبول إذا أمكن."
+  ],
+  "faq": [
+   {
+    "q": "كم يوماً أحتاج لزيارة سيول؟",
+    "a": "لمعرفة المعالم الأساسية يكفي عادة 2–4 أيام، لكن لاستكشاف أحيائها المتنوعة والحدائق والجبال يُنصح بقضاء أسبوع إذا أمكن."
+   },
+   {
+    "q": "هل سيول مدينة مكلفة؟",
+    "a": "تعتمد التكلفة على أسلوب السفر؛ توجد خيارات اقتصادية كثيرة للطعام والمواصلات، كما أن المراكز التجارية والمطاعم الراقية قد تكون مكلفة نسبياً."
+   },
+   {
+    "q": "هل سيول آمنة للسياح؟",
+    "a": "بشكل عام سيول مدينة آمنة، مع حشود نانحة في ساعات الذروة فاحرص على أغراضك واتّبع إرشادات السلامة في الأماكن العامة."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "الاختيار يعتمد على تفضيلاتك؛ منطقة جونغنو مناسبة لزوار المعالم التاريخية، وهونغدي جيدة لمن يبحث عن حياة ليلية وثقافة شبابية، وغانغنام مناسبة للتسوق والحداثة."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط سيول؟",
+    "a": "يمكن الوصول بوسائل نقل عام متنوعة تشمل قطارات ومواصلات برّية وحافلات مكوكية؛ المترو والحافلات تربط المدينة بشكل جيد إلى أنحاءها ومَعالمها."
+   }
+  ]
+ }
+}

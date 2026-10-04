@@ -1,0 +1,40 @@
+name: dalili
+description: "Dalili - your AI travel planner (iOS + Android). Talks to the Dalili backend in ../travel_agent."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: any                     # REST + server-sent events (live planning progress)
+  shared_preferences: any       # language, theme, server address, guest id, open trip
+  flutter_secure_storage: any   # the sign-in token (Keychain / Keystore)
+  url_launcher: any             # booking links
+  google_fonts: ">=6.2.0 <9.0.0"  # Space Grotesk / Inter / Cairo, like the website (9.x moved to package:material_ui)
+  intl: any                     # dates in Arabic and English
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: any   # generates the app icon for Android and iOS
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#04060C"
+  adaptive_icon_foreground: "assets/icon/icon_fg.png"
+  remove_alpha_ios: true

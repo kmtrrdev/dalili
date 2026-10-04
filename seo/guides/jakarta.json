@@ -1,0 +1,226 @@
+{
+ "slug": "jakarta",
+ "name": "Jakarta",
+ "country": "Indonesia",
+ "tags": [
+  "culture",
+  "shopping"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Jakarta",
+ "en": {
+  "city_name": "Jakarta",
+  "country_name": "Indonesia",
+  "title": "Jakarta travel guide: sights, food, budget & 3-day plan",
+  "meta_description": "Practical Jakarta travel guide with top sights, Betawi food, budget tips, safety advice and a 3-day itinerary for first-time visitors.",
+  "h1": "Jakarta travel guide: what to see, eat and know",
+  "intro": [
+   "Jakarta is Indonesia's capital and largest city, a vast and dynamic metropolis nicknamed the Big Durian. It can be overwhelming at first — with heavy traffic, heat and pollution — but rewards visitors with lively nightlife, diverse cuisines, green parks and a wide range of museums and cultural experiences.",
+   "The city mixes colonial legacy, national monuments and local Betawi traditions alongside modern shopping malls and entertainment. Whether you want history in Kota Tua, cultural displays at museums, green escapes or tropical islands just off the coast, Jakarta offers options for many budgets and travel styles."
+  ],
+  "best_time": "Visit outside the wettest parts of the year if you want fewer disruptions from heavy rain and related congestion; Jakarta is hot year-round. Expect the city to be busiest during weekends and rush hours, so plan sightseeing for mornings or off-peak times when possible.",
+  "top_sights": [
+   {
+    "name": "Kota Tua (Old Town)",
+    "why": "Jakarta's historic core where restored colonial buildings and a pedestrian-friendly area give a sense of the city's past; start here to visit several nearby museums and enjoy the walking area."
+   },
+   {
+    "name": "Jakarta History Museum (Stadhuis)",
+    "why": "A city museum covering Jakarta's development from early history to modern times; don't miss the historical Jagur cannon displayed in the courtyard."
+   },
+   {
+    "name": "National Monument (Monas) and Presidential Palace",
+    "why": "The iconic national landmark and surrounding park form the civic heart of Jakarta and offer history, statues and nearby institutions; combine a visit here with the adjacent museums and monuments."
+   },
+   {
+    "name": "Istiqlal Mosque and Jakarta Cathedral",
+    "why": "A striking pairing of Southeast Asia's largest mosque and a centuries-old cathedral standing opposite each other, illustrating Indonesia's religious heritage and architectural contrast."
+   },
+   {
+    "name": "Museum Nasional",
+    "why": "One of the city's major museums with well-designed displays on Indonesian history and culture; it is located on the western side of the Monas court and is convenient to combine with other central sights."
+   },
+   {
+    "name": "Museum Wayang and Museum Seni Rupa & Keramik",
+    "why": "Two museums that showcase Indonesian performing arts and visual arts — Wayang for puppetry across the archipelago and Seni Rupa & Keramik for paintings, sculptures and ceramics."
+   },
+   {
+    "name": "Museum Bahari and Bank Indonesia Museum",
+    "why": "Museum Bahari explores Jakarta's maritime heritage while the Bank Indonesia Museum explains the nation's economy and currency using modern exhibits; both add depth to understanding the city's past and present."
+   },
+   {
+    "name": "Ragunan Zoo",
+    "why": "A very large zoo with diverse flora and fauna, including a centre for primates and orangutans; it is one of the city's major green attractions and ideal for families and wildlife enthusiasts."
+   }
+  ],
+  "getting_around": "Traffic on major roads can be heavy, especially during rush hours and rainy periods, so allow extra travel time. Ride-hailing apps such as Gojek and Grab operate across the city and are useful for short trips or food delivery; combine them with morning walking in compact areas like Kota Tua or well-located public parks to avoid long journeys.",
+  "food": [
+   {
+    "name": "Gado-gado",
+    "note": "A vegetable salad served with peanut sauce; a widely enjoyed Indonesian dish found across the city."
+   },
+   {
+    "name": "Kerak telor",
+    "note": "A Betawi-style omelette made with glutinous rice, shredded coconut and dried shrimp — a local specialty worth trying."
+   },
+   {
+    "name": "Soto Betawi",
+    "note": "A rich coconut-milk based beef soup featuring tendons and offal, reflecting Betawi comfort food traditions."
+   },
+   {
+    "name": "Nasi uduk",
+    "note": "Rice cooked in coconut milk served with various toppings such as fried chicken and sambal, common in Betawi cuisine."
+   },
+   {
+    "name": "Street food and mall food courts",
+    "note": "Jakarta offers everything from kaki lima street vendors to hygienic mall food courts and international restaurants, giving a wide range of choices and price points."
+   }
+  ],
+  "budget_tips": [
+   "Eat at shopping-mall food courts for cheap, filling meals — they are widespread and generally good value.",
+   "Use ride-hailing apps for quick trips and food delivery to save time and sometimes money compared with taxis.",
+   "Seek out the Jakarta Great Sale season (mid-June to mid-July) for discounts at many malls and stores.",
+   "Be selective with street vendors: they can be inexpensive but vary in hygiene, so choose busy stalls with fresh cooking."
+  ],
+  "safety": [
+   "Expect heavy traffic and congestion — leave extra time for journeys and be cautious when crossing busy roads.",
+   "Air quality can be poor; if you are sensitive to pollution, limit strenuous outdoor activity and seek indoor or green spaces.",
+   "Use discretion with street food hygiene; prefer busy, well-maintained stalls or mall eateries if you have a sensitive stomach.",
+   "Take usual precautions in crowded tourist areas to protect your belongings and avoid pickpocketing opportunities."
+  ],
+  "itinerary": [
+   "Day 1: Explore Kota Tua and its museums — visit the Jakarta History Museum, Museum Wayang and nearby colonial streets; add a stroll along the old port area to sense the city's maritime origins.",
+   "Day 2: Visit Monas and the surrounding civic area, see the Presidential Palace, then walk between Istiqlal Mosque and Jakarta Cathedral; finish at Museum Nasional or Gallery Nasional for artefacts and art.",
+   "Day 3: Spend the day in green and leisure attractions — choose Ragunan Zoo or Taman Impian Jaya Ancol for amusement and sea views, or visit Taman Mini Indonesia Indah to experience regional culture and museums."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Jakarta?",
+    "a": "Two to four days lets you see key museums, Monas and a mix of cultural and leisure attractions; allow extra time if you want to visit nearby islands or spend more time shopping and dining."
+   },
+   {
+    "q": "Is Jakarta expensive to visit?",
+    "a": "Costs vary widely — you can eat cheaply at mall food courts and some street stalls, while malls, branded goods and premium entertainment can be costly; use local budget options and ride-hailing to control expenses."
+   },
+   {
+    "q": "Is Jakarta safe for tourists?",
+    "a": "Jakarta is a bustling city where usual urban precautions apply: be mindful of traffic, pollution and crowded spots, and watch your belongings in busy areas; choose reputable vendors and accommodations."
+   },
+   {
+    "q": "What is the best area to stay in Jakarta?",
+    "a": "Many visitors base themselves near central attractions such as the Monas area or in districts that offer easy access to malls, museums and restaurants; pick a location that reduces commute time to your planned activities given frequent congestion."
+   },
+   {
+    "q": "How do I get around from the airport?",
+    "a": "Ride-hailing services such as Gojek and Grab operate widely and are commonly used to travel to and around the city; always allow plenty of extra time for journeys because major roads can be heavily congested."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "جاكرتا",
+  "country_name": "إندونيسيا",
+  "title": "جاكرتا travel guide: دليل السفر إلى جاكرتا",
+  "meta_description": "دليل جاكرتا: أهم المعالم في كوتا توآ ومتحف التاريخ، أين تأكل الأطباق البتّاوية، نصائح لتوفير الميزانية وخطة لثلاثة أيام.",
+  "h1": "دليل جاكرتا: ماذا ترى، تأكل وتعرف",
+  "intro": [
+   "جاكرتا هي عاصمة إندونيسيا وأكبر مدنها، وتقع على جزيرة جاوة وتشتهر بكثرة السكان والتنوع الحضري. المدينة معروفة بلقب \"الديوريان الكبير\" بسبب صخبها واندفاعها الحضري، لكنها أيضاً مدينة عالمية نابضة بالحياة تقدم تاريخاً غنياً وثقافة متنوعة ومشهد طعام واسع.",
+   "قد تكون الضوضاء والازدحام والملوثات أول انطباع تواجهه، لكن جاكرتا تقدم متاحف ومناطق تاريخية مثل كوتا توآ وموناس، فضلاً عن حدائق ومنتزهات ترفيهية وأسواق ومراكز تسوق كبيرة تناسب ميزانيات مختلفة ومستويات المتعة المتنوعة."
+  ],
+  "best_time": "يعتمد أفضل وقت للزيارة على تحملك للحرّ والرطوبة وحالات الأمطار؛ المواسم الأقل أمطاراً تكون أنسب لتجوال المشي وزيارات المعالم، بينما موسم الأمطار يزيد من ازدحام الشوارع أحياناً بسبب متسقّط السائقين تحت الممرات. ضع في الحسبان أن المدينة مزدحمة على الدوام خلال ساعات الذروة.",
+  "top_sights": [
+   {
+    "name": "كوتا توآ (Kota Tua)",
+    "why": "الحي التاريخي حيث تتجمع المباني الهولندية القديمة وممرات للمشاة؛ مكان جيد للبدء في استكشاف تاريخ المدينة ولقضاء وقت في المتاحف والمقاهي، نصيحة عملية: ارتدِ أحذية مريحة لأن المشي هو الطريقة الأسهل للتجول داخل الحي."
+   },
+   {
+    "name": "مرفأ سوندا كيلاپا (Sunda Kelapa)",
+    "why": "ميناء تاريخي يعود إلى القرن الثاني عشر ويعكس أصول جاكرتا كمركز تجاري قديم؛ يوفّر مشاهد للقوارب التقليدية ويستحق زيارة مبكّرة لتفادي الحرارة والازدحام."
+   },
+   {
+    "name": "متحف تاريخ جاكرتا (Jakarta History Museum)",
+    "why": "يقع في مبنى البلدية السابق ويعرض تاريخ المدينة منذ القرن الخامس حتى العصر الحديث، ويضم مدفع جاكور في الفناء الخلفي؛ مناسب لمحبي التاريخ ومحاولة زيارة المعروضات المنظمة."
+   },
+   {
+    "name": "النصب التذكاري الوطني (Monas)",
+    "why": "رمز بارز في وسط المدينة يمثل استقلال إندونيسيا ومحيط متنزه وزيارات متكررة؛ قربه من القصر الرئاسي يجعل من السهل دمج الزيارة مع جولة في المتاحف القريبة."
+   },
+   {
+    "name": "مسجد الاستقلال (Istiqlal Mosque)",
+    "why": "أكبر مسجد في جنوب شرق آسيا وموقع بارز للزوار مهتمين بالعمارة الإسلامية؛ احترم قواعد اللباس والسلوك أثناء الزيارة وتحقّق من مواعيد الزيارة للزوار."
+   },
+   {
+    "name": "كاتدرائية جاكرتا (Jakarta Cathedral)",
+    "why": "كاتدرائية قوطية عمرها أكثر من مئة عام تقع مقابل المسجد الكبير، ومناظر التقابل بين المشهدين الدينيين لقطة تصويرية مهمة؛ التزم بالهدوء واللياقة داخل المكان."
+   },
+   {
+    "name": "متحف ناسونال (Museum Nasional)",
+    "why": "متحف وطني يعرض مجموعات أثرية وفنية تعكس تراث إندونيسيا، وموقع جيد لفهم تاريخ البلاد والثقافات المتنوعة، نصيحة: خطط لعدة ساعات لأن المعروضات واسعة."
+   },
+   {
+    "name": "تامن إمبيان جايا أنكل (Taman Impian Jaya Ancol)",
+    "why": "مجمع ترفيهي في شمال المدينة يضم متنزهات ومرافق ترفيهية وحوض سمك \"سي وورلد\"، مناسب للعائلات والراغبين في الترفيه بعيداً عن ضوضاء المدينة."
+   }
+  ],
+  "getting_around": "النقل داخل جاكرتا يعتمد على شبكة طرق مزدحمة في ساعات الذروة، ومع ذلك تنمو خدمات النقل العام والتطبيقات الذكية لطلب السيارات والطعام. استخدم القطارات الخفيفة أو خدمات النقل بالتطبيق لتجنّب الوقوف الطويل في الاختناقات المرورية عندما أمكن.",
+  "food": [
+   {
+    "name": "ناسي أودوك (Nasi Uduk)",
+    "note": "أرز مطبوخ بحليب جوز الهند ويُقدَّم مع مكوّنات متنوعة مثل الدجاج المقلي والبصل المقلي وصلصة السامبال."
+   },
+   {
+    "name": "كيراْك تيلور (Kerak Telor)",
+    "note": "عجة مطبوخة مع أرز لزج وجوز هند مبشور وطبقة من الروبيان المجفف، وجبة تقليدية بتاوية تُقدَّم في الفعاليات والأسواق."
+   },
+   {
+    "name": "جادو-جادو (Gado-gado)",
+    "note": "سلطة خضروات مع صلصة الفول السوداني وغالباً ما تُعتبر طبقاً نصحياً ومشبعاً بالمذاق الإندونيسي."
+   },
+   {
+    "name": "سوتو بتاوي (Soto Betawi)",
+    "note": "حساء لحوم بقشرة جوز الهند مع قطع من الأمعاء واللحم، طبق غني بالنكهات المحلية."
+   },
+   {
+    "name": "ناسي كبولي (Nasi Kebuli)",
+    "note": "بِلاف بتاوي متأثر بالمطبخ العربي وغالباً ما يُقدَّم في الاحتفالات والمناسبات."
+   }
+  ],
+  "budget_tips": [
+   "تناول الطعام في مناطق الطعام داخل المولات للحصول على وجبات مشبعة بتكلفة منخفضة.",
+   "استخدم تطبيقات توصيل الطعام مثل Gojek أو Grab لتوفير الوقت والبحث عن عروض المطاعم المحلية.",
+   "تسوّق خلال مهرجان Jakarta Great Sale منتصف يونيو إلى منتصف يوليو للحصول على تخفيضات في المتاجر والمراكز التجارية.",
+   "انتقِ البائعين بعناية عند شراء طعام الشارع، فأسعاره منخفضة لكن جودة النظافة متباينة."
+  ],
+  "safety": [
+   "توقع مستوى ملحوظ من التلوث الهوائي خاصة في أوقات الذروة، وضع ذلك في حسابك إذا كنت حساساً لمشاكل التنفس.",
+   "تجنّب الذروة المرورية قدر الإمكان؛ الازدحام يزداد أثناء الأمطار وعند حماية الدراجة النارية تحت الجسور.",
+   "احرص على حفظ الأغراض الثمينة أثناء التجول في المناطق المزدحمة وفي وسائل النقل العام.",
+   "احترم القواعد والآداب داخل الأماكن الدينية مثل المساجد والكاتدرائيات بلباس مناسب وسلوك هادئ."
+  ],
+  "itinerary": [
+   "اليوم الأول: ابدأ من كوتا توآ وزُر متحف تاريخ جاكرتا ومرفأ سوندا كيلاپا، ثم تنقّل في المنطقة التاريخية وتناول وجبة محلية في أحد المقاهي.",
+   "اليوم الثاني: زيارة النصب التذكاري الوطني (Monas) ثم المتاحف القريبة مثل المتحف الوطني؛ بعد الظهر زر مسجد الاستقلال والكاتدرائية، وأنهِ اليوم بتجربة تسوق أو ترفيه في أحد المولات.",
+   "اليوم الثالث: خصصه للترفيه والطبيعة بزيارة تامن إمبيان جايا أنكل أو تامن ميني إندونيسيا إينداه، أو اختر رحلة سريعة إلى رَغونان أو جزر كيبولاو للهرب من صخب المدينة."
+  ],
+  "faq": [
+   {
+    "q": "كم يوم أحتاج في جاكرتا؟",
+    "a": "ثلاثة أيام تكفي لتغطية المعالم الرئيسية في المدينة مثل كوتا توآ وموناس وبعض المتاحف والحدائق، وإذا رغبت بجولات خارجية أو زيارة الجزر فاضف يومين."
+   },
+   {
+    "q": "هل جاكرتا باهظة الثمن؟",
+    "a": "المدينة تقدّم خيارات لمختلف الميزانيات: وجبات اقتصادية في ساحة الطعام بالمول أو في الباعة الجائلين، ومطاعم فاخرة وأسواق لشراء الماركات مقابل أسعار أعلى."
+   },
+   {
+    "q": "هل جاكرتا آمنة للسياح؟",
+    "a": "بشكل عام المدينة آمنة للزوار المعتادين على المدن الكبيرة، لكن انتبه للسرقات في المناطق المزدحمة وكن حريصاً أثناء التنقل في أوقات الذروة والطقس السيئ."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "المناطق القريبة من وسط المدينة والمراكز التجارية تسهّل الوصول إلى معالم متعددة وتوفر خيارات طعام وترفيه، اختر موقعاً يوفر سهولة الوصول لوسائل النقل ويقلّل وقت التنقل بالسيارة."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط جاكرتا؟",
+    "a": "هناك خيارات نقل برية متعددة تشمل خدمات السيارات بالتطبيق والنقل العام؛ اختر وسيلة تناسب جدولك وراحتك وتجنّب الاعتماد على الطرق البرية خلال ساعات الذروة لتفادي التأخير."
+   }
+  ]
+ }
+}

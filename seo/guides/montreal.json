@@ -1,0 +1,226 @@
+{
+ "slug": "montreal",
+ "name": "Montreal",
+ "country": "Canada",
+ "tags": [
+  "culture",
+  "food",
+  "nightlife"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Montreal",
+ "en": {
+  "city_name": "Montreal",
+  "country_name": "Canada",
+  "title": "Montreal travel guide: things to do, eat and know",
+  "meta_description": "Practical guide to Montreal: top sights, Old Montreal architecture, food (bagels, smoked meat), parks, transport tips, budget and a 3-day itinerary.",
+  "h1": "Montreal travel guide: what to see, eat and know",
+  "intro": [
+   "Montreal (Montréal) is the largest city in Quebec and the province’s cultural and economic centre. With about 1.8 million residents in the city and around 4 million in the urban area (2021), it is Canada’s second-largest city and the largest French-speaking city in the Americas, though bilingualism is common.",
+   "The city combines a rich history—visible in Old Montreal’s colonial streets and many churches—with modern urban life, outdoor activities and a lively food scene. Montreal is also known for events inherited from Expo 67 and the 1976 Olympics, and for its distinctive geography on an island in the St. Lawrence River."
+  ],
+  "best_time": "Montreal offers attractions year-round: summer brings parks, festivals and waterfront life while winter supports skating and cross-country skiing in city parks. Shoulder seasons (spring and autumn) can be pleasant for walking and museum visits with fewer crowds.",
+  "top_sights": [
+   {
+    "name": "Notre-Dame Basilica (Basilique de Notre-Dame)",
+    "why": "Old Montreal’s most famous church, celebrated for an ornate and colourful interior in the Gothic Revival style; visit during the day and again at night to see the building lit up."
+   },
+   {
+    "name": "Old Montreal (Vieux-Montréal) and Old Port (Vieux-Port)",
+    "why": "A historic district of colonial-era streets, waterfront green space and attractions such as the Clock Tower and the Montreal Science Centre; great for strolling, day or night."
+   },
+   {
+    "name": "Saint Joseph's Oratory (Oratoire Saint-Joseph)",
+    "why": "Canada’s largest church with a very high dome and an important vantage point in the city; it’s a notable stop when touring downtown religious architecture."
+   },
+   {
+    "name": "Habitat 67",
+    "why": "An iconic modular residential complex from Expo 67 and the only intact pavilion remaining from the fair; guided tours are available and tickets must be booked online in advance."
+   },
+   {
+    "name": "Mount Royal and Parc du Mont-Royal",
+    "why": "The city’s landmark 'mountain' provides outdoor space and winter activities such as skating and cross-country skiing; it also anchors Montreal’s unconventional local orientation using the river and the mountain as cardinal points."
+   },
+   {
+    "name": "Parc Jean-Drapeau",
+    "why": "Site of Expo 67 with large green spaces, outdoor concert venues, the Gilles-Villeneuve circuit for the Formula 1 Grand Prix, and recreational facilities including an artificial beach and pool complex."
+   },
+   {
+    "name": "Montreal Museum of Fine Arts (Musée des beaux-arts de Montréal)",
+    "why": "The largest museum in Canada with extensive collections across multiple pavilions and frequent travelling exhibits; a key cultural stop in downtown Montreal."
+   },
+   {
+    "name": "Hochelaga-Maisonneuve (Olympic Park area)",
+    "why": "Home to the Olympic Stadium, the Biodôme, the Jardin Botanique and the Insectarium; these sites offer diverse experiences and are commonly combined in a single visit."
+   }
+  ],
+  "getting_around": "Montreal’s Metro system was introduced around Expo 67 and is a main way to get around the city; downtown also features about 30 km of underground arcades and malls useful for walking in foul weather. The city’s street grid is often oriented to the St. Lawrence River and Mount Royal rather than true north and south.",
+  "food": [
+   {
+    "name": "Montreal-style bagel",
+    "note": "A denser, slightly sweeter bagel distinct from New York’s version; St-Viateur and Fairmount Bagel in the Plateau are the classic places to try one hot from the oven."
+   },
+   {
+    "name": "Montreal-style smoked meat",
+    "note": "A local form of cured beef brisket; Schwartz's is noted in the city as the most authentic smoked meat restaurant, though opinions about quality can change."
+   },
+   {
+    "name": "Poutine and Québécois comfort food",
+    "note": "Local favourites like poutine and split pea soup are widely available and part of the regional culinary tradition."
+   },
+   {
+    "name": "All-dressed pizza",
+    "note": "A Montreal take on pizza often topped with pepperoni, mushrooms and green peppers—part of local casual dining."
+   },
+   {
+    "name": "Bring-your-own-wine dining",
+    "note": "Many restaurants allow customers to bring wine, which can reduce the cost of dining; staff will open bottles for you and corkage fees are uncommon."
+   }
+  ],
+  "budget_tips": [
+   "Bring your own wine to restaurants where permitted to lower dinner costs; ask your server where a nearby SAQ or dépanneur is located.",
+   "Eat at classic local spots like bagel shops and delis for high-quality, lower-cost meals compared with fine dining.",
+   "Use the underground arcades and Metro to avoid weather-related expenses and to move between downtown attractions efficiently.",
+   "Combine nearby attractions in one area (for example, Old Montreal sights or the Olympic Park cluster) to save on travel time and transit fares."
+  ],
+  "safety": [
+   "Respect local etiquette in restaurants: do not call a waiter 'garçon'; use 'monsieur' or 'madame'.",
+   "Tipping is expected for acceptable service; a standard tip is around 15%, and it is typically not included in the bill.",
+   "Be mindful around waterways and organised river activities; some water sports operate on the St. Lawrence and conditions can vary seasonally.",
+   "Remember Montreal’s bilingual character and be courteous if switching between French and English—most locals understand both languages."
+  ],
+  "itinerary": [
+   "Day 1: Explore Old Montreal on foot—visit Notre-Dame Basilica, the Notre-Dame-de-Bon-Secours Chapel and the Old Port with its Clock Tower and waterfront attractions; finish with a riverside walk at dusk to see illuminated buildings.",
+   "Day 2: Spend the day downtown visiting the Montreal Museum of Fine Arts, the McGill campus area and Saint Joseph's Oratory; include time on Mount Royal or in Parc du Mont-Royal for outdoor views and seasonal activities like skating or groomed cross-country trails.",
+   "Day 3: Head to Parc Jean-Drapeau in the morning, then visit Hochelaga-Maisonneuve to see the Olympic Stadium, the Biodôme, the Jardin Botanique and the Insectarium—plan about four hours to combine those sites."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Montreal?",
+    "a": "Three days gives a good introduction: Old Montreal and the Old Port, downtown museums and Mount Royal, plus Parc Jean-Drapeau and the Olympic Park area. More time lets you explore neighbourhoods and galleries at a slower pace."
+   },
+   {
+    "q": "Is Montreal expensive to visit?",
+    "a": "Compared with some major North American cities Montreal is relatively affordable, though costs vary by dining and accommodation choices. Simple measures like bringing your own wine to allowed restaurants and choosing local delis can reduce daily expenses."
+   },
+   {
+    "q": "Is Montreal safe for tourists?",
+    "a": "Montreal is generally safe for visitors. Usual urban precautions apply, and being aware near waterways and during outdoor activities in winter will help keep your trip trouble-free."
+   },
+   {
+    "q": "What area is best to stay in?",
+    "a": "Old Montreal is ideal for historic charm and waterfront access, while the Plateau and downtown provide lively dining, shopping and easy access to museums and Metro connections."
+   },
+   {
+    "q": "How do visitors arrive in Montreal?",
+    "a": "Montreal is the main entry point to Quebec and receives the majority of visitors by air. From arrival, most people continue onward into the city centre and neighbourhoods to visit museums, parks and historic districts."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "مونتريال (Montréal)",
+  "country_name": "كندا",
+  "title": "دليل سفر مونتريال: أفضل ما تراه وتفعله وتذوقه",
+  "meta_description": "دليل موجز لمونتريال: معالم تاريخية، متاحف، مأكولات محلية، نصائح للتنقّل والميزانية ومسار لثلاثة أيام.",
+  "h1": "دليل مونتريال: ما الذي تراه وتفعله وتذوقه",
+  "intro": [
+   "مونتريال هي أكبر مدينة في مقاطعة كيبيك ومركزها الثقافي والاقتصادي، وتعد أكبر مدينة فرنكوفونية في الأمريكتين. المدينة تحافظ على تقاليد ثنائية اللغة ويعيش فيها مجتمع كبير من الناطقين بالإنجليزية إلى جانب الفرنسيين.",
+   "تتميز مونتريال بجزء قديم تاريخي يعود للعصر الاستعماري، بحياة مدنية نابضة ومساحات خارجية واسعة، وهي أيضاً مقصد لعشّاق الهوكي ومكان لفعاليات دولية مثل معرض العالم أولمبياد 1976."
+  ],
+  "best_time": "أفضل مواسم الزيارة تعتمد على نشاطك المفضل: الصيف مناسب للفعاليات والحدائق والأنشطة النهرية، والشتاء يوفر فرص التزلج على الجليد ومسارات التزلج الريفي. توقع ازدحاماً في أوقات المهرجانات والصيف.",
+  "top_sights": [
+   {
+    "name": "كاتدرائية نوتردام (Notre-Dame Basilica)",
+    "why": "كنيسة شهيرة في البلدة القديمة مع داخل مزخرف وغني بالألوان بدلالة الطراز القوطي المتجدد؛ من الجيد زيارتها نهاراً ومساءً لمشاهدة الإضاءة والعروض الصوتية."
+   },
+   {
+    "name": "كنيسة نوتردام دو بونسكونسول (Notre-Dame-de-Bon-Secours Chapel)",
+    "why": "أقدم كنيسة تأسست في مونتريال مع طابع بحري وجدران مزخرفة بجصوفات؛ تقع قرب سوق بونسكونسول وتستحق التوقف للتصوير والاطلاع على تاريخ المدينة."
+   },
+   {
+    "name": "الأوراتوار سانت جوزيف (Saint Joseph's Oratory)",
+    "why": "أكبر كنيسة في كندا ذات قبة عالية تُعد من نقاط الرؤية البارزة في المدينة؛ موقع مناسب للهدوء ولمشاهدة المنظر من الأعلى."
+   },
+   {
+    "name": "كاتدرائية ماري ملكة العالم (Mary, Queen of the World Cathedral)",
+    "why": "كاتدرائية فخمة في وسط المدينة مستوحاة من سانت بيتر في روما ومصنفة موقعاً تاريخياً وطنياً؛ مناسبة لمن يهتمون بالعمارة الكنسية."
+   },
+   {
+    "name": "باسيون ٦٧ (Habitat 67)",
+    "why": "مجمّع سكني مكوّن من وحدات متشابكة، باقٍ من إكسبو 67 ويُعتبر مثالاً بارزاً للهندسة المعمارية الحديثة؛ تتوفر زيارات إرشادية وتُحبّذ الحجز المسبق عبر الإنترنت."
+   },
+   {
+    "name": "المرسى القديم (Vieux-Port / Old Port)",
+    "why": "مساحة ربط بين الواجهة النهرية والمتنزهات تضم مركز العلوم وساعة البرج ومساحات للعروض والحفلات؛ مكان ممتع للمشي نهاراً أو مساءً."
+   },
+   {
+    "name": "بارك جان-درابو (Parc Jean-Drapeau)",
+    "why": "موقع معرض العالم 1967 مع مساحات خضراء، مضمار سباق جيل فيلنوفي وحوض سباحة وشاطئ صناعي وكازينو؛ مناسبة للفعاليات والأماكن الخارجية."
+   },
+   {
+    "name": "متحف الفنون الجميلة بمونتريال (Montreal Museum of Fine Arts)",
+    "why": "أكبر متحف في كندا يضم آلاف الأعمال وعدة أجنحة، ويستضيف معارض متجولة كبيرة؛ خيار ممتاز لعشّاق الفن والثقافة."
+   }
+  ],
+  "getting_around": "الدخول إلى مونتريال عادة يكون عبر طرق برّية وجوية؛ داخل المدينة تسهّل شبكة الميترو والحافلات الوصول للأحياء الرئيسية، كما تتيح الممرات التحتية (المول تحت الأرض) التنقّل خلال الطقس السيئ. الدراجات وشبكة مساراتها شائعة خصوصاً في الربيع والصيف.",
+  "food": [
+   {
+    "name": "خبز البايغل على الطراز المونتريالي (Montreal-style bagel)",
+    "note": "بايغل أغمق وأكثر كثافة وحلاوة من نسخ نيويورك، والمخابز الشهيرة مثل St-Viateur وFairmount تقدمها طازجة."
+   },
+   {
+    "name": "اللحم المدخّن على الطراز المونتريالي (Montreal smoked meat)",
+    "note": "سندويشات ضخمة من لحم الصدر المدخّن تشكل جزءاً من التراث الغذائي المحلي وتتوفر في مطاعم متخصصة مثل Schwartz's."
+   },
+   {
+    "name": "بوتين (Poutine)",
+    "note": "طبق كيبكي تقليدي من البطاطا والجبن وصلصة، عنصر أساسي لتجربة المطبخ المحلي."
+   },
+   {
+    "name": "بيتزا 'أولد-درسد' (All-dressed pizza)",
+    "note": "نوع محلي للبيتزا مع مكونات متنوعة مثل البيبروني والفطر والفلفل الأخضر، شائع لدى السكان المحليين."
+   },
+   {
+    "name": "جلبنات وقِِِدَم المطاعم ذات سياسة 'أحضر نبيذك' (apportez votre vin)",
+    "note": "العديد من المطاعم تسمح بإحضار النبيذ الخاص بك، مما قد يخفض تكلفة المشروبات عند العشاء؛ اسأل النادل عن أقرب محل لبيع المشروبات."
+   }
+  ],
+  "budget_tips": [
+   "استفد من المطاعم التي تسمح بإحضار النبيذ لتقليل تكلفة المشروبات بشراء الزجاجة من محل خارجي.",
+   "استخدم مترو مونتريال والحافلات وممرّات المشاة تحت الأرض للتنقل الاقتصادي خصوصاً في الطقس البارد.",
+   "تجوّل في أجزاء البلدة القديمة والواجهة النهرية سيراً على الأقدام للاستمتاع بمعالم كثيرة مجاناً.",
+   "اختَر الوجبات في مطاعم محلية ومخابز شهيرة مثل محطات البايغل وسندويشات اللحم المدخّن لتجربة محلية بأسعار معقولة."
+  ],
+  "safety": [
+   "مونتريال عموماً مدينة آمنة لكن انتبه للمتعلقات الشخصية في المناطق المزدحمة وخاصة في موسم المهرجانات.",
+   "احترم العادات اللغوية: حاول استخدام التحيات بالفرنسية مثل 'bonjour' قبل التحول للإنجليزية، وكن مهذباً في المطاعم ولا تنادِ النادل بـ'garçon'.",
+   "في الشتاء ارتدِ ملابس مناسبة للطقس ونعلين مانعين للانزلاق عند المشي على الجليد."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشف البلدة القديمة (Vieux‑Port) وزُر كاتدرائية نوتردام وكنيسة نوتردام دو بونسكونسول، وتجوّل على الواجهة النهرية وممشى الساعة.",
+   "اليوم الثاني: خصصه لأوراتوار سانت جوزيف وكاتدرائية ماري ملكة العالم ثم تنزه في وسط المدينة وزُر متحف الفنون الجميلة والمحال على شارع Sainte‑Catherine.",
+   "اليوم الثالث: اذهب إلى Parc Jean‑Drapeau وزُر موقع إكسبو 67 وHabitat 67، أو اختر زيارة منطقة Hochelaga‑Maisonneuve مع استاد الأولمبياد والحديقة النباتية والمتاحف المجاورة."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام التي أحتاجها لرؤية مونتريال؟",
+    "a": "ثلاثة أيام تكفي لرؤية أبرز معالم البلدة القديمة، وسط المدينة ومتاحف رئيسية، مع يوم إضافي لاستكشاف حدائق ومنتزهات مثل Parc Jean‑Drapeau أو Hochelaga‑Maisonneuve."
+   },
+   {
+    "q": "هل مونتريال مكلفة؟",
+    "a": "بشكل عام المدينة أكثر اقتصادياً من بعض المدن الكبرى في كندا والولايات المتحدة، لكن تكاليف الإقامة والطعام تختلف حسب مستوى الرفاهية والأنشطة المختارة."
+   },
+   {
+    "q": "هل مونتريال آمنة للسياح؟",
+    "a": "نعم، المدينة آمنة نسبياً للسياح طالما تُتّخذ احتياطات عادية مثل مراقبة المتعلقات وتجنب المناطق المظلمة ليلاً."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "البلدة القديمة ومركز المدينة مناسبتان لزوار لأول مرة لأنها قريبة من العديد من المعالم والمترو، بينما Le Plateau يوفر تجربة حيّية مع مطاعم ومخابز مشهورة."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط المدينة؟",
+    "a": "هناك خيارات نقل عام وخدمات سيارات أجرة ووسائل نقل برية تصل المطار بمركز المدينة؛ داخل المدينة يعتمد التنقل على مترو وحافلات وشبكة ممرات تحت الأرض."
+   }
+  ]
+ }
+}

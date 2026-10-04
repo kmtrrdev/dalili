@@ -1,0 +1,226 @@
+{
+ "slug": "rhodes",
+ "name": "Rhodes",
+ "country": "Greece",
+ "tags": [
+  "beach",
+  "history"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Rhodes",
+ "en": {
+  "city_name": "Rhodes",
+  "country_name": "Greece",
+  "title": "Rhodes travel guide",
+  "meta_description": "Practical guide to Rhodes: medieval Rhodes Town, beaches, hikes, food and tips for a 3-day itinerary, budget and safety advice.",
+  "h1": "Rhodes travel guide: what to see, eat and know",
+  "intro": [
+   "Rhodes is one of the largest and most fertile Greek islands, popular for its mix of long beaches, archaeological sites and a remarkably well preserved medieval town. The island is sun-rich and mild in climate, attracting many visitors especially to the lively northern resorts while the south remains quieter.",
+   "Known historically as the Island of Roses, Rhodes offers both busy tourist centres with hotels, shops and activity programmes and more peaceful spots beyond the main resorts such as bays around Lindos and stretches of unspoiled coastline near Prasonisi."
+  ],
+  "best_time": "Rhodes enjoys many sunny days and mild weather, so late spring through early autumn is the most popular period for beach activities and outdoor sightseeing. If you prefer fewer crowds, visit outside peak summer months and explore the quieter southern beaches and inland villages.",
+  "top_sights": [
+   {
+    "name": "Medieval Rhodes (Old Town)",
+    "why": "A UNESCO World Heritage site and one of Europe's best-preserved medieval walled towns; walk the streets inside the walls and visit the Archaeological Museum rather than paying extra for the Palace of the Grand Masters."
+   },
+   {
+    "name": "Lindos",
+    "why": "A striking coastal town with an ancient acropolis and a scenic bay; arrive early or late to avoid the busiest times on the beach and in the narrow streets."
+   },
+   {
+    "name": "Acropolis of Kamiros",
+    "why": "Ancient ruins that showcase Rhodes' long classical history; visit to connect with the island's Bronze Age and classical past."
+   },
+   {
+    "name": "Filerimos Hill",
+    "why": "Medieval remains, a monastery and a chapel with views over the north of the island; combine the site with nearby villages for a quieter excursion."
+   },
+   {
+    "name": "Valley of the Butterflies (Petaloudes)",
+    "why": "A lush valley notable for colourful moths that need quiet to breed; the area is scenic even if butterfly numbers have declined due to visitor pressure."
+   },
+   {
+    "name": "Prasonisi",
+    "why": "The southern tip where a sandy bar joins a peninsula, prized by wind and kite surfers and for its uncrowded beaches; avoid driving across soft sand unless you are certain of the conditions."
+   },
+   {
+    "name": "Mt Attavyros",
+    "why": "The island's highest point with a challenging climb and broad views; routes are marked in places by red paint on rocks, and the descent can be tricky so wear proper footwear."
+   },
+   {
+    "name": "Epta Piges (Seven Springs)",
+    "why": "A shady spot with a short forest trail and cool conditions that provide a pleasant break from the summer heat."
+   }
+  ],
+  "getting_around": "Rhodes is served by roads connecting the main towns, beaches and archaeological sites; car hire and organised excursions are common ways to explore the island. In Rhodes Town and major resorts you can walk between many attractions, while buses and local transfers link other settlements and beaches.",
+  "food": [
+   {
+    "name": "Local wine",
+    "note": "Rhodes produces local wines that are widely available and appreciated on the island."
+   },
+   {
+    "name": "Olive oil",
+    "note": "Olive oil is a common local product and a useful souvenir from Rhodes."
+   },
+   {
+    "name": "Seafood and tavernas",
+    "note": "Beaches and resorts offer many tavernas serving local seafood and Greek dishes suited to visitors."
+   },
+   {
+    "name": "Local pastries and treats",
+    "note": "Traditional Greek pastries are sold across the island and pair well with coffee."
+   },
+   {
+    "name": "Island specialties in towns",
+    "note": "Check the Eat sections for each town for specific local dishes and recommended tavernas."
+   }
+  ],
+  "budget_tips": [
+   "Choose accommodation away from the busiest resort strips to find lower prices and quieter surroundings.",
+   "Use local buses and organised day excursions rather than taxis for longer transfers to save on transport.",
+   "Eat at tavernas frequented by locals rather than only tourist-front restaurants to keep food costs down.",
+   "Buy local products such as olive oil, wine or sponges from markets or small shops instead of high‑rent tourist outlets."
+  ],
+  "safety": [
+   "Be cautious driving onto sand bars such as at Prasonisi — soft sand can trap vehicles and 4x4s are recommended if attempting it.",
+   "Respect quiet zones such as the Valley of the Butterflies to avoid disturbing local wildlife and contributing to decline of sensitive species.",
+   "Watch your footing on steep, rocky hikes like Mt Attavyros and the descent can be especially slippery; wear sturdy shoes.",
+   "In busy tourist areas keep an eye on personal belongings as crowded spots can attract opportunistic theft."
+  ],
+  "itinerary": [
+   "Day 1: Explore Medieval Rhodes (Old Town), visit the Archaeological Museum, wander the fortified streets and browse jewellery shops and local markets.",
+   "Day 2: Take a day trip to Lindos to see the acropolis, relax on the town beach and walk the scenic lanes; stop at nearby Kalithea or Faliraki if you want more seaside options.",
+   "Day 3: Head south for natural attractions — visit Prasonisi for wind sports or quiet beaches, and stop at Epta Piges or the Valley of the Butterflies for shaded walks."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Rhodes?",
+    "a": "A long weekend lets you see Rhodes Town and one or two coastal highlights, while a week gives time to visit Lindos, explore archaeological sites and relax on different beaches."
+   },
+   {
+    "q": "Is Rhodes expensive?",
+    "a": "Costs vary by area; busy northern resorts and Rhodes Town tend to be pricier, while staying outside main tourist strips and eating in local tavernas can reduce expenses."
+   },
+   {
+    "q": "Is Rhodes safe to visit?",
+    "a": "Rhodes is a generally safe destination for travellers, but standard precautions apply: watch belongings in crowded areas and take care on steep or rocky hikes and when driving on soft sand."
+   },
+   {
+    "q": "Which area is best to stay in?",
+    "a": "Rhodes Town is ideal for history and nightlife, northern resorts give lively beaches and amenities, and the south of the island suits travellers who prefer quieter beaches and a slower pace."
+   },
+   {
+    "q": "How do I get from the airport to the main sights?",
+    "a": "Rhodes has road connections from the airport to Rhodes Town, resorts and other parts of the island; car hire, buses and organised transfers are commonly used to reach beaches and archaeological sites."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "رودس (Rhodes)",
+  "country_name": "اليونان",
+  "title": "رودس (Rhodes) travel guide",
+  "meta_description": "دليل رودس: أهم المعالم التاريخية والشواطئ، ما تأكله وتشتريه، نصائح للميزانية وخطط لثلاثة أيام.",
+  "h1": "دليل رودس (Rhodes): ما الذي تراه وتفعله وتعرفه",
+  "intro": [
+   "رودس جزيرة يونانية كبيرة وخصبة تشتهر بمزيج من الشواطئ والآثار والمركز القديم المدرع بالأسوار. تتمتع بمناخ مشمس ومعتدل وغالباً ما تُعد من أكثر جزر الدوديكانيز زيارةً.",
+   "الساحل الشمالي معروف بالمنتجعات الحيوية، بينما يوفر الجنوب شواطئ أكثر هدوئاً وإيقاع حياة أبطأ؛ توقع وجود سياح وبنية تحتية سياحية متطورة ومزايا مثل التحدث بالإنجليزية والألمانية لدى الكثيرين من السكان المحليين."
+  ],
+  "best_time": "الطقس في رودس مشمس عادةً مع مواسم مناسبة للشاطئ والأنشطة البحرية؛ الجزء الشمالي أكثر حيوية موسمياً، أما الجنوب فمناسب لمن يريد هدوءاً. ضع في الحسبان أن الرياح الغربية قد تجعل شواطئ الجانب الغربي أكثر مهيأة للركوب الشراعي والكايت.",
+  "top_sights": [
+   {
+    "name": "المدينة القديمة المدرعة في رودس",
+    "why": "مدينة محاطة بأسوار من العصور الوسطى ومصنفة ضمن مواقع التراث العالمي لليونسكو؛ التجول في الأزقة المدرجية والمباني الصليبية يعطي لمحة عن تاريخ الفرسان، ومن الأفضل استكشاف الشوارع الخلفية سيراً على الأقدام."
+   },
+   {
+    "name": "المتحف الأثري في رودس",
+    "why": "يحتوي على مجموعات أثرية مهمة تعكس التاريخ القديم للجزيرة؛ خيار جيد بعد مشاهدة السور بدل دفع ثمن دخول القصور الحديثة إذا رغبت بتفاصيل أثرية أكثر."
+   },
+   {
+    "name": "ليندوس",
+    "why": "بلدة ساحلية جميلة مع شاطئ مشهور وطرق مرصوفة وموقع أثري مرتفع؛ استكشف البلدة والميناء وكن حذراً من الازدحام السياحي في الأوقات الذروة."
+   },
+   {
+    "name": "تل فيليريموس",
+    "why": "موقع به آثار وكنيسة ومناظر جيدة للشمال؛ يقدم أيضاً بقايا وسهولة الوصول والمشي الخفيف بين الآثار."
+   },
+   {
+    "name": "وادي الفراشات (Petaloudes)",
+    "why": "منطقة طبيعية كانت موطناً لجماعات من 'الفراشات' الملونة؛ لا تزال المنطقة جميلة للمشي لكن أعداد الحشرات قد تقل بسبب الزيارات، فاحترم الهدوء والمحافظة على المكان."
+   },
+   {
+    "name": "برسونيسي (Cape Prasonisi)",
+    "why": "رأس الجزيرة الجنوبي حيث يلتقي شاطئان وتشتهر المنطقة برياضات ركوب الموج والكايت؛ كن حذراً عند عبور الشريط الرملي بسيارة عادية لأن الرمال قد تكون لينة وقد تنحشر المركبة."
+   },
+   {
+    "name": "كاميروس",
+    "why": "موقع أثري من العصر القديم يبرز أحد مدن الجزيرة التاريخية الثلاث؛ يستحق الزيارة لمن يهتم بالآثار الهلنستية وبمشاهد هادئة أبعد عن المنتجعات."
+   },
+   {
+    "name": "إبتا بيغيس (الينابيع السبع)",
+    "why": "منطقة غابية مع مسار مشي قصير وظلال باردة؛ مكان مناسب للراحة من حرارة الصيف والتمتع بالطبيعة."
+   }
+  ],
+  "getting_around": "التنقل في رودس يتم عادةً بالحافلات المحلية وسيارات الأجرة وتأجير السيارات؛ الكثير من الزوار يستأجرون سيارة للوصول إلى مواقع بعيدة مثل القمم والخلجان المنعزلة، مع مراعاة الطرق الجبلية والرملية التي قد تتطلب حذرًا خاصًا.",
+  "food": [
+   {
+    "name": "الزيتون وزيت الزيتون المحلي",
+    "note": "زيت الزيتون ومنتجاته من بين السلع المحلية المشهورة على الجزيرة."
+   },
+   {
+    "name": "النبيذ المحلي",
+    "note": "تنتج رودس أنواعاً من النبيذ المحلي ويُذكر أن بعض الخمور المحلية معروفة وطبيعية."
+   },
+   {
+    "name": "التعامل مع المطاعم والتافيرنا على الشاطئ",
+    "note": "المقاهي والتافيرنا المنتشرة قرب الشواطئ تقدم أجواء ساحلية ومأكولات بحرية ومأكولات يونانية تقليدية."
+   },
+   {
+    "name": "الإسبونج (الإسفنج البحري)",
+    "note": "الإسفنج البحري من المنتجات التقليدية التي تُعرض في الأسواق المحلية."
+   },
+   {
+    "name": "مصنوعات السيراميك والمنتجات المحلية",
+    "note": "المحلات المحلية تعرض قطع سيراميكية وهدايا يمكن اقتناؤها كتذكار."
+   }
+  ],
+  "budget_tips": [
+   "ابحث عن إقامة خارج المنتجعات السياحية الرئيسية أو في قرى الجنوب للحصول على أسعار أقل.",
+   "تناول الطعام في التافيرنا التي يرتادها السكان المحليون بدل المواقع السياحية لتقليل التكاليف.",
+   "استفد من الشواطئ العامة بدلاً من استئجار كراسي ومظلات خصوصية عندما تريد التوفير.",
+   "اشترِ منتجات محلية مثل زيت الزيتون أو الإسفنج من بائعين موثوقين بدل المتاجر السياحية المكلفة."
+  ],
+  "safety": [
+   "احمِ نفسك من الشمس واستخدم واقي شمس ومياه كافية لأن الطقس غالباً مشمس ومعتدل.",
+   "كن حذراً على الشواطئ الغربية عند وجود رياح قوية أو أمواج خشنة، خصوصاً إذا كنت تمارس ركوب الأمواج أو الكايت.",
+   "لا تحاول قيادة السيارة عبر شريط رملى يربط جزيرة أو طرفاً برملياً دون معرفة حالة الرمل أو امتلاك مركبة مناسبة؛ من السهل أن تعلق في الرمال.",
+   "احترم هدوء المواقع الطبيعية الحساسة مثل وادي الفراشات للحفاظ على البيئة البرية."
+  ],
+  "itinerary": [
+   "اليوم 1: استكشاف المدينة القديمة المدرعة ومتحف رودس الأثري، ثم التجول في الأزقة والمحلات والمطاعم داخل الأسوار.",
+   "اليوم 2: رحلة إلى ليندوس لزيارة البلدة والشاطئ والموقع الأثري، وقضاء فترة بعد الظهر على أحد الشواطئ الرملية في الجانب الشرقي.",
+   "اليوم 3: اختبر الطبيعة بين إب تا بيغيس أو وادي الفراشات، أو قم برحلة إلى برسونيسي (Prasonisi) للتمتع برياضات الموج أو التوجه إلى كاميروس والآثار القريبة."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافي لزيارة رودس؟",
+    "a": "ثلاثة أيام تكفي للاطلاع على معالم المدينة القديمة وليندوس وزيارة موقع طبيعي أو شاطئ بعيد، لكن يمكنك الإقامة لفترة أطول للاسترخاء على الشواطئ واستكشاف أرياف الجزيرة."
+   },
+   {
+    "q": "هل رودس مدينة مكلفة؟",
+    "a": "تتنوع التكاليف حسب نمط السفر: المنتجعات والشواطئ الرئيسية تكون أعلى تكلفة، بينما يمكن العثور على سكن وطعام بأسعار معقولة في القرى والمناطق الأقل سياحة."
+   },
+   {
+    "q": "هل رودس آمنة للسياح؟",
+    "a": "نعم، الجزيرة تستقبل أعداداً كبيرة من السياح والبنية السياحية متطورة، مع الاحتياط المعتاد مثل حماية الأمتعة وعدم ترك أدوات قيمة على الشواطئ واتباع تعليمات السلامة البحرية."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "ذلك يعتمد على تفضيلك: إذا أردت حياة ليلية ومرافق سياحية فالساحل الشمالي مناسب، أما إن رغبت بالهدوء فالمناطق الجنوبية وخلجان بعيدة عن ليندوس ورأس برسونيسي توفر أجواء أهدأ."
+   },
+   {
+    "q": "كيف أصل من المطار إلى المدينة ومناطق الجزيرة؟",
+    "a": "التنقل يشمل الحافلات المحلية والتاكسي وتأجير السيارات؛ تأجير سيارة شائع لدى الزوار الذين ينوون زيارة مواقع بعيدة أو الشواطئ النائية."
+   }
+  ]
+ }
+}

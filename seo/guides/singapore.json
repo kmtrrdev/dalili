@@ -1,0 +1,226 @@
+{
+ "slug": "singapore",
+ "name": "Singapore",
+ "country": "Singapore",
+ "tags": [
+  "food",
+  "shopping",
+  "culture"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Singapore",
+ "en": {
+  "city_name": "Singapore",
+  "country_name": "Singapore",
+  "title": "Singapore travel guide: what to see, eat and know",
+  "meta_description": "Practical Singapore travel guide with top sights, food to try, money-saving tips and a 3-day itinerary for first-time visitors.",
+  "h1": "Singapore travel guide: what to see, eat and know",
+  "intro": [
+   "Singapore is a compact city-state in Southeast Asia that blends modern skyscrapers and shopping with diverse Asian cultures and a tropical climate. Founded as a British trading colony in 1819, it has grown into one of the world’s most prosperous and busiest port cities, known for excellent food, efficient infrastructure and vibrant nightlife.",
+   "A reputation for order and cleanliness has earned it the nickname 'Switzerland of Asia', yet beneath the polished surface you can still find pockets of local heritage, lively hawker centres and green spaces that give the city unexpected depth for a stopover or a longer visit."
+  ],
+  "best_time": "Singapore is hot and humid year-round with frequent rain; there is little seasonal temperature change. Travel any time for city sights and food, but expect short tropical showers and higher rainfall during the monsoon periods — plan indoor options and carry a rain cover or umbrella.",
+  "top_sights": [
+   {
+    "name": "Marina Bay and Gardens by the Bay",
+    "why": "Marina Bay is Singapore's modern waterfront district where you can see iconic architecture and the futuristic Gardens by the Bay; visit the gardens for their unique plant displays and evening light shows. Tip: allow time in the evening when the gardens are especially atmospheric."
+   },
+   {
+    "name": "Orchard Road",
+    "why": "Orchard Road is the city's main shopping artery, packed with malls and eateries and a good place to experience contemporary Singaporean consumer culture. Tip: stroll side streets and nearby neighbourhoods to find cafés and smaller shops away from the main malls."
+   },
+   {
+    "name": "Sentosa (beaches and resorts)",
+    "why": "Sentosa island offers resort-style beaches and tourist attractions, including three main beach areas and integrated resort developments. Tip: combine a beach visit with other island attractions to make the most of your trip to Sentosa."
+   },
+   {
+    "name": "Chinatown",
+    "why": "Chinatown is the place to explore Chinese heritage, food stalls and temples in a compact area; it's ideal for sampling local snacks and cultural sights. Tip: visit later in the day when markets and eateries are lively."
+   },
+   {
+    "name": "Little India",
+    "why": "Little India offers colourful streets, fragrant food and Indian cultural sights, making it a must for taste and sensory experiences. Tip: look out for specialty shops and small restaurants serving authentic dishes."
+   },
+   {
+    "name": "Singapore Botanic Gardens",
+    "why": "The Botanic Gardens is Singapore’s major botanical green space and a good place to see a wide variety of plants and to escape the urban bustle. Tip: arrive early to enjoy cooler temperatures and see locals exercising."
+   },
+   {
+    "name": "Mandai Wildlife Reserve (Singapore Zoo, Night Safari, Bird Paradise, River Wonders)",
+    "why": "The Mandai area houses several well-known wildlife attractions including the zoo and Night Safari, offering close-up wildlife experiences near the city. Tip: check each attraction’s visitor information and plan your visit to match animal viewing times."
+   },
+   {
+    "name": "Pulau Ubin",
+    "why": "Pulau Ubin is a short trip from the east coast and offers a glimpse of rural, old-fashioned Singapore with trails and traditional village scenes. Tip: bring water and sun protection for exploring the island’s paths and coastline."
+   }
+  ],
+  "getting_around": "Singapore is a very small country — it can be crossed in barely an hour — and public transport is the most practical way to get around the city. Use the light rail, buses and pedestrian links to move between neighbourhoods; plan for transfers if you are travelling to island attractions such as Sentosa or Pulau Ubin.",
+  "food": [
+   {
+    "name": "Hawker centre meals",
+    "note": "Hawker centres and 24-hour coffee shops are the best places to sample a wide variety of affordable local food from across Asia."
+   },
+   {
+    "name": "Chilli crab",
+    "note": "A famous Singaporean seafood dish served with a sticky, tangy chilli sauce — expect it to be messy and often eaten with your hands."
+   },
+   {
+    "name": "Ayam buah keluak",
+    "note": "A Peranakan dish of chicken cooked with the distinctive black keluak seed; it requires careful preparation and is a regional specialty."
+   },
+   {
+    "name": "Babi pongteh",
+    "note": "A slow-cooked Peranakan pork belly dish in a fermented bean sauce, representing the fusion of Malay and Chinese culinary traditions."
+   },
+   {
+    "name": "Local coffee and kopitiam culture",
+    "note": "Traditional coffee shops (kopitiams) serve local coffee and light meals and are woven into everyday Singaporean food habits."
+   }
+  ],
+  "budget_tips": [
+   "Eat at hawker centres and food courts rather than sit-down tourist restaurants to save on meals while sampling diverse local dishes.",
+   "Use public transport instead of taxis for most journeys to keep travel costs low and take advantage of the dense rail and bus network.",
+   "Visit free or low-cost outdoor attractions such as city parks, Mandai Boardwalk and neighbourhood walks to experience the city without spending much.",
+   "Plan and group attractions by area (for example Marina Bay, Bras Basah, or the East Coast) to reduce travel time and transport costs."
+  ],
+  "safety": [
+   "Follow local dining etiquette such as using your right hand when eating with your hands and basic chopstick manners; this shows respect in multicultural settings.",
+   "Singapore has strict laws and high standards of cleanliness — observe local regulations and posted rules in public spaces.",
+   "Be mindful of personal belongings in crowded markets and transport hubs, as you would in any busy city.",
+   "When visiting religious sites, dress modestly and be respectful of worshippers and service times; many temples and mosques welcome visitors outside services."
+  ],
+  "itinerary": [
+   "Day 1: Explore Marina Bay and Gardens by the Bay in the morning, visit museums and colonial-era buildings around Bras Basah in the afternoon, then head to Chinatown for evening food and markets.",
+   "Day 2: Spend a day on Sentosa enjoying beaches and island attractions, or alternatively explore the East Coast for seafood and local dining experiences.",
+   "Day 3: Visit Little India and nearby cultural streets in the morning, relax in the Botanic Gardens in the afternoon, and finish with shopping or people-watching on Orchard Road or Bugis."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Singapore?",
+    "a": "Three days gives a good sampler of food, culture and shopping and can be divided into bite-size chunks to cover main neighbourhoods and highlights."
+   },
+   {
+    "q": "Is Singapore expensive to visit?",
+    "a": "Singapore is generally more expensive than many Southeast Asian destinations, but you can control costs by eating at hawker centres, using public transport and choosing mid-range accommodation."
+   },
+   {
+    "q": "Is Singapore safe for tourists?",
+    "a": "Singapore is known for its safety, order and strict laws; normal urban precautions apply, and visitors should respect local regulations and etiquette."
+   },
+   {
+    "q": "What is the best area to stay in Singapore?",
+    "a": "Stay near central areas like Marina Bay, Orchard Road or Bugis for easy access to shopping, sights and transport, but smaller neighbourhoods also offer quick links across the compact city."
+   },
+   {
+    "q": "How do I get from the airport into the city?",
+    "a": "Singapore is well connected and compact, so the airport links efficiently to the city; once in town use the rail and bus networks to reach neighbourhoods and attractions."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "سنغافورة",
+  "country_name": "سنغافورة",
+  "title": "دليل السفر إلى سنغافورة: ما يجب أن تراه وتأكله وخطط رحلة",
+  "meta_description": "دليل عملي لسنغافورة يغطّي أبرز المعالم (ماريانا باي، أورشارد، سنتوسا)، الأكل في هوكر سنتر، نصائح توفير، وخطة لثلاثة أيام.",
+  "h1": "دليل سنغافورة: ماذا ترى وتفعل وتذوق",
+  "intro": [
+   "سنغافورة هي مدينة-دولة في جنوب شرق آسيا تجمع بين ناطحات سحاب حديثة ومراكز تسوّق ومجتمعات ثقافية متنوعة. تأسست المدينة الحديثة كمستعمرة بريطانية عام 1819 ونمت لتصبح واحدة من أكثر مرافئ العالم نشاطاً ودولة ذات مستوى معيشي مرتفع.",
+   "المدينة مشهورة بأكلها في مراكز الباعة (hawker centres) ومقاهي القهوة العاملة على مدار الساعة، وتقدم مزيجاً من المأكولات المالايوية والصينية والهنודית وغيرها. على الرغم من صورتها المنظمة ونظافتها، فهناك أوجه ثقافية وتاريخية وأحياء أقل سياحية تستحق الاكتشاف خارج المسار المعتاد."
+  ],
+  "best_time": "المناخ استوائي حار ورطب طوال العام، لذا توقع حرارة ورطوبة ثابتة مع أمطار متقطعة. لمناسبات ثقافية راقب مهرجانات الفنون في مايو-يونيو ومهرجان الطعام السنغافوري في يوليو إذا رغبت بزيارة أثناء فعاليات المدينة.",
+  "top_sights": [
+   {
+    "name": "مارينا باي وGardens by the Bay",
+    "why": "منطقة حديثة تضم حدائق مستقبلية ومشهد ناطحات سحاب مميز، مفيدة لالتقاط صور للواجهة البحرية؛ احجز وقت زيارة للسير في الحدائق بعد الغروب للاستمتاع بالإضاءة."
+   },
+   {
+    "name": "أورشارد رود",
+    "why": "الشارع الرئيسي للتسوق مع أعلى تركّز للمراكز التجارية في المدينة؛ خصص وقتاً للتنقل بين المولات بدل البحث عن متجر واحد."
+   },
+   {
+    "name": "تشايناتاون (الحَي الصيني)",
+    "why": "مكان مناسب لتذوق مأكولات صينية وزيارة معابد تاريخية وأسواق صغيرة؛ ارتدِ حذاء مريح لأن المشي هو أفضل طريقة لاستكشاف الأزقة."
+   },
+   {
+    "name": "ليتل إنديا (الحي الهندي)",
+    "why": "حي حيوي يعرض المطبخ الهندي والألوان والروائح المميزة، مناسب لتجربة الأطعمة وشراء التوابل والهدايا."
+   },
+   {
+    "name": "سنتوسا وجزرها وشواطئها",
+    "why": "وجهة شاطئية وسياحية بها شواطئ ومنتجعات للترفيه والعائلات؛ تناسب نصف يوم إلى يوم كامل بحسب الأنشطة التي تختارها."
+   },
+   {
+    "name": "منتزهات الحياة البرية في مانداي (حديقة الحيوان، نايت سفاري، ريفر ووندرز)",
+    "why": "مجموعة معروفة من حدائق الحيوان والأنشطة الليلية لمشاهدة الحيوان؛ خطط لزيارة منطقة مانداي ليوم كامل إذا رغبت بمشاهدة أكثر من معرض واحد."
+   },
+   {
+    "name": "حديقة النباتات (Botanic Gardens)",
+    "why": "واحدة من الحدائق البارزة في المدينة وتستقطب محبي النباتات والطبيعة داخل النطاق الحضري؛ مناسبة لنزهة هادئة بعيداً عن الزحام."
+   },
+   {
+    "name": "بولاو يوبين (Pulau Ubin)",
+    "why": "جزيرة قريبة من تشانغي تعكس سنغافورة الريفية القديمة وتناسب ركوب الدراجات والمشي في بيئة أقل تحضراً؛ خذ معك ماء ووسائل حماية من الشمس."
+   }
+  ],
+  "getting_around": "سنغافورة دولة صغيرة نسبيًا ويمكن التنقل داخلها بسرعة، ما يجعل تقسيم زيارتك إلى أحياء عمليًا. ستجد خيارات نقل عام وتاكسي وسهولة الوصول إلى معظم مناطق الجذب داخل يوم واحد في الغالب؛ ضع في اعتبارك المسافات القصيرة عند تخطيط مساراتك اليومية.",
+  "food": [
+   {
+    "name": "مراكز الباعة (hawker centres)",
+    "note": "أفضل مكان لتجربة أطعمة محلية متنوعة وبأسلوب غير رسمي وتتميز بأسعار معقولة مقارنة بالمطاعم."
+   },
+   {
+    "name": "أكشاك ومقاهي القهوة العاملة 24 ساعة",
+    "note": "توفر تجربة محلية لوجبات في أي وقت من اليوم وغالبًا ما تزدحم بالسكان المحليين."
+   },
+   {
+    "name": "تشيلّي كراب (Chilli crab)",
+    "note": "طبق سلطعون شهير بصلصة حارة ولزجة ويشتهر به مطاعم شرق الساحل؛ تناوله بأدوات ومنديل لأن أكله فوضوي."
+   },
+   {
+    "name": "كراب بالفلفل الأسود (Black pepper crab)",
+    "note": "بديل أقل فوضوية لكن غني النكهة لذيذ مثل تشيلي كراب ويقدّم في المطاعم البحرية."
+   },
+   {
+    "name": "مطبخ بيراناكان (Nonya) — مثل ayam buah keluak وbabi pongteh",
+    "note": "مأكولات تراثية متميزة تجمع النكهات المالايوية والصينية وتحتاج تحضيرًا خاصًا، وهي جزء مهم من المشهد الغذائي المحلي."
+   }
+  ],
+  "budget_tips": [
+   "تناول الوجبات في مراكز الباعة لتقليل تكلفة الطعام مقارنة بالمطاعم السياحية.",
+   "شارك أطباق المأكولات البحرية مثل السرطان أو اطلب بدائل أقل فوضى لتقليل الهدر وتكلفة التنظيف والملابس.",
+   "اختر المشي بين مناطق الجذب القريبة من بعضها بدل استخدام النقل المدفوع لتوفير التكاليف للمسافات القصيرة.",
+   "ابحث عن المسارات والنزهات المجانية في الحدائق والممشى في مانداي والحدائق الحضرية بدل الفعاليات المكلفة."
+  ],
+  "safety": [
+   "التزم بآداب المائدة المحلية: إذا أكلت باليد فاستخدم اليد اليمنى فقط، وتجنّب وضع عيدان الأكل (الخيزران) عمودياً في وعاء الأرز.",
+   "احترم أماكن العبادة بزيارة خارج أوقات الصلوات وارتدِ ملابس محتشمة عند الدخول إلى المساجد والمعابد.",
+   "كن حذرًا من الحرارة والرطوبة: اشرب ماءً بانتظام واحمِ نفسك من الشمس أثناء التنقل في النهار."
+  ],
+  "itinerary": [
+   "اليوم 1: ابدأ بمنطقة مارينا باي وGardens by the Bay، ثم تنزه على الواجهة البحرية وتوجّه مساءً إلى أورشارد رود للتسوق.",
+   "اليوم 2: استكشف تشايناتاون وليلتي إنديا في الصباح، وتذوق أطباق في هوكر سنتر محلي، وأنهِ اليوم بزيارة سنتوسا أو شواطئ الشرق.",
+   "اليوم 3: خصصه للطبيعة: اذهب إلى حدائق مانداي أو حديقة النباتات، أو اطلق رحلة قصيرة إلى بولاو يوبين لركوب الدراجات والمشي."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام المناسبة لزيارة سنغافورة؟",
+    "a": "ثلاثة أيام تكفي لغطاء معالم المدينة الرئيسية وتذوق الأطعمة المحلية، ويمكنك تمديد الزيارة ليوم إضافي إذا رغبت بالتعمق في المتاحف أو جزيرة سنتوسا أو رحلات إلى بولاو يوبين."
+   },
+   {
+    "q": "هل سنغافورة بلد مكلف؟",
+    "a": "المعيشة يمكن أن تكون باهظة مقارنة بدول المنطقة، لكن يمكنك تخفيف التكاليف بتناول الطعام في مراكز الباعة، والمشي بين المعالم، والبحث عن أنشطة مجانية في الحدائق والممرات."
+   },
+   {
+    "q": "هل سنغافورة آمنة للسياح؟",
+    "a": "المدينة معروفة بالنظام والنظافة وما يصاحب ذلك من مستوى أمان جيد؛ مع ذلك اتبع الاحتياطات العادية مثل حفظ متعلقاتك وعدم ترك أغراض ثمينة دون مراقبة."
+   },
+   {
+    "q": "ما هي أفضل منطقة للسكن للمرة الأولى؟",
+    "a": "مناطق مثل مارينا باي وأورشارد تقدم قربًا من المعالم ومراكز التسوق، بينما الأحياء الثقافية مثل تشايناتاون وليتل إنديا توفر تجربة محلية أقرب للطعام والأسواق."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط المدينة؟",
+    "a": "المطار قريب من أجزاء عديدة من المدينة وتوجد خيارات نقل منتظمة، لكن اعتمد خطة بسيطة: صمّم مسار وصول واضح واستخدم النقل إلى الحي الذي حجزت فيه لتقليل التعقيد عند الوصول."
+   }
+  ]
+ }
+}

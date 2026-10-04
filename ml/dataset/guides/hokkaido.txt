@@ -1,0 +1,72 @@
+Hokkaido, Japan
+Labels: ski, nature, food | Split: test
+Source: https://en.wikivoyage.org/wiki/Hokkaido (CC BY-SA 4.0)
+
+===== CLEANED GUIDE TEXT (5,924 characters) =====
+
+Hokkaido (北海道 Hokkaidō) is the northernmost of Japan's four main islands and at the same time a prefecture. With both size and population (5.3 million in 2019) similar to Scotland, it is the most sparsely populated part of Japan. Home to Japan's native Ainu people, Hokkaido continues to represent the untamed wilderness with many great national parks.  
+
+Understand
+ 
+Hokkaido is by far Japan's largest prefecture, consisting of Japan's entire northern island and its surrounding islets. For many visitors the scenery resembles a mix of northern Europe and the American West, with rolling fields, grazing cows, and pioneer cottages replacing the rice paddies and concrete warrens of 'mainland' Japan. However, the ubiquitous hotspring resorts in much of the island serve as a reminder that you are still in Japan.
+
+History
+
+Hokkaido was for millennia the home of the Emishi people, whose descendants are today's Ainu. While loosely ruled by Japanese feudal lords since the 1500s, direct Japanese control was limited to the Oshima Peninsula around Hakodate. Mass migration from mainland Japan began only after the Meiji Restoration in 1869, with the Hokkaidō Development Commission (開拓使 Kaitakushi) created to settle the island and exploit its resources. Lacking the thousand-year-old temples and visible traces of history so plentiful in the rest of Japan, to this day the island retains a bit of a frontier feel, with planned cities with neat grid layouts and plenty of log cabins. As part of the settler colonial policy implemented by the Meiji government, the Ainu were dispossessed of their land and forced to assimilate into Japanese culture.
+
+Hokkaido was particularly hard hit by the end of the Bubble in the late 1980s, with the collapse of local lender Takushoku Bank taking down many local businesses. Add in marginal agricultural land and increasingly unprofitable mining and industry, and the result is long-term population decline, especially in rural areas. Projections indicate the prefecture may lose half its population by 2050. The one bright spot in the economy is winter sports, with Sapporo hosting the 1972 Winter Olympics and ski hotspot Niseko in particular booming.  
+
+Hokkaido used to be known as Ezo (蝦夷), in earlier times pronounced Yezo, whence modern Latin yezoensis in the scientific names of local species. The current name Hokkaido was only given following the Meiji Restoration in 1869.
+
+See
+ 
+Castles
+Hokkaido did not become a part of Japan until late in the nation's history, so in spite of its size, it never had the number of castles that other prefectures had. Matsumae Castle in Matsumae is Hokkaido's only Japanese-style castle with a donjon. Other castle sites are more akin to forts, such as Hakodate's Goryokaku. The Ainu people had their own forts, as well, known as Chashi. None of the structures of any chashi remain, but Nemuro has the highest concentration of chashi ruins.
+
+Gardens
+Hokkaido is known for its gardens and even has a group of 8 gardens known as the Garden Kaido (ガーデン街道, Garden Path) stretching 250km. The gardens from north to south are Forest Garden (Mt. Daisetsu area), Ueno Farm (Asahikawa), Windy Garden (Furano), Tokachi Millenium Forest (Shimizu), Manabe Garden (Obihiro), Tokachi Hills (Makubetsu), Shichiku Garden (Obihiro), and Rokka no Mori (Nakasatunai). There are combination tickets to visit some of the gardens: ¥2300 for the first 3 gardens and ¥3300 for the last 5 gardens (¥2000 if you choose 3 out of 5).
+
+Nature
+For many visitors Hokkaido's numerous National Parks are number one on the agenda, offering near-unlimited hiking opportunities.
+
+Do
+ 
+
+Winter sports
+
+
+Hokkaido has some of the best powder in the world and skiing has really taken off, with resorts like Niseko, Furano and Rusutsu drawing visitors from far and wide.
+
+Hiking
+Hokkaido has countless hiking opportunities, ranging from challenging multi-day treks across Daisetsuzan National Park to casual strolls in Shiretoko National Park.
+
+Hot springs
+Hokkaido is volcanically active and has countless hot springs, with Noboribetsu particularly famous.
+
+Eat
+ 
+ 
+
+Much of Hokkaido's population lives by the sea, and consequently seafood figures heavily in Hokkaido fare. Check out the hairy crabs (毛蟹 kegani), king crabs (タラバ taraba) and the delicious sushi. Akkeshi's oysters, Saroma's scallops, and the northwest coast's sea urchin (うに uni) are considered to be among Japan's very best seafood.
+
+More unexpectedly, Hokkaido produces most of Japan's dairy products and particularly in the east you will run into many creative uses for them. Ever had cream cheese in your curry, or butter in your noodle soup? How about asparagus, corn, or squid ink ice cream? In Hokkaido, you will.
+
+Other Hokkaido classics include:
+
+* miso ramen (味噌ラーメン) noodle soup, often with butter and/or corn (バターコーンラーメン batākōn ramen). Hokkaido's most famous ramen chain Santouka, now franchised around the world, hails from Asahikawa.
+* soup curry (スープカレー), a hearty curry-flavored soup chock full of veggies, particularly popular in Sapporo
+* Genghis Khan (ジンギスカン jingisu kan), sliced lamb and vegetables that you grill yourself, the Japanese version of Mongolian BBQ (hence the name)
+* chanchanyaki (ちゃんちゃん焼き), a stir-fry of miso, salmon and vegetables
+* zangi (ザンギ) deep-fried chicken, made with a soy/ginger/garlic marinade
+* corn on the cob (とうきび tōkibi or とうもろこし tōmorokoshi)
+* cantaloupe melons (メロン meron) from Yubari, fantastically expensive in Tokyo department stores but practically given away in season
+
+Drink
+
+Hokkaido is home to some of Japan's finest sake, the most famous of the bunch being Asahikawa's Otokoyama (男山). Beer is also big in Hokkaido, the most famous brand being Sapporo Beer (naturally from Sapporo), but the many microbrews found in nearly every town are also worth sampling.
+
+Last but not least, famed Japanese whisky makers Nikka have their main distillery at Yoichi.
+
+===== TOKENS THE MODEL TRAINS ON (447) =====
+
+northernmost island prefecture size population million similar scotland sparsely populated home native ainu continue represent untamed wilderness national park far largest prefecture consisting entire island surrounding islet scenery resemble mix europe american rolling field grazing cows pioneer cottage replacing rice paddy concrete warren mainland ubiquitous hotspring resort island serve reminder history millennia home emishi descendant today ainu loosely ruled japanese feudal lord direct japanese control limited oshima peninsula hakodate mass migration mainland began meiji restoration development commission kaitakushi created settle island exploit resource lacking thousand old temple visible trace history plentiful rest island retain bit frontier feel planned city neat grid layout plenty log cabin settler colonial policy implemented meiji government ainu dispossessed land forced assimilate japanese culture particularly hard hit bubble late collapse lender takushoku bank taking business add marginal agricultural land increasingly unprofitable mining industry result term population decline especially rural projection indicate prefecture lose half population bright spot economy winter sport sapporo hosting winter olympic ski hotspot niseko particular booming ezo earlier time pronounced yezo whence modern latin yezoensis scientific name specy current given following meiji restoration castle become late nation history spite size castle prefecture matsumae castle matsumae japanese style castle donjon castle site akin fort hakodate goryokaku ainu fort chashi none structure chashi remain nemuro highest concentration chashi ruin garden garden group garden garden kaido garden path stretching garden forest garden daisetsu ueno farm asahikawa windy garden furano tokachi millenium forest shimizu manabe garden obihiro tokachi hill makubetsu shichiku garden obihiro rokka mori nakasatunai combination ticket garden garden last garden choose nature numerous national park agenda offering unlimited hiking opportunity winter sport powder world skiing taken resort niseko furano rusutsu drawing far wide hiking countless hiking opportunity ranging challenging multi trek daisetsuzan national park casual stroll shiretoko national park hot spring volcanically active countless hot spring noboribetsu particularly famous population live sea consequently seafood figure heavily fare check hairy crab kegani king crab taraba delicious sushi akkeshi oyster saroma scallop northwest coast sea urchin uni considered seafood unexpectedly produce dairy product particularly run creative uses cream cheese curry butter noodle soup asparagus corn squid ink ice cream classic miso ramen noodle soup butter corn batakon ramen famous ramen chain santouka franchised world hail asahikawa soup curry hearty curry flavored soup chock veggy particularly sapporo genghis khan jingisu kan sliced lamb vegetable grill japanese version mongolian bbq hence chanchanyaki stir fry miso salmon vegetable zangi deep fried chicken soy ginger garlic marinade corn cob tokibi tomorokoshi cantaloupe melon meron yubari fantastically expensive department store practically given season home finest sake famous bunch asahikawa otokoyama beer famous brand sapporo beer naturally sapporo microbrew nearly worth sampling last famed japanese whisky maker nikka distillery yoichi

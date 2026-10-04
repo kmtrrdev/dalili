@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dalili · Your trip planner</title>
+  <meta name="description" content="Dalili plans your trip: real flights, hotels, places and weather, checked day by day. You book when you're ready.">
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <script>
+    // Theme before first paint (no flash): saved choice, else the system setting.
+    try {
+      const saved = localStorage.getItem("theme");
+      document.documentElement.dataset.theme = saved || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+    } catch (_) { document.documentElement.dataset.theme = "dark"; }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/vendor/leaflet.css">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script type="importmap">
+    { "imports": { "three": "/static/vendor/three.module.min.js", "three/addons/": "/static/vendor/" } }
+  </script>
+</head>
+<body>
+  <canvas id="globe" aria-label="Interactive 3D globe showing your route"></canvas>
+  <div id="globeLabels" class="globe-labels" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path class="plane" d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z" /></svg>
+      </span>
+      <div>
+        <div class="brand-name">Dal<span>ili</span></div>
+        <div class="brand-sub" data-i18n="brandSub">your travel guide · plan · explore · you book</div>
+      </div>
+    </div>
+    <div class="status" id="status" aria-live="polite"></div>
+    <button class="icon-btn theme" id="themeToggle" type="button" data-i18n-title="toggleTheme">
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" /></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" /></svg>
+    </button>
+    <button class="btn ghost lang" id="langToggle" type="button" data-i18n="langToggle">العربية</button>
+    <button class="btn ghost" id="newTrip" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg><span data-i18n="newTrip">New trip</span>
+    </button>
+    <!-- Account: "Sign in" for guests, the avatar (-> dashboard) once signed in. Filled by account.js. -->
+    <button class="btn acct" id="acctBtn" type="button"></button>
+  </header>
+
+  <main class="stage">
+    <!-- Chat (can be closed and reopened) -->
+    <section class="panel chat" id="chatPanel" aria-label="Chat">
+      <div class="panel-head">
+        <div class="agent-avatar" aria-hidden="true"><span></span></div>
+        <div>
+          <div class="panel-title" data-i18n="chatTitle">Dalili</div>
+          <div class="panel-sub" id="agentState" data-i18n="ready">Ready to plan</div>
+        </div>
+        <button class="icon-btn" id="chatClose" type="button" data-i18n-title="closeChat">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+        </button>
+      </div>
+      <div class="messages" id="messages" role="log" aria-live="polite"></div>
+      <div class="chips" id="chips"></div>
+      <form class="composer" id="composer">
+        <textarea id="input" rows="1" data-i18n-ph="inputPh" aria-label="Message" required></textarea>
+        <button class="send" id="send" type="submit" aria-label="Send">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-2.5-6.5z" /></svg>
+        </button>
+      </form>
+    </section>
+
+    <!-- Home: trip ideas for a budget -->
+    <section class="hero" id="hero" aria-label="Start planning">
+     <div class="hero-top">
+      <!-- Two clear ways to start: chat, or a short step-by-step form. The globe fills the other half. -->
+      <div class="compose" id="compose">
+        <h1><span data-i18n="heroTitle1">Where to</span> <span class="grad" data-i18n="heroTitle2">next?</span></h1>
+        <p class="hero-sub" data-i18n="heroSub2">Plan your trip the way you like: chat with Dalili, or answer a few quick questions.</p>
+
+        <div class="choices">
+          <!-- Option 1: chat -->
+          <div class="choice chat-choice">
+            <div class="ch-head"><span class="ch-ic" aria-hidden="true">💬</span>
+              <div><b data-i18n="chChatT">Chat with Dalili</b><small data-i18n="chChatS">Tell me about your trip in your own words - Arabic or English.</small></div></div>
+            <form class="qc" id="quickChat">
+              <input id="qcInput" autocomplete="off" data-i18n-ph="qcPh" aria-label="Your trip">
+              <button class="qc-send" type="submit" data-i18n-title="send">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-2.5-6.5z" /></svg></button>
+            </form>
+            <div class="examples" id="examples"></div>
+          </div>
+
+          <div class="or"><span data-i18n="or">or</span></div>
+
+          <!-- Option 2: a short form, one question at a time -->
+          <button class="choice form-choice" type="button" id="openWizard">
+            <span class="ch-ic" aria-hidden="true">📝</span>
+            <span class="ch-text"><b data-i18n="chFormT">Fill a quick form</b>
+              <small data-i18n="chFormS">4 easy steps: where · when · who & budget · what you love</small></span>
+            <span class="ch-go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span>
+          </button>
+        </div>
+
+      <!-- The detailed form below is internal: the wizard fills it and the existing search / planning logic reads it. -->
+      <section class="ideas details" id="details" aria-labelledby="ideasTitle" hidden>
+        <h2 id="ideasTitle" class="sr-only" data-i18n="ideasTitle">Trip ideas for your budget</h2>
+        <form class="ideas-form" id="ideasForm">
+          <div class="if-bar">
+            <label class="f-budget"><span data-i18n="budgetLbl">Budget</span>
+              <span class="money-field">
+                <input id="ideaBudget" type="number" min="50" step="50" placeholder="2000">
+                <select id="ideaCur" data-i18n-title="currencyLbl"><option>USD</option><option>EUR</option><option>SAR</option><option>EGP</option>
+                  <option>AED</option><option>KWD</option><option>QAR</option><option>GBP</option></select>
+              </span></label>
+            <label class="f-from"><span data-i18n="fromLbl">From</span><input id="ideaFrom" data-i18n-ph="fromPh" autocomplete="off"></label>
+            <label class="f-to"><span><span data-i18n="toLbl">To</span> <em class="opt" data-i18n="optional">optional</em></span>
+              <span class="to-field"><input id="ideaTo" data-i18n-ph="toPh" autocomplete="off" enterkeyhint="done">
+                <button type="button" class="to-add" id="ideaToAdd" data-i18n-title="addCity" hidden>+</button></span></label>
+            <div class="f-when">
+              <span class="if-lbl"><span data-i18n="whenLbl">When</span>
+                <span class="seg mini" id="whenMode" role="tablist">
+                  <button type="button" data-mode="flex" class="on" data-i18n="flexible">Flexible</button>
+                  <button type="button" data-mode="dates" data-i18n="exactDates">Exact dates</button>
+                </span></span>
+              <div class="if-flex" id="whenFlex">
+                <select id="ideaMonth" data-i18n-title="monthLbl"></select>
+                <select id="ideaLen" data-i18n-title="lengthLbl"><option value="weekend" data-i18n="weekend">Weekend</option>
+                  <option value="week" selected data-i18n="week">1 week</option><option value="two_weeks" data-i18n="twoWeeks">2 weeks</option></select>
+              </div>
+              <div class="if-flex" id="whenDates" hidden>
+                <input id="ideaStart" type="date" data-i18n-title="departLbl">
+                <input id="ideaEnd" type="date" data-i18n-title="returnLbl">
+              </div>
+            </div>
+            <label class="f-small"><span data-i18n="travelersLbl">Travellers</span>
+              <input id="ideaPax" type="number" min="1" max="9" value="1"></label>
+            <button class="btn primary go" type="submit" id="ideasGo">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z" /></svg>
+              <span data-i18n="showIdeas">Show trips</span></button>
+          </div>
+
+          <!-- Several cities: the route, in order, with optional nights per city. -->
+          <div class="to-route" id="toRoute" hidden></div>
+
+          <details class="if-refine" id="ideasMore">
+            <summary><span data-i18n="personalise">Personalise</span><em id="refineCount"></em></summary>
+            <div class="refine-body">
+              <div class="if-group">
+                <span class="if-lbl" data-i18n="occasionLbl">Who's going?</span>
+                <div class="chipset" id="occChips"></div>
+              </div>
+              <div class="if-group">
+                <span class="if-lbl" data-i18n="interestsLbl">What do you love?</span>
+                <div class="chipset" id="intChips"></div>
+              </div>
+              <div class="if-extra">
+                <label class="switch"><input id="ideaDirect" type="checkbox"><i></i><span data-i18n="directOnly">Direct flights only</span></label>
+                <label><span data-i18n="maxFlightLbl">Max flight time</span><select id="ideaMaxH"></select></label>
+                <label class="f-notes"><span data-i18n="notesLbl">Anything else?</span>
+                  <input id="ideaNotes" maxlength="300" data-i18n-ph="notesPh" autocomplete="off"></label>
+              </div>
+            </div>
+          </details>
+          <p class="if-err" id="ideasErr" hidden></p>
+        </form>
+      </section>
+      </div>
+      <button class="scroll-hint" type="button" id="scrollHint" data-i18n-title="exploreMore">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button>
+     </div>
+      <div class="ideas-note" id="ideasNote" hidden></div>
+      <div class="ideas-grid" id="ideasGrid"></div>
+
+      <!-- Personal picks from the recommendation model (shown once it knows something about you). -->
+      <section class="home-sec for-you" id="forYou" aria-labelledby="forYouTitle" hidden>
+        <div class="sec-head row"><div><h2 id="forYouTitle" data-i18n="fyTitle">Picked for you</h2>
+          <p id="forYouSub"></p></div>
+          <button class="btn ghost small" type="button" id="forYouAll" data-i18n="fyAll">See all</button></div>
+        <div class="recs" id="forYouRecs"></div>
+      </section>
+
+      <!-- Inspiration: more to do on the home page (all optional shortcuts into the search). -->
+      <section class="home-sec" id="homeMore" aria-labelledby="vibesTitle">
+        <div class="sec-head"><h2 id="vibesTitle" data-i18n="vibesTitle">Pick a vibe</h2>
+          <p data-i18n="vibesSub">Not sure yet? Start from a feeling - add your budget and go.</p></div>
+        <div class="vibes" id="vibes"></div>
+      </section>
+      <section class="home-sec" aria-labelledby="destTitle">
+        <div class="sec-head"><h2 id="destTitle" data-i18n="destTitle">Destinations to dream about</h2>
+          <p data-i18n="destSub">Tap one to start - or add several to build a multi-city route.</p></div>
+        <div class="dests" id="dests"></div>
+      </section>
+      <section class="home-sec" aria-labelledby="howTitle">
+        <div class="sec-head"><h2 id="howTitle" data-i18n="howTitle">How Dalili plans your trip</h2></div>
+        <div class="how-steps" id="howSteps"></div>
+      </section>
+    </section>
+
+    <!-- Trip board -->
+    <section class="panel board" id="board" aria-label="Trip board" hidden>
+      <div class="board-head">
+        <div>
+          <p class="eyebrow" id="tripEyebrow"></p>
+          <h2 id="tripTitle"></h2>
+          <p class="muted" id="tripSub"></p>
+        </div>
+        <div class="board-actions">
+          <button class="btn primary book-cta" id="bookTrip" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" /></svg><span data-i18n="bookTrip">Book this trip</span>
+          </button>
+          <a class="btn" id="bookLink" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5zM14 4v5h5M8 13h8M8 17h6" /></svg><span data-i18n="tripBook">Trip Book</span>
+          </a>
+        </div>
+      </div>
+      <div class="route-strip" id="routeStrip" hidden></div>
+      <div class="modes" id="modes"></div>
+      <nav class="tabs" role="tablist" id="tabs">
+        <button role="tab" data-tab="itinerary" aria-selected="true" data-i18n="tabs.itinerary">Itinerary</button>
+        <button role="tab" data-tab="stay" data-i18n="tabs.stay">Flights &amp; hotel</button>
+        <button role="tab" data-tab="budget" data-i18n="tabs.budget">Budget</button>
+        <button role="tab" data-tab="checks" data-i18n="tabs.checks">Checks</button>
+        <button role="tab" data-tab="weather" data-i18n="tabs.weather">Weather</button>
+        <button role="tab" data-tab="profile" data-i18n="tabs.profile">You</button>
+        <button role="tab" data-tab="sources" data-i18n="tabs.sources">Sources</button>
+      </nav>
+      <div class="tab-body" id="panel" role="tabpanel"></div>
+    </section>
+  </main>
+
+  <!-- The quick form: one question per step. -->
+  <div class="wiz-wrap" id="wizard" hidden>
+    <div class="wiz" role="dialog" aria-modal="true" aria-labelledby="wizTitle">
+      <div class="wiz-top">
+        <div class="wiz-steps" id="wizSteps"></div>
+        <button class="icon-btn" type="button" id="wizClose" data-i18n-title="close">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg></button>
+      </div>
+
+      <!-- 1. Where -->
+      <section class="wiz-step" data-step="1">
+        <h2 id="wizTitle" data-i18n="w1T">Where do you want to go?</h2>
+        <p class="wiz-sub" data-i18n="w1S">One place, several cities - or let me suggest trips that fit your budget.</p>
+        <div class="w-seg" id="wWhereMode">
+          <button type="button" data-v="place" class="on"><span>📍</span><b data-i18n="wKnow">I know where</b></button>
+          <button type="button" data-v="any"><span>✨</span><b data-i18n="wSuggest">Suggest for me</b></button>
+        </div>
+        <div id="wPlaceBox">
+          <label class="w-lbl" for="wTo" data-i18n="wToLbl">City or country</label>
+          <div class="w-to"><input id="wTo" autocomplete="off" data-i18n-ph="wToPh"><button type="button" id="wToAdd" class="btn" data-i18n="wAdd">Add</button></div>
+          <div class="w-stops" id="wStops"></div>
+          <div class="w-picks" id="wPicks"></div>
+        </div>
+        <label class="w-lbl" for="wFrom" data-i18n="wFromLbl">Flying from</label>
+        <input id="wFrom" class="w-in" autocomplete="off" data-i18n-ph="fromPh">
+      </section>
+
+      <!-- 2. When -->
+      <section class="wiz-step" data-step="2" hidden>
+        <h2 data-i18n="w2T">When are you going?</h2>
+        <div class="w-seg" id="wWhenMode">
+          <button type="button" data-v="dates" class="on"><span>📅</span><b data-i18n="wDates">I have dates</b></button>
+          <button type="button" data-v="flex"><span>🌙</span><b data-i18n="wFlex">I'm flexible</b></button>
+        </div>
+        <div class="w-row" id="wDatesBox">
+          <label><span class="w-lbl" data-i18n="departLbl">Depart</span><input id="wStart" type="date" class="w-in"></label>
+          <label><span class="w-lbl" data-i18n="returnLbl">Return</span><input id="wEnd" type="date" class="w-in"></label>
+        </div>
+        <div id="wFlexBox" hidden>
+          <label class="w-lbl" for="wMonth" data-i18n="monthLbl">Month</label>
+          <select id="wMonth" class="w-in"></select>
+          <span class="w-lbl" data-i18n="lengthLbl">Length</span>
+          <div class="w-pills" id="wLen">
+            <button type="button" data-v="weekend" data-i18n="weekend">Weekend</button>
+            <button type="button" data-v="week" class="on" data-i18n="week">1 week</button>
+            <button type="button" data-v="two_weeks" data-i18n="twoWeeks">2 weeks</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Who & budget -->
+      <section class="wiz-step" data-step="3" hidden>
+        <h2 data-i18n="w3T">Who's going, and what's your budget?</h2>
+        <span class="w-lbl" data-i18n="travelersLbl">Travellers</span>
+        <div class="w-counter"><button type="button" id="wPaxMinus">−</button><output id="wPax">1</output><button type="button" id="wPaxPlus">+</button></div>
+        <span class="w-lbl" data-i18n="wTripType">Trip type (optional)</span>
+        <div class="chipset" id="wOcc"></div>
+        <label class="w-lbl" for="wBudget" data-i18n="wBudgetLbl">Total budget for everyone</label>
+        <div class="w-money"><input id="wBudget" type="number" min="50" step="50" placeholder="2000">
+          <select id="wCur"><option>USD</option><option>EUR</option><option>EGP</option><option>SAR</option><option>AED</option>
+            <option>KWD</option><option>QAR</option><option>GBP</option></select></div>
+      </section>
+
+      <!-- 4. What you love -->
+      <section class="wiz-step" data-step="4" hidden>
+        <h2 data-i18n="w4T">What do you love?</h2>
+        <p class="wiz-sub" data-i18n="w4S">Optional - pick as many as you like.</p>
+        <div class="chipset" id="wInt"></div>
+        <label class="switch w-switch"><input id="wDirect" type="checkbox"><i></i><span data-i18n="directOnly">Direct flights only</span></label>
+        <label class="w-lbl" for="wNotes" data-i18n="notesLbl">Anything else?</label>
+        <input id="wNotes" class="w-in" maxlength="300" data-i18n-ph="notesPh">
+        <div class="w-summary" id="wSummary"></div>
+      </section>
+
+      <p class="wiz-err" id="wizErr" hidden></p>
+      <div class="wiz-nav">
+        <button class="btn ghost" type="button" id="wizBack" data-i18n="back">Back</button>
+        <div class="wiz-nav-end" id="wizNext"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign in / create an account -->
+  <div class="modal-wrap auth-wrap" id="authWrap" hidden>
+    <div class="modal auth" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <button class="icon-btn modal-x" type="button" id="authClose" data-i18n-title="close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg></button>
+      <div class="auth-head">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path class="plane" d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z" /></svg></span>
+        <h2 id="authTitle"></h2>
+        <p id="authSub"></p>
+      </div>
+      <div class="seg auth-tabs" id="authTabs" role="tablist">
+        <button type="button" data-mode="signin" role="tab" data-i18n="signIn">Sign in</button>
+        <button type="button" data-mode="signup" role="tab" data-i18n="signUp">Create account</button>
+      </div>
+      <form class="auth-form" id="authForm" novalidate>
+        <label class="af" id="afName"><span data-i18n="aName">Your name</span>
+          <input id="aName" class="w-in" autocomplete="name" maxlength="60"><small class="af-err" data-for="name"></small></label>
+        <label class="af"><span data-i18n="aEmail">Email</span>
+          <input id="aEmail" class="w-in" type="email" autocomplete="email" inputmode="email" maxlength="254" dir="ltr">
+          <small class="af-err" data-for="email"></small></label>
+        <label class="af"><span data-i18n="aPass">Password</span>
+          <span class="pw"><input id="aPass" class="w-in" type="password" autocomplete="current-password" maxlength="128" dir="ltr">
+            <button type="button" class="pw-eye" id="aEye" data-i18n-title="aShow">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z" /></svg></button></span>
+          <span class="pw-meter" id="pwMeter" aria-hidden="true"><i></i></span>
+          <small class="af-hint" id="pwHint" data-i18n="aPassHint">At least 8 characters, with letters and numbers.</small>
+          <small class="af-err" data-for="password"></small></label>
+        <p class="auth-err" id="authErr" role="alert" hidden></p>
+        <button class="btn primary auth-go" type="submit" id="authGo"></button>
+      </form>
+      <ul class="auth-perks">
+        <li data-i18n="perk1">Your trips saved on any device</li>
+        <li data-i18n="perk2">Suggestions picked for your taste</li>
+        <li data-i18n="perk3">Your own travel dashboard</li>
+      </ul>
+      <button class="auth-guest" type="button" id="authGuest" data-i18n="asGuest">Continue as a guest</button>
+    </div>
+  </div>
+
+  <!-- The traveller's dashboard (signed-in users) -->
+  <section class="dash" id="dash" hidden aria-labelledby="dashTitle">
+    <div class="dash-inner">
+      <div class="dash-top">
+        <button class="btn ghost" type="button" id="dashBack">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" /></svg><span data-i18n="dashBack">Back to planning</span></button>
+        <nav class="seg dash-tabs" id="dashTabs" role="tablist">
+          <button type="button" data-tab="overview" role="tab" data-i18n="dOverview">Overview</button>
+          <button type="button" data-tab="trips" role="tab" data-i18n="dTrips">My trips</button>
+          <button type="button" data-tab="settings" role="tab" data-i18n="dSettings">Settings</button>
+        </nav>
+      </div>
+      <div class="dash-body" id="dashBody"></div>
+    </div>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <!-- Reopen the chat -->
+  <button class="chat-fab" id="chatFab" type="button" data-i18n-title="openChat" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" /></svg><span data-i18n="chat">Chat</span>
+  </button>
+
+  <script src="/static/vendor/leaflet.js"></script>
+  <script type="module" src="/static/js/app.js"></script>
+</body>
+</html>

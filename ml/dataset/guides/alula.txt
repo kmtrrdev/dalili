@@ -1,0 +1,56 @@
+AlUla, Saudi Arabia
+Labels: history, nature, adventure | Split: test
+Source: https://en.wikivoyage.org/wiki/Al-Ula (CC BY-SA 4.0)
+
+===== CLEANED GUIDE TEXT (3,261 characters) =====
+
+Al-Ula (ٱلْعُلَا al-ʿUlā), officially branded AlUla, is a city in the Hejaz region of Saudi Arabia.
+
+Understand
+Al-Ula is an ancient oasis town at the northern tip of the Hejaz, best known for its many Nabatean historical sites, most notably the UNESCO World Heritage site of Hegra (Madain Saleh), a rock-hewn city built by the same civilization as Jordan's Petra.
+
+Long obscure, in 2017 the Saudi government set up a Royal Commission with the stated aim of turning Al-Ula into a world-class tourist attraction. Investment since has been fast and furious, with the airport now fielding direct international flights and a cluster of 10 luxury hotels springing up. Get there before the world finds out about it!
+
+See
+Most visitors come to Al-Ula to see Hegra (Madain Saleh), 22 km away and covered in a separate article.
+
+* 
+Old City of Dadan. Remnants of an old Nabatean city. Highlight are the Lion Tombs of Dadan, carved tombs into the rocks with large lions carved at each side. The lion sculptures can only be observed by installed binoculars from about 170 m, because the structure is very fragile. Tour includes the visit at a small museum at the Dadan Visitor Center and a visit at the archaeological excavation site. It can only be visited as part of a two hour tour. Unfortunately the tour is spun out longer than it should be and the English version of the audio guide is weak.
+
+* 
+Rock Carvings of Jabal Ikhmal. Ancient petroglyphs that were carved into the nearby mountains and rocks by ancient travellers and pilgrims. The tour includes a participation at rock carving workshop where visitors can carve their names in old Nabatean language into rocks, which they can take home as souvenirs. Visited together with the Old City of Dadan.
+
+* 
+Dadan Heritage Trail. A picturesque trail close to the old city of Dadan, through a date plantation with many historical farm ruins and gardens.
+
+* 
+Old Town of Al-Ula. The historical town center, a cluster of ancient houses mixed with new buildings that were made looking old. A small castle has a great view of the old town but it can only be visited on a tour booked from the Incense Road.
+
+* 
+Restored Hejaz Railway Station. Facilities all set up and ready for tourists, but are locked tight as a drum! This location will likely be developed as a tourist attraction.
+
+* 
+Harrat Viewpoint. A scenic viewpoint at Mount Harrat overlooking the whole valley. There is also a parking lot and fancy restaurant at that same spot.
+
+
+Do
+
+Buy
+* 
+Market Street. The tourist street in the Old Town. There is a wide selection of souvenirs such as clothes, handicraft, beauty products, jewellery and such.
+
+
+Eat
+Most of the upper-class hotels in the region have their own exquisite in-house restaurants. Alternatively you can also look for rather tourist-oriented (and accordingly expensive) restaurants and cafés in the Old Town.
+
+* 
+Somewhere. 
+
+
+If you have your own means of transport or if you are staying there in the first place, you could visit the more local and cheaper restaurants in the New Town (2 km south of the Old Town), where all the regular locals go eat. There is a wide selection of Western-style fast food, Arabian-style rice dishes, Shawarma and Kebab, Yemeni cuisine and other restaurants.
+
+Drink
+
+===== TOKENS THE MODEL TRAINS ON (230) =====
+
+officially branded hejaz region ancient oasis tip hejaz nabatean historical site notably unesco world heritage site hegra madain saleh rock hewn built civilization obscure government set royal commission stated aim turning world class attraction investment fast furious airport fielding direct international flight cluster luxury hotel springing world find hegra madain saleh covered separate article old dadan remnant old nabatean highlight lion tomb dadan carved tomb rock lion carved side lion sculpture observed installed binocular structure fragile tour museum dadan archaeological excavation site visited hour tour unfortunately tour spun longer english version audio guide weak rock carving jabal ikhmal ancient petroglyph carved nearby mountain rock ancient traveller pilgrim tour participation rock carving workshop carve name old nabatean language rock home souvenir visited together old dadan dadan heritage trail picturesque trail close old dadan date plantation historical farm ruin garden old historical cluster ancient house mixed building looking old castle view old visited tour booked incense road restored hejaz railway station facility set ready locked tight drum likely developed attraction harrat viewpoint scenic viewpoint mount harrat overlooking valley parking fancy restaurant spot market street street old wide selection souvenir clothe handicraft beauty product jewellery upper class hotel region exquisite house restaurant alternatively look oriented accordingly expensive restaurant cafe old somewhere mean transport staying cheaper restaurant old regular local wide selection style fast food arabian style rice dish shawarma kebab yemeni cuisine restaurant

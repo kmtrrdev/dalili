@@ -1,0 +1,229 @@
+﻿id,name,country,tags,main_tag,split,tokens,characters,wikivoyage_title,source_url
+paris,Paris,France,culture history food shopping,culture,validation,3503,47892,Paris,https://en.wikivoyage.org/wiki/Paris
+nice,Nice,France,beach food relax,beach,validation,2477,31028,Nice,https://en.wikivoyage.org/wiki/Nice
+lyon,Lyon,France,food culture history,food,test,5083,67508,Lyon,https://en.wikivoyage.org/wiki/Lyon
+chamonix,Chamonix,France,ski nature adventure,ski,test,1260,16562,Chamonix,https://en.wikivoyage.org/wiki/Chamonix
+bordeaux,Bordeaux,France,food culture,food,test,1081,13706,Bordeaux,https://en.wikivoyage.org/wiki/Bordeaux
+marseille,Marseille,France,beach food culture,beach,test,1738,22376,Marseille,https://en.wikivoyage.org/wiki/Marseille
+rome,Rome,Italy,history culture food,history,test,3377,47273,Rome,https://en.wikivoyage.org/wiki/Rome
+florence,Florence,Italy,culture history food,culture,validation,3084,40569,Florence,https://en.wikivoyage.org/wiki/Florence
+venice,Venice,Italy,culture history,culture,validation,2382,32110,Venice,https://en.wikivoyage.org/wiki/Venice
+milan,Milan,Italy,shopping culture food,shopping,test,1572,20947,Milan,https://en.wikivoyage.org/wiki/Milan
+naples,Naples,Italy,food history,food,validation,3030,39069,Naples,https://en.wikivoyage.org/wiki/Naples
+amalfi,Amalfi,Italy,beach relax food,beach,test,389,4932,Amalfi,https://en.wikivoyage.org/wiki/Amalfi
+cinque-terre,Cinque Terre,Italy,nature beach food,nature,validation,1380,18320,Cinque Terre,https://en.wikivoyage.org/wiki/Cinque_Terre
+dolomites,Dolomites,Italy,ski nature adventure,ski,validation,1163,16879,Dolomites,https://en.wikivoyage.org/wiki/Dolomites
+sicily,Sicily,Italy,beach history food,beach,test,1803,20472,Sicily,https://en.wikivoyage.org/wiki/Sicily
+barcelona,Barcelona,Spain,beach culture food nightlife,beach,test,2058,27906,Barcelona,https://en.wikivoyage.org/wiki/Barcelona
+madrid,Madrid,Spain,culture food nightlife shopping,culture,test,1305,17934,Madrid,https://en.wikivoyage.org/wiki/Madrid
+seville,Seville,Spain,history culture food,history,test,1874,24811,Seville,https://en.wikivoyage.org/wiki/Seville
+granada,Granada,Spain,history culture,history,validation,2970,40170,Granada,https://en.wikivoyage.org/wiki/Granada
+ibiza,Ibiza,Spain,nightlife beach,nightlife,validation,486,6687,Ibiza,https://en.wikivoyage.org/wiki/Ibiza
+mallorca,Mallorca,Spain,beach relax,beach,validation,674,8674,Mallorca,https://en.wikivoyage.org/wiki/Mallorca
+tenerife,Tenerife,Spain,beach nature adventure,beach,validation,2078,27954,Tenerife,https://en.wikivoyage.org/wiki/Tenerife
+lisbon,Lisbon,Portugal,culture food history,culture,test,1677,21720,Lisbon,https://en.wikivoyage.org/wiki/Lisbon
+porto,Porto,Portugal,food culture history,food,validation,1839,25348,Porto,https://en.wikivoyage.org/wiki/Porto
+algarve,Algarve,Portugal,beach relax,beach,validation,372,5312,Algarve,https://en.wikivoyage.org/wiki/Algarve
+madeira,Madeira,Portugal,nature adventure,nature,test,341,4567,Madeira,https://en.wikivoyage.org/wiki/Madeira
+london,London,United Kingdom,culture history shopping nightlife,culture,test,4297,55866,London,https://en.wikivoyage.org/wiki/London
+edinburgh,Edinburgh,United Kingdom,history culture,history,test,1730,23522,Edinburgh,https://en.wikivoyage.org/wiki/Edinburgh
+scottish-highlands,Scottish Highlands,United Kingdom,nature adventure,nature,test,547,6845,Scottish Highlands,https://en.wikivoyage.org/wiki/Scottish_Highlands
+dublin,Dublin,Ireland,nightlife culture history,nightlife,test,3978,50867,Dublin,https://en.wikivoyage.org/wiki/Dublin
+amsterdam,Amsterdam,Netherlands,culture nightlife,culture,test,3189,44028,Amsterdam,https://en.wikivoyage.org/wiki/Amsterdam
+brussels,Brussels,Belgium,food culture history,food,validation,1276,18001,Brussels,https://en.wikivoyage.org/wiki/Brussels
+bruges,Bruges,Belgium,history culture,history,validation,1623,22259,Bruges,https://en.wikivoyage.org/wiki/Bruges
+berlin,Berlin,Germany,culture history nightlife,culture,test,4199,60302,Berlin,https://en.wikivoyage.org/wiki/Berlin
+munich,Munich,Germany,culture food history,culture,test,2229,28992,Munich,https://en.wikivoyage.org/wiki/Munich
+hamburg,Hamburg,Germany,culture nightlife,culture,test,1934,27382,Hamburg,https://en.wikivoyage.org/wiki/Hamburg
+prague,Prague,Czech Republic,history culture nightlife,history,validation,1818,25579,Prague,https://en.wikivoyage.org/wiki/Prague
+vienna,Vienna,Austria,culture history food,culture,test,2624,36754,Vienna,https://en.wikivoyage.org/wiki/Vienna
+salzburg,Salzburg,Austria,culture history,culture,validation,1738,22963,Salzburg,https://en.wikivoyage.org/wiki/Salzburg
+innsbruck,Innsbruck,Austria,ski nature adventure,ski,validation,2365,31525,Innsbruck,https://en.wikivoyage.org/wiki/Innsbruck
+st-anton-am-arlberg,St. Anton am Arlberg,Austria,ski adventure,ski,excluded (guide too short),81,1206,St Anton,https://en.wikivoyage.org/wiki/St_Anton
+zermatt,Zermatt,Switzerland,ski nature adventure,ski,test,845,12227,Zermatt,https://en.wikivoyage.org/wiki/Zermatt
+interlaken,Interlaken,Switzerland,nature adventure,nature,validation,805,10662,Interlaken,https://en.wikivoyage.org/wiki/Interlaken
+zurich,Zurich,Switzerland,shopping culture,shopping,test,3211,42617,Zurich,https://en.wikivoyage.org/wiki/Zurich
+lucerne,Lucerne,Switzerland,nature culture,nature,test,1369,17854,Lucerne,https://en.wikivoyage.org/wiki/Lucerne
+budapest,Budapest,Hungary,history culture nightlife relax,history,test,2928,37737,Budapest,https://en.wikivoyage.org/wiki/Budapest
+krakow,Krakow,Poland,history culture,history,test,1389,18373,Krakow,https://en.wikivoyage.org/wiki/Krakow
+warsaw,Warsaw,Poland,history culture,history,validation,1694,23649,Warsaw,https://en.wikivoyage.org/wiki/Warsaw
+copenhagen,Copenhagen,Denmark,culture food,culture,validation,2768,38186,Copenhagen,https://en.wikivoyage.org/wiki/Copenhagen
+stockholm,Stockholm,Sweden,culture history,culture,test,2309,30741,Stockholm,https://en.wikivoyage.org/wiki/Stockholm
+oslo,Oslo,Norway,culture nature,culture,validation,2148,30414,Oslo,https://en.wikivoyage.org/wiki/Oslo
+bergen,Bergen,Norway,nature culture,nature,validation,4183,58407,Bergen,https://en.wikivoyage.org/wiki/Bergen
+troms,Tromsø,Norway,nature adventure,nature,validation,2324,32702,Tromsø,https://en.wikivoyage.org/wiki/Troms%C3%B8
+helsinki,Helsinki,Finland,culture,culture,validation,1973,28187,Helsinki,https://en.wikivoyage.org/wiki/Helsinki
+lapland,Lapland,Finland,nature adventure ski,nature,test,1539,22573,Finnish Lapland,https://en.wikivoyage.org/wiki/Finnish_Lapland
+reykjavik,Reykjavík,Iceland,nature adventure,nature,test,2500,36215,Reykjavík,https://en.wikivoyage.org/wiki/Reykjav%C3%ADk
+tallinn,Tallinn,Estonia,history culture,history,test,3248,42281,Tallinn,https://en.wikivoyage.org/wiki/Tallinn
+riga,Riga,Latvia,history culture nightlife,history,validation,1193,16345,Riga,https://en.wikivoyage.org/wiki/Riga
+vilnius,Vilnius,Lithuania,history culture,history,test,2262,30108,Vilnius,https://en.wikivoyage.org/wiki/Vilnius
+athens,Athens,Greece,history culture food,history,test,3852,51116,Athens,https://en.wikivoyage.org/wiki/Athens
+santorini,Santorini,Greece,beach relax,beach,test,1777,23580,Santorini,https://en.wikivoyage.org/wiki/Santorini
+mykonos,Mykonos,Greece,beach nightlife,beach,test,2061,27425,Mykonos,https://en.wikivoyage.org/wiki/Mykonos
+crete,Crete,Greece,beach history food,beach,test,1591,21265,Crete,https://en.wikivoyage.org/wiki/Crete
+rhodes,Rhodes,Greece,beach history,beach,validation,705,9733,Rhodes,https://en.wikivoyage.org/wiki/Rhodes
+corfu,Corfu,Greece,beach relax,beach,test,653,8023,Corfu,https://en.wikivoyage.org/wiki/Corfu
+thessaloniki,Thessaloniki,Greece,food history nightlife,food,test,950,12524,Thessaloniki,https://en.wikivoyage.org/wiki/Thessaloniki
+dubrovnik,Dubrovnik,Croatia,history beach,history,validation,2058,27678,Dubrovnik,https://en.wikivoyage.org/wiki/Dubrovnik
+split,Split,Croatia,beach history,beach,test,1054,13604,Split,https://en.wikivoyage.org/wiki/Split
+hvar,Hvar,Croatia,beach nightlife,beach,validation,559,7601,Hvar,https://en.wikivoyage.org/wiki/Hvar
+plitvice-lakes-national-park,Plitvice Lakes National Park,Croatia,nature,nature,test,915,12204,Plitvice Lakes National Park,https://en.wikivoyage.org/wiki/Plitvice_Lakes_National_Park
+kotor,Kotor,Montenegro,history nature,history,validation,626,8605,Kotor,https://en.wikivoyage.org/wiki/Kotor
+ljubljana,Ljubljana,Slovenia,culture nature,culture,test,1987,25256,Ljubljana,https://en.wikivoyage.org/wiki/Ljubljana
+lake-bled,Lake Bled,Slovenia,nature relax,nature,test,617,7925,Bled,https://en.wikivoyage.org/wiki/Bled
+sofia,Sofia,Bulgaria,history culture,history,test,1791,23666,Sofia,https://en.wikivoyage.org/wiki/Sofia
+plovdiv,Plovdiv,Bulgaria,history culture,history,test,721,10791,Plovdiv,https://en.wikivoyage.org/wiki/Plovdiv
+borovets,Borovets,Bulgaria,ski nature,ski,validation,237,3268,Borovets,https://en.wikivoyage.org/wiki/Borovets
+bansko,Bansko,Bulgaria,ski nature,ski,test,628,8519,Bansko,https://en.wikivoyage.org/wiki/Bansko
+varna,Varna,Bulgaria,beach nightlife,beach,test,1060,14302,Varna,https://en.wikivoyage.org/wiki/Varna
+bucharest,Bucharest,Romania,history culture nightlife,history,validation,1861,23927,Bucharest,https://en.wikivoyage.org/wiki/Bucharest
+brasov,Brașov,Romania,history nature,history,test,856,10775,Brașov,https://en.wikivoyage.org/wiki/Bra%C8%99ov
+belgrade,Belgrade,Serbia,nightlife history,nightlife,test,2354,29640,Belgrade,https://en.wikivoyage.org/wiki/Belgrade
+sarajevo,Sarajevo,Bosnia and Herzegovina,history culture,history,test,5092,67067,Sarajevo,https://en.wikivoyage.org/wiki/Sarajevo
+tirana,Tirana,Albania,culture,culture,test,2654,35025,Tirana,https://en.wikivoyage.org/wiki/Tirana
+albanian-riviera,Albanian Riviera,Albania,beach nature,beach,validation,622,7586,Albanian Riviera,https://en.wikivoyage.org/wiki/Albanian_Riviera
+valletta,Valletta,Malta,history culture,history,test,1244,16463,Valletta,https://en.wikivoyage.org/wiki/Valletta
+cyprus,Cyprus,Cyprus,beach history,beach,validation,521,6943,Cyprus,https://en.wikivoyage.org/wiki/Cyprus
+istanbul,Istanbul,Turkey,history culture food shopping,history,test,2727,36927,Istanbul,https://en.wikivoyage.org/wiki/Istanbul
+cappadocia,Cappadocia,Turkey,nature adventure history,nature,test,404,5184,Cappadocia,https://en.wikivoyage.org/wiki/Cappadocia
+antalya,Antalya,Turkey,beach history relax,beach,test,921,11936,Antalya,https://en.wikivoyage.org/wiki/Antalya
+bodrum,Bodrum,Turkey,beach nightlife,beach,validation,1003,13175,Bodrum,https://en.wikivoyage.org/wiki/Bodrum
+fethiye,Fethiye,Turkey,beach nature adventure,beach,validation,519,7243,Fethiye,https://en.wikivoyage.org/wiki/Fethiye
+pamukkale,Pamukkale,Turkey,nature history,nature,validation,789,10340,Pamukkale,https://en.wikivoyage.org/wiki/Pamukkale
+tbilisi,Tbilisi,Georgia,culture food history,culture,validation,2803,35186,Tbilisi,https://en.wikivoyage.org/wiki/Tbilisi
+batumi,Batumi,Georgia,beach nightlife,beach,test,715,9408,Batumi,https://en.wikivoyage.org/wiki/Batumi
+yerevan,Yerevan,Armenia,history culture,history,validation,3187,41555,Yerevan,https://en.wikivoyage.org/wiki/Yerevan
+baku,Baku,Azerbaijan,culture history,culture,validation,2538,31827,Baku,https://en.wikivoyage.org/wiki/Baku
+cairo,Cairo,Egypt,history culture shopping,history,validation,1955,25453,Cairo,https://en.wikivoyage.org/wiki/Cairo
+luxor,Luxor,Egypt,history culture,history,test,633,9359,Luxor,https://en.wikivoyage.org/wiki/Luxor
+aswan,Aswan,Egypt,history culture relax,history,validation,1101,14700,Aswan,https://en.wikivoyage.org/wiki/Aswan
+alexandria,Alexandria,Egypt,history beach food,history,validation,1943,24989,Alexandria,https://en.wikivoyage.org/wiki/Alexandria
+sharm-el-sheikh,Sharm El Sheikh,Egypt,beach relax adventure,beach,validation,1178,15385,Sharm el-Sheikh,https://en.wikivoyage.org/wiki/Sharm_el-Sheikh
+hurghada,Hurghada,Egypt,beach relax adventure,beach,validation,728,9661,Hurghada,https://en.wikivoyage.org/wiki/Hurghada
+dahab,Dahab,Egypt,beach adventure relax,beach,validation,1877,23837,Dahab,https://en.wikivoyage.org/wiki/Dahab
+siwa,Siwa,Egypt,nature relax history,nature,validation,648,8432,Siwa Oasis,https://en.wikivoyage.org/wiki/Siwa_Oasis
+marrakech,Marrakech,Morocco,culture shopping history food,culture,validation,2480,31510,Marrakech,https://en.wikivoyage.org/wiki/Marrakech
+fes,Fes,Morocco,history culture shopping,history,validation,1157,14997,Fes,https://en.wikivoyage.org/wiki/Fes
+chefchaouen,Chefchaouen,Morocco,culture nature,culture,test,787,10327,Chefchaouen,https://en.wikivoyage.org/wiki/Chefchaouen
+essaouira,Essaouira,Morocco,beach culture,beach,validation,593,7904,Essaouira,https://en.wikivoyage.org/wiki/Essaouira
+tunis,Tunis,Tunisia,history culture,history,validation,1076,15074,Tunis,https://en.wikivoyage.org/wiki/Tunis
+djerba,Djerba,Tunisia,beach relax,beach,test,591,7448,Djerba,https://en.wikivoyage.org/wiki/Djerba
+zanzibar,Zanzibar,Tanzania,beach history relax,beach,test,862,11804,Zanzibar,https://en.wikivoyage.org/wiki/Zanzibar
+serengeti-national-park,Serengeti National Park,Tanzania,nature adventure,nature,validation,659,9507,Serengeti National Park,https://en.wikivoyage.org/wiki/Serengeti_National_Park
+nairobi,Nairobi,Kenya,nature culture,nature,validation,2034,26795,Nairobi,https://en.wikivoyage.org/wiki/Nairobi
+maasai-mara,Maasai Mara,Kenya,nature adventure,nature,validation,616,8926,Maasai Mara National Reserve,https://en.wikivoyage.org/wiki/Maasai_Mara_National_Reserve
+cape-town,Cape Town,South Africa,nature food beach adventure,nature,test,3439,46086,Cape Town,https://en.wikivoyage.org/wiki/Cape_Town
+kruger-national-park,Kruger National Park,South Africa,nature adventure,nature,validation,2590,33777,Kruger National Park,https://en.wikivoyage.org/wiki/Kruger_National_Park
+victoria-falls,Victoria Falls,Zimbabwe,nature adventure,nature,validation,1014,13772,Victoria Falls,https://en.wikivoyage.org/wiki/Victoria_Falls
+mauritius,Mauritius,Mauritius,beach relax,beach,test,2070,26691,Mauritius,https://en.wikivoyage.org/wiki/Mauritius
+seychelles,Seychelles,Seychelles,beach relax nature,beach,validation,836,11465,Seychelles,https://en.wikivoyage.org/wiki/Seychelles
+madagascar,Madagascar,Madagascar,nature adventure,nature,test,966,13200,Madagascar,https://en.wikivoyage.org/wiki/Madagascar
+addis-ababa,Addis Ababa,Ethiopia,culture history,culture,test,2031,26329,Addis Ababa,https://en.wikivoyage.org/wiki/Addis_Ababa
+dubai,Dubai,United Arab Emirates,shopping beach nightlife,shopping,validation,1365,18477,Dubai,https://en.wikivoyage.org/wiki/Dubai
+abu-dhabi,Abu Dhabi,United Arab Emirates,culture beach shopping,culture,validation,2580,33375,Abu Dhabi,https://en.wikivoyage.org/wiki/Abu_Dhabi
+muscat,Muscat,Oman,culture history nature,culture,validation,1606,20371,Muscat,https://en.wikivoyage.org/wiki/Muscat
+doha,Doha,Qatar,culture shopping,culture,validation,2488,32540,Doha,https://en.wikivoyage.org/wiki/Doha
+petra,Petra,Jordan,history adventure,history,test,777,11450,Petra,https://en.wikivoyage.org/wiki/Petra
+wadi-rum,Wadi Rum,Jordan,nature adventure,nature,validation,520,6987,Wadi Rum,https://en.wikivoyage.org/wiki/Wadi_Rum
+dead-sea,Dead Sea,Jordan,relax nature,relax,validation,718,9321,Dead Sea (Jordan),https://en.wikivoyage.org/wiki/Dead_Sea_%28Jordan%29
+beirut,Beirut,Lebanon,food nightlife culture,food,validation,1475,19726,Beirut,https://en.wikivoyage.org/wiki/Beirut
+alula,AlUla,Saudi Arabia,history nature adventure,history,test,230,3261,Al-Ula,https://en.wikivoyage.org/wiki/Al-Ula
+riyadh,Riyadh,Saudi Arabia,culture shopping,culture,test,1812,24691,Riyadh,https://en.wikivoyage.org/wiki/Riyadh
+jeddah,Jeddah,Saudi Arabia,culture history beach,culture,validation,826,10761,Jeddah,https://en.wikivoyage.org/wiki/Jeddah
+bali,Bali,Indonesia,beach culture relax nature,beach,validation,3272,43169,Bali,https://en.wikivoyage.org/wiki/Bali
+jakarta,Jakarta,Indonesia,culture shopping,culture,validation,2775,36486,Jakarta,https://en.wikivoyage.org/wiki/Jakarta
+singapore,Singapore,Singapore,food shopping culture,food,test,5778,71089,Singapore,https://en.wikivoyage.org/wiki/Singapore
+kuala-lumpur,Kuala Lumpur,Malaysia,shopping food culture,shopping,validation,1457,19233,Kuala Lumpur,https://en.wikivoyage.org/wiki/Kuala_Lumpur
+langkawi,Langkawi,Malaysia,beach relax nature,beach,test,1720,21245,Langkawi,https://en.wikivoyage.org/wiki/Langkawi
+penang,Penang,Malaysia,food culture history,food,validation,1429,17624,Penang,https://en.wikivoyage.org/wiki/Penang
+bangkok,Bangkok,Thailand,food nightlife shopping culture,food,validation,3581,46291,Bangkok,https://en.wikivoyage.org/wiki/Bangkok
+chiang-mai,Chiang Mai,Thailand,culture nature food,culture,test,5812,73027,Chiang Mai,https://en.wikivoyage.org/wiki/Chiang_Mai
+phuket,Phuket,Thailand,beach nightlife,beach,validation,828,10558,Phuket,https://en.wikivoyage.org/wiki/Phuket
+krabi,Krabi,Thailand,beach nature adventure,beach,validation,1596,20073,Ao Nang,https://en.wikivoyage.org/wiki/Ao_Nang
+koh-samui,Koh Samui,Thailand,beach relax,beach,test,1108,14700,Koh Samui,https://en.wikivoyage.org/wiki/Koh_Samui
+hanoi,Hanoi,Vietnam,food culture history,food,test,3986,49884,Hanoi,https://en.wikivoyage.org/wiki/Hanoi
+ho-chi-minh-city,Ho Chi Minh City,Vietnam,food nightlife history,food,validation,3904,49456,Ho Chi Minh City,https://en.wikivoyage.org/wiki/Ho_Chi_Minh_City
+ha-long-bay,Ha Long Bay,Vietnam,nature adventure,nature,test,228,2724,Halong Bay,https://en.wikivoyage.org/wiki/Halong_Bay
+hoi-an,Hoi An,Vietnam,history culture food beach,history,test,2058,25782,Hoi An,https://en.wikivoyage.org/wiki/Hoi_An
+siem-reap,Siem Reap,Cambodia,history culture,history,test,2671,32115,Siem Reap,https://en.wikivoyage.org/wiki/Siem_Reap
+luang-prabang,Luang Prabang,Laos,culture relax,culture,test,2308,29680,Luang Prabang,https://en.wikivoyage.org/wiki/Luang_Prabang
+manila,Manila,Philippines,culture shopping,culture,validation,2790,36085,Manila,https://en.wikivoyage.org/wiki/Manila
+palawan,Palawan,Philippines,beach nature adventure,beach,validation,876,11217,El Nido,https://en.wikivoyage.org/wiki/El_Nido
+boracay,Boracay,Philippines,beach nightlife,beach,test,1864,23931,Boracay,https://en.wikivoyage.org/wiki/Boracay
+tokyo,Tokyo,Japan,food culture shopping nightlife,food,validation,2584,34521,Tokyo,https://en.wikivoyage.org/wiki/Tokyo
+kyoto,Kyoto,Japan,culture history food,culture,test,1517,21209,Kyoto,https://en.wikivoyage.org/wiki/Kyoto
+osaka,Osaka,Japan,food nightlife shopping,food,validation,908,11962,Osaka,https://en.wikivoyage.org/wiki/Osaka
+hokkaido,Hokkaido,Japan,ski nature food,ski,test,447,5924,Hokkaido,https://en.wikivoyage.org/wiki/Hokkaido
+okinawa,Okinawa,Japan,beach relax,beach,test,1624,21266,Okinawa,https://en.wikivoyage.org/wiki/Okinawa
+seoul,Seoul,South Korea,food shopping culture nightlife,food,validation,1233,16769,Seoul,https://en.wikivoyage.org/wiki/Seoul
+busan,Busan,South Korea,beach food,beach,validation,715,10572,Busan,https://en.wikivoyage.org/wiki/Busan
+jeju,Jeju,South Korea,nature beach,nature,validation,1788,22069,Jeju,https://en.wikivoyage.org/wiki/Jeju
+beijing,Beijing,China,history culture,history,test,2786,37416,Beijing,https://en.wikivoyage.org/wiki/Beijing
+shanghai,Shanghai,China,shopping food nightlife,shopping,test,4463,60186,Shanghai,https://en.wikivoyage.org/wiki/Shanghai
+hong-kong,Hong Kong,China,food shopping nightlife,food,test,5376,70988,Hong Kong,https://en.wikivoyage.org/wiki/Hong_Kong
+taipei,Taipei,Taiwan,food culture nightlife,food,validation,2227,29124,Taipei,https://en.wikivoyage.org/wiki/Taipei
+delhi,Delhi,India,history culture food shopping,history,validation,1404,18761,Delhi,https://en.wikivoyage.org/wiki/Delhi
+agra,Agra,India,history,history,test,646,8694,Agra,https://en.wikivoyage.org/wiki/Agra
+jaipur,Jaipur,India,history culture shopping,history,validation,2613,32482,Jaipur,https://en.wikivoyage.org/wiki/Jaipur
+goa,Goa,India,beach nightlife relax,beach,test,1842,23792,Goa,https://en.wikivoyage.org/wiki/Goa
+kerala,Kerala,India,nature relax culture,nature,validation,3535,43566,Kerala,https://en.wikivoyage.org/wiki/Kerala
+mumbai,Mumbai,India,food culture nightlife,food,validation,3862,50987,Mumbai,https://en.wikivoyage.org/wiki/Mumbai
+varanasi,Varanasi,India,culture history,culture,validation,2477,31046,Varanasi,https://en.wikivoyage.org/wiki/Varanasi
+ladakh,Ladakh,India,nature adventure,nature,validation,1630,21533,Ladakh,https://en.wikivoyage.org/wiki/Ladakh
+kathmandu,Kathmandu,Nepal,culture history adventure,culture,test,796,10929,Kathmandu,https://en.wikivoyage.org/wiki/Kathmandu
+pokhara,Pokhara,Nepal,nature adventure relax,nature,test,1623,20290,Pokhara,https://en.wikivoyage.org/wiki/Pokhara
+sri-lanka,Sri Lanka,Sri Lanka,beach nature history,beach,test,1468,19791,Sri Lanka,https://en.wikivoyage.org/wiki/Sri_Lanka
+maldives,Maldives,Maldives,beach relax,beach,test,1309,16783,Maldives,https://en.wikivoyage.org/wiki/Maldives
+bhutan,Bhutan,Bhutan,nature culture,nature,test,1744,21981,Bhutan,https://en.wikivoyage.org/wiki/Bhutan
+almaty,Almaty,Kazakhstan,nature ski,nature,test,1075,13566,Almaty,https://en.wikivoyage.org/wiki/Almaty
+samarkand,Samarkand,Uzbekistan,history culture,history,test,2130,29724,Samarkand,https://en.wikivoyage.org/wiki/Samarkand
+sydney,Sydney,Australia,beach culture food,beach,validation,3991,53477,Sydney,https://en.wikivoyage.org/wiki/Sydney
+melbourne,Melbourne,Australia,food culture shopping,food,validation,2470,33933,Melbourne,https://en.wikivoyage.org/wiki/Melbourne
+great-barrier-reef,Great Barrier Reef,Australia,nature beach adventure,nature,test,635,8022,Great Barrier Reef,https://en.wikivoyage.org/wiki/Great_Barrier_Reef
+queenstown,Queenstown,New Zealand,adventure nature ski,adventure,validation,1384,18080,Queenstown (New Zealand),https://en.wikivoyage.org/wiki/Queenstown_%28New_Zealand%29
+auckland,Auckland,New Zealand,culture nature,culture,validation,935,13089,Auckland,https://en.wikivoyage.org/wiki/Auckland
+fiji,Fiji,Fiji,beach relax,beach,test,819,10391,Fiji,https://en.wikivoyage.org/wiki/Fiji
+bora-bora,Bora Bora,French Polynesia,beach relax,beach,validation,964,13173,Bora Bora,https://en.wikivoyage.org/wiki/Bora_Bora
+hawaii,Hawaii,United States,beach nature relax,beach,test,1429,18444,Hawaii,https://en.wikivoyage.org/wiki/Hawaii
+new-york-city,New York City,United States,culture shopping food nightlife,culture,test,4530,59232,New York City,https://en.wikivoyage.org/wiki/New_York_City
+los-angeles,Los Angeles,United States,beach culture shopping,beach,validation,3175,41851,Los Angeles,https://en.wikivoyage.org/wiki/Los_Angeles
+san-francisco,San Francisco,United States,culture food,culture,test,3436,46000,San Francisco,https://en.wikivoyage.org/wiki/San_Francisco
+las-vegas,Las Vegas,United States,nightlife shopping,nightlife,validation,2034,27554,Las Vegas,https://en.wikivoyage.org/wiki/Las_Vegas
+miami,Miami,United States,beach nightlife,beach,test,853,11318,Miami,https://en.wikivoyage.org/wiki/Miami
+orlando,Orlando,United States,shopping relax,shopping,validation,1915,23453,Orlando,https://en.wikivoyage.org/wiki/Orlando
+chicago,Chicago,United States,culture food,culture,validation,5961,77875,Chicago,https://en.wikivoyage.org/wiki/Chicago
+new-orleans,New Orleans,United States,food nightlife culture,food,validation,2409,32051,New Orleans,https://en.wikivoyage.org/wiki/New_Orleans
+grand-canyon-national-park,Grand Canyon National Park,United States,nature adventure,nature,test,2070,25988,Grand Canyon National Park,https://en.wikivoyage.org/wiki/Grand_Canyon_National_Park
+yellowstone-national-park,Yellowstone National Park,United States,nature adventure,nature,validation,6000,77411,Yellowstone National Park,https://en.wikivoyage.org/wiki/Yellowstone_National_Park
+aspen,Aspen,United States,ski nature,ski,test,652,7936,Aspen,https://en.wikivoyage.org/wiki/Aspen
+washington-d-c,"Washington, D.C.",United States,history culture,history,test,3646,47977,"Washington, D.C.",https://en.wikivoyage.org/wiki/Washington%2C_D.C.
+boston,Boston,United States,history culture,history,test,3556,46348,Boston,https://en.wikivoyage.org/wiki/Boston
+vancouver,Vancouver,Canada,nature food,nature,validation,2256,31575,Vancouver,https://en.wikivoyage.org/wiki/Vancouver
+banff-national-park,Banff National Park,Canada,nature ski adventure,nature,validation,601,7570,Banff National Park,https://en.wikivoyage.org/wiki/Banff_National_Park
+whistler,Whistler,Canada,ski adventure,ski,validation,1052,13646,Whistler,https://en.wikivoyage.org/wiki/Whistler
+toronto,Toronto,Canada,culture food shopping,culture,validation,3173,41816,Toronto,https://en.wikivoyage.org/wiki/Toronto
+montreal,Montreal,Canada,culture food nightlife,culture,test,3011,38335,Montreal,https://en.wikivoyage.org/wiki/Montreal
+quebec-city,Quebec City,Canada,history culture,history,test,2298,31325,Quebec City,https://en.wikivoyage.org/wiki/Quebec_City
+mexico-city,Mexico City,Mexico,culture history food,culture,validation,3301,43065,Mexico City,https://en.wikivoyage.org/wiki/Mexico_City
+cancun,Cancún,Mexico,beach nightlife,beach,test,1896,23852,Cancún,https://en.wikivoyage.org/wiki/Canc%C3%BAn
+tulum,Tulum,Mexico,beach history relax,beach,validation,1630,21225,Tulum,https://en.wikivoyage.org/wiki/Tulum
+oaxaca,Oaxaca,Mexico,food culture,food,test,2206,28820,Oaxaca (city),https://en.wikivoyage.org/wiki/Oaxaca_%28city%29
+havana,Havana,Cuba,culture history nightlife,culture,test,1447,19554,Havana,https://en.wikivoyage.org/wiki/Havana
+punta-cana,Punta Cana,Dominican Republic,beach relax,beach,validation,852,11268,Punta Cana,https://en.wikivoyage.org/wiki/Punta_Cana
+jamaica,Jamaica,Jamaica,beach relax,beach,test,1237,16628,Jamaica,https://en.wikivoyage.org/wiki/Jamaica
+costa-rica,Costa Rica,Costa Rica,nature adventure beach,nature,test,2543,35118,Costa Rica,https://en.wikivoyage.org/wiki/Costa_Rica
+cartagena,Cartagena,Colombia,history beach nightlife,history,validation,1237,16897,Cartagena (Colombia),https://en.wikivoyage.org/wiki/Cartagena_%28Colombia%29
+medellin,Medellín,Colombia,culture nightlife,culture,validation,3262,43139,Medellín,https://en.wikivoyage.org/wiki/Medell%C3%ADn
+cusco,Cusco,Peru,history culture adventure,history,validation,2576,34218,Cusco,https://en.wikivoyage.org/wiki/Cusco
+machu-picchu,Machu Picchu,Peru,history nature adventure,history,test,773,11683,Machu Picchu,https://en.wikivoyage.org/wiki/Machu_Picchu
+lima,Lima,Peru,food culture,food,validation,782,10536,Lima,https://en.wikivoyage.org/wiki/Lima
+rio-de-janeiro,Rio de Janeiro,Brazil,beach nightlife culture,beach,test,2516,33654,Rio de Janeiro,https://en.wikivoyage.org/wiki/Rio_de_Janeiro
+salvador,Salvador,Brazil,culture history beach,culture,test,1518,20391,Salvador,https://en.wikivoyage.org/wiki/Salvador
+buenos-aires,Buenos Aires,Argentina,culture food nightlife,culture,validation,2414,34065,Buenos Aires,https://en.wikivoyage.org/wiki/Buenos_Aires
+patagonia,Patagonia,Argentina,nature adventure,nature,test,521,7183,El Calafate,https://en.wikivoyage.org/wiki/El_Calafate
+mendoza,Mendoza,Argentina,food nature,food,test,1645,21838,Mendoza,https://en.wikivoyage.org/wiki/Mendoza
+santiago,Santiago,Chile,culture food,culture,test,864,12848,Santiago (Chile),https://en.wikivoyage.org/wiki/Santiago_%28Chile%29
+atacama-desert,Atacama Desert,Chile,nature adventure,nature,test,2701,38807,San Pedro de Atacama,https://en.wikivoyage.org/wiki/San_Pedro_de_Atacama
+galapagos-islands,Galápagos Islands,Ecuador,nature adventure,nature,validation,814,10987,Galápagos Islands,https://en.wikivoyage.org/wiki/Gal%C3%A1pagos_Islands
+uyuni,Uyuni,Bolivia,nature adventure,nature,validation,336,4601,Uyuni,https://en.wikivoyage.org/wiki/Uyuni

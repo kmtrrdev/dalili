@@ -1,0 +1,227 @@
+{
+ "slug": "athens",
+ "name": "Athens",
+ "country": "Greece",
+ "tags": [
+  "history",
+  "culture",
+  "food"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Athens",
+ "en": {
+  "city_name": "Athens",
+  "country_name": "Greece",
+  "title": "Athens travel guide: what to see, eat and know",
+  "meta_description": "Practical Athens guide with top sights (Acropolis, Plaka), where to eat (souvlaki, vegan options), budget tips, safety notes and a 3-day itinerary.",
+  "h1": "Athens travel guide: what to see, eat and know",
+  "intro": [
+   "Athens is Greece’s capital and its largest urban centre, where modern city life unfolds alongside some of the world’s most famous ancient monuments. The city mixes everyday Greek urban culture—cafes, markets and neighbourhoods—with archaeological treasures that shaped Western history.",
+   "Visitors will find the Acropolis and its monuments towering over lively districts like Plaka, Monastiraki and Thissio, while nearby hills, parks and beaches offer green and coastal escapes from the busy central streets."
+  ],
+  "best_time": "Spring and autumn offer pleasant weather and thinner crowds than high summer, while summer gives long days and easy access to nearby beaches but can be hot and busy; winter is quieter though some attractions close earlier as sunset comes sooner.",
+  "top_sights": [
+   {
+    "name": "Acropolis",
+    "why": "The defining landmark of Athens and a UNESCO World Heritage site, home to the Parthenon, Erechtheion and other classical monuments; buy timed-entry tickets in advance from the official HHTicket site and arrive for your allotted slot to avoid long queues."
+   },
+   {
+    "name": "Parthenon",
+    "why": "The massive 5th-century BC temple on the Acropolis that symbolises Athens’ classical heritage; expect ongoing restoration work and occasional scaffolding that can affect some views."
+   },
+   {
+    "name": "Erechtheion",
+    "why": "An elegantly complex temple on the Acropolis known for its Ionic columns and the Porch of the Caryatids; its uneven ground and dual porches make it architecturally distinctive—look for the female caryatid figures."
+   },
+   {
+    "name": "Propylaea",
+    "why": "The monumental marble gateway at the west end of the Acropolis that frames the approach to the hill; it connects with the Temple of Athena Nike nearby, so allow time to see both together."
+   },
+   {
+    "name": "Theatre of Dionysus",
+    "why": "The ancient theatre at the southern slope of the Acropolis and one of the earliest theatres ever built; it is included with Acropolis admission and rewards a visit for anyone interested in classical drama and archaeology."
+   },
+   {
+    "name": "Plaka, Anafiotika and Monastiraki",
+    "why": "Historic neighbourhoods at the foot of the Acropolis with narrow streets, neoclassical buildings, tavernas and markets; explore on foot for cafes, souvenir shops and views of the Parthenon."
+   },
+   {
+    "name": "National Gardens",
+    "why": "A shady green retreat in the city centre with ponds, varied plantings and a small cafe—useful for escaping the summer heat and for a relaxed walk near central museums and Syntagma."
+   },
+   {
+    "name": "Philopappos and Lycabettus hills",
+    "why": "City hills planted with trees that offer panoramic views and pleasant walks; they provide a quieter nature experience within reach of the historic centre."
+   }
+  ],
+  "getting_around": "From central metro stations you can reach major archaeological sites on foot; the Akropoli and Thissio metro stops are convenient for the Acropolis and surrounding areas. For coastal beaches use buses from Sygrou or the tram from Syntagma, and note that some buses must be flagged to stop.",
+  "food": [
+   {
+    "name": "Souvlaki (pita-souvlaki)",
+    "note": "Grilled meat wrapped in pita with tomato, onion and tzatziki; take-away pita versions are notably cheaper than plated meals in tavernas."
+   },
+   {
+    "name": "Tzatziki",
+    "note": "Garlicky yogurt with cucumber that commonly accompanies souvlaki and other dishes; a staple condiment in Greek fast food."
+   },
+   {
+    "name": "Cheese and spinach pies (tiropita/spanakopita)",
+    "note": "Popular pastry snacks found at bakeries and fast-food chains for a quick, inexpensive bite."
+   },
+   {
+    "name": "Vegan street food",
+    "note": "Athens has vegan street-food options and dedicated places serving dishes like vegan souvlaki for plant-based travellers."
+   },
+   {
+    "name": "Frappe",
+    "note": "A chilled coffee commonly enjoyed in parks and cafes—an easy refreshment while exploring the city."
+   }
+  ],
+  "budget_tips": [
+   "Buy take-away pita-souvlaki rather than sitting for a plated meal to save money on street-food favourites.",
+   "Choose tavernas that also serve local customers instead of those with only tourist menus; this tends to be cheaper and more authentic.",
+   "Use buses or the tram to reach southern beaches; be prepared to flag a bus down if you are the only passenger waiting at a stop.",
+   "Shop at small family-run stores and local markets for souvenirs and foodstuffs rather than tourist shops in the most central streets."
+  ],
+  "safety": [
+   "Dress respectfully when visiting small Orthodox churches—cover shoulders and avoid bare legs as a sign of respect.",
+   "Watch for higher prices at beachfront cafes and restaurants with sea views; check menus before you sit down.",
+   "Keep an eye on belongings in crowded tourist areas such as Monastiraki and Plaka where pickpocketing can occur.",
+   "When boarding less busy buses, make sure the driver sees you and that you signal clearly so the bus will stop."
+  ],
+  "itinerary": [
+   "Day 1: Start at the Acropolis (use an advance timed ticket) and explore the Parthenon, Erechtheion and Propylaea; walk down to the Theatre of Dionysus and then wander through Plaka and Monastiraki for lunch and markets.",
+   "Day 2: Visit the National Archaeological Museum or other central museums, stroll the National Gardens and walk Dionysiou Areopagitou pedestrian route beneath the Acropolis; finish the day on Philopappos or Lycabettus hill for sunset views.",
+   "Day 3: Head south by tram or bus to one of the coastal neighbourhoods and enjoy a beach visit if weather permits; return to Kolonaki or Plaka for a relaxed evening meal."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Athens?",
+    "a": "Three days covers the key highlights—the Acropolis and its slopes, major museums and a neighbourhood stroll—while also leaving time for a short beach visit or hilltop sunset."
+   },
+   {
+    "q": "Is Athens expensive?",
+    "a": "Costs vary; street food like take-away pita-souvlaki and shop-bought snacks are inexpensive, but restaurants with Acropolis views and beachside cafes can be pricier—choose local tavernas and takeaway options to save money."
+   },
+   {
+    "q": "Is Athens safe for tourists?",
+    "a": "Athens is generally safe for visitors, but practise common-sense precautions in busy tourist areas—watch your belongings and be cautious at crowded market streets."
+   },
+   {
+    "q": "What is the best area to stay in Athens?",
+    "a": "Staying near Plaka, Monastiraki or Syntagma puts you within walking distance of the Acropolis, museums and major transport links, while Kolonaki offers a more upscale dining and shopping scene."
+   },
+   {
+    "q": "How do I get to the Acropolis from the airport?",
+    "a": "You can reach central Athens by metro and then walk from stations such as Akropoli or Thissio to the Acropolis area; once there, buy a timed-entry ticket in advance from the official HHTicket site to guarantee an entry slot."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "أثينا",
+  "country_name": "اليونان",
+  "title": "أثينا: دليل السفر — معالم، طعام وخطة 3 أيام",
+  "meta_description": "دليل لأثينا يقدّم أهم المعالم مثل الأكروبوليس، نصائح المبيت والمواصلات، أطباق محلية (سوفلاكي) واقتراح مسار لثلاثة أيام.",
+  "h1": "دليل السفر إلى أثينا: ماذا ترى وتاكل وتعرف",
+  "intro": [
+   "أثينا (Athína) هي عاصمة اليونان ومركز حضري حديث يضم نحو 3.6 مليون نسمة بحسب إحصاء ELSTAT لعام 2025، مع تقديرات سكانية أعلى عند احتساب السكان غير المسجلين. المدينة تجمع بين آثار كلاسيكية بارزة وحياة مدنية صاخبة؛ من آثار الأكروبوليس القديمة إلى أحياء معاصرة مليئة بالمقاهي والمتاجر.",
+   "لا تتوقع متحفاً للفلسفة وحده: أثينا اليوم مدينة حضرية مغطاة بالجرافيتي حيث تنبض الثقافة اليونانية المعاصرة والتجارة والحياة الاجتماعية وسط بقايا المباني التاريخية. المشي في أحياء مثل بلاكا وموناستيراكي يكشف عن وجه المدينة الحقيقي أكثر من صور الآثار وحدها."
+  ],
+  "best_time": "أفضل وقت للزيارة هو الربيع والصيف لمشاهدة الطقس الدافئ والقدرة على الوصول إلى الشواطئ في جنوب المدينة؛ موسم عيد الفصح يقدم فعاليات دينية مميزة لكنها مزدحمة. في الشتاء تغرب الشمس مبكراً وتغلق بعض المواقع مبكراً، لكن الحشود أقلّ.",
+  "top_sights": [
+   {
+    "name": "الأكروبوليس (Acropolis)",
+    "why": "المرحلة المركزية في تاريخ أثينا وموقع تراث عالمي يضم عدة مباني كلاسيكية مثل البارثينون وإريختيوم؛ ينصح بالحجز المسبق لبطاقات الدخول ذات التوقيت لأن الدخول بات ممنوعاً بدون تذكرة زمنية منذ 1 أبريل 2024."
+   },
+   {
+    "name": "البارثينون (Parthenon)",
+    "why": "معبد ضخم من القرن الخامس قبل الميلاد وشاهد على تاريخ أثينا الطويل؛ جزء من موقع الأكروبوليس وتجاربه قد تتأثر بالأعمال الترميمية المستمرة، فتوقع مشاهدات للرافعات والسقالات."
+   },
+   {
+    "name": "بروبيليا (Propylaea)",
+    "why": "البوابة الاحتفالية الغربية للأكروبوليس ذات أعمدة دوريك من رخام بينيليكية التي تهيئ الدخول إلى التلة؛ تقع عند المدخل الرئيسي الذي يصل إليه الزوار سيراً من محطة مترو Akropoli."
+   },
+   {
+    "name": "إريختيوم (Erectheion)",
+    "why": "معبد أنيق ذو تصميم معقد على أرض غير مستوية ويشتهر بشرفته المحملة بكارياتيدات؛ جدير بالاهتمام لمن يهتمون بالعمارة اليونانية القديمة ونصائح لالتقاط صور من زوايا مختلفة."
+   },
+   {
+    "name": "مسرح ديونيسوس (Theatre of Dionysus)",
+    "why": "أول مسرح شُيّد في التاريخ الكلاسيكي وكان مركزاً لمسرحيات اليونان القديمة؛ مدرجاته وأطلاله مضمّنة في تذكرة الأكروبوليس وتكمل تجربة زيارة التلة."
+   },
+   {
+    "name": "أحياء بلاكا وآنافيوتكا وموناستيراكي",
+    "why": "ممرات ضيقة ومباني نيوكلاسيكية ومقاهي ومتاجر صغيرة تُظهر الجانب الحي من أثينا وتقدم مناظر قريبة للأكروبوليس؛ ارتد ملابس محتشمة عند زيارة الكنائس الأرثوذكسية الصغيرة في المنطقة."
+   },
+   {
+    "name": "الحدائق الوطنية (National Gardens)",
+    "why": "واحة هادئة في وسط المدينة للهروب من حرارة الصيف، مع برك وسلاحف ومقاهٍ صغيرة؛ مكان مناسب للراحة بين زيارات المواقع الأثرية."
+   },
+   {
+    "name": "تل لكافيتوس (Lycabettus Hill)",
+    "why": "أحد تلال المدينة المزروعة بأشجار الصنوبر ويقدّم مناظر بانورامية لأثينا والأكروبوليس؛ خيار جيد للمشي أو لمشاهدة غروب الشمس."
+   }
+  ],
+  "getting_around": "من وسط المدينة سهولة التنقل مشروطة بالمشي والمترو والحافلات والترام؛ الوصول إلى الأكروبوليس يتم سيراً من محطات مترو Akropoli أو Thissio. للوصول إلى الشواطئ في جنوب أثينا استقل الحافلات A2, B2 أو E22 من محطة مترو Sygrou أو استخدم الترام من سينتاجما.",
+  "food": [
+   {
+    "name": "سوفلاكي (Souvlaki)",
+    "note": "شاورما يونانية من لحم مشوي تُقدَّم في خبز بيتا مع طماطم وبصل وتزاتزيكي، خيار سريع وتقليدي متوفر في كل أحياء المدينة."
+   },
+   {
+    "name": "تزاتزيكي (Tzatziki)",
+    "note": "صلصة زبادي بالثوم والخيار ترافق الكثير من الأطباق اليونانية وتُستخدم داخل الساندويتشات والسلطات."
+   },
+   {
+    "name": "مطاعم سوڤلاكي الشهيرة عند Monastiraki",
+    "note": "ثلاث محلات مشهورة قرب مترو Monastiraki (Thanasis, Savvas, Bairaktaris) مع خيارات للجلوس أو الشراء السريع من أجل بيتا-سوفلاكي."
+   },
+   {
+    "name": "سوفلاكي نباتي في Vegan Beat Athens",
+    "note": "خيار نباتي من مطعم شارع يقدّم سوڤلاكي نباتي لذيذ مناسب للنباتيين وغيرهم."
+   },
+   {
+    "name": "المطاعم في Kolonaki وPlaka",
+    "note": "مناطق جيدة لتناول وجبة مريحة، حيث تجمع مطاعم راقية ومقاهي تقليدية، مع وجود خيارات ميزانية أيضاً."
+   }
+  ],
+  "budget_tips": [
+   "اشترِ تذاكر الأكروبوليس عبر الموقع الرسمي مسبقاً لأن التذاكر الزمنية تُباع بسرعة وتوفّر عليك الوقوف في طوابير طويلة.",
+   "الاختيار بين تناول الطعام على الطاولة أو أخذ الساندويتشات (بيتاسوفلاكي) يوفّر مبالغ ملحوظة؛ الأكل للوجبة السريعة أرخص عادة.",
+   "ابحث عن المطاعم التي يجلس فيها السكان المحليون في مناطق مزدحمة مثل Adrianou لتجنّب أسعار السياح المرتفعة.",
+   "استخدم المترو والحافلات للانتقال داخل المدينة بدل التاكسي لتقليل تكاليف النقل."
+  ],
+  "safety": [
+   "ارتدِ ملابس محتشمة عند دخول الكنائس الأرثوذكسية الصغيرة احتراماً للعادات (تجنب الأكمام القصيرة والأرجل المكشوفة).",
+   "كن حذراً من النشل في المناطق السياحية المزدحمة مثل موناستيراكي وبلاكا، واحتفظ بأغراضك الشخصية في مكان آمن.",
+   "عند استقلال حافلات قليلة الركاب ارفع يدك لإيقاف السائق لأن الحافلات قد لا تتوقف تلقائياً.",
+   "في المواقع الأثرية راقب أعمال الترميم والرافعات وتجنّب الاقتراب من مناطق مغلقة أو غير آمنة."
+  ],
+  "itinerary": [
+   "اليوم الأول: تجول سيراً في بلاكا وموناستيراكي وصعود الأكروبوليس وزيارة المعالم فوقه مثل البارثينون وإريختيوم، ثم زيارة متحف الأكروبوليس القريب.",
+   "اليوم الثاني: مشي على شارع Dionysiou Areopagitou لمشاهدة مناظر الأكروبوليس ثم زيارة المسرح القديم، بعد الظهر استمتع بنزهة في الحدائق الوطنية أو صعود تل لكافيتوس لمشاهدة الغروب.",
+   "اليوم الثالث: اتجه إلى الشواطئ الجنوبية عند يوم مشمس باستخدام الحافلات A2/B2/E22 أو الترام من سينتاجما، أو خُذ وقتًا لاستكشاف المتاحف والأسواق مثل سوق السلع المستعملة في منطقة Monastiraki."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لزيارة أثينا؟",
+    "a": "ثلاثة أيام تكفي لرؤية معالم المدينة الأساسية مثل الأكروبوليس وأحياء بلاكا ومشاهدة تل لكافيتوس مع وقت لزيارة شاطئ أو متحف، ويمكنك تمديد الزيارة حسب اهتماماتك."
+   },
+   {
+    "q": "هل أثينا مكلفة للسائح؟",
+    "a": "تعتمد التكاليف على اختياراتك؛ هناك خيارات اقتصادية مثل بيتا-سوفلاكي والمترو، بينما المطاعم المطلة على الأكروبوليس والحيّز السياحي عادةً أغلى."
+   },
+   {
+    "q": "هل زيارة الأكروبوليس مناسبة للجميع؟",
+    "a": "نعم لكن مع ملاحظات: هناك ممرات ومصعد مخصّص لذوي الإعاقة، أما بقية الزوار فمتوقع منهم المشي والصعود على أرض غير متساوية."
+   },
+   {
+    "q": "ما أفضل منطقة للإقامة لأجل المشاهدة والطعام؟",
+    "a": "أحياء مثل بلاكا وموناستيراكي ونهاية شارع Adrianou قريبة من المعالم التاريخية وتضم خيارات طعام متنوّعة، أما Kolonaki فتشتهر بالمطاعم الأرقى."
+   },
+   {
+    "q": "كيف أصل إلى شواطئ أثينا؟",
+    "a": "يمكن الوصول للشواطئ الجنوبية بالحافلات A2 أو B2 أو E22 من محطة مترو Sygrou أو بالترام من سينتاجما، وتذكّر أن تطلب من السائق التوقف إذا كنت الراكب الوحيد."
+   }
+  ]
+ }
+}

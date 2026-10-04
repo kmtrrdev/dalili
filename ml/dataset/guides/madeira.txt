@@ -1,0 +1,85 @@
+Madeira, Portugal
+Labels: nature, adventure | Split: test
+Source: https://en.wikivoyage.org/wiki/Madeira (CC BY-SA 4.0)
+
+===== CLEANED GUIDE TEXT (4,567 characters) =====
+
+Madeira is a sub-tropical archipelago in the Atlantic Ocean and is an autonomous region of Portugal. The archipelago is made up of two populated islands, Madeira and Porto Santo, and two groups of unpopulated islands called the 
+Desertas. 
+ and Selvagens Islands. Geographically in Africa, it is an ultra-peripheral region of the European Union. It is perhaps best known as the hometown of the Portuguese football (soccer) player Cristiano Ronaldo.
+
+Known worldwide as the Islands of eternal spring, Madeira, "Ilha Jardim" (Garden Island) or "Pearl of the Atlantic", has a mild climate throughout the entire year.
+
+Madeira is 500 km from the African coast and 1,000 km from the European continent, a 1½-hr flight from mainland Portugal and about 4 hours from central Europe.
+
+Understand
+
+ 
+
+The Madeira (muh-DAY-ruh, /mɐ.ˈdɐj.ɾɐ/) Islands are just a short trip from Europe (more or less 4 hours from UK), to a destination where you can combine holidays by the sea, in the mountains or in the city.
+
+Discovered early in the 15th century by the Portuguese navigators João Gonçalves Zarco, Tristão Vaz Teixeira and Bartolomeu Perestrelo, Madeira was an important waypoint on the Cape Route, and is today an autonomous region of Portugal.
+
+Madeira is a popular destination for tourists of all ages. Its constant mild climate – temperatures  – keeps the spring on Madeira all year round. The levadas, an ingenious system of stone- and concrete-lined watercourses distributing water from the rainy north to the dry south, help flowers and crops flourish all year. That's why this island is called the Garden in the Atlantic. The maintenance pathways for these water canals provide wonderful level trails for hiking in the mountains—up to —and through the tremendous landscape.
+
+Tourist information
+* Madeira Tourism website
+
+See
+ 
+
+*Levadas An impressive system of aqueducts built between 1461 and 1966 to bring water from the mountains to farmland.
+*
+Pico Ruivo. 
+ and 
+Pico do Arieiro. 
+ The second and third highest peaks in Portugal.
+* 
+Cabo Girão. One of the world's highest ocean cliffs, in Câmara de Lobos.
+
+*
+São Vicente Caves. Volcanic caves (grutas) where you can visit lava tubes.
+
+* Monte Palace Tropical Garden — Magnificent gardens of the former Monte Palace hotel outside of Funchal.
+*Jardim Orquídea Orchid garden.
+*Fireworks on New Year's Eve The biggest fireworks in the world (Guinness world record 2007). Best places to see the fireworks include the tip of the marina of Funchal, on a cruise ship and Pico dos Barcelos (on the side where you can see the Funchal's marina).
+*Miradouro means viewpoint. Splendid views of the island can be seen from various viewpoints, including 
+Pico dos Barcelos. 
+, Pico do Arieiro, 
+Pico de Facho. 
+
+* Curral das Freiras — An isolated town of 2,000 people surrounded by cliffs and peaks near Câmara de Lobos.
+* 
+Laurisilva of Madeira. A special kind of subtropical forest found only on Madeira, inscribed as a .
+
+* Madeira Skywalk - The Skywalk is a 2-minute walk from Village Cabo Girão.
+
+Do
+ 
+
+* Hiking to Pico Ruivo from Achada do Teixeira (1 hr). You can reach the starting point by car. The old route Pico do Arieiro to Pico Ruivo has been closed for a long time, but you can take a car to Pico do Arieiro and walk 1.2 km to the end of that trail. It still gives you the best views but spares you the toughest part where you would climb Pico Ruivo.
+* Surfing The Atlantic offers waves for moderate to experienced surfers. Jardim do Mar and Paul do Mar are the most popular surfing places.
+* Canyoning in Madeira is great for beginners and pro's alike. Abseiling down high waterfalls and jumping into crystal clear pools of fresh water is something you shouldn't miss.
+* Whale and dolphin watching. Various companies offer daily boat tours starting at €30-40, bookable online or from touts at the harbour, often with guaranteed sighting, meaning a free second trip in the rare event that the first one was unsuccessful.
+* Water activities, including fishing, sailing, snorkelling, scuba diving.
+* Nature activities, including birdwatching and horse riding.
+
+Buy
+* Madeira wine, of course. Available in many varieties in all supermarkets and specialist shops.
+
+Eat
+* 
+Espetada. Madeiran barbecue.
+
+* 
+Bolo de mel. A Christmas cake.
+
+
+Drink
+Madeira wine is a fortified wine prized equally for drinking and cooking. There are four major types of Madeira: Malvasia (also known as Malmsey or Malvazia), Bual (or Boal), Verdelho, and Sercial, the latter two being drier.
+
+Poncha is the most traditional drink of Madeira.
+
+===== TOKENS THE MODEL TRAINS ON (341) =====
+
+sub tropical archipelago atlantic ocean autonomous region archipelago populated island santo group unpopulated island called deserta selvagen island geographically ultra peripheral region european union hometown portuguese football soccer player cristiano ronaldo worldwide island eternal spring ilha jardim garden island pearl atlantic mild climate throughout entire african coast european continent flight mainland europe muh ruh island short trip europe destination combine holiday sea mountain discovered early century portuguese navigator joao goncalve zarco tristao vaz teixeira bartolomeu perestrelo important waypoint route today autonomous region destination ages constant mild climate temperature keep spring round levada ingenious system stone concrete lined watercourse distributing water rainy dry help flower crop flourish island called garden atlantic maintenance pathway water canal provide wonderful level trail hiking mountainsup tremendous landscape information tourism website levada impressive system aqueduct built bring water mountain farmland pico ruivo pico arieiro highest peak cabo girao world highest ocean cliff camara lobo sao vicente cave volcanic cave gruta lava tube monte palace tropical garden magnificent garden former monte palace hotel outside funchal jardim orquidea orchid garden firework eve biggest firework world guinness world record firework tip marina funchal cruise ship pico dos barcelo side funchal marina miradouro mean viewpoint splendid view island viewpoint pico dos barcelo pico arieiro pico facho curral das freira isolated surrounded cliff peak camara lobo laurisilva special kind subtropical forest inscribed skywalk skywalk minute walk village cabo girao hiking pico ruivo achada teixeira reach starting point car old route pico arieiro pico ruivo car pico arieiro walk trail give view spare toughest climb pico ruivo surfing atlantic wave moderate experienced surfer jardim paul surfing canyoning beginner pro alike abseiling waterfall jumping crystal clear pool fresh water shouldnt miss whale dolphin watching company boat tour starting bookable online tout harbour guaranteed sighting meaning trip rare event unsuccessful water activity fishing sailing snorkelling scuba diving nature activity birdwatching horse riding wine course variety supermarket specialist shop espetada madeiran barbecue bolo mel christma cake wine fortified wine prized equally drinking cooking major type malvasia malmsey malvazia bual boal verdelho sercial latter drier poncha traditional

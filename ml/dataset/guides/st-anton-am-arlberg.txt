@@ -1,0 +1,34 @@
+St. Anton am Arlberg, Austria
+Labels: ski, adventure | Split: excluded
+Source: https://en.wikivoyage.org/wiki/St_Anton (CC BY-SA 4.0)
+
+===== CLEANED GUIDE TEXT (1,206 characters) =====
+
+St. Anton (Sankt Anton, St. Anton am Arlberg) is widely regarded as the leading ski resort destination in Austria. It has an outstanding provision of advanced skiing, a reliable snow record and an extensive ski area that caters for a mixed level of abilities.
+
+Understand
+ 
+Skiing has a long history in St. Anton: ski instructors from the area emigrated to the United States in the 1930s, helping to popularise the sport. St. Anton was the host of the Alpine World Ski Championships in 2001.
+
+St Anton is part of the Arlberg area of ski resorts – a region that includes 94 cable cars and ski lifts, 340 km (210 mi) of groomed pistes and 200 km (120 mi) of deep-snow runs, all of which are covered under one liftpass.
+
+St Anton lies on the Rosanna River. The centre is a pedestrian zone.
+
+* St. Anton tourist information
+
+See
+
+Do
+* 
+Black Sheep Snowboard School. A specialist snowboard-only school based in Pettneu, offering freeride guiding, splitboarding, and technique coaching across the Arlberg region. Known for a personalized approach and small groups. It is based in Pettneu; guiding and lessons typically take place on the St. Anton am Arlberg slopes with flexible meeting points.
+
+
+Buy
+
+Eat
+
+Drink
+
+===== TOKENS THE MODEL TRAINS ON (81) =====
+
+sankt widely regarded leading ski resort destination outstanding provision advanced skiing reliable snow record extensive ski cater mixed level ability skiing history ski instructor emigrated helping popularise sport host alpine world ski championship ski resort region cable cars ski lift groomed piste deep snow runs covered liftpass lies rosanna river pedestrian zone information black sheep snowboard school specialist snowboard school based pettneu offering freeride guiding splitboarding technique coaching region personalized approach group based pettneu guiding lesson typically slope flexible meeting point

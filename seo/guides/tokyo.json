@@ -1,0 +1,226 @@
+{
+ "slug": "tokyo",
+ "name": "Tokyo",
+ "country": "Japan",
+ "tags": [
+  "food",
+  "culture",
+  "shopping",
+  "nightlife"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Tokyo",
+ "en": {
+  "city_name": "Tokyo",
+  "country_name": "Japan",
+  "title": "Tokyo travel guide: what to see, eat and know",
+  "meta_description": "Practical travel guide to Tokyo's 23 wards: top sights, food specialties, money-saving tips and a 3-day itinerary for first-time visitors.",
+  "h1": "Tokyo travel guide: what to see, eat and know",
+  "intro": [
+   "Tokyo's 23 special wards form the dense urban core most visitors think of as the city: a vast, varied metropolis that blends modern commerce and pop culture with shrines, gardens and historic neighbourhoods. This guide focuses on those central wards rather than the wider Tokyo Metropolis, Tama region or the islands.",
+   "The city ranges from neon-lit shopping districts and towering business centres to quiet shrines and park gardens. For many travellers the best way to experience Tokyo is to explore different districts by train, wander side streets, sample local foods and look for unexpected pockets of calm amid the urban energy."
+  ],
+  "best_time": "Spring is especially popular for cherry blossom viewing, though parks get very crowded during the short sakura season; aim for weekdays or earlier/later in the day if you want more space. Tokyo is interesting year-round: evenings bring the city districts to life, and you can always escape the busiest spots by taking short train trips to a different neighbourhood.",
+  "top_sights": [
+   {
+    "name": "Senso-ji and Asakusa temples",
+    "why": "Asakusa's temples are among Tokyo's most visited historic sites and offer a window into traditional city life; combine a shrine visit with neighbourhood shopping and consider a Sumida River boat ride nearby."
+   },
+   {
+    "name": "Imperial Palace East Gardens (Chiyoda)",
+    "why": "The gardens form a peaceful green space in the heart of the city and are one of the few palace grounds open daily; check opening days before you visit and enjoy a stroll through manicured landscaping."
+   },
+   {
+    "name": "Meiji Shrine (Harajuku)",
+    "why": "This large Shinto shrine sits beside Harajuku and provides a tranquil contrast to the area's lively streets; visit to experience shrine grounds and traditional ceremonies if they coincide with your trip."
+   },
+   {
+    "name": "Shinjuku",
+    "why": "A major commercial and entertainment hub whose skyscrapers, shopping and nightlife epitomise modern Tokyo; for a skyline view without spending, use the free observation decks at the Tokyo Metropolitan Government Center."
+   },
+   {
+    "name": "Shibuya",
+    "why": "Famous for its youth culture and the bustling scramble crossing, Shibuya is ideal for people-watching and exploring fashion and nightlife areas; head there in the evening to see the neon-lit atmosphere."
+   },
+   {
+    "name": "Ginza",
+    "why": "Tokyo's upmarket shopping and dining district with department stores and flagship boutiques; wander the streets to window-shop and visit basement food halls for high-quality takeaways."
+   },
+   {
+    "name": "Tokyo Skytree (Sumida)",
+    "why": "A recently built landmark with commanding height and a wide field of view over the city; expect a more distant panorama of Tokyo due to its location away from downtown."
+   },
+   {
+    "name": "Tokyo Tower and Bunkyo Civic Center views",
+    "why": "Tokyo Tower is a long-standing city landmark and the Bunkyo Civic Center offers a free observation deck with a classic view of Shinjuku and, on clear days, Mount Fuji; both are good, complementary viewing options."
+   }
+  ],
+  "getting_around": "Tokyo's public transport is extensive and trains are the fastest way to move between districts, though stations can be complex and very busy at rush hour. For scenic bay travel take the Yurikamome elevated line to Odaiba; there are also river boats on the Sumida and hop-on sightseeing buses around the center for short tours.",
+  "food": [
+   {
+    "name": "Edo‑mae sushi",
+    "note": "Tokyo is the birthplace of nigirizushi (Edo-style sushi), and fresh sushi breakfasts near the fish markets are a classic experience."
+   },
+   {
+    "name": "Tempura",
+    "note": "Lightly battered and fried seafood or vegetables, tempura is a Tokyo specialty with many dedicated restaurants."
+   },
+   {
+    "name": "Unagi (freshwater eel)",
+    "note": "A traditional Tokyo favourite, often served grilled with a sweet soy-based sauce."
+   },
+   {
+    "name": "Monjayaki",
+    "note": "A gooey, cabbage-rich dish originally from Tsukishima that you can watch prepared at the table."
+   },
+   {
+    "name": "Konbini bentō and onigiri",
+    "note": "Convenience stores offer inexpensive, varied meals and snacks—an easy and cheap way to eat while exploring the city."
+   }
+  ],
+  "budget_tips": [
+   "Buy meals and snacks at convenience stores or supermarkets where bentō and onigiri are inexpensive and microwaves are usually available.",
+   "Use free observation decks such as those at the Tokyo Metropolitan Government Center and Bunkyo Civic Center to enjoy city views without paying admission.",
+   "Choose station or department‑store basement food halls for quality takeaway at lower cost than sit-down fine dining.",
+   "Take advantage of sightseeing buses and river boats for compact tours rather than paying separate transport and guide fees; some services offer multilingual guides free with tickets."
+  ],
+  "safety": [
+   "Tokyo is generally very safe, but expect heavy crowds on trains at rush hour—keep belongings secure and be patient in packed stations.",
+   "Carry cash as many small restaurants and stalls are cash-only, and keep smaller notes handy for purchases and change.",
+   "During cherry blossom season parks become extremely crowded; watch your belongings and pick less busy times of day if you prefer more space."
+  ],
+  "itinerary": [
+   "Day 1: Start at Asakusa to see Senso-ji, then take a Sumida River boat; finish with evening neon and nightlife in Shibuya or Ginza for dining and shopping.",
+   "Day 2: Visit the Imperial Palace East Gardens in the morning, walk to Marunouchi and Ginza, and in the evening head to Shinjuku for skyline views from the Tokyo Metropolitan Government Center or nightlife.",
+   "Day 3: Explore Harajuku and Meiji Shrine, browse Takeshita Street and Omotesando, then ride the Yurikamome to Odaiba to see the bayside views and the Gundam statue."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Tokyo?",
+    "a": "Plan at least three full days to see major districts like Asakusa, Shibuya, Shinjuku and Harajuku; leave extra days if you want to visit museums around Ueno or take day trips."
+   },
+   {
+    "q": "Is Tokyo expensive to visit?",
+    "a": "Tokyo can be costly at the high end, but budget options are plentiful: convenience stores, supermarkets and affordable noodle or rice shops make eating out inexpensive compared with fine dining."
+   },
+   {
+    "q": "Is Tokyo safe for tourists?",
+    "a": "Yes—Tokyo is widely regarded as safe for visitors; normal precautions around crowds and keeping cash secure are sensible, especially during peak seasons like cherry blossom time."
+   },
+   {
+    "q": "What is the best area to stay in Tokyo?",
+    "a": "Stay in or near central wards if you want quick access to major sights: Shinjuku, Shibuya, Ginza and Asakusa are convenient bases with plenty of trains and nightlife nearby."
+   },
+   {
+    "q": "How do I get from the airport to central Tokyo?",
+    "a": "There are multiple rail and bus options from Tokyo's airports into the city; once in Tokyo the extensive train network is the most efficient way to reach different neighbourhoods."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "طوكيو (Tokyo)",
+  "country_name": "اليابان",
+  "title": "طوكيو: دليل السفر لأهم المعالم والنصائح",
+  "meta_description": "دليل طوكيو: معالم مثل أساكوسا والقصر الإمبراطوري ومعبد ميجي، أين تأكل، نصائح لتوفير المال، وخطة رحلة لثلاثة أيام.",
+  "h1": "طوكيو: ماذا ترى وتفعل وتعرف قبل زيارتك",
+  "intro": [
+   "طوكيو هي عاصمة اليابان الضخمة والمزدحمة، وتضم ما يُعرف بالمحافظات الخاصة الـ23 التي تشكل نواة المدينة الحضرية. تمتزج فيها الحداثة والأعمال والثقافة مع بقايا العاصمة التاريخية، وتقدم تجارب متنوعة للزائر من ناطحات سحاب إلى حدائق ومعابد هادئة.",
+   "مع اختلاف أحياءها بشكل كبير، تحوّل طوكيو إلى مجموعة من المدن المتجاورة: من أضواء أكيهابارا وإشارات شينجوكو الصاخبة إلى هدوء حدائق القصر الإمبراطوري ومعبد ميجي، والمدينة تدعو الزائر للاستكشاف سيراً على الأقدام أو بالقطارات المتصلة جيداً."
+  ],
+  "best_time": "أفضل وقت للزيارة يعتمد على ما تريد رؤيته: الربيع لمشاهدة تفتح الساكورا القصير والمكتظ، والمواسم المعتدلة للخروج براحة مع أعداد أقل. طوكيو مزدحمة طوال السنة لكن فترات الذروة السياحية تكون أثناء مواسم الأعياد وتفتح زهور الكرز.",
+  "top_sights": [
+   {
+    "name": "معبد أساكوسا (Asakusa)",
+    "why": "مجموعة معابد وأسواق تقليدية تمثل جانب طوكيو التاريخي، ومكان جيد لتجربة المتاجر الصغيرة والطعام المحلي؛ نصيحة عملية: استكشف الشوارع الجانبية بعيداً عن الطريق الرئيسي للحصول على أجواء أقدم وأهدأ."
+   },
+   {
+    "name": "حدائق القصر الإمبراطوري (Imperial Palace East Gardens)",
+    "why": "بستان هادئ في قلب المدينة يوضح الطابع التاريخي والقصر؛ افتح قلبك للمشي هناك صباحاً حيث الأجواء أنسب للتصوير، وتحقق من مواعيد الدخول لأن هناك أيام مغلقة."
+   },
+   {
+    "name": "معبد ميجي (Meiji-jingū)",
+    "why": "مزار شنتوي محاط بغابات صغيرة في هاراجوكو ويمنح شعوراً بالهدوء بعيداً عن صخب المدينة؛ ادمج زيارته مع نزهة في أوموتيساندو أو تاكيشيتا دوري القريب."
+   },
+   {
+    "name": "ميدان شيبويا والتقاطعات (Shibuya)",
+    "why": "من أشهر مشاهد الحداثة والحياة الشبابية في طوكيو، مناسب لمشاهدة بحر المشاة والمحلات العصرية؛ أفضل وقت للتجربة هو مساءً عندما تكتمل الأضواء وتزداد الحركة."
+   },
+   {
+    "name": "منطقة شينجوكو وبرج بلدية طوكيو (Shinjuku / Tokyo Metropolitan Government Building)",
+    "why": "شينجوكو مركز تجاري وترفيهي نابض وفيه برجا البلدية مع منصات مشاهدة مجانية توفر منظراً واسعاً للمدينة؛ اصعد إلى منصة المراقبة المجانية لرؤية بانورامية دون تكلفة."
+   },
+   {
+    "name": "طوكيو سكاي تري (Tokyo Skytree)",
+    "why": "برج مراقبة حديث في منطقة سوميدا بارتفاع معروف ويوفر منظراً واسعاً للمدينة، لكن موقعه قليلاً بعيد عن وسط المدينة لذا تكون المباني متقاربة من مسافة بعيدة؛ ضع ذلك في الحسبان عند التخطيط للزيارة."
+   },
+   {
+    "name": "برج طوكيو (Tokyo Tower)",
+    "why": "مرشح كلاسيكي لرؤية المدينة ومنصة أقل تكلفة من بعض البدائل الحديثة، ويظل خياراً مناسباً لمن يبحث عن تجربة برجيّة تقليدية؛ يُعد موقعه في ميناتو مناسباً للدمج مع مناطق قريبة."
+   },
+   {
+    "name": "متحف أوينو ومجمع المتاحف (Ueno)",
+    "why": "منطقة تضم عدداً من المتاحف الكبيرة والمتخصصة، مناسبة لعشاق المتاحف والثقافة؛ لاحظ أن رسوم الدخول إلى المتاحف قد تتجمع بسرعة لذا خطط لعدد محدود من الزيارات إن كنت تراقب الميزانية."
+   }
+  ],
+  "getting_around": "المطار بمدينة طوكيو متصل جيداً بوسائل النقل العام والقطارات التي تخدم مراكز المدينة، والتنقل داخل طوكيو يتم بسهولة بواسطة شبكة القطارات والمترو الكثيفة. القطارات والمحطات تربط الأحياء المختلفة بكثافة، لذا التجول بالقطار أسرع وأعمَّ فعالية من السيارات في معظم الأحيان.",
+  "food": [
+   {
+    "name": "السوشي (Nigirizushi / Edo-mae zushi)",
+    "note": "سوشي الطبقة التقليدية لمدينة طوكيو ويُقدَّم طازجاً في أسواق السمك والمطاعم المتخصصة."
+   },
+   {
+    "name": "التيمبورا (Tempura)",
+    "note": "أطعمة مقلية خفيفة تشكل جزءاً أساسياً من المطبخ الطوكيوي وتجدها في مطاعم متخصصة وسلاسل محلية."
+   },
+   {
+    "name": "الأوناجي (Unagi)",
+    "note": "أكلة ثعبان الماء العذب المشهورة في طوكيو وتقدم عادةً على أرز كمأكولات راقية أو تقليدية."
+   },
+   {
+    "name": "مونجاياكي (Monjayaki)",
+    "note": "طبق لزج يشبه الأوكономياكي ومشهور في منطقة تسكيشيما، تجربة محلية مميزة لتذوقها على الطاولات الخاصة."
+   },
+   {
+    "name": "منتجات المتاجر الصغيرة (Konbini) وبينتو",
+    "note": "محلات الكومبيني توفر وجبات جاهزة واقتصادية مثل أونيغيري وبيِنتو ومشروبات، وهي خيار عملي للميزانية."
+   }
+  ],
+  "budget_tips": [
+   "استخدم المتاجر الصغيرة (konbini) أو السوبرماركت لوجبات رخيصة ومريحة بدلاً من تناول كل الوجبات في المطاعم.",
+   "استفد من منصات المراقبة المجانية مثل برج حكومة طوكيو وBunkyo Civic Center لتقليل نفقات مشاهدة المدينة من الأعلى.",
+   "قارن أسعار التذاكر للمزارات والمتاحف واختر بعض الزيارات المدفوعة وقلل عددها إذا كانت الميزانية محدودة.",
+   "استخدم شبكة القطارات والمترو بدل سيارات الأجرة، وابحث عن بطاقات النقل التي توفر رحلات متعددة إذا كنت ستبقى لعدة أيام."
+  ],
+  "safety": [
+   "طوكيو آمنة نسبياً ومناسبة للتجوال ليلاً، ومع ذلك احفظ مقتنياتك في الأماكن المزدحمة خصوصاً في محطات القطار وقت الذروة.",
+   "احترم الطقوس المحلية مثل الإتيكيت عند دخول المعابد والحمامات العامة (sento/onsen) واتباع قواعد النظافة هناك.",
+   "الكثير من المطاعم والمتاجر تفضل الدفع النقدي؛ احمل معك كميات مناسبة من الين لأن بعض الأماكن قد لا تقبل البطاقات."
+  ],
+  "itinerary": [
+   "اليوم الأول: ابدأ بصباح في أساكوسا ومعبدها وأسواقه التقليدية، ثم اركب قارباً على نهر سوميدا مساءً، وأنهِ اليوم بالتجول في أماكن مشاهدة الأنوار في شينجوكو.",
+   "اليوم الثاني: زر حدائق القصر الإمبراطوري صباحاً، ثم توجّه إلى غينزا للمتاجر ومارونوشي، وأنهِ اليوم في أبراج المراقبة مثل Tokyo Skytree أو Tokyo Tower حسب تفضيلك.",
+   "اليوم الثالث: استكشف هاراجوكو وتايكشيتا دوري ومعابد ميجي، وبعد الظهيرة توجه إلى أوينو لزيارة متحف أو التنزه في الحي، وفي المساء تمتع بمنطقة شيبويا الحيوية."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام المناسبة لزيارة طوكيو؟",
+    "a": "ثلاثة أيام تعطيك فرصة لرؤية معالم رئيسية مثل أساكوسا، القصر الإمبراطوري، ميجي، وشينجوكو/شيبويا مع وقت للتجول؛ لرحلة أعمق قد تحتاج أسبوعاً لتغطية متاحف وأحياء إضافية."
+   },
+   {
+    "q": "هل طوكيو مدينة مكلفة؟",
+    "a": "المدينة تضم خيارات باهظة وأخرى ميسورة؛ بينما المطاعم الراقية غالية، هناك خيارات اقتصادية كثيرة مثل متاجر الكومبيني والسوبرماركت ومطاعم الوجبات السريعة المحلية."
+   },
+   {
+    "q": "هل طوكيو آمنة للسياح؟",
+    "a": "نعم، تُعتبر طوكيو من المدن الآمنة مع معدلات جريمة منخفضة، لكن ينصح بالحذر المعتاد في الأماكن المزدحمة والحفاظ على المتعلقات الشخصية."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "الأحياء تعتمد على تفضيلك: شينجوكو وشيبويا للناس الذين يريدون حياة ليلية ومواصلات ممتازة، بينما أساكوسا وهاراجوكو ملائمتان لمن يريدان جوّاً تقليدياً أو شبابيّاً."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط طوكيو؟",
+    "a": "المطارات مخدومة بوسائل نقل عام جيدة وقطارات تربطها بمراكز المدينة، والتنقل داخل طوكيو يتم بسهولة عبر شبكة المترو والقطارات كثيفة التردد."
+   }
+  ]
+ }
+}

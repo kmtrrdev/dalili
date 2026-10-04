@@ -1,0 +1,224 @@
+{
+ "slug": "helsinki",
+ "name": "Helsinki",
+ "country": "Finland",
+ "tags": [
+  "culture"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Helsinki",
+ "en": {
+  "city_name": "Helsinki",
+  "country_name": "Finland",
+  "title": "Helsinki travel guide: things to see, eat and plan",
+  "meta_description": "Practical travel guide to Helsinki: top sights, island trips, where to eat, budget tips and a 3-day itinerary for first-time visitors.",
+  "h1": "Helsinki travel guide: what to see, eat and know",
+  "intro": [
+   "Helsinki (Swedish: Helsingfors) is Finland's capital and largest city, blending modern and historic architecture with generous open spaces. Surrounded by hundreds of small islands, it sits as a cultural bridge between East and West and has a relaxed, walkable centre.",
+   "Founded as a trading town in the 16th century and refashioned as Finland's capital in the 19th century, Helsinki today is a northern European capital with a lively cultural scene, notable 19th-century Russian-influenced architecture and easy access to nearby islands and coastlines."
+  ],
+  "best_time": "Summer is the high season when Helsinki's connection between city and sea is most lively and islands and outdoor attractions are fully accessible. If you prefer fewer crowds and cooler weather, shoulder seasons can be pleasant; winter offers a very different atmosphere and activities but many island services and some venues operate reduced hours.",
+  "top_sights": [
+   {
+    "name": "Suomenlinna",
+    "why": "A UNESCO-listed fortress archipelago just off the Market Square; it's the city's most popular summer island for picnics, history and seaside walks. Tip: take the regular ferries from Market Square and avoid peak weekend departure times if you want shorter queues."
+   },
+   {
+    "name": "Senate Square and Helsinki Cathedral",
+    "why": "The Neo-Classical heart of the city with architecture from the early 19th-century rebuilding; it's a focal point for sightseeing and photography. Tip: combine a visit here with a walk along nearby Aleksanterinkatu and the Railway Station square to see more period buildings."
+   },
+   {
+    "name": "Market Square (Kauppatori)",
+    "why": "A central waterfront marketplace and ferry departure point for Suomenlinna and other cruises, offering a lively slice of city life. Tip: check ferry schedules and consider HSL ferries for regular summer services."
+   },
+   {
+    "name": "Helsinki Central Railway Station area",
+    "why": "Architecturally significant and a transport hub framed by Neo-Classical and Romantic details; it's also the starting point for many city walks. Tip: use the Asematunneli shopping complex nearby for extended opening hours and easy connections."
+   },
+   {
+    "name": "Korkeasaari (Zoo island)",
+    "why": "An island home to Helsinki's zoo, offering wildlife displays within the archipelago setting. Tip: check seasonal ferry and attraction availability before you go, as many island services are summer-focused."
+   },
+   {
+    "name": "Seurasaari (Open-air museum island)",
+    "why": "An outdoor museum showcasing traditional Finnish buildings set in a leafy island environment, ideal for a quieter cultural outing. Tip: combine Seurasaari with other nearby coastal walks on a warm day."
+   },
+   {
+    "name": "Pihjalasaari (Beach island)",
+    "why": "One of the archipelago's recreational islands known for its beach and summer leisure atmosphere. Tip: ferry and cruise options vary by season, so plan transport in advance for summer visits."
+   },
+   {
+    "name": "Mannerheimintie (main thoroughfare)",
+    "why": "The city's principal street that links many sights and districts and provides a convenient route for an extended city walk. Tip: consider walking or taking a bus along the avenue to see a cross-section of Helsinki's urban life."
+   }
+  ],
+  "getting_around": "Helsinki's centre is easy to explore on foot or by bicycle, with many sights concentrated close together. Ferries to Suomenlinna and other islands depart from Market Square in summer (HSL runs regular services) and the metro—one of the world's northernmost—connects key parts of the metropolitan area; use public transport for longer trips and check seasonal ferry timetables.",
+  "food": [
+   {
+    "name": "Lunch sets",
+    "note": "Many restaurants offer affordable multi-course lunch menus during daytime hours, often a better budget option than evening dining."
+   },
+   {
+    "name": "Unicafe student restaurants",
+    "note": "A chain operated by the university student union that provides economical full meals with vegetarian choices at several central locations."
+   },
+   {
+    "name": "Pizza and kebab places",
+    "note": "Common budget options available throughout the city, particularly popular in neighbourhoods like Kallio."
+   },
+   {
+    "name": "Fine Nordic dining",
+    "note": "Helsinki has several Michelin-starred and high-end restaurants showcasing Nordic ingredients and modern approaches, with varied international influences."
+   },
+   {
+    "name": "Workaday Finnish eateries",
+    "note": "Traditional, everyday Finnish restaurants provide straightforward local dishes and can be practical budget options outside the lunch hour."
+   }
+  ],
+  "budget_tips": [
+   "Choose lunch sets rather than evening meals to reduce food costs, as many restaurants run reasonably priced lunch menus.",
+   "Eat at Unicafe or other student-lunch restaurants which offer affordable full meals and vegetarian options.",
+   "Look for January and July sale seasons for shopping bargains and check VAT refund rules if you live outside the EU for larger purchases.",
+   "Consider ferries run by HSL for regular summer island transfers rather than private operators, and plan visits outside peak weekend times to avoid crowds."
+  ],
+  "safety": [
+   "Helsinki is generally safe, but keep usual urban precautions like watching personal belongings in crowded places and on public transport.",
+   "Respect local norms: Finns value personal space and quiet in public settings, so moderate noise and rowdy behaviour.",
+   "When visiting islands and coastal areas, pay attention to seasonal service schedules and weather conditions before you travel."
+  ],
+  "itinerary": [
+   "Day 1: Walk the Neo‑Classical centre—start at Senate Square and Helsinki Cathedral, explore Aleksanterinkatu and the Railway Station area, then end the day with a stroll along Mannerheimintie.",
+   "Day 2: Island day—take the ferry from Market Square to Suomenlinna for history and seaside walking; if time allows, visit Korkeasaari or another nearby island later in the afternoon.",
+   "Day 3: Museums and local life—visit Seurasaari open‑air museum, explore local neighbourhoods for eateries and shops, and enjoy a coastal stroll or a short sightseeing cruise from Market Square."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Helsinki?",
+    "a": "Two to three days cover the main city highlights and a trip to Suomenlinna; add more time if you want to visit multiple islands, museums or surrounding towns."
+   },
+   {
+    "q": "Is Helsinki expensive to visit?",
+    "a": "Helsinki tends to be costly for dining and shopping compared with many destinations; you can reduce expenses by using lunch menus, student restaurants and planning purchases around sale periods."
+   },
+   {
+    "q": "Is Helsinki safe for tourists?",
+    "a": "Yes—Helsinki is generally safe; normal urban caution with belongings in busy places and respect for local public‑behaviour norms is sufficient for most visitors."
+   },
+   {
+    "q": "What is the best area to stay in Helsinki?",
+    "a": "Stay in or near the central area around the Market Square, the Railway Station or the main shopping streets to be within easy walking distance of major sights and ferry connections."
+   },
+   {
+    "q": "How do I get to Suomenlinna from the city?",
+    "a": "Ferries depart from Market Square and are the usual way to reach Suomenlinna; HSL operates regular summer services and private companies also run boats—check schedules and expect frequent sailings in high season."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "هلسنكي",
+  "country_name": "فنلندا",
+  "title": "دليل السفر إلى هلسنكي: معالم، طعام وخريطة 3 أيام",
+  "meta_description": "دليل هلسنكي مع أهم المعالم والجزر، تجارب طعام محلية، نصائح لتوفير المال وخطط لثلاثة أيام في العاصمة الفنلندية.",
+  "h1": "دليل هلسنكي: ماذا ترى وتفعل وتعرف",
+  "intro": [
+   "هلسنكي (السويدية: Helsingfors) هي عاصمة فنلندا وأكبر مدنها، تجمع بين طرز معمارية تاريخية وحديثة ومساحات خضراء ومرافئ تطل على بحر البلطيق. المدينة محاطة بمئات الجزر الصغيرة وتشكل جسراً ثقافياً بين الشرق والغرب، وتتميز بإيقاع هادئ يسهل استكشافه سيراً على الأقدام أو بالدراجة.",
+   "تأسست هلسنكي كبلدة تجارية في القرن السادس عشر ونمت بسرعة بعد إعلانها عاصمة لإمارة فنلندا من قبل روسيا في 1812؛ اليوم هي مركز سياسي وثقافي مع شبكة جزر ومتاحف وتنوع معماري يبرز التأثيرين السويدي والروسي في أنسجة المدينة."
+  ],
+  "best_time": "أفضل وقت لزيارة هلسنكي هو الصيف عندما تكون المدينة في أوج الحياة بين البحر والطبيعة، مع مواعيد أكثر لرحلات العبّارات والفعاليات في الهواء الطلق. الربيع والخريف مناسبان لمن يرغب بتجنب حشود السياح، أما الشتاء فبارد لكنه يقدم تجربة فنلندية مختلفة.",
+  "top_sights": [
+   {
+    "name": "سفينسبرج/سوومينلينا (Suomenlinna)",
+    "why": "حصن جزر تاريخي مُدرج ضمن مواقع التراث العالمي ويُعد أفضل وجهة صيفية للرحلات والنزهات؛ اركب العبّارة من ساحة السوق وانتبه إلى ازدحام الرحلات بعطلات نهاية الأسبوع."
+   },
+   {
+    "name": "ساحة السنات (Senate Square)",
+    "why": "مركز نيوقلاسيكي يضم مباني حكومية بارزة ويعكس التحول الإمبراطوري للمدينة؛ زرها مبكراً لتفادي الحشود والتقاط صور للواجهات المعمارية."
+   },
+   {
+    "name": "الكاتدرائية اللوثرية (Lutheran Cathedral)",
+    "why": "رمز معماري بارز وأحد معالم وسط المدينة، يستحق الوقوف عنده كجزء من جولة الساحة الرئيسية."
+   },
+   {
+    "name": "محطة السكك الحديدية المركزية (Central Railway Station)",
+    "why": "مبنى ذو طابع نيوقلاسيكي ورمز حضري مهم، ومنطقة محيطة بها مبانٍ تاريخية وطرق رئيسية للتسوق والتنقل."
+   },
+   {
+    "name": "ساحة السوق (Market Square)",
+    "why": "منفذ رئيسي لرحلات العبّارات ومكان للتسوق في الهواء الطلق، ومركز الانطلاق إلى العديد من الجزر مثل Suomenlinna."
+   },
+   {
+    "name": "حوض حيوان كوركِسااري (Korkeasaari Zoo)",
+    "why": "جزيرة تضم حديقة حيوانات مناسبة للعائلات وتقدم تجربة طبيعية على مقربة من مركز المدينة؛ تحقق من مواسم التشغيل قبل الذهاب."
+   },
+   {
+    "name": "سيوراساري (Seurasaari)",
+    "why": "متحف مفتوح على جزيرة يعرض منازل ومباني تاريخية فنلندية، مكان جيد للتعرّف إلى الحياة الريفية التقليدية والتمشية."
+   },
+   {
+    "name": "شارع مانيرهايمينتي (Mannerheimintie)",
+    "why": "الشريان الرئيسي للمدينة الذي يمر بعدد من المعالم والمتاحف؛ جولة على هذا الشارع تكشف عن عجلة الحياة الحضرية ومعالم متنوعة."
+   }
+  ],
+  "getting_around": "هلسنكي مدينة يسهل التجول فيها سيراً على الأقدام أو بالدراجة في القسم المركزي، وتتوفر شبكة مواصلات عامة تشمل الحافلات والترام والمترو والعبّارات إلى الجزر. للانتقال إلى الجزر استخدم مواقف العبّارات في ساحة السوق، ولرحلات داخل المدينة استعن بتذاكر HSL الصالحة للمواصلات المتنوعة.",
+  "food": [
+   {
+    "name": "وجبات الغداء (Lunch sets)",
+    "note": "خيار اقتصادي شعبي في المطاعم الفنلندية، تُقدّم عادة في منتصف النهار وتقلل من تكلفة تناول الطعام مقارنة بالعشاء."
+   },
+   {
+    "name": "بيتزا وكباب",
+    "note": "خيارات سريعة ومتاحة بأسعار معقولة، شائعة خصوصاً في أحياء مثل كاλλيو."
+   },
+   {
+    "name": "مطاعم الطلبة Unicafe",
+    "note": "شبكة مطاعم جامعية تقدم وجبات كاملة بأسعار مخفضة ومتوفرة لعامة الناس، مناسبة للميزانيات المحدودة."
+   },
+   {
+    "name": "المأكولات الراقية بطابع نوردي",
+    "note": "هلسنكي تضم مطاعم فاخرة تقدم مطبخاً نوردياً مع مكونات محلية ومزيج من النكهات الأوروبية."
+   },
+   {
+    "name": "الفطور والمقاهي",
+    "note": "المقاهي في المدينة تقدم خيارات جيدة للفطور والقهوة، وهي مكان مناسب للراحة قبل البدء بجولة في المدينة."
+   }
+  ],
+  "budget_tips": [
+   "استفد من عروض وجبات الغداء في المطاعم كخيار أرخص لتناول طعام جيد.",
+   "استخدم مطاعم الجامعات مثل Unicafe والوجبات الطلابية للحصول على وجبات بأسعار مخفضة.",
+   "خطط لرحلات إلى الجزر خارج ساعات الذروة لتجنب طوابير العبّارات العامة في فصل الصيف.",
+   "تسوّق خلال مواسم التخفيضات في يناير ويوليو للحصول على أسعار أفضل على التصميم الفنلندي."
+  ],
+  "safety": [
+   "هلسنكي مدينة آمنة نسبياً لكن احرص على الاحتفاظ بأشياءك الشخصية في الأماكن المزدحمة مثل محطات العبّارات والأسواق.",
+   "احترم القوانين المحلية وعادات السلوك في الأماكن العامة؛ السلوك الهادئ والاحترام متوقعان.",
+   "في الصيف توخَ الحذر عند الانتظار لعبّارات مزدحمة وخاصة في عطلات نهاية الأسبوع.",
+   "قبل زيارة حدائق الحيوان أو جزر بعيدة تأكد من مواعيد ووصول وسائل النقل لتجنب الانتظار ليلاً."
+  ],
+  "itinerary": [
+   "اليوم الأول: جولة مشي في مركز المدينة تشمل ساحة السنات والكاتدرائية ومحطة القطار، ثم تجوّل في شارع ألكسانترينكاتو وتسوّق خفيف في ساحة السوق، وأنهِ اليوم بركوب العبّارة إلى Suomenlinna إذا أتاح الوقت.",
+   "اليوم الثاني: خصصه لاستكشاف الجزر—زر كوركِسااري للحيوانات وسيوراساري للمتحف المفتوح، واستمتع بجولة ساحلية نموذجية على الساحل الغربي للمدينة.",
+   "اليوم الثالث: تمشّ في شارع مانيرهايمينتي لزيارة المتاحف والمباني التاريخية، شاهد مباراة رياضية إن وُجدت أو تفقّد السينما المحلية ثم اختتم بالتسوق في محلات التصميم أو مجمّع Asematunneli."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لزيارة هلسنكي؟",
+    "a": "ثلاثة أيام تمنحك وقتاً جيداً لرؤية معالم وسط المدينة وزيارة جزيرة Suomenlinna وبعض الجزر الأخرى، مع وقت للتجول والاستمتاع بالمطاعم والمتاحف."
+   },
+   {
+    "q": "هل هلسنكي مدينة مكلفة؟",
+    "a": "بالمقارنة بمدن أوروبية أخرى، تكاليف المطاعم والتسوق مرتفعة نسبياً، لكن هناك خيارات معقولة مثل وجبات الغداء ومطاعم الجامعات لتقليل النفقات."
+   },
+   {
+    "q": "هل هلسنكي آمنة للسياح؟",
+    "a": "نعم، هلسنكي آمنة بشكل عام لكن من الأفضل توخي الحذر العادي مع الأمتعة الشخصية وتجنّب الأماكن المهجورة ليلاً."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "الوسط القريب من ساحة السنات ومحطة القطار مناسب للمرة الأولى لأنه يضعك بالقرب من معظم المعالم ووسائل النقل والعبّارات."
+   },
+   {
+    "q": "كيف أصل من ساحة السوق إلى Suomenlinna؟",
+    "a": "تتوفر عبّارات من ساحة السوق إلى Suomenlinna، وهي رحلة قصيرة بالعبّارة؛ في الصيف تعمل خدمة العبّارات بترددات أعلى، لكن كن حذراً من الازدحام في عطلات نهاية الأسبوع."
+   }
+  ]
+ }
+}

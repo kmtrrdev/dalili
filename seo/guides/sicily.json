@@ -1,0 +1,227 @@
+{
+ "slug": "sicily",
+ "name": "Sicily",
+ "country": "Italy",
+ "tags": [
+  "beach",
+  "history",
+  "food"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Sicily",
+ "en": {
+  "city_name": "Sicily",
+  "country_name": "Italy",
+  "title": "Sicily travel guide: sights, food and practical tips",
+  "meta_description": "Practical Sicily travel guide with top sights, food to try, transport tips, budget ideas and a 3-day itinerary.",
+  "h1": "Sicily travel guide: what to see, eat and know",
+  "intro": [
+   "Sicily is the largest island in the Mediterranean and an autonomous region of Italy, lying just off the mainland's 'toe'. It has a layered cultural heritage shaped by Phoenicians, Greeks, Romans, Arabs, Normans and others, visible in its towns, ruins and cuisine.",
+   "The island offers everything from active volcanoes and ancient temples to baroque towns, hilltop villages and sandy coasts. Visitors can fly or take a ferry from the mainland, and the climate makes Sicily a destination all year round, with high summer temperatures and milder shoulder seasons."
+  ],
+  "best_time": "Spring and autumn are often the most pleasant times to visit, when temperatures are milder than in high summer and crowds are smaller; winters are generally mild and the island is visited year-round. Summer is the busiest season and can become very hot, so plan activities accordingly.",
+  "top_sights": [
+   {
+    "name": "Valley of the Temples (Agrigento)",
+    "why": "A vast complex of Greek temples and ruins that illustrate Sicily's ancient Greek past; visit early or late in the day to avoid peak sun and crowds."
+   },
+   {
+    "name": "Mount Etna",
+    "why": "One of Europe's most active volcanoes offering volcanic landscapes and trails; check local conditions before planning hikes or snow activities in winter."
+   },
+   {
+    "name": "Palermo",
+    "why": "Sicily's regional capital with a rich mix of Norman, Arab and Baroque architecture including notable cathedrals and historic ensembles; allow time to explore its churches, markets and gardens."
+   },
+   {
+    "name": "Syracuse and the Neapolis Archaeological Park",
+    "why": "An eastern city with major Greek and Roman ruins, theatres and sanctuaries that showcase classical Sicily; pair the archaeological sites with a stroll through the historic island quarter."
+   },
+   {
+    "name": "Catania",
+    "why": "A historic city at the foot of Etna with layers of volcanic and classical heritage and lively urban life; use it as a base for exploring the volcano and nearby towns."
+   },
+   {
+    "name": "Villa Romana del Casale (Piazza Armerina)",
+    "why": "A Roman villa celebrated for its extensive mosaics that reveal life in late antiquity; combine this visit with inland sightseeing for a sense of Sicily's inland heritage."
+   },
+   {
+    "name": "Taormina and the Villa Comunale",
+    "why": "A popular hillside resort town with dramatic sea and mountain views and an elegant public garden; the garden and viewpoints are good for a relaxed afternoon."
+   },
+   {
+    "name": "Baroque towns of the Val di Noto (Ragusa, Noto, Modica, Scicli)",
+    "why": "A string of rebuilt towns renowned for theatrical Baroque architecture and town planning after the 1693 earthquake; explore narrow streets and ridge-top viewpoints to appreciate the stonework."
+   }
+  ],
+  "getting_around": "Sicily is reachable by air and by ferry from mainland Italy, with major cities serving as common entry points. On the island, travel options include regional trains, buses and car hire; many scenic areas, mountain parks and smaller villages are easiest to reach by car.",
+  "food": [
+   {
+    "name": "Cannoli",
+    "note": "Crisp pastry tubes filled with sweet ricotta — a Sicilian dessert staple."
+   },
+   {
+    "name": "Granita",
+    "note": "Fruit-and-ice slushes made with real crushed fruit or juices, often enjoyed as a refreshing treat."
+   },
+   {
+    "name": "Cassata",
+    "note": "A cake with Arabic-influenced roots, celebrated across the island as a traditional sweet."
+   },
+   {
+    "name": "Arancini (Arancine)",
+    "note": "Fried rice balls with various fillings that are a popular and widely available Sicilian fast food."
+   },
+   {
+    "name": "Pine-nut and almond biscuits",
+    "note": "Sweet regional biscuits reflecting Sicily's affinity for nuts and traditional pastries."
+   }
+  ],
+  "budget_tips": [
+   "Use regional trains and buses between cities where possible rather than taxis for lower-cost travel.",
+   "Eat local street food and market food stalls, such as arancini, to enjoy authentic meals without a restaurant bill.",
+   "Spend time on public beaches, parks and walking routes which offer free outdoor experiences across the island.",
+   "Combine nearby towns on the same day to reduce fuel or transport costs when exploring inland and coast."
+  ],
+  "safety": [
+   "Carry water, sun protection and avoid strenuous walking in the midday summer heat, especially on exposed trails and archaeological sites.",
+   "Signage on rural trails can be variable; bring a reliable map or GPS and tell someone your route when hiking in remote areas.",
+   "Respect local customs: Sicilians are proud and often conservative, so dress and behave modestly in religious sites and traditional towns.",
+   "When using busy markets and transport hubs, keep an eye on personal belongings to avoid opportunistic theft."
+  ],
+  "itinerary": [
+   "Day 1: Start in Palermo to see Norman-Arab architecture, visit markets and the Orto Botanico or a city garden, then travel toward nearby coastal towns or a baroque village for an evening.",
+   "Day 2: Head east to Syracuse and the Neapolis Archaeological Park, explore the historic island quarter and nearby coastal reserves or beaches for late afternoon.",
+   "Day 3: Spend a day around Mount Etna or Taormina — choose hiking, a guided visit to Etna's landscapes, or relax in Taormina's gardens and viewpoints."
+  ],
+  "faq": [
+   {
+    "q": "How many days do you need in Sicily?",
+    "a": "Sicily is large with varied attractions; a short visit of a few days can cover one region or a couple of cities, while a week or more lets you explore coasts, inland museums and a volcano. Plan your days around a few hubs to avoid long transfer times."
+   },
+   {
+    "q": "Is Sicily expensive to visit?",
+    "a": "Costs vary by season and travel style: summer and popular coastal towns are busiest, while eating street food and using regional transport can keep expenses down. Choosing shoulder seasons and avoiding peak tourist spots helps manage the budget."
+   },
+   {
+    "q": "Is Sicily safe for tourists?",
+    "a": "Sicily is a widely visited region with welcoming communities, but standard precautions apply: watch for heat-related risks when outdoors, protect belongings in crowded areas, and respect local customs. Staying informed about trail and volcanic conditions is important for outdoor activities."
+   },
+   {
+    "q": "Which area is best to stay in Sicily?",
+    "a": "Choose a base that suits your interests: Palermo for urban culture and markets, Catania for access to Mount Etna, Taormina for coastal scenery, or Syracuse for archaeology. Using a few bases across the island reduces daily travel time."
+   },
+   {
+    "q": "How do I get to Sicily from the mainland?",
+    "a": "Sicily is accessible by air and by ferry from mainland Italy, with services connecting major cities and ports. Once on the island, regional trains, buses and car hire link towns, though some rural and mountain areas are easier to reach by car."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "صقلية (Sicilia)",
+  "country_name": "إيطاليا",
+  "title": "صقلية: دليل السفر لأهم المعالم والنصائح",
+  "meta_description": "دليل عملي لصقلية: معالم أثرية، جبال وبركان إتنا، مدن باروكية، طعام محلي وخريطة لثلاثة أيام ونصائح لتقليل التكاليف.",
+  "h1": "دليل صقلية: ماذا ترى وتفعل وتعرف",
+  "intro": [
+   "صقلية أكبر جزيرة في البحر المتوسط وإقليم ذاتي الحكم في إيطاليا، تقع قبالة 'إصبع' شبه الجزيرة الإيطالية. الجزيرة تجمع تأثيرات يونانية، رومانية، عربية ونورمانية في معالمها ومطبخها وثقافتها.",
+   "ستجد في صقلية آثارًا قديمة، مناظر بركانية، بلدات باروكية، شواطئ نقية ومأكولات فريدة؛ من وادي المعابد في أغريجنتو إلى جبل إتنا ومدن مثل باليرمو وسيراكيوز وكاتانيا. يمكن الوصول إليها بسهولة جواً أو بالعبّارات طيلة العام."
+  ],
+  "best_time": "ذروة السياحة في الصيف لكن الربيع والخريف يوفران طقسًا لطيفًا وعددًا أقل من الزوار؛ الشتاء معتدل نسبيًا مع فترات مناسبة للزيارة. إذا قصدت نشاطات جبلية أو شاطئية انتبه لحرارة منتصف النهار في الصيف.",
+  "top_sights": [
+   {
+    "name": "وادي المعابد (Valle dei Templi) — أغريجنتو",
+    "why": "مجموعة هائلة من المعابد اليونانية تدل على أهمية الجزيرة في العصور القديمة؛ مكان مدرج ضمن اليونسكو ومناسب للصور عند الغروب، ارتدِ أحذية مريحة واصطحب ماءً."
+   },
+   {
+    "name": "جبل إتنا (Mount Etna)",
+    "why": "أحد أكثر البراكين نشاطًا في أوروبا ويقدّم مناظر بركانية فريدة، وتتوفر أنشطة تسلّق ورياضات ثلجية شتاءً؛ تحقق من حالة الثوران والطقس قبل الصعود."
+   },
+   {
+    "name": "باليرمو — كاتدرائيات ونمط معماري نورماني-عربي",
+    "why": "عاصمة إقليمية تضم كاتدرائيات ومجموعات أثرية تعكس تمازج الثقافات، ومن الجيد استكشاف الأسواق والحدائق التاريخية سيرًا على الأقدام."
+   },
+   {
+    "name": "سيراكيوز (Parco Archeologico della Neapolis)",
+    "why": "مركز آثار يقدم طبقات من الحضارة اليونانية والرومانية والمسيحية المبكرة؛ خصص وقتًا للمسرح القديم والمواقع المجاورة."
+   },
+   {
+    "name": "فيلا رومانا دل كاسالي — بياتسا أرمِرينا",
+    "why": "فيلا رومانية ذات فسيفساء واسعة ومميزة تكشف عن رفاهية العصر الروماني؛ الزيارة مناسبة لمحبي الآثار والتفاصيل الفنية."
+   },
+   {
+    "name": "تاورمينا وحديقة Villa Comunale",
+    "why": "بلدة ساحرة على الساحل الشرقي تطل على البحر وتضم حدائق وطرقات ذات مناظر خلابة؛ نزّل تمشّ في الحديقة للاستمتاع بالإطلالات."
+   },
+   {
+    "name": "سيفالو (Cefalù)",
+    "why": "قِصبة ساحلية ذات كاتدرائية نورمانية ومحطة مثالية لدمج شاطئ وسير في شوارع تاريخية؛ مناسب لزيارة يومية من المدن الكبرى."
+   },
+   {
+    "name": "إريس (Erice)",
+    "why": "مدينة جبلية من العصور الوسطى مع أزقة مرصوفة وأسوار قديمة توفر مناظر بحرية ممتازة؛ ارتدِ معطفًا في الأمسيات الباردة واستعد للصعود بالطرق الضيقة."
+   }
+  ],
+  "getting_around": "يمكن الوصول إلى صقلية جواً أو بالعبّارات من البرّ الإيطالي، والعبّارة تمر عبر مضيق مسينا. داخل الجزيرة التنقل يشمل القطارات والحافلات، لكن للوصول إلى محميات جبلية وقرى بعيدة يفضّل استئجار سيارة أو الاعتماد على رحلات منظمة.",
+  "food": [
+   {
+    "name": "كانولي (Cannoli)",
+    "note": "معجنات أنبوبية محشوة بالريكوتا الحلوة وهي من أشهر حلويات صقلية."
+   },
+   {
+    "name": "جرانيتا (Granita)",
+    "note": "ثلج مبشور بنكهات فاكهية حقيقية، مفضل للصيف كمنعش محلي."
+   },
+   {
+    "name": "كاساتا (Cassata)",
+    "note": "كعكة مستوحاة من التأثيرات العربية محشوة ومزينة بنكهات مميزة."
+   },
+   {
+    "name": "أرانشيني/أرانشيني (Arancini/Arancine)",
+    "note": "كرات أرز مقلية محشوة، وجبة سريعة شعبية من المطبخ الصقلي."
+   },
+   {
+    "name": "بسكويت الصنوبر واللوز",
+    "note": "مخبوزات محلية مُحَبّبة مع نكهات اللوز والصنوبر تعكس الذوق الحلو للصقليين."
+   }
+  ],
+  "budget_tips": [
+   "سافر في الربيع أو الخريف لتجنب ذروة الأسعار وارتفاع حرارة الصيف.",
+   "تناول الوجبات السريعة المحلية مثل الأرانشيني بدل المطاعم السياحية لتقليل التكلفة.",
+   "استخدم القطارات الإقليمية والحافلات للتنقل بين المدن بدل تأجير سيارة طوال الرحلة.",
+   "زور الحدائق العامة والشواطئ والمواقع الأثرية المكشوفة التي غالبًا لا تتطلب تذاكر باهظة."
+  ],
+  "safety": [
+   "في الصيف تجنّب المشي خلال حرارة الظهيرة واحم نفسك من الشمس واحمل ماءً كافيًا.",
+   "قبل القيام بمسارات جبلية أو قريبة من البراكين تحقق من العلامات وإشعارات السلامة واصطحب خريطة GPS.",
+   "كن محترمًا للعادات المحلية ولبس محتشمًا عند زيارة أماكن دينية؛ الصقليون شعب فخور ومحافظ إلى حد ما.",
+   "تابع تحذيرات البراكين والطقس عند تخطيط زيارة جبل إتنا أو مناطق الثلوج."
+  ],
+  "itinerary": [
+   "اليوم الأول — باليرمو: تجوّل في مركز المدينة لزيارة كاتدرائيات ونمط العمارة النورماني-عربي، استرح في أحد الحدائق التاريخية وتذوّق أطعمة الشارع المحلية.",
+   "اليوم الثاني — أغريجنتو و«وادي المعابد» ثم التوجّه إلى بلدة باروكية قريبة للتعرّف على الهندسة المعمارية وإطلالات المساء.",
+   "اليوم الثالث — شرق الصقلية: زيارة سيراكيوز ومنتزه نيابوليس الأثري، ثم التوجّه إلى تاورمينا أو القيام برحلة إلى سفح جبل إتنا حسب تفضيلك."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لزيارة صقلية؟",
+    "a": "للحصول على لمحة جيدة عن الجزيرة يجب مبدئيًا تخصيص 3–7 أيام؛ 3 أيام تكفي لزيارة معالم رئيسية في مناطق متباينة، وأسبوع أو أكثر يناسب استكشاف متعمق للمدن والريف."
+   },
+   {
+    "q": "هل صقلية مكلفة؟",
+    "a": "التكاليف تختلف بحسب الموسم ونوع الإقامة؛ يمكن تقليل المصاريف بالسفر خارج الموسم وتناول أطعمة محلية واستخدام النقل الإقليمي بدلاً من الخدمات السياحية الخاصة."
+   },
+   {
+    "q": "هل زيارة جبل إتنا آمنة؟",
+    "a": "زيارة المناطق المحيطة بإتنا شائعة لكن الحالة البركانية تتغير، لذا راجع معلومات السلامة المحلية وتوجيهات السلطات قبل الصعود واتباع طرق الوصول الموصى بها."
+   },
+   {
+    "q": "ما أفضل منطقة للإقامة للمسافرين القادمين لأول مرة؟",
+    "a": "المدن الكبرى مثل باليرمو وكاتانيا توفر خيارات إقامة وخدمات جيدة كأساس للانطلاق في جولات يومية إلى معالم قريبة؛ اختر موقعًا قريبًا من وسائل النقل إذا اعتمدت على القطارات والحافلات."
+   },
+   {
+    "q": "كيف أصل من البرّ الإيطالي إلى صقلية؟",
+    "a": "تتوفر رحلات جوية وعبّارات من البرّ إلى صقلية، ويفصل بينهما مضيق ميسينا؛ اختَر حسب جدولك ووجهتك النهائية داخل الجزيرة."
+   }
+  ]
+ }
+}

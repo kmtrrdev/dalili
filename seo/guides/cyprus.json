@@ -1,0 +1,224 @@
+{
+ "slug": "cyprus",
+ "name": "Cyprus",
+ "country": "Cyprus",
+ "tags": [
+  "beach",
+  "history"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Cyprus",
+ "en": {
+  "city_name": "Cyprus",
+  "country_name": "Cyprus",
+  "title": "Cyprus travel guide: sights, food, budget & 3-day plan",
+  "meta_description": "Practical travel guide to Cyprus: top sights, food to try, budget tips, safety notes and a 3-day itinerary for first-time visitors.",
+  "h1": "Cyprus travel guide: what to see, eat and know",
+  "intro": [
+   "Cyprus is an eastern Mediterranean island with a continuous human presence stretching back millennia. It offers archaeological sites from the New Stone Age through the Roman period, long sandy coasts and a mix of cultural influences.",
+   "Visitors can combine beaches and coastal scenery with mountain hikes in the Troodos range, historic towns such as Nicosia and Paphos, and local food traditions like meze and halloumi. The island receives abundant sun and has a wide variety of landscapes to explore."
+  ],
+  "best_time": "Most of the year is pleasant thanks to a sunny Mediterranean climate; shoulder seasons give milder temperatures and fewer crowds, while summer is hottest and busiest. Winters are cooler in the Troodos mountains, where snow can allow brief skiing opportunities.",
+  "top_sights": [
+   {
+    "name": "Paphos Archaeological Park and harbour",
+    "why": "A UNESCO‑linked coastal site that combines seaside views with ruins from classical and Roman periods; good for strolling and photography—wear comfortable shoes for uneven ground."
+   },
+   {
+    "name": "Nicosia (Lefkosia) old town and Venetian walls",
+    "why": "The island's capital features preserved fortifications, lively streets and restaurants inside the walled centre; allow time to walk the narrow lanes and visit spots near the Green Line."
+   },
+   {
+    "name": "The Green Line / divided Nicosia",
+    "why": "The UN buffer zone separates the Greek Cypriot and Turkish Cypriot areas, making Nicosia the only divided capital in Europe; respect restricted crossings and local guidance when visiting buffer-zone areas."
+   },
+   {
+    "name": "Troodos Mountains",
+    "why": "Peaks rising to almost 2,000 metres offer woodland trails, winter snow and traditional villages like Kakopetria, Platres and Phini—bring layered clothing for higher elevations and variable weather."
+   },
+   {
+    "name": "Painted Churches in the Troodos Region",
+    "why": "A group of well‑preserved churches with medieval wall paintings inscribed by UNESCO; plan visits according to opening arrangements at each church and dress respectfully."
+   },
+   {
+    "name": "Rock of Aphrodite",
+    "why": "A coastal landmark near Paphos with scenic cliffs and a popular picnic spot—best visited at calmer sea conditions and during daylight for safety and views."
+   },
+   {
+    "name": "Hamam Omerye, Nicosia",
+    "why": "A restored 14th‑century bath in the heart of the old town that combines layers of the island's history and now operates as a public hammam—check current visitor information before going."
+   },
+   {
+    "name": "Cyprus coastline and beaches",
+    "why": "Extensive shoreline with many unspoilt stretches ideal for swimming, sunbathing and coastal drives; explore less busy beaches away from major hotel zones for a quieter experience."
+   }
+  ],
+  "getting_around": "Main towns and tourist areas are connected by roads; renting a car gives the most flexibility for reaching beaches and mountain villages. When crossing between the southern and northern parts of the island, be aware of the political division and check crossing rules; public buses serve many coastal and urban routes.",
+  "food": [
+   {
+    "name": "Cypriot meze",
+    "note": "An extensive assortment of small dishes served as a shared meal, available in meat, fish or mixed selections—great for sampling local flavours."
+   },
+   {
+    "name": "Halloumi (Hellim)",
+    "note": "A traditional Cypriot cheese made from sheep's and goat's milk that is often grilled and served warm."
+   },
+   {
+    "name": "Kleftiko",
+    "note": "Slow-roasted lamb seasoned with herbs and lemon, typically tender and aromatic."
+   },
+   {
+    "name": "Taramosalata",
+    "note": "A creamy dip made from salted fish roe blended with bread or potatoes and seasoned with lemon and oil."
+   },
+   {
+    "name": "Shoushoukos and grape‑juice sweets",
+    "note": "Traditional confections made from thickened grape juice, including almond‑studded shoushoukos and pulped puddings such as palouzes."
+   }
+  ],
+  "budget_tips": [
+   "Avoid tourist‑only restaurants and bars in major resort strips; prices are often higher than in nearby local neighbourhoods.",
+   "Buy everyday groceries and snacks from supermarkets rather than convenience shops near beaches to save on small purchases.",
+   "Travel to villages and inland sites where food and services tend to be more moderately priced than on the main tourist coastlines.",
+   "Use public buses between major towns when possible instead of taxis for shorter intercity journeys."
+  ],
+  "safety": [
+   "Be aware the island remains divided; respect the UN buffer zone and follow local guidance when near crossing points or restricted areas.",
+   "Carry the currency appropriate for the area you are visiting: euros are used in the Republic of Cyprus, while Turkish lira circulate in Northern Cyprus—check current acceptance and exchange options before spending.",
+   "Standard precautions against petty theft apply in crowded tourist sites; keep valuables secure and be cautious at night in unfamiliar areas."
+  ],
+  "itinerary": [
+   "Day 1: Explore Paphos — visit the archaeological park and harbour, walk the waterfront, then take a short trip to the Rock of Aphrodite for coastal views and a picnic.",
+   "Day 2: Discover Nicosia — walk inside the Venetian walls, visit Hamam Omerye and see the Green Line; enjoy dinner in the old town's restaurants and bars.",
+   "Day 3: Troodos mountains and villages — spend the day hiking forest trails, visiting traditional villages such as Kakopetria or Platres, and see some of the painted Troodos churches."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Cyprus?",
+    "a": "Three to seven days lets you combine a coastal town with a day in Nicosia and a day in the Troodos mountains; extend your stay if you want slower beach time or more archaeological exploration."
+   },
+   {
+    "q": "Is Cyprus expensive to visit?",
+    "a": "Prices in tourist areas are comparable to Central Europe and can be high in resort zones, but costs fall when you eat, shop and stay outside major tourist strips."
+   },
+   {
+    "q": "Is Cyprus safe to visit?",
+    "a": "Cyprus is generally safe for visitors, but remain mindful of the island's political division, avoid restricted buffer‑zone areas, and take routine precautions against petty theft."
+   },
+   {
+    "q": "Which area is best to stay in?",
+    "a": "Choose your base depending on interests: coastal resorts for beaches, Paphos for archaeology, Nicosia for history and urban life, or mountain villages for hiking and a quieter pace."
+   },
+   {
+    "q": "How do I get from the airport to major towns?",
+    "a": "Airports are linked to towns by road; options include car hire, shuttle services and public buses—plan transfers in advance and check services to your chosen accommodation."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "قبرص",
+  "country_name": "قبرص",
+  "title": "قبرص: دليل السفر — ما تراه وتفعله وتعرفه",
+  "meta_description": "دليل قبرص للمسافر: أهم المعالم الأثرية والسواحل والطعام المحلي ونصائح التوفير وخطة ثلاثية الأيام.",
+  "h1": "قبرص دليل السفر: ما تراه وتذوقه وتحتاج معرفته",
+  "intro": [
+   "قبرص جزيرة في شرق البحر المتوسط تتمتع بتاريخ طويل يعود إلى آلاف السنين، وتقدم مزيجًا من المواقع الأثرية، وسواحل واسعة، وجبال خضراء للمشي. الجزيرة مشمسة معظم أيام السنة وتتنوع وجهاتها بين المدن القديمة والمنتجعات والقرى الجبلية.",
+   "تُعد قبرص مكانًا مناسبًا لمن يحبون آثار العصور القديمة والرحلات الطبيعية وتناول أطباق متّبلة محلية، مع تجربة ثقافية معقّدة بسبب الانقسام السياسي الذي أثر على الحياة اليومية في أجزاء من الجزيرة."
+  ],
+  "best_time": "أفضل أوقات الزيارة تكون في الربيع والخريف عندما يكون الطقس دافئًا والمجموعات السياحية أقل من ذروة الصيف؛ الشتاء معتدل في الجنوب ويتيح نشاطات جبلية، والصيف مشمس وحار مع كثافة زوار أعلى.",
+  "top_sights": [
+   {
+    "name": "المواقع الأثرية المنتشرة",
+    "why": "الجزيرة غنية بمواقع تعود إلى العصر الحجري الحديث وحتى الحقبة الرومانية؛ مفيدة لمحبي التاريخ والآثار، وفكرة عملية هي تخصيص وقت لكل منطقة أثرية بدل محاولة رؤيتها كلها في يوم واحد."
+   },
+   {
+    "name": "السواحل والمنتجعات",
+    "why": "قبرص تمتلك شواطئ طويلة ومناطق ساحلية لا تزال محتفظة بجمالها، مناسبة للسباحة والاسترخاء أو لاستكشاف خلسات بعيدة عن الشواطئ المزدحمة."
+   },
+   {
+    "name": "نيقوسيا (Lefkosia) وجدران البندقية",
+    "why": "العاصمة التاريخية محاطة بجدران قديمة وتضم أحياء داخلية نابضة بالمقاهي والمطاعم، وزيارتها تسمح بمشاهدة خط التقسيم (الخط الأخضر) الذي يقطع المدينة؛ يفضل التنقل مشيًا داخل الأسوار للتعرّف على المركز التاريخي."
+   },
+   {
+    "name": "جبال ترودوس (Troodos)",
+    "why": "سلسلة جبال توفر مسارات مشي وقرى جبلية جذابة مثل كاكوبيتريا وبلاتريس وفيني، وفي الشتاء تتوفر فرص للتزلج؛ احرص على الملابس المناسبة للمشي وتحقق من حالة الطرق في المواسم الباردة."
+   },
+   {
+    "name": "ميناء وبُرج آثار بافوس (Paphos harbour and archaeological park)",
+    "why": "مزيج من ساحل جميل وموقع أثري مهم يجذب الزوار الباحثين عن مزيج من البحر والتاريخ، ويمكن التخطيط لنزهة في الميناء تليها زيارة للحديقة الأثرية."
+   },
+   {
+    "name": "صخرة أفروديت (Rock of Aphrodite)",
+    "why": "منظر طبيعي مشهور يشكل خلفية جيدة للنزهات والتصوير، وهو خيار مناسب لمن يريد قضاء وقت هادئ بالقرب من البحر."
+   },
+   {
+    "name": "حمّام عمريه في نيقوسيا (Hamam Omerye)",
+    "why": "حمّام تاريخي مُجدد يعود إلى العصور الوسطى ويعمل كمكان للاسترخاء؛ تجربة جيدة للتعرف على جانب من التراث المعماري والثقافي للمدينة."
+   },
+   {
+    "name": "كنائس مرسومة في منطقة ترودوس (Painted Churches in the Troödos Region)",
+    "why": "مجموعة من الكنائس المزخرفة بجدران داخلية ذات قيمة فنية وتاريخية أدرجت ضمن مواقع التراث العالمي، ومدّها بزيارة يمنحك نظرة على الفن الديني المحلي."
+   }
+  ],
+  "getting_around": "التنقل داخل الجزيرة يتم بسيارات الأجرة والحافلات المدنية وتأجير السيارات شائع خاصة للاستكشاف الريفي والجبلي. في شمال الجزيرة تُستخدم الليرة التركية مع قبول اليورو في بعض المراكز السياحية وبالبطاقات المصرفية ووجود أجهزة صراف آلي متاحة في الشمال.",
+  "food": [
+   {
+    "name": "الميز النيقوسي (Meze)",
+    "note": "مجموعة أطباق صغيرة متنوعة تشكّل تجربة طعام اجتماعية، متاحة بأنواع لحوم أو أسماك أو كوكتيل مختلط."
+   },
+   {
+    "name": "كلفتيكو (Kleftiko)",
+    "note": "لحم ضأن مطهو ببطء مع الأعشاب والليمون، ويقدّم نكهة غنية ومناسبة للمناسبات."
+   },
+   {
+    "name": "حلومي (Halloumi / Hellim)",
+    "note": "جبنة قبرصية فريدة تُقدم غالبًا مشوية ويزداد طعمها وطراوتها عند الطهي."
+   },
+   {
+    "name": "تاراموسالاتا (Taramosalata)",
+    "note": "كريما مصنوعة من بياض السمك المملح ممزوجة بالزيت والليمون تُقدم كمقبلات."
+   },
+   {
+    "name": "شوشوكس وبالووز وكيوفتركا (Shoushoukos, Palouzes, Kiofterka)",
+    "note": "حلويات تقليدية من عصير العنب أو من منتجاته تتضمن شرائط لوز ومهجمات فاطمية ونكهات محلية."
+   }
+  ],
+  "budget_tips": [
+   "تجنّب المناطق السياحية الأكثر ازدحامًا لتجد أسعارًا أرخص في المطاعم والمتاجر المحلية.",
+   "اشترِ المنتجات الزراعية المحلية بدلاً من المستوردة لأنها عادة أقل تكلفة.",
+   "استخدم الحافلات العامة أو شارك الرحلات عند الإمكان بدل الاعتماد على سيارات الأجرة لتقليل مصاريف التنقل.",
+   "في الشطر الشمالي من الجزيرة احمل ليرة تركية لأن اليورو مقبول لكن بأسعار صرف غير مواتية أحيانًا."
+  ],
+  "safety": [
+   "تذكّر أن الجزيرة مقسومة سياسياً وبها منطقة عازلة تديرها الأمم المتحدة، وتجنّب الدخول إلى مناطق عسكرية أو مغلقة.",
+   "احترم القوانين والتقاليد المحلية عند زيارة المواقع الدينية أو القروية، وارتدِ ملابس محتشمة عند الضرورة.",
+   "احفظ مستنداتك وأموالك في مكان آمن وكن حذرًا من النشّالين في المناطق السياحية المزدحمة."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشاف نيقوسيا داخل الجدران التاريخية مع زيارة حمّام عمريه والتنزه في الأزقة وتجربة مطعم يقدم ميز محلي.",
+   "اليوم الثاني: رحلة إلى بافوس لزيارة الحديقة الأثرية والميناء وصخرة أفروديت، مع وقت للاسترخاء على الشاطئ والمشي على الواجهة البحرية.",
+   "اليوم الثالث: التوجه إلى جبال ترودوس لرحلات المشي وزيارة القرى والكنائس المرسومة، والاستمتاع بالمناظر الطبيعية ووجبة محلية في قرية جبلية."
+  ],
+  "faq": [
+   {
+    "q": "كم من الوقت أحتاج لزيارة قبرص؟",
+    "a": "للحصول على لمحة جيدة عن الجزيرة يُنصح بقضاء 3 إلى 7 أيام تتيح زيارة عاصمة واحدة أو اثنتين، بعض السواحل، ومنطقة جبلية؛ المزيد من الوقت يسمح باستكشاف أعمق."
+   },
+   {
+    "q": "هل قبرص بلد مكلف؟",
+    "a": "تعتبر قبرص باهظة نسبيًا مقارنة ببعض الوجهات، خاصة في المناطق السياحية حيث ترتفع الأسعار بسبب الاعتماد على الاستيراد، لكن يمكن إيجاد خيارات أوفر بعيدًا عن المنتجعات."
+   },
+   {
+    "q": "هل زيارة قبرص آمنة؟",
+    "a": "الزيارة آمنة بشكل عام، لكن يجب مراعاة الانقسام السياسي وعدم عبور مناطق محظورة، واتباع إرشادات السلطات المحلية والأمم المتحدة عند الاقتضاء."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "الاختيار يعتمد على نمط الرحلة: المدن داخل الجدران مثل نيقوسيا للتراث، بافوس أو لارنكا للسواحل، وترودوس لمن يحب الطبيعة؛ كل منطقة تقدم مستوى مختلفًا من الخدمات والأسعار."
+   },
+   {
+    "q": "كيف أصل من المطار إلى المدينة؟",
+    "a": "تتوفر حافلات عامة وسيارات الأجرة وخدمات نقل خاصة من المطارات إلى المدن والمنتجعات، وتأجير السيارات شائع لمن يريد حرية التنقل؛ تحقق مسبقًا من خيارات النقل في المطار الذي تهبط فيه."
+   }
+  ]
+ }
+}

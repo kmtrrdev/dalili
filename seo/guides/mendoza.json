@@ -1,0 +1,226 @@
+{
+ "slug": "mendoza",
+ "name": "Mendoza",
+ "country": "Argentina",
+ "tags": [
+  "food",
+  "nature"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Mendoza",
+ "en": {
+  "city_name": "Mendoza",
+  "country_name": "Argentina",
+  "title": "Mendoza travel guide: sights, wine tours and tips",
+  "meta_description": "Practical Mendoza travel guide with top sights, wine-tasting tips, budget advice and a 3-day itinerary for city and Andes highlights.",
+  "h1": "Mendoza travel guide: what to see, eat and know",
+  "intro": [
+   "Mendoza sits in western Argentina in the dry Cuyo region and is the country's wine capital. The city combines broad tree-lined avenues and irrigation channels with easy access to vineyards and the high Andes, including views of Aconcagua.",
+   "Mendocina life mixes urban comforts with outdoor adventure: you can explore large parks and squares, sample world-class Malbec, or head into the nearby mountains for trekking, rafting and horseback riding."
+  ],
+  "best_time": "Late summer and early autumn (February–April) are especially attractive because grape harvest and many wine events take place then; summer is hot and dry while spring and autumn offer pleasant weather. Expect local festivals around the end of February and early March.",
+  "top_sights": [
+   {
+    "name": "Parque San Martín",
+    "why": "A very large, green city park ideal for walking, cycling and sunset views from Cerro de la Gloria; take a bus to Avenida del Libertador and Subida al Cerro to follow the path up to the monument and then explore the lake and tree-lined avenues. Renting a bike is a convenient way to see more of the park."
+   },
+   {
+    "name": "Plaza Independencia",
+    "why": "The central square is a natural starting point for downtown Mendoza with nearby restaurants, street performances and an underground Museum of Modern Art; visit in the evening to see illuminated buildings and the lighted city coat of arms."
+   },
+   {
+    "name": "Plaza España",
+    "why": "A decorative square celebrating ties with Spain, featuring Andalusian motifs, murals and a prominent statue; its ornate design makes it one of the city's most picturesque plazas."
+   },
+   {
+    "name": "Central Park",
+    "why": "A modern green space with fountains and a grassy hill where local artists often paint; it's a pleasant contrast to Parque San Martín for a shorter visit or a relaxed afternoon."
+   },
+   {
+    "name": "Casa de Fader",
+    "why": "An 1890 mansion turned museum in Mayor Drummond showcasing works by painter Fernando Fader, useful for visitors wanting local art and historic ambiance outside the city center."
+   },
+   {
+    "name": "Casa de San Martín - Museo de sitio",
+    "why": "The site where General San Martín lived for two years; even though only fragments remain, it offers historical context and takes only a short time to visit."
+   },
+   {
+    "name": "Ruins of San Francisco",
+    "why": "Ruins of an 18th-century Jesuit church destroyed in the 1861 earthquake, providing insight into the Jesuits' historical role in the region and a tangible historic landmark."
+   },
+   {
+    "name": "Harvest festival (Vendimia)",
+    "why": "The annual harvest festival running from late February into early March is a major local celebration featuring parades, gaucho displays and public performances; attending the pedestrian promenades and closing parade is a memorable cultural experience."
+   }
+  ],
+  "getting_around": "From the city center you can walk between many downtown sights; buses and taxis serve longer trips and suburban areas. The tram/train is a convenient option to reach Maipú wineries; within parks and plazas cycling is popular and bike rental shops and organized bike tours are widely available.",
+  "food": [
+   {
+    "name": "Asado at a parrilla",
+    "note": "Classic Argentine grilled beef is widely available at parrillas and pairs naturally with Mendoza wines."
+   },
+   {
+    "name": "Mendoza Malbec",
+    "note": "Mendoza is famed for Malbec from Maipú and Luján de Cuyo; try bottles at wineries, boutiques or local restaurants."
+   },
+   {
+    "name": "Tenedor libre (buffet)",
+    "note": "All-you-can-eat buffets offer a wide selection of grilled meats and sides and are a good value way to sample Argentine cuisine."
+   },
+   {
+    "name": "Wine-pairing lunches at bodegas",
+    "note": "Many wineries host multi-course meals paired with wines—book ahead for higher-end tours that include lunch."
+   },
+   {
+    "name": "375 ml bottles",
+    "note": "If you prefer less than a full bottle, ask for a 375 ml (often called 3/8 litre) rather than risking variable house wine."
+   }
+  ],
+  "budget_tips": [
+   "Buy supermarket wine rather than boutique bottles to get the same labels for lower prices.",
+   "Eat at tenedor libre buffets for a filling, economical meal that showcases local grilled meats.",
+   "Use the tram/train to reach Maipú wineries when possible and consider organized bike tours that include maps to avoid wasting time or paying for taxis.",
+   "Compare bike rental companies and choose reputable operators to avoid poor-quality bikes that can spoil a day."
+  ],
+  "safety": [
+   "Be cautious with belongings on bike wine tours and in public spaces; there have been reports of bags being snatched from bike baskets.",
+   "Observe local business hours and the siesta pattern: many places close around 13:00–17:00 and reopen in the evening.",
+   "Banks operate mornings only on weekdays; plan banking tasks for 09:00–13:00 Monday to Friday.",
+   "When heading into the mountains or booking adventure activities, use reputable operators and confirm equipment and insurance details."
+  ],
+  "itinerary": [
+   "Day 1: Walk downtown from Plaza Independencia to Plaza España, visit the Museum of Modern Art under Plaza Independencia, relax in Central Park and stroll the Aristides Villanueva restaurant strip in the evening.",
+   "Day 2: Spend a day on a wine route in Maipú—book a winery tour or a guided bike tour to visit bodegas, taste Malbec and enjoy a winery lunch; use the tram/train or an organised tour for convenience.",
+   "Day 3: Explore Parque San Martín, hike or cycle up to Cerro de la Gloria for city and mountain views, then arrange an afternoon activity such as horseback riding, rafting or a short mountain excursion."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Mendoza?",
+    "a": "Three days allows you to see downtown sights, visit nearby wineries and take a short mountain activity; extend your stay to explore more vineyards or longer treks into the Andes."
+   },
+   {
+    "q": "Is Mendoza expensive?",
+    "a": "Costs vary: wine tasting and fine dining can be pricey, but supermarket wine, tenedor libre buffets and public transport make the city affordable for budget travellers."
+   },
+   {
+    "q": "Is Mendoza safe for tourists?",
+    "a": "Mendoza is generally safe for visitors, but take normal precautions with belongings—especially on bike tours—and book reputable tour operators for outdoor activities."
+   },
+   {
+    "q": "What is the best area to stay in Mendoza?",
+    "a": "Stay near Plaza Independencia or along Aristides Villanueva for easy access to restaurants, plazas and transport links to parks and wineries."
+   },
+   {
+    "q": "How do I get from the city to the wineries?",
+    "a": "You can reach many wineries in Maipú by tram/train, organized bike tours, local buses (lines such as 10–173) or taxis; some bodegas accept walk-in visitors but many require advance reservations."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "مندوزا (Mendoza)",
+  "country_name": "الأرجنتين",
+  "title": "مندوزا: دليل السفر — الأشياء التي تَقوم بها والطعام وخطة 3 أيام",
+  "meta_description": "دليل مندوزا: معالم بارزة (باركي سان مارتين، بلازا إينديبندنسيا)، جولات الكروم، أكل محلي، نصائح للميزانية وخطة لثلاثة أيام.",
+  "h1": "دليل مندوزا: ما الذي تراه وتفعله وتتناوله",
+  "intro": [
+   "مندوزا مدينة في الغرب الأرجنتيني تقع في منطقة كيوّو الصحراوية، وهي عاصمة مقاطعة مندوزا ومركز صناعة النبيذ في الأرجنتين والعالم. المدينة قريبة من جبال الأنديز ومن قمة أكونكاغوا، أعلى جبل خارج الهيمالايا.",
+   "رغم موقعها في منطقة جافة، تحتفظ مندوزا بغطاء نباتي بفضل نظام ري اصطناعي واسع يمر بشوارعها على شكل قنوات مائية وجسور، ما يضفي على المدينة شوارع واسعة وأشجار وظلال نادرة في مناطق صحراوية أخرى. وتتمتع المدينة بأجواء مسالمة مع تقاليد محلية مثل القيلولة (السييستا) التي تؤثر على مواعيد عمل المحلات."
+  ],
+  "best_time": "فترة الحصاد في مارس وأبريل مناسبة لزيارة الكروم وحضور تذوق النبيذ، كما تُقام مهرجانات سنوية في نهاية فبراير وبداية مارس. ضع في اعتبارك أن الكثير من المحلات تغلق أثناء القيلولة بعد منتصف النهار وتفتح مجدداً مساءً.",
+  "top_sights": [
+   {
+    "name": "باركي سان مارتين (Parque San Martín)",
+    "why": "منتزه شاسع مناسب للمشي وركوب الدراجة ويضم طريقاً مرتفعة تؤدي إلى سيرو دي لا غلوريا مع إطلالات على المدينة والجبال ونُصب تاريخي مهم؛ استغل المسار المؤدي إلى التلة عند غروب الشمس لالتقاط مناظر جيدة."
+   },
+   {
+    "name": "المهرجانات المحلية",
+    "why": "تقام احتفالات ومهرجانات طوال العام بما فيها مهرجان الحصاد الذي يمتد أسبوعين في نهاية فبراير وبداية مارس، وهي عادة مجانية وتضم عروض موسيقية ورقص وأكشاك طعام؛ تحقق من جدول الفعاليات المحلية قبل السفر."
+   },
+   {
+    "name": "بلازا إينديبندنسيا (Plaza Independencia)",
+    "why": "الميدان المركزي ونقطة انطلاق جيدة لاستكشاف وسط المدينة مع مبانٍ ومطاعم وعروض شارع، كما يضم متحف الفن الحديث تحت الأرض؛ زُر الميدان ليلاً لمشاهدة الإضاءات والعروض الراقصة النافورة."
+   },
+   {
+    "name": "بلازا إسبانيا (Plaza España)",
+    "why": "ساحة مزخرفة بعناصرٍ إسبانية وأندلسية مع جدران تصويرية وتماثيل، تمثل علاقة المدينة بالتراث الإسباني وتستحق الزيارة للتمتع بالفن والتفاصيل المعمارية."
+   },
+   {
+    "name": "السنترال بارك (Central Park)",
+    "why": "حديقة مدينة حديثة تحتوي على نوافير وتلّة عشبية، مكان جيد لمشاهدة رسامين هاوٍ والاسترخاء بعيداً عن صخب الشوارع."
+   },
+   {
+    "name": "كاسا دي فادر (Casa de Fader)",
+    "why": "قصر تاريخي في مايور دروموند، كان مسكناً للفنان فرناندو فادر ويضم مجموعات من لوحاته، وهو خيار مناسب لمن يهتمون بالفن المحلي والخلافة الثقافية."
+   },
+   {
+    "name": "كاسا دي سان مارتين - متحف الموقع",
+    "why": "بيت أقام فيه الجنرال سان مارتين خلال فترة حكمه، يحتوي على بقايا أثرية وحفريات؛ الزيارة قصيرة لكنها ذات أهمية تاريخية."
+   },
+   {
+    "name": "أطلال سان فرانشيسكو",
+    "why": "بقايا كنيسة يسوعية دمرت في زلزال 1861 وتمنح فكرة عن دور اليسوعيين في تاريخ الأرجنتين قبل طردهم؛ تستحق الزيارة لفهم تاريخ المدينة المبكر."
+   }
+  ],
+  "getting_around": "أغلب المعالم في وسط المدينة يمكن الوصول إليها سيراً أو عبر وسائل النقل العام المحلية؛ للوصول إلى مناطق الكروم مثل مايبُو توجد خيارات قطار ترام/تِرَم وحافلات وخدمة دراجات, كما أن التاكسي وسيلة متاحة للتنقل بين الضواحي. خطط لرحلاتك مع أخذ قيلولة الظهيرة بعين الاعتبار، فالكثير من المحلات والمكاتب تغلق بعد الظهر.",
+  "food": [
+   {
+    "name": "أسادو (Asado) من حانة البارريلا",
+    "note": "اللحم المشوي الأرجنتيني محلي الصنع وجزء أساسي من تجربة الطعام في مندوزا، يقدّم عادة مع النبيذ المحلي."
+   },
+   {
+    "name": "مالبك من مايبُو ولوكسان دو كوجو",
+    "note": "نوع عنب مشهور في مندوزا، تذوق مالبيك محلي أثناء زيارة الكروم خاصة في موسم الحصاد."
+   },
+   {
+    "name": "1884 (مطعم فرانشيس مالمان)",
+    "note": "مطعم معروف يقدّم مأكولات مع تركيز على اللحوم والمنتجات المحلية في حي غودي كروز."
+   },
+   {
+    "name": "تينيدور ليبرِس (Tenedor Libres)",
+    "note": "مطاعم بوفيه شائعة تقدم تشكيلة واسعة من الأطباق وطرقاً معقولة لتذوق مأكولات أرجنتينية متنوعة."
+   },
+   {
+    "name": "صوفيا ريستو-بار (Sofia resto-bar)",
+    "note": "مطعم أنيق على شارع أريستيدس يقدم قائمة غنية باللحوم والسلطات والمعجنات وبعض الخيارات غير الاعتيادية."
+   }
+  ],
+  "budget_tips": [
+   "اشترِ زجاجات النبيذ من السوبرماركت المحلي بدلاً من متاجر السمسرة لتوفير المال، حيث كثيراً ما تكون نفس العلامات أرخص في المتاجر.",
+   "استخدم القطار/الترام أو الحافلات للوصول إلى مايبُو بدل الرحلات المنظمة المكلفة، أو استئجر دراجة من شركة موثوقة لعمل جولة الكروم بنفسك.",
+   "تجنّب عروض المطاعم الرخيصة القريبة من النُزُل إذا بدا الطعام منخفض الجودة؛ إنقاص السعر غالباً يعني جودة أقل.",
+   "خطة الزيارات في الصباح والمساء لتفادي فترات القيلولة عندما تغلق الكثير من المحلات والخدمات، ما يوفر عليك الوقت والانتظار."
+  ],
+  "safety": [
+   "كن حذراً من سرقة الحقائب أثناء جولات الدراجات أو في الأماكن المزدحمة—هناك حالات سطو على المتعلقات الموضوعة في سلال الدراجات.",
+   "احترم عادة القيلولة: الكثير من المحلات والمكاتب تغلق بعد الظهر، فخطط رحلاتك ومراجعاتك المالية (مثل البنوك) في الصباح.",
+   "تجنّب الاعتماد على عروض رخيصة مشكوك فيها قرب مناطق الإقامة للشباب، فقد تشير إلى جودة أقل وخدمة غير موثوقة.",
+   "أبقِ نسخة من وثائقك ومعلومات الاتصال بحالة الطوارئ، وراقب ممتلكاتك في الساحات والمهرجانات العامة."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشف وسط المدينة بدءاً من بلازا إينديبندنسيا ثم تمشّ في شارع أريستيدس فيلانويفا لتناول وجبة مسائية؛ زُر بلازا إسبانيا وأنهِ اليوم بمشاهدة الإضاءات عند الميدان.",
+   "اليوم الثاني: خصصه لجولة كروم في مايبُو أو لوخان دي كوجو—يمكنك حجز جولة منظّمة أو استئجار دراجة من شركة موثوقة وزيارة مجموعة من البوديغاس والتذوق عند المصانع.",
+   "اليوم الثالث: قضاء الصباح في باركي سان مارتين مع الصعود إلى سيرو دي لا غلوريا لمشاهدة إطلالة على المدينة والجبال، ثم زيارة متحف كاسا دي فادر أو أطلال سان فرانشيسكو في فترة ما بعد الظهر."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافٍ لزيارة مندوزا؟",
+    "a": "ثلاثة أيام كافية لمعرفة معالم المدينة الأساسية وتجربة جولة كروم نصف يوم أو يوم كامل، أما إذا أردت التعمق في تذوق النبيذ أو رحلات الجبال فخطط لأكثر من ذلك."
+   },
+   {
+    "q": "هل مندوزا مدينة مكلفة؟",
+    "a": "يمكن جعل الزيارة ميسورة: شراء النبيذ من السوبرماركت وتجنب الجولات السياحية الفاخرة يوفران الكثير، لكن المطاعم الراقية والجولات الخاصة للنبيذ قد تكون مكلفة."
+   },
+   {
+    "q": "هل مندوزا آمنة للسياح؟",
+    "a": "بشكل عام المدينة مقبولة للسياح، لكن انتبه لممتلكاتك خصوصاً أثناء جولات الدراجات أو في الأماكن المزدحمة، وراجع نصائح الأمان المحلية قبل المشاركة في نشاطات خارجية."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "وسط المدينة حول بلازا إينديبندنسيا وشارع أريستيدس يوفّران وصولاً سهلاً إلى المطاعم والمعالم، وهو موقع عملي للمبيت أثناء استكشاف المدينة."
+   },
+   {
+    "q": "كيف أزور كروم النبيذ في مايبُو؟",
+    "a": "يمكن الوصول إلى مايبُو بقطار ترام/ترم أو بحافلة أو تاكسي، كما تُنظم جولات بالدراجة؛ بعض الكروم تقبل الزوار بدون حجز بينما يتطلب البعض الآخر حجزاً مسبقاً، فتحقق من أماكن الزيارة قبل الانطلاق."
+   }
+  ]
+ }
+}

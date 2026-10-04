@@ -1,0 +1,93 @@
+Amalfi, Italy
+Labels: beach, relax, food | Split: test
+Source: https://en.wikivoyage.org/wiki/Amalfi (CC BY-SA 4.0)
+
+===== CLEANED GUIDE TEXT (4,932 characters) =====
+
+Amalfi is a town in Campania, Italy. Amalfi is the heart of this magnificent Italian coastline and a must-see town on your Amalfi Coast adventure. It lies at the mouth of a deep ravine, at the foot of Monte Cerreto, surrounded by dramatic cliffs and coastal scenery. Amalfi is a UNESCO World Heritage Site. In 2017, it was home to 5,100 people.
+
+ 
+Understand
+
+Amalfi is one of the bigger towns on the Amalfi coast. It has squares connected by pedestrian streets full of restaurants, souvenir shops and tourists.
+
+See
+ 
+* 
+Amalfi Cathedral. Built in the 13th century. You can see its magnificent bell tower from the harbour.
+
+* 
+Cloister of Paradise. Next to the cathedral, was also built in the 13th century. It is home to old mosaics and paintings, and 120 columns built in the Arabic style.
+
+* 
+Paper Mill Museum. 
+
+
+ 
+* 
+Santa Maria del Bando. Santa Maria del Bando is a small, scenic chapel perched high above Amalfi, near the ancient watchtower of Pontone. Dating back to the 12th century, it is named after a legend in which the Virgin Mary saved a man wrongfully sentenced to death by publicly banning, or proclaiming his innocence. The chapel is accessible via a steep footpath and rewards visitors with sweeping views of the Amalfi Coast, the Valle delle Ferriere, and the Gulf of Salerno.
+
+* 
+Arsenal of Amalfi. A former shipyard from the medieval Republic of Amalfi, it now houses a museum about the republic’s history.
+
+
+Do
+
+* The beach can be crowded in summer, particularly in August when Italians are on holiday and let their kids loose for the month on the strip of pebbled beach.
+* Evening walk along the marina to where the mega-yachts dock in summer time.
+* The Amalfi Coast to Capri Boat Excursion is a full-day sightseeing tour taking in all the Amalfi Coast villages, including Ravello, Positano, Atrani, Praiano, Maiori and Minori. You visit the grottos in Capri and Amalfi, you can go swimming directly from the boat, the tour circumnavigates Capri island and you have the opportunity to disembark in Capri for three hours of your own time before you cruise back at about 6pm. Departures from Amalfi, Maiori and Minori.
+* A half-day Amalfi to Positano Cruise is also offered by Amalfi Boat Excursion and is perfect for travellers with limited time.
+*  
+Charter La Dolce Vita. Offer private luxury daily, weekly or overnight motor-yacht charter tours,
+
+*  
+That's Amore Cycling Excursion. Offer in every season exclusive guided and customized cycling exploration of the coast : short and easier route and a longer or more demanding route for the keener cyclists. Booking Required.
+
+* Hiking in the Valle delle Ferriere from the Valle dei Mulini locality upwards through the Valle delle Ferriere and back to Chiorito locality.
+
+Buy
+
+* Cameo brooches
+* Limoncello
+* Fresh herb mixes for making spicy Southern Italian-style pastas
+* 
+Angelo Fusco Jewellery. Unique handcrafted fine jewels, corals and cameos.
+
+
+Eat
+
+*  
+Marina Grande. Located on the main beach front of Amalfi (the stradone), it offers a restaurant, bar and private beach specialising in seafood cuisine as well as the many traditional pasta dishes Italy and indeed the Amalfi coast is renowned for.
+
+* 
+Risto. Good local food and wine.
+
+* 
+Donna Stella. Place for homestyle pizza, set under lemon groves this small family trattoria is a great place to escape the heat of the day.
+
+* 
+Stella Maris. Offers very fresh and light lunches of local foods at good prices.
+
+* 
+Eolo. 
+
+* 
+La Caravella. 
+
+* 
+Da Ciccio Cielo-Mare-Terra. 
+
+
+Drink
+There are several hot spots for good cappuccino and sweet treats in Amalfi.
+* Pasticceria Pansa has overpriced coffee but excellent traditional Amalfitani cakes and a shaded morning position in the Piazza Duomo.
+* Directly opposite Pansa is Bar Francese and this is where prime aperitivo hour occurs in Amalfi for those holidaymakers and touring Italians who want to be seen.
+* Nearby is Bar Savoia for very good cakes to take away.
+* Up the main concourse from the piazza check out Pasticceria Leone which has excellent sweets, biscuits (all made on site) and espresso. There is a small bar next to a mini-mart in Piazza dei Dodgi, the little square off the Duomo, and it is very popular for locals and people watching.
+* Grand Caffe overlooking the main beach is also nice for a drink (their light lunches are very hit and miss however) with lovely relaxing views up the coast while the Marina Grande restaurant operate a bar on the beach with funky decor and candle-light, which is a very good choice on a hot summer night.
+* Bar Flavio Gioia opposite the main ferry pier and parking bay has the best gelato in town and offers a good pit stop before taking a bus from the nearby terminal or catching a ferry.
+* For dancing, you will have to take yourselves to Praiano to the famous Africana nightclub or onto Positano to an equally popular disco hub, Music on the Rocks or up to Positano's chic Next2 bar.
+
+===== TOKENS THE MODEL TRAINS ON (389) =====
+
+campania heart magnificent italian coastline coast adventure lies mouth deep ravine foot monte cerreto surrounded dramatic cliff coastal scenery unesco world heritage site home bigger town coast square connected pedestrian street restaurant souvenir shop cathedral built century magnificent bell tower harbour cloister paradise cathedral built century home old mosaic painting column built arabic style paper mill museum santa maria bando santa maria bando scenic chapel perched ancient watchtower pontone dating century named legend virgin mary saved man wrongfully sentenced death publicly banning proclaiming innocence chapel accessible steep footpath reward sweeping view coast valle delle ferriere gulf salerno arsenal former shipyard medieval house museum republic history beach crowded summer particularly italian holiday let kids loose month strip pebbled beach evening walk marina mega yacht dock summer coast capri boat excursion sightseeing tour taking coast village ravello positano atrani praiano maiori minori grotto capri swimming directly boat tour circumnavigate capri island opportunity disembark capri cruise departure maiori minori half positano cruise offered boat excursion perfect traveller limited charter dolce vita private luxury weekly overnight motor yacht charter tour amore cycling excursion season exclusive guided customized cycling exploration coast short easier route longer demanding route keener cyclist booking required hiking valle delle ferriere valle dei mulini locality upward valle delle ferriere chiorito locality cameo brooch limoncello fresh herb mixe making spicy italian style pasta angelo fusco jewellery unique handcrafted fine jewel coral cameo marina grande beach front stradone restaurant bar private beach specialising seafood cuisine traditional pasta dish indeed coast renowned risto food wine donna stella homestyle pizza set lemon grove family trattoria escape heat stella maris fresh light lunch food price eolo caravella ciccio cielo mare terra hot spot cappuccino sweet treat pasticceria pansa overpriced coffee excellent traditional amalfitani cake shaded morning position piazza duomo directly opposite pansa bar francese prime aperitivo hour occur holidaymaker touring italian want nearby bar savoia cake concourse piazza check pasticceria leone excellent sweet biscuit site espresso bar mini mart piazza dei dodgi little square duomo local watching grand caffe overlooking beach light lunch hit miss lovely relaxing view coast marina grande restaurant operate bar beach funky decor candle light choice hot summer night bar flavio gioia opposite ferry pier parking bay gelato pit stop taking bus nearby terminal catching ferry dancing praiano famous africana nightclub onto positano equally disco hub music rock positano chic bar

@@ -1,0 +1,226 @@
+{
+ "slug": "osaka",
+ "name": "Osaka",
+ "country": "Japan",
+ "tags": [
+  "food",
+  "nightlife",
+  "shopping"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Osaka",
+ "en": {
+  "city_name": "Osaka",
+  "country_name": "Japan",
+  "title": "Osaka travel guide: things to do, eat and know",
+  "meta_description": "Practical travel guide to Osaka: top sights, food to try, budget tips and a 3-day itinerary for first-time visitors.",
+  "h1": "Osaka travel guide: what to see, eat and know",
+  "intro": [
+   "Osaka is the energetic heart of Japan's Kansai region and the largest city in the Osaka–Kobe–Kyoto urban area. It is famous for lively nightlife, a huge range of restaurants, and excellent transport links that make it a convenient base for exploring the region.",
+   "Osakans are known for their warm, colorful character and a local culture of enjoying food and drink—summed up in the idea of kuidaore, 'eat yourself into ruin.' The city blends reconstructed historic sites, industrial-era heritage and bustling shopping and entertainment districts from Umeda in the north to Namba in the south."
+  ],
+  "best_time": "Spring (for cherry blossoms) and autumn are especially popular for pleasant conditions and seasonal events, while other times of year are good if you prefer fewer crowds. Festivals and indoor attractions mean Osaka is worth visiting year-round.",
+  "top_sights": [
+   {
+    "name": "Osaka Castle",
+    "why": "A symbol of the city with an attractive surrounding park and a museum-like interior that explains local history; combine a castle visit with the nearby Osaka Museum of History for more context."
+   },
+   {
+    "name": "Dōtonbori and Hōzenji-yokochō",
+    "why": "Osaka's most famous entertainment and dining area where you can sample many local specialties; go in the evening when restaurants and street vendors are busiest."
+   },
+   {
+    "name": "Umeda Sky Building",
+    "why": "A striking modern building with an observation deck and a conspicuous mid-air escalator; it offers panoramic city views and sits close to Osaka Station."
+   },
+   {
+    "name": "Osaka Aquarium Kaiyukan",
+    "why": "One of the world's largest aquariums with many marine species and related attractions nearby; pair a visit with the Tenpozan Ferris Wheel and surrounding bay-area attractions."
+   },
+   {
+    "name": "Sumiyoshi Shrine",
+    "why": "One of Japan's oldest Shinto shrines, notable for its unusual architecture and a distinctive arched bridge; it's south of the city centre and provides a quieter contrast to busy urban areas."
+   },
+   {
+    "name": "Tsūtenkaku and Shinsekai",
+    "why": "A retro, working-class district anchored by the Tsūtenkaku tower and known for kushikatsu and lively street scenes; explore on foot to soak up the atmosphere."
+   },
+   {
+    "name": "Shitennōji Temple",
+    "why": "A historic temple historically regarded as one of Japan's earliest Buddhist sites; the current buildings are reconstructions that convey the site's long heritage."
+   },
+   {
+    "name": "Osaka Science Museum",
+    "why": "An interactive museum on Nakanoshima with hands-on exhibits and a planetarium, suitable for families and curious visitors wanting a science-focused outing."
+   }
+  ],
+  "getting_around": "Osaka has extensive rail and subway networks linking districts such as Umeda (Kita) and Namba (Minami) and providing easy access around the city. Major stations and the city's connectivity make it straightforward to reach attractions and other parts of the Kansai region; ferries and local transit serve bay-area attractions.",
+  "food": [
+   {
+    "name": "Takoyaki",
+    "note": "Octopus-filled fried dumplings that are Osaka's quintessential street food, best eaten hot from vendor carts."
+   },
+   {
+    "name": "Okonomiyaki",
+    "note": "Savory cabbage-based pancakes often served in small, informal restaurants where they are grilled at the counter."
+   },
+   {
+    "name": "Kushikatsu",
+    "note": "Battered and deep-fried skewers of meat, vegetables and other ingredients, commonly enjoyed with beer in Shinsekai and elsewhere."
+   },
+   {
+    "name": "Battera (mackerel sushi)",
+    "note": "A square-shaped pressed sushi featuring mackerel on rice, available in sushi shops and often sold as take-away in department stores and stations."
+   },
+   {
+    "name": "Doteyaki",
+    "note": "Slow-stewed beef tendon in miso that is rich and gelatinous, frequently ordered as a casual accompaniment to fried snacks."
+   }
+  ],
+  "budget_tips": [
+   "Seek out street food and small local restaurants in areas like Dōtonbori to get filling meals at lower cost than high-end dining.",
+   "Buy take-away options such as battera from department stores or station kiosks rather than dining in at restaurants for some meals.",
+   "Explore free or low-cost sights such as parks, shrine precincts and neighbourhood districts to balance paid attractions.",
+   "Shop in a variety of areas—from large department stores to small boutiques—so you can compare prices and find cheaper souvenirs or clothing."
+  ],
+  "safety": [
+   "Osakans are generally warm and friendly; approach people courteously and be polite in public spaces.",
+   "Show respect at shrines and temples by following basic practices such as observing quiet and any local rules at entrances.",
+   "Nightlife areas can be lively and sometimes intense; stay aware of your surroundings and personal belongings.",
+   "Be mindful that some districts, such as major red-light areas, may not suit all tastes — visit only if comfortable with the scene."
+  ],
+  "itinerary": [
+   "Day 1: Explore Umeda and Kita — visit the Umeda Sky Building for views, wander shopping areas around Umeda Station, and sample local cuisine in nearby eateries.",
+   "Day 2: Discover Minami — spend time in Dōtonbori and Hōzenji-yokochō tasting takoyaki and okonomiyaki, visit the Kamigata Ukiyoe Museum in Namba and stroll through Shinsekai to see Tsūtenkaku.",
+   "Day 3: History and the bay — visit Osaka Castle and the Osaka Museum of History, then head to the bay area for the Osaka Aquarium Kaiyukan and nearby attractions; finish with an onsen or spa experience if you wish."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Osaka?",
+    "a": "Three full days will let you cover the main neighbourhoods, sample local food, visit major sights like Osaka Castle and the aquarium, and still leave time for shopping or a theme park visit."
+   },
+   {
+    "q": "Is Osaka expensive compared with other Japanese cities?",
+    "a": "Osaka offers a wide range of options from street food and casual eateries to high-end dining, and accommodation choices across price brackets, so costs can be managed depending on your preferences."
+   },
+   {
+    "q": "Is Osaka safe for solo travellers?",
+    "a": "Yes, Osaka is generally safe; stay aware in busy nightlife districts, keep an eye on personal belongings and show respect at religious sites and public spaces."
+   },
+   {
+    "q": "What is the best area to stay in Osaka?",
+    "a": "Umeda (Kita) is a major transport and shopping hub, while Namba (Minami) is ideal for nightlife and dining; both are convenient bases depending on whether you prefer an uptown or downtown atmosphere."
+   },
+   {
+    "q": "How do I get from major transport hubs to the city?",
+    "a": "Osaka is well connected by rail and subway networks that link major stations and districts; use these train and metro services to reach central neighbourhoods and attractions."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "أوساكا (Osaka)",
+  "country_name": "اليابان",
+  "title": "أوساكا دليل السفر: ما تراه وما تأكله وتخططه",
+  "meta_description": "دليل أوساكا يقدّم أهم المعالم، مأكولات محلية، نصائح لتوفير المال ومسار لثلاثة أيام لاكتشاف المدينة والمنطقة المحيطة.",
+  "h1": "دليل السفر إلى أوساكا: ماذا ترى وتأكل وتعرف",
+  "intro": [
+   "أوساكا هي القلب الحيوي لمنطقة كانساي وأكبر مدن مجموعة أوساكا-كوبه-كيوتو، وتشكّل قاعدة ممتازة لاستكشاف المنطقة كلها بفضل تنوع خيارات الإقامة والاتصال الجيد بشبكة النقل.",
+   "المدينة مشهورة بحياتها الليلية ومأكولاتها ودفء سكانها الذين يتمسكون بثقافة الانغماس في الطعام والترفيه؛ من هنا تنبع شهرتها كمكان مثالي لتجربة المطبخ الياباني الشعبي والثقافة الحضرية في آنٍ واحد."
+  ],
+  "best_time": "أفضل وقت للزيارة هو الربيع لمشاهدة أزهار الكرز حول طريق مرفق سكّة طبع اليابان (Japan Mint) والصيف للخروج الليلي والفعاليات، بينما تظل المدينة نابضة بالحياة طوال السنة مع مواسم مزدحمة في العطلات المحلية.",
+  "top_sights": [
+   {
+    "name": "قلعة أوساكا (Osaka Castle)",
+    "why": "أشهر معالم المدينة وحديقة جميلة حولها؛ البناء الحالي إعادة إعمار مع متحف داخلي يشرح تاريخ المدينة، ويفضّل زيارة المتحف المجاور (متحف تاريخ أوساكا) لفهم الخلفية التاريخية."
+   },
+   {
+    "name": "دوتونبوري (Dōtonbori) ومنطقة هوزنجي-يوكوتشو",
+    "why": "منطقة الترفيه والطعام حيث تتجمع المطاعم وأكشاك الشوارع لتجربة مأكولات أوساكا المحلية؛ أفضل وقت للزيارة عند المساء عندما تزدحم الأكشاك والمطاعم."
+   },
+   {
+    "name": "متحف علوم أوساكا (Osaka Science Museum)",
+    "why": "مركز تفاعلي على نكانوشيما مع قبة فلكية وسينما علمية، مناسب للعائلات ولمن يهتم بالعلوم والتجارب العملية."
+   },
+   {
+    "name": "مبنى أوميدا سكاي (Umeda Sky Building)",
+    "why": "مبنى ذو تصميم غير معتاد يحتوي على منصة مراقبة وسِلم متحرك معلق بين برجين، ويقع قرب محطة أوساكا الرئيسية مما يجعل الوصول إليه سهلاً."
+   },
+   {
+    "name": "مقبرة سوميوشي (Sumiyoshi Taisha)",
+    "why": "أحد أقدم مواقع الشنتو في اليابان ويتميّز بطراز معماري فريد وجسر منحني يطل على بركة؛ مكان مناسب لتجربة الجانب الديني والتقليدي للمدينة."
+   },
+   {
+    "name": "تسوتينكاكو (Tsūtenkaku) في شنسيكاي",
+    "why": "برج معروف بمنصة مشاهدة ويحيط به حي شنسيكاي الشعبي؛ ركّز زيارتك على استكشاف المطاعم التقليدية وخاصّة الكوشيكاتسو في المنطقة."
+   },
+   {
+    "name": "معبد شيتينّوجي (Shitennōji)",
+    "why": "معبد تاريخي يُنظر إليه كأحد أقدم المعابد البوذية في اليابان، المباني الحالية هي إعادة إعمار لكن الموقع يقدم نظرة على تاريخ الديانة في المدينة."
+   },
+   {
+    "name": "متنزه ريوكوتشي ومتحف البيوت الريفية المفتوح",
+    "why": "متحف في الهواء الطلق يضم بيوتاً من حقبة إيدو تُظهر حياة الناس العاديين سابقاً، وهو مكان جيد لفهم التاريخ الشعبي خارج مركز المدينة."
+   }
+  ],
+  "getting_around": "أوساكا مترابطة جيداً بوسائل النقل العام بما فيها قطارات الأنفاق والسكك الحديدية التي تربط مناطق مثل أوميدا ونامبا ومحاور أخرى؛ المشي فعال داخل أحياء الترفيه والمطاعم، والانتقالات بين المدن في منطقة كانساي تتم بسهولة عبر شبكة القطارات.",
+  "food": [
+   {
+    "name": "أوكونوميياكي (Okonomiyaki)",
+    "note": "فطائر محشوة بالملفوف تجهّز في مطاعم صغيرة متخصّصة وتعد تجربة أساسية في أوساكا."
+   },
+   {
+    "name": "تاكوياكي (Takoyaki)",
+    "note": "كرات مقليّة محشوة بقطع الأخطبوط وتُباع بكثرة من أكشاك الشوارع خاصة عند المساء حول المناطق الكبرى."
+   },
+   {
+    "name": "كوشيكاتسو (Kushikatsu)",
+    "note": "أسياخ مقلية ومغلفة تُقدّم مع صلصة داكنة، ومن أشهر الأماكن لتجربتها حي شنسيكاي."
+   },
+   {
+    "name": "باتّيرا سوشي (Battera)",
+    "note": "نوع حجري من السوشي مع سردين مُملّح مضغوط في قالب خشبي، متوفر أيضاً في محلات الأقسام الغذائية في المتاجر ومحطات القطارات."
+   },
+   {
+    "name": "دوتياكي (Doteyaki)",
+    "note": "قطع من وتر البقر مطبوخة في مرق ميسو حتى تذوب في الفم وتُقدم غالباً كمرفق مع الكوشيكاتسو."
+   }
+  ],
+  "budget_tips": [
+   "ابحث عن وجبات من أكشاك الشوارع ومحال الأقسام الغذائية في المتاجر ومحطات القطارات لخيارات سريعة وأرخص من المطاعم الراقية.",
+   "اقضِ وقتاً في المشي واستكشاف أحياء مثل شينسايباشي وأميريكا-مورا بدلاً من إنفاق كبير على الجولات السياحية المدفوعة.",
+   "استخدم القطارات ومترو الأنفاق للتنقل داخل المدينة بدلاً من سيارات الأجرة لتوفير المال.",
+   "اختَر الإقامة بحسب الحي؛ أوميدا ونامبا يوفران وصولاً سهلاً للمطاعم والأنشطة مما قد يقلل حاجتك لاستخدام النقل كثيراً."
+  ],
+  "safety": [
+   "أوساكا مدينة حضرية بوجه عام؛ احرص على الاحتفاظ بممتلكاتك الشخصية في الأماكن المزدحمة خصوصاً حول محطات القطارات والمناطق السياحية.",
+   "احترم العادات المحلية: كن هادئاً في القطارات وتجنّب التكلّم بصوت مرتفع عند ركوب وسائل النقل العام.",
+   "في الليل تبقّى في الشوارع المضيئة والمزدحمة إذا لم تكن على دراية بالمنطقة؛ بعض أحياء الترفيه قد لا تروق للجميع."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشاف أوميدا — زيارة مبنى أوميدا سكاي، التسوّق في مراكز هِب ومحيط محطة أوساكا، والاستمتاع بسهرة في مطاعم أو مناطق الترفيه القريبة.",
+   "اليوم الثاني: قلب المدينة — زيارة قلعة أوساكا ومتحف تاريخ أوساكا، ثم التجول في نكانوشيما وزيارة متحف العلوم، وختام اليوم في منطقة دوتونبوري لتجربة الطعام الليلي.",
+   "اليوم الثالث: الأحياء التقليدية والثقافية — زيارة شيتينّوجي وسوميوشي تايشا، ثم التوجّه إلى شنسيكاي لتجربة الكوشيكاتسو وزيارة برج تسوتينكاكو، أو قضاء وقت في متنزه ريوكوتشي ومتحف البيوت الريفية المفتوح."
+  ],
+  "faq": [
+   {
+    "q": "كم يومًا أحتاج في أوساكا؟",
+    "a": "ثلاثة أيام تكفي للمعالم الرئيسية وتجربة الحياة الليلية والطعام؛ يمكن تمديد الزيارة بسهولة إذا أردت رحلات يومية إلى مدن قريبة في كانساي."
+   },
+   {
+    "q": "هل أوساكا مكلفة؟",
+    "a": "توفر المدينة خيارات لكل ميزانية: من أكشاك الشوارع والوجبات السريعة إلى مطاعم الراقية، واستخدام النقل العام يساعد على تقليل النفقات."
+   },
+   {
+    "q": "هل أوساكا آمنة للزوار؟",
+    "a": "بشكل عام أوساكا آمنة لسياح لكن كبقية المدن الكبيرة يجب الانتباه للممتلكات الشخصية وتجنّب المناطق المعزولة في الليل إن لم تكن مألوفة لك."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "مناطِق أوميدا (Kita) ونامبا (Minami) مناسبة جداً للسياح لأنها تجمع بين الوصول السهل للمواصلات ووفرة المطاعم والتسوق والحياة الليلية."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط أوساكا؟",
+    "a": "أوساكا مترابطة جيداً بشبكات النقل العام، والقطارات وخيارات النقل العام الأخرى تَوصِل إلى مراكز المدينة بسهولة؛ اختَر وسيلة النقل العام المناسبة لميزانيتك ووقت وصولك."
+   }
+  ]
+ }
+}

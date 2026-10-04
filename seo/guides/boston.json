@@ -1,0 +1,226 @@
+{
+ "slug": "boston",
+ "name": "Boston",
+ "country": "United States",
+ "tags": [
+  "history",
+  "culture"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Boston",
+ "en": {
+  "city_name": "Boston",
+  "country_name": "United States",
+  "title": "Boston travel guide: what to see, eat and know",
+  "meta_description": "Practical Boston travel guide with top sights, food to try, money-saving tips and a 3-day itinerary for history, museums and Cambridge.",
+  "h1": "Boston travel guide: what to see, eat and know",
+  "intro": [
+   "Boston is one of America's oldest cities, founded in 1630 and rich in colonial history, preserved buildings and stories from the Revolutionary era. The city blends its New England past with lively universities, arts institutions and a civic culture that still values education and public life.",
+   "Today Boston mixes historic neighborhoods and waterfront landmarks with renewed cultural districts and a large student population that refreshes the city every autumn. Visitors will find museums, colonial sites, notable architecture and distinct neighborhoods—from the North End to Back Bay—that reward exploration on foot or by transit."
+  ],
+  "best_time": "Spring through fall is generally the most pleasant time to visit: milder weather, active outdoor events and the city animated by students arriving in autumn. Winters can be cold and snowy; plan accordingly if you travel then.",
+  "top_sights": [
+   {
+    "name": "Freedom Trail (colonial sites)",
+    "why": "A linked sequence of historic locations including the Old State House, Old South Meeting House, Old North Church and Paul Revere House that together tell the story of Boston's Revolutionary era; best done on foot—wear comfortable shoes and allow time for museum visits."
+   },
+   {
+    "name": "Faneuil Hall & Quincy Market",
+    "why": "A central gathering spot combining historic meeting halls with a lively market and food stalls; go during off-peak hours to avoid the largest tour groups and find better seating for a meal."
+   },
+   {
+    "name": "Massachusetts State House",
+    "why": "An iconic civic building with a well-proportioned façade and a gold dome that dominates Beacon Hill; view it from the surrounding parkland or join a guided tour where available to learn about its history."
+   },
+   {
+    "name": "Museum of Fine Arts, Boston",
+    "why": "The city's premier fine art museum with extensive collections from American and international art traditions; set aside several hours to see highlights like impressionist works and American art."
+   },
+   {
+    "name": "Isabella Stewart Gardner Museum",
+    "why": "An intimate, eclectic museum housed in a building styled like an Italian palazzo with a distinctive personal collection; enjoy the courtyard and the museum’s unconventional layout—check the museum's calendar for special exhibitions."
+   },
+   {
+    "name": "Harvard and MIT campuses (Cambridge)",
+    "why": "Two world-class universities with notable architecture and campus museums; stroll campus grounds or join scheduled tours in Cambridge to see both historic and modern architectural highlights."
+   },
+   {
+    "name": "U.S.S. Constitution and Charlestown",
+    "why": "The oldest commissioned naval vessel afloat and nearby Charlestown landmarks such as the Bunker Hill Monument, offering tangible links to early American maritime and military history; combine a harbor visit with a walk around the neighborhood."
+   },
+   {
+    "name": "Boston Public Library & Trinity Church (Copley Square)",
+    "why": "Architectural highlights in Back Bay—both the library and Trinity Church are notable for their design and interiors; visit Copley Square for a compact experience of Boston's classical architecture."
+   }
+  ],
+  "getting_around": "Boston is compact and walkable in many central neighborhoods; expect to combine walking with public transit for longer trips. The city and nearby Cambridge are served by subway and commuter rail lines, and the Red Line provides direct transit into Cambridge; taxis and rideshares are widely available for off-hours or destinations not served by train.",
+  "food": [
+   {
+    "name": "Clam chowder",
+    "note": "A thick, cream-based New England chowder with clams, potatoes and onions—many places offer their own take, and tomato-based versions are not traditional here."
+   },
+   {
+    "name": "Fried clams",
+    "note": "Clams removed from the shell, battered and deep-fried—a regional favorite often found at seafood stands and casual eateries."
+   },
+   {
+    "name": "Atlantic cod / scrod",
+    "note": "White-fleshed fish commonly served as cod or scrod (which may be haddock or another white fish), a long-standing New England seafood option."
+   },
+   {
+    "name": "North End Italian dining",
+    "note": "The North End offers classic Italian restaurants—an atmospheric place for a sit-down meal and one of the city's most memorable dining neighborhoods."
+   },
+   {
+    "name": "Asian cuisine in Chinatown and Allston",
+    "note": "Both neighborhoods provide a wide variety of Asian restaurants and more budget-friendly dining options compared with some downtown spots."
+   }
+  ],
+  "budget_tips": [
+   "Consider attraction passes such as the Boston CityPASS or GoBoston Card to save on multiple paid sights if you plan heavy sightseeing.",
+   "Check 50 Under 50 for discounted entry to popular attractions run by the state tourism organization.",
+   "Enjoy many of Boston's historic sites, parks and waterfront areas on foot for low-cost sightseeing—walking reduces transit and tour expenses.",
+   "Use public transit rather than taxis for routine trips and look for free or low-cost cultural events listed on The Boston Calendar or the city's event page."
+  ],
+  "safety": [
+   "Respect historic sites and their rules—many are preserved and enforced to protect fragile buildings and artifacts.",
+   "Smoking is prohibited inside restaurants and bars in the metro Boston area, so plan outdoor smoking accordingly.",
+   "Bostonians can appear blunt; avoid calling the city 'Beantown' to locals and be polite when asking for directions or help.",
+   "Keep an eye on personal belongings in crowded tourist areas such as Quincy Market and major transit hubs."
+  ],
+  "itinerary": [
+   "Day 1: Follow the Freedom Trail through downtown—visit the Old State House, Faneuil Hall and Quincy Market—then explore nearby historic streets and waterfront sites.",
+   "Day 2: Spend a museum day in the Fenway and Back Bay: visit the Museum of Fine Arts and the Isabella Stewart Gardner Museum, then see the Massachusetts State House and Boston Public Library in Copley Square.",
+   "Day 3: Cross the Charles to Cambridge to see Harvard and MIT campuses and museums, then return to the harbor area to visit the U.S.S. Constitution and Charlestown's Bunker Hill Monument."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Boston?",
+    "a": "Three days gives you a solid overview of downtown history, a museum day and time in Cambridge; you can add more days to explore neighborhoods, suburbs or additional museums."
+   },
+   {
+    "q": "Is Boston expensive to visit?",
+    "a": "Boston can be costly compared with smaller U.S. cities, especially for dining and lodging; using attraction passes, public transit and exploring free outdoor landmarks can help reduce expenses."
+   },
+   {
+    "q": "Is Boston safe for tourists?",
+    "a": "Boston is generally safe for visitors who use common-sense precautions like watching belongings in crowded areas and following posted rules at historic sites; daytime sightseeing areas are well-trafficked and suitable for most travelers."
+   },
+   {
+    "q": "What is the best area to stay in Boston?",
+    "a": "Central neighborhoods such as Back Bay, Beacon Hill or near the waterfront place you within walking distance of many historic sites, museums and transit options; Cambridge is a good choice if you plan to spend more time at the universities."
+   },
+   {
+    "q": "How do I get from the airport to the city?",
+    "a": "Several common options connect airports with central Boston, including public transit, airport shuttles, taxis and rideshare services; choose based on your luggage, arrival time and budget."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "بوسطن (Boston)",
+  "country_name": "الولايات المتحدة",
+  "title": "بوسطن دليل السفر: معالم، طعام، ونصائح",
+  "meta_description": "دليل لبوسطن يشرح أهم المعالم التاريخية والمتاحف، أطباق المأكولات البحرية، نصائح لتوفير المال وخطة لثلاثة أيام.",
+  "h1": "دليل سفر بوسطن: ماذا ترى، تأكل وتعرف",
+  "intro": [
+   "بوسطن مدينة غنية بالتاريخ والتعليم والثقافة، تأسست في 1630 وتشتهر بدورها في الثورة الأمريكية وبمعالم تعود لمرحلة ما قبل قيام الجمهورية. ستجد مباني أقدم من الدولة نفسها متداخلة مع مؤسسات جامعية مرموقة وحياة مدنية حيوية.",
+   "المدينة لا تعيش على ماضيها فقط؛ فقد شهدت تجديدات وتحولات جعلتها أكثر انفتاحًا، وتنتعش ثقافتها خصوصًا مع تدفق الطلبة كل خريف إلى جامعات مثل هارفارد وMIT. لا تنخدع بالتصورات عن موقف السكان، فالبوسطنيون غالبًا ودودون—فقط تجنّب مناداة المدينة بلقب \"Beantown\" أمامهم."
+  ],
+  "best_time": "المدينة مشهورة بحياة موسمية واضحة؛ إذا كنت تفضل طقسًا معتدلًا وتظاهرات ثقافية فلاحظ فصول الربيع والخريف، أما الصيف فمناسب للأحداث الموسيقية والحفلات في الهواء الطلق. المواسم السياحية تجذب جمهورًا كبيرًا خاصة خلال فصلي الصيف والخريف.",
+  "top_sights": [
+   {
+    "name": "Old State House",
+    "why": "أحد أقدم المباني العامة في أمريكا وموقع غني بالأحداث التاريخية من الحقبة الاستعمارية؛ جيد للبدء بجولة تاريخية في قلب المدينة."
+   },
+   {
+    "name": "Faneuil Hall وQuincy Market",
+    "why": "مجموعة ساحرة تضم السوق التاريخي ومناطق جذب سياحيّة؛ مكان عملي للتسوّق وتجربة أطعمة متعددة، وتوجد حولها أنشطة لزوار المدينة."
+   },
+   {
+    "name": "Old North Church",
+    "why": "كنيسة تاريخية مرتبطة برحلة بول ريفير الشهيرة؛ مناسبة لربط أجزاء الجولة الاستعمارية والاطلاع على مواقع بارزة قرب الميناء."
+   },
+   {
+    "name": "Paul Revere House",
+    "why": "بيت بول ريفير التاريخي ويكمل تجربة التعرف على شخصيات الثورة الأمريكية؛ مفيد للمهتمين بالسير على خطى الحدث التاريخي."
+   },
+   {
+    "name": "Massachusetts State House",
+    "why": "مبنى حكومي بارز بواجهة مميزة وقبة ذهبية، يقع في منطقة Beacon Hill حيث توجد أيضًا مبانٍ تاريخية وجمال معماري."
+   },
+   {
+    "name": "Boston Public Library",
+    "why": "مكتبة عامة ذات أقسام كلاسيكية وحديثة وبنايات متميزة تستحق الزيارة لمحبي العمارة والثقافة؛ انظر كل من وجهيها الحديث والكلاسيكي."
+   },
+   {
+    "name": "Museum of Fine Arts",
+    "why": "أحد متاحف المدينة الرئيسية مع مجموعات واسعة تشمل الانطباعيين والفن القديم والأمريكي؛ مناسب ليوم مخصص للمتاحف في حي Fenway."
+   },
+   {
+    "name": "حرم هارفارد وMIT (كامبريدج)",
+    "why": "زيارتا الحرمين تكشفان عن إرث تعليمي وعمارة ملفتة وعروض معمارية من مصممين مشهورين؛ تحقق من جداول الجولات الجامعية المتاحة للعامة."
+   }
+  ],
+  "getting_around": "المدينة سهلة التجوال سيرا في المناطق المركزية والحيّز التاريخي، والتنقّل بين الأحياء القريبة والحرم الجامعي في كامبريدج مريح أيضًا. لركوب المعالم الأبعد أو الضواحي قد تحتاج إلى وسائل نقل برية أو سيارة؛ تحقق من خيارات النقل العام المحلية وجداول الفعاليات قبل زيارتك.",
+  "food": [
+   {
+    "name": "حساء البطلينوس (Clam Chowder)",
+    "note": "حساء كريمي تقليدي في نيو إنجلاند مع قطع بطاطس وبلح البحر، ولكل محل لمسته الخاصة."
+   },
+   {
+    "name": "المحار المقلي (Fried Clams)",
+    "note": "محار مقشر ومغمس في عجينة ثم مقلي — صنف إقليمي شهير وممتع للذوق."
+   },
+   {
+    "name": "القد الأطلسي / سكرود (Atlantic Cod / scrod)",
+    "note": "السمك الأبيض التقليدي المرتبط بتاريخ الصيد في المنطقة، قد يُقدم كـ scrod (قد يكون haddock أو نوع آخر مماثل)."
+   },
+   {
+    "name": "المطاعم الإيطالية في الحي الشمالي (North End)",
+    "note": "الحي الإيطالي يقدم وجبات جلوس تقليدية وأجواء لا تُنسى لعشاء كلاسيكي."
+   },
+   {
+    "name": "المأكولات الآسيوية في Chinatown وAllston",
+    "note": "خيار جيد لتناول وجبة لذيذة وأحيانًا أقل تكلفة، مع تشكيلة واسعة من المطاعم الآسيوية."
+   }
+  ],
+  "budget_tips": [
+   "تحقق من عروض 50 Under 50 التي تديرها جهة السياحة في ماساتشوستس للحصول على حسومات على بعض المعالم الشهيرة.",
+   "انظر في بطاقة CityPASS المذكورة والتي تتيح زيارة حتى أربعة معالم خلال 9 أيام بسعر محدد، أو بطاقات GoBoston التي تُباع حسب عدد الأيام أو عدد المعالم.",
+   "تناول الطعام في Chinatown أو Allston للحصول على خيارات غالبًا أقل تكلفة من المطاعم السياحية في وسط المدينة.",
+   "تسوّق في Boston Public Market أو تجنّب المتاجر الأكثر توجها للسائحين في Quincy Market إذا كنت تبحث عن خيارات أرخص."
+  ],
+  "safety": [
+   "التدخين ممنوع داخل أي مطعم أو حانة في منطقة مترو بوسطن؛ التزم بلوائح الأماكن المغلقة.",
+   "احترم المواقع التاريخية وتصرّفاتها كمواقع أثرية أو متاحف—اتباع التعليمات يحافظ على التجربة للجميع.",
+   "بُحكم طابع المدينة الجامعي والحضري، كن واعيًا لممتلكاتك الشخصية في المناطق المزدحمة وبالأحداث الكبيرة.",
+   "تجنّب مناداة المدينة بألقاب قد يعتبرها بعض السكان مبتذلة، وكن مهذبًا عند التفاعل مع السكان المحليين."
+  ],
+  "itinerary": [
+   "اليوم 1: جولة سيرًا في وسط المدينة وزيارة Old State House، Faneuil Hall وQuincy Market ثم التنقّل إلى Old North Church وPaul Revere House قرب الواجهة البحرية.",
+   "اليوم 2: يوم متاحف في حي Fenway — زيارة Museum of Fine Arts ثم Isabella Stewart Gardner، وقضاء وقت في منطقة Back Bay لرؤية Massachusetts State House وBoston Public Library.",
+   "اليوم 3: عبور نهر Charles إلى كامبريدج لزيارة حرم هارفارد واستكشاف معالم MIT والعمارة الجامعية، وأنهِ اليوم بالبحث عن حفلات أو مشهد موسيقي في ألوح المناطق الموصى بها."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام التي أحتاجها في بوسطن؟",
+    "a": "ثلاثة أيام كافية لتغطية أبرز المعالم التاريخية الكبرى وبعض المتاحف وحرمَي الجامعتين، أما لمن يريد التعمق فسيحتاج إلى وقت إضافي لاستكشاف المتاحف والأحياء الضواحي."
+   },
+   {
+    "q": "هل بوسطن مدينة مكلفة؟",
+    "a": "المستوى العام للإنفاق يمكن أن يتفاوت؛ توجد بطاقات مرور سياحي وعروض مخفضة مثل 50 Under 50 وCityPASS وGoBoston لمساعدة الزوار على تقليل تكاليف المعالم، كما أن تناول الطعام في Chinatown أو Allston يوفر خيارات أرخص."
+   },
+   {
+    "q": "هل بوسطن آمنة للسائح؟",
+    "a": "بوسطن مدينة حضرية عادية؛ اتبع احتياطات السفر الاعتيادية مثل مراقبة المتعلقات الشخصية في الأماكن المزدحمة واحترام لوائح المواقع التاريخية، وستكون زيارة آمنة وممتعة."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "المناطق القريبة من المركز التاريخي وBack Bay مناسبة للزوار الراغبين في الوصول إلى المعالم الرئيسية والمطاعم، بينما كامبريدج خيار جيد لمن يريد التواجد بالقرب من الجامعات."
+   },
+   {
+    "q": "كيف أجد أحداث محلية وحفلات أثناء زيارتي؟",
+    "a": "راجع مصادر الأحداث المحلية مثل The Boston Calendar وصفحة فعاليات مدينة بوسطن للاطلاع على قوائم مُحدّثة تشمل حفلات، مهرجانات ومعارض."
+   }
+  ]
+ }
+}

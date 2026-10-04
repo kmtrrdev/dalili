@@ -1,0 +1,225 @@
+{
+ "slug": "amsterdam",
+ "name": "Amsterdam",
+ "country": "Netherlands",
+ "tags": [
+  "culture",
+  "nightlife"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Amsterdam",
+ "en": {
+  "city_name": "Amsterdam",
+  "country_name": "Netherlands",
+  "title": "Amsterdam travel guide: canals, museums and tips",
+  "meta_description": "Practical Amsterdam travel guide: top sights (canals, Rijksmuseum, Van Gogh), food, budget tips, safety and a 3-day itinerary for first-time visitors.",
+  "h1": "Amsterdam travel guide: what to see, eat and know",
+  "intro": [
+   "Amsterdam is the capital of the Netherlands, famed for a dense network of canals, historic architecture, museums and a lively central district crossed by over 1,500 bridges. The Canal District and other historic neighbourhoods offer a compact, walkable core that draws visitors for its mix of culture and atmosphere.",
+   "From a medieval fishing settlement to a major 17th-century trading hub, Amsterdam grew into the country's cultural and economic centre. English is widely spoken, most main sights sit within a roughly 2 km semi-circle around Centraal Station, and the Canal Belt is a UNESCO World Heritage area."
+  ],
+  "best_time": "Spring and early autumn are comfortable for walking the canals and visiting museums with fewer summer crowds; summer is busy and some museums and attractions can get very crowded, so consider visiting early in the morning or off-peak times.",
+  "top_sights": [
+   {
+    "name": "Canal District (Grachtengordel)",
+    "why": "A concentric ring of 17th-century canals and canal houses that form the city's most iconic area and UNESCO-listed Canal Belt; stroll or take a boat to appreciate the architecture and bridges, and aim for quieter side canals for better photos."
+   },
+   {
+    "name": "Rijksmuseum",
+    "why": "The Netherlands' national museum with a major collection of Dutch Golden Age paintings and decorative arts; buy tickets in advance and arrive early to avoid the busiest periods."
+   },
+   {
+    "name": "Van Gogh Museum",
+    "why": "Holds the largest collection of Vincent van Gogh's paintings and drawings, offering deep insight into his work and influence; plan ahead since it is one of the city's most visited museums."
+   },
+   {
+    "name": "Vondelpark",
+    "why": "Amsterdam's largest and most popular urban park, a favourite local spot for picnics and relaxation; it's a good place to unwind between museum visits or bring a picnic on warm days."
+   },
+   {
+    "name": "Jordaan",
+    "why": "A narrow-street neighbourhood built around 1650 that evolved from working-class roots into a fashionable area full of boutiques and cafés; explore its lanes to find quieter, more authentic places to eat and shop."
+   },
+   {
+    "name": "Begijnhof",
+    "why": "A serene, late-medieval enclosed courtyard with some of the city's oldest houses including the oldest surviving house in Amsterdam; entry to the courtyard and gardens is free but be respectful of residents and quiet while visiting."
+   },
+   {
+    "name": "Magere Brug (Skinny Bridge)",
+    "why": "A traditional white drawbridge more than 300 years old that offers a classic view of Amsterdam's river and canal-front architecture; it's a popular photo spot—visit at quieter times or after dark when bridges are lit."
+   },
+   {
+    "name": "Het Scheepvaartmuseum (Maritime Museum)",
+    "why": "Housed in a large former Admiralty arsenal, this museum showcases Amsterdam's maritime history and the city's role as a trading power; check the museum's schedule and consider it as an alternative to the busiest Binnenstad museums."
+   }
+  ],
+  "getting_around": "Most visitors experience the central semi-circle around Centraal Station where many major sights are concentrated and easily reached on foot or by short rides. Canal cruises depart from quays near Centraal Station and other central piers; on a warm day avoid enclosed glass-ceiling boats as they can become hot.",
+  "food": [
+   {
+    "name": "Indonesian restaurants",
+    "note": "A legacy of colonial history, Indonesian eateries are widespread and offer a range of dishes adapted to local tastes; you'll find many throughout the city."
+   },
+   {
+    "name": "Surinamese dishes",
+    "note": "Surinamese food can be sampled especially in Zuid and Zuidoost with local favourites such as roti met bonen and moksi meti found in those neighbourhoods."
+   },
+   {
+    "name": "Dawet (drink)",
+    "note": "A sweet coconut-and-milk drink with sago balls, popular in Surinamese and Indonesian-influenced restaurants and often enjoyed as a unique local treat."
+   },
+   {
+    "name": "Chinatown and tokos at Zeedijk",
+    "note": "Zeedijk near Nieuwmarkt is Amsterdam's de facto Chinatown with many Asian eateries and small East Asian grocery shops (tokos) selling spices and ingredients."
+   },
+   {
+    "name": "Italian restaurants on Lange Leidsedwarsstraat",
+    "note": "A short street off Leidseplein where several Italian eateries serve pasta and pizza, offering a straightforward meal option near the entertainment area."
+   }
+  ],
+  "budget_tips": [
+   "Avoid restaurants on Damrak and the busiest spots around Leidseplein, where many establishments are aimed at tourists and offer poorer value.",
+   "Buy advance tickets for major museums to reduce time spent queuing and to visit at less crowded times.",
+   "Use parks like Vondelpark for free leisure and picnic options instead of paying for cafés in tourist areas.",
+   "Shop at quieter side streets and local neighbourhoods (for example Haarlemmerbuurt or Albert Cuypstraat) for better value dining and independent shops."
+  ],
+  "safety": [
+   "Respect residential areas like the Begijnhof by keeping noise down and not disturbing people who still live there.",
+   "Be aware that the most popular museums and canal-side piers can get very crowded, so keep personal belongings secure and allow extra time for queues.",
+   "On hot days avoid enclosed canal boats with glass ceilings as they can become uncomfortably hot.",
+   "English is widely spoken, which makes asking for help or directions straightforward if needed."
+  ],
+  "itinerary": [
+   "Day 1: Explore the city centre on foot—walk along the main canals of the Canal District, cross the Magere Brug, visit the Begijnhof, and take a canal cruise departing from the quays near Centraal Station.",
+   "Day 2: Spend the day at Museumplein visiting the Rijksmuseum and the Van Gogh Museum, then relax in Vondelpark in the late afternoon.",
+   "Day 3: Wander the Jordaan's narrow streets and boutiques, then visit Het Scheepvaartmuseum to learn about Amsterdam's maritime history; consider a short trip to a nearby windmill such as De Gooyer if time allows."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Amsterdam?",
+    "a": "Three days covers the main highlights: canals and the Canal District, Museumplein museums, and a neighbourhood like the Jordaan. More time lets you explore quieter districts and nearby parks."
+   },
+   {
+    "q": "Is Amsterdam expensive?",
+    "a": "Costs vary by choice of restaurants and activities; tourist-area eateries tend to be pricier, while local neighbourhoods, markets and parks offer better value and more authentic options."
+   },
+   {
+    "q": "Is Amsterdam safe for visitors?",
+    "a": "Amsterdam is generally safe and English is widely spoken, but expect crowds at major sights and keep an eye on personal belongings in busy areas; also be considerate in residential and peaceful spots like the Begijnhof."
+   },
+   {
+    "q": "What is the best area to stay in Amsterdam?",
+    "a": "Most visitors stay inside or just outside the semi-circle around Centraal Station, where the main tourist sights, museums and historic canals are concentrated and within walking distance."
+   },
+   {
+    "q": "How do I get from the airport to the city?",
+    "a": "Schiphol airport is not far from the city and the Amsterdamse Bos is described as being near Schiphol; check current public-transport and private transfer options for the most suitable route into the city."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "أمستردام",
+  "country_name": "هولندا",
+  "title": "دليل السفر إلى أمستردام",
+  "meta_description": "دليل أمستردام: أهم المعالم (قنوات، متاحف، حدود الميزانية)، أفضل أوقات الزيارة، نصائح الأكل وخطة لثلاثة أيام.",
+  "h1": "دليل أمستردام: ماذا ترى وتفعل وتعرف",
+  "intro": [
+   "أمستردام هي عاصمة هولندا، تشتهر بشبكة قنواتها المتداخلة، هندستها المعمارية المميزة، متاحفها وغالياتها الفنية، وحي الضوء الأحمر الشهير، بالإضافة إلى أكثر من 1,500 جسر يضيفون سحراً خاصاً للمدينة.",
+   "نشأت المدينة من قرية صيد متواضعة في القرون الوسطى وتطورت لتصبح مركزاً تجارياً مهماً في القرن السابع عشر؛ من أحياءها البارزة الحي الجورداان وحزام القنوات الذي أدرجته اليونسكو ضمن مواقع التراث العالمي، بينما شهدت القرنين التاسع عشر والعشرين توسعات معمارية وحديثة."
+  ],
+  "best_time": "الفترة الصيفية تشهد ذروة النشاط مع طقس أنسب للتمشية في الحدائق وركوب القنوات لكن تكون المتاحف والمواقع شديدة الازدحام؛ لزيارة أقل ازدحامًا فكر بصباحات خارج الموسم أو أوقات منتصف الأسبوع.",
+  "top_sights": [
+   {
+    "name": "حزام القنوات (Canal District)",
+    "why": "شبكة حلقية من القنوات تعود للقرن السابع عشر وتضم منازل تاجرية ومبانٍ فخمة؛ المشي أو التجول بالقارب في الحي يعطيك فكرة عن تاريخ المدينة، ونصيحة عملية: تجنب الزوار الصغار في ذروة الظهيرة إن أردت صوراً أنظف."
+   },
+   {
+    "name": "المتحف الوطني (Rijksmuseum)",
+    "why": "متحف مهم يضم مجموعات مرموقة من فن العصر الذهبي الهولندي وأعمالاً لرمبرانت وفيرمير؛ احجز تذاكر مسبقاً لتفادي طوابير الدخول في موسم الذروة."
+   },
+   {
+    "name": "متحف فان غوخ (Van Gogh Museum)",
+    "why": "يحتوي على أكبر مجموعة لأعمال فينسنت فان غوخ في العالم، وهو ضروري لعشاق الفن؛ الوصول مبكراً يساعد على مشاهدة الأعمال دون زحام كبير."
+   },
+   {
+    "name": "متحف ستيدلييك (Stedelijk Museum)",
+    "why": "مركز للفن الحديث والمعاصر والتصميم؛ مناسب لمن يهتم بالفن الحديث ويقع ضمن نطاق متاحف منطقة موزايك المتحف في Zuid."
+   },
+   {
+    "name": "اليورداان (Jordaan)",
+    "why": "حي تاريخي نشأ في منتصف القرن السابع عشر تحول من منطقة عاملة إلى حي عصري مليء بالمحال الصغيرة والمطاعم؛ المشي في شوارع الحي يكشف متاجر بوتيك ومقاهي محلية."
+   },
+   {
+    "name": "بجينهوف (Begijnhof)",
+    "why": "ساحة داخلية من العصور المتأخرة تضم منازل تاريخية وأقدم بيت مسجل في المدينة؛ الدخول إلى الفناء مجاني ولكن تجنب إزعاج السكان المقيمين."
+   },
+   {
+    "name": "جسر ماغيرِي (Magere Brug)",
+    "why": "جسر تقليدي خشبي يعود لأكثر من 300 سنة ويعد نقطة مراقبة جميلة على النهر؛ مكان جيد للتصوير خصوصاً عند الإضاءة المسائية."
+   },
+   {
+    "name": "مولن دي جوير (De Gooyer)",
+    "why": "طاحونة رياح تاريخية قريبة من المركز وتستخدم حالياً كمكان مرتبط بصناعة الجعة؛ تستحق الزيارة كأحد الأمثلة القابلة للوصول من وسط المدينة."
+   }
+  ],
+  "getting_around": "محطة أمستردام المركزية (Centraal Station) هي محور النقل في المدينة، ومعظم مناطق الجذب تقع داخل نصف دائرة قطرها نحو 2 كم من المركز مما يجعل المشي وركوب الدراجة وسيلة عملية للتنقل. رحلات القوارب في القنوات تنطلق من أرصفة محددة مقابل المحطة ودوكوراك وغيرها، ويمكن استئجار قوارب صغيرة أو الانضمام لرحلات مرشدة لتجربة مريحة.",
+  "food": [
+   {
+    "name": "المطبخ الإندونيسي",
+    "note": "يُعد وجود المطاعم الإندونيسية جزءًا ملحوظًا من المشهد الغذائي في أمستردام ويعكس التاريخ الاستعماري الهولندي."
+   },
+   {
+    "name": "المأكولات السورينامية",
+    "note": "تُقدم أطباقاً مثل roti met bonen وmoksi meti وbojo، وتتركز أماكنها في مناطق Zuid وZuidoost."
+   },
+   {
+    "name": "مشروب داويت (dawet)",
+    "note": "مشروب حلو من الحليب وجوز الهند وشراب الورد مع حبيبات الساج، يوجد في بعض المطاعم الإندونيسية والسورينامية."
+   },
+   {
+    "name": "المطاعم الآسيوية في زيدايك (Zeedijk)",
+    "note": "منطقة تشبه الحي الصيني تضم مجموعة من المطاعم الآسيوية ومتاجر التوابل والـ toko الصغيرة."
+   },
+   {
+    "name": "مطاعم الشوارع والأحياء المحلية",
+    "note": "ستجد خيارات طيبة وبأسعار معقولة في أحياء مثل Haarlemmerbuurt وVan Woustraat وAlbert Cuypstraat بعيداً عن مناطق الفخامة والسياحية."
+   }
+  ],
+  "budget_tips": [
+   "احجز تذاكر المتاحف الشهيرة مسبقاً لتفادي الطوابير والانتظار الطويل في الصيف.",
+   "تجنب تناول الطعام في شوارع سياحية واضحة مثل Damrak وLeidseplein للعثور على وجبات أفضل بأسعار أقل.",
+   "استكشف الأسواق والمحلات في Haarlemmerbuurt وSpui للحصول على خيارات تسوق محلية وكتب مستخدمة؛ يقام سوق كتب مستعملة في Spui يوم الجمعة.",
+   "لا تشتري بصيلات الزهور من Bloemenmarkt إذ غالباً ما تكون قديمة ولا تنبت."
+  ],
+  "safety": [
+   "أحترم خصوصية سكان Begijnhof والالتزام بعدم الإزعاج داخل الفناء التاريخي.",
+   "كن حذراً في القوارب المغلقة في الأيام الحارة لأنها قد تصبح ساخنة للغاية.",
+   "احترم قواعد السلوك في حي الضوء الأحمر وتصرف باحترام تجاه العاملين والزوار."
+  ],
+  "itinerary": [
+   "اليوم 1: جولة سيرا على الأقدام في الحي الداخلي وحزام القنوات، زيارة Begijnhof والمشي إلى جسر Magere Brug، وختام اليوم برحلة بالقارب في القنوات.",
+   "اليوم 2: زيارة ميدان المتاحف (Museumplein) لمتاحف Rijksmuseum وVan Gogh وStedelijk، ثم استرخاء في Vondelpark وقضاء المساء في مقهى محلي.",
+   "اليوم 3: استكشاف حي Jordaan وأسواقه ومحلاته الصغيرة، بعدها التوجه إلى De Gooyer وطواحين الرياح، ثم التمشّي في منطقة Plantage وزيارة Hortus Botanicus أو Artis Zoo إذا رغبت."
+  ],
+  "faq": [
+   {
+    "q": "كم يكفي من أيام لزيارة أمستردام؟",
+    "a": "ثلاثة أيام تكفي لمعرفة المعالم الأساسية داخل مركز المدينة وزيارة متحف أو اثنين والاستمتاع بجولة في القنوات، بينما أسبوع يمنحك وقتاً لاستكشاف أحياء خارج نصف الدائرة المركزية."
+   },
+   {
+    "q": "هل أمستردام مدينة باهظة الثمن؟",
+    "a": "تكاليف الزيارة قد تكون مرتفعة في مناطق الجذب والمطاعم السياحية، لكن يمكن العثور على خيارات معقولة في الأحياء الجانبية والأسواق، وتوفر المتنزهات والأنشطة الخارجية وسائل ترفيه منخفضة التكلفة."
+   },
+   {
+    "q": "هل أمستردام آمنة للسياح؟",
+    "a": "المدينة آمنة نسبياً لكن مثل أي مدينة سياحية ينبغي احترام الخصوصية في أماكن مثل Begijnhof والحذر في المناطق المزدحمة واتباع سلوك محترم في حي الضوء الأحمر."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة لقيادة سياحية؟",
+    "a": "مركز المدينة داخل نصف الدائرة حول Centraal Station عملي لزيارة أغلب المعالم سيراً أو بدراجة، كما أن الأحياء المحيطة توفر خيارات أكثر هدوءاً وقرباً من المتاحف."
+   },
+   {
+    "q": "كيف أصل إلى المدينة من المطار؟",
+    "a": "المطار الرئيسي يقع بالقرب من أمستردام ويخدم معظم رحلات المسافرين؛ من الشائع أن يصل الزوار إلى قلب المدينة ويبدأوا زيارتهم من محطة Centraal Station، كما توجد محطات وطرق مواصلات تربط بين أنحاء المدينة ومحيطها."
+   }
+  ]
+ }
+}

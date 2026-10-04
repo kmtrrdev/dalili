@@ -1,0 +1,225 @@
+{
+ "slug": "florence",
+ "name": "Florence",
+ "country": "Italy",
+ "tags": [
+  "culture",
+  "history",
+  "food"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Florence",
+ "en": {
+  "city_name": "Florence",
+  "country_name": "Italy",
+  "title": "Florence travel guide: sights, food and tips",
+  "meta_description": "Practical Florence travel guide: top sights (Duomo, Uffizi), food (bistecca, lampredotto), transport, budget tips and a 3-day itinerary.",
+  "h1": "Florence travel guide: what to see, eat and know",
+  "intro": [
+   "Florence (Italian: Firenze) is the capital of Tuscany and a compact city famous as the birthplace of the Italian Renaissance. Its museums, churches and palaces house works by masters such as Donatello and Michelangelo, and the city centre is protected as a UNESCO World Heritage site.",
+   "Once a political and financial powerhouse, Florence shaped European art, architecture and language; today it is primarily visited for its cultural legacy, its lively neighbourhoods and its artisan shops, many of which continue traditional crafts aimed largely at visitors."
+  ],
+  "best_time": "Spring and autumn are great for pleasant weather and fewer crowds, while summer is busiest and can be hot. Winter sees fewer tourists but some sites may have reduced hours; plan ahead for museum bookings when visiting the busiest months.",
+  "top_sights": [
+   {
+    "name": "Cathedral of Santa Maria del Fiore (the Duomo)",
+    "why": "Florence's iconic cathedral dominates the piazza and skyline; inside, the basilica plan, stained glass and the vast dome are highlights. If you want a panoramic view, pre-book a timed slot to climb the dome rather than queueing on the day."
+   },
+   {
+    "name": "Giotto's Campanile",
+    "why": "The richly decorated bell tower offers an open terrace with sweeping views over the Duomo and city after climbing its 414 steps; bring comfortable shoes for the ascent."
+   },
+   {
+    "name": "Baptistery of San Giovanni",
+    "why": "This octagonal baptistery is noted for its bronze doors by Andrea Pisano and Lorenzo Ghiberti and its 13th-century mosaic vault; the exterior remains viewable even when the interior is under restoration."
+   },
+   {
+    "name": "Museo dell'Opera del Duomo",
+    "why": "The museum holds original sculptures and works removed from the cathedral complex, including pieces by Donatello and a Michelangelo Pietà, making it essential for understanding the Duomo's art."
+   },
+   {
+    "name": "Uffizi Gallery",
+    "why": "One of the city's major art galleries and the most visited, the Uffizi houses masterpieces of the Renaissance; book ahead or consider an organised tour to avoid long waits."
+   },
+   {
+    "name": "Pitti Palace and Boboli Gardens",
+    "why": "Pitti Palace contains galleries and the adjacent Boboli Gardens offer relaxed walks, sculptures and elevated views of Florence; allow time to wander the gardens and pause at the hilltop café."
+   },
+   {
+    "name": "Accademia Gallery",
+    "why": "Home to celebrated Renaissance works, the Accademia is a compact museum worth visiting as part of a balanced museum plan; pre-booking helps avoid queues."
+   },
+   {
+    "name": "Piazzale Michelangelo and San Miniato al Monte",
+    "why": "These hilltop viewpoints give classic panoramas over Florence; Piazzale Michelangelo is busy with tour buses, while San Miniato al Monte sits a little higher for a quieter outlook."
+   }
+  ],
+  "getting_around": "Florence's historic centre is compact and best explored on foot; many top sights are within walking distance of each other. For trips from the station or farther afield, use local public transport or taxis, and consider walking across the Arno and through neighbourhoods such as the Oltrarno to reach southern sights.",
+  "food": [
+   {
+    "name": "Bistecca alla fiorentina",
+    "note": "A very large T-bone steak traditionally served by weight and popular in Florentine cuisine."
+   },
+   {
+    "name": "Lampredotto",
+    "note": "A traditional Florentine street food made from tripe, typically served from carts in public squares and dressed with a green or hot sauce."
+   },
+   {
+    "name": "Crostini toscani",
+    "note": "Toasted bread topped with Tuscan liver pâté, a common antipasto in local trattorias."
+   },
+   {
+    "name": "Gelato",
+    "note": "Florence has many gelato stands, and some consider the local gelato among the best in the world."
+   },
+   {
+    "name": "Cappuccino al banco",
+    "note": "Drinking coffee standing at the bar (al banco) is a common practice and usually cheaper than sitting at a table."
+   }
+  ],
+  "budget_tips": [
+   "Buy combined tickets (for the Duomo monuments and some museums) when you plan to visit multiple attractions to simplify access.",
+   "Eat like a local by choosing restaurants outside the historic centre or in the Santa Croce and Oltrarno districts for better price/quality value.",
+   "Stand at the bar for coffee (cappuccino al banco) rather than sitting to save on café costs.",
+   "Pre-book major museum visits such as the Uffizi and Accademia to avoid wasting time in long queues on free or busy days."
+  ],
+  "safety": [
+   "Keep an eye on belongings in crowded tourist areas, especially around major sights and viewpoints where pickpocketing can be opportunistic.",
+   "Respect local customs in churches: dress modestly when entering religious buildings and follow any stated photography rules.",
+   "When buying food or drink, ask about table versus takeaway pricing beforehand to avoid surprises if you move from the counter to a table."
+  ],
+  "itinerary": [
+   "Day 1: Start at the Piazza del Duomo to visit the cathedral, Baptistery and Museo dell'Opera del Duomo; climb Giotto's Campanile or the Dome if you have pre-booked slots, then stroll through nearby streets and finish with an evening in the Piazza della Signoria.",
+   "Day 2: Reserve a morning for the Uffizi Gallery (book ahead or join a tour), cross Ponte Vecchio to the Pitti Palace and spend the afternoon wandering the Boboli Gardens and Oltrarno artisan streets.",
+   "Day 3: Visit the Accademia in the morning, explore the Santa Croce and Sant'Ambrogio areas for food and leather shopping, then walk along the Arno and end the day at Piazzale Michelangelo or San Miniato al Monte for sunset views."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Florence?",
+    "a": "A long weekend is enough to see the highlights and enjoy the ambience; three days lets you visit a couple of major museums, several churches and explore neighbourhoods at a relaxed pace."
+   },
+   {
+    "q": "Is Florence expensive?",
+    "a": "Costs vary: tourist areas, especially near the Duomo and Mercato di San Lorenzo, tend to be pricier, while eateries outside the historic centre and in Santa Croce or the Oltrarno offer better value."
+   },
+   {
+    "q": "Is Florence safe for tourists?",
+    "a": "Florence is generally safe, but be vigilant in crowded spots where pickpockets may operate and follow common-sense precautions with valuables."
+   },
+   {
+    "q": "What is the best area to stay in Florence?",
+    "a": "Staying in or near the historic centre puts major sights within walking distance; the Oltrarno and Santa Croce are good choices for a slightly more local atmosphere while still close to attractions."
+   },
+   {
+    "q": "How do I get from the station to the city centre?",
+    "a": "Florence's city centre is compact and walkable from the main station; you can also use local buses or taxis for luggage or if you prefer not to walk."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "فلورنسا (Firenze)",
+  "country_name": "إيطاليا",
+  "title": "فلورنسا: دليل سفر لفلورنسا (Firenze)",
+  "meta_description": "دليل فلورنسا يتضمن أفضل المعالم (الدوﻣو، أوفيتشي)، أطعمة محلية، نصائح لتوفير المال وخطة رحلة لثلاثة أيام.",
+  "h1": "دليل فلورنسا: ماذا ترى وتأكل وتعرف",
+  "intro": [
+   "فلورنسا (Firenze) هي عاصمة توسكانا في إيطاليا وواحدة من أهم مراكز النهضة الإيطالية، مسجلة ضمن مواقع التراث العالمي لليونسكو وتضم متاحف وغاليريات ومباني أثرية غنية بالتراث الفني والثقافي. كانت موطناً لشخصيات مثل دانتي وبترارك وبرونيلسكي ويُعتبر لهجتها التوسكانية أساس الإيطالية القياسية.",
+   "اليوم المدينة تعتمد كثيراً على السياحة وحرفة الحرفيين المحليين؛ زيارة قصيرة تمنحك فهماً للتاريخ الفني والعمارة الرنسانسية، ومع إمكانية قضاء الوقت أيضاً للاستمتاع بالمشي على طول نهر أرنو والأجواء المحلية في الأحياء القديمة."
+  ],
+  "best_time": "الوقت المناسب للزيارة يعتمد على رغبتك بتجنب الحشود؛ المواسم المعتدلة تسمح بالمشي واستكشاف المتاحف بسهولة، بينما الصيف قد يجلب أعداد سياح أكبر. إذا أردت طقس أهدأ فكر بتوزيع الزيارات للمواقع الشهيرة على أوقات أقل ازدحاماً أو بحجز مواعيد مسبقة للمتاحف.",
+  "top_sights": [
+   {
+    "name": "كاتدرائية سانتا ماريا دل فيوري (Duomo)",
+    "why": "قبة برونيلسكي تهيمن على أفق المدينة والكاتدرائية جزء مركزي من تاريخ العمارة الرنسانسية؛ أنصح بحجز تذكرة مسبقة إذا رغبت بالصعود إلى القبة أو زيارة المتاحف المرتبطة للاستفادة من الدخول المرتبط."
+   },
+   {
+    "name": "برج جيوتو (Giotto's Campanile)",
+    "why": "برج مزخرف يطل على ساحة الدومو ويقدم منظراً بانورامياً للمدينة بعد صعود الدرجات؛ توقع طابوراً للصعود خلال أوقات الذروة."
+   },
+   {
+    "name": "بوابة المعمودية (Baptistery)",
+    "why": "مبنى ثماني الشكل مشهور بأبوابه البرونزية لأعمال جيبيرتي، والواجهة الخارجية تستحق المشاهدة حتى إذا كان الداخل قيد الترميم."
+   },
+   {
+    "name": "متحف أعمال الدومو (Museo dell'Opera del Duomo)",
+    "why": "يضم أعمالاً أصلية نُقلت من الكاتدرائية والمباني المحيطة، بما في ذلك منحوتات لبرونتينو وقطعة لميكيلانجيلو؛ مفيد لفهم تاريخ الأعمال التي تراها حول الساحة."
+   },
+   {
+    "name": "أوفِيتسي (Uffizi)",
+    "why": "أحد أهم المتاحف لروائع عصر النهضة ويجذب أعداداً كبيرة من الزوار؛ احجز مسبقاً أو اختر جولة مرشدة للحصول على دخول أسرع."
+   },
+   {
+    "name": "قصر بيتّي وحدائق بوبولي (Pitti Palace & Boboli Gardens)",
+    "why": "قصر وجنائن رسمية مع مناظر واسعة للمدينة وتماثيل ومناظر طبيعية هادئة، مكان جيد للاسترخاء مع مناظر فلورنسا."
+   },
+   {
+    "name": "أكاديمية (Accademia)",
+    "why": "متحف مهم لعرض أعمال ما قبل الحديثة والرينسانس ومن أشهرها أعمال منحوتين؛ يفضّل الحجز المسبق لتجنب طوابير الانتظار."
+   },
+   {
+    "name": "بيازالِه ميشيلانجيلو (Piazzale Michelangelo) وسان مينياتو ألبيرتو (San Miniato al Monte)",
+    "why": "أفخم نقاط المشاهدة فوق المدينة تقدم بانوراما لفلورنسا؛ تكون مزدحمة بوسائل النقل السياحي لذلك خطط للذهاب مبكراً أو في المساء."
+   }
+  ],
+  "getting_around": "المدينة مريحة للمشي خصوصاً في المركز التاريخي وعلى طول نهر أرنو؛ الكثير من المعالم قريبة سيراً. انتبه إلى أن بعض نقاط المشاهدة تتطلب صعود تلال أو سلالم. استخدم وسائل النقل المحليّة أو سيارات الأجرة للتنقل لمسافات أبعد داخل المدينة أو إلى الاستاد، واحجز مواعيد دخول المتاحف لتجنب طوابير الانتظار.",
+  "food": [
+   {
+    "name": "بيستكا ألا فيورنتينا (Bistecca alla Fiorentina)",
+    "note": "ستيك تي-بون تقليدي في توسكانا يقدم بكميات كبيرة ويحسب حسب وزن القطعة؛ تُعد تجربة تصفح قوائم الطعام المحلية مهمة قبل الطلب."
+   },
+   {
+    "name": "لامبريدوتو (Lampredotto)",
+    "note": "سندويش من أمعاء البقر يُعدّ من الوجبات السريعة التقليدية في فلورنسا ويُقدّم عادة من عربات في الساحات مع صلصات خفيفة أو حارة."
+   },
+   {
+    "name": "كروستيني توسكانّي (Crostini Toscani)",
+    "note": "شرائح توست مع باتيه كبد دجاج توسكاني، تُقدم كمقبلات في العديد من التراتوريا المحلية."
+   },
+   {
+    "name": "جيلاتو (Gelato)",
+    "note": "محلات الجيلاتو منتشرة وقد يعتبرها بعض المتذوقين من الأفضل عالمياً؛ جرّبها أثناء التجول في أوقات المساء."
+   },
+   {
+    "name": "قهوات وإسبريسو وكابوتشينو",
+    "note": "الكثير من المقاهي تميز بين الأسعار أثناء الوقوف على البار أو الجلوس على الطاولات، فاتفق على السعر قبل الطلب إذا أردت الجلوس."
+   }
+  ],
+  "budget_tips": [
+   "ابتعد عن المطاعم والسلاسل السياحية حول ساحة الدومو ومرصودو سان لورينزو للعثور على قيمة أفضل مقابل المال في أحياء مثل سانتا كروز أو الألت ارنو.",
+   "احجز تذاكر المتاحف الشهيرة (كالأوفِيتسي والدومو) مسبقاً لتجنب الانتظار الطويل الذي يضيع وقتك وقد يكلفك جولات مدفوعة بديلة.",
+   "تناول وجبات السريعة المحلية من العربات أو المحلات الصغيرة وخذ القهوة واقفاً عند البار لتقليل التكلفة مقارنة بالجلوس على الطاولة.",
+   "استمتع بالمشي المجاني بين الأحياء والأماكن العامة والمناظر من الساحات والحدائق بدل الإنفاق على جولات سياحية باهظة."
+  ],
+  "safety": [
+   "كن حذراً من النشالين في المناطق المزدحمة والسياحية مثل حول الدومو وجسور أرنو واحرص على حمل المستندات والنقود بأمان داخل حقيبة مغلقة.",
+   "احترم قواعد الأماكن الدينية عند زيارة الكنائس؛ ارتد ملابس مناسبة وتجنب السلوك المزعج أثناء الصلوات أو القداسات.",
+   "اطلب دائماً السعر قبل الجلوس في المطاعم والمقاهي إذا لم تكن متأكداً من سياسة المكان بخصوص الجلوس مقابل الوقوف لتجنب مفاجآت الفاتورة."
+  ],
+  "itinerary": [
+   "اليوم الأول: ابدأ بزيارة ساحة الدومو بما في ذلك الكاتدرائية، برج جيوتو والبوابة المعمدانية، ثم توجه إلى متحف أعمال الدومو، وانهي اليوم بالمشي في شوارع وسط المدينة وتجربة جيلاتو.",
+   "اليوم الثاني: احجز زيارة لمتحف الأوفِيتسي صباحاً ثم اقضِ بعد الظهر في قصر بيتّي وحدائق بوبولي، واستمتع بأمسية في ساحة بالاتسو فيكيو مع عروض الشارع وتناول العشاء في حي سانتا كروز.",
+   "اليوم الثالث: اصعد إلى بيازالِه ميشيلانجيلو أو سان مينياتو أل مونتي لمشاهدة بانوراما المدينة، تجول في حي الألت ارنو والحرفيين المحليين، واختتم برحلة على طول نهر أرنو والمرور بجسر بونتي فيكيو."
+  ],
+  "faq": [
+   {
+    "q": "كم يوم أحتاج لزيارة فلورنسا؟",
+    "a": "لزيارة مريحة يُكفي عادةً 2–3 أيام لتغطية المعالم الرئيسية مثل الدومو والأوفِيتسي وبعض المتاحف والتنزه في الأحياء التاريخية، مع إمكانية تمديد الزيارة إذا رغبت باستكشاف أعمق للمتاحف أو رحلات يومية."
+   },
+   {
+    "q": "هل فلورنسا مكلفة؟",
+    "a": "تكلفة الزيارة تتفاوت: هناك خيارات باهظة في وسط المدينة ومطاعم سياحية، لكن يمكن العثور على خيارات مُرضية وبأسعار معقولة في أحياء مثل سانتا كروز والألت ارنو والأكشاك المحلية."
+   },
+   {
+    "q": "هل فلورنسا آمنة للسياح؟",
+    "a": "عمومًا المدينة آمنة لكن كما في أي مدينة سياحية توجد مشكلات بسيطة مثل النشالين في المناطق المزدحمة؛ احفظ متعلقاتك الشخصية بحذر وتوخّ الحيطة في الأماكن المزدحمة."
+   },
+   {
+    "q": "ما هي أفضل منطقة للسكن؟",
+    "a": "الإقامة قرب المركز التاريخي تسهل الوصول سيراً إلى معظم المعالم، بينما أحياء مثل سانتا كروز والألت ارنو توفر تجربة أكثر محلية وقيمتَين أفضل للطعام والحرف."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط فلورنسا؟",
+    "a": "هناك عدة وسائل نقل من المطار إلى مركز المدينة بما في ذلك حافلات نقل ومركبات خاصة ووسائل نقل أرضية؛ داخل المدينة يُنصح بالمشي قدر الإمكان أو استخدام النقل المحلي للرحلات الأطول."
+   }
+  ]
+ }
+}

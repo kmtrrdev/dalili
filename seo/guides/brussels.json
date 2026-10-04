@@ -1,0 +1,226 @@
+{
+ "slug": "brussels",
+ "name": "Brussels",
+ "country": "Belgium",
+ "tags": [
+  "food",
+  "culture",
+  "history"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Brussels",
+ "en": {
+  "city_name": "Brussels",
+  "country_name": "Belgium",
+  "title": "Brussels travel guide: sights, food and tips",
+  "meta_description": "Practical travel guide to Brussels: top sights like the Grand-Place and Atomium, what to eat, money-saving tips and a 3-day itinerary.",
+  "h1": "Brussels travel guide: what to see, eat and know",
+  "intro": [
+   "Brussels is Belgium’s capital and a region in its own right, hosting major international institutions including the headquarters of NATO and the core institutions of the European Union. Its role as a European political hub makes it unusually international and bilingual, with both French and Dutch widely used.",
+   "The city mixes a small preserved medieval centre and surrounding historic districts with grand 19th- and 20th-century monuments and modern buildings built for international organisations. That blend, together with many museums and local culinary specialities, makes Brussels rich in things to discover for first-time visitors."
+  ],
+  "best_time": "Brussels has a humid, changeable climate so bring weatherproof clothing year-round; if you want more reliable chances for outdoor walks, pick milder months. Many museums and indoor sights make the city easy to enjoy even in wet weather.",
+  "top_sights": [
+   {
+    "name": "Grand-Place",
+    "why": "The central square is Brussels’ most iconic landmark and the best-preserved remnant of the medieval city; it’s an ideal starting point for exploring the old centre and nearby streets. Join the free tour that departs from the city hall to get oriented."
+   },
+   {
+    "name": "Manneken Pis",
+    "why": "A tiny but famous statue tucked in a side street near the centre; it’s part of many visitors’ itineraries and easy to combine with a walk around the medieval core. Expect it to be small — many guidebooks note it can be easily overlooked."
+   },
+   {
+    "name": "Atomium",
+    "why": "A 102-m-tall sculpture from the 1958 World’s Fair that dominates the northern skyline and offers panoramic views from its top-level restaurant; only some spheres are open to visitors, so plan which parts you want to see."
+   },
+   {
+    "name": "Royal Palace and Poelaert Square / Palace of Justice",
+    "why": "Monumental 19th-century projects mark Brussels’ transformation into a national capital; the Palace of Justice overlooks the old city from Poelaert Square while the Royal Palace is an accessible highlight of the same era. These sites give a sense of the city’s grand architectural phase."
+   },
+   {
+    "name": "Basilica of the Sacred Heart (Koekelberg)",
+    "why": "One of the largest churches in the world and an important example of Art Deco architecture; visit for architecture and wide views over part of the city."
+   },
+   {
+    "name": "European Quarter",
+    "why": "Home to the European Parliament and Commission, this district shows Brussels’ contemporary political role; formal visits and tours are offered at the institutions, and nearby attractions such as the Parlamentarium or House of European History provide more accessible, family-friendly exhibits."
+   },
+   {
+    "name": "Cinquantenaire Park and Arc",
+    "why": "A monumental park with a large triumphal arc that’s worth a detour; the park is also the setting for several museums such as the Museum for Natural Sciences and the Museum of Military History, which are good indoor options when weather is poor."
+   },
+   {
+    "name": "Medieval centre and underground archaeology (Coudenberg / Bruxella 1238)",
+    "why": "The small preserved historic heart of Brussels and its underground archaeological sites reveal the city’s early history; combined visits give insight into how the modern city grew from its medieval roots."
+   }
+  ],
+  "getting_around": "Brussels’ main sights are concentrated in and around the compact historic centre (the Pentagon) and the European Quarter, making many attractions walkable from one another. The city also offers many museums and indoor options for rainy days; plan according to opening days since some shops and venues open later in the morning or close on certain weekdays.",
+  "food": [
+   {
+    "name": "Mussels (moules / mosselen)",
+    "note": "A Belgian classic often eaten with fries and widely available in Brussels."
+   },
+   {
+    "name": "Fries (frites / frieten)",
+    "note": "A local obsession served from fritkots or friteries across the city; try regional sauces such as andalouse rather than only ketchup or mayonnaise."
+   },
+   {
+    "name": "Chocolate",
+    "note": "Belgian chocolate is a staple of Brussels’ food scene, sold at many shops across the city."
+   },
+   {
+    "name": "Belgian waffles (Brussels and Liège styles)",
+    "note": "The lighter Brussels waffle is commonly served with toppings, while the denser Liège waffle traditionally contains pearl sugar and is often eaten plain or with limited toppings."
+   },
+   {
+    "name": "Local dishes (stoemp, waterzooi, anguilles / paling)",
+    "note": "Traditional Belgian dishes such as stoemp, turbot waterzooi and river eel preparations offer a taste of local culinary heritage."
+   }
+  ],
+  "budget_tips": [
+   "Buy beer and many Belgian specialties at supermarkets such as Carrefour, Delhaize or Match rather than tourist shops; Carrefour near the Grand-Place is noted for a large selection and lower prices.",
+   "Take the free walking tour that starts in front of the city hall on the Grand-Place to get an introduction to the centre without cost; tours run several times daily.",
+   "Plan shopping and museum visits around local opening habits: many shops open only around 10:30–11:00 and some are closed on Sunday and Monday, so schedule accordingly to avoid wasted trips.",
+   "Avoid tourist-trap restaurants clustered in the so-called 'Italian Restaurant Streets' in shopping districts, where low-quality set meals and billing problems have been reported; seek out other neighbourhood eateries or supermarkets for better value."
+  ],
+  "safety": [
+   "Brussels is officially bilingual (French and Dutch); showing basic respect for both language communities is courteous when interacting with locals.",
+   "Be cautious when dining on the tourist-oriented 'Italian Restaurant Streets' — some establishments have attracted complaints about misleading menus and billing practices, so check bills carefully and prefer reputable venues.",
+   "Carry rain protection and plan indoor alternatives: Brussels’ humid climate can change quickly, and the city has over 80 museums and many indoor attractions to switch to when it rains.",
+   "Note that some popular sights and museums may attract crowds; use the free tour and off-peak hours to avoid busiest times when possible."
+  ],
+  "itinerary": [
+   "Day 1: Explore the medieval centre — start at the Grand-Place, join the free tour from the city hall, then wander the surrounding streets to find Manneken Pis, the old churches and chocolate shops; sample waffles and fries from a local fritkot.",
+   "Day 2: Visit the European Quarter and Cinquantenaire — tour the European institutions (or visit the Parlamentarium/House of European History for a lighter experience), then spend the afternoon at Cinquantenaire Park and nearby museums such as the Museum for Natural Sciences or the Museum of Military History.",
+   "Day 3: Head to the northern plateau — see the Atomium and its top-level views, combine with Mini Europe or leisurely explore the Woluwe area to visit Train World or the Tram Museum if those attractions match your interests."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Brussels?",
+    "a": "A long weekend (two to three days) allows you to see the main highlights: the Grand-Place and medieval core, the European Quarter and a northern-plateau visit to the Atomium. More time lets you visit additional museums and neighbourhoods."
+   },
+   {
+    "q": "Is Brussels expensive?",
+    "a": "Costs vary by choice: tourist shops can be pricey, but supermarkets such as Carrefour, Delhaize and Match offer many Belgian products, including beer, at lower prices. Choosing local eateries and supermarkets helps control spending."
+   },
+   {
+    "q": "Is Brussels safe for tourists?",
+    "a": "Brussels is a major international city with popular tourist areas; standard caution applies. Be aware of reported problems in certain tourist restaurant streets and carry rain protection due to the humid climate."
+   },
+   {
+    "q": "What is the best area to stay in Brussels?",
+    "a": "Staying near the historic Pentagon (Grand-Place and surrounding streets) or near the European Quarter gives easy access to the main sights mentioned in this guide and convenient connections to museums and political institutions."
+   },
+   {
+    "q": "What can I do if it rains in Brussels?",
+    "a": "Rain is common, but Brussels has many indoor options: over 80 museums, the Planetarium, large cinemas such as Kinepolis and attractions like the Sewer Museum or Nemo 33 for specialised experiences."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "بروكسل (Brussels)",
+  "country_name": "بلجيكا",
+  "title": "بروكسل: دليل السفر — ما الذي تراه وتأكله وتعرفه",
+  "meta_description": "دليل لبروكسل: أهم المعالم مثل الساحة الكبرى والآتوميوم، الطعام البلجيكي، نصائح الميزانية، وممسار لثلاثة أيام.",
+  "h1": "دليل سفر بروكسل: ماذا ترى وتأكل وما الذي تعرفه",
+  "intro": [
+   "بروكسل هي عاصمة بلجيكا ومنطقة إدارية مستقلة داخل البلاد، وتستضيف مقرّات مؤسسات دولية كبرى مثل حلف الناتو والمؤسسات الأساسية للاتحاد الأوروبي، ما يجعلها مركزاً دوليّاً وسياسياً مهماً.",
+   "المدينة مزيج من تراث مدن فلاندرز الوسطى ومعالم حديثة أنشئت لتخدم دورها كعاصمة، وهي الآن ثنائية اللغة (الفرنسية والهولندية) وتتميّز بتنوّع سكاني كبير وآثار معمارية وتاريخية تنتظر المستكشف الفضولي."
+  ],
+  "best_time": "الطقس في بروكسل متقلب ورطب، لذلك يمكن زيارة المدينة طوال العام لكن فترات الربيع والصيف تكون مريحة للمشي في الهواء الطلق وتنسيق زيارة المنتزهات والمعالم الخارجية. عند هطول المطر، توفر أكثر من 80 متحفاً بالمنطقة بدائل داخلية جيدة.",
+  "top_sights": [
+   {
+    "name": "الساحة الكبرى (Grand-Place)",
+    "why": "الساحة المركزية والأيقونة الأبرز في بروكسل، تبقّى حولها جزء من وسط المدينة العتيق وتوفّر رؤية لعمارة المدينة التاريخية؛ نصيحة عملية: ابدأ منها للتعرّف على مركز المدينة والانضمام إلى الجولات المجانية."
+   },
+   {
+    "name": "تمثال مانكن بيس (Manneken Pis)",
+    "why": "تمثال صغير مشهور للغاية في شارع جانبي قرب الساحة الكبرى ويجذب الزوار لأهميته الرمزية، نصيحة: لا تتوقع عملاً فنياً ضخماً لكنه جزء من تجربة التجول في المركز التاريخي."
+   },
+   {
+    "name": "قصر العدالة (Palace of Justice)",
+    "why": "مبنى ضخم من القرن التاسع عشر صممه جوشيف بولار، يمثل تحوّل المدينة إلى عاصمة حديثة ويطل على المدينة من ساحة بولار؛ مكان جيد لالتقاط صور للعمارة المهيبة."
+   },
+   {
+    "name": "الآتوميوم (Atomium)",
+    "why": "تمثال عملاق بقاعدة معرض 1958 يسيطر على أفق شمال بروكسل ويضم كرات يمكن زيارتها ومطعمًا في الأعلى يوفر إطلالات واسعة، نصيحة: زيارة الهيسل مفيدة أيضاً لحديقة النماذج المصغرة Mini-Europe القريبة."
+   },
+   {
+    "name": "بازيليكا القلب المقدس (Basilica of the Sacred Heart)",
+    "why": "إحدى أكبر الكنائس في العالم ونموذج مهم للعمارة آرت ديكو في بروكسل؛ تستحق الزيارة لمحبي العمارة والاطلالات الممكنة من محيطها."
+   },
+   {
+    "name": "الحي الأوروبي والبرلمان الأوروبي",
+    "why": "مركز اتخاذ القرار في الاتحاد الأوروبي حيث تقع مؤسسات مثل البرلمان والمفوضية؛ تتوفر جولات رسمية ومتاحف تفاعلية مثل البرلمانيوم وبيت التاريخ الأوروبي لزوار مهتمين بالسياسة الأوروبية."
+   },
+   {
+    "name": "بوابة هالي (Halle Gate)",
+    "why": "البوابة الوحيدة الباقية من أسوار المدينة الثانية وتحوّلت إلى متحف يعرض جوانب من تاريخ الدفاع والحصون في بروكسل؛ مفيدة لفهم تاريخ تحصينات المدينة."
+   },
+   {
+    "name": "متحف العلوم الطبيعية وحديقة التشينكانتير (Cinquantenaire Park وMuseum for Natural Sciences)",
+    "why": "الحديقة مع قوسها التذكاري تقدم متنفساً في المدينة، ومتحف العلوم الطبيعية مشهور بعظام الإيجوانودون ويُناسب العائلات والزوار المهتمين بالعلوم."
+   }
+  ],
+  "getting_around": "المدينة قابلة للاستكشاف سيراً على الأقدام خاصة في المركز التاريخي، وتوجد شبكات مواصلات عامة تخدم الأحياء الأبعد وبطبيعة الحال وسائل نقل إلى الأحياء التي تضم مقرات المؤسسات الدولية والآفاق الشمالية. من محطات القطار والحافلات الرئيسية يمكن التنقل إلى معظم المعالم بسهولة.",
+  "food": [
+   {
+    "name": "المحار (Moules / Mosselen)",
+    "note": "طبق ساحلي تقليدي يُقدّم مع البطاطس المقلية في كثير من المطاعم المتخصّصة."
+   },
+   {
+    "name": "البطاطس المقلية (Frites / Frieten)",
+    "note": "موجودة في العديد من نقاط 'فريتكوت' وتشتهر بتشكيلة من الصلصات المحلية مثل الأندالوز."
+   },
+   {
+    "name": "الشوكولاتة البلجيكية",
+    "note": "تُعدّ من أهم منتجات المدينة وتباع في متاجر متخصّصة وسوبرماركتات مثل كارفور وديلهايز."
+   },
+   {
+    "name": "الوافل البلجيكي (Brussels وLiège)",
+    "note": "تجربة حلويات شعبية بنسخ محلية: بروكسل الأخفّ تناسب التزيين، ولييج أكثر حلاوة ومكّون من سكر اللؤلؤ."
+   },
+   {
+    "name": "أطباق تقليدية محلية (مثل stoemp وwaterzooi)",
+    "note": "أطباق بلجيكية تقليدية تستحق التجربة في المطاعم التي تقدم مأكولات محلية."
+   }
+  ],
+  "budget_tips": [
+   "انطلق سيراً على الأقدام داخل المركز التاريخي للاستمتاع بالمعالم مجاناً وتقليل تكاليف النقل.",
+   "تسوّق البضائع الغذائية والهدايا من سلاسل السوبرماركت المحلية بدل المتاجر السياحية لأسعار أقل، خاصة البيرة والشوكولاتة.",
+   "استفد من المتاحف عند الضرورة كبديل للنشاطات الخارجية في الأيام الممطرة بدلاً من أنفاق المال على أنشطة سياحية باهظة.",
+   "تجنّب المطاعم السياحية المشبوهة في شوارع المطاعم الإيطالية المزدحمة واطّلع على قوائم الطعام والتعليقات قبل الجلوس."
+  ],
+  "safety": [
+   "بروكسل مدينة دولية مزدحمة؛ انتبه لأغراضك الشخصية في المناطق السياحية والمواصلات العامة.",
+   "احترم الحساسية اللغوية: المدينة ثنائية اللغة، وحاول استخدام التحية المناسبة أو الإنجليزية في الأماكن السياحية.",
+   "تجنّب الشوارع الخالية ليلاً إن لم تكن تعرف المنطقة، واطّلع على إرشادات محلية خاصة عند زيارة أحياء بعيدة عن المركز."
+  ],
+  "itinerary": [
+   "اليوم الأول: ابدأ من الساحة الكبرى (Grand-Place) واستكشف الشوارع المحيطة، زر مانكن بيس، وشارك في الجولة المجانية انطلاقاً من قِبَل قاعة المدينة، وتذوّق الوافل والبطاطس المقلية أثناء التجول.",
+   "اليوم الثاني: خصّصه للحي الأوروبي وزيارة مؤسسات مثل البرلمان والبرلمانيوم أو بيت التاريخ الأوروبي، ثم تمضِ وقتاً في حديقة سينكونتاير ومتاحفها مثل متحف العلوم الطبيعية.",
+   "اليوم الثالث: استقل نحو شمال المدينة لزيارة الآتوميوم وMini-Europe أو استمتع بزيارة المتاحف الداخلية (مثل متحف المجسمات أو متحف المجاري) إذا كان الطقس ممطراً."
+  ],
+  "faq": [
+   {
+    "q": "كم يوم أحتاج لزيارة بروكسل؟",
+    "a": "ثلاثة أيام كافية لتغطية المعالم الرئيسية في المركز التاريخي والحي الأوروبي وبعض المتاحف، بينما سيتيح لك المزيد من الوقت التوسّع إلى الأحياء والشمال لزيارة الآتوميوم وMini-Europe."
+   },
+   {
+    "q": "هل بروكسل مدينة مكلفة؟",
+    "a": "قد تبدو بعض المناطق السياحية باهظة بالنسبة للمسافر، لكن هناك خيارات اقتصادية مثل السوبرماركت والمطاعم المحلية وفريتكوت لتقليل النفقات."
+   },
+   {
+    "q": "هل بروكسل آمنة للسياح؟",
+    "a": "بشكل عام آمنة لكن مثل أي مدينة كبرى يجب توخي الحذر من نشل المتعلقات خصوصاً في المناطق المزدحمة ووسائل النقل العام."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "الإقامة قرب المركز التاريخي تسهل الوصول إلى معظم معالم المدينة سيراً على الأقدام، أما من يزور الحي الأوروبي فالمناطق القريبة منه مريحة للوصول إلى المؤسسات الأوروبية."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط المدينة؟",
+    "a": "المطار متصل بشبكات نقل عامة تخدم المدينة، ويمكن الوصول إلى المركز عبر وسائل نقل برية متاحة، مع ملاحظة أن التحركات داخل المدينة تسهّلها المحطات الرئيسية وشبكة المواصلات."
+   }
+  ]
+ }
+}

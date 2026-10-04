@@ -1,0 +1,225 @@
+{
+ "slug": "marseille",
+ "name": "Marseille",
+ "country": "France",
+ "tags": [
+  "beach",
+  "food",
+  "culture"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Marseille",
+ "en": {
+  "city_name": "Marseille",
+  "country_name": "France",
+  "title": "Marseille travel guide: sights, food and practical tips",
+  "meta_description": "Practical travel guide to Marseille: top sights, seafood and markets, transport tips, budget advice and a 3-day itinerary.",
+  "h1": "Marseille travel guide: what to see, eat and know",
+  "intro": [
+   "Marseille is a large, historic port city on France's Mediterranean coast and the economic centre of Provence-Alpes-Côte d'Azur. With an urban area of around 1.6 million people, it combines a long past — founded by Greek settlers — with a lively, multicultural present.",
+   "The city is not a postcard of Provençal clichés but a working, diverse metropolis: colourful markets, the old harbour (Vieux-Port), the steep lanes of Le Panier and dramatic coastal scenery around the Calanques all offer different faces of Marseille for visitors willing to explore."
+  ],
+  "best_time": "Spring and early summer are lively with outdoor festivals and pleasant weather, while late June through September is best for beaches and boat trips but brings larger crowds. Autumn still offers mild days and some festivals; if you prefer fewer tourists, avoid the height of July–August.",
+  "top_sights": [
+   {
+    "name": "Vieux-Port (Old Port)",
+    "why": "Marseille's traditional harbour is the city's social and visual heart where fishermen still sell their catch; arrive in the evening for a memorable atmosphere and use boat trips to Frioul or Château d'If for views back toward the port."
+   },
+   {
+    "name": "Basilique Notre-Dame de la Garde",
+    "why": "A prominent hilltop basilica offering one of the best panoramas over Marseille and the sea; you can reach it by a tourist train from the Vieux-Port and reboard later to return."
+   },
+   {
+    "name": "Le Panier",
+    "why": "The oldest district of the city with narrow, steep streets and historic character; join the tourist office's guided English walk (usually Saturdays) or follow the recommended trail to Mucem."
+   },
+   {
+    "name": "Fort Saint-Jean and Mucem",
+    "why": "A 17th-century fort at the Old Port's edge with free access to its ramparts and views, linked by footbridges to the Museum of European and Mediterranean Civilisations (Mucem); stroll the fortifications and visit the museum's exhibits."
+   },
+   {
+    "name": "Calanques (coastal fjord-like cliffs)",
+    "why": "A natural stretch of cliffs and coves between Marseille and La Ciotat popular for hiking, swimming, climbing and boat trips; plan for suitable footwear and check weather and access before going."
+   },
+   {
+    "name": "La Vieille Charité",
+    "why": "An historic former charitable housing complex that now hosts museums and exhibitions, worth a visit for architecture and cultural displays in the heart of Le Panier."
+   },
+   {
+    "name": "Palais Longchamp and Parc Longchamp",
+    "why": "A grand monument housing the Musée des Beaux-Arts and the Natural History Museum, set in a listed park ideal for a relaxed walk between sights."
+   },
+   {
+    "name": "Vallon des Auffes",
+    "why": "A small, traditional fishing port near the city centre where you can experience an intimate, timeless coastal scene away from busier waterfront areas."
+   }
+  ],
+  "getting_around": "From the Vieux-Port you can catch boats to islands such as Frioul or Château d'If; the tourist train runs between the port and Notre-Dame de la Garde. Within the city use metro and buses — for example, the Stade Vélodrome is served via Metro station Rond-Point du Prado — and expect to walk in historic districts where streets are narrow.",
+  "food": [
+   {
+    "name": "Bouillabaisse",
+    "note": "Marseille's signature fish stew served in two courses with rouille and bread; it is a speciality best reserved for a planned meal rather than a cheap option."
+   },
+   {
+    "name": "Aïoli",
+    "note": "A garlicky sauce traditionally served with vegetables and salted cod, representing a classic Provençal flavour to try."
+   },
+   {
+    "name": "Seafood and fish",
+    "note": "The local cuisine focuses on fresh seafood across many cafes and restaurants near the harbour and coast."
+   },
+   {
+    "name": "Maghrebi couscous and kebabs",
+    "note": "Affordable, authentic North African dishes are common around Cours Belsunce and along the Canebière, reflecting Marseille's diverse food scene."
+   },
+   {
+    "name": "Local cafés and bistros",
+    "note": "From family-run brasseries to small pizza and Vietnamese places, neighbourhood eateries around the Basilique Notre-Dame area and the centre offer homemade-style meals."
+   }
+  ],
+  "budget_tips": [
+   "Choose soupe de poisson instead of bouillabaisse if you want a fish-flavoured meal that is more affordable.",
+   "Eat at neighbourhood brasseries, kebab shops and couscous eateries around Cours Belsunce and the Canebière for cheaper, filling meals.",
+   "Use public transport (metro and buses) to reach major sites; many attractions are also walkable from the Vieux-Port.",
+   "Visit free sites such as Fort Saint-Jean's ramparts, walk the Corniche and explore neighbourhoods like Le Panier and Vallon des Auffes to save on entrance fees."
+  ],
+  "safety": [
+   "Keep an eye on belongings in busy markets and on public transport, as markets and tourist areas can attract pickpockets.",
+   "Respect local neighbourhoods and avoid stereotyping; Marseille is culturally diverse and best explored with an open mind.",
+   "When swimming or taking boats to the Calanques, check conditions and local guidance — sea and cliff areas can be hazardous in bad weather."
+  ],
+  "itinerary": [
+   "Day 1: Start at the Vieux-Port, take a boat to Château d'If or the Frioul islands, return for an evening stroll along the Corniche and dinner near the harbour.",
+   "Day 2: Visit Notre-Dame de la Garde for panoramic views, explore Le Panier and La Vieille Charité, then walk to Fort Saint-Jean and the Mucem in the late afternoon.",
+   "Day 3: Spend the day at the Calanques for hiking, swimming or a boat excursion; in the evening enjoy a neighbourhood brasserie or the nightlife around Cours Julien."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Marseille?",
+    "a": "Three days lets you see the main highlights: the Vieux-Port, Notre-Dame de la Garde, Le Panier and a day trip to the Calanques. Longer stays allow more time for museums and neighbourhoods."
+   },
+   {
+    "q": "Is Marseille expensive to visit?",
+    "a": "Costs vary: seafood and specialities like bouillabaisse can be pricey, but there are many affordable options such as kebab shops, couscous eateries and neighbourhood brasseries."
+   },
+   {
+    "q": "Is Marseille safe for tourists?",
+    "a": "Many visitors explore Marseille without problems, but as in any large city take normal precautions with valuables, be aware in crowded markets and avoid unfamiliar areas at night."
+   },
+   {
+    "q": "What is the best area to stay in Marseille?",
+    "a": "Staying near the Vieux-Port puts you within easy walking distance of major sights and boat departures; other pleasant areas include Cours Julien for nightlife and Le Panier for historic atmosphere."
+   },
+   {
+    "q": "How do I get from the airport to the city centre?",
+    "a": "Marseille is connected to its centre by public transport and road links; once in the city, the metro, buses and boats make it straightforward to reach main attractions such as the Vieux-Port and Notre-Dame de la Garde."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "مرسيليا (Marseille)",
+  "country_name": "فرنسا",
+  "title": "دليل السفر إلى مرسيليا: معالم، طعام وخطط",
+  "meta_description": "دليل مرسيليا يقدّم أهم المعالم (الڤيو بورت، نوتر دام دو لا غاردر، كَلانك)، مأكولات بحرية، نصائح توفير، وخطة لثلاثة أيام.",
+  "h1": "دليل سفر مرسيليا: ماذا ترى وتأكل وتعرف",
+  "intro": [
+   "مرسيليا مدينة موانئ كبيرة على البحر الأبيض المتوسط وتعد مركزاً اقتصادياً وثقافياً في منطقة بروفانس ألب كوت دازور، مع تاريخ حضري مترابط وآثار بنى تحتية حديثة منذ استضافتها عاصمة الثقافة الأوروبية عام 2013.",
+   "المدينة ليست الصورة النمطية للريف البروڤنسي؛ هي مدينة حيوية متعددة الثقافات بها أسواق ملونة، أحياء تاريخية مثل لو بانييه (Le Panier)، ميناء قديم Vieux-Port وسواحل درامية تضم الكَلانك (Calanques)."
+  ],
+  "best_time": "أواخر الربيع والصيف مناسبان للأنشطة البحرية ولزيارة الكَلانك وللجلوس على الشواطئ، بينما الربيع والخريف يجريان طقساً معتدلاً وحشوداً أقل. شتاء مرسيليا معتدل مقارنة بشمال أوروبا لكن بعض الأنشطة الصيفية قد تكون محدودة.",
+  "top_sights": [
+   {
+    "name": "Vieux-Port (الميناء القديم)",
+    "why": "قلب المدينة حيث تُعرض صيد الأسماك ويجري نشاط مرفئي نابض بالحياة، ومشهد الغروب من هنا لا ينسى؛ احجز رحلة إلى جزر فريول أو قلعة إيف لزيارة الميناء من البحر."
+   },
+   {
+    "name": "Basilique Notre-Dame de la Garde",
+    "why": "كنيسة كبيرة تطل على المدينة وتوفّر مناظر واسعة لمرسيليا؛ يمكنك ركوب القطار السياحي من Vieux-Port للوصول ثم العودة بنفس القطار."
+   },
+   {
+    "name": "Le Panier",
+    "why": "الحي الأقدم بشوارعه الضيقة والمرتفعة، مكان مناسب للتجول والتعرّف على تاريخ المدينة، ويمكن بدء الجولة من Vieux-Port وإنهائها عند متحف Mucem."
+   },
+   {
+    "name": "Mucem / Fort Saint-Jean",
+    "why": "مزيج من التحصينات التاريخية ومتحف حضارات أوروبا والمتوسط؛ التنقّل عبر الجسور والمشي حول التحصينات يعطي منظراً ممتازاً على الميناء."
+   },
+   {
+    "name": "Calanques (الكَلانك)",
+    "why": "سلسلة من الخلجان الصخرية بين مرسيليا ولا سيوتا ممتعة للمشي، التسلق والغطس؛ من الأفضل زيارتها في طقس مستقر والاستعداد للمشي."
+   },
+   {
+    "name": "La Vieille Charité",
+    "why": "مبنى تاريخي جميل كان داراً للأعمال الخيرية ويستضيف متاحف ومعارض، مكان هادئ ومناسب لعشاق العمارة والثقافة."
+   },
+   {
+    "name": "Palais Longchamp",
+    "why": "مجمع يضم متحف الفنون الجميلة والمتحف الطبيعي مع حديقة مصنفة تستحق التنزه، ويوصلك بوليفارد لونغشام إلى مركز المدينة."
+   },
+   {
+    "name": "Vallon des Auffes",
+    "why": "ميناء صيد تقليدي صغير بالقرب من مركز المدينة يتميز بأجواء زمنية ومطاعم بحرية، مكان مناسب للتمشية وصور الواجهة البحرية."
+   }
+  ],
+  "getting_around": "من الميناء القديم Vieux-Port يمكنك الوصول إلى معظم المعالم سيراً أو بالقطار السياحي. المدينة مخدومة بمترو وحافلات للتنقل لمسافات أبعد مثل ملعب فِيلودروم والضواحي، واستخدم مترو Rond-Point du Prado لملعب أولمبيك دي مرسيليا.",
+  "food": [
+   {
+    "name": "البويابيس (Bouillabaisse)",
+    "note": "شوربة سمك مرسيليا التقليدية تُقدّم مع صلصة الروِيل والخبز، وتُعتبر وجبة يجب حجزها مسبقاً في مطاعم متخصصة."
+   },
+   {
+    "name": "أيولي (Aïoli)",
+    "note": "صلصة ثومية تُقدّم مع الخضار والسمك المجفف، تجربة محلية مرتبطة بالمطبخ البروڤنسي."
+   },
+   {
+    "name": "أطباق وأسماك ومأكولات بحرية محلية",
+    "note": "المطبخ في مرسيليا يركّز على الأسماك والمنتجات البحرية الطازجة المتوفرة في الميناء والأسواق."
+   },
+   {
+    "name": "المأكولات المغاربية والكُباب",
+    "note": "حانات الكباب والمطاعم والكوُسكوُس متوفرة خصوصاً حول كانيبيير وكور بيلسونس وتقدّم خيارات اقتصادية."
+   },
+   {
+    "name": "مأكولات آسيوية وشرقية محلية",
+    "note": "أحياء مثل نوائل تقدم مطاعم عربية وآسيوية جيدة مثل فيتنامية ولبنانية وتونسية موزَّعة في مركز المدينة."
+   }
+  ],
+  "budget_tips": [
+   "تجول في الأحياء التاريخية والميناء سيراً بدلاً من الاعتماد على وسائط النقل المدفوعة.",
+   "ابحث عن مطاعم الكُسكس والكباب حول Cours Belsunce والمواقع الشعبية لتناول وجبات اقتصادية ومحلية.",
+   "استبدل البويابيس المكلفة بشوربة سمك أرخص (soupe de poisson) إذا رغبت بتجربة بحرية بتكلفة أقل.",
+   "استفد من المتاحف والأماكن العامة المجانية مثل التحصينات في Fort Saint-Jean والحدائق العامة للنزهة."
+  ],
+  "safety": [
+   "كن حذراً مع الأغراض الشخصية في المناطق المزدحمة مثل Vieux-Port والأسواق لتجنب السرقات الصغيرة.",
+   "تجنّب التباهي بالممتلكات الثمينة في الأماكن العامة وابقَ يقظاً في المناطق التي تعج بالسياح.",
+   "احترم التنوع الثقافي المحلي ولبق في التعامل مع السكان، خصوصاً في الأحياء متعددة الخلفيات."
+  ],
+  "itinerary": [
+   "اليوم الأول: ابدأ من Vieux-Port، خذ رحلة بالقارب إلى Château d'If أو جزر Frioul ثم تجول عند Palais du Pharo ومشاهدة الغروب من الميناء.",
+   "اليوم الثاني: اصعد إلى Basilique Notre-Dame de la Garde للمناظر، ثم تجول في حي Le Panier وزُر La Vieille Charité ومتحف Mucem وFort Saint-Jean.",
+   "اليوم الثالث: خصص اليوم للطبيعة: زيارة كَلانك للمشي أو الأنشطة البحرية، ثم استرخاء في Parc Borély أو منتزهات وكافيهات Corniche عند الغروب."
+  ],
+  "faq": [
+   {
+    "q": "كم يوم أحتاج لزيارة مرسيليا؟",
+    "a": "ثلاثة أيام كافية لمشاهدة أبرز معالم المدينة القديمة، زيارة الكنيسة المشهورة، قضاء وقت في الميناء وتجربة الكَلانك، بينما إقامة أطول تمنحك وقتاً للمتاحف والضواحي."
+   },
+   {
+    "q": "هل مرسيليا مدينة غالية؟",
+    "a": "تكاليف المعيشة والسياحة متباينة؛ يمكنك تناول وجبات مكلفة مثل البويابيس في مطاعم مختصة أو اختيار خيارات اقتصادية في أسواق وكبائن الكباب حول المراكز التجارية."
+   },
+   {
+    "q": "هل مرسيليا آمنة للسياح؟",
+    "a": "المدينة حيوية لكن توجد فجوات اجتماعية؛ الالتزام بالحذر مع الأغراض الشخصية وابتعادك عن التصرفات الاستفزازية يسهم في تجربة آمنة."
+   },
+   {
+    "q": "ما أفضل منطقة للإقامة؟",
+    "a": "الإقامة قرب Vieux-Port أو في مركز المدينة تسهل الوصول سيراً إلى أغلب المعالم، بينما الأحياء الأخرى تخدم من يريد الهدوء أو قرب الملعب."
+   },
+   {
+    "q": "كيف أصل من المطار إلى المركز؟",
+    "a": "يمكن الوصول إلى مركز المدينة باستخدام وسائل النقل العام والقطارات والحافلات؛ من Vieux-Port تبدأ العديد من الجولات ووسائل النقل الداخلية لليوم."
+   }
+  ]
+ }
+}

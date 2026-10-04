@@ -1,0 +1,225 @@
+{
+ "slug": "sydney",
+ "name": "Sydney",
+ "country": "Australia",
+ "tags": [
+  "beach",
+  "culture",
+  "food"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Sydney",
+ "en": {
+  "city_name": "Sydney",
+  "country_name": "Australia",
+  "title": "Sydney travel guide: sights, food, budget & 3-day plan",
+  "meta_description": "Practical Sydney travel guide with top sights, beaches, food tips, budget advice and a 3-day itinerary for first-time visitors.",
+  "h1": "Sydney travel guide: what to see, eat and know",
+  "intro": [
+   "Sydney is Australia's oldest and most cosmopolitan city, set around a long, deep natural harbour and fringed by ocean beaches. It combines notable landmarks, leafy parks and layered cultural influences, making it a compact city with both urban attractions and easy access to nature.",
+   "Known worldwide for the Sydney Opera House and Harbour Bridge, the city also offers diverse neighbourhoods, a strong culinary scene shaped by global migration, and many outdoor activities from ferry rides to surf beaches."
+  ],
+  "best_time": "Visit in spring or autumn for mild weather and fewer crowds, while summer is busiest with beach activity and events like the Boxing Day start of the Sydney to Hobart Yacht Race; winter still allows outdoor exploration but can be cooler and quieter.",
+  "top_sights": [
+   {
+    "name": "Sydney Opera House",
+    "why": "An internationally recognised performing-arts venue and architectural icon worth seeing up close; book a tour or check the schedule in advance to attend a performance."
+   },
+   {
+    "name": "Sydney Harbour Bridge",
+    "why": "The massive steel arch spanning the harbour provides dramatic views and a strong sense of the city's maritime setting; walk across from The Rocks to the North Shore for good harbour photo opportunities."
+   },
+   {
+    "name": "The Rocks",
+    "why": "Historic district beside the city centre where you can explore Sydney's colonial heritage, markets and cobbled streets; combine with a harbour-side walk and visit nearby museums."
+   },
+   {
+    "name": "Royal Botanic Gardens",
+    "why": "Extensive harbour-front gardens offering peaceful walks, native plant displays and views of the Opera House and harbour; bring water and sun protection for a relaxed visit."
+   },
+   {
+    "name": "Bondi Beach",
+    "why": "World-famous surf beach in the Eastern Suburbs known for its sand, surf culture and busy beachfront atmosphere; take a lesson from one of the surf schools or walk the coastal path toward Coogee."
+   },
+   {
+    "name": "Taronga Zoo",
+    "why": "Harbour-side zoo with native and international wildlife reached by ferry from Circular Quay; combine the ferry ride with zoo entry for scenic approach and skyline views."
+   },
+   {
+    "name": "Darling Harbour",
+    "why": "A lively waterside precinct housing attractions such as museums, an aquarium and the fish market; it's a convenient entertainment hub close to the city centre."
+   },
+   {
+    "name": "Manly",
+    "why": "A beachside suburb accessible by a scenic ferry that offers a relaxed seaside town feel and coastal walks such as routes toward Middle Head; the ferry ride itself is a popular harbour sightseeing option."
+   }
+  ],
+  "getting_around": "Ferries from Circular Quay provide scenic and affordable travel around the harbour and to destinations such as Manly and Taronga Zoo, and are a practical way to see the waterfront. Within the city, use trains, buses and ferries to reach suburbs and attractions; taxis and ride apps supplement public transport for door-to-door trips.",
+  "food": [
+   {
+    "name": "Multicultural Asian food in Chinatown",
+    "note": "Chinatown offers many inexpensive and flavorful options, including noodle bowls and set lunches that suit budget travelers."
+   },
+   {
+    "name": "Sydney seafood",
+    "note": "Seafood is widely available at places like the Sydney Fish Market and harbour-side restaurants, reflecting the city's coastal setting."
+   },
+   {
+    "name": "Australian takeaway classics",
+    "note": "Try meat pies, sausage rolls and fish and chips for an easy, traditional takeaway meal to enjoy at a park or beach."
+   },
+   {
+    "name": "Cafe brunch culture",
+    "note": "Sydney has a thriving cafe scene where breakfast and coffee are popular; expect a range of options from simple to substantial morning meals."
+   },
+   {
+    "name": "Fine-dining harbour restaurants",
+    "note": "The city has several high-end restaurants with harbour or bridge views where reservations are usually required well in advance."
+   }
+  ],
+  "budget_tips": [
+   "Use public ferries from Circular Quay for harbour views — they are cheaper than commercial sightseeing cruises.",
+   "Eat at Chinatown, inner-west suburbs like Newtown, or choose lunch specials to save on meals.",
+   "Pay by card where possible and check ATM or exchange fees; banks generally have better currency rates than small airport booths.",
+   "Take advantage of free or low-cost outdoor attractions such as beaches, the Royal Botanic Gardens and harbour walks."
+  ],
+  "safety": [
+   "Be cautious about fishing in parts of the harbour west of the Harbour Bridge because of pollution risk; follow local advisories for safe spots.",
+   "Protect yourself from sun exposure at beaches and on harbour walks by using sunscreen, hats and hydration.",
+   "Respect local customs and heritage sites, including indigenous places and commemorations like Australia Day/Invasion Day, which can be sensitive for many people."
+  ],
+  "itinerary": [
+   "Day 1: Explore the City Centre and The Rocks, visit the Opera House and Royal Botanic Gardens, then walk across the Harbour Bridge for skyline views.",
+   "Day 2: Spend the day at Bondi Beach with a surf lesson or coastal walk, and return via the Eastern Suburbs to sample seaside cafes.",
+   "Day 3: Take a ferry from Circular Quay to Manly for the beach and coastal walks, or catch the ferry to Taronga Zoo and enjoy wildlife with harbour views."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Sydney?",
+    "a": "Three days lets you see major landmarks like the Opera House, Harbour Bridge and a beach such as Bondi, while longer stays allow time for surrounding parks, northern beaches and more neighbourhood exploration."
+   },
+   {
+    "q": "Is Sydney expensive to visit?",
+    "a": "Sydney can be costly at the high end, particularly for fine dining and premium experiences, but there are plenty of budget options such as cheap eats in Chinatown, affordable ferries and free outdoor attractions."
+   },
+   {
+    "q": "Is Sydney safe for tourists?",
+    "a": "Sydney is generally safe for visitors; use normal urban precautions, follow local advice about water quality for fishing, and take care in busy tourist areas and at the beach."
+   },
+   {
+    "q": "What is the best area to stay in Sydney?",
+    "a": "Staying near the City Centre, Circular Quay or The Rocks puts you close to major attractions and transport links, while beach suburbs like Bondi or Manly suit travellers prioritising seaside access."
+   },
+   {
+    "q": "How do I get from the airport to the city?",
+    "a": "Multiple transport options connect the airport with the city including public transport and airport transfers; once in the city, ferries, trains and buses make getting around straightforward."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "سيدني (Sydney)",
+  "country_name": "أستراليا",
+  "title": "سيدني: دليل السفر إلى Harbour City",
+  "meta_description": "دليل سيدني يقدّم أهم المعالم، شواطئ، أطعمة محلية، نصائح لتوفير المال وخطط لرحلة 3 أيام في أستراليا.",
+  "h1": "دليل سفر سيدني: ما الذي تراه وتفعله وتعرفه",
+  "intro": [
+   "سيدني هي مدينة الميناء الأيقونية والأقدم والأكثر تنوعًا في أستراليا، تجمع بين تاريخ طويل وطبيعة وثقافة ومشاهد ساحرة على امتداد خط ساحلي محاط بالمحيط. تشتهر المدينة بدار أوبرا سيدني وجسر ميناء سيدني وتتمدد حول أعمق ميناء طبيعي في العالم.",
+   "تعمل سيدني كمركز عالمي ومالي في منطقة آسيا والمحيط الهادئ، وتحيط بها حدائق وطنية تمتد إلى ضواحيها وشواطئ الميناء، مما يجعلها مدينة تجمع بين حياة حضرية نابضة وطبيعة قريبة بسرعة."
+  ],
+  "best_time": "أفضل الأوقات لزيارة سيدني هي في فصلي الربيع والصيف عندما يكون الطقس دافئًا وتتيح الشواطئ والأنشطة البحرية أفضل تجربة، مع ازدحام أكبر في مواسم العطلات؛ الخريف مناسب أيضاً لطقس لطيف وجو أقل ازدحامًا.",
+  "top_sights": [
+   {
+    "name": "دار أوبرا سيدني (Sydney Opera House)",
+    "why": "رمز عالمي لهندسة معمارية مميزة ويستحق الزيارة لمشاهدة العروض أو لمجرد التقاط الصور من واجهة الميناء؛ نصيحة: تجول حول الواجهة البحرية عند الغسق لالتقاط أفضل مناظر الجسر والمدينة."
+   },
+   {
+    "name": "جسر ميناء سيدني (Sydney Harbour Bridge)",
+    "why": "معلم بارز يمكنك مشاهدة المدينة منه والمشي عبره للوصول إلى مناطقه الشمالية؛ احذر من الرياح القوية عند عبور الجسر وارتدِ ملابس مناسبة."
+   },
+   {
+    "name": "ذا روكس (The Rocks)",
+    "why": "الحي التاريخي قرب مركز المدينة حيث ترى تراث سيدني ومباني قديمة وأسواق ومطاعم؛ التجول سيرًا على الأقدام أفضل طريقة لاستكشاف الأزقة والمتاجر المحلية."
+   },
+   {
+    "name": "الحدائق النباتية الملكية (Royal Botanic Gardens)",
+    "why": "مساحات خضراء واسعة تطل على الميناء، مناسبة للنزهات ومشاهدة النباتات والمحطات التاريخية؛ اختر مسارًا على الواجهة البحرية للحصول على مناظر للمباني المحيطة."
+   },
+   {
+    "name": "شاطئ بوندي (Bondi Beach)",
+    "why": "أشهر شواطيء المدينة لمحبي ركوب الأمواج والحمامات الشمسية، وتوجد مدارس ركوب أمواج وخدمات للإيجار؛ كن حذرًا من تيارات المد وتابع تعليمات منقذي الحياة."
+   },
+   {
+    "name": "دار المعارض الفنية لولاية نيو ساوث ويلز (Art Gallery of New South Wales)",
+    "why": "مركز فني يعرض مجموعات محلية ودولية ويمكن زيارته ضمن جولة ثقافية في مركز المدينة؛ تحقق من المعارض الخاصة عند التخطيط للزيارة."
+   },
+   {
+    "name": "دار الأحياء المائية وسيدني أكواريوم (Sydney Aquarium / Darling Harbour)",
+    "why": "منطقة دارلنغ هاربر تضم أنشطة عائلية ومعالم بحرية متعددة، مناسبة لزيارة مع العائلة أو لمشاهدة الحياة البحرية؛ ضع في جدولك وقتًا كافيًا للاستمتاع بالمعروضات."
+   },
+   {
+    "name": "تارونغا زو (Taronga Zoo)",
+    "why": "حديقة حيوانات بارزة على الضفة الشمالية ويمكن الوصول إليها بعبّارة من سيركلار كواي، وتوفّر إطلالات على الميناء والحياة البرية الأسترالية؛ خطط للوصول بالعبّارة لرحلة ممتعة عبر الماء."
+   }
+  ],
+  "getting_around": "العبّارات من سيركلار كواي طريقة ممتعة ورخيصة لرؤية الميناء والوصول إلى أماكن مثل مانلي وتارونغا زو. داخل المدينة تُغطي شبكة الحافلات والقطارات المناطق الحضرية والضواحي، والمشي في مركز المدينة والروكس مناسب للوصول إلى أغلب المعالم.",
+  "food": [
+   {
+    "name": "مطاعم آسيوية في تشاينا تاون",
+    "note": "توفّر خيارات اقتصادية ونوعية عالية من الأطعمة الآسيوية مثل أطباق النودلز والباوتشا."
+   },
+   {
+    "name": "الإفطار في المقاهي",
+    "note": "المقاهي تقدم أطباق إفطار دسمة وقهوة، وقد يصل سعر وجبة إفطار مع مشروب إلى مستويات متوسطة حسب نوع المطعم."
+   },
+   {
+    "name": "الأطباق الراقية (Fine dining)",
+    "note": "سيدني موطن لمطاعم مرموقة يجب الحجز المسبق فيها للاستمتاع بمأكولات ومواقع تطل على الميناء."
+   },
+   {
+    "name": "الوجبات السريعة الأسترالية (meat pie, sausage roll, fish and chips)",
+    "note": "خيارات تقليدية للوجبات السريعة يمكن شراؤها بسهولة وتناولها كأكل خفيف على الشاطئ أو في الحدائق."
+   },
+   {
+    "name": "قوائم غداء اقتصادية (lunch specials)",
+    "note": "مطاعم عديدة تقدّم عروض غداء بسعر أقل، مثل بعض البوفيهات والكافيهات والمطاعم الكورية."
+   }
+  ],
+  "budget_tips": [
+   "استخدم العبّارات العامة من سيركلار كواي لرؤية الميناء بدل الرحلات السياحية التجارية لتوفير المال.",
+   "تفضّل تناول الطعام في الأحياء متعددة الثقافات أو الاستفادة من عروض غداء لتقليل نفقات تناول الطعام.",
+   "ادفع بالبطاقات الائتمانية المقبولة على نطاق واسع بدلاً من صرف مبالغ كبيرة نقدًا في مكاتب الصرافة ذات الأسعار المرتفعة.",
+   "استكشف المعالم التي يمكن الوصول إليها سيرًا أو بالوسائل العامة مثل الحدائق والشواطئ لتقليل تكلفة الأنشطة."
+  ],
+  "safety": [
+   "تجنّب الصيد في أجزاء من الميناء غرب جسر الميناء بسبب تلوّث قد يؤثر على سلامة السمك.",
+   "راقب تيارات البحر وعلامات المنقذين على الشواطئ، ولا تسبح في أماكن محظورة أو عند تحذيرات المدّ والرياح.",
+   "احترم المواقع والتراث الأستراليين والواجبات تجاه السكان الأصليين عند زيارة مواقع ذات أهمية ثقافية."
+  ],
+  "itinerary": [
+   "اليوم الأول: تجول في مركز المدينة وزُر دار الأوبرا وسيركلار كواي ثم امشِ عبر جسر الميناء إلى ذا روكس واستمتع بالمقاهي والمتاحف القريبة.",
+   "اليوم الثاني: خُذ العبّارة إلى مانلي لقضاء الصباح على الشاطئ، ثم عد لتزور حدائق بوندي أو شواطئ الضواحي الشرقية والمشي على الساحل.",
+   "اليوم الثالث: زر دارلنغ هاربر ومعالمها مثل الأكواريوم ومتحف البحرية، أو توجه إلى تارونغا زو عبر العبّارة لقضاء يوم مع الحياة البرية وإطلالات الميناء."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام المناسبة لزيارة سيدني؟",
+    "a": "ثلاثة أيام تكفي لزيارة أهم معالم مركز المدينة والشواطئ المجاورة وتجربة العبّارة، بينما أسبوع يمنح وقتًا لاستكشاف الضواحي والمتنزهات الوطنية."
+   },
+   {
+    "q": "هل سيدني مدينة مكلفة؟",
+    "a": "تتضمن سيدني خيارات عالية التكلفة ومطاعم فاخرة، لكنها أيضاً تقدّم خيارات اقتصادية مثل المطاعم الآسيوية والعروض اليومية ووسائل النقل العام لتقليل المصاريف."
+   },
+   {
+    "q": "هل سيدني آمنة للزوار؟",
+    "a": "بشكل عام المدينة آمنة لكن يُنصح باتباع الاحتياطات المعتادة مثل مراقبة المناخ البحري على الشواطئ وتجنّب صيد الأسماك في مناطق ملوثة بالميناء."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة في سيدني؟",
+    "a": "مركز المدينة ومحاذاة سيركلار كواي والروكس مناسبة للمسافرين الراغبين بقرب المعالم والمواصلات، بينما الضواحي الساحلية تقدّم أجواء مختلفة وهدوءاً على الشاطئ."
+   },
+   {
+    "q": "كيف أصل من المطار إلى المدينة؟",
+    "a": "يمكن الوصول إلى مركز سيدني بالقطار أو الحافلات ووسائل النقل العام المتاحة، وتعد وسائل النقل العام داخل المدينة عملية للتنقل بين المعالم."
+   }
+  ]
+ }
+}

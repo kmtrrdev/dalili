@@ -1,0 +1,225 @@
+{
+ "slug": "venice",
+ "name": "Venice",
+ "country": "Italy",
+ "tags": [
+  "culture",
+  "history"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Venice",
+ "en": {
+  "city_name": "Venice",
+  "country_name": "Italy",
+  "title": "Venice travel guide: what to see, eat and know",
+  "meta_description": "Practical guide to Venice: main sights, museums, food, money-saving tips and a 3-day itinerary for first-time visitors.",
+  "h1": "Venice travel guide: what to see, eat and know",
+  "intro": [
+   "Venice is a lagoon city of islands, canals and historic architecture whose core has changed little in centuries. The city and its lagoon are a UNESCO World Heritage site and retain a distinct romantic atmosphere despite carrying the weight of overtourism and visible decay.",
+   "Historically a powerful maritime republic and a centre for music and opera, Venice remains an important cultural capital in Italy with famous festivals and long artistic lineages; its compact historic centre is divided into six traditional districts and includes nearby islands such as Murano and Burano."
+  ],
+  "best_time": "Winter (outside Carnival dates) and shoulder seasons generally offer fewer crowds, while Carnival in January–February draws large visitor numbers. Summers are busiest; plan ahead if visiting in peak months to avoid the heaviest tourist pressure.",
+  "top_sights": [
+   {
+    "name": "Doge's Palace (Palazzo Ducale)",
+    "why": "The historic seat of Venetian power featuring grand rooms and prisons; take the guided 'Secret Itinerary' to see administrative quarters, Casanova's cell and the ancient roof structure. Tickets are managed by MUVE museums—check availability and consider booking ahead."
+   },
+   {
+    "name": "Saint Mark's Basilica",
+    "why": "A richly decorated cathedral that showcases Venice's Byzantine connections and the city's historical wealth; its mosaics and spolia from Constantinople make it a highlight—expect entry controls and consider combined church passes if visiting multiple churches."
+   },
+   {
+    "name": "St Mark's Campanile (Bell tower of St. Mark)",
+    "why": "A 20th-century reconstruction of the collapsed tower offering panoramic views over the city and lagoon; a short ascent rewards you with a broad vista of Venice's islands and rooftops."
+   },
+   {
+    "name": "Rialto Bridge and the Rialto area",
+    "why": "The iconic stone bridge crossing the Grand Canal that links San Polo and San Marco; nearby is a lively market area—visit early to enjoy the atmosphere with fewer crowds."
+   },
+   {
+    "name": "Gallerie dell'Accademia",
+    "why": "Venice's most important museum of pre-19th-century art with an outstanding collection of Venetian masters; allocate time for its major works when exploring artistic heritage."
+   },
+   {
+    "name": "Peggy Guggenheim Collection",
+    "why": "A modern art museum in Dorsoduro with works by Picasso, Pollock, Duchamp and others plus a sculpture garden; good for a focused modern-art visit in a compact setting."
+   },
+   {
+    "name": "Scuola Grande di San Rocco",
+    "why": "A San Polo guild house famed for an extensive cycle of Tintoretto paintings that demonstrate Venetian Mannerism and dramatic religious scenes; allow time to absorb the large-scale canvases."
+   },
+   {
+    "name": "Jewish Ghetto (Cannaregio)",
+    "why": "A historic neighbourhood with active Jewish life and five synagogues; be aware that shops and services close on Saturdays and late Friday afternoons for the Sabbath."
+   }
+  ],
+  "getting_around": "Venice's historic centre is pedestrian and best explored on foot; regular vaporetti (water buses) and water taxis connect districts and islands. To reach outlying islands and for longer transfers, use the public water transport network or licensed boat services; expect different numbers and routes than on the mainland.",
+  "food": [
+   {
+    "name": "Sepe al nero (cuttlefish in its ink)",
+    "note": "A Venetian specialty using cuttlefish ink to flavour pasta, risotto or polenta; the ink yields an intense colour but a relatively mild taste."
+   },
+   {
+    "name": "Fegato alla veneziana (Venetian-style liver)",
+    "note": "Chopped liver cooked with onions, a traditional local dish often paired with polenta or bread."
+   },
+   {
+    "name": "Sarde in saor",
+    "note": "Fried sardines dressed with onions, raisins, pine nuts and vinegar—sweet-and-sour and typical of Venice's seafood cuisine."
+   },
+   {
+    "name": "Cicchetti and bacaro snacks",
+    "note": "Small plates and snacks served in bacari (wine bars), usually enjoyed with a glass of wine and ideal for casual tasting across the city."
+   },
+   {
+    "name": "Pizza (when you need it)",
+    "note": "Pizza is available but not Venice's culinary focus; local chains and specific venues serve acceptable versions if you prefer pizza over regional specialities."
+   }
+  ],
+  "budget_tips": [
+   "Avoid restaurants with staff aggressively soliciting customers outside; these are often aimed at tourists and may be overpriced.",
+   "Buy a churches pass if you plan to visit three or more churches to save on multiple individual entries.",
+   "Use public vaporetti rather than taxis when possible to reduce transport costs around the lagoon.",
+   "Eat cicchetti in bacari for inexpensive, varied options rather than full sit-down tourist menus at central restaurants."
+  ],
+  "safety": [
+   "Watch your belongings in crowded areas and on public transport; pickpocketing increases in busy tourist spots.",
+   "Respect religious services and Jewish Sabbath closures—many shops and synagogues in the Ghetto close on Saturdays and late Fridays.",
+   "Agree the price and duration before taking a gondola ride to avoid disputes, and use licensed gondoliers for regulated services.",
+   "Follow basic water-safety rules near canals and piers; exercise caution on wet or uneven pavements."
+  ],
+  "itinerary": [
+   "Day 1: Start in San Marco—visit Saint Mark's Basilica and the Doge's Palace (including the Secret Itinerary if available), then climb or take the lift up the Campanile for views; finish with a wander across the Rialto Bridge and the surrounding market.",
+   "Day 2: Explore Dorsoduro and San Polo—see the Gallerie dell'Accademia and Peggy Guggenheim Collection, then seek out the Scuola Grande di San Rocco and sample cicchetti in nearby bacari.",
+   "Day 3: Walk Cannaregio to the Jewish Ghetto and visit Castello for churches such as San Giovanni e Paolo; if time allows, take a vaporetto out to Murano or Burano to see glassmaking and colourful island towns."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Venice?",
+    "a": "Three days gives you time to cover the main sights in San Marco, Dorsoduro and Cannaregio and to visit at least one nearby island; shorter stays can still be rewarding if you prioritise key attractions."
+   },
+   {
+    "q": "Is Venice expensive to visit?",
+    "a": "Venice can be costly in peak areas and at tourist-focused restaurants, but you can limit expenses by choosing public transport, eating cicchetti in bacari, and avoiding aggressively marketed eateries."
+   },
+   {
+    "q": "Is Venice safe for tourists?",
+    "a": "Venice is generally safe but crowded; take standard precautions against pickpockets, be mindful around canals and agree prices for private services like gondolas before you go."
+   },
+   {
+    "q": "What is the best area to stay in Venice?",
+    "a": "Staying near San Marco or in Dorsoduro keeps you close to many major museums and attractions, while Cannaregio and Mestre offer quieter or more budget-conscious options—choose based on your priorities for sightseeing and atmosphere."
+   },
+   {
+    "q": "How do I get from the airport to the city?",
+    "a": "There are water and land transport options to reach Venice from the airport; water buses and land buses connect the airport to the island and mainland—check current schedules and routes for the most convenient transfer."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "فينيسيا (Venice)",
+  "country_name": "إيطاليا",
+  "title": "دليل سفر فينيسيا: ماذا ترى وتفعل وتعرف",
+  "meta_description": "دليل فينيسيا يقدّم أهم المعالم (سان ماركو، دورج بالاس، جسر ريالتو)، المأكولات، نصائح لتوفير المال وخطة لثلاثة أيام.",
+  "h1": "دليل سفر فينيسيا: ماذا ترى وتفعل وتعرف",
+  "intro": [
+   "فينيسيا مدينة جزرية على بحيرة، حافظت على هيئتها التاريخية لقرون مما يمنحها طابعًا فريدًا ورومانسيًا رغم تراجعها ومشكلة الازدحام السياحي. تُعد لاغون فينيسيا ومركزها التاريخي موقعًا مُدرجًا على قائمة التراث العالمي لليونسكو.",
+   "تاريخياً كانت جمهورية مزدهرة ومركزًا للفنون والموسيقى؛ المدينة لا تزال حية بالثقافة من المتاحف ودور الأوبرا والمهرجانات مثل بينالي وفينيسيا السينمائي، وتضم جزرًا معروفة مثل مورانو وبورانو وتورتشيلّو."
+  ],
+  "best_time": "إذا رغبت برؤية المدينة مع ازدحام أقل فاختر خارج أشهر الذروة السياحية، بينما يوفر موسم الكرنفال (يناير–فبراير، تواريخ متغيرة) تجربة مميزة بالأقنعة والأزياء. تجنّب الأوقات التي تشهد أحداثًا كبرى إن أردت هدوءًا أكثر.",
+  "top_sights": [
+   {
+    "name": "قصر الدوج (Doge's Palace)",
+    "why": "مقر السلطة التاريخي لمدينة البندقية ويعرض غرفًا رسمية ونفق السجون؛ احرص على حضور جولة «المسار السري» لمشاهدة أجزاء الإدارة والسجن ومَناطق سقف قديمة."
+   },
+   {
+    "name": "بازيليكا سان ماركو (Saint Mark's Basilica)",
+    "why": "كاتدرائية ساحرة بزخارفها والمواد الثمينة التي جُمعت على مرّ القرون؛ تستحق الزيارة لفهم دورها في التعبير عن ثروة ومكانة المدينة."
+   },
+   {
+    "name": "برج جرس سان ماركو (Campanile of St. Mark)",
+    "why": "نسخة أعيد بناؤها عام 1912 بعد انهيار البرج القديم ويمنح مطلّه منظراً رائعاً على المدينة والبحيرة، مفيد للتعرف على امتداد اللاغونا."
+   },
+   {
+    "name": "برج الساعة (Clock Tower)",
+    "why": "يضم ساعة فلكية مرممة وجولة لآلية الساعة وسطحها تعطى فقط ضمن جولة موجهة، ما يجعلها تجربة فنية وتقنية فريدة."
+   },
+   {
+    "name": "جسر ريالتو (Rialto Bridge)",
+    "why": "جسر يربط سان بولو وسان ماركو عبر القنال الكبير وأصبح رمزًا بصريًا للمدينة، من الأفضل زيارته صباحًا لتجنّب زحمة المصورين والمتاجر السياحية."
+   },
+   {
+    "name": "سكولا غراندي دي سان روكو (Scuola Grande di San Rocco)",
+    "why": "بيت نقابة يحتضن سلسلة لوحات عظيمة لتيينتوريتّو وتعد من أبرز أمثلة الفن المانيري في المدينة؛ خصص وقتًا لمشاهدة دورات الأعمال بين العهدين القديم والجديد."
+   },
+   {
+    "name": "الحَيّ اليهودي (Jewish Ghetto) في كاناريجيو",
+    "why": "حي يهودي نشط تاريخيًا ويضم خمس كنيسات؛ لاحظ أن المحلات والمطاعم والفعاليات قد تغلق أيام السبت أو نهاية يوم الجمعة."
+   },
+   {
+    "name": "غاليريا أكاديميا (Galleria dell'Accademia)",
+    "why": "أهم متحف فني في فينيسيا لمجموعات ما قبل القرن التاسع عشر ويُعد مرجعًا لفهم تطور الفن الفينيسي، مناسب ليوم مخصص للفنون."
+   }
+  ],
+  "getting_around": "المدينة تُكوّنها جزر مترابطة بالقنوات والمداخل؛ التنقّل أساسًا سيرًا على الأقدام وبالقوارب بين الجزر. تضم البلدية مناطق برّية مثل مِستري وليدو، ومن المفيد التخطيط للوصول بين المركز والجزر اعتمادًا على وسائل القوارب والخدمات المحلية.",
+  "food": [
+   {
+    "name": "Sepe al nero (حبار بحبره)",
+    "note": "طبق علامي أسود الحبر يستخدم لصلصات الباستا والريزوتو والبولينتا، بطعم أكثر ليونة مما تبدو لونه."
+   },
+   {
+    "name": "Fegato alla veneziana (كبد على الطريقة الفينيسية)",
+    "note": "مُحضّر من كبد مقطّع ومطبوخ مع البصل، من الأطباق التقليدية الإقليمية."
+   },
+   {
+    "name": "Sarde in saor (السردين الحلو الحامض)",
+    "note": "سمك سردين مقلي يقدم مع بصل مقلي وزبيب وصنوبر وخل وتوابل، من نكهات البحر الأدبية في المدينة."
+   },
+   {
+    "name": "Cicchetti وباكارو",
+    "note": "نوع من المقبلات الصغيرة الشبيهة بالتاباس تقدم في الباكاري (حانات النبيذ) ومناسبة لتذوّق أطعمة محلية مع كأس نبيذ."
+   },
+   {
+    "name": "بيتزا محلية وسلاسل محلية",
+    "note": "البيتزا ليست تخصص فينيسيا الأشهر في إيطاليا لكن توجد خيارات مقبولة، والأسعار تختلف حسب المكان والكم."
+   }
+  ],
+  "budget_tips": [
+   "إذا كنت تزور ثلاث كنائس أو أكثر فاشترِ تمريرة الكنائس (Chorus Pass) لتوفير المال بدلًا من تَسديد كل دخول منفصل.",
+   "تقدّم متاحف MUVE تمريرات لعدة متاحف مع فترات صلاحية مدرجة؛ تحقق من هذه البطاقات إذا كنت تخطط لزيارة متاحف متعددة.",
+   "تجنّب المطاعم التي يخرج منها عاملون يقفون في الخارج لدعوة الزبائن، فغالبًا ما تكون عروضهم أقل جودة وسعرًا أعلى.",
+   "لتناول وجبة سريعة واقتصادية جرب السيكيتّي في الباكارو بدلًا من مطعم جلوس كامل، فهو خيار تقليدي وتوفير عملي."
+  ],
+  "safety": [
+   "احترم أوقات إغلاق المؤسسات الدينية واليهودية: في الحي اليهودي تُغلق المتاجر والمطاعم عادة يوم السبت ونهايات يوم الجمعة.",
+   "تجنّب المواجهات مع باعة عروض الجندول أو الخدمات السياحية—اتفق على السعر والمدة قبل بدء الرحلة لتفادي خلافات.",
+   "احترم قواعد السلوك داخل الكنائس والأماكن الدينية وارتدِ ملابس محتشمة عند الضرورة، فقد تفرض بعض الكنائس رسوم دخول أو قيودًا."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشف ساحة سان ماركو — زر بازيليكا سان ماركو، قصر الدوج، برج الجرس وبرج الساعة ثم تمشّ في محيط القنال الكبير نحو جسر ريالتو.",
+   "اليوم الثاني: خُذ وقتًا لزيارة جزر اللاغونا مثل مورانو (متاحف الزجاج) وبورانو وتورتشيلّو للاطّلاع على الحرف المحلية والأجواء الهادئة مقارنة بالمركز.",
+   "اليوم الثالث: يوم فنون ومتاحف — زُر غاليريا أكاديميا، متحف بيغي غوغنهايم، ثم خصص وقتًا لسكولا غراندي دي سان روكو أو متاحف MUVE الأخرى."
+  ],
+  "faq": [
+   {
+    "q": "كم يومًا أحتاج في فينيسيا؟",
+    "a": "ثلاثة أيام يسمحان بجولة جيدة في المعالم الرئيسية (سان ماركو، المتاحف، وجزر اللاغونا)، لكن يمكنك تمديد الزيارة للاستمتاع بالمعارض والتمثيلات الموسيقية."
+   },
+   {
+    "q": "هل فينيسيا مدينة مكلفة؟",
+    "a": "تتفاوت التكاليف؛ بعض الأنشطة مثل ركوب الجندول غالبًا ما تكون مكلفة، فيما توجد خيارات اقتصادية مثل السيكيتّي وزيارات المتاحف ببطاقات متعددة الدخول."
+   },
+   {
+    "q": "هل فينيسيا آمنة للسياح؟",
+    "a": "المدينة آمنة عمومًا لكن ازدحام السياح شائع؛ احرص على ممتلكاتك واتباع سلوك محترم في الأماكن الدينية والحي اليهودي خصوصًا عند الإغلاق الأسبوعي."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "المدينة القديمة حول سان ماركو مناسبة لمن يريدون أن يكونوا قرب المعالم، أما ليدو ومِستري فهما خياران بديلان يوفران وصولاً إلى البحر أو البرّ مع اختلاف الأجواء."
+   },
+   {
+    "q": "كيف أصل من البرّ إلى قلب المدينة؟",
+    "a": "البلدية تشمل أراضٍ برّية وجزرًا؛ الوصول إلى المركز يتضمن الانتقال من البرّ إلى الجزر عبر خدمات القوارب ووسائل النقل المائي المحلية أو نقاط وصل إلى ليدو ومِستري."
+   }
+  ]
+ }
+}

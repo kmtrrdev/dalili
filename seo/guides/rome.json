@@ -1,0 +1,227 @@
+{
+ "slug": "rome",
+ "name": "Rome",
+ "country": "Italy",
+ "tags": [
+  "history",
+  "culture",
+  "food"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Rome",
+ "en": {
+  "city_name": "Rome",
+  "country_name": "Italy",
+  "title": "Rome travel guide: what to see, eat and know",
+  "meta_description": "Practical Rome guide with top sights (Colosseum, Vatican, Pantheon), food tips, budget advice, 3-day itinerary and when to visit.",
+  "h1": "Rome travel guide: what to see, eat and know",
+  "intro": [
+   "Rome, the Eternal City, is Italy's capital and the largest city in the Lazio region. With about 2,500 years of history, Rome's layers of ancient ruins, grand basilicas, ornate fountains and centuries-old palaces make it one of the world's most visited and influential capitals.",
+   "The historic centre is a UNESCO World Heritage Site and the city combines monumental avenues and monumental architecture with narrow medieval streets and lively neighbourhoods. Rome is also home to the Vatican City, a vibrant food scene, growing nightlife and renowned shopping districts."
+  ],
+  "best_time": "Spring and autumn are the most pleasant seasons for sight-seeing, with milder weather and fewer extremely hot days. Be aware that for about two weeks in August many local businesses close for holidays and that summer temperatures in the centre can be uncomfortable; mid-May often includes a cultural week with free entry to many state-owned sites.",
+  "top_sights": [
+   {
+    "name": "Colosseum",
+    "why": "Ancient Rome's most iconic amphitheatre and a must-see for the city's imperial past; buy tickets early or use a Roma Pass to skip queues when possible."
+   },
+   {
+    "name": "Roman Forum",
+    "why": "The political and religious heart of ancient Rome, located beside the Colosseum and best seen together with nearby archaeological sites; allow time to wander the ruins and read the signage."
+   },
+   {
+    "name": "Pantheon",
+    "why": "A remarkably well preserved ancient temple with a distinctive oculus in its dome; visiting during rain offers a unique experience as light and water enter through the central opening."
+   },
+   {
+    "name": "Vatican City and Vatican Museums",
+    "why": "A centre of religious and artistic heritage including the Sistine Chapel and vast museum collections; consider passes that include Vatican entry if you plan to visit."
+   },
+   {
+    "name": "Trevi Fountain",
+    "why": "One of Rome's most famous fountains and a popular photo spot; note that there may be a small tourist fee introduced for the site and expect crowds."
+   },
+   {
+    "name": "Castel Sant'Angelo",
+    "why": "A mausoleum turned fortress connected to the Vatican by a fortified corridor, offering historical interest and views along the river; walk across from the historic centre for a scenic approach."
+   },
+   {
+    "name": "Baths of Caracalla",
+    "why": "One of the largest and best-preserved Roman baths, south of the Colosseum and worth combining with a visit to the Appian Way and other southern ruins."
+   },
+   {
+    "name": "Appian Way (Via Appia Antica)",
+    "why": "A historic Roman road lined with ancient tombs, aqueducts and ruins such as the Tomb of Cecilia Metella; it rewards visitors who explore beyond the city centre."
+   }
+  ],
+  "getting_around": "Rome's centre is compact enough to explore on foot, with many sights clustered together; walking often gives the best experience. The city has public transport that connects suburbs and major sites—if you'll stay several days consider transport options or tourist passes that include public transit and museum entry to save time and money.",
+  "food": [
+   {
+    "name": "Thin-crust Roman pizza",
+    "note": "Typical Roman pizza has a very thin crust and is commonly eaten with fork and knife in restaurants; avoid tourist traps near main sights for better value."
+   },
+   {
+    "name": "Pizza al taglio",
+    "note": "Rectangular pizza sold by weight in slices from large pans; a quick, affordable way to eat on the go."
+   },
+   {
+    "name": "Fried baccalà",
+    "note": "Battered salt cod makes a classic fried starter at some Roman eateries and markets."
+   },
+   {
+    "name": "Gelato",
+    "note": "Italian-style ice cream is widely available across the city and makes a popular treat while sightseeing."
+   },
+   {
+    "name": "Deli specialities (e.g. Volpetti)",
+    "note": "Specialist food shops and delicatessens offer cheeses, cured meats and pastries—good for picnic supplies or a casual meal."
+   }
+  ],
+  "budget_tips": [
+   "Visit during the annual cultural week in mid-May when many state-run landmarks and sites are free to enter.",
+   "Take advantage of government-owned museums and sites that offer free admission on the first Sunday of each month.",
+   "Consider buying a Roma Pass if staying at least three days to get included public transport and free entry to the first two museums or archaeological sites visited.",
+   "Eat in residential neighbourhoods or buy pizza al taglio and supermarket fresh foods to keep meal costs down rather than dining in tourist-heavy locations."
+  ],
+  "safety": [
+   "Derby matches between AS Roma and SS Lazio can involve crowd trouble; avoid large confrontations around the stadium and follow local advice.",
+   "Be mindful of crowded tourist areas where pickpocketing is common; keep valuables secure and be aware of your surroundings.",
+   "In August many businesses close for holidays; plan ahead for services and opening hours during this period.",
+   "When walking near the river check access conditions, as river levels and access can change with the seasons."
+  ],
+  "itinerary": [
+   "Day 1: Explore the Colosseo area—visit the Colosseum, Roman Forum and Palatine Hill, then walk Via dei Fori Imperiali toward Piazza Venezia and see nearby Trajan's Market and monuments.",
+   "Day 2: Cross the Tiber to the Vatican area to visit St Peter's and the Vatican Museums, then walk to Castel Sant'Angelo and spend the evening in Trastevere for dinner and a lively neighbourhood atmosphere.",
+   "Day 3: Head south to the Baths of Caracalla and then out along the Appian Way to see the tombs, aqueducts and countryside ruins; return to town for shopping around Via del Corso or Via Condotti."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Rome?",
+    "a": "Three full days allow you to see the main ancient sites, the Vatican and a neighbourhood or two at a relaxed pace, while longer stays let you explore museums and less central areas."
+   },
+   {
+    "q": "Is Rome expensive to visit?",
+    "a": "Rome can be expensive in tourist hotspots, but there are ways to save such as eating in residential areas, buying pizza al taglio or supermarket food, and using free admission days or tourist passes."
+   },
+   {
+    "q": "Is Rome safe for tourists?",
+    "a": "Rome is generally safe but take standard precautions: watch for pickpockets in crowded areas, avoid trouble around heated football matches, and secure belongings when sightseeing."
+   },
+   {
+    "q": "What is the best area to stay in Rome?",
+    "a": "Stay near the historic centre if you want to be within walking distance of many major sights; neighbourhoods across the river such as Trastevere offer authentic dining and a livelier local feel."
+   },
+   {
+    "q": "How can I save on museum entry?",
+    "a": "Use free-entry opportunities—state-run sites are free during the cultural week in mid-May and on the first Sunday of each month—and consider the Roma Pass for included entries and transport if staying several days."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "روما (Roma)",
+  "country_name": "إيطاليا",
+  "title": "روما دليل السفر: أهم الأماكن والطعام والميزانية",
+  "meta_description": "دليل روما: أهم المعالم التاريخية، أين تأكل، نصائح لتوفير المال، وخطة ثلاثية الأيام لزيارة المدينة الأبدية.",
+  "h1": "دليل روما: ماذا ترى، تأكل وتعرف",
+  "intro": [
+   "روما، المدينة الأبدية، عاصمة إيطاليا ومركز تاريخي وثقافي يعود لقرون من الازدهار الحضاري. مركز الإمبراطورية الرومانية والكنيسة الكاثوليكية، يحتضن قلباً تاريخياً مصنّفاً ضمن مواقع التراث العالمي ويضم بلاطات وكنائس وخرائب ونوافير وميادين تجذب زوار العالم.",
+   "المدينة تجمع بين أجواء رومانسية وآثار أثرية وضجيج المدينة الحديثة، وتتميز بحياة ليلية متنامية ومشهد تسوق قوي، كما أن التجول سيراً يمنحك فرصاً لاكتشاف الأزقة والكنائس الصغيرة بجانب الشوارع البارزة والقصور."
+  ],
+  "best_time": "الربيع والخريف عادةً الأفضل لطقس معتدل وحشود أقل من ذروة الصيف؛ خلال منتصف مايو تُقام أسبوعيات تمنح دخولاً مجانياً للمتاحف والمواقع الحكومية مما يجعل الزيارة أكثر اقتصادية. انتبه إلى أن شهري أغسطس يشهدان إغلاقاً مؤقتاً للمتاجر والمطاعم لأسابيع؛ هذا قد يقلل الازدحام لكنه يؤثر على توفر الخدمات.",
+  "top_sights": [
+   {
+    "name": "الكولوسيوم (Colosseum)",
+    "why": "أيقونة روما القديمة وواحد من أهم المواقع الأثرية في المدينة؛ زيارة مبكرة أو استخدام بطاقة سياحية قد تساعدك على تجنب طوابير الدخول الطويلة."
+   },
+   {
+    "name": "المنتدى الروماني (Roman Forum)",
+    "why": "مجموعة بقايا أثرية تمثل مركز الحياة السياسية والاجتماعية في روما القديمة؛ يمكن دمجه بجولة للكولوسيوم وطريق فيوري إمبيريالي."
+   },
+   {
+    "name": "البانثيون (Pantheon)",
+    "why": "معبد روماني محفوظ يتميز بقبة ذات فتحة في السقف وتجربة فريدة أثناء المطر؛ الوصول سيراً من بيازا فينيسيا يمر بأماكن أثرية أخرى."
+   },
+   {
+    "name": "الفاتيكان وقلعة سانت أنجلو (Vatican & Castel Sant'Angelo)",
+    "why": "مركز روحي وتاريخي عالمي مع مواقع متصلة تاريخياً؛ قلعة سانت أنجلو تقدم رابطاً تقليدياً للمناطق الفاتيكانية ويمكن زيارتها ضمن مسار عبر نهر التيبر."
+   },
+   {
+    "name": "نافورة تريفي (Trevi Fountain)",
+    "why": "واحدة من أشهر نوافير العالم وتجربة لا بد منها؛ لاحظ أنه تم فرض رسم رمزي عند الزيارة في إطار رسوم السياحة لبعض الإجراءات المحلية."
+   },
+   {
+    "name": "حمامات كاراكلا (Baths of Caracalla)",
+    "why": "أطلال حمامات رومانية ضخمة جنوب الكولوسيوم تُظهر فخامة البنية التحتية العامة في العهد الروماني."
+   },
+   {
+    "name": "طريق الأبّي القديم (Appian Way / Via Appia)",
+    "why": "طريق روماني تاريخي يمتد جنوب شرق المدينة ويضم مقابر وآثاراً وأقواساً أثرية، وهو مناسب لجولة خارج المركز السياحي الرئيسي."
+   },
+   {
+    "name": "باركو ديلا موزيكا / الأوديتوريوم (Parco della Musica / Auditorium)",
+    "why": "مجمّع موسيقي رئيسي لروما يستضيف حفلات كلاسيكية وجاز وبوب، ومسرحاً صيفياً في الهواء الطلق لعروض كبيرة؛ تحقق من برامج العروض قبل الزيارة."
+   }
+  ],
+  "getting_around": "روما مناسبة جداً للمشي داخل المركز التاريخي ويفضل التجول سيراً بين كثير من المعالم. بطاقة Roma Pass توفر الوصول الكامل لوسائل النقل العام ويمكن أن تسهّل دخول بعض المواقع؛ تأكد من صلاحية البطاقة قبل استخدامها عند بوابات المترو واشتريها من مكاتب سياحية رسمية لتجنب الأسعار المرتفعة في الأكشاك غير الرسمية.",
+  "food": [
+   {
+    "name": "البيتزا الرومانية",
+    "note": "رقيقة القشرة عادةً وتؤكل بالسكين والشوكة؛ الأمكنة الواقعة خارج المناطق السياحية تقدم غالباً جودة أفضل وأسعار أنسب."
+   },
+   {
+    "name": "بيتزا آل تاجليو (Pizza al Taglio)",
+    "note": "تُباع بالمقطع وبالوزن وتعد خياراً اقتصادياً وسريعاً للطعام أثناء التجوال."
+   },
+   {
+    "name": "الباكالا المقلي (baccalà)",
+    "note": "مقبلات شهيرة مصنوعة من قِطع القد المملّح والمقلي يمكن تجربتها في بعض المطاعم الرومانية."
+   },
+   {
+    "name": "الجيلاتو (gelato)",
+    "note": "مثلجات إيطالية مشهورة متوفرة في العديد من المحلات، خيار منعش أثناء المشي في المدينة."
+   },
+   {
+    "name": "منتجات فولبيتي (Volpetti) ووجبات النزهة",
+    "note": "متاجر مختصة مثل Volpetti معروفة بمنتجاتها الفاخرة، أو يمكنك شراء مستلزمات من سوبرماركت لتحضير نزهة في أحد المتنزهات."
+   }
+  ],
+  "budget_tips": [
+   "استفد من أسبوع الدخول المجاني للمواقع الحكومية في منتصف مايو أو من أيام الأحد المجانية لمتاحف الدولة لتقليل تكاليف الزيارات.",
+   "إذا أمضيت 2–3 أيام، فكر في شراء Roma Pass للاستفادة من وسائل النقل العام والدخول المجاني إلى أول متحفين أو موقعين أثريين والانتفاع بتخطي الطوابير أحياناً.",
+   "تجنب المطاعم في المناطق السياحية واختَر الأحياء السكنية أو تراستيفيري (Trastevere) للحصول على طعام محلي بأسعار أفضل.",
+   "تناول وجبات سريعة محلية مثل Pizza al Taglio أو التسوق من السوبرماركت لتجهيز نزهة لتقليل نفقات الطعام."
+  ],
+  "safety": [
+   "خلال مباريات الداربي بين أندية المدينة قد تحدث أعمال شغب؛ تجنب المناطق المحيطة بالملاعب في أيام المباريات إن أمكن.",
+   "في أغسطس تتوقف الكثير من المتاجر والمطاعم عن العمل لفترات؛ خطط مسبقاً لتفادي البحث عن خدمات مغلقة.",
+   "احرص على شراء التذاكر وبطاقات الزيارة من المكاتب الرسمية لتجنب دفع أسعار أعلى أو الوقوع في عمليات احتيال.",
+   "توقع ازدحاماً وطوابيراً في المواقع الشهيرة وخطط لزيارة مبكرة أو استخدم البطاقات التي قد تتيح تخطي الطوابير."
+  ],
+  "itinerary": [
+   "اليوم الأول: ابدأ بمنطقة الكولوسيوم والمنتدى الروماني ثم تجول إلى البانثيون وارتشاف قهوة في الساحة، وأنهِ اليوم بزيارة نافورة تريفي مساءً.",
+   "اليوم الثاني: خصصه للفاتيكان وزيارة المتاحف إن رغبت، بعدها تجول على ضفاف التيبر وزُر قلعة سانت أنجلو ثم اذهب لعدة مطاعم في حي تراستيفيري للعشاء.",
+   "اليوم الثالث: قم برحلة إلى طريق الأبّي القديم لزيارة الآثار والمقابر، ثم عد لرؤية حمامات كاراكلا وبعدها حضور عرض أو حفل في باركو ديلا موزيكا إن كان هناك برنامج."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لزيارة روما؟",
+    "a": "ثلاثة أيام تكفي لرؤية أبرز معالم المدينة القديمة والفاتيكان وجولة مريحة بين الساحات والحي الشعبي، لكن للتعمق في المتاحف والأحياء المختلفة قد تحتاج إلى المزيد."
+   },
+   {
+    "q": "هل روما مكلفة للزيارة؟",
+    "a": "روما تقدم خيارات للمسافرين ذوي الميزانيات المختلفة؛ توجد تذاكر وباسات توفر خصومات ودخول مجاني في بعض الأيام، كما أن تناول الطعام في الأحياء السكنية وشراء الوجبات السريعة يخفف النفقات."
+   },
+   {
+    "q": "هل روما مدينة آمنة؟",
+    "a": "كن حذراً من الحشود واحفظ متعلقاتك الشخصية، وتجنب الاشتباك في مصادمات المشجعين عند المباريات."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "الإقامة قرب المركز التاريخي تسهل الوصول سيراً إلى معظم المعالم؛ حي تراستيفيري خيار جيد لمن يريد جوّاً محلياً ومطاعم بأسعار معقولة."
+   },
+   {
+    "q": "كيف أتحرك من المطار وإلى المعالم؟",
+    "a": "وسائل النقل العام متوفرة وتكون مريحة داخل المدينة، وبطاقات مثل Roma Pass تشمل الوصول لوسائل النقل العام؛ تأكد من شراء التذاكر من مكاتب رسمية والتحقق من صلاحية أي بطاقة قبل استخدامها."
+   }
+  ]
+ }
+}

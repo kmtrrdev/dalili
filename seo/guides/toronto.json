@@ -1,0 +1,225 @@
+{
+ "slug": "toronto",
+ "name": "Toronto",
+ "country": "Canada",
+ "tags": [
+  "culture",
+  "food",
+  "shopping"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Toronto",
+ "en": {
+  "city_name": "Toronto",
+  "country_name": "Canada",
+  "title": "Toronto travel guide: things to do, eat and know",
+  "meta_description": "Practical Toronto travel guide with top sights, museums, food, budget tips and a 3-day itinerary for Canada's largest city.",
+  "h1": "Toronto travel guide: what to see, eat and know",
+  "intro": [
+   "Toronto is a diverse, energetic and liveable city with a huge range of attractions, dining, shopping and entertainment options. It is Canada’s most populous city, the centre of the country’s financial sector and the capital of Ontario.",
+   "More than half of Toronto’s residents were born outside Canada, creating lively neighbourhoods with many languages, shops and authentic cuisines. Visitors will find world-class museums, distinctive landmarks and extensive parkland woven through the city."
+  ],
+  "best_time": "Late spring through early fall is best for outdoor activities, beaches and exploring neighbourhoods on foot. Winter brings cold weather, but many museums, indoor attractions and the PATH network make the city accessible year-round.",
+  "top_sights": [
+   {
+    "name": "CN Tower",
+    "why": "A defining Toronto landmark and one of the tallest free‑standing structures in the world; great for skyline views. Buy tickets in advance if you plan to go up to avoid queues."
+   },
+   {
+    "name": "Royal Ontario Museum",
+    "why": "One of North America’s largest museums, combining art, world culture and natural history; ideal for a long indoor visit with varied exhibits. Check the museum's galleries to prioritise what interests you most."
+   },
+   {
+    "name": "Art Gallery of Ontario",
+    "why": "Canada’s largest art gallery with strong Canadian works and a notable collection of Henry Moore sculptures. Allow time for both the Canadian and European collections."
+   },
+   {
+    "name": "Casa Loma",
+    "why": "A historic castle with decorated suites, tunnels, towers and formal gardens that evoke early 20th‑century elegance. Wear comfortable shoes for stairs and garden paths."
+   },
+   {
+    "name": "Hockey Hall of Fame",
+    "why": "A museum and hall of fame dedicated to ice hockey history, appealing to sports fans and families. It’s centrally located and pairs well with other downtown attractions."
+   },
+   {
+    "name": "Bata Shoe Museum",
+    "why": "An offbeat museum focused on footwear from cultures worldwide, offering a compact and unusual collection. Good for a shorter museum stop that’s easy to fit into a day."
+   },
+   {
+    "name": "Spadina House Museum",
+    "why": "A preserved historic mansion dating from the 1860s with period rooms and attractive grounds, useful for learning about the city’s past. Combine with nearby neighbourhood walks to get context."
+   },
+   {
+    "name": "Toronto Zoo",
+    "why": "A large zoological park showcasing thousands of animals across many species, suitable for a full‑day outdoor visit. Plan for travel time as it sits outside the downtown core."
+   }
+  ],
+  "getting_around": "Toronto has an extensive subway and surface transit network for getting around the central city, but distances across the Greater Toronto Area can be large and public transit may not always be the fastest option. From Union Station and the financial core you can use the PATH underground network to move between downtown buildings without going outside; many suburban residents rely on private cars for longer trips.",
+  "food": [
+   {
+    "name": "Peameal bacon sandwich",
+    "note": "A Toronto classic of sliced cured pork loin on a roll, traditionally eaten at St. Lawrence Market."
+   },
+   {
+    "name": "Roti",
+    "note": "A curry wrapped in a roti flatbread with Caribbean and East Indian varieties found across the city; many neighbourhood shops serve excellent versions."
+   },
+   {
+    "name": "Jerk chicken",
+    "note": "Reflecting Toronto’s large Jamaican community, jerk chicken is widely available and a staple of the city’s Caribbean food scene."
+   },
+   {
+    "name": "Multicultural ethnic cuisine",
+    "note": "Toronto offers highly authentic foods from many cultures, making it easy to sample diverse dishes across neighbourhoods."
+   },
+   {
+    "name": "Cheap iconic meals",
+    "note": "The city is known for affordable, high‑quality meals—many beloved dishes can be found for modest prices if you seek local markets and smaller eateries."
+   }
+  ],
+  "budget_tips": [
+   "Eat at markets and small ethnic restaurants where excellent meals can often be found for much less than downtown tourist restaurants.",
+   "Use the PATH network to save time and stay warm or cool while walking between downtown destinations.",
+   "Focus on neighbourhoods and Discovery Walks to see the city without paying for tours; many parks and public spaces are free to visit.",
+   "Combine multiple nearby attractions in one day to reduce travel time across the sprawling metro area."
+  ],
+  "safety": [
+   "Be respectful about people’s backgrounds; many residents were born outside Canada and may be sensitive to being treated as outsiders.",
+   "Keep an eye on personal belongings in busy tourist areas and on transit, as you would in any large city.",
+   "When visiting parks, beaches or islands, follow posted rules and use common sense about water and weather conditions."
+  ],
+  "itinerary": [
+   "Day 1: Explore downtown—visit CN Tower and nearby Rogers Centre, stroll Nathan Phillips Square and Toronto City Hall, then shop through the Eaton Centre and the PATH network.",
+   "Day 2: Museum day—spend the morning at the Royal Ontario Museum or Art Gallery of Ontario, then visit Casa Loma and one of the smaller museums such as the Bata Shoe Museum or Textile Museum.",
+   "Day 3: Parks and waterfront—take a ferry to the Toronto Islands for beaches and parkland, or explore Discovery Walks and waterfront neighbourhoods; alternatively visit the Toronto Zoo or Black Creek Pioneer Village for a full‑day outing."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Toronto?",
+    "a": "Three days lets you see major landmarks, a couple of museums and experience neighbourhoods and the waterfront; longer stays let you explore suburbs, islands and more specialised museums."
+   },
+   {
+    "q": "Is Toronto expensive to visit?",
+    "a": "Toronto can be expensive in parts, but there are many affordable dining options, markets and free public spaces that make it possible to visit on a modest budget."
+   },
+   {
+    "q": "Is Toronto safe for travellers?",
+    "a": "Toronto is generally safe, but like any large city you should stay aware of your surroundings, watch belongings in crowded areas and follow standard travel precautions."
+   },
+   {
+    "q": "What is the best area to stay in Toronto?",
+    "a": "Staying downtown near the financial district or near major subway stations gives easy access to top sights, shopping and the PATH network; this location is convenient for first‑time visitors."
+   },
+   {
+    "q": "How do I get from the airport to the city?",
+    "a": "Toronto’s airports have multiple transport options into the city including transit and road links; plan your transfer based on your arrival terminal and how much luggage you have."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "تورونتو",
+  "country_name": "كندا",
+  "title": "دليل سفر تورونتو: ماذا ترى وتفعل وتذوق",
+  "meta_description": "دليل عملي لتورونتو: أهم المعالم والمتاحف، الأكل المتعدد الثقافات، نصائح لتوفير المال وخطة لثلاثة أيام.",
+  "h1": "دليل سفر تورونتو: ماذا ترى وتفعل وتعرف",
+  "intro": [
+   "تورونتو مدينة حيوية ومتنوعة وواحدة من أكثر المدن قابلية للعيش في كندا، وتضم العديد من معالم الجذب وفرص التسوق والطعام والترفيه. هي أكبر مدن كندا ومركز القطاع المالي وعاصمة مقاطعة أونتاريو.",
+   "تتميز تورونتو بتنوع سكاني كبير: تمثل أكثر من 80 مجتمعاً عرقياً وتزيد نسبة المقيمين المولودين خارج كندا على نصف السكان، ما يجعل أحياءها مليئة بالمطاعم والأسواق والثقافات المتنوعة."
+  ],
+  "best_time": "يعتمد اختيار أفضل وقت لزيارة تورونتو على تفضيلك للطقس والحشود؛ المدينة تتوسع حول بحيرة أونتاريو والمناخ والمشاعر الموسمية تؤثر على الأنشطة الخارجية مثل الشواطئ والمشي في الحدائق. ضع في الحسبان أن المسافات داخل المنطقة الحضرية قد تطيل زمن التنقل بين الأحياء.",
+  "top_sights": [
+   {
+    "name": "برج سي إن (CN Tower)",
+    "why": "رمز بارز لمدينة تورونتو وسجل بناء ضخم يصل لارتفاعات شاهقة؛ يوفر مشاهد بانورامية على المدينة وبحيرة أونتاريو، فاختر وقت زيارة يسمح برؤية واضحة قدر الإمكان."
+   },
+   {
+    "name": "المتحف الملكي في أونتاريو (Royal Ontario Museum)",
+    "why": "أحد أكبر متاحف أمريكا الشمالية يجمع بين الفن والثقافات العالمية والتاريخ الطبيعي، مناسب لزيارة تستغرق عدة ساعات لاستكشاف معروضاته المتنوعة."
+   },
+   {
+    "name": "معرض فنون أونتاريو (Art Gallery of Ontario)",
+    "why": "أكبر صالة فنون في كندا مع مجموعات بارزة في الرسم الكندي ومجموعة كبيرة من تماثيل هنري مور؛ زيارة مفيدة لمحبي الفن مع تخصيص وقت للمعروضات المميزة."
+   },
+   {
+    "name": "قصر كاسا لوما (Casa Loma)",
+    "why": "قصر تاريخي يعكس فترات من الفخامة الأوروبية ويضم أجنحة مزخرفة وأنفاقاً وحدائق واسعة، مناسب لمن يبحث عن تجربة تعكس العمارة والتاريخ المحلي."
+   },
+   {
+    "name": "متحف حذاء باتا (Bata Shoe Museum)",
+    "why": "متحف فريد مخصص للأحذية من ثقافات مختلفة حول العالم؛ تجربة غريبة وممتعة لمن يهتمون بالتصميم والملابس عبر الأزمنة."
+   },
+   {
+    "name": "قاعة مشاهير الهوكي (Hockey Hall of Fame)",
+    "why": "مزيج من المتحف وقاعة الشهرة المكرّسة لتاريخ هوكي الجليد، ضرورية لعشاق الرياضة والتاريخ الرياضي الكندي."
+   },
+   {
+    "name": "حدائق وحديقة حيوانات تورونتو (Toronto Zoo)",
+    "why": "مرفق بارز للحياة البرية في كندا يعرض آلاف الحيوانات ومئات الأنواع، مناسب لزيارة عائلية وقضاء نصف يوم أو أكثر."
+   },
+   {
+    "name": "القرية التاريخية بلاك كريك (Black Creek Pioneer Village)",
+    "why": "استعادة لأسلوب الحياة في أونتاريو في القرن التاسع عشر مع مبانٍ تاريخية وممثلين يرتدون أزياء الفترة، تعطي إحساساً بالتاريخ المحلي وتجربة تفاعلية."
+   }
+  ],
+  "getting_around": "تورونتو جزء من منطقة حضرية كبيرة وتمتد على رقعة واسعة؛ النقل العام مفيد داخل المدينة لكن قد لا يكون عملياً دائماً للتنقل بين الضواحي البعيدة، ويعتمد الكثير من السكان في الضواحي على السيارات الخاصة. في قلب المدينة توجد مساحات تسوق وأنفاق تحت الأرض تيسر الحركة بين المحطات والمباني.",
+  "food": [
+   {
+    "name": "ساندويتش لحم الخنزير المملّح (Peameal bacon sandwich)",
+    "note": "طبق محلي كلاسيكي مكوَّن من شرائح لحم خنزير مع خبز كايزر ويمتاز بوجود بائعين مشهورين في سوق سانت لورنس."
+   },
+   {
+    "name": "روتي (Roti)",
+    "note": "طبق من الكاري الملفوف بخبز مسطح نشأ في ترينيداد وغيانا ويُعدّ من أشهر الأطعمة التورونتية متعددة الأصول، ويتوفر بنوعية كارِيبية وهندية مع دكاكين معروفة داخل المدينة وخارجها."
+   },
+   {
+    "name": "دجاج جيرك (Jerk chicken)",
+    "note": "طبق من المطبخ الجامايكي منتشر في تورونتو بفضل الجالية الجامايكية الكبيرة ويعكس التنوع الكاريبي في المشهد الغذائي للمدينة."
+   },
+   {
+    "name": "التنوع الإثني في المطاعم",
+    "note": "تورونتو موطن لمطابخ حقيقية من أنحاء العالم، ما يجعل تناول الوجبات الخارجية سهلاً وبأسعار مناسبة مع خيارات من مطاعم الحيّ الواحد."
+   },
+   {
+    "name": "الأسواق المحلية مثل سوق سانت لورنس",
+    "note": "أسواق المدينة توفر مأكولات محلية ومكونات طازجة، وهي مكان جيد لتجربة أطعمة تورونتو التقليدية ومعرفة بائعيها المشهورين."
+   }
+  ],
+  "budget_tips": [
+   "ابحث عن وجبات محلية في الأسواق والمطاعم العرقية التي غالباً ما تقدم طعاماً جيداً بأسعار معقولة.",
+   "استفد من المساحات العامة والحدائق والشواطئ كأنشطة مجانية للاستمتاع بالطبيعة داخل المدينة.",
+   "خطط للتنقل مع مراعاة أن التنقل بين الضواحي قد يستغرق وقتاً، فتجميع نشاطاتك في نفس المنطقة يقلل تكاليف السفر.",
+   "استخدم ممرات التسوق تحت الأرض (PATH) لتقليل الحاجة للصرف الإضافي وقت سوء الطقس والتنقل بين المحطات والمراكز التجارية."
+  ],
+  "safety": [
+   "عامل السكان من أصول مهاجرة كأي مواطن محلي ولا تفترض انتماءً مختلفاً؛ يظهر التنوع في المدينة وينبغي احترام الهوية الثقافية لكل فرد.",
+   "ضع في الحسبان الضوضاء والتلوث بالقرب من الطرق السريعة مثل جاردينر إكسبريسواي عند التخطيط للشواطئ أو المشي الشاطئي.",
+   "خطط لمواعيد التنقل مع مراعاة أن المدينة مترامية الأطراف وأن أوقات التنقل قد تطول، خصوصاً إذا كنت تعتمد على وسائل نقل بين الضواحي والمدينة."
+  ],
+  "itinerary": [
+   "اليوم 1: استكشف قلب المدينة — قم بزيارة برج سي إن ومحيط روجرز سنتر، تنزه عبر مسارات PATH وزور مركز إيتون للتسوق ثم اختتم اليوم بزيارة سوق سانت لورنس لتذوق الساندويتشات المحلية.",
+   "اليوم 2: يوم المتاحف والثقافة — خصص الزيارة لمتحف أونتاريو الملكي ومعرض فنون أونتاريو، وزر متحف باتا للأحذية وقصر كاسا لوما للاطلاع على التاريخ والعمارة.",
+   "اليوم 3: مساحات مفتوحة وشواطئ — استمتع بالمشي في الحدائق وحدائق تورونتو النباتية، ثم اتجه إلى شواطئ المدينة أو جزر تورونتو لاستراحة في المساحات الخضراء والواجهات المائية."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لزيارة تورونتو؟",
+    "a": "ثلاثة أيام تكفي للتعرّف على أبرز معالم وسط المدينة وبعض المتاحف والجزر، بينما زيارة أكثر شمولية لضواحي ومناطق بعيدة تتطلب وقتاً إضافياً بسبب امتداد المنطقة الحضرية."
+   },
+   {
+    "q": "هل تورونتو مدينة مكلفة؟",
+    "a": "يمكن أن تكون الزيارة مكلفة أو اقتصادية حسب اختياراتك؛ توجد خيارات طعام وأسواق بأسعار معقولة وأنشطة مجانية في الحدائق والشواطئ، وكذلك مؤسسات ثقافية متنوعة تناسب مستويات ميزانية مختلفة."
+   },
+   {
+    "q": "هل تورونتو آمنة للزوار؟",
+    "a": "تورونتو مدينة متنوعة بشكل كبير ويُنظر إليها كبيئة مألوفة للزوار، مع نصيحة عامة لاحترام العادات والثقافات المحلية والتخطيط للتنقلات جيداً داخل منطقة حضرية واسعة."
+   },
+   {
+    "q": "ما أفضل منطقة للإقامة؟",
+    "a": "الإقامة قرب وسط المدينة تسهل الوصول إلى معظم متاحف ومواقع الجذب ومراكز التسوق، أما الضواحي فتمنح مساحة أكثر وهدوءاً لكن تتطلب وقت تنقل أطول."
+   },
+   {
+    "q": "كيف أصل من المطار إلى وسط المدينة؟",
+    "a": "تختلف طرق الوصول بحسب المطار لكن تذكر أن المنطقة الحضرية كبيرة وأن نقل الركاب قد يتم بالسيارات الخاصة أو وسائل نقل عامة؛ خطط رحلتك مسبقاً واحسب وقت التنقل خصوصاً إذا كانت وجهتك في ضاحية بعيدة."
+   }
+  ]
+ }
+}

@@ -1,0 +1,225 @@
+{
+ "slug": "bordeaux",
+ "name": "Bordeaux",
+ "country": "France",
+ "tags": [
+  "food",
+  "culture"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Bordeaux",
+ "en": {
+  "city_name": "Bordeaux",
+  "country_name": "France",
+  "title": "Bordeaux travel guide: what to see, eat and know",
+  "meta_description": "Practical travel guide to Bordeaux: top sights, wine experiences, where to eat, money-saving tips and a 3-day itinerary.",
+  "h1": "Bordeaux travel guide: what to see, eat and know",
+  "intro": [
+   "Bordeaux is a major city on the River Garonne in southwest France, noted for its wines and an elegant neo-classical riverside. Its historic centre and waterfront form a UNESCO World Heritage Site, with broad boulevards, 18th‑century buildings and a lively cultural scene.",
+   "The city has a long history tied to wine and maritime trade, and many museums, churches and gardens remain well preserved. Bordeaux is compact enough to explore on foot between tram and bus connections, with the Office de Tourisme located at 12 Cours du 30 Juillet to help plan visits."
+  ],
+  "best_time": "Spring and early autumn are pleasant for walking the waterfront and visiting vineyards when crowds are moderate. Summer brings warmer weather and more visitors, while winter is quieter and still suitable for museums and wine tastings.",
+  "top_sights": [
+   {
+    "name": "Place des Quinconces",
+    "why": "A vast leafy square on the west riverbank that serves as a transport hub and hosts the Girondins Memorial; it’s a convenient starting point for exploring the city and for catching buses and trams."
+   },
+   {
+    "name": "Port of the Moon",
+    "why": "The elegant crescent of waterfront buildings that earned Bordeaux its UNESCO listing; for a memorable view walk to the opposite bank at dusk to see the riverside in silhouette."
+   },
+   {
+    "name": "Cathédrale St-André",
+    "why": "A major Gothic cathedral begun in the 12th century, restored after the Revolution; climb the detached bell-tower, Pey-Berland, for elevated views of the city."
+   },
+   {
+    "name": "Place de la Bourse and Water Mirror",
+    "why": "A grand 18th‑century square whose facades reflect in the shallow Water Mirror; the shallow pool is especially lively on warm days when people enjoy walking through or watching the reflections."
+   },
+   {
+    "name": "Musée du Vin et du Négoce",
+    "why": "A museum tracing 2,000 years of regional wine history with historical equipment and modern displays; admission includes a tasting of two wines (or grape juice for children), making it a practical introduction to Bordeaux wine."
+   },
+   {
+    "name": "Musée d'Art Contemporain (Entrepôt Lainé)",
+    "why": "A striking conversion of a 19th‑century warehouse hosting changing contemporary exhibitions and installations; check what’s on because exhibitions occupy most of the space and the permanent collection display rotates."
+   },
+   {
+    "name": "Base sous-marine",
+    "why": "Former wartime submarine pens now repurposed for art installations and exhibitions; it offers a striking contrast between industrial heritage and contemporary culture."
+   },
+   {
+    "name": "Jardin Botanique du Jardin Publique",
+    "why": "A historic botanic garden whose origins date back to the 17th century and whose present layout is 19th century; it’s a calm green space near the river for a stroll or a break from museums."
+   }
+  ],
+  "getting_around": "Trams and buses serve the city and many routes meet at Place des Quinconces, making it easy to reach major sights. The Office de Tourisme at 12 Cours du 30 Juillet can provide maps, tour bookings and advice on vineyard visits and transport options.",
+  "food": [
+   {
+    "name": "L'entrecôte",
+    "note": "A local institution known for a simple set menu of walnut salad, entrecôte steak and unlimited fries, popular enough that queues are common."
+   },
+   {
+    "name": "La Tupina",
+    "note": "A bistro celebrated for regional cuisine and a friendly atmosphere; a recommended choice for traditional southwestern dishes such as corn‑fed Landes fowl."
+   },
+   {
+    "name": "Restaurant Soléna",
+    "note": "A higher-end restaurant blending French and Oriental influences, led by chef Victor Ostronzec."
+   },
+   {
+    "name": "Chez Faty",
+    "note": "A lunchtime favourite for couscous and tajine, offering generous North African dishes."
+   },
+   {
+    "name": "Beirut Kitchen",
+    "note": "A spot for Levantine mezze and other dishes if you want a casual, flavourful meal."
+   }
+  ],
+  "budget_tips": [
+   "Use the pedestrian centre and Rue Sainte Catherine for wide choice and competitive prices — clothing is generally less expensive here than in Paris.",
+   "Buy supermarket wines to sample different styles before investing in more expensive bottles or château visits.",
+   "Eat at casual neighbourhood cafés and mid-range bistros listed in this guide rather than high-end restaurants, which can be costly.",
+   "Visit free or low‑cost attractions such as walking the Port of the Moon, the botanic garden and historic squares to keep daily costs down."
+  ],
+  "safety": [
+   "General city safety is good—use normal precautions: watch personal belongings in crowded shopping streets and on public transport.",
+   "When tasting wine or visiting vineyards, plan transport in advance and avoid driving if you plan to drink.",
+   "Respect religious sites: dress and behave modestly inside churches and be quiet during services or prayers."
+  ],
+  "itinerary": [
+   "Day 1: Start at Place des Quinconces then walk the Port of the Moon to Place de la Bourse and the Water Mirror; visit Cathédrale St‑André and climb Pey‑Berland tower, then browse the shops along Rue Sainte Catherine.",
+   "Day 2: Spend the morning at Musée du Vin et du Négoce and a contemporary art show at the Entrepôt Lainé; in the afternoon explore Chartrons, the Musée Mer Marine or the Base sous‑marine.",
+   "Day 3: Visit Musée d'Aquitaine or the Musée des Beaux‑Arts, relax in the Jardin Botanique du Jardin Publique, and finish with a wine tasting or a short vineyard excursion organised via the Office de Tourisme."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Bordeaux?",
+    "a": "Two to three days lets you see the main city highlights and sample local wines; add extra days if you want to tour vineyards in the surrounding appellations."
+   },
+   {
+    "q": "Is Bordeaux expensive?",
+    "a": "Costs vary: everyday dining and shopping on Rue Sainte Catherine can be reasonable, but top wines and fine restaurants are costly; you can plan an affordable trip by choosing casual eateries and supermarket tastings."
+   },
+   {
+    "q": "Is Bordeaux safe for tourists?",
+    "a": "Bordeaux is generally safe for visitors; exercise usual urban caution with belongings, especially in busy shopping areas and on public transport."
+   },
+   {
+    "q": "What is the best area to stay in Bordeaux?",
+    "a": "Staying near Place des Quinconces, the Port of the Moon or the cathedral keeps you within easy walking distance of major sights, restaurants and tram or bus connections."
+   },
+   {
+    "q": "How do I get help planning tours and vineyard visits?",
+    "a": "The Office de Tourisme at 12 Cours du 30 Juillet provides maps and organises tours and tastings; they can advise which châteaux accept drop‑in visitors and which require appointments."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "بوردو",
+  "country_name": "فرنسا",
+  "title": "بوردو: دليل السفر لأهم معالم المدينة والنبيذ",
+  "meta_description": "دليل بوردو: معالم يونيسكو على الواجهة النهرية، متاحف، تذوق النبيذ، أكل من الميزانية إلى الفخم، وخطة لثلاثة أيام.",
+  "h1": "دليل بوردو: ماذا ترى وتأكل وتعرف قبل السفر",
+  "intro": [
+   "بوردو مدينة في إقليم جيروند بجنوب غرب فرنسا تقع على ضفاف نهر جارون. هي خامس مدن فرنسا من حيث عدد السكان وتشتهر عالمياً بإنتاج النبيذ وبواجهة نهرية نييكلاسيكية وحي قديم أدرجته اليونسكو.",
+   "تحتفظ المدينة بعمارة فخمة من القرن الثامن عشر بفضل حفاظها من إعادة بناء واسعة، وتجمع بين متاحف فنية وتاريخية وطرقات تجارية طويلة ومناطق تذوق النبيذ تجعلها وجهة متكاملة لزوار الثقافة والطعام."
+  ],
+  "best_time": "الربيع والخريف مناسبان لزيارة بوردو بسبب الطقس المعتدل وأعداد السياح المعقولة؛ الصيف دافئ ومزدحم، والشتاء أبرد لكن مناسب لأسعار أقل وزيارات المتاحف. تخطيط الزيارات للعنب والنبيذ يعتمد على مواسم قطف العنب والجولات المنظمة.",
+  "top_sights": [
+   {
+    "name": "واجهة «ميناء القمر» (Port of the Moon)",
+    "why": "قوس من المباني الأنيقة على ضفة النهر منح المدينة اعتراف اليونسكو؛ احرص على رؤية الواجهة عند الغسق من الضفة المقابلة لالتقاط منظر درامي."
+   },
+   {
+    "name": "بلاز ديه كونكونس (Place des Quinconces)",
+    "why": "ساحة واسعة وتعتبر محور النقل في الضفة الغربية وتحتضن نصب تذكاري تاريخي، وهي نقطة انطلاق جيدة لزيارة المدينة سيراً أو بالترام."
+   },
+   {
+    "name": "بلاز ديه بورس (Place de la Bourse) ومرآة الماء",
+    "why": "محيط مبانٍ فخمة وانعكاسها في مرآة الماء التي توفر صوراً مميزة؛ في الأيام الدافئة يتجول الأطفال عبر طبقة الماء الرقيقة."
+   },
+   {
+    "name": "كاتدرائية سان أندريه (Cathédrale St-André)",
+    "why": "كنيسة قوطية عظيمة تعود للقرون الوسطى مع برج جرس منفصل («بيي-بيرلاند») يمكن تسلقه لمشاهدة أفق المدينة."
+   },
+   {
+    "name": "متحف الفنون الجميلة (Musée des Beaux-Arts)",
+    "why": "عرض تطور الفن الغربي من عصر النهضة إلى القرن العشرين؛ ابدأ بالجناح الجنوبي لتتابع تسلسل المدارس الفنية."
+   },
+   {
+    "name": "متحف النبيذ والتجارة (Musée du Vin et du Négoce)",
+    "why": "يشرح تاريخ صناعة النبيذ في المنطقة ويعرض أدوات وتكنولوجيا الإنتاج، وتضم تذوقاً لعينتين من النبيذ ضمن رسوم الدخول—مفيد لفهم نكهة بوردو."
+   },
+   {
+    "name": "قاعة الأوبرا الوطنية (National Opera)",
+    "why": "تقع على ساحة كوميدي وتستضيف الأوبرا والباليه والعروض الموسيقية—تحقق من جدول العروض لتجربة ليلية ثقافية."
+   },
+   {
+    "name": "شارترون وباحاته ومتاحفه",
+    "why": "حي ضفاف النهر شمال القوس يضم متحف الفن المعاصر ومتاحف بحرية ونبيذ، وهو مناسب لجولة تجمع بين فن وتذوق ومناظر نهرية."
+   }
+  ],
+  "getting_around": "مركز السياحة Office de Tourisme يوفر معلومات عن الجولات والنشاطات، وهو على Cours du 30 Juillet قرب Place des Quinconces. داخل المدينة يعتمد التنقّل على شبكة ترام وباصات وسهولة المشي في المركز التاريخي والمناطق التجارية مثل Rue Sainte-Catherine.",
+  "food": [
+   {
+    "name": "تذوق النبيذ المحلي",
+    "note": "زيارة متاحف النبيذ والجولات في الدومينات أو التذوق في متاجر النبيذ توفر مدخلاً ممتازاً إلى أنواع AOC المتعددة."
+   },
+   {
+    "name": "Le entrecôte",
+    "note": "مطعم مؤسسي يقدم طبق ستيك مع بطاطس مفرطة الشعبية — توقع طوابير وغياب الحجز."
+   },
+   {
+    "name": "الطاجين والكسكس في Chez Faty",
+    "note": "خيارات غداء شهية على الطراز الشمال أفريقي، مناسبة لتجربة مأكولات متعددة."
+   },
+   {
+    "name": "المأكولات الإقليمية في La Tupina",
+    "note": "مطعم يقدم أطباق إقليمية تقليدية مثل دجاج لاندس المدّلع بنكهة المنطقة."
+   },
+   {
+    "name": "خيارات نباتية ومحلية في MAMACAM",
+    "note": "مطعم يركّز على منتجات محلية مع خيارات نباتية واضحة."
+   }
+  ],
+  "budget_tips": [
+   "تجوّل مشياً في المركز التاريخي وساحة كونكونس والواجهة النهرية بدلاً من القيام بجولات مكلفة.",
+   "استخدم السوبرماركت المحلي لتذوق وتمحيص أنواع النبيذ قبل أن تنفق على زجاجات فاخرة في الكاسات أو الكُــروم.",
+   "تناول الوجبات في مقاهي ومطاعم الميزانية المدرجة مثل Remparts Café وChat Noir Cha Vert لتقليل التكاليف دون التضحية بتجربة محلية.",
+   "تسوّق على Rue Sainte-Catherine والمالية المتوسطة في حي Gambetta بدل المتاجر الفخمة إذا أردت توفير المال."
+  ],
+  "safety": [
+   "حافظ على متعلقاتك الشخصية في المناطق المزدحمة مثل الشوارع التجارية والمواصلات العامة لتفادي النشل.",
+   "كن حذراً عند عبور شوارع مزدحمة قرب الساحات والواجهات النهرية واتباع إشارات المرور المحلية.",
+   "احترم قواعد الدخول وتوجيهات المواقع التاريخية والمتاحف، وخذ نسخة عن مواعيد ونصائح Office de Tourisme قبل الجولات.",
+   "إذا كنت تتجه إلى كروم خارج المدينة فاتفق على سائق أو استخدام خدمات منظمة لتفادي قيادة منقادة بعد تذوق النبيذ."
+  ],
+  "itinerary": [
+   "اليوم الأول: استكشاف المركز التاريخي — ابدأ من Place des Quinconces ثم توجه إلى Place de la Bourse ومرآة الماء، زر الكاتدرائية وPlace de la Victoire وتجول في شوارع التسوق المحيطة.",
+   "اليوم الثاني: متاحف وحي شارترون — زيارة Musée du Vin et du Négoce ومتحف الفن المعاصر ومتحف البحر، مع وقت لتذوق النبيذ في أحد بيوت النبيذ أو الجولات التي ينظمها مكتب السياحة.",
+   "اليوم الثالث: تجربة الطعام والتسوق — تناول وجبة في أحد مطاعم المدى المتوسط أو الفاخرة حسب رغبتك، ثم تسوق في Rue Sainte-Catherine وزُر محال الألبسة المستعملة إن رغبت بقطع فريدة."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لزيارة بوردو؟",
+    "a": "ثلاثة أيام تسمح برؤية أغلب معالم المدينة الأساسية وزيارة متحف للنبيذ وجولة في حي شارترون، بينما زيارات الكروم المحيطة تتطلب نصف يوم إضافي أو يوم كامل."
+   },
+   {
+    "q": "هل بوردو مدينة مكلفة؟",
+    "a": "تكاليف الزيارة تختلف؛ توجد خيارات اقتصادية في المقاهي والمطاعم والمتاحف، بينما تذوق وشراء النبيذ الراقي يمكن أن يكون مكلفاً جداً، لذا خطط ميزانيتك بحسب تفضيلاتك."
+   },
+   {
+    "q": "هل بوردو آمنة للسياح؟",
+    "a": "بوردو عموماً مدينة آمنة لكن مثل أي وجهة حضرية يجب الحذر من النشل في المناطق المزدحمة والحفاظ على متعلقاتك."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "الإقامة في وسط المدينة أو قرب Place des Quinconces تمنح وصولاً سهلاً للمتاحف والواجهة النهرية ووسائل النقل، كما تسهل المشي إلى معظم المعالم."
+   },
+   {
+    "q": "كيف أصل إلى مكتب السياحة وما مدى فائدته؟",
+    "a": "مكتب السياحة (Office de Tourisme) يقع في 12 Cours du 30 Juillet قرب زاوية Place des Quinconces؛ يقدم معلومات عن الجولات وتذوق النبيذ والحجوزات وهو نقطة انطلاق مفيدة لتنظيم زيارتك."
+   }
+  ]
+ }
+}

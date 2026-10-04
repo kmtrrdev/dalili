@@ -1,0 +1,227 @@
+{
+ "slug": "cinque-terre",
+ "name": "Cinque Terre",
+ "country": "Italy",
+ "tags": [
+  "nature",
+  "beach",
+  "food"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Cinque_Terre",
+ "en": {
+  "city_name": "Cinque Terre",
+  "country_name": "Italy",
+  "title": "Cinque Terre travel guide",
+  "meta_description": "Practical guide to Cinque Terre: sights in the five villages, local food, hiking advice, budget tips and a 3-day itinerary.",
+  "h1": "Cinque Terre travel guide: what to see, eat and know",
+  "intro": [
+   "Cinque Terre — literally the Five Lands — is a cluster of five small coastal villages in Liguria: Riomaggiore, Manarola, Corniglia, Vernazza and Monterosso. The villages and their landscape are recognised as a UNESCO World Heritage site and are defined by steep terraces, narrow streets and a largely undeveloped coastline.",
+   "The five towns are connected by paths, a regional train and seasonal ferries; cars cannot reach the villages from the outside. Much of the area’s appeal comes from its human-shaped terraces and traditional way of life, preserved among the cliffs and olive groves."
+  ],
+  "best_time": "Late spring through early autumn is the most popular time, when festivals, warm weather and the harvest take place; expect crowds in June–August. Winter brings dramatic sea storms that are a spectacle but can close paths and services. For specific seasonal events, check local listings: the lighted Nativity in Manarola and patron festivities occur at particular times of year.",
+  "top_sights": [
+   {
+    "name": "Riomaggiore",
+    "why": "The southernmost village is alive with seaside activity, a historic castello and a main street (Via Colombo) full of cafes and shops — a good base for supplies before hikes; listen for evening fishing activity and local life."
+   },
+   {
+    "name": "Manarola",
+    "why": "A compact harbour town known for its boats and waterfront dining; try local anchovy preparations and visit in the evening for views of the illuminated village."
+   },
+   {
+    "name": "Corniglia",
+    "why": "Perched high on a cliff, Corniglia is the only village not at sea level and offers different perspectives of the coast; be prepared for a climb to reach the town."
+   },
+   {
+    "name": "Vernazza",
+    "why": "One of the most characterful towns with narrow streets, a harbour and traditional festivals; it captures the old-world charm typical of the central Cinque Terre villages."
+   },
+   {
+    "name": "Monterosso al Mare",
+    "why": "The northernmost and most beach-oriented village, with a seaside boardwalk and resort atmosphere; visit for swimming and a contrast to the medieval lanes of the other towns."
+   },
+   {
+    "name": "Terraced vineyards and stone walls",
+    "why": "The engineered terraces are the defining landscape feature, built over centuries to cultivate grapes and olives; view them from paths or by boat and appreciate the extensive dry-stone work."
+   },
+   {
+    "name": "Hiking trails (including Trail No. 2 / Via dell'Amore)",
+    "why": "Coastal paths offer some of the region’s best hiking and village-to-village walking; check trail status before setting out, and note that a pass is required on Trail No. 2."
+   },
+   {
+    "name": "Scenic boat views",
+    "why": "Seasonal ferries provide a shoreline perspective of the five villages and are an easy alternative to walking; timing varies by season, so verify the service schedule."
+   }
+  ],
+  "getting_around": "Cars cannot access the villages from outside, so travel between them is by regional train, seasonal ferries or on foot via the hiking paths. Trains run frequently but timetables can vary on Sundays and public holidays; boats run seasonally and give excellent coastal views. Check path and transport schedules before travelling.",
+  "food": [
+   {
+    "name": "Anchovies and anchovy dishes",
+    "note": "Local anchovy preparations are a specialty, often served with olive oil and lemon or stuffed and fried."
+   },
+   {
+    "name": "Pesto with trofie",
+    "note": "Trofie pasta with Ligurian pesto (basil, olive oil, cheese and pine nuts) is a regional classic."
+   },
+   {
+    "name": "Farinata",
+    "note": "A chickpea-flour focaccia-style speciality common in the region."
+   },
+   {
+    "name": "Torte di verdura and rice pie",
+    "note": "Vegetable pies and rice pies reflect traditional home cooking and local herbs; rice pie is tied to local festivities in some villages."
+   },
+   {
+    "name": "Mussels and other seafood",
+    "note": "Mussels from the Gulf of La Spezia and a variety of fish and squid dishes are widely available and tied to local maritime tradition."
+   }
+  ],
+  "budget_tips": [
+   "Buy picnic supplies from alimentari shops in the towns — they stock fresh fruit, salumi and cheese that make good, inexpensive hikes snacks.",
+   "Use the regional train to hop between villages rather than taxis or tours; trains are the most direct way to move along the coast.",
+   "If you plan to hike Trail No. 2, purchase the required pass rather than risk fines; consider combined hiking-and-train passes if offered.",
+   "Start summer hikes early to avoid midday heat and long delays; this reduces need for extra water or guided services."
+  ],
+  "safety": [
+   "Wear proper hiking footwear, carry sun protection and water — some coastal trails are demanding and require suitable equipment.",
+   "Check trail status before you leave; many paths close after landslides or bad weather and closures can be sudden.",
+   "Be aware that rescue fines have been imposed for emergencies caused by improper preparation, so follow posted park guidelines.",
+   "Watch for changing sea and weather conditions in winter when storms can be dramatic and services limited."
+  ],
+  "itinerary": [
+   "Day 1: Explore the southern pair — Riomaggiore and Manarola; stroll the waterfronts, visit the castello area in Riomaggiore and sample local anchovy dishes and gelato.",
+   "Day 2: Hike between villages (or take the train/boat) to see Corniglia and Vernazza, take time to view the terraces and historic lanes, and check trail openings before you set out.",
+   "Day 3: Spend the day in Monterosso al Mare for a beach experience and seaside walks, or choose a higher inland trail (paths 7/7a/6d) for quieter vineyard views."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Cinque Terre?",
+    "a": "Three days allows you to visit each village at a relaxed pace, do at least one village-to-village hike and enjoy time by the sea. Shorter stays are possible if you concentrate on two or three villages."
+   },
+   {
+    "q": "Is Cinque Terre expensive to visit?",
+    "a": "Costs vary by season and choice of activities; you can limit expenses by buying food from local alimentari, using regional trains and avoiding peak-season guided tours or high-season accommodation."
+   },
+   {
+    "q": "Is it safe to hike the trails?",
+    "a": "Hiking is generally safe if you are properly equipped, follow park signage and check trail status beforehand — landslides and sudden closures do occur, and the park posts current information."
+   },
+   {
+    "q": "Which village is best to stay in?",
+    "a": "Each village has a different character: Monterosso is the most beach-oriented and resort-like, while Riomaggiore, Manarola, Corniglia and Vernazza offer more traditional narrow streets and historic charm; choose based on whether you prefer beaches or old-town atmosphere."
+   },
+   {
+    "q": "How do I get between the villages and from the nearest airports?",
+    "a": "Villages are linked by regular regional trains, seasonal ferries and hiking paths; cars do not reach the villages. For airport connections, travelers typically continue to the coast by train or other regional transport — check local timetables and ferry schedules in advance."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "تشينكوي تيري (Cinque Terre)",
+  "country_name": "إيطاليا",
+  "title": "تشينكوي تيري دليل السفر: ما ترى وتفعل وتذوق",
+  "meta_description": "دليل عملي لتشينكوي تيري: أهم المعالم، المسارات المشي، الأكل المحلي، نصائح لتوفير المال وخطة لثلاثة أيام.",
+  "h1": "دليل تشينكوي تيري: ما الذي تراه وتفعله وتعرفه",
+  "intro": [
+   "تشينكوي تيري، التي تعني «الأراضي الخمسة»، عبارة عن خمس قرى ساحلية صغيرة—Riomaggiore وManarola وCorniglia وVernazza وMonterosso—تقع في إقليم ليغوريا في إيطاليا ومدرجة ضمن التراث العالمي لليونسكو.",
+   "القرى مبنية على أمواج من التراسات الحجرية المنحوتة على المنحدرات المطلة على البحر، وتتمتع بطابع ريفي محدود التطوير التجاري؛ تصل القرى ببعضها عبر دروب ومقطورات قطارات وقوارب، ولا يمكن الوصول إليها بالسيارة من الخارج."
+  ],
+  "best_time": "تجذب الأشهر الصيفية المهرجانات والأنشطة البحرية والطقس الدافئ، لكن تكون مزدحمة والحرارة قوية فابدأ المشي مبكراً في يونيو–أغسطس. موسم الحصاد في أوائل إلى منتصف سبتمبر خيار رائع لمن يهتم بثقافة الكروم، والشتاء يعرض مشاهد رائعة لعواصف البحر—لكن بعض المسارات قد تُغلق.",
+  "top_sights": [
+   {
+    "name": "المناظر الطبيعية وتراسات الكروم",
+    "why": "الخط الساحلي والتراسات الحجرية المُشيدة على مدى قرون تشكل المشهد الأساسي وتُظهِر العمل البشري المتقن؛ نصيحة عملية: اصنع وقتاً للمشي أو التوقف عند أحد نقاط المشاهدة لالتقاط الصور والاستمتاع بالمنظر."
+   },
+   {
+    "name": "القرى الخمس (Riomaggiore, Manarola, Corniglia, Vernazza, Monterosso)",
+    "why": "زيارة كل قرية تعطي تجربة مختلفة: أربع قرى ذات شوارع ضيقة وبيوت قديمة، بينما Monterosso أشبه بمنتجع شاطئي؛ نصيحة: خطط زيارة على الأقدام والقطار لترى اختلاف الطابع بين القرى."
+   },
+   {
+    "name": "قلعة Riomaggiore",
+    "why": "قلعة حجرية قديمة ورد ذكرها في مصادر تعود للقرون الأولى، بخمسة أبراج وجدران دفاعية تحوّلت لاحقاً إلى مقبرة وتُعد معلماً تاريخياً في المتنزه؛ نصيحة: مرّ من شارع Via Colombo الذي يضم حاجيات ومقاهي البلدة."
+   },
+   {
+    "name": "مسار Via dell'Amore (Riomaggiore–Manarola)",
+    "why": "طريق شهير يربط Riomaggiore وManarola ويمثل جزءاً بارزاً من التجربة الساحلية؛ نصيحة: تحقق من حالة المسار قبل الانطلاق لأن بعض أجزاء المسارات قد تُغلق لأسباب أمنة."
+   },
+   {
+    "name": "المنارة والمنحدرات في Corniglia",
+    "why": "Corniglia تقع على مدرج صخري مرتفع ولا تنحدر إلى مستوى البحر مثل القرى الأخرى، ما يمنحها منظرًا مختلفًا وهدوءًا نسبياً؛ نصيحة: توقع صعوداً إلى القرية واستعد لأدراج وسلالم."
+   },
+   {
+    "name": "الواجهة البحرية وأحواض القوارب في Manarola",
+    "why": "الجزء السفلي من Manarola مملوء بالقوارب المغطاة ويعكس حياة الصيادين المحلية، مع خيارات جيدة للمأكولات البحرية؛ نصيحة: تذوق أطباق الأنشوفة المحلية في أحد المطاعم المطلة على البحر."
+   },
+   {
+    "name": "البلدة الشاطئية Monterosso",
+    "why": "Monterosso تختلف بطابعها الشاطئي مع ممشى بحري وشواطئ ومبانٍ عصرية مقارنة بباقي القرى التاريخية؛ نصيحة: إذا أردت شاطئًا فاجعل Monterosso وجهتك الأساسية."
+   },
+   {
+    "name": "منتزه تشينكوي تيري الوطني (Parco Nazionale delle Cinque Terre)",
+    "why": "المتنزه يضم مسارات المشي والتراسات والمناظر الطبيعية وحفظ التراث البشري للطبيعة؛ نصيحة: احصل على خرائط المسارات من مكاتب المنتزه وتحقق من حالة المسارات قبل الانطلاق."
+   }
+  ],
+  "getting_around": "السيارات لا تصل إلى القرى من الخارج، والتنقل يتم أساساً بالقطار المحلي الذي يربط القرى بسرعة أو بالقوارب الموسمية التي تقدم مناظر بحرية جيدة. المسارات تربط القرى للمشي؛ تحقق من مواعيد القطارات خصوصاً في الأحد والأعياد لأن التردد قد يتغير.",
+  "food": [
+   {
+    "name": "الأنشوفة المملحة (acciughe)",
+    "note": "تُقدَّم طازجة أو محشوة ومقلية وغالباً مع زيت الزيتون والليمون والخبز crusty كطبق محلي بحري أساسي."
+   },
+   {
+    "name": "تروفيا (Trofie) مع البيستو",
+    "note": "مكرونة محلية تقليدية تُقدَّم غالباً مع صلصة البيستو الليمونية المصنوعة من الريحان والصنوبر وزيت الزيتون."
+   },
+   {
+    "name": "فطائر الخضار (torte di verdura)",
+    "note": "فطائر رقيقة محشوة بخليط من الخضروات المحلية والأعشاب والجبن أو الخبز المبلل باللبن حسب التقليد العائلي."
+   },
+   {
+    "name": "فاريناتا (فطيرة دقيق الحمص)",
+    "note": "اختصاص إقليمي يشبه الفوكاچيا لكنه مصنوع من دقيق الحمص ويمكن إيجاده في أماكن محددة مثل بعض المطاعم في البلدة."
+   },
+   {
+    "name": "أطباق المحار والحبار",
+    "note": "مأكولات بحرية متنوعة تشمل المحار المحشو أو المطبوخ والحبار والمحار الإقليمي من خليج لا سبيتسيا."
+   }
+  ],
+  "budget_tips": [
+   "استخدم القطار الإقليمي للتنقّل بين القرى بدلاً من القوارب الموسمية لتوفير المال والوقت.",
+   "اشترِ المؤن والوجبات الخفيفة من محلات alimentari المحلية قبل الانطلاق في مسارات المشي بدلاً من شراء كل شيء في المطاعم السياحية.",
+   "تحقق من إمكانية شراء تذكرة مشتركة للمشي والقطار إن كنت تخطط للمسارات المدفوعة لتوفير على التنقل والتذاكر.",
+   "ابدأ المشي مبكراً في أشهر الذروة لتجنب الحاجة إلى جولات مرشدة أو وسائل نقل باهظة بسبب الازدحام."
+  ],
+  "safety": [
+   "ارتدِ حذاءاً مناسباً للمشي واحمل ماءً وواقي شمس لأن بعض المسارات قد تكون مطلوبة لمستوى لياقة معين.",
+   "تحقق دائماً من حالة المسارات في موقع منتزه تشينكوي تيري الرسمي لأن الانهيارات الأرضية أو الأحوال الجوية قد تغلق الدروب.",
+   "الامتثال للإرشادات المعلنة مهم: في حالات الإنقاذ بسبب معدات غير مناسبة قد تُفرض غرامات كبيرة.",
+   "كن حذراً عند الاقتراب من حواف المنحدرات والعناية بالأطفال بالقرب من المناطق المطلة على البحر."
+  ],
+  "itinerary": [
+   "اليوم الأول: تجوّل في Riomaggiore وManarola، امشِ جزءاً من Via dell'Amore إذا كانت مفتوحة، تناول وجبة بحرية على الواجهة البحرية في Manarola وتعرّف على شوارع Via Colombo في Riomaggiore.",
+   "اليوم الثاني: زر Corniglia وVernazza، استكشف التراسات والمناظر من Corniglia ثم انزل إلى Vernazza للاستمتاع بمشاهدة المرفأ وشوارع البلدة والمشاركة في أي فعاليات محلية إن وُجدت.",
+   "اليوم الثالث: خصصه لـMonterosso للاسترخاء على الشاطئ والممشى البحري، أو اختر مساراً جبلياً أعلى (مثل المسارات رقم 6/d أو 7 و7/a) إذا رغبت في مشاهد أوسع وقلة سياح."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام المناسبة لزيارة تشينكوي تيري؟",
+    "a": "ثلاثة أيام تكفي للتعرّف على القرى الخمس بشكل مريح، مع يوم مخصّص للمشي بين بعض القرى ويوم للاسترخاء على الشاطئ في Monterosso."
+   },
+   {
+    "q": "هل تشينكوي تيري مكلفة؟",
+    "a": "تكلفة الزيارة تعتمد على خياراتك: التنقل بالقطارات المحلية والوجبات من محلات alimentari يوفران الكثير مقارنة بالمطاعم والمواسم السياحية؛ توجد أيضاً تذاكر مدفوعة لبعض المسارات."
+   },
+   {
+    "q": "هل المنطقة آمنة للمشي؟",
+    "a": "نعم عموماً لكنها تتطلب حذراً ومعدات مناسبة؛ بعض الدروب قد تُغلق بسبب الانهيارات أو الطقس ويُنصح بمتابعة حالة المسارات قبل الانطلاق."
+   },
+   {
+    "q": "ما أفضل منطقة للإقامة؟",
+    "a": "اختيار القرية يعتمد على تفضيلك: إذا أردت شاطئاً ومرافق حديثة فMonterosso مناسب، ولأجواء القرى التقليدية فـVernazza أو Manarola أو Riomaggiore تعطي تجربة أقدم."
+   },
+   {
+    "q": "كيف أصل من المطار إلى تشينكوي تيري؟",
+    "a": "الوصول عادةً يكون عبر قطار إقليمي من محطات قريبة أو عبر باص/قطار من المطارات الإقليمية ثم نقل بالقطار إلى القرى؛ السيارات لا تدخل القرى نفسها لذا اختر مواصلات عامة أو قطار للنهاية."
+   }
+  ]
+ }
+}

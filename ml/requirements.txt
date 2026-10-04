@@ -1,0 +1,6 @@
+# Only for running ml/recommender.ipynb (the model itself needs just NumPy, already in ../requirements.txt).
+# Open the notebook in VS Code (Jupyter extension) and pick the project's .venv as the kernel.
+ipykernel>=6.29
+matplotlib>=3.8
+nbformat>=5.10
+nbclient>=0.10

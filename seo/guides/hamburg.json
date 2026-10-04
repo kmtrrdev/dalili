@@ -1,0 +1,225 @@
+{
+ "slug": "hamburg",
+ "name": "Hamburg",
+ "country": "Germany",
+ "tags": [
+  "culture",
+  "nightlife"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Hamburg",
+ "en": {
+  "city_name": "Hamburg",
+  "country_name": "Germany",
+  "title": "Hamburg travel guide: things to see, eat and know",
+  "meta_description": "Practical travel guide to Hamburg: top sights, local food, getting around (ferries), budget tips and a 3-day itinerary for first-time visitors.",
+  "h1": "Hamburg travel guide: what to see, eat and know",
+  "intro": [
+   "Hamburg is Germany's second-largest city and also one of its federal states, historically shaped by centuries of maritime trade. The city sits on the Elbe and the Alster and remains one of Europe's most important port cities, with a dense network of canals and more bridges than Amsterdam, Venice and London combined.",
+   "Visitors find a mix of historic mercantile neighbourhoods, modern waterfront development and a lively cultural scene: from grand civic buildings and Speicherstadt warehouses to contemporary architecture in HafenCity, plus lively districts for nightlife and markets."
+  ],
+  "best_time": "Spring through early autumn is the most pleasant for being on the water and walking the city; summers offer long daylight and outdoor events while shoulder seasons are less crowded. Winters are colder and quieter, but the city still has indoor cultural attractions year-round.",
+  "top_sights": [
+   {
+    "name": "Speicherstadt",
+    "why": "A vast historic warehouse district built over canals, it shows Hamburg's trading past and offers atmospheric streets and waterfront views; visit on foot and allow time for photography and museum stops."
+   },
+   {
+    "name": "Elbphilharmonie Plaza",
+    "why": "A modern landmark with a circular elevated walkway offering broad views over the port and city, and free access to the plaza makes it an efficient stop for panoramic photos at sunset."
+   },
+   {
+    "name": "Binnenalster and Außenalster",
+    "why": "These dammed lakes at the city centre are surrounded by promenades, shops and cafes, making them ideal for a relaxed stroll or boat departures; head to Jungfernstieg for landing stages and views."
+   },
+   {
+    "name": "Hamburg Rathaus (Town Hall)",
+    "why": "The city's ceremonial town hall is the seat of local government and an architectural highlight located beside the Binnenalster; it is best seen as part of a walking tour of the central district."
+   },
+   {
+    "name": "HafenCity",
+    "why": "A recently developed waterfront quarter combining modern architecture with harbour views, worth visiting to compare with the older Speicherstadt and to walk the quays."
+   },
+   {
+    "name": "St. Pauli",
+    "why": "A lively district known for nightlife, eclectic shops and the city's largest funfair, it is the place to go for evening entertainment and alternative shopping; expect busy streets after dark."
+   },
+   {
+    "name": "Altona and Landungsbrücken",
+    "why": "Altona's long quay and the historic Landungsbrücken piers give direct contact with the Elbe; this area also includes active cruise and fishing harbours and is a good base for ferries."
+   },
+   {
+    "name": "Hagenbecks Tierpark",
+    "why": "A historic zoo founded in 1907 and famous for its open enclosures, it is a popular family destination set in one of the greener northern districts of the city."
+   }
+  ],
+  "getting_around": "Public ferries on the Elbe are part of the city's transport network and accept the same day tickets as buses, subways and regional trains; several ferry lines connect Landungsbrücken with Elbphilharmonie, Oevelgönne, Finkenwerder and Teufelsbrück. The central area is compact and best explored on foot, while the city's public transport network covers longer distances efficiently.",
+  "food": [
+   {
+    "name": "Franzbrötchen",
+    "note": "A regional sweet roll similar to a flattened cinnamon croissant, widely available in Hamburg bakeries."
+   },
+   {
+    "name": "Finkenwerder Scholle",
+    "note": "Pan-fried plaice representing Hamburg's seafood traditions, named after the Finkenwerder area."
+   },
+   {
+    "name": "Birnen, Bohnen und Speck",
+    "note": "A traditional Low Saxon dish of pears, runner beans and bacon that reflects local home cooking."
+   },
+   {
+    "name": "Alsterwasser",
+    "note": "A local shandy made from beer and lemon soda, commonly enjoyed around the Alster lakes."
+   },
+   {
+    "name": "Labskaus",
+    "note": "A hearty sailor's dish of corned beef, mashed potatoes and beetroot with roots in northern seafaring cuisine."
+   }
+  ],
+  "budget_tips": [
+   "Use the public ferries as they are part of local transit; single fares and day cards cover ferries as well as buses and subways.",
+   "Look for the Museumswelt Hamburg booklet at museum information desks to find museum options and plan affordable visits.",
+   "Join a Global Greeter Network walking tour for a free local-led introduction to the city.",
+   "Shop outside peak tourist areas and use main shopping streets like Mönckebergstraße or smaller neighbourhoods such as Schanzenviertel for a wider price range."
+  ],
+  "safety": [
+   "Stay aware of your surroundings in busy nightlife areas such as St. Pauli, especially late at night; keep valuables secure.",
+   "Hamburgers can seem reserved at first; be polite and patient when asking for help or directions.",
+   "When near the Elbe and quays, watch for changing tides and follow signage around active harbour areas and piers.",
+   "Use official ferries and boat operators rather than unlicensed vessels for river travel."
+  ],
+  "itinerary": [
+   "Day 1: Walk the city centre—start at the Binnenalster, continue to the Rathaus, explore the Speicherstadt and finish with a visit to the Elbphilharmonie Plaza for sunset views over the port.",
+   "Day 2: Take public ferries along the Elbe (lines from Landungsbrücken) to see the harbour from the water, visit Altona and the Landungsbrücken, then spend the evening in St. Pauli for nightlife and non-mainstream shopping.",
+   "Day 3: Enjoy an Alster boat tour from Jungfernstieg, visit museums using the Museumswelt booklet to choose highlights, and head north to Hagenbecks Tierpark if you prefer parks and wildlife."
+  ],
+  "faq": [
+   {
+    "q": "How many days should I spend in Hamburg?",
+    "a": "Three days allow you to cover the main city-centre sights, a harbour boat or ferry trip and a museum or park visit at a relaxed pace; longer stays let you explore neighbourhoods and day trips in more depth."
+   },
+   {
+    "q": "Is Hamburg expensive to visit?",
+    "a": "Hamburg is among Germany's wealthier cities, and costs can be higher in central and tourist areas; using public transport, free viewpoints like the Elbphilharmonie Plaza and free walking tours can help control expenses."
+   },
+   {
+    "q": "Is Hamburg safe for tourists?",
+    "a": "Hamburg is generally safe for visitors but take the usual precautions in busy nightlife districts and near the harbour; keep belongings secure and follow local guidance around piers and industrial quays."
+   },
+   {
+    "q": "Which area is best to stay in for first-time visitors?",
+    "a": "The central district around the Binnenalster, Rathaus and Speicherstadt places you within easy walking distance of many sights, good transport links and boat departures; St. Georg and Altona are also convenient and well connected."
+   },
+   {
+    "q": "How do I get from the airport to the city?",
+    "a": "Hamburg Airport is connected to the city by public transport; follow local transit options into the central districts and then use buses, subways or ferries to reach neighbourhoods across the city."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "هامبورغ (Hamburg)",
+  "country_name": "ألمانيا",
+  "title": "هامبورغ دليل السفر: أهم المعالم والطعام وخريطة 3 أيام",
+  "meta_description": "دليل هامبورغ: ما يجب رؤيته في الميناء وElbphilharmonie، أين تأكل أطباق محلية، نصائح لتوفير المال ومسار مقترح لثلاثة أيام.",
+  "h1": "دليل سفر هامبورغ: ماذا ترى وتفعل وتأكل وتعرف",
+  "intro": [
+   "هامبورغ هي مدينة-ولاية بحرية شمال ألمانيا وميناء تاريخي كبير على نهر الإلبه جعلها محور تجارة منذ قرون. المدينة تُعرف بشبكات قنواتها وجسورها العديدة، وبتباين أحيائها بين مناطق تاريخية حديثة وحدائق ومناطق صناعية على الضفة الجنوبية.",
+   "تضم المدينة مزيجاً من معالم قديمة مثل المناطق الحبية للذاكرة التاريخية وأخرى حديثة مثل HafenCity، وتقدم مستويات معيشة عالية ومشهد ثقافي واسع يتضمن متاحف ومسرحاً وموسيقى وأحياء ليلية نابضة بالحياة."
+  ],
+  "best_time": "الوقت المناسب للزيارة يعتمد على تفضيلك للطقس والحشود؛ أشهر الربيع والصيف تمنح مناظر نهرية ومشي مريحاً حول البحيرات والقنوات، أما خارج الموسم فتكون المدينة أقل ازدحاماً. تحقق من برامج الفعاليات الموسيقية والمسرحية لأن بعضها يُعرض على مدار السنة.",
+  "top_sights": [
+   {
+    "name": "السبايخرشتات (Speicherstadt)",
+    "why": "حي المستودعات التاريخي المتشابك بالقنوات وهو رمز من رموز هامبورغ ويلائم التجول سيراً على الأقدام بين المخازن القديمة؛ أنصح بالاطلاع على الواجهات المائية وإحضار حذاء مريح للمشي."
+   },
+   {
+    "name": "إلبفيلهارموني (Elbphilharmonie) وساحتها",
+    "why": "مبنى حديث يطل على الميناء ويحتوي على ساحة دائرية مرتفعة توفر بانوراما على الميناء وغروب الشمس؛ الوصول إلى الساحة مجاني وسهل عبر السلالم المتحركة."
+   },
+   {
+    "name": "الدار البلدية (Rathaus) ومنطقة Binnenalster",
+    "why": "ساحة المدينة وبحيرة Binnenalster تشكلان قلب المدينة المركزية حيث تتجمع المتاجر والمعالم التاريخية، وهي منطقة ملائمة للمشي والتوقف في المقاهي المطلة على البحيرة."
+   },
+   {
+    "name": "HafenCity",
+    "why": "حي حديث على الواجهة المينائية يجمع مبانٍ عصرية ومشاهد تطل على الميناء وهو مناسب للمشي لملاحظة التباين بين القديم والحديث في بنية المدينة."
+   },
+   {
+    "name": "منطقة سانت باولي (St. Pauli)",
+    "why": "حي نابض بالحياة معروف بالحياة الليلية والتسوق غير التقليدي والمهرجانات، وهو المكان الذي يجمع العروض المبسطة والحانات والمشاهد الفنية البديلة؛ انتبه لساعات الفعاليات المحلية لأن النشاط قد يتركز ليلاً."
+   },
+   {
+    "name": "ألتونا ورصيف لاندونغسبركي (Altona وLandungsbrücken)",
+    "why": "رصيف طويل يضم أجزاءً تاريخية وما تزال بعض الأرصفة تعمل على نحو نشط، ويمكن الانطلاق من هنا برحلات العبّارات ومشاهدة حركة السفن."
+   },
+   {
+    "name": "حديقة الحيوان هاغنبك (Hagenbecks Tierpark)",
+    "why": "حديقة حيوانات تاريخية تأسست عام 1907 وتشتهر بتصاميمها التي أسسها كارل هاغنبك ونظامها المفتوح نسبياً؛ مناسبة لعائلة أو لزوّار مهتمين بالحياة البرية والتصميم المتحفّي."
+   },
+   {
+    "name": "مصب الإلبه ومنطقة الأرصفة الجنوبية (رؤى الميناء والكوابح)",
+    "why": "الميناء الضخم على الإلبه يوفر إطلالات على الأرصفة الكبيرة وسفن الشحن ومشاهد الإنارة الزخرفية على الكوابح، وهو أساسي لفهم هوية المدينة البحرية."
+   }
+  ],
+  "getting_around": "وسائل النقل العام في هامبورغ تشمل عبّارات نهر الإلبه التي تشكّل جزءاً من نظام النقل العام وتقبل تذاكر اليوم المتاحة لوسائل النقل الأخرى؛ العبّارات رقم 72 و62 و64 تربط محطات بارزة ويمكن اصطحاب الدراجة مجاناً. للتجوال داخل المدينة يُنصح بالمشي في المركز و باستخدام مواصلات المدينة لقطع المسافات الأطول.",
+  "food": [
+   {
+    "name": "Birnen, Bohnen und Speck",
+    "note": "طبق محلي يجمع الفاصوليا الخضراء مع الكمثرى واللحم المقدد ويعكس المطبخ السفلي الساكسوني."
+   },
+   {
+    "name": "Aalsuppe",
+    "note": "حساء تاريخي اسمه قد يُساء فهمه بأنه حساء ثعبان البحر، لكنه تقليد محلي قد يحتوي أحياناً على سمك ثعبان البحر."
+   },
+   {
+    "name": "Franzbrötchen",
+    "note": "مخبوزة محلية تشبه الكرواسون المسطح ومحشوة بالقرفة والسكر وغالباً يقدم مع الزبيب أو السكر البني."
+   },
+   {
+    "name": "Finkenwerder Scholle وPannfisch",
+    "note": "أطباق سمكية محلية تشمل السمك المقلي والمقلي في المقلاة، تعكس تقاليد المدينة الساحلية."
+   },
+   {
+    "name": "Alsterwasser وMexikaner",
+    "note": "مشروبان محليان؛ Alsterwasser شندي يجمع البيرة والليمونادة، وMexikaner مشروب قوي بطعم الطماطم والتوابل يُشرب جرعة واحدة."
+   }
+  ],
+  "budget_tips": [
+   "استخدم العبّارات العامة عبر الإلبه كجزء من نظام النقل العام لأن تذاكر اليوم تغطي الحافلات والقطارات والعبّارات.",
+   "استفد من جولات Global Greeter المجانية التي يقدمها متطوعون محليون للتعرّف على المدينة دون تكلفة.",
+   "اطلب كتيب Museumswelt Hamburg من مكتب المعلومات في أي متحف للاطلاع على خيارات المتاحف والتخطيط قبل الشراء.",
+   "لحضور الموسيقى المسرحية أو العروض، احجز التذاكر قبل أشهر للحصول على أسعار أفضل أو حاول الحصول على تذاكر في اللحظة الأخيرة إذا رغبت في المجازفة بعروض متبقية."
+  ],
+  "safety": [
+   "سكان هامبورغ معروفون بالتحفظ أولاً لكن ودودون عند التعارف؛ التصرّف المهذب والمحترم يُقدَّر دائماً.",
+   "توخَّ الحيطة في المناطق الليلية الصاخبة مثل سانت باولي كأي منطقة ليلية في مدن كبرى، واحفظ متعلقاتك الشخصية أثناء الزحام.",
+   "احترم المساحات العامة والموانئ الصناعية وابتعد عن المناطق التي تُعرَض عليها لافتات منع الدخول أو التحذير."
+  ],
+  "itinerary": [
+   "اليوم الأول: تجول في مركز المدينة سيراً على الأقدام (Rathaus وBinnenalster) مروراً بسبايخرشتات واطلع على الواجهات المائية، وأنهِ اليوم بزيارة Elbphilharmonie Plaza لمشاهدة الغروب.",
+   "اليوم الثاني: خذ عبّارة عامة على الإلبه لاكتشاف الميناء ورصيف لاندونغسبركي، ثم تجول في حي HafenCity واستكشف المتاحف وواجهات الميناء.",
+   "اليوم الثالث: زر حي سانت باولي للتسوق غير التقليدي والحياة الليلية، ثم خصص وقتاً لزيارة حديقة هاغنبك للحيوانات أو للتنزه في الشمال الأخضر من المدينة."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الكافية لزيارة هامبورغ؟",
+    "a": "ثلاثة أيام تمنحك وقتاً جيداً لرؤية المعالم الرئيسة مثل الميناء وSpeicherstadt وElbphilharmonie وتجربة بعض الأحياء والمطاعم، بينما إذا أردت زيارة متاحف متعددة وحضور عروض مسرحية قد تحتاج لوقت أطول."
+   },
+   {
+    "q": "هل هامبورغ مدينة غالية؟",
+    "a": "هامبورغ تُعد من المدن ذات مستوى معيشة مرتفع، لكن يمكن التوفير باستخدام وسائل النقل العامة والعبّارات العامة والاستفادة من الجولات المجانية ومواد المعلومات المجانية في المتاحف."
+   },
+   {
+    "q": "هل هامبورغ آمنة للسياح؟",
+    "a": "عمومًا المدينة آمنة مثل بقية المدن الأوروبية الكبرى، مع ضرورة توخي الحذر في المناطق الليلية المكتظة والحفاظ على ممتلكاتك الشخصية."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "المركز حول Binnenalster وRathaus ملائم للمشي بين المعالم والمتاجر، بينما St. Pauli وSchanzenviertel مناسبان لمن يبحث عن حياة ليلية ومشاهد بديلة؛ اختر حسب أولوياتك بين الهدوء وقرب الحياة الليلية."
+   },
+   {
+    "q": "كيف أصل إلى وسط المدينة من المطار؟",
+    "a": "خيارات النقل من المطار إلى وسط المدينة تتوفر عادة عبر وسائل نقل عامة وقطارات نقل إقليمي، لذا تحقق من مواقع النقل المحلي أو من خدمة المطار للحصول على معلومات محدثة حول الخيارات والمسارات."
+   }
+  ]
+ }
+}

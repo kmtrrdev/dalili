@@ -1,0 +1,226 @@
+{
+ "slug": "dolomites",
+ "name": "Dolomites",
+ "country": "Italy",
+ "tags": [
+  "ski",
+  "nature",
+  "adventure"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Dolomites",
+ "en": {
+  "city_name": "Dolomites",
+  "country_name": "Italy",
+  "title": "Dolomites travel guide: what to see, eat and know",
+  "meta_description": "Practical guide to the Dolomites: top sights, local food, budget tips and a 3-day itinerary for hikes, lakes and mountain villages.",
+  "h1": "Dolomites travel guide: what to see, eat and know",
+  "intro": [
+   "The Dolomites form the most striking mountain landscapes in South Tyrol, the northernmost province of Italy. This Alpine region combines distinctive mountain scenery, storybook villages and culturally mixed towns where German, Italian and Ladin traditions meet.",
+   "The range is a UNESCO World Heritage site and a destination for hiking, skiing and lakeside walks; small towns and larger centres both offer culinary traditions rooted in Tyrolean and Mediterranean influences."
+  ],
+  "best_time": "Late spring to early autumn is best for hiking and lake visits, while winter draws skiers to the large resorts near the Austrian border. Shoulder seasons give fewer crowds on trails and in villages; weather in the mountains can change quickly, so plan accordingly.",
+  "top_sights": [
+   {
+    "name": "Tre Cime di Lavaredo",
+    "why": "An iconic three-peaked ridge famous for dramatic views and accessible mountain walks; go early in the day to avoid the busiest periods on the main trails."
+   },
+   {
+    "name": "Lago di Braies",
+    "why": "A photogenic alpine lake surrounded by peaks, popular for easy walks and boat views; expect crowds at the lakeshore and arrive early for quieter photography."
+   },
+   {
+    "name": "Seceda",
+    "why": "A striking summit ridge with panoramic vistas over jagged peaks and valleys; use the local lift services where available to save time and energy for the ridge walk."
+   },
+   {
+    "name": "Val di Funes",
+    "why": "A valley of picturesque villages and mountainside churches against dramatic Dolomite backdrops; explore on foot or by short drives to visit multiple viewpoints."
+   },
+   {
+    "name": "Sella group",
+    "why": "A compact group of peaks offering classic alpine routes and scenic passes; it is a good base for hikes and for experiencing the scale of the Dolomites."
+   },
+   {
+    "name": "Lago di Carezza",
+    "why": "A small, colourful mountain lake noted for clear water and surrounding forested slopes; paths around the lake make for a short, rewarding walk."
+   },
+   {
+    "name": "Catinaccio",
+    "why": "A dramatic massif often admired for sunrise and sunset colours on its faces; plan a hike or viewpoint visit timed for the changing light."
+   },
+   {
+    "name": "Picturesque mountain villages",
+    "why": "Small villages with mountainside churches and traditional architecture illustrate local culture and make pleasant bases for exploring; visit local bakeries and Gasthofs to sample regional life."
+   }
+  ],
+  "getting_around": "The Dolomites are best explored by road and regional public transport; many visitors travel between towns and trailheads by car or by scheduled buses that serve major valleys and tourist points. Within towns and villages, most sights are reachable on foot, while lifts and cableways access higher trails and ridges.",
+  "food": [
+   {
+    "name": "Knödel",
+    "note": "Traditional bread dumplings served savory or sweet and considered a regional staple."
+   },
+   {
+    "name": "Speck",
+    "note": "South Tyrolean smoked ham commonly used in meals and sandwiches across the region."
+   },
+   {
+    "name": "Kaiserschmarrn",
+    "note": "A fluffy shredded pancake often served with fruit or sugar as a sweet treat."
+   },
+   {
+    "name": "Bauerntoast",
+    "note": "A local pub snack of toasted rye bread with speck and cheese, typically served with condiments."
+   },
+   {
+    "name": "Apples and pastries",
+    "note": "The area is known for apple production and a wide variety of breads and pastries found in local bakeries."
+   }
+  ],
+  "budget_tips": [
+   "Use bank branches for currency exchange to get the best Euro rates rather than tourist exchange outlets.",
+   "Buy sandwiches and pastries from local bakeries or supermarket bakeries where prices are lower than cafés and restaurants.",
+   "Choose accommodation outside the most touristy centres — towns near Bolzano such as Laives are noted as comparatively cheaper — and compare hotels within the same star rating for price variation.",
+   "Eat at traditional Gasthofs and bakery cafés for hearty, often more affordable local meals; in small villages kitchens tend to close earlier, so time your meal accordingly."
+  ],
+  "safety": [
+   "Mountain weather can change rapidly; carry appropriate layers, water and a map or GPS for trails.",
+   "Trails vary in difficulty — choose routes that match your fitness and experience and check local signage or information before setting out.",
+   "Respect local language and culture: signs and menus are commonly bilingual (German and Italian) and sometimes trilingual in Ladin areas.",
+   "Drive carefully on mountain roads, especially in winter when conditions can be challenging and some passes may be snowbound."
+  ],
+  "itinerary": [
+   "Day 1: Base yourself in a town near the Dolomites and explore nearby villages and mountain churches; visit a local bakery and a Gasthof to sample Knödel and speck.",
+   "Day 2: Spend a full day at a major natural highlight such as Tre Cime di Lavaredo or Lago di Braies, allowing time for the main walks and photography; arrive early to avoid peak crowds.",
+   "Day 3: Take a cableway or lift to a ridge like Seceda or visit Lago di Carezza and the Sella group for shorter panoramas and a relaxed final hike before returning to town."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in the Dolomites?",
+    "a": "A long weekend lets you visit one or two major sights and enjoy short hikes; a week gives time for multiple valleys, longer treks and relaxed village visits."
+   },
+   {
+    "q": "Is the Dolomites region expensive?",
+    "a": "Prices are somewhat higher than the Italian average and touristy areas cost more, but there are budget choices such as bakeries, traditional Gasthofs and less expensive towns for accommodation."
+   },
+   {
+    "q": "Is it safe to hike in the Dolomites?",
+    "a": "Yes, but mountain conditions can be unpredictable; choose routes suited to your experience, carry proper clothing and check local information before you go."
+   },
+   {
+    "q": "What is the best area to stay in the Dolomites?",
+    "a": "That depends on your priorities: choose a larger town for more services and varied restaurants, or pick a small village for direct access to trails and a quieter atmosphere; areas near Bolzano offer many connections and services."
+   },
+   {
+    "q": "How do I get to the Dolomites from outside Italy?",
+    "a": "The region is accessible by road and by regional public transport from nearby cities; plan connections in advance during peak season and expect that travel within the mountains often relies on buses, lifts and local roads."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "دولوميتس (Dolomites)",
+  "country_name": "إيطاليا",
+  "title": "دولوميتس (Dolomites) دليل سفر",
+  "meta_description": "دليل لزيارة دولوميتس: أهم المعالم الطبيعية والقرى، أكلات محلية، نصائح لتوفير المال ومسار لثلاثة أيام في جبال الدولوميت.",
+  "h1": "دولوميتس (Dolomites) دليل السفر: ماذا ترى وتاكل وتعرف",
+  "intro": [
+   "تقع منطقة الدولوميتس في جنوب تيرول بشمال إيطاليا وتضم جبالاً درامية وقرى جبلية ساحرة، فضلاً عن بحيرات وغابات وحدائق إقليمية وقِطاعات من المتنزه الوطني الإيطالي. الجبال المدرجة في قائمة التراث العالمي لليونسكو تجذب زواراً من محبي المشي الجبلي، التصوير والطبيعة.",
+   "المنطقة متعددة ثقافياً ولغوياً: يتكلم السكان الألمانية والإيطالية واللادينية، وتنعكس هذه التعددية في اللافتات والمطاعم والهوية المحلية. تجمع المنطقة بين التراث التيرولي الألبي والتأثيرات المتوسطية في المطبخ والمظهر العام."
+  ],
+  "best_time": "أفضل الأوقات للزيارة تعتمد على النشاط: الصيف مناسب للمشي والبحيرات والقرى الخلابة، والشتاء للوجهات التزلجية القريبة من الحدود النمساوية. المواسم السياحية تشهد ازدحاماً في أماكن التزلج والمواقع الشهيرة لذلك خطط مبكراً إذا أمكن.",
+  "top_sights": [
+   {
+    "name": "بحيرة برايز (Lago di Braies)",
+    "why": "بحيرة جبلية ذات مناظر واضحة ومياه زرقاء؛ مناسبة للتصوير والمشي حول الشاطئ. يصل إليها زوار المشي والقيادة، فخطط لوقت كافٍ لتجنب أوقات الازدحام."
+   },
+   {
+    "name": "سِكيدا (Seceda)",
+    "why": "قمة ومنحدرات توفر إطلالات واسعة على صفائح صخرية درامية؛ مكان مفضل للتنزه والصور. ارتدِ حذاء مناسب للمشي الجبلي لأن التضاريس قد تكون قاسية."
+   },
+   {
+    "name": "وادي فونيس (Val di Funes)",
+    "why": "وادي ريفي بقرى جبلية وكنائس على المرتفعات؛ جيد للتنقل بين القرى ومشاهدة الطبيعة التقليدية. استغل الطرق الصغيرة للوصول إلى نقاط المشاهدة لكنه قد يتطلب قيادة حذرة."
+   },
+   {
+    "name": "تري تشيمّي دي لافاريدو (Tre Cime di Lavaredo)",
+    "why": "مجموعة قمم أيقونية في قلب الدولوميت، وجهة أساسية لمحبي المشي الجبلي والمناظر الصخرية. ابدأ مبكراً لتفادي الزحام وراجع حالة الطقس قبل الانطلاق."
+   },
+   {
+    "name": "مجموعة سيلّا (Sella group)",
+    "why": "كتلة صخرية كبيرة مناسبة للأنشطة الجبلية ورحلات التريكينغ؛ توفر شبكات مسارات متنوعة. تحقق من علامات المسار المحلية وخرائط المسارات قبل المشي."
+   },
+   {
+    "name": "بحيرة كاريتزا (Lago di Carezza)",
+    "why": "بحيرة صغيرة ملونة تحيط بها غابات وصخور؛ محطّة تصوير شهيرة وقريبة من طرق سياحية. توقع مناطق مشاهدة مزدحمة في أوقات الذروة وخطط لوقتك وفقاً لذلك."
+   },
+   {
+    "name": "كاتيناتشّيو (Catinaccio)",
+    "why": "جبل طليعي بمنحدرات حادة يُشاهد من وديان لادين والبلدات المحيطة؛ مكان لالتقاط صور بانورامية. يمكن الوصول إلى نقاط مشاهدة من مسارات محلية لذا استعد للمشي."
+   },
+   {
+    "name": "القرى الجبلية والكنائس على المرتفعات",
+    "why": "البلدات الصغيرة تمنح صورة عن التراث التيرولي والنمط العمراني المحلي وتوفر مطاعم محلية ومخابز؛ تنقل بين القرى للاستمتاع بالأجواء. تحقق من مواعيد عمل المطاعم والمحلات المحلية لأنها تغلق مبكراً في القرى الصغيرة."
+   }
+  ],
+  "getting_around": "المنطقة مترامية ومركّبة من وديان وجبال؛ أسهل طريقة لاستكشافها هي بالسيارة لأنها تتيح الوصول إلى المواقف ومناطق الانطلاق للمشي. النقل العام والخدمات في المدن الكبرى والوديان متوفرة لكن قد تكون أقل تواتراً في القرى الجبلية، فخطط لربط الرحلات مسبقاً.",
+  "food": [
+   {
+    "name": "سبِك (Speck)",
+    "note": "لحم خنزير مدخن محلي يُقدم كمقبلات أو داخل السندويتشات ويُعتبر منتجاً إقليميًا مميزًا."
+   },
+   {
+    "name": "كنودل (Knödel)",
+    "note": "كرات خبزٍ محشوة بالسبك أو مكوّنات أخرى وتُقدم كوجبة رئيسية أو حلوى بحسب النوع."
+   },
+   {
+    "name": "سترودل (Strudel)",
+    "note": "حلوى طبقية محشوة بالتفاح أو مكونات أخرى وتنتشر في المخابز المحلية."
+   },
+   {
+    "name": "كايسر شمرن (Kaiserschmarrn)",
+    "note": "بان كيك مفتّت مع زبيب والسكر، يُقدّم كتحلية أو وجبة خفيفة في المطاعم الجبلية."
+   },
+   {
+    "name": "باورنتوست (Bauerntoast)",
+    "note": "توست محلي من خبز الجاودار محشو بالسبك والجبن يُقدّم كسناك شائع في الحانات والمقاهي."
+   }
+  ],
+  "budget_tips": [
+   "استبدال العملة يتم بالأفضل لدى البنوك لأن المنطقة تستخدم اليورو.",
+   "اشترِ ساندويتشات ومعجنات من المخابز المحلية أو السوبرماركت للحصول على وجبات رخيصة وسريعة.",
+   "ابحث عن أماكن إقامة في بلدات أقل مركزية أو وديان أصغر لأن الأسعار تميل لأن تكون أرخص من المناطق السياحية الرئيسة.",
+   "تناول الطعام مبكراً في القرى الصغيرة لأن المطاعم تغلق مبكراً، واختيار المطاعم التقليدية (Gasthof) غالباً ما يكون أقل تكلفة؛ وجبة نموذجية قد تكلف بين 8–12 يورو كما يُذكر في بعض الأماكن."
+  ],
+  "safety": [
+   "المنطقة جبلية؛ تابع توقعات الطقس وتحقق من حالة المسارات قبل أي مشي أو تسلق، واحمل معدات مناسبة.",
+   "احترم التنوع اللغوي والثقافي: اللوحات والقوائم غالباً ثنائية أو ثلاثية اللغة، واستخدم التحية البسيطة بلغة المضيف إذا أمكن.",
+   "في القرى الصغيرة قد تقل خدمات الطوارئ أو المواصلات الليلية، فخطط العودة ووقت الوجبات وفق مواعيد عمل المحلات والمطاعم."
+  ],
+  "itinerary": [
+   "اليوم الأول: تجوّل في بحيرة برايز (Lago di Braies) والمناطق المحيطة، ثم زيارة قرية جبلية قريبة لتناول المخبوزات المحلية وتذوق السبِك.",
+   "اليوم الثاني: رحلات نهارية إلى تري تشيمّي دي لافاريدو (Tre Cime di Lavaredo) أو سلسلة سِكيدا (Seceda) مع مسارات للمشي وصور بانورامية.",
+   "اليوم الثالث: استكشاف وادي فونيس (Val di Funes) ومن ثم زيارة بحيرة كاريتزا (Lago di Carezza) وإنهاء اليوم في أحد Gasthof لتذوق أطباق كنودل والستردل."
+  ],
+  "faq": [
+   {
+    "q": "كم عدد الأيام الموصى بها لزيارة الدولوميتس؟",
+    "a": "يبقى وقت مناسب من 2–4 أيام لرؤية المعالم الرئيسية والإحساس بالطبيعة، أما إذا رغبت بالمشي لمسافات طويلة أو التزلج فخصص وقتاً أطول."
+   },
+   {
+    "q": "هل الدولوميتس مكلفة؟",
+    "a": "أسعار المنطقة تميل لأن تكون أعلى قليلاً من متوسط إيطاليا، وتتفاوت بحسب القرب من المنتجعات السياحية؛ الأكل في المخابز والمحلات المحلية يوفر تكاليف أقل."
+   },
+   {
+    "q": "هل المنطقة آمنة للسياح؟",
+    "a": "نعم بشكل عام، لكن الطبيعة الجبلية تتطلب احترام المخاطر المرتبطة بالطقس والمسارات واحترام إرشادات السلامة المحلية."
+   },
+   {
+    "q": "ما هي أفضل منطقة للإقامة؟",
+    "a": "الاختيار يعتمد على اهتماماتك: المدن الكبرى مثل بولزانو تعطي خيارات مطاعم وخدمات أكثر، بينما القرى الجبلية توفر سهولة الوصول إلى المسارات والمناظر الطبيعية."
+   },
+   {
+    "q": "كيف أتعامل مع العملة ولغة القوائم؟",
+    "a": "المنطقة تستخدم اليورو؛ القوائم واللافتات عادة ثنائية أو ثلاثية (ألمانية وإيطالية وباللاجين أحياناً) لذلك لن تواجه صعوبة بالغة في الطلب أو الدفع."
+   }
+  ]
+ }
+}

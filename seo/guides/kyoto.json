@@ -1,0 +1,226 @@
+{
+ "slug": "kyoto",
+ "name": "Kyoto",
+ "country": "Japan",
+ "tags": [
+  "culture",
+  "history",
+  "food"
+ ],
+ "source_url": "https://en.wikivoyage.org/wiki/Kyoto",
+ "en": {
+  "city_name": "Kyoto",
+  "country_name": "Japan",
+  "title": "Kyoto travel guide: what to see, eat and know",
+  "meta_description": "Practical travel guide to Kyoto: top temples and World Heritage sites, food like kaiseki and matcha, budget tips and a 3-day itinerary.",
+  "h1": "Kyoto travel guide: what to see, eat and know",
+  "intro": [
+   "Kyoto was Japan's capital for more than a thousand years and remains the country's cultural heart, with an exceptional concentration of temples, shrines, palaces and traditional buildings. Modern elements — most visibly Kyoto Station’s glass-and-steel complex — sit alongside historic neighbourhoods, so first impressions can feel surprisingly urban before the quieter, scenic parts of the city appear.",
+   "With planning and patience you can explore Kyoto’s many heritage sites, stroll gardened imperial villas, watch cherry blossoms or visit traditional bath houses. The city’s official travel site offers multilingual information to help visitors plan their stay."
+  ],
+  "best_time": "Spring (for cherry blossoms) and autumn (for fall colours) are the most scenic seasons for gardens and temples; these periods are also the busiest. Winter has fewer visitors and lower competition for site reservations, though gardens are less vibrant. Summers can be hot and humid.",
+  "top_sights": [
+   {
+    "name": "Kinkaku-ji (Golden Pavilion)",
+    "why": "A famous temple noted for its gold-covered main hall set by a reflective pond; visit early or late to avoid the largest crowds."
+   },
+   {
+    "name": "Kiyomizu-dera",
+    "why": "A historic eastern Kyoto temple with expansive views over the city and a lively approach lined with shops; allow time to walk the streets leading up to the temple."
+   },
+   {
+    "name": "Ginkaku-ji (Silver Pavilion)",
+    "why": "A refined temple in eastern Kyoto known for its gardens and peaceful atmosphere; pair it with a stroll along nearby streets in the Higashiyama area."
+   },
+   {
+    "name": "Nijō Castle",
+    "why": "A central historic castle illustrating feudal architecture and gardens; combine a visit here with other central Kyoto sights."
+   },
+   {
+    "name": "Tenryū-ji and Arashiyama area",
+    "why": "Tenryū-ji is a major temple in western Kyoto and a gateway to the scenic Arashiyama district, which includes bamboo groves and traditional shops — a good half-day destination."
+   },
+   {
+    "name": "Imperial Palace and Imperial Villas",
+    "why": "The Imperial Palace and the Katsura and Shūgakuin villas offer formal gardens and historic buildings; visits require reservation through the Imperial Household Agency, so plan ahead."
+   },
+   {
+    "name": "Toei Kyoto Studio Park",
+    "why": "A working film studio with outdoor period-film sets where visitors can see samurai-era sets and sometimes filming in progress; it’s engaging for fans of jidaigeki and film history."
+   },
+   {
+    "name": "Funaoka Onsen",
+    "why": "One of Kyoto’s oldest public bath houses and a good example of traditional sentō architecture; it’s ideal if you want an authentic public-bath experience."
+   }
+  ],
+  "getting_around": "Kyoto is laid out on a grid in the city core, which makes navigating by street names and numbered east–west streets straightforward. Public transport includes buses and trains that serve the main districts; consult official route maps and the city’s travel site for bus numbers and stops when planning self-guided walks.",
+  "food": [
+   {
+    "name": "Kaiseki",
+    "note": "A multi-course traditional meal that is a highlight of Kyoto fine dining, often served in private rooms and commonly associated with ryokan stays."
+   },
+   {
+    "name": "Matcha and matcha treats",
+    "note": "Kyoto and nearby Uji are famous for matcha; you’ll find green-tea drinks, ice cream and sweets around the city."
+   },
+   {
+    "name": "Yatsuhashi",
+    "note": "A traditional Kyoto snack made from rice flour and sugar, available in baked and soft varieties and often sold as a souvenir."
+   },
+   {
+    "name": "Ramen at Kyoto Station food floor",
+    "note": "The department store attached to Kyoto Station has multiple dining options including a ramen area for a quick meal after arriving by train."
+   },
+   {
+    "name": "Ryokan meals",
+    "note": "Staying at a ryokan often includes an elaborate dinner—typically kaiseki-style—which pairs local ingredients with formal presentation."
+   }
+  ],
+  "budget_tips": [
+   "Book tours and site reservations (such as Imperial villas) well in advance to avoid last-minute fees and disappointment.",
+   "Use self-guided walking routes and official 'Kyoto Walks' pamphlets to explore efficiently and reduce reliance on taxis.",
+   "Eat at department-store food floors or casual eateries for good meals without the premium of fine-dining kaiseki.",
+   "Visit less popular sites and travel in shoulder seasons to avoid peak crowds and potentially lower accommodation demand."
+  ],
+  "safety": [
+   "Kyoto is generally safe; normal precautions against pickpocketing in crowded tourist areas are sensible.",
+   "Follow local etiquette at temples, shrines and public baths — observe rules for photography, dress modestly at religious sites, and follow bathing customs at sentō.",
+   "If attending meditation sessions or guided cultural experiences, reserve in advance and arrive on time to respect hosts and other participants."
+  ],
+  "itinerary": [
+   "Day 1: Start at Kyoto Station, explore the nearby central sights such as Nijō Castle and Nishi Hongan-ji, then visit the Imperial Palace grounds (book a tour if required). Finish with dinner at the department-store dining floors.",
+   "Day 2: Spend the day in eastern Kyoto visiting Kiyomizu-dera and the Higashiyama streets, then continue to Ginkaku-ji and nearby walking routes; include a stop for matcha sweets or yatsuhashi.",
+   "Day 3: Head to western Kyoto for Arashiyama and Tenryū-ji, visit the bamboo groves and souvenir shops, and relax with an evening visit to a public bath such as Funaoka Onsen."
+  ],
+  "faq": [
+   {
+    "q": "How many days do I need in Kyoto?",
+    "a": "Three days allows you to see the major districts and a mix of eastern, central and western Kyoto; more time lets you explore smaller temples, villas and neighbourhoods at a slower pace."
+   },
+   {
+    "q": "Is Kyoto expensive to visit?",
+    "a": "Kyoto has a range of options from budget eateries and self-guided walks to high-end ryokan and kaiseki meals, so cost depends on your choices; planning and using public transport can keep expenses down."
+   },
+   {
+    "q": "Is Kyoto safe for tourists?",
+    "a": "Yes, Kyoto is considered a safe city; usual travel precautions apply, and visitors should respect local rules at religious sites and public baths."
+   },
+   {
+    "q": "What is the best area to stay in Kyoto?",
+    "a": "Central Kyoto near the station is convenient for trains and buses and places you within reach of many sights; choosing a district depends on whether you prefer easy transport links or a quieter, traditional neighbourhood."
+   },
+   {
+    "q": "How do I visit the Imperial Palace and villas?",
+    "a": "Visits to the Imperial Palace and the Imperial villas require reservations through the Imperial Household Agency; some tours are competitive, so apply early—applications open on the first day of the month three months before your preferred month."
+   }
+  ]
+ },
+ "ar": {
+  "city_name": "كيوتو",
+  "country_name": "اليابان",
+  "title": "كيوتو دليل السفر: معالم، طعام وخطط ثلاثية الأيام",
+  "meta_description": "دليل موجز إلى كيوتو: أهم المعالم والوجبات المحلية ونصائح توفيرية وخطة سفر لثلاثة أيام مع معلومات عملية للزائرين.",
+  "h1": "دليل سفر كيوتو: ماذا ترى وتذوق وتعرف",
+  "intro": [
+   "كانت كيوتو عاصمة اليابان لأكثر من ألف سنة وتُعتبر مركز الثقافة والتقاليد اليابانية، حيث تجمع قلاعًا وأضرحةً ومعابد وحدائق تاريخية متراكمة عبر القرون. الموقف الحديث للمدينة يتجلّى في محطة كيوتو الزجاجية والحديثة، ما يخلق تباينًا واضحًا بين التراث والحداثة.",
+   "قد تبدو الدقائق الأولى للزائر مشغولة بامتداد العمران في وسط المدينة، لكنّ المثابرة تكشف عن جمال مخفي في المعابد والحدائق المحيطة بالمركز، كما تتوفر مواقع ومعلومات رسمية متعددة بعدة لغات لتسهيل التخطيط."
+  ],
+  "best_time": "أفضل مواسم الزيارة هي موسم أزهار الكرز والخريف لمشاهدة أزهار الساكورا وألوان الأشجار، فهذه الفترات تُظهر الحدائق بأبهى حللها. في الشتاء تقل المنافسة على بعض الزيارات الرسمية مثل جولات القصور الإمبراطورية، لكن الحدائق ستكون أقل ازدهارًا.",
+  "top_sights": [
+   {
+    "name": "كينكاكوجي (Kinkaku-ji)",
+    "why": "معبد شهير في شمال كيوتو ومكوّن من مباني تاريخية جذابة؛ يستحق الزيارة لمشاهدة العمارة والحدائق المحيطة، ويفضَّل الوصول مبكرًا لتفادي الازدحام."
+   },
+   {
+    "name": "ريوان-جي (Ryōan-ji)",
+    "why": "معبد معروف بحديقته الحجرية الشهيرة، مناسب للتأمل وتعلُّم البُعد الزنّي؛ ارتده بهدوء واحترم قواعد التصوير داخل الأماكن المخصصة."
+   },
+   {
+    "name": "نينا-جي (Ninna-ji)",
+    "why": "مجمّع معابد تاريخي شمال المدينة، يُظهر طرازًا معماريًا تقليديًا وحدائق موسمية جميلة، وتكون الزهور والحدائق في أفضل حال خلال موسم الكرز والخريف."
+   },
+   {
+    "name": "نِجو-جو (Nijō Castle)",
+    "why": "قلعة تاريخية في وسط كيوتو تقدم لمحة عن قصور الساموراي والحكومة القديمة؛ خطط لوقت للتمشية في الحدائق وحضور جولة إن أمكن."
+   },
+   {
+    "name": "كيوميزو-ديرا (Kiyomizu-dera)",
+    "why": "معبد بارز في شرق كيوتو مع مناظر بانورامية للمدينة والطرق المؤدية إليه مليئة بمحلات التذكارات؛ ارتد حذاءً مريحًا للمشي على الممرات الصاعدة."
+   },
+   {
+    "name": "غينكاكوجي (Ginkaku-ji)",
+    "why": "معبد آخر في شرق المدينة معروف بحدائقه الهادئة وتصميمه التقليدي؛ يُنصح بالجمع بينه وبين مسار المشي في الحي المحيط."
+   },
+   {
+    "name": "تِنريو-جي (Tenryū-ji) وآراشيياما",
+    "why": "منطقة غربية تضم معبدًا عالمياً ومناظر طبيعية ونُهجًا تقليدية في آراشيياما؛ استغل المنطقة لركن من التسوق والتجوّل في المتاجر التقليدية القريبة من المحطة."
+   },
+   {
+    "name": "دايغو-جي (Daigo-ji)",
+    "why": "موقع تاريخي في جنوب كيوتو من مواقع التراث العالمي حيث توفر حدائق ومباني أثرية تستحق الزيارة خلال موسم الأزهار أو الخريف."
+   }
+  ],
+  "getting_around": "محطة كيوتو الحديثة تشكّل محور المدينة؛ يستخدم الزوار المحطة كقاعدة للتنقل في المدينة. يوفر مكتب هيئة السياحة اليابانية كتيبات \"Kyoto Walks\" التي تذكر أرقام الحافلات ومحطات الوقوف ومسارات المشي الذاتية لتسهيل التنقّل بين المعالم.",
+  "food": [
+   {
+    "name": "ايسيتان بمطاعم الطابقين العاشر والحادي عشر",
+    "note": "مركز مريح بالقرب من المحطة للوجبات السريعة والرامن ومقاهي إيطالية عفوية للزائرين فور وصولهم."
+   },
+   {
+    "name": "كايْسِكي (kaiseki)",
+    "note": "وجبة تقليدية من أطباق متعددة تُعد جزءًا من تجربة فاخرة في كيوتو، وتتطلب حجزًا مسبقًا وغالبًا توقيعًا عبر منظمي الفنادق."
+   },
+   {
+    "name": "الماتشا (matcha)",
+    "note": "شاي أخضر ومشتقاته منتشرة في كيوتو وأوجي، وتظهر نكهة الماتشا في المثلجات والحلويات والوجبات الخفيفة."
+   },
+   {
+    "name": "ياتسواهشي (Yatsuhashi)",
+    "note": "مقرمش أو نيء من دقيق الأرز والسكر، يُباع كحلوى تذكارية بنكهات مثل القرفة أو الماتشا."
+   },
+   {
+    "name": "مطاعم الراڤن والوجبات داخل المحطة",
+    "note": "مجموعة خيارات يابانية تقليدية متاحة في قسم المأكولات بالمحطة، مناسبة للوجبات السريعة قبل استكشاف المدينة."
+   }
+  ],
+  "budget_tips": [
+   "استخدم نشرات \"Kyoto Walks\" ذات المسارات والحافلات الموصى بها لتخطيط مسار فعال وتجنّب الرحلات المكلفة غير الضرورية.",
+   "جولات بعض مواقع القصر الإمبراطوري مجانية، فاستعلم عن الجولات المتاحة وربما تتمكن من زيارة دون تكلفة دخول.",
+   "اشترِ وجبات خفيفة وتذكارات مثل ياتسواهشي من المحلات المحلية في آراشيياما لتفادي متاجر السياحة باهظة الثمن في الكيوميزو.",
+   "استفد من الحمامات العامة (السينتّو) إن رغبت بتجربة محلية غالبًا بتكلفة معقولة مقارنة بخيارات الرفاهية."
+  ],
+  "safety": [
+   "احترم الأماكن الدينية واتبع قواعد التصوير والإشارات داخل المعابد والأضرحة.",
+   "في الحمامات العامة اتبع آداب الحمام المحليّة والتوجيهات المكتوبة أو الشفوية واحترم خصوصية الآخرين.",
+   "عند حضور جولات رسمية أو حصص تأمل، احجز مسبقًا عندما يكون ذلك مطلوبًا وتحقق من متطلبات اللغات أو الإرشاد.",
+   "كن حذرًا من الازدحام عند المواقع الشعبية واحتفظ بمقتنياتك الشخصية بالقرب منك."
+  ],
+  "itinerary": [
+   "اليوم 1: استكشف وسط المدينة بدءًا من محطة كيوتو، تناول وجبة في مطاعم الطوابق العليا بمحطة إيسيتان، ثم قم بجولة في قصر كيوتو الإمبراطوري وحدائقه إن أمكن.",
+   "اليوم 2: خصص اليوم لشرق كيوتو وزيارة كيوميزو-ديرا، ثم المشي عبر الأزقة والتسوّق في محلات التذكارات؛ اختم اليوم بزيارة غينكاكوجي إذا سمح الوقت.",
+   "اليوم 3: اذهب إلى آراشيياما وغرب كيوتو لزيارة تِنريو-جي والمشي قرب محطة آراشيياما، أو قم بزيارة دايغو-جي في الجنوب إذا كنت تفضّل مواقع التراث العالمي الأقل مركزية."
+  ],
+  "faq": [
+   {
+    "q": "كم يومًا أحتاج في كيوتو؟",
+    "a": "ثلاثة أيام تمنحك وقتًا معقولًا لرؤية معالم رئيسية في الأجزاء الشرقية والغربية من المدينة، لكنّها لن تكفي لاستكشاف جميع المواقع التاريخية بعمق."
+   },
+   {
+    "q": "هل كيوتو مكلفة؟",
+    "a": "توجد خيارات باقتصادية مثل الوجبات في المحطة والحمامات العامة، وفي المقابل توجد تجارب فاخرة باهظة مثل الكايسكي والإقامة في الريوكان."
+   },
+   {
+    "q": "هل زيارة القصور الإمبراطورية مجانية؟",
+    "a": "نعم، بعض جولات القصور الإمبراطورية مجانية لكنّ الوصول يتطلب حجزًا عبر وكالة الديوان الإمبراطوري، وبعض الزيارات تتطلب قرعة بسبب الإقبال."
+   },
+   {
+    "q": "ما هي أفضل مناطق الإقامة؟",
+    "a": "المحاذاة بمحطة كيوتو عملية للواصلين بالمواصلات، وأحياء مثل آراشيياما وحيّ كيوميزو مناسبة للذين يفضلون البقاء قرب المعالم التقليدية."
+   },
+   {
+    "q": "كيف أصل من المحطة إلى المعالم؟",
+    "a": "محطة كيوتو نقطة انطلاق رئيسية، ويمكن استخدام الحافلات المحلية ومسارات المشي الموصوفة في كتيبات \"Kyoto Walks\" للوصول إلى المعالم الرئيسية."
+   }
+  ]
+ }
+}

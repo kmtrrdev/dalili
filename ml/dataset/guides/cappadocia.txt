@@ -1,0 +1,47 @@
+Cappadocia, Turkey
+Labels: nature, adventure, history | Split: test
+Source: https://en.wikivoyage.org/wiki/Cappadocia (CC BY-SA 4.0)
+
+===== CLEANED GUIDE TEXT (5,184 characters) =====
+
+Cappadocia (Turkish: Kapadokya) is an area within South Central Anatolia in Turkey, with a surreal landscape dotted with underground cities, cave churches and houses carved in the rocks.
+
+Understand
+
+Ancient Cappadocia was a kingdom and later a province of the Roman Empire extending northeast across Anatolia to Sivas and southwest to Aksaray and Niğde. But what is nowadays known worldwide as Cappadocia, and described on this page, is a smaller area near Nevşehir with weird and spectacular scenery.
+
+Between 9 and 3 million years ago, eruptions of Mount Erciyes and Mount Hasan covered the area in fine ash particles, which welded together and packed down into a deep layer of tuff. This is a soft rock that erodes easily, so it only persists in a dry climate or if protected by an overlay of harder rocks. Where it outcrops at the rim of a plateau, the rainfall and wind sculpt the tuff into domes, cones and columns; the general name for these is "hoodoos" and is applicable to formations from other soft rocks such as sandstone. Typically, there's a cascade of large formations being born at the rim of the plateau, then middling columns below, then the oldest are statue- or garden-ornament-sized pieces at the bottom of the hoodoo field. The vagaries of erosion are exaggerated if they retain a cap of harder rock, twisting into "fairy chimneys", and their colours range from pink to green and yellow.
+
+Tuff is hard enough to use as a building material, especially if the only local alternatives are timber or wattle-and-daub. So it can be quarried and dressed as masonry, but it's much easier to hollow it out into dwellings, storage cellars, stables and ritual spaces; such cave castles are also easier to defend or hide from sight. In many places, these linked up to create entire underground cities: 40 are known, and more keep being discovered. 
+
+The Cappadocians were early adopters of Christianity, and in Acts 2 of the Bible, they are named among the many peoples astonished to hear the Gospels preached in their own language, when the Apostles begin "speaking with tongues". Their cave dwellings are often attributed to flight from Roman persecution, but most were hewn out between 100 and 800 AD, and from 380, Christianity was the official Roman religion, so it was probably simple convenience for a growing population. Many caves have found modern use, such as hotels. 
+
+See
+  
+Museumpass is a pass for government-run museums. The Cappadocia version is valid for 3 days from your first museum visit and costs €65 or 2000 TL in 2024. However, you'll have to gallop around the area to break even on it. 
+* Sunrise and sunset are the best times to see the rock formations, with the slanting light colouring them and casting deep shadows. You need a bright sky: overcast conditions turn the rocks into dollops of grey porridge. If you explore at sunset, don't get caught by nightfall on unfamiliar rough ground.
+* Castles here means large pinnacles carved out into extensive habitations, such as those at Uçhisar. Nevşehir has a conventional hilltop bastion that wouldn't look out of place in Spain - only in 2015 did they discover a great rabbit-warren of dwellings beneath it. 
+* Ottoman mansions were built above ground with the local stone, but often extended back into the hillside. Many were the homes of prosperous Greeks, until they were deported in the 1923 population exchanges.
+* Tiny dwellings with doors less than 10 cm high are seen on cliff sides. These were pigeon coops, and the guano was collected for fertiliser and whitewash. The canyon between Uçhisar and Göreme is called Pigeon Valley for that reason.
+* Entire underground cities: the best you can visit are Kaymakli and Derinkuyu south of Nevşehir. 
+* Churches: dozens and dozens above and below ground, fairly plain early on but becoming richly frescoed from the 9th century. The open air museum 1 km east of  Goreme has a fine collection. An underground "crypt" is a common feature of church architecture, and the usual explanation is that it harks back to the days when Christians needed to conceal their rites, and that it was inherited from Mithras-worship and Zoroastrianism. But the cave church tradition of Cappadocia suggests another strand of heritage.
+
+Do
+ 
+* Hiking trails vary from easy strolls as if in a wacky sculpture park, to long treks through the canyons. 
+* Balloons launch at sunrise for the lightest winds and the best viewing of the rock formations. Typically it's a one-hour ride in a 20-person basket: Göreme has the biggest concentration of operators.
+
+Buy
+The towns all have small stores for basics, plus artisan and gift shops for carpets, kilims and pottery.
+
+Eat and drink
+: Local dishes include: 
+* Mantı: small pieces of ravioli dumplings stuffed with minced meat served with yoghurt and garlic sauce in its most basic form.
+* Sirdan: lamb or sheep intestines grilled and served with spices and lemon.
+* Testi kebap: meat and veg cooked in a clay pot sealed with bread dough. The pot is broken when serving.
+* Pastirmali kuru fasulye: white beans with spiced meat.
+* Wine: Cappadocia is a major wine-producing region, and some vineyards have outlet wine shops.
+
+===== TOKENS THE MODEL TRAINS ON (404) =====
+
+turkish kapadokya anatolia surreal landscape dotted underground city cave church house carved rock ancient later province roman empire extending northeast anatolia siva southwest aksaray nigde nowaday worldwide described page smaller nevsehir weird spectacular scenery million ago eruption mount erciye mount hasan covered fine ash particle welded together packed deep layer tuff soft rock erode easily persist dry climate protected overlay harder rock outcrop rim plateau rainfall wind sculpt tuff dome cone column general hoodoo applicable formation soft rock sandstone typically cascade formation born rim plateau middling column oldest statue garden ornament sized piece bottom hoodoo field vagary erosion exaggerated retain cap harder rock twisting fairy chimney colour range pink green yellow tuff hard enough building material especially alternative timber wattle daub quarried dressed masonry easier hollow dwelling storage cellar stable ritual space cave castle easier defend hide sight linked create entire underground city keep discovered cappadocian early adopter christianity acts bible named people astonished hear gospel preached language apostle begin speaking tongue cave dwelling attributed flight roman persecution hewn christianity official roman religion probably simple convenience growing population cave modern hotel museumpass pass government run museum version valid museum cost youll gallop break sunrise sunset time rock formation slanting light colouring casting deep shadow bright sky overcast condition turn rock dollop grey porridge explore sunset dont caught nightfall unfamiliar rough ground castle mean pinnacle carved extensive habitation uchisar nevsehir conventional hilltop bastion wouldnt look discover rabbit warren dwelling beneath ottoman mansion built ground stone extended hillside home prosperous greek deported population exchange tiny dwelling door cliff side pigeon coop guano collected fertiliser whitewash canyon uchisar goreme called pigeon valley reason entire underground city kaymakli derinkuyu nevsehir church dozen dozen ground fairly plain early becoming richly frescoed century air museum goreme fine collection underground crypt common feature church architecture usual explanation hark christian needed conceal rite inherited mithra worship zoroastrianism cave church tradition suggest another strand heritage hiking trail vary easy stroll wacky sculpture park trek canyon balloon launch sunrise lightest wind viewing rock formation typically hour ride person basket goreme biggest concentration operator town store basic plus artisan gift shop carpet kilim pottery dish mant piece ravioli dumpling stuffed minced meat served yoghurt garlic sauce basic form sirdan lamb sheep intestine grilled served spice lemon testi kebap meat veg cooked clay pot sealed bread dough pot broken serving pastirmali kuru fasulye white bean spiced meat wine major wine producing region vineyard outlet wine shop
