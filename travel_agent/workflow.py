@@ -129,6 +129,10 @@ async def understand(state: GraphState) -> GraphState:
         interp, notes = await interpret(message, has_plan, names, context)
     # A free-text "add_place" without a place name carries nothing to add ("add more things" is a density change).
     interp.actions = [a for a in interp.actions if not (a.action in ("add_place", "replace_item") and not (a.text or "").strip())]
+    if interp.requirements.return_to:
+        # "Fly home to Cairo instead": the last flight is searched again anyway. Don't also swap the outbound
+        # flight (change_flight would exclude it) - the traveller didn't ask for that.
+        interp.actions = [a for a in interp.actions if a.action != "change_flight"]
     trip.emit("message.interpreted", intent=interp.intent, source=interp.source)
     wants_change = interp.intent in ("feedback", "update_requirements", "plan_request")
     if has_plan and wants_change and _changes_trip_frame(trip, interp):
