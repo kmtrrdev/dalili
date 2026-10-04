@@ -5,7 +5,7 @@
 # - Manual run with "release" -> a new STORE build (needed only for native changes: permissions, new plugins,
 #   Flutter upgrades, app icon): an .aab for Google Play and an .ipa uploaded to App Store Connect / TestFlight.
 #
-# Secrets: SHOREBIRD_TOKEN, ANDROID_KEYSTORE_BASE64, ANDROID_KEY_PROPERTIES,
+# Secrets: SHOREBIRD_TOKEN, ANDROID_KEYSTORE_BASE64, ANDROID_KEY_PASSWORD,
 #          APPSTORE_API_KEY_ID, APPSTORE_API_ISSUER_ID, APPSTORE_API_PRIVATE_KEY, IOS_DIST_CERT_P12_BASE64,
 #          IOS_DIST_CERT_PASSWORD, IOS_PROFILE_BASE64
 # Variables: DALILI_SERVER (https URL of the backend)
@@ -46,7 +46,8 @@ jobs:
         run: |
           # Secrets saved from Windows may carry \r: strip whitespace before decoding.
           echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | tr -d '\r\n ' | base64 -d > android/app/upload-keystore.jks
-          echo "${{ secrets.ANDROID_KEY_PROPERTIES }}" | tr -d '\r' > android/key.properties
+          PW=$(echo "${{ secrets.ANDROID_KEY_PASSWORD }}" | tr -d '\r\n')
+          printf 'storePassword=%s\nkeyPassword=%s\nkeyAlias=upload\nstoreFile=upload-keystore.jks\n' "$PW" "$PW" > android/key.properties
       - name: Patch (over the air)
         if: github.event_name == 'push' || inputs.kind == 'patch'
         run: shorebird patch android --release-version latest -- --dart-define=DALILI_SERVER=${{ vars.DALILI_SERVER }}
