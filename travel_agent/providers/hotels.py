@@ -78,7 +78,13 @@ async def search(city: str, check_in: date, check_out: date, adults: int, curren
     if len(hotels) < 8:  # small towns: allow rentals so the planner has options
         hotels = props
     out = [h for h in (_to_option(p, currency.upper(), nights, center) for p in hotels) if h]
+    # Safety net: a hotel far from the destination is a different city with the same name (Naples, Florida
+    # for Naples, Italy) - never a candidate, whatever the text search returned.
+    out = [h for h in out if haversine_km(center.lat, center.lon, h.location.lat, h.location.lon) <= MAX_HOTEL_KM]
     return [h for h in out if h.rating == 0 or h.reviews_count >= 5]
+
+
+MAX_HOTEL_KM = 60
 
 
 async def offers(property_token: str, city: str, check_in: date, check_out: date, adults: int, currency: str) -> dict:

@@ -60,6 +60,7 @@ STYLE_CAPACITY = {
 AIRPORT_BEFORE_DEPARTURE = 150  # minutes at the airport before an international departure
 ARRIVAL_PROCESSING = 45         # immigration + baggage
 STATION_BEFORE_DEPARTURE = 30   # trains / coaches between the cities of a multi-city trip
+MAX_HOTEL_KM_FROM_SIGHTS = 10   # average distance to the top sights beyond which a hotel is a last resort
 CHECK_IN_FROM = "14:00"
 
 
@@ -170,7 +171,9 @@ def _rank_flights(pool: list[FlightOption], ctx: PlanContext, leaving: bool = Fa
 
 
 def _anchor_points(ctx: PlanContext) -> list[GeoPoint]:
-    ranked = sorted((score_attraction(a, ctx.profile, ctx.contract, ctx.mode) for a in ctx.research.attractions),
+    # In-city sights only: a day trip or an overnight idea (Milan from Rome) would drag the "centre" out of town.
+    city_sights = [a for a in ctx.research.attractions if not a.day_trip and "overnight_trip" not in a.categories]
+    ranked = sorted((score_attraction(a, ctx.profile, ctx.contract, ctx.mode) for a in city_sights),
                     key=lambda r: -r.score)
     return [r.item.location for r in ranked[:6]] or [GeoPoint(**ctx.research.destination_info["center"])]
 
@@ -199,6 +202,12 @@ def select_core(ctx: PlanContext) -> tuple[Ranked | None, Ranked | None, Ranked 
     if ctx.knobs.hotel_max_price_local is not None:
         hotels = [h for h in hotels if h.price_per_night.amount <= ctx.knobs.hotel_max_price_local] or hotels
     anchors = _anchor_points(ctx)
+
+    def avg_km(h: HotelOption) -> float:
+        return sum(haversine_km(h.location.lat, h.location.lon, a.lat, a.lon) for a in anchors) / max(len(anchors), 1)
+
+    # More than ~10 km from the sights means hours of commuting a day: only if nothing closer exists.
+    hotels = [h for h in hotels if avg_km(h) <= MAX_HOTEL_KM_FROM_SIGHTS] or hotels
     hranked = sorted((score_hotel(h, anchors, ctx.profile, ctx.mode, nightly_user / max(ctx.fx(h.price_per_night.currency), 1e-9))
                       for h in hotels), key=lambda r: -r.score)
     if not (outs and rets and hranked):
@@ -590,14 +599,16 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
     # 2) Fill remaining capacity: best activity first, placed on the most cohesive day.
     #    Pass one never puts outdoor plans on rainy days; pass two may, but only
     #    for capacity still left after every weather-safe option was used.
+    # Days the traveller already has (pinned) keep exactly their stops: only the other days are filled / rebalanced.
+    open_slots = [s for s in slots if (s.index + 1) not in ctx.pinned_days]
     for allow_wet in (False, True):
-        _fill(pool, slots, used, allowed, take, hotel, allow_wet)
+        _fill(pool, open_slots, used, allowed, take, hotel, allow_wet)
 
     # 3) Redistribute: no full day should stay empty while another day has 2+ activities.
-    full_days = [s for s in slots if s.kind == "full"]
+    full_days = [s for s in open_slots if s.kind == "full"]
     for _ in range(len(full_days)):
         empties = [s for s in full_days if not s.activities]
-        donors = sorted((s for s in slots if len(s.activities) >= 2), key=lambda s: -len(s.activities))
+        donors = sorted((s for s in open_slots if len(s.activities) >= 2), key=lambda s: -len(s.activities))
         moved = False
         for empty in empties:
             for donor in donors:
@@ -646,6 +657,7 @@ class DayBuilder:
         self.spare = spare or []          # ranked sights no day was given (best first)
         self.taken = taken if taken is not None else set()  # place ids already somewhere in the trip
         self.later = later or []          # days not built yet: idle hours today may borrow their sights
+        self.hard_end: int | None = None  # departure day: the latest any stop may end (bags, then the airport)
         self.items: list[ItineraryItem] = []
         self.here: GeoPoint = hotel.location if hotel else GeoPoint(**ctx.research.destination_info["center"])
         self.t = 0
@@ -743,6 +755,8 @@ class DayBuilder:
         if pick is None:
             return False
         r, start, leg, alts = pick
+        if self.hard_end is not None and start + MEAL_DURATION[meal] > self.hard_end:
+            return False  # no time left before the airport run
         tr = self.ctx.contract.travelers
         ranked = self.restaurant_rank[r.id]
         why = list(ranked.reasons)
@@ -1071,8 +1085,12 @@ def build_day(ctx: PlanContext, slot: DaySlot, hotel: HotelOption | None, out: F
         else:
             b.t = max(0, leave - 30)
             slot.activities = []
-        # Leave room to get back to the hotel for the bags before the transfer.
-        b.daytime(slot.activities, slot.start, min(slot.end, leave - 60))
+        # Leave room to get back to the hotel for the bags before the transfer - measured from the city centre to
+        # this hotel (a hotel out of town is a long ride back), with 15 minutes to collect the bags.
+        center = GeoPoint(**ctx.research.destination_info["center"])
+        back_min = ctx.leg(center, hotel.location).minutes if hotel else 0
+        b.hard_end = leave - 15 - back_min  # nothing (sight or meal) may run past this
+        b.daytime(slot.activities, slot.start, min(slot.end, b.hard_end - 20))
         if leave - b.t >= 150 and b.t >= 13 * 60 and b.t < 16 * 60 and not ctx.knobs.skip_snacks:
             b.meal("coffee", b.t, "Coffee break")
         if hotel:

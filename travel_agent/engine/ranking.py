@@ -116,6 +116,9 @@ def score_hotel(h: HotelOption, anchors: list[GeoPoint], profile: TravelerProfil
         reasons.append(f"Central: about {avg_km:.1f} km from your top sights")
     elif avg_km > 3.5:
         trade.append(f"Farther from the main sights (~{avg_km:.1f} km)")
+    # Far out of town costs hours of commuting every day (and a tight departure day): a cheap room there is a false
+    # saving. The penalty grows with every km past 6.
+    far_pen = 0.12 * max(0.0, avg_km - 6.0)
     price = h.price_per_night.amount
     price_ratio = price / max(nightly_budget_local, 1)
     price_s = clamp(1.25 - price_ratio * 0.75) if price_ratio <= 1.6 else 0.0
@@ -148,7 +151,7 @@ def score_hotel(h: HotelOption, anchors: list[GeoPoint], profile: TravelerProfil
 
     w = {"balanced": (0.3, 0.3, 0.3), "budget": (0.2, 0.25, 0.55),
          "comfort": (0.45, 0.35, 0.1), "experience": (0.3, 0.4, 0.25)}[mode]
-    score = w[0] * rating_s + w[1] * loc_s + w[2] * price_s + 0.08 * extras + style_s - noise_pen
+    score = w[0] * rating_s + w[1] * loc_s + w[2] * price_s + 0.08 * extras + style_s - noise_pen - far_pen
     return Ranked(h, round(score, 4), reasons, trade)
 
 

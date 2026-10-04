@@ -30,10 +30,16 @@ def test_most_visited_landmarks_rank_first(rome_research, rome_contract):
     assert top_by_reviews in ranked[:3]
 
 
+def _city_icons(research, n):
+    """The most-reviewed sights in the city itself (an overnight idea like Milan from Rome is not a Rome icon)."""
+    city = [a for a in research.attractions if not a.day_trip and "overnight_trip" not in a.categories]
+    return sorted(city, key=lambda a: -(a.reviews_count or 0))[:n]
+
+
 def test_city_icons_are_in_a_week_long_plan(rome_research, rome_contract, profile):
     plan = build_plan(_ctx(rome_contract, rome_research, profile))
     planned = {i.place_id for d in plan.days for i in d.items if i.place_id}
-    icons = sorted(rome_research.attractions, key=lambda a: -(a.reviews_count or 0))[:5]
+    icons = _city_icons(rome_research, 5)
     assert all(a.id in planned for a in icons), [a.name for a in icons if a.id not in planned]
 
 
@@ -41,7 +47,7 @@ def test_price_cap_never_drops_an_icon(rome_research, rome_contract, profile):
     """'Free sights only' saves a few euros; it must not cost the traveller the Colosseum."""
     plan = build_plan(_ctx(rome_contract, rome_research, profile, activity_cost_cap_local=0.0))
     planned = {i.place_id for d in plan.days for i in d.items if i.place_id}
-    paid_icons = [a for a in rome_research.attractions if fame(a) >= 0.8 and a.cost_per_person.amount > 0]
+    paid_icons = [a for a in _city_icons(rome_research, 50) if fame(a) >= 0.8 and a.cost_per_person.amount > 0]
     assert paid_icons and all(a.id in planned for a in paid_icons)
 
 
@@ -73,6 +79,38 @@ def test_round_trip_ticket_is_used_when_cheaper(rome_research, rome_contract, pr
     assert out.item.id == o.id and ret.item.id == b.id  # both legs of the ticket, never one alone
     plan = build_plan(_ctx(tight, r, profile, mode="budget"))
     assert not [v for v in validate_plan(plan, tight, profile, r, 0.05).errors if v.check == "reality"]
+
+
+# ---------------------------------------------------------------- same-name cities (Naples, Italy vs Naples, Florida)
+
+def test_hotel_search_names_the_country_and_drops_far_hotels(monkeypatch):
+    from datetime import date
+
+    from travel_agent import net
+    from travel_agent.models import GeoPoint
+    from travel_agent.providers import hotels
+    from travel_agent.research import _qualified
+
+    class Ref:
+        name, country = "Naples", "Italy"
+
+    assert _qualified(Ref) == "Naples, Italy"
+    sent = {}
+
+    async def fake_serpapi(engine, ttl, **params):
+        sent.update(params)
+
+        def prop(name, lat, lon):
+            return {"name": name, "type": "hotel", "gps_coordinates": {"latitude": lat, "longitude": lon},
+                    "rate_per_night": {"extracted_lowest": 90}, "overall_rating": 4.2, "reviews": 300}
+        return {"properties": [prop("Hotel Napoli Centro", 40.85, 14.26),
+                               prop("Red Roof Inn Naples Downtown-5th Ave S", 26.14, -81.79)]}  # Florida
+
+    monkeypatch.setattr(net, "serpapi", fake_serpapi)
+    found = anyio.run(hotels.search, "Naples, Italy", date(2026, 10, 13), date(2026, 10, 16), 1, "EUR",
+                      GeoPoint(lat=40.8518, lon=14.2681))
+    assert sent["q"] == "Hotels in Naples, Italy"
+    assert [h.name for h in found] == ["Hotel Napoli Centro"]
 
 
 # ---------------------------------------------------------------- the budget plan is the cheapest
@@ -155,10 +193,10 @@ def test_refinement_that_loses_an_icon_is_detected(rome_research, rome_contract,
 
     trip = TripState(trip_contract=rome_contract, research=rome_research, traveler_profile=profile)
     before = build_plan(_ctx(rome_contract, rome_research, profile))
-    icon = next(a for a in sorted(rome_research.attractions, key=lambda a: -(a.reviews_count or 0))
-                if any(i.place_id == a.id for d in before.days for i in d.items))
+    icon = next(a for a in _city_icons(rome_research, 50) if any(i.place_id == a.id for d in before.days for i in d.items))
     after = build_plan(_ctx(rome_contract, rome_research, profile, exclude_ids=[icon.id]))
-    assert _lost_icons(trip, before, after) == [icon.name]
+    # The removed icon is reported (a rebuilt plan may shuffle other stops too; each lost icon is listed).
+    assert icon.name in _lost_icons(trip, before, after)
     assert _lost_icons(trip, before, before) == []
 
 

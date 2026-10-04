@@ -253,7 +253,9 @@ def plan_journey(contract: TripContract, profile: TravelerProfile, research: Res
     for i, stop in enumerate(stops):
         sb = research.stops[i].model_copy(update={
             "flights_outbound": [inbound] if inbound else (legs[i] if i < len(legs) else []),
-            "flights_return": legs[i + 1] if i + 1 < len(legs) else []})
+            "flights_return": legs[i + 1] if i + 1 < len(legs) else [],
+            # A round-trip ticket is origin <-> one city: never a candidate for the legs of a multi-city journey.
+            "round_trips": []})
         share = rest * (stop.nights + 1) / (contract.nights + 1) + leg_guess[i] + leg_guess[i + 1]
         scale = (_median_hotel(sb) / base_median) if base_median else 1.0
         ctx = PlanContext(

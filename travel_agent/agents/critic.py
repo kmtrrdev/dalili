@@ -83,7 +83,9 @@ def _candidates(trip: TripState, limit: int = 14) -> list[dict]:
         return []
     used = {i.place_id for d in p.days for i in d.items if i.place_id}
     excluded = set(trip.excluded_ids)
-    pool = [x for x in r.attractions if x.id not in used and x.id not in excluded and not x.dates]
+    # Overnight ideas (Milan from Rome) can't be added to a day: they're suggested separately, never by the critic.
+    pool = [x for x in r.attractions if x.id not in used and x.id not in excluded and not x.dates
+            and "overnight_trip" not in x.categories]
     pool.sort(key=lambda x: -(x.reviews_count or 0) * (x.rating or 4.0))
     return [{"name": x.name, "categories": x.categories[:3], "rating": x.rating, "reviews": x.reviews_count,
              "indoor": x.indoor, "day_trip": x.day_trip or None} for x in pool[:limit]]

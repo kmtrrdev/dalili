@@ -71,10 +71,16 @@ async def research_flights(hub: MCPHub, contract: TripContract) -> dict[str, Any
             "insights": res.get("price_insights", {})}
 
 
+def _qualified(d) -> str:
+    """'Naples, Italy', not 'Naples': text searches without coordinates (hotels, events) must not land in Naples,
+    Florida or Alexandria, Virginia."""
+    return f"{d.name}, {d.country}" if d.country and d.country.lower() not in d.name.lower() else d.name
+
+
 async def research_hotels(hub: MCPHub, contract: TripContract) -> list[HotelOption]:
     d = contract.destination_ref
     res = await hub.call("hotels", "search_hotels", {
-        "city": d.name, "check_in": contract.start_date.isoformat(), "check_out": contract.end_date.isoformat(),
+        "city": _qualified(d), "check_in": contract.start_date.isoformat(), "check_out": contract.end_date.isoformat(),
         "adults": contract.travelers, "currency": contract.budget.currency, "center_lat": d.lat, "center_lon": d.lon})
     return [HotelOption.model_validate(h) for h in res["results"]]
 
@@ -99,7 +105,7 @@ async def research_activities(hub: MCPHub, contract: TripContract, local_currenc
     if not EVENT_INTERESTS & set(interests):
         return out
     try:
-        ev = await hub.call("activities", "search_events", {"city": d.name, "lat": d.lat, "lon": d.lon,
+        ev = await hub.call("activities", "search_events", {"city": _qualified(d), "lat": d.lat, "lon": d.lon,
                                                             "start_date": contract.start_date.isoformat(),
                                                             "end_date": contract.end_date.isoformat()})
         out += [Place.model_validate(p) for p in ev["results"]]
