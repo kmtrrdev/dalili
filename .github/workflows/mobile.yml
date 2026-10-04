@@ -44,8 +44,9 @@ jobs:
           cache: true
       - name: Signing key
         run: |
-          echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 -d > android/app/upload-keystore.jks
-          echo "${{ secrets.ANDROID_KEY_PROPERTIES }}" > android/key.properties
+          # Secrets saved from Windows may carry \r: strip whitespace before decoding.
+          echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | tr -d '\r\n ' | base64 -d > android/app/upload-keystore.jks
+          echo "${{ secrets.ANDROID_KEY_PROPERTIES }}" | tr -d '\r' > android/key.properties
       - name: Patch (over the air)
         if: github.event_name == 'push' || inputs.kind == 'patch'
         run: shorebird patch android --release-version latest -- --dart-define=DALILI_SERVER=${{ vars.DALILI_SERVER }}
