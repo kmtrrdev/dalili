@@ -27,7 +27,9 @@ def plan_facts(trip: TripState) -> dict[str, Any]:
     expert = {n.lower() for n in trip.metadata.get("expert_added", [])}
     facts: dict[str, Any] = {
         "destination": c.destination_name, "dates": f"{c.start_date:%b %d} - {c.end_date:%b %d, %Y}",
-        "travelers": c.travelers, "selected_mode": plan.mode,
+        "travelers": c.travelers, "hotel_rooms": c.rooms, "selected_mode": plan.mode,
+        "departs_from": c.origin_city,
+        "flies_home_to": c.return_city or c.origin_city,
         "trip_score": plan.score.total if plan.score else None,
         "total": money(b.total, b.currency) if b else None, "budget": money(c.budget.amount, c.budget.currency),
         "within_budget": plan.within_budget,

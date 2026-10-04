@@ -44,6 +44,12 @@ class Requirements(BaseModel):
         "Where the traveller departs from, as a city or country in English "
         "(e.g. 'from Saudi Arabia' / 'من السعودية' -> 'Saudi Arabia', 'flying out of Jeddah' -> 'Jeddah')"))
     origin_airport: str | None = Field(default=None, description="IATA code, e.g. CAI")
+    return_to: str | None = Field(default=None, description=(
+        "Only when the trip should END in a different city than it starts (open-jaw): the city to fly home to, in "
+        "English. 'from Riyadh to Istanbul, then back to Cairo' / 'ارجع على القاهرة' -> 'Cairo'. Not a destination: "
+        "no nights there."))
+    rooms: int | None = Field(default=None, description=(
+        "Hotel rooms, only if the traveller says: 'all three in one room' / 'في غرفة واحدة' -> 1, 'two rooms' -> 2"))
     destination: str | None = Field(default=None, description="City name")
     destinations: list[str] = Field(default_factory=list, description=(
         "Multi-city / multi-country trip only: every city or country the user wants to visit, in visit order "
@@ -115,9 +121,10 @@ class TurnInterpretation(BaseModel):
     actions: list[Action] = Field(default_factory=list)
     question: str | None = None
     route_change_request: str | None = Field(default=None, description=(
-        "Only when a plan already exists and the user wants to change the ROUTE itself: add or drop a city/region, "
-        "move nights between cities, change the order or where the trip ends (e.g. 'spend a few days in Sharm El Sheikh "
-        "and fly to Cairo at the end'). Summarise the request in English. Not for changes inside a day."))
+        "Only when a plan already exists and the user wants to change the ROUTE itself: add or drop a city/region where "
+        "they will SPEND NIGHTS, move nights between cities or change the order (e.g. 'add a few days in Sharm El "
+        "Sheikh'). Summarise the request in English. Not for changes inside a day, and NOT for flying home to a "
+        "different city with no stay there - that is requirements.return_to."))
     route_decision: Literal["accept", "change"] | None = Field(default=None, description=(
         "Only when a route proposal is pending (see context): 'accept' if the user agrees or lets you decide, "
         "'change' if they want something different (cities, nights, order, adding/dropping a place)."))
@@ -658,7 +665,9 @@ Convert the user's latest message into the TurnInterpretation schema.
 - If the context has a pending_route_proposal: set route_decision to 'accept' when the user agrees or lets you decide, or 'change' when they ask for something different. For 'change', only fill destinations if the user lists the exact cities they now want.
 - A city or resort town the user wants to include (e.g. 'Sharm El Sheikh', 'Luxor') is a destination, not a must_visit place: put it in destinations (keep any countries too). must_visit is for sights and landmarks.
 - Specific named places the user wants to see ("I want to visit the Vatican Museums", "عايز ازور الأهرامات", "add Sagrada Familia"): before a plan exists put them in requirements.must_visit; once a plan exists use one add_place action per place with text = the place's usual English name. Categories ("more museums") are not add_place.
-- Travelers: "with my wife" = 2, "family of four" = 4.
+- Travelers: "with my wife" = 2, "family of four" = 4. Rooms only when said: "three of us in one room" -> rooms = 1.
+- Flying home to a different city than the departure one ("from Riyadh to Istanbul, then back to Cairo", "عايز ارجع
+  على القاهرة مش الرياض"): requirements.return_to = that city. It is NOT a new destination and NOT a route change.
 - "The cheapest budget possible", "أرخص بادجت ممكنة", "هتبدأ من كام", "what's the least it can cost": set
   wants_cheapest = true and planning_mode = "budget", and leave budget_amount empty - the planner finds the minimum.
 - If a plan already exists and the user reacts to it ("too crowded", "make it cheaper", "remove two museums", "I don't want to wake up before 10", "increase my budget by $300", "stay two more days"), set intent=feedback and list the concrete actions. Use adjust_budget with a signed amount for relative budget changes and set_budget for absolute ones. Use later_start with text=HH:MM. Use fewer_category/more_category with a lowercase category and amount = how many. Use replace_item with text = the exact item name.

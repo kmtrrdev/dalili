@@ -16,22 +16,25 @@ server = MCPServer("flight_mcp", instructions="Real flight search via Google Fli
 @server.tool()
 async def search_flights(origin: str, destination: str, departure_date: str, return_date: str, currency: str = "USD",
                          origin_timezone: str = "UTC", destination_timezone: str = "UTC", travel_class: int = 1,
-                         origin_name: str = "", destination_name: str = "") -> dict:
+                         origin_name: str = "", destination_name: str = "", return_to: str | None = None,
+                         return_timezone: str | None = None, return_name: str = "") -> dict:
     """One-way searches in both directions. origin/destination: IATA code or Google city id (e.g. /m/06c62).
-    Prices are per person in `currency`."""
+    return_to (open-jaw): fly home to another city than the origin. Prices are per person in `currency`."""
     q = {"origin": origin, "destination": destination, "departure_date": departure_date, "return_date": return_date,
-         "currency": currency}
+         "currency": currency, "return_to": return_to}
+    home, home_tz, home_name = (return_to, return_timezone or origin_timezone, return_name or origin_name) if return_to \
+        else (origin, origin_timezone, origin_name)
     try:
         out, out_ins = await flights.search_one_way(origin, destination, date.fromisoformat(departure_date), currency,
                                                     "outbound", origin_timezone, destination_timezone, travel_class)
-        back, back_ins = await flights.search_one_way(destination, origin, date.fromisoformat(return_date), currency,
-                                                      "return", destination_timezone, origin_timezone, travel_class)
+        back, back_ins = await flights.search_one_way(destination, home, date.fromisoformat(return_date), currency,
+                                                      "return", destination_timezone, home_tz, travel_class)
     except net.ProviderError as exc:
         if ai_fallback.available():  # live search failed (e.g. quota used up): AI estimates, clearly labelled
             out = await ai_fallback.flights(origin, destination, date.fromisoformat(departure_date), "outbound",
                                             origin_timezone, destination_timezone, origin_name, destination_name)
-            back = await ai_fallback.flights(destination, origin, date.fromisoformat(return_date), "return",
-                                             destination_timezone, origin_timezone, destination_name, origin_name)
+            back = await ai_fallback.flights(destination, home, date.fromisoformat(return_date), "return",
+                                             destination_timezone, home_tz, destination_name, home_name)
             if out and back:
                 return envelope("flight_search_result", "flight_mcp", q, outbound=out, **{"return": back},
                                 price_insights={}, fallback="ai_knowledge", live_error=str(exc))
@@ -42,16 +45,19 @@ async def search_flights(origin: str, destination: str, departure_date: str, ret
             out = await ai_fallback.flights(origin, destination, date.fromisoformat(departure_date), "outbound",
                                             origin_timezone, destination_timezone, origin_name, destination_name)
         if not back:
-            back = await ai_fallback.flights(destination, origin, date.fromisoformat(return_date), "return",
-                                             destination_timezone, origin_timezone, destination_name, origin_name)
+            back = await ai_fallback.flights(destination, home, date.fromisoformat(return_date), "return",
+                                             destination_timezone, home_tz, destination_name, home_name)
     # A round-trip ticket is often cheaper than two one-ways: keep it when it beats the cheapest pair of one-ways.
+    # (Only for a trip that ends where it started - an open-jaw trip is two one-ways by definition.)
     round_trips = []
-    try:
-        pairs = await flights.search_round_trip(origin, destination, date.fromisoformat(departure_date),
-                                                date.fromisoformat(return_date), currency, origin_timezone,
-                                                destination_timezone, travel_class)
-    except net.ProviderError:
-        pairs = []
+    pairs = []
+    if not return_to:
+        try:
+            pairs = await flights.search_round_trip(origin, destination, date.fromisoformat(departure_date),
+                                                    date.fromisoformat(return_date), currency, origin_timezone,
+                                                    destination_timezone, travel_class)
+        except net.ProviderError:
+            pairs = []
     live_out = [f for f in out if f.metadata.source != "ai_knowledge"]
     live_back = [f for f in back if f.metadata.source != "ai_knowledge"]
     one_way_min = (min(f.price_per_person.amount for f in live_out) + min(f.price_per_person.amount for f in live_back)

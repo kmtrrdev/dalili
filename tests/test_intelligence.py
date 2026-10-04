@@ -113,6 +113,52 @@ def test_hotel_search_names_the_country_and_drops_far_hotels(monkeypatch):
     assert [h.name for h in found] == ["Hotel Napoli Centro"]
 
 
+# ---------------------------------------------------------------- open-jaw trips and rooms
+
+def test_fly_home_to_another_city_and_rooms(rome_contract):
+    """'From Riyadh to Istanbul, then back to Cairo, all three in one room.'"""
+    from travel_agent.replanner import apply_requirements, build_contract
+    from travel_agent.workflow import _changes_trip_frame
+
+    trip = TripState(trip_contract=rome_contract)
+    d = trip.draft
+    d.origin_city, d.origin_ref = "Cairo", rome_contract.origin_ref
+    d.destination, d.destination_ref = "Rome", rome_contract.destination_ref
+    d.start_date, d.end_date, d.budget_amount, d.travelers = rome_contract.start_date, rome_contract.end_date, 3000, 3
+
+    ask = Requirements(return_to="Milan", rooms=1)
+    assert _changes_trip_frame(trip, TurnInterpretation(intent="feedback", requirements=ask))
+    apply_requirements(trip, ask)
+    assert d.return_to == "Milan" and d.rooms == 1
+    d.return_ref = rome_contract.destination_ref.model_copy(update={"name": "Milan", "airports": ["MXP"]})
+    c, _ = build_contract(trip)
+    assert c.return_city == "Milan" and c.return_to == "MXP" and c.end_ref.name == "Milan" and c.rooms == 1
+
+    apply_requirements(trip, Requirements(return_to="Cairo"))  # back home = the normal trip again
+    assert d.return_to is None and d.return_ref is None
+
+
+def test_open_jaw_searches_the_last_flight_home_to_that_city(monkeypatch):
+    from travel_agent.mcp_servers import flights as flight_server
+    from travel_agent.providers import flights as provider
+
+    calls = []
+
+    async def one_way(dep, arr, on, currency, direction, dep_tz, arr_tz, travel_class=1):
+        calls.append((direction, dep, arr))
+        return [], {}
+
+    async def round_trip(*a, **k):
+        raise AssertionError("an open-jaw trip has no round-trip ticket")
+
+    monkeypatch.setattr(provider, "search_one_way", one_way)
+    monkeypatch.setattr(provider, "search_round_trip", round_trip)
+    monkeypatch.setattr(flight_server.ai_fallback, "available", lambda: False)
+    anyio.run(lambda: flight_server.search_flights("RUH", "IST", "2026-10-24", "2026-10-30", "SAR",
+                                                   return_to="CAI", return_timezone="Africa/Cairo"))
+    assert calls == [("outbound", "RUH", "IST"), ("return", "IST", "CAI")]
+
+
 # ---------------------------------------------------------------- the budget plan is the cheapest
 
 def test_budget_mode_takes_the_cheapest_flights_and_hotel(rome_research, rome_contract, profile):

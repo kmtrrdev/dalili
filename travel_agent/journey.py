@@ -99,7 +99,7 @@ def stop_contract(c: TripContract, i: int, budget_amount: float | None = None) -
 
 def leg_endpoints(c: TripContract) -> list[tuple[PlaceRef, PlaceRef, date]]:
     assert c.origin_ref is not None
-    points = [c.origin_ref] + [s.ref for s in c.stops] + [c.origin_ref]
+    points = [c.origin_ref] + [s.ref for s in c.stops] + [c.end_ref]  # home, or another city (open-jaw)
     dates = [c.start_date] + [s.end_date for s in c.stops]
     return [(points[i], points[i + 1], dates[i]) for i in range(len(points) - 1)]
 
@@ -111,6 +111,7 @@ def leg_endpoints(c: TripContract) -> list[tuple[PlaceRef, PlaceRef, date]]:
 
 async def _leg_options(hub: MCPHub, a: PlaceRef, b: PlaceRef, on: date, currency: str, direction: str,
                        origin_code: str | None = None) -> tuple[list[FlightOption], list[str]]:
+    """origin_code: the airport the traveller named, for the first leg (from it) or the last one (to it)."""
     km = haversine_km(a.lat, a.lon, b.lat, b.lon)
     options: list[FlightOption] = []
     errors: list[str] = []
@@ -147,9 +148,11 @@ async def research_legs(hub: MCPHub, c: TripContract) -> dict:
     """Journey options for every leg, searched in parallel."""
     ends = leg_endpoints(c)
     origin_code = c.origin if len(c.origin) == 3 else None
+    # The last leg flies to the return city's airport when the trip ends elsewhere (open-jaw).
+    end_code = (c.return_to if c.return_to and len(c.return_to) == 3 else None) if c.return_ref else origin_code
     results = await asyncio.gather(*(
-        _leg_options(hub, a, b, on, c.budget.currency,
-                     "return" if i == len(ends) - 1 else "outbound", origin_code if i in (0, len(ends) - 1) else None)
+        _leg_options(hub, a, b, on, c.budget.currency, "return" if i == len(ends) - 1 else "outbound",
+                     origin_code if i == 0 else (end_code if i == len(ends) - 1 else None))
         for i, (a, b, on) in enumerate(ends)))
     legs = [r[0] for r in results]
     errors = [e for r in results for e in r[1]]

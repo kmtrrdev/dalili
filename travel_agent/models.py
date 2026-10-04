@@ -143,6 +143,10 @@ class TripContract(BaseModel):
     origin: str = "CAI"                 # airport code or city id used for flight searches
     origin_city: str = "Cairo"
     origin_ref: PlaceRef | None = None
+    # Open-jaw: the trip ends somewhere else than it started (Riyadh -> Istanbul -> home to Cairo). None = back to origin.
+    return_to: str | None = None        # airport code or city id for the last flight
+    return_city: str | None = None
+    return_ref: PlaceRef | None = None
     destination: str                    # city name, e.g. "Rome"
     destination_name: str = ""
     destination_ref: PlaceRef | None = None
@@ -157,6 +161,12 @@ class TripContract(BaseModel):
     # Multi-city journey (2+ stops, in visit order). Empty for a classic single-destination trip;
     # when set, destination/destination_ref mirror the first stop.
     stops: list[TripStop] = Field(default_factory=list)
+    room_count: int | None = None       # rooms the traveller asked for ("all three in one room"); None = 2 per room
+
+    @property
+    def end_ref(self) -> PlaceRef | None:
+        """Where the trip ends: the return city if the traveller named one, else home."""
+        return self.return_ref or self.origin_ref
 
     @property
     def is_multi(self) -> bool:
@@ -176,7 +186,7 @@ class TripContract(BaseModel):
 
     @property
     def rooms(self) -> int:
-        return max(1, (self.travelers + 1) // 2)
+        return self.room_count or max(1, (self.travelers + 1) // 2)
 
 
 class ProposedStop(BaseModel):
@@ -226,6 +236,9 @@ class RequirementDraft(BaseModel):
     budget_currency: str | None = None
     budget_hard_limit: bool | None = None
     find_cheapest: bool = False     # "the cheapest trip possible": the planner finds the budget instead of asking
+    return_to: str | None = None     # end the trip in another city than the origin (open-jaw), as the traveller said it
+    return_ref: PlaceRef | None = None
+    rooms: int | None = None         # hotel rooms the traveller asked for
     must_have: list[str] = Field(default_factory=list)
     avoid: list[str] = Field(default_factory=list)
     must_visit: list[str] = Field(default_factory=list)  # specific places named by the traveller, kept in the plan

@@ -84,7 +84,9 @@ Rules:
     = true (the planner finds the cheapest good trip and its cost); trip length: extend_trip / shorten_trip with amount = days; later_start text=HH:MM;
   - walking vs transport -> requirements.transport_preference (walk | mixed | public_transport | taxi);
   - new dates / travellers / destination -> requirements (ISO dates, resolve relative dates against 'today');
-    adding or dropping a whole city, or moving nights between cities -> route_change_request (in English).
+    flying home to a different city than the departure one ("back to Cairo, not Riyadh") -> requirements.return_to
+    (no nights there: NOT a route change); rooms ("all in one room") -> requirements.rooms;
+    adding or dropping a whole city to STAY in, or moving nights between cities -> route_change_request (in English).
   Put a one-line English 'summary' of what you are changing.
 {TOOLS_DOC}"""
 

@@ -11,6 +11,7 @@ from __future__ import annotations
 import asyncio
 import difflib
 import logging
+import math
 import re
 import statistics
 import unicodedata
@@ -59,12 +60,17 @@ async def research_destination(hub: MCPHub, contract: TripContract) -> dict[str,
 async def research_flights(hub: MCPHub, contract: TripContract) -> dict[str, Any]:
     o, d = contract.origin_ref, contract.destination_ref
     assert o is not None and d is not None
-    res = await hub.call("flights", "search_flights", {
+    args = {
         "origin": contract.origin if len(contract.origin) == 3 else o.flight_id, "destination": d.flight_id,
         "departure_date": contract.start_date.isoformat(), "return_date": contract.end_date.isoformat(),
         "currency": contract.budget.currency, "origin_timezone": o.timezone, "destination_timezone": d.timezone,
         "origin_name": f"{o.name}, {o.country}", "destination_name": f"{d.name}, {d.country}",
-    })
+    }
+    if contract.return_ref is not None:  # open-jaw: fly home to another city
+        r = contract.return_ref
+        args.update({"return_to": contract.return_to or r.flight_id, "return_timezone": r.timezone,
+                     "return_name": f"{r.name}, {r.country}"})
+    res = await hub.call("flights", "search_flights", args)
     return {"outbound": [FlightOption.model_validate(f) for f in res["outbound"]],
             "return": [FlightOption.model_validate(f) for f in res["return"]],
             "round_trips": [RoundTrip.model_validate(x) for x in res.get("round_trips") or []],
@@ -79,9 +85,12 @@ def _qualified(d) -> str:
 
 async def research_hotels(hub: MCPHub, contract: TripContract) -> list[HotelOption]:
     d = contract.destination_ref
+    # Google Hotels prices one room for the given guests: ask for the people sharing each room (3 in 1 room -> 3,
+    # 4 in 2 rooms -> 2), then the planner multiplies by the number of rooms.
+    per_room = max(1, math.ceil(contract.travelers / contract.rooms))
     res = await hub.call("hotels", "search_hotels", {
         "city": _qualified(d), "check_in": contract.start_date.isoformat(), "check_out": contract.end_date.isoformat(),
-        "adults": contract.travelers, "currency": contract.budget.currency, "center_lat": d.lat, "center_lon": d.lon})
+        "adults": per_room, "currency": contract.budget.currency, "center_lat": d.lat, "center_lon": d.lon})
     return [HotelOption.model_validate(h) for h in res["results"]]
 
 

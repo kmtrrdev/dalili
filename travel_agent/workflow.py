@@ -178,6 +178,13 @@ def _changes_trip_frame(trip: TripState, interp: TurnInterpretation) -> bool:
         return True
     if r.origin_city and r.origin_city.strip().lower() != (c.origin_city or "").lower():
         return True
+    if r.return_to:
+        wanted = r.return_to.strip().lower()
+        wanted = None if wanted == (c.origin_city or "").lower() else wanted  # "back home" = no open-jaw
+        if wanted != ((c.return_city or "").lower() or None):
+            return True  # the last flight goes somewhere else now
+    if r.rooms and r.rooms != c.rooms:
+        return True
     return bool(r.travelers and r.travelers != c.travelers)
 
 
@@ -245,6 +252,16 @@ async def _resolve(trip: TripState) -> str | None:
         except MCPToolError:
             d.origin_city = None
             return f"I couldn't find '{text}'. Which city are you flying from?"
+    if d.return_to and d.return_ref is None and d.origin_ref is not None:
+        # Open-jaw: the city to fly home to.
+        try:
+            d.return_ref = await research.resolve_place(hub, d.return_to)
+            trip.emit("place.resolved", role="return", name=d.return_ref.name, country=d.return_ref.country)
+        except MCPToolError:
+            bad, d.return_to = d.return_to, None
+            return f"I couldn't find a city with an airport called '{bad}'. Which city do you want to fly home to?"
+        if d.return_ref.name == d.origin_ref.name and d.return_ref.country_code == d.origin_ref.country_code:
+            d.return_to, d.return_ref = None, None  # that's home anyway
     # Never build a trip on a wrong assumption about where it starts.
     o = d.origin_ref
     dests = d.destination_refs or ([d.destination_ref] if d.destination_ref else [])

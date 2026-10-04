@@ -85,6 +85,15 @@ def apply_requirements(trip: TripState, req: Requirements) -> list[str]:
         d.route_proposal, d.route_confirmed, d.route_feedback = None, False, []
     if req.origin_city and req.origin_city.strip().lower() != (d.origin_city or "").lower():
         d.origin_city, d.origin_ref = req.origin_city.strip(), None
+    if req.return_to:
+        back = req.return_to.strip()
+        home = {(d.origin_city or "").lower(), (d.origin_ref.name.lower() if d.origin_ref else "")}
+        if back.lower() in home:
+            d.return_to, d.return_ref = None, None  # "back home" is the default, not an open-jaw trip
+        elif back.lower() != (d.return_to or "").lower():
+            d.return_to, d.return_ref = back, None  # resolved against real geocoding later
+    if req.rooms and req.rooms > 0:
+        d.rooms = int(req.rooms)
     setd("origin", req.origin_airport.upper() if req.origin_airport else None)
     if req.start_date:
         d.start_date = date.fromisoformat(req.start_date)
@@ -207,6 +216,8 @@ def build_contract(trip: TripState) -> tuple[TripContract, list[str]]:
     assert d.destination_ref is not None and d.origin_ref is not None
     origin_city = d.origin_ref.name
     origin = d.origin or (d.origin_ref.airports[0] if len(d.origin_ref.airports) == 1 else d.origin_ref.flight_id)
+    back = d.return_ref
+    return_to = (back.airports[0] if len(back.airports) == 1 else back.flight_id) if back else None
     if not d.origin_city:
         assumptions.append(f"I assumed you're flying from {origin_city} - tell me if you're leaving from somewhere else.")
     travelers = d.travelers or 1
@@ -228,6 +239,7 @@ def build_contract(trip: TripState) -> tuple[TripContract, list[str]]:
         assumptions += notes
     contract = TripContract(
         origin=origin, origin_city=origin_city, origin_ref=d.origin_ref,
+        return_to=return_to, return_city=back.name if back else None, return_ref=back, room_count=d.rooms,
         destination=d.destination_ref.name, destination_name=d.destination_ref.name, destination_ref=d.destination_ref,
         start_date=d.start_date, end_date=end, travelers=travelers,
         budget=Budget(amount=amount, currency=currency,
@@ -253,6 +265,10 @@ def contract_dirty_domains(old: TripContract | None, new: TripContract) -> set[s
         dirty |= {"flights", "hotels", "weather"}
     if old.travelers != new.travelers:
         dirty |= {"flights", "hotels"}
+    if old.return_to != new.return_to:
+        dirty |= {"flights"}  # a new last flight (open-jaw); the stay is unchanged
+    if old.room_count != new.room_count:
+        dirty |= {"hotels"}
     return dirty
 
 

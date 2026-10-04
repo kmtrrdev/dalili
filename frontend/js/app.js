@@ -367,9 +367,11 @@ function routeStrip(plan, c) {
   const leg = (f) => f ? `<span class="rs-leg ${f.mode}" title="${esc(`${f.airline} ${f.flight_number} · ${f.depart_at.slice(11, 16)}`)}">
     ${icon(LEG_MODE_ICON[f.mode] || "plane")}<small>${f.mode === "flight" ? esc(f.airline.split(" + ")[0]) : f.mode}</small></span>` : `<span class="rs-leg">${icon("route")}</span>`;
   const home = `<span class="rs-stop home"><b>${esc(c.origin_city)}</b><small>${t("home")}</small></span>`;
+  // The trip may end in another city than it started (fly home to Cairo after starting in Riyadh).
+  const end = c.return_city ? `<span class="rs-stop home"><b>${esc(c.return_city)}</b><small>${t("home")}</small></span>` : home;
   const stops = plan.stops.map((s, i) => `${leg(plan.legs[i])}<button class="rs-stop" type="button" data-day="${s.first_day}" style="--c:${STOP_COLORS[(i + 1) % STOP_COLORS.length]}">
       <i>${i + 1}</i><b>${esc(s.name)}</b><small>${t("nights", s.nights)} · ${fmtDate(s.start_date)}</small></button>`).join("");
-  return `${home}${stops}${leg(plan.legs[plan.legs.length - 1])}${home}`;
+  return `${home}${stops}${leg(plan.legs[plan.legs.length - 1])}${end}`;
 }
 
 function ring(score, size = 46) {
@@ -639,7 +641,7 @@ function groundCard(f, label) {
 function stay(plan) {
   if (isMulti(plan)) {
     const c = state.trip.trip_contract;
-    const names = [c.origin_city, ...plan.stops.map((s) => s.name), c.origin_city];
+    const names = [c.origin_city, ...plan.stops.map((s) => s.name), c.return_city || c.origin_city];
     const legs = plan.legs.map((f, i) => {
       const label = `${t("leg")} ${i + 1} · ${esc(names[i])} → ${esc(names[i + 1])}`;
       const key = i === 0 ? "outbound_flight" : i === plan.legs.length - 1 ? "return_flight" : "";
