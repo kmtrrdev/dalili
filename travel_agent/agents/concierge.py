@@ -73,7 +73,10 @@ Rules:
 - follow_ups (with final_answer): up to 3 short requests the traveller could send next, in their language as if they
   typed them, e.g. "Add Sushi Zen to day 3 dinner" / "ضيف مطعم سوشي زن لعشا اليوم التالت". Specific, not generic.
   Dalili plans but never books: no follow-up may ask to book, reserve or pay for anything.
-- change_plan: fill 'changes'. Use actions for plan changes and requirements for facts about the trip or traveller:
+- change_plan: express ONLY what the traveller asked for - never add changes of your own (no upgrade, more_food, pace
+  or flight changes they didn't request). A budget change is just the budget: the planner decides how to use the
+  money, so "what if I add 5000?" is adjust_budget 5000 (hypothetical) and nothing else.
+  Fill 'changes'. Use actions for plan changes and requirements for facts about the trip or traveller:
   - more stops / "I'm active" / "ضيف حاجات" -> increase_density (and requirements.travel_style when they describe
     themselves); "too tiring" -> reduce_density (day = the day if named); more rest -> more_free_time;
   - a named place -> add_place (text = its usual English name); drop one -> replace_item (text = exact plan title);

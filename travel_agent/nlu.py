@@ -700,6 +700,8 @@ Convert the user's latest message into the TurnInterpretation schema.
   - "raise my budget to what it really costs / زوّد الميزانية للتكلفة الحقيقية" -> set_budget with amount = the
     context's plan_total rounded up to a round number.
 - If a plan exists and the message asks to change it, use intent=feedback with actions (requirements may also be set).
+  Express ONLY what the user asked for: never add changes of your own (a budget change is just the budget - the
+  planner decides how to use the money).
 - intent=question when the user asks for information about travel rather than changing the trip.
 - A hypothetical change to compare, not apply yet ("what if my budget were $500 more?", "لو زودت يومين هتبقى بكام؟"):
   express the change normally and set hypothetical = true. If the context shows a pending_what_if and the user accepts
