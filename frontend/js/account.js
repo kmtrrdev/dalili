@@ -181,7 +181,78 @@ function renderAcctBtn() {
 }
 
 // ------------------------------------------------------------------ sign in / sign up
+// The sign-in dialog is created the first time it's opened, never shipped in the page HTML: a password field on a
+// new site's home page is what automated phishing scanners flag.
+const AUTH_HTML = `
+  <div class="modal-wrap auth-wrap" id="authWrap" hidden>
+    <div class="modal auth" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <button class="icon-btn modal-x" type="button" id="authClose" data-i18n-title="close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg></button>
+      <div class="auth-head">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path class="plane" d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z" /></svg></span>
+        <h2 id="authTitle"></h2>
+        <p id="authSub"></p>
+      </div>
+      <div class="seg auth-tabs" id="authTabs" role="tablist">
+        <button type="button" data-mode="signin" role="tab" data-i18n="signIn"></button>
+        <button type="button" data-mode="signup" role="tab" data-i18n="signUp"></button>
+      </div>
+      <form class="auth-form" id="authForm" novalidate>
+        <label class="af" id="afName"><span data-i18n="aName"></span>
+          <input id="aName" class="w-in" autocomplete="name" maxlength="60"><small class="af-err" data-for="name"></small></label>
+        <label class="af"><span data-i18n="aEmail"></span>
+          <input id="aEmail" class="w-in" type="email" autocomplete="email" inputmode="email" maxlength="254" dir="ltr">
+          <small class="af-err" data-for="email"></small></label>
+        <label class="af"><span data-i18n="aPass"></span>
+          <span class="pw"><input id="aPass" class="w-in" type="password" autocomplete="current-password" maxlength="128" dir="ltr">
+            <button type="button" class="pw-eye" id="aEye" data-i18n-title="aShow">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z" /></svg></button></span>
+          <span class="pw-meter" id="pwMeter" aria-hidden="true"><i></i></span>
+          <small class="af-hint" id="pwHint" data-i18n="aPassHint"></small>
+          <small class="af-err" data-for="password"></small></label>
+        <p class="auth-err" id="authErr" role="alert" hidden></p>
+        <button class="btn primary auth-go" type="submit" id="authGo"></button>
+      </form>
+      <ul class="auth-perks">
+        <li data-i18n="perk1"></li><li data-i18n="perk2"></li><li data-i18n="perk3"></li>
+      </ul>
+      <button class="auth-guest" type="button" id="authGuest" data-i18n="asGuest"></button>
+    </div>
+  </div>`;
+
+function ensureAuthDom() {
+  if ($("authWrap")) return;
+  document.body.insertAdjacentHTML("beforeend", AUTH_HTML);
+  const wrap = $("authWrap");
+  wrap.querySelectorAll("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
+  wrap.querySelectorAll("[data-i18n-title]").forEach((el) => {
+    el.title = t(el.dataset.i18nTitle); el.setAttribute("aria-label", el.title);
+  });
+  $("authClose").addEventListener("click", closeAuth);
+  $("authGuest").addEventListener("click", closeAuth);
+  wrap.addEventListener("click", (e) => { if (e.target.id === "authWrap") closeAuth(); });
+  $("authTabs").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-mode]");
+    if (!b) return;
+    authMode = b.dataset.mode; renderAuth();
+    (authMode === "signup" ? $("aName") : $("aEmail")).focus();
+  });
+  $("authForm").addEventListener("submit", submitAuth);
+  $("authForm").addEventListener("input", (e) => {  // an error goes away as soon as the field is edited
+    const field = { aName: "name", aEmail: "email", aPass: "password" }[e.target.id];
+    if (field) fieldError(field, "");
+    $("authErr").hidden = true;
+  });
+  $("aEye").addEventListener("click", () => {
+    const p = $("aPass"); p.type = p.type === "password" ? "text" : "password"; p.focus();
+  });
+  $("aPass").addEventListener("input", () => {
+    $("pwMeter").dataset.s = $("aPass").value ? strength($("aPass").value) : "";
+  });
+}
+
 export function openAuth(mode = "signin", subtitle = null, then = null) {
+  ensureAuthDom();
   authMode = mode;
   afterAuth = then;
   $("authWrap").hidden = false;
@@ -194,7 +265,7 @@ export function openAuth(mode = "signin", subtitle = null, then = null) {
   setTimeout(() => (mode === "signup" ? $("aName") : $("aEmail")).focus(), 60);
 }
 function closeAuth() {
-  $("authWrap").hidden = true;
+  if ($("authWrap")) $("authWrap").hidden = true;
   document.removeEventListener("keydown", authKeys);
 }
 function authKeys(e) { if (e.key === "Escape") closeAuth(); }
@@ -367,7 +438,7 @@ export function closeDash() {
   document.body.classList.remove("dash-open");
   document.removeEventListener("keydown", dashKeys);
 }
-function dashKeys(e) { if (e.key === "Escape" && $("authWrap").hidden) closeDash(); }
+function dashKeys(e) { if (e.key === "Escape" && (!$("authWrap") || $("authWrap").hidden)) closeDash(); }
 
 function renderDashTabs() {
   $("dashTabs").querySelectorAll("button").forEach((b) => {
@@ -673,7 +744,10 @@ export function onTripPlanned(trip) {
 
 export function refreshAccountLanguage() {
   renderAcctBtn();
-  if (!$("authWrap").hidden) renderAuth();
+  if ($("authWrap") && !$("authWrap").hidden) {  // created lazily: refresh its static labels too
+    $("authWrap").querySelectorAll("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
+    renderAuth();
+  }
   if (!$("dash").hidden) renderDash();
   if (!$("forYou").hidden) loadForYou();
 }
@@ -682,27 +756,6 @@ export async function initAccount(hooks) {
   app = hooks;
   renderAcctBtn();
   $("acctBtn").addEventListener("click", () => (account.user ? openDash() : openAuth("signin")));
-  $("authClose").addEventListener("click", closeAuth);
-  $("authGuest").addEventListener("click", closeAuth);
-  $("authWrap").addEventListener("click", (e) => { if (e.target.id === "authWrap") closeAuth(); });
-  $("authTabs").addEventListener("click", (e) => {
-    const b = e.target.closest("[data-mode]");
-    if (!b) return;
-    authMode = b.dataset.mode; renderAuth();
-    (authMode === "signup" ? $("aName") : $("aEmail")).focus();
-  });
-  $("authForm").addEventListener("submit", submitAuth);
-  $("authForm").addEventListener("input", (e) => {  // an error goes away as soon as the field is edited
-    const field = { aName: "name", aEmail: "email", aPass: "password" }[e.target.id];
-    if (field) fieldError(field, "");
-    $("authErr").hidden = true;
-  });
-  $("aEye").addEventListener("click", () => {
-    const p = $("aPass"); p.type = p.type === "password" ? "text" : "password"; p.focus();
-  });
-  $("aPass").addEventListener("input", () => {
-    $("pwMeter").dataset.s = $("aPass").value ? strength($("aPass").value) : "";
-  });
   $("dashBack").addEventListener("click", closeDash);
   $("dashTabs").addEventListener("click", (e) => {
     const b = e.target.closest("[data-tab]");
