@@ -358,7 +358,11 @@ class _TimelineItemState extends State<_TimelineItem> {
                       Text('${est ? '≈ ' : ''}${money(amount, cost?['currency'] as String?)}',
                           style: const TextStyle(fontWeight: FontWeight.w800)),
                       const SizedBox(width: 6),
-                      Pill(est ? tr('est') : '✓', color: est ? DC.violet : DC.green),
+                      Pill(est ? tr('est') : (it['link'] != null ? tr('menuPrice') : '✓'), color: est ? DC.violet : DC.green),
+                      if (it['link'] != null) ...[
+                        const Spacer(),
+                        TextButton.icon(onPressed: () => openLink(it['link'] as String), icon: const Icon(Icons.restaurant_menu_rounded, size: 16), label: Text(tr('menu'))),
+                      ],
                     ]),
                   ],
                   if (notes.isNotEmpty) ...[

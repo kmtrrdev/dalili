@@ -109,7 +109,9 @@ def test_critic_only_auto_applies_safe_grounded_fixes(rome):
     day = next(d for d in trip.selected_plan.days if sum(i.kind == "activity" for i in d.items) > 1)
     day.items.remove(next(i for i in day.items if i.kind == "activity"))
     real = critic._candidates(trip)[0]["name"]
-    in_plan = next(i.title for d in trip.selected_plan.days for i in d.items if i.kind == "activity")
+    from travel_agent.engine.ranking import icon_ids
+    icons = set(icon_ids(trip.research.attractions))  # the critic may never swap out an icon
+    in_plan = next(i.title for d in trip.selected_plan.days for i in d.items if i.kind == "activity" and i.place_id not in icons)
     crit = critic.Critique(quality=70, verdict="ok", issues=[
         critic.Issue(severity="high", problem="Missing icon", fix=Action(action="add_place", text=real)),
         critic.Issue(severity="high", problem="Invented", fix=Action(action="add_place", text="Palazzo Imaginario")),

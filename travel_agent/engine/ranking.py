@@ -168,6 +168,11 @@ def score_hotel(h: HotelOption, anchors: list[GeoPoint], profile: TravelerProfil
         w = {"balanced": (0.3, 0.3, 0.3), "budget": (0.2, 0.25, 0.55),
              "comfort": (0.45, 0.35, 0.1), "experience": (0.3, 0.4, 0.25)}[mode]
     score = w[0] * rating_s + w[1] * loc_s + w[2] * price_s + 0.08 * extras + style_s - noise_pen - far_pen
+    if prefs is not None and getattr(prefs, "shortlist", None):
+        names = {n.strip().lower() for n in prefs.shortlist if n}
+        if h.name.strip().lower() in names:
+            score += 0.25
+            reasons.append("Shortlisted for this plan")
     return Ranked(h, round(score, 4), reasons, trade)
 
 

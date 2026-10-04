@@ -44,6 +44,10 @@ class HotelPrefs(BaseModel):
     rating_weight: float = Field(0.4, description="0-1: how much guest rating / quality matters")
     price_weight: float = Field(0.4, description="0-1: how much the nightly price matters")
     location_weight: float = Field(0.4, description="0-1: how much being central matters")
+    shortlist: list[str] = Field(default_factory=list, description=(
+        "Up to 5 exact names from 'hotels_list' that best deliver this plan's promise (e.g. comfort: real 4-5 star "
+        "hotels and trusted brands - never a hostel; budget: clean cheap places). Different plans should "
+        "shortlist different hotels where the data allows"))
 
 
 class FoodPrefs(BaseModel):
@@ -70,7 +74,7 @@ class ModeStrategy(BaseModel):
     activities: ActivityPrefs = Field(default_factory=ActivityPrefs)
     transport: Literal["public", "mixed", "taxi"] = "mixed"
     budget_stretch: float = Field(0.0, description=(
-        "0-0.3: how far over the traveller's budget this plan may go to deliver its promise (an upgrade shown with "
+        "0-0.5: how far over the traveller's budget this plan may go to deliver its promise (an upgrade shown with "
         "its real extra cost). Always 0 for budget and balanced."))
 
 
@@ -94,11 +98,16 @@ restaurant price levels, top sights). Make the four plans clearly DIFFERENT:
 - comfort: ease and quality over price. Full-service airlines from airlines_found in preferred_airlines (e.g. the
   national carriers, not low-cost ones), flight price_weight ~0.2, highly rated hotels (min_rating ~4.5, min_stars 4
   if such hotels exist in the data, hotel rating_weight ~0.9, price_weight ~0.15), the best restaurants (the highest
-  levels in the data, min_rating ~4.5, food price_weight ~0.05), taxis, pace_delta -1, budget_stretch ~0.2.
+  levels in the data, min_rating ~4.5, food price_weight ~0.05), taxis, pace_delta -1, budget_stretch 0.2-0.5 (enough to afford the shortlisted hotels).
 - experience: the most memorable trip. 2-4 signature_experiences that truly define this destination (real, famous,
   bookable - e.g. a desert safari in Dubai, a Bosphorus cruise in Istanbul, a cooking class in Rome), a characterful
   well-rated hotel in the most atmospheric area (rating_weight ~0.6, location_weight ~0.8), famous local food
-  (levels 1-3, min_rating ~4.5, food price_weight ~0.2), pace_delta +1, mixed transport, budget_stretch ~0.15.
+  (levels 1-3, min_rating ~4.5, food price_weight ~0.2), pace_delta +1, mixed transport, budget_stretch 0.15-0.4.
+For every plan also shortlist the hotels (by exact name from hotels_list) that truly fit it - judge by name, brand,
+type and rating, not only the numbers (a "hostel" is never a comfort hotel, even if listed as 4-star). Comfort and
+experience are upgrades: they keep their promise even when the traveller's budget is tight - the traveller sees
+exactly how much more they cost and decides. Make each plan's hotel and flights differ from budget's whenever the
+data offers a real alternative.
 Respect the traveller: never contradict their stated preferences (e.g. 'direct flights only', dietary needs, a
 low walking tolerance). Keep thresholds achievable with the options in the data. Headlines are short and concrete."""
 
@@ -118,13 +127,13 @@ DEFAULTS = Strategies(
                          hotel=HotelPrefs(min_rating=4.4, min_stars=4, rating_weight=0.9, price_weight=0.15,
                                           location_weight=0.45),
                          food=FoodPrefs(min_price_level=2, max_price_level=4, min_rating=4.4, price_weight=0.05),
-                         activities=ActivityPrefs(pace_delta=-1), transport="taxi", budget_stretch=0.2),
+                         activities=ActivityPrefs(pace_delta=-1), transport="taxi", budget_stretch=0.35),
     experience=ModeStrategy(headline="The most memorable trip: signature experiences",
                             headline_ar="أمتع رحلة: أشهر التجارب المميزة",
                             flights=FlightPrefs(price_weight=0.4),
                             hotel=HotelPrefs(min_rating=4.2, rating_weight=0.6, location_weight=0.6),
                             food=FoodPrefs(max_price_level=3, min_rating=4.3, price_weight=0.2),
-                            activities=ActivityPrefs(pace_delta=1), budget_stretch=0.15),
+                            activities=ActivityPrefs(pace_delta=1), budget_stretch=0.25),
 )
 
 
@@ -143,6 +152,8 @@ def _research_summary(trip: TripState) -> dict:
                    "nightly_price_range": [round(hotels[0].price_per_night.amount), round(hotels[-1].price_per_night.amount)] if hotels else None,
                    "ratings": sorted({round(h.rating, 1) for h in hotels if h.rating})[-8:],
                    "stars_available": sorted({h.stars for h in hotels if h.stars})},
+        "hotels_list": [{"name": h.name, "rating": h.rating, "stars": h.stars, "per_night": round(h.price_per_night.amount),
+                         "type": h.style or None} for h in (hotels if len(hotels) <= 25 else hotels[:13] + hotels[-12:])],
         "restaurant_price_levels": sorted({p.price_level for p in r.restaurants}),
         "top_sights": [a.name for a in sorted(r.attractions, key=lambda a: -(a.reviews_count or 0))[:10]],
     }
@@ -169,10 +180,10 @@ async def design(trip: TripState) -> Strategies:
     out = await llm.parse(SYSTEM, json.dumps(payload, ensure_ascii=False, default=str), Strategies, effort="low")
     if out is None:
         return DEFAULTS
-    # The traveller's budget is a promise for the budget and balanced plans; upgrades stretch it by at most 30%.
+    # The traveller's budget is a promise for the budget and balanced plans; upgrades stretch it by at most 50%.
     for mode in ("budget", "balanced", "comfort", "experience"):
         s = getattr(out, mode)
-        s.budget_stretch = 0.0 if mode in ("budget", "balanced") else min(max(s.budget_stretch, 0.0), 0.3)
+        s.budget_stretch = 0.0 if mode in ("budget", "balanced") else min(max(s.budget_stretch, 0.0), 0.5)
     trip.metadata["strategies"] = {"key": key, "value": out.model_dump()}
     trace.step(trip, "strategist", "decision", " | ".join(f"{m}: {getattr(out, m).headline}" for m in
                                                          ("budget", "balanced", "comfort", "experience")))

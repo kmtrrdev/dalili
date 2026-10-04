@@ -581,6 +581,32 @@ async def plan(state: GraphState) -> GraphState:
         if existing:
             new.repair_log = existing.repair_log + new.repair_log
         candidates[mode] = new
+
+    # Four cards that are really one plan help no one: an upgrade that came out with the same hotel and flights as a
+    # cheaper plan is rebuilt without that hotel (it then shows what the upgrade really costs).
+    def core(p: TripPlan) -> tuple:
+        return (p.hotel.id if p.hotel else None, p.outbound_flight.id if p.outbound_flight else None,
+                p.return_flight.id if p.return_flight else None)
+
+    _budget_is_cheapest(candidates)  # first, so a plan copied onto the budget card is then made different below
+    if not state.get("iteration") and not c.is_multi:
+        for mode in ("comfort", "experience"):
+            twin = next((m for m in ("budget", "balanced", "comfort") if m != mode and m in candidates
+                         and core(candidates[m]) == core(candidates[mode])), None)
+            others = [h for h in trip.research.hotels if candidates[mode].hotel and h.id != candidates[mode].hotel.id]
+            if twin is None or not others or stretch[mode] <= 1:
+                continue
+            knobs[mode] = knobs[mode].model_copy(update={"hotel_exclude": knobs[mode].hotel_exclude + [candidates[mode].hotel.id]})
+            real = c.budget.amount
+            c.budget.amount = real * stretch[mode]
+            try:
+                new = build(mode, trip.pinned_days if mode == trip.selected_mode else {})
+            finally:
+                c.budget.amount = real
+            new.budget = compute_budget(new, c, trip.research.fx_rates, settings.budget_buffer_ratio)
+            new.within_budget = new.budget.total <= real
+            new.repair_log.append(f"Was identical to the {twin} plan: picked a different hotel that fits this plan.")
+            candidates[mode] = new
     return {"candidates": candidates, "knobs": knobs, "iteration": state.get("iteration", 0) + 1}
 
 
@@ -590,7 +616,11 @@ async def validate(state: GraphState) -> GraphState:
     for mode, p in state["candidates"].items():
         walk = trip.user_knobs.merged(state["knobs"][mode]).walk_tolerance_override
         real = c.budget.amount
-        c.budget.amount = real * (trip.metadata.get("budget_stretch") or {}).get(mode, 1.0)  # an upgrade's own limit
+        stretch = (trip.metadata.get("budget_stretch") or {}).get(mode, 1.0)
+        c.budget.amount = real * stretch  # an upgrade's own limit
+        if stretch > 1 and p.budget:
+            # An upgrade is priced honestly (the card shows the extra), never repaired back into the budget plan.
+            c.budget.amount = max(c.budget.amount, p.budget.total * (1 + settings.budget_buffer_ratio) + 1)
         try:
             p.validation = validate_plan(p, c, trip.traveler_profile, trip.research, settings.budget_buffer_ratio, walk)
         finally:

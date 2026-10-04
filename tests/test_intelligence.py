@@ -216,6 +216,40 @@ def test_four_plans_follow_their_strategies(monkeypatch):
     assert all(p.pitch and p.pitch_ar for p in plans.values())
 
 
+def test_menu_search_gives_a_link_and_a_meal_built_from_quoted_prices(monkeypatch):
+    from travel_agent import net
+    from travel_agent.providers import menus
+
+    async def fake_serpapi(engine, ttl, **params):
+        assert engine == "google" and "menu" in params["q"]
+        return {"organic_results": [{"link": "https://menu.example/neve", "title": "N'EVET menu",
+                                     "snippet": "Adana kebab ₺450 · Lentil soup ₺120 · Ayran ₺60 · Baklava ₺180"}]}
+
+    async def no_page(url, ttl_s=0):
+        raise net.ProviderError("offline")
+
+    def answer(items, meal):
+        async def parse(system, user, schema, max_tokens=16000, effort=None):
+            return menus.MenuEstimate(found=True, menu_url="https://menu.example/neve", currency="TRY",
+                                      items=items, meal_per_person=meal, basis="main + drink")
+        return parse
+
+    monkeypatch.setattr(net, "serpapi", fake_serpapi)
+    monkeypatch.setattr(net, "fetch_page", no_page)
+    monkeypatch.setattr(llm, "available", lambda: True)
+    real = [menus.PricedItem(item="Adana kebab", price=450, quote="Adana kebab ₺450"),
+            menus.PricedItem(item="Ayran", price=60, quote="Ayran ₺60")]
+    monkeypatch.setattr(llm, "parse", answer(real, 510))
+    out = anyio.run(menus.menu_price, "N'EVET", "Istanbul")
+    assert out == {"amount": 510, "currency": "TRY", "menu_url": "https://menu.example/neve", "basis": "main + drink",
+                   "google": False}
+
+    invented = [menus.PricedItem(item="Steak", price=900, quote="Steak ₺900"),
+                menus.PricedItem(item="Wine", price=300, quote="Wine ₺300")]
+    monkeypatch.setattr(llm, "parse", answer(invented, 1200))
+    assert anyio.run(menus.menu_price, "N'EVET", "Istanbul") is None  # prices not in the sources: never shown
+
+
 def test_nice_amount():
     from travel_agent.replanner import nice_amount
 

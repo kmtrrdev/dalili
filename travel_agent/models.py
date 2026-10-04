@@ -355,6 +355,7 @@ class Place(BaseModel):
     address: str = ""
     website: str | None = None
     booking_url: str | None = None   # reserve a table / buy tickets, when the provider lists one
+    menu_url: str | None = None      # the restaurant's menu (found by web search) - where its meal price comes from
     google_place_id: str | None = None
     google_data_id: str | None = None
     thumbnail: str | None = None
@@ -455,6 +456,7 @@ class ItineraryItem(BaseModel):
     alternatives: list[str] = Field(default_factory=list)
     explanation: list[str] = Field(default_factory=list)
     optional: bool = False
+    link: str | None = None  # e.g. the restaurant's menu
 
 
 class DayPlan(BaseModel):

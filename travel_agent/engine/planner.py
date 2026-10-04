@@ -166,6 +166,10 @@ def _rank_flights(pool: list[FlightOption], ctx: PlanContext, leaving: bool = Fa
         same_day = [f for f in pool if f.arrive_at.astimezone(ctx.tz).date() == ctx.contract.start_date
                     and f.arrive_at.astimezone(ctx.tz).hour < 23]
         pool = same_day or pool
+        if fprefs is not None:
+            # This plan said no red-eyes: a 02:50 departure means a sleepless night before the trip.
+            daytime = [f for f in pool if f.depart_at.hour >= 6]
+            pool = daytime or pool
     if ctx.profile.avoid_early_flights:
         late = [f for f in pool if f.depart_at.hour >= 8]
         pool = late or pool
@@ -240,6 +244,12 @@ def select_core(ctx: PlanContext) -> tuple[Ranked | None, Ranked | None, Ranked 
     # Best-scored hotels plus the cheapest ones, so a tight budget can always reach them.
     by_price = sorted(hranked, key=lambda x: x.item.price_per_night.amount * ctx.fx(x.item.price_per_night.currency))
     hotel_pool = list({id(x): x for x in hranked[:7] + by_price[:3]}.values())
+    if hprefs is not None and hprefs.shortlist and getattr(ctx.strategy, "budget_stretch", 0) > 0:
+        # An upgrade stays in the hotels the strategist picked by name for it (checked to exist and be near the
+        # sights) - a "hostel" listed as 4-star never becomes the comfort hotel.
+        names = {n.strip().lower() for n in hprefs.shortlist}
+        picked = [x for x in hranked if x.item.name.strip().lower() in names]
+        hotel_pool = picked or hotel_pool
     # Same for flights: the best-scored ones plus the cheapest, so "cheapest" really is the cheapest fare found.
     out_pool = list({x.item.id: x for x in outs[:4] + sorted(outs, key=lambda x: fare(x.item))[:3]}.values())
     ret_pool = list({x.item.id: x for x in rets[:4] + sorted(rets, key=lambda x: fare(x.item))[:3]}.values())
@@ -289,6 +299,13 @@ def select_core(ctx: PlanContext) -> tuple[Ranked | None, Ranked | None, Ranked 
         best = max(near, key=lambda x: x[1])[2]
         if cheapest_total > budget * pressure_share:
             notes.append("No flight + hotel combination fits the budget comfortably; picked the cheapest combination.")
+    elif best is None and ctx.strategy is not None and getattr(ctx.strategy, "budget_stretch", 0) > 0:
+        # An upgrade (comfort / experience) keeps its promise when the budget is tight - the price still weighs in
+        # the objective, and the card shows honestly how much more it costs. A copy of the budget plan helps no one.
+        # Its promise at the lowest extra cost: the cheapest of its own candidates, quality breaking near-ties (10%).
+        near = [x for x in combos if x[0] <= cheapest_total * 1.10]
+        best = max(near, key=lambda x: x[1])[2]
+        notes.append("Upgrade plan: costs more than your budget to deliver what this plan promises.")
     elif best is None:
         # Nothing fits: stay close to the cheapest, but don't throw away a much better trip for a few percent
         # (a direct flight that lands at 07:10 instead of 11:30 for +3% is the smarter "cheapest").
@@ -800,7 +817,7 @@ class DayBuilder:
             cost=Money(amount=r.cost_per_person.amount * tr, currency=r.cost_per_person.currency,
                        price_type=r.cost_per_person.price_type, source=r.cost_per_person.source),
             indoor=r.indoor, notes=r.description + (" Reservation recommended." if r.requires_reservation else ""),
-            alternatives=[a.name for a in alts], explanation=why,
+            alternatives=[a.name for a in alts], explanation=why, link=r.menu_url,
         ), leg, r.location)
         return True
 

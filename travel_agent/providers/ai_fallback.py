@@ -386,8 +386,12 @@ async def estimate_prices(city: str, country: str, local_currency: str, places: 
         "place: attractions -> the standard adult ticket (0 if entry is normally free, e.g. squares, viewpoints, most "
         "churches); restaurants/cafes -> a typical main course plus a soft drink (cafes: coffee and a pastry). Use "
         "the given price level and cuisine as hints. Also give the city's single public-transport ticket and taxi "
-        "flag fall / per-km tariff when asked. Rate your confidence honestly; use 'low' when unsure.",
-        {"city": f"{city}, {country}", "local_currency": local_currency, "places": places[:70],
+        "flag fall / per-km tariff when asked. Prices must be for TODAY's date: your knowledge may be a few years old, "
+        "so in high-inflation currencies (e.g. TRY, EGP, ARS, NGN) raise older prices for the inflation since then - "
+        "a taxi or a meal is never cheaper today than it was years ago. Rate your confidence honestly; use 'low' "
+        "when unsure.",
+        {"city": f"{city}, {country}", "today": date.today().isoformat(), "local_currency": local_currency,
+         "places": places[:70],
          "need_transit_ticket": need_transit, "need_taxi_tariff": need_taxi}, CityPriceGuess)
     return res
 

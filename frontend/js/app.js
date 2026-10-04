@@ -528,6 +528,7 @@ function placeLinks(p) {
   if (!p) return "";
   const links = [`<a href="${esc(mapsUrl(p))}" target="_blank" rel="noopener">${icon("pin")}${t("mapsLink")}</a>`];
   if (p.website) links.push(`<a href="${esc(p.website)}" target="_blank" rel="noopener">${icon("globe")}${t("website")}</a>`);
+  if (p.menu_url) links.push(`<a href="${esc(p.menu_url)}" target="_blank" rel="noopener">${icon("fork")}${t("menu")}</a>`);
   if (p.booking_url) links.push(`<a class="hot" href="${esc(p.booking_url)}" target="_blank" rel="noopener">${icon(p.kind === "attraction" ? "star" : "fork")}${t(p.kind === "attraction" ? "tickets" : "reserve")}</a>`);
   return `<div class="t-links">${links.join("")}</div>`;
 }

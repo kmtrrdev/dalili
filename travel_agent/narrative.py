@@ -43,6 +43,9 @@ def plan_facts(trip: TripState) -> dict[str, Any]:
         "days": [f"Day {d.day}: {d.title}" for d in plan.days],
         "selected_plan_idea": plan.pitch,
         "modes": {m: {"idea": p.pitch, "total": money(p.budget.total, p.budget.currency) if p.budget else None,
+                      "vs_your_budget": (money(p.budget.total - c.budget.amount, p.budget.currency) if p.budget
+                                         and p.budget.total > c.budget.amount else "within"),
+                      "rating_of_hotel": p.hotel.rating if p.hotel else None,
                       "hotel": f"{p.hotel.name} ({p.hotel.rating}/5)" if p.hotel else None,
                       "airline": p.outbound_flight.airline if p.outbound_flight else None,
                       "score": p.score.total if p.score else None, "within_budget": p.within_budget}
@@ -348,16 +351,19 @@ Structure (short markdown, roughly 150-250 words - tight, no filler, never repea
    cheapest good way to do this trip is about X" - say what keeps it cheap (flights, hotel, meals), then one line on
    what the other plans cost and add (upgrades). The traveller gave no budget: never say "within budget",
    "left over" or "over budget" about the cheapest plan.
-5. If 'famous_places_not_in_plan' is non-empty, mention them as what an extra day (or a fuller pace) would add.
-6. If 'places_you_asked_for' is non-empty, say on which day each one is, or that it couldn't fit and why.
+5. Your options (on a new plan, or whenever the traveller asks about price, options or upgrades): like a friend who
+   knows travel, one short line per OTHER plan from 'modes' - what it really gives for its money (hotel name and
+   rating, airline, pace, signature experiences) and its cost vs their budget ('vs_your_budget'), e.g. "Comfort:
+   Hilton 4.8★ and taxis everywhere - 4,300 SAR above your budget". If the budget is tight, say plainly what it
+   covers and what a bit more would buy, without pushing. Open the whole reply with 'selected_plan_idea'.
+6. If 'famous_places_not_in_plan' is non-empty, mention them as what an extra day (or a fuller pace) would add.
+7. If 'places_you_asked_for' is non-empty, say on which day each one is, or that it couldn't fit and why.
 If 'ai_estimated_data' is non-empty, say near the top that live search was unavailable for those parts, so they are AI
 estimates to double-check before booking. If 'multi_city_route' is present, show the route city by city first.
 If 'overnight_side_trip_ideas' is non-empty, add one line suggesting them as an optional overnight side trip.
 If 'self_review' is present, one short line: you double-checked the plan like an experienced planner and what you
 improved. Places in 'highlights_added_by_expert_review' were YOUR picks - never say the traveller asked for them.
-Open with what this plan is about ('selected_plan_idea', in the traveller's language). Mention the other plan modes
-in one line using their 'idea' and what really differs (price, hotel, airline) - e.g. "Comfort: a 4.6-star hotel and
-Turkish Airlines for 3,000 more" - only if useful. The TripScore only if useful.
+The TripScore only if useful.
 Questions: 'unknown_preferences' lists what you don't know about this traveller yet. If knowing one or two of them
 would clearly change this plan, end with one or two short, friendly questions about them. Don't ask what
 'recent_conversation' shows you already asked, and don't ask anything if the plan doesn't need it.

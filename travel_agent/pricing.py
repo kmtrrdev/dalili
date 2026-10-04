@@ -3,13 +3,14 @@
 Entry tickets:  Google Maps listing  ->  the place's official website (model reads the price page, verbatim
                 quote required)  ->  Wikivoyage listing edited < 3 years ago  ->  AI estimate for that
                 specific place  ->  generic category estimate
-Restaurants:    Google price range  ->  Wikivoyage listing  ->  the restaurant's own menu page  ->  AI estimate
+Restaurants:    Google price range  ->  Wikivoyage listing  ->  the restaurant's own menu page  ->  its menu found by
+                web search (typical meal per person + menu link)  ->  AI estimate
 Transport:      Google Maps transit fare  ->  official tariff quoted in the city guide  ->  AI estimate
 
 Steps 1-3 (Google, Wikivoyage, guide tariffs) run in research.enrich / apply_local_prices. This module adds
 the official websites and the AI estimates. When two independent published sources agree (within 15%)
 the price is marked as confirmed. Every price keeps its source; estimates are never shown as verified.
-Nothing here costs SerpApi credits (web pages + model calls, cached for 30 days).
+Only the menu searches cost SerpApi credits (one per restaurant); everything is cached for 30 days.
 """
 
 from __future__ import annotations
@@ -18,7 +19,7 @@ import asyncio
 import logging
 from urllib.parse import urlparse
 
-from . import llm
+from . import llm, net
 from .mcp_hub import MCPHub, MCPToolError
 from .models import Money, Place, ResearchBundle, TripContract
 from .providers import ai_fallback
@@ -27,6 +28,7 @@ log = logging.getLogger(__name__)
 
 OFFICIAL_ATTRACTIONS = 12   # likely picks checked on their own website (per city)
 OFFICIAL_RESTAURANTS = 8
+MENU_SEARCHES = 10          # likely restaurant picks whose menu is searched on the web (SerpApi, per city)
 CONCURRENCY = 6
 TIME_LIMIT_S = 35           # official-site checks stop here; whatever is found by then is used
 
@@ -93,6 +95,44 @@ async def _official(hub: MCPHub, bundle: ResearchBundle, scale: float) -> int:
             [asyncio.create_task(one(p, "restaurant")) for p in rests]
     if tasks:
         done, pending = await asyncio.wait(tasks, timeout=TIME_LIMIT_S)
+        for t in pending:
+            t.cancel()
+    return found
+
+
+async def _menus(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, skip: set[str], scale: float) -> int:
+    """Web-searched menus for the likeliest restaurant picks that still have no published price: a menu link and
+    a typical meal per person built from the prices on it (one SerpApi search each, cached 30 days)."""
+    city = bundle.destination_info.get("name") or contract.destination
+    local = bundle.destination_info.get("currency", "USD")
+    todo = sorted((p for p in bundle.restaurants if not p.price_known and p.id not in skip and not p.dates),
+                  key=lambda p: -(p.rating * min(p.reviews_count or 0, 3000) ** 0.25))[:max(3, int(MENU_SEARCHES * scale))]
+    net.allow_extra_calls(len(todo))  # menu searches on top of the turn's flight / hotel / places searches
+    gate = asyncio.Semaphore(CONCURRENCY)
+    found = 0
+
+    async def one(p: Place) -> None:
+        nonlocal found
+        async with gate:
+            try:
+                res = await hub.call("knowledge", "get_menu_price", {"name": p.name, "city": city, "kind": p.kind, "address": p.address or "",
+                                                                            "local_currency": local})
+            except MCPToolError as exc:
+                log.info("menu price %s: %s", p.name, exc)
+                return
+        r = res.get("result")
+        if r and not p.price_known:  # the official site may have answered meanwhile
+            p.cost_per_person = Money(amount=r["amount"], currency=r["currency"], price_type="range",
+                                      source=(f"Google · {r['basis']}" if r.get("google") else
+                                              f"Menu ({_host(r['menu_url']) if r.get('menu_url') else 'web search'}) · "
+                                              f"typical meal ≈ {r['amount']:g} {r['currency']}: {r['basis']}"))
+            p.menu_url = r.get("menu_url")
+            p.price_known = True
+            found += 1
+
+    tasks = [asyncio.create_task(one(p)) for p in todo]
+    if tasks:
+        _, pending = await asyncio.wait(tasks, timeout=TIME_LIMIT_S)
         for t in pending:
             t.cancel()
     return found
@@ -179,9 +219,12 @@ async def research_prices(hub: MCPHub, bundle: ResearchBundle, contract: TripCon
         try:
             # In parallel: the AI estimate for everything unpriced, and the official-site checks (which win).
             guess_task = asyncio.create_task(_ai_guess(bundle, contract))
-            official = await _official(hub, bundle, scale)
+            on_site = {p.id for p in _candidates(bundle, scale)[1]}  # restaurants whose own site is checked
+            official, menus = await asyncio.gather(_official(hub, bundle, scale),
+                                                   _menus(hub, bundle, contract, on_site, scale))
             estimated = _apply_ai(bundle, await guess_task)
-            log.info("prices %s: %d from official sites, %d AI estimates", contract.destination, official, estimated)
+            log.info("prices %s: %d from official sites, %d from web-searched menus, %d AI estimates",
+                     contract.destination, official, menus, estimated)
         except Exception as exc:  # pricing enrichment must never break planning
             log.warning("price research failed: %s", exc)
     bundle.price_coverage = coverage(bundle)

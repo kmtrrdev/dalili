@@ -5,7 +5,7 @@ from __future__ import annotations
 from mcp.server.mcpserver import MCPServer
 
 from .. import knowledge, net
-from ..providers import geo, local_prices, official_prices
+from ..providers import geo, local_prices, menus, official_prices
 from . import envelope, error
 
 server = MCPServer("knowledge_mcp", instructions="Resolve places; stable destination knowledge from Wikivoyage.")
@@ -84,6 +84,15 @@ async def get_official_price(name: str, kind: str, website: str) -> dict:
         return error("official_price", "knowledge_mcp", q, "kind must be attraction or restaurant")
     return envelope("official_price", "knowledge_mcp", q,
                     result=await official_prices.official_price(name, kind, website))  # type: ignore[arg-type]
+
+
+@server.tool()
+async def get_menu_price(name: str, city: str, kind: str = "restaurant", address: str = "",
+                         local_currency: str = "USD") -> dict:
+    """A restaurant's menu found by web search: link to the menu and a typical meal per person (main + drink),
+    built only from prices quoted in the sources. result=None when no real menu prices are found."""
+    q = {"name": name, "city": city}
+    return envelope("menu_price", "knowledge_mcp", q, result=await menus.menu_price(name, city, kind, address, local_currency))
 
 
 if __name__ == "__main__":
