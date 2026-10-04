@@ -18,11 +18,11 @@ on:
   workflow_dispatch:
     inputs:
       kind:
-        description: "patch = over-the-air update, release = new store build"
+        description: "patch = over-the-air update, release = store build (.aab), release-apk = direct-install build (.apk)"
         required: true
         default: patch
         type: choice
-        options: [patch, release]
+        options: [patch, release, release-apk]
 
 env:
   SHOREBIRD_TOKEN: ${{ secrets.SHOREBIRD_TOKEN }}
@@ -59,6 +59,14 @@ jobs:
         with:
           name: android-aab
           path: mobile/build/app/outputs/bundle/release/app-release.aab
+      - name: Release (direct-install APK)
+        if: github.event_name == 'workflow_dispatch' && inputs.kind == 'release-apk'
+        run: shorebird release android --artifact apk -- --dart-define=DALILI_SERVER=${{ vars.DALILI_SERVER }}
+      - uses: actions/upload-artifact@v4
+        if: github.event_name == 'workflow_dispatch' && inputs.kind == 'release-apk'
+        with:
+          name: android-apk
+          path: mobile/build/app/outputs/flutter-apk/app-release.apk
 
   ios:
     # Off until the Apple Developer account and signing secrets exist (repository variable IOS_ENABLED=true).

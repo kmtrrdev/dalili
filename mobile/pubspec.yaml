@@ -2,7 +2,7 @@ name: dalili
 description: "Dalili - your AI travel planner (iOS + Android). Talks to the Dalili backend in ../travel_agent."
 publish_to: 'none'
 
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
   sdk: ^3.13.4
