@@ -98,3 +98,42 @@ def test_recommendations_api_learns_from_activity():
     assert first not in [i["name"] for i in c.get("/api/recommendations?limit=6").json()["items"]]
     sim = c.get("/api/recommendations/similar?city=Kyoto&limit=3").json()
     assert sim["found"] and "Tokyo" in [i["name"] for i in sim["items"]]
+
+
+@pytest.mark.skipif(not MODEL_PATH.exists(), reason="model not trained")
+def test_taste_affinity_ranks_similar_places_higher():
+    import anyio
+
+    from travel_agent.recommender import engine
+
+    rec = engine.get()
+    assert anyio.run(rec.affinity, ["Chamonix"], [], [], []) == {}  # cold start: no invented taste
+    act = [{"kind": "like", "city": "Zermatt", "at": None}, {"kind": "like", "city": "St. Moritz", "at": None}]
+    aff = anyio.run(rec.affinity, ["Chamonix", "Maldives", "Nowhere-Town"], [], act, [])
+    assert "Nowhere-Town" not in aff                                   # unknown places: no score, not a guess
+    assert aff["Chamonix"]["match"] > aff["Maldives"]["match"]          # a ski lover's taste
+    assert aff["Chamonix"]["because"]["city"] in ("Zermatt", "St. Moritz")
+
+
+def test_suggestions_blend_long_term_taste(monkeypatch):
+    import anyio
+
+    from travel_agent import suggest as sg
+
+    async def explore(*a, **k):
+        return [{"name": "Alpha", "country": "A", "flight_price": 100, "hotel_price": 50},
+                {"name": "Beta", "country": "B", "flight_price": 100, "hotel_price": 50}]
+
+    async def resolve(hub, text):
+        from travel_agent.models import PlaceRef
+        return PlaceRef(name="Cairo", country="Egypt", lat=30, lon=31, airports=["CAI"])
+
+    async def taste(names):
+        return {"Beta": {"match": 95, "because": {"type": "similar", "city": "Rome"}}}
+
+    monkeypatch.setattr(sg, "_explore", explore)
+    monkeypatch.setattr(sg.research, "resolve_place", resolve)
+    out = anyio.run(lambda: sg.suggest(None, 5000, "USD", "Cairo", interests=["culture"], taste=taste))
+    beta = next(i for i in out["ideas"] if i["name"] == "Beta")
+    assert beta["taste_match"] == 95 and beta["taste_because"]["city"] == "Rome"
+    assert out["ideas"][0]["name"] == "Beta"  # same price and request fit: the traveller's taste breaks the tie

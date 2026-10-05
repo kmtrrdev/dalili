@@ -227,6 +227,33 @@ class Recommender:
         return {"cold_start": False, "items": items, "taste": self.taste(sig, interests),
                 "based_on": {"places": len(pos), "interests": len(interests)}}
 
+    async def affinity(self, cities: list[str], trips: list[dict], activity: list[dict],
+                       interests: list[str]) -> dict[str, dict]:
+        """How well each named destination matches this user's taste: {city: {"match": 0-100 percentile among all
+        catalog places, "because": the strongest signal}}. Only places the model knows (no on-the-fly inference);
+        empty for a cold start (no history and no interests)."""
+        interests = self.interest_list(interests)
+        sig = await self.signals(trips, activity)
+        parts = [s["weight"] * s["vec"] for s in sig] + [INTEREST_WEIGHT * self.Q[INTERESTS.index(i)] for i in interests]
+        if not parts:
+            return {}
+        taste = sum(parts)
+        if np.linalg.norm(taste) < 1e-9:
+            return {}
+        all_scores = self.X @ unit(taste)
+        order = np.argsort(np.argsort(all_scores))
+        out = {}
+        pos = [s for s in sig if s["weight"] > 0]
+        for city in cities:
+            i = self.find(city)
+            if i is None:
+                continue
+            because = max(pos, key=lambda s: s["weight"] * float(self.X[i] @ s["vec"]))["city"] if pos else None
+            out[city] = {"match": round(100.0 * order[i] / max(len(self.ids) - 1, 1)),
+                         "because": {"type": "similar", "city": because} if because else
+                         {"type": "interest", "interest": interests[0]} if interests else None}
+        return out
+
     def taste(self, sig: list[dict], interests: list[str]) -> list[dict]:
         """How strongly the user's taste leans to each interest (0-100, relative)."""
         parts = [s["weight"] * s["vec"] for s in sig] + [INTEREST_WEIGHT * self.Q_in[INTERESTS.index(i)] for i in interests]

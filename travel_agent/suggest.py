@@ -105,7 +105,9 @@ async def suggest(hub: MCPHub, budget: float, currency: str, origin: str, travel
                   duration: str = "week", month: int | None = None, start_date: date | None = None,
                   end_date: date | None = None, interests: list[str] | None = None, occasion: str | None = None,
                   direct_only: bool = False, max_flight_hours: float | None = None, notes: str = "",
-                  lang: str = "en", destination: str = "") -> dict:
+                  lang: str = "en", destination: str = "", taste=None) -> dict:
+    """taste: optional async callable(names) -> {name: {"match": 0-100, "because": ...}} from the personal
+    recommender (the user's trips, likes and searches); blended into the ranking when available."""
     travelers = max(1, min(travelers, 9))
     rooms = max(1, math.ceil(travelers / 2))
     currency = currency.upper()
@@ -215,11 +217,24 @@ async def suggest(hub: MCPHub, budget: float, currency: str, origin: str, travel
     pool = fitting + over[:max(0, MIN_IDEAS - len(fitting))]
     pool += [x for x in out if x["target"] and x not in pool]  # the named city is always shown (marked if over)
 
-    personal = bool(interests or occasion or notes.strip() or exact or month)
+    # Hybrid ranking: the model's fit to what was asked now, plus the traveller's long-term taste (Doc2Vec over
+    # their past trips, likes and searches) - each where available, never invented.
+    affinity: dict = {}
+    if taste is not None:
+        try:
+            affinity = await taste([x["name"] for x in pool[:30]]) or {}
+        except Exception as exc:  # personalisation is a bonus, never a failure
+            log.info("taste affinity unavailable: %s", exc)
+    personal = bool(interests or occasion or notes.strip() or exact or month or affinity)
     fits = await _rank(pool[:30], prefs, lang) if personal else {}
     for i, x in enumerate(pool):
         f = fits.get(x["name"].strip().lower())
-        x["score"] = f.score if f else (_simple_score(x, interests) if personal else None)
+        base = f.score if f else (_simple_score(x, interests) if personal else None)
+        t = affinity.get(x["name"])
+        x["taste_match"] = t["match"] if t else None
+        x["taste_because"] = t["because"] if t else None
+        # The request in hand leads; long-term taste refines (weights: a ranking choice, documented in the audit).
+        x["score"] = round(0.75 * base + 0.25 * t["match"]) if (base is not None and t) else base
         x["why"], x["tags"] = (f.why, f.tags[:3]) if f else ("", [])
         x["rank"] = i  # Google lists the most popular first: the tie-breaker
     # Trips within budget always come before over-budget ones; within that, best match (or most popular) first.

@@ -269,11 +269,23 @@ async def suggest_trips(body: SuggestIn, request: Request, who: Identity = Depen
     from .mcp_hub import MCPToolError
     from .suggest import suggest
 
+    taste = None
+    try:
+        from .recommender import engine
+
+        rec = engine.get()
+        if rec is not None:
+            trips, act, ints = service.store.list_trips(who.id), accounts.activity(who.id), _interests(who) + body.interests
+
+            async def taste(names: list[str]) -> dict:
+                return await rec.affinity(names, trips, act, ints)
+    except Exception:  # the recommender is optional
+        taste = None
     try:
         return await suggest(get_hub(), body.budget, body.currency, body.origin.strip() or settings.default_origin,
                              body.travelers, body.duration, body.month, body.start_date, body.end_date,
                              body.interests, body.occasion, body.direct_only, body.max_flight_hours, body.notes,
-                             body.lang, body.destination)
+                             body.lang, body.destination, taste=taste)
     except MCPToolError as exc:
         where = "destination" if "destination" in str(exc) else "departure city"
         raise HTTPException(404, f"Couldn't find that {where}")

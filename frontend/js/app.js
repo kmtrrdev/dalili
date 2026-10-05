@@ -1383,6 +1383,7 @@ function renderIdeas() {
       <div class="idea-body">
         <div class="idea-name">${esc(i.name)}<small>${esc(i.country)}</small></div>
         ${i.why ? `<p class="idea-why">${esc(i.why)}</p>` : ""}
+        ${i.taste_because?.city ? `<p class="idea-why taste">${t("likeYour", esc(i.taste_because.city))}</p>` : ""}
         ${i.tags?.length ? `<div class="idea-tags">${i.tags.map((x) => `<span>${esc(x)}</span>`).join("")}</div>` : ""}
         <div class="idea-dates">${i.start_date ? `${fmtDate(i.start_date)} → ${fmtDate(i.end_date)} · ` : ""}${t("nightsN", i.nights)}</div>
         ${i.flight_minutes ? `<div class="idea-dates">${t("flightH", i.flight_minutes)}${i.stops === 0 ? ` · ${t("nonstop")}` : i.stops ? ` · ${t("stop", i.stops)}` : ""}${i.airline ? ` · ${esc(i.airline)}` : ""}</div>` : ""}
