@@ -22,7 +22,7 @@ from typing import Annotated, Any, TypedDict
 
 from langgraph.graph import END, START, StateGraph
 
-from . import conflicts, journey, narrative, net, research, route_design
+from . import conflicts, constraints, journey, narrative, net, research, route_design
 from .agents import concierge, critic, strategist, trace
 from .providers import geo
 from .config import settings
@@ -69,6 +69,8 @@ class GraphState(TypedDict, total=False):
     timings: dict[str, float]
     critic_next: str              # "plan" (apply the critic's fixes) or "respond"
     critic_backup: dict[str, Any]  # the plans before the critic's fixes (restored if the refinement is worse)
+    repair_prev: dict[str, TripPlan]  # each mode's plan before the latest repair (kept if the repair made it worse)
+    repair_stalled: list[str]         # modes whose last repair was reverted: no further repairs this turn
     # research partials (one key per parallel branch)
     r_info: dict[str, Any]
     r_flights: dict[str, Any]
@@ -436,6 +438,7 @@ async def collect(state: GraphState) -> GraphState:
     """Merge fresh research with anything still valid, then run the enrichment phase."""
     trip = state["trip"]
     old = trip.research or ResearchBundle()
+    trip.metadata["refreshed"] = sorted(d for d in RESEARCH_DOMAINS if _dirty(state, d))
 
     domain_of = {"r_flights": "flights", "r_hotels": "hotels", "r_restaurants": "restaurants",
                  "r_activities": "activities", "r_weather": "weather"}
@@ -508,6 +511,9 @@ async def collect(state: GraphState) -> GraphState:
 async def plan(state: GraphState) -> GraphState:
     trip = state["trip"]
     assert trip.trip_contract is not None and trip.research is not None
+    # Constraints follow every change (a plan edit like "lower the budget" changes the contract directly).
+    trip.trip_contract.constraints = constraints.derive(trip, trip.trip_contract)
+    trip.trip_contract.priorities = list(trip.draft.priorities)
     if not state.get("iteration"):
         # Places named by the traveller ("add the Vatican Museums"): find them and force them into every plan.
         for note in await research.ensure_must_visit(get_hub(), trip):
@@ -585,10 +591,15 @@ async def plan(state: GraphState) -> GraphState:
     stretch = {m: (1.3 if finding else 1 + getattr(strategies, m).budget_stretch) if m not in ("budget", "balanced")
                else 1.0 for m in PLANNING_MODES}
     trip.metadata["budget_stretch"] = stretch
+    repair_prev: dict[str, TripPlan] = {}
     for mode in PLANNING_MODES:
         existing = candidates.get(mode)
         if existing and existing.validation and existing.validation.result == "PASS":
             continue
+        if existing and mode in (state.get("repair_stalled") or []):
+            continue  # its last repair made things worse: keep the plan as it is
+        if existing and existing.validation:
+            repair_prev[mode] = existing  # compared with the rebuilt plan in validate()
         pins = trip.pinned_days if mode == trip.selected_mode else {}
         if stretch[mode] > 1:
             real = c.budget.amount
@@ -635,7 +646,8 @@ async def plan(state: GraphState) -> GraphState:
             new.within_budget = new.budget.total <= real
             new.repair_log.append(f"Was identical to the {twin} plan: picked a different hotel that fits this plan.")
             candidates[mode] = new
-    return {"candidates": candidates, "knobs": knobs, "iteration": state.get("iteration", 0) + 1}
+    return {"candidates": candidates, "knobs": knobs, "iteration": state.get("iteration", 0) + 1,
+            "repair_prev": repair_prev}
 
 
 async def validate(state: GraphState) -> GraphState:
@@ -653,11 +665,37 @@ async def validate(state: GraphState) -> GraphState:
             p.validation = validate_plan(p, c, trip.traveler_profile, trip.research, settings.budget_buffer_ratio, walk)
         finally:
             c.budget.amount = real
-    return {}
+    # Repair accountability: compare each repaired plan with the one before the repair.
+    candidates, stalled = dict(state["candidates"]), list(state.get("repair_stalled") or [])
+    history = trip.metadata.setdefault("repair_history", [])
+    for mode, before in (state.get("repair_prev") or {}).items():
+        after = candidates.get(mode)
+        if after is None or after is before or not before.validation or not after.validation:
+            continue
+        old = {(v.check, v.place_id, v.day) for v in before.validation.errors}
+        new = {(v.check, v.place_id, v.day) for v in after.validation.errors}
+        fixed, introduced = old - new, new - old
+        record = {"mode": mode, "iteration": state.get("iteration", 0), "errors_before": len(old),
+                  "errors_after": len(new), "fixed": sorted({x[0] for x in fixed}),
+                  "introduced": sorted({x[0] for x in introduced}),
+                  "cost_before": before.budget.total if before.budget else None,
+                  "cost_after": after.budget.total if after.budget else None}
+        # A repair that leaves more problems than it solved is undone - never trade one violation for worse ones.
+        if len(new) > len(old) or (introduced and len(new) >= len(old)):
+            record["reverted"] = True
+            candidates[mode] = before
+            stalled.append(mode)
+            before.repair_log.append("Reverted a repair that caused new problems (" +
+                                     ", ".join(sorted({x[0] for x in introduced})) + ").")
+        history.append(record)
+    del history[:-40]
+    return {"candidates": candidates, "repair_stalled": stalled, "repair_prev": {}}
 
 
 def after_validate(state: GraphState) -> str:
-    failing = [p for p in state["candidates"].values() if p.validation and p.validation.result == "FAIL"]
+    stalled = set(state.get("repair_stalled") or [])
+    failing = [p for m, p in state["candidates"].items() if p.validation and p.validation.result == "FAIL"
+               and m not in stalled]
     if failing and state.get("iteration", 0) < settings.max_repair_iterations:
         return "repair"
     return "finalize"
@@ -667,8 +705,9 @@ async def repair_node(state: GraphState) -> GraphState:
     trip = state["trip"]
     knobs = dict(state["knobs"])
     progressed = False
+    stalled = set(state.get("repair_stalled") or [])
     for mode, p in state["candidates"].items():
-        if p.validation and p.validation.result == "FAIL":
+        if p.validation and p.validation.result == "FAIL" and mode not in stalled:
             new_knobs, log_lines = repair(p, p.validation, knobs[mode], trip.research, state.get("iteration", 0),
                                           trip.traveler_profile)
             knobs[mode] = new_knobs
@@ -858,7 +897,8 @@ async def critic_node(state: GraphState) -> GraphState:
         trace.step(trip, "critic", "fix", f"{a.action}({a.text or a.category or a.day or ''}) for: {issue.problem}")
     trip.emit("plan.self_review", quality=critique.quality, fixes=notes)
     # Rebuild every mode with the fixes, then validate / repair / score again before the second critic pass.
-    return {"critic_next": "plan", "critic_backup": backup, "candidates": {}, "iteration": 0}
+    return {"critic_next": "plan", "critic_backup": backup, "candidates": {}, "iteration": 0,
+            "repair_stalled": [], "repair_prev": {}}
 
 
 def _publish_suggestions(trip: TripState) -> None:
@@ -970,6 +1010,7 @@ async def run_turn(trip: TripState, message: str = "", preset_actions: list[Acti
         trip.conversation.append(ChatMessage(role="user", content=message))
     net.start_turn()
     trace.start(trip)
+    trip.metadata["refreshed"] = []  # research domains refreshed this turn (set by collect)
     trip.metadata["suggestions"] = []
     started = time.perf_counter()
     result = await get_graph().ainvoke(
@@ -996,6 +1037,7 @@ async def run_turn_stream(trip: TripState, message: str = "", preset_actions: li
         trip.conversation.append(ChatMessage(role="user", content=message))
     net.start_turn()
     trace.start(trip)
+    trip.metadata["refreshed"] = []  # research domains refreshed this turn (set by collect)
     trip.metadata["suggestions"] = []
     started = time.perf_counter()
     queue: asyncio.Queue = asyncio.Queue()

@@ -559,11 +559,21 @@ def diff_plans(old: TripPlan | None, new: TripPlan | None) -> list[str]:
     if old is None or new is None:
         return []
     out: list[str] = []
-    if old.hotel and new.hotel and old.hotel.id != new.hotel.id:
+    if old.stops and new.stops:
+        # Multi-city: each city's hotel and every leg between them.
+        olds = {s.name: s for s in old.stops}
+        for s in new.stops:
+            o = olds.get(s.name)
+            if o and o.hotel and s.hotel and o.hotel.id != s.hotel.id:
+                out.append(f"Hotel in {s.name}: {o.hotel.name} -> {s.hotel.name}")
+        for i, (a, b) in enumerate(zip(old.legs, new.legs)):
+            if a.id != b.id:
+                out.append(f"Leg {i + 1} ({b.origin} -> {b.destination}): {a.flight_number} -> {b.flight_number}")
+    elif old.hotel and new.hotel and old.hotel.id != new.hotel.id:
         out.append(f"Hotel: {old.hotel.name} -> {new.hotel.name}")
     for label, a, b in (("Outbound flight", old.outbound_flight, new.outbound_flight),
                         ("Return flight", old.return_flight, new.return_flight)):
-        if a and b and a.id != b.id:
+        if a and b and a.id != b.id and not (old.stops and new.stops):
             out.append(f"{label}: {a.flight_number} -> {b.flight_number}")
     old_days = {d.day: d for d in old.days}
     for d in new.days:

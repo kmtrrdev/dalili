@@ -2,11 +2,9 @@
 
 from __future__ import annotations
 
-from . import preferences
+from . import preferences, whatif
 from .models import ChatMessage, PlanningMode, TripState
-from .narrative import money
 from .nlu import Action
-from .replanner import diff_plans
 from .config import settings
 from .store import Store
 from .workflow import run_turn, run_turn_stream
@@ -71,15 +69,9 @@ class TravelAgentService:
             return applied, reply
         if work.metadata.pop("hypothetical", False) and original.plans and work.plans:
             # A what-if: show the comparison, keep the real plan until the traveller accepts.
-            before, after = original.selected_plan, work.selected_plan
-            changes = [c for c in diff_plans(before, after) if not c.startswith(("Total cost", "TripScore"))]
+            # The same comparison the API returns: every plan, validity, requirements, changes, what was searched.
             lines = ["**مقارنة - لسه ماتطبقتش**" if arabic else "**What-if comparison** (not applied yet)"]
-            if before and after and before.budget and after.budget:
-                lines.append(f"- {'الإجمالي' if arabic else 'Total'}: {money(before.budget.total, before.budget.currency)}"
-                             f" -> {money(after.budget.total, after.budget.currency)}")
-                if before.score and after.score:
-                    lines.append(f"- TripScore: {before.score.total} -> {after.score.total}")
-            lines += [f"- {c}" for c in changes]
+            lines += whatif.lines(whatif.compare(original, work), arabic)
             lines.append("\nلو عايز تطبّقها قولي **نفّذها**، أو كمّل كلام والخطة تفضل زي ما هي." if arabic else
                          "\nSay **apply it** to switch to this version, or keep chatting to leave the plan as is.")
             reply = "\n".join(lines)
@@ -106,12 +98,12 @@ class TravelAgentService:
                   else Action(action="set_budget", amount=budget))
         copy = trip.model_copy(deep=True)
         copy, reply = await run_turn(copy, "", preset_actions=[action])
+        cmp = whatif.compare(trip, copy)
         result = {
-            "before": {m: {"total": p.budget.total if p.budget else None, "score": p.score.total if p.score else None,
-                           "within_budget": p.within_budget} for m, p in trip.plans.items()},
-            "after": {m: {"total": p.budget.total if p.budget else None, "score": p.score.total if p.score else None,
-                          "within_budget": p.within_budget} for m, p in copy.plans.items()},
-            "changes": diff_plans(trip.selected_plan, copy.selected_plan),
+            # (kept for existing clients) per-mode totals before / after
+            "before": {m: v["before"] for m, v in cmp["plans"].items() if v["before"]},
+            "after": {m: v["after"] for m, v in cmp["plans"].items() if v["after"]},
+            **{k: v for k, v in cmp.items() if k != "plans"},
             "budget": copy.trip_contract.budget.amount if copy.trip_contract else None,
             "applied": apply,
         }
