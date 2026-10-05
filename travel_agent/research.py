@@ -389,6 +389,24 @@ def match_place(name: str, places: list[Place]) -> Place | None:
     return best if best_score >= 0.8 else None
 
 
+def resolve_wishes(trip) -> list[str]:
+    """Places mentioned softly ("if there's time"): matched against what research already found - a wish never
+    costs a paid lookup - and handed to the planner as a boost, not a forced stop."""
+    r = trip.research
+    if r is None or not trip.draft.wish_list:
+        trip.user_knobs.wish_picks = []
+        return []
+    ids = []
+    for name in trip.draft.wish_list:
+        for b in r.stops or [r]:
+            hit = match_place(name, b.attractions)
+            if hit:
+                ids.append(hit.id)
+                break
+    trip.user_knobs.wish_picks = list(dict.fromkeys(ids))
+    return trip.user_knobs.wish_picks
+
+
 async def ensure_must_visit(hub: MCPHub, trip) -> list[str]:
     """Make every place the traveller named part of the research and of the plan's must-include list.
 

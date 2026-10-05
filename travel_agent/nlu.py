@@ -75,8 +75,17 @@ class Requirements(BaseModel):
     must_have: list[str] = Field(default_factory=list)
     avoid: list[str] = Field(default_factory=list)
     must_visit: list[str] = Field(default_factory=list, description=(
-        "Specific, named places the user wants to visit or include (e.g. 'Vatican Museums', 'Pyramids of Giza', "
-        "'Sagrada Familia'), in English. Not categories like 'museums' and not the destination city itself."))
+        "Specific, named places the user firmly wants (e.g. 'Vatican Museums', 'Pyramids of Giza', 'Sagrada "
+        "Familia'), in English: 'I must see', 'I want to visit', 'لازم', 'عايز ازور'. Not categories like 'museums' and "
+        "not the destination city itself."))
+    wish_list: list[str] = Field(default_factory=list, description=(
+        "Named places mentioned softly - 'maybe', 'if there is time', 'would be nice', 'لو فيه وقت', 'ممكن' - in "
+        "English. Planned when they fit, never at the cost of other plans. Never also in must_visit."))
+    priorities: list[Literal["cost", "time_in_city", "comfort", "sights", "food", "less_walking", "relaxed_schedule"]] = \
+        Field(default_factory=list, description=(
+            "Only what the traveller SAYS matters most, most important first ('the cheaper the better' -> cost, "
+            "'I want as much time there as possible' -> time_in_city, 'comfort matters most' -> comfort). Empty if "
+            "they don't say."))
     travel_style: Literal["relaxed", "moderate", "active", "very_active"] | None = None
     food_preferences: list[str] = Field(default_factory=list, description="Lowercase cuisines, e.g. italian, seafood")
     dietary_restrictions: list[str] = Field(default_factory=list, description="vegetarian, vegan, ...")

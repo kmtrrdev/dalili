@@ -22,7 +22,7 @@ from typing import Annotated, Any, TypedDict
 
 from langgraph.graph import END, START, StateGraph
 
-from . import journey, narrative, net, research, route_design
+from . import conflicts, journey, narrative, net, research, route_design
 from .agents import concierge, critic, strategist, trace
 from .providers import geo
 from .config import settings
@@ -513,6 +513,7 @@ async def plan(state: GraphState) -> GraphState:
         for note in await research.ensure_must_visit(get_hub(), trip):
             if note not in trip.assumptions:
                 trip.assumptions.append(note)
+        research.resolve_wishes(trip)
     await research.prepare_routing(trip.research)  # real walk/drive times (cached after the first call)
     knobs = dict(state.get("knobs") or {m: PlanKnobs() for m in PLANNING_MODES})
     candidates = dict(state.get("candidates") or {})
@@ -725,6 +726,8 @@ async def finalize(state: GraphState) -> GraphState:
             trip.assumptions.append(f"The {trip.selected_mode} plan went over your hard budget, so I'm showing the "
                                     f"{best} plan instead.")
             trip.selected_mode = best  # type: ignore[assignment]
+    # Requirements the selected plan can't meet, with ranked, priced ways out (offered, never applied silently).
+    trip.metadata["conflicts"] = [x.model_dump(mode="json") for x in conflicts.analyze(trip)]
     trip.pinned_days = plan_activity_ids(trip.selected_plan) if trip.selected_plan else {}
     changes = diff_plans(state.get("previous_plan"), trip.selected_plan)
     trip.last_changes = (trip.assumptions if state.get("route") != "requirements" else []) + changes \

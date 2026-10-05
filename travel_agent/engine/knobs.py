@@ -36,6 +36,7 @@ class PlanKnobs(BaseModel):
     expert_picks: list[str] = Field(default_factory=list)  # ids in must_include added by the critic, not the traveller
     meal_requests: dict[str, int] = Field(default_factory=dict)  # restaurant id -> day (0 = any day) to eat there
     signature_picks: list[str] = Field(default_factory=list)  # the destination's signature experiences (experience plan)
+    wish_picks: list[str] = Field(default_factory=list)  # places the traveller mentioned softly: a boost, never forced
 
     def merged(self, other: "PlanKnobs") -> "PlanKnobs":
         """Combine user-driven adjustments (self) with repair-loop knobs (other)."""
@@ -69,4 +70,5 @@ class PlanKnobs(BaseModel):
         base.expert_picks = list(dict.fromkeys(base.expert_picks + other.expert_picks))
         base.meal_requests = {**base.meal_requests, **other.meal_requests}
         base.signature_picks = list(dict.fromkeys(base.signature_picks + other.signature_picks))
+        base.wish_picks = list(dict.fromkeys(base.wish_picks + other.wish_picks))
         return base

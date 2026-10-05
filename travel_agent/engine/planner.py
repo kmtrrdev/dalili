@@ -541,6 +541,9 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
         elif forced:
             ranked.score += 1.0  # the day optimizer drops low-value stops first; never this one
             ranked.reasons.insert(0, "Because you love the sea" if a.id in ctx.auto_picks else "You asked to visit this place")
+        elif a.id in ctx.knobs.wish_picks:
+            ranked.score += 0.35  # mentioned softly: welcome when it fits, never forced in
+            ranked.reasons.insert(0, "On your wish list")
         pool.append(ranked)
     pool.sort(key=lambda r: -r.score)
     by_id = {r.item.id: r for r in pool}

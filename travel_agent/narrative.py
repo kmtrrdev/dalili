@@ -8,7 +8,7 @@ from typing import Any
 
 from pydantic import BaseModel, Field
 
-from . import knowledge, llm, preferences
+from . import conflicts, constraints, knowledge, llm, preferences
 from .memory import recent_turns
 from .models import Money, TripPlan, TripState
 
@@ -75,6 +75,12 @@ def plan_facts(trip: TripState) -> dict[str, Any]:
                            for d in plan.days}
     facts.update(budget_reality(trip))
     facts.update(flight_alternatives(trip))
+    found = conflicts.facts(trip)
+    if found:
+        facts["conflicts"] = found
+    held = constraints.summary(c)
+    if any(held.values()):
+        facts["constraints"] = held
     missing = famous_not_in_plan(trip)
     if missing:
         facts["famous_places_not_in_plan"] = missing
@@ -352,6 +358,10 @@ Structure (short markdown, roughly 150-250 words - tight, no filler, never repea
    cheapest good way to do this trip is about X" - say what keeps it cheap (flights, hotel, meals), then one line on
    what the other plans cost and add (upgrades). The traveller gave no budget: never say "within budget",
    "left over" or "over budget" about the cheapest plan.
+4b. If 'conflicts' is present, a requirement can't be met as asked: say which one plainly, then offer the first two
+   or three of 'options_best_first' with what each saves and what it changes ('impact'), and ask which they prefer.
+   Never say an option was applied - nothing changes until they choose. If 'constraints.assumed_not_stated' is
+   non-empty, mention those assumptions in one short line so they can correct them.
 5. Your options (on a new plan, or whenever the traveller asks about price, options or upgrades): like a friend who
    knows travel, one short line per OTHER plan from 'modes' - what it really gives for its money (hotel name and
    rating, airline, pace, signature experiences) and its cost vs their budget ('vs_your_budget'), e.g. "Comfort:

@@ -158,6 +158,31 @@ class TripStop(BaseModel):
         return self.ref.name
 
 
+ConstraintPriority = Literal["hard", "soft", "preference", "nice_to_have"]
+ConstraintSource = Literal["explicit", "inferred", "learned", "default"]
+
+
+class Constraint(BaseModel):
+    """One requirement of the trip, with where it came from and how firmly it holds (see constraints.py).
+
+    hard: must hold - never relaxed without the traveller's consent. soft: kept unless it conflicts with something
+    harder. preference: ranks options. nice_to_have: lowest priority. Explicit statements outrank inferred or learned
+    ones; nothing the traveller didn't say becomes hard."""
+
+    id: str
+    type: str                      # budget_max, must_visit, wish, avoid_category, dietary, direct_flights, ...
+    value: Any
+    unit: str | None = None
+    priority: ConstraintPriority
+    source: ConstraintSource
+    confidence: float = 1.0
+    flexibility: Literal["fixed", "negotiable", "flexible"] = "negotiable"
+    reason: str = ""
+    evidence: list[str] = Field(default_factory=list)  # what the traveller said / the behaviour it was learned from
+    created_from: str = ""         # requirements | profile | learned_preferences | defaults
+    last_updated: datetime = Field(default_factory=utcnow)
+
+
 class TripContract(BaseModel):
     origin: str = "CAI"                 # airport code or city id used for flight searches
     origin_city: str = "Cairo"
@@ -181,6 +206,8 @@ class TripContract(BaseModel):
     # when set, destination/destination_ref mirror the first stop.
     stops: list[TripStop] = Field(default_factory=list)
     room_count: int | None = None       # rooms the traveller asked for ("all three in one room"); None = 2 per room
+    constraints: list[Constraint] = Field(default_factory=list)  # typed view of every requirement (constraints.py)
+    priorities: list[str] = Field(default_factory=list)          # what the traveller said matters most, in order
 
     @property
     def end_ref(self) -> PlaceRef | None:
@@ -261,6 +288,10 @@ class RequirementDraft(BaseModel):
     must_have: list[str] = Field(default_factory=list)
     avoid: list[str] = Field(default_factory=list)
     must_visit: list[str] = Field(default_factory=list)  # specific places named by the traveller, kept in the plan
+    wish_list: list[str] = Field(default_factory=list)   # places mentioned softly ("if there's time"): planned when they fit
+    priorities: list[str] = Field(default_factory=list)  # what the traveller said matters most, most important first
+    # Evidence: the words each requirement came from (field -> the traveller's message), for explanations.
+    stated: dict[str, str] = Field(default_factory=dict)
     profile_updates: dict[str, Any] = Field(default_factory=dict)
     planning_mode: PlanningMode | None = None
 

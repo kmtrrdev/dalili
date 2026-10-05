@@ -117,8 +117,20 @@ def apply_requirements(trip: TripState, req: Requirements) -> list[str]:
         d.budget_hard_limit = req.budget_is_hard_limit
     d.must_have = sorted(set(d.must_have) | set(req.must_have))
     add_must_visit(trip, req.must_visit)
+    firm = {x.lower() for x in d.must_visit}
+    for name in req.wish_list:  # softly mentioned places: planned when they fit, never forced
+        if name.strip() and name.lower() not in firm and name.lower() not in {w.lower() for w in d.wish_list}:
+            d.wish_list.append(name.strip())
+    if req.priorities:
+        d.priorities = list(dict.fromkeys(req.priorities))
     d.avoid = sorted(set(d.avoid) | set(req.avoid))
     setd("planning_mode", req.planning_mode)
+    # Evidence for every requirement this message set (shown when explaining a constraint or a choice).
+    said = next((m.content for m in reversed(trip.conversation) if m.role == "user"), "")[:200]
+    if said:
+        for field, value in req.model_dump(exclude_none=True).items():
+            if value not in ([], "", False):
+                d.stated[field] = said
 
     explicit = set(p.explicit_fields)
 
@@ -249,6 +261,10 @@ def build_contract(trip: TripState) -> tuple[TripContract, list[str]]:
     )
     if stops:
         contract.destination_name = contract.route_name
+    from .constraints import derive
+
+    contract.priorities = list(d.priorities)
+    contract.constraints = derive(trip, contract)
     return contract, assumptions
 
 
