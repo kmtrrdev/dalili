@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05T03:43:50+03:00",
+  "generated": "2026-10-05T04:32:28+03:00",
   "scenarios": [
     "rome-as-asked",
     "rome-active-pace",
@@ -10,20 +10,20 @@
   ],
   "summary": {
     "random": {
-      "hard_violations": 4.13,
-      "feasible": 0.0,
-      "travel_minutes": 883.03,
-      "travel_km": 157.58,
-      "km_per_hop": 5.01,
-      "cost": 2457.33,
-      "within_budget": 0.7,
+      "hard_violations": 4.03,
+      "feasible": 0.033,
+      "travel_minutes": 916.07,
+      "travel_km": 167.69,
+      "km_per_hop": 5.31,
+      "cost": 1876.17,
+      "within_budget": 0.767,
       "activities": 20.5,
-      "landmark_coverage": 0.67,
+      "landmark_coverage": 0.69,
       "preference_satisfaction": 0.54,
-      "tripscore": 49.0,
-      "quality": 66.97,
-      "requirements_met": 70.0,
-      "compute_ms": 1.65
+      "tripscore": 50.0,
+      "quality": 68.3,
+      "requirements_met": 76.67,
+      "compute_ms": 1.84
     },
     "greedy": {
       "hard_violations": 1.67,
@@ -31,15 +31,15 @@
       "travel_minutes": 683.33,
       "travel_km": 81.82,
       "km_per_hop": 2.5,
-      "cost": 1564.0,
+      "cost": 1559.5,
       "within_budget": 0.833,
       "activities": 20.5,
       "landmark_coverage": 1.0,
       "preference_satisfaction": 0.59,
       "tripscore": 61.33,
-      "quality": 77.67,
+      "quality": 78.0,
       "requirements_met": 83.33,
-      "compute_ms": 1.77
+      "compute_ms": 2.22
     },
     "ortools": {
       "hard_violations": 1.5,
@@ -47,7 +47,7 @@
       "travel_minutes": 657.0,
       "travel_km": 76.93,
       "km_per_hop": 2.39,
-      "cost": 1561.0,
+      "cost": 1556.67,
       "within_budget": 0.833,
       "activities": 20.17,
       "landmark_coverage": 1.0,
@@ -55,23 +55,23 @@
       "tripscore": 61.33,
       "quality": 78.67,
       "requirements_met": 83.33,
-      "compute_ms": 66.35
+      "compute_ms": 62.62
     },
     "dalili": {
-      "hard_violations": 0.17,
-      "feasible": 0.833,
+      "hard_violations": 0.0,
+      "feasible": 1.0,
       "travel_minutes": 694.83,
       "travel_km": 77.37,
       "km_per_hop": 2.02,
-      "cost": 1651.83,
-      "within_budget": 0.833,
+      "cost": 1647.0,
+      "within_budget": 1.0,
       "activities": 21.0,
       "landmark_coverage": 1.0,
       "preference_satisfaction": 0.59,
-      "tripscore": 77.5,
-      "quality": 80.83,
-      "requirements_met": 83.33,
-      "compute_ms": 141.63
+      "tripscore": 81.33,
+      "quality": 81.33,
+      "requirements_met": 100.0,
+      "compute_ms": 86.53
     }
   },
   "rows": [
@@ -79,25 +79,25 @@
       "scenario": "rome-as-asked",
       "planner": "random",
       "seed": 0,
-      "hard_violations": 7,
+      "hard_violations": 8,
       "feasible": false,
       "violations_by_check": {
         "budget": 1,
-        "schedule": 1,
+        "schedule": 2,
         "opening_hours": 5
       },
-      "travel_minutes": 524,
-      "travel_km": 48.2,
-      "km_per_hop": 1.51,
-      "cost": 7057,
+      "travel_minutes": 544,
+      "travel_km": 49.7,
+      "km_per_hop": 1.55,
+      "cost": 5240,
       "within_budget": false,
       "activities": 21,
-      "landmark_coverage": 0.8,
+      "landmark_coverage": 1.0,
       "preference_satisfaction": 1.0,
       "tripscore": 49,
       "quality": 58,
       "requirements_met": 0,
-      "compute_ms": 2.5
+      "compute_ms": 2.0
     },
     {
       "scenario": "rome-as-asked",
@@ -112,7 +112,7 @@
       "travel_minutes": 916,
       "travel_km": 156.3,
       "km_per_hop": 4.74,
-      "cost": 2157,
+      "cost": 2147,
       "within_budget": true,
       "activities": 21,
       "landmark_coverage": 0.6,
@@ -120,30 +120,27 @@
       "tripscore": 49,
       "quality": 70,
       "requirements_met": 100,
-      "compute_ms": 1.5
+      "compute_ms": 2.5
     },
     {
       "scenario": "rome-as-asked",
       "planner": "random",
       "seed": 2,
-      "hard_violations": 2,
-      "feasible": false,
-      "violations_by_check": {
-        "budget": 1,
-        "opening_hours": 1
-      },
-      "travel_minutes": 558,
-      "travel_km": 53.5,
-      "km_per_hop": 1.67,
-      "cost": 6108,
-      "within_budget": false,
+      "hard_violations": 0,
+      "feasible": true,
+      "violations_by_check": {},
+      "travel_minutes": 821,
+      "travel_km": 145.7,
+      "km_per_hop": 4.7,
+      "cost": 2142,
+      "within_budget": true,
       "activities": 21,
       "landmark_coverage": 0.8,
       "preference_satisfaction": 1.0,
-      "tripscore": 49,
-      "quality": 62,
-      "requirements_met": 0,
-      "compute_ms": 2.4
+      "tripscore": 79,
+      "quality": 79,
+      "requirements_met": 100,
+      "compute_ms": 1.8
     },
     {
       "scenario": "rome-as-asked",
@@ -158,7 +155,7 @@
       "travel_minutes": 1010,
       "travel_km": 251.0,
       "km_per_hop": 7.61,
-      "cost": 2583,
+      "cost": 2575,
       "within_budget": true,
       "activities": 21,
       "landmark_coverage": 0.6,
@@ -180,7 +177,7 @@
       "travel_minutes": 1014,
       "travel_km": 251.8,
       "km_per_hop": 7.63,
-      "cost": 2676,
+      "cost": 2668,
       "within_budget": true,
       "activities": 21,
       "landmark_coverage": 0.4,
@@ -201,7 +198,7 @@
       "travel_minutes": 635,
       "travel_km": 67.2,
       "km_per_hop": 2.04,
-      "cost": 2782,
+      "cost": 2773,
       "within_budget": true,
       "activities": 21,
       "landmark_coverage": 1.0,
@@ -222,7 +219,7 @@
       "travel_minutes": 633,
       "travel_km": 67.0,
       "km_per_hop": 2.03,
-      "cost": 2782,
+      "cost": 2773,
       "within_budget": true,
       "activities": 21,
       "landmark_coverage": 1.0,
@@ -230,7 +227,7 @@
       "tripscore": 49,
       "quality": 80,
       "requirements_met": 100,
-      "compute_ms": 71.5
+      "compute_ms": 62.2
     },
     {
       "scenario": "rome-as-asked",
@@ -241,7 +238,7 @@
       "travel_minutes": 641,
       "travel_km": 61.5,
       "km_per_hop": 1.62,
-      "cost": 2879,
+      "cost": 2869,
       "within_budget": true,
       "activities": 23,
       "landmark_coverage": 1.0,
@@ -249,31 +246,31 @@
       "tripscore": 85,
       "quality": 85,
       "requirements_met": 100,
-      "compute_ms": 99.6
+      "compute_ms": 86.4
     },
     {
       "scenario": "rome-active-pace",
       "planner": "random",
       "seed": 0,
-      "hard_violations": 9,
+      "hard_violations": 10,
       "feasible": false,
       "violations_by_check": {
         "budget": 1,
-        "schedule": 2,
+        "schedule": 3,
         "opening_hours": 6
       },
-      "travel_minutes": 719,
-      "travel_km": 72.2,
-      "km_per_hop": 1.81,
-      "cost": 7211,
+      "travel_minutes": 745,
+      "travel_km": 74.9,
+      "km_per_hop": 1.87,
+      "cost": 5390,
       "within_budget": false,
       "activities": 28,
-      "landmark_coverage": 0.8,
+      "landmark_coverage": 1.0,
       "preference_satisfaction": 1.0,
       "tripscore": 49,
       "quality": 55,
       "requirements_met": 0,
-      "compute_ms": 2.8
+      "compute_ms": 2.1
     },
     {
       "scenario": "rome-active-pace",
@@ -287,7 +284,7 @@
       "travel_minutes": 1053,
       "travel_km": 170.1,
       "km_per_hop": 4.25,
-      "cost": 2207,
+      "cost": 2197,
       "within_budget": true,
       "activities": 28,
       "landmark_coverage": 1.0,
@@ -295,31 +292,29 @@
       "tripscore": 49,
       "quality": 71,
       "requirements_met": 100,
-      "compute_ms": 2.3
+      "compute_ms": 1.6
     },
     {
       "scenario": "rome-active-pace",
       "planner": "random",
       "seed": 2,
-      "hard_violations": 5,
+      "hard_violations": 2,
       "feasible": false,
       "violations_by_check": {
-        "budget": 1,
-        "schedule": 1,
-        "opening_hours": 3
+        "opening_hours": 2
       },
-      "travel_minutes": 645,
-      "travel_km": 60.0,
-      "km_per_hop": 1.5,
-      "cost": 6346,
-      "within_budget": false,
+      "travel_minutes": 1044,
+      "travel_km": 173.3,
+      "km_per_hop": 4.33,
+      "cost": 2378,
+      "within_budget": true,
       "activities": 28,
       "landmark_coverage": 1.0,
       "preference_satisfaction": 1.0,
       "tripscore": 49,
-      "quality": 56,
-      "requirements_met": 0,
-      "compute_ms": 1.9
+      "quality": 73,
+      "requirements_met": 100,
+      "compute_ms": 1.6
     },
     {
       "scenario": "rome-active-pace",
@@ -334,7 +329,7 @@
       "travel_minutes": 1168,
       "travel_km": 267.1,
       "km_per_hop": 6.68,
-      "cost": 2749,
+      "cost": 2740,
       "within_budget": true,
       "activities": 28,
       "landmark_coverage": 0.6,
@@ -342,7 +337,7 @@
       "tripscore": 49,
       "quality": 68,
       "requirements_met": 100,
-      "compute_ms": 3.2
+      "compute_ms": 1.7
     },
     {
       "scenario": "rome-active-pace",
@@ -357,7 +352,7 @@
       "travel_minutes": 1164,
       "travel_km": 270.4,
       "km_per_hop": 6.76,
-      "cost": 2831,
+      "cost": 2822,
       "within_budget": true,
       "activities": 28,
       "landmark_coverage": 0.6,
@@ -365,7 +360,7 @@
       "tripscore": 49,
       "quality": 69,
       "requirements_met": 100,
-      "compute_ms": 1.6
+      "compute_ms": 2.4
     },
     {
       "scenario": "rome-active-pace",
@@ -378,15 +373,15 @@
       "travel_minutes": 733,
       "travel_km": 74.8,
       "km_per_hop": 1.87,
-      "cost": 2831,
+      "cost": 2822,
       "within_budget": true,
       "activities": 28,
       "landmark_coverage": 1.0,
       "preference_satisfaction": 1.0,
       "tripscore": 49,
-      "quality": 76,
+      "quality": 77,
       "requirements_met": 100,
-      "compute_ms": 2.1
+      "compute_ms": 3.0
     },
     {
       "scenario": "rome-active-pace",
@@ -399,7 +394,7 @@
       "travel_minutes": 727,
       "travel_km": 73.6,
       "km_per_hop": 1.84,
-      "cost": 2831,
+      "cost": 2822,
       "within_budget": true,
       "activities": 28,
       "landmark_coverage": 1.0,
@@ -407,7 +402,7 @@
       "tripscore": 49,
       "quality": 77,
       "requirements_met": 100,
-      "compute_ms": 84.6
+      "compute_ms": 78.7
     },
     {
       "scenario": "rome-active-pace",
@@ -418,7 +413,7 @@
       "travel_minutes": 727,
       "travel_km": 73.2,
       "km_per_hop": 1.83,
-      "cost": 2771,
+      "cost": 2762,
       "within_budget": true,
       "activities": 30,
       "landmark_coverage": 1.0,
@@ -426,31 +421,31 @@
       "tripscore": 83,
       "quality": 83,
       "requirements_met": 100,
-      "compute_ms": 80.6
+      "compute_ms": 82.8
     },
     {
       "scenario": "rome-tight-budget",
       "planner": "random",
       "seed": 0,
-      "hard_violations": 7,
+      "hard_violations": 8,
       "feasible": false,
       "violations_by_check": {
         "budget": 1,
-        "schedule": 1,
+        "schedule": 2,
         "opening_hours": 5
       },
-      "travel_minutes": 524,
-      "travel_km": 48.2,
-      "km_per_hop": 1.51,
-      "cost": 7057,
+      "travel_minutes": 544,
+      "travel_km": 49.7,
+      "km_per_hop": 1.55,
+      "cost": 5240,
       "within_budget": false,
       "activities": 21,
-      "landmark_coverage": 0.8,
+      "landmark_coverage": 1.0,
       "preference_satisfaction": 1.0,
       "tripscore": 49,
       "quality": 58,
       "requirements_met": 0,
-      "compute_ms": 1.9
+      "compute_ms": 1.5
     },
     {
       "scenario": "rome-tight-budget",
@@ -466,7 +461,7 @@
       "travel_minutes": 916,
       "travel_km": 156.3,
       "km_per_hop": 4.74,
-      "cost": 2157,
+      "cost": 2147,
       "within_budget": false,
       "activities": 21,
       "landmark_coverage": 0.6,
@@ -474,30 +469,29 @@
       "tripscore": 49,
       "quality": 58,
       "requirements_met": 0,
-      "compute_ms": 1.7
+      "compute_ms": 1.5
     },
     {
       "scenario": "rome-tight-budget",
       "planner": "random",
       "seed": 2,
-      "hard_violations": 2,
+      "hard_violations": 1,
       "feasible": false,
       "violations_by_check": {
-        "budget": 1,
-        "opening_hours": 1
+        "budget": 1
       },
-      "travel_minutes": 558,
-      "travel_km": 53.5,
-      "km_per_hop": 1.67,
-      "cost": 6108,
+      "travel_minutes": 821,
+      "travel_km": 145.7,
+      "km_per_hop": 4.7,
+      "cost": 2142,
       "within_budget": false,
       "activities": 21,
       "landmark_coverage": 0.8,
       "preference_satisfaction": 1.0,
       "tripscore": 49,
-      "quality": 62,
+      "quality": 68,
       "requirements_met": 0,
-      "compute_ms": 1.6
+      "compute_ms": 1.3
     },
     {
       "scenario": "rome-tight-budget",
@@ -513,7 +507,7 @@
       "travel_minutes": 1010,
       "travel_km": 251.0,
       "km_per_hop": 7.61,
-      "cost": 2583,
+      "cost": 2575,
       "within_budget": false,
       "activities": 21,
       "landmark_coverage": 0.6,
@@ -536,7 +530,7 @@
       "travel_minutes": 1014,
       "travel_km": 251.8,
       "km_per_hop": 7.63,
-      "cost": 2676,
+      "cost": 2668,
       "within_budget": false,
       "activities": 21,
       "landmark_coverage": 0.4,
@@ -544,7 +538,7 @@
       "tripscore": 49,
       "quality": 60,
       "requirements_met": 0,
-      "compute_ms": 1.6
+      "compute_ms": 2.4
     },
     {
       "scenario": "rome-tight-budget",
@@ -558,15 +552,15 @@
       "travel_minutes": 863,
       "travel_km": 136.5,
       "km_per_hop": 4.14,
-      "cost": 2066,
+      "cost": 2057,
       "within_budget": false,
       "activities": 21,
       "landmark_coverage": 1.0,
       "preference_satisfaction": 1.0,
       "tripscore": 49,
-      "quality": 63,
+      "quality": 64,
       "requirements_met": 0,
-      "compute_ms": 1.9
+      "compute_ms": 2.8
     },
     {
       "scenario": "rome-tight-budget",
@@ -580,7 +574,7 @@
       "travel_minutes": 863,
       "travel_km": 138.0,
       "km_per_hop": 4.18,
-      "cost": 2069,
+      "cost": 2061,
       "within_budget": false,
       "activities": 21,
       "landmark_coverage": 1.0,
@@ -588,28 +582,26 @@
       "tripscore": 49,
       "quality": 64,
       "requirements_met": 0,
-      "compute_ms": 61.0
+      "compute_ms": 62.8
     },
     {
       "scenario": "rome-tight-budget",
       "planner": "dalili",
-      "hard_violations": 1,
-      "feasible": false,
-      "violations_by_check": {
-        "budget": 1
-      },
+      "hard_violations": 0,
+      "feasible": true,
+      "violations_by_check": {},
       "travel_minutes": 1009,
       "travel_km": 148.1,
       "km_per_hop": 4.0,
-      "cost": 1934,
-      "within_budget": false,
+      "cost": 1924,
+      "within_budget": true,
       "activities": 19,
       "landmark_coverage": 1.0,
       "preference_satisfaction": 1.0,
-      "tripscore": 49,
-      "quality": 69,
-      "requirements_met": 0,
-      "compute_ms": 475.7
+      "tripscore": 72,
+      "quality": 72,
+      "requirements_met": 100,
+      "compute_ms": 154.8
     },
     {
       "scenario": "istanbul-as-asked",
@@ -632,7 +624,7 @@
       "tripscore": 49,
       "quality": 68,
       "requirements_met": 100,
-      "compute_ms": 1.3
+      "compute_ms": 1.4
     },
     {
       "scenario": "istanbul-as-asked",
@@ -655,7 +647,7 @@
       "tripscore": 49,
       "quality": 66,
       "requirements_met": 100,
-      "compute_ms": 1.3
+      "compute_ms": 1.5
     },
     {
       "scenario": "istanbul-as-asked",
@@ -677,7 +669,7 @@
       "tripscore": 49,
       "quality": 76,
       "requirements_met": 100,
-      "compute_ms": 1.3
+      "compute_ms": 1.6
     },
     {
       "scenario": "istanbul-as-asked",
@@ -700,7 +692,7 @@
       "tripscore": 49,
       "quality": 75,
       "requirements_met": 100,
-      "compute_ms": 1.2
+      "compute_ms": 1.6
     },
     {
       "scenario": "istanbul-as-asked",
@@ -722,7 +714,7 @@
       "tripscore": 49,
       "quality": 79,
       "requirements_met": 100,
-      "compute_ms": 1.2
+      "compute_ms": 1.8
     },
     {
       "scenario": "istanbul-as-asked",
@@ -741,7 +733,7 @@
       "tripscore": 86,
       "quality": 86,
       "requirements_met": 100,
-      "compute_ms": 1.6
+      "compute_ms": 2.0
     },
     {
       "scenario": "istanbul-as-asked",
@@ -760,7 +752,7 @@
       "tripscore": 86,
       "quality": 86,
       "requirements_met": 100,
-      "compute_ms": 51.8
+      "compute_ms": 50.6
     },
     {
       "scenario": "istanbul-as-asked",
@@ -779,7 +771,7 @@
       "tripscore": 85,
       "quality": 85,
       "requirements_met": 100,
-      "compute_ms": 66.0
+      "compute_ms": 60.2
     },
     {
       "scenario": "istanbul-active-pace",
@@ -802,7 +794,7 @@
       "tripscore": 49,
       "quality": 65,
       "requirements_met": 100,
-      "compute_ms": 1.8
+      "compute_ms": 3.8
     },
     {
       "scenario": "istanbul-active-pace",
@@ -825,7 +817,7 @@
       "tripscore": 49,
       "quality": 63,
       "requirements_met": 100,
-      "compute_ms": 1.4
+      "compute_ms": 2.8
     },
     {
       "scenario": "istanbul-active-pace",
@@ -847,7 +839,7 @@
       "tripscore": 49,
       "quality": 69,
       "requirements_met": 100,
-      "compute_ms": 1.4
+      "compute_ms": 2.1
     },
     {
       "scenario": "istanbul-active-pace",
@@ -870,7 +862,7 @@
       "tripscore": 49,
       "quality": 67,
       "requirements_met": 100,
-      "compute_ms": 1.4
+      "compute_ms": 1.7
     },
     {
       "scenario": "istanbul-active-pace",
@@ -893,7 +885,7 @@
       "tripscore": 49,
       "quality": 68,
       "requirements_met": 100,
-      "compute_ms": 1.5
+      "compute_ms": 2.5
     },
     {
       "scenario": "istanbul-active-pace",
@@ -914,7 +906,7 @@
       "tripscore": 49,
       "quality": 75,
       "requirements_met": 100,
-      "compute_ms": 1.7
+      "compute_ms": 2.1
     },
     {
       "scenario": "istanbul-active-pace",
@@ -935,7 +927,7 @@
       "tripscore": 49,
       "quality": 79,
       "requirements_met": 100,
-      "compute_ms": 84.7
+      "compute_ms": 76.1
     },
     {
       "scenario": "istanbul-active-pace",
@@ -954,7 +946,7 @@
       "tripscore": 79,
       "quality": 79,
       "requirements_met": 100,
-      "compute_ms": 64.6
+      "compute_ms": 73.9
     },
     {
       "scenario": "istanbul-tight-budget",
@@ -977,7 +969,7 @@
       "tripscore": 49,
       "quality": 67,
       "requirements_met": 100,
-      "compute_ms": 1.2
+      "compute_ms": 1.9
     },
     {
       "scenario": "istanbul-tight-budget",
@@ -1000,7 +992,7 @@
       "tripscore": 49,
       "quality": 66,
       "requirements_met": 100,
-      "compute_ms": 1.2
+      "compute_ms": 1.4
     },
     {
       "scenario": "istanbul-tight-budget",
@@ -1067,7 +1059,7 @@
       "tripscore": 49,
       "quality": 79,
       "requirements_met": 100,
-      "compute_ms": 1.1
+      "compute_ms": 1.3
     },
     {
       "scenario": "istanbul-tight-budget",
@@ -1086,7 +1078,7 @@
       "tripscore": 86,
       "quality": 86,
       "requirements_met": 100,
-      "compute_ms": 1.4
+      "compute_ms": 1.5
     },
     {
       "scenario": "istanbul-tight-budget",
@@ -1105,7 +1097,7 @@
       "tripscore": 86,
       "quality": 86,
       "requirements_met": 100,
-      "compute_ms": 44.5
+      "compute_ms": 45.3
     },
     {
       "scenario": "istanbul-tight-budget",
@@ -1124,7 +1116,7 @@
       "tripscore": 84,
       "quality": 84,
       "requirements_met": 100,
-      "compute_ms": 63.3
+      "compute_ms": 61.1
     }
   ]
 }

@@ -124,15 +124,15 @@ def _to_plan(sc, fp: FreePlan):
         rows = []
         for it in d.items:
             named += 1
-            place = places.get(it.place_id or "") or match_place(it.name, r.restaurants if it.kind == "meal"
-                                                                   else r.attractions)
+            place = places.get(it.place_id or "") or harness.ground(it.name, r.restaurants if it.kind == "meal"
+                                                                    else r.attractions)
             matched += bool(place)
             rows.append({"start": it.start, "name": it.name, "kind": it.kind, "meal_type": it.meal_type,
                          "place": place, "cost": it.est_cost_per_person})
         days.append(rows)
     plan = harness.assemble(ctx, hotel, out, ret, days)
     claimed = fp.estimated_total_cost or None
-    return plan, {"named_items": named, "ungrounded_rate": round(1 - matched / named, 3) if named else None,
+    return plan, {"sample_names": [it.name for d in fp.days for it in d.items][:8], "named_items": named, "ungrounded_rate": round(1 - matched / named, 3) if named else None,
                   "hotel_grounded": hotel is not None, "flights_grounded": bool(out and ret), "claimed_total": claimed}
 
 

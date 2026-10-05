@@ -46,12 +46,19 @@ class Scenario:
 async def scenarios() -> list[Scenario]:
     """Six scenarios: two real cities x (as asked, a faster pace, a tight budget)."""
     from travel_agent import research
+    from travel_agent.config import settings
     from travel_agent.models import TripState
     from travel_agent.workflow import run_turn
 
     out = []
-    for city, req in (("rome", ROME), ("istanbul", ISTANBUL)):
-        base, _ = await run_turn(TripState(), req)
+    # Scenarios are parsed the same way in every experiment (model off), so all of them plan the same trips.
+    llm_was = settings.llm_enabled
+    settings.llm_enabled = False
+    try:
+        bases = [(city, req, (await run_turn(TripState(), req))[0]) for city, req in (("rome", ROME), ("istanbul", ISTANBUL))]
+    finally:
+        settings.llm_enabled = llm_was
+    for city, req, base in bases:
         await research.prepare_routing(base.research)
         out.append(Scenario(f"{city}-as-asked", base, req))
         fast = base.model_copy(deep=True)
@@ -188,6 +195,34 @@ def schedule(ctx, hotel, out, ret, day_stops: list[list], starts: list[list[int 
     plan.budget = compute_budget(plan, c, r.fx_rates, 0.05)
     plan.within_budget = plan.budget.total <= c.budget.amount
     return plan
+
+
+GENERIC = {"the", "of", "and", "di", "de", "la", "il", "museum", "museo", "church", "chiesa", "basilica", "piazza",
+           "square", "park", "restaurant", "ristorante", "cafe", "bar", "mosque", "palace", "tower", "bridge", "street",
+           "market", "visit", "tour", "guided", "garden", "gardens", "st", "san", "santa"}
+
+
+def ground(name: str, places: list):
+    """The researched place a model's free-text item refers to ("Visit the Colosseum & Forum" -> Colosseum), or None.
+    A place counts when most of its distinctive words appear in the text (and at least one distinctive word)."""
+    import re
+
+    from travel_agent.research import match_place
+
+    hit = match_place(name, places)
+    if hit:
+        return hit
+    said = set(re.findall(r"[a-z0-9]+", (name or "").lower()))
+    best, score = None, 0.0
+    for p in places:
+        words = set(re.findall(r"[a-z0-9]+", p.name.lower()))
+        key = words - GENERIC
+        if not key:
+            continue
+        s = len(key & said) / len(key)
+        if s > score:
+            best, score = p, s
+    return best if score >= 0.75 else None
 
 
 def match_hotel(name: str, hotels: list):
