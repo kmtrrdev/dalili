@@ -70,6 +70,11 @@ def plan_facts(trip: TripState) -> dict[str, Any]:
                                       else f"OVER budget by {money(b.total - c.budget.amount, b.currency)}")
         facts["cost_breakdown"] = {(COST_AR[k] if arabic else k): money(getattr(b, k), b.currency)
                                    for k in ("flights", "hotel", "food", "activities", "transport") if getattr(b, k)}
+        counted = sum(b.by_trust.values())
+        if counted:
+            share = {k: round(100 * v / counted) for k, v in b.by_trust.items() if v}
+            facts["how_solid_the_total_is"] = {"percent_of_cost": share, "confidence": b.confidence,
+                                               "stale_prices": b.stale_sources}
     facts["day_by_day"] = {day_label(d.day, d.date, arabic): [f"{i.start} {i.title}" for i in d.items
                                                               if i.kind in ("activity", "flight")]
                            for d in plan.days}
@@ -353,7 +358,8 @@ Structure (short markdown, roughly 150-250 words - tight, no filler, never repea
    ('minimum_possible_cost_of_flights_plus_hotel' - a cost, not a saving) exceed the budget, give
    'realistic_budget_for_this_plan', and offer real options (raise the budget, other dates, fewer days, a nearer
    destination). If 'flights_and_hotel_note' is present, don't offer "cheaper flights" - they already are the cheapest.
-   Never pretend the budget fits.
+   Never pretend the budget fits. If 'how_solid_the_total_is' shows a large share of 'estimated' or 'unknown'
+   prices (or stale ones), say in a few words that part of the total is estimated - never present it as exact.
    If 'cheapest_trip_search' is present, the traveller asked for the cheapest trip: lead with the answer - "the
    cheapest good way to do this trip is about X" - say what keeps it cheap (flights, hotel, meals), then one line on
    what the other plans cost and add (upgrades). The traveller gave no budget: never say "within budget",

@@ -62,14 +62,19 @@ def _apply_official(p: Place, res: dict) -> None:
         p.cost_per_person = Money(amount=mid, currency=res["currency"], price_type="range",
                                   source=f"Official menu ({site}) · mains {span} {res['currency']}")
     else:
-        confirmed = ""
+        confirmed, conflict = "", ""
         prev = p.cost_per_person
-        if prev.source and prev.source.startswith("Wikivoyage") and _agrees(prev, res["amount"], res["currency"]):
-            confirmed = " · confirmed by Wikivoyage"
+        if prev.source and prev.source.startswith("Wikivoyage") and prev.amount > 0:
+            if _agrees(prev, res["amount"], res["currency"]):
+                confirmed = " · confirmed by Wikivoyage"
+            else:
+                # Two published sources disagree: the official site is used (it is the operator's own, and current),
+                # but the disagreement stays visible instead of being silently dropped.
+                conflict = f" Wikivoyage lists {prev.amount:g} {prev.currency} ({prev.source.split('·')[-1].strip()})."
         p.cost_per_person = Money(amount=res["amount"], currency=res["currency"], price_type="known",
                                   source=f"Official website ({site}){confirmed}")
         what = "Free entry" if res.get("free") else f"Adult entry {res['amount']:g} {res['currency']}"
-        p.notes = f'{what} - official website: "{(res.get("quote") or "")[:140]}".'
+        p.notes = f'{what} - official website: "{(res.get("quote") or "")[:140]}".{conflict}'
     p.price_known = True
     p.website = p.website or res["page"]
 
@@ -122,7 +127,9 @@ async def _menus(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, sk
                 return
         r = res.get("result")
         if r and not p.price_known:  # the official site may have answered meanwhile
-            p.cost_per_person = Money(amount=r["amount"], currency=r["currency"], price_type="range",
+            # Google's own per-person range is published (range); a meal built from menu prices is calculated.
+            p.cost_per_person = Money(amount=r["amount"], currency=r["currency"],
+                                      price_type="range" if r.get("google") else "calculated",
                                       source=(f"Google · {r['basis']}" if r.get("google") else
                                               f"Menu ({_host(r['menu_url']) if r.get('menu_url') else 'web search'}) · "
                                               f"typical meal ≈ {r['amount']:g} {r['currency']}: {r['basis']}"))

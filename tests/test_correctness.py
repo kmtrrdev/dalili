@@ -75,3 +75,17 @@ def test_redistribution_respects_a_repair_exclusion(rome_research, rome_contract
 
 def test_unknown_money_is_not_a_price():
     assert Money(amount=0.0).price_type == "estimated"  # unchanged default for existing data
+
+
+def test_trust_classes_and_budget_confidence(rome_research, rome_contract, profile):
+    from travel_agent.models import trust_class
+
+    assert trust_class(Money(amount=10, price_type="known")) == "verified"
+    assert trust_class(Money(amount=10, price_type="range")) == "verified"
+    assert trust_class(Money(amount=10, price_type="calculated")) == "calculated"
+    assert trust_class(Money(amount=10, price_type="estimated", source="AI estimate")) == "estimated"
+    assert trust_class(Money(amount=10)) == "unknown"  # a category default: never shown as known
+    b = build_plan(_ctx(rome_contract, rome_research, profile)).budget
+    subtotal = b.flights + b.hotel + b.food + b.activities + b.transport
+    assert abs(sum(b.by_trust.values()) - subtotal) < 1.0
+    assert 0 < b.confidence <= 1 and b.by_trust["verified"] > 0  # flights and hotel are published prices

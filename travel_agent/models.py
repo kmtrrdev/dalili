@@ -64,6 +64,22 @@ class Money(BaseModel):
                      source=self.source)
 
 
+TrustClass = Literal["verified", "calculated", "estimated", "unknown"]
+
+
+def trust_class(m: "Money") -> TrustClass:
+    """One vocabulary for how much a price can be trusted (never shows an estimate as verified):
+    verified   - published by a provider (a fare, a nightly rate, a listed or quoted price, a published range);
+    calculated - computed from published inputs (an official tariff x a real distance, a meal from menu prices);
+    estimated  - an informed estimate with a stated basis (AI estimate for this place, an older published price);
+    unknown    - no information about this place: a generic default for its category."""
+    if m.price_type in ("known", "range"):
+        return "verified"
+    if m.price_type == "calculated":
+        return "calculated"
+    return "estimated" if m.source else "unknown"
+
+
 class GeoPoint(BaseModel):
     lat: float
     lon: float
@@ -396,7 +412,7 @@ class Place(BaseModel):
     description: str = ""
     notes: str | None = None
     # Provenance / quality of the facts above
-    hours_verified: bool = True     # False: hours not published by the provider, typical hours assumed
+    hours_verified: bool = False    # True only when the provider published the hours (else typical hours assumed)
     price_known: bool = False       # True only when the provider published a price
     dates: list[date] = Field(default_factory=list)  # events: only happens on these dates
     distance_km: float = 0.0        # straight-line distance from the city centre
@@ -539,6 +555,10 @@ class BudgetBreakdown(BaseModel):
     status: CheckStatus = "PASS"
     daily_spending: dict[str, float] = Field(default_factory=dict)
     notes: list[str] = Field(default_factory=list)
+    # How much of the cost rests on what (trust_class), and the resulting confidence in the total (see budget.py).
+    by_trust: dict[str, float] = Field(default_factory=dict)
+    confidence: float | None = None
+    stale_sources: int = 0     # flights / hotels served from an expired cache (provider unavailable)
 
 
 class Violation(BaseModel):

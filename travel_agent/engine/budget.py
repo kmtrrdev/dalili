@@ -4,7 +4,12 @@ from __future__ import annotations
 
 import statistics
 
-from ..models import BudgetBreakdown, Money, Place, PlanningMode, TripContract, TripPlan
+from ..models import BudgetBreakdown, Money, Place, PlanningMode, TripContract, TripPlan, trust_class
+
+# How reliable each evidence class is when judging the total (a mapping of evidence strength, not a travel rule):
+# a published price is the price, a calculation from published inputs is close, an estimate is a guess with a basis,
+# a category default is close to unknown.
+TRUST_WEIGHT = {"verified": 1.0, "calculated": 0.85, "estimated": 0.5, "unknown": 0.2}
 
 
 def to_user(m: Money, fx: dict[str, float], user_currency: str) -> float:
@@ -16,28 +21,48 @@ def to_user(m: Money, fx: dict[str, float], user_currency: str) -> float:
 def compute_budget(plan: TripPlan, contract: TripContract, fx: dict[str, float], buffer_ratio: float) -> BudgetBreakdown:
     cur = contract.budget.currency
     b = BudgetBreakdown(currency=cur, limit=contract.budget.amount, hard_limit=contract.budget.hard_limit)
+    trust = {k: 0.0 for k in TRUST_WEIGHT}
+
+    def count(m: Money, amount: float) -> None:
+        trust[trust_class(m)] += amount
+
     if plan.stops:
         # Multi-city: every leg once (trains / coaches are ground transport) and each city's hotel for its nights.
         for f in plan.legs:
             cost = to_user(f.price_per_person, fx, cur) * contract.travelers
+            count(f.price_per_person, cost)
+            b.stale_sources += int(f.metadata.stale)
             if f.mode == "flight":
                 b.flights += cost
             else:
                 b.transport += cost
-        b.hotel = sum(to_user(s.hotel.price_per_night, fx, cur) * s.nights * contract.rooms
-                      for s in plan.stops if s.hotel)
+        for s in plan.stops:
+            if s.hotel:
+                cost = to_user(s.hotel.price_per_night, fx, cur) * s.nights * contract.rooms
+                b.hotel += cost
+                count(s.hotel.price_per_night, cost)
+                b.stale_sources += int(s.hotel.metadata.stale)
     else:
         for f in (plan.outbound_flight, plan.return_flight):
             if f:
-                b.flights += to_user(f.price_per_person, fx, cur) * contract.travelers
+                cost = to_user(f.price_per_person, fx, cur) * contract.travelers
+                b.flights += cost
+                count(f.price_per_person, cost)
+                b.stale_sources += int(f.metadata.stale)
         if plan.hotel:
             b.hotel = to_user(plan.hotel.price_per_night, fx, cur) * contract.nights * contract.rooms
+            count(plan.hotel.price_per_night, b.hotel)
+            b.stale_sources += int(plan.hotel.metadata.stale)
 
     for day in plan.days:
         day_total = 0.0
         for item in day.items:
             cost = to_user(item.cost, fx, cur)
             leg = to_user(item.transport_from_previous.cost, fx, cur) if item.transport_from_previous else 0.0
+            if item.kind in ("meal", "activity", "transfer") and cost:
+                count(item.cost, cost)
+            if leg:
+                count(item.transport_from_previous.cost, leg)
             if item.kind == "meal":
                 b.food += cost
             elif item.kind == "activity":
@@ -50,6 +75,12 @@ def compute_budget(plan: TripPlan, contract: TripContract, fx: dict[str, float],
         b.daily_spending[day.date.isoformat()] = round(day_total, 2)
 
     subtotal = b.flights + b.hotel + b.food + b.activities + b.transport
+    b.by_trust = {k: round(v, 2) for k, v in trust.items()}
+    counted = sum(trust.values())
+    if counted:
+        # Evidence-based: the cost-weighted reliability of every price in the total, lowered when a flight or hotel
+        # price had to come from an expired cache.
+        b.confidence = round(sum(TRUST_WEIGHT[k] * v for k, v in trust.items()) / counted * 0.9 ** b.stale_sources, 2)
     b.buffer = subtotal * buffer_ratio
     b.total = subtotal + b.buffer
     b.remaining = b.limit - b.total
