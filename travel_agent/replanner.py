@@ -95,6 +95,10 @@ def apply_requirements(trip: TripState, req: Requirements) -> list[str]:
     if req.rooms and req.rooms > 0:
         d.rooms = int(req.rooms)
     setd("origin", req.origin_airport.upper() if req.origin_airport else None)
+    if req.nights and req.nights > 0:
+        # Stated in nights ("3 nights"): the code does the arithmetic - N nights = N + 1 days, and it overrides an
+        # echoed old end date (the length is what the traveller just said).
+        req.duration_days, req.end_date = int(req.nights) + 1, None
     if req.start_date:
         d.start_date = date.fromisoformat(req.start_date)
         if not req.end_date and not req.duration_days and d.duration_days:
@@ -574,7 +578,10 @@ def diff_plans(old: TripPlan | None, new: TripPlan | None) -> list[str]:
     for label, a, b in (("Outbound flight", old.outbound_flight, new.outbound_flight),
                         ("Return flight", old.return_flight, new.return_flight)):
         if a and b and a.id != b.id and not (old.stops and new.stops):
-            out.append(f"{label}: {a.flight_number} -> {b.flight_number}")
+            if a.flight_number == b.flight_number:  # the same flight on another day (new dates)
+                out.append(f"{label}: {a.flight_number} now on {b.depart_at:%a %d %b} (was {a.depart_at:%a %d %b})")
+            else:
+                out.append(f"{label}: {a.flight_number} -> {b.flight_number}")
     old_days = {d.day: d for d in old.days}
     for d in new.days:
         od = old_days.get(d.day)

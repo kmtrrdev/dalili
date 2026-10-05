@@ -14,10 +14,13 @@ returns None so callers fall back to the rule-based implementations.
 from __future__ import annotations
 
 import asyncio
+import hashlib
 import json
 import logging
 import os
 import re
+import time
+from collections import OrderedDict
 from pathlib import Path
 from typing import TypeVar
 
@@ -248,23 +251,61 @@ async def _claude_text(system: str, user: str, max_tokens: int) -> str | None:
 # ---------------------------------------------------------------------------
 
 
-async def parse(system: str, user: str, schema: type[T], max_tokens: int = 16000, effort: str | None = None) -> T | None:
+_PARSE_CACHE: "OrderedDict[str, tuple[float, BaseModel]]" = OrderedDict()
+PARSE_CACHE_MAX = 400
+PARSE_CACHE_TTL_S = 6 * 3600
+
+
+def _cache_key(p: str | None, system: str, user: str, schema: type, effort: str | None) -> str:
+    raw = json.dumps([p, model_name(), effort, system, user, schema.__name__], ensure_ascii=False)
+    return hashlib.sha256(raw.encode()).hexdigest()
+
+
+async def _bounded(coro, timeout: float | None):
+    """A whole model call (retries included) within a time budget: a slow provider must never stall a turn - on
+    timeout the caller's fallback is used (templates, defaults, or no optional step)."""
+    budget = timeout or settings.llm_call_timeout
+    try:
+        async with asyncio.timeout(budget):
+            return await coro
+    except TimeoutError:
+        global last_error
+        last_error = f"model call exceeded {budget:.0f}s"
+        log.warning("model call exceeded %.0fs - using the fallback", budget)
+        telemetry.record_llm(None, ok=False)
+        return None
+
+
+async def parse(system: str, user: str, schema: type[T], max_tokens: int = 16000, effort: str | None = None,
+                timeout: float | None = None) -> T | None:
     """Structured output call. Returns None on any failure so callers can fall back.
-    `effort` (minimal / low / medium / high) applies to reasoning models; None uses the configured default."""
+    `effort` (minimal / low / medium / high) applies to reasoning models; None uses the configured default.
+    The same request within a few hours is answered from memory (research extraction - guide tariffs, menus, price
+    estimates - repeats across turns of one trip); only successful answers are kept, and each hit is a fresh copy."""
     p = provider()
-    if p == "azure":
-        return await _azure_parse(system, user, schema, effort)
-    if p == "anthropic":
-        return await _claude_parse(system, user, schema, max_tokens)
-    return None
+    if p is None:
+        return None
+    key = _cache_key(p, system, user, schema, effort)
+    hit = _PARSE_CACHE.get(key)
+    if hit and time.time() - hit[0] < PARSE_CACHE_TTL_S:
+        _PARSE_CACHE.move_to_end(key)
+        return hit[1].model_copy(deep=True)  # type: ignore[return-value]
+    out = await _bounded(_azure_parse(system, user, schema, effort) if p == "azure" else
+                         _claude_parse(system, user, schema, max_tokens), timeout)
+    if out is not None:
+        _PARSE_CACHE[key] = (time.time(), out.model_copy(deep=True))
+        while len(_PARSE_CACHE) > PARSE_CACHE_MAX:
+            _PARSE_CACHE.popitem(last=False)
+    return out
 
 
-async def text(system: str, user: str, max_tokens: int = 4000, effort: str | None = None) -> str | None:
+async def text(system: str, user: str, max_tokens: int = 4000, effort: str | None = None,
+               timeout: float | None = None) -> str | None:
     """Free-text generation (conversational summary, grounded answers)."""
     p = provider()
     if p == "azure":
-        return await _azure_chat([{"role": "system", "content": system}, {"role": "user", "content": user}],
-                                 max_tokens=max_tokens, effort=effort)
+        return await _bounded(_azure_chat([{"role": "system", "content": system}, {"role": "user", "content": user}],
+                                          max_tokens=max_tokens, effort=effort), timeout)
     if p == "anthropic":
-        return await _claude_text(system, user, max_tokens)
+        return await _bounded(_claude_text(system, user, max_tokens), timeout)
     return None

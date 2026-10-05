@@ -147,6 +147,9 @@ async def understand(state: GraphState) -> GraphState:
     if interp.requirements.budget_amount:
         # The new total is already in the requirements: an adjust/set action on top would apply it twice.
         interp.actions = [a for a in interp.actions if a.action not in ("adjust_budget", "set_budget")]
+    if interp.requirements.nights or interp.requirements.duration_days or interp.requirements.end_date:
+        # The new length is stated absolutely: a relative extend/shorten on top would apply it twice.
+        interp.actions = [a for a in interp.actions if a.action not in ("extend_trip", "shorten_trip")]
     if interp.requirements.return_to:
         # "Fly home to Cairo instead": the last flight is searched again anyway. Don't also swap the outbound
         # flight (change_flight would exclude it) - the traveller didn't ask for that.
@@ -193,6 +196,8 @@ def _changes_trip_frame(trip: TripState, interp: TurnInterpretation) -> bool:
     if r.end_date and r.end_date != c.end_date.isoformat():
         return True
     if r.duration_days and r.duration_days != c.num_days:
+        return True
+    if r.nights and r.nights != c.nights:
         return True
     if r.budget_amount and abs(r.budget_amount - c.budget.amount) > 0.5:
         return True
@@ -414,6 +419,10 @@ async def research_setup(state: GraphState) -> GraphState:
     return {"r_info": info, "timings": {"research_start": time.perf_counter()}}
 
 
+# Strategy designs started while research is still being enriched (trip id -> task), awaited by plan().
+_EARLY_STRATEGY: dict[str, "asyncio.Task"] = {}
+
+
 def _branch(domain: str, key: str, call):
     async def node(state: GraphState) -> GraphState:
         if not _dirty(state, domain):
@@ -493,8 +502,11 @@ async def collect(state: GraphState) -> GraphState:
         weather=pick("r_weather", old.weather),
         errors=list(state.get("r_errors") or []),
     )
-    await research.enrich(get_hub(), bundle, trip.trip_contract, review_lookups=_review_lookups(trip))
+    # The strategist needs only the raw options (airlines, fares, hotels): it starts now and works while enrichment
+    # prices places and reads guides, instead of waiting for planning (enrich cleans the data before its first await).
     trip.research = bundle
+    _EARLY_STRATEGY[trip.trip_id] = asyncio.create_task(strategist.design(trip))
+    await research.enrich(get_hub(), bundle, trip.trip_contract, review_lookups=_review_lookups(trip))
     for domain, n in (("flight", len(bundle.flights_outbound) + len(bundle.flights_return)), ("hotel", len(bundle.hotels)),
                       ("restaurant", len(bundle.restaurants)), ("activity", len(bundle.attractions)),
                       ("transfer", len(bundle.airport_transfers))):
@@ -529,6 +541,12 @@ async def plan(state: GraphState) -> GraphState:
                   if pid and key.split("|", 1)[-1].lower() in expert]
 
     # What each plan means for THIS trip: designed by the strategist from the real options, then applied by the engine.
+    early = _EARLY_STRATEGY.pop(trip.trip_id, None)
+    if early is not None:
+        try:
+            await early  # started during research (cached on the trip when it finishes)
+        except Exception as exc:  # the regular call below falls back to the defaults
+            log.info("early strategy failed: %s", exc)
     strategies = await strategist.design(trip)
     if not state.get("iteration"):
         sig: dict[str, list[str]] = {}

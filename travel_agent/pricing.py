@@ -30,7 +30,8 @@ OFFICIAL_ATTRACTIONS = 12   # likely picks checked on their own website (per cit
 OFFICIAL_RESTAURANTS = 8
 MENU_SEARCHES = 10          # likely restaurant picks whose menu is searched on the web (SerpApi, per city)
 CONCURRENCY = 6
-TIME_LIMIT_S = 35           # official-site checks stop here; whatever is found by then is used
+AI_BATCH = 20               # places per AI price-estimate call (batches run in parallel)
+TIME_LIMIT_S = 18           # official-site / menu checks stop here; whatever is found by then is used (cached for later)
 
 
 def _host(url: str) -> str:
@@ -44,7 +45,8 @@ def _agrees(a: Money, amount: float, currency: str) -> bool:
 def _candidates(bundle: ResearchBundle, scale: float) -> tuple[list[Place], list[Place]]:
     """Places whose price is not yet published by Google / a recent Wikivoyage edit, most likely picks first."""
     def unpriced(p: Place) -> bool:
-        return not p.price_known and bool(p.website) and "wikipedia.org" not in (p.website or "") and not p.dates
+        return not p.price_known and not p.price_checked and bool(p.website) and "wikipedia.org" not in (p.website or "") \
+            and not p.dates
 
     atts = sorted((p for p in bundle.attractions if unpriced(p)),
                   key=lambda p: (p.popularity != "must_see", -(p.reviews_count or 0)))
@@ -110,7 +112,8 @@ async def _menus(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, sk
     a typical meal per person built from the prices on it (one SerpApi search each, cached 30 days)."""
     city = bundle.destination_info.get("name") or contract.destination
     local = bundle.destination_info.get("currency", "USD")
-    todo = sorted((p for p in bundle.restaurants if not p.price_known and p.id not in skip and not p.dates),
+    todo = sorted((p for p in bundle.restaurants if not p.price_known and not p.price_checked and p.id not in skip
+                   and not p.dates),
                   key=lambda p: -(p.rating * min(p.reviews_count or 0, 3000) ** 0.25))[:max(3, int(MENU_SEARCHES * scale))]
     net.allow_extra_calls(len(todo))  # menu searches on top of the turn's flight / hotel / places searches
     gate = asyncio.Semaphore(CONCURRENCY)
@@ -147,7 +150,8 @@ async def _menus(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, sk
 
 def _unpriced(bundle: ResearchBundle) -> list[Place]:
     return [p for p in bundle.attractions + bundle.restaurants
-            if not p.price_known and not p.dates and not (p.cost_per_person.source or "").startswith("Wikivoyage")]
+            if not p.price_known and not p.price_checked and not p.dates
+            and not (p.cost_per_person.source or "").startswith("Wikivoyage")]
 
 
 async def _ai_guess(bundle: ResearchBundle, contract: TripContract) -> ai_fallback.CityPriceGuess | None:
@@ -156,9 +160,19 @@ async def _ai_guess(bundle: ResearchBundle, contract: TripContract) -> ai_fallba
     info = bundle.destination_info
     brief = [{"name": p.name, "type": p.kind, "categories": p.categories[:3], "cuisine": p.cuisine[:2],
               "price_level": p.price_level} for p in _unpriced(bundle)]
-    return await ai_fallback.estimate_prices(info.get("name") or contract.destination, info.get("country", ""),
-                                             info.get("currency", "USD"), brief,
-                                             "transit_verified" not in bundle.fares, "taxi_verified" not in bundle.fares)
+    city, country, cur = info.get("name") or contract.destination, info.get("country", ""), info.get("currency", "USD")
+    # Several short answers in parallel instead of one long one: the wall time of the slowest batch, not the sum.
+    batches = [brief[i:i + AI_BATCH] for i in range(0, len(brief), AI_BATCH)] or [[]]
+    results = await asyncio.gather(*(ai_fallback.estimate_prices(
+        city, country, cur, b, i == 0 and "transit_verified" not in bundle.fares,
+        i == 0 and "taxi_verified" not in bundle.fares) for i, b in enumerate(batches)), return_exceptions=True)
+    parts = [r for r in results if isinstance(r, ai_fallback.CityPriceGuess)]
+    if not parts:
+        return None
+    merged = parts[0].model_copy(deep=True)
+    for r in parts[1:]:
+        merged.places += r.places
+    return merged
 
 
 def _apply_ai(bundle: ResearchBundle, guess: ai_fallback.CityPriceGuess | None) -> int:
@@ -220,9 +234,23 @@ def coverage(bundle: ResearchBundle) -> dict:
     return cov
 
 
+# AI-estimated local fares per city (transit ticket, taxi tariff): the bundle's fares are rebuilt on every research
+# pass, but the estimate for a city doesn't change between turns - remembered instead of asking the model again.
+_AI_FARES: dict[str, tuple[dict, dict]] = {}
+FARE_KEYS = ("transit", "transit_ai", "taxi_base", "taxi_per_km", "taxi_ai")
+
+
 async def research_prices(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, scale: float = 1.0) -> None:
     """Official websites for the likely picks, then AI estimates for everything still unpriced."""
-    if llm.available():
+    city = f"{bundle.destination_info.get('name') or contract.destination}|{contract.budget.currency}"
+    known = _AI_FARES.get(city)
+    if known and not _unpriced(bundle):
+        # A later turn: every place is priced already and the city's fares were estimated before - no model call.
+        for k, v in known[0].items():
+            if f"{k.split('_')[0]}_verified" not in bundle.fares:
+                bundle.fares[k] = v
+        bundle.fare_sources.update({k: v for k, v in known[1].items() if k not in bundle.fare_sources})
+    elif llm.available():
         try:
             # In parallel: the AI estimate for everything unpriced, and the official-site checks (which win).
             guess_task = asyncio.create_task(_ai_guess(bundle, contract))
@@ -230,8 +258,15 @@ async def research_prices(hub: MCPHub, bundle: ResearchBundle, contract: TripCon
             official, menus = await asyncio.gather(_official(hub, bundle, scale),
                                                    _menus(hub, bundle, contract, on_site, scale))
             estimated = _apply_ai(bundle, await guess_task)
+            if any(k in bundle.fares for k in ("transit_ai", "taxi_ai")):
+                _AI_FARES[city] = ({k: bundle.fares[k] for k in FARE_KEYS if k in bundle.fares},
+                                   {k: v for k, v in bundle.fare_sources.items() if k in ("transit", "taxi")})
             log.info("prices %s: %d from official sites, %d from web-searched menus, %d AI estimates",
                      contract.destination, official, menus, estimated)
         except Exception as exc:  # pricing enrichment must never break planning
             log.warning("price research failed: %s", exc)
+    # The cascade ran for every place here: a later turn (new dates, a pace change) reuses these prices instead of
+    # checking the same websites and menus again.
+    for p in bundle.attractions + bundle.restaurants:
+        p.price_checked = True
     bundle.price_coverage = coverage(bundle)

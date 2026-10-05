@@ -41,7 +41,8 @@ class Settings:
     azure_api: str = os.getenv("AZURE_AI_API", "auto")  # auto (from the endpoint URL) | responses | chat
     azure_reasoning_effort: str = os.getenv("AZURE_AI_REASONING_EFFORT", "low")  # minimal | low | medium | high
     azure_reasoning_budget: int = int(os.getenv("AZURE_AI_REASONING_BUDGET", "8000"))  # extra output tokens for reasoning
-    azure_timeout: float = float(os.getenv("AZURE_AI_TIMEOUT", "180"))
+    azure_timeout: float = float(os.getenv("AZURE_AI_TIMEOUT", "60"))  # one HTTP attempt
+    llm_call_timeout: float = float(os.getenv("TRAVEL_AGENT_LLM_CALL_TIMEOUT", "75"))  # a whole call, retries included
 
     # Data providers (keys live in .env, never in code)
     serpapi_key: str = os.getenv("SERPAPI_API_KEY", "")

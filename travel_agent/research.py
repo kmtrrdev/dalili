@@ -235,6 +235,17 @@ async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, re
     from . import data_quality
 
     data_quality.check(bundle)  # impossible coordinates, duplicates, implausible prices never reach the plan
+    import time as _time
+
+    from . import telemetry
+
+    marks, t0 = {}, _time.perf_counter()
+
+    def mark(step: str) -> None:
+        nonlocal t0
+        now = _time.perf_counter()
+        marks[step] = round(now - t0, 2)
+        t0 = now
     local = bundle.destination_info.get("currency", "USD")
     d = contract.destination_ref
 
@@ -277,7 +288,9 @@ async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, re
                     "taxi_base": round(3.5 * to_user, 2), "taxi_per_km": round(1.3 * to_user, 2),
                     "intercity_base": round(3.0 * to_user, 2), "intercity_per_km": round(0.06 * to_user, 3)}
     for p in bundle.restaurants + bundle.attractions:
-        if not p.price_known and p.cost_per_person.currency == "USD" and p.cost_per_person.price_type == "estimated":
+        # Once per place: a reused place (later turn) is already scaled - scaling again would compound every turn.
+        if not p.price_known and not p.price_checked and p.cost_per_person.currency == "USD" \
+                and p.cost_per_person.price_type == "estimated":
             p.cost_per_person = Money(amount=round(p.cost_per_person.amount * bundle.cost_factor, 2), currency="USD",
                                       price_type="estimated")
     # Published prices replace the estimates wherever they exist; then the official websites of the likely
@@ -285,7 +298,9 @@ async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, re
     apply_local_prices(bundle, prices, user)
     from . import pricing
 
+    mark("local_prices_fx")
     await pricing.research_prices(hub, bundle, contract, scale=price_scale)
+    mark("pricing")
 
     # 3) Airport transfers for the airports the best flights actually land at.
     center = bundle.destination_info["center"]
@@ -305,6 +320,7 @@ async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, re
         except MCPToolError as exc:
             bundle.errors.append(f"transfers {code}: {exc}")
     bundle.airport_transfers = transfers
+    mark("transfers")
 
     # 4) What real guests say about the most likely picks: noise, plus aspect-based insights from the
     #    review-analyst agent (in parallel - each one is a review search and a model call).
@@ -322,8 +338,11 @@ async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, re
         if res.get("insights"):
             h.review_insights = ReviewInsights.model_validate(res["insights"])
 
+    mark("hotel_reviews")
     # 5) Real walking / driving times between everything the planner may use.
     await prepare_routing(bundle)
+    mark("routing")
+    telemetry.event("enrich_timing", city=bundle.destination_info.get("name"), **marks)
 
 
 MAX_NEW_INSIGHTS = 3  # each is one (30-day cached) review search + one model call

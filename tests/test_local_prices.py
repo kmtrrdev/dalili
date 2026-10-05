@@ -66,7 +66,7 @@ def test_quoted_tariffs_are_accepted_only_verbatim(monkeypatch):
                        lp.AirportFare(amount=40, currency="EUR", quote="a fixed fare of €40 to the city centre",
                                       airport="airport", mode="bus")])
 
-    async def parse(system, user, schema, max_tokens=16000):
+    async def parse(system, user, schema, max_tokens=16000, effort=None, timeout=None):
         return out
 
     monkeypatch.setattr(llm, "available", lambda: True)

@@ -60,3 +60,12 @@ def rome_research(rome_contract):
 def profile():
     return TravelerProfile(food_preferences=["italian"], activity_preferences=["food", "history", "photography"],
                            preferred_wake_up_time="08:30")
+
+
+@pytest.fixture(autouse=True)
+def _fresh_llm_cache():
+    """Each test starts with an empty model-answer cache (tests script different answers to the same prompt)."""
+    from travel_agent import llm
+
+    llm._PARSE_CACHE.clear()
+    yield

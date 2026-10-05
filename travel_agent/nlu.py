@@ -61,7 +61,12 @@ class Requirements(BaseModel):
         "A region instead of countries/cities, when the user wants you to choose (e.g. 'Europe', 'Southeast Asia')."))
     start_date: str | None = Field(default=None, description="YYYY-MM-DD")
     end_date: str | None = Field(default=None, description="YYYY-MM-DD, last day of the trip")
-    duration_days: int | None = None
+    duration_days: int | None = Field(default=None, description=(
+        "Total trip length in DAYS when the traveller states it in days ('a week' -> 7, 'خليها 4 أيام' -> 4)"))
+    nights: int | None = Field(default=None, description=(
+        "Total trip length in NIGHTS when the traveller states it in nights ('3 nights' / 'خليهم تلت ليالي' -> 3). "
+        "Absolute, never a difference: the code computes the dates. If they give both ('3 nights, 4 days'), "
+        "nights wins."))
     travel_month: int | None = Field(default=None, description=(
         "1-12, only when the user names a month without exact dates (e.g. 'in November' / 'في نوفمبر')"))
     travelers: int | None = None

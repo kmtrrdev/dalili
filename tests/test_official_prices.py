@@ -48,7 +48,7 @@ def test_official_price_follows_the_price_link(monkeypatch):
 
     seen = []
 
-    async def parse(system, user, schema, max_tokens=16000):
+    async def parse(system, user, schema, max_tokens=16000, effort=None, timeout=None):
         seen.append(user)
         return op.OfficialPrice(found=True, amount=17, currency="EUR", quote="Bilhete Adulto — 17€", what="adult")
 

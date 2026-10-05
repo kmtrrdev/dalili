@@ -87,7 +87,10 @@ Rules:
   - hotel: change_hotel / avoid_noise / upgrade; cheaper -> cheaper;
   - budget: set_budget (absolute) / adjust_budget (signed delta); "raise it to the real cost" -> set_budget with
     the plan total rounded up; "make it the cheapest possible / what's the minimum" -> requirements.wants_cheapest
-    = true (the planner finds the cheapest good trip and its cost); trip length: extend_trip / shorten_trip with amount = days; later_start text=HH:MM;
+    = true (the planner finds the cheapest good trip and its cost); later_start text=HH:MM;
+  - trip length: when the traveller states the NEW total ("make it 3 nights", "خليهم تلت ليالي", "4 days only") ->
+    requirements.nights or requirements.duration_days with that number - never compute a difference yourself.
+    extend_trip / shorten_trip (amount = days) only for relative changes ("one more day", "يوم زيادة", "a day less");
   - walking vs transport -> requirements.transport_preference (walk | mixed | public_transport | taxi);
   - new dates / travellers / destination -> requirements (ISO dates, resolve relative dates against 'today');
     flying home to a different city than the departure one ("back to Cairo, not Riyadh") -> requirements.return_to

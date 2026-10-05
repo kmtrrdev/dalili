@@ -36,7 +36,7 @@ async def analyze(hotel_name: str, reviews: list[dict]) -> ReviewInsights | None
         return None
     payload = {"hotel": hotel_name, "reviews": [{"rating": r.get("rating"), "text": t[:600]}
                                                 for r, t in zip(reviews, texts)]}
-    out = await llm.parse(SYSTEM, json.dumps(payload, ensure_ascii=False), ReviewInsights)
+    out = await llm.parse(SYSTEM, json.dumps(payload, ensure_ascii=False), ReviewInsights, timeout=30)
     if out is None:
         return None
     out.reviews_read = len(texts)

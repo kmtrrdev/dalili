@@ -229,7 +229,7 @@ def test_menu_search_gives_a_link_and_a_meal_built_from_quoted_prices(monkeypatc
         raise net.ProviderError("offline")
 
     def answer(items, meal):
-        async def parse(system, user, schema, max_tokens=16000, effort=None):
+        async def parse(system, user, schema, max_tokens=16000, effort=None, timeout=None):
             return menus.MenuEstimate(found=True, menu_url="https://menu.example/neve", currency="TRY",
                                       items=items, meal_per_person=meal, basis="main + drink")
         return parse
@@ -334,7 +334,7 @@ def _scripted_agent(monkeypatch, steps):
 
     script = iter(steps)
 
-    async def parse(system, user, schema, max_tokens=16000, effort=None):
+    async def parse(system, user, schema, max_tokens=16000, effort=None, timeout=None):
         return next(script) if schema is concierge.Step else None
 
     monkeypatch.setattr(llm, "available", lambda: True)
@@ -476,3 +476,18 @@ def test_responses_api_incomplete_falls_back(monkeypatch):
 
     monkeypatch.setattr(llm, "_azure_post", fake_post)
     assert anyio.run(llm.text, "sys", "hi") is None
+
+
+def test_a_stated_number_of_nights_is_absolute(rome_contract):
+    """'Make it 3 nights' on a 6-night trip: 3 nights (4 days) - the code does the arithmetic, never the model."""
+    from datetime import timedelta
+
+    from travel_agent.replanner import apply_requirements
+
+    trip = TripState(trip_contract=rome_contract)
+    d = trip.draft
+    d.start_date, d.end_date = rome_contract.start_date, rome_contract.end_date
+    ask = Requirements(nights=3, end_date=rome_contract.end_date.isoformat())  # an echoed old end date must not win
+    assert _changes_trip_frame(trip, TurnInterpretation(intent="update_requirements", requirements=ask))
+    apply_requirements(trip, ask)
+    assert d.end_date == d.start_date + timedelta(days=3) and d.duration_days == 4

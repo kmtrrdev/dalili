@@ -102,7 +102,7 @@ async def review(trip: TripState) -> Critique | None:
                "validator_warnings": [v.message for v in (trip.selected_plan.validation.violations
                                                           if trip.selected_plan.validation else [])][:8]}
     trace.step(trip, "critic", "thought", "Reviewing the plan as a senior travel planner.")
-    out = await llm.parse(SYSTEM, json.dumps(payload, ensure_ascii=False, default=str), Critique)
+    out = await llm.parse(SYSTEM, json.dumps(payload, ensure_ascii=False, default=str), Critique, timeout=35)  # optional step
     if out is None:
         return None
     out.quality = max(0, min(100, out.quality))

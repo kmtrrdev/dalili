@@ -199,7 +199,9 @@ async def design(trip: TripState) -> Strategies:
     c, r, p = trip.trip_contract, trip.research, trip.traveler_profile
     if c is None or r is None:
         return DEFAULTS
-    key = f"{c.route_name}|{c.start_date}|{c.end_date}|{c.travelers}|{c.budget.currency}|{p.model_dump_json(exclude={'learned'})}"
+    # Not the dates: moving them does not change what each plan stands for (its hotel shortlist falls back to the
+    # normal ranking if a shortlisted hotel is not offered on the new dates) - saves a model call per date change.
+    key = f"{c.route_name}|{c.travelers}|{c.budget.currency}|{p.model_dump_json(exclude={'learned'})}"
     cached = trip.metadata.get("strategies")
     # During the critic's refinement the strategies stay as they were (its edits must not re-design the plans).
     if cached and (cached.get("key") == key or trip.metadata.get("strategies_locked")):
@@ -213,7 +215,8 @@ async def design(trip: TripState) -> Strategies:
                "traveller": p.model_dump(include={"travel_style", "walking_tolerance", "transport_preference",
                                                    "activity_preferences", "food_preferences", "dietary_restrictions",
                                                    "flight_preference", "avoid_early_flights", "hotel_style"})}
-    out = await llm.parse(SYSTEM, json.dumps(payload, ensure_ascii=False, default=str), Strategies, effort="low")
+    out = await llm.parse(SYSTEM, json.dumps(payload, ensure_ascii=False, default=str), Strategies, effort="low",
+                          timeout=40)  # DEFAULTS if the model is slow
     if out is None:
         return DEFAULTS
     # The traveller's budget is a promise for the budget and balanced plans; upgrades stretch it by at most 50%.

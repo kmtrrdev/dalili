@@ -414,6 +414,7 @@ class Place(BaseModel):
     # Provenance / quality of the facts above
     hours_verified: bool = False    # True only when the provider published the hours (else typical hours assumed)
     price_known: bool = False       # True only when the provider published a price
+    price_checked: bool = False     # the price cascade already ran for this place (never repeated on later turns)
     dates: list[date] = Field(default_factory=list)  # events: only happens on these dates
     distance_km: float = 0.0        # straight-line distance from the city centre
     day_trip: bool = False          # outside the city: needs a dedicated (half) day and real travel time

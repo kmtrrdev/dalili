@@ -90,6 +90,8 @@ class _Cache:
                 (key, service, url, json.dumps(clean, sort_keys=True, default=str), redact(json.dumps(body)), time.time()))
 
     def log(self, service: str, url: str, cached: bool, ms: float) -> None:
+        if settings.http_mode == "replay":
+            return  # nothing is fetched live: logging every replayed hit only slows tests and churns the fixture
         with self.lock, self.conn:
             self.conn.execute("INSERT INTO http_log(service, url, at, cached, ms) VALUES (?, ?, ?, ?, ?)",
                               (service, url, time.time(), int(cached), ms))
