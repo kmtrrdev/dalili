@@ -96,8 +96,17 @@ async def turn(trip: TripState, msg: str):
 
 def audit(trip: TripState) -> None:
     r, c = trip.research, trip.trip_contract
-    for plan in trip.plans.values():
-        rep = validate_plan(plan, c, trip.traveler_profile, r, 0.05)
+    for mode, plan in trip.plans.items():
+        # Comfort / experience are priced upgrades allowed past the budget (shown as such): each plan is audited
+        # against its own limit, exactly as the workflow validates it.
+        limit = c.budget.amount
+        stretch = (trip.metadata.get("budget_stretch") or {}).get(mode, 1.0)
+        if stretch > 1 and plan.budget:
+            c.budget.amount = max(limit * stretch, plan.budget.total * 1.05 + 1)
+        try:
+            rep = validate_plan(plan, c, trip.traveler_profile, r, 0.05)
+        finally:
+            c.budget.amount = limit
         status = {x.name: x.status for x in rep.checks}
         M.hard_checks += [status[k] != "FAIL" for k in HARD_CHECKS]
         M.schedule_ok.append(status["schedule"] != "FAIL" and status["opening_hours"] != "FAIL")

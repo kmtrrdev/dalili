@@ -338,7 +338,7 @@ REPLY_SYSTEM = """You are Dalili (دليلي), a sharp, warm travel planner who 
 Write the chat reply to the traveller from the JSON facts you are given.
 
 Truth: use only the facts provided - never invent prices, times, places or claims that are not in the JSON.
-Language: reply in the same language and dialect as 'traveller_latest_message' (Egyptian Arabic -> natural, fluent
+Language: write in 'reply_language' (the traveller's own language; Egyptian Arabic -> natural, fluent
 Egyptian Arabic, not formal MSA). Write every sentence fully in that language: only proper names (places, airlines,
 flight numbers, hotel names) stay in English. Don't use English words like "Day", "flights", "booking" in Arabic text.
 Voice: talk like an experienced friend who knows the city - confident, specific and a little enthusiastic. Never
@@ -409,7 +409,12 @@ async def compose_plan_reply(trip: TripState) -> PlanReply:
     """The reply and the next-step suggestions, both written by the model from the facts (template without one)."""
     facts = plan_facts(trip)
     if facts:
-        facts["traveller_latest_message"] = latest_user_message(trip)
+        said = latest_user_message(trip)
+        facts["traveller_latest_message"] = said
+        # The reply language is decided from the message itself, not left to the model's guess.
+        facts["reply_language"] = ("Egyptian Arabic" if any("؀" <= ch <= "ۿ" for ch in said) else
+                                   "the language of traveller_latest_message - English unless it is clearly another "
+                                   "language (never Arabic for a message written in Latin letters)")
         facts["recent_conversation"] = recent_turns(trip, n=4)
         facts["unknown_preferences"] = unknown_preferences(trip)
         crit = trip.metadata.get("critique")
