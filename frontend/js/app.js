@@ -1405,6 +1405,28 @@ function renderIdeas() {
 }
 $("ideasForm").addEventListener("submit", loadIdeas);
 $("bookTrip").addEventListener("click", openBooking);
+$("ratePlan").addEventListener("click", openRating);
+
+// ------------------------------------------------------------------ human evaluation (anonymous 1-5 ratings)
+const RATE_DIMS = ["relevance", "personalization", "trust", "explanations", "itinerary", "usability", "confidence", "overall"];
+function openRating() {
+  if (!state.trip) return;
+  const box = modal(`<p class="eyebrow">${t("ratePlan")}</p><h3>${t("rateTitle")}</h3><p class="muted">${t("rateSub")}</p>
+    <form class="rate-form" id="rateForm">${RATE_DIMS.map((d) => `<div class="rate-row"><span>${t("rate." + d)}</span>
+      <div class="rate-scale" role="radiogroup" aria-label="${esc(t("rate." + d))}">${[1, 2, 3, 4, 5].map((v) =>
+        `<label><input type="radio" name="${d}" value="${v}" required><b>${v}</b></label>`).join("")}</div></div>`).join("")}
+      <textarea name="comment" maxlength="1000" placeholder="${esc(t("rateComment"))}"></textarea>
+      <button class="btn primary" type="submit">${t("rateSend")}</button></form>`);
+  box.querySelector("#rateForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const f = new FormData(e.target);
+    const ratings = Object.fromEntries(RATE_DIMS.map((d) => [d, +f.get(d)]));
+    const res = await fetch("/api/evaluations", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ trip_id: state.trip.trip_id, ratings, comment: f.get("comment") || "" }) });
+    box.innerHTML = `<p class="rate-done">${res.ok ? t("rateThanks") : t("rateFailed")}</p>`;
+    setTimeout(closeModal, 1600);
+  });
+}
 
 // ------------------------------------------------------------------ chat open / close
 function setChatOpen(open) {

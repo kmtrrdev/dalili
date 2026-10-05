@@ -32,6 +32,16 @@ CREATE TABLE IF NOT EXISTS events (
     data TEXT NOT NULL
 );
 CREATE INDEX IF NOT EXISTS idx_events_trip ON events(trip_id);
+CREATE TABLE IF NOT EXISTS evaluations (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,  -- BIGSERIAL on PostgreSQL (db.py)
+    rater TEXT NOT NULL,                   -- salted hash: anonymous, but one rater's answers can be grouped
+    trip_id TEXT,
+    variant TEXT NOT NULL,
+    ratings TEXT NOT NULL,                 -- {"relevance": 1-5, ...}
+    plan TEXT NOT NULL,                    -- the rated plan's own metrics (score, validity, confidence)
+    comment TEXT NOT NULL,
+    at TEXT NOT NULL
+);
 """
 
 
@@ -142,6 +152,20 @@ class Store:
         with self._lock:
             row = self._conn.execute("SELECT data FROM profiles WHERE user_id = ?", (user_id,)).fetchone()
         return TravelerProfile.model_validate_json(row[0]) if row else None
+
+    def add_evaluation(self, rater: str, trip_id: str | None, variant: str, ratings: dict, plan: dict,
+                       comment: str, at: str) -> None:
+        with self._lock, self._conn:
+            self._conn.execute(
+                "INSERT INTO evaluations(rater, trip_id, variant, ratings, plan, comment, at) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                (rater, trip_id, variant, json.dumps(ratings), json.dumps(plan, default=str), comment, at))
+
+    def evaluations(self) -> list[dict]:
+        with self._lock:
+            rows = self._conn.execute("SELECT rater, trip_id, variant, ratings, plan, comment, at FROM evaluations "
+                                      "ORDER BY id").fetchall()
+        return [{"rater": r, "trip_id": t, "variant": v, "ratings": json.loads(x), "plan": json.loads(p),
+                 "comment": c, "at": a} for r, t, v, x, p, c, a in rows]
 
     def events(self, trip_id: str) -> list[dict]:
         with self._lock:

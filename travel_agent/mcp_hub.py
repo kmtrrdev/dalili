@@ -20,6 +20,7 @@ from typing import Any
 from mcp.client.client import Client
 from mcp.client.stdio import StdioServerParameters
 
+from . import telemetry
 from .config import PROJECT_DIR, settings
 from .mcp_servers import activities, currency, flights, hotels, knowledge, maps, places, weather
 
@@ -57,6 +58,7 @@ class MCPHub:
         self.listeners: list = []
 
     def _notify(self, event: dict[str, Any]) -> None:
+        telemetry.record_tool(bool(event.get("ok")), float(event.get("ms") or 0))
         event = {**event, "turn": CURRENT_TURN.get()}
         for fn in list(self.listeners):
             try:

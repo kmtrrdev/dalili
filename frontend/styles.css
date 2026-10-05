@@ -1266,3 +1266,16 @@ html[data-theme="light"] .tm-me text { fill: #9a6200; }
 /* Link to the travel guides (crawlable internal link from the home page) */
 .guides-link { text-decoration: none; }
 @media (max-width: 720px) { .guides-link { display: none; } }
+
+/* Human evaluation form */
+.rate-form { display: grid; gap: 10px; margin-top: 12px; }
+.rate-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.rate-row > span { font-size: 13.5px; }
+.rate-scale { display: flex; gap: 6px; }
+.rate-scale label { cursor: pointer; }
+.rate-scale input { position: absolute; opacity: 0; pointer-events: none; }
+.rate-scale b { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 8px; border: 1px solid var(--line); font-size: 13px; }
+.rate-scale input:checked + b { background: var(--teal); color: #04110f; border-color: transparent; }
+.rate-scale input:focus-visible + b { outline: 2px solid var(--teal); outline-offset: 2px; }
+.rate-form textarea { min-height: 64px; resize: vertical; }
+.rate-done { font-size: 16px; text-align: center; padding: 24px 0; }

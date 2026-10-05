@@ -10,6 +10,8 @@ import hashlib
 import json
 import logging
 import re
+import time
+import uuid
 from datetime import date
 from typing import Literal
 
@@ -18,7 +20,7 @@ from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, PlainTex
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from . import llm, seo, tripbook
+from . import llm, seo, telemetry, tripbook
 from .auth import GUEST_COOKIE, GUEST_RE, SESSION_COOKIE, SESSION_DAYS, Accounts, AuthError, Identity, new_guest_id
 from .config import PROJECT_DIR, settings
 from .mcp_hub import SERVERS, get_hub
@@ -44,8 +46,26 @@ UNSAFE = {"POST", "PUT", "PATCH", "DELETE"}
 
 @app.middleware("http")
 async def web_basics(request: Request, call_next):
-    """Cross-site request guard, the guest cookie, security headers and UI revalidation."""
+    """Request id + access log, cross-site request guard, the guest cookie, security headers and UI revalidation."""
     path = request.url.path
+    rid = request.headers.get("x-request-id", "")
+    rid = rid if re.fullmatch(r"[A-Za-z0-9-]{8,64}", rid) else uuid.uuid4().hex[:16]
+    rid_token = telemetry.REQUEST_ID.set(rid)
+    started = time.perf_counter()
+    try:
+        response = await _handle(request, call_next, path)
+    finally:
+        telemetry.REQUEST_ID.reset(rid_token)
+    response.headers["X-Request-ID"] = rid
+    if path.startswith("/api/"):
+        # Path only (trip ids are random, no query strings): no personal data in the logs.
+        telemetry.log.info(json.dumps({"event": "request", "request_id": rid, "method": request.method, "path": path,
+                                       "status": response.status_code,
+                                       "ms": round((time.perf_counter() - started) * 1000)}))
+    return response
+
+
+async def _handle(request: Request, call_next, path: str):
     # A state-changing API call must come from this site (SameSite cookies already block most cross-site
     # requests; this also covers browsers and cases where they don't).
     origin = request.headers.get("origin")
@@ -629,6 +649,51 @@ async def similar_places(city: str, request: Request, limit: int = 6, who: Ident
 @app.get("/api/recommendations/map")
 async def taste_map(who: Identity = Depends(identity)):
     return await _recommender().taste_map(service.store.list_trips(who.id), accounts.activity(who.id), _interests(who))
+
+
+# ---------------------------------------------------------------------------
+# Human evaluation (anonymous ratings; summary for the operator)
+# ---------------------------------------------------------------------------
+
+
+class EvaluationIn(BaseModel):
+    trip_id: str | None = None
+    variant: str = Field("dalili", pattern=r"^[a-z0-9_-]{1,32}$")
+    ratings: dict[str, int]
+    comment: str = Field("", max_length=1000)
+
+
+@app.post("/api/evaluations")
+async def add_evaluation(body: EvaluationIn, request: Request, who: Identity = Depends(identity)):
+    from datetime import datetime, timezone
+
+    from . import evaluation
+
+    limit_light(request)
+    ratings = {k: v for k, v in body.ratings.items() if k in evaluation.DIMENSIONS}
+    if not ratings or any(not 1 <= v <= 5 for v in ratings.values()):
+        raise HTTPException(400, "Ratings are 1-5 for: " + ", ".join(evaluation.DIMENSIONS))
+    plan_metrics: dict = {}
+    if body.trip_id:
+        trip = _trip_or_404(body.trip_id, who)  # only your own trip
+        p = trip.selected_plan
+        if p:
+            plan_metrics = {"mode": p.mode, "score": p.score.total if p.score else None,
+                            "requirements_met": p.score.constraint_satisfaction if p.score else None,
+                            "valid": p.validation.result if p.validation else None,
+                            "price_confidence": p.budget.confidence if p.budget else None}
+    service.store.add_evaluation(evaluation.rater_id(who.id), body.trip_id, body.variant, ratings, plan_metrics,
+                                 body.comment.strip(), datetime.now(timezone.utc).isoformat())
+    return {"saved": True}
+
+
+@app.get("/api/evaluations/summary")
+async def evaluation_summary(request: Request):
+    from . import evaluation
+
+    if not is_admin(request):
+        raise HTTPException(404, "Not found")
+    return evaluation.summary(service.store.evaluations())
 
 
 @app.get("/api/recommendations/model")

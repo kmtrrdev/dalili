@@ -24,6 +24,7 @@ from typing import TypeVar
 import httpx
 from pydantic import BaseModel, ValidationError
 
+from . import telemetry
 from .config import settings
 
 log = logging.getLogger(__name__)
@@ -104,14 +105,20 @@ async def _azure_post(body: dict):
     if resp is None:
         last_error = "Azure AI endpoint unreachable"
         log.warning("Azure AI unreachable, using rule-based fallback")
+        telemetry.record_llm(None, ok=False)
         return None
     if resp.status_code != 200:
         last_error = {401: "Azure AI key rejected (HTTP 401)", 403: "Azure AI access denied (HTTP 403)",
                       429: "Azure AI rate limit / quota reached (HTTP 429)"}.get(
             resp.status_code, f"Azure AI returned HTTP {resp.status_code}")
         log.warning("Azure AI returned %s, using rule-based fallback: %s", resp.status_code, resp.text[:200])
+        telemetry.record_llm(None, ok=False)
         return None
     last_error = None
+    try:
+        telemetry.record_llm(resp.json().get("usage"), ok=True)
+    except ValueError:
+        telemetry.record_llm(None, ok=True)
     return resp
 
 
@@ -213,6 +220,8 @@ async def _claude_parse(system: str, user: str, schema: type[T], max_tokens: int
     except anthropic.APIStatusError as exc:
         log.warning("Claude API error %s, using rule-based fallback: %s", exc.status_code, exc.message)
         return None
+    telemetry.record_llm({"input_tokens": response.usage.input_tokens, "output_tokens": response.usage.output_tokens},
+                         ok=response.stop_reason != "refusal")
     if response.stop_reason == "refusal":
         log.warning("Claude declined the request; using rule-based fallback.")
         return None

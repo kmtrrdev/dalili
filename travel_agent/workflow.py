@@ -22,7 +22,7 @@ from typing import Annotated, Any, TypedDict
 
 from langgraph.graph import END, START, StateGraph
 
-from . import conflicts, constraints, journey, narrative, net, research, route_design
+from . import conflicts, constraints, journey, narrative, net, research, route_design, telemetry
 from .agents import concierge, critic, strategist, trace
 from .providers import geo
 from .config import settings
@@ -1013,13 +1013,18 @@ async def run_turn(trip: TripState, message: str = "", preset_actions: list[Acti
     trip.metadata["refreshed"] = []  # research domains refreshed this turn (set by collect)
     trip.metadata["suggestions"] = []
     started = time.perf_counter()
-    result = await get_graph().ainvoke(
-        {"trip": trip, "message": message, "preset_actions": preset_actions or [], "route_decision": route_decision},
-        {"recursion_limit": 80},
-    )
+    usage = telemetry.new_usage()
+    token = telemetry.USAGE.set(usage)
+    try:
+        result = await get_graph().ainvoke(
+            {"trip": trip, "message": message, "preset_actions": preset_actions or [], "route_decision": route_decision},
+            {"recursion_limit": 80},
+        )
+    finally:
+        telemetry.USAGE.reset(token)
     trip = result["trip"]
     reply = result.get("reply", "")
-    trip.metadata["last_turn_ms"] = round((time.perf_counter() - started) * 1000)
+    _finish_turn(trip, usage, started)
     trip.conversation.append(ChatMessage(role="assistant", content=reply))
     return trip, reply
 
@@ -1069,11 +1074,14 @@ async def run_turn_stream(trip: TripState, message: str = "", preset_actions: li
             queue.put_nowait(None)
 
     hub.listeners.append(on_tool)
+    usage = telemetry.new_usage()
     token = CURRENT_TURN.set(turn_id)  # copied into the runner task and every node/tool call it starts
+    utoken = telemetry.USAGE.set(usage)
     try:
         task = asyncio.create_task(runner())
     finally:
         CURRENT_TURN.reset(token)
+        telemetry.USAGE.reset(utoken)
     try:
         while (event := await queue.get()) is not None:
             yield event
@@ -1084,6 +1092,19 @@ async def run_turn_stream(trip: TripState, message: str = "", preset_actions: li
         return
     trip = final["trip"]
     reply = final.get("reply", "")
-    trip.metadata["last_turn_ms"] = round((time.perf_counter() - started) * 1000)
+    _finish_turn(trip, usage, started)
     trip.conversation.append(ChatMessage(role="assistant", content=reply))
     yield {"type": "done", "trip": trip, "reply": reply}
+
+
+def _finish_turn(trip: TripState, usage: dict, started: float) -> None:
+    """Per-turn telemetry on the trip (latency, model calls and tokens, cost estimate, tools, live searches) and one
+    structured log line - counts only, never the conversation."""
+    ms = (time.perf_counter() - started) * 1000
+    trip.metadata["last_turn_ms"] = round(ms)
+    trip.metadata["usage"] = telemetry.finish(usage, net.serpapi_calls_this_turn(), ms)
+    plan = trip.selected_plan
+    telemetry.event("turn", trip=trip.trip_id, mode=trip.selected_mode,
+                    validation=plan.validation.result if plan and plan.validation else None,
+                    repairs=len(trip.metadata.get("repair_history") or []),
+                    conflicts=len(trip.metadata.get("conflicts") or []), **trip.metadata["usage"])
