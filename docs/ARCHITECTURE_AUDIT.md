@@ -119,3 +119,56 @@ Rejected or reduced (not convinced):
   be noise. It is used where it fits: destination ideas.
 - Numeric "confidence" on every decision: only where evidence exists (price provenance, weather source,
   data completeness). No fabricated scores.
+
+## 4. What was implemented (Phases 2-10)
+
+| Phase | Change | Main files |
+|---|---|---|
+| 2 Correctness | currency-safe caps and comparisons; FX second source + reported gaps; redistribution respects repairs; requested evenings never overwritten; post-midnight arrivals; stop order and schedule on the same legs; energy checked against each day's agreed capacity; every city's hotel and every leg reality-checked; independent flight directions; Wikivoyage outage no longer fatal; no reuse of other dates' research; MCP timeouts and bounded caches; critic refinement compared on the same strategies | engine/*, net.py, providers/currency.py, research.py, workflow.py, mcp_hub.py |
+| 3 Constraints | typed `Constraint` (priority hard/soft/preference/nice-to-have, source explicit/inferred/learned/default, confidence, flexibility, evidence); "must" vs "if there's time" places; stated priorities | constraints.py, models.py, nlu.py, replanner.py |
+| 4 Conflicts | infeasibility detection, atomic relaxations priced from existing research, combination search, ranking by experience loss + priority of bent constraints + the traveller's priorities, confirmation required | conflicts.py |
+| 5 Trust | verified / calculated / estimated / unknown on every price; budget split by trust with evidence-based confidence; real fetch time and stale flag; price conflicts kept; menu meals labelled calculated | models.py, engine/budget.py, pricing.py, net.py |
+| 6 Personalization | preference memory (stated vs inferred, evidence counts, contradiction, half-life decay; only memory saved to the account); hybrid trip ideas (request fit + Doc2Vec taste) | preferences.py, service.py, suggest.py, recommender/engine.py |
+| 7 Scoring / critic | hierarchical TripScore (feasible > requirements > preferences > quality; no hard violation above 49); weights follow the plan and the traveller's priorities (also in the flight+hotel objective); multi-objective critic acceptance | engine/scoring.py, engine/planner.py, workflow.py |
+| 8 What-if / repair | one comparison for chat and API (every plan, validity, requirements, constraint changes, incremental vs full replanning); repair before/after tracking with automatic revert | whatif.py, service.py, workflow.py |
+| 9 Evaluation | planner benchmark, ablation A-F, human-evaluation endpoint + statistics, data-quality gate, freshness and unverifiable-dietary checks | eval/*, evaluation.py, data_quality.py, engine/validators.py |
+| 10 Security / ops | CSP with script hashes, HSTS, escaped tooltips, http(s)-only links, SSRF-safe fetch, rate limits, size caps, unforgeable client IP, operator-only details, prompt-injection framing, turn-scoped events; request ids, structured logs, per-turn tokens/cost/tools | api.py, security.py, net.py, telemetry.py, models.py |
+
+## 5. Tests added
+
+test_correctness, test_preferences, test_constraints, test_scoring, test_whatif_repair, test_security,
+test_human_eval, test_data_quality, test_benchmark, plus SSRF/provenance cases in test_net and affinity/blending in
+test_recommender. Suite: 212 passed, 2 skipped (offline, replayed real data).
+
+## 6. Evaluation
+
+See `eval/EVALUATION.md` (all numbers from real runs): Dalili had 0 hard violations in 6/6 benchmark scenarios vs
+1.5-4 for baselines and 2.3 for the LLM planner; the ablation shows MCP data is what grounds the plan and the
+optimizer + validators are what make it feasible (C: 18.7 violations -> E: 1.2 -> F: 0).
+
+## 7. Remaining limitations
+
+- Multi-city legs are chosen city by city. Legs are on fixed dates and independent, so this is cost-optimal for
+  the legs; it is not a joint optimisation of legs with each city's hotel/time trade-offs.
+- Confidence is evidence-based but not calibrated against outcomes (no ground truth for estimated prices).
+- No accessibility or age data model: the planner cannot reason about mobility needs or children yet.
+- Dietary checks are verifiable only for vegetarian/vegan (what providers tag); others are flagged, not checked.
+- Rate limits are per process (in memory); multiple replicas each enforce their own window.
+- Benchmark/ablation: 6 scenarios in 2 cities; human evaluation has no ratings yet.
+- In AI-fallback mode (live search down), estimated places carry estimated review counts that influence ranking.
+
+## 8. Future research directions
+
+Calibrating price confidence on published-vs-estimated pairs; joint multi-city optimisation (legs + stays) as one
+model; learning the TripScore weights from human ratings (the endpoint stores both); counterfactual explanations
+("you would get X if the budget were Y") from the conflict search; larger recorded benchmark across regions.
+
+## 9. Assumptions and defaults still in the code
+
+Configurable fallbacks (documented where defined): budget buffer 5% (`TRAVEL_AGENT_BUDGET_BUFFER`), preference
+threshold 0.5 / half-life 180 days, MCP timeout 150 s, rate limits (`DALILI_*`), LLM prices for the cost estimate.
+Travel fallbacks used only when data is missing: meal durations and windows, airport processing times, detour
+factors and default fares, assumed opening hours by place type, 2 travellers per room when rooms are not stated,
+category price levels. Strategy defaults when no model is available (`strategist.DEFAULTS`). Conflict-ranking and
+hybrid-recommender weights are ranking heuristics (documented in conflicts.py / suggest.py), applied to computed
+quantities.
