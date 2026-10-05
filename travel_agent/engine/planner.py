@@ -240,6 +240,15 @@ def select_core(ctx: PlanContext) -> tuple[Ranked | None, Ranked | None, Ranked 
         weights = (weights[0], weights[1], 0.2 + 2.2 * pw)
     # How much an extra hour on the ground is worth: a short trip lives or dies by its arrival and departure times.
     hour_weight = {"balanced": 0.5, "budget": 0.25, "comfort": 0.5, "experience": 0.8}[ctx.mode] / max(c.num_days, 1)
+    # What the traveller said matters most re-weights the objective (earlier priorities weigh more).
+    for i, pr in enumerate(c.priorities[:3]):
+        boost = (1.5, 1.35, 1.2)[i]
+        if pr == "cost":
+            weights = (weights[0], weights[1], weights[2] * boost)
+        elif pr == "comfort":
+            weights = (weights[0] * boost, weights[1] * boost, weights[2])
+        elif pr == "time_in_city":
+            hour_weight *= boost
     best, best_obj, cheapest, cheapest_total = None, -math.inf, None, math.inf
     pressure_share = 1.0 - 0.06 * ctx.knobs.price_pressure
     # Best-scored hotels plus the cheapest ones, so a tight budget can always reach them.

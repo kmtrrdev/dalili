@@ -722,7 +722,7 @@ async def finalize(state: GraphState) -> GraphState:
     if c and c.budget.hard_limit and selected and not selected.within_budget:
         fitting = [m for m, p in trip.plans.items() if p.within_budget]
         if fitting:
-            best = max(fitting, key=lambda m: trip.plans[m].score.total if trip.plans[m].score else 0)
+            best = max(fitting, key=lambda m: trip.plans[m].score.rank_key() if trip.plans[m].score else (False,))
             trip.assumptions.append(f"The {trip.selected_mode} plan went over your hard budget, so I'm showing the "
                                     f"{best} plan instead.")
             trip.selected_mode = best  # type: ignore[assignment]
@@ -745,6 +745,40 @@ def _score(p: TripPlan | None) -> float:
     return p.score.total if p and p.score else 0.0
 
 
+def _reality(p: TripPlan | None) -> int:
+    return sum(1 for v in (p.validation.errors if p and p.validation else []) if v.check == "reality")
+
+
+def _coverage(p: TripPlan | None) -> int:
+    return sum(d.activity_count for d in p.days) if p else 0
+
+
+def refinement_verdict(trip: TripState, before: TripPlan | None, after: TripPlan | None) -> tuple[bool, list[str]]:
+    """Multi-objective acceptance of the critic's refinement - every condition must hold, a better score alone
+    is never enough: no new hard violations, no new ungrounded items, the traveller's requirements and
+    preferences not worse, no lost icon or noticeable loss of coverage, and quality at least as good."""
+    if not before or not after or not before.score or not after.score:
+        return False, ["missing plan or score"]
+    b, a = before.score, after.score
+    reasons = []
+    if _errors(after) > _errors(before):
+        reasons.append(f"hard violations {_errors(before)} -> {_errors(after)}")
+    if _reality(after) > _reality(before):
+        reasons.append("an ungrounded item appeared")
+    if a.constraint_satisfaction < b.constraint_satisfaction:
+        reasons.append(f"requirements met {b.constraint_satisfaction}% -> {a.constraint_satisfaction}%")
+    if a.preference_satisfaction < b.preference_satisfaction - 5:
+        reasons.append(f"preferences met {b.preference_satisfaction}% -> {a.preference_satisfaction}%")
+    lost = _lost_icons(trip, before, after)
+    if lost:
+        reasons.append("would drop " + ", ".join(lost))
+    if _coverage(after) < _coverage(before) - 1:
+        reasons.append(f"sights {_coverage(before)} -> {_coverage(after)}")
+    if a.quality < b.quality - 1:
+        reasons.append(f"quality {b.quality} -> {a.quality}")
+    return not reasons, reasons
+
+
 def _lost_icons(trip: TripState, before: TripPlan | None, after: TripPlan | None) -> list[str]:
     """World-famous sights in the plan before a refinement that are gone after it (the score can't see that)."""
     if not before or not after or not trip.research:
@@ -765,10 +799,8 @@ async def critic_node(state: GraphState) -> GraphState:
         trip.metadata.pop("strategies_locked", None)
         before, after = backup["plans"][backup["mode"]], trip.selected_plan
         crit = trip.metadata.get("critique") or {}
-        lost = _lost_icons(trip, before, after)
-        if lost:
-            trace.step(trip, "critic", "thought", f"The refinement would drop {', '.join(lost)} - an icon of the city.")
-        if lost or _errors(after) > _errors(before) or _score(after) < _score(before) - 1:
+        accepted, why_not = refinement_verdict(trip, before, after)
+        if not accepted:
             trip.plans, trip.selected_mode = backup["plans"], backup["mode"]
             trip.user_knobs, trip.traveler_profile = backup["knobs"], backup["profile"]
             trip.pinned_days, trip.excluded_ids = backup["pins"], backup["excluded"]
@@ -778,8 +810,7 @@ async def critic_node(state: GraphState) -> GraphState:
             for i in crit.get("issues", []):
                 i["applied"] = False
             trace.step(trip, "critic", "decision",
-                       f"Refinement rejected: score {_score(before)} -> {_score(after)}, errors {_errors(before)} -> "
-                       f"{_errors(after)}. Kept the original plan.")
+                       "Refinement rejected (" + "; ".join(why_not) + "). Kept the original plan.")
         else:
             crit["changes"] = diff_plans(before, after)
             trace.step(trip, "critic", "decision",

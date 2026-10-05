@@ -95,5 +95,86 @@ def score_plan(plan: TripPlan, contract: TripContract, profile: TravelerProfile,
         "budget_fit": _c(budget_fit), "comfort": _c(comfort), "food": _c(food), "activities": _c(activities),
         "transportation": _c(transportation), "personal_fit": _c(personal), "schedule_quality": _c(schedule_quality),
     }
-    total = sum(parts[k] * w for k, w in WEIGHTS[mode].items())
-    return TripScore(total=_c(total), **parts)
+    weights = weights_for(mode, contract.priorities)
+    quality = _c(sum(parts[k] * w for k, w in weights.items()))
+
+    # The hierarchy: hard feasibility, then the traveller's hard requirements, then their preferences.
+    hard_met, hard_total, pref_met, pref_total, unmet = _constraint_status(plan, contract, research, acts, interests,
+                                                                           density_pen, walk_over)
+    cs = 100 if not hard_total else _c(100 * hard_met / hard_total)
+    ps = 100 if not pref_total else _c(100 * pref_met / pref_total)
+    feasible = errors == 0
+    # The displayed total can't hide a broken requirement: no hard violation scores above 49, no unmet hard
+    # requirement above 79 - quality only ranks plans that are equally sound.
+    total = quality
+    if not feasible:
+        total = min(total, 49)
+    elif cs < 100:
+        total = min(total, 79)
+    return TripScore(total=_c(total), feasible=feasible, hard_violations=errors, constraint_satisfaction=cs,
+                     preference_satisfaction=ps, quality=quality, unmet=unmet, weights=weights, **parts)
+
+
+# What the traveller says matters most re-weights the experience parts (first priority most), on top of the plan's
+# own weights; renormalised so totals stay comparable.
+PRIORITY_PART = {"cost": "budget_fit", "comfort": "comfort", "sights": "activities", "food": "food",
+                 "less_walking": "transportation", "relaxed_schedule": "schedule_quality", "time_in_city": "activities"}
+PRIORITY_BOOST = (0.5, 0.35, 0.2)
+
+
+def weights_for(mode: PlanningMode, priorities: list[str] | None) -> dict[str, float]:
+    w = dict(WEIGHTS[mode])
+    for i, pr in enumerate((priorities or [])[:len(PRIORITY_BOOST)]):
+        part = PRIORITY_PART.get(pr)
+        if part:
+            w[part] *= 1 + PRIORITY_BOOST[i]
+    s = sum(w.values())
+    return {k: round(v / s, 4) for k, v in w.items()}
+
+
+def _constraint_status(plan: TripPlan, contract: TripContract, research: ResearchBundle, acts, interests,
+                       density_pen: float, walk_over: float) -> tuple[int, int, float, int, list[str]]:
+    """How many of the traveller's hard requirements and preferences this plan meets (only those they have)."""
+    v = plan.validation
+    msgs = [x.message.lower() for x in (v.violations if v else []) if x.check == "preferences" and x.severity == "error"]
+    in_plan = {i.place_id for d in plan.days for i in d.items if i.place_id}
+    flights = [f for f in [plan.outbound_flight, plan.return_flight] + list(plan.legs) if f and f.mode == "flight"]
+    hard_met = hard_total = pref_total = 0
+    pref_met = 0.0
+    unmet: list[str] = []
+    for c in contract.constraints:
+        if c.source == "default" or c.priority not in ("hard", "soft", "preference"):
+            continue
+        ok: float | None = None
+        if c.type == "budget_max":
+            ok = float(plan.within_budget)
+        elif c.type == "must_visit":
+            ok = float(plan.requested.get(str(c.value)) is not None) if str(c.value) in plan.requested else None
+        elif c.type == "dietary":
+            ok = float(not any("diet" in m or "vegetarian" in m or "vegan" in m for m in msgs))
+        elif c.type == "avoid_category":
+            ok = float(not any(str(c.value).lower() in m for m in msgs))
+        elif c.type == "direct_flights":
+            ok = float(all(f.stops == 0 for f in flights)) if flights else None
+        elif c.type == "no_early_flights":
+            ok = float(not any("early" in m for m in msgs))
+        elif c.type == "wish":
+            ok = float(any(str(c.value).lower() in (research.place(p).name.lower() if research.place(p) else "")
+                           for p in in_plan))
+        elif c.type == "pace":
+            ok = float(density_pen == 0)
+        elif c.type == "walking":
+            ok = float(walk_over == 0)
+        elif c.type == "interests" and acts and interests:
+            ok = sum(1 for a in acts if interests & set(a.categories)) / len(acts)
+        if ok is None:
+            continue
+        if c.priority == "hard":
+            hard_total += 1
+            hard_met += int(ok >= 1)
+        else:
+            pref_total += 1
+            pref_met += ok
+        if ok < 1:
+            unmet.append(f"{c.type}: {c.value}")
+    return hard_met, hard_total, pref_met, pref_total, unmet

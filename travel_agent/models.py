@@ -588,6 +588,8 @@ class ValidationReport(BaseModel):
 
 
 class TripScore(BaseModel):
+    """Hierarchical: feasibility, then the traveller's hard requirements, then preferences, then quality.
+    A plan that breaks a hard requirement never outranks one that doesn't, however good it is otherwise."""
     total: int
     budget_fit: int
     comfort: int
@@ -596,6 +598,16 @@ class TripScore(BaseModel):
     transportation: int
     personal_fit: int
     schedule_quality: int
+    feasible: bool = True               # no hard validation errors
+    hard_violations: int = 0
+    constraint_satisfaction: int = 100  # share of the traveller's hard requirements met
+    preference_satisfaction: int = 100  # share of their preferences met
+    quality: int = 0                    # the weighted experience parts (weights follow the plan and the traveller)
+    unmet: list[str] = Field(default_factory=list)  # requirements / preferences this plan does not meet
+    weights: dict[str, float] = Field(default_factory=dict)
+
+    def rank_key(self) -> tuple:
+        return (self.feasible, self.constraint_satisfaction, self.preference_satisfaction, self.quality)
 
 
 class StopPlan(BaseModel):
