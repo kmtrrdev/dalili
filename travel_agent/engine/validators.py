@@ -184,7 +184,40 @@ def validate_preferences(plan: TripPlan, contract: TripContract, profile: Travel
     if missing:
         out.append(Violation(check="preferences", severity="warning",
                              message="Must-have not covered yet: " + ", ".join(sorted(missing))))
+    # Restrictions the data can't confirm (only vegetarian / vegan are tagged by the providers): never passed
+    # silently - each meal place that doesn't list it is named so the traveller can check.
+    unverifiable = [d for d in profile.dietary_restrictions if d.lower() not in ("vegetarian", "vegan")]
+    for d in unverifiable:
+        places = sorted({p.name for day in plan.days for i in day.items if i.kind == "meal" and i.place_id
+                         and (p := research.place(i.place_id)) and d.lower() not in {x.lower() for x in p.dietary}})
+        if places:
+            out.append(Violation(check="preferences", severity="warning",
+                                 message=f"{d.title()} options couldn't be verified for: " + ", ".join(places[:6]) +
+                                         " - please check with the restaurant."))
     return out
+
+
+def validate_freshness(plan: TripPlan) -> list[Violation]:
+    """Prices the plan rests on that are old or came from an expired cache (the provider was unavailable)."""
+    from datetime import datetime, timezone
+
+    out = []
+    now = datetime.now(timezone.utc)
+    for label, x in [("hotel", plan.hotel)] + [("hotel", s.hotel) for s in plan.stops] + \
+            [("flight", f) for f in [plan.outbound_flight, plan.return_flight] + list(plan.legs)]:
+        if x is None:
+            continue
+        age_h = (now - x.metadata.retrieved_at).total_seconds() / 3600
+        name = getattr(x, "name", None) or getattr(x, "flight_number", "")
+        if x.metadata.stale:
+            out.append(Violation(check="freshness", severity="warning",
+                                 message=f"The {label} price for {name} comes from an earlier search (the provider was "
+                                         "unavailable) - check it before booking."))
+        elif age_h > 48:
+            out.append(Violation(check="freshness", severity="warning",
+                                 message=f"The {label} price for {name} was found {age_h / 24:.0f} days ago - prices "
+                                         "may have changed."))
+    return list({v.message: v for v in out}.values())  # one line per item (a multi-city hotel may repeat)
 
 
 def validate_energy(plan: TripPlan, profile: TravelerProfile) -> list[Violation]:
@@ -251,7 +284,8 @@ def validate_reality(plan: TripPlan, research: ResearchBundle) -> list[Violation
     return out
 
 
-CHECK_ORDER = ["budget", "schedule", "distance", "opening_hours", "preferences", "energy", "weather", "reality"]
+CHECK_ORDER = ["budget", "schedule", "distance", "opening_hours", "preferences", "energy", "weather", "reality",
+               "freshness"]
 
 
 def validate_plan(plan: TripPlan, contract: TripContract, profile: TravelerProfile, research: ResearchBundle,
@@ -265,6 +299,7 @@ def validate_plan(plan: TripPlan, contract: TripContract, profile: TravelerProfi
         + validate_energy(plan, profile)
         + validate_weather(plan, research)
         + validate_reality(plan, research)
+        + validate_freshness(plan)
     )
     checks = [_check(name, violations) for name in CHECK_ORDER]
     result = "FAIL" if any(v.severity == "error" for v in violations) else "PASS"

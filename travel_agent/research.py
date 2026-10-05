@@ -232,6 +232,9 @@ async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, re
                  price_scale: float = 1.0) -> None:
     user = contract.budget.currency.upper()
     bundle.errors = list(bundle.errors)
+    from . import data_quality
+
+    data_quality.check(bundle)  # impossible coordinates, duplicates, implausible prices never reach the plan
     local = bundle.destination_info.get("currency", "USD")
     d = contract.destination_ref
 
