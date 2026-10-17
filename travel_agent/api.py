@@ -24,6 +24,7 @@ from . import llm, seo, telemetry, tripbook
 from .auth import GUEST_COOKIE, GUEST_RE, SESSION_COOKIE, SESSION_DAYS, Accounts, AuthError, Identity, new_guest_id
 from .config import PROJECT_DIR, settings, today
 from .mcp_hub import SERVERS, get_hub
+from .models import PlanningMode
 from .nlu import Action
 import httpx
 
@@ -191,7 +192,7 @@ class WhatIfIn(BaseModel):
 
 
 class SelectIn(BaseModel):
-    mode: Literal["balanced", "budget", "comfort", "experience"]
+    mode: PlanningMode
 
 
 class ReplanIn(BaseModel):

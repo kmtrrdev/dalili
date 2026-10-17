@@ -60,13 +60,6 @@ async def rates(base: str, quotes: list[str], allow_missing: bool = False) -> tu
                          source_url="https://frankfurter.dev")
 
 
-async def to_user_rates(user_currency: str, currencies: list[str]) -> tuple[dict[str, float], Metadata]:
-    """Multipliers that convert an amount in each currency into the user's currency."""
-    user = user_currency.upper()
-    per_user, meta = await rates(user, currencies)
-    return {c: (1.0 / v if c != user else 1.0) for c, v in per_user.items()}, meta
-
-
 async def convert(amount: float, from_cur: str, to_cur: str) -> tuple[float, float, Metadata]:
     r, meta = await rates(from_cur, [to_cur])
     rate = r[to_cur.upper()]

@@ -98,10 +98,6 @@ class PlanContext:
         return self.contract.budget.currency
 
     @property
-    def local_cur(self) -> str:
-        return self.research.destination_info.get("currency", "EUR")
-
-    @property
     def walking(self) -> str:
         return self.knobs.walk_tolerance_override or self.profile.walking_tolerance
 

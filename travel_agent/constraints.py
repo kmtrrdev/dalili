@@ -20,8 +20,6 @@ from typing import Any
 from . import preferences
 from .models import Constraint, TripContract, TripState
 
-PRIORITY_RANK = {"hard": 3, "soft": 2, "preference": 1, "nice_to_have": 0}
-
 
 def _c(cid: str, ctype: str, value: Any, priority: str, source: str, reason: str, *, unit: str | None = None,
        evidence: str | None = None, confidence: float = 1.0, flexibility: str = "negotiable",

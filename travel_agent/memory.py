@@ -13,10 +13,10 @@ TURNS = 10           # messages kept (5 exchanges)
 MAX_CHARS = 700      # per message: long plan summaries are cut, the start carries the gist
 
 
-def recent_turns(trip: TripState, n: int = TURNS, exclude_last_user: bool = True) -> list[dict]:
+def recent_turns(trip: TripState, n: int = TURNS) -> list[dict]:
     """The last `n` messages before the one being answered, oldest first: [{"role", "text"}]."""
     msgs = list(trip.conversation)
-    if exclude_last_user and msgs and msgs[-1].role == "user":
+    if msgs and msgs[-1].role == "user":
         msgs = msgs[:-1]  # the current message is passed on its own
     out = []
     for m in msgs[-n:]:

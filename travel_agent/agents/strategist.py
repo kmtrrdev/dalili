@@ -24,7 +24,7 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 from .. import llm
-from ..models import TripState
+from ..models import PLANNING_MODES, TripState
 from . import trace
 
 
@@ -217,10 +217,13 @@ async def design(trip: TripState) -> Strategies:
     if out is None:
         return DEFAULTS
     # The traveller's budget is a promise for the budget and balanced plans; upgrades stretch it by at most 50%.
-    for mode in ("budget", "balanced", "comfort", "experience"):
+    # Everything else the model chose is kept inside the ranges the engine understands.
+    for mode in PLANNING_MODES:
         s = getattr(out, mode)
         s.budget_stretch = 0.0 if mode in ("budget", "balanced") else min(max(s.budget_stretch, 0.0), 0.5)
+        s.activities.pace_delta = min(max(s.activities.pace_delta, -1), 1)
+        s.food.max_price_level = min(max(s.food.max_price_level, 1), 4)
+        s.food.min_price_level = min(max(s.food.min_price_level, 1), s.food.max_price_level)
     trip.metadata["strategies"] = {"key": key, "value": out.model_dump()}
-    trace.step(trip, "strategist", "decision", " | ".join(f"{m}: {getattr(out, m).headline}" for m in
-                                                         ("budget", "balanced", "comfort", "experience")))
+    trace.step(trip, "strategist", "decision", " | ".join(f"{m}: {getattr(out, m).headline}" for m in PLANNING_MODES))
     return out

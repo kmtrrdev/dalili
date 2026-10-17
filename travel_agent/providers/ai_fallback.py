@@ -411,10 +411,3 @@ async def airports(city: str, country: str) -> list[AIAirport]:
                      {"city": city, "country": country}, AIAirports)
     return [a for a in (res.airports if res else []) if len(a.iata) == 3][:3]
 
-
-def meta_for_estimate() -> Metadata:
-    return _meta(0.35)
-
-
-def enabled_note() -> str:
-    return f"AI fallback enabled with {settings.azure_model}" if llm.available() else "AI fallback unavailable"

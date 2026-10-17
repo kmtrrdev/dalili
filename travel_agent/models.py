@@ -662,31 +662,6 @@ class TripPlan(BaseModel):
 # Feedback, events, state
 # ---------------------------------------------------------------------------
 
-ReplanAction = Literal[
-    "reduce_density",
-    "increase_density",
-    "more_free_time",
-    "later_start",
-    "cheaper",
-    "upgrade",
-    "more_food",
-    "fewer_category",
-    "more_category",
-    "avoid_noise",
-    "change_hotel",
-    "change_flight",
-    "extend_trip",
-    "shorten_trip",
-    "set_budget",
-    "less_walking",
-    "more_nightlife",
-    "prefer_hidden_gems",
-    "replace_item",
-    "weather_adjust",
-    "none",
-]
-
-
 class FeedbackItem(BaseModel):
     feedback_type: Literal["hotel", "flight", "restaurant", "activity", "itinerary", "budget", "general"]
     entity_id: str | None = None
@@ -695,20 +670,6 @@ class FeedbackItem(BaseModel):
     severity: float = 0.5
     raw_text: str = ""
     created_at: datetime = Field(default_factory=utcnow)
-
-
-class ReplanRequest(BaseModel):
-    action: ReplanAction
-    category: str | None = None
-    day: int | None = None
-    value: Any = None
-    target_id: str | None = None
-
-
-class FeedbackInterpretation(BaseModel):
-    feedback: list[FeedbackItem] = Field(default_factory=list)
-    actions: list[ReplanRequest] = Field(default_factory=list)
-    summary: str = ""
 
 
 class Event(BaseModel):
