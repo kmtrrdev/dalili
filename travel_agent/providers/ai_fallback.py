@@ -28,7 +28,7 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 from .. import llm, net
-from ..config import settings
+from ..config import settings, today
 from ..models import FlightOption, GeoPoint, HotelOption, Metadata, Money, Place
 from ..utils import haversine_km
 
@@ -391,7 +391,7 @@ async def estimate_prices(city: str, country: str, local_currency: str, places: 
         "so in high-inflation currencies (e.g. TRY, EGP, ARS, NGN) raise older prices for the inflation since then - "
         "a taxi or a meal is never cheaper today than it was years ago. Rate your confidence honestly; use 'low' "
         "when unsure.",
-        {"city": f"{city}, {country}", "today": date.today().isoformat(), "local_currency": local_currency,
+        {"city": f"{city}, {country}", "today": today().isoformat(), "local_currency": local_currency,
          "places": places[:70],
          "need_transit_ticket": need_transit, "need_taxi_tariff": need_taxi}, CityPriceGuess)
     return res

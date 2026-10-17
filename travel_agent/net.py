@@ -17,6 +17,8 @@ import logging
 import sqlite3
 import threading
 import time
+from contextvars import ContextVar
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
@@ -34,11 +36,26 @@ log = logging.getLogger(__name__)
 
 SECRET_PARAMS = {"api_key", "apikey", "apiKey", "key", "Authorization"}
 
-# Live SerpApi calls made during the current chat turn (for the per-turn quota guard). A plain
-# process-level counter: LangGraph runs research branches as separate tasks, which would not
-# share a contextvar.
-_serpapi_calls = 0
-_turn_cap = settings.serpapi_calls_per_turn
+
+
+@dataclass
+class _TurnQuota:
+    """Live SerpApi calls of one chat turn and the turn's cap. Each turn has its own (concurrent users never share
+    a budget): set once at the start of the turn, the same object is seen by every task the turn starts."""
+
+    calls: int = 0
+    cap: int = field(default_factory=lambda: settings.serpapi_calls_per_turn)
+
+
+_QUOTA: ContextVar[_TurnQuota | None] = ContextVar("serpapi_quota", default=None)
+
+
+def _quota() -> _TurnQuota:
+    q = _QUOTA.get()
+    if q is None:  # outside a chat turn (trip ideas, booking offers): this request's own budget
+        q = _TurnQuota()
+        _QUOTA.set(q)
+    return q
 
 
 def redact(text: str) -> str:
@@ -96,11 +113,6 @@ class _Cache:
             self.conn.execute("INSERT INTO http_log(service, url, at, cached, ms) VALUES (?, ?, ?, ?, ?)",
                               (service, url, time.time(), int(cached), ms))
 
-    def live_calls_since(self, service: str, since: float) -> int:
-        with self.lock:
-            return self.conn.execute("SELECT COUNT(*) FROM http_log WHERE service = ? AND cached = 0 AND at >= ?",
-                                     (service, since)).fetchone()[0]
-
 
 _cache: _Cache | None = None
 _client: httpx.AsyncClient | None = None
@@ -136,20 +148,17 @@ def cache_key(method: str, url: str, params: dict | None, body: Any = None) -> s
 
 
 def start_turn() -> None:
-    """Reset the per-turn SerpApi counter (called at the start of each chat turn)."""
-    global _serpapi_calls, _turn_cap
-    _serpapi_calls = 0
-    _turn_cap = settings.serpapi_calls_per_turn
+    """A fresh SerpApi budget for this chat turn (called before the turn starts any task)."""
+    _QUOTA.set(_TurnQuota())
 
 
 def allow_extra_calls(n: int) -> None:
-    """A multi-city trip researches several cities in one turn: raise this turn's cap."""
-    global _turn_cap
-    _turn_cap = max(_turn_cap, settings.serpapi_calls_per_turn + max(0, n))
+    """Raise this turn's cap by n (each extra city of a tour, each city's menu searches)."""
+    _quota().cap += max(0, n)
 
 
 def serpapi_calls_this_turn() -> int:
-    return _serpapi_calls
+    return _quota().calls
 
 
 def _served(data: Any, fetched: float, stale: bool = False) -> Any:
@@ -172,16 +181,16 @@ async def fetch_json(service: str, url: str, params: dict | None = None, *, ttl_
         return _served(hit[0], hit[1])
     if mode == "replay":
         raise ReplayMiss(f"{service}: no recorded response for {url} {json.dumps({k: v for k, v in params.items() if k not in SECRET_PARAMS})}")
-    global _serpapi_calls
     if service == "serpapi":
         if not settings.serpapi_key:
             raise ProviderError("SERPAPI_API_KEY is not configured")
-        if _serpapi_calls >= _turn_cap:
+        quota = _quota()
+        if quota.calls >= quota.cap:
             if hit is not None:  # stale beats nothing when the quota guard trips
                 log.warning("SerpApi per-turn cap reached; serving stale cache for %s", url)
                 return _served(hit[0], hit[1], stale=True)
-            raise QuotaExceeded(f"SerpApi per-turn call cap ({_turn_cap}) reached")
-        _serpapi_calls += 1
+            raise QuotaExceeded(f"SerpApi per-turn call cap ({quota.cap}) reached")
+        quota.calls += 1
     started = time.perf_counter()
     try:
         resp = await _http().request(method, url, params=params, json=json_body, headers=headers)

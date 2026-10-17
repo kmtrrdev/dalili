@@ -373,6 +373,11 @@ async def hotel_offer_redirect(trip_id: str, hotel_id: str, request: Request, wh
     return RedirectResponse(match["link"] if match else d["google_hotels"], status_code=302)
 
 
+def _prefs(who: Identity) -> dict:
+    """The signed-in traveller's account settings (home city, currency) - defaults for a new trip."""
+    return (who.user or {}).get("prefs") or {}
+
+
 def _chat_trip(body: ChatIn, who: Identity) -> str | None:
     """The trip a message continues: only one the caller owns (a stale or foreign id starts a new trip)."""
     if body.trip_id and service.store.owner(body.trip_id) == who.id:
@@ -385,7 +390,7 @@ async def chat(body: ChatIn, request: Request, who: Identity = Depends(identity)
     if not body.message.strip():
         raise HTTPException(400, "Empty message")
     limit_expensive(request, who.id)
-    trip, reply = await service.chat(body.message, _chat_trip(body, who), who.id, body.route_decision)
+    trip, reply = await service.chat(body.message, _chat_trip(body, who), who.id, body.route_decision, _prefs(who))
     return {"trip_id": trip.trip_id, "reply": reply, "trip": public(trip)}
 
 
@@ -398,7 +403,7 @@ async def chat_stream(body: ChatIn, request: Request, who: Identity = Depends(id
     trip_id = _chat_trip(body, who)
 
     async def events():
-        async for ev in service.chat_stream(body.message, trip_id, who.id, body.route_decision):
+        async for ev in service.chat_stream(body.message, trip_id, who.id, body.route_decision, _prefs(who)):
             if ev["type"] == "done":
                 ev = {"type": "done", "trip_id": ev["trip"].trip_id, "reply": ev["reply"],
                       "trip": public(ev["trip"])}

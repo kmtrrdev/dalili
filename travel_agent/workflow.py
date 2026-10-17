@@ -355,7 +355,7 @@ async def _resolve(trip: TripState) -> str | None:
             bad, d.destination = d.destination, None
             return f"I couldn't find a city with an airport called '{bad}'. Which city do you mean?"
     if d.origin_ref is None and (d.destination_ref is not None or d.region):  # no lookup before we know where
-        text = d.origin_city or d.origin or settings.default_origin
+        text = d.origin_city or d.origin or trip.metadata.get("home_city") or settings.default_origin
         try:
             d.origin_ref = await research.resolve_place(hub, text)
         except MCPToolError:

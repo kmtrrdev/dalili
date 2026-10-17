@@ -71,7 +71,7 @@ class _WizardScreenState extends State<WizardScreen> {
       if (from.text.trim().isEmpty) return tr('eFrom');
     }
     if (s == 2 && !flexible && range == null) return tr('eDates');
-    if (s == 3 && !(cheapest && !suggest) && (double.tryParse(budget.text.trim()) ?? 0) <= 0) return tr('eBudget');
+    if (s == 3 && !(cheapest && !suggest) && (parseAmount(budget.text) ?? 0) <= 0) return tr('eBudget');
     return null;
   }
 
@@ -89,25 +89,19 @@ class _WizardScreenState extends State<WizardScreen> {
 
   /// The same request the website's form sends, written as a chat message (the planner reads it like any message).
   String _message() {
-    final n = pax, b = budget.text.trim();
+    final n = pax, b = (parseAmount(budget.text) ?? 0).round();
     final start = range != null ? _iso(range!.start) : null, end = range != null ? _iso(range!.end) : null;
-    final ints = interests.map((i) => isArabic ? tr('int.$i') : i).join(isArabic ? '، ' : ', ');
+    final wishes = prefsSuffix(occasion: occasion, interests: interests, direct: direct, notes: notes.text);
     if (isArabic) {
       final where = stops.length > 1 ? 'رحلة لأكتر من مدينة بالترتيب ده: ${stops.join(' ثم ')}' : 'رحلة إلى ${stops.first}';
       final when = flexible ? '، في $_monthName لمدة $_lenAr' : '، من $start لـ $end';
       final money = cheapest ? 'وعايز أرخص رحلة ممكنة - شوفلي أقل تكلفة، والأسعار بالـ $cur' : 'وميزانيتي $b $cur';
-      return 'عايز أخطط $where من ${from.text.trim()}$when، عدد المسافرين $n، $money.'
-          '${occasion != null ? ' الرحلة ${tr('occ.$occasion')}.' : ''}'
-          '${interests.isNotEmpty ? ' بحب $ints.' : ''}${direct ? ' طيران مباشر بس.' : ''}'
-          '${notes.text.trim().isNotEmpty ? ' ${notes.text.trim()}' : ''}';
+      return 'عايز أخطط $where من ${from.text.trim()}$when، عدد المسافرين $n، $money.$wishes';
     }
     final where = stops.length > 1 ? 'a multi-city trip, visiting in this order: ${stops.join(' → ')}' : 'a trip to ${stops.first}';
     final when = flexible ? ', in $_monthName for $_lenText' : ', from $start to $end';
     final money = cheapest ? 'the cheapest trip possible - find the minimum cost for me, prices in $cur' : 'budget $b $cur';
-    return 'Plan $where from ${from.text.trim()}$when, $n traveller${n > 1 ? 's' : ''}, $money.'
-        '${occasion != null ? " It's a ${tr('occ.$occasion').toLowerCase()} trip." : ''}'
-        '${interests.isNotEmpty ? ' I love $ints.' : ''}${direct ? ' Direct flights only.' : ''}'
-        '${notes.text.trim().isNotEmpty ? ' ${notes.text.trim()}' : ''}';
+    return 'Plan $where from ${from.text.trim()}$when, $n traveller${n > 1 ? 's' : ''}, $money.$wishes';
   }
 
   void _finish() {
@@ -128,7 +122,7 @@ class _WizardScreenState extends State<WizardScreen> {
     if (suggest) {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
         builder: (_) => IdeasScreen(state: st, body: {
-          'budget': double.parse(budget.text.trim()), 'currency': cur, 'origin': from.text.trim(), 'travelers': pax,
+          'budget': parseAmount(budget.text) ?? 0, 'currency': cur, 'origin': from.text.trim(), 'travelers': pax,
           'duration': len, if (flexible) 'month': month,
           if (!flexible && range != null) 'start_date': _iso(range!.start),
           if (!flexible && range != null) 'end_date': _iso(range!.end),

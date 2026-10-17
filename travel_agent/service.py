@@ -24,9 +24,15 @@ class TravelAgentService:
     def __init__(self, store: Store | None = None):
         self.store = store or Store()
 
-    def new_trip(self, user_id: str = "default") -> TripState:
-        """A new trip starts from the traveller's preference memory (never from another trip's one-off choices)."""
+    def new_trip(self, user_id: str = "default", prefs: dict | None = None) -> TripState:
+        """A new trip starts from the traveller's preference memory (never from another trip's one-off choices) and
+        their account settings: where they usually fly from and their currency (defaults a message overrides)."""
         trip = TripState(user_id=user_id, traveler_profile=preferences.fresh_profile(self.store.load_profile(user_id)))
+        prefs = prefs or {}
+        if prefs.get("home_city"):
+            trip.metadata["home_city"] = prefs["home_city"]
+        if prefs.get("currency"):
+            trip.metadata["home_currency"] = prefs["currency"]
         mode = trip.traveler_profile.learned.get("preferred_mode")
         if mode and mode.value in PLANNING_MODES and preferences.confidence(mode) >= settings.preference_apply_threshold:
             trip.selected_mode = mode.value  # the plan type this traveller keeps choosing is shown first
@@ -35,8 +41,8 @@ class TravelAgentService:
     def get(self, trip_id: str) -> TripState | None:
         return self.store.load_trip(trip_id)
 
-    def _load_or_new(self, trip_id: str | None, user_id: str) -> TripState:
-        return (self.get(trip_id) if trip_id else None) or self.new_trip(user_id)
+    def _load_or_new(self, trip_id: str | None, user_id: str, prefs: dict | None = None) -> TripState:
+        return (self.get(trip_id) if trip_id else None) or self.new_trip(user_id, prefs)
 
     def _save(self, trip: TripState) -> None:
         self.store.save_trip(trip)
@@ -46,17 +52,17 @@ class TravelAgentService:
                                                                     trip.traveler_profile))
 
     async def chat(self, message: str, trip_id: str | None = None, user_id: str = "default",
-                   route_decision: str | None = None) -> tuple[TripState, str]:
-        trip = self._load_or_new(trip_id, user_id)
+                   route_decision: str | None = None, prefs: dict | None = None) -> tuple[TripState, str]:
+        trip = self._load_or_new(trip_id, user_id, prefs)
         # Every turn runs on a copy; what happens to the real trip is settled afterwards from the AI's reading of the
         # message (apply the change, keep it as a what-if comparison, or accept a pending comparison).
         work, reply = await run_turn(trip.model_copy(deep=True), message, route_decision=route_decision)
         return self._settle(trip, work, message, reply)
 
     async def chat_stream(self, message: str, trip_id: str | None = None, user_id: str = "default",
-                          route_decision: str | None = None):
+                          route_decision: str | None = None, prefs: dict | None = None):
         """Streaming variant of chat(): yields live node/tool events, then {"type": "done", ...}."""
-        trip = self._load_or_new(trip_id, user_id)
+        trip = self._load_or_new(trip_id, user_id, prefs)
         async for event in run_turn_stream(trip.model_copy(deep=True), message, route_decision=route_decision):
             if event["type"] == "done":
                 settled, reply = self._settle(trip, event["trip"], message, event["reply"])

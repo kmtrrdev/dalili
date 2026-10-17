@@ -89,7 +89,12 @@ CITY_RADIUS_KM = 25       # beyond this a sight is a day trip
 MAX_DAY_TRIP_KM = 250     # beyond this it needs an overnight stay (not planned as a day trip)
 MAX_OVERNIGHT_KM = 900    # famous places up to here are suggested as overnight side trips
 FAMOUS_REVIEWS = 3000     # places outside the city must be well known to be worth the journey
-SYMBOLS = {"€": "EUR", "£": "GBP", "₺": "TRY", "E£": "EGP", "¥": "JPY", "₹": "INR", "CHF": "CHF", "$": "USD", "AED": "AED", "SAR": "SAR"}
+SYMBOLS = {"€": "EUR", "£": "GBP", "₺": "TRY", "E£": "EGP", "¥": "JPY", "₹": "INR", "CHF": "CHF", "$": "USD", "AED": "AED", "SAR": "SAR",
+           "US$": "USD", "R$": "BRL", "MX$": "MXN", "CA$": "CAD", "A$": "AUD", "NT$": "TWD", "HK$": "HKD", "S$": "SGD"}
+# Currencies written with a plain "$" where they are spent: there a bare "$" is the local currency, anywhere else
+# it is US dollars (a "$" in Dubai is never dirhams, a "$" in Mexico City is pesos).
+LOCAL_DOLLAR = {"USD", "CAD", "AUD", "NZD", "SGD", "HKD", "TWD", "MXN", "ARS", "CLP", "COP", "UYU", "BSD", "BBD", "JMD",
+                "TTD", "FJD", "NAD", "LRD", "BND", "XCD"}
 
 
 # ---------------------------------------------------------------------------
@@ -157,7 +162,7 @@ def parse_price(text: str | None, local_currency: str) -> tuple[float | None, st
     cur = None
     for sym, code in sorted(SYMBOLS.items(), key=lambda kv: -len(kv[0])):
         if sym in t:
-            cur = local_currency if (sym == "$" and local_currency.endswith("D")) else code
+            cur = local_currency if (sym == "$" and local_currency in LOCAL_DOLLAR) else code
             break
     nums = [float(x.replace(",", "")) for x in re.findall(r"\d[\d,]*(?:\.\d+)?", t)]
     if not nums:

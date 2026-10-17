@@ -26,6 +26,12 @@ def test_resolve_place_real_data():
     assert place["country_code"] == "IT" and place["timezone"] == "Europe/Rome" and "FCO" in place["airports"]
 
 
+def test_guide_search_returns_passages():
+    res = anyio.run(lambda: MCPHub("inmemory").call("knowledge", "search_travel_knowledge", {
+        "city": "Rome", "country": "Italy", "country_code": "IT", "query": "tipping in restaurants"}))
+    assert res["source"] == "knowledge_mcp" and isinstance(res["results"], list)
+
+
 def test_research_is_real_and_grounded(rome_research):
     r = rome_research
     assert r.flights_outbound and all(f.metadata.provider.startswith("Google Flights") for f in r.flights_outbound)

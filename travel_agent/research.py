@@ -300,6 +300,15 @@ async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, re
 
     mark("local_prices_fx")
     await pricing.research_prices(hub, bundle, contract, scale=price_scale)
+    # Prices found just now (menus, official sites) can be in a currency the first rates didn't cover: fetch those
+    # too, so they are converted instead of being counted one-to-one.
+    missing = sorted(c for c in _currencies(bundle) if c not in bundle.fx_rates and len(c) == 3 and c.isalpha())
+    if missing and user in bundle.fx_rates:
+        try:
+            res = await hub.call("currency", "get_exchange_rates", {"base": user, "quotes": missing})
+            bundle.fx_rates.update({c: 1.0 / v for c, v in res["rates"].items() if v and c != user})
+        except (MCPToolError, KeyError, TypeError) as exc:
+            bundle.errors.append(f"currency: {exc}")
     mark("pricing")
 
     # 3) Airport transfers for the airports the best flights actually land at.

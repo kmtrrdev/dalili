@@ -358,7 +358,7 @@ class _TimelineItemState extends State<_TimelineItem> {
                       Text('${est ? '≈ ' : ''}${money(amount, cost?['currency'] as String?)}',
                           style: const TextStyle(fontWeight: FontWeight.w800)),
                       const SizedBox(width: 6),
-                      Pill(est ? tr('est') : (it['link'] != null ? tr('menuPrice') : '✓'), color: est ? DC.violet : DC.green),
+                      Pill(_priceLabel(cost?['price_type'] as String?, it['link'] != null), color: est ? DC.violet : DC.green),
                       if (it['link'] != null) ...[
                         const Spacer(),
                         TextButton(onPressed: () => openLink(it['link'] as String), child: Text(tr('menu'))),
@@ -388,15 +388,22 @@ class _StayTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // A tour lists its legs (the first is the outbound flight, the last the flight home) and one hotel per city;
+    // its outbound / return / first hotel are the same objects again, so they are not listed twice.
+    final legs = [for (final l in (plan['legs'] as List? ?? [])) if (l != null) l as Map<String, dynamic>];
+    final stops = [for (final s in (plan['stops'] as List? ?? [])) s as Map<String, dynamic>];
     final flights = <(String, Map<String, dynamic>)>[
-      if (plan['outbound_flight'] != null) (tr('outbound'), plan['outbound_flight'] as Map<String, dynamic>),
-      for (final l in (plan['legs'] as List? ?? [])) ('✈', l as Map<String, dynamic>),
-      if (plan['return_flight'] != null) (tr('return'), plan['return_flight'] as Map<String, dynamic>),
+      if (legs.isNotEmpty)
+        for (var i = 0; i < legs.length; i++)
+          (i == 0 ? tr('outbound') : i == legs.length - 1 ? tr('return') : '✈', legs[i])
+      else ...[
+        if (plan['outbound_flight'] != null) (tr('outbound'), plan['outbound_flight'] as Map<String, dynamic>),
+        if (plan['return_flight'] != null) (tr('return'), plan['return_flight'] as Map<String, dynamic>),
+      ],
     ];
-    final hotels = <Map<String, dynamic>>[
-      if (plan['hotel'] != null) plan['hotel'] as Map<String, dynamic>,
-      for (final s in (plan['stops'] as List? ?? [])) if ((s as Map)['hotel'] != null) s['hotel'] as Map<String, dynamic>,
-    ];
+    final hotels = stops.isNotEmpty
+        ? [for (final s in stops) if (s['hotel'] != null) s['hotel'] as Map<String, dynamic>]
+        : [if (plan['hotel'] != null) plan['hotel'] as Map<String, dynamic>];
     return ListView(padding: const EdgeInsets.fromLTRB(16, 16, 16, 96), children: [
       for (final (label, f) in flights) ...[_FlightCard(label: label, f: f), const SizedBox(height: 12)],
       for (final h in hotels) ...[_HotelCard(h: h), const SizedBox(height: 12)],
@@ -404,6 +411,14 @@ class _StayTab extends StatelessWidget {
     ]);
   }
 }
+
+/// How sure a price is: published (✓, or the menu average), an official tariff, a published range, or an estimate.
+String _priceLabel(String? type, bool menu) => switch (type) {
+      'estimated' => tr('est'),
+      'calculated' => tr('tariff'),
+      'range' => tr('range'),
+      _ => menu ? tr('menuPrice') : '✓',
+    };
 
 String _hm(String? iso) {
   final d = DateTime.tryParse(iso ?? '');
@@ -504,10 +519,12 @@ class _HotelCard extends StatelessWidget {
               if (h['breakfast_included'] == true) Pill('☕ ${tr('breakfast')}', color: DC.green),
             ]),
             const SizedBox(height: 12),
-            Row(crossAxisAlignment: CrossAxisAlignment.end, children: [
-              Text(money(night?['amount'] as num?, night?['currency'] as String?), style: Theme.of(context).textTheme.headlineMedium),
-              Text(' ${tr('perNight')}', style: TextStyle(color: context.muted)),
-              const Spacer(),
+            // Wraps instead of overflowing when amounts are long (e.g. "12,400 EGP / night").
+            Wrap(spacing: 12, runSpacing: 4, crossAxisAlignment: WrapCrossAlignment.end, children: [
+              Row(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.end, children: [
+                Text(money(night?['amount'] as num?, night?['currency'] as String?), style: Theme.of(context).textTheme.headlineMedium),
+                Text(' ${tr('perNight')}', style: TextStyle(color: context.muted)),
+              ]),
               Text('${tr('stayTotal')}: ${money(total?['amount'] as num?, total?['currency'] as String?)}',
                   style: const TextStyle(fontWeight: FontWeight.w700)),
             ]),

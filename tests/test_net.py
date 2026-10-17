@@ -68,6 +68,22 @@ def test_serpapi_per_turn_cap(isolated, monkeypatch):
     net.start_turn()
 
 
+def test_concurrent_turns_have_separate_serpapi_budgets():
+    async def turn(extra):
+        net.start_turn()
+        net.allow_extra_calls(extra)
+        await anyio.sleep(0)
+        return net._quota()
+
+    async def both():
+        import asyncio
+
+        return await asyncio.gather(turn(3), turn(0))
+
+    a, b = anyio.run(both)
+    assert a is not b and a.cap == b.cap + 3
+
+
 def test_page_fetch_refuses_internal_targets():
     for url in ("http://localhost/x", "http://127.0.0.1/", "http://169.254.169.254/latest/meta-data",
                 "http://2130706433/", "http://0x7f000001/", "http://0177.0.0.1/", "http://10.0.0.5/",

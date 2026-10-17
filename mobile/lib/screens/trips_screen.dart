@@ -87,13 +87,16 @@ class _TripsScreenState extends State<TripsScreen> {
                 child: Dismissible(
                   key: ValueKey(t['trip_id']),
                   direction: DismissDirection.endToStart,
-                  confirmDismiss: (_) => _confirmDelete(),
-                  onDismissed: (_) async {
+                  // Deleted on the server before the card goes: if that fails the card slides back, with an error.
+                  confirmDismiss: (_) async {
+                    if (!await _confirmDelete()) return false;
                     try {
                       await widget.state.deleteTrip(t['trip_id'] as String);
                       if (context.mounted) toast(context, tr('deleted'));
+                      return true;
                     } catch (_) {
-                      widget.state.refreshHome();
+                      if (context.mounted) toast(context, tr('errNet'));
+                      return false;
                     }
                   },
                   background: Container(

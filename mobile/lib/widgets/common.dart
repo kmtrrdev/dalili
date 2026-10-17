@@ -21,9 +21,42 @@ String money(num? amount, String? cur) {
 
 String fmtDate(String? iso, {bool year = false}) {
   if (iso == null || iso.isEmpty) return '';
-  final d = DateTime.tryParse(iso);
+  // The wall-clock date written in the string (a flight's local airport date). Parsing the whole string would
+  // turn "2026-10-12T01:30:00+03:00" into a UTC time and show the day before.
+  final day = RegExp(r'^\d{4}-\d{2}-\d{2}').stringMatch(iso);
+  final d = DateTime.tryParse(day ?? iso);
   if (d == null) return iso;
   return DateFormat(year ? 'd MMM y' : 'd MMM', isArabic ? 'ar' : 'en').format(d);
+}
+
+/// A typed amount, also with Arabic-Indic digits and thousands separators ("٥٠٬٠٠٠", "50,000"). Null if not a number.
+double? parseAmount(String text) {
+  final b = StringBuffer();
+  for (final r in text.trim().runes) {
+    if (r >= 0x0660 && r <= 0x0669) {
+      b.writeCharCode(0x30 + r - 0x0660);
+    } else if (r >= 0x06F0 && r <= 0x06F9) {
+      b.writeCharCode(0x30 + r - 0x06F0);
+    } else if (r == 0x066B) {
+      b.write('.'); // Arabic decimal separator
+    } else if (r != 0x2C && r != 0x066C && r != 0x20 && r != 0xA0 && r != 0x27) {
+      b.writeCharCode(r); // separators (, ٬ space ') are dropped
+    }
+  }
+  return double.tryParse(b.toString());
+}
+
+/// The traveller's wishes appended to a trip request (occasion, interests, direct flights, notes) - the same
+/// wording from the quick form and from a trip idea.
+String prefsSuffix({String? occasion, Iterable<String> interests = const [], bool direct = false, String notes = ''}) {
+  final ints = interests.map((i) => isArabic ? tr('int.$i') : i).join(isArabic ? '، ' : ', ');
+  final n = notes.trim();
+  if (isArabic) {
+    return '${occasion != null ? ' الرحلة ${tr('occ.$occasion')}.' : ''}'
+        '${ints.isNotEmpty ? ' بحب $ints.' : ''}${direct ? ' طيران مباشر بس.' : ''}${n.isNotEmpty ? ' $n' : ''}';
+  }
+  return '${occasion != null ? " It's a ${tr('occ.$occasion').toLowerCase()} trip." : ''}'
+      '${ints.isNotEmpty ? ' I love $ints.' : ''}${direct ? ' Direct flights only.' : ''}${n.isNotEmpty ? ' $n' : ''}';
 }
 
 String routeText(List<dynamic> cities) => cities.map((c) => '$c').join(isArabic ? ' ← ' : ' → ');

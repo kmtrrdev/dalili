@@ -57,7 +57,7 @@ async def search_travel_knowledge(city: str, country: str, country_code: str, qu
     except net.ProviderError as exc:
         return error("knowledge_search", "knowledge_mcp", {"query": query}, str(exc))
     return envelope("knowledge_search", "knowledge_mcp", {"city": city, "query": query},
-                    results=knowledge.search(guide, query, top_k), source=guide.get("source_url"))
+                    results=knowledge.search(guide, query, top_k), source_url=guide.get("source_url"))
 
 
 @server.tool()

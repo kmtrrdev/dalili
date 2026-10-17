@@ -179,15 +179,16 @@ async def suggest(hub: MCPHub, budget: float, currency: str, origin: str, travel
         if ideas and currency != "USD":  # the estimates are in USD: convert with live rates
             try:
                 fx = (await hub.call("currency", "get_exchange_rates", {"base": "USD", "quotes": [currency]}))["rates"]
-                rate = float(fx.get(currency) or 1.0)
-            except (MCPToolError, KeyError, ValueError):
-                rate = 1.0
+                rate = float(fx[currency]) if fx.get(currency) else None
+            except (MCPToolError, KeyError, ValueError, TypeError):
+                rate = None
+            if rate is None:
+                # Dollar estimates must never be shown as pounds: without a rate there are no comparable ideas.
+                log.warning("no USD->%s rate; dropping AI-estimated ideas", currency)
+                ideas = []
             for d in ideas:
                 d["flight_price"] = round(d["flight_price"] * rate)
                 d["hotel_price"] = round(d["hotel_price"] * rate)
-        if exact:
-            for d in ideas:
-                d["start_date"], d["end_date"] = start_date.isoformat(), end_date.isoformat()
 
     out = []
     for d in ideas:

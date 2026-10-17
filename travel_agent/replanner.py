@@ -300,7 +300,7 @@ def build_contract(trip: TripState) -> tuple[TripContract, list[str]]:
         assumptions.append("I planned for 1 traveler - tell me if more people are coming.")
     # The currency the traveller named, else the one this trip already uses, else their home country's.
     currency = (d.budget_currency or (trip.trip_contract.budget.currency if trip.trip_contract else None)
-                or _home_currency(d) or "USD").upper()
+                or trip.metadata.get("home_currency") or _home_currency(d) or "USD").upper()
     if not d.budget_currency:
         d.budget_currency = currency  # kept, so a later change never flips it back silently
         if d.budget_amount:

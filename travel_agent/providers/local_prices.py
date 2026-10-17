@@ -24,6 +24,7 @@ from pydantic import BaseModel, Field
 
 from .. import llm, net
 from ..utils import haversine_km
+from .places import LOCAL_DOLLAR
 
 log = logging.getLogger(__name__)
 
@@ -148,7 +149,7 @@ def parse_price(text: str, local_currency: str) -> tuple[float | None, str | Non
             if any(s <= m.start() < e for s, e, _ in marks):
                 continue  # part of a longer marker already found ("us$", "e£")
             if tok == "$":
-                cur = local_currency if local_currency.endswith("D") else "USD"
+                cur = local_currency if local_currency in LOCAL_DOLLAR else "USD"
             else:
                 cur = code or local_currency
             marks.append((m.start(), m.end(), cur))

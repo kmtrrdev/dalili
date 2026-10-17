@@ -179,6 +179,10 @@ class _HeroState extends State<_Hero> {
 
   void _go() {
     final text = _c.text.trim();
+    if (text.isNotEmpty && widget.state.busy) {
+      toast(context, tr('busyWait')); // the text stays in the box
+      return;
+    }
     widget.state.goTab(1);
     if (text.isNotEmpty) {
       _c.clear();

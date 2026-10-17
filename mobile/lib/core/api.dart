@@ -86,7 +86,12 @@ class Api {
       return;
     }
     if (res.statusCode >= 400) {
-      yield StreamEvent('error', {'message': 'HTTP ${res.statusCode}'});
+      // Rate limit (429, with how long to wait) and too-long messages (400/422) get their own text in the chat.
+      yield StreamEvent('error', {
+        'message': 'http',
+        'status': res.statusCode,
+        'retry': int.tryParse(res.headers['retry-after'] ?? ''),
+      });
       return;
     }
     final lines = res.stream.transform(utf8.decoder).transform(const LineSplitter());

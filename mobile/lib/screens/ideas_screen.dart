@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart' hide TextDirection;
 
 import '../core/api.dart';
 import '../core/i18n.dart';
@@ -24,9 +25,20 @@ class _IdeasScreenState extends State<IdeasScreen> {
   void _plan(Map<String, dynamic> idea) {
     final b = widget.body;
     final n = b['travelers'] as int;
+    final sd = idea['start_date'] as String?, ed = idea['end_date'] as String?;
+    final month = b['month'] as int?, nights = idea['nights'];
+    // Dates when the idea has them; otherwise the month and length asked for (never "from null to null").
+    final monthName = month != null ? DateFormat.MMMM(isArabic ? 'ar' : 'en').format(DateTime(2000, month)) : null;
+    final when = sd != null && ed != null
+        ? (isArabic ? 'من $sd لـ $ed' : 'from $sd to $ed')
+        : isArabic
+            ? '${monthName != null ? 'في $monthName ' : ''}لمدة $nights ليالي'
+            : '${monthName != null ? 'in $monthName ' : ''}for $nights nights';
+    final wishes = prefsSuffix(occasion: b['occasion'] as String?, interests: ((b['interests'] as List?) ?? const []).cast<String>(),
+        direct: b['direct_only'] == true, notes: (b['notes'] as String?) ?? '');
     final msg = isArabic
-        ? 'عايز أخطط رحلة إلى ${idea['name']} من ${b['origin']}، من ${idea['start_date']} لـ ${idea['end_date']}، عدد المسافرين $n، وميزانيتي ${b['budget'].round()} ${b['currency']}.'
-        : 'Plan a trip to ${idea['name']} from ${b['origin']}, from ${idea['start_date']} to ${idea['end_date']}, $n traveller${n > 1 ? 's' : ''}, budget ${b['budget'].round()} ${b['currency']}.';
+        ? 'عايز أخطط رحلة إلى ${idea['name']} من ${b['origin']}، $when، عدد المسافرين $n، وميزانيتي ${b['budget'].round()} ${b['currency']}.$wishes'
+        : 'Plan a trip to ${idea['name']} from ${b['origin']}, $when, $n traveller${n > 1 ? 's' : ''}, budget ${b['budget'].round()} ${b['currency']}.$wishes';
     final st = widget.state;
     st.logActivity('like', idea['name'] as String);
     st.newTrip();

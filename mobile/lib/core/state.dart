@@ -218,7 +218,12 @@ class AppState extends ChangeNotifier {
   }
 
   // ---------------------------------------------------------------- trips + chat
+  /// Which conversation a running turn belongs to: switching trips retires it, so its answer never lands on
+  /// another trip.
+  int _gen = 0;
+
   void newTrip() {
+    _retireTurn();
     tripId = null;
     trip = null;
     messages
@@ -228,9 +233,16 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
 
+  void _retireTurn() {
+    _gen++;
+    busy = false;
+    progress = null;
+  }
+
   Future<bool> openTrip(String id, {bool quiet = false}) async {
     try {
       final t = await api.get('/api/trips/$id') as Map<String, dynamic>;
+      if (id != tripId) _retireTurn();
       _setTrip(t);
       messages.clear();
       final conv = (t['conversation'] as List? ?? []);
@@ -242,8 +254,9 @@ class AppState extends ChangeNotifier {
       if (messages.isEmpty) messages.add(ChatLine('assistant', tr('greeting')));
       notifyListeners();
       return true;
-    } catch (_) {
-      if (quiet) {
+    } catch (e) {
+      // Forget the trip only when the server says it's gone (or not ours) - never when offline or still starting.
+      if (quiet && e is ApiException && (e.status == 404 || e.status == 403)) {
         tripId = null;
         _prefs.remove('tripId');
       }
@@ -257,40 +270,53 @@ class AppState extends ChangeNotifier {
     _prefs.setString('tripId', tripId!);
   }
 
-  Future<void> send(String text) async {
-    if (text.trim().isEmpty || busy) return;
+  /// Sends a chat message; false when it wasn't sent (a turn is still running, or nothing to send).
+  Future<bool> send(String text) async {
+    if (text.trim().isEmpty || busy) return false;
     messages.add(ChatLine('user', text.trim()));
     busy = true;
     progress = Progress()..add('understand');
     notifyListeners();
+    final gen = _gen;
     var gotReply = false;
     await for (final ev in api.chatStream(text.trim(), tripId: tripId)) {
+      if (gen != _gen) continue; // the traveller switched trips: this answer belongs to the old one
       if (ev.type == 'node') {
         final k = _nodeSteps[ev.data['node']];
         if (k != null) progress!.add(k);
       } else if (ev.type == 'tool') {
         final k = _toolSteps[ev.data['server']];
         if (k != null) progress!.add(k);
-      } else if (ev.type == 'done') {
+      } else if (ev.type == 'done' && !gotReply) {
         final t = ev.data['trip'] as Map<String, dynamic>;
         _setTrip(t);
-        messages.add(ChatLine('assistant', ev.data['reply'] as String? ?? '', tripCard: plan != null));
+        final reply = ev.data['reply'] as String? ?? '';
+        if (reply.isNotEmpty) messages.add(ChatLine('assistant', reply, tripCard: plan != null));
         gotReply = true;
       } else if (ev.type == 'error') {
-        messages.add(ChatLine('assistant', ev.data['message'] == 'network' ? tr('errNet') : tr('errPlan')));
-        gotReply = true;
+        messages.add(ChatLine('assistant', _errorText(ev.data)));
+        gotReply = true; // a later 'done' (if any) is ignored: the turn failed
       }
       notifyListeners();
     }
+    if (gen != _gen) return true;
     if (!gotReply) messages.add(ChatLine('assistant', tr('errPlan')));
     busy = false;
     progress = null;
     notifyListeners();
     refreshHome();
+    return true;
+  }
+
+  String _errorText(Map<String, dynamic> e) {
+    final status = e['status'];
+    if (status == 429) return tr('errRate', [e['retry'] ?? 60]);
+    if (status == 400 || status == 422) return tr('errTooLong');
+    return e['message'] == 'network' || e['message'] == 'timeout' ? tr('errNet') : tr('errPlan');
   }
 
   Future<void> selectMode(String mode) async {
-    if (tripId == null) return;
+    if (tripId == null || busy) return; // a running turn would overwrite the choice
     final t = await api.post('/api/trips/$tripId/select', {'mode': mode}) as Map<String, dynamic>;
     trip = t;
     notifyListeners();
