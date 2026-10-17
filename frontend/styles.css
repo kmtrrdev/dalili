@@ -865,6 +865,9 @@ html[dir="rtl"] .t-time, html[dir="rtl"] .m-total, html[dir="rtl"] .idea-total b
 .donut svg { width: 200px; height: 200px; transform: rotate(-90deg); }
 .donut circle { fill: none; stroke-width: 22; transition: stroke-dasharray 1.1s cubic-bezier(.2, .8, .2, 1); }
 .donut .center { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; }
+.cur-switch { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; font-size: 13px; }
+.cur-switch label { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-weight: 600; }
+.cur-switch select { padding: 6px 10px; border-radius: 10px; border: 1px solid var(--line-strong); background: var(--field, var(--surface-2)); color: var(--ink); font: 600 13px var(--font); cursor: pointer; }
 .donut .center b { font: 700 24px var(--display); display: block; }
 .donut .center span { font-size: 11.5px; color: var(--muted); }
 .legend { display: grid; gap: 7px; }

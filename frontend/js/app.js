@@ -1,6 +1,6 @@
 import { Globe } from "./globe.js";
 import { applyStatic, getLang, locale, setLang, t } from "./i18n.js";
-import { closeDash, initAccount, logActivity, onTripPlanned, refreshAccountLanguage } from "./account.js";
+import { CURRENCIES, closeDash, initAccount, logActivity, onTripPlanned, refreshAccountLanguage } from "./account.js";
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -430,8 +430,16 @@ function renderModes() {
   animateRings($("modes"));
 }
 
+/** Scroll a horizontal strip (never the page) so `el` is fully visible. */
+function revealInStrip(strip, el) {
+  if (!strip || !el) return;
+  const s = strip.getBoundingClientRect(), r = el.getBoundingClientRect();
+  if (r.left < s.left) strip.scrollBy({ left: r.left - s.left - 16, behavior: "smooth" });
+  else if (r.right > s.right) strip.scrollBy({ left: r.right - s.right + 16, behavior: "smooth" });
+}
 function renderTab() {
   document.querySelectorAll("#tabs button").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === state.tab)));
+  revealInStrip($("tabs"), document.querySelector('#tabs [aria-selected="true"]'));
   const plan = state.trip.plans[state.trip.selected_mode];
   if (state.map) { state.map.remove(); state.map = null; }
   const views = { itinerary, stay, budget, checks, weather, profile, sources, ai };
@@ -439,8 +447,18 @@ function renderTab() {
   $("panel").scrollTop = 0;
   $("panel").querySelectorAll("[data-offers]").forEach((b) => b.addEventListener("click", () => openOffers(b.dataset.offers)));
   $("panel").querySelectorAll("[data-suggest]").forEach((b) => b.addEventListener("click", () => send(b.dataset.suggest)));
-  if (state.tab === "itinerary") wireItinerary(plan);
-  if (state.tab === "budget") wireWhatIf();
+  if (state.tab === "itinerary") {
+    wireItinerary(plan);
+    revealInStrip($("panel").querySelector(".days"), $("panel").querySelector(".day-pill.active"));
+  }
+  if (state.tab === "budget") {
+    wireWhatIf();
+    $("curSel").addEventListener("change", (e) => {
+      const cur = e.target.value;
+      e.target.value = plan.budget.currency;  // the switch shows the trip's real currency until the new plan arrives
+      if (!state.busy && cur !== plan.budget.currency) send(t("currencyMsg", cur));
+    });
+  }
   if (state.tab === "checks") animateRings($("panel"));
 }
 
@@ -738,7 +756,12 @@ function budget(plan) {
   const days = Object.entries(b.daily_spending);
   const max = Math.max(...days.map(([, v]) => v), 1);
   const step = Math.max(50, Math.round(state.trip.trip_contract.budget.amount / 40 / 50) * 50);
-  return `<div class="budget-top"><div class="donut"><svg viewBox="0 0 200 200">${arcs}</svg>
+  const usdRate = b.currency !== "USD" && state.trip.research?.fx_rates?.USD;  // 1 USD in the trip's currency
+  const curs = CURRENCIES.includes(b.currency) ? CURRENCIES : [b.currency, ...CURRENCIES];
+  return `<div class="cur-switch"><label>${t("pricesIn")} <select id="curSel" aria-label="${t("pricesIn")}">${curs.map((c) =>
+      `<option${c === b.currency ? " selected" : ""}>${c}</option>`).join("")}</select></label>
+      ${usdRate ? `<span class="muted">≈ ${money(b.total / usdRate, "USD")}</span>` : ""}</div>
+    <div class="budget-top"><div class="donut"><svg viewBox="0 0 200 200">${arcs}</svg>
       <div class="center"><div><b>${money(b.total, b.currency)}</b><span>${t("of")} ${money(b.limit, b.currency)}</span></div></div></div>
     <div class="legend">${parts.map(([k, v]) => `<div><i style="background:${BUDGET_COLORS[k]}"></i><span>${t("cat")[k]}</span><b>${money(v, b.currency)}</b></div>`).join("")}</div></div>
     <div class="meter"><i class="${b.remaining < 0 ? "over" : ""}" style="width:${pct}%"></i></div>

@@ -104,7 +104,7 @@ const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "
 const INTERESTS = [["beach", "🏖️"], ["culture", "🏛️"], ["history", "🏺"], ["nature", "🌿"], ["ski", "⛷️"],
   ["food", "🍽️"], ["nightlife", "🌙"], ["shopping", "🛍️"], ["relax", "🧖"], ["adventure", "🧗"]];
 const EMOJI = Object.fromEntries(INTERESTS);
-const CURRENCIES = ["USD", "EUR", "EGP", "SAR", "AED", "KWD", "QAR", "GBP"];
+export const CURRENCIES = ["USD", "EUR", "EGP", "SAR", "AED", "KWD", "QAR", "GBP"];
 
 export const account = { user: null };
 let app = null;            // hooks from app.js (openTrip, newTrip, openWizard, wikiImage, placeLabel, money, applyPrefs)
