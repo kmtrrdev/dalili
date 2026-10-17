@@ -16,6 +16,7 @@ os.environ["TRAVEL_AGENT_TODAY"] = "2026-09-27"
 os.environ["TRAVEL_AGENT_LLM"] = "0"
 os.environ["TRAVEL_AGENT_RULES_FALLBACK"] = "1"  # offline harness: the keyword parser stands in for the model
 os.environ["TRAVEL_AGENT_DB"] = ":memory:"
+os.environ["DALILI_SIGNUPS_PER_IP_HOUR"] = "1000"  # every test client shares one IP
 if os.getenv("RECORD") != "1":
     # Replay never sends a request, but providers refuse to run without a key: placeholders let the suite run
     # anywhere (CI has no .env). Recorded cache keys never include API keys, so lookups still match.

@@ -649,9 +649,10 @@ def interpret_rules(text: str, has_plan: bool, place_names: dict[str, str], toda
         # Once a plan exists, "to wake up" / "to my plan" are not destinations: a new place must be a proper name.
         if req.destination and not req.destination[:1].isupper():
             req.destination = None
-        # "increase my budget by $1000": the amount is the action's delta, not a new total budget.
+        # "increase my budget by $1000": the amount is the action's delta, not a new total budget (its currency
+        # stays: the workflow converts a delta or total given in another currency).
         if any(a.action in ("adjust_budget", "set_budget") for a in actions):
-            req.budget_amount = req.budget_currency = None
+            req.budget_amount = None
     has_req = any(v not in (None, [], "") for k, v in req.model_dump().items())
     if has_plan and actions:
         intent: Intent = "feedback"
@@ -713,6 +714,9 @@ Convert the user's latest message into the TurnInterpretation schema.
   - select_mode only when the user picks one of the plan modes (balanced, budget, comfort, experience).
   - "raise my budget to what it really costs / زوّد الميزانية للتكلفة الحقيقية" -> set_budget with amount = the
     context's plan_total rounded up to a round number.
+  - A currency other than the trip's ("بالجنيه", "in euros", "100 ألف جنيه") -> requirements.budget_currency = its ISO
+    code. A currency alone ("خليها بالجنيه المصري") is only budget_currency: the code converts the amount at today's
+    rate - never convert it yourself.
 - If a plan exists and the message asks to change it, use intent=feedback with actions (requirements may also be set).
   Express ONLY what the user asked for: never add changes of your own (a budget change is just the budget - the
   planner decides how to use the money).

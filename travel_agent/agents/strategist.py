@@ -19,7 +19,6 @@ opening hour. Without a model, sensible defaults are used.
 from __future__ import annotations
 
 import json
-import logging
 from typing import Literal
 
 from pydantic import BaseModel, Field
@@ -27,8 +26,6 @@ from pydantic import BaseModel, Field
 from .. import llm
 from ..models import TripState
 from . import trace
-
-log = logging.getLogger(__name__)
 
 
 class FlightPrefs(BaseModel):

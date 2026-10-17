@@ -83,8 +83,11 @@ class Store:
 
     def save_trip(self, trip: TripState) -> None:
         with self._lock, self._conn:
-            row = self._conn.execute("SELECT data FROM trips WHERE trip_id = ?", (trip.trip_id,)).fetchone()
-            known = len(json.loads(row[0]).get("events", [])) if row else 0
+            row = self._conn.execute("SELECT user_id, data FROM trips WHERE trip_id = ?", (trip.trip_id,)).fetchone()
+            if row:
+                # The owner column is authoritative: a guest who signed in while a turn was running keeps the trip.
+                trip.user_id = row[0]
+            known = len(json.loads(row[1]).get("events", [])) if row else 0
             self._conn.execute(
                 "INSERT INTO trips(trip_id, user_id, data, updated_at) VALUES (?, ?, ?, ?) "
                 "ON CONFLICT(trip_id) DO UPDATE SET data = excluded.data, updated_at = excluded.updated_at",

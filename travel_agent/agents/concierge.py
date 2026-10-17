@@ -17,7 +17,6 @@ offers as one-tap replies. Without a model, the workflow falls back to the rule-
 from __future__ import annotations
 
 import json
-import logging
 from typing import Any, Literal
 
 from pydantic import BaseModel, Field
@@ -31,7 +30,6 @@ from ..nlu import SCOPE_RULE, Action, FeedbackNote, Requirements
 from . import trace
 from .context import anchor, km, plan_summary, profile_summary
 
-log = logging.getLogger(__name__)
 
 MAX_STEPS = 5
 ToolName = Literal["plan_lookup", "search_nearby", "find_place", "weather", "directions", "convert_currency",
@@ -88,6 +86,9 @@ Rules:
   - budget: set_budget (absolute) / adjust_budget (signed delta); "raise it to the real cost" -> set_budget with
     the plan total rounded up; "make it the cheapest possible / what's the minimum" -> requirements.wants_cheapest
     = true (the planner finds the cheapest good trip and its cost); later_start text=HH:MM;
+  - budget currency: whenever the traveller names a currency other than the trip's ("بالجنيه", "in euros",
+    "100 ألف جنيه") put its ISO code in requirements.budget_currency (EGP, EUR, SAR...). A currency alone ("خليها
+    بالجنيه") is just budget_currency: the code converts the amount at today's rate - never convert it yourself;
   - trip length: when the traveller states the NEW total ("make it 3 nights", "خليهم تلت ليالي", "4 days only") ->
     requirements.nights or requirements.duration_days with that number - never compute a difference yourself.
     extend_trip / shorten_trip (amount = days) only for relative changes ("one more day", "يوم زيادة", "a day less");

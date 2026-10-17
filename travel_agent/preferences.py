@@ -83,6 +83,18 @@ def observe(profile: TravelerProfile, key: str, value: Any, evidence: str, weigh
     return lp
 
 
+def withdraw(profile: TravelerProfile, key: str, value: Any) -> None:
+    """Take back one unit of earlier inferred evidence for `value` (a choice the traveller then changed)."""
+    lp = profile.learned.get(key)
+    if lp is None or lp.source != "inferred":
+        return
+    if lp.value == value:
+        lp.support = max(0.0, lp.support - 1)
+    else:
+        lp.against = max(0.0, lp.against - 1)
+    lp.confidence = confidence(lp)
+
+
 def apply(profile: TravelerProfile, threshold: float | None = None) -> list[str]:
     """Copy confident learned values into the profile fields the planner reads - never over an explicit choice made
     in this trip. Returns the keys applied."""

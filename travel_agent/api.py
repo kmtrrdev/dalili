@@ -22,12 +22,12 @@ from pydantic import BaseModel, Field
 
 from . import llm, seo, telemetry, tripbook
 from .auth import GUEST_COOKIE, GUEST_RE, SESSION_COOKIE, SESSION_DAYS, Accounts, AuthError, Identity, new_guest_id
-from .config import PROJECT_DIR, settings
+from .config import PROJECT_DIR, settings, today
 from .mcp_hub import SERVERS, get_hub
 from .nlu import Action
 import httpx
 
-from .security import MAX_MESSAGE_CHARS, client_ip, is_admin, limit_expensive, limit_light
+from .security import MAX_MESSAGE_CHARS, client_ip, is_admin, limit_expensive, limit_light, limit_offers
 from .service import TravelAgentService
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
@@ -268,7 +268,8 @@ async def parse_request(body: ParseIn, request: Request, who: Identity = Depends
     dests = r.destinations or ([r.destination] if r.destination else [])
     return {"source": interp.source, "origin": r.origin_city, "destinations": dests,
             "nights": r.nights_per_destination if len(r.nights_per_destination) == len(dests) else [],
-            "region": r.region, "start_date": r.start_date, "end_date": r.end_date, "days": r.duration_days,
+            "region": r.region, "start_date": r.start_date, "end_date": r.end_date,
+            "days": r.duration_days or (r.nights + 1 if r.nights else None),  # "3 nights" = 4 days
             "month": r.travel_month,
             "travelers": r.travelers, "budget": r.budget_amount, "currency": r.budget_currency,
             "interests": r.activity_preferences, "must_visit": r.must_visit, "direct_only": r.direct_flights_only,
@@ -284,7 +285,7 @@ async def suggest_trips(body: SuggestIn, request: Request, who: Identity = Depen
     if body.start_date and body.end_date:
         if body.end_date <= body.start_date:
             raise HTTPException(400, "The return date must be after the departure date")
-        if body.start_date < date.today():
+        if body.start_date < today():
             raise HTTPException(400, "The departure date is in the past")
     from .mcp_hub import MCPToolError
     from .suggest import suggest
@@ -312,9 +313,14 @@ async def suggest_trips(body: SuggestIn, request: Request, who: Identity = Depen
 
 
 @app.get("/api/trips/{trip_id}/hotel-offers")
-async def hotel_offers(trip_id: str, hotel_id: str, who: Identity = Depends(identity)):
+async def hotel_offers(trip_id: str, hotel_id: str, request: Request, who: Identity = Depends(identity)):
     """Where to book a hotel of this trip at the price the plan used: every booking site's live offer for the
     exact dates and guests, each with a direct link to its booking page."""
+    limit_offers(request, who.id)  # a GET that spends a live search
+    return await _hotel_offers(trip_id, hotel_id, who)
+
+
+async def _hotel_offers(trip_id: str, hotel_id: str, who: Identity) -> dict:
     from urllib.parse import quote_plus
 
     from .mcp_hub import MCPToolError
@@ -331,10 +337,12 @@ async def hotel_offers(trip_id: str, hotel_id: str, who: Identity = Depends(iden
     if found is None:
         raise HTTPException(404, "Hotel not found in this trip")
     h, city, ci, co = found
+    # Priced per room, as the plan is (rooms x nights): guests per room, not the whole group in one room.
+    adults = max(1, -(-c.travelers // c.rooms))
     google = (f"https://www.google.com/travel/search?q={quote_plus(f'{h.name} {city}')}"
               f"&checkin={ci.isoformat()}&checkout={co.isoformat()}")
     base = {"hotel": h.name, "city": city, "check_in": ci.isoformat(), "check_out": co.isoformat(),
-            "nights": (co - ci).days, "adults": c.travelers, "currency": c.budget.currency.upper(),
+            "nights": (co - ci).days, "adults": adults, "rooms": c.rooms, "currency": c.budget.currency.upper(),
             "planned_rate": h.price_per_night.amount, "planned_currency": h.price_per_night.currency,
             "google_hotels": google, "hotel_website": h.link, "offers": [], "images": h.images}
     if not h.property_token:
@@ -342,7 +350,7 @@ async def hotel_offers(trip_id: str, hotel_id: str, who: Identity = Depends(iden
     try:
         res = await get_hub().call("hotels", "get_hotel_offers", {
             "property_token": h.property_token, "city": city, "check_in": ci.isoformat(), "check_out": co.isoformat(),
-            "adults": c.travelers, "currency": c.budget.currency.upper()})
+            "adults": adults, "currency": c.budget.currency.upper()})
     except MCPToolError:
         return base
     offers = res.get("offers") or []
@@ -359,8 +367,8 @@ async def hotel_offer_redirect(trip_id: str, hotel_id: str, request: Request, wh
     """One click from the Trip Book: straight to the booking page at the plan's price (Google Hotels if none)."""
     from fastapi.responses import RedirectResponse
 
-    limit_expensive(request, who.id)  # a GET that spends a live search
-    d = await hotel_offers(trip_id, hotel_id, who)
+    limit_offers(request, who.id)  # a GET that spends a live search
+    d = await _hotel_offers(trip_id, hotel_id, who)
     match = next((o for o in d["offers"] if o.get("matches_plan")), None)
     return RedirectResponse(match["link"] if match else d["google_hotels"], status_code=302)
 
@@ -419,14 +427,16 @@ async def delete_trip(trip_id: str, who: Identity = Depends(identity)):
 
 @app.post("/api/trips/{trip_id}/select")
 async def select(trip_id: str, body: SelectIn, who: Identity = Depends(identity)):
-    _trip_or_404(trip_id, who)
+    if body.mode not in _trip_or_404(trip_id, who).plans:
+        raise HTTPException(409, "That plan is not available for this trip yet")
     trip = await service.select_mode(trip_id, body.mode)
     return public(trip)
 
 
 @app.post("/api/trips/{trip_id}/whatif")
 async def what_if(trip_id: str, body: WhatIfIn, request: Request, who: Identity = Depends(identity)):
-    _trip_or_404(trip_id, who)
+    if not _trip_or_404(trip_id, who).plans:
+        raise HTTPException(409, "This trip has no plan yet")
     limit_expensive(request, who.id)
     if body.budget_delta is None and body.budget is None:
         raise HTTPException(400, "Provide budget_delta or budget")
@@ -512,7 +522,8 @@ def _client_ip(request: Request) -> str:
 
 @app.post("/api/auth/signup")
 async def sign_up(body: SignUpIn, request: Request, response: Response):
-    user = accounts.sign_up(body.name, body.email, body.password, guest_id=request.state.guest_id)
+    user = accounts.sign_up(body.name, body.email, body.password, guest_id=request.state.guest_id,
+                            ip=_client_ip(request))
     return _start_session(request, response, user)
 
 
@@ -568,8 +579,6 @@ async def delete_me(body: DeleteAccountIn, response: Response, who: Identity = D
 @app.get("/api/me/dashboard")
 async def dashboard(who: Identity = Depends(signed_in)):
     """Everything the dashboard shows: stats, trips, and what the recommender knows about the user."""
-    from .config import today
-
     trips = service.store.list_trips(who.id)
     planned = [t for t in trips if t["status"] == "planned"]
     now = today().isoformat()

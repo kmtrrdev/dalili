@@ -38,7 +38,9 @@ def compare(before: TripState, after: TripState) -> dict[str, Any]:
     modes = sorted(set(before.plans) | set(after.plans))
     plans = {m: {"before": _plan_view(before.plans.get(m)), "after": _plan_view(after.plans.get(m))} for m in modes}
     b_sel, a_sel = before.selected_plan, after.selected_plan
-    delta = (a_sel.budget.total - b_sel.budget.total) if b_sel and a_sel and b_sel.budget and a_sel.budget else None
+    same_cur = bool(b_sel and a_sel and b_sel.budget and a_sel.budget
+                    and b_sel.budget.currency.upper() == a_sel.budget.currency.upper())
+    delta = (a_sel.budget.total - b_sel.budget.total) if same_cur else None  # never subtract USD from EGP
     days_changed = 0
     if b_sel and a_sel:
         old = {d.day: [i.place_id for i in d.items if i.kind == "activity"] for d in b_sel.days}
@@ -64,7 +66,8 @@ def lines(cmp: dict[str, Any], arabic: bool) -> list[str]:
     pv = cmp["plans"].get(sel) or {}
     b, a = pv.get("before") or {}, pv.get("after") or {}
     if b.get("total") is not None and a.get("total") is not None:
-        out.append(f"- {'الإجمالي' if arabic else 'Total'}: {b['total']:,.0f} -> {a['total']:,.0f} {a['currency']}")
+        out.append(f"- {'الإجمالي' if arabic else 'Total'}: {b['total']:,.0f} {b['currency']} -> "
+                   f"{a['total']:,.0f} {a['currency']}")
     if b.get("score") is not None and a.get("score") is not None:
         out.append(f"- TripScore: {b['score']} -> {a['score']}")
     if b.get("within_budget") != a.get("within_budget") and a.get("within_budget") is not None:

@@ -652,6 +652,11 @@ class TripPlan(BaseModel):
     stops: list[StopPlan] = Field(default_factory=list)
     legs: list[FlightOption] = Field(default_factory=list)
 
+    @property
+    def hotels(self) -> list[HotelOption]:
+        """Every city's hotel on a multi-city trip, else the one hotel."""
+        return [s.hotel for s in self.stops if s.hotel] if self.stops else ([self.hotel] if self.hotel else [])
+
 
 # ---------------------------------------------------------------------------
 # Feedback, events, state

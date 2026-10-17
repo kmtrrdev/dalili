@@ -66,7 +66,6 @@ class GraphState(TypedDict, total=False):
     candidates: dict[str, TripPlan]
     iteration: int
     reply: str
-    timings: dict[str, float]
     critic_next: str              # "plan" (apply the critic's fixes) or "respond"
     critic_backup: dict[str, Any]  # the plans before the critic's fixes (restored if the refinement is worse)
     repair_prev: dict[str, TripPlan]  # each mode's plan before the latest repair (kept if the repair made it worse)
@@ -78,8 +77,6 @@ class GraphState(TypedDict, total=False):
     r_restaurants: list
     r_activities: list
     r_weather: list
-    r_transfers: list
-    r_fx: tuple
     r_errors: Annotated[list[str], operator.add]  # written by parallel branches
 
 
@@ -144,6 +141,14 @@ async def understand(state: GraphState) -> GraphState:
         trip.metadata["hypothetical"] = True  # plan it (on the service's copy), then show the comparison
     # A free-text "add_place" without a place name carries nothing to add ("add more things" is a density change).
     interp.actions = [a for a in interp.actions if not (a.action in ("add_place", "replace_item") and not (a.text or "").strip())]
+    if has_plan:
+        _drop_echoes(trip, interp)
+        notes = notes + await _budget_currency(trip, interp)
+        r = interp.requirements
+        if r.planning_mode and r.planning_mode != trip.selected_mode and r.planning_mode in trip.plans \
+                and not any(a.action == "select_mode" for a in interp.actions):
+            # "Show me the comfort one": the four plans already exist - switch cards instead of replanning.
+            interp.actions.append(Action(action="select_mode", text=r.planning_mode))
     if interp.requirements.budget_amount:
         # The new total is already in the requirements: an adjust/set action on top would apply it twice.
         interp.actions = [a for a in interp.actions if a.action not in ("adjust_budget", "set_budget")]
@@ -183,13 +188,90 @@ async def understand(state: GraphState) -> GraphState:
     return {"interpretation": interp, "route": route}
 
 
+def _drop_echoes(trip: TripState, interp: TurnInterpretation) -> None:
+    """The model often repeats facts already in the trip next to the real change. An echoed total or length must not
+    cancel the relative change asked for ("add 2 nights", "+$500"), so values equal to the contract are cleared."""
+    c, r = trip.trip_contract, interp.requirements
+    if c is None:
+        return
+    same_cur = not r.budget_currency or r.budget_currency.strip().upper() == c.budget.currency.upper()
+    if r.budget_amount and same_cur and abs(r.budget_amount - c.budget.amount) <= 0.5:
+        r.budget_amount = None
+    if r.nights and r.nights == c.nights:
+        r.nights = None
+    if r.duration_days and r.duration_days == c.num_days:
+        r.duration_days = None
+    if r.start_date and r.start_date == c.start_date.isoformat():
+        r.start_date = None
+    if r.end_date and r.end_date == c.end_date.isoformat():
+        r.end_date = None
+
+
+async def _convert(trip: TripState, amount: float, src: str, dst: str) -> float | None:
+    """`amount` in `src` expressed in `dst` (live rate; the trip's own rates as a fallback). None when unknown."""
+    try:
+        res = await get_hub().call("currency", "convert_currency",
+                                   {"amount": amount, "from_currency": src, "to_currency": dst})
+        return float(res["converted"])
+    except (MCPToolError, KeyError, TypeError, ValueError):
+        pass
+    fx = trip.research.fx_rates if trip.research else {}  # currency -> multiplier into the trip's currency
+    return amount * fx[src] / fx[dst] if fx.get(src) and fx.get(dst) else None
+
+
+async def _budget_currency(trip: TripState, interp: TurnInterpretation) -> list[str]:
+    """A budget stated in another currency than the trip's ("make it in pounds", "100,000 EGP", "add 5,000 EGP").
+    The number is never relabelled: it is converted, or the currency change is refused. Returns change notes."""
+    c, r = trip.trip_contract, interp.requirements
+    new = (r.budget_currency or "").strip().upper()
+    if c is None or not new or new == c.budget.currency.upper():
+        return []
+    old = c.budget.currency.upper()
+    absolute = next((a for a in interp.actions if a.action == "set_budget" and a.amount), None)
+    if absolute and not r.budget_amount:
+        r.budget_amount = float(absolute.amount)  # a new total in the new currency: the contract is rebuilt with both
+    if r.budget_amount:
+        return []
+    deltas = [a for a in interp.actions if a.action == "adjust_budget" and a.amount]
+    if deltas:
+        # "Add 5,000 EGP" to a dollar budget: the same money in the trip's currency; the currency itself stays.
+        for a in deltas:
+            value = await _convert(trip, float(a.amount), new, old)
+            if value is None:
+                interp.actions.remove(a)
+                return [f"I couldn't get an exchange rate from {new} to {old}, so the budget is unchanged."]
+            a.amount = round(value, 2)
+        r.budget_currency = None
+        return []
+    if trip.draft.find_cheapest:
+        return []  # the planner finds the cheapest trip again, priced in the new currency
+    value = await _convert(trip, c.budget.amount, old, new)
+    if value is None:
+        r.budget_currency = None
+        return [f"I couldn't get a live exchange rate from {old} to {new}, so the budget stays in {old}."]
+    r.budget_amount = float(round(value, -max(0, len(str(int(value))) - 3)))  # 75,412 -> 75,400
+    return [f"Budget converted: {c.budget.amount:,.0f} {old} ≈ {r.budget_amount:,.0f} {new} at today's rate."]
+
+
 def _changes_trip_frame(trip: TripState, interp: TurnInterpretation) -> bool:
     """Does the message change where / when / who / how much (which needs the requirements path)?"""
     r, c = interp.requirements, trip.trip_contract
     if c is None:
         return True
     # The model sometimes echoes facts already in the contract: only a different value is a change.
-    if r.destinations or r.region:
+    wanted = [x.strip().lower() for x in r.destinations if x and x.strip()]
+    if wanted and wanted not in ([s.name.lower() for s in c.stops], [x.lower() for x in trip.draft.destinations]):
+        return True
+    if r.region and r.region.strip().lower() != (trip.draft.region or "").lower():
+        return True
+    if r.budget_currency and r.budget_currency.strip().upper() != c.budget.currency.upper():
+        return True
+    if r.wants_cheapest and not r.budget_amount and not trip.draft.find_cheapest:
+        return True  # "the cheapest possible": a soft budget the planner finds
+    if r.budget_is_hard_limit is not None and not trip.draft.find_cheapest \
+            and r.budget_is_hard_limit != c.budget.hard_limit:
+        return True
+    if r.origin_airport and r.origin_airport.strip().upper() != (c.origin or "").upper():
         return True
     if r.start_date and r.start_date != c.start_date.isoformat():
         return True
@@ -231,7 +313,7 @@ async def answer(state: GraphState) -> GraphState:
             return {"reply": result.answer}
         reply = await narrative.answer_question(trip, interp.question or question)
     elif trip.pending_questions:
-        reply = narrative.compose_questions(trip)
+        reply = await narrative.compose_questions_reply(trip)
     else:
         reply = narrative.greeting()
     return {"reply": reply}
@@ -369,18 +451,39 @@ async def propose_route(state: GraphState) -> GraphState:
     return {"reply": await route_design.compose_message(state["trip"], state.get("message", ""))}
 
 
+# Draft fields a feedback turn can change that the planner reads (places, priorities, must-haves / avoids).
+_DRAFT_PLAN_FIELDS = {"must_visit", "wish_list", "priorities", "must_have", "avoid"}
+
+
 async def apply_feedback(state: GraphState) -> GraphState:
     trip = state["trip"]
     interp = state["interpretation"]
     previous = trip.selected_plan
     learn_from_feedback(trip, interp.feedback, state.get("message", ""))
-    # Requirements mentioned alongside feedback (e.g. a new wake-up time, "I walk everywhere") also apply.
-    before = (trip.traveler_profile.model_dump(exclude={"learned", "explicit_fields"}), trip.user_knobs.model_dump())
+    # Requirements mentioned alongside feedback (e.g. a new wake-up time, "I walk everywhere", "we must see the
+    # Pantheon") also apply - to the profile, the knobs and the draft's places and priorities.
+    p = trip.traveler_profile
+
+    def snapshot() -> tuple:
+        return (p.model_dump(exclude={"learned", "explicit_fields"}), trip.user_knobs.model_dump(),
+                trip.draft.model_dump(include=_DRAFT_PLAN_FIELDS))
+
+    def searched_for() -> tuple:
+        # What the restaurant and activity searches depend on: a new diet or interest needs new candidates.
+        return sorted(p.dietary_restrictions), sorted(p.food_preferences), sorted(p.activity_preferences)
+
+    before, research_before = snapshot(), searched_for()
     req_notes = apply_requirements(trip, interp.requirements)
-    after = (trip.traveler_profile.model_dump(exclude={"learned", "explicit_fields"}), trip.user_knobs.model_dump())
+    after = snapshot()
     dirty, notes, needs_replan = apply_actions(trip, interp.actions)
     notes = req_notes + notes
     needs_replan = needs_replan or before != after
+    if searched_for() != research_before:
+        dirty = set(dirty) | {"restaurants", "activities"}
+    c = trip.trip_contract
+    if c is not None and before[2] != after[2]:
+        # Contract fields that live in the draft: the plan is built against the updated ones.
+        c.must_have, c.avoid, c.priorities = list(trip.draft.must_have), list(trip.draft.avoid), list(trip.draft.priorities)
     trip.emit("feedback.received", actions=[a.model_dump() for a in interp.actions], notes=notes)
     trip.assumptions = notes
     if not needs_replan:
@@ -402,7 +505,7 @@ async def research_setup(state: GraphState) -> GraphState:
     trip = state["trip"]
     c = trip.trip_contract
     assert c is not None
-    fresh = _dirty(state, "destination") or trip.research is None
+    fresh = _dirty(state, "destination")  # also true when there is no research yet
     if c.is_multi:
         net.allow_extra_calls(journey.SERPAPI_PER_EXTRA_STOP * (len(c.stops) - 1))
         old_infos = trip.research.destination_info.get("stops") if trip.research else None
@@ -416,7 +519,7 @@ async def research_setup(state: GraphState) -> GraphState:
         info = await research.research_destination(get_hub(), c)
     else:
         info = trip.research.destination_info
-    return {"r_info": info, "timings": {"research_start": time.perf_counter()}}
+    return {"r_info": info}
 
 
 # Strategy designs started while research is still being enriched (trip id -> task), awaited by plan().
@@ -787,8 +890,7 @@ async def finalize(state: GraphState) -> GraphState:
     trip.metadata["conflicts"] = [x.model_dump(mode="json") for x in conflicts.analyze(trip)]
     trip.pinned_days = plan_activity_ids(trip.selected_plan) if trip.selected_plan else {}
     changes = diff_plans(state.get("previous_plan"), trip.selected_plan)
-    trip.last_changes = (trip.assumptions if state.get("route") != "requirements" else []) + changes \
-        if state.get("previous_plan") else []
+    trip.last_changes = (trip.assumptions + changes) if state.get("previous_plan") else []
     trip.status = "planned"
     trip.emit("itinerary.generated", mode=trip.selected_mode, iterations=state.get("iteration", 0))
     return {}
@@ -870,6 +972,16 @@ async def critic_node(state: GraphState) -> GraphState:
                        "Refinement rejected (" + "; ".join(why_not) + "). Kept the original plan.")
         else:
             crit["changes"] = diff_plans(before, after)
+            # A place the critic added that didn't fit into any day (e.g. a far day trip at a relaxed pace) was not
+            # applied: it is offered as a suggestion, and not forced into later replans.
+            landed = {n.lower() for n, day in (after.requested or {}).items() if day}
+            for i in crit.get("issues", []):
+                name = (i.get("text") or "").lower()
+                if i.get("applied") and i.get("action") == "add_place" and name not in landed:
+                    i["applied"] = False
+                    trip.draft.must_visit = [n for n in trip.draft.must_visit if n.lower() != name]
+                    trip.metadata["expert_added"] = [n for n in trip.metadata.get("expert_added", [])
+                                                     if n.lower() != name]
             trace.step(trip, "critic", "decision",
                        f"Refinement kept: score {_score(before)} -> {_score(after)}.", changes=crit["changes"][:6])
         _publish_suggestions(trip)
@@ -891,10 +1003,11 @@ async def critic_node(state: GraphState) -> GraphState:
     fixes = critic.safe_fixes(trip, critique)
     applied = {id(issue) for issue, _ in fixes}
     trip.metadata["critique"] = {
-        "fresh": True, "quality": critique.quality, "verdict": critique.verdict, "verdict_ar": critique.verdict_ar,
+        "fresh": True, "mode": trip.selected_mode, "quality": critique.quality, "verdict": critique.verdict, "verdict_ar": critique.verdict_ar,
         "strengths": critique.strengths[:3],
         "issues": [{"severity": i.severity, "day": i.day, "problem": i.problem, "problem_ar": i.problem_ar,
-                    "suggestion": i.suggestion, "action": i.fix.action if i.fix else None, "applied": id(i) in applied}
+                    "suggestion": i.suggestion, "action": i.fix.action if i.fix else None,
+                    "text": i.fix.text if i.fix else None, "applied": id(i) in applied}
                    for i in critique.issues],
     }
     if not fixes:
@@ -1022,22 +1135,29 @@ def get_graph():
     return _graph
 
 
-async def run_turn(trip: TripState, message: str = "", preset_actions: list[Action] | None = None,
-                   route_decision: str | None = None) -> tuple[TripState, str]:
+_GRAPH_CONFIG = {"recursion_limit": 80}
+
+
+def _begin_turn(trip: TripState, message: str, preset_actions: list[Action] | None,
+                route_decision: str | None) -> dict:
+    """Shared turn setup: record the message, reset the per-turn network / trace state, return the graph inputs."""
     if message:
         trip.conversation.append(ChatMessage(role="user", content=message))
     net.start_turn()
     trace.start(trip)
     trip.metadata["refreshed"] = []  # research domains refreshed this turn (set by collect)
     trip.metadata["suggestions"] = []
+    return {"trip": trip, "message": message, "preset_actions": preset_actions or [], "route_decision": route_decision}
+
+
+async def run_turn(trip: TripState, message: str = "", preset_actions: list[Action] | None = None,
+                   route_decision: str | None = None) -> tuple[TripState, str]:
+    inputs = _begin_turn(trip, message, preset_actions, route_decision)
     started = time.perf_counter()
     usage = telemetry.new_usage()
     token = telemetry.USAGE.set(usage)
     try:
-        result = await get_graph().ainvoke(
-            {"trip": trip, "message": message, "preset_actions": preset_actions or [], "route_decision": route_decision},
-            {"recursion_limit": 80},
-        )
+        result = await get_graph().ainvoke(inputs, _GRAPH_CONFIG)
     finally:
         telemetry.USAGE.reset(token)
     trip = result["trip"]
@@ -1052,16 +1172,10 @@ async def run_turn_stream(trip: TripState, message: str = "", preset_actions: li
     """Same as run_turn, but yields live progress: every graph node and every MCP tool call as it completes.
 
     Yields dicts: {"type": "node", "node": ...}, {"type": "tool", "server", "tool", "ok", "ms"},
-    and finally {"type": "done", "trip": TripState, "reply": str}.
+    and finally {"type": "done", "trip": TripState, "reply": str} - or {"type": "error"} and no "done" when the turn
+    failed (nothing half-processed is saved).
     """
-    import asyncio
-
-    if message:
-        trip.conversation.append(ChatMessage(role="user", content=message))
-    net.start_turn()
-    trace.start(trip)
-    trip.metadata["refreshed"] = []  # research domains refreshed this turn (set by collect)
-    trip.metadata["suggestions"] = []
+    inputs = _begin_turn(trip, message, preset_actions, route_decision)
     started = time.perf_counter()
     queue: asyncio.Queue = asyncio.Queue()
     hub = get_hub()
@@ -1074,18 +1188,19 @@ async def run_turn_stream(trip: TripState, message: str = "", preset_actions: li
         queue.put_nowait({"type": "tool", **{k: v for k, v in event.items() if k != "turn"}})
 
     final: dict = {}
+    failed = False
 
     async def runner() -> None:
+        nonlocal failed
         try:
-            async for mode, chunk in get_graph().astream(
-                    {"trip": trip, "message": message, "preset_actions": preset_actions or [], "route_decision": route_decision},
-                    {"recursion_limit": 80}, stream_mode=["updates", "values"]):
+            async for mode, chunk in get_graph().astream(inputs, _GRAPH_CONFIG, stream_mode=["updates", "values"]):
                 if mode == "updates":
                     for node in chunk:
                         queue.put_nowait({"type": "node", "node": node, "ms": round((time.perf_counter() - started) * 1000)})
                 else:
                     final.update(chunk)
         except Exception as exc:  # surfaced to the UI instead of a silent hang
+            failed = True
             log.exception("turn failed: %s", net.redact(str(exc)))  # details stay in the server log
             queue.put_nowait({"type": "error", "message": "Something went wrong while planning - please try again."})
         finally:
@@ -1106,8 +1221,8 @@ async def run_turn_stream(trip: TripState, message: str = "", preset_actions: li
     finally:
         hub.listeners.remove(on_tool)
         await task
-    if "trip" not in final:
-        return
+    if failed or "trip" not in final:
+        return  # no "done": the stored trip stays as it was before this turn
     trip = final["trip"]
     reply = final.get("reply", "")
     _finish_turn(trip, usage, started)

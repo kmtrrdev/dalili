@@ -47,13 +47,20 @@ window.addEventListener("scroll", onScroll, { passive: true });
 onScroll();
 
 // ---------------------------------------------------------------- scroll-spy contents
+const toc = document.querySelector(".toc");
 const links = new Map([...document.querySelectorAll(".toc a")].map((a) => [a.dataset.target, a]));
 const spy = new IntersectionObserver((entries) => {
   for (const en of entries) {
     if (!en.isIntersecting) continue;
     links.forEach((a) => a.classList.remove("active"));
     const a = links.get(en.target.id);
-    if (a) { a.classList.add("active"); a.scrollIntoView({ block: "nearest" }); }
+    if (!a) continue;
+    a.classList.add("active");
+    // Keep the active entry visible in the sticky sidebar only - scrollIntoView would also scroll the page (phones).
+    if (toc && getComputedStyle(toc).position === "sticky" && toc.scrollHeight > toc.clientHeight) {
+      const r = a.getBoundingClientRect(), box = toc.getBoundingClientRect();
+      if (r.top < box.top || r.bottom > box.bottom) toc.scrollTop += r.top - box.top - box.height / 2;
+    }
   }
 }, { rootMargin: "-35% 0px -60% 0px" });
 document.querySelectorAll(".sec").forEach((s) => spy.observe(s));

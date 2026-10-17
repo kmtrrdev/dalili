@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from ..models import ResearchBundle, TravelerProfile, TripPlan, ValidationReport
+from .budget import to_user
 from .knobs import PlanKnobs
 
 BUDGET_LADDER = [
@@ -110,7 +111,7 @@ def _load(plan: TripPlan, day: int) -> int:
 
 def travel_floor(plan: TripPlan, research: ResearchBundle) -> float | None:
     """The least the trip can cost in the budget currency: cheapest outbound + return (or round-trip ticket) for
-    everyone, plus the cheapest hotel for every night. None for multi-city trips or missing data."""
+    everyone, plus the cheapest hotel for every night and room. None for multi-city trips or missing data."""
     b = plan.budget
     if b is None or plan.stops or not research.flights_outbound or not research.flights_return or not research.hotels:
         return None
@@ -124,14 +125,16 @@ def travel_floor(plan: TripPlan, research: ResearchBundle) -> float | None:
     travelers = max(1, round(b.flights / max(user(plan.outbound_flight.price_per_person) + user(plan.return_flight.price_per_person), 1))) \
         if plan.outbound_flight and plan.return_flight and b.flights else 1
     nights = max(1, len(plan.days) - 1)
-    hotel = min(user(h.price_per_night) for h in research.hotels) * nights
+    # Rooms as the plan's own hotel line charges them (rooms x nights), like the travellers from its flights line.
+    rooms = max(1, round(b.hotel / max(user(plan.hotel.price_per_night) * nights, 1))) \
+        if plan.hotel and b.hotel else 1
+    hotel = min(user(h.price_per_night) for h in research.hotels) * nights * rooms
     return tickets * travelers + hotel
 
 
 def _user(m, plan: TripPlan, research: ResearchBundle) -> float:
     """An amount in the trip's budget currency (every cap and comparison below uses it)."""
-    cur = plan.budget.currency.upper() if plan.budget else m.currency.upper()
-    return m.amount * (1.0 if m.currency.upper() == cur else research.fx_rates.get(m.currency.upper(), 1.0))
+    return to_user(m, research.fx_rates, plan.budget.currency if plan.budget else m.currency)
 
 
 def _apply_budget_step(step: str, plan: TripPlan, k: PlanKnobs, research: ResearchBundle,

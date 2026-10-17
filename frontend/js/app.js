@@ -43,7 +43,8 @@ const P = {
 const icon = (n) => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${P[n] || P.sparkle}"/></svg>`;
 
 // ------------------------------------------------------------------ state
-const state = { tripId: null, trip: null, tab: "itinerary", day: 1, busy: false, map: null, routeKey: "" };
+// turn: id of the chat turn whose answer may still change the screen (a newer turn or a new trip retires it).
+const state = { tripId: null, trip: null, tab: "itinerary", day: 1, busy: false, map: null, routeKey: "", turn: 0, ctrl: null };
 // "?q=Plan a trip to Rome" (from a travel guide page): start a new trip with that request ready to complete.
 const PREFILL = new URLSearchParams(location.search).get("q");
 try { state.tripId = PREFILL ? null : localStorage.getItem("tripId"); } catch (_) { /* storage unavailable */ }
@@ -105,14 +106,17 @@ function priceCertainty(plan) {
     out[m.price_type === "estimated" ? (informed ? "ai" : "estimated") : m.price_type === "calculated" ? "calculated" : "verified"] += v;
   };
   const pax = state.trip.trip_contract.travelers;
-  [plan.outbound_flight, plan.return_flight, ...(plan.legs || [])].forEach((f) => f && add(f.price_per_person, pax));
-  [plan.hotel, ...(plan.stops || []).map((s) => s.hotel)].forEach((h) => h && add(h.total_price));
+  const flights = plan.legs?.length ? plan.legs : [plan.outbound_flight, plan.return_flight];
+  flights.forEach((f) => f && add(f.price_per_person, pax));
+  (plan.stops?.length ? plan.stops.map((s) => s.hotel) : [plan.hotel]).forEach((h) => h && add(h.total_price));
   plan.days.forEach((d) => d.items.forEach((i) => {
     if (i.kind !== "flight") add(i.cost);
     if (i.kind !== "transfer") add(i.transport_from_previous?.cost);
   }));
   return out;
 }
+const arrow = () => (getLang() === "ar" ? " ← " : " → ");
+const PHONE = () => window.matchMedia("(max-width: 900px)").matches;
 const fmtDate = (iso, opts = { month: "short", day: "numeric" }) => new Date(iso + "T12:00:00").toLocaleDateString(locale(), opts);
 const minutes = (hhmm) => { const [h, m] = hhmm.split(":").map(Number); return h * 60 + m; };
 function md(text) {
@@ -167,21 +171,47 @@ function setBusy(b, label) {
   $("agentState").textContent = label || (b ? t("working") : t("ready"));
 }
 
+/** An HTTP error with what the server said (and how long to wait after a rate limit). */
+async function httpError(res) {
+  let detail = "";
+  try { const j = await res.json(); detail = typeof j.detail === "string" ? j.detail : ""; } catch (_) { /* not JSON */ }
+  const err = new Error(detail || res.statusText);
+  err.status = res.status;
+  err.retry = res.headers.get("Retry-After");
+  return err;
+}
+function errorText(err) {
+  if (err.status === 429) return t("errRate", err.retry || "60");
+  if (err.status === 400 || err.status === 422) return t("errTooLong");
+  return t("errNet");
+}
+
+/** Stop listening to the running turn (a new trip, another trip opened): its answer must not land on this screen. */
+function retireTurn() {
+  state.turn += 1;
+  if (state.ctrl) state.ctrl.abort();
+  state.ctrl = null;
+  if (state.busy) setBusy(false);
+}
+
+/** Send a chat message. Returns false when it wasn't sent (a turn is still running, or nothing to send). */
 async function send(text, extra = {}) {
-  if (state.busy || !text.trim()) return;
+  if (state.busy || !text.trim()) return false;
   document.querySelectorAll(".route-actions").forEach((el) => el.remove());
   openChat();
+  if (PHONE()) requestAnimationFrame(() => $("chatPanel").scrollIntoView({ behavior: "smooth", block: "start" }));
   addMessage("user", text);
-  const dots = typing();
+  const ctx = { dots: typing(), failed: false };
   setBusy(true, t("understanding"));
-  pipeline.reset();
+  const turn = ++state.turn;
+  const ctrl = state.ctrl = new AbortController();
   const pulse = setInterval(() => globe.pulse(), 1200);
   try {
     const res = await fetch("/api/chat/stream", {
-      method: "POST", headers: { "Content-Type": "application/json" },
+      method: "POST", headers: { "Content-Type": "application/json" }, signal: ctrl.signal,
       body: JSON.stringify({ message: text, trip_id: state.tripId, ...extra }),
     });
-    if (!res.ok || !res.body) throw new Error(await res.text());
+    if (!res.ok || !res.body) throw await httpError(res);
     const reader = res.body.getReader();
     const dec = new TextDecoder();
     let buf = "";
@@ -193,42 +223,46 @@ async function send(text, extra = {}) {
       while ((i = buf.indexOf("\n\n")) >= 0) {
         const raw = buf.slice(0, i);
         buf = buf.slice(i + 2);
-        if (raw.startsWith("data: ")) handleEvent(JSON.parse(raw.slice(6)), dots);
+        if (raw.startsWith("data: ") && turn === state.turn) handleEvent(JSON.parse(raw.slice(6)), ctx);
       }
     }
   } catch (err) {
-    dots.remove();
+    if (turn !== state.turn || err.name === "AbortError") return true;
+    ctx.dots.remove();
     console.error(err);
-    addMessage("assistant", t("errNet"), "error");
-    pipeline.fail();
+    addMessage("assistant", errorText(err), "error");
   } finally {
     clearInterval(pulse);
-    setBusy(false);
+    if (turn === state.turn) { setBusy(false); state.ctrl = null; }
   }
+  return true;
 }
 
-function handleEvent(ev, dots) {
+function handleEvent(ev, ctx) {
   if (ev.type === "node") {
-    pipeline.node(ev.node);
     const label = t("node")[ev.node];
     if (label) $("agentState").textContent = label;
   } else if (ev.type === "tool") {
-    pipeline.tool(ev);
+    const label = t("tool")[ev.server];
+    if (label) $("agentState").textContent = label;
   } else if (ev.type === "error") {
-    dots.remove();
+    ctx.dots.remove();
+    ctx.failed = true;
     console.error(ev.message);
     addMessage("assistant", t("errPlan"), "error");
-    pipeline.fail();
-  } else if (ev.type === "done") {
-    dots.remove();
+  } else if (ev.type === "done" && !ctx.failed) {
+    ctx.dots.remove();
+    const firstPlan = !Object.keys(state.trip?.plans || {}).length;
     state.tripId = ev.trip_id;
     try { localStorage.setItem("tripId", ev.trip_id); } catch (_) { /* ignore */ }
-    const msg = addMessage("assistant", ev.reply);
-    status();  // refresh the searches-left counter
-    pipeline.finish(ev.trip);
+    const msg = ev.reply ? addMessage("assistant", ev.reply) : null;
     setTrip(ev.trip);
     const pr = ev.trip.draft && ev.trip.draft.route_proposal;
-    if (pr && pr.stops.length && !ev.trip.draft.route_confirmed) routeActions(msg, pr);
+    if (msg && pr && pr.stops.length && !ev.trip.draft.route_confirmed) routeActions(msg, pr);
+    // Phones: the first plan appears below the chat - bring it into view.
+    if (PHONE() && firstPlan && Object.keys(ev.trip.plans || {}).length) {
+      requestAnimationFrame(() => $("board").scrollIntoView({ behavior: "smooth", block: "start" }));
+    }
   }
 }
 
@@ -236,10 +270,10 @@ function handleEvent(ev, dots) {
 function routeActions(after, pr) {
   const box = document.createElement("div");
   box.className = "route-actions";
-  box.innerHTML = `<div class="ra-route">${pr.stops.map((s, i) => `<span><i>${i + 1}</i>${esc(s.city)} · ${s.nights}${t("nShort")}</span>`).join("<b>→</b>")}</div>
+  box.innerHTML = `<div class="ra-route">${pr.stops.map((s, i) => `<span><i>${i + 1}</i>${esc(s.city)} · ${s.nights}${t("nShort")}</span>`).join('<b class="tr-arrow">→</b>')}</div>
     <button class="btn primary" type="button">${icon("route")}${t("planRoute")}</button>
     <span class="muted">${t("orChange")}</span>`;
-  box.querySelector("button").addEventListener("click", () => send("✓ " + pr.stops.map((s) => s.city).join(" → "), { route_decision: "accept" }));
+  box.querySelector("button").addEventListener("click", () => send("✓ " + pr.stops.map((s) => s.city).join(arrow()), { route_decision: "accept" }));
   after.after(box);
   $("messages").scrollTop = $("messages").scrollHeight;
 }
@@ -252,19 +286,6 @@ function renderChips() {
   $("chips").innerHTML = chips.map(([c, ai]) => `<button class="chip${ai ? " ai" : ""}" type="button" dir="auto" title="${esc(c)}" data-say="${esc(c)}">${ai ? "✨ " : ""}${esc(c)}</button>`).join("");
   $("chips").querySelectorAll(".chip").forEach((b) => b.addEventListener("click", () => send(b.dataset.say)));
 }
-
-// ------------------------------------------------------------------ progress (friendly status line)
-// While the agent works, the chat header says what it is doing in plain words - no internals.
-const pipeline = {
-  reset() {},
-  node() {},
-  tool(ev) {
-    const label = t("tool")[ev.server];
-    if (label) $("agentState").textContent = label;
-  },
-  finish() {},
-  fail() {},
-};
 
 // ------------------------------------------------------------------ trip + globe
 function setTrip(t) {
@@ -343,7 +364,7 @@ function renderBoard() {
     .filter(Boolean).join(" · ");
   const cn = d.country && c.destination_name.toLowerCase().endsWith(" " + d.country.toLowerCase())
     ? c.destination_name.slice(0, -d.country.length).trim() : c.destination_name;
-  $("tripTitle").textContent = multi ? plan.stops.map((s) => s.name).join(" → ") : cn;
+  $("tripTitle").textContent = multi ? plan.stops.map((s) => s.name).join(arrow()) : cn;
   $("routeStrip").hidden = !multi;
   $("routeStrip").innerHTML = multi ? routeStrip(plan, c) : "";
   $("routeStrip").querySelectorAll("[data-day]").forEach((b) => b.addEventListener("click", () => {
@@ -352,7 +373,7 @@ function renderBoard() {
   const stayTab = document.querySelector('#tabs [data-tab="stay"]');
   stayTab.dataset.i18n = multi ? "tabs.stayMulti" : "tabs.stay";
   stayTab.textContent = t(stayTab.dataset.i18n);
-  $("tripSub").textContent = `${fmtDate(c.start_date, { weekday: "short", month: "short", day: "numeric" })} → ${fmtDate(c.end_date, { weekday: "short", month: "short", day: "numeric" })} · ${t("travellers", c.travelers)} · ${t("from")} ${c.origin_city} · ${t("budgetWord")} ${money(c.budget.amount, c.budget.currency)}`;
+  $("tripSub").textContent = `${fmtDate(c.start_date, { weekday: "short", month: "short", day: "numeric" })}${arrow()}${fmtDate(c.end_date, { weekday: "short", month: "short", day: "numeric" })} · ${t("travellers", c.travelers)} · ${t("from")} ${c.origin_city} · ${t("budgetWord")} ${money(c.budget.amount, c.budget.currency)}`;
   // Parts that came from the AI fallback (live search unavailable) are flagged.
   const legs = (plan.legs && plan.legs.length ? plan.legs : [plan.outbound_flight, plan.return_flight]).filter(Boolean);
   const hotels = (plan.stops && plan.stops.length ? plan.stops.map((s) => s.hotel) : [plan.hotel]).filter(Boolean);
@@ -401,6 +422,7 @@ function renderModes() {
   $("modes").querySelectorAll(".mode").forEach((b) => {
     tilt(b, 10);
     b.addEventListener("click", async () => {
+      if (state.busy) return addMessage("assistant", t("busyWait"));
       const res = await fetch(`/api/trips/${trip.trip_id}/select`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ mode: b.dataset.mode }) });
       if (res.ok) setTrip(await res.json());
     });
@@ -474,7 +496,8 @@ function wireItinerary(plan) {
   const d = plan.days[state.day - 1];
   const el = $("dayMap");
   if (!window.L || !el) { if (el) el.remove(); return; }
-  const map = L.map(el, { zoomControl: true, attributionControl: true, scrollWheelZoom: false });
+  const map = L.map(el, { zoomControl: true, attributionControl: true, scrollWheelZoom: false,
+    dragging: !window.matchMedia("(pointer: coarse)").matches });
   state.map = map;
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: "© OpenStreetMap contributors", maxZoom: 19, className: "dark-tiles",
@@ -747,20 +770,35 @@ function wireWhatIf() {
   const cur = userCur();
   const range = $("wiRange");
   range.addEventListener("input", () => { const v = +range.value; $("wiLabel").textContent = (v >= 0 ? "+" : "−") + money(Math.abs(v), cur); });
+  const whatIf = async (body) => {
+    const res = await fetch(`/api/trips/${state.trip.trip_id}/whatif`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    if (!res.ok) throw await httpError(res);
+    return res.json();
+  };
+  const fail = (err) => { $("wiOut").textContent = err.status === 429 ? t("errRate", err.retry || "60") : t("errWhatIf"); };
   $("wiRun").addEventListener("click", async () => {
     const delta = +range.value;
-    if (!delta) return;
+    if (!delta || state.busy) return;
     $("wiOut").textContent = t("replanning");
-    const r = await (await fetch(`/api/trips/${state.trip.trip_id}/whatif`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ budget_delta: delta }) })).json();
-    const m = state.trip.selected_mode, a = r.before[m], b = r.after[m];
-    $("wiOut").innerHTML = `<p><b>${t("mode")[m]}</b>: ${money(a.total, cur)} → <b>${money(b.total, cur)}</b> · ${t("tripScore")} ${a.score} → <b>${b.score}</b></p>
+    setBusy(true, t("replanning"));
+    let r;
+    try { r = await whatIf({ budget_delta: delta }); } catch (err) { return fail(err); } finally { setBusy(false); }
+    const m = state.trip.selected_mode, a = r.before?.[m], b = r.after?.[m];
+    if (!a || !b) return fail({});
+    $("wiOut").innerHTML = `<p><b>${t("mode")[m]}</b>: ${money(a.total, a.currency || cur)} → <b>${money(b.total, b.currency || cur)}</b> · ${t("tripScore")} ${a.score} → <b>${b.score}</b></p>
       <ul>${r.changes.map((c) => `<li>${esc(c)}</li>`).join("") || `<li>${t("noChanges")}</li>`}</ul>
       <button class="btn primary" id="wiApply" type="button">${t("applyBudget")}</button>`;
     $("wiApply").addEventListener("click", async () => {
-      await fetch(`/api/trips/${state.trip.trip_id}/whatif`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ budget_delta: delta, apply: true }) });
-      const updated = await (await fetch(`/api/trips/${state.trip.trip_id}`)).json();
-      addMessage("assistant", t("budgetUpdated", money(updated.trip_contract.budget.amount, cur)));
-      setTrip(updated);
+      if (state.busy) return;
+      setBusy(true, t("replanning"));
+      try {
+        await whatIf({ budget_delta: delta, apply: true });  // saves exactly the version compared above
+        const res = await fetch(`/api/trips/${state.trip.trip_id}`);
+        if (!res.ok) throw await httpError(res);
+        const updated = await res.json();
+        addMessage("assistant", t("budgetUpdated", money(updated.trip_contract.budget.amount, updated.trip_contract.budget.currency)));
+        setTrip(updated);
+      } catch (err) { fail(err); } finally { setBusy(false); }
     });
   });
 }
@@ -782,9 +820,11 @@ function expertReview() {
   if (!c) return "";
   const ar = getLang() === "ar";
   const issues = c.issues || [];
+  const other = c.mode && c.mode !== state.trip.selected_mode;
   return `<div class="card review">
     <div class="rv-head">${ring(c.quality, 58)}<div><div class="k">✨ ${t("expertReview")}</div>
-      <p>${esc(ar && c.verdict_ar ? c.verdict_ar : c.verdict)}</p></div></div>
+      <p>${esc(ar && c.verdict_ar ? c.verdict_ar : c.verdict)}</p>
+      ${other ? `<p class="muted" style="font-size:12.5px">${t("reviewOf", t("mode")[c.mode] || c.mode)}</p>` : ""}</div></div>
     ${issues.length ? `<ul class="rv-list">${issues.map((i) => `<li class="${i.applied ? "done" : "idea"}">
       <span class="rv-ic">${i.applied ? icon("check") : "💡"}</span>
       <div><b>${i.applied ? t("improved") : t("idea")}${i.day ? ` · ${t("day")} ${i.day}` : ""}</b>
@@ -1018,6 +1058,7 @@ $("examples").addEventListener("click", (e) => {
 });
 $("quickChat").addEventListener("submit", (e) => {
   e.preventDefault();
+  if (state.busy) return;
   const text = $("qcInput").value.trim();
   if (!text) { $("qcInput").focus(); return; }
   $("qcInput").value = "";
@@ -1183,6 +1224,7 @@ $("wizNext").addEventListener("click", (e) => {
   const b = e.target.closest("[data-act]");
   if (!b) return;
   if (b.dataset.act === "next") return nextStep();
+  if (state.busy) { $("wizErr").textContent = t("busyWait"); $("wizErr").hidden = false; return; }
   for (const s of [1, 2, 3]) {  // everything still valid (the traveller may have jumped back)
     const bad = wizCheck(s);
     if (bad) { showStep(s); $("wizErr").textContent = bad[0]; $("wizErr").hidden = false; return; }
@@ -1191,7 +1233,7 @@ $("wizNext").addEventListener("click", (e) => {
   closeWizard();
   if (wiz.where === "place") wiz.stops.forEach((s) => logActivity("search", s));  // what the recommender learns from
   if (b.dataset.act === "route") planRouteFromForm(allStops());
-  else if (b.dataset.act === "plan") send(t("planMsg", planPayload()));
+  else if (b.dataset.act === "plan") { resetTrip(); send(t("planMsg", planPayload())); }  // the form is a new trip
   else loadIdeas();
 });
 
@@ -1303,6 +1345,7 @@ function planRouteFromForm(stops) {
     budget: +$("ideaBudget").value, currency: $("ideaCur").value, occasion: ideasState.occasion,
     interests: [...ideasState.interests], notes: $("ideaNotes").value.trim(), direct: $("ideaDirect").checked };
   saveIdeasForm();
+  resetTrip();  // the form always describes a new trip
   send(t("multiMsg", d));
 }
 function saveIdeasForm(extra = {}) {
@@ -1351,7 +1394,6 @@ async function loadIdeas(e) {
     if (!res.ok) throw new Error(await res.text());
     ideasState.data = await res.json();
     renderIdeas();
-    status();
   } catch (err) {
     console.error(err);
     $("ideasGrid").innerHTML = "";
@@ -1385,7 +1427,7 @@ function renderIdeas() {
         ${i.why ? `<p class="idea-why">${esc(i.why)}</p>` : ""}
         ${i.taste_because?.city ? `<p class="idea-why taste">${t("likeYour", esc(i.taste_because.city))}</p>` : ""}
         ${i.tags?.length ? `<div class="idea-tags">${i.tags.map((x) => `<span>${esc(x)}</span>`).join("")}</div>` : ""}
-        <div class="idea-dates">${i.start_date ? `${fmtDate(i.start_date)} → ${fmtDate(i.end_date)} · ` : ""}${t("nightsN", i.nights)}</div>
+        <div class="idea-dates">${i.start_date ? `${fmtDate(i.start_date)}${arrow()}${fmtDate(i.end_date)} · ` : ""}${t("nightsN", i.nights)}</div>
         ${i.flight_minutes ? `<div class="idea-dates">${t("flightH", i.flight_minutes)}${i.stops === 0 ? ` · ${t("nonstop")}` : i.stops ? ` · ${t("stop", i.stops)}` : ""}${i.airline ? ` · ${esc(i.airline)}` : ""}</div>` : ""}
         <div class="idea-prices"><span>${icon("plane")}${money(i.flight_price, d.currency)}</span>${i.hotel_price ? `<span>${icon("bed")}${money(i.hotel_price, d.currency)}${t("perNight")}</span>` : `<span class="muted">${icon("bed")}${t("hotelNotIncl")}</span>`}</div>
         <div class="idea-total"><span>${t("totalFH")}</span><b>${money(i.total, d.currency)}</b></div>
@@ -1399,6 +1441,8 @@ function renderIdeas() {
       if (idea.lat != null && !state.trip) globe.setJourney({ lat: d.origin.lat, lon: d.origin.lon, name: d.origin.name }, [{ lat: idea.lat, lon: idea.lon, name: idea.name }]);
     });
     b.addEventListener("click", () => {
+      if (state.busy) return;
+      resetTrip();  // an idea is a new trip
       send(t("ideaMsg", idea, d));
     });
   });
@@ -1411,19 +1455,19 @@ $("ratePlan").addEventListener("click", openRating);
 const RATE_DIMS = ["relevance", "personalization", "trust", "explanations", "itinerary", "usability", "confidence", "overall"];
 function openRating() {
   if (!state.trip) return;
-  const box = modal(`<p class="eyebrow">${t("ratePlan")}</p><h3>${t("rateTitle")}</h3><p class="muted">${t("rateSub")}</p>
+  const box = modal(`<div class="modal-body"><p class="eyebrow">${t("ratePlan")}</p><h3>${t("rateTitle")}</h3><p class="muted">${t("rateSub")}</p>
     <form class="rate-form" id="rateForm">${RATE_DIMS.map((d) => `<div class="rate-row"><span>${t("rate." + d)}</span>
       <div class="rate-scale" role="radiogroup" aria-label="${esc(t("rate." + d))}">${[1, 2, 3, 4, 5].map((v) =>
         `<label><input type="radio" name="${d}" value="${v}" required><b>${v}</b></label>`).join("")}</div></div>`).join("")}
-      <textarea name="comment" maxlength="1000" placeholder="${esc(t("rateComment"))}"></textarea>
-      <button class="btn primary" type="submit">${t("rateSend")}</button></form>`);
+      <textarea name="comment" maxlength="1000" dir="auto" placeholder="${esc(t("rateComment"))}"></textarea>
+      <button class="btn primary" type="submit">${t("rateSend")}</button></form></div>`);
   box.querySelector("#rateForm").addEventListener("submit", async (e) => {
     e.preventDefault();
     const f = new FormData(e.target);
     const ratings = Object.fromEntries(RATE_DIMS.map((d) => [d, +f.get(d)]));
     const res = await fetch("/api/evaluations", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ trip_id: state.trip.trip_id, ratings, comment: f.get("comment") || "" }) });
-    box.innerHTML = `<p class="rate-done">${res.ok ? t("rateThanks") : t("rateFailed")}</p>`;
+    box.querySelector(".modal-body").innerHTML = `<p class="rate-done">${res.ok ? t("rateThanks") : t("rateFailed")}</p>`;
     setTimeout(closeModal, 1600);
   });
 }
@@ -1439,7 +1483,11 @@ function setChatOpen(open) {
 }
 function openChat() { if (document.body.classList.contains("chat-closed")) setChatOpen(true); }
 $("chatClose").addEventListener("click", () => setChatOpen(false));
-$("chatFab").addEventListener("click", () => { setChatOpen(true); $("input").focus(); });
+$("chatFab").addEventListener("click", () => {
+  setChatOpen(true);
+  if (PHONE()) $("chatPanel").scrollIntoView({ behavior: "smooth", block: "start" });
+  $("input").focus({ preventScroll: true });
+});
 
 // ------------------------------------------------------------------ language
 function greet() { addMessage("assistant", t("greeting")); }
@@ -1455,7 +1503,6 @@ function refreshLanguage() {
   if (state.trip && state.trip.plans && Object.keys(state.trip.plans).length) renderBoard();
   if (!state.tripId && $("messages").children.length <= 1) { $("messages").innerHTML = ""; greet(); }
   refreshAccountLanguage();
-  status();
   requestAnimationFrame(layoutGlobe);
 }
 $("langToggle").addEventListener("click", () => { setLang(getLang() === "ar" ? "en" : "ar"); refreshLanguage(); });
@@ -1479,6 +1526,7 @@ $("tabs").addEventListener("click", (e) => {
 });
 $("composer").addEventListener("submit", (e) => {
   e.preventDefault();
+  if (state.busy) return;  // keep the text: it can be sent when the answer arrives
   const v = $("input").value.trim();
   if (!v) return;
   $("input").value = "";
@@ -1487,13 +1535,18 @@ $("composer").addEventListener("submit", (e) => {
 });
 $("input").addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); $("composer").requestSubmit(); } });
 $("input").addEventListener("input", (e) => { e.target.style.height = "auto"; e.target.style.height = Math.min(e.target.scrollHeight, 140) + "px"; });
-function newTrip() {
-  closeDash();
+/** Forget the open trip (and any turn still running for it): the next message starts a new one. */
+function resetTrip() {
+  retireTurn();
   state.tripId = null; state.routeKey = ""; state.day = 1; state.tab = "itinerary";
   try { localStorage.removeItem("tripId"); } catch (_) { /* ignore */ }
   $("messages").innerHTML = "";
   globe.clearRoute();
   setTrip(null);
+}
+function newTrip() {
+  closeDash();
+  resetTrip();
   greet();
   setChatOpen(false);  // back to the two ways to start
   $("hero").scrollTo({ top: 0 });
@@ -1506,6 +1559,7 @@ async function openTrip(id) {
   const res = await fetch(`/api/trips/${encodeURIComponent(id)}`);
   if (!res.ok) return;
   const trip = await res.json();
+  retireTurn();  // a turn still running for another trip must not land on this one
   state.tripId = trip.trip_id; state.routeKey = ""; state.day = 1; state.tab = "itinerary";
   try { localStorage.setItem("tripId", trip.trip_id); } catch (_) { /* ignore */ }
   $("messages").innerHTML = "";
@@ -1524,15 +1578,6 @@ function applyPrefs(prefs, force = false) {
       sel.value = prefs.currency;
     }
   }
-}
-
-async function status() {
-  try {
-    // Only the search quota is shown to the traveller; everything else stays behind the scenes.
-    const q = await fetch("/api/quota").then((r) => r.json());
-    $("status").innerHTML = q.configured
-      ? `<span class="pill"><i class="${q.searches_left < 40 ? "warn" : ""}"></i>${t("quota", q.searches_left, q.searches_per_month)}</span>` : "";
-  } catch (_) { /* status is decorative */ }
 }
 
 (async function boot() {
@@ -1562,7 +1607,6 @@ async function status() {
       renderIdeaControls();
     }
   } catch (_) { renderIdeaControls(); /* storage unavailable */ }
-  status();
   initAccount({
     openTrip, newTrip, openWizard, wikiImage, placeLabel, money, applyPrefs,
     tripDeleted: (id) => { if (state.tripId === id) newTrip(); },

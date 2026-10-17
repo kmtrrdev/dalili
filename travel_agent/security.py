@@ -52,12 +52,8 @@ class RateLimiter:
             q.append(now)
             return None
 
-    def reset(self) -> None:
-        with self._lock:
-            self._hits.clear()
 
-
-def _env_int(name: str, default: int) -> int:
+def env_int(name: str, default: int) -> int:
     try:
         return int(os.getenv(name, default))
     except ValueError:
@@ -65,19 +61,29 @@ def _env_int(name: str, default: int) -> int:
 
 
 # Expensive work (model + live searches): per traveller (account or guest id) and per IP address.
-TURNS_PER_IDENTITY = RateLimiter(_env_int("DALILI_TURNS_PER_10MIN", 30), 600)
-TURNS_PER_IP = RateLimiter(_env_int("DALILI_TURNS_PER_IP_10MIN", 90), 600)
-LIGHT_PER_IP = RateLimiter(_env_int("DALILI_LIGHT_PER_IP_MIN", 120), 60)
+TURNS_PER_IDENTITY = RateLimiter(env_int("DALILI_TURNS_PER_10MIN", 30), 600)
+TURNS_PER_IP = RateLimiter(env_int("DALILI_TURNS_PER_IP_10MIN", 90), 600)
+LIGHT_PER_IP = RateLimiter(env_int("DALILI_LIGHT_PER_IP_MIN", 120), 60)
+# Live booking-offer lookups (one paid search per hotel, cached): looser than turns, but never unlimited.
+OFFERS_PER_IDENTITY = RateLimiter(env_int("DALILI_OFFERS_PER_10MIN", 40), 600)
 
-MAX_MESSAGE_CHARS = _env_int("DALILI_MAX_MESSAGE_CHARS", 4000)
+MAX_MESSAGE_CHARS = env_int("DALILI_MAX_MESSAGE_CHARS", 4000)
 
 
-def limit_expensive(request: Request, identity_id: str) -> None:
-    for limiter, key in ((TURNS_PER_IDENTITY, identity_id), (TURNS_PER_IP, client_ip(request))):
+def _limit(pairs: tuple[tuple[RateLimiter, str], ...]) -> None:
+    for limiter, key in pairs:
         wait = limiter.hit(key)
         if wait is not None:
             raise HTTPException(429, f"Too many requests - please wait {int(wait) + 1} seconds.",
                                 headers={"Retry-After": str(int(wait) + 1)})
+
+
+def limit_expensive(request: Request, identity_id: str) -> None:
+    _limit(((TURNS_PER_IDENTITY, identity_id), (TURNS_PER_IP, client_ip(request))))
+
+
+def limit_offers(request: Request, identity_id: str) -> None:
+    _limit(((OFFERS_PER_IDENTITY, identity_id), (LIGHT_PER_IP, client_ip(request))))
 
 
 def limit_light(request: Request) -> None:

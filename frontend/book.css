@@ -329,12 +329,13 @@ ul.notes { padding-left: 18px; } ul.notes li { margin: 6px 0; color: #cfdaef; }
 
 /* ---------------------------------------------------------------- responsive */
 @media (max-width: 1000px) {
-  .book { grid-template-columns: 1fr; }
+  .book { grid-template-columns: minmax(0, 1fr); }  /* never wider than the screen */
+  .book > main, .daygrid > * { min-width: 0; }
   .toc { position: static; max-height: none; display: flex; flex-wrap: wrap; gap: 4px; }
   .toc-title { width: 100%; }
   .toc a { padding: 5px 9px; background: var(--glass-2); }
   .toc a em, .toc a .i { display: none; }
-  .daygrid { grid-template-columns: 1fr; }
+  .daygrid { grid-template-columns: minmax(0, 1fr); }
   .daymap { position: relative; top: 0; height: 280px; }
 }
 @media (max-width: 640px) {

@@ -13,6 +13,7 @@ from datetime import date, timedelta
 
 from .engine.planner import plan_activity_ids
 from .models import (
+    PLANNING_MODES,
     Budget,
     FeedbackItem,
     RequirementDraft,
@@ -59,21 +60,35 @@ def apply_requirements(trip: TripState, req: Requirements) -> list[str]:
 
     wanted = [x.strip() for x in req.destinations if x and x.strip()]
     proposed = [s.city.lower() for s in d.route_proposal.stops] if d.route_proposal else []
+    had_route = bool(d.destination or d.destinations or d.region)
+
+    def new_route() -> None:
+        # Places named for the old route belong to it ("the Colosseum" is not in Istanbul); this message's own
+        # must-visit / wish places are added below. Places named before any destination was given are kept.
+        if had_route:
+            d.must_visit, d.wish_list = [], []
+            trip.metadata.pop("must_visit_day", None)
+
     if req.region and not wanted and not req.destination:
         if (d.region or "").lower() != req.region.lower():
             d.region = req.region
             d.destinations, d.destination_refs, d.destination, d.destination_ref = [], [], None, None
             d.route_proposal, d.route_confirmed, d.route_feedback, d.countries = None, False, [], []
+            new_route()
     if len(wanted) >= 2:
         # Multi-city / multi-country journey, in visit order.
         if [w.lower() for w in wanted] == proposed and d.route_proposal:
             pass  # the model echoed the pending proposal: the traveller's decision is handled separately
         else:
-            if [w.lower() for w in wanted] != [x.lower() for x in d.destinations]:
+            changed = [w.lower() for w in wanted] != [x.lower() for x in d.destinations]
+            if changed:
                 d.destinations, d.destination_refs = wanted, []
                 d.destination, d.destination_ref = wanted[0], None
                 d.route_proposal, d.route_confirmed, d.route_feedback = None, False, []
-            d.stop_nights = [int(n) for n in req.nights_per_destination if n] if len(req.nights_per_destination) == len(wanted) else []
+                d.stop_nights = []  # the old split belongs to the old city list
+                new_route()
+            if len(req.nights_per_destination) == len(wanted):
+                d.stop_nights = [int(n) for n in req.nights_per_destination if n]
     elif req.destination and req.destination.strip().lower() in (
             {x.lower() for x in d.destinations} | {r.name.lower() for r in d.destination_refs}):
         pass  # the model echoed one of the tour's cities: keep the journey
@@ -83,8 +98,10 @@ def apply_requirements(trip: TripState, req: Requirements) -> list[str]:
         d.destination, d.destination_ref = req.destination.strip(), None  # resolved against real geocoding later
         d.destinations, d.destination_refs, d.stop_nights = [], [], []
         d.route_proposal, d.route_confirmed, d.route_feedback = None, False, []
+        new_route()
     if req.origin_city and req.origin_city.strip().lower() != (d.origin_city or "").lower():
         d.origin_city, d.origin_ref = req.origin_city.strip(), None
+        d.origin = None  # the old city's airport must not survive a new city (set below when one was named)
     if req.return_to:
         back = req.return_to.strip()
         home = {(d.origin_city or "").lower(), (d.origin_ref.name.lower() if d.origin_ref else "")}
@@ -99,16 +116,35 @@ def apply_requirements(trip: TripState, req: Requirements) -> list[str]:
         # Stated in nights ("3 nights"): the code does the arithmetic - N nights = N + 1 days, and it overrides an
         # echoed old end date (the length is what the traveller just said).
         req.duration_days, req.end_date = int(req.nights) + 1, None
+    if req.travel_month and not req.start_date and not (d.start_date and d.start_date.month == req.travel_month):
+        # "Rome in November": a concrete start date (mid-month), stated as an assumption the traveller can correct.
+        from .nlu import _next_date
+        from .config import today
+
+        req.start_date = _next_date(req.travel_month, 10, today()).isoformat()
+        notes.append(f"No exact dates given, so I started the trip on {date.fromisoformat(req.start_date):%d %B} - "
+                     "tell me if you prefer other days.")
+    # The trip's current length (what was planned, else what was said), kept when only the start moves.
+    c = trip.trip_contract
+    length = c.num_days if c else ((d.end_date - d.start_date).days + 1 if d.start_date and d.end_date
+                                   else d.duration_days)
     if req.start_date:
         d.start_date = date.fromisoformat(req.start_date)
-        if not req.end_date and not req.duration_days and d.duration_days:
-            d.end_date = d.start_date + timedelta(days=d.duration_days - 1)
+        if not req.end_date and not req.duration_days and length:
+            d.end_date = d.start_date + timedelta(days=length - 1)
     if req.end_date:
         d.end_date = date.fromisoformat(req.end_date)
     if req.duration_days:
         d.duration_days = req.duration_days
         if d.start_date and not req.end_date:
             d.end_date = d.start_date + timedelta(days=req.duration_days - 1)
+    elif d.start_date and d.end_date:
+        d.duration_days = (d.end_date - d.start_date).days + 1  # never left stale next to explicit dates
+    if (req.duration_days or req.end_date) and len(d.destinations) >= 2 and d.stop_nights \
+            and d.start_date and d.end_date and not req.nights_per_destination:
+        # A tour that got longer or shorter: the extra nights go to the last city, removed ones come off the
+        # longest stays (each city keeps at least one night) - the cities' split is never silently reset.
+        d.stop_nights = resize_nights(d.stop_nights, (d.end_date - d.start_date).days)
     setd("travelers", req.travelers)
     setd("budget_amount", req.budget_amount)
     setd("budget_currency", req.budget_currency)
@@ -180,6 +216,19 @@ def apply_requirements(trip: TripState, req: Requirements) -> list[str]:
     return notes
 
 
+def resize_nights(nights: list[int], total: int) -> list[int]:
+    """A tour's nights per city after the trip got longer or shorter: extra nights go to the last city, removed
+    ones come off the longest stays first, and every city keeps at least one night."""
+    out = list(nights)
+    total = max(total, len(out))
+    while sum(out) < total:
+        out[-1] += 1
+    while sum(out) > total:
+        i = max(range(len(out)), key=lambda j: (out[j], j))
+        out[i] -= 1
+    return out
+
+
 def add_must_visit(trip: TripState, names: list[str]) -> list[str]:
     """Remember places the traveller named; returns the ones that are new."""
     known = {x.lower() for x in trip.draft.must_visit}
@@ -222,6 +271,16 @@ def missing_requirements(d: RequirementDraft) -> list[str]:
     return missing
 
 
+def _home_currency(d: RequirementDraft) -> str | None:
+    """The currency of the country the traveller flies from (EGP for Cairo). For a stated budget only when they said
+    where they fly from; "the cheapest trip" is always priced in the home currency."""
+    if not (d.origin_city or d.origin or d.find_cheapest) or not (d.origin_ref and d.origin_ref.country_code):
+        return None
+    from babel.numbers import get_territory_currencies
+
+    return (get_territory_currencies(d.origin_ref.country_code) or [None])[0]
+
+
 def build_contract(trip: TripState) -> tuple[TripContract, list[str]]:
     d, p = trip.draft, trip.traveler_profile
     assumptions = []
@@ -239,15 +298,16 @@ def build_contract(trip: TripState) -> tuple[TripContract, list[str]]:
     travelers = d.travelers or 1
     if not d.travelers:
         assumptions.append("I planned for 1 traveler - tell me if more people are coming.")
-    currency = (d.budget_currency or "USD").upper()
+    # The currency the traveller named, else the one this trip already uses, else their home country's.
+    currency = (d.budget_currency or (trip.trip_contract.budget.currency if trip.trip_contract else None)
+                or _home_currency(d) or "USD").upper()
+    if not d.budget_currency:
+        d.budget_currency = currency  # kept, so a later change never flips it back silently
+        if d.budget_amount:
+            assumptions.append(f"I assumed your budget is in {currency} - tell me if you meant another currency.")
     amount = float(d.budget_amount or 0)
     if not d.budget_amount and d.find_cheapest:
         # No budget given: the planner finds the cheapest good trip and sets the budget to its cost (workflow.plan).
-        # Prices are shown in the traveller's home currency unless they named one.
-        if not d.budget_currency and d.origin_ref and d.origin_ref.country_code:
-            from babel.numbers import get_territory_currencies
-
-            currency = (get_territory_currencies(d.origin_ref.country_code) or ["USD"])[0]
         amount = FIND_CHEAPEST_PLACEHOLDER
     stops = []
     if len(d.destination_refs) >= 2:
@@ -324,7 +384,9 @@ def _all_flights(trip: TripState) -> list:
     r = trip.research
     if r is None:
         return []
-    return r.flights_outbound + r.flights_return + [f for rt in r.round_trips for f in (rt.outbound, rt.inbound)]
+    every = r.flights_outbound + r.flights_return + [f for rt in r.round_trips for f in (rt.outbound, rt.inbound)] \
+        + [f for leg in r.legs for f in leg]  # a tour's middle legs too
+    return list({f.id: f for f in every}.values())
 
 
 def resolve_flights(trip: TripState, text: str) -> list:
@@ -338,13 +400,54 @@ def resolve_flights(trip: TripState, text: str) -> list:
         wanted = re.sub(r"\s+", "", text.upper())
         matches = [f for f in pool if all(seg.replace(" ", "") in wanted for seg in f.flight_number.upper().split(" / "))]
     picked: dict[str, object] = {}
+    legs_of = {x.id: f"leg{i}" for i, leg in enumerate(trip.research.legs if trip.research else []) for x in leg}
     for f in sorted(matches, key=lambda f: f.price_per_person.amount):
-        picked.setdefault(f.direction, f)
+        picked.setdefault(legs_of.get(f.id, f.direction), f)  # one per leg of a tour, else per direction
     for rt in (trip.research.round_trips if trip.research else []):
         legs = {rt.outbound.id, rt.inbound.id}
         if any(f.id in legs for f in picked.values()):
             picked = {"outbound": rt.outbound, "return": rt.inbound}
     return list(picked.values())
+
+
+def _same_slot(trip: TripState, f) -> set[str]:
+    """Flights that compete with `f` for one place in the plan: the same leg of a tour, else the same direction."""
+    r = trip.research
+    for leg in (r.legs if r else []):
+        if any(x.id == f.id for x in leg):
+            return {x.id for x in leg}
+    return {x.id for x in _all_flights(trip) if x.direction == f.direction}
+
+
+def _target_hotels(plan: TripPlan, a: Action) -> list:
+    """The hotels a 'change the hotel' request means: the city named (or the day's city) on a tour, else all."""
+    if not plan.stops:
+        return plan.hotels
+    hay = f"{a.text or ''} {a.category or ''}".lower()
+    named = [s for s in plan.stops if s.hotel and s.name.lower() in hay]
+    if not named and a.day:
+        named = [s for s in plan.stops if s.hotel and s.first_day <= a.day <= s.last_day]
+    return [s.hotel for s in named] or plan.hotels
+
+
+def _resolve_item(trip: TripState, plan: TripPlan | None, text: str) -> str | None:
+    """The place a replace_item request means: a place id, an item title in the plan ("Lunch - Roscioli" too), or a
+    researched place's name. None when nothing matches."""
+    r, low = trip.research, text.strip().lower()
+    if r and r.place(text.strip()):
+        return text.strip()
+    items = [i for d in (plan.days if plan else []) for i in d.items if i.place_id]
+    hit = next((i for i in items if i.title.lower() == low), None) \
+        or next((i for i in items if low.endswith(" - " + i.title.lower()) or i.title.lower().endswith(" - " + low)), None)
+    if hit:
+        return hit.place_id
+    if r:
+        place = next((x for x in r.attractions + r.restaurants if x.name.lower() == low), None) \
+            or next((x for x in r.attractions + r.restaurants
+                     if len(x.name) >= 4 and low.endswith(" " + x.name.lower())), None)
+        if place:
+            return place.id
+    return None
 
 
 def _count_category(plan: TripPlan | None, category: str, trip: TripState) -> int:
@@ -368,7 +471,6 @@ def apply_actions(trip: TripState, actions: list[Action], by_traveller: bool = T
     dirty: set[str] = set()
     notes: list[str] = []
     needs_replan = False
-    unpin_all = False
     unpin_days: set[int] = set()
     explicit = set(p.explicit_fields)
 
@@ -401,10 +503,9 @@ def apply_actions(trip: TripState, actions: list[Action], by_traveller: bool = T
                 notes.append("Added more stops to every day.")
             else:
                 p.travel_style = STYLES[min(len(STYLES) - 1, STYLES.index(p.travel_style) + 1)]  # type: ignore[assignment]
+                explicit.add("travel_style")
                 notes.append(f"Switched to a {p.travel_style.replace('_', ' ')} pace with more sights per day.")
-            explicit.add("travel_style")
             k.extra_rest = False
-            unpin_all = True
             if by_traveller and not a.day:
                 # Long-term memory: this traveller likes full days (inherited by their next trips).
                 preferences.observe(p, "travel_style", p.travel_style, "asked for more activities")
@@ -423,13 +524,11 @@ def apply_actions(trip: TripState, actions: list[Action], by_traveller: bool = T
             k.price_pressure = 0
             k.max_price_level = 4
             trip.selected_mode = "comfort"
-            unpin_all = True
             notes.append("Upgraded towards the comfort plan.")
         elif name == "more_food":
             k.food_focus = True
             if "food" not in p.activity_preferences:
                 p.activity_preferences.append("food")
-            unpin_all = True
             notes.append("Added more food experiences, coffee and dessert stops.")
         elif name == "fewer_category" and a.category:
             current = _count_category(plan, a.category, trip)
@@ -437,14 +536,12 @@ def apply_actions(trip: TripState, actions: list[Action], by_traveller: bool = T
             notes.append(f"Reduced {a.category} from {current} to {k.category_limits[a.category]}.")
         elif name == "more_category" and a.category and a.category.lower() in LANDMARK_WORDS:
             k.category_boost["must_see"] = k.category_boost.get("must_see", 0) + 0.4
-            unpin_all = True
             notes.append("Prioritising the city's most famous landmarks.")
         elif name == "more_category" and a.category:
             k.category_boost[a.category] = k.category_boost.get(a.category, 0) + 0.35
             k.category_limits.pop(a.category, None)
             if a.category not in p.activity_preferences:
                 p.activity_preferences.append(a.category)
-            unpin_all = True
             notes.append(f"Added more {a.category}.")
         elif name == "avoid_noise":
             p.noise_tolerance = "low"
@@ -454,46 +551,61 @@ def apply_actions(trip: TripState, actions: list[Action], by_traveller: bool = T
                 notes.append(f"Replacing {plan.hotel.name} with a quieter hotel.")
             else:
                 notes.append("Will prefer quiet areas for hotels.")
-        elif name == "change_hotel" and plan and plan.hotel:
-            k.hotel_exclude.append(plan.hotel.id)
-            notes.append(f"Looking for an alternative to {plan.hotel.name}.")
+        elif name == "change_hotel" and plan and plan.hotels:
+            targets = _target_hotels(plan, a)
+            k.hotel_exclude += [h.id for h in targets]
+            notes.append("Looking for an alternative to " + " and ".join(h.name for h in targets) + ".")
         elif name == "choose_flight" and a.text and trip.research:
             chosen = resolve_flights(trip, a.text)
             for f in chosen:
-                # One pin per direction; a round-trip ticket pins both of its legs.
-                same_dir = {x.id for x in _all_flights(trip) if x.direction == f.direction}
-                k.flight_pins = [x for x in k.flight_pins if x not in same_dir] + [f.id]
+                # One pin per flight slot (direction, or leg of a tour); a round-trip ticket pins both of its legs.
+                same_slot = _same_slot(trip, f)
+                k.flight_pins = [x for x in k.flight_pins if x not in same_slot] + [f.id]
                 k.flight_exclude = [x for x in k.flight_exclude if x != f.id]
                 notes.append(f"Switched to {f.airline} {f.flight_number} ({f.depart_at:%a %d %b %H:%M}).")
             if not chosen:
                 notes.append("I couldn't find that flight among the options I researched.")
         elif name == "change_flight" and plan:
             k.flight_pins = []  # "a different flight": the planner picks again
-            for f in (plan.outbound_flight, plan.return_flight):
-                if f:
-                    k.flight_exclude.append(f.id)
+            flights = plan.legs if plan.legs else [plan.outbound_flight, plan.return_flight]
+            if plan.legs and a.day:
+                # "A different flight on day 5": the leg that departs that day (every other leg stays).
+                day_date = c.start_date + timedelta(days=a.day - 1) if c else None
+                flights = [f for f in plan.legs if day_date and f.depart_at.date() == day_date] or flights
+            k.flight_exclude += [f.id for f in flights if f]
             notes.append("Looking for different flights.")
         elif name in ("extend_trip", "shorten_trip") and c:
             n = int(a.amount or 1)
             new_end = c.end_date + timedelta(days=n if name == "extend_trip" else -n)
-            c.end_date = max(new_end, c.start_date + timedelta(days=1))
+            new_end = max(new_end, c.start_date + timedelta(days=max(1, len(c.stops))))
+            if c.is_multi:
+                # The cities' nights follow the new length (extra nights to the last city), and every stop moves.
+                nights = resize_nights([s.nights for s in c.stops], (new_end - c.start_date).days)
+                c.stops, new_end, _ = build_stops([s.ref for s in c.stops], c.start_date, new_end, nights)
+                trip.draft.stop_nights = nights
+                dirty |= {"activities"}
+            c.end_date = new_end
             trip.draft.end_date = c.end_date
             trip.draft.duration_days = c.num_days
             dirty |= {"flights", "hotels", "weather"}
             notes.append(f"Trip is now {c.num_days} days ({c.start_date:%b %d} - {c.end_date:%b %d}).")
-        elif name == "set_budget" and c and a.amount:
-            c.budget.amount = float(a.amount)
-            trip.draft.budget_amount = c.budget.amount
-            trip.draft.find_cheapest = False
-            notes.append(f"Budget set to {c.budget.amount:,.0f} {c.budget.currency}.")
-        elif name == "adjust_budget" and c and a.amount:
-            c.budget.amount = max(0.0, c.budget.amount + float(a.amount))  # relative to the found budget, too
-            trip.draft.budget_amount = c.budget.amount
-            trip.draft.find_cheapest = False
-            k.price_pressure = 0 if a.amount > 0 else k.price_pressure
-            if a.amount > 0:
-                k.max_price_level = 4
-            notes.append(f"Budget is now {c.budget.amount:,.0f} {c.budget.currency}.")
+        elif name in ("set_budget", "adjust_budget") and c and a.amount:
+            d = trip.draft
+            if name == "set_budget":
+                c.budget.amount = float(a.amount)
+            else:
+                # Relative to the found budget in "cheapest trip" mode - never to the no-limit placeholder.
+                base = c.budget.amount if c.budget.amount < FIND_CHEAPEST_PLACEHOLDER \
+                    else float(trip.metadata.get("found_budget") or 0)
+                c.budget.amount = max(0.0, base + float(a.amount))
+                if a.amount > 0:  # more money lifts any earlier "cheaper" pressure
+                    k.price_pressure, k.max_price_level = 0, 4
+            if d.find_cheapest:
+                # A real budget replaces "find the cheapest": it is a limit again, as for any stated budget.
+                d.find_cheapest = False
+                c.budget.hard_limit = True if d.budget_hard_limit is None else d.budget_hard_limit
+            d.budget_amount, d.budget_currency = c.budget.amount, c.budget.currency
+            notes.append(f"Budget {'set to' if name == 'set_budget' else 'is now'} {c.budget.amount:,.0f} {c.budget.currency}.")
         elif name == "less_walking":
             p.walking_tolerance = LEVELS[max(0, LEVELS.index(p.walking_tolerance) - 1)]  # type: ignore[assignment]
             explicit.add("walking_tolerance")
@@ -501,12 +613,10 @@ def apply_actions(trip: TripState, actions: list[Action], by_traveller: bool = T
         elif name == "more_nightlife":
             p.nightlife_interest = "high"
             explicit.add("nightlife_interest")
-            unpin_all = True
             notes.append("Added evening plans.")
         elif name == "prefer_hidden_gems":
             p.prefer_hidden_gems = True
             explicit.add("prefer_hidden_gems")
-            unpin_all = True
             notes.append("Favouring hidden gems over the busiest sights.")
         elif name == "add_place" and a.text:
             if a.day:  # "for dinner on day 1": remembered for restaurants (and as the preferred day)
@@ -516,13 +626,14 @@ def apply_actions(trip: TripState, actions: list[Action], by_traveller: bool = T
             else:
                 notes.append(f"{a.text} is already on your list.")
         elif name == "replace_item" and a.text:
-            pid = a.text
-            if trip.research and not trip.research.place(pid):
-                match = [x for x in trip.research.attractions + trip.research.restaurants if x.name.lower() == pid.lower()]
-                pid = match[0].id if match else pid
+            pid = _resolve_item(trip, plan, a.text)
+            if pid is None:
+                notes.append(f"I couldn't find '{a.text}' in your plan.")
+                continue
             k.exclude_ids.append(pid)
             trip.excluded_ids.append(pid)
-            if pid in k.must_include or pid in k.meal_requests:  # they changed their mind about a place they asked for
+            if by_traveller and (pid in k.must_include or pid in k.meal_requests):
+                # They changed their mind about a place they asked for (the critic never overrides such a request).
                 k.meal_requests.pop(pid, None)
                 if pid in k.must_include:
                     k.must_include.remove(pid)
@@ -537,7 +648,7 @@ def apply_actions(trip: TripState, actions: list[Action], by_traveller: bool = T
         elif name == "weather_adjust":
             dirty.add("weather")
             notes.append("Refreshed the forecast and re-checked outdoor plans.")
-        elif name == "select_mode" and a.text in ("balanced", "budget", "comfort", "experience"):
+        elif name == "select_mode" and a.text in PLANNING_MODES:
             trip.selected_mode = a.text  # type: ignore[assignment]
             notes.append(f"Switched to the {a.text} plan.")
     if by_traveller:
@@ -546,7 +657,7 @@ def apply_actions(trip: TripState, actions: list[Action], by_traveller: bool = T
     # Stability: keep previous activity assignments unless the change needs a reshuffle.
     if plan and needs_replan:
         pins = plan_activity_ids(plan)
-        if unpin_all or {x.action for x in actions} & RESHUFFLE_ACTIONS:
+        if {x.action for x in actions} & RESHUFFLE_ACTIONS:
             pins = {}
         for d in unpin_days:
             pins.pop(d, None)
@@ -605,7 +716,10 @@ def diff_plans(old: TripPlan | None, new: TripPlan | None) -> list[str]:
             out.append(f"Day {d.day}: " + "; ".join(parts))
     for day in range(len(new.days) + 1, len(old.days) + 1):
         out.append(f"Day {day}: removed (shorter trip)")
-    if old.budget and new.budget:
+    if old.budget and new.budget and old.budget.currency.upper() != new.budget.currency.upper():
+        out.append(f"Prices now in {new.budget.currency}: total {new.budget.total:,.0f} {new.budget.currency} "
+                   f"(was {old.budget.total:,.0f} {old.budget.currency})")
+    elif old.budget and new.budget:
         delta = new.budget.total - old.budget.total
         if abs(delta) >= 1:
             out.append(f"Total cost {'+' if delta > 0 else '-'}{abs(delta):,.0f} {new.budget.currency} "

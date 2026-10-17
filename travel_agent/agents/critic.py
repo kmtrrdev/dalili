@@ -17,7 +17,6 @@ a point). Other issues become one-tap suggestions for the traveller. One reflect
 from __future__ import annotations
 
 import json
-import logging
 from typing import Literal
 
 from pydantic import BaseModel, Field
@@ -26,10 +25,10 @@ from .. import llm
 from ..engine.ranking import icon_ids
 from ..models import TripState
 from ..nlu import Action
+from ..utils import is_arabic
 from . import trace
 from .context import plan_summary, profile_summary
 
-log = logging.getLogger(__name__)
 
 # Actions the critic may apply on its own: they only re-plan over researched data (no new searches).
 SAFE_ACTIONS = {"reduce_density", "more_free_time", "less_walking", "more_food", "fewer_category", "more_category",
@@ -95,7 +94,7 @@ async def review(trip: TripState) -> Critique | None:
     if not llm.available() or trip.selected_plan is None:
         return None
     msgs = [m.content[:400] for m in trip.conversation if m.role == "user"][-4:]
-    arabic = any("؀" <= ch <= "ۿ" for ch in (msgs[-1] if msgs else ""))
+    arabic = is_arabic(msgs[-1] if msgs else "")
     payload = {"plan": plan_summary(trip), "traveller": profile_summary(trip), "recent_messages": msgs,
                "write_suggestions_in": "Egyptian Arabic" if arabic else "English",
                "unused_top_places": _candidates(trip),
@@ -120,6 +119,13 @@ def safe_fixes(trip: TripState, critique: Critique) -> list[tuple[Issue, Action]
     # The destination's icons are never removed on the critic's own initiative (the traveller can still ask).
     ids = icon_ids(r.attractions) if r else set()
     icons = {x.name.lower() for x in (r.attractions if r else []) if x.id in ids}
+    # Nor a place the traveller asked for by name (only the critic's own earlier picks may be swapped out).
+    expert = {n.lower() for n in trip.metadata.get("expert_added", [])}
+    asked_ids = set(trip.user_knobs.must_include) | set(trip.user_knobs.meal_requests)
+    asked = {n.lower() for n in trip.draft.must_visit + trip.draft.wish_list if n.lower() not in expert}
+    asked |= {i.title.lower() for d in (plan.days if plan else []) for i in d.items
+              if i.place_id in asked_ids and i.title.lower() not in expert}
+    protected = icons | asked
     out: list[tuple[Issue, Action]] = []
     for issue in critique.issues:
         a = issue.fix
@@ -127,7 +133,7 @@ def safe_fixes(trip: TripState, critique: Critique) -> list[tuple[Issue, Action]
             continue
         if a.action == "add_place" and (a.text or "").lower() not in names:
             continue  # only places we have real data for
-        if a.action == "replace_item" and ((a.text or "").lower() not in titles or (a.text or "").lower() in icons):
+        if a.action == "replace_item" and ((a.text or "").lower() not in titles or (a.text or "").lower() in protected):
             continue
         if a.action in ("fewer_category", "more_category") and not a.category:
             continue

@@ -1,8 +1,7 @@
-"""Small deterministic helpers: clock arithmetic, geo distance, stable hashing."""
+"""Small deterministic helpers: clock arithmetic, geo distance, script detection."""
 
 from __future__ import annotations
 
-import hashlib
 import math
 from contextvars import ContextVar
 from datetime import date, datetime, timezone
@@ -47,14 +46,9 @@ def haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     return 2 * r * math.asin(math.sqrt(a))
 
 
-def stable_int(*parts: object) -> int:
-    """Deterministic pseudo-random integer (same inputs -> same output across runs)."""
-    raw = "|".join(str(p) for p in parts).encode()
-    return int(hashlib.sha256(raw).hexdigest()[:12], 16)
-
-
-def stable_unit(*parts: object) -> float:
-    return (stable_int(*parts) % 10_000) / 10_000.0
+def is_arabic(text: str | None) -> bool:
+    """True when the text contains Arabic script (the reply is then written in Egyptian Arabic)."""
+    return any("\u0600" <= ch <= "\u06ff" for ch in text or "")
 
 
 def open_windows(opening_hours: dict[str, list[list[str]]], d: date) -> list[tuple[int, int]]:

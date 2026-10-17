@@ -111,8 +111,8 @@ html:not([data-theme="light"]) .i-moon, html[data-theme="light"] .i-sun { displa
 .route-link { display: inline-flex; align-items: center; gap: 6px; margin: -4px 0 4px; font-size: 13px; font-weight: 600; text-decoration: none; }
 .route-link svg { width: 15px; height: 15px; }
 .board-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
-.book-cta { animation: glow 2.8s ease-in-out infinite; }
-@keyframes glow { 0%, 100% { box-shadow: 0 8px 26px rgba(61, 224, 208, .25); } 50% { box-shadow: 0 8px 38px rgba(61, 224, 208, .5); } }
+.book-cta { animation: ctaGlow 2.8s ease-in-out infinite; }
+@keyframes ctaGlow { 0%, 100% { box-shadow: 0 8px 26px rgba(61, 224, 208, .25); } 50% { box-shadow: 0 8px 38px rgba(61, 224, 208, .5); } }
 .hotel-gallery { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 90px 90px; gap: 4px; margin: -14px -16px 12px; border-radius: 16px 16px 0 0; overflow: hidden; }
 .hotel-gallery div { background: var(--surface-2) center / cover no-repeat; }
 .hotel-gallery div:first-child { grid-row: span 2; }
@@ -153,7 +153,6 @@ html[data-theme="light"] .modal-x { background: rgba(255, 255, 255, .95); }
 .small { font-size: 12px; }
 .offers-loading { display: flex; align-items: center; gap: 12px; padding: 40px 24px; color: var(--muted); }
 .spinner { width: 22px; height: 22px; border-radius: 50%; border: 3px solid var(--line-strong); border-top-color: var(--teal); animation: spin .8s linear infinite; }
-@keyframes spin { to { transform: rotate(360deg); } }
 .bk-row { display: grid; grid-template-columns: 28px 1fr auto auto; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
 .bk-row b { display: block; }
 .bk-row small { color: var(--muted); font-size: 12px; }
@@ -257,7 +256,7 @@ svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width:
 .brand-name { font: 700 18px var(--display); letter-spacing: -.01em; }
 .brand-name span { color: var(--teal); margin-left: 1px; }
 .brand-sub { font-size: 11px; color: var(--faint); letter-spacing: .04em; }
-.status { margin-inline-start: auto; display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.topbar .icon-btn.theme { margin-inline-start: auto; }  /* the header's actions sit at the end */
 .pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px; font-size: 12px;
   background: var(--surface-2); border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
 .pill i { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 10px var(--green); }
@@ -585,6 +584,11 @@ html[dir="rtl"] .wiz-step h2 { font-family: "Cairo", var(--display); }
   .wiz { width: 100%; max-height: 92vh; border-radius: 24px 24px 0 0; }
   .ws span { display: none; }
   .ws { justify-content: center; }
+  /* last step: the two actions get their own full-width row above Back */
+  .wiz-nav { flex-wrap: wrap; }
+  .wiz-nav-end { flex: 1 1 auto; min-width: 0; }
+  .wiz-nav-end .btn { flex: 1 1 0; min-width: 0; justify-content: center; white-space: normal; height: auto; min-height: 44px; line-height: 1.2; }
+  .wiz-nav-end:has(.btn + .btn) { flex-basis: 100%; order: -1; }
 }
 
 /* ---------------------------------------------------------------- home: inspiration sections */
@@ -778,8 +782,10 @@ html[dir="rtl"] .t-time, html[dir="rtl"] .m-total, html[dir="rtl"] .idea-total b
 .mode:hover { border-color: var(--line-strong); }
 .mode.active { border-color: var(--teal); background: rgba(61, 224, 208, .08); box-shadow: 0 10px 30px rgba(61, 224, 208, .12); }
 .mode .m-name { font: 600 11px var(--display); text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
-.mode .m-row { display: flex; align-items: center; gap: 10px; margin-top: 6px; transform: translateZ(22px); }
-.mode .badge { white-space: nowrap; font-size: 11px; padding: 2px 7px; }
+.mode .m-row { display: flex; flex-wrap: wrap; row-gap: 6px; align-items: center; gap: 10px; margin-top: 6px; transform: translateZ(22px); }
+.mode .m-row > div:not(.ring) { min-width: 0; flex: 1 1 auto; }
+.mode .m-row > .ring { flex: none; }
+.mode .badge { white-space: nowrap; max-width: 100%; font-size: 11px; padding: 2px 7px; }
 .chips .chip { max-width: 340px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .msg[dir="rtl"] ul, .msg[dir="rtl"] ol { padding-left: 0; padding-right: 18px; }
 .ring { width: 46px; height: 46px; position: relative; flex: none; }
@@ -989,14 +995,15 @@ body:not(.has-trip) .pipeline { right: 18px; }
   .omni-hint { display: none; }
   .scroll-hint { display: none; }
   body { overflow: auto; }
-  #globe { position: fixed; height: 100vh; opacity: .55; }
+  #globe { position: fixed; height: 100vh; opacity: .55; pointer-events: none; }
   .stage { position: relative; inset: auto; display: flex; flex-direction: column; padding: calc(var(--top-h) + 8px) 16px 16px; gap: 16px; }
   .hero { order: 1; padding: 30px 0 10px; }
   .chat { order: 2; height: 72vh; }
   .board { order: 3; min-height: 80vh; }
   .pipeline { left: 16px; right: 16px; bottom: 12px; }
   body:not(.has-trip) .pipeline { right: 16px; }
-  .brand-sub, .status { display: none; }
+  .brand-sub { display: none; }
+  .topbar .icon-btn.theme { margin-inline-start: 0; }  /* phones: the language button takes the slack */
   .topbar { background: rgba(4, 6, 12, .92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); padding: 0 14px; }
   #newTrip { margin-left: auto; padding: 9px 11px; font-size: 0; gap: 0; }
   #newTrip svg { width: 18px; height: 18px; }
@@ -1074,8 +1081,8 @@ body:not(.has-trip) .pipeline { right: 18px; }
 .auth-guest:hover { color: var(--ink); }
 
 /* toast */
-.toast { position: fixed; z-index: 80; left: 50%; bottom: 26px; transform: translateX(-50%); display: flex; align-items: center; gap: 14px;
-  max-width: min(560px, calc(100vw - 32px)); padding: 12px 14px 12px 18px; border-radius: 16px; font-size: 14px; font-weight: 500;
+.toast { position: fixed; z-index: 80; left: 16px; right: 16px; bottom: 26px; margin-inline: auto; width: max-content;
+  display: flex; align-items: center; gap: 14px; max-width: min(560px, calc(100vw - 32px)); padding: 12px 14px 12px 18px; border-radius: 16px; font-size: 14px; font-weight: 500;
   background: var(--glass-strong); border: 1px solid var(--line-strong); box-shadow: var(--shadow); backdrop-filter: blur(14px); }
 .toast.show { animation: fadeUp .3s both; }
 .toast-act { flex: none; border: 0; border-radius: 10px; padding: 7px 12px; cursor: pointer; font: 700 13px var(--font);
@@ -1279,3 +1286,29 @@ html[data-theme="light"] .tm-me text { fill: #9a6200; }
 .rate-scale input:focus-visible + b { outline: 2px solid var(--teal); outline-offset: 2px; }
 .rate-form textarea { min-height: 64px; resize: vertical; }
 .rate-done { font-size: 16px; text-align: center; padding: 24px 0; }
+
+/* ================================================================ phones and touch screens */
+@media (max-width: 900px) {
+  /* The open conversation comes first, so a message sent from the home card is seen being answered. */
+  body:not(.chat-closed):not(.has-trip) .chat { order: 0; }
+  .chat { scroll-margin-top: calc(var(--top-h) + 8px); }
+  /* Trip header: title and dates get the full width, the actions sit underneath. */
+  .board-head { flex-direction: column; align-items: stretch; gap: 12px; padding: 16px 16px 6px; }
+  .board-head > div:first-child { min-width: 0; }
+  .board-head .muted { overflow-wrap: anywhere; }
+  .board-actions { justify-content: flex-start; }
+  .board-actions .btn { flex: 1 1 auto; justify-content: center; }
+  /* Chat button: a compact round button in the corner, clear of the map controls and the content. */
+  .chat-fab { inset-inline-start: auto; inset-inline-end: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); padding: 15px; }
+  .chat-fab span { display: none; }
+  /* Toasts at the bottom, beside the round chat button (never over it or the trip title). */
+  .toast { bottom: calc(16px + env(safe-area-inset-bottom)); inset-inline-end: 88px; max-width: calc(100vw - 104px); flex-wrap: wrap; justify-content: space-between; padding: 10px 12px 10px 14px; font-size: 13.5px; }
+  .toast-act { margin-inline-start: auto; }
+  .modal { max-height: 90dvh; }
+}
+/* iOS zooms into any focused field under 16px and the page no longer fits the screen. */
+@media (max-width: 900px), (pointer: coarse) {
+  .composer textarea, .qc input, .w-in, .af .w-in, .w-to input, .w-money select,
+  .ideas-form input, .ideas-form select, .ideas-form .money-field select, .ideas-form .tr-nights,
+  .rate-form textarea { font-size: 16px; }
+}

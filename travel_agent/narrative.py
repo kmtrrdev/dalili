@@ -3,14 +3,17 @@
 from __future__ import annotations
 
 import json
-import math
 from typing import Any
 
 from pydantic import BaseModel, Field
 
 from . import conflicts, constraints, knowledge, llm, preferences
+from .engine.budget import to_user
+from .engine.repair import travel_floor
 from .memory import recent_turns
 from .models import Money, TripPlan, TripState
+from .replanner import nice_amount
+from .utils import is_arabic
 
 
 def money(amount: float, currency: str) -> str:
@@ -62,7 +65,7 @@ def plan_facts(trip: TripState) -> dict[str, Any]:
                                               if name.lower() in expert and day},
         "ai_estimated_data": ai_estimated(trip),
     }
-    arabic = any("؀" <= ch <= "ۿ" for ch in latest_user_message(trip))
+    arabic = is_arabic(latest_user_message(trip))
     if b:
         # One unambiguous line, so the reply can't flip "over" and "under".
         if not (trip.draft.find_cheapest and not trip.draft.budget_amount):  # then 'cheapest_trip_search' says it
@@ -123,8 +126,7 @@ def day_label(n: int, d, arabic: bool) -> str:
 
 
 def _user_amount(trip: TripState, m) -> float:
-    cur = trip.trip_contract.budget.currency.upper()
-    return m.amount * (1.0 if m.currency.upper() == cur else trip.research.fx_rates.get(m.currency.upper(), 1.0))
+    return to_user(m, trip.research.fx_rates, trip.trip_contract.budget.currency)
 
 
 def _ground_hours(o, r) -> float:
@@ -176,8 +178,6 @@ def budget_reality(trip: TripState) -> dict[str, Any]:
     plan, r, c = trip.selected_plan, trip.research, trip.trip_contract
     if not plan or not plan.budget or plan.within_budget or not r:
         return {}
-    from .engine.repair import travel_floor
-
     b = plan.budget
     facts: dict[str, Any] = {"over_budget_by": money(b.total - c.budget.amount, b.currency)}
     floor = travel_floor(plan, r)
@@ -191,9 +191,9 @@ def budget_reality(trip: TripState) -> dict[str, Any]:
             facts["budget_verdict"] = ("The budget cannot cover even the cheapest flights and hotel found for these "
                                        "dates, so the plan keeps the experience and shows the real minimum.")
     biggest = max(("flights", "hotel", "food", "activities", "transport"), key=lambda k: getattr(b, k))
-    arabic = any("؀" <= ch <= "ۿ" for ch in latest_user_message(trip))
+    arabic = is_arabic(latest_user_message(trip))
     facts["largest_cost"] = f"{COST_AR[biggest] if arabic else biggest}: {money(getattr(b, biggest), b.currency)}"
-    facts["realistic_budget_for_this_plan"] = money(math.ceil(b.total / 500) * 500, b.currency)
+    facts["realistic_budget_for_this_plan"] = money(nice_amount(b.total), b.currency)  # as "raise the budget to"
     insights = r.flight_insights or {}
     if insights.get("cheapest_round_trip"):
         rt = Money(amount=insights["cheapest_round_trip"], currency=c.budget.currency)  # searched in the budget currency
@@ -207,7 +207,11 @@ def famous_not_in_plan(trip: TripState) -> list[str]:
     if not plan or not r:
         return []
     in_plan = {i.place_id for d in plan.days for i in d.items if i.place_id}
-    top = sorted((a for a in r.attractions if a.reviews_count and "overnight_trip" not in a.categories),
+    # Never suggest adding back a place the traveller removed, or one of a kind they said to avoid.
+    removed = set(trip.excluded_ids) | set(trip.user_knobs.exclude_ids)
+    avoid = {x.lower() for x in list(trip.traveler_profile.avoid_categories) + list(trip.draft.avoid)}
+    top = sorted((a for a in r.attractions if a.reviews_count and "overnight_trip" not in a.categories
+                  and a.id not in removed and not avoid & {x.lower() for x in a.categories}),
                  key=lambda a: -a.reviews_count)[:8]
     return [a.name for a in top if a.id not in in_plan][:4]
 
@@ -412,7 +416,7 @@ async def compose_plan_reply(trip: TripState) -> PlanReply:
         said = latest_user_message(trip)
         facts["traveller_latest_message"] = said
         # The reply language is decided from the message itself, not left to the model's guess.
-        facts["reply_language"] = ("Egyptian Arabic" if any("؀" <= ch <= "ۿ" for ch in said) else
+        facts["reply_language"] = ("Egyptian Arabic" if is_arabic(said) else
                                    "the language of traveller_latest_message - English unless it is clearly another "
                                    "language (never Arabic for a message written in Latin letters)")
         facts["recent_conversation"] = recent_turns(trip, n=4)
@@ -471,7 +475,7 @@ def compose_questions(trip: TripState) -> str:
 
 def unavailable_reply(message: str) -> str:
     """The model couldn't be reached: say so plainly instead of guessing what the traveller meant."""
-    if any("؀" <= ch <= "ۿ" for ch in message):
+    if is_arabic(message):
         return "معلش، مساعد الذكاء الاصطناعي مش متاح دلوقتي لحظات. جرّب تبعت رسالتك تاني بعد شوية."
     return "Sorry - the AI assistant is briefly unavailable. Please send your message again in a moment."
 
@@ -486,7 +490,7 @@ async def off_topic_reply(trip: TripState, message: str) -> str:
     """A polite refusal that steers back to travel. The model never sees the off-topic question itself, so it can't
     answer it or slip in facts about it - only the traveller's language."""
     c = trip.trip_contract
-    arabic = any("؀" <= ch <= "ۿ" for ch in message)
+    arabic = is_arabic(message)
     if llm.available():
         out = await llm.text(OFF_TOPIC_SYSTEM, json.dumps(
             {"language": "Egyptian Arabic" if arabic else "the traveller's language (English if unsure)",

@@ -21,6 +21,7 @@ from collections import defaultdict, deque
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 
+from .security import env_int
 from .store import Store
 
 SESSION_COOKIE = "dalili_session"
@@ -170,6 +171,7 @@ class Accounts:
             self._conn.execute("DELETE FROM sessions WHERE expires_at < ?", (_now().isoformat(),))  # housekeeping
         self.by_email = RateLimiter(5, 15 * 60)
         self.by_ip = RateLimiter(30, 15 * 60)
+        self.signups_by_ip = RateLimiter(env_int("DALILI_SIGNUPS_PER_IP_HOUR", 10), 60 * 60)
 
     # -- users -----------------------------------------------------------------
     @staticmethod
@@ -186,7 +188,15 @@ class Accounts:
         with self._lock:
             return self._user(self._conn.execute(f"SELECT {self._COLS} FROM users WHERE id = ?", (user_id,)).fetchone())
 
-    def sign_up(self, name: str, email: str, password: str, guest_id: str | None = None) -> dict:
+    def sign_up(self, name: str, email: str, password: str, guest_id: str | None = None,
+                ip: str | None = None) -> dict:
+        if ip:
+            # Every attempt counts (successful or not): no mass account creation, no fast probing of which
+            # emails have accounts.
+            wait = self.signups_by_ip.blocked_for(ip)
+            if wait:
+                raise AuthError(f"Too many attempts. Try again in {max(1, wait // 60)} min.", None, 429)
+            self.signups_by_ip.fail(ip)
         name, email = clean_name(name), clean_email(email)
         check_password_rules(password)
         uid = "u_" + secrets.token_hex(8)

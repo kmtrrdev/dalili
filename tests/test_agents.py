@@ -153,7 +153,9 @@ def test_critic_refines_a_new_plan_and_verifies_it(monkeypatch):
         facts = plan_facts(trip)
         assert chosen["name"] not in facts["places_you_asked_for"]
         assert chosen["name"] in facts["highlights_added_by_expert_review"]
-    else:
-        assert any(t.startswith("Refinement rejected") for t in trace)
+    else:  # rejected, or the place fit no day (a far day trip at a relaxed pace): never reported as done or forced in
+        assert any(t.startswith(("Refinement rejected", "Refinement kept")) for t in trace)
+        assert chosen["name"] not in trip.draft.must_visit
+        assert not trip.selected_plan.requested.get(chosen["name"])
     assert trip.selected_plan.validation.result == "PASS"
     assert "Make day 3 lighter" in trip.metadata["suggestions"]  # the unapplied idea becomes a one-tap reply

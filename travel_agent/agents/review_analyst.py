@@ -10,12 +10,10 @@ keyword-based noise classifier is used and no summary is shown.
 from __future__ import annotations
 
 import json
-import logging
 
 from .. import llm
 from ..models import ReviewInsights
 
-log = logging.getLogger(__name__)
 
 MAX_REVIEWS = 25
 
