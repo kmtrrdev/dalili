@@ -65,7 +65,7 @@
       <div class="messages" id="messages" role="log" aria-live="polite"></div>
       <div class="chips" id="chips"></div>
       <form class="composer" id="composer">
-        <textarea id="input" rows="1" maxlength="4000" data-i18n-ph="inputPh" aria-label="Message" required></textarea>
+        <textarea id="input" rows="1" dir="auto" maxlength="4000" data-i18n-ph="inputPh" aria-label="Message" required></textarea>
         <button class="send" id="send" type="submit" aria-label="Send">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-2.5-6.5z" /></svg>
         </button>
@@ -86,7 +86,7 @@
             <div class="ch-head"><span class="ch-ic" aria-hidden="true">💬</span>
               <div><b data-i18n="chChatT">Chat with Dalili</b><small data-i18n="chChatS">Tell me about your trip in your own words - Arabic or English.</small></div></div>
             <form class="qc" id="quickChat">
-              <input id="qcInput" autocomplete="off" maxlength="4000" data-i18n-ph="qcPh" aria-label="Your trip">
+              <textarea id="qcInput" rows="1" dir="auto" autocomplete="off" maxlength="4000" data-i18n-ph="qcPh" aria-label="Your trip"></textarea>
               <button class="qc-send" type="submit" data-i18n-title="send">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-2.5-6.5z" /></svg></button>
             </form>

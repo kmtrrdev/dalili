@@ -22,10 +22,12 @@ from .models import (
     TripPlan,
     TripState,
 )
-from .nlu import Action, FeedbackNote, Requirements
+from .nlu import Action, FeedbackNote, Requirements, RouteStop
 from . import preferences
 from .config import settings
 from .journey import build_stops
+from .providers.geo import country_code
+from .utils import matches_ref, place_key, same_place
 
 STYLES = ["relaxed", "moderate", "active", "very_active"]
 LEVELS = ["low", "medium", "high"]
@@ -49,6 +51,75 @@ RESHUFFLE_ACTIONS = {"more_food", "more_category", "prefer_hidden_gems", "more_n
 # ---------------------------------------------------------------------------
 
 
+def names_place(text: str | None, name: str | None, ref=None) -> bool:
+    """Does `text` (as the model wrote it: 'City', 'City, Country' or a country) name this place of the trip? Once
+    the place is resolved, a stated country must agree ('Bali, Indonesia' is not the Bali in Taiwan), and a country
+    alone names it when it is that place's country (an echoed 'Italy' on a trip to Rome)."""
+    if not (text or "").strip():
+        return False
+    if ref is not None:
+        cc = country_code(text)
+        if matches_ref(text, ref) or (cc is not None and cc == (ref.country_code or "").upper()):
+            return True
+        # The draft's own words for it ("Sharm El Sheikh, Egypt" resolved as "Sharm el-Sheikh"), unless they now
+        # state another country.
+        parts = [x.strip() for x in text.split(",")]
+        stated = country_code(parts[-1]) if len(parts) > 1 else None
+        return same_place(text, name) and stated in (None, (ref.country_code or "").upper())
+    return same_place(text, name)
+
+
+def _forget_route_places(trip: TripState, keep: bool) -> None:
+    """A new set of places: sights named for the old one belong to it ("the Colosseum" is not in Istanbul) unless
+    some places stay (`keep`), and the expert review's picks always belong to the plan it reviewed."""
+    d = trip.draft
+    expert = {n.lower() for n in trip.metadata.pop("expert_added", [])}
+    if not keep:
+        d.must_visit, d.wish_list = [], []
+        trip.metadata.pop("must_visit_day", None)
+    d.must_visit = [n for n in d.must_visit if n.lower() not in expert]
+
+
+def set_route(trip: TripState, stops: list[RouteStop]) -> bool:
+    """The traveller said exactly which places the trip covers ("only Bali", "drop Taipei", "Rome 3 nights then
+    Florence 2"). The draft takes that list as it is and any route proposal or redesign is closed - a country in the
+    list still gets its cities designed with the traveller. Returns False when nothing changes."""
+    d, c = trip.draft, trip.trip_contract
+    wanted = [(s.place.strip(), s.nights if s.nights and s.nights > 0 else None) for s in stops if (s.place or "").strip()]
+    if not wanted:
+        return False
+    pending = d.route_proposal if d.route_proposal and d.route_proposal.stops and not d.route_confirmed else None
+    known = [r for r in (list(d.destination_refs) + [d.destination_ref] + [s.ref for s in (pending.stops if pending else [])]
+                         + ([s.ref for s in c.stops] + [c.destination_ref] if c else [])) if r is not None]
+    refs = [next((r for r in known if names_place(text, None, r) and not country_code(text)), None) for text, _ in wanted]
+    nights = [n for _, n in wanted]
+    if c and not pending and not d.redesign:
+        current = [s.ref for s in c.stops] if c.stops else [c.destination_ref]
+        cur_nights = [s.nights for s in c.stops] if c.stops else [c.nights]
+        if len(current) == len(wanted) and all(r is not None and _place_id(r) == _place_id(x) for r, x in zip(refs, current)) \
+                and all(n is None or n == m for n, m in zip(nights, cur_nights)):
+            return False  # the same route, said again
+    before = {place_key(r.name) for r in known} | {place_key(x) for x in d.destinations + [d.destination or ""] if x}
+    if before or d.region:
+        # Places named before any destination was given ("I want to see Hagia Sophia") are kept.
+        _forget_route_places(trip, keep=bool(before & {place_key(t) for t, _ in wanted}))
+    d.route_proposal, d.route_feedback, d.redesign, d.region = None, [], False, None
+    d.countries = [t for t, _ in wanted if country_code(t)]
+    d.route_confirmed = not d.countries
+    if len(wanted) == 1:
+        d.destination, d.destination_ref = wanted[0][0], refs[0]
+        d.destinations, d.destination_refs, d.stop_nights = [], [], []
+    else:
+        d.destinations = [t for t, _ in wanted]
+        d.destination_refs = list(refs) if all(refs) else []
+        d.destination, d.destination_ref = wanted[0][0], (refs[0] if all(refs) else None)
+        d.stop_nights = list(nights) if all(nights) else []
+    if all(nights):
+        d.duration_days = sum(nights) + 1  # kept for a start date that comes later
+        d.end_date = d.start_date + timedelta(days=sum(nights)) if d.start_date else None
+    return True
+
+
 def apply_requirements(trip: TripState, req: Requirements) -> list[str]:
     """Merge newly extracted requirements into the draft and the profile. Returns change notes."""
     d, p = trip.draft, trip.traveler_profile
@@ -59,15 +130,18 @@ def apply_requirements(trip: TripState, req: Requirements) -> list[str]:
             setattr(d, field, value)
 
     wanted = [x.strip() for x in req.destinations if x and x.strip()]
-    proposed = [s.city.lower() for s in d.route_proposal.stops] if d.route_proposal else []
+    proposal = d.route_proposal.stops if d.route_proposal else []
+    proposed = [place_key(s.city) for s in proposal]
     had_route = bool(d.destination or d.destinations or d.region)
 
     def new_route() -> None:
-        # Places named for the old route belong to it ("the Colosseum" is not in Istanbul); this message's own
-        # must-visit / wish places are added below. Places named before any destination was given are kept.
+        # This message's own must-visit / wish places are added below. Places named before any destination was given
+        # are kept.
         if had_route:
-            d.must_visit, d.wish_list = [], []
-            trip.metadata.pop("must_visit_day", None)
+            _forget_route_places(trip, keep=False)
+
+    def in_tour(text: str) -> bool:
+        return any(same_place(text, x) for x in d.destinations) or any(names_place(text, r.name, r) for r in d.destination_refs)
 
     if req.region and not wanted and not req.destination:
         if (d.region or "").lower() != req.region.lower():
@@ -77,10 +151,10 @@ def apply_requirements(trip: TripState, req: Requirements) -> list[str]:
             new_route()
     if len(wanted) >= 2:
         # Multi-city / multi-country journey, in visit order.
-        if [w.lower() for w in wanted] == proposed and d.route_proposal:
+        if [place_key(w) for w in wanted] == proposed and d.route_proposal:
             pass  # the model echoed the pending proposal: the traveller's decision is handled separately
         else:
-            changed = [w.lower() for w in wanted] != [x.lower() for x in d.destinations]
+            changed = [place_key(w) for w in wanted] != [place_key(x) for x in d.destinations]
             if changed:
                 d.destinations, d.destination_refs = wanted, []
                 d.destination, d.destination_ref = wanted[0], None
@@ -89,25 +163,26 @@ def apply_requirements(trip: TripState, req: Requirements) -> list[str]:
                 new_route()
             if len(req.nights_per_destination) == len(wanted):
                 d.stop_nights = [int(n) for n in req.nights_per_destination if n]
-    elif req.destination and req.destination.strip().lower() in (
-            {x.lower() for x in d.destinations} | {r.name.lower() for r in d.destination_refs}):
+    elif req.destination and in_tour(req.destination):
         pass  # the model echoed one of the tour's cities: keep the journey
-    elif req.destination and req.destination.strip().lower() in proposed:
-        pass
-    elif req.destination and req.destination.strip().lower() != (d.destination or "").lower():
+    elif req.destination and any(names_place(req.destination, s.city, s.ref) for s in proposal):
+        pass  # one of the proposed cities ("more nights in Rome"): the answer to the proposal is handled separately
+    elif req.destination and not names_place(req.destination, d.destination, d.destination_ref):
+        # A new place - or the same name in another country ("Bali, Indonesia" when Bali resolved to Taiwan).
         d.destination, d.destination_ref = req.destination.strip(), None  # resolved against real geocoding later
         d.destinations, d.destination_refs, d.stop_nights = [], [], []
         d.route_proposal, d.route_confirmed, d.route_feedback = None, False, []
         new_route()
-    if req.origin_city and req.origin_city.strip().lower() != (d.origin_city or "").lower():
+    if req.origin_city and not names_place(req.origin_city, d.origin_city, d.origin_ref):
         d.origin_city, d.origin_ref = req.origin_city.strip(), None
         d.origin = None  # the old city's airport must not survive a new city (set below when one was named)
+    elif req.origin_city and not d.origin_city:
+        d.origin_city = req.origin_city.strip()  # the assumed home city, now stated
     if req.return_to:
         back = req.return_to.strip()
-        home = {(d.origin_city or "").lower(), (d.origin_ref.name.lower() if d.origin_ref else "")}
-        if back.lower() in home:
+        if names_place(back, d.origin_city, d.origin_ref) and not country_code(back):
             d.return_to, d.return_ref = None, None  # "back home" is the default, not an open-jaw trip
-        elif back.lower() != (d.return_to or "").lower():
+        elif not names_place(back, d.return_to, d.return_ref):
             d.return_to, d.return_ref = back, None  # resolved against real geocoding later
     if req.rooms and req.rooms > 0:
         d.rooms = int(req.rooms)
@@ -145,6 +220,11 @@ def apply_requirements(trip: TripState, req: Requirements) -> list[str]:
         # A tour that got longer or shorter: the extra nights go to the last city, removed ones come off the
         # longest stays (each city keeps at least one night) - the cities' split is never silently reset.
         d.stop_nights = resize_nights(d.stop_nights, (d.end_date - d.start_date).days)
+    if req.arrive_on_start is not None:
+        d.arrive_by = d.start_date if req.arrive_on_start else None
+    elif d.arrive_by and d.start_date and d.start_date != d.arrive_by and d.start_date != d.arrive_by - timedelta(days=1):
+        # The trip moved: the arrival day moves with it - unless they now leave the day before, to land on time.
+        d.arrive_by = d.start_date
     setd("travelers", req.travelers)
     setd("budget_amount", req.budget_amount)
     setd("budget_currency", req.budget_currency)
@@ -317,7 +397,8 @@ def build_contract(trip: TripState) -> tuple[TripContract, list[str]]:
         origin=origin, origin_city=origin_city, origin_ref=d.origin_ref,
         return_to=return_to, return_city=back.name if back else None, return_ref=back, room_count=d.rooms,
         destination=d.destination_ref.name, destination_name=d.destination_ref.name, destination_ref=d.destination_ref,
-        start_date=d.start_date, end_date=end, travelers=travelers,
+        start_date=d.start_date, end_date=end, arrive_by=d.arrive_by,
+        travelers=travelers,
         budget=Budget(amount=amount, currency=currency,
                       hard_limit=False if d.find_cheapest else (True if d.budget_hard_limit is None else d.budget_hard_limit)),
         must_have=d.must_have, avoid=d.avoid, travel_style=p.travel_style,
@@ -332,11 +413,17 @@ def build_contract(trip: TripState) -> tuple[TripContract, list[str]]:
     return contract, assumptions
 
 
+def _place_id(ref) -> tuple | None:
+    # Same name is not same place: a corrected "Bali, Indonesia" keeps the name "Bali" of the Bali it replaces.
+    return (ref.name, (ref.country_code or "").upper(), round(ref.lat, 2), round(ref.lon, 2)) if ref else None
+
+
 def contract_dirty_domains(old: TripContract | None, new: TripContract) -> set[str]:
     """Which research domains must be refreshed after a contract change."""
-    if old is None or old.destination != new.destination or old.budget.currency != new.budget.currency:
+    if old is None or _place_id(old.destination_ref) != _place_id(new.destination_ref) \
+            or old.budget.currency != new.budget.currency:
         return set(RESEARCH_DOMAINS)
-    if [s.name for s in old.stops] != [s.name for s in new.stops]:
+    if [_place_id(s.ref) for s in old.stops] != [_place_id(s.ref) for s in new.stops]:
         return set(RESEARCH_DOMAINS)
     if [(s.start_date, s.end_date) for s in old.stops] != [(s.start_date, s.end_date) for s in new.stops]:
         return {"flights", "hotels", "weather", "activities"}  # events depend on each city's dates
@@ -403,10 +490,14 @@ def resolve_flights(trip: TripState, text: str) -> list:
     legs_of = {x.id: f"leg{i}" for i, leg in enumerate(trip.research.legs if trip.research else []) for x in leg}
     for f in sorted(matches, key=lambda f: f.price_per_person.amount):
         picked.setdefault(legs_of.get(f.id, f.direction), f)  # one per leg of a tour, else per direction
-    for rt in (trip.research.round_trips if trip.research else []):
-        legs = {rt.outbound.id, rt.inbound.id}
-        if any(f.id in legs for f in picked.values()):
-            picked = {"outbound": rt.outbound, "return": rt.inbound}
+    tickets = trip.research.round_trips if trip.research else []
+    # A round-trip leg brings its own partner: the ticket holding the picked outbound first (two tickets can share a
+    # return flight), else one holding any picked flight.
+    out_id = picked["outbound"].id if "outbound" in picked else None
+    rt = next((t for t in tickets if t.outbound.id == out_id), None) \
+        or next((t for t in tickets if {t.outbound.id, t.inbound.id} & {f.id for f in picked.values()}), None)
+    if rt is not None:
+        picked = {"outbound": rt.outbound, "return": rt.inbound}
     return list(picked.values())
 
 

@@ -9,8 +9,8 @@ from __future__ import annotations
 
 from .models import TripState
 
-TURNS = 10           # messages kept (5 exchanges)
-MAX_CHARS = 700      # per message: long plan summaries are cut, the start carries the gist
+TURNS = 12           # messages kept (6 exchanges)
+MAX_CHARS = 900      # per message: long plan summaries are cut, the start carries the gist
 
 
 def recent_turns(trip: TripState, n: int = TURNS) -> list[dict]:

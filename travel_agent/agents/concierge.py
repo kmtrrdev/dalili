@@ -1,17 +1,18 @@
-"""Trip agent (concierge): once a plan exists, every message goes to this agent. It reasons and acts (ReAct) over
-real tools and decides for itself what the message needs:
+"""Trip agent (concierge): every message the traveller sends goes to this agent - before a plan exists, while a route
+proposal waits for an answer, and once the trip is planned. It reasons and acts (ReAct) over the full trip state and
+real tools, and decides for itself what the message needs:
 
-- answer it: "Is there good sushi near my hotel that's open late?", "How do I get from the Colosseum to Trastevere?",
-  "Will it rain on day 3?", "How much is 50 euros in pounds?" -> live tools, then final_answer;
-- change the trip: "add a rooftop dinner on day 2", "I'm active, pack more in", "switch to the direct flight",
-  "move my dates a week later" -> optionally look things up first (so it adds a REAL, named place), then
-  change_plan with structured changes. The deterministic planner then rebuilds, validates (budget, hours,
+- answer it: "Is there good sushi near my hotel that's open late?", "Why this flight and not the cheaper one?",
+  "Will it rain on day 3?", "What's Bali like in November?" -> live tools or the plan's facts, then final_answer;
+- change the trip: "a week in Bali from Cairo, 60,000 EGP", "no, only Bali", "add a rooftop dinner on day 2",
+  "switch to the direct flight" -> optionally look things up first (so it adds a REAL, named place), then change_plan
+  with structured changes. The deterministic planner then researches, rebuilds, validates (budget, hours,
   distances...) and repairs the plan - the agent decides, code verifies the numbers.
 
 Loop (at most MAX_STEPS): the model writes a thought and picks ONE tool with arguments; the tool runs (most are MCP
 calls to live data); its observation is appended to the scratchpad; repeat until final_answer or change_plan.
-Answers are grounded in observations, in the traveller's language, with up to three follow-up requests that the UI
-offers as one-tap replies. Without a model, the workflow falls back to the rule-based interpreter.
+Understanding follows principles shared with the interpreter (nlu.UNDERSTANDING), not phrase lists. Without a model,
+the workflow falls back to the rule-based interpreter (offline test harness).
 """
 
 from __future__ import annotations
@@ -21,12 +22,14 @@ from typing import Any, Literal
 
 from pydantic import BaseModel, Field
 
-from .. import knowledge, llm
-from ..config import today
+from .. import knowledge, llm, narrative
+from ..config import settings, today
+from ..engine.budget import to_user
 from ..mcp_hub import MCPToolError, get_hub
 from ..memory import recent_turns
 from ..models import TripState
-from ..nlu import SCOPE_RULE, Action, FeedbackNote, Requirements
+from ..nlu import SCOPE_RULE, UNDERSTANDING, Action, FeedbackNote, Lenient, Requirements, RouteStop
+from ..replanner import missing_requirements
 from . import trace
 from .context import anchor, km, plan_summary, profile_summary
 
@@ -35,7 +38,7 @@ MAX_STEPS = 5
 ToolName = Literal["plan_lookup", "search_nearby", "find_place", "weather", "directions", "convert_currency",
                    "travel_guide", "flight_options", "final_answer", "change_plan", "apply_what_if"]
 
-TOOLS_DOC = """Tools (pick exactly one per step):
+TOOLS_DOC = """Tools (pick exactly one per step; the first six need a researched trip):
 - plan_lookup {"day": int|null}: the traveller's current plan (hotel, flights, each day's schedule and weather).
 - search_nearby {"query": str, "near": "hotel" | a place name in the plan | "city"}: live Google Maps search, e.g.
   "sushi", "pharmacy", "rooftop bar", "ATM". Returns rating, reviews, price, hours, address, distance.
@@ -43,75 +46,76 @@ TOOLS_DOC = """Tools (pick exactly one per step):
 - weather {"day": int|null}: the forecast for the trip days.
 - directions {"from": str, "to": str, "mode": "best"|"transit"|"walking"|"driving"}: live Google Maps directions;
   'from'/'to' may be "hotel" or a place name.
-- convert_currency {"amount": number, "from": "EUR", "to": "EGP"}: live central-bank rates.
+- flight_options {}: every researched flight and round-trip ticket (price, times, stops), the chosen ones and why.
 - travel_guide {"query": str}: the Wikivoyage guide for the destination (customs, safety, tipping, transport...).
-- flight_options {}: every researched flight (and round-trip ticket) with price, times and stops, plus the chosen ones.
+- convert_currency {"amount": number, "from": "EUR", "to": "EGP"}: live central-bank rates.
 - final_answer {}: put the reply in 'answer' (and optional 'follow_ups').
-- change_plan {}: put the structured changes in 'changes'; the planner rebuilds, checks and explains the new plan.
-  For a question to COMPARE rather than apply ("what if my budget were 500 more?", "لو زودت يومين هتبقى بكام؟") set
-  changes.hypothetical = true: the traveller sees the comparison and the plan stays as it is until they accept.
+- change_plan {}: put the structured changes in 'changes'; the planner researches / rebuilds, checks and explains.
 - apply_what_if {}: only when context.pending_what_if exists and the traveller accepts it ("apply it", "تمام نفذها")."""
 
-SYSTEM = f"""You are Dalili, an expert travel planner agent with live tools. The traveller already has a trip plan.
-Read their latest message (any language or dialect - understand the intent, not keywords) and decide what it needs:
-A) Information -> call tools for REAL data, then final_answer.
-B) A change to the trip (pace, places, flights, hotel, budget, dates, length, food, walking...) -> change_plan.
-   Look things up first when it makes the change better: "add a nice rooftop restaurant on day 2" -> search_nearby,
-   then add_place with the real name you found; "take the direct flight" -> flight_options, then choose_flight with
-   the exact ids. If the message both asks and changes, change_plan (the planner's reply covers both).
-C) Outside the travel scope (below) -> final_answer right away, no tools: one or two friendly sentences in the
-   traveller's language saying you only help with travel and their trip, then offer something useful for this trip.
-   Never answer the off-topic question itself, not even briefly.
-{SCOPE_RULE}
-Rules:
-- Never invent places, prices, opening hours or times: use tool observations. If a tool finds nothing, say so.
+SYSTEM = f"""You are Dalili (دليلي), an expert travel planner agent with live tools - like a friend who knows travel
+inside out. You research and plan trips; the traveller books them. Each turn you read the traveller's latest message
+and the trip state in 'context', think, and choose ONE tool per step:
+A) They want information -> answer from the context or look up REAL data with tools, then final_answer.
+B) Anything that changes the trip (where, when, how long, who, budget, pace, places, flights, hotel, food...) ->
+   change_plan. Before a plan exists this is how a trip request starts or gets new details: every trip detail in the
+   message must reach the planner through change_plan - never only acknowledge it in an answer. If a message both
+   asks and changes, change_plan (the planner's reply covers both).
+C) Outside the travel scope -> final_answer right away, no tools: one or two friendly sentences in their language
+   saying you only help with travel, then offer something useful. Never answer the off-topic question itself.
+D) They accept a pending what-if comparison -> apply_what_if.
+
+{UNDERSTANDING}
+
+The trip's stage (context.stage):
+- "collecting": no plan yet; context.trip_so_far shows what is known and what is still missing. A greeting or a
+  question -> final_answer that also invites the missing details naturally (where, when, budget).
+- "route_proposal": you proposed context.pending_route_proposal and wait for the answer. Agreement or "you decide"
+  -> change_plan with route_decision 'accept'. Anything else -> route_decision 'change', with `route` set to exactly
+  the places they want when they say which, else route_change_request (in English) describing what to change.
+- "planned": the plan is in context (trip, plan_cards, money, day_titles). Answer about it, or change it.
+
+Answering:
+- Ground facts in tool observations or the context. Never invent places, prices, opening hours or times. General
+  travel knowledge (seasons, customs, what a place is like) is fine, but never as a live price or schedule.
+- Questions about prices, costs or why something was chosen are answered from the data: context.money, plan_cards
+  and flight_options (call it when flights matter). Quote the real numbers - the cheapest fare and ticket found, what
+  was chosen and why (flight_options.why_chosen: arrival day, hours, stops), the largest cost, what more money buys.
+  Lead with that concrete answer. Never pad it with lists of generic possibilities (taxes, fees, baggage, exchange
+  rates) the data doesn't show: the plan's fares are Google Flights prices (taxes included) for the trip's exact
+  dates at money.fares_found.searched_at, and fares move during the day - one line on that is enough.
+- If the state contradicts what the traveller wants (a place resolved to the wrong country, a change that did not
+  happen), say so plainly and fix it with change_plan.
 - Call the fewest tools needed (often 0-2). Don't repeat a call you already made.
-- final_answer: concise, helpful, specific (names, ratings, distances, times), short markdown bullets for options.
-  Write in the SAME language as the traveller (natural Egyptian Arabic if they write Egyptian Arabic).
+- final_answer: concise, specific and warm (names, ratings, distances, times); short markdown bullets for options.
+  Write in the traveller's language - natural Egyptian Arabic when they write Egyptian Arabic; names may stay in
+  English.
 - follow_ups (with final_answer): up to 3 short requests the traveller could send next, in their language as if they
-  typed them, e.g. "Add Sushi Zen to day 3 dinner" / "ضيف مطعم سوشي زن لعشا اليوم التالت". Specific, not generic.
-  Dalili plans but never books: no follow-up may ask to book, reserve or pay for anything.
-- change_plan: express ONLY what the traveller asked for - never add changes of your own (no upgrade, more_food, pace
-  or flight changes they didn't request). A budget change is just the budget: the planner decides how to use the
-  money, so "what if I add 5000?" is adjust_budget 5000 (hypothetical) and nothing else.
-  Fill 'changes'. Use actions for plan changes and requirements for facts about the trip or traveller:
-  - more stops / "I'm active" / "ضيف حاجات" -> increase_density (and requirements.travel_style when they describe
-    themselves); "too tiring" -> reduce_density (day = the day if named); more rest -> more_free_time;
-  - a named place -> add_place (text = its usual English name); drop one -> replace_item (text = exact plan title);
-  - "landmarks / top sights" -> more_category with category "landmarks"; other kinds -> more_category /
-    fewer_category with a lowercase category (museums, history, art, food, nature, shopping, nightlife...);
-  - flights: choose_flight once per leg with text = the flight id from flight_options (a round-trip ticket: both ids);
-    change_flight only for "a different flight" without a specific one;
-  - hotel: change_hotel / avoid_noise / upgrade; cheaper -> cheaper;
-  - budget: set_budget (absolute) / adjust_budget (signed delta); "raise it to the real cost" -> set_budget with
-    the plan total rounded up; "make it the cheapest possible / what's the minimum" -> requirements.wants_cheapest
-    = true (the planner finds the cheapest good trip and its cost); later_start text=HH:MM;
-  - budget currency: whenever the traveller names a currency other than the trip's ("بالجنيه", "in euros",
-    "100 ألف جنيه") put its ISO code in requirements.budget_currency (EGP, EUR, SAR...). A currency alone ("خليها
-    بالجنيه") is just budget_currency: the code converts the amount at today's rate - never convert it yourself;
-  - trip length: when the traveller states the NEW total ("make it 3 nights", "خليهم تلت ليالي", "4 days only") ->
-    requirements.nights or requirements.duration_days with that number - never compute a difference yourself.
-    extend_trip / shorten_trip (amount = days) only for relative changes ("one more day", "يوم زيادة", "a day less");
-  - walking vs transport -> requirements.transport_preference (walk | mixed | public_transport | taxi);
-  - new dates / travellers / destination -> requirements (ISO dates, resolve relative dates against 'today');
-    flying home to a different city than the departure one ("back to Cairo, not Riyadh") -> requirements.return_to
-    ONLY (no nights there: NOT a route change; no change_flight - the outbound flight stays, the planner searches the
-    new last flight itself); rooms ("all in one room") -> requirements.rooms;
-    adding or dropping a whole city to STAY in, or moving nights between cities -> route_change_request (in English).
-  Put a one-line English 'summary' of what you are changing.
+  typed them, specific to this trip. Dalili plans but never books: none may ask to book, reserve or pay.
+- change_plan: fill 'changes' - the schema's field descriptions are the contract - and a one-line English 'summary'
+  of what the traveller asked for (it is checked against what the planner actually changed).
+{SCOPE_RULE}
 {TOOLS_DOC}"""
 
 
-class PlanChange(BaseModel):
-    summary: str = Field(default="", description="One line in English: what is being changed and why")
+class PlanChange(Lenient):
+    summary: str = Field(default="", description="One line in English: what the traveller asked to change")
     actions: list[Action] = Field(default_factory=list)
     requirements: Requirements = Field(default_factory=Requirements)
     feedback: list[FeedbackNote] = Field(default_factory=list)
-    route_change_request: str | None = None
+    route: list[RouteStop] | None = Field(default=None, description=(
+        "The COMPLETE set of places the traveller now wants to stay in, in order - only when this message says or "
+        "corrects which places the trip covers ('only Bali' -> [Bali, Indonesia]; 'drop Taipei' -> the remaining "
+        "stops). Null when the places don't change."))
+    route_change_request: str | None = Field(default=None, description=(
+        "Only for a vague change of the places to stay that you can't list exactly ('add a few days by the sea'), in "
+        "English. Flying home to another city with no stay there is requirements.return_to, not a route change."))
+    route_decision: Literal["accept", "change"] | None = Field(default=None, description=(
+        "Only at stage 'route_proposal': 'accept' (agrees / lets you decide) or 'change'"))
     hypothetical: bool = Field(default=False, description="True for a what-if to compare, not to apply yet")
 
 
-class Step(BaseModel):
+class Step(Lenient):
     thought: str = Field(description="Your reasoning for this step (one or two sentences)")
     tool: ToolName
     args: dict[str, Any] = Field(default_factory=dict)
@@ -136,7 +140,7 @@ def _trim(obj: Any, limit: int = 3500) -> str:
     return s if len(s) <= limit else s[:limit] + "…"
 
 
-def _fit(payload: dict[str, Any], limit: int = 14000) -> str:
+def _fit(payload: dict[str, Any], limit: int = 18000) -> str:
     """Serialise the scratchpad within budget while keeping valid JSON: shorten the oldest observations first."""
     text = json.dumps(payload, ensure_ascii=False, default=str)
     for s in payload["steps_so_far"]:
@@ -147,8 +151,110 @@ def _fit(payload: dict[str, Any], limit: int = 14000) -> str:
     return text
 
 
+def stage(trip: TripState) -> str:
+    d = trip.draft
+    if d.route_proposal and d.route_proposal.stops and not d.route_confirmed:
+        return "route_proposal"
+    return "planned" if trip.plans else "collecting"
+
+
+def _where(ref) -> str:
+    """A resolved place as the agent should see it: name, country and airports (so a wrong country is visible)."""
+    return f"{ref.name}, {ref.country}" + (f" (airports {', '.join(ref.airports)})" if ref.airports else "")
+
+
+def _flight_line(f) -> str:
+    return (f"{f.airline} {f.flight_number}, {f.stops} stop(s), departs {f.depart_at:%a %d %b %H:%M}, "
+            f"arrives {f.arrive_at:%a %d %b %H:%M}")
+
+
+def _fares_found(trip: TripState) -> dict[str, Any] | None:
+    """What the flight search really returned, so "Google shows it cheaper" is answered with facts, not guesses."""
+    r, c, plan = trip.research, trip.trip_contract, trip.selected_plan
+    if r is None or c is None or plan is None or plan.stops:
+        return None
+    cur = c.budget.currency
+
+    def user(m) -> float:
+        return to_user(m, r.fx_rates, cur)
+
+    outs, backs = r.flights_outbound, r.flights_return
+    live = [f for f in outs + backs + [x for rt in r.round_trips for x in (rt.outbound, rt.inbound)]
+            if f.metadata.source != "ai_knowledge"]
+    chosen = [f for f in (plan.outbound_flight, plan.return_flight) if f]
+    return {
+        "source": "Google Flights, per person, taxes included",
+        "searched_at": min((f.metadata.retrieved_at for f in live), default=None),
+        "options_compared": len(outs) + len(backs) + len(r.round_trips),
+        "cheapest_round_trip_ticket": f"{min(user(rt.total_per_person) for rt in r.round_trips):,.0f} {cur}" if r.round_trips else None,
+        "cheapest_two_one_way_tickets": (f"{min(user(f.price_per_person) for f in outs) + min(user(f.price_per_person) for f in backs):,.0f} {cur}"
+                                         if outs and backs else None),
+        "chosen_flights_fare": f"{sum(user(f.price_per_person) for f in chosen):,.0f} {cur}" if chosen else None,
+        "ai_estimated": len(live) < len(outs) + len(backs),
+    }
+
+
+def build_context(trip: TripState) -> dict[str, Any]:
+    """Everything the agent needs to understand the message against the trip, compactly."""
+    d, c, plan = trip.draft, trip.trip_contract, trip.selected_plan
+    ctx: dict[str, Any] = {"today": today().isoformat(), "stage": stage(trip)}
+    if ctx["stage"] != "planned" or c is None:
+        ctx["trip_so_far"] = {
+            "destination": d.destinations or d.destination, "region": d.region,
+            "resolved_as": [_where(r) for r in d.destination_refs] or ([_where(d.destination_ref)] if d.destination_ref else []),
+            "from": d.origin_city or d.origin or trip.metadata.get("home_city"),
+            "dates": [str(d.start_date) if d.start_date else None, str(d.end_date) if d.end_date else None],
+            "days": d.duration_days, "travellers": d.travelers,
+            "budget": (f"{d.budget_amount:,.0f} {d.budget_currency or ''}".strip() if d.budget_amount
+                       else "find the cheapest" if d.find_cheapest else None),
+            "places_to_see": d.must_visit, "still_missing": missing_requirements(d)}
+    if ctx["stage"] == "route_proposal":
+        ctx["pending_route_proposal"] = [{"place": f"{s.city}, {s.country}", "nights": s.nights, "covers": s.covers,
+                                          "day_trips": s.day_trips} for s in d.route_proposal.stops]
+    if c is not None:
+        summary = {k: v for k, v in plan_summary(trip).items() if k != "days"}
+        summary["length"] = f"{c.nights} nights / {c.num_days} days"
+        if c.arrive_by:
+            summary["wants_to_arrive_on"] = str(c.arrive_by)
+        summary["resolved_places"] = [_where(s.ref) for s in c.stops] or ([_where(c.destination_ref)] if c.destination_ref else [])
+        ctx["trip"] = summary
+    if plan is not None:
+        ctx["day_titles"] = [f"Day {x.day} ({x.date:%a %d %b}): {x.title}" for x in plan.days]
+        ctx["plan_cards"] = [{
+            "mode": m, "selected": m == trip.selected_mode, "idea": p.pitch,
+            "total": f"{p.budget.total:,.0f} {p.budget.currency}" if p.budget else None,
+            "within_budget": p.within_budget,
+            "hotels": [f"{h.name} ({h.rating}/5)" for h in p.hotels],
+            "flights": [_flight_line(f) for f in (p.legs or [x for x in (p.outbound_flight, p.return_flight) if x])],
+        } for m, p in trip.plans.items()]
+        if plan.budget:
+            b = plan.budget
+            money: dict[str, Any] = {
+                "budget": f"{c.budget.amount:,.0f} {c.budget.currency}", "selected_plan_total": f"{b.total:,.0f} {b.currency}",
+                "cost_breakdown": {k: round(getattr(b, k)) for k in ("flights", "hotel", "food", "activities", "transport",
+                                                                     "buffer") if getattr(b, k)}}
+            money.update(narrative.budget_reality(trip))
+            money.update(narrative.flight_alternatives(trip))
+            money["fares_found"] = _fares_found(trip)
+            ctx["money"] = money
+    expert = [n for n in trip.metadata.get("expert_added", [])]
+    asked = [n for n in d.must_visit if n.lower() not in {e.lower() for e in expert}]
+    if asked:
+        ctx["places_the_traveller_asked_for"] = asked
+    if expert:
+        ctx["places_your_expert_review_added"] = expert  # your picks, not the traveller's request
+    ctx["traveller"] = profile_summary(trip)
+    if trip.metadata.get("pending_whatif_summary"):
+        ctx["pending_what_if"] = trip.metadata["pending_whatif_summary"]
+    last = next((m.content for m in reversed(trip.conversation) if m.role == "assistant"), "")
+    if last:
+        ctx["last_assistant_message"] = last[:2500]
+    ctx["recent_conversation"] = recent_turns(trip)  # so "and the second one?" follows the last answer
+    return ctx
+
+
 def flight_options(trip: TripState) -> Any:
-    """Every researched flight and round-trip ticket, with the ids choose_flight needs."""
+    """Every researched flight and round-trip ticket, with the ids choose_flight needs and why the chosen ones won."""
     r, plan = trip.research, trip.selected_plan
     if r is None:
         return "No flights researched yet."
@@ -159,8 +265,11 @@ def flight_options(trip: TripState) -> Any:
                 "stops": f.stops, "duration_min": f.duration_minutes,
                 "price_per_person": f"{f.price_per_person.amount:,.0f} {f.price_per_person.currency}"}
 
+    chosen = (plan.legs or [x for x in (plan.outbound_flight, plan.return_flight) if x]) if plan else []
     out: dict[str, Any] = {
-        "chosen": [plan.outbound_flight.id, plan.return_flight.id] if plan and plan.outbound_flight and plan.return_flight else [],
+        "chosen": [f.id for f in chosen],
+        "why_chosen": (plan.explanations.get("outbound_flight", []) + plan.explanations.get("return_flight", []))[:5]
+        if plan else [],
         "outbound": [row(f) for f in sorted(r.flights_outbound, key=lambda f: f.price_per_person.amount)[:10]],
         "return": [row(f) for f in sorted(r.flights_return, key=lambda f: f.price_per_person.amount)[:10]],
     }
@@ -168,6 +277,8 @@ def flight_options(trip: TripState) -> Any:
         out["round_trip_tickets"] = [{"outbound": row(rt.outbound), "return": row(rt.inbound),
                                       "ticket_price_per_person": f"{rt.total_per_person.amount:,.0f} {rt.total_per_person.currency}",
                                       "note": "one ticket: choose both ids together"} for rt in r.round_trips]
+    if r.legs:
+        out["tour_legs"] = [[row(f) for f in sorted(leg, key=lambda f: f.price_per_person.amount)[:6]] for leg in r.legs]
     return out
 
 
@@ -244,28 +355,25 @@ async def answer(trip: TripState, question: str) -> ConciergeResult | None:
     return res if res and res.answer else None
 
 
+def _is_empty(ch: PlanChange) -> bool:
+    return not (ch.actions or ch.feedback or ch.route or ch.route_change_request or ch.route_decision or ch.hypothetical
+                or any(v not in (None, [], "") for v in ch.requirements.model_dump().values()))
+
+
 async def converse(trip: TripState, message: str, allow_changes: bool = True) -> ConciergeResult | None:
     """Run the ReAct loop on the traveller's message. Returns an answer, or the changes to make (`changes`).
     None when no model is available or it fails (the caller falls back)."""
     if not llm.available():
         return None
     scratch: list[dict[str, Any]] = []
-    context = {"trip": plan_summary(trip) if trip.trip_contract else None,
-               "traveller": profile_summary(trip) if trip.trip_contract else None}
-    context["trip"] = {k: v for k, v in (context["trip"] or {}).items() if k != "days"} or None  # details on demand
-    plan = trip.selected_plan
-    context["day_titles"] = [f"Day {d.day} ({d.date:%a %d %b}): {d.title}" for d in plan.days] if plan else []
-    context["plan_total"] = f"{plan.budget.total:,.0f} {plan.budget.currency}" if plan and plan.budget else None
-    context["today"] = today().isoformat()
-    context["pending_what_if"] = trip.metadata.get("pending_whatif_summary")
-    context["recent_conversation"] = recent_turns(trip)  # so "and the second one?" follows the last answer
+    context = build_context(trip)
     for n in range(MAX_STEPS):
         last = n == MAX_STEPS - 1
         finish = "You must choose final_answer or change_plan now." if allow_changes else "You must choose final_answer now."
         payload = {"traveller_message": message, "context": context, "steps_so_far": scratch,
                    "mode": None if allow_changes else "answer only: change_plan is unavailable",
                    "instruction": finish if last else None}
-        step = await llm.parse(SYSTEM, _fit(payload), Step)
+        step = await llm.parse(SYSTEM, _fit(payload), Step, effort=settings.agent_reasoning_effort)
         if step is None:
             return None
         trace.step(trip, "concierge", "thought", step.thought)
@@ -278,9 +386,12 @@ async def converse(trip: TripState, message: str, allow_changes: bool = True) ->
             continue
         if step.tool == "change_plan" and allow_changes:
             changes = step.changes or PlanChange()
-            if not (changes.actions or changes.feedback or changes.route_change_request
-                    or any(v not in (None, [], "") for v in changes.requirements.model_dump().values())):
-                return None  # an empty change: let the interpreter take the message
+            if _is_empty(changes):
+                if last:
+                    return None  # an empty change: let the interpreter take the message
+                scratch.append({"thought": step.thought, "tool": step.tool, "args": {},
+                                "observation": "Your change_plan had no changes. Fill 'changes', or answer instead."})
+                continue
             trace.step(trip, "concierge", "decision", changes.summary or "Changing the plan.",
                        actions=[a.model_dump(exclude_none=True) for a in changes.actions])
             return ConciergeResult(changes=changes, steps=n + 1)

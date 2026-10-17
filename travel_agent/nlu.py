@@ -12,7 +12,7 @@ import re
 from datetime import date, timedelta
 from typing import Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 from . import llm
 from .config import settings
@@ -40,26 +40,42 @@ ActionName = Literal[
 ]
 
 
-class Requirements(BaseModel):
+class Lenient(BaseModel):
+    """A model's output schema where null means "not said": a field the model sends as null takes its default
+    ("requirements": null, "must_have": null) instead of failing the whole answer over a formatting detail."""
+
+    @model_validator(mode="before")
+    @classmethod
+    def _nulls_are_defaults(cls, data):
+        return {k: v for k, v in data.items() if v is not None} if isinstance(data, dict) else data
+
+
+class Requirements(Lenient):
     origin_city: str | None = Field(default=None, description=(
-        "Where the traveller departs from, as a city or country in English "
-        "(e.g. 'from Saudi Arabia' / 'من السعودية' -> 'Saudi Arabia', 'flying out of Jeddah' -> 'Jeddah')"))
+        "Where the traveller departs from, as 'City, Country' or a country in English "
+        "(e.g. 'من السعودية' -> 'Saudi Arabia', 'flying out of Jeddah' -> 'Jeddah, Saudi Arabia')"))
     origin_airport: str | None = Field(default=None, description="IATA code, e.g. CAI")
     return_to: str | None = Field(default=None, description=(
-        "Only when the trip should END in a different city than it starts (open-jaw): the city to fly home to, in "
-        "English. 'from Riyadh to Istanbul, then back to Cairo' / 'ارجع على القاهرة' -> 'Cairo'. Not a destination: "
-        "no nights there."))
+        "Only when the trip should END in a different city than it starts (open-jaw): the city to fly home to, as "
+        "'City, Country'. 'from Riyadh to Istanbul, then back to Cairo' / 'ارجع على القاهرة' -> 'Cairo, Egypt'. Not a "
+        "destination: no nights there."))
     rooms: int | None = Field(default=None, description=(
         "Hotel rooms, only if the traveller says: 'all three in one room' / 'في غرفة واحدة' -> 1, 'two rooms' -> 2"))
-    destination: str | None = Field(default=None, description="City name")
+    destination: str | None = Field(default=None, description=(
+        "Single-destination trip: the place as 'City, Country' in English, disambiguated with world knowledge "
+        "('بالي' -> 'Bali, Indonesia', 'Alexandria' for an Egyptian traveller -> 'Alexandria, Egypt'), or a country "
+        "name alone when the traveller names only a country"))
     destinations: list[str] = Field(default_factory=list, description=(
-        "Multi-city / multi-country trip only: every city or country the user wants to visit, in visit order "
-        "(e.g. ['Italy', 'France', 'Spain']). Empty for a single-destination trip."))
+        "Multi-city / multi-country trip only: every place the user wants to visit, in visit order, each as "
+        "'City, Country' or a country name (e.g. ['Italy', 'France', 'Spain']). Empty for a single-destination trip."))
     nights_per_destination: list[int] = Field(default_factory=list, description=(
         "Only if the user said how long to stay in each place: nights per entry of destinations, same order."))
     region: str | None = Field(default=None, description=(
         "A region instead of countries/cities, when the user wants you to choose (e.g. 'Europe', 'Southeast Asia')."))
     start_date: str | None = Field(default=None, description="YYYY-MM-DD")
+    arrive_on_start: bool | None = Field(default=None, description=(
+        "True when the traveller says the start date is when they want to ARRIVE / be there ('عايز اوصل 1/11', 'I "
+        "need to be in Rome on the 12th'), not only when they leave home; false if they correct that"))
     end_date: str | None = Field(default=None, description="YYYY-MM-DD, last day of the trip")
     duration_days: int | None = Field(default=None, description=(
         "Total trip length in DAYS when the traveller states it in days ('a week' -> 7, 'خليها 4 أيام' -> 4)"))
@@ -71,7 +87,9 @@ class Requirements(BaseModel):
         "1-12, only when the user names a month without exact dates (e.g. 'in November' / 'في نوفمبر')"))
     travelers: int | None = None
     budget_amount: float | None = None
-    budget_currency: str | None = Field(default=None, description="ISO code: USD, EUR, EGP, ...")
+    budget_currency: str | None = Field(default=None, description=(
+        "ISO code (USD, EUR, EGP...) whenever the traveller names a currency. A currency alone ('خليها بالجنيه') is "
+        "only this field: the code converts the amount at today's rate - never convert it yourself"))
     budget_is_hard_limit: bool | None = None
     wants_cheapest: bool | None = Field(default=None, description=(
         "True when the traveller wants the cheapest possible trip or asks what the minimum cost is, instead of (or "
@@ -81,8 +99,9 @@ class Requirements(BaseModel):
     avoid: list[str] = Field(default_factory=list)
     must_visit: list[str] = Field(default_factory=list, description=(
         "Specific, named places the user firmly wants (e.g. 'Vatican Museums', 'Pyramids of Giza', 'Sagrada "
-        "Familia'), in English: 'I must see', 'I want to visit', 'لازم', 'عايز ازور'. Not categories like 'museums' and "
-        "not the destination city itself."))
+        "Familia'), in English: 'I must see', 'I want to visit', 'لازم', 'عايز ازور'. Not categories like 'museums', "
+        "and not cities or resort towns (those are destinations, with their own nights). Once a plan exists, use "
+        "add_place actions instead."))
     wish_list: list[str] = Field(default_factory=list, description=(
         "Named places mentioned softly - 'maybe', 'if there is time', 'would be nice', 'لو فيه وقت', 'ممكن' - in "
         "English. Planned when they fit, never at the cost of other plans. Never also in must_visit."))
@@ -113,7 +132,7 @@ class Requirements(BaseModel):
     planning_mode: Literal["balanced", "budget", "comfort", "experience"] | None = None
 
 
-class FeedbackNote(BaseModel):
+class FeedbackNote(Lenient):
     feedback_type: Literal["hotel", "flight", "restaurant", "activity", "itinerary", "budget", "general"]
     entity_name: str | None = None
     sentiment: Literal["positive", "negative", "neutral"] = "neutral"
@@ -121,19 +140,39 @@ class FeedbackNote(BaseModel):
     severity: float = 0.5
 
 
-class Action(BaseModel):
-    action: ActionName
+ACTIONS_DOC = """Plan edits (only once a plan exists):
+reduce_density / increase_density (fewer / more stops; day = one day if named) - more_free_time - later_start (text =
+HH:MM) - cheaper / upgrade (cheaper or nicer choices overall) - more_food - fewer_category / more_category (category in
+lowercase: museums, history, art, food, nature, shopping, nightlife, landmarks...; amount = how many) - avoid_noise -
+change_hotel - change_flight (a different flight, none named) - choose_flight (text = flight id from the options; once
+per leg, both ids for a round-trip ticket) - extend_trip / shorten_trip (amount = days, RELATIVE changes only: 'one
+more day') - set_budget (new total) / adjust_budget (signed difference) - less_walking - more_nightlife -
+prefer_hidden_gems - add_place (text = the place's usual English name) - replace_item (text = exact plan item title) -
+weather_adjust - select_mode (text = balanced | budget | comfort | experience)."""
+
+
+class Action(Lenient):
+    action: ActionName = Field(description=ACTIONS_DOC)
     category: str | None = None
     day: int | None = Field(default=None, description="1-based trip day, if the user named one")
     amount: float | None = Field(default=None, description="Numeric value: budget amount/delta, days, count")
     text: str | None = Field(default=None, description="Free value: wake-up time HH:MM, item name, mode name")
 
 
-class TurnInterpretation(BaseModel):
+class RouteStop(Lenient):
+    place: str = Field(description="'City, Country' in English (or a country name when the traveller wants you to choose its cities)")
+    nights: int | None = Field(default=None, description="Only if the traveller said how long to stay there")
+
+
+class TurnInterpretation(Lenient):
     intent: Intent
     requirements: Requirements = Field(default_factory=Requirements)
     feedback: list[FeedbackNote] = Field(default_factory=list)
     actions: list[Action] = Field(default_factory=list)
+    route: list[RouteStop] | None = Field(default=None, description=(
+        "The COMPLETE set of places the traveller now wants to stay in, in order - only when this message says or "
+        "corrects which places the trip covers: 'only Bali' -> [Bali, Indonesia]; 'drop Taipei' -> the remaining "
+        "stops; 'Rome 3 nights then Florence 2' -> both with nights. Null when the places don't change."))
     question: str | None = None
     route_change_request: str | None = Field(default=None, description=(
         "Only when a plan already exists and the user wants to change the ROUTE itself: add or drop a city/region where "
@@ -680,55 +719,45 @@ APPLY_RE = re.compile(r"^\s*(yes|yep|sure|ok|okay|apply( it)?|do it|go ahead|let
 # Claude interpreter
 # ---------------------------------------------------------------------------
 
-SYSTEM_PROMPT = """You are the requirement-understanding component of an AI travel planner.
-The planner researches and plans trips; it never books anything.
+# How every model that reads the traveller understands a message (the trip agent and the one-shot interpreter share
+# it, so a correction is understood the same way wherever it lands). Principles, not phrase lists: the schema's field
+# descriptions say where each fact goes.
+UNDERSTANDING = """How to understand the traveller (any language or dialect - read the intent, never wait for exact phrases):
+1. Work out what the traveller wants NOW. Use recent_conversation and last_assistant_message to resolve references
+   ("the second one", "that hotel", "yes, do that", "نفس المكان", "اللي قلته"). Picking an option the assistant just
+   offered means taking everything that option specified.
+2. Compare it with the current trip state and output ONLY what changes. Facts already in the trip stay as they are -
+   don't re-send them. Never add changes of your own: a budget change is just the budget (the planner decides how to
+   use the money), "a different hotel" is just the hotel.
+3. Corrections and negations REPLACE what was there: "no, ...", "not X", "only X", "X instead of Y", "لا", "مش", "بس",
+   "بدل". "Only X" drops everything else - when it is about places, `route` lists exactly the places they want now.
+4. Places: always 'City, Country' in English, disambiguated with world knowledge and the traveller's context
+   ('بالي' -> 'Bali, Indonesia'). If the trip state shows a place resolved to a different place than the traveller
+   means (another country, a same-named town), correct it with the right 'City, Country' and say so.
+5. Numbers are stated, never computed by you: a new total length -> nights / duration_days, even when it is shorter
+   or longer than now ("خليهم 5 ليالي" is nights = 5, not a shortening); only a difference ("one more day", "يوم
+   أقل") -> extend_trip / shorten_trip. A new total budget -> set_budget (or budget_amount before a plan); "+500" ->
+   adjust_budget. Dates are ISO, resolved against today; the end date is the last day of the trip.
+6. What the traveller says about themselves ("I'm active", "انا مش بحب المشي", "we're vegetarian") is a profile fact
+   in requirements; when a plan exists and it implies a plan edit (more stops, less walking), add that action too.
+7. Named sights they want: before a plan -> requirements.must_visit; once a plan exists -> add_place. Cities and
+   resort towns are places to stay (destinations / route), not sights.
+8. A comparison is not a change: "what if...", "لو زودت ... هيبقى بكام؟" -> the change with hypothetical = true.
+9. Only ask when something essential is genuinely ambiguous; otherwise make the sensible assumption and let the
+   planner state it."""
 
-Convert the user's latest message into the TurnInterpretation schema.
+SYSTEM_PROMPT = """You are the understanding component of Dalili, an AI travel planner (it researches and plans trips;
+it never books anything). Convert the traveller's latest message into the TurnInterpretation schema.
 
-- Extract only what the user actually said or clearly implied. Leave everything else null/empty; never invent budgets, dates or preferences.
-- Resolve relative dates ("next month", "October 12-19") against today's date given below, and output ISO dates. The end date is the last day of the trip.
-- Destinations can be any city or country in the world. Return the name as the user wrote it (in English).
-- Multi-city / multi-country trips ("a Europe tour: Italy, France and Spain", "Rome then Paris then Barcelona", "3 nights in Rome and 2 in Florence"): put every place in visit order in `destinations` (cities, or countries as the user named them; for a country you may use its best-known city), set `destination` to the first one, and fill `nights_per_destination` only if the user gave per-place lengths. Leave `destinations` empty for a single-destination trip. Never put a region such as "Europe" in the list.
-- The user may write in Arabic (including Egyptian dialect); always output English place names.
-- Countries are fine as destinations: keep them as countries ("Spain"), do NOT replace a country by one city - the planner designs the route with the user. If the user names only a region and wants you to choose ("a Europe tour, you decide"), set region and leave destinations empty.
-- If the context has a pending_route_proposal: set route_decision to 'accept' when the user agrees or lets you decide, or 'change' when they ask for something different. For 'change', only fill destinations if the user lists the exact cities they now want.
-- A city or resort town the user wants to include (e.g. 'Sharm El Sheikh', 'Luxor') is a destination, not a must_visit place: put it in destinations (keep any countries too). must_visit is for sights and landmarks.
-- Specific named places the user wants to see ("I want to visit the Vatican Museums", "عايز ازور الأهرامات", "add Sagrada Familia"): before a plan exists put them in requirements.must_visit; once a plan exists use one add_place action per place with text = the place's usual English name. Categories ("more museums") are not add_place.
-- Travelers: "with my wife" = 2, "family of four" = 4. Rooms only when said: "three of us in one room" -> rooms = 1.
-- Flying home to a different city than the departure one ("from Riyadh to Istanbul, then back to Cairo", "عايز ارجع
-  على القاهرة مش الرياض"): requirements.return_to = that city. It is NOT a new destination and NOT a route change.
-- "The cheapest budget possible", "أرخص بادجت ممكنة", "هتبدأ من كام", "what's the least it can cost": set
-  wants_cheapest = true and planning_mode = "budget", and leave budget_amount empty - the planner finds the minimum.
-- If a plan already exists and the user reacts to it ("too crowded", "make it cheaper", "remove two museums", "I don't want to wake up before 10", "increase my budget by $300", "stay two more days"), set intent=feedback and list the concrete actions. Use adjust_budget with a signed amount for relative budget changes and set_budget for absolute ones. Use later_start with text=HH:MM. Use fewer_category/more_category with a lowercase category and amount = how many. Use replace_item with text = the exact item name.
-- Also record structured feedback notes, e.g. "the hotel was great but noisy" -> hotel, negative, attribute noise, severity 0.8.
-- Read the intent behind casual wording, in any language or dialect - don't wait for exact phrases:
-  - "add more things", "ضيف حاجات تانية", "the day is empty", "I want to see more", "pack it" -> increase_density.
-  - The traveller describing themselves ("I'm active", "انا راجل اكتيف", "بحب ازور اماكن كتير", "I like to see a lot")
-    -> requirements.travel_style = "very_active" (or "active" when milder) AND, if a plan exists, increase_density.
-  - "add all the famous landmarks / the top sights / معالم المدينة كلها" -> increase_density plus more_category with
-    category "landmarks". Only add_place for places the user actually names, each with text = its English name.
-  - Getting around: "I'll walk between nearby places and take transport for far ones" -> requirements.transport_preference
-    = "mixed"; "I love walking" -> "walk" (walking_tolerance high); "public transport / مواصلات" -> "public_transport";
-    "taxi / Uber / I don't want to walk" -> "taxi" (walking_tolerance low). Never use select_mode for this.
-  - "too much / tiring / مرهق" -> reduce_density; "cheaper / ارخص" -> cheaper; "earlier / later flight" -> change_flight.
-  - select_mode only when the user picks one of the plan modes (balanced, budget, comfort, experience).
-  - "raise my budget to what it really costs / زوّد الميزانية للتكلفة الحقيقية" -> set_budget with amount = the
-    context's plan_total rounded up to a round number.
-  - A currency other than the trip's ("بالجنيه", "in euros", "100 ألف جنيه") -> requirements.budget_currency = its ISO
-    code. A currency alone ("خليها بالجنيه المصري") is only budget_currency: the code converts the amount at today's
-    rate - never convert it yourself.
-- If a plan exists and the message asks to change it, use intent=feedback with actions (requirements may also be set).
-  Express ONLY what the user asked for: never add changes of your own (a budget change is just the budget - the
-  planner decides how to use the money).
-- intent=question when the user asks for information about travel rather than changing the trip.
-- A hypothetical change to compare, not apply yet ("what if my budget were $500 more?", "لو زودت يومين هتبقى بكام؟"):
-  express the change normally and set hypothetical = true. If the context shows a pending_what_if and the user accepts
-  it ("apply it", "تمام نفذها", "ok go with that"), set apply_pending = true.
-- intent=off_topic when the message is outside the travel scope below (e.g. "who is Messi?", "write me Python code").
-""" + SCOPE_RULE + """
-- The context's recent_conversation holds the last few messages (oldest first). Use it to resolve references to what was just said ("the second one", "that hotel", "yes, do that", "نفس المكان", "اللي قلته") into concrete values or actions.
-  - When the latest message picks one of the options the assistant just offered ("the second one", "the first", "التاني", "الأولاني", "the Venice one"), treat it as a plan_request / update_requirements and fill the fields from that option: its destinations in order, nights_per_destination, and anything else the option specified.
-  - Only the latest user message is being answered. Facts already in the draft or contract stay as they are: do not re-extract them from older messages."""
+""" + UNDERSTANDING + """
+
+Intent: plan_request (a new trip), update_requirements (facts about the trip before a plan exists), feedback (a plan
+exists and they want something changed), question (they want information), smalltalk, off_topic (outside the scope).
+If the context has a pending_route_proposal, set route_decision: 'accept' when they agree or let you decide (any short
+agreement: 'ok', 'تمام', 'ماشي'), 'change' when they want anything different - and when they say which places, fill
+`route`. If it has a pending_what_if and they accept it ("apply it", "تمام نفذها"), set apply_pending = true.
+Feedback notes record opinions, e.g. "the hotel was great but noisy" -> hotel, negative, attribute noise, severity 0.8.
+""" + SCOPE_RULE
 
 
 async def interpret_llm(text: str, context: dict, today: date) -> TurnInterpretation | None:

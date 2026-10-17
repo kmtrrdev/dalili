@@ -51,6 +51,28 @@ def is_arabic(text: str | None) -> bool:
     return any("\u0600" <= ch <= "\u06ff" for ch in text or "")
 
 
+def place_key(text: str | None) -> str:
+    """The comparable name of a place the model wrote: 'Bali, Indonesia' and 'bali' are the same city name."""
+    t = (text or "").split(",")[0].strip().lower()
+    return t[4:] if t.startswith("the ") else t
+
+
+def same_place(a: str | None, b: str | None) -> bool:
+    return bool(place_key(a)) and place_key(a) == place_key(b)
+
+
+def matches_ref(text: str | None, ref) -> bool:
+    """Does 'City' / 'City, Country' name this resolved place? A stated country must agree too ('Bali, Indonesia'
+    is not Bali District in Taiwan, whatever its name)."""
+    if ref is None or not same_place(text, ref.name):
+        return False
+    from .providers.geo import country_code
+
+    parts = [x.strip() for x in (text or "").split(",")]
+    cc = country_code(parts[-1]) if len(parts) > 1 else None
+    return cc is None or cc == (ref.country_code or "").upper()
+
+
 def open_windows(opening_hours: dict[str, list[list[str]]], d: date) -> list[tuple[int, int]]:
     return [(to_min(a), to_min(b)) for a, b in opening_hours.get(weekday_key(d), [])]
 

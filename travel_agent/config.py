@@ -40,6 +40,8 @@ class Settings:
     azure_model: str = os.getenv("AZURE_AI_MODEL", "gpt-5-mini")
     azure_api: str = os.getenv("AZURE_AI_API", "auto")  # auto (from the endpoint URL) | responses | chat
     azure_reasoning_effort: str = os.getenv("AZURE_AI_REASONING_EFFORT", "low")  # minimal | low | medium | high
+    # The trip agent reads every message: understanding it right is worth a little more thinking than phrasing is.
+    agent_reasoning_effort: str = os.getenv("AZURE_AI_AGENT_EFFORT", "medium")
     azure_reasoning_budget: int = int(os.getenv("AZURE_AI_REASONING_BUDGET", "8000"))  # extra output tokens for reasoning
     azure_timeout: float = float(os.getenv("AZURE_AI_TIMEOUT", "60"))  # one HTTP attempt
     llm_call_timeout: float = float(os.getenv("TRAVEL_AGENT_LLM_CALL_TIMEOUT", "75"))  # a whole call, retries included

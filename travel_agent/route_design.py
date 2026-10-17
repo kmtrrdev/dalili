@@ -72,9 +72,11 @@ class RouteDesign(BaseModel):
         "otherwise false and the route will be re-ordered for the shortest travel"))
 
 
-DESIGN_SYSTEM = """You are an expert travel route designer. Design a multi-city route (the traveller confirms it before any booking research).
+DESIGN_SYSTEM = """You are an expert travel route designer. Design the trip's route: the base cities and nights (the traveller confirms it before any booking research). A route may have one stop or several.
 
 Rules:
+- The traveller's feedback (traveller_feedback, latest last, any language) overrides every rule below and earlier
+  proposals. "Only X" / "just X" / "X بس" means a route of exactly X; dropping a city means it is gone.
 - Include every city in cities_already_chosen / current_route unless the traveller's feedback drops it.
 - When the traveller's feedback names the cities they want, use exactly those cities (plus the current route's cities
   unless dropped) - never add other cities they didn't ask for. Suggest extra places in warnings instead.
@@ -85,7 +87,7 @@ Rules:
 - Pick bases that show the countries' most famous highlights and have an airport or a main train station.
 - Nights must add up exactly to the total nights. Prefer >= 2 nights per base; with too few nights, say which trade-off you made in warnings (never silently drop a named place).
 - Order the bases geographically so the journey from the origin and back is short (no zig-zag).
-- Respect the traveller's feedback on earlier proposals (it may be in any language): it overrides these rules.
+- Never add a base just to fill nights or because it is near another base; extra ideas go in warnings.
 - If the traveller says where the trip starts or ends, or which city comes first/last (e.g. "go to Sharm, then fly to Cairo at the end" = Sharm first, Cairo last), list the stops in exactly that order and set keep_order=true. Otherwise keep_order=false.
 - Cities and countries in English."""
 
@@ -149,7 +151,10 @@ async def propose(hub: MCPHub, trip: TripState) -> RouteProposal:
     d, p = trip.draft, trip.traveler_profile
     nights = total_nights(trip)
     anchors = list(d.destination_refs) or ([d.destination_ref] if d.destination_ref else [])
-    located = await _locate_named(hub, d.must_visit, anchors or ([d.origin_ref] if d.origin_ref else []))
+    # Only the places the traveller named shape the route - never the expert review's picks for an earlier plan.
+    expert = {n.lower() for n in trip.metadata.get("expert_added", [])}
+    named = [n for n in d.must_visit if n.lower() not in expert]
+    located = await _locate_named(hub, named, anchors or ([d.origin_ref] if d.origin_ref else []))
 
     facts = {
         "origin": d.origin_ref.name if d.origin_ref else None,
@@ -160,11 +165,13 @@ async def propose(hub: MCPHub, trip: TripState) -> RouteProposal:
         "interests": p.activity_preferences, "pace": p.travel_style,
         "named_places": [{"name": n, "found_as": pl.name, "lat": round(pl.location.lat, 4), "lon": round(pl.location.lon, 4),
                           "address": pl.address} for n, pl in located],
-        "current_route": [f"{s.name} ({s.nights} nights)" for s in trip.trip_contract.stops]
+        "current_route": [f"{s.name}, {s.ref.country} ({s.nights} nights)" for s in trip.trip_contract.stops]
         if d.redesign and trip.trip_contract and trip.trip_contract.stops
-        else ([f"{trip.trip_contract.destination} ({trip.trip_contract.nights} nights)"]
-              if d.redesign and trip.trip_contract else None),
-        "previous_proposal": [f"{s.city} ({s.nights} nights)" for s in d.route_proposal.stops] if d.route_proposal else None,
+        else ([f"{trip.trip_contract.destination}, {trip.trip_contract.destination_ref.country} "
+               f"({trip.trip_contract.nights} nights)"]
+              if d.redesign and trip.trip_contract and trip.trip_contract.destination_ref else None),
+        "previous_proposal": [f"{s.city}, {s.country} ({s.nights} nights)" for s in d.route_proposal.stops]
+        if d.route_proposal else None,
         "traveller_feedback": d.route_feedback,
     }
     design = await llm.parse(DESIGN_SYSTEM, json.dumps(facts, default=str), RouteDesign) if llm.available() else None
@@ -219,6 +226,11 @@ async def _verified_stops(hub: MCPHub, design: RouteDesign) -> tuple[list[Propos
             except MCPToolError:
                 warnings.append(f"I couldn't verify {s.city}, so I left it out.")
                 continue
+        cc = geo.country_code(s.country) if s.country else None
+        if cc and ref.country_code and cc != ref.country_code.upper():
+            # The lookup landed on a same-named place in another country: never build the route on it.
+            warnings.append(f"I couldn't verify {s.city}, {s.country}, so I left it out.")
+            continue
         if any(x.ref and x.ref.name == ref.name for x in stops):
             continue
         stops.append(ProposedStop(city=ref.name, country=ref.country, nights=max(1, s.nights), why=s.why,

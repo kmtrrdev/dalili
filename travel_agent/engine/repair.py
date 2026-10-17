@@ -173,6 +173,8 @@ def _apply_budget_step(step: str, plan: TripPlan, k: PlanKnobs, research: Resear
             # preferences exists; otherwise we would cascade into early/connecting flights.
             acceptable = [x for x in pool if x.id not in k.flight_exclude and x.id != f.id
                           and (x.depart_at.hour >= 7 or f.depart_at.hour < 7)  # never trade into a red-eye to save money
+                          # ... nor into landing a day later (a lost day, or past the day they want to arrive)
+                          and (f.direction != "outbound" or x.arrive_at.date() <= f.arrive_at.date())
                           and (profile is None or not profile.avoid_early_flights or x.depart_at.hour >= 8)
                           and (profile is None or profile.flight_preference != "direct" or x.stops == 0)]
             if any(_user(x.price_per_person, plan, research) < _user(f.price_per_person, plan, research) for x in acceptable):

@@ -91,7 +91,8 @@ def stop_contract(c: TripContract, i: int, budget_amount: float | None = None) -
     """The single-city contract of stop i (its own dates; the whole trip's travelers and preferences)."""
     s = c.stops[i]
     update = {"destination": s.name, "destination_name": s.name, "destination_ref": s.ref,
-              "start_date": s.start_date, "end_date": s.end_date, "stops": []}
+              "start_date": s.start_date, "end_date": s.end_date, "stops": [],
+              "arrive_by": c.arrive_by if i == 0 else None}  # "arrive on the 1st" is about the first city
     if budget_amount is not None:
         update["budget"] = c.budget.model_copy(update={"amount": round(budget_amount, 2)})
     return c.model_copy(update=update)

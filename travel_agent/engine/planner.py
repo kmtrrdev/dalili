@@ -29,6 +29,7 @@ from ..models import (
     TravelerProfile,
     TripContract,
     TripPlan,
+    trust_class,
 )
 from ..providers import routing
 from ..utils import haversine_km
@@ -137,6 +138,11 @@ def capacity(ctx: PlanContext) -> tuple[int, int, int]:
 # ---------------------------------------------------------------------------
 
 
+def _lands_in_time(f: FlightOption, ctx: PlanContext) -> bool:
+    """Lands (local time) by the date the traveller wants to be there, when they said one."""
+    return ctx.contract.arrive_by is None or f.arrive_at.astimezone(ctx.tz).date() <= ctx.contract.arrive_by
+
+
 def _rank_flights(pool: list[FlightOption], ctx: PlanContext, leaving: bool = False) -> list[Ranked]:
     fprefs = ctx.strategy.flights if ctx.strategy is not None else None
     picked = [f for f in pool if f.id in ctx.knobs.flight_pins]
@@ -151,6 +157,16 @@ def _rank_flights(pool: list[FlightOption], ctx: PlanContext, leaving: bool = Fa
         # real saving: keep trains / coaches only when they are within ~4 h of the fastest flight.
         fastest = min(f.duration_minutes for f in flights)
         pool = [f for f in pool if f.mode == "flight" or f.duration_minutes <= fastest + 240]
+    base = pool
+
+    def required(fs: list[FlightOption]) -> list[FlightOption]:
+        """The traveller's own flight rules (kept unless no flight meets them)."""
+        if ctx.profile.avoid_early_flights:
+            fs = [f for f in fs if f.depart_at.hour >= 8] or fs
+        if ctx.profile.flight_preference == "direct":
+            fs = [f for f in fs if f.stops == 0] or fs
+        return fs
+
     if red_eye_ok:
         pass  # this plan takes night / dawn flights when they're cheaper (the price weight decides)
     elif leaving:
@@ -166,12 +182,17 @@ def _rank_flights(pool: list[FlightOption], ctx: PlanContext, leaving: bool = Fa
             # This plan said no red-eyes: a 02:50 departure means a sleepless night before the trip.
             daytime = [f for f in pool if f.depart_at.hour >= 6]
             pool = daytime or pool
-    if ctx.profile.avoid_early_flights:
-        late = [f for f in pool if f.depart_at.hour >= 8]
-        pool = late or pool
-    if ctx.profile.flight_preference == "direct":
-        direct = [f for f in pool if f.stops == 0]
-        pool = direct or pool
+    pool = required(pool)
+    if not leaving and ctx.contract.arrive_by:
+        # "I want to arrive on the 1st": a flight that lands a day later breaks what the traveller asked for.
+        base = [f for f in base if _lands_in_time(f, ctx)] or base
+        pool = [f for f in pool if _lands_in_time(f, ctx)] or pool
+    if ctx.mode == "budget":
+        # The budget plan must see the cheapest fares: a dawn departure or a late landing costs comfort, which the
+        # flight score and the hours-in-the-city term already price in - it is not a reason to hide the fare.
+        cheapest = sorted(required(base), key=lambda f: f.price_per_person.amount * ctx.fx(f.price_per_person.currency))
+        shown = {f.id for f in pool}
+        pool = pool + [f for f in cheapest[:3] if f.id not in shown]
     ranked = [score_flight(f, pool, ctx.profile, ctx.mode, fprefs) for f in pool]
     return sorted(ranked, key=lambda r: -r.score)
 
@@ -274,9 +295,16 @@ def select_core(ctx: PlanContext) -> tuple[Ranked | None, Ranked | None, Ranked 
 
     # Round-trip tickets: both legs together or not at all (each leg carries half the ticket price).
     pairs = [] if pinned_rt else [(o, r) for o in out_pool for r in ret_pool]
+    in_time = any(_lands_in_time(x.item, ctx) for x in out_pool) or any(_lands_in_time(rt.outbound, ctx)
+                                                                         for rt in ctx.research.round_trips)
+    if c.arrive_by and not in_time and not pins:
+        notes.append(f"No flight found for these dates lands by {c.arrive_by:%b %d} - leaving on "
+                     f"{c.arrive_by - timedelta(days=1):%b %d} would.")
     for rt in pinned_rt or ctx.research.round_trips:
         if rt.outbound.id in ctx.knobs.flight_exclude or rt.inbound.id in ctx.knobs.flight_exclude:
             continue
+        if not pinned_rt and in_time and not _lands_in_time(rt.outbound, ctx):
+            continue  # lands after the day the traveller wants to be there
         if pins and not pinned_rt and (pins & {x.item.id for x in outs + rets}):
             continue  # one-way flights were picked: no round-trip ticket replaces them
         o = score_flight(rt.outbound, [x.item for x in outs] + [rt.outbound], ctx.profile, ctx.mode, fprefs)
@@ -284,13 +312,20 @@ def select_core(ctx: PlanContext) -> tuple[Ranked | None, Ranked | None, Ranked 
         o.reasons.append("Round-trip ticket: cheaper than two one-way fares")
         pairs.append((o, r))
 
+    def buffered(m: Money, amount: float) -> float:
+        """As compute_budget: a published fare or rate is the price; anything estimated carries the safety buffer."""
+        return amount if trust_class(m) == "verified" else amount * (1 + ctx.buffer_ratio)
+
     combos = []
     for o, r in pairs:
         hours = ground_hours(o.item, r.item)
         for h in hotel_pool:
-            total = ((fare(o.item) + fare(r.item)) * c.travelers
-                     + h.item.price_per_night.amount * c.nights * c.rooms * ctx.fx(h.item.price_per_night.currency)
-                     + daily_user * c.num_days) * (1 + ctx.buffer_ratio)
+            hm = h.item.price_per_night
+            total = (buffered(o.item.price_per_person, fare(o.item) * c.travelers)
+                     + buffered(r.item.price_per_person, fare(r.item) * c.travelers)
+                     + buffered(hm, hm.amount * c.nights * c.rooms * ctx.fx(hm.currency))
+                     # The days are not planned yet: all of their spend counts as estimated.
+                     + daily_user * c.num_days * (1 + ctx.buffer_ratio))
             obj = (weights[0] * (o.score + r.score) + weights[1] * h.score - weights[2] * total / max(budget, 1)
                    + hour_weight * hours / 24 * 4)
             combos.append((total, obj, (o, r, h)))
@@ -319,6 +354,16 @@ def select_core(ctx: PlanContext) -> tuple[Ranked | None, Ranked | None, Ranked 
         best = max((x for x in combos if x[0] <= slack), key=lambda x: x[1])[2]
         notes.append("No flight + hotel combination fits the budget comfortably; picked the cheapest combination.")
     o, r, h = best
+    if c.arrive_by and _lands_in_time(o.item, ctx):
+        landing = f"Lands {o.item.arrive_at.astimezone(ctx.tz):%b %d}, the day you want to arrive"
+        cheapest_back = min((fare(f) for f in ctx.research.flights_return), default=0.0)
+        late = [rt.total_per_person.amount * ctx.fx(rt.total_per_person.currency) for rt in ctx.research.round_trips
+                if not _lands_in_time(rt.outbound, ctx)]
+        late += [fare(f) + cheapest_back for f in ctx.research.flights_outbound if not _lands_in_time(f, ctx)]
+        if late and min(late) < fare(o.item) + fare(r.item):
+            # Why a cheaper fare lost: it lands after the day the traveller wants to be there.
+            landing += f" (a fare {fare(o.item) + fare(r.item) - min(late):,.0f} {c.budget.currency} cheaper lands a day later)"
+        o.reasons.insert(0, landing)
     alternatives = {
         "hotels": [x.item.id for x in hranked if x.item.id != h.item.id][:3],
         "outbound_flights": [x.item.id for x in outs if x.item.id != o.item.id][:3],
@@ -405,7 +450,7 @@ def transfer_cost(o: TransferOption, travelers: int) -> Money:
 class DaySlot:
     index: int
     date: object
-    kind: str                # arrival | full | departure
+    kind: str                # travel | arrival | full | departure | flight_home
     start: int               # earliest activity start (minutes)
     end: int                 # latest activity end
     max_count: int
@@ -413,6 +458,28 @@ class DaySlot:
     high_rain: bool
     activities: list[Ranked] = field(default_factory=list)
     evening: Ranked | None = None
+
+
+def _clock(d, local) -> int:
+    """Minutes from midnight of day d to a local datetime (past 24 h or negative when it falls on another day)."""
+    return (local.date() - d).days * 24 * 60 + local.hour * 60 + local.minute
+
+
+def trip_edges(ctx: PlanContext, out: FlightOption | None, ret: FlightOption | None,
+               t_out: TransferOption | None) -> tuple[int, int]:
+    """(arrival day index, departure day index) from the flights' real local times. A long-haul flight that lands the
+    day after it leaves (Cairo 1 Nov 08:00 -> Bali 2 Nov 22:35) makes the days before its landing travel days; a flight
+    home soon after midnight means leaving the hotel the evening before, so that evening is the departure."""
+    c = ctx.contract
+    last = c.num_days - 1
+    arr_i = 0
+    if out is not None:
+        arr_i = min(max((out.arrive_at.astimezone(ctx.tz).date() - c.start_date).days, 0), last)
+    dep_i = last
+    if ret is not None:
+        leave = ret.depart_at.astimezone(ctx.tz) - timedelta(minutes=before_departure(ret) + (t_out.minutes if t_out else 60))
+        dep_i = min(max((leave.date() - c.start_date).days, arr_i + 1), last)
+    return arr_i, dep_i
 
 
 def build_slots(ctx: PlanContext, out: FlightOption | None, ret: FlightOption | None,
@@ -423,12 +490,18 @@ def build_slots(ctx: PlanContext, out: FlightOption | None, ret: FlightOption | 
     weather = {w.date: w for w in ctx.research.weather}
     tmin_in = t_in.minutes if t_in else 60
     tmin_out = t_out.minutes if t_out else 60
+    arr_i, dep_i = trip_edges(ctx, out, ret, t_out)
     slots = []
     for i in range(c.num_days):
         d = c.start_date + timedelta(days=i)
         w = weather.get(d)
         high_rain = bool(w and w.risk == "high") or (i + 1) in ctx.knobs.avoid_outdoor_days
-        kind = "arrival" if i == 0 else ("departure" if i == c.num_days - 1 else "full")
+        kind = ("travel" if i < arr_i else "arrival" if i == arr_i else "flight_home" if i > dep_i
+                else "departure" if i == dep_i else "full")
+        if kind in ("travel", "flight_home"):
+            # In the air (or about to be): no sightseeing, whatever a repair or "pack more in" says.
+            slots.append(DaySlot(i, d, kind, act_end, act_end, 0, 0, high_rain))
+            continue
         start, end, cnt, mins = wake + 60, act_end, count, minutes
         # Arrival / departure days: every free hour counts. A slot is ~100 min of visit + travel (short stops such
         # as a fountain weigh half), so an afternoon in Rome holds the Colosseum and two or three nearby sights.
@@ -444,7 +517,7 @@ def build_slots(ctx: PlanContext, out: FlightOption | None, ret: FlightOption | 
         if kind == "departure" and ret is not None:
             start = wake + 45  # right after breakfast: the morning is all there is
             dep = ret.depart_at.astimezone(ctx.tz)
-            leave_hotel = dep.hour * 60 + dep.minute - before_departure(ret) - tmin_out - 20
+            leave_hotel = _clock(d, dep) - before_departure(ret) - tmin_out - 20
             end = min(end, leave_hotel - 30)
             avail = end - start
             cnt = min(count, max(0, avail // 100))
@@ -1101,13 +1174,34 @@ def build_day(ctx: PlanContext, slot: DaySlot, hotel: HotelOption | None, out: F
     tr = ctx.contract.travelers
     name = ctx.research.destination_info.get("name", ctx.dest.title())
     title = f"Explore {name}"
+    extra_notes: list[str] = []
+    travel = False  # part of the day is spent getting here / away (DayPlan.travel_day: meals aren't required)
 
     transfer = transfers[0]
+    if slot.kind in ("travel", "flight_home") and (out if slot.kind == "travel" else ret) is not None:
+        # In the air all day (the flight lands on a later date), or the flight home after an evening airport run.
+        f = out if slot.kind == "travel" else ret
+        item = _flight_item(f, ctx.tz, False)
+        dep_local, arr = f.depart_at.astimezone(ctx.tz), f.arrive_at.astimezone(ctx.tz)
+        if slot.kind == "travel":
+            item.start = (dep_local.strftime("%H:%M") if dep_local.date() == slot.date
+                          else "00:00" if dep_local.date() < slot.date else "23:59")
+            item.end = "23:59"
+            title = f"Travel day: flying to {name}"
+            extra_notes.append(f"On the way: lands in {name} on {arr:%a %d %b} at {arr:%H:%M} local time - "
+                               "no sightseeing today.")
+        else:
+            title = f"Travel day: leaving {name}"
+            extra_notes.append(f"Your {_hub(f)} run was last night; {f.flight_number} leaves at {dep_local:%H:%M}.")
+        return DayPlan(day=slot.index + 1, date=slot.date, title=title, items=[item], weather=b.slot_weather(),
+                       notes=extra_notes, capacity=0, travel_day=True), []
     if slot.kind == "arrival" and out is not None:
         title = f"Arrival in {name}"
         b.items.append(_flight_item(out, ctx.tz, True))
         arr = out.arrive_at.astimezone(ctx.tz)
         b.t = arr.hour * 60 + arr.minute + arrival_processing(out)
+        # Landing after a travel day: the morning was spent flying (a small-hours landing still gets a normal day).
+        travel = slot.index > 0 and b.t > wake
         if arr.date() != slot.date:
             # Lands after midnight: the transfer and check-in belong to the night, not to this day's timeline.
             b.items.append(ItineraryItem(
@@ -1116,7 +1210,7 @@ def build_day(ctx: PlanContext, slot: DaySlot, hotel: HotelOption | None, out: F
                 notes=f"Lands {arr:%a %H:%M}; {_hub(out)} transfer"
                       + (f" ({transfer.name}, ~{transfer.minutes} min)" if transfer else "")
                       + " and check-in happen after midnight - tell the hotel you'll arrive late."))
-            return DayPlan(day=slot.index + 1, date=slot.date, title=title, items=b.items,
+            return DayPlan(day=slot.index + 1, date=slot.date, title=title, items=b.items, travel_day=slot.index > 0,
                            notes=["Late arrival: the first full day starts after a short night."]), []
         if transfer:
             b.items.append(ItineraryItem(
@@ -1129,16 +1223,21 @@ def build_day(ctx: PlanContext, slot: DaySlot, hotel: HotelOption | None, out: F
         if arr.date() != slot.date or at_hotel >= 23 * 60 + 45:
             b.items.append(ItineraryItem(start="23:59", end="23:59", kind="free", title="Overnight arrival",
                                          notes=f"Lands {arr:%a %H:%M}; transfer and check-in happen after midnight."))
-            return DayPlan(day=1, date=slot.date, title=title, items=b.items,
+            return DayPlan(day=slot.index + 1, date=slot.date, title=title, items=b.items, travel_day=slot.index > 0,
                            notes=["Overnight flight: the first full day starts after a short night."]), []
+        small_hours = slot.index > 0 and b.t < wake - 60  # landed after midnight, long before the day starts
         if hotel:
             early = b.t < to_min(CHECK_IN_FROM)
             b.items.append(ItineraryItem(
                 start=to_hhmm(b.t), end=to_hhmm(b.t + 30), kind="hotel", title=f"Check in at {hotel.name}",
                 location=hotel.location,
-                notes=("Early arrival: leave your bags; official check-in from " + CHECK_IN_FROM) if early else "Check-in",
+                notes=("Night arrival: your room is booked from the night before - tell the hotel you'll arrive late."
+                       if small_hours else ("Early arrival: leave your bags; official check-in from " + CHECK_IN_FROM)
+                       if early else "Check-in"),
             ))
             b.t += 30
+        if small_hours:
+            b.breakfast(wake)  # a night's sleep first: then the day runs like any other
         b.daytime(slot.activities, slot.start, slot.end)
         if b.t < 22 * 60:
             b.afternoon_and_evening(None, allow_extras=b.t < 17 * 60)
@@ -1147,7 +1246,10 @@ def build_day(ctx: PlanContext, slot: DaySlot, hotel: HotelOption | None, out: F
         transfer = transfers[1]
         dep = ret.depart_at.astimezone(ctx.tz)
         tmin = transfer.minutes if transfer else 60
-        leave = dep.hour * 60 + dep.minute - before_departure(ret) - tmin
+        leave = _clock(slot.date, dep) - before_departure(ret) - tmin
+        # A flight soon after midnight: this evening is the airport run and the flight itself is on the next day.
+        tonight = dep.date() > slot.date
+        travel = tonight
         if leave - 45 >= wake:
             b.breakfast(wake)
         else:
@@ -1161,6 +1263,12 @@ def build_day(ctx: PlanContext, slot: DaySlot, hotel: HotelOption | None, out: F
         b.daytime(slot.activities, slot.start, min(slot.end, b.hard_end - 20))
         if leave - b.t >= 150 and b.t >= 13 * 60 and b.t < 16 * 60 and not ctx.knobs.skip_snacks:
             b.meal("coffee", b.t, "Coffee break")
+        # A late flight leaves the evening: dinner before the airport (a little early if the airport run needs it).
+        dinner_at = min(to_min(ctx.research.destination_info.get("dinner_time", "19:30")),
+                        b.hard_end - MEAL_DURATION["dinner"] - 30)
+        if dinner_at >= 18 * 60 and b.t <= dinner_at:
+            b.fill_gap(dinner_at - 20)
+            b.meal("dinner", max(b.t, dinner_at))
         if hotel:
             b.fill_gap(leave - 15, back_to=hotel.location)  # one more sight before the bags, if it fits
         back = b.leg_to(hotel.location) if hotel else None
@@ -1183,7 +1291,11 @@ def build_day(ctx: PlanContext, slot: DaySlot, hotel: HotelOption | None, out: F
                 notes=transfer.notes,
                 explanation=[f"Arrive about {before_departure(ret) // 60}h{before_departure(ret) % 60:02d} before departure"]))
             b.t += transfer.minutes
-        b.items.append(_flight_item(ret, ctx.tz, False))
+        if tonight:
+            extra_notes.append(f"Your flight {ret.flight_number} leaves at {dep:%H:%M} on {dep:%a %d %b}, just after "
+                               f"midnight: the {_hub(ret)} run is tonight.")
+        else:
+            b.items.append(_flight_item(ret, ctx.tz, False))
     else:
         b.breakfast(wake)
         if not slot.activities and b.t < 12 * 60:
@@ -1197,7 +1309,7 @@ def build_day(ctx: PlanContext, slot: DaySlot, hotel: HotelOption | None, out: F
         b.afternoon_and_evening(slot.evening)
 
     weather = b.slot_weather()
-    notes = []
+    notes = list(extra_notes)
     if weather and weather.risk == "high":
         notes.append(f"Weather risk: {weather.condition} ({weather.precipitation_probability}% rain). Indoor options prioritised.")
     if b.dropped:
@@ -1206,7 +1318,7 @@ def build_day(ctx: PlanContext, slot: DaySlot, hotel: HotelOption | None, out: F
             notes.append("Did not fit today: " + ", ".join(names))
     day = DayPlan(day=slot.index + 1, date=slot.date, title=title, items=b.items, weather=weather,
                   walking_km=round(b.walk_km, 2), activity_count=sum(1 for i in b.items if i.kind == "activity"),
-                  notes=notes, capacity=slot.max_count)
+                  notes=notes, capacity=slot.max_count, travel_day=travel)
     if day.activity_count:
         top = [i.title for i in b.items if i.kind == "activity"][:2]
         day.title = f"{title}: " + " & ".join(top) if slot.kind == "full" else day.title

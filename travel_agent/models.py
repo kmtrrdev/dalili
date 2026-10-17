@@ -212,6 +212,7 @@ class TripContract(BaseModel):
     destination_ref: PlaceRef | None = None
     start_date: date
     end_date: date
+    arrive_by: date | None = None       # the traveller wants to BE there on this date (not just leave home on it)
     travelers: int = 1
     budget: Budget
     must_have: list[str] = Field(default_factory=list)
@@ -292,6 +293,7 @@ class RequirementDraft(BaseModel):
     route_feedback: list[str] = Field(default_factory=list)  # what the traveller said about earlier proposals
     start_date: date | None = None
     end_date: date | None = None
+    arrive_by: date | None = None   # "I want to arrive on the 1st": the day to land, not just to leave home
     duration_days: int | None = None
     travelers: int | None = None
     budget_amount: float | None = None
@@ -537,7 +539,7 @@ class DayPlan(BaseModel):
     activity_count: int = 0
     notes: list[str] = Field(default_factory=list)
     city: str = ""              # multi-city: where the day ends (the new city on a travel day)
-    travel_day: bool = False    # multi-city: moving between two stops today
+    travel_day: bool = False    # a flying day: between two stops, or a long-haul flight there / home
     capacity: int | None = None  # activities the plan agreed for this day (pace, mode, the traveller's own changes)
 
 

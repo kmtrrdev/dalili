@@ -29,7 +29,11 @@ def plan_facts(trip: TripState) -> dict[str, Any]:
     b = plan.budget
     expert = {n.lower() for n in trip.metadata.get("expert_added", [])}
     facts: dict[str, Any] = {
-        "destination": c.destination_name, "dates": f"{c.start_date:%b %d} - {c.end_date:%b %d, %Y}",
+        "destination": (f"{c.destination_name}, {c.destination_ref.country}" if c.destination_ref and not c.is_multi
+                        else c.destination_name), "dates": f"{c.start_date:%b %d} - {c.end_date:%b %d, %Y}",
+        # Both counts, so "5 nights" is never mistaken for 6 days not applied.
+        "length": f"{c.nights} nights ({c.num_days} days, {c.start_date:%b %d} - {c.end_date:%b %d})",
+        "wants_to_arrive_on": f"{c.arrive_by:%b %d}" if c.arrive_by else None,
         "travelers": c.travelers, "hotel_rooms": c.rooms, "selected_mode": plan.mode,
         "departs_from": c.origin_city,
         "flies_home_to": c.return_city or c.origin_city,
@@ -342,6 +346,9 @@ REPLY_SYSTEM = """You are Dalili (دليلي), a sharp, warm travel planner who 
 Write the chat reply to the traveller from the JSON facts you are given.
 
 Truth: use only the facts provided - never invent prices, times, places or claims that are not in the JSON.
+Honesty about changes: 'what_the_traveller_asked' is what they asked for this turn; 'changes' and the plan facts are
+what really happened. Never claim a change the facts don't show (e.g. "I switched it to X" while the plan is still
+in Y); if something they asked for didn't happen, say so plainly and why if the facts tell.
 Language: write in 'reply_language' (the traveller's own language; Egyptian Arabic -> natural, fluent
 Egyptian Arabic, not formal MSA). Write every sentence fully in that language: only proper names (places, airlines,
 flight numbers, hotel names) stay in English. Don't use English words like "Day", "flights", "booking" in Arabic text.
@@ -420,6 +427,8 @@ async def compose_plan_reply(trip: TripState) -> PlanReply:
                                    "the language of traveller_latest_message - English unless it is clearly another "
                                    "language (never Arabic for a message written in Latin letters)")
         facts["recent_conversation"] = recent_turns(trip, n=4)
+        if trip.metadata.get("turn_request"):
+            facts["what_the_traveller_asked"] = trip.metadata["turn_request"]
         facts["unknown_preferences"] = unknown_preferences(trip)
         crit = trip.metadata.get("critique")
         if crit and crit.get("fresh"):

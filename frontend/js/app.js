@@ -51,7 +51,7 @@ try { state.tripId = PREFILL ? null : localStorage.getItem("tripId"); } catch (_
 if (PREFILL) {
   try { localStorage.removeItem("tripId"); } catch (_) { /* storage unavailable */ }
   queueMicrotask(() => {
-    $("qcInput").value = PREFILL.slice(0, 300) + " ";
+    setText($("qcInput"), PREFILL.slice(0, 300) + " ");
     $("qcInput").focus();
     history.replaceState(null, "", location.pathname);  // a reload shouldn't refill it
   });
@@ -523,7 +523,7 @@ function wireItinerary(plan) {
   const pts = [];
   const stop = stopForDay(plan, d);
   const hotel = stop ? stop.hotel : plan.hotel;
-  if (hotel && !d.travel_day) {
+  if (hotel && !(d.travel_day && stop)) {
     const h = [hotel.location.lat, hotel.location.lon];
     L.marker(h, { icon: L.divIcon({ className: "", html: '<div class="pin hotel"><b>H</b></div>', iconSize: [24, 24], iconAnchor: [12, 24] }), title: hotel.name }).addTo(map).bindTooltip(esc(hotel.name));
     pts.push(h);
@@ -537,8 +537,8 @@ function wireItinerary(plan) {
     L.marker(p, { icon: L.divIcon({ className: "", html: `<div class="pin ${i.kind}"><b>${n}</b></div>`, iconSize: [24, 24], iconAnchor: [12, 24] }) })
       .addTo(map).bindTooltip(esc(`${i.start} · ${i.title}`));
   }
-  if (d.travel_day) {
-    // Moving day: show the arrival city's side of the day (the journey itself is on the globe).
+  if (d.travel_day && stop) {
+    // Moving day between cities: show the arrival city's side of the day (the journey itself is on the globe).
     const here = pts.filter(([la, lo]) => stop && Math.hypot(la - stop.location.lat, lo - stop.location.lon) < 0.6);
     pts.length = 0;
     if (stop && stop.hotel) {
@@ -1076,7 +1076,7 @@ function renderExamples() {
 $("examples").addEventListener("click", (e) => {
   const b = e.target.closest(".ex");
   if (!b) return;
-  $("qcInput").value = b.textContent;
+  setText($("qcInput"), b.textContent);
   $("qcInput").focus();
 });
 $("quickChat").addEventListener("submit", (e) => {
@@ -1084,9 +1084,24 @@ $("quickChat").addEventListener("submit", (e) => {
   if (state.busy) return;
   const text = $("qcInput").value.trim();
   if (!text) { $("qcInput").focus(); return; }
-  $("qcInput").value = "";
+  setText($("qcInput"), "");
   send(text);
 });
+wireTextBox($("qcInput"), $("quickChat"), 160);
+
+/** A message box that grows with its text (long requests stay readable) and sends on Enter (Shift+Enter: new line). */
+function wireTextBox(box, form, max) {
+  const grow = () => { box.style.height = "auto"; if (box.value) box.style.height = Math.min(box.scrollHeight + 2, max) + "px"; };
+  box.addEventListener("input", grow);
+  box.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); form.requestSubmit(); }
+  });
+  box.grow = grow;
+}
+function setText(box, text) {
+  box.value = text;
+  box.grow?.();
+}
 
 // 2) The quick form: one question per step. It fills the (hidden) detailed form, then runs the same search /
 //    planning logic, so both ways end in exactly the same place.
@@ -1552,12 +1567,10 @@ $("composer").addEventListener("submit", (e) => {
   if (state.busy) return;  // keep the text: it can be sent when the answer arrives
   const v = $("input").value.trim();
   if (!v) return;
-  $("input").value = "";
-  $("input").style.height = "";
+  setText($("input"), "");
   send(v);
 });
-$("input").addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); $("composer").requestSubmit(); } });
-$("input").addEventListener("input", (e) => { e.target.style.height = "auto"; e.target.style.height = Math.min(e.target.scrollHeight, 140) + "px"; });
+wireTextBox($("input"), $("composer"), 140);
 /** Forget the open trip (and any turn still running for it): the next message starts a new one. */
 function resetTrip() {
   retireTurn();

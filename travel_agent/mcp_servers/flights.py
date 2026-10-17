@@ -68,7 +68,7 @@ async def search_flights(origin: str, destination: str, departure_date: str, ret
     live_back = [f for f in back if f.metadata.source != "ai_knowledge"]
     one_way_min = (min(f.price_per_person.amount for f in live_out) + min(f.price_per_person.amount for f in live_back)
                    if live_out and live_back else float("inf"))
-    for o, b, total in pairs:
+    for o, b, total in pairs:  # every ticket that beats two one-ways: the planner weighs their times, not only price
         if total < one_way_min:
             round_trips.append({"outbound": o, "inbound": b,
                                 "total_per_person": {"amount": total, "currency": currency.upper(), "price_type": "known",
@@ -76,7 +76,7 @@ async def search_flights(origin: str, destination: str, departure_date: str, ret
     return envelope("flight_search_result", "flight_mcp", q, outbound=out, **{"return": back}, round_trips=round_trips,
                     price_insights={"outbound": out_ins, "return": back_ins,
                                     "cheapest_one_way_pair": None if one_way_min == float("inf") else one_way_min,
-                                    "cheapest_round_trip": pairs[0][2] if pairs else None}, **extra)
+                                    "cheapest_round_trip": min((t for _, _, t in pairs), default=None)}, **extra)
 
 
 @server.tool()

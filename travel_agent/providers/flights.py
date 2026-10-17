@@ -7,6 +7,7 @@ real per-person price and the planner can combine any outbound with any return.
 
 from __future__ import annotations
 
+import asyncio
 import hashlib
 from datetime import date, datetime
 from zoneinfo import ZoneInfo
@@ -81,11 +82,16 @@ async def search_one_way(departure_id: str, arrival_id: str, on: date, currency:
     return options, {k: insights.get(k) for k in ("lowest_price", "price_level", "typical_price_range")}
 
 
+ROUND_TRIP_FOLLOWS = 2  # outbounds whose return fares are searched (one SerpApi call each)
+
+
 async def search_round_trip(departure_id: str, arrival_id: str, out_date: date, back_date: date, currency: str,
                             dep_tz: str, arr_tz: str, travel_class: int = 1) -> list[tuple[FlightOption, FlightOption, float]]:
-    """The cheapest round-trip ticket Google Flights sells (2 searches: outbound list, then the return options of the
-    cheapest outbound via its departure_token). Returns [(outbound, inbound, total price per person)] with each leg
-    priced at half the ticket, or [] when nothing is found."""
+    """Round-trip tickets Google Flights sells: the outbound list, then the return options of the 2 cheapest distinct
+    outbounds via their departure_token (3 searches at most). The outbound list's price is only a "from" price - two
+    outbounds tied there can re-price differently once the return is chosen (CAI-DPS: 47,642 vs 49,047 for the same
+    listed fare) - so following one outbound can miss the cheapest ticket. Returns every ticket found, cheapest first:
+    [(outbound, inbound, total price per person)] with each leg priced at half its own ticket; [] when none is found."""
     common = dict(departure_id=departure_id, arrival_id=arrival_id, outbound_date=out_date.isoformat(),
                   return_date=back_date.isoformat(), type="1", adults=1, currency=currency.upper(), hl=settings.language,
                   travel_class=travel_class)
@@ -93,26 +99,46 @@ async def search_round_trip(departure_id: str, arrival_id: str, out_date: date, 
     url = (data.get("search_metadata") or {}).get("google_flights_url")
     its = [it for it in (data.get("best_flights") or []) + (data.get("other_flights") or [])
            if it.get("price") and it.get("departure_token")]
-    if not its:
-        return []
-    first = min(its, key=lambda it: it["price"])
-    back_data = await net.serpapi("google_flights", 6 * net.HOUR, departure_token=first["departure_token"], **common)
-    backs = [it for it in (back_data.get("best_flights") or []) + (back_data.get("other_flights") or []) if it.get("price")]
-    if not backs:
-        return []
-    second = min(backs, key=lambda it: it["price"])
-    total = float(second["price"])  # the return list is priced as the whole round trip
-    out = _parse_itinerary({**first, "price": total / 2}, "outbound", dep_tz, arr_tz, currency.upper(), url)
-    back = _parse_itinerary({**second, "price": total / 2}, "return", arr_tz, dep_tz, currency.upper(),
-                            (back_data.get("search_metadata") or {}).get("google_flights_url") or url)
-    if out is None or back is None:
-        return []
-    note = (f"Part of a round-trip ticket: {total:,.0f} {currency.upper()} per person for both flights "
-            "(Google Flights). Book both legs together as one round trip.")
-    for f in (out, back):
-        f.id += "_rt"
-        f.metadata.notes = note
-    return [(out, back, total)]
+    firsts, seen = [], set()
+    for it in sorted(its, key=lambda it: it["price"]):  # stable: ties keep Google's order
+        key = tuple(s.get("flight_number") for s in it.get("flights") or [])
+        if key not in seen:  # the same flights listed twice (best + other) are one outbound
+            seen.add(key)
+            firsts.append(it)
+    firsts = firsts[:ROUND_TRIP_FOLLOWS]
+    if len(firsts) > 1:
+        # The extra follow brings its own allowance, so the turn's other searches keep the budget they had.
+        net.allow_extra_calls(len(firsts) - 1)
+    answers = await asyncio.gather(*(net.serpapi("google_flights", 6 * net.HOUR, departure_token=it["departure_token"],
+                                                 **common) for it in firsts), return_exceptions=True)
+    tickets = []
+    for first, back_data in zip(firsts, answers):
+        if isinstance(back_data, BaseException):
+            if not isinstance(back_data, net.ProviderError):
+                raise back_data
+            continue  # one failed follow (e.g. the per-turn cap) never throws away the other ticket
+        backs = [it for it in (back_data.get("best_flights") or []) + (back_data.get("other_flights") or []) if it.get("price")]
+        if not backs:
+            continue
+        second = min(backs, key=lambda it: it["price"])
+        total = float(second["price"])  # the return list is priced as the whole round trip
+        out = _parse_itinerary({**first, "price": total / 2}, "outbound", dep_tz, arr_tz, currency.upper(), url)
+        back = _parse_itinerary({**second, "price": total / 2}, "return", arr_tz, dep_tz, currency.upper(),
+                                (back_data.get("search_metadata") or {}).get("google_flights_url") or url)
+        if out is None or back is None:
+            continue
+        note = (f"Part of a round-trip ticket: {total:,.0f} {currency.upper()} per person for both flights "
+                "(Google Flights). Book both legs together as one round trip.")
+        # Two tickets can share the same return flight at different prices: its id carries the ticket's outbound, so
+        # every leg id names exactly one ticket (pins, validation and "choose this flight" look legs up by id).
+        back.id += "_" + out.id.removeprefix("fl_")[:6]
+        for f in (out, back):
+            f.id += "_rt"
+            f.metadata.notes = note
+        tickets.append((out, back, total))
+    if not tickets and answers and all(isinstance(a, BaseException) for a in answers):
+        raise answers[0]  # every follow failed: the caller reports it like any provider error
+    return sorted(tickets, key=lambda t: t[2])
 
 
 async def deals(departure_id: str, currency: str = "USD") -> list[dict]:

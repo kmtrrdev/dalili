@@ -470,10 +470,10 @@ body.has-trip .compose { display: none; }
   background: linear-gradient(135deg, color-mix(in srgb, var(--teal) 22%, transparent), color-mix(in srgb, #36b7ff 16%, transparent)); }
 .choice b { display: block; font: 700 17px var(--display); }
 .choice small { display: block; color: var(--muted); font-size: 13px; margin-top: 2px; }
-.qc { display: flex; gap: 8px; }
-.qc input { flex: 1; min-width: 0; height: 48px; padding: 0 14px; border-radius: 14px; border: 1px solid var(--line-strong);
-  background: var(--field); color: var(--ink); font: 500 15px var(--font); outline: none; }
-.qc input:focus { border-color: var(--teal); box-shadow: 0 0 0 4px color-mix(in srgb, var(--teal) 15%, transparent); }
+.qc { display: flex; gap: 8px; align-items: flex-end; }
+.qc textarea { flex: 1; min-width: 0; min-height: 48px; max-height: 160px; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--line-strong);
+  background: var(--field); color: var(--ink); font: 500 15px/1.45 var(--font); outline: none; resize: none; overflow-y: auto; }
+.qc textarea:focus { border-color: var(--teal); box-shadow: 0 0 0 4px color-mix(in srgb, var(--teal) 15%, transparent); }
 .qc-send { flex: none; width: 48px; height: 48px; border-radius: 14px; border: 0; cursor: pointer; color: var(--teal-ink);
   background: linear-gradient(135deg, var(--teal), #36b7ff); box-shadow: 0 8px 22px rgba(61, 224, 208, .3); }
 .qc-send svg { width: 20px; height: 20px; fill: currentColor; }
@@ -1259,7 +1259,7 @@ html[data-theme="light"] .tm-me text { fill: #9a6200; }
 }
 /* iOS zooms into any focused field under 16px and the page no longer fits the screen. */
 @media (max-width: 900px), (pointer: coarse) {
-  .composer textarea, .qc input, .w-in, .af .w-in, .w-to input, .w-money select,
+  .composer textarea, .qc textarea, .w-in, .af .w-in, .w-to input, .w-money select,
   .ideas-form input, .ideas-form select, .ideas-form .money-field select, .ideas-form .tr-nights,
   .rate-form textarea { font-size: 16px; }
 }

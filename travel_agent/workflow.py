@@ -47,8 +47,11 @@ from .replanner import (
     diff_plans,
     learn_from_feedback,
     missing_requirements,
+    names_place,
     nice_amount,
+    set_route,
 )
+from .utils import place_key
 
 log = logging.getLogger(__name__)
 
@@ -94,44 +97,31 @@ async def understand(state: GraphState) -> GraphState:
         return {"interpretation": interp, "route": "feedback"}
     if not message.strip():
         return {"route": "answer", "interpretation": TurnInterpretation(intent="smalltalk")}
-    names = {}
-    if trip.research:
-        names = {p.id: p.name for p in trip.research.attractions + trip.research.restaurants}
     pending = trip.draft.route_proposal if trip.draft.route_proposal and not trip.draft.route_confirmed else None
-    context = {
-        "has_plan": has_plan,
-        "pending_route_proposal": [f"{s.city}, {s.country} ({s.nights} nights)" for s in pending.stops] if pending else None,
-        "draft": trip.draft.model_dump(mode="json", exclude_defaults=True,
-                                       exclude={"destination_ref", "origin_ref", "destination_refs", "route_proposal"}),
-        "contract": trip.trip_contract.model_dump(mode="json") if trip.trip_contract else None,
-        "plan_days": [f"Day {d.day}: {d.title}" for d in trip.selected_plan.days] if trip.selected_plan else [],
-        "plan_total": (f"{trip.selected_plan.budget.total:.0f} {trip.selected_plan.budget.currency}"
-                       if trip.selected_plan and trip.selected_plan.budget else None),
-        "traveller_profile": trip.traveler_profile.model_dump(include={"travel_style", "walking_tolerance",
-                                                                       "transport_preference", "activity_preferences"}),
-        "recent_conversation": recent_turns(trip),   # short-term memory: what was just said
-        "pending_what_if": trip.metadata.get("pending_whatif_summary"),
-    }
     interp, notes = None, []
-    if has_plan and not pending:
-        # The trip agent decides what the message needs: look things up and answer, or change the trip.
-        result = await concierge.converse(trip, message)
-        if result is not None and result.apply_what_if:
-            # Accepting the comparison: the service swaps in the plan it kept aside (nothing to plan here).
-            trip.metadata["apply_whatif"] = True
-            return {"route": "answer", "reply": "-", "interpretation": TurnInterpretation(intent="feedback", source="agent")}
-        if result is not None and result.changes is None:
-            trip.metadata["suggestions"] = result.follow_ups
-            trip.emit("message.interpreted", intent="question", source="agent")
-            return {"route": "answer", "reply": result.answer,
-                    "interpretation": TurnInterpretation(intent="question", source="agent")}
-        if result is not None:
-            ch = result.changes
-            interp = TurnInterpretation(intent="feedback", actions=ch.actions, requirements=ch.requirements,
-                                        feedback=ch.feedback, route_change_request=ch.route_change_request,
-                                        hypothetical=ch.hypothetical, source="agent")
-    if interp is None:
-        interp, notes = await interpret(message, has_plan, names, context)
+    # The trip agent decides what every message needs - before a plan, while a route proposal waits and after
+    # planning: look things up and answer, or change the trip.
+    result = await concierge.converse(trip, message)
+    if result is not None and result.apply_what_if:
+        # Accepting the comparison: the service swaps in the plan it kept aside (nothing to plan here).
+        trip.metadata["apply_whatif"] = True
+        return {"route": "answer", "reply": "-", "interpretation": TurnInterpretation(intent="feedback", source="agent")}
+    if result is not None and result.changes is None:
+        trip.metadata["suggestions"] = result.follow_ups
+        trip.emit("message.interpreted", intent="question", source="agent")
+        return {"route": "answer", "reply": result.answer,
+                "interpretation": TurnInterpretation(intent="question", source="agent")}
+    if result is not None:
+        ch = result.changes
+        interp = TurnInterpretation(intent="feedback" if has_plan else "plan_request", actions=ch.actions,
+                                    requirements=ch.requirements, feedback=ch.feedback, route=ch.route,
+                                    route_change_request=ch.route_change_request, route_decision=ch.route_decision,
+                                    hypothetical=ch.hypothetical, source="agent")
+        trip.metadata["turn_request"] = ch.summary  # what was asked, checked against what changed in the reply
+    else:
+        # No agent (offline test harness) or it failed: the one-shot interpreter.
+        names = {p.id: p.name for p in trip.research.attractions + trip.research.restaurants} if trip.research else {}
+        interp, notes = await interpret(message, has_plan, names, _interpreter_context(trip, pending))
     if interp.source == "unavailable":
         return {"route": "answer", "reply": narrative.unavailable_reply(message), "interpretation": interp}
     if has_plan and interp.apply_pending and trip.metadata.get("pending_whatif_summary"):
@@ -160,6 +150,19 @@ async def understand(state: GraphState) -> GraphState:
         # flight (change_flight would exclude it) - the traveller didn't ask for that.
         interp.actions = [a for a in interp.actions if a.action != "change_flight"]
     trip.emit("message.interpreted", intent=interp.intent, source=interp.source)
+    # "Only Bali", "drop Taipei": the exact places the traveller wants now replace the route (no echo guessing).
+    route_set = interp.route is not None and set_route(trip, interp.route)
+    if route_set:
+        r = interp.requirements
+        r.destination, r.destinations, r.nights_per_destination, r.region = None, [], [], None
+        interp.route_change_request = None
+        if all(s.nights for s in interp.route):
+            # The nights per place already give the new length ("add 3 days in Lombok" -> Bali 5 + Lombok 3): an
+            # extend_trip or another total on top would count the change twice. Stated as the length, so a start
+            # date given with it (or the first one, before any) keeps it.
+            r.nights = r.end_date = None
+            r.duration_days = sum(s.nights for s in interp.route) + 1
+            interp.actions = [a for a in interp.actions if a.action not in ("extend_trip", "shorten_trip")]
     wants_change = interp.intent in ("feedback", "update_requirements", "plan_request")
     if has_plan and wants_change and _changes_trip_frame(trip, interp):
         route = "requirements"  # new dates / budget / destination: rebuild the contract (actions ride along)
@@ -182,10 +185,28 @@ async def understand(state: GraphState) -> GraphState:
         d.route_feedback = [interp.route_change_request, message]  # the model's summary + the traveller's own words
         d.route_proposal = None
         route = "requirements"
-    elif pending and interp.intent not in ("question", "off_topic"):
-        route = "requirements"  # any answer to a route proposal (yes / change it) continues the design loop
+    elif (pending or route_set) and interp.intent not in ("question", "off_topic"):
+        route = "requirements"  # an answer to a route proposal or a new set of places: rebuild from the requirements
     trip.assumptions = notes
     return {"interpretation": interp, "route": route}
+
+
+def _interpreter_context(trip: TripState, pending) -> dict:
+    """The trip state the one-shot interpreter reads (the agent builds its own, richer view)."""
+    plan = trip.selected_plan
+    return {
+        "has_plan": bool(trip.plans),
+        "pending_route_proposal": [f"{s.city}, {s.country} ({s.nights} nights)" for s in pending.stops] if pending else None,
+        "draft": trip.draft.model_dump(mode="json", exclude_defaults=True,
+                                       exclude={"destination_ref", "origin_ref", "destination_refs", "route_proposal"}),
+        "contract": trip.trip_contract.model_dump(mode="json") if trip.trip_contract else None,
+        "plan_days": [f"Day {d.day}: {d.title}" for d in plan.days] if plan else [],
+        "plan_total": f"{plan.budget.total:.0f} {plan.budget.currency}" if plan and plan.budget else None,
+        "traveller_profile": trip.traveler_profile.model_dump(include={"travel_style", "walking_tolerance",
+                                                                       "transport_preference", "activity_preferences"}),
+        "recent_conversation": recent_turns(trip),   # short-term memory: what was just said
+        "pending_what_if": trip.metadata.get("pending_whatif_summary"),
+    }
 
 
 def _drop_echoes(trip: TripState, interp: TurnInterpretation) -> None:
@@ -259,8 +280,9 @@ def _changes_trip_frame(trip: TripState, interp: TurnInterpretation) -> bool:
     if c is None:
         return True
     # The model sometimes echoes facts already in the contract: only a different value is a change.
-    wanted = [x.strip().lower() for x in r.destinations if x and x.strip()]
-    if wanted and wanted not in ([s.name.lower() for s in c.stops], [x.lower() for x in trip.draft.destinations]):
+    wanted = [x for x in r.destinations if x and x.strip()]
+    if wanted and not (len(wanted) == len(c.stops) and all(names_place(w, s.name, s.ref) for w, s in zip(wanted, c.stops))) \
+            and [place_key(w) for w in wanted] != [place_key(x) for x in trip.draft.destinations]:
         return True
     if r.region and r.region.strip().lower() != (trip.draft.region or "").lower():
         return True
@@ -275,6 +297,8 @@ def _changes_trip_frame(trip: TripState, interp: TurnInterpretation) -> bool:
         return True
     if r.start_date and r.start_date != c.start_date.isoformat():
         return True
+    if r.arrive_on_start is not None and r.arrive_on_start != (c.arrive_by is not None):
+        return True
     if r.end_date and r.end_date != c.end_date.isoformat():
         return True
     if r.duration_days and r.duration_days != c.num_days:
@@ -283,14 +307,14 @@ def _changes_trip_frame(trip: TripState, interp: TurnInterpretation) -> bool:
         return True
     if r.budget_amount and abs(r.budget_amount - c.budget.amount) > 0.5:
         return True
-    if r.destination and r.destination.strip().lower() not in {c.destination.lower(), (c.destination_name or "").lower()}:
-        return True
-    if r.origin_city and r.origin_city.strip().lower() != (c.origin_city or "").lower():
+    if r.destination and not names_place(r.destination, c.destination, c.destination_ref) \
+            and not any(names_place(r.destination, s.name, s.ref) for s in c.stops):
+        return True  # a new place, or the same name in another country (a correction)
+    if r.origin_city and not names_place(r.origin_city, c.origin_city, c.origin_ref):
         return True
     if r.return_to:
-        wanted = r.return_to.strip().lower()
-        wanted = None if wanted == (c.origin_city or "").lower() else wanted  # "back home" = no open-jaw
-        if wanted != ((c.return_city or "").lower() or None):
+        home = names_place(r.return_to, c.origin_city, c.origin_ref)  # "back home" = no open-jaw
+        if not (home and not c.return_city) and not (c.return_city and names_place(r.return_to, c.return_city, c.return_ref)):
             return True  # the last flight goes somewhere else now
     if r.rooms and r.rooms != c.rooms:
         return True
@@ -319,6 +343,13 @@ async def answer(state: GraphState) -> GraphState:
     return {"reply": reply}
 
 
+def _wrong_country(text: str, ref) -> bool:
+    """'Bali, Indonesia' must not become a Bali somewhere else: a stated country is checked against the resolved one."""
+    parts = [x.strip() for x in text.split(",")]
+    cc = geo.country_code(parts[-1]) if len(parts) > 1 else None
+    return bool(cc and ref.country_code and cc != ref.country_code.upper())
+
+
 async def _resolve(trip: TripState) -> str | None:
     """Resolve destination/origin text against real geocoding. Returns a question if something is unclear."""
     d = trip.draft
@@ -332,6 +363,9 @@ async def _resolve(trip: TripState) -> str | None:
             try:
                 ref = await research.resolve_place(hub, text)
             except MCPToolError:
+                missing.append(text)
+                continue
+            if _wrong_country(text, ref):
                 missing.append(text)
                 continue
             if all((r.name, r.country) != (ref.name, ref.country) for r in refs):
@@ -349,11 +383,17 @@ async def _resolve(trip: TripState) -> str | None:
             d.destinations, d.destination_refs, d.stop_nights = [], [], []
     if d.destination and d.destination_ref is None:
         try:
-            d.destination_ref = await research.resolve_place(hub, d.destination)
-            trip.emit("place.resolved", role="destination", name=d.destination_ref.name, country=d.destination_ref.country)
+            ref = await research.resolve_place(hub, d.destination)
         except MCPToolError:
             bad, d.destination = d.destination, None
             return f"I couldn't find a city with an airport called '{bad}'. Which city do you mean?"
+        if _wrong_country(d.destination, ref):
+            # Never plan a trip in the wrong country: ask rather than guess.
+            bad, d.destination = d.destination, None
+            return (f"I couldn't pin down '{bad}' - the closest match I found is {ref.name}, {ref.country}. "
+                    "Which city do you mean (the nearest big city or airport helps)?")
+        d.destination_ref = ref
+        trip.emit("place.resolved", role="destination", name=ref.name, country=ref.country)
     if d.origin_ref is None and (d.destination_ref is not None or d.region):  # no lookup before we know where
         text = d.origin_city or d.origin or trip.metadata.get("home_city") or settings.default_origin
         try:
@@ -412,8 +452,9 @@ async def check_requirements(state: GraphState) -> GraphState:
             route_design.apply_proposal(trip)
             trip.emit("route.confirmed", stops=[s.city for s in d.route_proposal.stops])
         else:
-            if d.route_proposal and message.strip() and message.strip() not in d.route_feedback:
-                d.route_feedback.append(message.strip())
+            if d.route_proposal and message.strip():
+                # Every answer counts, a repeated one too ("no, ONLY Bali" said twice means the last design missed it).
+                d.route_feedback = (d.route_feedback + [message.strip()])[-8:]
             d.route_proposal = await route_design.propose(get_hub(), trip)
             trip.emit("route.proposed", version=d.route_proposal.version,
                       stops=[f"{s.city} ({s.nights})" for s in d.route_proposal.stops])
@@ -982,6 +1023,8 @@ async def critic_node(state: GraphState) -> GraphState:
                     trip.draft.must_visit = [n for n in trip.draft.must_visit if n.lower() != name]
                     trip.metadata["expert_added"] = [n for n in trip.metadata.get("expert_added", [])
                                                      if n.lower() != name]
+                    for p in trip.plans.values():  # else the reply lists it as a place the traveller asked for
+                        p.requested = {k: v for k, v in p.requested.items() if k.lower() != name}
             trace.step(trip, "critic", "decision",
                        f"Refinement kept: score {_score(before)} -> {_score(after)}.", changes=crit["changes"][:6])
         _publish_suggestions(trip)
@@ -1147,6 +1190,7 @@ def _begin_turn(trip: TripState, message: str, preset_actions: list[Action] | No
     trace.start(trip)
     trip.metadata["refreshed"] = []  # research domains refreshed this turn (set by collect)
     trip.metadata["suggestions"] = []
+    trip.metadata.pop("turn_request", None)
     return {"trip": trip, "message": message, "preset_actions": preset_actions or [], "route_decision": route_decision}
 
 
