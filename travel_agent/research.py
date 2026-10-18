@@ -228,6 +228,24 @@ def apply_local_prices(bundle: ResearchBundle, prices: dict, user: str) -> None:
                              "listings_found": prices.get("listings_total", 0)}
 
 
+async def _best_times(bundle: ResearchBundle) -> None:
+    """Tag sights that happen at a set time of day (sunset show, sunrise trek, night market) so they are scheduled
+    then. Only places not tagged yet are asked about; any failure just leaves them untagged."""
+    from .providers import ai_fallback
+
+    todo = [a for a in bundle.attractions if a.best_time is None and a.kind in ("attraction", "activity")]
+    if not todo or not ai_fallback.available():
+        return
+    info = bundle.destination_info
+    try:
+        times = await ai_fallback.best_times(info.get("name", ""), info.get("country", ""), [a.name for a in todo])
+    except Exception as exc:  # noqa: BLE001 - an optional hint: never fail research over it
+        log.info("best times unavailable: %s", exc)
+        return
+    for a in todo:
+        a.best_time = times.get(a.name.strip().lower())  # type: ignore[assignment]
+
+
 async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, review_lookups: int | None = None,
                  price_scale: float = 1.0) -> None:
     user = contract.budget.currency.upper()
@@ -299,7 +317,9 @@ async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, re
     from . import pricing
 
     mark("local_prices_fx")
+    timed = asyncio.create_task(_best_times(bundle))  # the model's call runs while prices are researched
     await pricing.research_prices(hub, bundle, contract, scale=price_scale)
+    await timed
     # Prices found just now (menus, official sites) can be in a currency the first rates didn't cover: fetch those
     # too, so they are converted instead of being counted one-to-one.
     missing = sorted(c for c in _currencies(bundle) if c not in bundle.fx_rates and len(c) == 3 and c.isalpha())

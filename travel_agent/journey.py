@@ -299,7 +299,8 @@ def plan_journey(contract: TripContract, profile: TravelerProfile, research: Res
             index=i, name=stop.name, country=stop.ref.country, country_code=stop.ref.country_code,
             location=GeoPoint(lat=stop.ref.lat, lon=stop.ref.lon), start_date=stop.start_date,
             end_date=stop.end_date, nights=stop.nights, first_day=first_day, last_day=first_day + stop.nights,
-            hotel=p.hotel, arrival=p.outbound_flight, explanations=p.explanations.get("hotel", [])))
+            hotel=p.hotel, arrival=p.outbound_flight, explanations=p.explanations.get("hotel", []),
+            check_in=p.hotel_check_in, check_out=p.hotel_check_out))  # the nights this city's journeys need
         for name, local_day in p.requested.items():  # requested places: stop day -> trip day
             if plan.requested.get(name) is None:
                 plan.requested[name] = first_day + local_day - 1 if local_day else None

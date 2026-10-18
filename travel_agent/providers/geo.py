@@ -139,13 +139,30 @@ def _distance_km(text) -> float:
         return 0.0
 
 
-async def _airport_anchor(airports: list[dict]) -> tuple[Point, float] | None:
+def _airport_titles(name: str) -> list[str]:
+    """Wikipedia titles to try for an airport: Google's name, then without the honorific tail
+    ("Heraklion International Airport N. Kazantzakis" -> "Heraklion International Airport")."""
+    titles = [name]
+    if "Airport" in name and not name.endswith("Airport"):
+        titles.append(name[: name.index("Airport") + len("Airport")])
+    return titles
+
+
+async def _airport_anchor(airports: list[dict], cc: str | None = None) -> tuple[Point, float] | None:
     """Where the place's main airport is (Wikipedia has nearly every airport) and how far from it the place may lie.
-    Airport names are unambiguous where place names are not: they pin down which "Bali" Google meant."""
+    Airport names are unambiguous where place names are not: they pin down which "Bali" Google meant. Without an
+    article, the airport's own city (in the expected country) stands in for it."""
     for ap in airports[:2]:
-        p = await wiki_point(ap["name"]) if ap.get("name") else None
-        if p:
-            return p, max(NEAR_KM, _distance_km(ap.get("distance")) + 100)
+        reach = max(NEAR_KM, _distance_km(ap.get("distance")) + 100)
+        for title in _airport_titles(ap.get("name") or ""):
+            p = await wiki_point(title) if title else None
+            if p:
+                return p, reach
+    for ap in airports[:1]:
+        if ap.get("city") and cc:
+            hits = [r for r in await _search(ap["city"], True, cc) if _cc(r) == cc]
+            if hits:
+                return _pt(max(hits, key=_rank)), max(NEAR_KM, _distance_km(ap.get("distance")) + 150)
     return None
 
 
@@ -260,7 +277,7 @@ async def resolve_place(text: str) -> PlaceRef:
         city = {"name": ap.get("city") or best["name"], "id": ap.get("city_id"),
                 "airports": [a for a in best["airports"] if a.get("city") == ap.get("city")] or [ap]}
     city_name = city["name"].split(",")[0].strip()
-    geo, (lat, lon) = await _locate(city["name"], city_name, cc, await _airport_anchor(city.get("airports", [])))
+    geo, (lat, lon) = await _locate(city["name"], city_name, cc, await _airport_anchor(city.get("airports", []), cc))
     country, code = _country_of(geo, cc)
     if country and city_name.lower().endswith(" " + country.lower()):
         city_name = city_name[: -len(country)].strip(" -–")  # "Riyadh Saudi Arabia" / "Dubai - United Arab Emirates"

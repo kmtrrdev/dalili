@@ -28,6 +28,11 @@ def plan_facts(trip: TripState) -> dict[str, Any]:
         return {}
     b = plan.budget
     expert = {n.lower() for n in trip.metadata.get("expert_added", [])}
+    arabic = is_arabic(latest_user_message(trip))
+
+    def idea(p: TripPlan) -> str:  # each plan's one-liner, in the traveller's language
+        return (p.pitch_ar if arabic and p.pitch_ar else p.pitch) or ""
+
     facts: dict[str, Any] = {
         "destination": (f"{c.destination_name}, {c.destination_ref.country}" if c.destination_ref and not c.is_multi
                         else c.destination_name), "dates": f"{c.start_date:%b %d} - {c.end_date:%b %d, %Y}",
@@ -48,8 +53,8 @@ def plan_facts(trip: TripState) -> dict[str, Any]:
         "outbound": plan.outbound_flight.flight_number + f" {plan.outbound_flight.depart_at:%H:%M}->{plan.outbound_flight.arrive_at:%H:%M}" if plan.outbound_flight else None,
         "return": plan.return_flight.flight_number + f" {plan.return_flight.depart_at:%H:%M}->{plan.return_flight.arrive_at:%H:%M}" if plan.return_flight else None,
         "days": [f"Day {d.day}: {d.title}" for d in plan.days],
-        "selected_plan_idea": plan.pitch,
-        "modes": {m: {"idea": p.pitch, "total": money(p.budget.total, p.budget.currency) if p.budget else None,
+        "selected_plan_idea": idea(plan),
+        "modes": {m: {"idea": idea(p), "total": money(p.budget.total, p.budget.currency) if p.budget else None,
                       "vs_your_budget": (money(p.budget.total - c.budget.amount, p.budget.currency) if p.budget
                                          and p.budget.total > c.budget.amount else "within"),
                       "rating_of_hotel": p.hotel.rating if p.hotel else None,
@@ -69,7 +74,6 @@ def plan_facts(trip: TripState) -> dict[str, Any]:
                                               if name.lower() in expert and day},
         "ai_estimated_data": ai_estimated(trip),
     }
-    arabic = is_arabic(latest_user_message(trip))
     if b:
         # One unambiguous line, so the reply can't flip "over" and "under".
         if not (trip.draft.find_cheapest and not trip.draft.budget_amount):  # then 'cheapest_trip_search' says it

@@ -63,6 +63,7 @@ def repair(plan: TripPlan, report: ValidationReport, knobs: PlanKnobs, research:
                 log.append(msg)
                 rungs -= 1
 
+    lightened: set[int] = set()
     for v in errors:
         if v.check == "opening_hours" and v.place_id and v.day:
             k.exclude_on_day.setdefault(v.day, [])
@@ -75,6 +76,11 @@ def repair(plan: TripPlan, report: ValidationReport, knobs: PlanKnobs, research:
                 day_ex.append(v.place_id)
                 log.append(f"Removed '{v.item_title}' from day {v.day} to fix a timing conflict.")
         elif v.check == "schedule" and v.day:
+            if _load(plan, v.day) == 0 or v.day in lightened:
+                # Nothing left to free on that day (emptying it fixes nothing), or it already gives up one stop this
+                # round - a missing lunch and a missing dinner are one crowded day, not two stops too many.
+                continue
+            lightened.add(v.day)
             k.day_capacity_override[v.day] = max(0, k.day_capacity_override.get(v.day, _load(plan, v.day)) - 1)
             log.append(f"Freed up time on day {v.day} to keep the schedule feasible.")
         elif v.check == "distance":
@@ -124,7 +130,7 @@ def travel_floor(plan: TripPlan, research: ResearchBundle) -> float | None:
     tickets = min([one_ways] + [user(rt.total_per_person) for rt in research.round_trips])
     travelers = max(1, round(b.flights / max(user(plan.outbound_flight.price_per_person) + user(plan.return_flight.price_per_person), 1))) \
         if plan.outbound_flight and plan.return_flight and b.flights else 1
-    nights = max(1, len(plan.days) - 1)
+    nights = plan.hotel_nights(max(1, len(plan.days) - 1))  # as the plan's hotel line counts them
     # Rooms as the plan's own hotel line charges them (rooms x nights), like the travellers from its flights line.
     rooms = max(1, round(b.hotel / max(user(plan.hotel.price_per_night) * nights, 1))) \
         if plan.hotel and b.hotel else 1

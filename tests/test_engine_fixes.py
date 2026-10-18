@@ -245,7 +245,7 @@ def test_next_day_arrival_makes_day_one_a_travel_day(rome_research, rome_contrac
     assert d3.activity_count > 0  # the first real day
     report = validate_plan(plan, rome_contract, profile, r, 0.05)
     assert not [v for v in report.errors if v.check in ("schedule", "reality", "energy")], report.errors
-    # Flights paid once, hotel for the contract's nights (unchanged).
+    # Flights paid once (the hotel skips the unused first night: see test_planner_quality).
     b = plan.budget
     fares = (plan.outbound_flight.price_per_person.amount * r.fx_rates.get(plan.outbound_flight.price_per_person.currency, 1.0)
              + plan.return_flight.price_per_person.amount * r.fx_rates.get(plan.return_flight.price_per_person.currency, 1.0))

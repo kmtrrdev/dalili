@@ -331,9 +331,15 @@ async def _hotel_offers(trip_id: str, hotel_id: str, who: Identity) -> dict:
     if c is None or trip.research is None:
         raise HTTPException(404, "Trip has no hotels yet")
     # The hotel, and the dates of the city it belongs to (multi-city trips have one hotel per city).
-    stays = [(c.destination, c.start_date, c.end_date, trip.research.hotels)]
+    # Booked for the nights the plan's flights need (a next-day landing checks in a day later), else the trip's dates.
+    plan = trip.selected_plan
+    stays = [(c.destination, (plan and plan.hotel_check_in) or c.start_date,
+              (plan and plan.hotel_check_out) or c.end_date, trip.research.hotels)]
     if c.stops and trip.research.stops:
-        stays = [(s.name, s.start_date, s.end_date, b.hotels) for s, b in zip(c.stops, trip.research.stops)]
+        planned = {sp.index: sp for sp in plan.stops} if plan else {}
+        stays = [(s.name, (planned[i].check_in if i in planned else None) or s.start_date,
+                  (planned[i].check_out if i in planned else None) or s.end_date, b.hotels)
+                 for i, (s, b) in enumerate(zip(c.stops, trip.research.stops))]
     found = next(((h, city, ci, co) for city, ci, co, pool in stays for h in pool if h.id == hotel_id), None)
     if found is None:
         raise HTTPException(404, "Hotel not found in this trip")

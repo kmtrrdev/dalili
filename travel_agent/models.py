@@ -415,6 +415,9 @@ class Place(BaseModel):
     notes: str | None = None
     # Provenance / quality of the facts above
     hours_verified: bool = False    # True only when the provider published the hours (else typical hours assumed)
+    # The time of day the experience happens at (a sunset dance show, a sunrise trek, a night market): from the name
+    # or the AI's knowledge of the place; None for anything visited at any hour.
+    best_time: Literal["sunrise", "sunset", "night"] | None = None
     price_known: bool = False       # True only when the provider published a price
     price_checked: bool = False     # the price cascade already ran for this place (never repeated on later turns)
     dates: list[date] = Field(default_factory=list)  # events: only happens on these dates
@@ -613,6 +616,10 @@ class TripScore(BaseModel):
         return (self.feasible, self.constraint_satisfaction, self.preference_satisfaction, self.quality)
 
 
+def stay_nights(check_in: date | None, check_out: date | None, default: int) -> int:
+    return max(1, (check_out - check_in).days) if check_in and check_out else default
+
+
 class StopPlan(BaseModel):
     """The part of a multi-city plan spent in one city."""
 
@@ -629,6 +636,13 @@ class StopPlan(BaseModel):
     hotel: HotelOption | None = None
     arrival: FlightOption | None = None     # how you get here (flight / train)
     explanations: list[str] = Field(default_factory=list)
+    # The nights the hotel is really needed (see TripPlan.hotel_check_in); None = the stop's own dates.
+    check_in: date | None = None
+    check_out: date | None = None
+
+    @property
+    def hotel_nights(self) -> int:
+        return stay_nights(self.check_in, self.check_out, self.nights)
 
 
 class TripPlan(BaseModel):
@@ -639,6 +653,10 @@ class TripPlan(BaseModel):
     outbound_flight: FlightOption | None = None
     return_flight: FlightOption | None = None
     hotel: HotelOption | None = None
+    # The nights the flights really need the hotel: a landing on the next local evening leaves the first night
+    # unused, a flight home just after midnight checks out the day before. None = the trip's own dates.
+    hotel_check_in: date | None = None
+    hotel_check_out: date | None = None
     days: list[DayPlan] = Field(default_factory=list)
     budget: BudgetBreakdown | None = None
     score: TripScore | None = None
@@ -658,6 +676,10 @@ class TripPlan(BaseModel):
     def hotels(self) -> list[HotelOption]:
         """Every city's hotel on a multi-city trip, else the one hotel."""
         return [s.hotel for s in self.stops if s.hotel] if self.stops else ([self.hotel] if self.hotel else [])
+
+    def hotel_nights(self, default: int) -> int:
+        """Nights the (single-city) hotel is paid for: its check-in to check-out, else `default` (the trip's)."""
+        return stay_nights(self.hotel_check_in, self.hotel_check_out, default)
 
 
 # ---------------------------------------------------------------------------

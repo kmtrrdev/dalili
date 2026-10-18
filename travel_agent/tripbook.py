@@ -226,18 +226,22 @@ def place_links(p: Place) -> str:
     return f"<div class='place-links'>{''.join(links)}</div>"
 
 
-def _hotel_card(h, why: list[str], nights: int, trip: TripState) -> str:
+def _hotel_card(h, why: list[str], nights: int, trip: TripState, stay=None, searched: int | None = None) -> str:
+    """`stay`: the (check-in, check-out) dates the flights need; `searched`: the nights the rate was searched for -
+    when they differ (a next-day landing), the provider's stay total is for other dates and is not shown."""
     c = trip.trip_contract
     tags = ([f"{'★' * h.stars}"] if h.stars else []) + [f"{h.rating}/5 · {h.reviews_count:,} reviews",
             "breakfast included" if h.breakfast_included else "breakfast not listed", h.cancellation_policy,
             f"noise from reviews: {h.noise_level}", h.neighborhood]
+    shorter = searched is not None and nights != searched
+    dates = f" · {stay[0]:%a %d %b} → {stay[1]:%a %d %b}" if stay and stay[0] and stay[1] and shorter else ""
     return (
         "<article class='card hotel reveal'>"
         + (f"<div class='hotel-img' style=\"background-image:url('{e(h.images[0])}')\"></div>" if h.images else "")
         + f"<div class='hotel-body'><div class='row'><h3>{e(h.name)}</h3><div class='price'>{_cost(h.price_per_night, trip)}<small>/ night</small></div></div>"
         f"<div class='chips'>{_chips(tags)}</div>"
-        f"<p class='faint'>{c.rooms} room{'s' if c.rooms > 1 else ''} × {nights} night{'s' if nights > 1 else ''}"
-        f"{' · stay total ' + _cost(h.total_price, trip) if h.total_price else ''}"
+        f"<p class='faint'>{c.rooms} room{'s' if c.rooms > 1 else ''} × {nights} night{'s' if nights > 1 else ''}{dates}"
+        f"{' · stay total ' + _cost(h.total_price, trip) if h.total_price and not shorter else ''}"
         f"{' · check-in ' + e(h.check_in_time) if h.check_in_time else ''}{' · check-out ' + e(h.check_out_time) if h.check_out_time else ''}</p>"
         + (f"<blockquote>“{e(h.noise_evidence[0][:280])}”<cite>a recent guest review</cite></blockquote>" if h.noise_evidence else "")
         + _why(why)
@@ -347,12 +351,14 @@ def build_sections(trip: TripState) -> "OrderedDict[str, str]":
         s["Hotels"] = "".join(
             f"<h4 class='cityh' style='--c:{STOP_COLORS[(i + 1) % len(STOP_COLORS)]}'><i>{i + 1}</i>{e(x.name)} · {x.nights} night{'s' if x.nights > 1 else ''} "
             f"<span class='faint'>{x.start_date:%a %d %b} → {x.end_date:%a %d %b}</span></h4>"
-            + (_hotel_card(x.hotel, x.explanations, x.nights, trip) if x.hotel else "<p class='faint'>No hotel found for these dates.</p>")
+            + (_hotel_card(x.hotel, x.explanations, x.hotel_nights, trip, (x.check_in, x.check_out), x.nights)
+               if x.hotel else "<p class='faint'>No hotel found for these dates.</p>")
             for i, x in enumerate(plan.stops))
     elif h:
         alt_h = [x for x in r.hotels if x.id in plan.alternatives.get("hotels", [])]
         s["Hotel"] = (
-            _hotel_card(h, plan.explanations.get("hotel", []), c.nights, trip)
+            _hotel_card(h, plan.explanations.get("hotel", []), plan.hotel_nights(c.nights), trip,
+                        (plan.hotel_check_in, plan.hotel_check_out), c.nights)
             + ("<h4>Alternatives</h4><div class='table'><table><tr><th>Hotel</th><th>Rating</th><th>Location</th><th>Night</th></tr>"
                + "".join(f"<tr><td>{e(x.name)}</td><td>{x.rating}/5</td><td>{e(x.neighborhood)}</td><td>{_cost(x.price_per_night, trip)}</td></tr>"
                          for x in alt_h) + "</table></div>" if alt_h else ""))

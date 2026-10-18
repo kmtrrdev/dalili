@@ -9,8 +9,9 @@ with meals, transport legs, rest and evening plans.
 from __future__ import annotations
 
 import math
+import re
 from dataclasses import dataclass, field, replace
-from datetime import timedelta
+from datetime import date, timedelta
 from zoneinfo import ZoneInfo
 
 from ..models import (
@@ -33,7 +34,7 @@ from ..models import (
 )
 from ..providers import routing
 from ..utils import haversine_km
-from ..utils import is_open_for, open_windows, round_up, to_hhmm, to_min
+from ..utils import is_open_for, open_windows, round_up, sun_times, to_hhmm, to_min
 from .budget import compute_budget, estimate_daily_user
 from .knobs import PlanKnobs
 from .optimizer import LUNCH_DURATION, Stop, optimize_day
@@ -63,6 +64,60 @@ ARRIVAL_PROCESSING = 45         # immigration + baggage
 STATION_BEFORE_DEPARTURE = 30   # trains / coaches between the cities of a multi-city trip
 MAX_HOTEL_KM_FROM_SIGHTS = 10   # average distance to the top sights beyond which a hotel is a last resort
 CHECK_IN_FROM = "14:00"
+LATEST_MEAL_START = {"lunch": 14 * 60 + 30, "dinner": 21 * 60 + 30}
+# Day note when the research has no restaurant at all for a meal (the validator reads it: a data gap that lightening
+# the day cannot fix, so it is a warning, not a reason to strip the day's sights).
+NO_RESTAURANT_NOTE = "No researched restaurant serves"
+
+# Experiences named for a time of day ("Kecak Fire Dance Sunset Uluwatu", "Mount Batur Sunrise Trekking", "Night
+# Market"). Providers rarely publish a show time - often just "Open 24 hours" - so when the opening hours say nothing
+# about it, the name is the only signal. Three unambiguous words, in the name only: a description's "sunset views"
+# does not make a temple a sunset show.
+TIME_OF_DAY = (("sunrise", re.compile(r"\b(sunrise|dawn)\b", re.I)),
+               ("sunset", re.compile(r"\b(sunset|dusk)\b", re.I)),
+               ("night", re.compile(r"\b(night|evening)\b", re.I)))
+NIGHT_FROM = 18 * 60
+
+
+def time_of_day(a: Place) -> str | None:
+    """'sunrise' / 'sunset' / 'night' when a sight or activity happens at that time (named for it, or known for it by
+    the AI's research: "Kecak Uluwatu" plays at sunset), else None."""
+    if a.kind not in ("attraction", "activity"):
+        return None
+    return next((kind for kind, pattern in TIME_OF_DAY if pattern.search(a.name)), None) or a.best_time
+
+
+def _natural_window(a: Place, d: date, tz: ZoneInfo) -> tuple[int, int] | None:
+    kind = time_of_day(a)
+    if kind is None:
+        return None
+    if kind == "night":
+        return NIGHT_FROM, 24 * 60 - 1
+    sun = sun_times(a.location.lat, a.location.lon, d, tz)
+    rise, sset = sun if sun else (6 * 60, 18 * 60)  # polar day / night: a nominal dawn and dusk
+    moment, dur = (rise if kind == "sunrise" else sset), a.duration_minutes
+    # The moment falls about mid-visit (a sunrise trek is at the top at dawn, a sunset show plays as the sun goes
+    # down), with a little slack either way - but the visit always spans it.
+    lo = max(moment - dur // 2 - 30, moment + 10 - dur)
+    hi = min(moment - dur // 2 + 15, moment - 10)
+    if lo > hi:  # a very short stop: centred on the moment
+        lo = hi = moment - dur // 2
+    return max(0, lo), min(24 * 60 - 1, hi + dur)
+
+
+def visit_windows(a: Place, d: date, tz: ZoneInfo) -> list[tuple[int, int]]:
+    """When a visit can happen that day: its opening hours, narrowed to the time of day it is named for."""
+    hours = open_windows(a.opening_hours, d)
+    natural = _natural_window(a, d, tz)
+    if natural is None or not hours:
+        return hours
+    narrowed = [(max(o, natural[0]), min(c, natural[1])) for o, c in hours]
+    narrowed = [(o, c) for o, c in narrowed if c - o >= a.duration_minutes]
+    if narrowed:
+        return narrowed
+    # Published hours that never reach that time mean the word is a brand ("Sunrise Water Park"): keep them. Assumed
+    # hours are only a guess: the experience's own time wins.
+    return hours if a.hours_verified else [natural]
 
 
 def before_departure(f: FlightOption) -> int:
@@ -220,9 +275,18 @@ def select_core(ctx: PlanContext) -> tuple[Ranked | None, Ranked | None, Ranked 
     def fare(f: FlightOption) -> float:
         return f.price_per_person.amount * ctx.fx(f.price_per_person.currency)
 
+    def stay(o: FlightOption, r: FlightOption) -> int:
+        """Hotel nights these flights need, counted as build_plan counts them (a ground leg's station run, which
+        depends on the hotel, is taken as the default hour here)."""
+        t_in = choose_transfer(ctx, o.destination) if o.mode == "flight" else None
+        t_out = choose_transfer(ctx, r.origin) if r.mode == "flight" else None
+        check_in, check_out = stay_dates(ctx, o, r, t_in, t_out)
+        return (check_out - check_in).days
+
     # Nightly budget share used to judge hotel prices (in the user's currency).
     flight_guess = ((fare(outs[0].item) if outs else 0) + (fare(rets[0].item) if rets else 0)) * c.travelers
-    nightly_user = max(budget - flight_guess - daily_user * c.num_days, budget * 0.15) / (c.nights * c.rooms)
+    guess_nights = stay(outs[0].item, rets[0].item) if outs and rets else c.nights
+    nightly_user = max(budget - flight_guess - daily_user * c.num_days, budget * 0.15) / (guess_nights * c.rooms)
 
     hotels = [h for h in ctx.research.hotels if h.id not in ctx.knobs.hotel_exclude]
     if ctx.profile.noise_tolerance == "low":
@@ -235,8 +299,13 @@ def select_core(ctx: PlanContext) -> tuple[Ranked | None, Ranked | None, Ranked 
     def avg_km(h: HotelOption) -> float:
         return sum(haversine_km(h.location.lat, h.location.lon, a.lat, a.lon) for a in anchors) / max(len(anchors), 1)
 
-    # More than ~10 km from the sights means hours of commuting a day: only if nothing closer exists.
-    hotels = [h for h in hotels if avg_km(h) <= MAX_HOTEL_KM_FROM_SIGHTS] or hotels
+    # More than ~10 km from the sights means hours of commuting a day: only if nothing closer exists - and then no
+    # more than ~10 km further than the best-placed hotel. On an island every resort can be far from the sights; one
+    # on the far coast (70 km away when others are 13) spends the days on the road, and no shortlist brings it back.
+    dist = {h.id: avg_km(h) for h in hotels}
+    nearest = min(dist.values(), default=0.0)
+    limit = MAX_HOTEL_KM_FROM_SIGHTS + (nearest if nearest > MAX_HOTEL_KM_FROM_SIGHTS else 0.0)
+    hotels = [h for h in hotels if dist[h.id] <= limit] or hotels
     hprefs = ctx.strategy.hotel if ctx.strategy is not None else None
     if hprefs is not None:
         # The plan's quality bar (e.g. comfort: 4.4+ rating, 4+ stars), kept only if enough hotels clear it.
@@ -319,11 +388,12 @@ def select_core(ctx: PlanContext) -> tuple[Ranked | None, Ranked | None, Ranked 
     combos = []
     for o, r in pairs:
         hours = ground_hours(o.item, r.item)
+        nights = stay(o.item, r.item)  # as compute_budget will charge them for this pair
         for h in hotel_pool:
             hm = h.item.price_per_night
             total = (buffered(o.item.price_per_person, fare(o.item) * c.travelers)
                      + buffered(r.item.price_per_person, fare(r.item) * c.travelers)
-                     + buffered(hm, hm.amount * c.nights * c.rooms * ctx.fx(hm.currency))
+                     + buffered(hm, hm.amount * nights * c.rooms * ctx.fx(hm.currency))
                      # The days are not planned yet: all of their spend counts as estimated.
                      + daily_user * c.num_days * (1 + ctx.buffer_ratio))
             obj = (weights[0] * (o.score + r.score) + weights[1] * h.score - weights[2] * total / max(budget, 1)
@@ -482,6 +552,27 @@ def trip_edges(ctx: PlanContext, out: FlightOption | None, ret: FlightOption | N
     return arr_i, dep_i
 
 
+def _small_hours_landing(ctx: PlanContext, out: FlightOption, t_in: TransferOption | None) -> bool:
+    """At the hotel long before the day starts (lands 02:00): the room is booked from the night before."""
+    arr = out.arrive_at.astimezone(ctx.tz)
+    at_hotel = arr.hour * 60 + arr.minute + arrival_processing(out) + (t_in.minutes if t_in else 0)
+    return at_hotel < to_min(ctx.profile.preferred_wake_up_time) - 60
+
+
+def stay_dates(ctx: PlanContext, out: FlightOption | None, ret: FlightOption | None, t_in: TransferOption | None,
+               t_out: TransferOption | None) -> tuple[date, date]:
+    """Hotel check-in / check-out dates the flights really need, on the days trip_edges plans. A flight that lands on
+    the next local evening leaves the first night unused (check in on the landing date); one landing in the small
+    hours keeps the night before; a flight home just after midnight checks out the day before (bags stored, the
+    evening is the airport run)."""
+    c = ctx.contract
+    arr_i, dep_i = trip_edges(ctx, out, ret, t_out)
+    first = arr_i
+    if out is not None and arr_i > 0 and _small_hours_landing(ctx, out, t_in):
+        first -= 1
+    return c.start_date + timedelta(days=first), c.start_date + timedelta(days=max(dep_i, first + 1))
+
+
 def build_slots(ctx: PlanContext, out: FlightOption | None, ret: FlightOption | None,
                 t_in: TransferOption | None, t_out: TransferOption | None) -> list[DaySlot]:
     c = ctx.contract
@@ -541,14 +632,32 @@ def day_load(durations: list[int]) -> float:
 
 
 def _is_evening(a: Place) -> bool:
-    windows = [w for day in a.opening_hours.values() for w in day]
-    return bool(windows) and min(to_min(w[0]) for w in windows) >= 17 * 60
+    windows = [(to_min(w[0]), to_min(w[1])) for day in a.opening_hours.values() for w in day]
+    if not windows:
+        return False
+    if min(o for o, _ in windows) >= 17 * 60:
+        return True
+    # Named for the night ("Night Market") and open then - or with only assumed hours: an evening plan (visit_windows).
+    return time_of_day(a) == "night" and (not a.hours_verified or any(
+        min(c, 24 * 60 - 1) - max(o, NIGHT_FROM) >= a.duration_minutes for o, c in windows))
 
 
-def _fits_day(a: Place, slot: DaySlot) -> bool:
+def day_bounds(a: Place, slot: DaySlot) -> tuple[int, int]:
+    """The part of the day a visit may use. A dawn experience starts before the usual sightseeing hours on a full day
+    (before breakfast); a sunset one may end after them - never into a departure day's airport run."""
+    kind = time_of_day(a)
+    if kind == "sunrise" and slot.kind == "full":
+        return 0, slot.end
+    if kind == "sunset" and slot.kind in ("full", "arrival"):
+        return slot.start, max(slot.end, 22 * 60)
+    return slot.start, slot.end
+
+
+def _fits_day(a: Place, slot: DaySlot, tz: ZoneInfo) -> bool:
     if a.dates and slot.date not in a.dates:
         return False  # one-off event on another day
-    return any(max(o, slot.start) + a.duration_minutes <= min(c, slot.end) for o, c in open_windows(a.opening_hours, slot.date))
+    start, end = day_bounds(a, slot)
+    return any(max(o, start) + a.duration_minutes <= min(c, end) for o, c in visit_windows(a, slot.date, tz))
 
 
 def _fill(pool: list[Ranked], slots: list[DaySlot], used: set[str], allowed, take, hotel: HotelOption | None,
@@ -580,6 +689,7 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
     excluded = set(ctx.knobs.exclude_ids)
     avoid = {c.lower() for c in ctx.profile.avoid_categories}
     boosts = dict(ctx.knobs.category_boost)
+    tz = ctx.tz
     if ctx.knobs.food_focus:
         boosts["food"] = boosts.get("food", 0) + 0.3
     pool: list[Ranked] = []
@@ -676,7 +786,7 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
         return (a.id not in used and a.id not in ctx.knobs.exclude_on_day.get(slot.index + 1, []) and day_trip_ok(slot, a)
                 and day_load([x.item.duration_minutes for x in slot.activities]) + activity_weight(a.duration_minutes) <= slot.max_count
                 and (minutes_used(slot) + a.duration_minutes <= slot.max_minutes or (a.day_trip and not slot.activities))
-                and _fits_day(a, slot) and limit_ok(a) and not (slot.high_rain and not a.indoor and (slot.index + 1) in ctx.knobs.avoid_outdoor_days))
+                and _fits_day(a, slot, tz) and limit_ok(a) and not (slot.high_rain and not a.indoor and (slot.index + 1) in ctx.knobs.avoid_outdoor_days))
 
     # 1) Keep pinned assignments stable across replans.
     for slot in slots:
@@ -699,7 +809,7 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
             continue
         a = r.item
         if _is_evening(a):
-            night = next((s for s in slots if s.kind == "full" and s.evening is None and open_windows(a.opening_hours, s.date)
+            night = next((s for s in slots if s.kind == "full" and s.evening is None and visit_windows(a, s.date, tz)
                           and (not a.dates or s.date in a.dates)), None)
             if night:
                 night.evening = r
@@ -708,7 +818,7 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
         options = [s for s in slots if allowed(s, r)]
         if not options and pid not in ctx.knobs.expert_picks:  # only the traveller's own requests clear room
             for slot in sorted(slots, key=lambda s: (s.kind != "full", spread_cost(s, a))):
-                if not _fits_day(a, slot) or (a.day_trip and slot.kind != "full"):
+                if not _fits_day(a, slot, tz) or (a.day_trip and slot.kind != "full"):
                     continue
                 removed = []
                 while not allowed(slot, r):
@@ -748,7 +858,7 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
                 # The weakest stop that the empty day really accepts - the same rules as any placement, so a
                 # repair (a stop excluded that day, a day capped at zero, no outdoor plans in the rain) is never undone.
                 for r in sorted(donor.activities, key=lambda x: x.score):
-                    if r.item.id in must_ids or not _fits_day(r.item, empty):
+                    if r.item.id in must_ids or not _fits_day(r.item, empty, tz):
                         continue
                     donor.activities.remove(r)
                     used.discard(r.item.id)
@@ -773,7 +883,7 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
         step = 1 if interest == "high" else 2
         for slot in [s for s in slots if s.kind == "full" and s.evening is None][::step]:  # never replace a requested one
             for r in evenings:
-                if r.item.id not in used and open_windows(r.item.opening_hours, slot.date) and (not r.item.dates or slot.date in r.item.dates):
+                if r.item.id not in used and visit_windows(r.item, slot.date, tz) and (not r.item.dates or slot.date in r.item.dates):
                     slot.evening = r
                     used.add(r.item.id)
                     break
@@ -805,9 +915,13 @@ class DayBuilder:
         self.lunch_done = False
         self.walk_km = 0.0
         self.dropped: list[str] = []
+        self.unserved: list[str] = []     # meals no researched restaurant of this city serves at all
         self.combo_paid: set[str] = set()
 
     # -- helpers -------------------------------------------------------------
+    def windows(self, a: Place) -> list[tuple[int, int]]:
+        return visit_windows(a, self.slot.date, self.ctx.tz)
+
     def leg_to(self, loc: GeoPoint) -> TransportLeg | None:
         if haversine_km(self.here.lat, self.here.lon, loc.lat, loc.lon) < 0.05:
             return None
@@ -874,19 +988,28 @@ class DayBuilder:
         c = self.ctx.research.destination_info["center"]
         return haversine_km(self.here.lat, self.here.lon, c["lat"], c["lon"]) > 25
 
-    def local_meal(self, meal: str, earliest: int) -> bool:
-        """On a day trip the researched restaurants are back in the city: eat near the site instead."""
+    def local_meal(self, meal: str, earliest: int, out_of_reach: bool = False) -> bool:
+        """On a day trip the researched restaurants are back in the city: eat near the site instead. Also when none of
+        them is open and within reach at this hour (`out_of_reach`)."""
         prices = sorted(p.cost_per_person.amount * self.ctx.fx(p.cost_per_person.currency)
                         for p in self.ctx.research.restaurants if meal in p.meal_types)
         per_person = prices[len(prices) // 2] if prices else 15.0
         start = round_up(max(earliest, self.t))
         site = next((i.title for i in reversed(self.items) if i.kind == "activity"), "the site")
+        notes = "Day trip: pick a local place near the site (not researched); price estimated from city restaurants."
+        why = "Saves the journey back to the city for lunch"
+        if out_of_reach:
+            h = self.hotel
+            if h and haversine_km(self.here.lat, self.here.lon, h.location.lat, h.location.lon) < 0.3:
+                site = h.name
+            notes = (f"None of the researched restaurants is open and within reach at this time: pick a local place "
+                     f"near {site} (not researched); price estimated from the area's restaurants.")
+            why = "Every day has its meals, even far from the researched restaurants"
         self.add(ItineraryItem(
             start=to_hhmm(start), end=to_hhmm(start + MEAL_DURATION[meal]), kind="meal", meal_type=meal,  # type: ignore[arg-type]
             title=f"{meal.capitalize()} near {site}", location=self.here,
             cost=Money(amount=round(per_person * self.ctx.contract.travelers, 2), currency=self.ctx.cur, price_type="estimated"),
-            notes="Day trip: pick a local place near the site (not researched); price estimated from city restaurants.",
-            explanation=["Saves the journey back to the city for lunch"]), None, None)
+            notes=notes, explanation=[why]), None, None)
         return True
 
     def meal(self, meal: str, earliest: int, title_prefix: str | None = None) -> bool:
@@ -894,6 +1017,15 @@ class DayBuilder:
             return self.local_meal(meal, earliest)
         pick = self.pick_restaurant(meal, earliest)
         if pick is None:
+            # The researched restaurants can all sit far from the hotel (an island's resorts and its towns): lunch and
+            # dinner still happen, nearby. Not when the day itself ran too late - that is for the repair to lighten.
+            start = round_up(max(earliest, self.t))
+            priced = any(meal in p.meal_types for p in self.ctx.research.restaurants)  # the estimate needs a basis
+            if (meal in LATEST_MEAL_START and start <= LATEST_MEAL_START[meal]
+                    and (self.hard_end is None or start + MEAL_DURATION[meal] <= self.hard_end)):
+                if priced:
+                    return self.local_meal(meal, earliest, out_of_reach=True)
+                self.unserved.append(meal)  # nothing to estimate it from: said in the day's notes instead
             return False
         r, start, leg, alts = pick
         if self.hard_end is not None and start + MEAL_DURATION[meal] > self.hard_end:
@@ -921,7 +1053,7 @@ class DayBuilder:
         leg = self.leg_to(a.location)
         arrive = self.t + (leg.minutes if leg else 0)
         start = None
-        for o, c in open_windows(a.opening_hours, self.slot.date):
+        for o, c in self.windows(a):
             s = round_up(max(arrive, o, start_hint or 0))
             if s + a.duration_minutes <= c:
                 start = s
@@ -1002,7 +1134,7 @@ class DayBuilder:
                     continue
                 leg = self.leg_to(a.location)
                 arrive = self.t + (leg.minutes if leg else 0)
-                start = next((round_up(max(arrive, o)) for o, c in open_windows(a.opening_hours, self.slot.date)
+                start = next((round_up(max(arrive, o)) for o, c in self.windows(a)
                               if round_up(max(arrive, o)) + a.duration_minutes <= c), None)
                 if start is None or start - arrive > 45:
                     continue
@@ -1057,7 +1189,13 @@ class DayBuilder:
                 self.lunch_done = self.meal("lunch", lunch_start)
             return
         depot = self.here
-        stops = [Stop(r.item.id, r.item.location, r.item.duration_minutes, open_windows(r.item.opening_hours, self.slot.date),
+        # Each stop ends by the day's end - a sunset show may run past it (day_bounds) to its own time.
+        own_end = {}
+        for r in activities:
+            late = day_bounds(r.item, self.slot)[1]
+            own_end[r.item.id] = max(end, late) if late > self.slot.end else end
+        stops = [Stop(r.item.id, r.item.location, r.item.duration_minutes,
+                      [(o, min(c, own_end[r.item.id])) for o, c in self.windows(r.item) if min(c, own_end[r.item.id]) > o],
                       max(r.score, 0.05)) for r in activities]
         # A long food experience (cooking class, food tour) doubles as lunch.
         meal_experience = any(r.item.kind == "activity" and "food" in r.item.categories and r.item.duration_minutes >= 120
@@ -1067,7 +1205,7 @@ class DayBuilder:
         def travel(a: GeoPoint, b: GeoPoint) -> int:
             return ctx.leg(a, b).minutes
 
-        res = optimize_day(depot, stops, max(start, self.t), end, travel, lunch_window)
+        res = optimize_day(depot, stops, max(start, self.t), max([end] + list(own_end.values())), travel, lunch_window)
         by_id = {r.item.id: r for r in activities}
         self.dropped += [s.id for s in res.dropped]
         lunch_at = res.lunch_start
@@ -1077,7 +1215,7 @@ class DayBuilder:
                     and max(self.t, lunch_at) + LUNCH_DURATION <= end + 30):
                 self.lunch_done = self.meal("lunch", max(self.t, lunch_at))
             # Real travel times can differ from the optimizer's; never run past the window.
-            ok = self.activity(r, deadline=end + 20)
+            ok = self.activity(r, deadline=own_end[r.item.id] + 20)
             if ok and "food" in r.item.categories and r.item.kind == "activity":
                 s, e = to_min(self.items[-1].start), to_min(self.items[-1].end)
                 if s <= 13 * 60 + 30 and e >= 12 * 60 + 30:
@@ -1116,7 +1254,7 @@ class DayBuilder:
             self.meal("coffee", self.t, "Coffee break")
         if evening is not None:
             ev = evening.item
-            windows = open_windows(ev.opening_hours, self.slot.date)
+            windows = self.windows(ev)
             if windows and windows[0][0] + ev.duration_minutes <= dinner_at + 30 and self.t <= windows[0][0]:
                 self.activity(evening, start_hint=windows[0][0])
                 evening = None
@@ -1225,7 +1363,7 @@ def build_day(ctx: PlanContext, slot: DaySlot, hotel: HotelOption | None, out: F
                                          notes=f"Lands {arr:%a %H:%M}; transfer and check-in happen after midnight."))
             return DayPlan(day=slot.index + 1, date=slot.date, title=title, items=b.items, travel_day=slot.index > 0,
                            notes=["Overnight flight: the first full day starts after a short night."]), []
-        small_hours = slot.index > 0 and b.t < wake - 60  # landed after midnight, long before the day starts
+        small_hours = slot.index > 0 and _small_hours_landing(ctx, out, transfer)  # long before the day starts
         if hotel:
             early = b.t < to_min(CHECK_IN_FROM)
             b.items.append(ItineraryItem(
@@ -1297,7 +1435,18 @@ def build_day(ctx: PlanContext, slot: DaySlot, hotel: HotelOption | None, out: F
         else:
             b.items.append(_flight_item(ret, ctx.tz, False))
     else:
-        b.breakfast(wake)
+        # A sunrise experience (day_bounds lets it onto full days only) comes first, straight from the hotel; breakfast
+        # follows it.
+        dawn = [r for r in slot.activities if time_of_day(r.item) == "sunrise"]
+        for r in dawn:
+            windows, leg = b.windows(r.item), b.leg_to(r.item.location)
+            if windows:
+                b.t = max(b.t, windows[0][0] - (leg.minutes if leg else 0))
+            b.activity(r)
+        if any(i.kind == "activity" for i in b.items) and hotel and hotel.breakfast_included:
+            b.back_to_hotel("Back to the hotel for breakfast")
+        b.breakfast(max(wake, b.t))
+        daytime_acts = [r for r in slot.activities if r not in dawn]
         if not slot.activities and b.t < 12 * 60:
             # Nothing scheduled (e.g. a beach resort with few sights): say so, it's a free day by design.
             b.add(ItineraryItem(start=to_hhmm(b.t), end=to_hhmm(12 * 60 + 30), kind="free", title=f"Free day in {name}",
@@ -1305,7 +1454,7 @@ def build_day(ctx: PlanContext, slot: DaySlot, hotel: HotelOption | None, out: F
                                 explanation=["Unscheduled time: every sight that fits your trip is on another day"]),
                   None, None)
             title = f"Free day in {name}"
-        b.daytime(slot.activities, slot.start, slot.end)
+        b.daytime(daytime_acts, slot.start, slot.end)
         b.afternoon_and_evening(slot.evening)
 
     weather = b.slot_weather()
@@ -1316,6 +1465,9 @@ def build_day(ctx: PlanContext, slot: DaySlot, hotel: HotelOption | None, out: F
         names = [p.name for p in ctx.research.attractions if p.id in set(b.dropped)]
         if names:
             notes.append("Did not fit today: " + ", ".join(names))
+    if b.unserved:
+        notes.append(f"{NO_RESTAURANT_NOTE} {' or '.join(dict.fromkeys(b.unserved))} in {name}: eat at a local place "
+                     "near your hotel (not researched, so not in the budget).")
     day = DayPlan(day=slot.index + 1, date=slot.date, title=title, items=b.items, weather=weather,
                   walking_km=round(b.walk_km, 2), activity_count=sum(1 for i in b.items if i.kind == "activity"),
                   notes=notes, capacity=slot.max_count, travel_day=travel)
@@ -1364,6 +1516,9 @@ def build_plan(ctx: PlanContext) -> TripPlan:
             else choose_transfer(ctx, o_f.destination if o_f else None))
     t_out = (station_transfer(ctx, plan.hotel, False) if r_f and r_f.mode != "flight"
              else choose_transfer(ctx, r_f.origin if r_f else None))
+    if plan.hotel:
+        # Booked (and charged) for the nights these flights need, not always the trip's first to last date.
+        plan.hotel_check_in, plan.hotel_check_out = stay_dates(ctx, o_f, r_f, t_in, t_out)
     slots = build_slots(ctx, plan.outbound_flight, plan.return_flight, t_in, t_out)
     unused, _ = assign_activities(ctx, slots, plan.hotel)
     food_prefs = ctx.strategy.food if ctx.strategy is not None else None

@@ -97,7 +97,9 @@ def _solve_ortools(depot, stops, day_start, day_end, travel, lunch_window, time_
 
     cb = routing.RegisterTransitCallback(transit)
     routing.SetArcCostEvaluatorOfAllVehicles(cb)
-    routing.AddDimension(cb, 240, 24 * 60, False, "Time")
+    # Waiting is allowed up to the whole day: a sunset show that is the day's only stop starts hours after the day
+    # does (a 4 h cap dropped it and left the day empty). The span cost below still keeps ordinary days compact.
+    routing.AddDimension(cb, 24 * 60, 24 * 60, False, "Time")
     time_dim = routing.GetDimensionOrDie("Time")
     # Penalise the day's span so the schedule is compact (no idle mornings).
     time_dim.SetSpanCostCoefficientForAllVehicles(1)

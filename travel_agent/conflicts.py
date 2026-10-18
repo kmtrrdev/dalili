@@ -78,6 +78,11 @@ def _penalty(r: Relaxation, trip: TripState) -> float:
     return round(p, 3)
 
 
+def _hotel_nights(plan, c) -> int:
+    """The nights the plan's hotel line pays for (a next-day landing does not pay the first one)."""
+    return sum(s.hotel_nights for s in plan.stops) if plan.stops else plan.hotel_nights(c.nights)
+
+
 def _budget_relaxations(trip: TripState, gap: float) -> list[Relaxation]:
     plan, r, c = trip.selected_plan, trip.research, trip.trip_contract
     cur = c.budget.currency.upper()
@@ -87,6 +92,7 @@ def _budget_relaxations(trip: TripState, gap: float) -> list[Relaxation]:
 
     b = plan.budget
     out: list[Relaxation] = []
+    hotel_nights = _hotel_nights(plan, c)
     # Another plan that already fits.
     for m, p in trip.plans.items():
         if m != plan.mode and p.budget and p.budget.total <= c.budget.amount:
@@ -107,7 +113,7 @@ def _budget_relaxations(trip: TripState, gap: float) -> list[Relaxation]:
             relaxes = [s.id for s in stars if h.stars and h.stars < float(s.value)]
             out.append(Relaxation(
                 kind="cheaper_hotel", label=f"Stay at {h.name} ({h.rating}/5)",
-                saving=(cur_night - u(h.price_per_night)) * c.nights * c.rooms,
+                saving=(cur_night - u(h.price_per_night)) * hotel_nights * c.rooms,
                 impact=f"instead of {plan.hotel.name} ({cur_rating}/5)",
                 degradation=0.05 + 0.3 * max(0.0, cur_rating - (h.rating or 0)), relaxes=relaxes,
                 action={"action": "change_hotel", "text": h.name}))
@@ -154,7 +160,7 @@ def _budget_relaxations(trip: TripState, gap: float) -> list[Relaxation]:
                               action={"action": "cheaper"}))
     # Fewer nights: what one night really costs in this plan (room + a day of spending).
     if c.nights > 1:
-        per_night = (b.hotel / max(c.nights, 1)) + (b.food + b.activities + b.transport) / max(c.num_days, 1)
+        per_night = (b.hotel / max(hotel_nights, 1)) + (b.food + b.activities + b.transport) / max(c.num_days, 1)
         k = math.ceil(gap / max(per_night, 1))
         if k < c.nights:
             out.append(Relaxation(kind="fewer_nights", label=f"Shorten the trip by {k} night(s)", saving=k * per_night,
@@ -231,7 +237,7 @@ def analyze(trip: TripState) -> list[Conflict]:
              and any(x.type == "must_visit" and str(x.value).lower() == name.lower() for x in c.constraints)]
     if unmet and plan.budget:
         b = plan.budget
-        per_day = (b.hotel / max(c.nights, 1)) + (b.food + b.activities + b.transport) / max(c.num_days, 1)
+        per_day = (b.hotel / max(_hotel_nights(plan, c), 1)) + (b.food + b.activities + b.transport) / max(c.num_days, 1)
         steps = [Relaxation(kind="extend_trip", label="Add a day to the trip", saving=-per_day,
                             impact=f"about {_money(per_day, b.currency)} more", degradation=0.0,
                             relaxes=[x.id for x in by_type(c, "dates")], action={"action": "extend_trip", "amount": 1}),

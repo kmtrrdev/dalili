@@ -73,6 +73,26 @@ def matches_ref(text: str | None, ref) -> bool:
     return cc is None or cc == (ref.country_code or "").upper()
 
 
+def sun_times(lat: float, lon: float, d: date, tz) -> tuple[int, int] | None:
+    """Local sunrise and sunset that day (minutes from midnight in `tz`), from NOAA's solar equations - within a few
+    minutes, enough to time a sunset show. None in a polar day or night."""
+    g = 2 * math.pi / 365 * (d.timetuple().tm_yday - 0.5)  # fractional year at noon
+    eqtime = 229.18 * (0.000075 + 0.001868 * math.cos(g) - 0.032077 * math.sin(g) - 0.014615 * math.cos(2 * g)
+                       - 0.040849 * math.sin(2 * g))
+    decl = (0.006918 - 0.399912 * math.cos(g) + 0.070257 * math.sin(g) - 0.006758 * math.cos(2 * g)
+            + 0.000907 * math.sin(2 * g) - 0.002697 * math.cos(3 * g) + 0.00148 * math.sin(3 * g))
+    phi = math.radians(lat)
+    cos_ha = math.cos(math.radians(90.833)) / (math.cos(phi) * math.cos(decl)) - math.tan(phi) * math.tan(decl)
+    if not -1 <= cos_ha <= 1:
+        return None
+    ha = math.degrees(math.acos(cos_ha))
+    offset = datetime(d.year, d.month, d.day, 12, tzinfo=tz).utcoffset()
+    shift = offset.total_seconds() / 60 if offset else 0.0
+    rise = 720 - 4 * (lon + ha) - eqtime + shift
+    sset = 720 - 4 * (lon - ha) - eqtime + shift
+    return round(rise), round(sset)
+
+
 def open_windows(opening_hours: dict[str, list[list[str]]], d: date) -> list[tuple[int, int]]:
     return [(to_min(a), to_min(b)) for a, b in opening_hours.get(weekday_key(d), [])]
 

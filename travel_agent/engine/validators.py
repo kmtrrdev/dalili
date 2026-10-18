@@ -16,11 +16,20 @@ from ..models import (
     ValidationReport,
     Violation,
 )
+from zoneinfo import ZoneInfo
+
 from ..providers.routing import WALK_LIMITS
-from ..utils import is_open_for, to_min
+from ..utils import open_windows, to_min
 from .budget import compute_budget
-from .planner import AIRPORT_BEFORE_DEPARTURE, STYLE_CAPACITY, day_load
+from .planner import (AIRPORT_BEFORE_DEPARTURE, NO_RESTAURANT_NOTE, STYLE_CAPACITY, day_load, time_of_day,
+                      visit_windows)
 from .ranking import dietary_ok, expand_interests, must_have_terms
+
+
+def _tz(research: ResearchBundle, place_id: str) -> ZoneInfo:
+    """The time zone of the city a place is in (a multi-city bundle keeps each stop's own)."""
+    info = next((b.destination_info for b in research.stops if b.place(place_id)), research.destination_info)
+    return ZoneInfo(info.get("timezone", "UTC"))
 
 
 def _check(name: str, violations: list[Violation]) -> CheckResult:
@@ -47,9 +56,15 @@ def validate_budget(plan: TripPlan, contract: TripContract, research: ResearchBu
     return out
 
 
-def validate_schedule(plan: TripPlan, contract: TripContract, profile: TravelerProfile) -> list[Violation]:
+def validate_schedule(plan: TripPlan, contract: TripContract, profile: TravelerProfile,
+                      research: ResearchBundle | None = None) -> list[Violation]:
     out = []
     wake = to_min(profile.preferred_wake_up_time)
+
+    def at_dawn(item) -> bool:
+        """A sunrise experience starts before the usual wake-up time by definition."""
+        place = research.place(item.place_id) if research is not None and item.place_id else None
+        return place is not None and time_of_day(place) == "sunrise"
     for day in plan.days:
         prev_end = None
         for idx, item in enumerate(day.items):
@@ -71,7 +86,7 @@ def validate_schedule(plan: TripPlan, contract: TripContract, profile: TravelerP
             elif idx == 0:
                 prev_end = e
             if (0 < day.day < contract.num_days and day.day != 1 and item.kind in ("activity", "meal")
-                    and s < wake - 5):
+                    and s < wake - 5 and not at_dawn(item)):
                 out.append(Violation(check="schedule", severity="error", day=day.day, item_title=item.title,
                                      message=f"Day {day.day}: '{item.title}' starts at {item.start}, before your wake-up time "
                                              f"{profile.preferred_wake_up_time}."))
@@ -81,8 +96,12 @@ def validate_schedule(plan: TripPlan, contract: TripContract, profile: TravelerP
             food_exp = any(i.kind == "activity" and "Lunch is part" in i.notes for i in day.items)
             for m in ("lunch", "dinner"):
                 if m not in meals and not (m == "lunch" and food_exp):
-                    out.append(Violation(check="schedule", severity="error", day=day.day,
-                                         message=f"Day {day.day} has no {m} planned."))
+                    # The city's research has no restaurant for it at all: a data gap the day's notes tell the
+                    # traveller about - not a timing problem that removing the day's sights would fix.
+                    gap = any(n.startswith(NO_RESTAURANT_NOTE) and m in n for n in day.notes)
+                    out.append(Violation(check="schedule", severity="warning" if gap else "error", day=day.day,
+                                         message=f"Day {day.day} has no {m} planned"
+                                                 + (" (no researched restaurant serves it)." if gap else ".")))
         # Departure: at the airport early enough.
         flights = [i for i in day.items if i.kind == "flight"]
         transfers = [i for i in day.items if i.kind == "transfer" and "airport" in i.title.lower()]
@@ -127,11 +146,18 @@ def validate_opening_hours(plan: TripPlan, research: ResearchBundle) -> list[Vio
                 out.append(Violation(check="opening_hours", severity="error", day=day.day, item_title=item.title,
                                      place_id=item.place_id,
                                      message=f"Day {day.day}: {place.name} does not take place on {day.date:%a %d %b}."))
-            elif not is_open_for(place.opening_hours, day.date, to_min(item.start), to_min(item.end)):
-                out.append(Violation(check="opening_hours", severity="error" if place.hours_verified else "warning",
-                                     day=day.day, item_title=item.title, place_id=item.place_id,
-                                     message=f"Day {day.day}: {place.name} is not open {item.start}-{item.end} on "
-                                             f"{day.date:%A}" + ("." if place.hours_verified else " (assumed hours).")))
+            elif not any(o <= to_min(item.start) and to_min(item.end) <= c
+                         for o, c in visit_windows(place, day.date, _tz(research, place.id))):
+                # Opening hours - narrowed for a show named for its time of day (a sunset dance is not at 11:30).
+                timed = time_of_day(place)
+                if timed and any(o <= to_min(item.start) and to_min(item.end) <= c
+                                 for o, c in open_windows(place.opening_hours, day.date)):
+                    message = f"Day {day.day}: {place.name} is a {timed} experience, not one for {item.start}-{item.end}."
+                else:
+                    message = (f"Day {day.day}: {place.name} is not open {item.start}-{item.end} on {day.date:%A}"
+                               + ("." if place.hours_verified else " (assumed hours)."))
+                out.append(Violation(check="opening_hours", severity="error" if place.hours_verified or timed else "warning",
+                                     day=day.day, item_title=item.title, place_id=item.place_id, message=message))
             elif not place.hours_verified:
                 unverified.add(place.name)
     if unverified:
@@ -292,7 +318,7 @@ def validate_plan(plan: TripPlan, contract: TripContract, profile: TravelerProfi
                   buffer_ratio: float, walking_tolerance: str | None = None) -> ValidationReport:
     violations = (
         validate_budget(plan, contract, research, buffer_ratio)
-        + validate_schedule(plan, contract, profile)
+        + validate_schedule(plan, contract, profile, research)
         + validate_distance(plan, profile, walking_tolerance)
         + validate_opening_hours(plan, research)
         + validate_preferences(plan, contract, profile, research)

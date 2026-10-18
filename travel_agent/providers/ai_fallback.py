@@ -397,6 +397,34 @@ async def estimate_prices(city: str, country: str, local_currency: str, places: 
     return res
 
 
+class TimedPlace(BaseModel):
+    name: str = Field(description="Exactly as given")
+    best_time: Literal["sunrise", "sunset", "night", "any"]
+    only_then: bool = Field(default=False, description=(
+        "True only if the experience itself takes place solely at that time (a performance, a tour or trek that "
+        "starts then, a market that opens at night); false if the place is open all day and merely nicer then"))
+
+
+class TimedPlaces(BaseModel):
+    places: list[TimedPlace] = Field(default_factory=list)
+
+
+async def best_times(city: str, country: str, names: list[str]) -> dict[str, str]:
+    """Which sights and activities happen at a set time of day (a Kecak dance at sunset, a Batur trek at sunrise, a
+    night market), from the model's knowledge of the places - their names alone rarely say so. One call per city."""
+    if not names:
+        return {}
+    res = await _ask(
+        "You are a local travel expert. For each place, when is it normally visited or performed? 'sunrise' (dawn treks "
+        "and viewpoints people go to for the sunrise), 'sunset' (sunset shows and places famous for the sunset), "
+        "'night' (night markets, evening shows, night tours), else 'any'. Mark a time only when the experience itself "
+        "happens then - a show's performance time, a trek timed for the sunrise, a market that opens at night. A sight "
+        "that is open all day and merely prettier at sunset is 'any'.",
+        {"city": f"{city}, {country}", "places": names[:80]}, TimedPlaces)
+    # Only fixed times constrain the schedule: a temple that is merely prettier at sunset stays free to move.
+    return {p.name.strip().lower(): p.best_time for p in (res.places if res else []) if p.best_time != "any" and p.only_then}
+
+
 class AIAirport(BaseModel):
     iata: str
     name: str

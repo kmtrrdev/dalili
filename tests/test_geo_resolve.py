@@ -170,3 +170,20 @@ def test_a_place_with_its_country_is_found_by_its_bare_name_too(providers, monke
     monkeypatch.setattr(geo, "autocomplete", fake_autocomplete)
     ref = _resolve("Rome, Italy")
     assert (ref.name, ref.country_code) == ("Rome", "IT")
+
+
+def test_an_airport_name_with_an_honorific_still_anchors_the_place(providers, monkeypatch):
+    # Google: "Heraklion International Airport N. Kazantzakis"; Wikipedia knows "Heraklion International Airport".
+    # Without that anchor a same-named town on the mainland (330 km away) was taken for Crete's Agios Nikolaos.
+    mainland = _r(38.35, 22.16, "Greece", "gr", "city", 0.4, "Europe/Athens", city="Agios Nikolaos")
+    crete = _r(35.19, 25.72, "Greece", "gr", "city", 0.35, "Europe/Athens", city="Agios Nikolaos")
+    SEARCH[("Agios Nikolaos, Greece", True)] = [mainland, crete]
+    WIKI["Heraklion International Airport"] = (35.339, 25.180)
+    try:
+        _suggest(monkeypatch, _city("Agios Nikolaos, Greece", "/m/agn",
+                                    ("HER", "Heraklion International Airport N. Kazantzakis", "32 mi")))
+        ref = _resolve("Crete, Greece")
+    finally:
+        SEARCH.pop(("Agios Nikolaos, Greece", True))
+        WIKI.pop("Heraklion International Airport")
+    assert haversine_km(ref.lat, ref.lon, 35.19, 25.72) < 1

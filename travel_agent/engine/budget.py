@@ -42,7 +42,7 @@ def compute_budget(plan: TripPlan, contract: TripContract, fx: dict[str, float],
                 b.transport += cost
         for s in plan.stops:
             if s.hotel:
-                cost = to_user(s.hotel.price_per_night, fx, cur) * s.nights * contract.rooms
+                cost = to_user(s.hotel.price_per_night, fx, cur) * s.hotel_nights * contract.rooms
                 b.hotel += cost
                 count(s.hotel.price_per_night, cost, booked=True)
                 b.stale_sources += int(s.hotel.metadata.stale)
@@ -54,7 +54,8 @@ def compute_budget(plan: TripPlan, contract: TripContract, fx: dict[str, float],
                 count(f.price_per_person, cost, booked=True)
                 b.stale_sources += int(f.metadata.stale)
         if plan.hotel:
-            b.hotel = to_user(plan.hotel.price_per_night, fx, cur) * contract.nights * contract.rooms
+            # The nights the flights really need (a next-day landing does not pay for the first night).
+            b.hotel = to_user(plan.hotel.price_per_night, fx, cur) * plan.hotel_nights(contract.nights) * contract.rooms
             count(plan.hotel.price_per_night, b.hotel, booked=True)
             b.stale_sources += int(plan.hotel.metadata.stale)
 

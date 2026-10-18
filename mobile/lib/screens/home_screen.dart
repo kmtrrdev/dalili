@@ -214,6 +214,8 @@ class _HeroState extends State<_Hero> {
           const SizedBox(height: 18),
           TextField(
             controller: _c,
+            minLines: 1,
+            maxLines: 4,  // a long request wraps and stays readable
             textInputAction: TextInputAction.send,
             onSubmitted: (_) => _go(),
             decoration: InputDecoration(

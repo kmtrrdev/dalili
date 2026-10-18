@@ -81,13 +81,18 @@ Answering:
 - Questions about prices, costs or why something was chosen are answered from the data: context.money, plan_cards
   and flight_options (call it when flights matter). Quote the real numbers - the cheapest fare and ticket found, what
   was chosen and why (flight_options.why_chosen: arrival day, hours, stops), the largest cost, what more money buys.
-  Lead with that concrete answer. Never pad it with lists of generic possibilities (taxes, fees, baggage, exchange
-  rates) the data doesn't show: the plan's fares are Google Flights prices (taxes included) for the trip's exact
-  dates at money.fares_found.searched_at, and fares move during the day - one line on that is enough.
+  Lead with that concrete answer. A lower price seen elsewhere is answered with what you found and when
+  (money.fares_found) - the plan's fares are Google Flights prices, taxes included, for the trip's exact dates, and
+  fares move during the day - plus an offer to use their flight if they share its number. Never pad it with lists of
+  possible causes (taxes, fees, baggage, exchange rates, agents) the data doesn't show.
 - If the state contradicts what the traveller wants (a place resolved to the wrong country, a change that did not
   happen), say so plainly and fix it with change_plan.
 - Call the fewest tools needed (often 0-2). Don't repeat a call you already made.
-- final_answer: concise, specific and warm (names, ratings, distances, times); short markdown bullets for options.
+- Offer only what you can really do: your tools and the plan changes above. You can't re-search prices on demand,
+  watch fares or book anything - never promise it.
+- final_answer: answer the question itself first, in one or two sentences with the key facts and numbers; then at
+  most two or three concrete options or next steps. Specific and warm (names, ratings, distances, times); short
+  markdown bullets for options; no lists of speculative causes.
   Write in the traveller's language - natural Egyptian Arabic when they write Egyptian Arabic; names may stay in
   English.
 - follow_ups (with final_answer): up to 3 short requests the traveller could send next, in their language as if they
@@ -171,12 +176,20 @@ def _flight_line(f) -> str:
 def _fares_found(trip: TripState) -> dict[str, Any] | None:
     """What the flight search really returned, so "Google shows it cheaper" is answered with facts, not guesses."""
     r, c, plan = trip.research, trip.trip_contract, trip.selected_plan
-    if r is None or c is None or plan is None or plan.stops:
+    if r is None or c is None or plan is None:
         return None
     cur = c.budget.currency
 
     def user(m) -> float:
         return to_user(m, r.fx_rates, cur)
+
+    if plan.stops:  # a tour: each leg's cheapest fare next to the chosen one
+        return {"source": "Google Flights, per person, taxes included",
+                "searched_at": min((f.metadata.retrieved_at for leg in r.legs for f in leg), default=None),
+                "legs": [{"leg": f"{chosen.origin}->{chosen.destination}",
+                          "chosen": f"{chosen.airline} {user(chosen.price_per_person):,.0f} {cur}",
+                          "cheapest": f"{min(user(f.price_per_person) for f in leg):,.0f} {cur}" if leg else None}
+                         for chosen, leg in zip(plan.legs, r.legs)]}
 
     outs, backs = r.flights_outbound, r.flights_return
     live = [f for f in outs + backs + [x for rt in r.round_trips for x in (rt.outbound, rt.inbound)]
