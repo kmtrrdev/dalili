@@ -2,11 +2,12 @@ Cusco, Peru
 Labels: history, culture, adventure | Split: validation
 Source: https://en.wikivoyage.org/wiki/Cusco (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (34,218 characters) =====
+===== CLEANED GUIDE TEXT (34,235 characters) =====
 
 Cuzco or Cusco (Qosqo in Quechua, Cusco in Spanish), in the Southern Sierras, is a fascinating city that was the capital of the Inca Empire.  Cuzco is a  and is one of Peru's most visited cities as it is the largest and most comfortable city from which tourists can begin visits to Machu Picchu, the Sacred Valley of the Incas, and other Inca sites in the region.
 
 Understand
+
  
 Cuzco is a beautiful city with well-preserved colonial architecture, evidence of a rich and complex history. The city is the center of indigenous Quechua culture in the Andes, and  walking the streets you see the layers of history. Spanish colonial buildings erected directly atop Inca walls line the square, while the modern tourist nightlife flourishes in their midst. The city is surrounded by a number of ruins, the most impressive being Sacsayhuaman, the site of the 1536 battle in which dozens of Pizarro's men charged uphill to battle the forces of the Inca.
 
@@ -21,7 +22,9 @@ In and around Cuzco, lots of places and landmarks have multiple spellings: often
 See
 
 
+
 Museums and galleries
+
 * 
 Museo Municipal de Arte Contemporáneo. In the Municipal Palace at Plaza Regocijo, this museum has exhibitions of contemporary art. Admission with the boleto turistico
 
@@ -58,6 +61,7 @@ Natural History Museum.
 
 
 Historic
+
  
 
 * The stone walls of the city are Inca, particularly near the Plaza de Armas. Unlike the colonial walls, they typically have stones with very straight lines and no mortar.
@@ -76,7 +80,9 @@ Palacio Inka del Kusikancha. The ruins of an Inca palace, the home of 15th-centu
 
 Do
 
+
 In Cuzco City
+
 
 * 
 Plaza de Armas. The park square has churches, shops, restaurants and bars surrounding it, and is a great place to spend an afternoon. The historical center of Cuzco is beautiful, but you will have to deal with all the street vendors and hawkers of cheap paintings and other souvenirs. They are everywhere in and around the Plaza de Armas. They somewhat spoil the experience.
@@ -99,9 +105,11 @@ Planetario Cuzco. Information about Inka astronomy, projection and explanation o
 
 Day trips from Cuzco
 
+
 Most day trips from Cuzco follow the following format: between 07:00 and 09:00, you are picked up from your hotel or you meet with your group in a public plaza very near to Plaza de Armas, or at the front door of the agency with which you booked the tour, which is also very likely to be near Plaza de Armas. Then you drive for 1–2 hours to your destination. The day ends back where it started, at 15:00-16:00. In practice this means that you can do only one day trip per day and that it will most likely occur during the beginning part of the day. An exception to this is the day tour of Cuzco which starts later, around 13:00. For all these trips, ask in your hotel if you want them to call travel agencies.
 
 Archaeological day trips
+
 * Day Trip City Tour or the Four Archaeological Ruins Tour bus around S/25 (Sacsayhuamán, Qenko, Pukapukara and Tambomachay) from 13:00 to 19:00. Alternatively, a local combi (bus) goes between the city and the four sites and costs S/1 to ride. Look for the bus that says "Huerto".
 
 :: 
@@ -150,6 +158,7 @@ Chuspiyoq.
 * Day Trip Waqrapukara  An Inca fortress and temple complex, 3-4 hours away from Cusco depending on trailhead choice
 
 Non-archaeological day trips
+
 * 
 Cochahuasi Animal Sanctuary. A one-of-a-kind rehabilitation center started by a family of biologists, which provides shelter to animals injured or victimized by poaching. It's a happy place where animals get better and those able are re-released. In 2012, there were three condors, llamas, alpacas, vicunas, macaws, pumas, an unusual furless Peruvian dog, local deer, all very friendly. This is the best place to see pumas, condors and vicunas up close. This is on the road from Cuzco to Pisaq. You can get there by motorcycle or there is usually person working for this refugee at corner of Plaza de Armas and Calle del Medio, which will organize transport for you in refugee's van for S/20 per person. Donations help with rehabilitation efforts. This place is ahead of its time, and very friendly and awesome.
 
@@ -164,6 +173,7 @@ Rainbow Mountain. A challenging early-morning, high-altitude hike to a beautiful
 
 
 Buy
+
 
 * 
 Mercado San Pedro. The largest market close to the center. Though it's becoming more tourist-oriented it still has plenty of genuine local colour, a nice change from Plaza de Armas. If you're looking for a full blown market with a special aisle for entrails, this is the place to be. Colorful, vibrant, packed, San Pedro Market is not to be missed. You can find all manner of fruits, vegetables, cheeses, chocolates, honey, meats, household items, clothing, gifts, fresh fruit juices, and even tailors to repair your clothes while you wait. This market is in a less (but still somewhat) touristy area. The market itself is somewhat poorly lit (shaded by an overhang). Watch your belongings.
@@ -195,6 +205,7 @@ Alpaca sweaters are not like they used to be. The only good ones are in upmarket
 In Aguas Calientes and Machu Picchu, prices can be double what they are in Cuzco.
 
 Eat
+
  
 
 The Cuzco area has some extremely good international food with tasty options for all budgets. Excellent at the end of the Av. La Cultura. Be sure to try an alpaca steak (don't forget a llama/alpaca is normally kept and used for its wool - so only old animals will be slaughtered). You can get alpaca pizza as well.
@@ -220,6 +231,7 @@ Los Angeles. For late night food after clubbing, a very good fast food-type rest
 
 
 Budget
+
 * 
 Chifa Status. Good quality Chifa. Dishes for S/2-3. Ample portions invite sharing. Credit cards accepted.
 
@@ -238,6 +250,7 @@ Chia Vegan Kitchen. Arguably the best vegan place in Cusco, and very good value 
 
 Mid-range
 
+
 *
 Bagdad Cafe. This small restaurant seems to produce everything themselves. Local food is extremely good, in the evening small performance groups enter the restaurant and give excellent performances. The prices are mid-range, but it is sure worth it. The daily menu lunch special is more like a snack.
 
@@ -246,6 +259,7 @@ Jack's Cafe. This is a great place to get a big breakfast complete with eggs, ba
 
 
 Splurge
+
 
 * 
 Cicciolinia. This is a very tasty place to go for breakfast. Another location, Cicciolinia Café, is on Ruinas, which is open from 7:00 AM and good for brunch.
@@ -274,6 +288,7 @@ Morena Peruvian Kitchen. Peruvian classics in an upscale setting on the Plaza de
 
 Supermarkets
 
+
 There are several supermarkets close to el centro:
 
 *
@@ -291,6 +306,7 @@ Mega. This is the largest supermarket in Cuzco.
 
 
 Drink
+
 
 There are many clubs and pubs in Cuzco, and there are always people handing out flyers around the Plaza de Armas. These usually include free drinks. The clubs are almost always busy, even during the week, do not usually have cover charges, and most are open until 03:00 at the earliest and 17:00 at the latest. The hot spots change nightly; ask around and you will quickly find the crowds of travellers.
 
@@ -318,6 +334,7 @@ Los Perros. Chill restaurant/lounge. Ethnic food and comfortable couches. Has a 
 
 Coffee
 
+
 *
 Le Nomade. 2nd floor, cnr of Choquechaca and Cuesta San Blas 207. Coffee bar/lounge with live music every night. Reggae, Latin, cubano, afro-Jazz, blues, bossa, funk, soul, rock and española. No cover. Friendly staff.
 
@@ -331,6 +348,6 @@ Organika Bakery y Cafe. Modern, bright coffee shop serving hot and cold coffees 
 * 
 Three Monkeys. A coffee lover's coffee shop where you can specify the kind of bean you want for your coffee, roast level, and method of extraction (from basic drip to french press or cold brew). Uninviting barebones interior, but good coffee anyway.
 
-===== TOKENS THE MODEL TRAINS ON (2,576) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (2,576) =====
 
 cuzco qosqo quechua spanish sierra fascinating capital inca empire cuzco visited city largest comfortable begin visit sacred valley inca inca site region cuzco beautiful preserved colonial architecture evidence rich complex history indigenous quechua culture ande walking street layer history spanish colonial building erected directly atop inca wall line square modern nightlife flourish midst surrounded ruin impressive sacsayhuaman site battle dozen pizarro men charged uphill battle force inca nowaday cuzco indigenous populationoften street traditional clothingand substantial fueled night life sea level altitude sickness soroche problem stay healthy section advice altitude sickness tend sneak symptom apparent potential develop extremely dangerous attraction latin america price rising cuzco landmark multiple spelling spanish spelling quechua spelling instance cuzco qosqo depending look confusion extra searching trying especially looking online museum gallery museo municipal arte contemporaneo municipal palace plaza regocijo museum exhibition contemporary art admission boleto turistico museo historico regional home inca historian garcilaso vega story museum painting century historical display chronicling pre hispanic inca civilization invasion spanish role christianity post conquest era tour unlikely hour museum largest collection artifact world artifact collected yale university researcher hiram bingham beginning returned museum housed late century house called casa concha museo centro textile tradicionale beautiful museum inside centro textile store featuring containing display traditional quechuan andean textile museum explain historical significance textile technique traditional textile majority money women produce textile higher quality synthetic machine woven textile throughout museo sitio qoricancha information pre columbian culture fragment ceramic textile inca culture museum showcase room mummy skull modified inca hole sloped forehead allow hour hour half english explanation present lacking museo arte display collection art featuring handcraft modern era gallery stunning scenery cuzco depicted artist possible cheap print surprisingly quality youre prepared shop santa catalina convent collection religious art admission boleto turistico qoricancha site worship inca testimony fantastic inca architecture severely devastated conquistadore spanish conqueror built christian church santo domingo ruin bottom temple fairly preserved site worth site cuzco containing catholic inca heritage stunning view surrounding looking outside avenida sol perfect view church standing temple difference inca spanish building qoricancha starting point yearly procession inti raymi festival remembrance inca tradition celebrating winter solstice procession move saxayhuaman order especially remarkable remain inca section guided tour advisable chocomuseo shop museum explaining history cacao offering chocolate workshop cacao farm tour recipe world chocolate factory inside cacao chocolate museum artisanal organically sourced hot chocolate museo inka extensive museum pre inca inca colonial artifact label english spanish description english pretty ones spanish natural history museum historic stone wall inca particularly plaza arma unlike colonial wall typically stone straight line mortar piedra doce angulo stone wall side angle become symbol striking example precision inca architecture stonework monumento pachacuteq sol statue inca warrior king pachacuteq statue placed cylindrical base total monument cylindrical base climbed view disappointing monument lower cathedral elaborate cathedral colonial era religious painting biggest church cuzco front plaza arma entrance misa mass photography allowed palacio inka kusikancha ruin inca palace home century inca emperor pachakuti inka yupanki walk inca colonial stonework architecture interesting cuzco plaza arma park square church shop restaurant bars surrounding spend afternoon historical cuzco beautiful deal street vendor hawker cheap painting souvenir everywhere plaza arma somewhat spoil experience massage invariably propositioned young lady handing flyer advertising massage especially plaza arma legit cost hour trained masseuse price cant beat plaza cuzco coffee shop plaza market fairly traditional worthwhile market mix stall selling food household item clothing souvenir play sapo traditional bar game played chicharia game involve throwing coin called ficha table bronze sapo toad attached point making hole table ton point making sapo mouth played drinking chicha corn beer dive ask old men show correct throwing form difficult master talk store owner curator waitress bartender typically know little english spanish generally happy share interesting information guidebook cuy alpaca chicha accustomed altitude jog humbling experience hill thin air prove challenge shape explore head plaza safest youre woman exercising cat call common latin america salsero salsa class fabulous little salsa school offering private group class minimal price location enthusiastic teacher style taught perfect polish move ready shine dance floor ask franshesco efernetti want private class plan trekking excursion wealth agency tour company cuzco gather information compare price lady traditional clothing carrying baby alpaca ask want photo charge charge double picture lady beware supposed baby alpaca actually baby goat sheep planetario cuzco information inka astronomy projection explanation sky dome observing star planet object telescope trip cuzco trip cuzco follow following format picked hotel meet group public plaza plaza arma front door agency booked tour likely plaza arma drive destination ends started practice mean trip likely occur beginning exception tour cuzco start later trip ask hotel want call travel agency archaeological trip trip tour archaeological ruin tour bus sacsayhuaman qenko pukapukara tambomachay alternatively combi bus site cost ride look bus says huerto sacsayhuaman closest largest ruin amazing sacsayhuaman called saqsaywaman pronounced sock say wah mun ruin inca fortress cuzco steep climb plaza arma platero street change saphi look staircase follow paved curvy road cobblestone pedestrian path follow climb past control point control cab handle careful robbery reported morning evening charge explore ruin control present boleto turistico budget sense ruin paying walking hill entrance walk adjacent hill jesus look sheer size stone moved importance battle worth entrance fee fortress remain ruin hugebudget exploring dark tunnel walk sloped rock kids love slide read battle beforehand guide dont discuss view circular base former tower shown photo possible due protective rope earlier morning later visit disrupted bit whistle guard telling unobservant ruin early qenko site road sacsayhuaman combi shared buse hill walk nbsp gradual incline site mean zig zag quechua probably refer zig zag channel carved rock explore pass cave view altar llama sacrificed erect stone shown boleto turistico solar calendar side stone square wall stone stone representative total total opposite stone familiar window mummy human remain discovered adjacent site smaller archeological site qenqo chico accessible boleto turistico pukapukara named red hue hillside nearby site route heartier walker walk bit bit steep despite paved traveled road view walk mud brick bars intermittent site hire taxi combi shared bus qenko save energy larger site qenqo guide say site likely checkpoint military control offering coca leave thing received accessible boleto turistico tambomachay distant ruin route cuzco site ornamental fountain source unknown reportedly archaeologist lack tool necessary determine source damaging site likely underground spring incan site ollentaytambo water source covered underground protect water supply poisoning accessible boleto turistico bathroom boleto combi plaza arma cuzco sole guide tour site interested pay negotiate guide control sacsayhuaman tour site ask guard ticket control guide government training expect depending season site allow trip taking combis shared buse pack snack water bathroom clean maintained final site tambomachay boleto turisitico recommended control point exist site carefully monitored dont want hire guide taxi combi tambomachay pukapukara walk hill remaining site kinder legs site morning backpacker cafe road tasty inexpensive sandwich fruit juice walk qenqo sacsayhuaman view trip sacred valley pisaq ollantaytambo chinchero tour bus ollantaytambo impressive ruin course touristy stuff bargain price wont trip chinchero moray salinera mara tour bus plus entrance salina moray agricultural laboratory inca concentric circle deep caused temperature change seed developed spread throughout empire nbsp nbsp cuzco accessible boleto turistico trip salinera mara terraced salt pond chinchero chinchero market sunday finish early afternoon cuzco chinchero urubamba bus grau chinchero catch market head moray salinera afterward trip valle sur tipon pikillacta tour bus plus entrance salina sense pikillacta tipon theyre bus route pikillacta little cuzco tipon tipon terrace water channel staircase believed incan royal estate sits largest irrigation system built inca functioning incan cemetery nbsp nbsp cuzco site accessible boleto turistico bus cultura cuzco urco tipon pikillacta andahuaylila cuzco vicinity smaller interesting inca ruin ranging reasonably amaru markawasi templo luna obscure difficult chuspiyoq trip waqrapukara inca fortress temple complex depending trailhead choice non archaeological trip cochahuasi animal sanctuary kind rehabilitation started family biologist provide shelter animal injured victimized poaching happy animal able released condor llama alpaca vicuna macaw puma unusual furless peruvian dog deer friendly puma condor vicuna close road cuzco pisaq motorcycle person working refugee corner plaza arma calle medio organize transport refugee van person donation help rehabilitation effort ahead friendly awesome whitewater rafting sacred valley inca water polluted rapid relatively tame instead head upstream chuqicahuana cusipata section urubamba vilcanota water cleaner rapid excellent fun class depending traveling inflatable canoeing pini pampa section urubamba paddle canoe fun frantic class rapid apurimac rafting raft apurimac true source amazon rafting river world class amazing deep canyon expert accident occurred pay saving cost seriously reduce quality safety trip rent motorcycle shop calle platero plaza arma rent motorcycle motorcycle license simply kind driving license home country price typically helmet glove jacket sacred valley moto tour calle platero corner siete cuartone bike condition loop sacred valley taking market pisac lunch urubamba incan site easily afternoon drive cuzco pisaq string gorgeous switchback inca site cuzco aminal sanctuary pisaq schedule head visited pretty town inca ruin downhill mountain bike tour chinchero plain past inca ruin spectacular mara salinera nbsp downhill abra malaga santa maria onto totally awesome hot spring santa teresa easy cheap access expert cheap bike totally job paragliding sacred valley scenery gorgeous rainbow mountain challenging early morning altitude hike beautiful multicolored mountain tour start breakfast break cusipata path leading mountain former hour hike minute walk horse hired fee children llama sheep pose photo included entrance fee tip appreciated highest point montana winikunka mercado largest market close becoming oriented plenty genuine colour change plaza arma youre looking blown market special aisle entrail colorful vibrant packed market missed manner fruit vegetable cheese chocolate honey meat household item clothing gift fresh fruit juice tailor repair clothe wait market somewhat touristy market somewhat poorly lit shaded overhang watch belonging casa ecologica fair trade textile tankar pricey indigenous weaving pottery obvious fake junk mercado blas lovely enjoy delicious breakfast starting journey handcraft fruit vegetable grocery item artisan market dont want far want touristy stuff red building fountain market plaza market exclusively oriented good restaurant inside pisac outside cuzco market minute cuzco bus bus station tullumayo street couple block limacpampa fare cheap incan ruin pisac sacred valley valle sagrado town ruin chinchero ollantaytambo pisac touristy stuff bargain price won centro comercial molino urbanizacion ttio another market taxi cost market pirated merchandise dvds cds quality copy dvd aware dvds region encoded region play dvd player purchased look dvds encoded region modifying dvd player accept dvds indigenous women centro bartolome casa store sell homemade handicraft weaving watch work dont speak spanish rarely speak word english block plaza avenida tullumayu square cheaper thing become market glass combination juice start give couple refill dont far square night dangerous alpaca sweater ones upmarket shop cheap alpaca synthetic blend sweater arequipa cuzco know look price certain market sure cuzco room suitcase agua caliente price double cuzco cuzco extremely international food tasty option budget excellent cultura sure alpaca steak dont forget llama alpaca normally kept wool old animal slaughtered alpaca pizza mercado listed section vendor selling prepared food authentic regional cuisine traditional inca food food lease expensive soup amazing sopa zapallo type pumpkin soup looking traditional peruvian food lomo saltado beef tips stir fried tomatoe onion spice bed fry rice aji gallina chicken yellow pepper sauce olive hard boiled eggs papa rellena stuffed potato beef olive hard boiled egg vegetable spice cuy guinea pig absolute traditional holiday food region cooked cuy restaurant plaza arma cuy cost dedicated cuyeria serve cheaper cuy chifa peruvian version chinese food neighborhood wanchaq chifa restaurant far drink inca kola bubble gum tutti frutti flavored yellow soda outsell coca cola bought coca cola chicha morada peruvian specialty spiced non alcoholic purple corn leaving cuzco called boing appetit front airport want breakfast sandwich plane provide internet connection front airport late night food clubbing fast food type restaurant budget chifa status quality chifa dish ample portion invite sharing credit card accepted encuentro reasonably priced vegetarian restaurant portion dinner soup course mate salad lunch soy meat restaurant calle tigre plaza arma exactly menu fogon nothing fancy cheap food meal deal plate salad bar selection soup selection dish dessert beverage splurge expensive menu tasty peruvian food friendly staff victor friendly service salad bar buffet included dish gorgeous garlic trout rice potatoe salad bar buffet lovely fresh bread lunch value breakfast regular glass freshly squeezed juice proper espresso machine coffee morning chia vegan kitchen arguably vegan value money look smell taste staff super friendly lunchtime salad buffet carte dish expensive worth youre hot sweet enormous hot chocolate enjoyable sugar shock mid range bagdad cafe restaurant seem produce everything food extremely evening performance group enter restaurant give excellent performance price mid range sure worth menu lunch special snack jack cafe breakfast complete eggs bacon avocado toast fantastic thick shake homemade lemonade outside jack empanada stand rocoto salsa spicy salsa cheese meat stuffed pastry splurge cicciolinia tasty breakfast another cicciolinia cafe ruina brunch emperador page menu sort food world pisco sour tall encantasqa break coffee snack especially chocolate cupcake delicious half lunch fresh cake quich juice green point vegan restaurant serving breakfast lunch dinner international dish peruvian food gluten raw option menu english spanish wifi inka grill frequented trap excellent food cuy guinea pig reported mud butt eating tastily served head eating doesnt remind pet hamster appetizer tiradito trucha alpaca menu restaurant inkazuela specializ stew food delicious friendly waitress care chosen music fireplace create romantic atmosphere tunupa guinea pig alpaca dish novo andino cuisine specialty cuy served head feet morena peruvian kitchen peruvian classic upscale setting plaza arma reservation highly recommended month advance season walk wait time peak meal time supermarket supermarket close centro gato market bit pricey mega location matara ayacucho larger plaza tupac amaru matara garcilaso home furnishing store door larger supermarket combi taxi couple kilometre cultura canasta stocked mega largest supermarket cuzco club pubs cuzco handing flyer plaza arma drink club busy week cover charge earliest latest hot spot change nightly ask quickly crowd traveller mama level snack cafe rooftop restaurant cheap menu disco latest movy dvd decoration painting owner artist music atmosphere salsa lesson salsa start want learn move dance carlo miguel checo work play host legendary crew lively lady exploit gringo male reached mythical level corner plaza arma muki local plaza arma unique cave interior oldest disco caos want crowd dance night local head club mix music exotic drink paddy irish pub night brother jack cafe exactly traditional peruvian fare excellent atmosphere fellow traveller cozy upstair pub setting purportedly highest irish owned pub world selection pub food think cottage pie casserole mash gravy international drink cider guinness useful gracia shirt sale mythology disco salsa want learn rueda cubana class start private lesson arranged cesar dance instructor mythology unique decor gods goddess cleanest restroom nightclub far ukuku live music traveling artist playing variety music style salsa meringue criolla afro peruvian decorative mask wall huge wooden woman statue butterfly wing perro chill restaurant lounge ethnic food comfortable couch variety locally brewed house beer coffee nomade floor cnr choquechaca cuesta blas coffee bar lounge live music night reggae latin cubano afro jazz blue bossa funk soul rock espanola cover friendly staff lost roaster basement bar block plaza arma friendly watch american football basketball chat regular owner pizza paninis cheap happy hour cocktail beer real bar local expat cusqueno organika bakery cafe modern bright coffee shop serving hot cold coffee brewed chemex press japanese sifon coffee drink alcohol sandwich homemade bread monkey coffee lover coffee shop specify kind bean want coffee roast level method extraction basic drip press cold brew uninviting barebone interior coffee anyway

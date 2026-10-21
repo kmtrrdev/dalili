@@ -2,13 +2,14 @@ Warsaw, Poland
 Labels: history, culture | Split: validation
 Source: https://en.wikivoyage.org/wiki/Warsaw (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (23,649 characters) =====
+===== CLEANED GUIDE TEXT (23,665 characters) =====
 
 Warsaw (Polish: Warszawa) is Poland's capital and largest city. Warsaw is a bustling metropolis and one of the European Union's fastest-developing capitals and the Union's ninth most populous urban centre. It has a mixture of new and old in its eclectic architectural mix, and is constantly changing.  There is a large variety of museums, galleries and other tourist attractions, and there is always something happening throughout the year.
 
 While sprawling, it is quite easy to navigate for tourists thanks to a good public transit system, and most important sights are quite close to each other. There is no shortage of accommodation options and a wide choice of restaurants and bars. Warsaw's nightlife is also on the rebound, and a reborn cafe culture has taken over the city.
 
 Understand
+
  
 
 A city of 1.8 million inhabitants (2021), it sits on the Vistula River (Polish: Wisła) in the middle of the country.
@@ -16,10 +17,13 @@ A city of 1.8 million inhabitants (2021), it sits on the Vistula River (Polish: 
 Warsaw's history of rapid development after many wars that ravaged and destroyed the city has earned it a reputation as a "phoenix city", able to recreate itself from the ruins and regain its erstwhile glory every time. During the Second World War, it suffered a fate similar to Rotterdam and Dresden in that it was almost completely razed, although in the case of Warsaw it was a much more tragic story of successive destruction and defeat. Due to the great efforts of its surviving inhabitants and, indeed the entire nation, it was rebuilt from a field of rubble, with its historic core recreated, but much of its heritage was lost. Warsaw also had one of the largest Jewish populations in Europe, which for the most part perished during the war, making Warsaw an important place of Holocaust remembrance.
 
 History
-====Before becoming the capital====
+
+Before becoming the capital
+
 There are records of human settlements and economic activity in the area of what is now Warsaw from the 9th century onwards, but it wasn't until the 13th century that Warsaw was founded by the Dukes of Mazovia. While developing as an administrative and economic centre, it played second fiddle to Płock within Mazovia until the 15th century, and was by no means a match for Poland's former capital, Kraków. It gained growing importance due to its economic might and strategically important central location in Poland, cemented when the Polish Sejm (parliament of nobles) relocated there permanently in the 16th century, and it became the site of royal elections.
 
 As capital city of Poland
+
  
 In 1596, it became the de facto capital of the country when King Sigismund III Vasa decided to permanently relocate to what is now the Royal Castle in Warsaw. The city started to develop rapidly beyond what is now the Old and New Town, as noblemen started moving in and building mansions and palaces around town. In the 17th century, Praga, on the right-hand side of the river Vistula, was incorporated as a separate town (and did not become a part of Warsaw until the 19th century).
 
@@ -28,6 +32,7 @@ While ravaged by wars and natural disasters along with many other European citie
 At the end of the 18th century, the weakened Republic of Poland was partitioned, through a period of forced diplomacy, military actions and uprisings, and Warsaw first fell to Prussian rule, losing most of its importance. As the French emperor Napoleon marched eastwards with his army, he reestablished a small Polish state known as the Duchy of Warsaw, after its eponymous capital, but it was short-lived and was absorbed by the Russian empire in 1815, after Napoleon's defeat.
 
 Under Russian rule
+
  
 Warsaw remained a capital city under the Russian rule, as the Kingdom of Poland was reestablished, although with Russian tsars as hereditary kings and not much political independence. Warsaw was then the westernmost of major cities of the Russian empire and enjoyed economic growth as a commercial and industrial centre. While repeated uprisings and attempts to regain independence failed, Warsaw was still enriched with the creation of many cultural and educational institutions, many surviving to this day.
 
@@ -36,6 +41,7 @@ Warsaw's growth was curbed by a double line of military forts, protecting the st
 At the turn of the century, Warsaw was electrified, gaining its first electric power plant, electric tramways, and a telephone network. At the start of the First World War, Warsaw was a bustling, modern city of almost 1 million inhabitants, rife with opulent, belle-epoque architecture adapted to its density.
 
 Between the World Wars
+
  
 As Poland regained independence, Warsaw became the capital city of an independent country again. It suffered heavily during the war, and was soon threatened by the advancing Soviet forces, who were only repelled at the borders in the 1920 Battle of Warsaw. While political instability and struggles ensued, Poland enjoyed economic growth, optimism and proper attention to planning and urbanism in that period, and Warsaw benefited from that greatly, especially under its last interwar President, Stefan Starzyński.
 
@@ -44,6 +50,7 @@ Warsaw gained a state-of-the-art airport in Okęcie, a central railway through s
 The developments of that time, while later destroyed to a large extent in the Second World War, were instrumental in shaping Warsaw in many ways to how it was known today. Most were either rebuilt exactly or in a similar form and place, while some survived.
 
 Second World War
+
  
 For most of the Second World War, Warsaw was occupied by Nazi Germany, but it did not surrender without major fights that affected the city – over 10% of the buildings were destroyed, with the infrastructure and many other buildings damaged. The German authorities treated Warsaw as expendable and had grand plans of totally rebuilding it as a planned city even before the war, with Germanic and Nazi symbolism replacing all of the Polish heritage. This did not come to fruition, but explained why little heed was paid to preserving the city, which was also periodically bombed by the Soviet forces after 1941.
 
@@ -52,6 +59,7 @@ It was an especially tragic period for the Jewish population of Warsaw, which ha
 In the final period of the war, the dramatic and tragic Warsaw Uprising took place in 1944. (The Warsaw Ghetto Uprising of 1943 and the Warsaw Uprising of 1944 are entirely separate historic events.) A furious Fuhrer ordered the obliteration of Warsaw and the indiscriminate massacre of all Poles in the city. Despite combat gallantry under limited weapon supply, Polish partisans did not liberate Warsaw from the German forces before the Soviets marched in. The Red Army then captured the crippled and all but razed city, cementing Poland's fate as a communist satellite state of the Soviet Union.
 
 Post-World War II – rebuilding the city
+
  
  
 By 1945, Warsaw was almost completely destroyed. It is estimated that over 80% of the city was destroyed, including almost the entire city centre and most historic and significant buildings. Of almost 1.4 million inhabitants, half died during the war (including the vast majority of the Jewish population), others were forcibly removed or escaped voluntarily, and only about 10% of the initial population was found inhabiting the ruins of the city.
@@ -63,11 +71,13 @@ Most architects and historians held much the late 19th century architecture in l
 Apart from historic restoration, in the 1950s Warsaw has also gained a fair share of socialist-realistic architecture, which was all about monumentalism and ideologically-themed decoration. Its most prominent example is the controversial Palace of Culture and Science, which grew to become one of Warsaw's symbols. The emphasis, however, was on housing the returning and rapidly growing population, and thus Warsaw also gained many nondescript, gray residential buildings. As population continued to grow and means were scarce in the centrally-planned socialist economy, the authorities turned to prefabricated concerte, creating sprawling Plattenbau estates around Warsaw.
 
 Contemporary Warsaw
+
 Since the fall of communism in 1989, Warsaw has been developing much more rapidly than Poland as a whole. It's hard to recognize the city if you saw it ten years ago, and more changes are constantly taking place. Warsaw has long been the easiest place in Poland to find employment, and for this reason many of the Polish inhabitants of the city are first or second generation, originating from all over the country.
 
 Even though much of Warsaw seems to imitate Western cities, there are many peculiarities to be found here that you will not find in Western capitals. Examples include the communist-era bar mleczny (lit. 'milk bar') that remain in operation (essentially cheap cafeterias for no-frills, working-class traditional Polish dining, which have remained incredibly popular in the face of westernization). Europe's largest outdoor marketplace, once around the old stadium, has disappeared as the new National Stadium was built for the Euro 2012 football championships.
 
 See
+
 
 This is the city of Frederic Chopin, Maria Skłodowska-Curie, Władysław Szpilman and Pola Negri. Warsaw Old Town is inscribed on the UNESCO World Heritage List. Take a walk and explore the streets and squares which have been painstakingly rebuilt after the last war. Check out the tumultuous history of the metropolis on both sides of the Vistula river. Explore special places and associated with the uprisings, especially one, which took place in the Ghetto and second, which happened in 1944. Book a guided city walk across the city and discover how it has changed since the fall of communism. Most of the major sightseeing attractions are concentrated in Śródmieście, with some more in surrounding districts, the exception park and palace in Wilanów. Check the attractions of the Vistula river banks. That said, every district has something to offer if you have the time and want to research more, so do refer to district articles for details.
 
@@ -81,12 +91,15 @@ That said, most tourists will probably:
 *Relax on the Vistula Boulevards (Bulwary Wiślane), spreading out over  of the Vistula banks
 
 Do
+
  
 
 Explore
+
 Go on a tour of Warsaw – the Old Town and surrounding districts are sufficiently compact to allow a number of excellent walking tours through its history-filled streets. You'll see amazing things you would otherwise miss. Details are usually available from the reception desks of hostels and hotels.
 
 Concerts and performances
+
 
 Warsaw is home to several professional musical and play companies.  Being the capital city means the Polish National Opera and the Warsaw Philharmonic (also, National Philharmonic) call Warsaw home.  There are a number of other companies, including play companies and theaters that will likely be of interest to travellers.
 
@@ -95,6 +108,7 @@ The Presto Music Agency organises Chopin concerts at several venues across the c
 Headline music acts perform at the Bemowo airport in the Bemowo district and at the Stadion Narodowy (National Stadium) in the Praga Południe district of Warsaw.  Smaller acts are hosted at clubs and concert halls around the city, but primarily in the center of Warsaw.
 
 Festivals
+
 
 * 
 The Cross-Culture Warsaw Festival. World music festival. Concerts and music workshops, documentary screenings, exhibitions.
@@ -129,12 +143,14 @@ Long Night of Museums. A great opportunity to wander around with your date or fr
 
 Sports
 
+
 * Football: National soccer games are played at Stadion Narodowy (National Stadium), a multi-purpose arena on the river's right bank, 3 km east of city centre.
 : Legia Warszawa play soccer in Ekstraklasa, the top tier. Their home ground is Piłsudski Stadium (or Polish Army Stadium), capacity 31,800. It's at Łazienkowska 3, two km southeast of city centre.
 : Polonia Warsaw play in I Liga the second tier, at Kazimierz Sosnkowski Stadium (capacity 7000) 1 km north of Old Town centre. 
 * Warsaw Eagles play American football, at the American Football Field, Tobruk Ave, 5 km north of city centre.
 
 Buy
+
 
 
 
@@ -146,11 +162,13 @@ Auchan and Carrefour are the largest supermarkets in Europe, and they are also p
 
 Eat
 
+
 Warsaw is not globally renowned for its culinary scene, but it lacks nothing compared to other European capitals with regard to it. There is a wide choice of eateries from the most basic and cheapest to very sophisticated, and many different types of food are available throughout the city. Finding a unique dining experience is feasible daily.
 
 For those on a budget, there are many kebab shops sprinkled around Warsaw, especially in Śródmieście, which offer decent food and portions for the fair price of 7-13 zł a kebab.  Other cheap alternatives are milk bars, which are discussed later in the section, and Vietnamese restaurants.
 
 Haute cuisine
+
 
 If you are looking for a premium dining experience, your best chances are in Śródmieście, but away from the Royal Route. In Praga, head for Saska Kępa, and you will also find a fair share of upscale restaurants in Wilanów. New and innovative places crop up in the most unexpected locations, so do acquaint yourself with the district guides for the latest tips.
 
@@ -164,6 +182,7 @@ Senses. A "private dining" restaurant, author's cuisine of chef Andrea Camastra.
 
 Food fairs
 
+
 The new trend in Warsaw are food fairs, where fresh foodstuffs can be bought directly from producers, both for further processing and preparation at home and as ready dishes for consumption on site. Usually, some space for communal meals is provided. This can be a very nice option for breakfast or lunch. Some of the options are:
 * 
 Targ Śniadaniowy. Organised every weekend in various parts of town, usually
@@ -171,21 +190,25 @@ Targ Śniadaniowy. Organised every weekend in various parts of town, usually
 
 Fast food
 
+
 Tourists will be happy to know there's no shortage of fast food in Warsaw. The city is rife with McDonald's and Subway outlets, there are also many KFCs and Pizza Huts, and a growing number of Burger King restaurants (the latter mostly in shopping centres). For a quick bite, chain cafés that are around every corner in the city centre, the shopping centres and many office buildings will offer you pre-made sandwiches and salads. Some more sophisticated cafés will make salads, ciabattas and sandwiches on site.
 
 There is no particular Polish kind of fast food, as the traditional Polish cuisine does not really lend itself well to quick preparation or quick eating. Therefore, apart from the above international chain places, that niche in Warsaw is filled with kebab places and cheap pizzerias, similar to ones that you would find in most other European cities. Pizzerias are often chain places as well, and many do telephone deliveries, takeaways as well as offer tables to eat on the premises. Kebabs can often only do takeaway, and are often open all night long, much to the delight of taxi drivers and partygoers.
 
 Milk bars
 
+
 Remnant of the communist era, milk bars (Polish: bar mleczny, bary mleczne) were created in the 1960s to serve cheap meals based on milk products. After the fall of communism, most of them closed down but some survived and still bear the climate from the old days. Almost everything inside looks, feels and smells like in the 1980s.  Milk bars attract students and senior citizens, because of the low prices (soup and the main course together may cost as little as 10 zł).  The food served by milk bars can actually be quite palatable.  Even if you can afford more expensive meals, milk bars are interesting because they offer somewhat a view of life before democratization in Poland. Nowadays they became even that popular, that new chains and milk bars are recreated. Some milk bars now even have touch screen ordering kiosks with multilingual menus.
 
 Drink
+
 
 Old Town and areas like pl. Trzech Krzyży, ul. Nowy Świat, ul. Chmielna, ul. Krakowskie Przedmieście in Śródmieście are saturated with cafés. Coffee typically costs about 10-15 zł. Beer can cost 5-15 zł for half a liter (the supermarket price being 2.50-3 zł). Drink prices in clubs can go up to 50 zł. Drinking alcoholic beverages in public places is prohibited, but there are several places chosen by the local government where it can be possible.
 
 
 
 Clubs
+
 
 Clubs are plentiful in Warsaw and are a very popular way to spend nearly every night out.
 
@@ -200,8 +223,9 @@ In addition, there are clubs in Wola and Mokotów as well as several popular and
 
 Tea and coffee
 
+
 Throw stereotypes out the door. For Poles, one of the most important staples to quench their thirst is not wódka or beer, but rather tea and coffee. As such, you're likely come across dozens and dozens of cafés.  Chain-wise, Coffee Heaven and W Biegu Cafe are the big players. Starbucks  is also in Warsaw.  The real treat of Warsaw, however, are small cafés that are littered about Warsaw. For the most part, a good cup of tea or coffee can be had for 5-10 zł a cup. A small tea kettle is between 20-30 zł.
 
-===== TOKENS THE MODEL TRAINS ON (1,694) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,694) =====
 
 polish warszawa capital largest bustling metropolis european union fastest developing capital union ninth populous urban mixture old eclectic architectural mix constantly changing variety museum gallery attraction happening throughout sprawling easy navigate thank public transit system important sight close shortage accommodation option wide choice restaurant bars nightlife rebound reborn cafe culture taken million inhabitant sits vistula river polish wisa middle country history rapid development wars ravaged destroyed earned reputation phoenix able recreate ruin regain erstwhile glory world war suffered fate similar rotterdam dresden completely razed case tragic story successive destruction defeat due effort surviving inhabitant indeed entire nation rebuilt field rubble historic core recreated heritage lost largest jewish population europe perished war making important holocaust remembrance history becoming capital record human settlement economic activity century onward wasnt century founded duke mazovia developing administrative economic played fiddle pock mazovia century mean match former capital gained growing importance due economic strategically important cemented polish sejm parliament noble relocated permanently century site royal election capital facto capital country king sigismund iii vasa decided permanently relocate royal castle started develop rapidly beyond old noblemen started moving building mansion palace century praga hand side river vistula incorporated separate become century ravaged wars natural disaster european city period continued grow modernize baroque residence wilanow built century saxon king initiating scale urban planning project early last king independent stanisaw poniatowski modernized following ideal enlightenment half century century weakened partitioned period forced diplomacy military action uprising fell prussian rule losing importance emperor napoleon marched eastward army reestablished polish state duchy eponymous capital short lived absorbed russian empire napoleon defeat russian rule remained capital russian rule reestablished russian tsar hereditary king political independence westernmost major city russian empire enjoyed economic growth commercial industrial repeated uprising attempt regain independence failed enriched creation cultural educational institution surviving growth curbed double line military fort protecting strategically important russian outpost half century dense overpopulated city aid failing hygiene authority started constructing pioneering waterwork led william lindley district heating hot water installation laid turn century electrified gaining electric power plant electric tramway telephone network start world war bustling modern million inhabitant rife opulent belle epoque architecture adapted density world wars regained independence capital independent country suffered heavily war soon threatened advancing soviet force repelled border battle political instability struggle ensued enjoyed economic growth optimism proper attention planning urbanism period benefited greatly especially last interwar president stefan starzynski gained state art airport okecie railway station connecting major railway link terminate experimental broadcasting station modern attractive planned residential district created outside historic fort line notably northward zoliborz bielany continued mix old modern building filled gaps replaced older building providing eclectic look today development later destroyed extent world war instrumental shaping ways today rebuilt exactly similar form survived world war world war occupied nazi surrender major fight affected building destroyed infrastructure building damaged german authority treated expendable grand plan totally rebuilding planned war germanic nazi symbolism replacing polish heritage fruition explained little heed paid preserving periodically bombed soviet force especially tragic period jewish population significant general population pretty history nazi force confined jews ghetto sprawling srodmiescie district wola proceeded plan annihilate german carried grossaktion warschau jewish taken treblinka death camp minority jews stayed ghetto eventually carried ghetto uprising uprising failed thousand jews killed sent concentration camp final period war dramatic tragic uprising took ghetto uprising uprising entirely separate historic event furious fuhrer ordered obliteration indiscriminate massacre pole despite combat gallantry limited weapon supply polish partisan liberate german force soviet marched red army captured crippled razed cementing fate communist satellite state soviet union post world war rebuilding completely destroyed estimated destroyed entire historic significant building million inhabitant half died war vast majority jewish population forcibly removed escaped voluntarily initial population inhabiting ruin rebuild enormous task hesitation resolve achieve special committee architect urban planner conducted effort paradigm shaped today hand meticulous effort restore oldest important historic building extant documentation old photo painting communist ideology ran character pre war practical reason urban planning opportunity dictated planning larger scale envisaging expansive lower density architect historian held late century architecture low regard historic building rebuilt resemble shape century earlier ideological practical reason limited restoration ornamentation important building centralized urban planning provided harmonious look rebuilt historic section witnessed war restoration mostly completed early took rebuild royal castle royal castle building restored notable exception building side plac teatralny recreated late apart historic restoration gained fair share socialist realistic architecture monumentalism ideologically themed decoration prominent example controversial palace culture science grew become symbol emphasis housing returning rapidly growing population gained nondescript gray residential building population continued grow mean scarce centrally planned socialist economy authority turned prefabricated concerte creating sprawling plattenbau estate contemporary fall communism developing rapidly hard recognize saw ago change constantly taking easiest employment reason polish inhabitant generation originating country seem imitate city peculiarity capital example communist era bar mleczny lit milk bar remain operation essentially cheap cafeteria frill working class traditional polish dining remained incredibly face westernization europe largest outdoor marketplace old stadium disappeared national stadium built euro football championship frederic chopin maria skodowska curie wadysaw szpilman pola negri old inscribed unesco world heritage list walk explore street square painstakingly rebuilt last war check tumultuous history metropolis side vistula river explore special associated uprising especially took ghetto happened book guided walk discover changed fall communism major sightseeing attraction concentrated srodmiescie surrounding district exception park palace wilanow check attraction vistula river bank said district want research refer district article detail said probably old recreated oldest royal castle stroll krakowskie przedmiescie nowy swiat street part royal route travel royal route trakt krolewski linking royal castle royal palace wilanow paac krolewski wilanowie nbsp kilometer farther azienki park chopin monument attend air concert summertime elevator palace culture science panoramic view photo modern symbol important museum uprising museum national museum polin museum history polish jews relax vistula boulevard bulwary wislane spreading vistula bank explore tour old surrounding district sufficiently compact allow excellent walking tour history filled street youll amazing thing miss detail reception desk hostel hotel concert performance home professional musical play company capital mean polish national opera philharmonic national philharmonic call home company play company theater likely interest traveller presto music agency organise chopin concert venue headline music acts perform bemowo airport bemowo district stadion narodowy national stadium praga poudnie district smaller acts hosted club concert hall primarily festival cross culture festival world music festival concert music workshop documentary screening exhibition jewish culture festival singer film festival planete doc film festival documentary film burn selector festival electronic alternative music festival orange festival pop music festival horse racetrack suzewiec summer jazz autumn international festival contemporary music grand final orchestra christma charity fina wielkiej orkiestry swiatecznej pomocy annual charity event thousand fundraiser street concert defilad square bankowy square colourful studio access street mass street runs event activity district attraction paid donation collection box raised money spent quality medical equipment children hospital sunday night museum opportunity wander date friend grab ice cream cone cafe stay late museum gallery stay past midnight noc muzeow occur mid sport football national soccer game played stadion narodowy national stadium multi purpose arena river bank legia warszawa play soccer ekstraklasa tier home ground pisudski stadium polish army stadium capacity azienkowska southeast polonia play liga tier kazimierz sosnkowski stadium capacity old eagle play american football american football field tobruk ave atms polish bankomat plentiful visa mastercard visa electron maestro widely accepted establishment amex diner club commonly accepted indoor shopping mall polish centrum handlowe centra abbreviated plentiful mall food court restaurant cinema sport hall billiard table bowling alley auchan carrefour largest supermarket europe present offering everything grocery low price biggest supermarket chain biedronka lidl quality unbeatable price law passed allow shop sunday shopping sunday count smaller shop owner work globally renowned culinary scene lack nothing compared european capital regard wide choice eatery basic cheapest sophisticated type food throughout finding unique dining experience feasible budget kebab shop sprinkled especially srodmiescie decent food portion fair price kebab cheap alternative milk bars discussed later section vietnamese restaurant haute cuisine looking premium dining experience chance srodmiescie royal route praga head saska kepa fair share upscale restaurant wilanow innovative crop unexpected location acquaint district guide latest tips home polish restaurant hold michelin star atelier amaro author cuisine restaurant chef wojciech modest amaro restaurant carte dish fact doesnt fixed menu smart casual dress code expected sense private dining restaurant author cuisine chef andrea camastra reservation required food fair trend food fair fresh foodstuff bought directly producer processing preparation home ready dish consumption site space communal meal provided option breakfast lunch option targ sniadaniowy organised weekend part fast food happy know shortage fast food rife mcdonald subway outlet kfcs pizza huts growing burger king restaurant latter mostly shopping centre quick bite chain cafe corner shopping centre office building pre sandwich salad sophisticated cafe salad ciabatta sandwich site particular polish kind fast food traditional polish cuisine lend quick preparation quick eating therefore apart international chain niche filled kebab cheap pizzeria similar ones european city pizzeria chain telephone delivery takeaway table premise kebab takeaway night delight taxi driver partygoer milk bars remnant communist era milk bars polish bar mleczny bary mleczne created serve cheap meal based milk product fall communism survived bear climate old everything inside look feel smell milk bars attract student senior citizen low price soup course together cost little food served milk bars actually palatable afford expensive meal milk bars interesting somewhat view life democratization nowaday chain milk bars recreated milk bars touch screen ordering kiosk multilingual menus old trzech krzyzy nowy swiat chmielna krakowskie przedmiescie srodmiescie saturated cafe coffee typically cost beer cost half liter supermarket price price club drinking alcoholic beverage public prohibited chosen government possible club club plentiful spend nearly night chic club mazowiecka srodmiescie denied entrance wear sport shoe matter expensive inconspicuous black shoe normally trick student club moderately priced hit miss normally centrally hybrydy option night student club stodoa srodmiescie predictable quality isnt necessarily concern club patron point drunk cheap beware certain bouncer example park talkative kind suspect addition club wola mokotow earth club praga district tea coffee throw stereotype door pole important staple quench thirst wodka beer tea coffee youre likely dozen dozen cafe chain wise coffee heaven biegu cafe player starbuck real treat cafe littered cup tea coffee cup tea kettle

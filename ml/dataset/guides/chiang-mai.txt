@@ -2,11 +2,12 @@ Chiang Mai, Thailand
 Labels: culture, nature, food | Split: test
 Source: https://en.wikivoyage.org/wiki/Chiang_Mai (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (73,027 characters) =====
+===== CLEANED GUIDE TEXT (73,057 characters) =====
 
 Chiang Mai (เชียงใหม่) is the hub of northern Thailand. On a plain at an elevation of 316&nbsp;m, surrounded by mountains and lush countryside, it is much greener and quieter than the capital and has a cosmopolitan air and a significant expatriate population, all factors which have led many from Bangkok to settle permanently in this "rose of the north".
 
 Understand
+
  
 With a population of over 127,000 registered residents in the city municipality (as of 2016), and 1.2 million in the urban city area as of 2022, it is Thailand's second-largest city. 
 Founded in 1296 CE, Chiang Mai is a culturally and historically interesting city, at one time the capital of the ancient Lanna kingdom. In the rolling foothills of the Himalayas 700&nbsp;km north of Bangkok, until the 1920s it could only be reached by an arduous river journey or an elephant trek. This isolation helped preserve Chiang Mai's distinctive charm, which remains intact.
@@ -20,6 +21,7 @@ Modern-day Chiang Mai has expanded in all directions, but particularly to the ea
 Locals say you've not experienced Chiang Mai until you've seen the view from Doi Suthep, eaten a bowl of kao soi and purchased an umbrella from Bo Sang. Of course this is touristic blather, but kao soi, Bo Sang umbrellas and Doi Suthep are important cultural icons for the locals.
 
 Orientation
+
 Chiang Mai's most salient physical feature is the moat and the remains of the wall surrounding the old city. About 6.5&nbsp;km in circumference, it is the reference point for navigating around the city.
 
 The east and west halves of the old city each have their own character. The east side has the highest concentration of guesthouses, restaurants, motorbike rental shops, travel agencies, and other tourist-oriented services. In particular, the northeast corner is a warren of guesthouses, restaurants, massage parlours, and other businesses catering to visitors. The western half is more Thai, with a school for the blind, a coffin shop, the Chiang Mai branch of Thailand's National Library and five or six mostly table-top barbecue restaurants (หมูกระทะ mǔu grà~​tá) almost always packed with Thai customers.
@@ -55,7 +57,9 @@ Hua Lin Corner. "Hua" means "head" and "lin" means "aqueduct". At this corner th
 
 
 See
-===Gardens and nature===
+
+Gardens and nature
+
 * 
 Chiang Mai Foreign Cemetery. A place of history and remembrance. A statue of Queen Victoria is overlooking the place.
 
@@ -73,6 +77,7 @@ Doi Suthep. A ride for the temples and sunset to Doi Suthep is a rewarding trip 
 :Getting there and away: Clearly marked songthaews leave from the 7-eleven at the Chang Phuak Gate. Most only go until Wat Phrathat Doi Suthep, where the majority of tourists ends up. Prices should be 80 baht or less as of 2025. The drivers will wait until they have sufficient passengers (5 or more) before they depart, potentially making for a lengthy wait. The driver may offer to leave without the minimum number of people if the current passengers are willing to pay extra. Another option is to get to the northern gate of Chiang Mai University, where there will be several songthaews waiting on Huai Kaew Rd to get a full load of passengers for a trip up the mountain. They seem to congregate around the Chiang Mai Zoo. However, instead of waiting for additional passenger here, you can also just hail any songthaew going by and up the mountain. Prices range from 50 baht for a one-way trip to Wat Prathat Doi Suthep to 180 baht for a full round-trip tour, including the temple, Bhubing Palace Gardens, and the hill tribe village. But you may have to wait until there are sufficient people, who want the same tour or be prepared to pay more. You can also get between many of these places by hitch-hiking, by walking or by buying point-to-point tickets at the time you want them. Any songthaew up the mountain road may be a trial for those prone to motion-sickness, so take appropriate precautions. The journey from the city can also be made by motorcycle or a bicycle (with appropriate gearing). The final 12&nbsp;km from the zoo onwards is entirely uphill and will take 60-90 minutes if cycling.
 
 Museums
+
 * 
 Chiang Mai Historical Centre. This modern multimedia history and cultural education centre has guides dressed in elegant traditional Thai clothing who will usher you into an air-conditioned room to watch an English-subtitled orientation video about Chiang Mai and the north. Next, you will be pointed to a series of rooms documenting the region's history and culture in chronological order from the pre-Muang period (7,000-12,000 years ago) to the early river civilizations, to the early kings through the wars with the Burmese and the last dynasty, to the city today and its plans for the future. Other rooms are devoted to Buddhism and other regional beliefs, agricultural history, hill tribe peoples and other regional cultures, and a run-down of the royal dynasties. The exhibits consist of a smart visual mix of video, scale models, enlarged photos, wall murals and text in Thai and English. This complex also shared with the Chiang Mai City Arts & Cultural Centre
 
@@ -108,7 +113,9 @@ Lanna Architecture Center. Located in the Khum Chao Burirat Mahain Building, a t
 
 
 Temples
-====Inside the old city walls====
+
+Inside the old city walls
+
 * 
 Wat Chedi Luang. Almost in the centre of Chiang Mai are the remains of a massive chedi that toppled in the great earthquake of 1545. The temple was originally constructed in 1401 on the orders of King Saeng Muang Ma. In 1454, reigning King Tilo-Garaj enlarged the chedi (pronounced jedee) to a height of 86 m. After the earthquake, the chedi lay in ruins until 1991-92, when it was reconstructed at a cost of several million baht. A magnificent testament to Lanna (northern Thai) architecture and art, restored sections hint at its former glory. Wat Chedi Luang is also home to the "Pillar of the City", a totem used in ancient Thai fertility rites.
 
@@ -123,6 +130,7 @@ Wat Phra Singh. Probably Chiang Mai's best-known temple, housing the Phra Singh 
 
 
 Outside the old city walls
+
 * 
 Wat Chet Yot. The history and unusual architecture scattered under the yawning canopy of ancient trees is a pleasant antidote to the flash and bustle encountered at popular temples. Established in 1455 to host the eighth World Buddhist Council, many features of the grounds imitate significant places of the Buddha's enlightenment. Originally called Botharam Maha Vihata in honour of the venerated Bodhi tree, it came to be known as Wat Jet Yod by locals, after the seven spires (Jet Yod) protruding from the roof of the Vihara. The square-sided design of the Virhra is a replica of Mahabodhi temple in Bodh Gaya, India, though the translation has distorted proportions somewhat. Remnants of the graceful stucco relief murals that adorned the walls depict angels with a distinctly Indian flavour. The grounds also hold some more recently built, but abandoned looking, eroded chedis and buckling bases of vanished halls, overshadowed by a fully intact, though more diminutive, replica of Chedi Luang that was built around 1487 to house the ashes of King Tilokarat.
 
@@ -160,9 +168,12 @@ Wat Lok Moli. Wat Lok Moli is a historic Lanna-style temple dating back to the 1
 Do
 
 
+
 Festivals
 
+
 The most important festivals
+
  
 * 
 Chiang Mai Flower Festival. It is a three day festival staged every year starting the first Friday in February (in 2026, due to elections one week later). The city is awash with vibrant colours ranging from the electric orange and lilac colours of the bougainvillea to the velvety blossoms of petunias in all shades of pink, white, and purple. The strident red of the poinsettias, bought by many at Christmas and New Year, is echoed by beds of scarlet salvias. Homes and shop owners alike line the city streets with colourful flower boxes. The sheer profusion of colour that the flower festival and carnival brings to Chiang Mai aptly gives the city its name "Rose of the North". On all three days of the festival, prize blooms are on display at Nong Buak Had Park near the city centre. Many types of flower, miniature trees and orchida are put on display for the judges to choose the best of the species. Landscape specialists put on an elaborate display, which includes patios and waterfalls with exotic decorative plants and flowers. The best part of the flower festival is on Saturday. The parade lines up from the train station to Nawarat Bridge so the police close most of Charoen Muang Rd around 08:00. The VIP viewing stand is right next to the bridge in front of the Chiang Mai Governor's home. The parade route goes up Tha Phae Rd to the gate and turns left and follows the moat to Nong Buak Had Park. The parade moves at a slow pace and stops several times so there is plenty of time to take pictures of the colourful floats, pretty girls and hill tribe people in native costume. The paraders hand out roses to spectators lining the road. When the parade finishes everyone heads to Nong Buak Had where all the floats, award-winning flower growers and landscape projects are all on display. There are plenty of food stalls in the park, and in the late afternoon the Miss Chiang Mai Flower Festival starts. The party goes well into the evening until the new Flower Festival Queen has been chosen. This is a great time to visit Chiang Mai, as the air is cool and the evenings fresh and clear. If you want to see the festival make sure you book your hotels and flights well in advance.
@@ -177,6 +188,7 @@ Loi Krathong and Yi Peng Festivals. If you like candles placed in colourful pape
 
 
 Other festivals
+
 * 
 Bo Sang Umbrella & Sankampang Handicrafts Festival. Takes place around the third weekend of Jan at Ban Bo Sang, Sankampang. The festival is in the form of a "street fair" in which the central road of the village is used, with shops on both sides. Shops are decorated in Lanna-style, most with the well-known umbrellas, as well as with traditional lanterns. In addition there are contests, exhibitions, cultural performances, local entertainment, and assorted shows day and night. There is a grand procession decorated with umbrellas and local products, a variety of handicrafts for sale, northern-style khantoke meals and the Miss Bo Sang pageant.
 
@@ -191,6 +203,7 @@ Mae Jo Lantern Release. A huge lantern release (it is often referred to as the 1
 
 
 Hiking and nature
+
 * 
 Monk's Trail. A popular jungle hiking route through the forest to Wat Pha Lat and continuing up to Wat Phrathat Doi Suthep. Take a red songthaew to Chiang Mai University or Chiang Mai Zoo. Alternatively, you can also take a red sogthaew to Wat Phrathat Doi Suthep and begin your hike in the reversed direction. The route to Wat Pha Lat is considered easy to moderate (about 1 hr) and the route from Wat Pha Lat to Wat Phrathat Doi Suthep inclines steeper (about 1½ hr). Dress properly or bring a carf to cover shoulders and knees since the route passes through temples. About 280&nbsp;m before reaching What Pha Lat, there is a three way intersection, where there is a sign of an alternative route to an abandoned temple Wat Anagami. This 500-m route is more challenging but there is ropes helping you to climb. Also prepare yourself to cross one unbridged small stream via walking on the stones. From Wat Anagami you can return through the original route to continue your hike to Wat Pha Lat or try to catch a songthaew passing by and go back to city. Note that because almost no one comes to Wat Anagami so the songthaew usually will not stop there and you need to catch the driver's attention alongside the road. Best time to hike is morning, to avoid heat and increase the chance of encountering monks on the trail. If you want to skip the hefty fee, just walk in the opposite direction, or just use any of the two trails further south (see OSM), which will however probably have less sights on their way.
 
@@ -207,6 +220,7 @@ There are several companies who organize 2-3 day long hiking tours. The prices a
 * Doi Inthanon is the tallest mountain in Thailand, and there are hill tribe villages on its foothills.
 
 On the water
+
 * 
 Mae Ping River Cruise. Two-hour cruise with a refreshment stop at a Thai farmer's house. Hotel pick-up. Be aware that the Mae Ping is a grotty, slow-flowing stream the colour of greenish khaki with nondescript banks.
 
@@ -215,11 +229,13 @@ Mae Ping River Cruise. Two-hour cruise with a refreshment stop at a Thai farmer'
 Elephant parks
 
 
+
 Asian elephants share a close relationship with the Thai people, being used warriors on battlefields and worshiped as religious icons. They have also been used as laborers and loggers, though increasing legal protections have led to a transition towards exhibiting elephants for tourism.
 
 There's a number of elephant sanctuaries in the outer fringes of the urban area, especially to the north past Mae Rim and to the west near Samoeng. Most of these parks offer hotel pickup, and some have booking offices in the city center. Tours are typically for the day, but overnight tours and week-long volunteering experiences are widely available.
 
 Other activities
+
 * 
 Cycling. While you can rent a simple bicycle to go around the city from 50 baht per day, many companies in Chiang Mai offer more comprehensive cycling tours. If you like mountain biking, Doi Suthep offers trails for downhill trips.
 
@@ -249,7 +265,9 @@ Swimming. Chiang Mai swimming pools open to the public vary in quality, cleanlin
 
 
 Entertainment
-====Muay Thai (boxing)====
+
+Muay Thai (boxing)
+
 After football, Thai boxing is the national sport of Thailand. It can be seen in three different "stadia", in reality more like boxing rings in warehouses.
 
 * 
@@ -263,6 +281,7 @@ Tha Phae Boxing Stadium. It hosts around 8 fights per show, including a few matc
 
 
 Other sports
+
 * 
 Football (soccer). Go watch the local football team, Chiang Mai FC, play at 700 Year Stadium. Fixtures and info in English or visit the Red Lion English Pub in the Night Bazaar two hours before the game to get a free ride (nearly always available).
 
@@ -271,11 +290,13 @@ Cricket. Northern Thailand may seem an odd place to find an international cricke
 
 
 Theatre
+
 * 
 The Playhouse Complex. Start your evening with a unique dining experience in Kinnaree Park. Set in an eco-friendly environment, surrounded by mountains and waterfalls offering a real Lanna experience with traditional dance and a delicious northern Thai buffet before entering the theatre adjacent to the restaurant. The 350-seat capacity theatre hosts two shows per day at 20:00 and 22:00. Presenting Sequins & Dance, a fun and happy performance of wholesome entertainment that's full of sparkle, movement, and emotion. Performed by 30 Thai performers, it is exciting. Family, individual or group bookings welcome.
 
 
 Cinema
+
 * 
 Alliance Francaise. Screens French films, but frequently sub-titled in English. See the website for calendar of showings. The alliance also has an extensive library and exhibitions.
 
@@ -291,8 +312,10 @@ Major Cineplex Central Chiang Mai. It has the only IMAX screen in Chiang Mai, wh
 
 
 Buy
+
 Chiang Mai is a great place to shop. Sprawling markets during the day and night carry items from cheap trinkets to skillfully made local crafts.
 Books
+
 * 
 The Lost Book Shop. Large collection of used books. Fiction and non-fiction.
 
@@ -304,6 +327,7 @@ On The Road Books. Small bookstore with a nice selection of used books.
 
 
 Groceries
+
 * 
 Rimping Supermarkets. If you want Western foodstuffs like good bread, pickles, charcuterie, etc., pickings are slim in the vicinity of the Old City. 9 locations in the Chiang Mai area, map on the website. It's comparatively expensive, but they're one of the few supermarkets that sell western groceries.
 
@@ -315,6 +339,7 @@ Kasem Store. A small store a few doors up from Chang Moi Road, situated near but
 
 
 Housewares and workshops
+
 * Furniture and woodcarvings – Major woods and materials include teak, rosewood, and rattan. Items may be unadorned or, especially with teak and rosewood, carved in traditional or modern designs. Woodcarving is a traditional northern Thai art featured in numerous temples. In the 2010s, woodcarving increasingly embellished furniture, gracing screens, chairs, tables, beds, figurines, carved elephants.
 * Gold plated orchids and butterflies – Orchids and butterflies are preserved and plated with 24-carat gold to create unusual gift items such as necklace pendants, hairpins, and earrings.
 * Hill tribe products – These include silver ornaments, bracelets, necklaces, pendants, and pipes of intricate design, and embroidered items including tunics, jackets, bags, purses, caps, and dresses. For example, 
@@ -329,6 +354,7 @@ H & Hills.
 There are various factories offering factory tours along Rte 1006 (Charoen Muang Rd), just past the superhighway (Rte 11). Silverware, silk, furniture and brass items are generally priced with the cashed-up tourist in mind, but the tours might be worth a look to see how things are made. They are generally open during typical daytime hours.
 
 Malls
+
 * 
 CentralFestival. Measuring 250,000&nbsp;m², with 250 shops, it rivals the Central Plaza Chiang Mai in size. Central Festival opened in late 2013 and includes an ice rink, IMAX and 4DX cinemas, dozens of restaurants and shops on five floors. A food court on the fifth floor as well as at the ground floor level (with better prices). All banks and mobile phone companies are represented.
 
@@ -343,6 +369,7 @@ One Nimman. A shopping centre in pseudo-Italian style. Many smaller shops at the
 
 
 Markets
+
 * 
 Anusarn Market. During the day time the Anusarn Market area is devoid of any vendor stalls. All the permanent shops, bars, and eateries around the inside walls of the market area are open for business. Every afternoon the Anusarn Market vendors move in, erect their large tent type stalls and open. Good shopping, good restaurants, and in a back corner there is a ladyboy cabaret that puts on a one-hour show at 21:30 at a reasonable price. Haggling is expected at market stalls. Start by offering a price lower than what is asked.
 
@@ -391,11 +418,13 @@ Thae Market CNX. Lots of vintage and (2nd hand) cloths stalls at local prices �
 
 
 Cameras
+
 * 
 Film Camera Chiang Mai. Located outside the city, this shop has a lot of analogue cameras.
 
 
 Eat
+
  
 
 Chiang Mai's restaurants offer a wide range of food, second only to Bangkok. Naturally it's a good place to sample northern Thai food: in particular, hunt down some khao soi, yellow wheat noodles in curry broth, traditionally served with chicken (kai) or beef (nuea), but available some places as vegetarian or with seafood. Another local specialty is hang ley, Lanna-style pork curry. The area is also a home to a type of pork sausage called sai ua, which is favoured using chilli and various Thai herbs such as lemongrass, galangal and Kaffir lime. For those tired of eating rice or noodles there's also a wide range of excellent international food restaurants, from cheap hamburger stands to elaborate Italian restaurants.
@@ -407,6 +436,7 @@ The range and value of Western food in Chiang Mai is unsurpassed in Northern Tha
 It can be hard to find strictly vegetarian food in Chiang Mai, as fish and oyster sauce are used frequently, and the local Buddhist monks themselves often eat fish. Thus, asking for your dish to be prepared "like the monks", which works in other places, does not get the same results in Chiang Mai. There are a few completely vegetarian options.
 
 Food markets & roadside stalls
+
 * 
 Anusarn Market. A busy outdoor night market with lots of little Thai, Indian and Western restaurants and food vendors. Great atmosphere.
 
@@ -419,7 +449,9 @@ Suthep Road Moveable Feast. Dozens of food carts set up every evening around fro
 
 Budget
 
+
 Thai
+
 
 * 
 Lim Lao Ngow Fishball Noodle. Egg noodle and fishballs. Besides common egg noodle, they also offer a flat shape egg node using double proportion of eggs and Hong Kong style flour. Their original branch in Yaowarach (China Town in Bangkok)  was listed as Bib Gourmand in Michaelin Guide Bangko.
@@ -435,11 +467,13 @@ Sailomjoy Restaurant. Delicious food (Thai, Western and vegetarian), friendly se
 
 
 Burmese
+
 * 
 The Swan. Free Wi-Fi. Smoking and non-smoking areas. Charming restaurant with a tiny front but a cavernous interior. Good food at good prices. Those unfamiliar with Burmese food are in for a treat.
 
 
 Vegetarian
+
 
 * 
 Anchan Vegetarian Restaurant. Excellent vegetarian food.
@@ -462,7 +496,9 @@ Vegan Society. Vegan restaurant as well as a homestay.
 
 Mid-range
 
+
 Thai
+
 
 * 
 Ghekko Garden Bar and Restaurant. Highlights are lemon grass beef, sun-dried beef and chili crab. See the bar blackboard for daily specials.
@@ -478,6 +514,7 @@ Lemongrass.
 
 
 Western
+
 
 * 
 Archers Bar and Restaurant. Some say the baguettes are better than in France, which is nonsense, but they may well be the best in Thailand. Very well-run establishment, with outstanding food, great staff and ambience. Owners, Mark and Sa.
@@ -517,11 +554,13 @@ The Salad Concept. Order by completing a form which is then handed to the staff.
 
 
 Japanese
+
 * 
 Fuji. While perhaps not a special restaurant in that it is not unique to Chiang Mai (it's actually a large chain), for those seeking reasonably-priced Japanese food, Fuji is a must. There are several spectacular set meals that offer superb value, e.g., the Fuji Sashimi Set which can easily fill up a sushi lover
 
 
 Vegetarian
+
 
 * 
 Blue Diamond. Thai and Western, huge selection of items for breakfast, lunch and dinner. Great salads, fruits, fruit juices, noodle dishes, bakery, good breads. Very nice garden seating available.
@@ -538,13 +577,16 @@ Mr. Green. All vegan, high quality Thai dishes offered such as stir-fried noodle
 
 Vietnamese
 
+
 * 
 V T Namneung. Handsome 2-storey restaurant with air-con upstairs. Serves what amounts to Vietnamese tapas: spring rolls, salted pork ribs, nem; all with lots of leafy greens. Serve beer, but the fresh fruit juices are better. Do very little to cater to visitors as most everything is in Thai including signs and menus. At the entry have a shop that offers many of their products packaged for take-away. The website lists their catering offerings.
 
 
 Splurge
 
+
 Thai
+
 
 * 
 Galae Garden Restaurant. Thai food and grilled specialties, some of them regional, in a delightful outdoor setting.
@@ -557,6 +599,7 @@ Old Chiang Mai Cultural Centre. The first commercial khantoke dinner in Chiang M
 
 
 Western
+
 * 
 Arcobaleno Italian Restaurant. Open for lunch and dinner with a range of traditional Italian soup, pasta, antipasti, meat and vegetarian dishes. Homemade ice cream. Note: since March 2024 they moved to the address given here.
 
@@ -568,9 +611,11 @@ Piccola Roma Palace Italian Restaurant. Open lunch & dinner amid beautiful surro
 
 
 Drink
+
 Chiang Mai's nightlife is the most happening in the north, although still a far cry from Bangkok's hot spots. The busiest night life zones are near Tha Phae Gate, Loi Kroh Rd and along Charoen Rat Rd on the east bank of the Ping River.
 
 Coffee
+
 Chiang Mai is one of the top destinations for coffee tourism in Asia, and attracts visitors from many countries.
 * 
 Akha Ama. Moved to this new location from the Santitham area.
@@ -598,6 +643,7 @@ The Baristro Coffee Roaster. Small local chain of coffee places, this one is at 
 
 
 Alcohol
+
 Bars close at midnight in Chiang Mai. While the police is strict about this, it is not uncommon that bars close their front door, not letting in anyone anymore and continue playing music and serving drinks for another 1–3 hr.
 
 Many, but by no means all, of Chiang Mai's tourist-oriented bars and pubs are located along Loi Kroh Rd (ถนนลอยเคระห์), outside the southeast quadrant of the old city. In addition to the street bars, the Chiang Mai Entertainment Complex (CMEC) (the CMEC sign is not prominent. Much more so is a lighted sign in front, Loikroh Boxing Stadium) can be found at the Night Bazaar-end of Loi Kroh. Here you will find around 30 bars ranging from sports bars that feature big screens to watch sports and play pool, to Pattaya-style girlie "beer bars", to even bars staffed exclusively by kathoeys (ladyboys). The complex also features a muay Thai boxing ring that has exhibition bouts for free or a voluntary donation, and on some nights (varies) real competitive boxing that requires an entrance fee unless your bar has provided you with complimentary viewing. And for extra fun, the occasional Westerner climbs into the ring, usually with hilarious results.
@@ -605,6 +651,7 @@ Many, but by no means all, of Chiang Mai's tourist-oriented bars and pubs are lo
 Also take a stroll along Moon Muang Road and its side Sois 1 and 2. Here you can find small expat hangouts and sports bars. Most have pool tables and hostesses, along with music videos or various TV sport programmes. Be aware that despite their charm and friendliness, the pressure to purchase lady drinks can result in a very surprising tab at the end of the night.
 
 Gay bars
+
 * Since 2015 Chareon Prathet Soi 6 at Chiang Mai Night Bazaar has become home to many gay bars and is now known locally as gay soi 6. However, Soi 6 is not a gay-only street, as there are many other bars. The gay venues here are:
 :* 
 Friendly Bar. 
@@ -632,6 +679,7 @@ Sapphic Riot. A FLINTA/lesbian/queer/feminist bar.
 
 
 Live music
+
 The area along the east bank of the Mae Ping River on Charoen Rat Rd is famous for jazz, rock, pop, Thai, and country and Western live music, along with restaurants serving Thai, Western and Chinese food. Coming from the centre of the city, just walk from the Night Bazaar across the Nawarat Bridge, from where all the restaurants can be seen along the river on the left.
 
 Most bands in Chiang Mai play for about an hour, and then move on to do the same at another restaurant or pub, so don't be surprised to see the same band if you move venues.
@@ -662,6 +710,7 @@ The Sax Music House. Music groups of 6-8 persons, each group playing for about o
 
 
 Loi Kroh Rd (Night Bazaar area)
+
 * 
 Ben Cocktail Bar. A tiny, hole-in-the-wall (~15 seat) cocktail bar that just may serve the best cocktails in Chiang Mai. Certainly the best price/performance. Run by Ben, an irrepressible, animal-loving, lovely female and her partner, Keng. She is especially proud of her mojitos, but all the 270 cocktails on offer are delicious. The conversation is good too as she speaks excellent English. Free Wi-Fi. Great place to people watch.
 
@@ -676,6 +725,7 @@ Number 1 Bistro/Cafe. Great expat bar. Free Wi-Fi with electrical outlets spaced
 
 
 Nimmanhaemin Rd
+
 Northwest of the city centre, the area around Nimmanhaemin Rd is a popular hangout for younger Thais, perhaps due to its proximity to Chiang Mai University ("maw chaw"). The pubs tend to straddle a fine line between bar, restaurant and nightclub, and feature loud music interspersed with live bands fronted by musicians who are most likely hitting the books in the daytime. Tourists looking for something racier are better off staying in the east side of the city. Little English is spoken in this part of the city. Little doesn't mean none, however, and the staff of many bars, being students, still can understand what do you want, or even sometimes can speak English reasonably well.
 * 
 Mali Cat Cafe & Bar. The biggest cat cafe in Chiang Mai.
@@ -685,6 +735,7 @@ Warm Up Bar. This chain bar/restaurant/club has several venues in Thailand. The 
 
 
 Inside the moat
+
 * 
 The Writers Club. An old fashioned bar and restaurant purportedly for SE Asia's community of authors, journalists and screenwriters, though everyone's welcome. A good, informal source of information about SE Asia. This is where some of those writing guidebooks gather.
 
@@ -693,6 +744,7 @@ Zoe in Yellow. Very large indoor/outdoor bar and club with a dance floor, live m
 
 
 Clubbing
+
 The clubbing and electronic music scene has quite developed in the last years. And while you will certainly not find any venue packed with hundreds of people like in Bangkok, the local scene can still be considered a jewel and a must for all lovers of electronic music and their derivatives. However, clubs come and go, so keep your ears open for any new venues that have popped up.
 * 
 CaveCave 洞洞. A small club for about 50 people — positive atmosphere with Techno and Psy music or the accidental Old School Electro. Also, one of the less expensive venues with an according more alternative crowd.
@@ -709,6 +761,6 @@ Noise. A prominent and cozy Chinese Underground Techno Club, if that doesn't sou
 * 
 Red CNX. A western orientated club known for its energetic atmosphere with famous host DJs from time to time and electronic music genres like House and Techno. Young and hip. Due to its size (more than 150 people), it will need a decent crowd to be fun. Don't pay entrance if you are not 100% sure that there is a crowd inside, ready to let loose.
 
-===== TOKENS THE MODEL TRAINS ON (5,812) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (5,812) =====
 
 hub plain elevation nbsp surrounded mountain lush countryside greener quieter capital cosmopolitan air significant expatriate population factor led settle permanently rose population registered resident municipality million urban largest founded culturally historically interesting capital ancient lanna rolling foothill himalaya nbsp reached arduous river journey elephant trek isolation helped preserve distinctive charm remain intact historical walled thai dialect hence translate section wall dating restoration decade ago remain gate corner rest moat remain inside remaining wall temple dating founding principality combination burmese lankan lanna thai style decorated beautiful wood carving naga staircase leonine angelic guardian gilded umbrella pagoda laced gold filigree famous wat phrathat doi suthep overlook mountainside nbsp modern expanded direction particularly bank ping river mae nam ping changklan famous night bazaar bulk hotel guest house loi kroh night life local say youve experienced youve view doi suthep eaten bowl kao soi purchased umbrella sang course touristic blather kao soi sang umbrella doi suthep important cultural icon local orientation salient physical feature moat remain wall surrounding old nbsp circumference reference point navigating halve old character side highest concentration guesthouse restaurant motorbike rental shop travel agency oriented service particular northeast corner warren guesthouse restaurant massage parlour business catering half thai school blind coffin shop branch national library mostly table barbecue restaurant muu gra packed thai customer clockwise oclock feature moat environ chang phuak gate built king mangrai formerly hua wiang head gate considered important king saen muang built albino elephant chaang pak monument outside gate reign gate changed gradually reflect presence traditionally king entered gate coronation taking road take intra provincial bus station named chang phuak onward mae rim pai rai lao border phum corner taking turn point take superhighway straight lead bridge ping river beyond rail bus station turning parallel boundary moat tha phae gate built ruak gate nearby village tha phae mean raft landing outer tha phae river gate inner tha phae raft landing supplanted bridge tha phae gate rebuilt vicinity far useful contain greatest service night bazaar lies due min walk seem plaza adjacent gate sunday walking street market originate katam corner katam fishtrap water flowing hua lin corner collected corner pond fish corner took tool catch fish turning lead river ping gate built founding king mangrai traditionally start road lamphun reconstructed rebuilt nearby fresh market selling foodstuff adjacent food stall throughout especially evening street wualai road walking street market saturday saen pung gate mentioned historical record traditionally transport dead crematoria outside proper huang corner refer stupa kuu containing ashe person named huang rebuilt turning lead airport plaza shopping airport suan dok gate sign misspelled english saun dok little vicinity interest outside gate suthep road lead wat suan dok university hua lin corner hua mean head lin mean aqueduct corner brook huuai kaeo lifted rampart provide fresh water settlement turning lead nimmanhaemin district university maya mall onward doi suthep garden nature foreign cemetery history remembrance statue queen overlooking zoo aquarium park specy animal extremely thai queue encountered thai holiday zoos animal nevertheless kept enclosure zoo operate dual pricing system wherein non thais charged approximately double price thai national additional charge applied aquarium animal fed charge baht park pretty expect plenty hill want walk complete route taking tram air cart faster convenient last tram start possible drive car parking spot animal exhibit rental scooter bike definitely bring zoo close wander exit gate past closing bhubing palace royal winter palace lavishly landscaped garden public dress code strictly applied dress modestly pay baht fisherman pant cover lack leg ankle gender palace built particularly exciting extensive garden picturesque amazing plant life carefully tended tropical flower century old tree giant bamboo sign bottom hill zoo indicate close wat prathat doi suthep travel direction similar doi suthep ride temple sunset doi suthep rewarding trip view wat phrathat doi suthep attraction want consider visiting beside course mountain nbsp road wat phrathat doi suthep bhubing royal palace garden sunset viewpoint nbsp downhill side road road doi pui tribal village oriented worth trip shop handicraft etc far country originally myanmar village require entrance fee baht enter flower garden women picture traditional clothe hill tribe opium museum museum poor condition baht enter hill tribe waterfall man clearly marked songthaew leave eleven chang phuak gate wat phrathat doi suthep majority ends price baht driver wait sufficient passenger depart potentially making lengthy wait driver leave minimum current passenger willing pay extra another option gate university songthaew waiting huai kaew load passenger trip mountain seem congregate zoo instead waiting additional passenger hail songthaew mountain price range baht trip wat prathat doi suthep baht round trip tour temple bhubing palace garden hill tribe village wait sufficient want tour prepared pay hitch hiking walking buying point point ticket want songthaew mountain road trial prone motion sickness appropriate precaution journey motorcycle bicycle appropriate gearing final nbsp zoo onward entirely uphill minute cycling museum historical modern multimedia history cultural education guide dressed elegant traditional thai clothing usher air conditioned room watch english subtitled orientation video pointed sery room documenting region history culture chronological order pre muang period ago early river civilization early king wars burmese last dynasty today plan future room devoted buddhism regional belief agricultural history hill tribe people regional culture run royal dynasty exhibit consist smart visual mix video scale model enlarged photo wall mural text thai english complex shared arts cultural national museum history university art museum exhibition undergraduate fine arts department university change work display quality month art exhibition featuring work artist southeast asia museum host musical concert adjoining theatre museum world insect natural wonder asia unusual museum housing butterfly beetle etc selection mineral explanation english thai philatelic museum museum stamp postal related object telecom museum history evolution telecommunication service technology highland discovery museum museum little peninsula pond air museum nbsp building house style tribe shop selling clothe bags hill tribe product lanna traditional house museum traditional wooden house thai region lanna culture treasury museum money museum focused run government treasury department heritage building plan shoe kalm village community culture space host workshop mini loom weaving meditation lanna architecture khum chao burirat mahain building storey house example influence native architecture early time video photo model traditional thai building postcard pencil tees khum chao burirat stamp thai building picture stamp booklet temple inside old wall wat chedi remain massive chedi toppled earthquake temple originally constructed order king saeng muang reigning king tilo garaj enlarged chedi pronounced jedee height earthquake chedi lay ruin reconstructed cost million baht magnificent testament lanna thai architecture art restored section hint former glory wat chedi home pillar totem ancient thai fertility rite wat man oldest temple presumed date founded famed buddha statue old respectively king mengrai allegedly lived constructed enshrined wat man tiny crystal buddha called pra seh taang kamaneeee thought power bring rain another called phra sila khoa reflect fine workmanship indian craftsmen thousand ago wat phra chao mengrai atmospheric temple wihan building beaten track quiet gently crumbling wihan building house important buddha phra buddha rupa phra chao mengrai wat phra singh probably temple housing phra singh completed historical interest wihan lai kham featuring lanna style temple mural intricate gold pattern red lacquer behind altar chedi built king pha house remain father king kam typical scripture repository temple repository designed keep protect delicate mulberry paper sheet monk scribe keep record write folklore stucco covered stone base repository protected delicate scripture rain flood pest wall chapel covered mural illustrating lanna custom dress scene life lovely lai kam chapel house revered phra singh buddha head stolen reproduction admission ticket leaflet form containing useful information map wat phra singh complex temple attractive songkran thai mid outside old wall wat chet yot history unusual architecture scattered yawning canopy ancient tree pleasant antidote flash bustle encountered temple established host eighth world buddhist council feature ground imitate significant buddha enlightenment originally called botharam maha vihata honour venerated bodhi tree came wat jet yod local spire jet yod protruding roof vihara square sided design virhra replica mahabodhi temple bodh gaya translation distorted proportion somewhat remnant graceful stucco relief mural adorned wall depict angel distinctly indian flavour ground hold recently built abandoned looking eroded chedis buckling base vanished hall overshadowed fully intact diminutive replica chedi built house ashe king tilokarat wat phrathat doi suthep quintessential gilded chedi visible clear built lanna thai period legend temple site selected elephant sent roam mountain side reaching suitable spot trumpeted circled time knelt promptly died interpreted sign indicating auspicious site temple grand view reward effort accent plus steep step naga lined stair climb strain altitude thin air fit opt cable car baht visaka bucha holiday traditional walk zoo temple vast number pilgrimage take wat pha lat building road turn actual temple view temple monk trail pass temple ground wat suphan ubosot building temple completely covered layer silver particularly impressive illuminated evening decorated detailed ornament silversmith site adding renewing decoration conversation monk introduction meditation offered temple women allowed enter interior ubosot building wat suan dok sided hall jumble roughly hewn buddha huge dazzlingly whitewashed chedi behind temple ground royal cemetery ashe collected princess dara rasmi wive king chulalongkorn wat ton kwen temple unusual architectural element road samoeng loop route wat umong mean tunnel temple ancient temple forest outside king mengrai built temple highly respected forest monk liked wander countryside hence isolated monk stay quietly meditate unusual tunnel chamber ground wall original painting bird animal visible stupa magnificent eerie statue fasting emaciated buddha break pond feed fish turtle meditation foreigner monk abbot speak little english wiang kum kam ancient built century king meng rai capital lanna flooded decided move capital nopburi srinakornping wiang kum kam flooded show path ping river changed temple department fine arts exploration temple began multiple brick ruin ancient temple tour wiang kum kam guide agency baht carriage baht rent bicycle ride road follow sign notice entering lamphun tall tree line road wat chedi liam formerly wat kham thai temple renovated burmese trader therefore decoration burmese style chedi renovated wat lok moli wat lok moli historic lanna style temple dating century festival important festival flower festival festival staged starting friday due election week later awash vibrant colour ranging electric orange lilac colour bougainvillea velvety blossom petunia shade pink white purple strident red poinsettia bought christma echoed beds scarlet salvia home shop owner alike line street colourful flower boxe sheer profusion colour flower festival carnival bring aptly give rose festival prize bloom display nong buak park type flower miniature tree orchida put display judge choose specy landscape specialist put elaborate display patio waterfall exotic decorative plant flower flower festival saturday parade line train station nawarat bridge police close charoen muang vip viewing stand bridge front governor home parade route tha phae gate turn follow moat nong buak park parade move slow pace stop time plenty picture colourful float pretty girl hill tribe native costume parader hand rose spectator lining road parade finish everyone head nong buak float award winning flower grower landscape project display plenty food stall park late afternoon miss flower festival start party evening flower festival queen chosen air cool evening fresh clear want festival sure book hotel flight advance songkran festival thai water festival biggest event songkran fun period spiritual renewal deeply rooted thai culture recognized unesco intangible cultural heritage festival blend ancient custom modern celebration making unique experience local celebrated thai begin early obvious sign youre middle festival soaked someone pouring bucket water squirting water gun tradition evolved tossing water poured holy statue water expected luck take form water fight undoubtedly drenched beware ice cold splash barrel water filled ice block staying cool hot humid month put mobile phone plastic bag loi krathong peng festival candle placed colourful paper lantern firework beautiful girl traditional dress parade float food party dont miss loi krathong festival last last night moon mae start festival saturday night simultaneously launching thousand thousand hot air balloon called khom loi loi krathong coincide thai lanna festival peng due difference old lanna calendar thai calendar peng held moon month lanna calendar meaning peng meaning month lanna language multitude lanna style sky lantern khom loi literally floating lantern launched air drift wind festival meant tam bun merit decorate house garden temple khom fai intricately shaped paper lantern form khom thue lantern carried hanging stick khom khwaen hanging lantern khom pariwat placed temple revolve due heat candle inside elaborate peng celebration loi krathong peng celebrated resulting light floating water light hanging tree building standing wall light floating sky festival sang umbrella sankampang handicraft festival take weekend ban sang sankampang festival form street fair road village shop side shop decorated lanna style umbrella traditional lantern addition contest exhibition cultural performance entertainment assorted show night grand procession decorated umbrella product variety handicraft sale style khantoke meal miss sang pageant inthakin tham boon khan dok pillar festival festival pillar spirit propitiated ensure continuity occur lunar calendar event focused wat chedi mae lantern release huge lantern release referred lantern release happen mae university saturday loi krathong dmc buddhist sect puts billed event connection lanna event promoted government official included program lantern release take ceremony begin release event charge respectful attire required alcohol forbidden targeted event cost baht occur following weekend hiking nature monk trail jungle hiking route forest wat pha lat continuing wat phrathat doi suthep red songthaew university zoo alternatively red sogthaew wat phrathat doi suthep begin hike reversed direction route wat pha lat considered easy moderate route wat pha lat wat phrathat doi suthep incline steeper dress properly bring carf cover shoulder knee route pass temple nbsp reaching pha lat intersection sign alternative route abandoned temple wat anagami route challenging rope helping climb prepare cross unbridged stream walking stone wat anagami return original route continue hike wat pha lat catch songthaew passing note come wat anagami songthaew stop catch driver attention alongside road hike morning avoid heat increase chance encountering monk trail want skip hefty fee walk opposite direction trail osm probably sight nature trail doi pui peak loop trail nbsp lead doi pui campsite doi pui peak uphill peak continue view point nbsp trail forest youre nbsp cooler hot season bring insect repellent rent motorbike songthaew take drive bhubing palace continue road turn nbsp turning bring mountain village continue narrow windy road nbsp reach pui campsite alternatively walk bhubing palace traffic sign mark start trail huay kaew waterfall natural pool foot doi suthep huay kaew look buddhist shrine kruba srivichai monument travelling past entrance zoo turn market shrine keep walking hill waterfall minute pool bottom waterfall enough swimming cool height summer dry season waterfall dry head ground pool fresh water student hanging nearby university happily practice english conversational skill bua tong waterfall sticky waterfall nbsp famous unique non slippery limestone rock allow climb waterfall slipping surrounding waterfall lush green providing beautiful backdrop exploration company organize hiking tour price mostly similar except book hotel course multiple office share booking company program similar package exist depending price duration program consist minivan pick drop light hiking guide sleeping hill village visiting hill tribe elephant zoo rafting basic food included ask sure possible leave bags booking office dao famous mountain hill tribe hike doi inthanon tallest mountain hill tribe village foothill water mae ping river cruise hour cruise refreshment stop thai farmer house hotel pick aware mae ping grotty slow flowing stream colour greenish khaki nondescript bank raft trip mae tang river offered company combined elephant riding mountain biking dry season water level relatively low grade rapid rainy season higher water level exciting grade trip kayaking surrounding region elephant park asian elephant share close relationship thai warrior battlefield worshiped religious icon laborer logger increasing legal protection led transition exhibiting elephant tourism elephant sanctuary outer fringe urban especially past mae rim samoeng park hotel pickup booking office tour typically overnight tour week volunteering experience widely activity cycling rent simple bicycle baht company comprehensive cycling tour mountain biking doi suthep trail downhill trip motorbiking explore trip doi suthep wat phrathat doi suthep beyond mountain reservoir perennial favourite bicyclist motorcyclist samoeng loop nbsp circuit mountain likewise mae son loop week inexperienced driver company special tour golf golfing destination beautiful mountain backdrop unrivaled service affordable green fees golfing impressive experience annual golf festival golf course cheap green fees rock climbing approximately nbsp crazy horse buttress nbsp orange black streaked monolith jutting green mae valley crazy horse boast bolted route system grade ideal destination beginner experienced climber alike spend exploring crag spend afternoon ground break exploring magnificent cave region aerobic aerobic session held car park tesco lotus superhighway weekday session welcomed regular water aerobic class incorporating tai yoga exercise held universe swimming pool yoga diversity yoga studio round massage training healing spas tennis play tennis gymkhana club lamphun land village land lanna sport club chotana palm spring moo mahidol sport complex stadium irrigation canal rte mae rim court court bookable advance flood lighting possible play evening cooler additional charge cover cost electricity nong buak haad park public pack old local gather sepak takra jogging yoga dancing evening morning chill cafe massage shop park swimming swimming pool public vary quality cleanliness accessibility balance pool operated internationally recognised standard water quality privately owned foreign investor entertainment muay thai boxing football thai boxing national sport stadia reality boxing ring warehouse kalare boxing stadium real muay thai fight monday friday bout ranging young novice champion local foreigner spoiler alert local win smallest stadia nearly air tent covering lighting authentic frenzied beer bar atmosphere location loi kroh boxing stadium fight held night week look flyer posted old fight feature thai fighter match foreign fighter muay thai family surrounded girlie bars break fight group ladyboy dance occasionally strip complex opened letting vendor flower seller tight budget able remaining fight tha phae boxing stadium host fight show match foreign fighter largest stadium food beverage served gambling prominently featured sport football soccer watch football team play stadium fixture info english red lion english pub night bazaar game ride nearly cricket seem odd international cricket tournament cricketer world gather tournament week tournament amateur player sprinkling test star held historic gymkhana club generally start theatre playhouse complex start evening unique dining experience kinnaree park set eco friendly environment surrounded mountain waterfall offering real lanna experience traditional dance delicious thai buffet entering theatre adjacent restaurant seat capacity theatre host show presenting sequin dance fun happy performance wholesome entertainment sparkle movement emotion performed thai performer exciting family individual group booking welcome cinema alliance francaise screen film frequently sub titled english website calendar showing alliance extensive library exhibition major cineplex ticket price depend duration film seat type honeymoon seat generally cost baht standard seat avoid crowd avoid thursday friday saturday night sure check language film prior booking children movy dubbed thai sfx cinema zigma cinestadium digital dolby atmo budget version dolby cinema dolby cinema major cineplex imax screen unfortunately broken shop sprawling market night carry item cheap trinket skillfully craft book lost book shop collection book fiction non fiction suriwong book essentially shop magazine shop book stationery shop selection language title wide variety thai title office supply pleasant ambience road book bookstore selection book grocery rimping supermarket want foodstuff bread pickle charcuterie etc picking slim vicinity old location map website comparatively expensive theyre supermarket sell grocery tops supermarket national chain supermarket selection food bread cheese wine beer tops location closest old behind mercure hotel chang phueak kasem store store door chang moi road situated warowot market walled ping river difficult item real powdered milk black loose leafed tea assorted cereal assorted pastry etc assortment foreign good vegetarian vegan food english spoken houseware workshop furniture woodcarving major wood material teak rosewood rattan item unadorned especially teak rosewood carved traditional modern design woodcarving traditional thai art featured numerous temple woodcarving increasingly embellished furniture gracing screen chair table beds figurine carved elephant gold plated orchid butterfly orchid butterfly preserved plated carat gold create unusual gift item necklace pendant hairpin earring hill tribe product silver ornament bracelet necklace pendant pipe intricate design embroidered item tunic jacket bags purse caps dress example hill shop airport selling clothe bags hill tribe product lacquer ware wood bamboo metal paper baked clay form receptacle ornament souvenir pottery product fired celadon produced form dinner sets lamp base decorative item mulberry paper product product distinctive design card notebook stationery boxe bags photo frame lantern gift wrapping paper silverware traditional skill guaranteed content pure silver invest bowl receptacle decorative item umbrella parasol inextricably associated sang villager engaged manufacture material silk cotton paper manufactured bark mulberry tree bamboo produced locally factory offering factory tour rte charoen muang past superhighway rte silverware silk furniture brass item generally priced cashed mind tour worth look thing generally typical daytime mall centralfestival measuring nbsp shop rival plaza size festival opened late ice rink imax cinema dozen restaurant shop floor food court fifth floor ground floor level price bank mobile phone company represented plaza airport floor food court bank atms multi screen cinema cultural attached selling craft food market extensive selection thai ready stall basement maya lifestyle shopping rimping supermarket lowest floor cinema floor late restaurant bars roof afford view nimman shopping pseudo italian style smaller shop ground floor kind department store floor cannot walk escalator floor possible downward escalator entire department store walk passing short flight stair warning sign approach escalator market anusarn market anusarn market devoid vendor stall permanent shop bars eatery inside wall market business afternoon anusarn market vendor move erect tent type stall shopping restaurant corner ladyboy cabaret puts hour show reasonable price haggling expected market stall start offering price lower asked gate market major shopping venue fruit vegetable meat fish local ring road vicinity numerous food stall kalare market covered arcade shop food court entertainment food court operate coupon system coupon cashier redeem adjacent food stall cheap dining market bars shop massage shop night bazaar huge indoor outdoor commercial maelstrom centred night bazaar building side changklan night bazaar considered entire region incorporate anusarn kalare market border ambiguous unimportant concerted effort identical stall selling oriented sunglass shirt textile watch luggage caps anything enough sell market stall rarely thai shopping side street anusarn kalare market wider offering sompet market moat northeast corner mostly fruit veg market local close hand guesthouse stock grub prepared meat meal tha phae walking street market enormous take block side ratchadamnoen ratchawithi ratchamanka prapoklao king monument past wat chedi street blocked traffic craft vendor layout handmade ware food vendor strewn throughout start everyone set runs late vendor start pack due amount family strict smoking drinking ban enforced fine baht warorot market sprawling indoor outdoor market supposedly local shop maybe worth look plethora fabric spice tea dried fruit piled aisle notice shop sell variety bargaining matter road flower fruit market world firework stand night street packed delicious food stall serve green wualai walking street old silver working district smaller version sunday market vendor market cater inflated price souvenir unauthentic experience following market authentic experience side spectrum sanpakhoi market produce meat food stall price weekend flea market flea market everything imagine odd wooden penis neglace watch car spare part electronic countless coin buddha amulet feel thai tradition live noon malin plaza night market night bazaar night malin plaza young thais proximity maw chaw nickname cmu mean evening crawling teen twenty something clothing young trendy cheap cheap restaurant abound table barbecue thae market cnx vintage hand cloth stall price shoe baht jacket baht hats baht interesting beyond ordinary food court numerous delicacy camera film camera outside shop analogue camera restaurant wide range food naturally sample thai food particular hunt khao soi yellow wheat noodle curry broth traditionally served chicken kai beef nuea vegetarian seafood another specialty hang ley lanna style pork curry home type pork sausage called sai favoured chilli thai herb lemongrass galangal kaffir lime tired eating rice noodle wide range excellent international food restaurant cheap hamburger stand elaborate italian restaurant khantoke dinner show spend evening khantoke dinner held professor kraisi nimanhemin wanted host special event friend leaving dinner held khantoke dinner historic relatively recent invention khantoke literally mean bowl low table khan bowl tok low table garden restaurant enjoy excellent thai meal beautiful setting range value food unsurpassed range restaurant australian british irish german italian spanish american mexican considering remote major centre population asia remarkable restaurant hard strictly vegetarian food fish oyster sauce frequently buddhist monk fish asking dish prepared monk work result completely vegetarian option food market roadside stall anusarn market busy outdoor night market little thai indian restaurant food vendor atmosphere kalare food air food court featuring thai classical dance performance nightly food paid pre purchased coupon suthep road moveable feast dozen food cart set evening huge variety inexpensive food table set pavement budget thai lim lao ngow fishball noodle egg noodle fishball beside common egg noodle flat shape egg node double proportion eggs style flour original branch yaowarach listed bib gourmand michaelin guide bangko koleang boat noodle serve authentic kuaytiow reua literally boat noodle rice noodle dark broth beef stuff lemontree sailomjoy restaurant delicious food thai vegetarian friendly service simple relaxed atmosphere burmese swan smoking non smoking charming restaurant tiny front cavernous interior food price unfamiliar burmese food treat vegetarian anchan vegetarian restaurant excellent vegetarian food guan vegan restaurant pure vegan restaurant canteen style rice choose huge variety dish display choose noodle soup sweet vegan satay khao soi ming kwan vegetarian buffet range thai vegan dish norm focus faux meat veggie sausage faux fish curry sauce course bamboo shoot stir fry noodle soup etc mean cook dish appear kitchen tien sieng vegetarian food delicious vegan buffet dish tofu mushroom lemon grass wrapped banana leave addictive het hom shitake protein gluten goody lovely steaming noodle soup addition meal youve arrived late want warm buffet dish earlier dish run arent remade vegan supply vegan heaven vegan restaurant wide variety meal usual thai dish vegan khao soi tom yam tom kha pad breakfast meal sandwich vegan hot dogs burger vegan society vegan restaurant homestay mid range thai ghekko garden bar restaurant highlight lemon grass beef dried beef chili crab bar blackboard special tauw inn thai food inside think clock museum front restaurant ceiling fans giving colonial atmosphere huen muan jai wooden lanna style building garden waiting table crowd outside winter period lemongrass archer bar restaurant say baguette nonsense run establishment outstanding food staff ambience owner mark chiangmai saloon american style burger steakhouse friendly staff atmosphere music video sport screen pool table internet popcorn peanut kind margarita chang beer tap everyday breakfast late cafe siam continental breakfast american breakfast offered hard early morning breakfast due hotel package deal dash restaurant bar possibly value wonderful ambiance indoor outdoor seating food cocktail dessert reasonable price cooking class offered site bedroom bath house rent baht duke ping river excellent american style dish dessert ribs burger pizza cheesecake etc bar imported beer wine family atmosphere children menu loud music entertainment food call delivery fourchette authentic restaurant old selection imported meat wine affordable price romantic air seating upstair art lounge sport bar food menu breakfast hash brown burger buffalo wing nacho panini salad sandwich thai food cheesesteak major sport shown ufc premier league nfl superbowl nba formula afl aussie rule nrl rugby pool table wifi norden restaurant modern european restaurant root inspiration scandinavia cooked swedish chef owner menu steak bbq ribs pizza nordic food quality food outstanding price tag reasonably priced omalley irish pub delicious cocktail excellent thai food inside air conditioned outside smoking seating interior closely resemble authentic pub thing tabasco lea perrin table soap towel toilet spotlessly clean cheap food superb portion generous salsa kitchen mexican restaurant red lion english pub draught guinness heineken imported blackthorn cider fuller pride belgian german beer pub favourite banger mash fish chip steak kidney pie steak pasta thai food live sport screen premier league football aussie rule rugby formula salad concept order completing form handed staff fast efficient food festival mall chaiyapoom moat japanese fuji special restaurant unique actually chain seeking reasonably priced japanese food fuji spectacular set meal superb value fuji sashimi set easily fill sushi lover vegetarian blue diamond thai huge selection item breakfast lunch dinner salad fruit fruit juice noodle dish bakery bread garden seating gulf restaurant lebanese owner chef cater middle food lover portion delicious tabbouleh tahini salad humus alongside fresh falafel flat bread shisha nargila water pipe mint tea pun pun vegetarian slow food thai vegetarian organic ingredient farmer vegan friendly option run self reliance seed saving outside green vegan quality thai dish offered stir fried noodle curry pumpkin curry favourite drink dessert art upstair vietnamese namneung handsome storey restaurant air con upstair serve amount vietnamese tapa spring roll salted pork ribs nem leafy green serve beer fresh fruit juice little cater everything thai sign menus entry shop product packaged website list catering offering splurge thai galae garden restaurant thai food grilled specialty regional delightful outdoor setting khum khantoke traditional thai cuisine seat reservation recommended old cultural commercial khantoke dinner ago thai food khantoke establishment seating show music arcobaleno italian restaurant lunch dinner range traditional italian soup pasta antipasti meat vegetarian dish homemade ice cream note moved address given house ginger old colonial style house thai food pacific rim fusion shop unusual houseware item premise piccola roma palace italian restaurant lunch dinner amid beautiful surrounding serving resident menu recipe website reservation recommended call transportation nightlife happening far cry hot spot busiest night life zone tha phae gate loi kroh charoen rat bank ping river coffee destination coffee tourism asia attract country akha ama moved santitham akha ama phrasingh door bigger floor chapter gem cafe set sprawling garden excellent coffee juice concoction mouthwatering bread dessert cool muang thai arabica coffee bean coffee run oil little excellent espresso based drink minute computer coffee modern design seating front air air conditioned oil speak excellent english happy give low ristr trendy art cafe featuring award winning barista world champion latte art choice single origin bean varied menu friendly atmosphere higher standard normally sky cafe situation busy road road pond horse bathed espresso brewed coffee bean baristro coffee roaster chain coffee river garden seat direct river website location alcohol bars close midnight police strict uncommon bars close front door letting anyone anymore continue playing music serving drink another mean oriented bars pubs loi kroh outside southeast quadrant old addition street bars entertainment complex cmec cmec sign prominent lighted sign front loikroh boxing stadium night bazaar loi kroh bars ranging sport bars feature screen watch sport play pool pattaya style girlie beer bars bars staffed exclusively kathoey ladyboy complex feature muay thai boxing ring exhibition bout voluntary donation night vary real competitive boxing require entrance fee unless bar provided complimentary viewing extra fun occasional westerner climb ring hilarious result stroll moon muang road side sois expat hangout sport bars pool table hostess music video sport programme aware despite charm friendliness pressure purchase lady drink result surprising tab night gay bars chareon prathet soi night bazaar become home gay bars locally gay soi soi gay street bars gay venue friendly bar orion bar ram bar locally owned gay owned straight friendly gay bar featuring show blow bar young crowd scale drag show thursday saturday approximately started later queen arrived later entrance fee drag show show stage simply space table side staff stand entrance door holding flashlight lightning connection bar ixcret night bazar building famous gay bar transitioning night club attract drag show cabaret show start midnight entrance fee minimum sapphic riot flinta lesbian queer feminist bar room decent dancing gay bar live music bank mae ping river charoen rat famous jazz rock pop thai country live music restaurant serving thai chinese food coming walk night bazaar nawarat bridge restaurant river band play hour move another restaurant pub dont surprised band move venue boy blue bar owner boy nephew legend took defunct brasserie monday night jamming night visiting musician blue legend chai chai blue bar fame join worth camellia music group person chit hole cnx beside funny kind draft beer ones music group person view thai variety rock jazz pop country music evening extensive menu thai chinese dish curry noodle rice pizza service bar serving wine beer spirit want early queue night gate jazz collective nightly jazz performance starting performer occasional guest audience surprisingly young crowd type music play music enthusiast performance mixed bag mediocre range stimulant ensure especially friend serve variety drink normally notably red white wine mojito mixed drink staff quick efficient price reasonable riverside restaurant live music start dinner music eagle beatle soft jazz starting music change rock pop restaurant crowded arrive early table riverside nightly dinner cruise departing baht person extra moat house rock blue band downstair bar chilled rooftop bar list cocktail beer wine sax music house music group person group playing hour collection liquor ones old glenfiddich loi kroh night bazaar ben cocktail bar tiny hole wall seat cocktail bar serve cocktail certainly price performance run ben irrepressible animal loving lovely female partner keng especially proud mojito cocktail delicious conversation speak excellent english watch cabaret show nightly revue dancing tune ladyboy lavish costume hour show tame family friendly children frequently audience dancing abba tune extravagant costume nudity show length perfect price surprising affordable fun happy hour precede show follow show dragonfly bar smaller bars loi kroh cosy stand friendly staff bar floor bustle street level enjoy relaxed atmosphere balcony bistro cafe expat bar electrical outlet spaced metre interval bar specialise belgian beer draught beer tap domestic guinness excellent kitchen serving thai farang food latter pricy pad thai baht cheeseburger expensive baht refuge red light district bar girl hassling loi kroh comfortably date excellent pool table baht game nimmanhaemin northwest nimmanhaemin hangout younger thais due proximity university maw chaw pubs tend straddle fine line bar restaurant nightclub feature loud music interspersed live band fronted musician likely hitting book daytime looking racier staying side little english spoken little doesnt mean none staff bars student want speak english reasonably mali cat cafe bar biggest cat cafe warm bar chain bar restaurant club venue venue touristy dance hall packed brim thai student inside moat writer club old fashioned bar restaurant purportedly asia community author journalist screenwriter everyone welcome informal source information asia writing guidebook gather zoe yellow indoor outdoor bar club dance floor live music outdoor seating multiple bars youre looking party foreigner close exactly midnight except special occasion songkran clubbing clubbing electronic music scene developed last certainly venue packed hundred scene considered jewel lover electronic music derivative club keep ears venue popped cavecave club positive atmosphere techno psy music accidental old school electro expensive venue according alternative crowd deaf shop vinyl listening bar cozy atmosphere seem serve shop night curated selection lps host event guest djs unique spot music lover fits tiny crowd dont late midnight close front gate continue raving dont worry scheme distort money liquid room blown edm club house techno trance regular international djs feature lively bar experience eclectic drink guest willing spend probably largest club noise prominent cozy chinese underground techno club doesnt sound racist dark venue likewise darker kind electronic music crowd enjoy deep experimental tune red cnx orientated club energetic atmosphere famous host djs electronic music genre house techno young hip due size decent crowd fun dont pay entrance sure crowd inside ready let loose

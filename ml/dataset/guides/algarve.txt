@@ -2,11 +2,12 @@ Algarve, Portugal
 Labels: beach, relax | Split: validation
 Source: https://en.wikivoyage.org/wiki/Algarve (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (5,312 characters) =====
+===== CLEANED GUIDE TEXT (5,319 characters) =====
 
 The Algarve is the southernmost region of Portugal, on the coast of the Atlantic Ocean. It is Portugal's most popular holiday destination due to the approximately  of clean beaches, the cool, unpolluted water, and the fact that it is relatively cheap, very safe, and overall welcoming.
 
 Understand
+
  
 
  
@@ -14,6 +15,7 @@ Understand
 The Algarve (ahl-GAHR-v(ih), /aɫ.ˈgaɾ.vɨ/) is rich in culture and diversity. If you are looking for fast paced resorts or a calm tranquil setting either is attainable. The entire region is around . Although the number of permanent residents is under 500,000 the area receives more than tenfold that in tourism each year. The busiest times of year tend to be July and August.
 
 History
+
 Following the neolithic period of the regions history, approximately 1000 BC, settlements and trading ports were established by the Phoenicians who were attracted by deposits of copper, manganese and iron. They came from the coastal regions of the eastern Mediterranean of modern-day Syria, Israel and Lebanon. Circa 550 BC Portimão was one of the ports founded by the Carthaginians who came from North Africa. In the 2nd century BC the region came under the control of the Romans as they spread throughout the Iberian Peninsular. Many Roman ruins still remain today throughout the Algarve and can be seen in many areas, but the best to visit are probably at the Milreu ruins,  from Faro, where buildings that started construction as a Roman villa later became a Christian Church.
 
 Following the collapse of the Roman Empire, the Visigoths took control of the Algarve until the invasion of the Moors from North Africa in 711 AD. At this time, the Visigoths who came from central Europe, were defeated in the Battle of Guadalete by a force of invading Arabs and Berbers.
@@ -25,12 +27,14 @@ Born in Porto in 1394, Prince Henry the Navigator based himself somewhere around
 Disaster struck on 1st November 1755, with a huge earthquake whose epicentre was reported to have been 200km South-West of the country and registering 9 on the Richter Scale. The coastal areas of the Algarve were devastated by the earthquake and subsequent tsunami. The devastation was not only limited to the Algarve, British naval reports from the period indicate the arrival of a huge wave in the port of Lisbon. The damage to Lisbon was almost total, and following huge political turmoil the person responsible for the reconstruction of the city was the Marquis of Pombal, the then Prime Minister.
 
 See
+
  
  
 * Benagil Cave, in Lagoa, is one of the most visited tourist attractions in the Algarve region.
 * Sagres Cape and St. Vincent Cape in Sagres
 
 Do
+
 * Beaches &mdash; over 100 different beaches, each unique in its own way. Marinha Beach (in Lagoa) is one of the most emblematic and was considered by the Michelin Guide as one of the 10 most beautiful beaches in Europe and as one of the 100 most beautiful beaches in the world
 * Golf &mdash; If you are a golf lover then you have come to the right place, with over 30 courses dotted throughout the region.
 * Hike &mdash;  there are over 30 hiking trails crisscrossing the region
@@ -43,15 +47,18 @@ Via Algarviana. A 300-km-long hiking path through the region.
 * Zoomarine near Albufeira is an 8-hectare amusement park, zoo, and aquarium. Presentations with dolphins, seals and sea lions, with tropical birds and birds of prey.
 
 Buy
+
 * Ceramics - the area is known for its hand-painted pottery and azulejos or tiles
 
 Eat
 
+
 The Algarve is famous for its hot and spicy Piri Piri Chicken, which can be found all over. Since it has a big and rich coast, it has a very interesting array of wonderful fish and seafood, from sardines to cataplanas, and many dry fruit sweets that will make your mouth water for more.
 
 Drink
+
 Medronho is a traditional fruit brandy, traditionally produced and drunk in The Algarve. Medronho can be fiercely potent and is available in variations ranging from unlabelled local homebrew bottles, moonshine style, to connoisseur tipples at more of a premium price range.
 
-===== TOKENS THE MODEL TRAINS ON (372) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (372) =====
 
 southernmost region coast atlantic ocean holiday destination due approximately clean beach cool unpolluted water fact relatively cheap safe overall welcoming ahl gahr rich culture diversity looking fast paced resort calm tranquil setting attainable entire region permanent resident receive tenfold tourism busiest time tend history following neolithic period region history approximately settlement trading port established phoenician attracted deposit copper manganese iron came coastal region mediterranean modern syria israel circa portimao port founded carthaginian came century region came control roman spread throughout iberian peninsular roman ruin remain today throughout probably milreu ruin faro building started construction roman villa later christian church following collapse roman empire visigoth took control invasion moor visigoth came europe defeated battle guadalete force invading arab berber followed period century rule iberia moor conquered faro called santa maria renamed faraon meaning settlement knight region owes origin moor knew region gharb meaning evidence moor throughout illustrated chimney stack pottery moorish style architecture particularly arabic castle silve castle built almoravid arab century red sandstone dried mud preserved moorish castle country century king afonso iii little help english mercenary finally evicted moor portuguese dominated region fully secure moorish attack middle century born prince henry navigator based somewhere lago sagre considered responsible discovery portuguese middle ages sending expedition island azore appointed governor province disaster struck huge earthquake epicentre reported country registering richter scale coastal devastated earthquake subsequent tsunami devastation limited british naval report period indicate arrival huge wave port damage total following huge political turmoil person responsible reconstruction marquis pombal prime minister benagil cave lagoa visited attraction region sagre vincent sagre beach mdash beach unique marinha beach lagoa emblematic considered michelin guide beautiful beach europe beautiful beach world golf mdash golf lover course dotted throughout region hike mdash hiking trail crisscrossing region algarviana hiking path region ria formosa natural park faro southwest alentejo vicentine coast natural park aljezur monchique mountain monchique zoomarine albufeira hectare amusement park zoo aquarium presentation dolphin seal sea lion tropical bird bird prey ceramic hand painted pottery azulejo tile famous hot spicy piri piri chicken rich coast interesting array wonderful fish seafood sardine cataplana dry fruit sweet mouth water medronho traditional fruit brandy traditionally produced drunk medronho fiercely potent variation ranging unlabelled homebrew bottle moonshine style connoisseur tipple premium price range

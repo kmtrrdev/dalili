@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import asyncio
 import json
-import logging
 import os
 import sys
 import time
@@ -24,7 +23,6 @@ from . import telemetry
 from .config import PROJECT_DIR, settings
 from .mcp_servers import activities, currency, flights, hotels, knowledge, maps, places, weather
 
-log = logging.getLogger(__name__)
 
 SERVERS = {
     "flights": flights,

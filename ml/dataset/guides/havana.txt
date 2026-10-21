@@ -2,18 +2,21 @@ Havana, Cuba
 Labels: culture, history, nightlife | Split: test
 Source: https://en.wikivoyage.org/wiki/Havana (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (19,554 characters) =====
+===== CLEANED GUIDE TEXT (19,568 characters) =====
 
 Havana (Spanish: La Habana) is the capital city of Cuba, and one of the fifteen provinces of the Republic of Cuba. Visitors come to Havana for its music, history, culture, architecture and monuments. Havana is a lively city that retains a lot of beautiful buildings from its heyday in the late 19th and early 20th centuries, many of which have been deteriorating since the 1950s, creating a romantic atmosphere of a bygone era.
 
 Understand
+
  
 Before the Communist revolution, Havana was one of the vacation hot-spots of the Caribbean, and since Cuba reopened to tourism in the 1990s, it has become a popular destination once again, albeit with many fewer U.S. citizens, due to an almost total ban on travel maintained by the U.S. federal government. However, there will be lots of tourists at any time of year, so expect huge crowds and long lines in places.
 
 History
+
 Havana was founded in 1519 by the Spanish. During the colonial period, it became a stopping point for treasure-laden Spanish Galleons crossing between the Old and New Worlds. Since independence from Spain in 1902, Havana has been the capital of Cuba. Today, the city preserves some of the oldest standing stone fortifications in the Americas.
 
 See
+
  
 
  
@@ -74,9 +77,11 @@ Colon Cemetery. One of the great historical cemeteries of the world, important i
 
 
 Do
+
  
 
 Outdoor activities
+
 * 
 Walk along the Malecón. On weekends this is where the locals come to party, so bring a bottle and join in.
 
@@ -100,6 +105,7 @@ National Theater. Come here for concerts, the Ballet Nacional de Cuba and teatre
 
 
 Live music
+
 
 
 Nearly every restaurant and hotel in town has a decent house band playing old favorites.
@@ -132,6 +138,7 @@ Legendarios del Guajirito. Similar to the Tropicana show but smaller and more im
 
 
 Buy
+
 Havana is a surprisingly expensive city to stay in; if you stay in hotels and eat in restaurants it can work out to be nearly as expensive as other popular international destinations. If you are on any kind of a budget, stay in casas particulares; it is much cheaper, often more comfortable, and the food (a recurring theme in Cuba) is almost invariably better.
 
 Although prices may be shown here in US dollars, you will pay in pesos (CUP).
@@ -143,10 +150,12 @@ You can withdraw money from your MasterCard in a couple of exchange offices. The
 The current unofficial exchange rate can be checked at eltoque.com. Near the airport a place with a good exchange rate is located near GPS 23.0055,-82.4142. In the city center, many money exchangers can be found at the intersection of Neptuno and Prado (23.1381, -82.3595) almost 24h.
 
 Eat
+
  
 Whilst restaurants can be quite expensive at the top end for rather mediocre food, some such as the Café de Oriente have a splendid ambiance. The average government-run restaurants are about US$20 for two.
 
 Budget
+
 Peso stalls are all over the city, particularly on Prado Marti.
 
 Some restaurants like Hanoi, in Calle Brasil, offer generous meals for the equivalent of US$5.
@@ -166,6 +175,7 @@ Hanoi. Old fashioned restaurant, with live music and no A/C. They even serve tra
 
 
 Mid-range
+
 Keeping your eyes open you can find complete menus (starter or salad, soup, main dish, dessert and a national beverage) for the equivalent of US$6-10 in pesos. In the Vieja, there are such restaurants in the smaller, not very crowded streets.
 
 A least one paladar charges a hefty per-person service charge on top of your bill (~US$10 per couple at Paladar Amistad de Lanzarote in Central Havana) - deceivingly printed in Spanish only in a bilingual English/Spanish menu. Also no matter what the owner insists, there is never a tax levied for eating at paladares. Always ask before ordering.
@@ -194,6 +204,7 @@ Castropol. Restaurant with Cuban-Asturian food. Lots of great appetizers that al
 
 
 Splurge
+
 The restaurants inside five-star hotels tend to charge excessive amounts of money for mediocre food and service.
 
 * 
@@ -201,12 +212,15 @@ La Fontana Restaurant. One of the most notable grill restaurants in Cuba. La Fon
 
 
 Havana Chinatown
+
 Check out the small Havana Chinatown a few blocks west of the Capitolio if you are looking for Chinese-themed restaurants. The food is neither spectacular nor authentic Chinese, but decent enough if you can't face another serving of rice and beans. Street food can also be a notch better here, try the area around the intersection of Avenida de Italia and Avenue Zanja.
 
 Breakfast
+
 All the tourist hotels serve breakfast, typically a buffet with a wide variety of good food, although overpriced (the equivalent of US$15 at the Hotel Nacional). If you stay in a casa particular ask whether you'll be served breakfast. If not, ask the landlord/lady to take you shopping. Otherwise, there's almost no hope of finding a restaurant open for breakfast. One exception is the Chan Li Po Bar-Cafeteria, open at 09:00, in Centro Habana, near Chinatown, at Perseverancia #453 (between Zanja and San Martin).
 
 Drink
+
  
 
 There are two types of establishments you can go to drink in Havana: Western-style bars with near-Western prices, good selection of quality drinks (and sometimes food), nice decorations, semi-motivated staff and often live music, typically found around tourist hot-spots such as Old Havana and tourist hotels. Here you will mostly meet other tourists, expats and a few Cubans with access to hard currency, but don't expect a 'local' experience. Bars with a sign saying "Hemingway drank here" will be pricier than others.
@@ -231,6 +245,6 @@ Los Buccaneros Hanoi. With the front of the Capitol building on your right from 
 * 
 Factoría Plaza Vieja. Brewpub located on the pretty Plaza Vieja. The pub has three main beers (light, dark and black), with seasonal additions. Beer cocktails, along with a meat-based food menu, also feature.
 
-===== TOKENS THE MODEL TRAINS ON (1,447) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,447) =====
 
 spanish habana capital fifteen province music history culture architecture monument lively retain beautiful building heyday late early century deteriorating creating romantic atmosphere bygone era communist revolution vacation hot spot caribbean reopened tourism become destination albeit fewer citizen due total ban travel maintained federal government expect huge crowd line history founded spanish colonial period stopping point treasure laden spanish galleon crossing old world independence capital today preserve oldest standing stone fortification america old habana vieja unesco world heritage site strolling street enjoying beautiful building part old dilapidated crumbling building restored former glory evening walk prado sip street life enjoying hums numerous cafe restaurant street illuminated night another favorite stroll local malecon waterfront stunning view museum revolution housed former presidential palace iconic museum history tour pre columbian revolution present socialist hint propaganda exhibition national capitol building completed neoclassical building resemble capitol housed cuban congress prior revolution national assembly partaga cigar factory guided original partaga factory give wealth information production cultivation tobacco cigar buying authentic cuban cigar expensive street fantastic quality club museum guided tour club famous rums exhibit subtitled english fairly self explanatory plaza revolucion huge square dominated statue monument jose marti iconic che guevara adorning ministry interior arrive early late swamped hot lennon park feature statue musician notable regularly stolen replaced eyeglass embassy heavily fortified guarded building cuban citizen apply visa notable displaying news unfiltered censored cuban government electronic billboard behind window floor switched focus regularly staged protest hotel habana libre hotel housed castro soldier took excellent selection photo lobby fast food restaurant fabrica arte cubano art club fabrica stage established inside former cooking oil factory gained notoriety premier nightclub art gala camara oscura enjoy extraordinary view camara oscura old cathedral built century redesigned church prime example baroque architecture house seat roman catholic archdiocese plaza arma spacious elegant square surrounded baroque construction give authentic colonial milieu laid replacing old plaza acted religious administrative military activity mid century military exercise parade remodeling favored meeting spot wealthy today cespede park honor country founding father monument stand square outstanding enlivened vendor antique classical book latin american world literature attraction remarkable historical value lay square capok tree ceiba mass founding officiated royal force castle oldest bastioned fortress world completed house premier maritime museum excellent exhibit cuba maritime past pre columbian century royal shipyard largest world built nearly ship spanish crown museum huge model santisima trinidad largest ship world century fort viewing harbour skyline museo nacional bella arte museum part international cuban art arte cubano art lover spend admiring work last century exhibited floor fortaleza carlo cabana restored fort century hold room exhibition arms che guevara evening cannon ceremony fire harbour bus parque fraternidad cross tunnel walk entrance stop smaller castillo tres santo reye magnis morro tunnel colon cemetery historical cemetery world important historical architectural term possible behind fence outdoor activity walk malecon weekend local party bring bottle join walk paseo prado lively pedestrian zone local spending latin american cinema festival event held screening international film drawing bike tour discover bike citykleta wide range shared private bike tour bike excursion event know tour old car driven style choose car hotel inglaterra outside museum revolution beach bus leaving hotel inglaterra minute ride take minute national theater concert ballet nacional teatre function held irregularly beware scam usher sell ticket shortly function start paying national price instead box office official price live music nearly restaurant hotel decent house band playing old favorite museo nacional bella arte regularly live music event cost cup check facebook page announcement hotel national host talent omara portuondo information zorra cuervo rampa tiny little club street level host funky amazing jazz musician little tropical venue designed hold thousand open live music look sign street publicising event casa musica centro habana dance salsa check program ticket rated salsa band playing night museo ron outdoor cuban music show called buena vista watch dinner bertolt brecht cultural dance interactivo wednesday night interactivo collaborative group cuban musician led pianist singer composer roberto carcass tropicana show cabaret show show legendario guajirito similar tropicana show smaller immersive live show ends venue turn nightclub till surprisingly expensive stay stay hotel restaurant work nearly expensive international destination kind budget stay casa particulare cheaper comfortable food recurring theme invariably price shown dollar pay peso cup atms hard downtown american credit debit card cannot credit card issued country issued bank parent company corporation case card work parent company bound law bank wholly owned non american company policy blocking cuban transaction order compromise business check bank credit card company leaving home card work atms accept mastercard maestro marked accept visa withdraw money mastercard couple exchange office basement hotel nacional expect steep service fees current unofficial exchange rate checked eltoque airport exchange rate gps money exchanger intersection neptuno prado whilst restaurant expensive mediocre food cafe oriente splendid ambiance average government run restaurant budget peso stall particularly prado marti restaurant calle brasil generous meal equivalent ice cream street booth scattered filling bocadito ham sandwich cajita meal cardboard box pizza particularly terminal omnibus plaza revolucion cafe offering fried chicken coppelia ice cream parlour practically cuban institution waiting hour seat chan restaurant upstair fully air conditioned look immaculate despite chinese restaurant serve european dish friendly service pizza cocktail old fashioned restaurant live music serve traditional cuban food black bean rice mid range keeping eyes complete menus starter salad soup dish dessert national beverage equivalent peso vieja restaurant smaller crowded street paladar charge hefty person service charge bill couple paladar amistad lanzarote deceivingly printed spanish bilingual english spanish menu matter owner insist tax levied eating paladare ask ordering mid priced restaurant chinatown bavaria picture restaurant named german province pronounced barbaria chinese decor serving pizza spaghetti aljibe suburb miramar aljibe definitive proof food neednt bland house specialty chicken sour orange sauce aljibe remarkably stocked wine cellar casa stylish restaurant nuevo vedado california style house typical dining room garden inviting intimate impeccable service consistency uncommon paladar tasquita lazaro paladar family run privately owned restaurant serve typical criolla food dining living room family dont expect anything glamorous term atmosphere hand staff friendly opportunity taste typical cuban food family prepare simply delicious seating limited advance dnext bar cafeteria serve mainly italian food sandwich cocktail price start establishment fully air conditioned ideal quick meal marino seafood restaurant pier harbour relax seafood beer mojito looking terrace breeze water pleasant warm price depend kind seafood order lobster expensive seafood paella expensive seafood portion castropol restaurant cuban asturian food appetizer work snack cocktail atmosphere cosy front restaurant arcade cast iron table chair snack look water study steady stream old cars malecon accept noise cars splurge restaurant inside star hotel tend charge excessive amount money mediocre food service fontana restaurant notable grill restaurant fontana refined sober home environment suitable dinner touch familiarity placid conversation enjoying exquisite dish specialty updated cuban cuisine reservation essential chinatown check chinatown block capitolio looking chinese themed restaurant food neither spectacular authentic chinese decent enough cant face another serving rice bean street food notch intersection avenida italia avenue zanja breakfast hotel serve breakfast typically buffet wide variety food overpriced equivalent hotel nacional stay casa particular ask youll served breakfast ask landlord lady shopping hope finding restaurant breakfast exception chan bar cafeteria centro habana chinatown perseverancia zanja martin type establishment style bars price selection quality drink food decoration semi motivated staff live music typically hot spot old hotel mostly meet expat cuban access hard currency dont expect experience bars sign saying hemingway drank pricier alternative seek neighborhood bars choose quality limited selection drink mainly locally produced bottle beer soft drink rarely able cocktail mojito cigar dubious cigarette slightly quality snack bars meet local bit talk live couple drink bars hard despite typically prominent sign displayed outside ask walk neighborhood look bare walled neon lit run room decoration furniture save bar rickety chair table sullen staff depressed bored drunk looking customer men contrary reputation music fun loving nation boisterous affair quiet subdued music rarely played charm world railway station waiting room nonetheless fascinating experience especially effort speak local offering conversation surprise provide insight life ordinary cuban hard currency foreign generally welcomed discussing politic tricky typically lose lose proposition speak negatively cuban political system put cuban drinking companion difficult position informed hanging subversive foreigner enthuse revolution che fidel health care system sticking gringo etc assume naive worst possession mental faculty outside hotel inglaterra capitolio building drinking daiquiris mojito affordable price bodeguita medio bar sample mojito former hangout ernest hemingway sampled evening crowd varadero headed floridita bar another stop hemingway drinking tour visited atmosphere unchanged pre castro daiquiris certainly hemingway grievance mediocre buccanero front capitol building street walk block road runs parallel capitol bars called buccanero factoria plaza vieja brewpub pretty plaza vieja pub beer light dark black seasonal addition beer cocktail meat based food menu feature

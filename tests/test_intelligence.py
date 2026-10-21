@@ -276,7 +276,7 @@ def test_impossible_budget_keeps_the_experience(rome_research, rome_contract, pr
     plan = build_plan(_ctx(broke, rome_research, profile))
     report = validate_plan(plan, broke, profile, rome_research, 0.05)
     assert report.result == "FAIL"
-    knobs, log = repair(plan, report, PlanKnobs(), rome_research, 0, profile)
+    knobs, log = repair(plan, report, PlanKnobs(), rome_research, profile)
     steps = [s for s in knobs.budget_steps if not s.startswith(("hotel_tried", "floor_noted"))]
     assert all(s in PAINLESS_STEPS for s in steps)
     assert knobs.activity_cost_cap_local is None and knobs.density_delta == 0

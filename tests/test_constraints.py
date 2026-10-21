@@ -3,7 +3,7 @@
 import anyio
 
 from travel_agent import conflicts
-from travel_agent.constraints import by_type, derive
+from travel_agent.constraints import by_type
 from travel_agent.models import ChatMessage, TripState
 from travel_agent.nlu import Requirements
 from travel_agent.replanner import apply_requirements, build_contract

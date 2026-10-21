@@ -2,16 +2,18 @@ Lake Bled, Slovenia
 Labels: nature, relax | Split: test
 Source: https://en.wikivoyage.org/wiki/Bled (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (7,925 characters) =====
+===== CLEANED GUIDE TEXT (7,931 characters) =====
 
 Bled is a town in Slovenia, on the east side of Lake Bled.
 
 Understand
+
 Bled is a popular destination in Slovenia due to its romantic scenery and access point for Triglav National Park, which offers numerous outdoor adventure opportunities. The town features a little white church on an island in the center of an emerald green mountain lake, with Bled Castle perched high above, amidst the Julian Alps.
 
 The TIC is by the lake at the foot of the castle, on Cesta Svobode 15. It's open M-Sa 08:00-19:00, Su 10:00-17:00.
 
 See
+
  
  
  
@@ -36,6 +38,7 @@ Babji Zob (Hag's Tooth) Caves. 300-m cave system includes rare helictites (calci
 
 
 Do
+
 
  
 
@@ -86,6 +89,7 @@ Fishing. Fishing for catfish, pike, carp and lake trout is permitted on Lake Ble
 Hot Air Balloon Flights. Accepts bookings via email or phone, at least a day before the flight. Hot air balloon flights are only early in the morning, starting at Sunrise. Whole programme is about 3-4 hr (flight time approx. 1 hr).
 
 Festivals
+
 A complete listing of events in Bled is available on the Tourist Information website
 * 
 Bled Days. Three days of fairs and concerts. The event culminates in fireworks and the lighting of thousands of candles on the lake.
@@ -97,7 +101,9 @@ International Music Festival Bled. Classical music festival.
 
 Buy
 
+
 Eat
+
  
 
 Most of the hotels have restaurants and bars. In addition, the following are stand-alone restaurants worth a visit. Prices in Bled tend to be inflated due to the tourist nature of the town. Try the local speciality kremna rezina also called kremšnita (Cremeschnitte), a cake of vanilla custard and cream.
@@ -120,6 +126,6 @@ Topolino. Bled's most sophisticated outfit, gorgeously decorated, and beautifull
 
 Drink
 
-===== TOKENS THE MODEL TRAINS ON (617) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (617) =====
 
 side lake destination due romantic scenery access point triglav national park numerous outdoor adventure opportunity feature little white church island emerald green mountain lake castle perched amidst julian alps tic lake foot castle cesta svobode lake formed recession bohinj glacier ice age wide maximum depth natural tributary fed spring castle picturesque white red castle enclosed romanesque wall parapet rampart tower current incarnation castle date century restored upper courtyard century chapel decorated frescoe painting henry conferring bishop albuin museum exhibition castle history usual array medieval pomp pageantry weaponry item description language castle terrace view lake island wine run andre monk price champagne bottle andre teach perform sabrage sabree art cutting bottle blade bottle label wax stamp wine cellar andre wooden step wine cellar lead shop sell herb oils smell island excavation island revealed remain pre romanesque chapel slavic cemetery dating church assumption present baroque church date preserved frescoe depict scene life virgin mary ring wishing bell installed original gothic church provost house smaller building behind church guesthouse according tradition husband carry newly married bride step dock church ensured happy marriage ringing bell church fulfill wish iglica waterfall narrow waterfall vertical wall permian limestone rock climbing stair beautiful view babji zob hag tooth cave cave system rare helictite calcium deposit tooth shaped pillar atop peak cave hour tour wednesday saturday sunday summer meet bohinjska bela outdoor adventure activity vintgar gorge nearby triglav national park numerous activity houraway houraway specializ bespoke outdoor experience offering multi tour tailored preference youre interested cycling hiking guided self guided option cater fitness level interest houraway provide performance bike gravel bike rent perfect exploring slovenia stunning landscape knowledgeable team ready help route suggestion insider tips ensuring memorable adventure wider altitude activity friendly outdoor agency run twin brother outdoor enthusiast guided tour activity paragliding skydiving hiking mountaineering canyoning kayaking rafting hot air ballooning bike tour rock climbing ferrata tour triglav national park information hiking happy help give information rent bike equipment climbing adventure factory ljubljanska cesta info aadventurefactory friendly atv tour company possibility rent quad seek information surrounding activity feel ask allway ready help hiking easy moderate hike amazing picturesque view island velika osojnica peak southwestern corner lake famous view photographer easier spectacular option hike straza covered linden oak spruce tree southwest grand hotel toplice canyoning rock climbing multiple canyon allow outdoor enthusiast jump rappel rope waterfall triglav national park sport climbing amazing photo viewpoint mala osojnica camp zaka castle enter castle evening museum close say restaurant swimming grajsko kopalisce castle bathing swim waterslide trampoline climbing wall outdoor swimming pool jump board climber swing sandbox children table tennis chess changing room locker boat rental snack shop grassy beach strel swimming adventure swim lake island operator slovenian swimming adventure holiday indoor ice skating sportna dvorana golf country club premier golf course mini golf hole host variety classic mini golf competition national championship spas wellness center unwind thermal pool whirlpool sauna alternatively let pampered soothing massage calming bath rejuvenating beauty treatment ziva wellness summer tobogganing summer ride track hill cart speed fishing fishing catfish pike carp lake trout permitted lake purchase permit office hot air balloon flight accept booking phone flight hot air balloon flight early morning starting sunrise programme flight approx festival complete listing event information website fair concert event culminate firework lighting thousand candle lake international music festival classical music festival medieval weekend festival take weekend castle hotel restaurant bars addition following stand alone restaurant worth price tend inflated due nature speciality kremna rezina called kremsnita cremeschnitte cake vanilla custard cream castle restaurant special occasion expensive think booking advised especially outside table wall gostilna pri planincu old retain original ambience labod view ostarija peglez fish restaurant topolino sophisticated outfit gorgeously decorated beautifully lit quality food wine

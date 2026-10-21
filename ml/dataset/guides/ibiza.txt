@@ -2,13 +2,15 @@ Ibiza, Spain
 Labels: nightlife, beach | Split: validation
 Source: https://en.wikivoyage.org/wiki/Ibiza (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (6,687 characters) =====
+===== CLEANED GUIDE TEXT (6,694 characters) =====
 
 Ibiza or Eivissa (in Catalan and officially) is one of the Balearic Islands, a group of autonomous communities of Spain. Known for being a party hotspot, Ibiza's part in the post-1950s package holiday boom means there is something for everyone on this island. Long beaches, big nightclubs, historical towns, and the Mediterranean sun mean Ibiza makes a great holiday for families and couples of all ages. Its much-loved status amongst European holidaymakers is a testament to the Eivissa way of life - relaxed and easy-going, but with vivid enjoyment throughout. 
 Understand
+
  
 
 Orientation
+
 The island is 153&nbsp;km off the eastern coast of Spain, situated in the Mediterranean Sea. The Island is split into five Ajuntaments, as noted in Cities above. Their role is much the same as a council: providing local government, services, and maintenance for both citizens and tourists. Sant Joan de Labritja occupies the north, with Santa Eulària des Riu  in the east, Sant Josep de sa Talaia in the south, and Sant Antoni de Portmany in the west. Eivissa Vila (Ibiza Town) tucks in-between Santa Eulària and Sant Josep - but its small size shouldn't detract from its position as the third-highest populated municipality in all of the Balearics.
 
 Outside of the towns, the municipalities are strikingly rural: their untouched simplicity and majesty being a strong contributor to the Island's position as a  for its biodiversity and culture. Their beauty is due to their preservation: many areas, such as the Ses Salines Nature Park, have strong restrictions on which areas can be walked on, whilst some beaches (even those within resorts) might have designated roped-off areas to access the beaches in order to maintain and preserve both the sand dunes themselves and the biodiversity within them.
@@ -16,6 +18,7 @@ Outside of the towns, the municipalities are strikingly rural: their untouched s
 The Island is largely flat, with rocky inlets occasionally rising above sea level. The sand and calcium-rich volcanic soil lend themselves to wildlife, resulting in thousands of pine trees and almond blossom lining the Island. The highest point on the Island is Sa Talaiassa which stands at 476 metres.
 
 Name
+
 Given the multitude of languages spoken on the Island, the name for Ibiza has evolved gradually - the designation Ibiza only becoming a concrete moniker after the late-20th century package holiday boom. Ibiza is the Spanish name for the Island, which has led to its widespread use in English cultures. As detailed in Talk, however, the Island's official language is Balearic Catalan. In Catalan, the island's title is Eivissa - though this is now more often is used in reference to the island's capital city.
 
 Historically, the Island's name was Ibossim, a Phoenician name that evolved into the Roman Ebusus. From this title, the modern name emerged - with the title Ivica being applied by the British army in the 18thcentury.
@@ -27,6 +30,7 @@ There are about 111,200 inhabitants.
 It is world-famous for its intense nightlife and huge clubs, and attracts top DJs from all over the planet. It is the most popular Spring break destination for European college students.
 
 See
+
 
 * Es Vedra, the mystical island rock off Ibiza's west coast
 * Atlantis, a hidden cove, but only if you can find a local who'll tell you its secret location
@@ -42,6 +46,7 @@ See
 Many young people will be seen flocking to pay for daily rentals on beach chairs, and hawkers scan the beach looking for young adults to attend their club of choice.
 
 Do
+
  
 
 *Explore some of the traditional countryside of this beautiful island that few people take the time to enjoy
@@ -52,11 +57,13 @@ Do
 
 Eat
 
+
 Don't forget to try two local specialities: ensaimada, a sort of flat, soft pastry coil - what a Danish pastry would be if it was more like a doughnut - and flao, a sweet cheese and mint flan. Most pastelerias and many bars sell ensaimada - flao is a bit more difficult to track down.
 
  
 
 Drink
+
  
 
 Ibiza is famous for its nightlife. During the day most tourists are soaking up rays at one of the gorgeous beaches or sleeping off the past night's drinks. Bars do not get busy in the city of Ibiza or San Antonio until early evening, about 19:00.
@@ -69,6 +76,6 @@ Ibiza is most known for its large clubs. Some famous examples are Privilege, Pac
 
 Ibiza clubs attract some of the best DJs in the world who play a weekly 'residency' at a particular night.
 
-===== TOKENS THE MODEL TRAINS ON (486) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (486) =====
 
 eivissa catalan officially balearic island group autonomous community party hotspot post package holiday boom mean everyone island beach nightclub historical town mediterranean mean holiday family couple ages loved status amongst european holidaymaker testament eivissa life relaxed easy vivid enjoyment throughout orientation island nbsp coast situated mediterranean sea island ajuntament noted city role council providing government service maintenance citizen sant joan labritja occupy santa eularia des riu sant josep talaia sant antoni portmany eivissa vila tuck santa eularia sant josep size shouldnt detract position highest populated municipality balearic outside town municipality strikingly rural untouched simplicity majesty strong contributor island position biodiversity culture beauty due preservation ses saline nature park strong restriction walked whilst beach resort designated roped access beach order maintain preserve sand dune biodiversity island largely flat rocky inlet occasionally rising sea level sand calcium rich volcanic soil lend wildlife resulting thousand pine tree almond blossom lining island highest point island talaiassa stand metre given multitude language spoken island evolved gradually designation becoming concrete moniker late century package holiday boom spanish island led widespread english culture detailed talk island official language balearic catalan catalan island title eivissa reference island capital historically island ibossim phoenician evolved roman ebusus title modern emerged title ivica applied british army thcentury formentera collectively isla pitiusa greek word pity meaning pine tree abundance pine cover landscape phrase evolution original pityoussai literally meant pine covered island inhabitant world famous intense nightlife huge club attract djs planet spring break destination european college student vedra mystical island rock coast atlantis hidden cove wholl tell secret passeig ses font sant antoni portmany sunset strip sant antoni portmany old nearby formentera boat explore beach coast famous canar hippy market held wednesday coast island dalia hippie market carlo saturday bar anita carlo historical venue artist writer collect cheque stop cova marca puerto miguel biggest natural cave young flocking pay rental beach chair hawker scan beach looking young adult attend club choice explore traditional countryside beautiful island enjoy boat ride parasailing learn spanish language school island specialise teaching spanish foreign language able knowledge easier stay hostel school explore wharfside festival hundred local flock carnival style stand fresh food enticing smell quality trinket addition incredible taste smell strong visual aspect festival snake charmer leading parade stand glee fright children everywhere dont forget speciality ensaimada sort flat soft pastry coil danish pastry doughnut flao sweet cheese mint flan pasteleria bars sell ensaimada flao bit difficult track famous nightlife soaking rays gorgeous beach sleeping past night drink bars busy antonio early evening nearly bar particularly busier summer month special advertised hawked street outside bar option save cash notoriously expensive destination beer shot term vary depending night bar antonio wide street packed bars reveler party shut club famous example privilege pacha eden amnesia paradis club hefty entry fees drink extremely expensive plan paying admission unless able special deal hawker street prepare pay bottle water club attract djs world play weekly residency particular night

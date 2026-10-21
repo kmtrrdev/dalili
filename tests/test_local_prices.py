@@ -98,7 +98,7 @@ def test_published_prices_replace_estimates_and_fares_become_verified():
         "tariffs": {"transit_single_ticket": {"amount": 1.2, "currency": "EUR", "quote": "A single ticket costs €1.20"},
                     "taxi_flag_fall": {"amount": 1.85, "currency": "EUR", "quote": "flag fall of €1.85"},
                     "taxi_per_km": {"amount": 0.9, "currency": "EUR", "quote": "€0.90 per km"}, "airport_fares": []}}
-    apply_local_prices(b, prices, "USD")
+    apply_local_prices(b, prices)
     museum, gallery, colosseum = b.attractions
     assert museum.price_known and museum.cost_per_person.amount == 20 and museum.cost_per_person.currency == "EUR"
     assert museum.cost_per_person.price_type == "known" and museum.cost_per_person.source == "Wikivoyage · updated 2025-03"

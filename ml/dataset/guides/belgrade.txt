@@ -2,11 +2,12 @@ Belgrade, Serbia
 Labels: nightlife, history | Split: test
 Source: https://en.wikivoyage.org/wiki/Belgrade (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (29,640 characters) =====
+===== CLEANED GUIDE TEXT (29,653 characters) =====
 
 Belgrade (Serbian: Београд, Beograd) is the capital of the Republic of Serbia. It stands at the confluence of the Danube and Sava rivers, where the rolling Pannonian Plain fetches up against the rugged Balkan peninsula, and in 2022 had a population of 1.2 million, about a fifth of Serbia's total. It's a fascinating and friendly destination in its own right, and the obvious starting point for exploring more of Serbia and the Balkans. 
 
 Understand
+
  
 The core of the city is on a bluff overlooking the confluence of the Sava and Danube. Both rivers are navigable by large vessels: the Sava up to Sisak in Croatia, and the Danube from the Black Sea all the way up to Kelheim in Bavaria. It's been inhabited at least since 6000 BC and the earliest recognisable town was the Celtic settlement of Singidūn. The bluff now called Kalmegdan was fortified and its environs grew into the White City, beo grad. 
 
@@ -21,9 +22,11 @@ Belgrade has a temperate continental climate, with hot rainy summers and cold sn
 Tourist information is available within the city library at Kneza Mihaila 56, next to the entrance to Kalmegdan. It's open daily 09:00-20:00.
 
 See
+
  
 
 Stari Grad
+
 The historic core of the city.
 * 
 Kalemegdan. 
@@ -86,6 +89,7 @@ Sukat Shalom Synagogue. Sephardic Jews settled in Belgrade from the 16th century
 
 
 Mid-town
+
  
 : Terazije is the spine boulevard, coursing south from Republic Square and becoming Kralja Milana at the Old Palace. It's lined with grand buildings, and the police will shoo you away from several. Saint Sava dominates the view as you walk south. 
 * 
@@ -154,6 +158,7 @@ Mount Avala.
  16 km south of the city is a mountain of 511 m, topped by a telecoms tower. The tower was destroyed by NATO bombing during the Kosovo conflict but rebuilt in 2017. You can ride up to the observation deck for RSD500. Nearby is the Monument to the Unknown Soldier.
 
 West of River Sava
+
 : Novi Belgrade (Нови Београд) is the business district, laid out on a grid from 1948.
 : Zemun is a much older settlement further up the Danube that merged into Novi Belgrade. Enjoy it soon before it subsides into a crater: the bedrock is riddled with medieval passageways, cisterns and shafts, all past due for collapse.  
  
@@ -182,6 +187,7 @@ Obedska bara.
  (Обедска бара), 40 km west of Belgrade, is a large wetland and nature reserve along the north bank of the Sava River.
 
 Do
+
  
 * 
 Belgrade Arena. 
@@ -209,6 +215,7 @@ National Theatre. This puts on opera, ballet and theatre. The main hall is worth
 * Ice skating is available in winter at Ada Ciganlija as above, in Trg Nikole Pašića, at Pionir Ice Hall and Olimp Sports Centre.
 
 Cinemas
+
  
 : Movies in Serbia are subtitled, not dubbed. Cinemas include:
 * Yugoslav Film Archive shows contemporary art house movies and classics. It's a block southeast of Kalmegdan at Uzun Mirkova 1.
@@ -222,6 +229,7 @@ Cinemas
 
 Sports
 
+
 * Football: Belgrade has four clubs playing soccer in SuperLiga, the top tier, and several in lower tiers.
 : - FK Crvena Vezda are better known as Red Star Belgrade. They play at Rajko Mitic Stadium, (capacity 55,000) 2 km south of city centre. Serbia's international games are also played here.
 : - Partizan Belgrade play at Partizan Stadium, capacity 33,000. It's 1.5 km south of the centre, close to Red Star's stadium.
@@ -231,6 +239,7 @@ Sports
 * Others such as basketball or tennis are staged either in Belgrade Arena or Aleksandar Nikolic Hall aka Pionir Sports Complex.
 
 Events
+
 * Dom Omladine is the Belgrade Youth Centre, at Makedonska 22 a block east of Republic Square. Their website lists events appealing to a young audience. 
 * 
 Belgrade Fair. 
@@ -249,6 +258,7 @@ Belgrade Fair.
 * No Sleep Festival features electronic, house & retro music in November.
 
 Buy
+
  
 For Serbian currency, see Serbia#Buy. Menjačnica is a chain of exchange offices, with a dozen city sites.
 
@@ -267,6 +277,7 @@ Stadion.
 * Buvljak (Бувљак) means a flea market, occupying any edge-of-town brownfield site that developers have not yet cast covetous eyes on. Closest to the centre is at Šajkaška 70 in Zemun on Sunday morning.
 
 Eat
+
  
 For more on Serbian cuisine, see Serbia#Eat
 
@@ -284,10 +295,12 @@ If you have a sweet tooth, try krempita (custard slice), šampita (meringue cake
 
 Food markets
 
+
 * Zeleni Venac Market is a covered hall just south of Zeleni Venac bus station midtown, open M-Sa 07:00-19:00, Su 07:00-17:00.
 * Bajloni Market is a larger hall at the junction of Džordža Vašingtona with Skadarska, open daily 06:00-19:00.
 
 Budget
+
 Some places think that a vegetarian eats fish. If you don't, tell them bez mesa, bez ribe - without meat, without fish.
 * Tadich is a pie shop at Kralja Petra 75, open M-Sa 06:00-15:00. 
 * 
@@ -319,7 +332,9 @@ Jazzayoga. Sandwiches, wraps, juices, and baked goods, relaxing ambience.
 
 
 Mid-range
-==== Serbian====
+
+Serbian
+
 
 * 
 Orašac. A garden restaurant with trad Serbian cuisine.
@@ -340,6 +355,7 @@ Mika Alas. Try their delicious fish soup "riblja čorba" and their house special
 
 Asian
 
+
 * 
 Makao i Žuto More. Good Chinese food. They also have branches at Pere Velimirovića 7 downtown and Starine Novaka 7a near Tašmajdan Park.
 
@@ -352,12 +368,14 @@ Marukoshi. Japanese restaurant with good-ish reviews.
 
 Mexican
 
+
 * 
 Zapata. Friendly place for authentic Mexican fare.
 
 * Burrito Madre is a chain with five city outlets, open daily 09:00-21:00: at Terazije 27, Karađorđeva 65, Blv Kralja Aleksandra 54, Svetozara Markovića 36, and Maksima Gorkog 9.
 
 Italian
+
 
 * 
 Botako. Good scores for Italian cuisine and ambiance. There's another branch south at Nevesinjska 6.
@@ -371,6 +389,7 @@ Restoran Caruso. Italian restaurant on 8th floor, with views over Terazije, rive
 
 Splurge
 
+
 * 
 Sinđelić. Traditional Serbian cuisine.
 
@@ -382,6 +401,7 @@ Lorenzo & Kakalamba. Italian and southeastern Serbian cuisine, but mostly you co
 
 
 Drink
+
  
 
 Belgrade's drinking scene ranges from traditional kafanas and rakija bars to pubs, specialist cocktail bars, craft-beer taprooms and late-night clubs. Indoor smoking is still common, so travellers who need a smoke-free venue should check before visiting; terraces are widespread in warmer months. Tap water is safe to drink.
@@ -394,6 +414,7 @@ When toasting, make eye contact, clink glasses and say Živeli! (cheers). Coffee
 
 Cocktail and wine bars
 
+
 * 
 Blaznavac. Courtyard café-bar with eclectic decoration, serving cocktails, beer and coffee.
 
@@ -405,6 +426,7 @@ Riddle Bar. Speakeasy-style cocktail bar without a fixed menu; bartenders sugges
 
 
 Pubs and craft beer
+
 
 * 
 Black Turtle. One of several Black Turtle brewery pubs. House beers include fruit-flavoured variants; this branch has outdoor tables with river views.
@@ -424,6 +446,6 @@ Three Carrots Irish Pub. Irish pub with draft beer, televised sport and occasion
 * 
 Zuzu's. Café-bar and kitchen with outdoor tables on Obilićev Venac.
 
-===== TOKENS THE MODEL TRAINS ON (2,354) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (2,354) =====
 
 serbian beograd capital stand confluence danube sava river rolling pannonian plain fetch rugged balkan peninsula population million fifth total fascinating friendly destination obvious starting point exploring balkan core bluff overlooking confluence sava danube river navigable vessel sava sisak danube black sea kelheim bavaria inhabited earliest recognisable celtic settlement singidun bluff called kalmegdan fortified environ grew white beo grad suffered wars destroyed time whove linguistic cultural mark slav ottoman empire austro hungarian empire world war seat serb croat slovene yugoslavia entity world war tito distinctive brand communism died balkan following roiled internecine wars yugoslavia broke apart nato force bombed force independence kosovo sought join eurozone schengen present friendly face traveller english german widely understood bank card accepted overlapping layer history capital status create fascinating vibrant blend easy reach relatively inexpensive majority interest citadel kalmegdan extension danube kotez ugly sprawl novi beograd modern business district sava transport hubs shopping entertainment page uses avoid confusion term bus station temperate continental climate hot rainy summer cold snowy winter keep eye weather forecast planning dress accordingly kosava fierce summer wind destroyed umbrella picnic scale multiple conqueror admire information library kneza mihaila entrance kalmegdan stari grad historic core kalemegdan fortress park earliest settlement bluff overlooking confluence danube sava access bound multiple site military museum couple church zoo military museum extensive collection military history signage english ruzica church fortress date century destroyed century rebuilt destroyed world war power present version created embellished bronze soldier guard front unusual chandelier bullet shell sword bayonet ruzica mean little rose clad ivy sveta petka chapel ruzica built zoo animal space cathedral cathedral church michael archangel orthodox built neoclassical style richly decorated interior buried front church notable serbian linguist vuk karadzic dositej obradovic museum serbian orthodox church museum church history frescoe mosaic icon signage english residence princess ljubica built grand residence ljubica vukomanovic consort prince milo obrenovic remained royal branch museum exhibiting architecture furnishing century transition ottoman european style national bank museum kralja block cathedral print banknote face advent cryptocurrency bank probably thought hell museum applied art displaying art design early history kneza mihaila pedestrian street lined elegant century building coursing kalmegdan square heritage house zepter museum zepter museum modern serbian art heritage house zepter museum kneza mihaila host changing art exhibition ethnographic museum extensive display serbian costume tool culture everyday life past century vuk dositej museum ethnographic museum bajrakli mosque gospodar jevremova branch national museum showing development serbian language adult rsd bajrakli mosque built islam majority religion mosque bajrakli mean flag muwaqqit calculated exact islamic observance hoisted flag advise mosque whereupon muezzin called minaret earshot smashed time recently kosovo conflict restored chocolate museum chocolate role story dorcol neighbourhood mosque slope danube riverbank turkish dort yol mean road crossroad rebuilt austrian style look prosperous grubby industrial busy river port museum science technology gadget transport machinery ages church alexander nevsky orthodox church completed replacing notable relic frescoe national museum founded item floor organised paleolithic ancient history middle ages modern square side national museum plaza equestrian statue prince mihailo obrenovic negotiated withdrawal ottoman troop cultural front onto square spite imposing building drab concrete expanse thronged traffic francuska sukat shalom synagogue sephardic jews settled century ottoman welcomed fleeing spanish persecution ashkenazis arrived number century escaping tsarist russia completed synagogue active risk attack story jewish museum kralja mid terazije spine boulevard coursing square becoming kralja milana old palace lined grand building police shoo saint sava dominate view walk museum illusion family friendly fairground usual distorting mirror ames room museum paranormal authentically hoaky lomina old palace residence obrenovic karaorevic princely dynasty house assembly visit except business palace old palace andricev venac square built king petar karaorevic residence president ivo andric museum museum home nobel laureate ivo andric historical museum huge collection material serbian nation ancient time present coming intended move premise site former railway station national assembly grand neo baroque legislative palace built postal museum hidden oddity majke jevrosime block northeast national assembly mark church serbian orthodox church built serbo byzantine style tomb king stefan uros dusan king aleksandar obrenovic queen draga masin church holy trinity dwarfed door mark russian orthodox built white russian fleeing bolshevik civil war museum roma culture kuca romske kulture opposite mark ruzveltova nikola tesla museum nikola tesla huge contribution electric engineering pioneering alternating current enabling distance energy transfer radio underpinning today mobile comm motor household office machinery half museum dedicated tesla personal effect half contain model invention english speaking tour start hour demonstration line build peak temple saint sava largest church largest orthodox church world construction entirely finished described temple hram distinguish smaller sava church tsrkva adjacent crypt downstair entrance extensive bright polished wall covered modern iconography look metro interchange orthodox saint religious building service held regularly church cathedral assumption blessed virgin mary hadzi melentijeva roman catholic modern church intercession holy virgin orthodox church built simple serbian byzantine style adorned frescoe mosaic rich collection relic presentation virgin monastery orthodox monastery church built serbian byzantine style house king petar museum exhibition space monastery vase pelagica nothing king museum yugoslavia tito mausoleum building old museum general display history culture former yugoslavia museum sixty building named official birthdate josip broz tito display present given presidency amassed collection youth relay baton house flower mausoleum museum african art african contemporary art royal palace residence royal family guided tour english serbian booked information office tour take white palace art collection banjica concentration camp operated gestapo leadership perished museum rakovica monastery built present site monastery structure church archangel michael church modern white hill tell hillock prehistoric settlement mostly neolithic weekend guided tour site mount avala mountain topped telecom tower tower destroyed nato bombing kosovo conflict rebuilt ride observation deck rsd nearby monument unknown soldier river sava novi business district laid grid zemun older settlement danube merged novi enjoy soon subside crater bedrock riddled medieval passageway cistern shaft past due collapse museum contemporary art museum yugoslav serbian international art century striking modern building war island veliko ratno ostrvo triangular river island confluence danube sava summer army build pontoon bridge zemun quay remove autumn wildlife building permitted illegal shack repeatedly spring swept flood authority serve eviction notice wild boar island occasionally wander mainland swinish attraction little war island malo ratno ostrvo eroded little line tree trying keep head water gardo hill zemun topped gardo tower millennium tower erected mark hungarian settlement danube neighbourhood zemun fortress district narrow cobbled street old building zemun cemetery range tower laid orthodox roman catholic jewish section nichola orthodox church gardo tower njegoseva completed zemun homeland museum gardo tower glavna zemun quay stretch riverbank gardo pleasant strolling eating aeronautical museum rebuilding collection striking geodesic glass building additional aircraft displayed surrounding ground museum aircraft flown serbian yugoslav air force aero club private commercial aviation glider helicopter jet fighter rare aircraft aviation equipment museum display relic nato aircraft donated balkan conflict wreckage nighthawk chinese cultural cultural built former site chinese embassy yugoslavia bombed nato force called miscalculated operation plaque commemorating chinese journalist died bombing obedska bara wetland nature bank sava river arena multi sport facility host concert similar event blv arsenija carnojevica sava novi beograd ada ciganlija river island sava extending fused mainland park recreation road link tip stairway ada highway bridge river loop side road link lake bathing water sport gravel beach island walking cycling track sport pitch golf picnic barbecue camping permitted bus cross onto island run mainland shore badminton centar sport complex tip markoni sport road link hire bike sport gear ice skating winter ada road link site vestacka stena climbing wall aqua ski lake ada meica river island ada ciganlija boat cross mainland bank war island reached pontoon bridge zemun luna park chain funfair younger children site kalmegdan zemun quay sava southeast blv kralja aleksandra public observatory telescope enable daytime viewing evening sky clear refractor reflector night viewing commentary guidance staff regular observatory southeast zvezdara park occasionally guided tour national theatre puts opera ballet theatre hall worth looking decorated gilt artwork bitef theatre puts contemporary experimental work skver mire trailovic skadarlija market bowling alley zabac chain centre visnjicka karaburma patrijarha joanikija vidikovac stari merkator shopping zemun kocic tennis zemun pool table dart colosseum bowling dobanovacka zemun ice skating winter ada ciganlija trg nikole pasica pionir ice hall olimp sport cinema movy subtitled dubbed cinema yugoslav film archive show contemporary art house movy classic block southeast kalmegdan uzun mirkova mts dvorana multi venue decanska block serbian history museum tuckwood cineplex kneza milosa block southwest national assembly cineplexx galerija galerija shopping mall sava riverbank blv vudro vilson imax akademija cinema live arts venue nemanjina cineplexx usce usce shopping mall blv mihajla pupina novi beograd sava cineplexx delta delta shopping mall jurija gagarina novi beograd roda cineplex grubby cinema southwest pozeska sport football club playing soccer superliga tier lower tier crvena vezda red star play rajko mitic stadium capacity international game played partizan play partizan stadium capacity close red star stadium cukaricki play cukaricki stadium capacity southwest suburb zemun play zemun stadium capacity rugby union tier club based red star rad partizan international played soccer stadium won international knockabout serbian british colony pupil heriot school century pretty downhill basketball tennis staged arena aleksandar nikolic hall aka pionir sport complex event dom omladine youth makedonska block square website list event appealing young audience fair host trade fair round check website public exhibition hall blv vojvode misica sava riverbank street heart carnival held makedonska svetogorska street fest international film festival guitar art festival ring ring festival improvised music organise todo mundo world music festival burger fest kalmegdan fortress mean burger bun stout bourgeoise citizen tango encuentro beer festival usce park bitef international theater festival bemus music festival jazz festival early music festival sleep festival feature electronic house retro music serbian currency menjacnica chain exchange office dozen site delfi chain bookstore english publication trzni centar serbian shopping dozen usce delta stadion closest rajiceva kneza mihaila kalmegdan millennium kneza mihaila supermarket chain maxi idea usce largest shopping mall array store food court blv mihajla pupina novi beograd branko bridge walking distance old tram bus novi beograd delta largest cinema food court usce jurija gagarina novi beograd tram bus chinese shopping delta blok jurija gagarina clothing tat chinese food spice exotica stadion another southeast zaplanjska bus likewise buvljak mean flea market occupying edge brownfield site developer cast covetous eyes closest sajkaska zemun sunday morning serbian cuisine restaurant budget traditional serbian kafana neighbourhood bakery fine dining international cuisine vegan cafe price generally lower europe restaurant comparable european capital serbian cuisine hearty meat heavy youll grilled dish cevapi pljeskavica everywhere classic karaoreva snicla sarma pickled cabbage leave stuffed minced meat rice podvarak roasted sauerkraut meat gula meal served kajmak ajvar fresh bread seasonal salad confluence danube sava river tradition freshwater fish riverside restaurant floating restaurant splavovi especially zemun ada ciganlija serve fish soup riblja corba fish stew riblji paprika grilled carp catfish zander perch splavovi quiet family restaurant turning lively bars club evening breakfast quick meal burek flaky pastry filled cheese meat spinach potato traditionally eaten drinkable yoghurt bakery pekare everywhere reliable option early morning late night street food pljeskavica cevapi pizza slice palacinke crepe traditional kafana atmosphere food serve classic serbian dish accompanied live folk tamburica music evening concentration traditional restaurant skadarlija excellent kafana throughout sweet tooth krempita custard slice sampita meringue cake baklava tulumbe urmasice widely pastry shop cafe food market zeleni venac market covered hall zeleni venac bus station midtown bajloni market larger hall junction dzordza vasingtona skadarska budget think vegetarian eats fish dont tell bez mesa bez ribe meat fish tadich pie shop kralja kmn selection domestic cuisine veggie friendly efficient staff roll bar quality sizable portion imperial chicken feta chicken pizzeria trg delicious pizza pancake cash yalla yalla lebanese food skadarlijske kobasice excellent sausage giro tim gyro amigo fried pancake gastroteka serbian fast food jazzayoga sandwich wrap juice baked good relaxing ambience mid range serbian orasac garden restaurant trad serbian cuisine sesir moj hats natty boater quartet riff barcarolle crowd pleaser hearty serbian fare dva jelena serve trad serbian fare skadarska znak pitanja traditional serbian cuisine cevapcici kajmakom grilled minced meat cream adventurous stomach young bull sex gland bowel loki pljeskavici serbian burger variety topping spicy cheese pickled pepper mika alas delicious fish soup riblja corba house specialty smu romanov pike perch fillet white wine cream sauce excellent food acceptable price asian makao zuto chinese food branch pere velimirovica downtown starine novaka tasmajdan park moon sushi mostly review sushi marukoshi japanese restaurant ish review mexican zapata friendly authentic mexican fare burrito madre chain outlet terazije karaoreva blv kralja aleksandra svetozara markovica maksima gorkog italian botako score italian cuisine ambiance another branch nevesinjska casa nova franco italian fare ample portion restoran caruso italian restaurant floor view terazije river sava novi splurge sinelic traditional serbian cuisine saran riverside fish restaurant live trad music lorenzo kakalamba italian southeastern serbian cuisine mostly decor beyond kitsch drinking scene range traditional kafana rakija bars pubs specialist cocktail bars craft beer taproom late night club indoor smoking common traveller smoke venue check visiting terrace widespread warmer month tap water safe scene spread strip skadarlija traditional restaurant live folk music adjoining cetinjska complex alternative bars event dorcol stari grad cocktail wine craft beer bars obilicev venac pedestrian cafe pub strip floating venue splavovi line sava danube range daytime bars late night club name programme seasonal opening change confirm exact setting rakija serbian fruit brandy common variety plum sljivovica quince dunjevaca pear viljamovka apricot kajsijevaca grape loza serbian craft beer widely brewery taproom specialist bars serbian wine widely glass bottle toasting eye contact clink glass say ziveli cheer coffee normally served serbian turkish style unless another preparation specified cocktail wine bars blaznavac courtyard cafe bar eclectic decoration serving cocktail beer coffee demokratija bar cocktail wine bar serving cocktail house infusion smoke interior outdoor seating riddle bar speakeasy style cocktail bar fixed menu bartender suggest drink based guest preference pubs craft beer black turtle black turtle brewery pubs house beer fruit flavoured variant branch outdoor table river view dogma brewery brewery taproom rotating taps canned release bar food courtyard gecko irish style pub pedestrian cafe strip publin neighbourhood pub rock music serbian beer carrot irish pub irish pub draft beer televised sport occasional live acoustic music zuzu cafe bar kitchen outdoor table obilicev venac

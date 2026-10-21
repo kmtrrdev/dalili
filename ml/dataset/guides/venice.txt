@@ -2,14 +2,16 @@ Venice, Italy
 Labels: culture, history | Split: validation
 Source: https://en.wikivoyage.org/wiki/Venice (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (32,110 characters) =====
+===== CLEANED GUIDE TEXT (32,139 characters) =====
 
 Venice (Italian: Venezia; Venetian: Venexia) is a sanctuary on a lagoon that is virtually the same as it was 600 years ago, which adds to the fascinating character. Venice has decayed since its heyday and suffers from overtourism, but the romantic charm remains. It is also known as the birthplace of composers Tomaso Albinoni and Antonio Vivaldi, and of the poets and opera librettists Apostolo Zeno and Carlo Goldoni. Venice and its lagoon are a UNESCO World Heritage site. It used to be an independent republic, and remains one of Italy's most important cities, with a quarter million inhabitants. Venice is also known as the home of the world's first international film festival, founded in 1932.
 
 Understand
+
  
 
 Orientation
+
 Metropolitan Venice has nearly a million inhabitants, and includes coastal and inland towns such as Bibione, Chioggia and Eraclea.
 
 The comune (municipality) of Venice lies at the coast of northern Italy. It is made up of many islands in the Venetian Lagoon and a stretch of terraferma (mainland). The comune is divided into six boroughs, the most famous of which (known as Venezia Insulare) comprises the historic city of Venice as well as the islands of Giudecca, Murano, Burano, Torcello, Mazzorbo and Sant'Erasmo. Lido and Mestre are other popular areas of the comune.
@@ -18,11 +20,13 @@ The historic city is divided into six sestieri (districts): Cannaregio, Castello
 
 History
 
+
 The Most Serene Republic of Venice dates back to 827, when a Byzantine Duke moved its seat to what is now known as the Rialto, and for the following 970 years, it prospered on trade (especially from the Silk Road) and under the rule of a Roman-style Senate headed by the Doge. Eventually, the Republic of Venice grew into a powerful city-state, and the cradle of Italian Renaissance. In the late 15th century, the Ottoman Empire's expansion around the Mediterranean, new routes on the high seas shifted commerce to the Atlantic, demoting Venice's political status.
 
 The city remains a centre for the arts. One of the significant events in the history of Venice was the opening of the first public opera house in 1637, which allowed members of the general public (those who could afford to pay for the tickets) to enjoy what was once court entertainment reserved for the aristocracy, thus allowing the genre of opera to flourish. Venice was an important destination of the Grand Tour from the 17th century. In 1797, the city was conquered by Napoleon, a blow from which it never recovered. The city was soon absorbed into Austria-Hungary, then ping-ponged back and forth between Austria and a nascent Italy, but Venice is still a monument to the glory days of the Renaissance, and historical culture still throbs powerfully in the old Italians' veins.
 
 See
+
 
 
 
@@ -36,6 +40,7 @@ Venice is packed full of sights, with something interesting to see around each c
 * Rialto Bridge, connecting sestieri San Polo and San Marco across Canal Grande, has become one of Venice's most recognizable icons.
 
 Churches
+
  
 A lot of churches charge an entry fee. There is a "Chorus Pass" for entry into some churches. If you plan to visit three churches or more, you are better off buying the churches pass. There is also a combined pass for museums, churches and transportation only available at the tourist information office, but it is relatively expensive.
 * Saint Mark's Basilica is one of the highlights of a visit to Venice. It was begun probably in 1063 to express Venice's growing civic consciousness and pride. Its model was the 6th-century Church of the Holy Apostles in ConstantinopleTo convey the republic's wealth and power, the original brick façades and interior walls were embellished over time with precious stones and rare marbles. Many of the columns, reliefs, and sculptures were spoils stripped from the churches, palaces, and public monuments of Constantinople.
@@ -48,10 +53,12 @@ A lot of churches charge an entry fee. There is a "Chorus Pass" for entry into s
 * Basilica di San Pietro di Castello was Venice's cathedral until 1807, when the see was transferred to San Marco.
 
 Museums
+
  
 The Fondazione Musei Civici di Venezia (MUVE) (call center 848–08.2000) offers two museums passes for the San Marco Museums valid for 3 months at €16 (€8 reduced) granting admission to Palazzo Ducale, Museo Correr, Museo Archaeologico Nazionale, Sale Monumentali della Bibliotheca Marciana, and another museum pass valid for 6 months for €24 (reduced €18) granting admission to the above mentioned museums plus Ca' Rezzonico, Mesue del '700 Veneziano, Palazzo Mocenigo, Casa di Carlo Goldoni, Ca' Pesaro, Museo del Vetro Murano, Museo di Merletto Burano and Museo di Storia Naturale.
 
 Art museums
+
 * Correr Museum has an interesting collection of globes, starting from the 16th century. There is also an only library hall, an archeological museum of Roman antiques and an important picture gallery. The museum offers a tour of Venetian history. Remarkable painting gallery with masterpieces of the 14th to 16th century from Venice, works of the Venetian sculpture Canova, studies on urban development and social life. A MUVE museum.
 *The Peggy Guggenheim Museum in Dorsoduro includes a sculpture garden and works by Picasso, Kandinsky, Tanguy, Duchamp, Pollock, Dali, and Mondrian.
 * Ca' Pesaro, in Santa Croce, includes the International Modern Art Gallery, with paintings of the 19th and 20th century, and the Museum of Oriental Art. A MUVE museum.
@@ -61,15 +68,18 @@ Art museums
 
 Science and technology museums
 
+
 * Venice Lido Planetarium (Planetario di Venezia Lido), Lido. A planetarium. 
 * Le Macchine di Leonardo a Venezia is an exhibition in the Chiesa di San Barnaba in Dorsoduro showing around 40 models of machines reproduced from Leonardo's codices. The church is an attraction in itself: it's the one under which Indiana Jones finds catacombs in The Last Crusade.
 
 Museums on religion
+
  
 * Jewish Museum in Cannaregio has objects related to the social life of the Jewish community, in two synagogues of the 16th century.
 * Mekhitarist Monastery is a library on the small island of San Lazzaro degli Armeni, near Lido, with historical manuscripts, collection of works, miniatures and documents of the Armenian history, Monastery Church. Tours in Italian, English, and Armenian.
 
 Other museums
+
 
 * Glass Museum (Museo del Vetro). On Murano, the island so typical of its glasswork. A MUVE museum. 
 * Natural History Museum in Santa Croce has 11 exhibition halls with sections on palaeontology, explorations and nature. A MUVE museum.
@@ -81,12 +91,15 @@ Other museums
 * Archaeological Museum in San Marco has a collection of ancient Greek and Roman sculptures, Egyptian, Assyrian and Babylonian artefacts.
 
 Cemeteries
+
 * San Michele Cemetery on Isola di San Michele is part of the European circuit of monumental cemeteries. The Russian ballet dancer Serge Diaghilew, the Austrian physicist Christan Doppler, the American poet Ezra Pound, the Russian composer Igor Stravinsky and the German-Italian composer Ermanno Wolf-Ferrari are buried here.
 
 Do
+
  
 
 Events
+
 * La Biennale di Venezia is one of the most well-known culture institutions. Two events organised by Biennale are the Art and Architecture International Exhibitions happening alternately (Art Biennale in even years, Architecture Biennale in odd) but other fields are also covered: contemporary theatre, dance, music, cinema. Exhibitions take place mostly in two locations in Castello: Arsenale and Giardini. They are both worth visiting even when no event is scheduled. 
 * The Carnival of Venice (Carnevale di Venezia) is an annual festival that takes place for 2½ weeks in January and February (dates vary). It is famous throughout the world for its elaborate costumes and masks.
 * 
@@ -94,25 +107,31 @@ Events
 * 
 
 Opera and concerts
+
 La Fenice Theatre in San Marco is one of the best opera houses in the world. Together with its second house, Teatro Malibran in Canareggio, it stages seasons of opera, ballet, and symphony. 
 
 Frequent Classical or opera performances are staged in churches and schools around the city at reasonable prices. In San Marco, look for the  Scuola Grande di S.Teodoro, Ateneo San Basso, or Chiesa San Vidal. In Castello, you can hear Vivaldi's Four Seasons at the Chiesa della Pietà, where he taught and composed for 33 years.
 
 Activities on a boat
+
  
 
 Gondolas
+
 Riding a gondola along the canals with your own gondoliere, the oarsmen who symbolizes the city, is one of the major joys of being in Venice. It's also one of the most expensive, as gondolier-for-hire business licences are limited to just 430 to 455 oarsmen in Venice, making the market artificially scarce and inflating prices. The gondoliers trade is shaped by 900 years of tradition: most are born locals, and it wasn't until 2010 that Venice got its first licensed female gondolier.
 
 Short trips of 30 minutes to an hour cost upwards of €100. A small comfort is that the price is per ride, and not per person. Most gondolas can accommodate between three and four people. Make sure you reach an agreement on price and time before you start in order to avoid unpleasant surprises. There are many tips on how to negotiate prices in guidebooks; some are pretty wild and even include walking away and letting them chase you. Whatever method you choose, bargaining with the gondolieres might knock €20-30 off the price. However, there's an informal habit among the oarsmen to cut the most interesting and little-known parts from the journey path for "discount" customers. Reduced rate riders get less marvel in exchange for a moderate price drop, which may not be worth it.
 
 Vaporetto and traghetti
+
 If you find spending hundreds of euros for a gondola to be a bit much, ride a vaporetto or traghetto instead. There are plenty of vaporetto lines that passe by interesting sights at a more manageable price of €5–10. Additionally, one can cross the canals on a traghetti, stripped down gondolas used as municipal ferries. In the 1950s there were as many as thirty, but now there are seven points to find them, with some only operating at rush hours. The length of any crossing is just a few minutes. Many visitors enjoy visiting the open air markets near the Rialto Bridge and there is a traghetto station there, at the Pescheria (fish market) joining the Santa Sophia church along the Strada Nova. You will notice that traghetti passengers tend to stand up, but if you are not comfortable doing so, sitting is possible, if you are careful.
 
 Rowing clubs
+
 Venice is home to several expensive rowing clubs.
 
 Other
+
  
 Take a long and sunny walk along the Giudecca canal in Dorsoduro, which can be done at both sides of the canal. At the northern route you might find it interesting to see also how a gondola is made, stopping by the Squero (Venetian for small ship yard) across a canal near San Trovaso Church. 
 
@@ -141,6 +160,7 @@ Teatro San Gallo. Half-hour documentary based on the BBC series Francesco's Veni
 Football: Venezia FC were promoted in 2026, so they now play soccer in Serie A, the top tier. Their Stadio Pier Luigi Penzo (capacity 11,000) is on Sant'Elena, connected by streets to the main east island.
 
 Buy
+
  
  
 Venice has always been a city of merchants. Consequently, most of the Venetians working in Venice still own or work at a shop. The pride of the Republic of Venice was the extreme diversity and quality of goods and services which could be found in Venice. These days, however, mass tourism led Venice to be populated with many shops selling low-quality souvenirs. The local shops are suffering a lot from this situation and it is not easy to identify them within the crowd of shops selling harmful imported goods. Buying from the authentic local businesses has never been more important, as it is essential to the future of the Venetians and guarantees you to get the real thing and to have a much better experience of Venice. It is not easy, though. Thankfully, there is a social enterprise in Venice that works closely with the Venetian business owners (shops, restaurants and bars included). They have a certification process where the local artisan shops attest and commit to be selling products both authentic and sustainable as well as to give a 10% discount to the customers carrying a Venezia Autentica Friends' Pass (buyable online for only ).
@@ -157,6 +177,7 @@ Don't miss the Rialto market on San Polo, the smallest sestiere. The Rialto mark
 
 Eat
 
+
  
  
  
@@ -172,6 +193,7 @@ What Venice is not famous for is its pizza, Italy is a big country and pizza is 
 Be careful when the prices are on a weight basis (typically by the "etto", abbreviated "/hg". or 100 g). One dish can easily contain 400g of fish or meat (almost a pound) - coming to 4 times the indicated base price! Restaurants might offer low prices for food on their menus that they advertise outside the entrance, but they will sometimes compensate this by charging high prices for drinks (which is naturally *not* advertised). €5 for 33 cl of beer is not uncommon. Le Bauta, an eatery on Fond del Gaffaro, is a good example. Also, please make sure that you get your change back after payment as sometimes it may be 'forgotten' by the waiters.
 
 Budget
+
 To save money at lunch, eat standing up - that's what Venetians themselves do. Every cafe, trattoria, osteria, enoteca or whatever it chooses to call itself is stocked at lunchtime with cicchetti - Venetian tapas, including tramezzini (triangular sandwiches on white bread), bite-sized rolls with various cold cuts, polpette (fried balls of minced fish or meat) and assorted antipasti. Order by pointing at what you want on the glass shelves, and wash the whole thing down with a glass of wine (un' ombra) or a spritz (made with, in order of bitterness and alcohol content, Aperol, Campari or Select). Bear in mind that as soon as you allow yourself to sit at the table and be waited on, instead of ordering and consuming your food at the counter, the prices for the same items go up - you can end up paying double. If you look at the (government-mandated) chart of prices stapled to the wall near the bar, you'll see 2 columns of numbers, accommodating this arrangement. However, sitting is worth it if you plan on staying a while. Some places will also serve free bread and water for seated patrons, but then there is usually also a small charge (€1-3 per person) for "pane e coperto" (bread and cover charge).
 
 There are a few supermarkets in the city, so if you are in the need to save some money, these are an option as they serve a wide array of prepared and semi-prepared food. On the main street from the station to the Rialto bridge there is a Coop and a Billa supermarket. There are still many small bakery shops and "biavaroli" where you can buy bread, cheese etc., particularly near the Rialto market area. For fresh fruit (including chilled coconut) watch out for the street market stalls. There is always a boat parked in the canal on campo San Barnaba selling fruit and vegetables into the late hours.
@@ -181,19 +203,23 @@ If you want to buy water (Venice has excellent free tap water easily accessible 
 Head to the Dorsoduro area of Venice if you want to save a few euros. It is located on the south side of the city. It has the highest concentration of places where locals, especially students, go to eat. Generally staying away from the main squares will be the cheapest option. If you're willing and able to walk around the town, some back streets offer the best food for the lowest price. Seeing the city from this vantage point is a lot of fun too!
 
 Mid-range
+
  
 
 The Rialto food markets are an absolute must for fruit, vegetables and cheese, but most of all for the huge range of seafood, much of it fresh out of the lagoon and still moving! There are a variety of small stores around the city that sell fruits and vegetables, but tourists will be hard-pressed to find them. Anything else you will find in the one of the few supermarkets in the city.
 
 Splurge
+
 There are 6-7 Michelin star restaurants in Venice, with prices to match.
 
 Near the Rialto bridge there's a row of restaurants with tables by the canal, where you can have the quintessential Venice experience of dining by the canal lights. Although they do have waiters outside bugging you, some have pretty acceptable quality for price, which is almost always expensive anyway.
 
 Ice cream
+
 You will find ice cream all over the city, and you will hardly survive a hot summer day without it. Prices are €1.00-1.50 for one scoop, €2.50-3.50 for three scoops.
 
 Drink
+
  
  
 
@@ -206,6 +232,7 @@ A small Grappa is a common way to end meals, but be careful as it is brandy with
 Beer in a small pub is about €5 for a pint (birra media).
 
 Coffee
+
  
 
 Coffee is everywhere in Venice, and both Venetians and the tourists avail themselves of the opportunities, usually by downing a quick dose at the counter (see warning about sit-down prices above). Rule of thumb: the bigger (and shinier) the espresso machine, the better the result. Espresso, the real Italian, is about €1 at the bar, €2 at a table.
@@ -215,6 +242,7 @@ E Rosa Salva. One of the favorites is the mini-chain "E Rosa Salva", with three 
 
 
 Nightlife
+
 There are a number of fantastic bars in Venice, most are small places with lots of charm. Bars that stay open after 23:00 are clustered around a few late-night drinking areas in Venice. Notice that Piazza San Marco is not one of them, although it is very pleasant with many people wandering around late.
 
 The actual late night scene is in either Campo Santa Margherita, where the student crowds from nearby the University Ca' Foscari in Dorsoduro hangs out; upscale Erbaria on the West side of the Rialto Bridge where the main vegetable market is held during the day and along Fondamenta de la Misericordia in Cannaregio. The bars along Fondamenta de la Misericordia is anchored by Paradiso Perduto, which features live music on most nights. There's usually youths cruising (in motor boats) along the canal, blaring Italian rap songs in Italian from the loudspeakers. 
@@ -224,8 +252,9 @@ Pub crawls are best planned in advance, as there's a real risk of wasting an hou
 There's next to no night clubs in proper Venice, to get to those you have to follow the locals and head over the bridge into Mestre, or hop on the boat to Lido. Those looking for LGBT nightlife in Venice will be disappointed. Hop on the train to Padua instead.
 
 Pubs
+
 There are two Irish pubs in Venice. One is located along the Strada Nova in Cannaregio; the other one is the Inishark just before Campo Santa Maria Formosa.
 
-===== TOKENS THE MODEL TRAINS ON (2,382) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (2,382) =====
 
 italian venezia venetian venexia sanctuary lagoon virtually ago adds fascinating character decayed heyday suffer overtourism romantic charm remain birthplace composer tomaso albinoni antonio vivaldi poet opera librettist apostolo zeno carlo goldoni lagoon unesco world heritage site independent remain important city quarter million inhabitant home world international film festival founded orientation metropolitan nearly million inhabitant coastal inland town bibione chioggia eraclea comune municipality lies coast island venetian lagoon stretch terraferma mainland comune divided borough famous venezia insulare comprise historic island giudecca murano burano torcello mazzorbo santerasmo lido mestre comune historic divided sestieri district cannaregio castello dorsoduro polo santa croce finally marco monument sight sestiere uses separate house number allocated specific pattern history serene date byzantine duke moved seat rialto following prospered trade especially silk road rule roman style senate headed doge eventually grew powerful state cradle italian renaissance late century ottoman empire expansion mediterranean route seas shifted commerce atlantic demoting political status remain arts significant event history opening public opera house allowed member general public afford pay ticket enjoy court entertainment reserved aristocracy allowing genre opera flourish important destination grand tour century conquered napoleon blow recovered soon absorbed ping ponged forth nascent monument glory renaissance historical culture throb powerfully old italian vein packed sight interesting corner spectacular sight doge palace saint mark basilica marco historic seat power doge palace marco dont miss guided tour named secret itinerary let discover palace administration worked casanova jail wonderful old roof structure muve museum bell tower mark date exact replica previous tower collapsed tower view lagoon clock tower restored astronomical clock visible fascinating tour clock mechanism rooftop bell visited guided tour muve museum scuola grande rocco polo masterpiece tintoretto guild house exquisite example mannerist art cycle allegory life passion christ scene old testament jewish ghetto cannaregio active jewish life home synagogue saturday late friday shop restaurant jewish rialto bridge connecting sestieri polo marco canal grande become recognizable icon church church charge entry fee chorus pass entry church plan church buying church pass combined pass museum church transportation information office relatively expensive saint mark basilica highlight begun probably express growing civic consciousness pride model century church holy apostle constantinopleto convey wealth power original brick facade interior wall embellished precious stone rare marble column relief sculpture spoil stripped church palace public monument constantinople giacomo rialto polo built possibly oldest recognized century clock entrance red pillar beautiful gold accent church giovanni paolo castello fine huge church tomb doge share piazza fine renaissance facade scuola marco equestrian statue mercenary condottiere captain bartolomeo colleoni santa maria dei miracoli perfect jewel box church simple form ornamented fine exterior marble facing convento francesco deserto old franciscan convent beautiful island lagoon madonna dellorto canaregio grave painting tintoretto maria della salute dorsoduro grand canal giudecca canal dome important addition skyline soon emblematic appearing artwork basilica pietro castello cathedral transferred marco museum fondazione musei civici venezia muve call museum pass marco museum valid month reduced granting admission palazzo ducale museo correr museo archaeologico nazionale sale monumentali della bibliotheca marciana another museum pass valid month reduced granting admission mentioned museum plus rezzonico mesue veneziano palazzo mocenigo casa carlo goldoni pesaro museo vetro murano museo merletto burano museo storia naturale art museum correr museum interesting collection globe starting century library hall archeological museum roman antique important picture museum tour venetian history remarkable painting masterpiece century work venetian sculpture canova study urban development social life muve museum peggy guggenheim museum dorsoduro sculpture garden work picasso kandinsky tanguy duchamp pollock dali mondrian pesaro santa croce international modern art painting century museum oriental art muve museum galleria dellaccademia venezia dorsoduro significant art museum pre century art della dogana former custom house contemporary art permanent exhibition work francois pinault collection renovation world renowned architect tadao ando galleria giorgio franchetti doro cannaregio collection painting statue former palace century example gothic architecture sculpture bronz painting mantegna giorgione titian flemish dutch painting science technology museum lido planetarium planetario venezia lido lido planetarium macchine leonardo venezia exhibition chiesa barnaba dorsoduro showing model machine reproduced leonardo codice church attraction indiana jone find catacomb last crusade museum religion jewish museum cannaregio object related social life jewish community synagogue century mekhitarist monastery library island lazzaro degli armeni lido historical manuscript collection work miniature document armenian history monastery church tour italian english armenian museum glass museum museo vetro murano island typical glasswork muve museum natural history museum santa croce exhibition hall section palaeontology exploration nature muve museum lace museum museo merletto muve museum naval history museum castello collection relic serenissima italian navy ancient arsenale shipyard miniature model uniform stadart collection sea shell contarini bovolo cylindrical tower marco spiralling sery arch characteristic example venetian architecture period transition gothic renaissance style panoramic view music museum marco beautiful church collection musical instrument venetian baroque painting palazzo grimani castello jewel renaissance architecture collection painting archaeological collection greek roman artefact temporary exhibition archaeological museum marco collection ancient greek roman sculpture egyptian assyrian babylonian artefact cemetery michele cemetery isola michele european circuit monumental cemetery russian ballet dancer serge diaghilew austrian physicist christan doppler american poet ezra pound russian composer igor stravinsky german italian composer ermanno wolf ferrari buried event biennale venezia culture institution event organised biennale art architecture international exhibition happening alternately art biennale architecture biennale odd field covered contemporary theatre dance music cinema exhibition mostly location castello arsenale giardini worth visiting event scheduled carnival carnevale venezia annual festival take week date vary famous throughout world elaborate costume mask opera concert fenice theatre marco opera house world together house teatro malibran canareggio stage season opera ballet symphony frequent classical opera performance staged church school reasonable price marco look scuola grande teodoro ateneo basso chiesa vidal castello hear vivaldi season chiesa della pieta taught composed activity boat gondola riding gondola canal gondoliere oarsmen symboliz major joys expensive gondolier hire business licence limited oarsmen making market artificially scarce inflating price gondolier trade shaped tradition born local wasnt licensed female gondolier short trip minute hour cost upward comfort price ride person gondola accommodate sure reach agreement price start order avoid unpleasant surprise tips negotiate price guidebook pretty wild walking letting chase method choose bargaining gondoliere knock price informal habit oarsmen cut interesting little part journey path discount customer reduced rate rider marvel exchange moderate price drop worth vaporetto traghetti spending hundred euro gondola bit ride vaporetto traghetto instead plenty vaporetto line passe interesting sight manageable price additionally cross canal traghetti stripped gondola municipal ferry thirty point operating rush length crossing minute enjoy visiting air market rialto bridge traghetto station pescheria fish market joining santa sophia church strada nova notice traghetti passenger tend stand comfortable sitting possible careful rowing club home expensive rowing club sunny walk giudecca canal dorsoduro side canal route interesting gondola stopping squero venetian ship yard canal trovaso church spend island mainly murano burano torcello boat service island scheduled time island prepared line wait boat island glass museum murano lace museum burano certainly worth burano picturesque street house house sporting pastel shade beautiful torcello except old church supposed throne atilla peace tranquility island anywhere torcello home expensive cipriani restaurant walking island enough experience youve enough hype hop vaporetto cimitero graveyard peaceful walk famous tomb section dedicated deceased children particularly haunting toilet sure beauty walk alley ways water taxi part island night sit watch local passing wonderful museum church allow sight keep busy throughout secret itinerary doge palace worth secret fascinating room palace book advance pretty inhabited serving trade quiet little evening outside eating exception classical music concert probably play vivaldi guide show highlight choose walking boat tour focused shopping history art lover itinerary photo camera phone corner inspire taken picture consider entering photo competition onedayinvenezia running round awarding monthly winner dedicated amateur photographer grand prize weekend trip included send postcard entire letter dedicated loved old snail mail electronic variety celebrated tradition postal service paper written communication general earliest medieval book printing house riviera brenta old canal riviera brenta famous extraordinary palladian villa brenta river museum historical building mile riviera mainland city stra fiesso dartico dolo fosso mira oriago malcontenta cycling excursion antique palladian villa built brenta river stra village famous garden villa pisani museum shoe villa foscarini rossi last museum admire model italian shoe created factory major brand fendi genny yves saint laurent givenchy ungaro anne kleyn richard tyle vera wang dolo village square old watermill century air market teatro gallo half hour documentary based bbc sery francesco amazing film puts spectacular beauty historical context film english audioguide italian russian spanish football venezia promoted play soccer serie tier stadio pier luigi penzo capacity santelena connected street island merchant consequently venetian working work shop pride extreme diversity quality good service mass tourism led populated shop selling low quality souvenir shop suffering situation easy identify crowd shop selling harmful imported good buying authentic business important essential future venetian guarantee real thing experience easy thankfully social enterprise work closely venetian business owner shop restaurant bars included certification process artisan shop attest commit selling product authentic sustainable give discount customer carrying venezia autentica friend pass buyable online euronet runs majority atms carry hefty atm fees extortionate exchange rate avoid extortionate exchange rate reject currency conversion offered allow default bank rate possible atms provided actual bank financial institution credit agricole atm machine notable charge atm fees excessive currency conversion rate visa debit prepaid card youve thinking wont able bit designer shopping think major italian fashion brand name label clothing shopping piazza marco versace maxmara gucci armani louis vuitton prada numerous name want shop clothing accessory dont necessarily shop biggest name fashion campo santo stefano calle della mandola famous boutique excellent quality unique item clothe shoe wallet handbag look hand paper exquisite miniature building moro watch fake moro sign beware fake trip neighbouring murano famous glass article detail trap coloured pasta venetian limoncello original napolitan italian food italian particularly typical regional italian food food shop check label discover dont miss rialto market polo smallest sestiere rialto market shopper shop restaurant rialto farmer market shopping slightly expensive filled piazza marco home rich distinct regional cuisine numerous wonderful restaurant michelin starred ones home mediocre eatery shy serving undercooked pasta overinflated price led becoming widely regarded restaurant serve food quality quantity lower anywhere bit caution planning ahead youll excellent experience eating rule waiter outside pimping business probably avoided trademark food sepe nero cuttlefish ink intense black ink serve sauce ingredient polenta corn meal risotto rice pasta dish normally indicated italian word nella seppia cuttlefish alla seppia style cuttlefish nero seppia black cuttlefish example polenta nella seppia fried corn meal black ink cuttlefish despite intensity color ink surprisingly mild taste veneitian dish fegato alla veneziana chopped liver cooked chopped onion sarde saor fried sardine dipped fried onion raisin pine nuts spice vinegar snack version tapa cicchetti paired wine restaurant bars serve variant bacaro wine bar serve wide selection cicchetti famous pizza country pizza generally speciality part restaurant serving acceptably dont compare part country craving pizza chain pizzeria oche meal plentiful price reasonable look spend pizza depending exotic selection american called quanto basta pizza serve american style pizza pepperoni fry careful price weight basis typically etto abbreviated dish easily contain fish meat pound coming time indicated base price restaurant low price food menus advertise outside entrance compensate charging price drink naturally advertised beer uncommon bauta eatery fond gaffaro example please sure change payment forgotten waiter budget save money lunch standing venetian cafe trattoria osteria enoteca choose call stocked lunchtime cicchetti venetian tapa tramezzini triangular sandwich white bread bite sized roll cold cuts polpette fried ball minced fish meat assorted antipasti order pointing want glass shelve wash thing glass wine ombra spritz order bitterness alcohol content aperol campari select bear mind soon allow sit table waited instead ordering consuming food counter price item paying double look government mandated chart price stapled wall bar youll column number accommodating arrangement sitting worth plan staying serve bread water seated patron charge person pane coperto bread cover charge supermarket save money option serve wide array prepared semi prepared food street station rialto bridge coop billa supermarket bakery shop biavaroli bread cheese etc particularly rialto market fresh fruit chilled coconut watch street market stall boat parked canal campo barnaba selling fruit vegetable late want water excellent tap water easily accessible numerous fountain outside throughout cheapest supermarket billa store throughout supermarket disguised nondescript building space limitation head dorsoduro want save euro side highest concentration local especially student generally staying square cheapest option youre willing able walk street food lowest price seeing vantage point fun mid range rialto food market absolute fruit vegetable cheese huge range seafood fresh lagoon moving variety store sell fruit vegetable hard pressed anything supermarket splurge michelin star restaurant price match rialto bridge row restaurant table canal quintessential experience dining canal light waiter outside bugging pretty acceptable quality price expensive anyway ice cream ice cream hardly survive hot summer price scoop scoop typical loved venetian spritz mix liquor prosecco sparkling water aperol spritz far common variant campari select bars serve price range depending close artery spritz paired cicheti venetian version tapa another famous bellini invented harry bar mix white peach juice prosecco ubiquitous venetian champagne sparkling wine fermented low temperature prosecco develop amylic aroma fruit drop mix fruit juice austere champagne classic bellinis champagne normal standard expensive bellini harry bar obscene cheaper terrace similar star establishment grappa common meal careful brandy cent alcohol beer pub pint birra media coffee coffee everywhere venetian avail opportunity downing quick dose counter warning sit price rule bigger shinier espresso machine result espresso real italian bar table rosa salva favorite mini chain rosa salva location fiubera piazza marco underpass middle arcade cross bridge fabbri merceria salvadore campo campo zanipolo church looking canal last gelateria youll exactly half sips bottom cup rich crema bitterness assorted house sweet nightlife fantastic bars charm bars stay clustered late night drinking notice piazza marco pleasant wandering late actual late night scene campo santa margherita student crowd nearby university foscari dorsoduro hang upscale erbaria side rialto bridge vegetable market held fondamenta misericordia cannaregio bars fondamenta misericordia anchored paradiso perduto feature live music night youth cruising motor boat canal blaring italian rap song italian loudspeaker pub crawl planned advance real risk wasting hour wandering aimlessly search watering hole especially midweek bars close sure notice ones night club proper follow local head bridge mestre hop boat lido looking lgbt nightlife disappointed hop train padua instead pubs irish pubs strada nova cannaregio inishark campo santa maria formosa

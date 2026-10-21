@@ -29,9 +29,11 @@ def test_pages_carry_a_strict_content_security_policy():
 
 def test_expensive_endpoints_are_rate_limited(monkeypatch):
     monkeypatch.setattr(security, "TURNS_PER_IDENTITY", security.RateLimiter(2, 600))
+    # Counted before any work: these return 400 (return before departure) until the limit, then 429.
+    bad = {"budget": 1000, "start_date": "2027-03-10", "end_date": "2027-03-01"}
     for _ in range(2):
-        assert client.post("/api/parse", json={"text": "Rome in May"}).status_code != 429
-    r = client.post("/api/parse", json={"text": "Rome in May"})
+        assert client.post("/api/suggest", json=bad).status_code == 400
+    r = client.post("/api/suggest", json=bad)
     assert r.status_code == 429 and "Retry-After" in r.headers
 
 

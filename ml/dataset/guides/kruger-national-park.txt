@@ -2,15 +2,17 @@ Kruger National Park, South Africa
 Labels: nature, adventure | Split: validation
 Source: https://en.wikivoyage.org/wiki/Kruger_National_Park (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (33,777 characters) =====
+===== CLEANED GUIDE TEXT (33,802 characters) =====
 
 The Kruger National Park (KNP) lies in the north-east of South Africa and runs along the border of Mozambique in the east, Zimbabwe in the north, and the southern border is the Crocodile River. The park covers  and is divided into 14 ecozones, each supporting different wildlife. It is one of the main attractions of South Africa and it is considered the flagship of South African National Parks (SANParks).
 
 Understand
 
+
 Kruger National Park is one of the biggest protected areas in South Africa and is widely considered to be one of the best national parks in the world. The park is similar in size to El Salvador, Israel, Slovenia, and Fiji, or to the US state of New Jersey. With over 1.5 million visitors annually, Kruger National Park is one of the most popular tourist attractions in South Africa.
 
 History
+
  
 The park was established in 1898 with the help and blessing of the South African Republic's president Paul Kruger as a protected area for wildlife and it first opened its gates to the general public in 1927.
 
@@ -20,7 +22,9 @@ Kruger National Park is part of a larger transnational park initiative called th
 
 Landscape
 
+
 Flora and fauna
+
 The southern part of the park along the Sabie and Crocodile river is rich in water and has a lot of game viewing opportunities. Here you can see the best of African flora and fauna such as lion, leopard, elephant, rhino and buffalo, often referred to as the big five, but there are plenty of others to see as well. Driving around the Sabie River will always result in seeing some interesting animals. The vegetation around the Sabie River can be very dense forest and thicket and it gets a little bit more open driving down south to the Crocodile River. The northern part of the park supports less flora and fauna and is often referred to as the birding paradise.
 
 If you choose to drive yourself, and aren't experienced in African animal tracking, you will still inevitably see elephant and buffalo, and a big variety of antelope.  Impala are ubiquitous.  Rhino are less common, but big enough to be seen by the untrained eye.  Leopard are commonly seen by the experts, but are camouflaged and in trees, so to present a challenge to the untrained.  Everything else is down to your luck of the day.
@@ -28,11 +32,13 @@ If you choose to drive yourself, and aren't experienced in African animal tracki
 If you have limited time, and want to do Kruger, go in the dry season, stay at a camp like Olifants, and confine yourself to the south of the park along the southern rivers.
 
 See
+
  
  
 Although the main attraction of Kruger is the wildlife, this just barely scratches the surface of what the park offers. From archaeological sites to memorial plaques, from baobab trees to some of the oldest rocks on the planet, Kruger offers a spectacular variety of attractions.
 
 Wildlife
+
 The main attraction of the park is wildlife viewing, and most of the camps have boards for reporting sightings of some of the most popular animals in the park. Due to poaching concerns, rhino sightings have been removed, and guests are asked not to report the locations of any animal sightings on social media.
 
 The best times for sightings are during sunrise right when the gates open and sunset right before the gates close when animals are the most active. Sightings are also likely easier during the dry winter season when veld foliage is less dense and animals are likely to congregate around water sources. During the wet summer, there is a multitude of birds with summer seasonal visitors and a key time for birdwatchers.
@@ -53,6 +59,7 @@ Five Trees. The Five Trees are a set of five trees most commonly seen about the 
 
 
 Marula Region (South)
+
 
 The southernmost region of the park, and the most visited, is the Marula region. It is the most densely populated with wildlife as well.
 
@@ -77,6 +84,7 @@ Gardenia Hide. Despite being in one of the most accessible areas of the park, Ga
 
 Nkayeni Region (Central)
 
+
 North of Skukuza is the Nkayeni region of the park, with Satara rest camp centrally located in the region and the Orpen gate is the only gate in the area. It is bordered to the north by the Olifants River.
 * 
 Kruger Tablets. The Kruger tablets are a pair of tablets (one in Afrikaans, one in English), embedded into a large boulder, commemorating the proclamation of the Sabie Game Reserve by president Paul Kruger in 1899 and the National Parks Act in 1926. It's one of a small number of spots in the park where you're allowed to leave your vehicle outside of a camp.
@@ -95,6 +103,7 @@ Ratel Pan. This west-facing hide overlooking the Timbavati river just upstreab o
 
 
 Nxanatseni Region (North)
+
 
 
 
@@ -136,9 +145,11 @@ Kanniedood hide. Named after a particularly hardy type of aloe, the Kanniedood h
 
 Do
 
+
 The biggest draw of Kruger is the nature. Flora, fauna, and beautiful landscapes all combine to make a generally pleasant and relaxing experience. It's possible to spend weeks in Kruger slowly driving around looking for animals, stopping at the various hides and other waypoints to see what's there, and just generally taking life at a snail's pace. However, Kruger offers a variety of ways to see things you wouldn't otherwise see with guided drives and walks, as well as a variety of other experiences both in and out of camp.
 
 Wildlife experiences
+
  
 The basic way to see the wildlife is to tour the park by car during the daylight hours when the park is open.  This is a very effective way of seeing wildlife, even for first timers. There are many other wildlife experiences on offer.
 
@@ -152,6 +163,7 @@ The basic way to see the wildlife is to tour the park by car during the daylight
 * Wildlife films Several rest camps show wildlife films 6 days a week in the evenings. These camps are: Berg-en-Dal, Letaba, Mopani, Satara, Shingwedzi and Skukuza.
 
 Hiking Trails
+
 
 Discovering African flora and fauna on foot is an unforgettable lifetime experience and only few places in Africa offer such tours. Groups consist of up to 8 hikers plus 2 rangers on a hiking tour that lasts for 3 days, and you learn a lot of things about South African wildlife. There is no way that you could see animals closer than on this tour. Imagine seeing lions, elephants or rhinos only a few meters from you. This is a breathtaking experience. Trails follow circular routes and you return each evening to the safety of your camp where dinner awaits. The duration of the trails is three nights and two days, either from Sunday to Wednesday, or from Wednesday to Saturday. Hikers meet at the designated rest camp at 15:30 on Sundays or Wednesdays from where they leave by vehicle for their trail camp after a short briefing.
 
@@ -175,6 +187,7 @@ Mathikithi trail. Named after the nearby Mathikithi sandstone hill, this wildern
 
 Other than wildlife
 
+
 * 
 Skukuza Golf Club. Skukuza Golf Course offers a 9-hole golf course along the banks of Lake Panic and the Mafunyana river. The course is open to the public and to the wild, and is often called "the wildest golf course in the world."
 
@@ -183,6 +196,7 @@ AM Spa Kruger. (Treatment menu) AM spa offers a spa facility inside of the Skuku
 
 
 Buy
+
 Bigger camp sites such as Lower Sabie and Skukuza have comfortable shopping facilities and you can buy drinks, foodstuffs, souvenirs, as well as some other travel items you may have forgotten.  The range is more limited at the smaller or more remote camps.  It is easy for them to run out of particular items, so you have to make do with what is available.  Fresh milk particularly can be in short supply.
 
 Artistic wood carvings can be bought as well and is usually of reasonable quality and cheaper than in Johannesburg and Cape Town. Carvings can be found in and around the gates to the Kruger National Park as well.
@@ -190,6 +204,7 @@ Artistic wood carvings can be bought as well and is usually of reasonable qualit
 Animal skins and rugs are available as well.
 
 Eat
+
  
 
 Most of the main camps have shops where you can buy raw food to cook, as well as wood or charcoal for fires. All accommodations have areas for cooking. Campsites tend to have communal kitchens, but most rondavels, bungalows or cottages will have private kitchens or kitchenettes. There are also picnic areas out in the wild. Some of these areas, such as Tshokwane, will sell cooked food on site. Others only have braai facilities for you to cook for yourself. Many of the camps have cafeterias and restaurants, but in general there's not too much variety (see below).  The menu is the same at each camp, with a range of only 10 or so dishes.  Most visitors familiar with the park are self-catering in their lodges or at the picnic areas.
@@ -202,6 +217,7 @@ Lodges in the private areas of the park and outside the park will cater food, of
 
 Restaurants at camps
 
+
 Most of the main camps have a single restaurant each, which are franchised with various chains popular in South Africa. An official listing of restaurants at camps in Kruger is available on the SANParks website.
 
 * 
@@ -213,12 +229,14 @@ Wimpy Pretoriuskop. (Menu) Wimpy is a multinational chain, founded in the US, th
 
 Cattle Baron
 
+
 As the biggest camp, Skukuza has luxuries most other camps don't get. One of these is the Cattle Baron, one of a chain of steak restaurants founded in 1987. Their Skukuza restaurant is one of two restaurants in South Africa's national parks (the other one being in Addo Elephont Park. The menu at Skukuza is somewhat different from the other Cattle Baron restaurants, but the menu on their website can give you a good idea what's available. The Cattle Baron will often (though not always) also serve various local foods such as mielie pap, boerewors, kudu steaks and malva pudding. Be sure to check their specials menu.
 * 
 Cattle Baron Skukuza. 
 
 
 Tindlovu
+
 
 Tindlovu is perhaps the most common restaurant in Kruger National Park. The first restaurant was opened in 2012 after decades of the founder dreaming of pursuing hospitality as a career. Tindlovu is mostly based in Kruger Park, but they also have two restaurants in Mbombela (Nelspruit).
 * 
@@ -244,6 +262,7 @@ Tindlovu Shingwedzi. (Menu)
 
 
 Bush Braai and Bush Breakfast
+
 
 Most camps offer Bush Braais and Bush Breakfasts, which are a wonderful way to have a dinner whilst experiencing the real bush. Bush braais begin with a roughly hour-long game drive in the afternoon, leading to the site of the meal, with preparation already underway. This meal typically lasts about 90 minutes and typically includes mielie pap (corn/maize porridge), boerewors (sausage), game meat, a variety of vegetables and salad. Desserts and tea are also offered, and a cash bar is available. The braai will be followed by a 30-minute night drive back to camp. Bush breakfasts are fairly similar.
 
@@ -275,6 +294,7 @@ Skukuza.
 
 Boma Braai
 
+
 A Boma braai is an open fire barbecue in an open air boma in the camp. Boma braais are generally managed through the camp's restaurant and should be booked ahead. They are a nice trade-off for people who are either unable or unwilling to do a bush braai, but still want the feeling of being out in the wild rather than sitting at a restaurant. Bush braais often will not accommodate children (or will only accommodate a limited number of children, so groups with children may consider a boma braai instead.
 
 Boma braais can be booked at the following camps:
@@ -300,9 +320,11 @@ Skukuza.
 
 Picnic sites
 
+
 There are quite a few picnic sites of various size throughout the park. Some of the larger ones such as Afsaal and Tshokwane have kitchens where you can buy premade meals. The smaller ones (such as the Albasini ruins) might have no facilities directly available, requiring a short drive to nearby facilities. Many (but not all) picnic sites offer either skottels (gas-fired standalone cast iron frying pans) or braais with an option to buy firewood. Most of the main camps also have a day visitors area which serves as a picnic site. The Skukuza day visitors area is not within the main camp, but is a short drive downriver.
 
 Marula region
+
 
 The Marula region of the park between the Crocodile and Sabie rivers doesn't contain many picnic spots, as it is quite dense with camps. However, with the exception of the Albasini Ruins these spots are some of the best-stocked picnic sites in the park.
 
@@ -317,6 +339,7 @@ Nkuhlu. Hidden away along the Sabie River, Nkuhlu is easy to miss when driving t
 
 
 Nkayeni Region
+
 
 The Nkanyeni region (between the Sabie river and the Olifants river) is home to the biggest picnic area in the park, Tshokwane. It also has a collection of other areas serving people driving up the less-used western roads and in the area around Satara.
 
@@ -341,6 +364,7 @@ Tshokwane Trading Post. (Pronounced "chore-kwah-neh" with a non-rhotic "R".) Per
 
 Nxanatseni Region
 
+
 The northernmost region of the park and in many ways the least developed, Nxanatseni has only a few picnic spots scattered around.
 
 * 
@@ -361,12 +385,13 @@ Pafuri. This spot is a good birding site along the Luvuvhu river. They have braa
 
 Drink
 
+
 South African alcohol laws apply within the park. However, South African National Parks have some additional regulations regarding alcohol. There is a blanket ban on alcohol for day visitors - it is not allowed at picnic spots, in the day visitor areas at rest camps, and you are not allowed to drink alcohol whilst driving. (South African road law still applies in Kruger.) Day visitors are also not allowed to enter the park with any alcohol.
 
 Overnight visitors may bring alcohol in their cars for consumption at their accommodation, and the restaurants in Kruger do serve alcoholic beverages to overnight visitors. Overnight visitors are also allowed to purchase alcohol at the Parks Shops in the main camps.
 
 The bars in camp are visited in the evening by guests recalling tales of wildlife seen during the day.  Generally people aren't visiting Kruger for the nightlife, but are more likely to spend the early evening with a braai, and retiring to bed for an early start the following day.
 
-===== TOKENS THE MODEL TRAINS ON (2,590) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (2,590) =====
 
 national park knp lies runs border mozambique border crocodile river park cover divided ecozone supporting wildlife attraction considered flagship african national park sanpark national park biggest protected widely considered national park world park similar size israel state jersey million annually national park attraction history park established help blessing african president paul protected wildlife opened gate general public park run sanpark probably managed african national park wildlife conservation education tourism objective knp effective measure prevent poaching result cars generally inspected entering leaving park national park larger transnational park initiative called limpopo transfrontier park knp alongside limpopo national park mozambique gonarezhou national park manjinji pan sanctuary malipati safari form continuous conservation country border restriction crossing apply border post landscape flora fauna park sabie crocodile river rich water game viewing opportunity african flora fauna lion leopard elephant rhino buffalo referred plenty driving sabie river result seeing interesting animal vegetation sabie river dense forest thicket little bit driving crocodile river park support flora fauna referred birding paradise choose drive arent experienced african animal tracking inevitably elephant buffalo variety antelope impala ubiquitous rhino common enough untrained eye leopard commonly expert camouflaged tree present challenge untrained everything luck limited want dry season stay camp olifant confine park river attraction wildlife barely scratch surface park archaeological site memorial plaque baobab tree oldest rock planet spectacular variety attraction wildlife attraction park wildlife viewing camp board reporting sighting animal park due poaching concern rhino sighting removed guest asked report location animal sighting social media time sighting sunrise gate sunset gate close animal active sighting likely easier dry winter season veld foliage dense animal likely congregate water source wet summer multitude bird summer seasonal key birdwatcher youre wildlife viewing worthwhile park animal guidebook help list check youve game buffalo elephant lion leopard black rhino considered difficult african animal hunt today considered amongst crown jewel park adventurer try shoot trip camera youre certain elephant buffalo dont confuse wildebeest buffalo lion bit difficult easily camouflage surrounding landscape youll probably park look lion napping shade tree bush leopard black rhino elusive white rhino love graze short grass black rhino skittish black rhino browse shrubbery tend plain stand tree shrub theyre smaller easily frightened leopard black rhino look leopard tree overhanging river especially horizontal branch marula tree binocular telephoto lense essential leopard viewing far road tree little looking closer ground interested look little buffalo weaver elephant shrew leopard tortoise ant lion rhino beetle little compliment animal tend forget seemingly unexciting little sharp eyed viewer world creature bird set easily identified exciting bird birdspotting beginner kori bustard martial eagle lappet faced vultur pel fishing owl saddle billed stork ground hornbill start youre familiar bird specy fact male kori bustard largest existing animal capable flight fairly easy spot fairly distinctive lookout especially ground hornbill let ground hornbill project know sms tree tree set tree commonly park camp start beginner botanist theyre generally fairly unique baobab fever tree knob thorn marula mopane baobab far common definitely easiest location baobab park marked harder sign guidebook tell tree common marula region southernmost region park visited marula region densely populated wildlife albasini ruin ruin trading post famous portuguese trader joao albasini lie inside phabeni gate trading post connection afrikaan speaking boer african transvaal portuguese colony modern mozambique site picnic table shop cook food toilet facility phabeni gate jame stevenson hamilton memorial library museum library museum hold treasure trove park history breather heat museum tell history contain anthropological archaeological artefact library contain written history park stevenson hamilton memorial stevenson hamilton memorial plaque sits shirimantanga hill rhenosterkoppy rhino hill section park memorial man nicknamed skukuza warden sabi nature later national park excuse stretch legs location youre allowed leave car warned guarded leopard active crucial caution leaving car walk short distance parking rewarded spectacular view park lake panic bird hide probably famous bird hide lake panic bird hide lake panic manmade lake mafuyana creek common sighting hippo crocodile terrapin pied kingfisher heron african fish eagle common dozen specy half hour hide nthandanyathi hide overlooking nthandanyathi buffalo waterhole wheelchair accessible hide sharptooth catfish terrapin crocodile banded plover common sighting hide hide easily accessible lower sabie crocodile bridge relatively accessible trip camp marula region gardenia hide despite accessible park gardenia hide generally relatively quiet elephant especially common region park bushbuck honeybadger kudu giraffe lion yellow billed hornbill grey bird natal spurfowl frequent sighting water level vary drastically check someone gate camp current level nkayeni region skukuza nkayeni region park satara rest camp centrally region orpen gate gate bordered olifant river tablet tablet pair tablet afrikaan english embedded boulder commemorating proclamation sabie game president paul national park act spot park youre allowed leave vehicle outside camp kumana baobab nestled bend nwaswitsontso river kumana waterhole southernmost baobab tree world trunk diameter orpen boulder orpen boulder collection boulder plaque commemorating donation farm national park mrs eileen orpen orpen gate orpen rest camp named mrs orpen plaque erected sweni hide viewpoint overlooking sweni river park viewpoint hide sharing river viewpoint excellent view river vehicle plenty shade hide busy tend excellent wildlife birding opportunity ratel pan facing hide overlooking timbavati river upstreab piet grobler dam game viewing especially morning lion pied kingfisher frequent sighting ratel pan nxanatseni region nxanatseni region far largest region park half land park region letaba elephant hall museum elephant section elephant biology ecology game children attraction skull tusk magnificent set tusker lived park warden park magnificent display success park conservation museum renovated tusk mandleve elephant largest tusk recorded national park addition elephant skeleton elephant hall unique world midday masorini masorini restored iron age village phalaborwa gate probably accessible remnant stone iron age life park picnic toilet bottom hill accompanied guide tour village huts reconstructed show process civilisation went forge iron forging iron spear hunting entire economy based selling trading iron forged brochure say guided tour leave scheduled reality seem tips required attendant runs tour interested taking tour attendant guide thulamela thulamela archaeological site stone walled site built descendent mapungubwe built thulamela inhabited makahane chinese porcelain imported textile jewellery reveal extensive trade connection sable dam hide largest dams park sable hide fairly hide facing view dam reasonable amount animal foot traffic definitely birding common sighting hippo crocodile buffalo african wild cat absolute plethora bird specy sable hide hide opportunity spend night hide matambeni bird hide short drive letaba rest camp matambeni hide overlook engelhard dam letaba river heron bee eater stork common sight waterbuck impala buffalo anna ledeboer plaque plaque makhodzi river flow letaba river mark grave site anna maria christiana ledeboer wife former ranger ledeboer died grave park longwe lookout compacted earth lookout point hill excellent viewing direction fearly close matambeni hide worth stopping youre shipandani downstream pioneer dam tsendze river shipandani fairly facing hide excellent view river common sighting saddle billed stork klipspringer giraffe hippo lilac breasted roller hide acts bookable primitive accommodation pioneer dam hide bank enormous pioneer dam hide rated hide egret purple roller white breasted comorant kind kingfisher common sighting hide nyawutsi hide shingwedzi nyawutsi hide far anything worth drive yellow weaver elephant common leopard fairly frequent sighting kanniedood hide named particularly hardy type aloe kanniedood hide overlook portion shingwedzi river previously lake formed kanniedood dam kanniedood dam breached flooding residual wall removed recent major activity unknown view hide change biggest draw nature flora fauna beautiful landscape combine generally pleasant relaxing experience possible spend week slowly driving looking animal stopping hide waypoint generally taking life snail pace variety ways thing wouldnt guided drive walk variety experience camp wildlife experience basic wildlife tour park car daylight park effective seeing wildlife timer wildlife experience bush drive want consider book guided tour knp park guide bush drive berg dal letaba skukuza camp camp cost adult children experienced ranger car knp sunrise sunset drive explain party finer detail game spotting night drive discovering knp adventure thing ranger night drive park nocturnal creature lion leopard hyena tour couple leave shortly gate close night landrover lebombo eco trail brand transfrontier trail limpopo shingwedzi eco trail machampane wilderness trail massingir hiking trail wildlife film rest camp show wildlife film week evening camp berg dal letaba mopani satara shingwedzi skukuza hiking trail discovering african flora fauna foot unforgettable lifetime experience tour group consist hiker plus ranger hiking tour last learn thing african wildlife animal closer tour imagine seeing lion elephant rhino meter breathtaking experience trail follow circular route return evening safety camp dinner await duration trail night sunday wednesday wednesday saturday hiker meet designated rest camp sunday wednesday leave vehicle trail camp short briefing bushman trail trail southwestern corner park berg dal rest camp white rhino buffalo elephant plentiful trail feature trip rock painting bushman metsimetsi trail enjoyed african winter check skukuza camp travel nwaswitsontso river nearby satara camp napi trail situated rhenorsterkop hill pretoriuskop skukuza trail animal dense park nearby mbiyamithi river red billed helmet shrike thick billed cuckoo white rhino elephant lion leopard cheetah common nyalaland trail check punda maria camp knp spot crocodile elephant hippo bird watching agenda buffalo frequent birdlife prolific olifant trail check letaba camp trail cross olifant river letaba river support variety wildlife predator elephant buffalo listen call african fish eagle sweni trail check satara camp sweni density predator prey trail experience give hiker opportunity observe lion cheetah wolhuter trail park white rhino country berg dal pretoriuskop olifant river pack trail olifant letaba frill trace camping camp provided sleep tent park wildlife mathikithi trail named nearby mathikithi sandstone hill wilderness trail satara wilderness hiking heart cat country wildlife skukuza golf club skukuza golf course hole golf course bank lake panic mafunyana river course public wild called wildest golf course world spa treatment menu spa spa facility inside skukuza rest camp variety option spa skukuza spa sanpark camp private camp spa facility similar service room booking phone website bigger camp site lower sabie skukuza comfortable shopping facility drink foodstuff souvenir travel item forgotten range limited smaller remote camp easy run particular item fresh milk particularly short supply artistic wood carving bought reasonable quality cheaper johannesburg carving gate national park animal skin rugs camp shop raw food cook wood charcoal fire accommodation cooking campsite tend communal kitchen rondavel bungalow cottage private kitchen kitchenette picnic wild tshokwane sell cooked food site braai facility cook camp cafeteria restaurant general variety menu camp range dish familiar park self catering lodge picnic lodge private park outside park cater food arranged sheltered outdoor restaurant fireplace barbecue african specialty wart hog sausage springbok tenderloin ostrich steak biltong dried meat game kudu impala zebra restaurant camp camp single restaurant franchised chain official listing restaurant camp sanpark website mugg bean lower sabie menu wimpy pretoriuskop menu wimpy multinational chain founded taken root cattle baron biggest camp skukuza luxury camp dont cattle baron chain steak restaurant founded skukuza restaurant restaurant national park addo elephont park menu skukuza somewhat cattle baron restaurant menu website give idea cattle baron serve food mielie pap boerewor kudu steak malva pudding sure check special menu cattle baron skukuza tindlovu tindlovu common restaurant national park restaurant opened decade founder dreaming pursuing hospitality career tindlovu mostly based park restaurant mbombela nelspruit tindlovu berg dal tindlovu letaba menu tindlovu mopani menu mopani camp site tindlovu restaurant opened tindlovu olifant menu tindlovu punda maria menu tindlovu satara menu tindlovu shingwedzi menu bush braai bush breakfast camp bush braais bush breakfast wonderful dinner whilst experiencing real bush bush braais begin roughly hour game drive afternoon leading site meal preparation already underway meal typically last minute typically mielie pap corn maize porridge boerewor sausage game meat variety vegetable salad dessert tea offered cash bar braai followed minute night drive camp bush breakfast fairly similar price vary confirmed contacting camp youd bush braai note staying camp order bush braai bush breakfast breakfast leave early braai come gate close information sanpark website following camp bush braais berg dal lower sabie mopani olifant satara shingwedzi skukuza boma braai boma braai fire barbecue air boma camp boma braais generally managed camp restaurant booked ahead trade unable unwilling bush braai want feeling wild sitting restaurant bush braais accommodate children accommodate limited children group children consider boma braai instead boma braais booked following camp berg dal lower sabie mopani punda maria shingwedzi skukuza picnic site picnic site size throughout park larger ones afsaal tshokwane kitchen premade meal smaller ones albasini ruin facility directly requiring short drive nearby facility picnic site skottel gas fired standalone cast iron frying pans braais option firewood camp serve picnic site skukuza camp short drive downriver marula region marula region park crocodile sabie river doesnt contain picnic spot dense camp exception albasini ruin spot stocked picnic site park afsaal trader rest afsaal rest stop road berg dal skukza rent braais skottel cook raw ingredient shop maps shirt memento tindlovu run camp restaurant runs restaurant afsaal picnic spot lively picnic giving convenient access berg dal pretoriuskop skukuza smaller private lodge biyamiti doesnt restaurant reasonably accessible lower sabie crocodile bridge albasini ruin albasini ruin basic picnic site gas shop toilet facility nearby phabeni gate nkuhlu hidden sabie river nkuhlu easy miss driving busiest road pop youll welcomed usual affair picnic spot fairly shop unique themed item restaurant waffle speciality nkayeni region nkanyeni region sabie river olifant river home biggest picnic park tshokwane collection serving driving road satara mlondozi overlooking mlondozi dam picnic site bird animal bring binocular site kiosk drink hire gas grill muzandzeni overlooking sweni river satara muzandzeni halfway stopping point lunchtime drive someone staying satara toilet hire skottel isnt typically spotting frequented zebra giraffe predatory bird site spot bataleur wahlberg eagle nhlanguleni far tar road nhlanguleni fairly inaccessible unless happen travelling skukuza orpen talamati private camp isolation nhlanguleni generally fairly quiet escape busy skukuza picnic site overlook waterhole toilet facility gas grill hire nwanetsi easternmost picnic spot park nwanetsi overlook sweni river shortly join nwanetsi river kilometre border mozambique muzandzeni halfway stop drive satara road park seeing lion view lebombo mountain nwanetsi browser giraffe elephant black rhino frequent bird ostrich secretary bird nwanetsi toilet facility shop cooking equipment timbavati picnic spot halfway spot drive satara timbavati overlook timbavati river timbavati provide toilet facility skottel hire tshokwane trading post pronounced chore kwah neh non rhotic biggest picnic site park tshokwane sits nwaswitsonso river midway drive skukuza lower sabie satara built ranger post set park warden jame stevenson hamilton picnic sits sausage tree addition usual braais skottel rent tshokwane premade snack shop wide variety biltong african favourite selection cooked meal burger toasted sandwich salad kitchen outside patio vervet monkey frequent site lookout steal food drink coffee fans thsokwane sell exclusive coffee blend green bean coffee rosatery nxanatseni region northernmost region park ways developed nxanatseni picnic spot scattered babablala basic picnic toilet facility wheelchair accessible toilet makhadzi northeast letaba quiet historic site overlooking makhodzi river last stop giryondo border post taking mozambique originally set british fort anglo boer war spot military base site facility information history limpopo transfrontier park masorini masorini archaeological site picnic kiosk selling drink renting skottel toilet facility min drive phalaborwa min drive letaba access point masorini loop mooiplaa tsendze camp site short distance mopani mooiplaa literally pretty farm overlook tsendze river addition skottel rent mooiplaa opportunity wood braai waterbuck hippo common pafuri spot birding site luvuvhu river braais fire wood sale gas skottel toilet facility african alcohol laws apply park african national park additional regulation regarding alcohol blanket ban alcohol allowed picnic spot rest camp allowed alcohol whilst driving african road law apply allowed enter park alcohol overnight bring alcohol cars consumption accommodation restaurant serve alcoholic beverage overnight overnight allowed purchase alcohol park shop camp bars camp visited evening guest recalling tale wildlife generally arent visiting nightlife likely spend early evening braai retiring bed early start following

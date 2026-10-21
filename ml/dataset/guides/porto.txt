@@ -2,7 +2,7 @@ Porto, Portugal
 Labels: food, culture, history | Split: validation
 Source: https://en.wikivoyage.org/wiki/Porto (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (25,348 characters) =====
+===== CLEANED GUIDE TEXT (25,368 characters) =====
 
 Porto is Portugal's second largest city and the capital of the Northern region, and a busy industrial and commercial centre. The city isn't very populous (about 238,000 inhabitants in 2024), but the Porto metropolitan area has some 1.8 million inhabitants in a 50-km radius, with cities like Vila Nova de Gaia, Vila do Conde, Póvoa de Varzim and Espinho.
 
@@ -10,12 +10,14 @@ The city is built at the high ground overlooking the Douro River estuary's north
 
 Understand
 
+
  
 
  
  
 
 History
+
 Porto (POHR-too, /ˈpoɾ.tu/) was named by the Romans Portus Calle (the origin of the entire country's present name), the city is nowadays officially styled A muito nobre, sempre leal e invicta cidade do Porto (the very noble, always loyal, and undefeated city of The Harbor). This is usually shortened to "a Cidade Invicta" (the undefeated city) a title won because of Porto's unparalleled resistance against hostile troops during the 1820s. Residents of Porto are nicknamed the Tripeiros, or tripe eaters, since the Portuguese conquest of Ceuta in North Africa in 1415, when the city's inhabitants went without meat in order to provision the fleet (which left from Porto), and had to subsist on tripe soup, which developed into a gastronomical specialty of the city.
 
 The city is quite varied architecturally, with medieval and modern buildings side by side. Porto's geography is hard on the feet, but pleasant to the eye. The city's grounds are extremely uneven; the Romans strategically built their fortified settlement into a cliff face that overlooks the river, where the present cathedral stands today. Stairs cut into the stone run up and down the cliff face and offer a laborious but rewarding walking tour. Across the Douro from Porto proper, at Vila Nova de Gaia, are the warehouses of notable Porto wine companies: Cálem, Ferreira, Fonseca, Sandeman, Kopke and others.
@@ -25,6 +27,7 @@ The Portuguese usually include the article "o" when referring to the city, "O Po
 While most don't think of it, the influence of Porto's football team had got the city's name in one of Australia's six big fast food stores: Oporto, which still uses the old spelling.
 
 People
+
 Citizens of Porto, while definitely Portuguese, hold themselves apart culturally from the rest of the country, as is expressed in the often heard phrase "o Porto é uma nação" (Porto is a nation). Outsiders often consider Porto to be more crass and mercantile than the rest of the country, and the inhabitants to be somewhat lacking in social graces. This is likely because the city's working and middle classes have historically been dominated by Portuguese bourgeoisie and English trading factions rather than the nobility. By and large, Os Portuenses, to use the correct term for the inhabitants, of course disagree, regarding themselves with some justification as a no nonsense people at the economic heart of the nation. As the saying goes, "Porto works, Braga prays, Coimbra studies, and Lisbon gets the money."
 
 While the local attitude is friendly, to outsiders it is worth noting that locals can respond literally to questions, which may seem slightly off-putting to the uninitiated. An example of this would be to ask in a bar if they have a menu (for food) and to receive a straight 'no' as a response. It's after further questions that one can find out that the establishment doesn't sell food. Such a response is not considered rude, it is merely direct and literal.
@@ -32,6 +35,7 @@ While the local attitude is friendly, to outsiders it is worth noting that local
 If you speak in Spanish to a local, you will be largely understood, and as a rule they will freely converse with you, but from time to time, more so with the older generation, you may be politely reminded that you are in Portugal and the native language is Portuguese.
 
 See
+
  
  
  
@@ -41,6 +45,7 @@ Porto is a mysterious city that reveals its charm to the visitor through time. T
 If you want to visit several museums, consider the Porto Card which provides free access to several museums and further discounts, optionally also free public transport access.
 
 City centre
+
 
 * 
 Palácio da Bolsa. It was built in the 19th century on the grounds of the destroyed old cloisters of the adjacent São Francisco church. It also contains the most impressive Arab room in the country. There is also a Port wine tasting room.
@@ -60,11 +65,13 @@ Igreja de São Francisco. A Gothic church with later alterations of the interior
 
 Baixa (downtown)
 
+
 *
 Mercado do Bolhão. A traditional market of fruits, vegetables, fish and meat. As of 2022 the entire market is now open after major refurbishment.
 
 
 West Baixa
+
 
 * 
 Livraria Lello. It's an old bookshop with an amazing interior and spiral staircase. Voted as one of the most beautiful bookshops in Europe. Be warned that it can get incredibly crowded and claustrophobic.
@@ -80,6 +87,7 @@ Centro Português de Fotografia. Housed in a beautiful building in the centre of
 
 
 São Nicolau
+
 :South city centre
 
 * 
@@ -92,6 +100,7 @@ Museum of Sacred Art and Archaeology of The Higher Seminary of Porto.
 
 West of city centre
 
+
 * 
 Museu do Vinho do Porto. 
 
@@ -103,6 +112,7 @@ Museu Romântico. A house where the King of Italy stayed while in exile.
 
 
 Boavista
+
 : North-west of city centre
 
 *
@@ -113,6 +123,7 @@ Fundação de Serralves. A contemporary museum designed by the famous architect 
 
 
 Foz do Douro
+
 This is the area around the ocean front just north of the mouth of the Douro River. You can rent a bike and cycle along the riverfront and then the beach to that area.
 * 
 Castelo Do Queijo. 
@@ -122,6 +133,7 @@ She Changes. Monumental public sculpture
 
 
 Do
+
 * 
 Douro river cruise. Take a cruise upriver (the cost starts at €15 (although they can be slightly cheaper if paired with a different activity) and takes about 50 minutes. Cruises run from 10:00 to 18:30, with sailings every 30 minutes for most operators. There are multiple river cruise operators and you can purchase a ticket from every tourist service and office in the Sao Bento area, or potentially from the wharf itself. Many of the cruises are themed around seeing the various bridges and river-adjacent facilities. You may also choose a day-long cruise starting at €70 to or from Régua, with one way of the journey completed by bus (included in the price). This tour states at 08:00 and returns at 17:00 or 18:00. Go at least as far as Pinhão — the landscape is absolutely stunning. If you choose to do this in the summer, don't forget your factor 30 sunscreen! Look for cruises based on the Vila Nova de Gaia wharf (the same side as the port wine caves), as some of them may offer discounts for cave tours or port wine purchases.
 
@@ -144,14 +156,17 @@ Porto Exit Games. You're locked in a room with a mystery to solve and the clock 
 
 
 Buy
+
 Almost all the shops are open every day, but are usually overcrowded during the weekends and rainy days.
 
 What to buy?
+
 Port wine, of course. This is the right place for it, in the city of Gaia, on the south shore of the Douro River.
 
 The Norte region is known for the passing down of quality craftsmanship traditions from generation to generation while adapting with the latest production and technological innovations. Many of the best Portuguese apparel, footwear, luxury goods and accessory industries are based in and around the city of Porto. Therefore, you will find many flagship stores and factory outlets in and around Porto. The Portuense people know craftsmanship and appreciate quality in whatever it might be, clothing, shoes and leather goods, cars, jewellery, furniture and so on. Brands are numerous and range from globally recognised, like Cavalinho, Charles, Claus Porto, Lanidor and Parfois, to strictly local ones providing for a unique selection on any budget. Many of the more affordable products may not be produced in Portugal, the attractive aesthetic value notwithstanding.
 
 Specialist stores
+
 * 
 Centro Comercial Bombarda (CCB). This is not the regular shopping mall. It's much smaller and with speciality stores related to art and fashion. Look for Portuguese design, organic cosmetics, or contemporary jewellery, and then head to the galleries down the street.
 
@@ -160,9 +175,11 @@ Aguas Furtadas. Looking for unique objects or original Portuguese design? This i
 
 
 Shopping streets
+
 Take a stroll around the Mercado do Bolhão which has a food market and handicrafts stores, and Santa Catarina street (highly recommended, even if only to stroll), which is near Bolhão. Cedofeita street is also a busy shopping street, as well as Boavista.
 
 Shopping centres
+
 For shopping, Porto and the suburbs have plenty of shopping centres, including Norte Shopping, Arrábida Shopping, Parque Nascente, Gaia Shopping and Mar Shopping (the biggest IKEA group shopping in Europe). Apart from these you also have less populated shops that are smaller but still great (Shopping Cidade do Porto, Via Catarina, etc.).
 * 
 ViaCatarina Shopping. A medium-sized shopping centre nestled in a building block between Via Santa Catarina and Rua de Fernandes Tomas, utilising the difference in elevation between them for spectacular results. Inside you will find a slightly mundane selection of chain stores and food court filled with local fast-food options.
@@ -172,6 +189,7 @@ Shopping Cidade do Porto. An elegant shopping centre with upscale pretences and 
 
 
 Eat
+
 Porto has some of the finest restaurants in Portugal.
 
 It is said that if you like to eat, you should go to Porto because it's a place where you eat well in terms of quality and amount (even Lisbon citizens say that in Porto is where they eat the best food).
@@ -191,7 +209,9 @@ Most locals drink black coffee (espresso), but the usual variation of espresso d
 There is at least one fully vegetarian restaurant in Porto, Paladar da Alma (Rua de Santo Ildefonso 293/5), and some other restaurants which offer vegetarian dishes alongside non-vegetarian options, such as Capa Verde (Rua da Nossa Senhora de Fátima). Vegans may have to ask for dishes to be specially prepared for them, even in vegetarian restaurants.
 
 Budget
-====City centre====
+
+City centre
+
 
 There are several budget-friendly restaurants around.
 * 
@@ -215,6 +235,7 @@ Churrasqueira Brasil. Don’t let the outside appearance fool you. This place is
 
 Bolhão
 
+
 * 
 Casa Das Tortas. Great authentic Portuguese food homemade with bakery pastries. A very good place to eat typical food. Best Francesinha in Porto.
 
@@ -236,6 +257,7 @@ Mr.Pizza. Street pizzeria for a quick bite. Thin crust and very big pizzas. Nice
 
 Mid-range
 
+
 There are several little restaurants all with great food and service on Rua da Reboleira with great views of the river. Away from the ones mobbed by tourists on Cais da Estiva.
 
 * 
@@ -252,6 +274,7 @@ Galeria de Paris Restaurante Bar.
 
 
 Splurge
+
 * 
 O Comercial. Elegant atmosphere in the Palácio da Bolsa (Stock Exchange Palace). Large windows face the River Douro. They serve Portuguese cuisine tweaked with some new techniques and products.
 
@@ -269,16 +292,19 @@ Antiqvvm. Michelin-starred dining in the midst of a city-centre park with river 
 
 
 Drink
+
 Porto is home to port wine of course, and there are many wineries around the city where port wine is brewed. Strictly speaking, port wine can only be called port wine if the grapes are grown in the Douro valley, and the wine is produced and bottled in Porto. Port wines come in many styles, with vintage port being the most expensive.
 
 The main areas for bars are Praça de Ceuta to the north, through the station surrounds to Ribeira further south.
 
 Mid-range
+
 * 
 Solar Vinho do Porto. Rua de Entre-Quintas 220. A villa with port samples and a great view of the Douro. Open M-Sa 14:00-00:00. This is the perfect place to sit in soft chairs or outside in the garden and enjoy a few glasses of the finest ports. You can also have cheese with your port.
 
 
 Dance clubs
+
 Dance clubs here always start very (very) late, around 01:00-02:00, and end up from 06:00-07:30. You have nice choices to pick from. Most clubs are located in the Industrial region and in the upmarket Foz area.
 * 
 Industria. "Local heroes and international superstars" - going since 1987. It's open until around 06:00.
@@ -299,6 +325,7 @@ Clube Mau Mau. In the Foz region, it is a popular nightclub with varying musical
 There are some LGBT clubs and bars in Porto. Late night scene.
 
 Bars & pubs
+
 * 
 Ryan's Irish Pub. In the Ribeira, nice cozy atmosphere and friendly bar staff. Always a good place to start.
 
@@ -309,8 +336,9 @@ Prioridade Bar. In the Ribeira region, this bar is one of the cheapest in the ar
 
 Jazz clubs
 
+
 The Jazz clubs tend to open at 22:00 and run to 05:00. They include Hot Five Uptown, and Maus Habitos (Bad Habits) which is a co-working space by day and a club by night.
 
-===== TOKENS THE MODEL TRAINS ON (1,839) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,839) =====
 
 largest capital region busy industrial commercial isnt populous inhabitant metropolitan million inhabitant radius city vila nova gaia vila conde povoa varzim espinho built ground overlooking douro river estuary side historical declared continuously inhabited century history pohr named roman portus calle origin entire country present nowaday officially styled muito nobre sempre leal invicta cidade noble loyal undefeated harbor shortened cidade invicta undefeated title won unparalleled resistance hostile troop resident nicknamed tripeiro tripe eater portuguese conquest ceuta inhabitant went meat order provision fleet subsist tripe soup developed gastronomical specialty varied architecturally medieval modern building side side geography hard feet pleasant eye ground extremely uneven roman strategically built fortified settlement cliff face overlook river present cathedral stand today stair cut stone run cliff face laborious rewarding walking tour douro proper vila nova gaia warehouse notable wine company calem ferreira fonseca sandeman kopke portuguese article referring literally port common english write oporto spelling declined popularity nowaday rendered english simply article dont think influence football team fast food store oporto uses old spelling citizen definitely portuguese hold apart culturally rest country expressed heard phrase uma nacao nation outsider consider crass mercantile rest country inhabitant somewhat lacking social grace likely working middle class historically dominated portuguese bourgeoisie english trading faction nobility portuense correct term inhabitant course disagree regarding justification nonsense economic heart nation saying work braga pray coimbra study money attitude friendly outsider worth noting local respond literally question seem slightly putting uninitiated example ask bar menu food receive straight response question establishment doesnt sell food response considered rude merely direct literal speak spanish largely understood rule freely converse older generation politely reminded native language portuguese mysterious reveal charm wander maze alley old bohemian spirit hike ribeira foz douro region latter sunset iberian peninsula itinerary worth want changed economically kept old tradition want museum consider card provide access museum discount optionally public transport access palacio bolsa built century ground destroyed old cloister adjacent sao church contain impressive room country port wine tasting room romanesque cathedral built century later baroque alteration century cathedral hill view river port wine institute exhibition port wine certification process sample variety port wine bought guided tasting tour laboratory arranged hall igreja sao gothic church later alteration interior decoration baroque style baixa downtown mercado bolhao traditional market fruit vegetable fish meat entire market major refurbishment baixa livraria lello old bookshop amazing interior spiral staircase voted beautiful bookshop europe warned incredibly crowded claustrophobic torre dos clerigo panoramic view baroque tower step early space viewing platform wait allowed climb stair national museum soare dos reis museum displaying portuguese art founded centro portugue fotografia housed beautiful building sao nicolau ribeira river start visiting world heritage side river ribeira gaia similar vila nova gaia separated river port wine cellar museum sacred art archaeology higher seminary bridge connecting gaia douro river providing excellent view river museu vinho pavilhao rosa mota multi purpose pavilion garden rest palacio cristal museu romantico house king stayed exile boavista casa musica designed rem koolhaa oma guided tour english person children hour rest guided tour fundacao serralve contemporary museum designed famous architect alvaro siza huge garden park art deco villa visiting foundation exhibition relax park lunch restaurant bar tea house explore shop library farm park foz douro ocean front mouth douro river rent bike cycle riverfront beach castelo queijo change monumental public sculpture douro river cruise cruise upriver cost start slightly cheaper paired activity take minute cruise run sailing minute operator multiple river cruise operator purchase ticket service office sao bento potentially wharf cruise themed seeing bridge river adjacent facility choose cruise starting regua journey completed bus included price tour return far pinhao landscape absolutely stunning choose summer dont forget factor sunscreen look cruise based vila nova gaia wharf side port wine cave discount cave tour port wine purchase fado bars fado music genre originating considered integral portuguese music traditionally sung woman black dress accompanied guitar player handful fado bars stand primarily sao bento offering show cost generally ticket show sold office throughout sao bento show glass port wine cost ticket teatro nacional sao joao tnsj theatre opera production company venue guided tour person access stage rehearsal room dressing room technical tour football men pro soccer team play primeira liga tier home ground estadio dragao capacity metro station boavista relegated play liga tier estadio bessa capacity northwest metro franco valadare gaia women team tier playing valadare sport complex river exit game youre locked room mystery solve clock ticking crack puzzle escape shop overcrowded weekend rainy port wine course gaia shore douro river norte region passing quality craftsmanship tradition generation generation adapting latest production technological innovation portuguese apparel footwear luxury good accessory industry based therefore flagship store factory outlet portuense know craftsmanship appreciate quality clothing shoe leather good cars jewellery furniture brand numerous range globally recognised cavalinho charle claus lanidor parfois strictly ones providing unique selection budget affordable product produced attractive aesthetic value notwithstanding specialist store centro comercial bombarda ccb regular shopping mall smaller speciality store related art fashion look portuguese design organic cosmetic contemporary jewellery head gallery street agua furtada looking unique object original portuguese design minimalist barcelo cockerel colorful ceramic wont piece anywhere shopping street stroll mercado bolhao food market handicraft store santa catarina street highly recommended stroll bolhao cedofeita street busy shopping street boavista shopping centre shopping suburb plenty shopping centre norte shopping arrabida shopping parque nascente gaia shopping shopping biggest ikea group shopping europe apart populated shop smaller shopping cidade catarina etc viacatarina shopping medium sized shopping nestled building block santa catarina rua fernande toma utilising difference elevation spectacular result inside slightly mundane selection chain store food court filled fast food option shopping cidade elegant shopping upscale pretence spacious atrium limited selection store compared larger ones finest restaurant said term quality amount citizen say food restaurant mainly matosinho beach leixoe seaport watch pricing establishment deem worthy pricing decor crowd combination charge ridiculous price food prepared presented elsewhere time dose dont shy look sense blue metro line take min ribeirinha overlooking douro river vila nova gaia run affordable family run restaurant vibe friendly staff food due limited space share table complete stranger making experience cosmopolitan entertaining old inexpensive reasonable priced eating house catering mostly resident easily lunch dinner welcome foreigner special pride hosting enjoy hearty prepared meal practice follow waiter suggestion menus course set prato dia today menu normally choice soup dish bread wine house dessert bica espresso person hungry strategy say enjoyed soup politely ask little patron tend soup last truly enjoyed meal show appreciation chef staff proud service expect hearty meal tripa moda tripe dish citizen called tripeiro tripe eater account dish traditional set menu restaurant tend serve soup last waiter ask want dont surprised someone starting desert finish couvert happen bacalhau cooked hundred dish salted codfish dont forget traditional grilled cheese sandwich called francesinha literally translated mean little lady world portuguese city low quality version essentially toast layer meat inside beef pork meat ham covered cheese spicy sauce option fry importantly dish accompanied beer wine fish festival matosinho accessible bus subway freshly caught fish served barbecue lined street block beach choose fish fish prepare street fancy restaurant together eating tasting fish dourada delicious dotted thousand bakery pao quente pastry shop pastelaria apart serving delicious inexpensive good equipped side cafe serve sort coffee pingo meia leite etc sandwich tosta mista ham cheese toastie unlike river side cafe establishment picturesque view expensive youd paying bill instead attract offering food cheap price local black coffee espresso usual variation espresso drink cafe fully vegetarian restaurant paladar alma rua santo ildefonso restaurant vegetarian dish alongside non vegetarian option capa verde rua nossa senhora fatima vegan ask dish specially prepared vegetarian restaurant budget budget friendly restaurant cafe piolho ancora douro oldest cafe commonly piolho louse cafe look street facing faculty universidade meeting student century plaque donated graduating medical class early century onward decorate wall fascist period regular meeting undesirable according regime point view accordingly regular surveillance secret police occasion raided gnr guarda nacional republicana post nearby charged horse cafe uncertain current disorder result recent activity service surly isnt fancy stuffed gill student cheap taberna folia baco cozy portuguese restaurant ambiance sip amazing wine eating delicious authentic food manager friendly helpful laurear authentic fabulous portuguese food cozy friendly service lucky table evening trinka petisqueira lounge cuisine simple homemade careful lovely little restaurant sitting side road watching world taxca typical portuguese tavern excellent quality gastronomy product atmosphere fantastic typical tavern table service hanging hams immediately whet appetite snack portuguese dish bifana sarrabulho porridge garnished meat space super relaxed staff friendly churrasqueira brasil dont let outside appearance fool hidden gem homemade food attention dish bolhao casa das torta authentic portuguese food homemade bakery pastry typical food francesinha taberna doutor fantastic francesinha sardine friendly attentive staff loja dos pasteis chave lovely eatery shopping street genuine food suitable vegetarian chill menu option estrela oriente excellent homemade food quality family atmosphere grilled salmon delicious sardine murca traditional restaurant typical remaining true eating home cooked meal local pizza street pizzeria quick bite thin crust pizza staff mid range little restaurant food service rua reboleira view river ones mobbed cais estiva casa foz excellent italian restaurant wide variety dish extremely call ahead table varanda barra restaurant serve traditional portuguese italian international food riverside view maus habito vegetarian restaurant youth culture clubhouse night menu change weekly cost excluding dessert galeria restaurante bar splurge comercial elegant atmosphere palacio bolsa stock exchange palace window face river douro serve portuguese cuisine tweaked technique product euskalduna studio service chef table degustation style featuring moment surprise muu steakhouse steakhouse offering fish vegan option lemo michelin starred restaurant old stone house lovely rooftop terrace contemporary cuisine delivered form tasting menus antiqvvm michelin starred dining midst park river view tasting menus carte home port wine course winery port wine brewed strictly speaking port wine called port wine grape grown douro valley wine produced bottled port wine style vintage port expensive bars praca ceuta station surround ribeira mid range solar vinho rua entre quinta villa port sample view douro perfect sit soft chair outside garden enjoy glass finest port cheese port dance club dance club start late choice pick club industrial region upmarket foz industria heroe international superstar discoteca rapida disco industrial nightclub open friday saturday crowded club play latest dance hits crowd ish passo manuel dance club bar frequented arty crowd varied tasteful selection music warm decor plano torre dos clerigo art bar installed historic clube mau mau foz region nightclub varying musical style house pop lgbt club bars late night scene bars pubs ryan irish pub ribeira cozy atmosphere friendly bar staff start prioridade bar ribeira region bar cheapest probably decent ribeira region probably beer euro serve spirit cocktail cheap price planning night drink bar clubbing price drink club outrageously taxi fare money return home hotel hostel etc tricky tucked isolated luis bridge ask local theyll know ribeira region bars pubs pleasant incredible view bigger club bars relatively close entrance fee bars close become deserted sure home club become deserted feel bit insecure jazz club jazz club tend run hot uptown maus habito bad habit working space club night

@@ -2,11 +2,12 @@ Cancún, Mexico
 Labels: beach, nightlife | Split: test
 Source: https://en.wikivoyage.org/wiki/Canc%C3%BAn (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (23,852 characters) =====
+===== CLEANED GUIDE TEXT (23,861 characters) =====
 
 Cancún is a popular Caribbean tourist destination on the northeast tip of Mexico's Yucatán Peninsula, in Quintana Roo, which also is called the Mexican Caribbean. In addition to 22 km (14 miles) of beaches, you'll find a wide variety of resorts, spas, golf courses, night clubs, and shopping malls.
 
 Understand
+
  
 
 Resting on the northeast corner of the Mexican Caribbean, Cancún, now a city of almost 900,000 inhabitants (2020), did not exist before the 1970s. It was a tourist project started at that time by the Mexican government in a sparsely inhabited, pristine area. Since then it has grown to become a big city and one of the premier beach resort destinations in the world.
@@ -22,6 +23,7 @@ Those mostly seeking beaches and scuba diving, or who are a bit adventurous, can
 Those looking for a base of operations who want good hotels and the advantages of urban life but prefer more local flavor may wish to stay in the Yucatan's capital city of Mérida.  
 
 See
+
 
  
 
@@ -65,6 +67,7 @@ Skywheel Cancun. 3 turns in an air-conditioned gondola.
 Do
 
 
+
 ===Ocean and beaches=== 
 
 * Cancún is best known for its beautiful turquoise waters and powdery white beaches. To get from the center to a beach quickly, go to 
@@ -74,6 +77,7 @@ Playa Tortugas.
 . Take the frequent bus line 1 from the main street Av Tulum north of Fuente del Ceviche for M$12 (Jan 2022), or a taxi/Uber. 
 
 Activities
+
 * 
 Ventura Park. Amusement and water park with many attractions.
 
@@ -102,6 +106,7 @@ Off Road Games Cancun. Off-road ATV adventures.
 
 
 Fishing
+
 * 
 Charter Fishing Cancun. Private and shared deep-sea fishing trips from Cancun and Isla Mujeres. Includes gear, drinks, licenses, and professional crew.
 
@@ -113,6 +118,7 @@ Shared Fishing Cancun. Shared deep-sea fishing trips (6 hours). Join other trave
 
 
 Golf
+
 * 
 El Tinto Golf Course. 18-hole jungle course that's well maintained and one of the least expensive golf courses in the region. Rental equipment and carts are a bit worn and about due for an upgrade, but for most visitors, this is one of the best options since it requires no special membership or resort affiliation.
 
@@ -138,6 +144,7 @@ Moon Palace Club Golf. Jack Nicklaus Signature golf course with 27 holes featuri
 
 
 Nature
+
  
 * Bird watching at the airport, It may sound odd, but because the airport is basically carved out of a large block of forest, there are all kinds of birds and animals around, especially early in the morning. Look for the Mexican agoutis (large forest rodents) grazing on the lawns next to the forest.
 
@@ -146,6 +153,7 @@ Swim with Dolphins. Wet'n'Wild also offers dolphin experiences. (Beware: no came
 
 
 Scuba diving
+
 
 
 * 
@@ -171,6 +179,7 @@ Scuba Total Cancun. A family-owned scuba diving center operating since the early
 
 
 Spectator sports
+
 * 
 Estadio Olímpico Andrés Quintana Roo. Since 2020, Cancún Fútbol Club, a team in the Expansion League has played professional soccer in this small, 18,800-seat stadium in downtown. The stadium is seldom crowded.
 
@@ -179,6 +188,7 @@ Estadio Beto Avila. The stadium was named after former MLB and LMB player Beto A
 
 
 Buy
+
 
 If there is no price tag, ask for the price first. The simple question is "¿Cuánto cuesta?" and is easily understood by Mexicans.
 
@@ -222,6 +232,7 @@ Ave Tulum Markets. There is a very large set of formal shops as well as unoffici
 
 Eat
 
+
 For a big variety of local food, the Mercado 28 and the Parque de las Palapas are the right address.
 
 These US fast food (and casual dining) chains are less common worldwide, but have restaurants in Cancun: 
@@ -233,12 +244,15 @@ These US fast food (and casual dining) chains are less common worldwide, but hav
 • on the way to the airport: Papa John's Pizza
 
 Street food
-====City center====
+
+City center
+
 * 
 Parque de las Palapas. There is a good variety. The eateries are open from 10:00 and the food stalls from the evening on. All of them close around 00:00. Most places have a big sign showing the food on a picture and the according low price. Tacos as low as 30 MXN each, as of Jan 2025.
 
 
 At the bus station
+
 * 
 Food stall directly in front of the bus station. They have tasty tortas (sandwich) for M$25 and tacos.
 
@@ -247,7 +261,9 @@ Food stall "Tacos More". Here you get well tasting tacos with fish (e.g. shrimps
 
 
 Budget
-====City center====
+
+City center
+
 
 * 
 Restaurant Salus y Chemo's. Their red pozole and tamales is very tasty. Excellent Guerrero style food. The restaurant looks quite old which is also it’s charme.
@@ -272,11 +288,13 @@ Las Tortugas. Serving tortas, a kind of Mexican sandwich.
 
 
 Near the city center in the Mercado 28
+
 * 
 Atotonilco. An extremely good sampling of Mexican food from all around the country. Excellent value. Nothing fancy but a gastronomical delight. Try the "Huevos Motuleños".
 
 
 Mid-range
+
 
 * 
 Los de Pescados. Taco restaurant  specializing in seafood. Fish tacos cost M$37 (July 2021) and are a few pieces of fried fish with some tortillas. You put your own sauces and condiments.
@@ -295,6 +313,7 @@ Los Tarascos. Classic Mexican taqueria specializing in tacos al pastor. Very pop
 
 
 Splurge
+
 * 
 Cambalache. This Argentine steakhouse serves up one of the best menus in Cancún. The atmosphere inside the restaurant makes you feel you have travelled an extra . The staff's attention to detail and desire to please make you feel like you're the only one they are serving that night. Great place to have a dinner with the one you love or enjoy the company of friends. The food alone could give this place a 4-star rating, the rest is just an added bonus.
 
@@ -306,6 +325,7 @@ RosaNegra. Latin American cuisine.
 
 
 Hotel restaurants
+
 * 
 Mikado. Japanese and Thai cuisine featuring teppanyaki tables.
 
@@ -318,11 +338,13 @@ Gustino. Gustino has authentic Italian cuisine using the freshest Mediterranean 
 
 Drink
 
+
 Cancún's nightlife is unlike any other destination on Earth. For some, a day in Cancún doesn't start until tasks like an 11:00 breakfast, nap on the beach, and siesta are arduously completed. This is your place to shine.
 
 The legal drinking age in Mexico is 18, but it is not strongly enforced. Stores are not permitted to sell alcohol after 5pm on Sundays.
 
 Hotel Zone
+
 
 The Hotel Zone is a huge venue and gets top entertainers and DJs. Don't be surprised to see Vegas like shows spontaneously erupt while you are sipping your piña colada. These clubs can charge large covers ranging from US$20–60 per person, though the cover can include an open bar.
 
@@ -348,6 +370,7 @@ Surfin' Burrito. Liter-size margaritas, buckets of beer, and spicy micheladas. T
 
 Avenue Yaxchilán
 
+
 Also try the clubs in the north of Av Yaxchilan, located in downtown Cancún, where all the locals hang out.
 
 * 
@@ -358,6 +381,7 @@ Route 666 Biker Bar. Lively club serving beer in buckets (cubetas) with casual f
 
 
 LGBT Bars
+
 * 
 11:11 Club. Lively atmosphere, drag performers, live music and DJs, plus great mixed drinks.
 
@@ -366,9 +390,10 @@ Laser Hot Beer & Queer. Fun atmosphere, drag queen cabaret with live music or DJ
 
 
 Craft Beer
+
 * 
 Puerto Juarez Brewery. Super small craft brewery with a range of ales from a light golden ale, a Belgian strong, a brown ale flavored with chilis, and of course, the always ubiquitous IPA. Light food includes seafood, tacos and a nice charcuterie board with sliced sausages and cheese.
 
-===== TOKENS THE MODEL TRAINS ON (1,896) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,896) =====
 
 caribbean destination northeast tip yucatan peninsula quintana roo called mexican caribbean addition mile beach youll wide variety resort spas golf course night club shopping mall resting northeast corner mexican caribbean inhabitant exist project started mexican government sparsely inhabited pristine grown become premier beach resort destination world composed pristine white beach shaped home mayan archaeological wonder turquoise seas bountiful underwater world world class vacation amenity called gateway mayan world largest famous archaeological site particularly close typically require bus train trip mayan temple ritual site everywhere entire yucatan peninsula smothered lush jungle easily accessible given lack history expect mexican historical culture instead example modern restaurant american fast food chain shopping center market club downtown urban beach access due beautiful beach completely separated working cancunian home setup unappealing probably skip altogether playa carmen instead local beach exist harmony mostly seeking beach scuba diving bit adventurous easily room equally beautiful crowded beach coast hour island cozumel ideal serious scuba diver spanish language skill aid finding deal rent car bus puerto morelo min playa carmen min peso buse taxis looking base operation want hotel advantage urban life prefer flavor wish stay yucatan capital merida interactive aquarium middle isla shopping village hotel zone modern aquarium lets close personal aquatic life pet rays nurse shark touch starfish etc pay swim captive dolphin pool mexican seafood restaurant aquarium watch dolphin show dolphin playing amongst show eating rey archaeological zone maya archaeological site hotel zone settlement peak structure site museum bring mosquito repellant museo maya archaeological zone miguelito museum maya civilization site yucatan peninsula artifact site door miguelito ruin partially restored pyramid yamil luum ruin maya temple ground westin lighthouse classic red white striped tubular lighthouse tip hotel zone meco archaeological site ruin maya port castillo largest structure site level pyramid height meter temple site museum torre escenica embarcadero tower rotating observation deck take minute revolution parque urbano kabah urban ecological park lush junglescape roaming wildlife friendly coatis gladly leftover burger fry hand bird iguana turtle playground kids exercise equipment adult hiking trail palacio municipal modern story public building broad pedestrian square fountain night light tall tree wax museum trap wax museum charge admission audacity tell cant picture museo automovil antiguo sureste private automobile collection restored muscle cars skywheel turn air conditioned gondola ocean beach beautiful turquoise water powdery white beach beach quickly playa perla playa tortuga frequent bus line street fuente ceviche taxi uber activity ventura park amusement water park attraction captain hook show dinner pirate boat xoximilco theme park built culture food music custom mayan jungle highway easily accessible class bus colectivo columbus romantic dinner trip calm lagoon beautiful boat steak lobster cooked boat yacht club yacht rental rental tour snorkeling diving swimming save water activity yacht este marina drive boat lagoon jungle tour snorkel reef diving lesson dive trip dive spot underwater museum marina aquatour exciting water tour choose jet ski person jet boat trip lagoon snorkel reef tour jungle tour sailing quest catamaran road game road atv adventure fishing charter fishing private shared deep sea fishing trip isla mujere gear drink license professional crew fishing kianah charter fishing trip starting bait tackle snack drink shared fishing shared deep sea fishing trip join traveler share cost boat beer soft drink ice bait fishing license professional crew dock fee person included golf tinto golf course hole jungle course maintained expensive golf course region rental equipment cart bit worn due upgrade option require special membership resort affiliation riviera modern seaside hole jungle course designed jack nicklaus hole played ocean putting green club house amenity site iberostar golf club resort course bit older maintained rental club cart show age clubhouse serve breakfast youre early start couple crocodile living course eaten golfer lately leave alone theyll return favor golf puerto kept course water sand trap hole adjacent ocean bit wind mess shot golf early morning temperature cool deal crowd playa mujere golf club resort golf course beautiful fairway rough condition green course designed greg norman difficult hole expect lose ball slice rough mostly swamp food friendly service picking hotel requested pok pok natural golf course manicured older rental equipment moon palace club golf jack nicklaus signature golf course hole featuring jungle beach setting drink hole manicured fairway green nature bird watching airport sound odd airport basically carved block forest kind bird animal especially early morning look mexican agoutis forest rodent grazing lawn forest swim dolphin wetn wild dolphin experience beware camera allowed charge photo bit subsequent swim captive dolphin delphinus dream dolphin discovery operator interactive aquarium trip isla mujere facility scuba diving diving scuba dive wide catalog diving program marina chac professional padi certified scuba diving company provide padi diving certification scuba diving padi certified scuba instructor equipment rental trip reef sunken ship cave diving cenote scuba padi certified dive instructor offering variety course advanced water divemaster trip dive site mesoamerican reef isla mujere cozumel cenote underwater river etc snorkeling excursion snorkeling whale shark seatizen diver padi sdi diving instruction reef trip cenote trip dive trip undersea museum muse manta diver service dive shop padi certified instructor course trip musa undersea museum reef etc cenote diving equipment included scuba total family owned scuba diving operating early padi certified instructor lead group maximum diver spectator sport estadio olimpico andre quintana roo futbol club team expansion league played professional soccer seat stadium downtown stadium seldom crowded estadio beto avila stadium named former mlb lmb player beto avila bobby avila cleveland played season indian professional baseball team marlin langostero tigre play liga mexicana beisbol tigre play game schedule late early seat clean sight line bad seat house low gate price tasty concession fun spend summer afternoon evening price tag ask price simple question cuanto cuesta easily understood mexican atms low withdrawal fees centro bancoppel banjercito banamex santander hotel zone banamex atm inside selecto super chedraui buying grocery oxxo eleven circle centro supermarket chedraui soriana super spending beach opportunity relax shop native living selling item beach variety item purchased vendor item sarong jewelry sea shell market willing bargain price shopping downtown hotel zone downtown cheaper hotel zone brand good market bring haggling skill ready vast shopping experience market downtown buys stick price resolve price fixed american style mall shop selling brand good comparable europe similar product market centered market downtown souvenir shop food court larger mexican restaurant cheaper hotel zone considered price tout pushing attention interested shopping downtown short due price become expensive independent shop non location dont forget bargain market local market product offered grocery flower supply etc doesnt range market worth plaza america plaza america cinepolis movie theater sear chedraui liverpool numerous smaller shop restaurant mall immediate surrounding mall isla shopping village hotel zone feature hundred store ranging american brand armour mexican brand senor frog numerous restaurant chili mcdonald mexican food kukulcan plaza another mall street isla mall hotel zone featuring american mexican brand name forever gnc senor frog store restaurant lapis jewelry factory likely offered coupon jewelry store website gift individual book shuttle website evidence honored shuttle service offered store hotel price store exorbitant discounted rate jewelry sold street vendor hotel gift shop online sure investigate vendor idea pay rule quoted price salespeople insist worth stand ground salesperson agree quickly youre probably paying addition reported difficulty obtaining refund ave market set formal shop unofficial booth opened ave covering section sidewalk side road block souvenir extremely cheap aggressive shop owner hounding enter store pressuring buying quickly convenient bundle trip visiting parque palapa shop adjacent park restaurant normal type store mixed alongside souvenir shop sort store variety food mercado parque palapa address fast food casual dining chain common worldwide restaurant carl church chicken little caesar pizza dairy queen ice cream cake hotel zone johnny rocket hooter plaza america mall johnny rocket hooter chili airport johnny rocket airport papa john pizza street food parque palapa variety eatery food stall evening close sign showing food picture according low price taco low mxn bus station food stall directly front bus station tasty torta sandwich taco food stall taco tasting taco fish shrimp meat budget restaurant salus chemo red pozole tamale tasty excellent guerrero style food restaurant look old charme taqueria poblano taqueria authentic mexican food portion waiter friendly atmosphere restaurant pipo bufette buffet food homemade touch variety dish attention canton toluqueno comida corrida soup dish tortilla serve breakfast starting kee comida chinese dish quesadilla sope tradicion mexicana says quesadilla sope tortuga serving torta kind mexican sandwich mercado atotonilco extremely sampling mexican food country excellent value nothing fancy gastronomical delight huevo motuleno mid range pescado taco restaurant specializing seafood fish taco cost piece fried fish tortilla put sauce condiment pescadito laid seafood restaurant everything deep fried chile relleno possibly ones habichuela habichuela mexican cuisine mayan setting caribbean seafood restaurant legend romantic outside garden dine decoration native tree plant create beautiful illusion mayan ruin night sky habicheula received national restaurant award distinguished restaurant america organization cafe trova pabilo art exhibition baguette wine tarasco classic mexican taqueria specializing taco pastor local tasty fair price splurge cambalache argentine steakhouse serve menus atmosphere inside restaurant feel travelled extra staff attention detail desire please feel youre serving night dinner love enjoy company friend food alone give star rating rest added bonus lorenzillo rosanegra latin american cuisine hotel restaurant mikado japanese thai cuisine featuring teppanyaki table champion sport bar stepped bar food game screen gustino gustino authentic italian cuisine freshest mediterranean ingredient nightlife unlike destination earth doesnt start task breakfast nap beach siesta arduously completed shine legal drinking age strongly enforced store permitted sell alcohol sunday hotel zone hotel zone huge venue entertainer djs dont surprised show spontaneously erupt sipping pina colada club charge cover ranging person cover bar dancing conga line laughing care speaking espanol managed pickup timer fun returner coco bongo entertainment show complete women swinging ceiling zona hotelera hotel zone venue listed surrounding hotel krystal convention grand fiesta americana senor frog senor frog restaurant dance club night spot vacationer restaurant open lunch serve international type food pasta chicken pizza mexican cuisine midnight cover charge dollar party souvenir yard glass pay filled choice senor frog famous attraction water slide lead club lagoon little bit fun evening progress senor frog become family friendly party establishment waitress circulate offering shot tequila price waiter hand traveling family group expect touch hug kiss female member party dadyo dadyo host world djs red foo lmfao apl app tiesto feature casual atmosphere laser show pole dancing girl flashing dance floor opening show coco bongo nightclub featuring show compared professional scenery ticket bought online dont mind waiting exchangeable ticket bought oxxo vaquita loud front party bar heart hotel zone cant miss cow print decor booming bass non stop party innovative drink lively crowd surfin burrito liter size margarita bucket beer spicy michelada house favorite coco loco coconut juice served coconut shell food option shrimp taco coconut shrimp avenue yaxchilan club yaxchilan downtown local hang elemento live music bar elemento play live music last customer leave music price significantly lower hotel zone club route biker bar lively club serving beer bucket cubeta casual food wing fry burger live music rock metal band played loud volume fun lgbt bars club lively atmosphere drag performer live music djs plus mixed drink laser hot beer queer fun atmosphere drag queen cabaret live music djs beer mixed drink craft beer puerto juarez brewery super craft brewery range ales light golden ale belgian strong brown ale flavored chilis course ubiquitous ipa light food seafood taco charcuterie board sliced sausage cheese

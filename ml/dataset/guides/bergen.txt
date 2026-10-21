@@ -2,19 +2,21 @@ Bergen, Norway
 Labels: nature, culture | Split: validation
 Source: https://en.wikivoyage.org/wiki/Bergen (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (58,407 characters) =====
+===== CLEANED GUIDE TEXT (58,442 characters) =====
 
 Bergen is Norway's second largest city and the most popular gateway to the fjords of West Norway. The city is renowned for its great location amidst mountains, fjords, and the ocean. Steep mountains and highlands within the city offer excellent hiking opportunities. The city center is compact and can easily be covered on foot, while the city as a whole is spacious and sprawling. Bergen and suburbs are home to about one quarter of the people in West Norway.
 
 Having fostered many of Norway's greatest bands and artists, the city is also known for its cultural life and underground/indie music scene. Bergen's unpredictable weather adds to its quirky, unmistakable charm. Bergen was Norway's main city for centuries, and many patriotic inhabitants believe it still is.
 
 Understand
+
  
 The character of Bergen is defined by its location, surrounded by steep mountains and sea (straits and fjords). The city has many lakes. It is a typical Norwegian wooden town, even downtown there are notable neighbourhoods of small wooden houses in various styles. Few towns if any have so many wooden houses in the centre. In some areas wooden houses have been replaced by taller masonry structures, giving the city a fascinating mix of old and new.
 
 Bergen is a sprawling city stretching some 40-50 km in either direction where the 286,000 inhabitants (2021) are separated by mountains, fjords and lakes. Only the central parts are visible from the panorama points at Mount Fløyen. The distant parts of the city are mostly of less interest to the visitor. The city centre is on the other hand compact and can be covered by walking for most visitors. Bergen is facing the ocean and coast, and the hinterland is relatively sparsely populated. Bergen is separated from eastern Norway by crooked fjords and wide, inhospitable mountain areas, and until the Bergen railway was built in 1909 the most practical transport east-west was several days sailing around the coast. 
 
 Cityscape
+
 Central Bergen is characterized by a fascinating conglomerate of small, older wooden houses and newer masonry buildings as well as modern steel-and-glass structures. Bergen has some fine examples of functionalist architecture such as Kalmar House and Sundt shopping centre. "Brutalist" buildings include the science building at the university and the city hall.
  
  
@@ -42,6 +44,7 @@ Sandviken. Sandviken, Skuteviken and Ladegården are primarily residential areas
 
 
 History
+
  
 Founded around 1070 AD, Bergen quickly evolved into the biggest and commercially most important city in Norway. It was the country's administrative capital from the early 1200s until 1299, and the second largest city in Scandinavia. Bergen was one of the most important bureau cities of the Hanseatic League, interconnecting continental Europe with the northern and coastal parts of Norway, thus becoming a central spot for the vending of stockfish and the commercial hub of Norway. It was the largest city in Norway until the 1830s and has a long maritime history in shipping and finance. Until the Bergen railway (Bergensbanen) began operation in 1909, there was no convenient overland transport between Norway's principal cities.
 
@@ -54,6 +57,7 @@ While few medieval buildings remain, the historical centre of Bergen is along th
 The western shore of the inner harbour were developed later and became the modern city centre. This shore was known as Stranden ("the Strand") and was dominated by Norwegians, while the Hanseatic merchants dominated the eastern shore. Strandgaten became the main shopping street for locals and visitors from the hinterland. Strandgaten was presumably established in the middle ages and the middle section is basically unchanged in the last several hundred years.
 
 Geography
+
  
  
 Bergen is located in the far west in Norway, sheltered from the North Sea only by a number of islands. It is situated along latitude 60 degrees north, on the same latitude as Oslo, Stockholm, Helsinki, Saint Petersburg and Anchorage. The city is the most hilly and mountainous in Norway. The city centre is surrounded by a group of mountains and peaks known as the Seven Mountains. This has given the city its name (berg is an old Norse word for mountain). The geographic conditions of the city are very visible; limited space to build on made it necessary in the 19th century that new city blocks be built on the steep slopes of mount Fløyen.
@@ -63,11 +67,13 @@ Except for the dense city centre, which made up the entire incorporated city bef
 The geographical centre of Bergen is the intersection of Torgallmenningen and Ole Bulls plass, indicated by the "blue stone" a nine meter long slightly inclined slab. Torgallmenningen square and Ole Bulls plass are the main axes in central Bergen. Historically, the centre was slightly more east at Vågen (the bay) or at Bryggen.
 
 See
+
  
  
 There's a number of attractions in Bergen and the surrounding areas. Surveys do, however, show that most tourists in Bergen find the atmosphere, cultural landscape and architecture more compelling than the typical sights, so pick a few things to see and spend the rest of your time in Bergen sitting down in a park or café, strolling around the city, enjoying a concert or hiking the mountains. On sunny summer days, stay downtown until late to enjoy the sunset in the north.
 
 Panorama points
+
 Because of its rugged landscape, Bergen has an abundance of panorama points and these give an intense feeling of space, notably Mt Fløyen and Mt Ulriken; these mountains are served by funicular and cable car, respectively, but are also available hiking for the sporty. At lower altitudes the Fjellveien panorama road and the highest point of Nordnes peninsula are easily available. Sandviksbatteriet just above Sandviken hospital also offers excellent panorama. The Montana residential area at the foot of Mt. Ulriken likewise gives a nice outlook.
 * 
 Fjellveien panorama road. Runs for several kilometers between Sandviken and Bellevue, largely horizontal and pedestrian.
@@ -89,6 +95,7 @@ St Johns. St. John's Church (Johanneskirken) dominates the top of Nygårdshøyde
 
 
 Traditional wooden architecture
+
  
 
 Traditional small wooden houses, often placed in an irregular pattern around narrow streets and passages, were a staple of most Norwegian cities during the past centuries. Bergen is one of the few major towns where this traditional style still dominates several neighbourhoods downtown. A number of houses have also been relocated to Gamle Bergen (old Bergen) museum. Some of these are merely pockets of cute little houses between stone and concrete structures; others are wider areas of these dollhouse-like buildings. Show respect for those living there while you walk by. These areas are best seen on a relaxed stroll (although the view from Fjellveien gives a birds eye view):
@@ -111,6 +118,7 @@ Sandviken neighbourhood. In Lower Sandviken near the small market square, there 
 
 
 Downtown
+
  
 * 
 KODE Art museums. One of the largest art museums in the Nordic countries, with art from the renaissance as well as contemporary art. The museum houses several of Edvard Munch's works.
@@ -150,12 +158,14 @@ Svaneapoteket. Svaneapoteket is a pharmacy in Strandgaten number 4. The pharmacy
 
 
 Bergenhus fortress
+
  
 * 
 Bergenhus fortress. Once the seat of the king, Bergenhus fortress is one of the oldest and best preserved forts of Norway. The oldest surviving buildings are from the mid 13'th century, but the area was a royal residence from the late 11'th century. The fortress is situated close to the international ferry terminal. The royal hall, Håkonshallen, (Håkon's Hall), named for King Håkon Håkonsson, was built some time between 1247 and 1261. It is used today for royal galas, as a banqueting hall for the city council, and other public events. The roof is reconstructed after a blast during World War II. The nearby Rosenkrantz tower has the same appearance as it had in the 16th century. The oldest part of the tower dates back to the 1270s, a few decades after Håkonshallen. It was expanded in the 1560s by the governor, Erik Rosenkrantz, to its present shape. The rest of the medieval buildings in the fortress have been replaced or demolished over the centuries, with some ruins still visible. Among these is the medieval cathedral, the Church of Christ, which was used for coronation and as a royal burial site in the 13th century. A memorial marks the site of the high altar. Guided tours of the royal hall and the tower start every hour between 10:00 and 16:00 every day from 15 May to 31 Aug in the royal hall. From 1 Sept to 14 May tours are only available between noon and 15:00 on Sundays. Entrance fee is kr. 170 for adults, 20 for students and free for children under 16. A small cafeteria with coffee, tea and basic snacks is open from June to August. The fortress grounds serve as a city park; you can hang out here and eat that fish you just bought at the nearby fish market - or just enjoy the sunshine and the view. The park is popular among locals and tourists, but usually not crowded. It is normally not a problem to find a good spot for your picnic or a round of Frisbee. There is a very good view of the bay. The use of open fire, including barbecues, and the drinking of alcoholic beverages are forbidden. Unlike in many other parks, the prohibition of alcohol is enforced strictly here, as the fort is still a military area with occasional military guards on patrol.
 
 
 Bryggen
+
  
  
 * 
@@ -163,6 +173,7 @@ Bryggen. Between 1350 and 1750, this area used to be a Hansa dock, trading and p
 
 
 Museums
+
 
 * 
 Bryggens Museum. After the fire in 1955, when a lot of Bryggen burnt down, remains of the first settlement on Bryggen were discovered. The museum is built over these up to 900-year-old wooden building foundations, giving a unique insight in Bergen's architectural history. It contains the world's largest collection of medieval runic inscriptions, mostly inscribed on wooden items, but only a small number of these are on display. It also hosts themed exhibitions. If you are not a student, and would like to also visit the Hanseatic museum, it is cheaper to buy a ticket for the guided tour (and skip it if you want).
@@ -175,6 +186,7 @@ Theta museum. During the first half of World War II, the Theta group, formed by 
 
 
 Nygårdshøyden and Møhlenpris (southern downtown)
+
 
  
 
@@ -195,6 +207,7 @@ Nygårdsparken. This is a very nicely landscaped park laid out in the late 1800s
 
 
 South of the city centre
+
 * 
 Fantoft Stave Church. Stave churches are built in a distinctive style using the logs of trees as pillars, by the early Christians. This is a reconstruction of a church that was built in Fortun, by the Sognefjord, around 1150. On 6 Jun 1992, the church was totally destroyed by arson, but a perfect copy has since been constructed. The inside of the stave church has no wall paintings and the altar is quite austere. If you have seen the stave church in the Norsk Folkemuseum in Oslo, then save yourself a few kroners and skip this one.
 
@@ -216,6 +229,7 @@ Ulriksbanen. Cable car to the top of Mt. Ulriken, the highest of the mountains s
 
 
 North of the city centre
+
  
 * 
 Gamle Bergen. A reconstructed town with about 50 wooden houses from the 18th, 19th and early 20th centuries. It is a beautiful place to stroll on a sunny day. The more cultural traveller will enjoy a guided tour of the area and the houses.
@@ -225,6 +239,7 @@ The Norwegian Knitting Industry Museum. Located in the buildings that used to ho
 
 
 West of the city centre
+
 * 
 Alvøen. An old and picturesque former industrial community on the west coast of the Bergen peninsula. The manor building at Alvøen has been converted into a museum with several exhibitions.
 
@@ -233,7 +248,9 @@ Damsgård Hovedgård. This 18th-century manor is the most splendid of the many c
 
 
 Do
-===Concerts===
+
+Concerts
+
 * 
 Bergen Jazzforum. Jazz club with focus on modern jazz. Norwegian Jazz Club Of The Year 2008.
 
@@ -248,6 +265,7 @@ Det Akademiske Kvarter. Popular student venue, usually hosting concerts several 
 
 
 Stage art
+
  
 * 
 BIT Teatergarasjen. BIT (Bergen International Theater) presents Norwegian and international contemporary stage art productions of high quality.
@@ -260,6 +278,7 @@ Bergen Nasjonale Opera. Although Bergen does not have its own opera house, it do
 
 
 Beach-life
+
 Hanging out by the ocean can be one of the best ways to spend a hot summer day in Bergen, although Bergen is hardly a sun and sand destination. The temperature in the ocean around Bergen is warmer than most places on the west coast because of the outer islands protecting the area from the constant flow of cooler water from the North Sea, and allowing the water to heat in smaller bays in the area. Temperatures can rise to  after consecutive days with good weather. The water is clean and fresh. There are sandy beaches at Arboretet at Milde (Hjellestad), Kyrkjetangen at Nordåsvannet and Helleneset, "bathing houses"/beaches at Nordnesparken and Elsero situated in Old Bergen in Sandviken. After a day hiking in the mountains, Skomakerdiket above Mount Fløyen has a sandy fresh-water beach.
 
 * 
@@ -272,11 +291,13 @@ Nordnes outdoor pool. Outdoor swimming pool 25 m, heated saltwater taken from th
 Hiking
 
 
+
 The mountains surrounding Bergen offer great hiking possibilities, and unlike most cities the first hiking trail starts downtown and there's no need for transport out of town. There are options for anyone from those just looking for a fifteen-minute stroll in the sun to the more adventurous interested in daytrips and steep hills. Byfjellene (lit. "the city mountains") have good networks of dirtroads and paths, usually well signposted. Good maps are available in most bookstores – look for Tur- og friluftskart Bergen (1:25 000) from the Norwegian Mapping and Cadastre Authority (Norwegian: Statens kartverk).
 
 For advice on hiking, as well as hiking opportunities elsewhere in Norway, you should consult Bergen Turlag (Bergen Hiking Association), the local branch of Den Norske Turistforening (Norwegian Trekking Association), in Tverrgaten 4-6. The Norwegian right to access entitles you to hike in all uncultivated areas.
 
 Mount Fløyen
+
 Mount Fløyen is the most central of the mountains. It is easily accessible by the funicular running from downtown, but the more fit will probably choose the 40-minute walk up. A good compromise can be to take the funicular up and walk down. The way is well signposted, so you won't get lost. In the steep slope towards Fløyen (right above the city) there is the popular Fjellveien, a long, gentle, horizontal pedestrian road with a perfect panorama of the city. From Fjellveien, there are several alternative roads to the plateau. The slopes of Mt. Fløyen is (surprisingly) home to Norway's biggest trees. Until the 19th century the hills and mountains of Bergen were largely barren and gray, then the society for forest and trees was established. The slopes were cultivated and the trees have since the late 1800s grown rapidly in the fertile climate. There is even a small sawmill at the road to Fløyen. There are spruce, oak, hazel, Scots pine, aspen, sycamore (maple), beech and hackberry trees.
 
 From the top of Mount Fløyen, the 1.8&nbsp;km (1.1&nbsp;mi) walk in relatively flat terrain to Brushytten (lit. "the soda cabin") is ideal, if you have kids. Brushytten is a kiosk usually open on Sundays. There are several ways to get there, if you follow the signs, you're on the safe side and will walk on dirtroads all the way (easily accessible with both a wheelchair or a pram).
@@ -288,13 +309,16 @@ For both kids and adults, a popular activity on snowy days is to take the funicu
 
 Fjords
 
+
  
 Central Bergen itself is situated at a fjord and within the municipality of Bergen there are several other fjords. There are smaller fjords all around Bergen and numerous lakes inside Bergen itself. The closest classical fjord is Sørfjorden-Veafjorden between Arna and Stanghelle. The main road (E16) and railway line between Bergen and Voss runs along Veafjorden as well as Bolstadfjorden. There are frequent boat trips to some of the more scenic fjords from the city centre, for instance to Mostraumen. There are trips all year round, but many are only available in season, from May to September. The full day trip by to through Nærøyfjorden/Aurlandsfjorden combines train, boat and bus where also the overland transport by train and bus through the wild landscape is very rewarding. Nærøyfjorden and Aurlandsfjorden are branches of Sognefjorden, Norway's longest and deepest, and the second longest in the world. The great Hardangerfjorden, Norway's second largest, is accessible at Norheimsund about 1 ½ or 2 hours by car or bus from Bergen.
 
 Birdwatching
+
 You can spot interesting and unique birds in Norway, including the white tailed eagle. There are many places to do this, from Bergen port to your hotel window.
 
 Fishing
+
 The islands, fjords and lakes surrounding Bergen provide excellent conditions for both saltwater and fresh-water fishing. Fishing from fresh water lakes usually requires a local rod permit, even permission from the land owner. Pay attention to signs marking lakes used for drinking water.
 
 Coast and deep sea fishing is free and there is no need for any license. However, no more than 10 kg of fish fillets or fish products can be exported from Norway per person. If you have fished under the auspices of a registered tourist fishing camp, the export quota is a maximum of 20 kg, provided that the organized fishing can be documented. Note some important regulations concerning the minimum size of most fish. Consult the web site of The Norwegian Ministry of Fisheries and Coastal Affairs for more information.
@@ -304,6 +328,7 @@ Fishing in the city centre (Bryggen, Vågen, Bontelabo, Dokken) is possible, but
 A general, very cautious advice could be not to eat liver from fish caught in areas close to the city centre - and pregnant and breast feeding women should not eat this fish at all.
 
 Events
+
 
 * 
 Bergenfest. Music festival from the end of April to start of May. A number of concerts in most rhythmic music genres (pop, rock, hip hop, blues, soul) all over town.
@@ -325,9 +350,11 @@ Nattjazz. Nattjazz is a two-week-long jazz festival from the end of May to the s
 
 
 Buy
+
 Bergen has a number of shopping centres, and international chains are well represented. As prices are rather high in Norway, regular shopping is probably not the most interesting thing to do in Bergen, even if you get a VAT refund (see the Tax Free shopping section below). But if you know where to go, you can find rare and unique items, both traditional crafts and stuff made by local designers - and some other fun stuff. Keep in mind that with a very few exceptions, Bergen shuts down completely on Sundays and holidays.
 
 Shops
+
 * 
 Apollon. Combined bar and music store, sells CDs, vinyls and band merchandise in addition to a decent selection of beers.
 
@@ -373,6 +400,7 @@ Musikk Miljø. Orchestral instruments and accessories, sheet music, and music re
 
 Tax-free shopping
 
+
 VAT (value added tax/sales tax, Norwegian: mva. (merverdiavgift) or moms. (merverdiomsetningsavgift)) is 25% for most items in Norway. It is included in the retail price, which makes the VAT content 20% of the price you pay. As Norway is not a member of the European union, all foreign citizens (apart from those of Sweden, Denmark and Finland) are eligible for a refund of the VAT if the goods purchased are brought out of the country at the latest one month after the purchase. The prerequisites for such a refund is that the goods are not used or consumed, even in part, within Norway, and that you spend at least kr 315 in a store.
 
 Look for stores with a Global Blue/tax free flag or sticker. You need only to ask the shop assistant for a global refund check, and provide documentation of your citizenship. When leaving Norway, go to a Global Blue refund office with the goods, the check and your passport, and you will receive up to 19% of the sales price in cash. In Bergen, the only Global Blue refund office is at the airport, but there are also information desks on a couple of the ferries leaving from the city.
@@ -383,6 +411,7 @@ Eat
 
 
 
+
 There is a great variety of restaurants and cafes in Bergen, but you should expect to spend some time looking for the best places. In the most central parts of the city, many of the restaurants are all the same. Move a block away from the most central parts of downtown to find lower prices and better food. Kitchens usually close at 23:00 at the latest.
 
 Waiters and other restaurant staff have good wages. You are not required to leave any money to cover the service, but many people choose to tip the waiter if he or she has been helpful and nice, and if the food was good. If you choose to leave a tip, rounding up or adding about five to ten percent will be appreciated. A rule of thumb would be that the more expensive the food is, the more are you expected to leave a tip.
@@ -390,6 +419,7 @@ Waiters and other restaurant staff have good wages. You are not required to leav
 Keep in mind that tap water is safe to drink and (usually) free of charge. To save money, ask for tap water to drink.
 
 Local food
+
  
 Finding local food might take some effort, but there are some options. There aren't that many local dishes available at restaurants. "Norwegian" food is the food of the husmann (cottager) – nutritious and cheap, not what you usually find in a restaurant. The Bergen fish soup might be the most important, as well as raspeballer and cooked cod. If you want to get that Norwegian taste and have a gourmet meal at the same time, look for dishes that use "local" ingredients (such as reindeer, stockfish and cod) with a twist, such as Bryggen Tracteursted's filet of reindeer farced with goat cheese.
 
@@ -399,7 +429,9 @@ In November, December and January, traditional Christmas food is served in many 
 
 Budget
 
+
 City centre
+
 
 * 
 Pasta Sentral. Cheap and decent pasta and pizza for students and budget travellers alike. Pasta Sentral has been an institution in Bergen since its opening in 1990. Provides take away as well.
@@ -428,6 +460,7 @@ Bergen pizza. Both the pizza and the kebab are delicious. The pizzas are made in
 
 Around the train station
 
+
 * 
 Zen Cafe Bar. A fantastic place to eat. The prices are cheap, and the food and service are excellent. Worth trying at least once.
 
@@ -436,6 +469,7 @@ Kroathai. The Thai equivalent of Hot Wok, although with slightly smaller portion
 
 
 Mid-range
+
 
  
 * 
@@ -458,6 +492,7 @@ Pingvinen. A very nice, but usually crowded bar where you can also get a good po
 
 Splurge
 
+
 * 
 Bryggen Tracteursted. Bryggen Tracteursted offers a modern kitchen inspired by Hanseatic and local traditions, served in historic surroundings. A hidden treasure with its somewhat anonymous appearance. The restaurant can in principle fit up to about 200 guests, but the kitchen is very small, and expansion is not allowed by the cultural heritage authorities. This forces the restaurant to accept a relatively low number of patrons at a time – giving a peaceful atmosphere. A reservation is recommended.
 
@@ -466,6 +501,7 @@ Enhjørningen. Bergen's most traditional – and expensive – fish restaurant. 
 
 
 Drink
+
 There is a great variety of bars, night clubs, concert venues etc. in Bergen. Night clubs are usually open from 23:00, but life never starts before 01:00. Bars opens at different hours, some can be open all day. No places are allowed to serve alcohol after 03:00, and the consumption of alcoholic beverages must cease at 03:30 at the latest. Many places are required to close earlier. The establishments are only allowed to let people bring their drinks outside if they have been granted a special permit. A requirement to get this permit is that they have a confined space outdoors for their guests. All drinks must be indoors by 01:00. People go out all week, but Fridays and Saturdays are the best nights, Saturdays being the clear winner (most places will be a bit too crowded on Saturdays). Some clubs have a 2 for 1 policy on Wednesdays, and Sunday is usually the night for people in the industry.
 
 Most places require that you are 20 years of age (look in the list for details) and that you can provide a valid ID, even if you are much older. Valid IDs are Norwegian bank cards, European standard driver's licenses and ID cards and passports. Drinking in public is illegal. Emptying a can in front of a police officer on a Saturday night will earn you a kr. 2500 fine. If you stroll through a park a bit outside the city centre on a sunny day you will still see a lot of people having a beer or a glass of wine with the picnic. The police usually won't mind as long as everything passes in an orderly fashion.
@@ -479,6 +515,7 @@ Remember that smoking in all indoor areas where people work is strictly prohibit
 Nightlife is largely concentrated in the central downtown (streets Vaskerelven, Engen, Torgallmenningen, Ole Bulls plass, Nygaardsgaten) and Bryggen area (streets Bryggen, Rosenkrantz gt, Vetrlidsallmenningen, kong Oscar gate).
 
 Central downtown
+
 
 * 
 Baran. Small and nice pub with an excellent selection of reasonably priced beers, and a small selection of cheap food. A bit run-down, but rather cozy. Clientele between 20-35. The staff wants to appear very knowledgeable and might tell you which beers are similar to which (e.g., "Marston's Oyster Stout is similar to a Guinness and not at all watery"). Being skeptical to this advice will keep you from being disappointed.
@@ -503,6 +540,7 @@ Rick's. A large complex featuring among other things a scene, a disco, a bar and
 
 Bryggen and Dreggen
 
+
 * 
 Baklommen. Bryggen (Enhjørningsgården). Probably Bergen's smallest bar. A place to sit down and relax with a coffee or a drink. Only accessible with a wheelchair when assisted. Age limit is 23 years. No dress code.
 
@@ -512,6 +550,7 @@ Una. A bar with a large variety of beers, which change all the time.
 
 Nordnes and Nøstet area
 
+
 * USF Verftet, Georgernes verft 12 (Nøstet). Formerly a sardine factory, USF Verftet is a very large venue with different stages for concerts, theatre and dance. Intimate jazz concerts every Friday except around Christmas and in the summer. Home of the Nattjazz jazz festival. Kafé Kippers is a café with a beautiful view of Puddefjorden. The best place for a beer outdoors in the summer, but also family friendly. The café is open every day. Check the program on the venue's website or in the local newspaper Bergens Tidende (BT) for events. Student discount on beer and wine. The café and the two largest stages are accessible with a wheelchair. Access to the remaining stages is possible with assistance. Age limit is 18 years. No dress code.
 * 
 Altona Vinbar. C. Sundts gate 22 (Entrance through Hotel Augustin or from Gågaten). The only bar/restaurant in Bergen with Wine Spectators Best of Award of Excellence. Excellent selection of wines, nice atmosphere.
@@ -519,6 +558,7 @@ Altona Vinbar. C. Sundts gate 22 (Entrance through Hotel Augustin or from Gågat
 *Trikken 106,  Nøstegaten 45B. Cozy, small pub and bar with a tramway theme. Nice selection of not too expensive beers and good cocktails. Also seating outside, with a view over the harbour and fjord. Classic rock, metal and postpunk will be played all the time, but never loud. Trikken 106 is a popular meeting place for people living in the neighbourhood. Expect some quizzes and a lot of talking. A place for tourists to meet the locals.
 
 Nygårdshøyden and Møhlenpris – the University Area
+
  
 * 
 Det Akademiske Kvarter. The student culture house is one of the largest venues in Bergen with two large stages and one smaller, a pub, a café and a few other bars. Often popular club concepts and concerts in the week-ends. A very popular place among most people in the 20s. Age limit is 20 years unless you have valid student ID, in which case the age limit is 18 years. No cover charge (except Saturdays after 21:00, kr 50, and for special events) or dress code. Completely accessible with a wheelchair.
@@ -535,10 +575,11 @@ Hulen. Olaf Ryes vei 48. Th-Sa 21:00-03:00 (closed during summer). Established i
 * Legal, Christies gate 11. A small and very popular 50s style drinking den with brilliant music and ambiance. No dress code.
 
 Outside the city centre
+
  
 * 
 Bien bar. This great neighborhood pub used to be a pharmacy. Wooden drawers with labels for bandages and hemorrhoidal cream still line the walls, as the art deco interior is protected by the local cultural heritage authority. Bien has a friendly staff and a good atmosphere. In addition to classic drinks you can also get very good food both for lunch and dinner here. Try "Bien spesial", sausages from a local slaughterhouse served with lentils. Quiz every Wednesday at 20:30 and regular jazz concerts with free entrance. No dress code, accessible with a wheelchair.
 
-===== TOKENS THE MODEL TRAINS ON (4,183) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (4,183) =====
 
 largest gateway fjord renowned amidst mountain fjord ocean steep mountain highland excellent hiking opportunity compact easily covered foot spacious sprawling suburb home quarter fostered greatest band artist cultural life underground indie music scene unpredictable weather adds quirky unmistakable charm century patriotic inhabitant believe character defined surrounded steep mountain sea strait fjord typical norwegian wooden downtown notable neighbourhood wooden house style town wooden house wooden house replaced taller masonry structure giving fascinating mix old sprawling stretching direction inhabitant separated mountain fjord part visible panorama point mount flyen distant part mostly interest hand compact covered walking facing ocean coast hinterland relatively sparsely populated separated crooked fjord wide inhospitable mountain railway built practical transport sailing coast cityscape characterized fascinating conglomerate older wooden house newer masonry building modern steel glass structure fine example functionalist architecture kalmar house sundt shopping brutalist building science building university hall grew organically port trading post bryggen frequent fire masonry building notably mariakirken hakonshallen remain middle ages retained aspect ancient layout notable wide street space called allmenning common perpendicular vagen inner harbour allmenning rise steeply waterfront torgallmenningen cars define modern ordinary street medieval narrow ran parallel waterfront narrow short street smug alley run house packed close together alley narrow cars steep stair key vagen vagen inner harbour natural bay fishmarket inner vagen emerged middle ages shore vagen bryggen german hanseatic wharf shore vagen historical vregaten lille vregaten street bryggen flyen rise steeply slope flyen dominated wooden residential building finest expensive bryggen bergenhus fortress hakonshallen previously holmen eyot effectively capital period middle ages nordne nordne peninsula vagen shore vagen beach strandkaien strandgaten street characterised wooden residential building home aquarium outdoor swimming pool fredriksberg fortress fine park point elevated terrain surrounded steep hill cliff fine panorama sentrum intersection torgallmenningen ole bull plass square focal point modern included sentrum lille lungegardsvann octagonal lake dominated shop restaurant hotel office building nygardshyden nygardshyden distinct mountainous ridge runs direction local simply hyden hill easily recognised landmark church johanneskirken john home university museum sydneshaugen nygardsparken occupy store lungegardsvannet lake bay brackish water separating puddefjorden separate laksevag sandviken sandviken skuteviken ladegarden primarily residential bryggen fortress begin minute walk bryggen stretch base steep mountain dominated pretty wooden house particularly skuteviken house packed space road norwegian school economic norge handelshyskole elite education research institution sandviken history founded quickly evolved biggest commercially important country administrative capital early largest scandinavia important bureau city hanseatic league interconnecting continental europe coastal part becoming spot vending stockfish commercial hub largest maritime history shipping finance railway bergensbanen began operation convenient overland transport principal city relic hanseatic heyday notably old harbour bryggen unesco world heritage site ravaged fire recent major fire took fire destroyed building today part square torgallmenningen building lost tradition wood building cramped destroyed time fire destroyed bryggen medieval building remain historical shore vagen inner harbour notably bryggen wharf fortress key church mariakirken mary korskirken holy cross church pattern settlement largely unchanged vregaten lille vregate oldest street mary holy cross church built mary unusual double tower prominent planned church shore inner harbour developed later modern shore stranden strand dominated norwegian hanseatic merchant dominated shore strandgaten shopping street local hinterland strandgaten presumably established middle ages middle section basically unchanged last hundred geography far sheltered sea island situated latitude degree latitude saint petersburg anchorage hilly mountainous surrounded group mountain peak mountain given berg old norse word mountain geographic condition visible limited space build necessary century block built steep slope mount flyen except dense entire incorporated dense largest city cover width time instance time higher population density settlement inside wide border concentrated municipality rest municipality mountain farmland smaller settlement except compact distance relatively municipality geographical intersection torgallmenningen ole bull plass indicated blue stone meter slightly inclined slab torgallmenningen square ole bull plass axes historically slightly vagen bay bryggen attraction surrounding survey show atmosphere cultural landscape architecture compelling typical sight pick thing spend rest sitting park cafe strolling enjoying concert hiking mountain sunny summer stay downtown late enjoy sunset panorama point rugged landscape abundance panorama point give intense feeling space notably flyen ulriken mountain served funicular cable car respectively hiking sporty lower altitude fjellveien panorama road highest point nordne peninsula easily sandviksbatteriet sandviken hospital excellent panorama montana residential foot ulriken likewise give outlook fjellveien panorama road runs kilometer sandviken bellevue largely horizontal pedestrian skansen panorama point excellent easily panorama point funicular lowest station front old fire outlook white wooden tower buekorp tippetue panorama point panorama point tippetue footpath flyen nordne panorama lovely highest point nordne peninsula aquarium nordne park pleasant park tip peninsula set late summer evening john john church johanneskirken dominate nygardshyden hill host university view traditional wooden architecture traditional wooden house placed irregular pattern narrow street passage staple norwegian city past century major town traditional style dominate neighbourhood downtown house relocated gamle old museum merely pocket cute little house stone concrete structure wider dollhouse building show respect living walk relaxed stroll view fjellveien give bird eye view nordne slope side nordne peninsula aquarium verftet adjacent nstet shore fjellsiden neighbourhood traditional neighbourhood steep slope behind bryggen flibanen track marken flatland railway station pedestrian zone hill skivebakken street ladegarden upper sandviken neighbourhood regular wider street highly characteristic style skuteviken neighbourhood traditional neighbourhood bay fortress sandviken neighbourhood lower sandviken market square collection traditional white wooden house downtown kode art museum largest art museum nordic country art renaissance contemporary art museum house edvard munch work fish market outdoor fish market history historical fish trade local changing shopping habit fish market today compare fish market dominated makeshift souvenir shop seafood stall seafood generally quality fishermen longer deliver catch directly market pretty idea local look fish sell stranger ones feel adventurous sample common item whale salmon salmon caviar somewhat crowded wheelchair fairly easy galleri fjalar business run kristian espedal stage gaahl gorgoroth wardruna gaahl wyrd personally market relevant merch artwork flibanen flibanen funicular flyen plateau mountain massif view accessing flibanen plateau flyen wheelchair piece cake become attraction content expect queue dont worry move fast step lift assistance door wide museum decorative art museum design decorative art largest collection chinese art jrgen hospital jrgen hospital preserved leprosy hospital century europe wooden building kalfarveien pleiestiftelsen spedalske largest institution caring leprosy patient armauer hansen discovered bacteria cause leprosy hansen discovery major breakthrough medicine proved chronic illness contagious hereditary leprosy archive complete record patient assumed patient archive world leprosy archive inscribed unesco list memory world leprosy museum tell story disease history addition showing life hospital museum unique disturbing experience complex oscar gate wooden church aquarium aquarium selection aquatic life especially penguin seal typical norwegian aquatic life documented collection tropical fish animal shark tank underwater glass tunnel fun kids statsraad lehmkuhl masted barque sail training vessel built kept kind mini cruise approximately half time cost food ticket bought advance adventurous week cruise europe live work sailor mary church oldest remaining building mary church built century presumably preserved medieval church basilica shaped church built romanesque style enlarged gothic style belonged german community century contain unique pulpit beautiful altarpiece characteristic twin tower possibly planned church dominance german merchant national theatre theatre monumental art nouveau building prominent position ole bull square institution theatre played key role ole bull major international star violin established theater employed young henrik ibsen instructor later bjrnstjerne bjrnson another national icon worked ole bull discovered young music talent edvard grieg theatre norwegian danish standard language stage stage svaneapoteket svaneapoteket pharmacy strandgaten pharmacy continuous operation oldest pharmacy devastating fire destroyed building current pharmacy building constructed swan mark entrance hence swan pharmacy bergenhus fortress bergenhus fortress seat king bergenhus fortress oldest preserved fort oldest surviving building mid century royal residence late century fortress situated close international ferry terminal royal hall hakonshallen hakon hall named king hakon hakonsson built today royal gala banqueting hall council public event roof reconstructed blast world war nearby rosenkrantz tower appearance century oldest tower date decade hakonshallen expanded governor erik rosenkrantz present shape rest medieval building fortress replaced demolished century ruin visible medieval cathedral church christ coronation royal burial site century memorial mark site altar guided tour royal hall tower start hour royal hall tour noon sunday entrance fee adult student children cafeteria coffee tea basic snack fortress ground serve park hang fish bought nearby fish market enjoy sunshine view park local crowded normally problem spot picnic round frisbee view bay fire barbecue drinking alcoholic beverage forbidden unlike park prohibition alcohol enforced strictly fort military occasional military guard patrol bryggen bryggen hansa dock trading processing wooden house bryggen today built devastating fire probably similar building despite neglect fire norwegian city habit burning everything wood considerable building survived listed unesco world heritage site enter alleyway storefront feel middle ages museum history bryggen interesting aspect probably building example restaurant bryggen tracteursted serving food drink building opened purpose wandering bryggen possible wheelchair building difficult museum bryggen museum fire bryggen burnt remain settlement bryggen discovered museum built old wooden building foundation giving unique insight architectural history contain world largest collection medieval runic inscription mostly inscribed wooden item display host themed exhibition student hanseatic museum cheaper ticket guided tour skip want hanseatic museum schtstuene hanseatic museum schtstuene bryggen original interior preserved restored tour hanseatic museum give introduction hanseatic hansa life walk authentic hanseatic merchant house early building late century converted museum schtstuene building part bryggen rebuilt show ate celebrated held meeting neither museum schtstuene accessible wheelchair theta museum half world war theta group formed ages established radio contact reported movement german fleet group headquarter radio station heart occupied remained active discovered raided nazis room reconstructed original state order directorate cultural heritage probably country smallest museum displaying radio equipment theta group security system accessible wheelchair nygardshyden mhlenpris downtown museum cultural history collection museum university heart campus divided collection cultural history collection natural history collection building cultural history collection archeology anthropology art culture study section thing museum collection norwegian folk art national costume notable unique exhibition norwegian medieval church art painted altarpiece crucifix portal demolished stave church wood museum natural history collection natural history collection botany geology zoology zoology exhibition preserved put hundred ago enormous whale skeleton suspended ceiling exhibition hall visible window outside geology exhibition modern varied contain sample part world addition collection museum garden finest spring summer green house enjoy tropical plant vilvite sponsored state addition largest industrial company science feature interactive exhibition science technology mathematic target children young intention inspire learn science adult special exhibition weather ocean energy altogether interactive machine experiment maritime museum traditional maritime museum middle campus university exhibition maritime history shipping history viking naval warfare maritime archeology nygardsparken nicely landscaped park laid late english style park picnic family summer group student young barbeque welcome step grass play frisbee kubb croquet want save kroner food stop grocery store pick ingredient picnic bring blanket beer spend cheap relaxing afternoon park highly unlikely police bother drinking public park behave easy contact local public toilet pop road vilvite facility upper park rejuvenated play children occasional outdoor exhibition weekend cafe restroom pavillion fantoft stave church stave church built distinctive style logs tree pillar early christian reconstruction church built fortun sognefjord church totally destroyed arson perfect copy constructed inside stave church wall painting altar austere stave church norsk folkemuseum save kroner skip gamlehaugen villa gamlehaugen built resemble castle home christian michelsen former prime minister helped swedish rule peaceful dissolution union nowaday villa royal family residence park villa bathing possibility siljustl museum home composer harald sverud famous late romantic neo classicist work house museum occasional concert somewhat mystic park house public troldhaugen house famous composer edvard grieg wrote peer gynt suite piano concerto minor national composer country house outside preserved state died grave buried estate museum devoted grieg work concert hall concert ulriksbanen cable car ulriken highest mountain surrounding restaurant gamle reconstructed wooden house early century beautiful stroll sunny cultural traveller enjoy guided tour house norwegian knitting industry museum building house fully mechanized knitwear factory machinery working condition guided tour exhibition film alven old picturesque former industrial community coast peninsula manor building alven converted museum exhibition damsgard hovedgard century manor splendid country retreat built aristocracy past century roccoco building surrounded beautiful garden concert jazzforum jazz club focus modern jazz norwegian jazz club live producing larger pop rock hip hop concert philharmonic orchestra philharmonic national orchestra established regarded oldest orchestra world program varied repertoire easy listening orchestra play course edvard grieg work det akademiske kvarter student venue hosting concert time week except holiday summer stage art bit teatergarasjen bit international theater present norwegian international contemporary stage art production quality den nationale scene national theater beautifully restored building theater present variety play stage traditional ibsen contemporary play largest stage store scene mainstream play played smaller stage feature alternative play interesting ones play norwegian nasjonale opera opera house opera company den nye opera opera put production throughout summer performance bergenhus fortress production performed den nationale scene grieghallen ticket online ticket range depending seating availability attract performer quality vary bit anywhere superb bit average beach life hanging ocean ways spend hot summer hardly sand destination temperature ocean warmer coast outer island protecting constant flow cooler water sea allowing water heat smaller bays temperature rise consecutive weather water clean fresh sandy beach arboretet milde hjellestad kyrkjetangen nordasvannet helleneset bathing house beach nordnesparken elsero situated old sandviken hiking mountain skomakerdiket mount flyen sandy fresh water beach nye sydne sjbad public seawater pool nordne outdoor pool outdoor swimming pool heated saltwater taken fjord hiking mountain surrounding hiking possibility unlike city hiking trail start downtown transport option anyone looking fifteen minute stroll adventurous interested daytrip steep hill byfjellene lit mountain network dirtroad path signposted maps bookstore look tur friluftskart norwegian mapping cadastre authority norwegian staten kartverk advice hiking hiking opportunity elsewhere consult turlag hiking association branch den norske turistforening norwegian trekking association tverrgaten norwegian access entitle hike uncultivated mount flyen mount flyen mountain easily accessible funicular running downtown fit probably choose minute walk compromise funicular walk signposted wont lost steep slope flyen fjellveien gentle horizontal pedestrian road perfect panorama fjellveien alternative road plateau slope flyen surprisingly home biggest tree century hill mountain largely barren gray society forest tree established slope cultivated tree late grown rapidly fertile climate sawmill road flyen spruce oak hazel scot pine sycamore maple beech hackberry tree mount flyen nbsp nbsp walk relatively flat terrain brushytten lit soda cabin ideal kids brushytten kiosk sunday ways follow sign youre safe side walk dirtroad easily accessible wheelchair pram brushytten walk hill mount rundemanen beautiful view mount rundemanen choice hike walk mount sandviksfjellet sandviken bus walk another possibility cross vidden plateau walk mount ulriken highest mountain hike take somewhat fit trip prepared bad weather trip vidden hiking trip kids adult activity snowy funicular mount flyen toboggan fjord situated fjord municipality fjord smaller fjord numerous inside closest classical fjord srfjorden veafjorden arna stanghelle road railway line voss runs veafjorden bolstadfjorden frequent boat trip scenic fjord instance mostraumen trip round season trip nryfjorden aurlandsfjorden combine train boat bus overland transport train bus wild landscape rewarding nryfjorden aurlandsfjorden branch sognefjorden longest deepest longest world hardangerfjorden largest accessible norheimsund car bus birdwatching spot interesting unique bird white tailed eagle port hotel window fishing island fjord surrounding provide excellent condition saltwater fresh water fishing fishing fresh water require rod permit permission land owner pay attention sign marking drinking water coast deep sea fishing license fish fillet fish product exported person fished auspice registered fishing camp export quota maximum provided organized fishing documented note important regulation concerning minimum size fish consult web site norwegian ministry fishery coastal affair information fishing bryggen vagen bontelabo dokken possible concern trace mercury white fish fillet liver report indicate situation expected advice avoid fishing vagen old ship yard astveittangen eidsvagen general cautious advice liver fish caught close pregnant breast feeding women fish event bergenfest music festival start concert rhythmic music genre pop rock hip hop blue soul international film festival biff week film festival held kino magnus barfot multiplex cinema constitution business except restaurant downtown citizen dress finest clothe celebrate stunned street hardly move beautiful national costume person meet wear look oddly wear anything suit dress twenty gun salute skansen half mount flyen morning parade start dreggen parade start torgalmenningen ends festplassen parade formed children organization sport team military troop unlike country level patriotism bit overwhelming foreigner say gratulerer med dagen literally congratulation anyone meet probably response youre norwegian night constitution definite party night international festival event week start international festival largest festival kind nordic country festival present literature dance theater classical music latest focus art nordic country nattjazz nattjazz week jazz festival start longest jazz festival europe concert verftet usf former sardine factory nstet capacity guest pass access concert night fair price concert night simultaneously stage festival musical profile range traditional jazz world music artist previously played nattjazz gotan project ahmed jamal garbarek stan getz art blakey herbie hancock van morrison jame brown shopping centre international chain represented price regular shopping probably interesting thing vat refund tax shopping section know rare unique item traditional craft stuff designer fun stuff keep mind exception shut completely sunday holiday shop apollon combined bar music store sell cds vinyl band merchandise addition decent selection beer blonder stas shop selling beautiful norwegian handmade textile tablecloth napkin kjttbasaren market hall built kind nowaday house finest gourmet food store interesting havet grde sesong havet grde selection quality seafood fresh delivery quality fish market sesong season food directly farm producer norsk flid husfliden husfliden chain store throughout focus traditional norwegian craft interesting thing store traditional jewelry tableware husfliden sell beautiful national costume norwegian bunad bryggen husflid handknitted pullover cardigan accessory brand norsk handstrikk sweater hand knitted norwegian lady home rare unique product shop carry selection norwegian product addition souvenir troll soft toys etc price compared shop bryggen ruben skattkammer unique fun stimulating toys kids adult stormberg store largest brand outdoor wear sstrene hagelin sstrene hagelin tradition famous traditional fiskekaker fish burger table shop fish burger fish soup tilsamman trendy clothe michael extremely stylish menswear twisted independent fashion store men women brand ivanahelsinki mood namso gtp birna pernilla svenre maria weterlind naturlista william rast gabba scotch soda minium insight pace pour zumm design sweet handmade clothing girl age musikk milj orchestral instrument accessory sheet music music related thingy tax shopping vat value added tax sale tax norwegian mva merverdiavgift moms merverdiomsetningsavgift item included retail price vat content price pay member european union foreign citizen apart eligible refund vat good purchased brought country latest month purchase prerequisite refund good consumed spend store look store global blue tax flag sticker ask shop assistant global refund check provide documentation citizenship leaving global blue refund office good check passport receive sale price cash global blue refund office airport information desk couple ferry leaving unlike country custom authority involved vat refund process variety restaurant cafe expect spend looking part restaurant move block part downtown lower price food kitchen close latest waiter restaurant staff wage required leave money cover service choose tip waiter helpful food choose leave tip rounding adding percent appreciated rule expensive food expected leave tip keep mind tap water safe charge save money ask tap water food finding food effort option arent dish restaurant norwegian food food husmann cottager nutritious cheap restaurant fish soup important raspeballer cooked cod want norwegian taste gourmet meal look dish ingredient reindeer stockfish cod twist bryggen tracteursted filet reindeer farced goat cheese cafe restaurant serve raspeballer thursday raspeballer potato dumpling served bacon sausage salted meat sheep melted butter mashed rutabaga takeaway raspeballer kjttbasaren cheap ones lido excellent ones pingvinen bjelland kjkken reasonable fish soup fish ball plukkfisk fish gratin madam traditional christma food served restaurant look pinnekjtt cured dried smoked meat lamb mutton lutefisk lit lye fish dried cod prepared lye ribbe oven baked pork ribs special experience smalahove sheep head traditional dish voss far budget pasta sentral cheap decent pasta pizza student budget traveller alike pasta sentral institution opening provide kafe spesial value money particularly pizza wide selection beer situated slope university clientele largely student basic service order counter kebab selling cheapest kebab kebab manage maintain decent level service quality serve pizza hot wok quality chinese food freshly cooked kitchen service fast price low especially brd vin restaurant dimly lit restaurant asian inspired food quiet tasty dish sstrene hagelin canteen style fish food restaurant traditional fishfood creative fishburger taco home beside torgallmenningen trekroneren last standing hot dog stand situated illegally erected shed selection classic interesting sausage style extremely literally queue pizza pizza kebab delicious pizza front garnished heated oven train station zen cafe bar fantastic price cheap food service excellent worth trying kroathai thai equivalent hot wok slightly smaller portion service fast staff friendly plan kroa thai restaurant menu asane senter mile outside multiple option vegetarian mid range pygmalion kocafe organic restaurant situated heart featuring live concert art exhibition zupperia soup salad tasty cheap portion cafe opera institution corner food money regular customer serve lunch cake early evening dinner beer late night dancing ichiban fresh tasty fast sushi cheapest price primarily dont mind complete lack atmosphere kafe kipper cafe serve variety meal sandwich dinner view extraordinary lucky enough catch sunny observe range activity happen bay indoor cafe quiet atmosphere panorama window facing water giving romantic view rainy connection restaurant changing art exhibition accessible wheelchair pingvinen crowded bar portion norwegian food recommended food throughout opening venue genuine norwegian homecooking bowl popcorn splurge bryggen tracteursted bryggen tracteursted modern kitchen inspired hanseatic tradition served historic surrounding hidden treasure somewhat anonymous appearance restaurant principle fit guest kitchen expansion allowed cultural heritage authority force restaurant accept relatively low patron giving peaceful atmosphere reservation recommended enhjrningen traditional expensive fish restaurant building restored century appearance enhjrningen reputed excellent food served classical manner reservation required ask window table possible beautiful view harbor variety bars night club concert venue etc night club life start bars open allowed serve alcohol consumption alcoholic beverage cease latest required close earlier establishment allowed let bring drink outside granted special permit requirement permit confined space outdoor guest drink indoor week friday saturday night saturday clear winner bit crowded saturday club policy wednesday sunday night industry require age look list detail provide valid older valid ids norwegian bank card european standard driver license card passport drinking public illegal emptying front police officer saturday night earn fine stroll park bit outside sunny beer glass wine picnic police wont mind everything pass orderly fashion price vary ask door know weekend cover charge night club night club bars dress code required attire vary look list information listing indicate dress code normal clothe accepted supporter gear generally accepted sport pubs remember smoking indoor work strictly prohibited law restaurant bars night club etc require leave smoke indoor nightlife largely concentrated downtown street vaskerelven engen torgallmenningen ole bull plass nygaardsgaten bryggen street bryggen rosenkrantz vetrlidsallmenningen oscar gate downtown baran pub excellent selection reasonably priced beer selection cheap food bit run cozy clientele staff want appear knowledgeable tell beer similar marston oyster stout similar guinness watery skeptical advice keep disappointed biskopen pub cater mostly selection beer look crowded check basement henrik vinstove bar possibly widest selection beer beer tap selection bottled beer quiet friendly atmosphere bartender extremely knowledgeable personable inside rock cafe metal cheap beer hair rock excellent burger dress code band shirt recommended pingvinen crowded bar portion norwegian food recommended genuine traditional norwegian food price food drink rick complex featuring thing scene disco bar irish pub woman expect sleazy guys disco age limit weekend bryggen dreggen baklommen bryggen enhjrningsgarden probably smallest bar sit relax coffee accessible wheelchair assisted age limit dress code una bar variety beer change nordne nstet usf verftet georgerne verft nstet formerly sardine factory usf verftet venue stage concert theatre dance intimate jazz concert friday except christma summer home nattjazz jazz festival kafe kipper cafe beautiful view puddefjorden beer outdoor summer family friendly cafe check program venue website newspaper bergen tidende event student discount beer wine cafe largest stage accessible wheelchair access remaining stage possible assistance age limit dress code altona vinbar sundt gate entrance hotel augustin gagaten bar restaurant wine spectator award excellence excellent selection wine atmosphere trikken nstegaten cozy pub bar tramway theme selection expensive beer cocktail seating outside view harbour fjord classic rock metal postpunk played loud trikken meeting living neighbourhood expect quizz talking meet local nygardshyden mhlenpris university det akademiske kvarter student culture house largest venue stage smaller pub cafe bars club concept concert week ends age limit unless valid student case age limit cover charge except saturday special event dress code completely accessible wheelchair fincken nygardsgaten traditionally gay nightlife fincken mixed crowd plenty straight men dress code fotballpuben vestre torggaten live football corner globe except trondheim local difficult relationship nightlife start drunk night expect fight expect bouncer hard anyone involved age limit inaccessible wheelchair dress code hulen olaf ryes vei summer established hulen oldest running rock club europe hulen tricky unique atmosphere worth somewhat concealed buffer horde drunk moron frequent bars hulen situated cave old bomb shelter run student bars stage concert friday cheap drink rock disco saturday beer cost turnout vary greatly dress code legal christy gate style drinking den brilliant music ambiance dress code outside bien bar neighborhood pub pharmacy wooden drawer label bandage hemorrhoidal cream line wall art deco interior protected cultural heritage authority bien friendly staff atmosphere addition classic drink food lunch dinner bien spesial sausage slaughterhouse served lentil quiz wednesday regular jazz concert entrance dress code accessible wheelchair

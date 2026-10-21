@@ -2,7 +2,7 @@ Jaipur, India
 Labels: history, culture, shopping | Split: validation
 Source: https://en.wikivoyage.org/wiki/Jaipur (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (32,482 characters) =====
+===== CLEANED GUIDE TEXT (32,496 characters) =====
 
 Jaipur (Hindi: जयपुर Jaypur), also known as the Pink City, is the capital of Indian state of Rajasthan, and its largest city. The city was built in the 18th century by Sawai Jai Singh as India's first planned city, and today it's a major tourist attraction for Indians and for international visitors. It is a very picturesque city with splendid palaces, forts and historical monuments and belongs to the tourist Golden Triangle along with Delhi and Agra. It hosts several attractions including the City Palace, Govind Dev ji Temple, Vidhan Sabha, Birla Temple and several massive Rajput forts. It also serves as a stepping stone for those heading to the desert cities of Jodhpur and Jaisalmer.
 
@@ -11,8 +11,10 @@ Jaipur is growing fast and various development projects are being undertaken by 
 Jaipur's nickname, the Pink City, is due to its distinctly coloured buildings, which were painted this colour to imitate the red sandstone architecture of Mughal cities. The present earthy red colour originates from repainting of the buildings undertaken for a visit by the Prince of Wales in 1876.
 
 Understand
+
  
 History
+
  
 Jaipur (Hindi: JIGH-poor) gets its name from its founder Maharaja Jai Singh II (1693-1744), a great warrior and astronomer. He came to power at the age of 11 on the death of his father Maharaja Bishan Singh. Jai Singh's lineage can be traced back to the Kucchwaha Rajput, clan who came to power in the 12th century. They were long-term rivals to the Sisodia Rajputs who ruled from Mewar. This rivalry led them to ally with the Mughals, and this alliance resulted in them eventually gaining a pre-eminent position in Rajasthan.
 
@@ -27,7 +29,9 @@ In 1876, Maharaja Ram Singh painted the entire city pink, traditionally a colour
 Maharaja Ram Singh also built the Ramgarh Lake to supply water to the burgeoning city. During the 19th and 20th centuries, the city's population spread beyond its walls. In 1922, Man Singh II ascended to the throne and it was during his reign that civic buildings like the secretariat, schools, hospitals and other public buildings were built. After independence, Jaipur merged with the states of Jodhpur, Jaisalmer and Bikaner to form the state of Rajasthan. In 1956, Jaipur became the capital of the state of Rajasthan.
 
 See
-===Amber Fort===
+
+Amber Fort
+
  
 * 
 Amber Fort. This massive fort-palace complex built in hybrid Hindu-Muslim style dates back to Raja Man Singh and was the royal palace of the Kachwahas from c. 1600-1727. It's one of six UNESCO World Heritage forts in Rajasthan. The name has nothing to do with the rather pretty pastel yellow colour; instead, the fort is named after the area of Amber, in turn named after the goddess Amba.
@@ -47,6 +51,7 @@ Sheesh Mahal. A palace adorned with thousands on thousands of mirror tiles on th
 
 
 Forts
+
 * 
 Jaigarh Fort. Never conquered in battle, this was considered the strongest of the three forts in the area. It is best-known as the site of the world's largest cannon, the Jaivana, which was test-fired only once &mdash; according to legend, despite using only the half the design amount of gunpowder, the cannonball flew ! A better reason to visit the fort, though, are the scenic gardens at the other end and the spectacular views over the Amber Fort and the hills around. The remains of the foundry where the Jaivana (and many more) were cast are also in the fort grounds. There are multiple boards with "no tips allowed," in case someone is bothering you.
 
@@ -55,6 +60,7 @@ Nahargarh Fort. The smallest of the three forts, notable primarily for excellent
 
 
 Palaces
+
  
  
 
@@ -72,6 +78,7 @@ Mundota Fort and Palace. A 450-year-old palace, built around 1550 by Jaswant Sin
 
 
 Temples
+
  
  
 * 
@@ -104,6 +111,7 @@ Shri Digamber Jain Atishya Kshetra Mandir, Sanghiji. A popular Jain temple.
 
 Monuments
 
+
 * 
 Gaitore. A royal cremation site of the rulers of Jaipur.
 
@@ -120,6 +128,7 @@ Panna Meena Ka Kund Stepwell. People come here to get water, swim or hang out wi
 
 
 Gardens
+
  
 * 
 Ram Niwas Garden. Built in 1868 by Maharaja Sawai Ram Singh of Jaipur, this garden contains a bird park, zoo, Ravindra Rang Manch Theatre, art gallery, exhibition ground, gymnasium and several cafes and picnic spots.
@@ -145,6 +154,7 @@ Jawahar Circle. A large traffic circle with one of the biggest circular parks in
 
 Museums
 
+
 * 
 Anokhi Museum of Hand Printing. A beautiful clean museum dedicated to the traditional art of hand block printing textiles, this museum is housed in a restored heritage haveli tucked into the back streets of old Amber. Small cafe (see "Eat"), clean toilets, small shop selling hand printed contemporary wearable clothes and textiles, friendly staff and a printer and block carver demonstrating their crafts every day.
 
@@ -156,6 +166,7 @@ Amrapali Museum. A jewellery museum, with a collection of 4000 objects. Over 800
 
 
 Other
+
 * 
 Statue Circle. Statue Circle is exactly what it sounds like: a roundabout that contains a statue that is beautifully lit up at night. It is the life-size statue of the Great Ruler and Founder of Jaipur, Maharaja Sawai Jai Singh II
 
@@ -164,6 +175,7 @@ Vidhan Bhavan. The seat of the Rajasthan Legislative Assembly (Vidhan Sabha). Th
 
 
 Do
+
  
 * 
 Amber Fort Sound and Light Show. Experience the history, culture and life of Amber through this spectacular show. Amitabh Bachhan narrates the story of Rajasthani kings with a script written by Gulzar. Don't forget the mosquito repellent. The light show can be watched from outside the fort, but the sound won't be audible from there. There is also a sound and light show at Jantar Mantar for ₹100.
@@ -182,6 +194,7 @@ Heiwa Heaven The Resort. Heiwa Heaven is a Jaipur-based luxury resort that hosts
 
 
 Parks
+
 * 
 Central Park. The largest park in Jaipur, at the middle of the city. A big lush green beautiful garden and Rambagh Polo Ground and golf club nearby makes it an enjoyable place. The park also has a  long jogging and walking track. A number of migratory and native birds visit the park during the year.  Furthermore, there's a  tall flag of India flying at the middle, one of the largest in India.
 
@@ -190,6 +203,7 @@ Nevta Dam. A popular destination among bird enthusiasts, with about 150 bird spe
 
 
 Nearby
+
 *
 Chokhi Dhani. Around 18 km from Central Jaipur on the Jaipur-Tonk highway, Chokhi Dhani (Fine Hamlet in Rajasthani dialect) is a kind of virtual village and also a 5-star resort. There are lodging facilities available, but the real attraction is the evening fun-fairs. There are two excellent places to enjoy Rajasthani food served in the traditional mode at their resort. Chokhi Dhani a.k.a. Lalten Restaurant is a more popular place because it is on the main road near the airport and also has other attractions, such as horseback riding, camel riding, bullock cart rides, a maze, boating and kathputli (puppet) shows. You can also watch live folk dances and listen to live folk music for free. It gives the visitor a glimpse of culture from different parts of Rajasthan, and could be nice if you will not have time to see much of Rajasthan yourself. It opens at 5PM, and be sure to get there early as many of the sites are difficult to see when it gets dark. It's a 30-min rickshaw ride from Central Jaipur, or you can go there by bus or taxi, but you are best off making sure you have a ride back. Consider buying the pass for AC hall, because the outdoor seating is a self-served buffet, while in the AC Dining you'll be served food. This makes a massive difference when there are too many people at the restaurant, as the restaurant is unable to keep up with the demand for buffet food. If you would prefer to sleep at the resort, have a look at their accommodation. Avoid going there during the rainy season.
 
@@ -197,9 +211,11 @@ Chokhi Dhani. Around 18 km from Central Jaipur on the Jaipur-Tonk highway, Chokh
  
 
 Festivals
+
 *The Gangaur Festival of Jaipur is well known in India. It starts on the day after Holi (March or April) and lasts for 18 days. In Jaipur, a sweet dish called a ghewar is characteristic of the Gangaur festival. People buy ghewar to eat and distribute among their friends and relatives. The celebration is dedicated to the God Shiva and his consort, the Goddess Parvati. A procession with the image of Gauri commences from the Zanani-Deodhi of the City Palace. It then passes through Tripolia Bazaar, Chhoti Chaupar, Gangauri Bazaar, Chaugan stadium and finally converges near the Talkatora.
 
 Buy
+
  
 Nothing is 'fixed price' in Jaipur, even in the government (RTDC) approved shops and malls. There are a few RTDC approved shops along "Amer Road" claiming to be government-owned and 'fixed price', but beware: they are frequently overpriced by as much as three times. Almost everything, from food to transportation to handicrafts, even accommodation can be bargained down to as much as a 60% discount off the quoted price. The lowest rates will be found in the bazaars of Bapu & Johari. Even here, keep inquiring in several shops as each one will have a different price for the same item. Don't be ashamed to spend an hour or more in each shop with the friendly shop owners sharing stories over masala chai as you look at their goods. While they are doing their best to run a business, do not overlook the genuinely hospitable culture of Rajasthani people.
 
@@ -213,18 +229,23 @@ Johari Bazaar and Chameliwala Market. Johari bazaar and Chameliwala Market both 
 * Jaipur also has other markets like Civil Lines Market and MI Road and nearby markets. It also has a few malls like Crystal Palm Shopping Mall, Gaurav Towers, MGF Metropolitan Mall, Pink Square Mall, Triton Mall and World Trade Park.
 
 Jewels
+
 Jaipur is famous for its many jewel merchants where you can get great deals on semi-precious gems such as turquoise, lapis, tiger eye and the star ruby (a gem found only in India that is distinctive for the 6-pointed star it shines under natural light).
 
 Rajais
+
 Jaipur is famous for its 'rajais', a type of light quilt stuffed with cotton. You can get colourful & soft `Shaneel ki Rajai' in a velvet finish. These are quiet warm, soft and long lasting. You can shop in the main market area. But remember to bargain. To be confident of quality, and are willing to pay a little more, visit government stores for rajais.
 
 Eat
+
  
  
 
 Budget
 
+
 Sweet
+
 * 
 Gangaur Sweets. Sweets for chamcham, also baked sweets and crispy samosas.
 
@@ -236,6 +257,7 @@ Zolocrust. The gourmet bakery and Italian restaurant is operated by chefs of Hot
 
 
 Savoury
+
 * 
 Anokhi Cafe. Mostly organic non-Indian-style ("international flavour") home-style cakes, freshly prepared sandwiches, pastries, savoury snacks plus organic coffee and a selection of good teas. Quiet, relaxing, good value for money, situated outside the Anokhi shop (see Anokhi Museum of Hand Printing listing in "See").
 
@@ -256,6 +278,7 @@ Rawat Mishthan Bhandar. Do not miss the famous Pyaz ki Kachori, a spicy onion di
 
 
 Mid-range
+
  
 
 * 
@@ -290,6 +313,7 @@ Zodiac. A buffet restaurant with North Indian dishes.
 
 
 Splurge
+
  
 * 
 1135 AD Amber. Upscale restaurant in the Amber Fort complex. They serve traditional Rajasthani cuisine in royally decorated dining rooms.
@@ -310,12 +334,15 @@ Virasat Heritage Restaurant. Offers traditional Rajasthani and Marwari cuisine i
 In addition to these listings, see the "Do" listing for Chokhi Dhani.
 
 Drink
-=== Coffee ===
+
+Coffee
+
 *
 Step Out Cafe. Bright and airy. Secluded garden seating. Excellent coffee. Mouth-watering desserts. Lebanese, Mexican, Italian Cuisine. Wide-rage of vegan and gluten-free options.
 
 
 Alcohol
+
 * 
 Amigos Bar & Discoteque. Mexico-themed bar at the 9th floor of the OM Tower hotel, in the adjoining room there's a dance floor. Apparently a wider range of beverages and cocktails than at restaurants.
 
@@ -337,6 +364,7 @@ Skyfall By Replay. Bar, restaurant and lounge with Mexican and Italian cuisine. 
 
 
 Night clubs
+
  
 
 * 
@@ -351,6 +379,6 @@ Club Seven. A nightclub with electronic music and different events every few wee
 * 
 House of People. House of People is a nightclub offering a wide variety of drinks and an amazing lounge to hang out. A pint of beer would cost about ₹250. It also attracts good gentry in general.
 
-===== TOKENS THE MODEL TRAINS ON (2,613) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (2,613) =====
 
 hindi jaypur pink capital indian state rajasthan largest built century sawai jai singh planned today major attraction indian international picturesque splendid palace fort historical monument belong golden triangle host attraction palace govind dev temple vidhan sabha birla temple massive rajput fort serve stepping stone heading desert city jodhpur jaisalmer growing fast development project undertaken government private enterprise nickname pink due distinctly coloured building painted colour imitate red sandstone architecture mughal city present earthy red colour originate repainting building undertaken prince wale history hindi jigh poor founder maharaja jai singh warrior astronomer came power age death father maharaja bishan singh jai singh lineage traced kucchwaha rajput clan came power century term rival sisodia rajput ruled mewar rivalry led ally mughal alliance resulted eventually gaining pre eminent position rajasthan ruling magnificent amber fort built kucchwaha encompassed kingdom mewar marwar jai singh came power moment disquiet supported aurangzeb son azam shah bid throne azam shah lost battle succession brother bahadur shah demanded jai singh removal installation vijay singh throne jai singh setback lying formed formidable front mughal aligning rajput reinstated dust settled peace reigned prospered border expanded jai singh built amber fort serve capital named credit vidhyadhar bhattacharya chief architect bengal jai singh approval founded strong scientific principle laid according shilpa shastra ancient architectural manual remain planned city expansion meant limited source water proved inadequate jai singh death sons squabbled power monarch invasion neighbouring rajput maratha usurped core remained lasted british time mughal maintained relation british war independence remained loyal raj british gradually began undermine independence state exercised greater control administration maharaja ram singh painted entire pink traditionally colour associated hospitality welcome prince wale later king edward vii tradition maintained today resident old compelled law preserve pink colour thereby earned sobriquet pink maharaja ram singh built ramgarh lake supply water burgeoning century population spread beyond wall man singh ascended throne reign civic building secretariat school hospital public building built independence merged jodhpur jaisalmer bikaner form state rajasthan capital state rajasthan amber fort amber fort massive fort palace complex built hybrid hindu muslim style date raja man singh royal palace kachwaha unesco world heritage fort rajasthan nothing pretty pastel yellow colour instead fort named amber turn named goddess amba fort ground sprawling information panel hindi english somewhat limited worth audio guide real guide bit hike touristy thing ride elephant order elephant arrive morning midday elephant working road elephant walk hire genuine guide taken amber fort rajasthan kala mandir government operated shop souvenir guide commission item amber light show site scrutiny claim witnessed elephant beaten handler walk hill jaigarh fort prepared pay entry fee path terminate ticket window road sight fort following dalaram bagh diwan sheesh mahal palace adorned thousand thousand mirror tile wall ceiling fort jaigarh fort conquered battle considered strongest fort site world largest cannon jaivana test fired mdash according legend despite half design amount gunpowder cannonball flew reason fort scenic garden spectacular view amber fort hill remain foundry jaivana cast fort ground multiple board tips allowed case someone bothering nahargarh fort smallest fort notable primarily excellent view man sagar lake vast sprawl built maharaja sawai jai singh mix indian european style fort house relatively compact madhavendra bhawan palace former splendour fading layer graffiti pigeon dropping film rang basanti shot fort pathshala song shot turn soon enter fort autorickshaw taken stand front amber fort fort house wax museum sheesh mahal ticket bought separately ridiculously expensive beware buying wax museum sheesh mahal combo ticket youll paraded largely unimpressive museum told queue sheesh mahal last minute palace palace imposing blend traditional rajput mughal architecture vast palace complex occupying nearly seventh pink built maharaja jai singh complex divided sery courtyard sprawling garden building home palatial structure chandra mahal home present maharajah mubarak mahal housing textile museum diwan khas hall private audience housing largest silver vessel world duly mentioned guinness book diwan aam hall public audience gateway ridhi sidhi pol doorway decorated motif depicting season warned sell ticket taking photo camera inside exhibit inside photography sign hawa mahal built maharaja sawai singh palace extension zenana women chamber purpose allow royal lady observe everyday life street storey red sandstone structure complete window breeze hawa hindi circulate window giving palace iconic facade street jal mahal beautiful jal mahal water palace king amber middle man sagar lake jal mahal represent mughal rajput architecture style mundota fort palace old palace built jaswant singh temple akshardham temple birla mandir aka marble temple relatively temple white marble beautiful carving cover vast built contemporary manner birla temple completely constructed finest quality white marble addition statue painting hindu deity temple picture famous philosopher world socrate confucius zoroaster bags beside purse food camera photo allowed temple rule enforced outside galtaji ancient hindu pilgrimage site temple galtaji constructed pink stone temple pavilion rounded roof exquisitely carved pillar painted wall temple surrounded natural spring reservoir considered holy tank kund route reach temple arrive hike uphill downhill minute gate easily accessible car longer journey galwar bagh local feed surprisingly tame monkey temple enjoy view climb hill valley monkey temple enjoying company countless monkey goat animal hill turn reach temple view especially sunset monkey food purchase bottom hill entrance temple religious ask donation charge camera govind devji temple vaishnavite particularly follower lord krishna important temple world vrindavan lord krishna presiding temple brought vrindavan mughal rein according legend lord krishna idol temple look exactly krishna form incarnation earth jainiwa garden jalebi chowk campus palace temple constructed jagat shiromani temple century hindu temple meera bai poet saint bhakti movement enshrined alongside lord krishna site cultural interest festival janmashtami devotee gather number special darshan bhajan dedicated krishna meera jain mandir jain temple shivdaspura bara padampura famous beautiful statue god padamprabhu teerthankar jain god sitting crossed leg seating posture statue pure white stone digging foundation house moti dungri mandir temple dedicated lord ganesha religion moti dungri meaning pearl hill hill host temple palace said temple built construction rest begun protect shri digamber jain atishya kshetra mandir sanghiji jain temple monument gaitore royal cremation site ruler iswari minar swarga sal minaret view alternative minaret side road chandpol bazaar minaret shopping complex stair rooftop basically view minaret arched gateway opposite minaret soon courtyard look metal spiral staircase keep climbing reach roof walk corridor set stair another floor know cant higher jantar mantar unesco world heritage site largest astronomical observatory build maharaja jai singh period observatory consist fourteen major geometric device yantra hindi measuring predicting eclipse tracking star orbit ascertaining declination planet determining celestial altitude etc signage providing elaborate explanation device guide hired provide information digestible format guide charge rupee explanation guide audio guide observatory isnt doesnt tell information already existent sign observatory water wind palace panna meena kund stepwell water swim hang loved ones garden ram niwa garden built maharaja sawai ram singh garden contain bird park zoo ravindra rang manch theatre art exhibition ground gymnasium cafe picnic spot sisodia rani palace garden palace established sawai jai singh queen sisodia ruler oldest kingdom tiered multi level garden fountain watercourse painted pavilion double storeyed palace occupy terrace garden palace gallery pavilion beautiful mural depicting scene life lord krishna vidyadhar garden garden real treat want fusion mughal hindu culture zoological garden serene environment ram niwa bagh garden prized rich flora fauna nahargarh wildlife sanctuary wildlife sanctuary aravalli hill home specy leopard sloth bear wild boar jackal hyena peacock owls eagle specy snake frog jhalanaamagarh leopard conservation another leopard sanctuary ridge jawahar circle traffic circle biggest circular park built development authority jda leisure destination close airport multiple concentric track park surrounded rose garden patrika gate look rajput era structure built museum anokhi museum hand printing beautiful clean museum dedicated traditional art hand block printing textile museum housed restored heritage haveli tucked street old amber cafe clean toilet shop selling hand printed contemporary wearable clothe textile friendly staff printer block carver demonstrating craft albert hall museum fine example indo saracenic architecture building designed sir samuel swinton jacob opened public museum maharaja ram singh wanted building hall successor madho singh decided museum art included ram niva garden museum rich collection artefact painting carpet ivory stone metal sculpture colourful crystal work named king edward vii albert edward prince wale foundation stone laid amrapali museum jewellery museum collection object object displayed floor remaining object kept visual storage museum fine jewellery hand crafted antique exquisite curio showcase craftsmanship rich tradition indian jewellery type indian jewellery museum constitute visual representation history art process jewellery making collection range tribal jewellery wood metal silver gold piece extensive collection show traditional craftsmanship impacted modern contemporary design sensibility statue circle statue circle exactly sound roundabout contain statue beautifully lit night life size statue ruler founder maharaja sawai jai singh vidhan bhavan seat rajasthan legislative assembly vidhan sabha building built replace sawai man singh hall seat legislature exterior feature jharokha chhatris kamanis baradaris arch todis etc example traditional rajasthani architecture amber fort sound light show experience history culture life amber spectacular show amitabh bachhan narrate story rajasthani king script written gulzar dont forget mosquito repellent light show watched outside fort sound wont audible sound light show jantar mantar cricket sawai mansingh stadium capacity host rajasthan team rajathan royal ipl birla auditorium conference hall heart auditorium spread acre computer interactive science museum information processing library processing planetarium research division dissemination cell auditorium auditorium seating capacity largest auditorium built international conference standard visiting leisure likely interested planetarium show hindi science museum renovation complex rajmandir cinema experience another dont miss cinema rajasthan overwhelming experience pushing shoving general chao ticket queue audience laugh cry cheer clap consistently talk entire film rajmandir provide insight rajasthani culture film interesting masala movy action drama mystery suspense epic wrapped single film teeming dance obligatory wet sari scene unabashedly lifting generous amount plot device film theatre goer friendly genuinely curious oversea raj dont put house notice entrance box office open nominal minute performance ticket box seat worth early avoid disappointment show meet local nearby mcdonald congregation spot heiwa heaven resort heiwa heaven based luxury resort host party destination wedding park park largest park middle lush green beautiful garden rambagh polo ground golf club nearby enjoyable park jogging walking track migratory native bird park furthermore tall flag flying middle largest nevta dam destination bird enthusiast bird specy flock side dam uncommon lesser whistling duck widespread cattle egret nearby chokhi dhani tonk highway chokhi dhani fine hamlet rajasthani dialect kind virtual village star resort lodging facility real attraction evening fun fair excellent enjoy rajasthani food served traditional mode resort chokhi dhani lalten restaurant road airport attraction horseback riding camel riding bullock cart ride maze boating kathputli puppet show watch live folk dance listen live folk music give glimpse culture part rajasthan rajasthan open sure early site difficult dark min rickshaw ride bus taxi making sure ride consider buying pass hall outdoor seating self served buffet dining youll served food massive difference restaurant restaurant unable keep demand buffet food prefer sleep resort look accommodation avoid rainy season festival gangaur festival start holi last sweet dish called ghewar characteristic gangaur festival ghewar distribute friend relative celebration dedicated god shiva consort goddess parvati procession gauri commence zanani deodhi palace pass tripolia bazaar chhoti chaupar gangauri bazaar chaugan stadium finally converge talkatora nothing fixed price government rtdc approved shop mall rtdc approved shop amer road claiming government owned fixed price beware frequently overpriced time everything food transportation handicraft accommodation bargained discount quoted price lowest rate bazaar bapu johari keep inquiring shop price item dont ashamed spend hour shop friendly shop owner sharing story masala chai look good run business overlook genuinely hospitable culture rajasthani tens bazaar size specialising product expect brilliant colourful explosion flower elephant cart ware complete assault sense traveller smell deep aroma spice canva bags fetid smell animal sewer sweet waft tea crusty acrid burn dust exhaust specialist zone food flower textile carved statue plumbing chaotic noisy stare westerner anybody sell sell repeatedly watch cobra dance wicker basket dont surprised snake charmer slap cobra wayward eye prepared asked money plan photograph snake charmer beggar wary sure completely close local highlight rajasthan chance interact friendly bapu bazaar nehru bazaar bapu nehru bazaar budget traditional shopper chaotic bazaar selling item ranging handicraft outfit johari bazaar chameliwala market johari bazaar chameliwala market jewellery bazaar hundred shop lined bazaar selling jewellery type jewellery authentic gems stone purchased market civil line market road nearby market mall crystal palm shopping mall gaurav tower mgf metropolitan mall pink square mall triton mall world trade park jewel famous jewel merchant deal semi precious gems turquoise lapis tiger eye star ruby gem distinctive pointed star shine natural light rajais famous rajais type light quilt stuffed cotton colourful soft shaneel rajai velvet finish quiet warm soft lasting shop market remember bargain confident quality willing pay little government store rajais budget sweet gangaur sweet sweet chamcham baked sweet crispy samosa jal mahal ice cream parlor assortment ice cream shake indigenous ice cream flavour excellent hearty meal restaurant zolocrust gourmet bakery italian restaurant operated chef hotel clark amer serve exquisite bakery item serve vegan vegetarian food savoury anokhi cafe mostly organic non indian style international flavour home style cake freshly prepared sandwich pastry savoury snack plus organic coffee selection teas quiet relaxing value money situated outside anokhi shop anokhi museum hand printing listing ambrosia serving vegetarian vegan chinese food barbecue atop foot building providing breathtaking view old chicken mutton dish peacock rooftop restaurant rooftop restaurant serving indian chinese food fast service value shrinat lassiwala simple lassis snack breakfast claiming oldest lasso rawat mishthan bhandar miss famous pyaz kachori spicy onion dish ghewar mawa kachori famous mid range apno gaon vegetarian food fresh vegetable fruit slightly bumpy ride reach season restaurant indian chinese food vegetarian restaurant handi restaurant specialising meat dish chicken mutton kebab tandoori super spicy rajasthani speciality lal maas little chain restaurant asian country reveal italian food wide selection pizza pasta typical italian food mexican dish range wine lmb mid range indian vegetarian restaurant restaurant sell sweet chat indian sweet savory snack famous aloo tikiya paneer ghewar loharu house house royal family civil line primarily hotel serve food call advance request special dinner dinner served house guest mamu infusion serve indian italian mexican chinese thai middle dish quirky decor serving friendly staff natraj vegetarian speciality rajasthani thali credit card accepted serve alcohol mithai sweet shop okra buffet carte reservation required zodiac buffet restaurant indian dish splurge amber upscale restaurant amber fort complex serve traditional rajasthani cuisine royally decorated dining room cinnamon indian cuisine romantic setting reportedly bit overpriced niro niro old restaurant serving mostly indian indo chinese dish opinion divided laud restaurant consider overpriced hype quality steam train turned italian restaurant ground taj rambagh palace upper class famous pizza virasat heritage restaurant traditional rajasthani marwari cuisine heritage inspired setting feature dining concept royal style contemporary venue facility wedding celebration addition listing listing chokhi dhani coffee step cafe bright airy secluded garden seating excellent coffee mouth watering dessert lebanese mexican italian cuisine wide rage vegan gluten option alcohol amigo bar discoteque themed bar floor tower hotel adjoining room dance floor apparently wider range beverage cocktail restaurant colorbar roof radission blu airport hotel view plane landing taking barbecue pool interesting luminescent chair table district lounge rooftop indoor seating restaurant bar dish world ranging spring roll pizza fajita burrito drop zone lounge bar bar pleasant rooftop seating fantastic view serve food henry pub cozy pub basement prime park hotel reportedly evening friend snack cocktail downside guest service bit slow skyfall replay bar restaurant lounge mexican italian cuisine sitting private event night club restro lounge lounge bar restaurant fine dining casual hang friend fairly student blackout bar nightclub party crowd food apparently view rooftop lounge club nightclub electronic music event week byke grassfield resort southwest house house nightclub offering wide variety drink amazing lounge hang pint beer cost attract gentry general

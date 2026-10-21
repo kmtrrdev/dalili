@@ -2,12 +2,13 @@ Dead Sea, Jordan
 Labels: relax, nature | Split: validation
 Source: https://en.wikivoyage.org/wiki/Dead_Sea_%28Jordan%29 (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (9,321 characters) =====
+===== CLEANED GUIDE TEXT (9,329 characters) =====
 
 :For the other part of the sea, see Dead Sea (Israel and the West Bank).
 The Dead Sea (Hebrew: ים המלח, Hebrew transliteration:Yam HaMelach; Arabic: البحر الميت, Arabic transliteration: al-Bahir al-Mayyit) has its eastern coast in Jordan. It is the lowest point in the world at (as of 2025) 439.78 metres (1,443 ft) below sea level.
 
 Understand
+
  
 
 The water in the Dead Sea is extremely salty, and has been estimated to be the second saltiest major body of water in the world. Its name is derived from the fact that the water is far too salinated for marine inhabitation.
@@ -17,6 +18,7 @@ The Dead Sea is naturally endorheic (no outlet streams) with the Jordan River be
 Although the Dead Sea would never entirely disappear (because evaporation slows down as surface area decreases and saltiness increases), measures have been proposed to siphon water from the Red Sea through a series of tunnels or canals in order to replenish the rapidly shrinking waters and provide water and electrical solutions to the surrounding countries.
 
 Facts
+
 * Due to the hypersalination of the water, one can float with ease in the Dead Sea; in fact, it's nearly impossible to sink! A popular fad by visitors is to have their picture taken while reading a newspaper and floating on the surface of the water.
 * The mud along the shore of the Dead Sea contains many minerals and is believed to have medicinal and therapeutic benefits. It is not uncommon for visitors to cover their bodies with the dark mud.
 * There are many salt deposits and crystals scattered along the shoreline. Many visitors walk the beach in search of large pieces as souvenirs.
@@ -24,6 +26,7 @@ Facts
 * Tip if in a resort: Wash the salt off in the beach showers before you use your towel. Otherwise the towel will get salty and leave salt on your skin when you use it after your shower (the salt can cause an itch).
 
 See
+
 The hypersalinated water of the Dead Sea itself is its own attraction. There are several nearby attractions that are worth attention:
  
 * 
@@ -50,8 +53,10 @@ Lot's cave. Located on the site of the remains of an old Byzantine monastery and
 
 
 Do
+
  
 Beaches
+
 * 
 Amman Tourist Beach. 
  is a public resort with (mostly) clean facilities, including changing rooms, fresh water showers (at the beach and in the changing rooms), a pool and a restaurant. The cost to enter the public tourist beach is 20&nbsp;JD (Oct 2018). It has showers, toilets, swimming pools, a restaurant (buffet 14 JD), locker rental (1.5 JD), towel rental (1.5 JD). You're not allowed to take in your own food! There are some beach parasols, basic sunbeds and chairs on the beach, but not nearly enough. The beach is clean, but it gets crowded on Fridays and holidays. As of October 2021, Amman Beach was closed, the entire site looked abandoned, and the car park was blocked with concrete barriers. The reasons were not immediately clear. By contrast, the informal access to the shore 10 km south of Amman Beach (see below) was still very popular with local visitors.
@@ -65,6 +70,7 @@ Or, instead of paying the steep entrance fee, you might want to try a spot sever
 Around 10 km south of Amman Tourist Beach is a favourite place of locals that is easily recognized by a couple of stands selling snacks and water near the road. The place is dirty and nobody takes care of it, but if you're on a shoestring, the Dead Sea there is just as good as everywhere. There is a small water fall coming from a hot spring that can serve as a shower afterwards to wash off the salt from your skin. Getting a lift from there back to Amman is easy and occasionally even buses pass by on which you can jump on for a small fee.
 
 Other dos
+
 Besides lying on your back in the water or in one of the hotel's sun chairs, the following activities are available:
 
 * 
@@ -72,11 +78,13 @@ Zara Spa. There are several swimming pools, some of which feature different mine
 
 
 Buy
+
 Visitors can purchase packets of the famous mud, as well as other cultural artifacts and handicrafts, from local gift shops.
 
 The sea's laboratories produce a range of the facial mud masks, bath, salts, shampoos, cleansers, nourishing creams, hand creams make up remover, skin toner, soap sun protection cream and other products.
 
 Eat & drink
+
 The restaurant options near the Dead Sea are sparse. 
 
 The Jordanian public beach contains an over-priced buffet-style restaurant and a small beach-side snack bar. It is recommended that visitors planning to visit the public beaches bring their own food and drinks. There are many resorts that can be found in Jordan to cater to tourists.
@@ -85,6 +93,6 @@ Also, there is the
 Samara Mall. 
 , where shops and restaurant can be found.
 
-===== TOKENS THE MODEL TRAINS ON (718) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (718) =====
 
 sea dead sea israel bank dead sea hebrew hebrew transliteration yam hamelach arabic arabic transliteration bahir mayyit coast lowest point world metre sea level water dead sea extremely salty estimated saltiest major body water world derived fact water far salinated marine inhabitation dead sea naturally endorheic outlet stream river major source dead sea receive scarcely inch rain section receive barely inch due man reduction river river water human purpose evaporation rate dead sea sea shrinking shallow water sea drained salt flat dead sea entirely disappear evaporation slow surface decrease saltiness increase measure proposed siphon water red sea sery tunnel canal order replenish rapidly shrinking water provide water electrical solution surrounding country fact due hypersalination water float ease dead sea fact nearly impossible sink fad picture taken reading newspaper floating surface water mud shore dead sea contain mineral believed medicinal therapeutic benefit uncommon cover body dark mud salt deposit crystal scattered shoreline walk beach search piece souvenir water dead sea greasy feel tip resort wash salt beach shower towel towel salty leave salt skin shower salt cause itch hypersalinated water dead sea attraction nearby attraction worth attention nebo historic site provide panorama holy land limited river valley excavated remain church monument commemorating biblical story mose bronze serpent stand atop mountain nebo minute drive dead sea plan spent half hour site baptism site site bethany beyond river archaeologist claiming baptism site jesus john baptist minute drive dead sea resort buse transport river basin guided tour visit river overlook excavated remain baptismal site john baptist church river bank dead sea panoramic complex complex consisting regional museum dead sea panorama lookout restaurant conference hall steep cliff dead sea hammamet accessible dead sea madaba car difficult reach public transport museum run royal society conservation nature fascinating information geology ecology animal plant archaeology history industry dead sea surrounding information environmental problem concerning dead sea decreasing dead sea water level sinkhole dead sea coast suggest magnificent view dead sea hill beyond watching sunset wonderful experience mujib mujib lowest nature world mountainous landscape dead sea approximately amman nbsp created royal society conservation nature regionally internationally important particularly bird life support mujib valley developed adventure tourism facility established beach dead sea experiencing jordan grand canyon involve swimming jumping abseiling floating red wall filled running water plunge nbsp waterfall hammamat remarkable sery natural hot spring waterfall channeled pool bath spa resort vicinity waterfall hasa canyon hike cave site remain old byzantine monastery church village safi cave believed took refuge daughter god according bible destroyed sodom gomorrah site officially development work guide escort step cave group allowed look inside cave site look irrigated field developed dead sea retreated feed museum lowest earth pass beach amman beach public resort mostly clean facility changing room fresh water shower beach changing room pool restaurant cost enter public beach nbsp shower toilet swimming pool restaurant buffet locker rental towel rental youre allowed food beach parasol basic sunbed chair beach nearly enough beach clean crowded friday holiday amman beach entire site looked abandoned car park blocked concrete barrier reason immediately clear contrast informal access shore amman beach hotel sell pass hotel facility dead sea beachfront movenpick resort dead sea spa kempinski hotel season instead spending nbsp public beach smallest hotel dead sea spa hotel beach hotel happy bargain price nbsp stay night instead paying steep entrance fee want spot hundred meter past amman beach walking hill bring waterproof sandal flipflop nbsp fresh water showering afterward sunscreen towel says swimming dark beyond amman beach swimming allowed lifeguard duty read chapter stay safe amman beach favourite local easily recognized couple stand selling snack water road dirty nobody take care youre shoestring dead sea everywhere water fall coming hot spring serve shower afterward wash salt skin lift amman easy occasionally buse pass jump fee dos beside lying water hotel chair following activity zara spa swimming pool feature mineral concentration heated pool winter wide private beach runs dead sea shore jacuzzis tennis court fitness restaurant cafe bars purchase packet famous mud cultural artifact handicraft gift shop sea laboratory produce range facial mud mask bath salt shampoo cleanser nourishing cream hand cream remover skin toner soap protection cream product restaurant option dead sea sparse jordanian public beach contain priced buffet style restaurant beach side snack bar recommended planning public beach bring food drink resort cater samara mall shop restaurant

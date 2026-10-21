@@ -2,13 +2,14 @@ Mexico City, Mexico
 Labels: culture, history, food | Split: validation
 Source: https://en.wikivoyage.org/wiki/Mexico_City (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (43,065 characters) =====
+===== CLEANED GUIDE TEXT (43,097 characters) =====
 
 Mexico City (Spanish: México, Ciudad de México or CDMX) is the capital of the Mexican Republic, the most populous city in the country, and one of the most important financial and cultural centers of the American continent. The city center is built on the ruins of the Aztec capital Tenochtitlan, and later came to be the capital of New Spain, which included much of North America. The city grew fast in the 20th century, and today is North America's largest city (and the world's largest Spanish-speaking city) with 9.2 million inhabitants in the city proper, and 22 million in the urban area (in 2020).
 
 Three of Mexico's many s are here: the colonial-era Centro Histórico, sites related to architect Luis Barragán in Chapultepec and the university campus in Coyoacán. Several more can be visited as a daytrip.
 
 Understand
+
  
 
 The greater Mexico City metropolitan area is one of the world's largest and the largest city in North America, with 22 million people living in the metropolitan area in 2020. It sits in the Valley of Mexico. It is shaped roughly like an oval of about 60&nbsp;km by 40&nbsp;km with large parts of it built on the dry bed of Lake Texcoco, and surrounded on three sides by tall mountains and volcanoes such as the Ajusco, the Popocatepetl and the Iztaccihuatl.  Mexico City proper (with an estimated population of 9.2 million) is the country's capital, and since 2016 has been a "federal entity" with the same powers as the states of Mexico, though still separate from the states. Confusingly, the rest of the metropolitan area extends beyond Mexico City into the State of Mexico, which surrounds Mexico City on the west, north and east, and Hidalgo further north. Practically speaking, Mexico City refers to the city proper and is the area where tourists will spend all or most of their time.
@@ -20,6 +21,7 @@ Mexico City is the wealthiest city in all of Latin America, with a GDP per capit
 
 History
 
+
  
  
  
@@ -28,11 +30,13 @@ The origins of Mexico City date back to 1325, when the Aztec capital city of Ten
 Porfirio Díaz assumed power in 1876 and left an outstanding mark in the city with many European styled buildings such as the Palacio de Bellas Artes and the Palacio Postal. Diaz was overthrown in 1910 with the Mexican Revolution and this marked a radical change in the city's architecture. The 20th century saw the uncontrolled growth of the city beyond the Centro Historico with the influx of millions of migrants from the rest of the country. In 1968, the city was host to the Olympic Games, which saw the construction of the Azteca Stadium, the Palacio de los Deportes, the Olympic Stadium and other sports facilities. In 1985 the city suffered an 8.1 Magnitude earthquake. Between 10,000 and 40,000 people were killed. 412 buildings collapsed and another 3,124 buildings were seriously damaged in the city.
 
 See
+
  
 
 Downtown Mexico City has been an urban area since the foundation of Tenochtitlán in 1325, and the city is filled with historical buildings and landmarks from every epoch since then. It is also known as the City of Palaces, because of the large number of stately buildings, especially in the Centro. Mexico City has three World Heritage Sites: the Centro Histórico and Xochimilco, the house of architect Luis Barragán and the University City campus of UNAM. In addition, Mexico is one of the cities with the largest number of museums in the world.
 
 Landmarks
+
  
 * 
 Plaza de la Bellas Artes. Commonly known as Palace of Fine Arts or Cathedral of Arts in Mexico, host of art events and art exhibitions, along with a number of enormous murals including Diego Rivera's El hombre controlador del universo and Jorge González Camarena's Liberación.
@@ -70,6 +74,7 @@ Torre Latinoamericana. For stunning views of the city. Its central location, hei
 
 Parks
 
+
 Mexico City is full of various plazas and parks scattered through every neighborhood, but the following are some of the biggest, prettiest, most interesting, or best-known.
 
 * Alameda Central (Centro Historico) is the oldest urban park in Mexico City (1592) and the largest inside the Centro Histórico.
@@ -79,6 +84,7 @@ Mexico City is full of various plazas and parks scattered through every neighbor
 * Viveros de Coyoacán (Coyoacán) is a large expanse of greenery and trails that is still used as a nursery to grow trees for the city, but also a public park popular with joggers and amblers.
 
 Museums
+
 Mexico City has more museums than any other city in the world. Note that most museums are closed on Mondays, and many are free to Mexican residents on Sundays, meaning larger crowds.
 
 These are some of the most popular:
@@ -150,9 +156,11 @@ Leon Trotsky Museum. This was the house where Trotsky lived in exile during the 
 
 
 Architecture
+
 Mexico City has many stunning examples of architectural design, ranging from the country's oldest examples of colonial era architecture to the most cutting edge contemporary designs. 
 
 Mexican architects
+
  
 Some modern projects were designed by internationally famous architects, but many were also designed by architects trained and working in Mexico. Some of the most significant Mexican architects and iconic buildings in Mexico City that best represent their style are:
 * Juan O'Gorman - see the Casa Estudio Diego Rivera y Frida Kahlo, and the Bibliotec Central de UNAM with its startlingly complex mosaic mural
@@ -163,10 +171,12 @@ Some modern projects were designed by internationally famous architects, but man
 * Alberto Kalach - see the Biblioteca Jose Vasconcelos with its gravity-defying "floating stacks"
 
 Colonial architecture
+
  
 The entire Centro Historico is a treasure trove of Mexico's oldest buildings, many dating to the early 1500s. Most fascinating to students of architecture are the Metropolitan Cathedral, Casa de Azulejos, and Iturbide's Palace.
 
 Art deco architecture
+
 After the Mexican Revolution, a wave of optimism swept the country with a consequent building boom in Mexico City. Many new buildings were designed in the fashionable Art Deco architecture where entire neighborhoods that date from the 1920s to 1940s remain standing as models for future generations of architecture students. Art deco buildings are found throughout the city, but the Condesa and Roma neighborhoods are particularly noteworthy. Some of the best examples of Art Deco architecture include:
 * Edificio Nacional - built in 1932 and designed by Manual Ortiz with distinctive ziggurat setbacks on the upper levels
 * Museo de Artes Popular
@@ -183,13 +193,16 @@ Do
 
 
 
+
  
 As the world's 7th largest city, Mexico City offers something for everyone and for every budget. Attractions in Mexico City focus less on lazing on the beach (there are no beaches in Mexico City!) and more on exploring the culture and urban culture of Mexico.
 
 Itineraries
+
 * Traveling in Mexico City with children
 
 Festivals and events
+
 
 * 
 Wise Men's day. Most Mexican kids receive toys from the Three Wise Men (Reyes Magos). This is a celebration that pays homage to the aforementioned Bible story. To celebrate it the family gather to eat the "Rosca de Reyes", a sort of bundt cake filled with plastic baby Jesus figures. Traditionally, people who get a figure in their slice of cake are expected to host a feast with tamales on Candelaria Day, February 2. The surroundings of the Alameda Central park are filled with costumed Reyes Magos on the days leading to January 6.
@@ -212,6 +225,7 @@ Day of the Dead. Mexico is one of the few countries in the world that celebrates
 
 Amusement parks
 
+
 * 
 Six Flags Mexico. Largest amusement park in Latin America. The park is fitted with several million-dollar attractions, including Batman the Ride and not for the faint-hearted Medusa Roller Coaster.
 
@@ -220,6 +234,7 @@ Parque Aztlan. Small urban amusement park in the heart of Chapultepec Park. Park
 
 
 Sports
+
 * 
 Estadio Azteca. The largest stadium in Latin America is also the eighth biggest soccer stadium in the world. It's the home of El Tri, the Mexico men's national team, and also home to two of the country's most famous soccer top-tier professional clubs: Club América and Cruz Azul. It also serves as venue for concerts and for occasional NFL regular-season games outside the United States. The stadium is undergoing renovations as it prepares to host the opening games of the 2026 FIFA World Cup.
 
@@ -240,6 +255,7 @@ Hipodromo de las Americas. Mexico City's home for horse racing, both thoroughbre
 
 
 Lucha libre
+
  
 Lucha libre (loosely translated as "free fighting") is the term for the style of professional wrestling that developed in Mexico. Due to its affordable and entertaining nature, it is a favorite pastime throughout the country. While similar to professional wrestling elsewhere in that the outcomes are predetermined, it developed quite differently from wrestling in the rest of the world. Wrestlers, known in Mexico as luchadores (female: luchadoras), tend to work much faster than those in the rest of North America, employing complex chains of moves, numerous high-flying maneuvers, and often-realistic submission holds. Also, rings in Mexico often lack the spring supports used in many other countries, which means that wrestlers typically don't take falls landing on their back as they often do elsewhere. More often than not, aerial moves involve wrestlers launching themselves outside of the ring at their opponents, allowing them to break the fall by tumbling. Finally, Mexican wrestling has far more weight classes than in other countries.
 
@@ -255,6 +271,7 @@ Arena Coliseo. Another famous venue for lucha libre and boxing.
 
 
 Concerts
+
 Many mexicans from around the country travel to Mexico City for concerts of national and international artists that don't perform in other parts of the country. The most prominent concert venues in the city are:
 * 
 Arena Ciudad de México. 
@@ -281,9 +298,11 @@ Teatro Metropolitan.
 
 
 Buy
+
  
 
 Money
+
 These ATMs have low withdrawal fees and are widespread throughout the city:
 * banamex / citibanamex
 * Santander
@@ -297,6 +316,7 @@ If there is none of them near you, check these ATMs with low fees:
 Users of Bank of America, Barclays, BNP Paribas, Deutsche Bank, Westpac and Scotiabank may withdraw money with no fees at any HSBC, Scotiabank, BanBajío, Inbursa, Banregio or Mifel ATM.
 
 Shopping districts
+
  
 * 
 Polanco. Upscale shopping and dining district centered around Presidente Masaryk and Campos Eliseos streets. It also has several shopping malls.
@@ -312,9 +332,11 @@ Centro Historico. The city's oldest shopping district, you can find almost anyth
 
 
 Shopping centers
+
 Mexico City is famous among Mexicans for its huge malls. American-style shopping malls appeared in Mexico City by the late 1960s and are now are spread all over the metropolitan area. You will find malls listed in the district articles.
 
 Outlet malls
+
 
 * 
 Premium Outlets at Punta Norte. Northwest of Mexico City (State of Mexico) in the intersection of Periferico (Mexico Hwy #57) and the Chamapa La Venta highway, near Ciudad Satelite. You will need a taxi or a car to get there.
@@ -324,12 +346,14 @@ Las Plazas Outlet Lerma. Mexico- Toluca highway Km. 50 in the intersection with 
 
 
 Arts and crafts
+
 * 
 Ciudadela Market. A crafts market where cultural groups from around Mexico distribute their crafts to other parts of the country and the world.
 
 * The National Fund for the Development of Arts and Crafts (Fonart), Avenida Patriotismo 691, in  Mixcoac, Avenida Paseo de la Reforma No. 116 in Colonia Juárez and Avenida Juarez 89 in Centro.
 
 Flea and antique markets
+
 
 Although street vendors can be found almost anywhere in Mexico City, the following are more "formal" flea markets selling handcrafts, furniture and antiques.
 
@@ -359,6 +383,7 @@ La Lagunilla and Tepito. Near Centro Historico (metro stations Lagunilla and Gar
 
 
 Groceries
+
 You may want to buy groceries and food at any of the hundreds of supermarkets. These are some of the most common:
 
 * 
@@ -375,6 +400,7 @@ Walmart. Also owned by them are the high-end Superama and discount-store Bodega 
 For hard-to-find ingredients, such as vegetables and spices that are unusual in Mexico, try the Mercado de San Juan (Centro Historico). You can even find exotic meats here, such as iguana, alligator, ostrich, and foie gras.
 
 Asian
+
 * Pequeño Seúl ("Little Seoul") is a Koreatown in Zona Rosa.
 * 
 Super Kise. South of the city, they sell Korean, Chinese and Japanese groceries.
@@ -387,9 +413,11 @@ Kokeshi. Mostly Japanese food stuff but they also sell other Asian foods. They a
 
 
 Kosher
+
 Many food products in Mexico including milk are kosher compliant. If you're looking for specific products, try some stores in the Polanco neighborhood. At some Chedraui branches you will find kosher departments, especially the ones in Polanco, Tecamachalco, Santa Fe and Interlomas neighborhoods.
 
 Eat
+
  
  
 
@@ -408,6 +436,7 @@ Vegetarian (vegetariano) alternatives are commonly available at larger restauran
 There is a vegan scene scattered across the trendier neighborhoods. Much of it is world cuisine, but some of Mexico's famous meat preparations translate well to mushrooms and plant-based proteins, and indigenous traditions have known how to put beans and vegetables at the forefront of a meal long before the Spaniards introduced domesticated livestock.
 
 Favorite dishes
+
 
 Mexico City is deep into the part of the country that prefers corn tortillas to wheat flour tortillas. Don't expect to come across a big overstuffed burrito. In fact, here they call a flour tortilla filled with gooey cheese a gringa, also the slang term for "foreigner"! More generally, if you're only familiar with the Tex-Mex style of Mexican food exported globally by way of the U.S. border states, then there are a few surprises in store for you.
 
@@ -440,16 +469,19 @@ These dishes are mainstays on traditional menus. They may be prepared quite diff
 * Pambazos
 
 International cuisine
+
 If you want something more familiar, most American fast food chains have franchises here. You'll see McDonald's, Burger King, KFC, Pizza Hut, Papa John's Pizza, Domino's Pizza, TGI Friday's, Chili's, Dairy Queen, Subway, and yes, Starbucks. These are all fairly affordable.
 
 Asian food restaurants are abundant, and the quality is good, and caters from cheap Chinese cafeterias to expensive and very good Japanese food. Korean, Japanese and Chinese are most common cuisines in Mexico City, while Indian, Thai and Indonesian can be harder to find.
 
 Etiquette
+
 Tips (propina) are expected, with 10% the standard for decent service at all sit-down restaurants. You can tip more for very good service (15%), or tip less or not at all for poor service. In some establishments the tip is included in the final bill, so it is recommended to review every ticket carefully. It is also customary to tip the waiters, valets, gas dispensers, bellboys and other service providers. Leaving no tip at all is frowned upon.
 
 In Mexico, there is no difference in prices if you sit inside or outside, it is the same if you eat at the bar or sit at a table.
 
 Drink
+
  
 Mexico City's nightlife is like all other aspects of the city; it is huge. There is an enormous selection of venues: clubs, bars, restaurants, cafes, and variations and combinations thereof to choose from. There is incredible variation, from ultramodern lounges in Santa Fe and Reforma, to centuries-old dance halls in Centro and Roma. There are also pubs in Tlalpan and Coyoacán and clubs of every stripe in Insurgentes, Polanco, Condesa and the Zona Rosa.
 
@@ -473,6 +505,6 @@ Take an identification card such as a copy of your passport.
 
 When going out, check the date, since this is an important indicator of how full places will generally be and how long you might have to wait to get in. Salaries are usually paid twice per month: the 30th/31st-1st and the 14th-15th. On or soon after these dates is when most Mexicans will go out, especially if payday coincides with a weekend. In the more expensive places, people might leave for Acapulco or vacations farther afield during the summer and long weekends. Mexican weekends, in the sense of when it is common to go out drinking, are Thursday night to Sunday morning and sometimes throughout Sunday.
 
-===== TOKENS THE MODEL TRAINS ON (3,301) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (3,301) =====
 
 spanish ciudad cdmx capital mexican populous country important financial cultural center american continent built ruin aztec capital tenochtitlan later came capital included america grew fast century today america largest world largest spanish speaking million inhabitant proper million urban colonial era centro historico site related architect luis barragan chapultepec university campus coyoacan visited daytrip greater metropolitan world largest largest america million living metropolitan sits valley shaped roughly oval nbsp nbsp part built dry bed lake texcoco surrounded side tall mountain volcanoe ajusco popocatepetl iztaccihuatl proper estimated population million country capital federal entity power separate confusingly rest metropolitan extend beyond state surround hidalgo practically speaking refer proper spend mean sea level outlying reach far higher metropolitan europe breathing difficulty live closer sea level experience difficulty breathing due altitude pollution air quality improved last wealthiest latin america gdp capita lowest poverty rate total mexican economy concentrated country multinational corporation headquarter mainly polanco santa district history origin date aztec capital tenochtitlan founded later destroyed spanish conqueror hernan corte served capital vice royalty outbreak independence war capital mexican empire mexican abdication agustin iturbide war invaded american army invaded emperor ferdinand maximilian habsburg ruled country castillo chapultepec ordered build avenue empress today paseo reforma promenade porfirio diaz assumed power outstanding mark european styled building palacio bella arte palacio postal diaz overthrown mexican revolution marked radical change architecture century saw uncontrolled growth beyond centro historico influx million migrant rest country host olympic game saw construction azteca stadium palacio deporte olympic stadium sport facility suffered magnitude earthquake killed building collapsed another building seriously damaged downtown urban foundation tenochtitlan filled historical building landmark epoch palace stately building especially centro world heritage site centro historico xochimilco house architect luis barragan university campus unam addition city largest museum world landmark plaza bella arte commonly palace fine arts cathedral arts host art event art exhibition enormous mural diego rivera hombre controlador universo jorge gonzalez camarena liberacion plaza constitucion commonly zocalo largest square world surrounded historic building hall cathedral catedral metropolitana ciudad zocalo biggest cathedral america containing altar principal altar solid gold angel independencia monument reforma avenue celebrate independence basilica guadalupe catholicism holiest america destination pilgrim world especially yearly celebration shrine guard poncho juan diego contain lady guadalupe northernmost ciudad universitaria campus universidad nacional autonoma national autonomous university insurgente sur avenue world largest university student semester declared coyoacan historic colonial arts district home frida kahlo leon trotsky diego rivera plaza garibaldi mariachi square surrounded cafe restaurant favored square group musician play folk music group mariachis jalisco dressed charro costume playing trumpet violin guitar guitarron bass guitar paseo reforma nbsp grand avenue built emperor maximilian wife century commemorate liberal reform mexican president benito juarez cineteca nacional screen art film forum retrospective homage screening room video film library cafeteria torre latinoamericana stunning view height nbsp story history important landmark park plaza park scattered neighborhood following biggest prettiest interesting alameda centro historico oldest urban park largest inside centro historico chapultepec park chapultepec park middle host zoo modern art museum museum anthropology children museum museo papalote technology museum natural history museum national museum castillo chapultepec former residence austrian emperor maximilian habsburg xochimilco xochimilco vast system waterway flower garden dating aztec time enjoy trip trajinera vividly colored boat trajinera pass carrying mariachi marimba band floating bars taqueria xochimilco last remnant looked spanish arrived declared world heritage site unesco quieter alternative parque ecologico xochimilco accessible buse running periferico parque parque espana condesa adjacent park evening stroll house outdoor exhibition concert surrounded cool cafe bars vivero coyoacan coyoacan expanse greenery trail nursery grow tree public park jogger ambler museum museum world note museum monday mexican resident sunday meaning larger crowd national museum anthropology museum worldwide built late designed ramirez vazquez notice huge impressive fountain courtyard gather collection sculpture jewel handcraft ancient mexican culture everything interesting international special exhibit plaza tres cultura example modern colonial pre columbian architecture square museum modern art painting frida kahlo leonora carrington remedio varo sculpture garden dolore olmedo museum art philanthropist former home grand hacienda noria museum featuring work friend diego rivera work displayed painting frida kahlo premise feature beautiful garden peacock weird specy aztec dog museum renovation sched reopen sometime fine arts palace museum concert hall arts house finest mural art deco interior worth seeing alone museo soumaya private museum collection european artist extensive selection work auguste rodin rufino tamayo museum contain work mexican painter rufino tamayo jose luis cueva museum opened filled painting drawing sculpture notorious artist jose cueva national history museum chapultepec castle museum nineteen room contain addition collection pre columbian material reproduction old manuscript vast range exhibit illustrating history spanish conquest papalote children museum youve kids theyll love bright colorful filled educational experience children ages universum science museum maintained unam largest university latin america wander campus casa mural diego rivera contain mural acclaimed artist diego rivera national palace zocalo impressive diego rivera frescoe idelfonso museum orozco frescoe temporary exhibition franz meyer museum display collection franz mayer hold largest decorative art collection host temporary exhibit field design photography museum learn eclectic history templo mayor museum zocalo contain ruin last remnant aztec empire attached huge archeological site foundation temple accidentally carlo museum carlo museum hold painting exhibit century painting national art museum national art museum house rich collection mexican art ranging half century frida kahlo museum former house painter born death work personal artifact anahuacalli museum impressive modern representation mayan architecture house diego rivera collection aztec precolumbian culture sculpture leon trotsky museum house trotsky lived exile last life murdered stalin agent guided tour provided member worker revolutionary party architecture stunning example architectural design ranging country oldest example colonial era architecture cutting edge contemporary design mexican architect modern project designed internationally famous architect designed architect trained working significant mexican architect iconic building represent style juan ogorman casa estudio diego rivera frida kahlo bibliotec unam startlingly complex mosaic mural luis barragan casa luis barragan casa gilardi torre satelite mario pani distinctive needle point pyramid torre insignia ramirez basilica lady guadalupe fernando romero swoopy line museo soumaya alberto kalach biblioteca jose vasconcelo gravity defying floating stack colonial architecture entire centro historico treasure trove oldest building dating early fascinating student architecture metropolitan cathedral casa azulejo iturbide palace art deco architecture mexican revolution wave optimism swept country consequent building boom building designed fashionable art deco architecture entire neighborhood date remain standing model future generation architecture student art deco building throughout condesa roma neighborhood particularly noteworthy example art deco architecture edificio nacional built designed manual ortiz distinctive ziggurat setback upper level museo arte palacio bella arte interior detailing particularly emblematic art deco design fronton built indoor venue sport jai alai building renovated preserving original art deco design contemporary architecture building late early century exhibit form detail seem sculpture contemporary artist particularly true svelte line swoopy shaped museo soumaya designed architect fernando romero bristling pointed roofline museo jumex designed british architect david chipperfield contemporary design polanco neighborhood intriguing example modern architecture biblioteca vasconcelo interior feature innovative floating stack seem defy gravity world design capital awarded international council society industrial design icsid world largest everyone budget attraction focus lazing beach beach exploring culture urban culture itinerary traveling children festival event wise men mexican kids receive toys wise men reye mago celebration pays homage aforementioned bible story celebrate family gather rosca reye sort bundt cake filled plastic baby jesus figure traditionally figure slice cake expected host feast tamale candelaria surrounding alameda park filled costumed reye mago leading art week world contemporary art focuse art week party celebration special exhibition myriad gala throughout event take major art event zsona maco feria material numerous event gallery museum throughout independence yell evening president country mayor salute crowd presidential balcony national palace constitution square zocalo shout famous viva zocalo rest decorated ornament light incredible expression mexican patriotism combined party mood expect crowd revelery want smaller crowd square borough host similar celebration independence parade morning military parade runs paseo reforma turn juarez avenue later become madero street ends zocalo soldier mexican army navy air force street displaying equipment weapon alebrije parade alebrije brightly colored fanciful animal figure iconic pop art genre enormous alebrije float created parade held paseo reforma zocalo pink polka dotted pigs purple winged dragon orange dogs spiked haircut parade parade giant alebrije placed plaza public space avenida reforma week period public close instagram ready selfy dead country world celebrate dia muerto cemetery tribute departed ones decorate grave marigold bright color sad celebration contrary give family friend candy treat shape skull bone sugar chocolate delicious bread called pan muerto dont miss public market delicacy watch parade cemetery festivity lively desfile dia muerto dead parade inspired jame bond movie spectre parade dressed calavera catrina huge colorful alebrije balloon float marching band parade route reforma zocalo xochimilco dead party canal already colorful trajinera decked marigold skeleton wildly fanciful theme amusement park flag largest amusement park latin america park fitted million dollar attraction batman ride faint hearted medusa roller coaster parque aztlan urban amusement park heart chapultepec park park entry ride paid individually giant ferris wheel cabin steel roller coaster carousel swing sport estadio azteca largest stadium latin america eighth biggest soccer stadium world home tri men national team home country famous soccer tier professional club club america cruz azul serve venue concert occasional nfl regular season game outside stadium undergoing renovation prepare host opening game fifa world cup estadio olimpico ciudad universitaria simply estadio site olympic opening ceremony home club universidad nacional puma soccer team operated national university unam puma began amateur team unam student tier professional team liga owned operated university stadium host sport mainly soccer american football estadio alfredo harp helu modernistic baseball stadium built cheering fans home field diablo mexican league professional team autodromo hermano rodriguez built track host grand prix formula motor racing nascar grand prix formula race arena ciudad capacity arena cdmx host indoor sporting event wide range music event home annual nba basketball game played host home game capitane ciudad country representative nba league hipodromo america home horse racing thoroughbred quarter horse race nearly zone budget lucha libre lucha libre loosely translated fighting term style professional wrestling developed due affordable entertaining nature favorite pastime throughout country similar professional wrestling elsewhere outcome predetermined developed differently wrestling rest world wrestler luchadore female luchadora tend work faster rest america employing complex chain move numerous flying maneuver realistic submission hold ring lack spring support country mean wrestler typically dont fall landing elsewhere aerial move involve wrestler launching outside ring opponent allowing break fall tumbling finally mexican wrestling far weight class country another hallmark lucha libre emphasis tag team match wrestler team instead pair common elsewhere rule tag team match significantly distinctive feature lucha libre colorful mask worn performer concept wrestling mask borrowed become infused role mask played mexican culture luchadore begin career wearing lose mask point career biggest match lucha libre lucha apuesta betting fight wrestler bet mask hair career outcome arena famous venue lucha libre arena coliseo another famous venue lucha libre boxing concert mexican country travel concert national international artist dont perform part country prominent concert venue arena ciudad auditorio nacional estadio gnp seguro previously foro sol palacio deporte bella arte opera traditional mexican classical music circo volador alternative music metal ollin yoliztli home symphonic orchestra sala nezahualcoyotl home unam symphonic orchestra teatro metropolitan money atms low withdrawal fees widespread throughout banamex citibanamex santander banorte none check atms low fees bancoppel banbajio banco azteca banjercito user bank america barclay bnp pariba deutsche bank westpac scotiabank withdraw money fees hsbc scotiabank banbajio inbursa banregio mifel atm shopping district polanco upscale shopping dining district centered presidente masaryk campo eliseo street shopping mall altavista upscale shopping street condesa trendy district alternative store boutique centro historico oldest shopping district anything old department store clustered noviembre shopping center famous mexican huge mall american style shopping mall appeared late spread metropolitan mall listed district article outlet mall premium outlet norte northwest state intersection periferico hwy chamapa venta highway ciudad satelite taxi car plaza outlet lerma toluca highway intersection calzada cholula lerma toluca car arts craft ciudadela market craft market cultural group distribute craft part country world national fund development arts craft fonart avenida patriotismo mixcoac avenida paseo reforma colonia juarez avenida juarez centro flea antique market street vendor anywhere following formal flea market selling handcraft furniture antique bazar sabado angel saturday artist show sell painting beautiful cobblestoned zone store sell handcraft mercado artesania coyoacan saturday featuring handicraft country class kids plaza angel zona rosa calle londre metro station insurgente mostly expensive antique shop famous sunday collectible market nearly vanished mercado alvaro obregon colonia roma monumento madre zona rosa sunday art market tianguis cultural chopo flea market counterculture aldama street sol luna metro station buenavista missed anyone wore black middle school mercado antiguedade cuauhtemoc centro historico metro station cuauhtemoc saturday lagunilla tepito centro historico metro station lagunilla garibaldi lagunilla antique maze interesting thing crime reported robbery tepito pirated cds stolen thing knock offs huge easy lost shopkeeper mostly friendly point nearest metro station safety market dress someone arrive early crowded dont speak spanish probably stay collectible market take sunday mainly paseo reforma intersection allende grocery want grocery food hundred supermarket common chedraui mexican owned supermarket wide variety grocery beer spirit beauty personal care item store pickup delivery store kosher section market sumesa mega supermarket sumesa location roma condesa owned comercial mexicana soriana youre staying centro historico useful inside forum buenavista shopping mall reachable metro station buenavista roma condesa easily reach inside paruqe delta shopping mall metro centro medico walmart owned superama discount store bodega aurrera supermarket throughout airport stock everything supercenter easily accessible nativita metro station line side calzada tlalpan exit metro side calle lago pte exit station thing station building ramp wal mart entrance visible train impossible miss hard ingredient vegetable spice unusual mercado juan centro historico exotic meat iguana alligator ostrich foie gras asian pequeno seul little koreatown zona rosa super kise sell korean chinese japanese grocery mikasa japanese food ingredient candy drink kokeshi mostly japanese food stuff sell asian food sell japanese dinnerware kosher food product milk kosher compliant youre looking specific product store polanco neighborhood chedraui branch kosher department especially ones polanco tecamachalco santa interloma neighborhood kind food regional specialty international cuisine japanese chinese polish italian argentinean belgian irish restaurant polanco condesa centro zona rosa avenida insurgente viaducto copilco recently santa mexican chain family restaurant assumed safe similar matter vips toks casa tono traditional sanborn reminiscent denny uniformly excellent relatively approachable trepidation mexican cuisine globo style bakery location throughout selling traditional mexican pastry oreja little ears eclair empanada rosca cant beat quick snack bagful pastry later youre budget myriad comida corrida set menu restaurant frequented office worker food safe range ubiquitous type food anywhere fast food outlet ground floor street facing building puesto street stand sidewalk anywhere room serve usual taco torta cheap hygiene vary abysmal plenty given establishment cook entirely view tell okay street taco stand food sit restaurant want stuff face real mexican food cheap price head market mercado merced former market centro historico restaurant stand serving delicious food huarach alambre another superb market centro mercado juan arco belem food stall offering mexican favorite vegetarian vegetariano alternative commonly larger restaurant dont expect street vendor magic phrase vegetarian vegan sin pollo chicken sin carne meat sin huevo eggs sin queso cheese communicate gesticulate menu waiter normally give suggestion regular restaurant edit existing dish sure clear chile relleno filled meat filling definite standard vegetarian restaurant vegan scene scattered trendier neighborhood world cuisine famous meat preparation translate mushroom plant based protein indigenous tradition put bean vegetable forefront meal spaniard introduced domesticated livestock favorite dish deep country prefer corn tortilla wheat flour tortilla dont expect overstuffed burrito fact call flour tortilla filled gooey cheese gringa slang term foreigner generally youre familiar tex mex style mexican food exported globally border surprise store famously world capital taco food world taken taco corn tortilla topped seasoned meat maybe garnish chopped onion cilantro wedge lime taco pastor marinated pork derived lebanese shawarma look massive stack meat spinning vertical roasting spit taco tripa tripe beef intestine taco suadero thin slice fried beef taco barbacoa tender slow cooked beef rooted roasting technique lead barbecue taco canasta filled stew bathed oil morning kept warm distinctive basket plenty street food cecina adobada quesadilla torta sandwich soft white roll choice meat cheese sliced avocado refried bean huarach giant tortilla covered topping filling sope tamale steamed corn dough chicken pork accompanied cup atole hot chocolate corn starch breakfast humble work form torta tamal dish mainstay traditional menus prepared differently internationalized dish youve closer home enchilada rolled corn tortilla filled meat cheese covered salsa enchilada suiza swiss style covered cream cheese sauce enchilada mole covered savory chili chocolate sauce enfrijolada covered black bean sauce pozole hominy corn meat stew pork traditional chicken fairly common chopped cabbage chopped onion radish fresh cilantro lime wedge garnish chilaquile fried strip corn tortilla covered salsa topping eggs cheese served breakfast classic peasant dish tortilla danger stale widely loved huevo ranchero eggs poached spicy tomato sauce served breakfast alambre grilled meat topped chopped bacon bell pepper onion cheese salsa dish resemble tex mex fajita arrachera miga pambazo international cuisine want familiar american fast food chain franchise youll mcdonald burger king kfc pizza hut papa john pizza domino pizza tgi friday chili dairy queen subway yes starbuck fairly affordable asian food restaurant abundant quality cater cheap chinese cafeteria expensive japanese food korean japanese chinese common cuisine indian thai indonesian harder etiquette tips propina expected standard decent service sit restaurant tip service tip poor service establishment tip included final bill recommended review ticket carefully customary tip waiter valet gas dispenser bellboy service provider leaving tip frowned difference price sit inside outside bar sit table nightlife aspect huge enormous selection venue club bars restaurant cafe variation combination thereof choose incredible variation ultramodern lounge santa reforma century old dance hall centro roma pubs tlalpan coyoacan club stripe insurgente polanco condesa zona rosa traveling night certain idea especially plaza garibaldi pickpocketer ready relieve unguarded cash ways check night life safely night club tour tour typically club transportation mexican friendly enjoy socializing typical mexican cantina bar food pay drink exact policy minimum vary cantina serve wide range mexican foreign drink price reasonable compared price youll continually served mexican food taco ask botana tolerance mexican music mariachi noise low kind cantina moderately late past midnight cantina plaza garibaldi midday lunch lower traditional option pulqueria pulque fermented agave sacred aztec steep decline decade finding surge popularity young pulque hipster bars centro historico xochimilco dont pulque serve beer bars play combination spanish english language rock electronic music latin caribbean music bars tend close club music mainly fall category pop rock electronic music pop generally play music chart latin pop traditional mexican music frequented younger young audience upper class rock play rock wide sense english spanish electronica club attract everyone subculture raver electronica fans ages club close late earliest bet zona rosa street bars rock band playing selection club especially strip club gay bars zona rosa condesa roma option bars restaurant another polanco particularly street called mazaryk youll plenty club reservation republica santa guilt gay club posh exclusive club street forewarned entrance judged appearance table minimum bottle service required unless slow night min bottle posh upper scale night club loma particularly hyde sense disco loma club warned extremely expensive cover charge range peso upward bottle start addition difficult exclusive exclusive gay club characteristic envy night club palma nightclub chapultepec lake restaurant lago chapultepec common mexican style thing dancing salsa meringue rumba mambo son caribbean latin music considerably fun youre somewhat competent dancer complete beginner dont mind making fool likely enjoy dance close late common legal drinking age illegal consume alcohol public container strictly enforced penalty jail identification card copy passport check date important indicator generally wait salary paid twice month soon date mexican especially payday coincide weekend expensive leave acapulco vacation farther afield summer weekend mexican weekend sense common drinking thursday night sunday morning throughout sunday

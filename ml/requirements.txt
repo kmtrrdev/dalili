@@ -1,5 +1,9 @@
-# Only for running ml/recommender.ipynb (the model itself needs just NumPy, already in ../requirements.txt).
-# Open the notebook in VS Code (Jupyter extension) and pick the project's .venv as the kernel.
+# Training the destination model (python -m travel_agent.recommender.finetune) and running ml/recommender.ipynb.
+# The website itself only needs ONNX Runtime + tokenizers (../requirements.txt).
+# CPU PyTorch is enough:  pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.4
+transformers>=4.45
+onnx>=1.16
 ipykernel>=6.29
 matplotlib>=3.8
 nbformat>=5.10

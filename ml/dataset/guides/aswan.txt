@@ -2,11 +2,12 @@ Aswan, Egypt
 Labels: history, culture, relax | Split: validation
 Source: https://en.wikivoyage.org/wiki/Aswan (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (14,700 characters) =====
+===== CLEANED GUIDE TEXT (14,716 characters) =====
 
 Aswan (Arabic: أسوان‎ àswân) is the southernmost city of Egypt, some 870&nbsp;km south of Cairo, just below the Aswan Dam and Lake Nasser, with a population of 275,000. Aswan is far more relaxed and smaller than Cairo and Luxor.
 
 Understand
+
 In the Neolithic era the tribes along the Nile began to combine, so that around 3500 BC there was a Kingdom of Upper Egypt from Aswan almost down to what is now Cairo, and a Kingdom of Lower Egypt which was the Delta. In 3100 BC King Narmer of Upper Egypt conquered the Delta and unified the kingdoms. Upstream of Aswan was inhabited but less important because the Nile was not navigable above the "First Cataract," first of a series of six rapids and shallows across the Nubian Plateau.
 
 Egypt has always needed to harvest as much water as possible from the river, while controlling floods. A dam was therefore built across the First Cataract in 1902. In modern times still more water was needed, so the Aswan High Dam was built further upstream, completed in 1971 and penning Lake Nasser behind it, all the way into Sudan. Whole communities had to be moved, along with priceless antiquities, the most famous example being at Abu Simbel. Construction had political repercussions: the need to finance the dam caused Nasser to court the Soviet Union and China when western support wasn't forthcoming, and in 1956 he nationalised the Suez Canal and closed it (along with the Gulf of Aqaba) to Israeli shipping. This sparked the Suez conflict.
@@ -17,7 +18,9 @@ Aswan is today a well-developed tourist city, but hasn't grown to the extent of 
 
 See
 
+
 Aswan Town and the East Bank
+
 * 
 Nubian Museum. Spacious museum opened in 1997 as a joint project of the Egyptian government and UNESCO, it traces the history of the Nubian region from pre-historic time up to the construction of the Aswan Dam in the 1960s and the consequent flooding of Nubia. The building won the Aga Khan Award for Architecture. Sophisticated bookshop.
 
@@ -35,6 +38,7 @@ Ferial Gardens. When you're in Aswan you'll have to walk along the Kornish Al Ni
 
 
 The river and islands
+
 * 
 Elephantine Island: Nubian Villages & Aswan Museum. Nubian villages of Siou and Koti occupy this island. Also home to the famous Nilometers and the Temples of Sati, Khnum (ancient rams-head god) and Pepinakht-Heqaib. Movenpick resort is on the island. The Aswan Museum (adult: LE100, student LE50, March 2022) at the southern end of the island houses items found during excavations on Elephantine Island, and includes access to the neighbouring archaeological site. Also, be careful of unsolicited tours from locals, which will result in a request for baksheesh. There is regular boat taxi to Elephantine Island run by the locals for LE5 for one return crossing for tourists (you usually pay LE5 to go and don't pay to come back).
 
@@ -46,6 +50,7 @@ Seheyl Island. Friendly Nubian villages. Well known for its excellent beaded jew
 
 
 West Bank
+
 * 
 Tombs of the Nobles. The northern hills of the west bank are filled with the rock-hewn tombs of princes from the Old Kingdom to the Roman period. The 6th Dynasty tombs, some of which form linked family complexes, contain important biographical texts. Inside, the tombs are decorated with vivid wall paintings showing scenes of everyday life, hieroglyphic biographies and inscriptions telling of the noblemen's journeys into Africa. The ticket gives you access to the Tombs of Mekhu & Sabni and the Tomb of Sarenput II on the left side coming up the hill, as well as the Tomb of Sarenput I on the right side, for all of which you will need the key holder waiting for you when you come up. Generally, you should get into the tombs without problem, but when buying the ticket ask for it to get confidence and refer to this knowledge when you get hassled by the key holder. Try to go with several other people, so you can take some pictures when the key holder is busy, especially in the Tomb of Sarenput II. Otherwise, you will probably have to pay him a fee for taking pictures. On the right side there is also a tomb (no. 35 l) with a spectacular bat colony at the far end, if you bring a torch (or you mobile's camera).
 
@@ -65,6 +70,7 @@ Monastery of St Simeon. The history of the monastery of St. Simeon dates back to
 
 
 The dams and lakes
+
 * 
 The Low Dam. This was built 1899-1902 across the First Cataract, upriver from town. It was a wonder in its time, the largest masonry dam in the world, but its water capacity soon became insufficient and led to the construction of the High Dam 6 km upstream. The Nile forms a lake behind the Low Dam with small islands; the main sight is the Philae Temple. This was initially left in place, but flooding became more common as the Low Dam was progressively raised; the site was seldom accessible and the flooding damaged the temple decorations. It was relocated to Agilkia Island in the 1960s. The nearby Bigeh island also had shrines. Lake Nasser itself is behind the High Dam.
 
@@ -87,6 +93,7 @@ The symbol of Egyptian-Soviet friendship. Massive monument commemorating the ass
 
 
 New Kalabsha
+
  
 New Kalabsha is a promontory housing several important temples, structures, and other remains that have been relocated there from the site of Old Kalabsha and other sites in Lower Nubia, to avoid the rising waters of Lake Nasser caused by the construction of the Aswan High Dam.
 * 
@@ -110,6 +117,7 @@ Dedwen. It was built within the outer wall of the temple of Kalabsha, and is ded
 
 Do
 
+
 * 
 Rent a bike. Bikes available at many hotels. Cross the modern bridge to the east bank and bring back your bicycle afterwards by ferry boat.
 
@@ -122,6 +130,7 @@ Tea with the local shopkeepers. You will get a fascinating insight into their da
 * Book a cruise ship for 2-3 nights between Luxor and Aswan by tracking down one or several of them along the pier before noon. Most cruise ships have a reception at their entrance and you can just walk in. Do not mind the guards or barriers, they are just there for protection. According to some travellers, prices can start at US$40 per night. Either way, it will be cheaper than when going through an agent or booking online.
 
 Buy
+
 The souqs (markets) in Aswan are refreshingly exotic without the same level of high-pressure selling found in some tourist towns like Luxor. You will generally find that Nubian handicrafts are of higher quality and better value in Aswan. All other goods will be more expensive than in Cairo due to shipping costs to Aswan and the lower tourist demand.
 
 * 
@@ -130,9 +139,12 @@ Sharia as-Souq. The most charming souq in Egypt, spreading through almost half o
 
 Eat
 
+
 Budget
 
+
 City centre
+
 
 * 
 Al-Masry Restaurant. Popular with locals. Great kafta and kebabs, pigeon, and chicken, all served with bread, salad and tahini.
@@ -146,11 +158,13 @@ Panorama. Serves simple Egyptian stews served in clay pots, with salad, mezze, r
 
 South Aswan
 
+
 * 
 Nubian House. Spectacular sunset views over the first cataract. Sheesha and tea.
 
 
 Mid-range
+
 
 * 
 Chef Khalil. Fresh fish restaurant, priced by weight. Small place but worth the wait.
@@ -167,14 +181,16 @@ Nubian dreams restaurant & cafe.
 
 Splurge
 
+
 *High tea at the Old Cataract Hotel. Guests are welcome for a minimum LE1500 charge, to enjoy high tea, or dine in the restaurants or have a drink at the bar. High tea is LE2750 (medium) or LE3250 (large) as of 2026.
 
 Drink
+
  
 Aswan is much less strict on drinking alcohol than Cairo or Luxor, and many of the restaurants sell Stella (Egyptian brand not the Belgian brand) and Saqqara, both of which are lagers and comparable to European beers.
 
 Locals take pride in their fresh sugar cane juice.
 
-===== TOKENS THE MODEL TRAINS ON (1,101) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,101) =====
 
 arabic southernmost nbsp dam lake nasser population far relaxed smaller neolithic era tribe nile began combine upper lower delta king narmer upper conquered delta unified kingdom upstream inhabited important nile navigable cataract sery rapid shallow nubian plateau needed harvest water possible river controlling flood dam therefore built cataract modern time water needed dam built upstream completed penning lake nasser behind sudan community moved priceless antiquity famous example simbel construction political repercussion finance dam caused nasser court soviet union support wasnt forthcoming nationalised suez canal gulf aqaba israeli shipping sparked suez conflict today developed hasnt grown extent feel relaxed climate hot desert rain fall water lake nile mile hot summer pleasantly warm winter bank nubian museum spacious museum opened joint project egyptian government unesco trace history nubian region pre historic construction dam consequent flooding nubia building won aga khan award architecture sophisticated bookshop unfinished obelisk largest ancient obelisk carved directly bedrock finished measured nbsp feet weighed nearly tons unfortunately crack developed project abandoned quarry supplied stone statue ramse memphis short video obelisk shown man demand tips site interest dedicated egyptophile maybe archangel michael coptic orthodox cathedral modern coptic cathedral dominating skyline fatimid cemetery faded former glory fatimid empire crumbling graveyard ferial garden youre youll walk kornish nile corniche pleasant stroll pleasant fact walk ferial garden park relaxing beautiful river island elephantine island nubian village museum nubian village siou koti occupy island home famous nilometer temple sati khnum ancient rams head god pepinakht heqaib movenpick resort island museum adult student island house item excavation elephantine island access neighbouring archaeological site careful unsolicited tour local result request baksheesh regular boat taxi elephantine island run local return crossing pay dont pay botanical garden lord kitchener owned hectare island converted botanical garden filled bird hundred plant specy palm tree accessible motor boat haggled felucca tour rowboat elephantine island ask boat lying shore seheyl island friendly nubian village excellent beaded jewelry famine stela cliff inscription dynasty bank tomb noble hill bank filled rock hewn tomb prince old roman period dynasty tomb form linked family complex contain important biographical text inside tomb decorated vivid wall painting showing scene everyday life hieroglyphic biography inscription telling noblemen journey ticket give access tomb mekhu sabni tomb sarenput side coming hill tomb sarenput side key holder waiting generally tomb problem buying ticket ask confidence refer knowledge hassled key holder picture key holder busy especially tomb sarenput probably pay fee taking picture side tomb spectacular bat colony far bring torch mobile camera tomb mekhu sabni ndash relief show invasion nubia tomb sarenput ndash beautiful preserved tomb tomb sarenput ndash pillar decorated relief tomb harkhuf ndash hieroglyphic tomb hekaib ndash relief show fighting hunting scene kubbet hawa shrine tomb holy man climb rewarded amazing view nile river surrounding landscape richly evoked translation arabic dome wind mausoleum mohammed shah aga khan tomb iman islami sect wife visible outside public monastery simeon history monastery simeon date century survived christian stronghold destroyed saladin housed monk addition receive pilgrim monastery surrounded nbsp metre wall doubled fortress apparently monastery return original saladin destruction ride camel walk tomb noble dams low dam built cataract upriver wonder largest masonry dam world water capacity soon insufficient led construction dam upstream nile form lake behind low dam island sight philae temple initially flooding common low dam progressively raised site seldom accessible flooding damaged temple decoration relocated agilkia island nearby bigeh island shrine lake nasser behind dam philae temple built honour isis last ancient temple built classical egyptian architectural style construction began approx nbsp moved philae island agilkia island flooding lake nasser multinational unesco team relocated philae temple dot shore lake nasser submerged island short distance punctuated steel column moving process dont miss sound light show night picture cheesy sound light extravaganza note temple christian church cross carved older hieroglyph relief egyptian gods carefully defaced graffiti dating ticket office sign stating daytime motorboat site cost roundtrip hour wait generally enough picture sign haggling boatmen demand dont surprised pressed additional baksheesh trajan kiosk hypaethral temple agilkia island old dam reservoir largest ancient egyptian monument standing today conventionally attributed roman emperor trajan gave current decoration expert think structure older possibly dating augustus international sculpture park sculptor world exhibit piece spring international sculpture symposium work created terrace basma hotel finished brought site exhibited view ancient quarry dam despite important piece infrastructure dam put delicately bit letdown dam lover symbol egyptian soviet friendship massive monument commemorating assistance soviet union building dam kalabsha kalabsha promontory housing important temple structure remain relocated site old kalabsha site lower nubia avoid rising water lake nasser caused construction dam kalabsha temple philae temple surrounding ruin moved unesco save floodwater lake nasser temple built nubian fertility god marul rule emperor augustus gerf hussein temple gerf hussein dedicated ramess built viceroy nubia setau originally partially standing partially rock cut flooding lake nasser standing section dismantled rebuilt kalabsha original rock cut gerf hussein temple submerged beneath water beit wali rock cut temple beit wali moved original polish archaeological team dedicated ramess gods amun anukis originally decorated bright color mostly removed squeeze taken century result squeeze display british museum kiosk qertassi tiny roman kiosk slender papyrus column inside hathor column entrance elegant structure unfinished inscribed architect probably contemporary trajan kiosk philae dedwen built outer wall temple kalabsha dedicated nubian serpent goddess dedwen moved kalabsha temple kalabsha rent bike bike hotel cross modern bridge bank bring bicycle afterward ferry boat camel ride grab felucca captain shuttle camel marshalling ride camel monastery simeon tea shopkeeper fascinating insight live love practise english nevertheless certainly sell exchange tea book cruise ship night tracking pier noon cruise ship reception entrance walk mind guard barrier protection according traveller price start night cheaper agent booking online souq market refreshingly exotic level pressure selling town generally nubian handicraft higher quality value good expensive due shipping cost lower demand sharia souq charming souq spreading half far pressure city beautiful exciting nubian talisman basket sudanese sword african mask live produce food fruit vegetable henna powder shirt perfume spice robe statue budget masry restaurant local kafta kebab pigeon chicken served bread salad tahini moon decent food cheery service fish joint market excellent fish fresh watch cook dont miss crab soup panorama serve simple egyptian stew served clay pots salad mezze rice breakfast nubian house spectacular sunset view cataract sheesha tea mid range chef khalil fresh fish restaurant priced weight worth wait madinah restaurant king restaurant cafe breakfast nubian dream restaurant cafe splurge tea old cataract hotel guest welcome minimum charge enjoy tea dine restaurant bar tea medium strict drinking alcohol restaurant sell stella egyptian brand belgian brand saqqara lager comparable european beer local pride fresh sugar cane juice

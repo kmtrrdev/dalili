@@ -7,6 +7,7 @@ Source: https://en.wikivoyage.org/wiki/Borovets (CC BY-SA 4.0)
 Borovets is a ski and mountain resort in Central Western Bulgaria, on the slopes of the Rila mountain range close to the town of Samokov. It's one of Bulgaria's most popular ski resorts and one of the starting points for hiking to Musala, the highest peak in Rila, Bulgaria and the Balkan Peninsula.
 
 See
+
 Also make sure to check out the sights in Samokov.
 
 * 
@@ -17,16 +18,20 @@ Church of the Transfiguration of the Lord. Small wooden Orthodox church built in
 
 
 Do
-===Skiing and snowboarding===
+
+Skiing and snowboarding
+
 The ski area in Borovets is split in two; a smaller area with runs down into the main resort is serviced by 2 chairlifts and a number of drag tows and consists of nursery slopes; a couple of short black runs; 1 long blue run and a number of short reds. The second ski area is accessible via a Gondola and is much larger with a number of long blue and red runs. Black slopes are available at this resort but it must be noted that despite the high quality of the red and black runs this resort is considered to be mainly for beginners and intermediates. The resort has several good ski schools and a wide range of apres-ski activities. 
 
 Snowboarders share the same area as the general skiers and have a wide range of slopes available to them. Borovets is also the only resort in Bulgaria to offer cross-country skiing (???).
 
 Hiking
 
+
 BGMountains.org map zoomed in on Borovets; downloadable Garmin maps with place names in Latin letters.
 
 Eat
+
 Most restaurants on the pistes are relatively expensive (by local standards) and average quality. Some however do offer very good food.
 * 
 Alpin Restaurant. Here you can sample tasty European and Bulgarian national cuisine specialties until midnight. In summer, you can spend time relaxing in the garden, cooled by the fresh air from the waterfall and cascades. There is also an outdoor barbecue where the chef will prepare specialties, grilled on live coals, right in front of you.
@@ -38,10 +43,11 @@ Yastrebets Stone Hut. A traditional mountain hut that offers good local cuisine.
 
 
 Drink
+
 There are many bars and restaurants in the resort where you and eat and drink to excess until the early hours.
 
 * The Golden Chicken aka Bobby's Bar A place to grab a beer and talk about a day on the slopes. Predominantly English speaking. Everybody seems to be friendly and up for a chat so if you're after a good social experience or any info on the area this is a place to start. Has a couple of quiet periods between breakfast and lunch and between lunch and about 16:00 when people start to roll in off the slopes.
 
-===== TOKENS THE MODEL TRAINS ON (237) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (237) =====
 
 ski mountain resort slope rila mountain range close samokov ski resort starting point hiking musala highest peak rila balkan peninsula sure check sight samokov tsarska bistritsa palace palatial hunting lodge royalty built tsar ferdinand ruler modern later son boris nbsp iii building surrounded park ownership restored son boris simeon saxe coburg gotha complex remain church transfiguration lord wooden orthodox church built feast transfiguration celebrated skiing snowboarding ski smaller runs resort serviced chairlift drag tows consist nursery slope couple short black runs blue run short reds ski accessible gondola larger blue red runs black slope resort noted despite quality red black runs resort considered mainly beginner intermediate resort ski school wide range apre ski activity snowboarder share general skier wide range slope resort cross country skiing hiking bgmountain map zoomed downloadable garmin maps name latin letter restaurant piste relatively expensive standard average quality food alpin restaurant sample tasty european bulgarian national cuisine specialty midnight summer spend relaxing garden cooled fresh air waterfall cascade outdoor barbecue chef prepare specialty grilled live coal front bomba grill restaurant tasty reasonably priced food pork spit roast bread baked butter salt blue steak house restaurant steak dish yastrebet stone hut traditional mountain hut cuisine indoor outdoor seating accommodation bars restaurant resort excess early golden chicken aka bobby bar grab beer talk slope predominantly english speaking everybody seem friendly chat youre social experience info start couple quiet period breakfast lunch lunch start roll slope

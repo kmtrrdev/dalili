@@ -1,8 +1,10 @@
-"""Training text: the Wikivoyage guide of each destination, cleaned and tokenised (no NLP library).
+"""Training text: the Wikivoyage guide of each destination, cleaned (no NLP library).
 
 Only the sections that describe what a place is like are kept (Understand, See, Do, Buy, Eat, Drink);
 logistics (Get in, Sleep, Connect...) read the same everywhere and would only add noise. Place and
-country names are removed so the model learns what a place *feels* like, not where it is.
+country names are removed so the model learns what a place *feels* like, not where it is:
+- `passages`: readable text with the names masked, cut into passages, for the fine-tuned language model;
+- `tokenize`: lowercase words without stop-words or names, for the TF-IDF baseline and the "known for" words.
 """
 
 from __future__ import annotations
@@ -75,7 +77,9 @@ def banned_words(catalog: list[Destination]) -> set[str]:
 
 
 def keep_sections(text: str) -> str:
-    parts = re.split(r"\n==+ *([^=\n]+?) *==+\n", "\n" + text)
+    # The newline after a heading is not consumed, so a sub-heading right below it ("==Do==\n===Sports===") is split
+    # too - and cleaning a cleaned guide again changes nothing.
+    parts = re.split(r"\n==+ *([^=\n]+?) *==+(?=\n)", "\n" + text)
     kept = [parts[0]]
     current = None
     for i in range(1, len(parts) - 1, 2):
@@ -87,7 +91,7 @@ def keep_sections(text: str) -> str:
             current = None
         if current:  # sub-headings ("Museums", "Beaches") stay with the section they belong to
             kept.append(head + "\n" + body)
-    return "\n".join(kept)
+    return "\n".join(kept).strip()
 
 
 BATCH = 50  # the MediaWiki API returns the text of up to 50 pages in one request
@@ -193,6 +197,27 @@ async def build(catalog: list[Destination]) -> dict[str, list[str]]:
     return {d.id: tokenize(keep_sections(texts.get(d.wikivoyage, "")), banned)[:MAX_TOKENS] for d in catalog}
 
 
-def tokens_for_text(text: str, catalog: list[Destination]) -> list[str]:
-    """Tokens of a new guide (a city outside the catalog), cleaned exactly like the training text."""
-    return tokenize(keep_sections(text), banned_words(catalog))[:MAX_TOKENS]
+PASSAGE_WORDS = 180   # about 250 model tokens: one passage fits the encoder's window
+MAX_PASSAGES = 40     # a guide's first 40 passages (~7,000 words): big cities don't dominate
+
+
+def mask_names(text: str, names: list[str], countries: list[str]) -> str:
+    """The place's own names become "the place" and every country "the country", accented or not, so two places are
+    alike for what they are, not for sharing a country."""
+    subs = [(n, "the place") for n in names] + [(c, "the country") for c in countries]
+    for name, repl in sorted({(n, r) for n, r in subs if n and len(n) > 2}, key=lambda x: -len(x[0])):
+        for form in {name, unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()}:
+            text = re.sub(rf"\b{re.escape(form)}\b", repl, text, flags=re.I)
+    return text
+
+
+def passages(clean: str) -> list[str]:
+    """A cleaned guide (keep_sections output, names masked) cut into passages for the encoder."""
+    words = clean.split()
+    out = [" ".join(words[i:i + PASSAGE_WORDS]) for i in range(0, len(words), PASSAGE_WORDS)]
+    return [p for p in out if len(p.split()) > 40][:MAX_PASSAGES] or out[:1]
+
+
+def place_passages(text: str, names: list[str], catalog: list[Destination]) -> list[str]:
+    """Passages of any guide (a catalog destination or a city outside it), prepared exactly like the training text."""
+    return passages(mask_names(keep_sections(text), names, sorted({d.country for d in catalog})))

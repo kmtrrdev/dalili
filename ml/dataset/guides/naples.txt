@@ -2,11 +2,12 @@ Naples, Italy
 Labels: food, history | Split: validation
 Source: https://en.wikivoyage.org/wiki/Naples (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (39,069 characters) =====
+===== CLEANED GUIDE TEXT (39,086 characters) =====
 
 Naples (Italian: Napoli; Neapolitan: Napule) in Italy is an ancient port on the Mediterranean sea. With just short of a million citizens, is the third most populous municipality. Metropolitan Naples is one of Italy's largest metropolitan areas, at three million citizens.
 
 Understand
+
  
 
 
@@ -20,6 +21,7 @@ In literary history, Naples is known as a favourite destination of the Roman poe
 In 2013, Naples was the World Capital of Cultures and hosted the Universal Forum of Cultures.
 
 History
+
 The city was founded in the 8th century BC as Parthenope, by Greek settlers from the nearby city of Cumae, itself founded by Greeks from the island of Evvia, in the area between Monte Echia and the island of Megaride, on a previous 2nd millennium BC settlement named Phaleros, a name connected to one of the Argonauts. The Cumaeans founded Neapolis ("New City") at the area of today's Piazza Municipio in 6th century BC, and the town became one of the most important Greek polis of Magna Grecia and the whole Mediterranean Sea.
 
 In 320 BC, the city was conquered by the Romans, who let it maintain its Greek culture and language. With the fall of the Roman Empire, the town was conquered by the Byzantines, to became capital of an independent duchy.
@@ -31,6 +33,7 @@ After tragic events, like an eruption of Mount Vesuvius in 1630, the revolt of M
 The annexation of the Two Sicilies to the newborn Kingdom of Italy in 1861 spelled, in fact, the beginning of a long period of decline for Naples and all Southern Italy. The town suffered the heavy bombings of World War II, that left deep scars in its monumental heritage, but succeeded in kicking out the German occupiers during the revolt known as "the four days of Naples".
 
 Orientation
+
  
 
 The Historical Centre, or Centro Storico of Naples is not only amazing but can also be something of a maze, filled with small irregular alleys. While the exact limits of the Centro Storico are a matter of debate, an inclusive definition could set its boundaries to Via Foria in the north, Corso Giuseppe Garibaldi to the east, the waterfront to the south and Via Toledo and the Quartieri Spagnoli to the west. Out of this huge area, the sections found to the north of Corso Umberto I, and to the west of Via Duomo are most likely to be of interest to travelers. While orientation in this area is difficult there are a few main roads by which you can direct yourself. Corso Umberto I cuts across the Centro Storico from the north-east to the south-west, connecting to the central train station in the north-east, and is one of few major multilane roads in historical centre. At Piazza Nicola Amore it crosses Via Duomo, a major road going across the centre from north to south. Finally, Via dei Tribunali and Spaccanapoli are two long, but rather narrow and crowded roads crossing the centre from east to west, both packed with street vendors and old churches. Notice that Spaccanapoli (literally "Naples splitter") is an unofficial name. The street's official names are Via Benedetto Croce for its western part and Via San Biagio Dei Librai for its eastern section. After crossing Via Duomo it loses much of its character, but continues east under the name Via Vicaria Vecchia.
@@ -38,9 +41,11 @@ The Historical Centre, or Centro Storico of Naples is not only amazing but can a
 South-west of the Centro Storico you will find the area San Ferdinando, consisting of a large headland into the bay of Naples. The area has long been the regal centre of Naples, with the two medieval castles Castel Nuovo and Castel dell'Ovo, and the old Royal Palace of Naples. Via Partenope and Via Nazario Sauro, packed with restaurants and hotels, follow the San Ferdinando waterfront and provide you with a beautiful view of the bay of Naples. Other areas of interest to tourists are Chiaia, an affluent district with plenty of opportunities for shopping directly west of San Ferdinando; and Vomero, a hilly residential area north of Chiaia and west of the Centro Storico, which due to its elevated location provide panoramic views of the bay and Vesuvius. Finally, aside from being beautiful, the bay to south of Naples and the mountain Vesuvius on its east are also good points of orientation, as they can be seen from several locations in the city.
 
 See
+
 As a UNESCO World Heritage site, the historic centre of Naples hosts a huge number of architectural landmarks.
 
 Churches and religious structures
+
  
  
  
@@ -71,6 +76,7 @@ Santa Maria del Carmine Maggiore. One of Naples' main churches, related to impor
 
 
 Other sights
+
  
  
  
@@ -142,6 +148,7 @@ Fontanelle Cemetery. These caves in the hillside of Materdei contain a vast ossu
 
 
 Museums
+
  
 
 * 
@@ -173,6 +180,7 @@ LAPIS Museum - Museo dell'Acqua Napoli. In the catacombs below the Santa Maria M
 
 
 Palaces
+
  
 
 * 
@@ -195,7 +203,9 @@ Palazzo Mannajuolo. Art Nouveau residential building built in 1911, with an impr
 
 
 Do
-===Theatres===
+
+Theatres
+
  
 
 Enjoy classical music in the Neapolitan temple of opera, or other performances such as musicals, comedies and actors' exhibitions in one of the theatres in the historic centre.
@@ -210,6 +220,7 @@ Teatro Augusteo. A theatre designed by Pier Luigi Nervi in 1929 and built inside
 
 
 Other
+
  
 
 * 
@@ -241,6 +252,7 @@ Parco Virgiliano.
 Buy
 
 
+
  
 
 Naples has vibrant markets and many small shops that sell everything from clothes to household appliances at prices much lower than in most of Western Europe. Especially to be seen is the 
@@ -260,11 +272,13 @@ Also, do not buy electronic products like iPhones, iPads and cameras on the stre
 You can support shops and businesses that fight against the extortion racket (also called "pizzo") by shopping there.
 
 Eat
+
 You will find many sauces based on garlic sauteed in extra-virgin olive oil, tomatoes, and local red wines. Some of the sauces are arrabbiata ("angry") or fra diavolo ("brother Devil"), which means they will contain hot pepper. It's a great cuisine.
 
 Fresh mozzarella di bufala (mozzarella made from European buffaloes' milk) is also typical of the region.
 
 Pizza
+
  
 
 While pizza is a traditional Neapolitan dish, it became ubiquitous in the Italian cuisine only in modern times. Neapolitan pizza is listed by UNESCO as part of the Intangible Cultural Heritage of Humanity.  UNESCO recognise two types: pizza margherita, the original one, with tomato, basil, oil and fresh mozzarella toppings; and pizza marinara, with tomato, garlic, oregano and oil. In Naples every pizzeria makes a decent pizza, and Neapolitans believe their pizza is the best in the world. Unlike pizza in, e.g., the United States, Neapolitan pizza is generally very thin-crusted and saucy and is expected to be eaten as a whole while sitting down.
@@ -272,12 +286,14 @@ While pizza is a traditional Neapolitan dish, it became ubiquitous in the Italia
 Some places display the label Vera Pizza Napoletana ("True Neapolitan Pizza"; there is a Pulcinella mask baking a pizza in a stylized Vesuvio) which indicates that the pizzeria follows the standards of The Naples Pizza Association. Regarding pizzerias near Forcella: It is not the safest part of Naples, although generally OK during the day.
 
 Seafood
+
  
 
 Neapolitan cuisine in general features much seafood, befitting its status as an ancient and still functioning port. The most popular fish recipe is Polpo alla lucìana, consisting in octopus cooked in a terracotta pan with tomatoes, garlic, capers, pepper and black olives of Gaeta, served with chopped parsley. The name derives from the ancient fishing port of Borgo of Santa Lucia, now a tourist port close to Castel dell'Ovo.
 Other important traditional dishes are spaghetti alle vongole, acqua pazza, paccheri with fish soup and anchovies, prepared in various recipes or added on pizza.
 
 Budget
+
 Almost all the pizzerias in Via dei Tribunali are very popular among Neapolitans, in particular Di Matteo and Trattoria Don Vincenzo.
 
 * 
@@ -313,6 +329,7 @@ Pizzoteca Quartiere Spagnoli. Good vibes and pizzas for an affordable price.
 
 
 Mid-range
+
 * 
 Pizzeria Brandi. A stone tablet displayed outside the restaurant explains the history of the first pizza margherita, allegedly created here.
 
@@ -339,11 +356,13 @@ Zio Jack Griglieria. Grill for all the carnivores, near the boardwalk in Santa L
 
 
 Splurge
+
 * 
 Honzen Japanese Restaurant. Excellent mid-range sushi restaurant in Posillipo district.
 
 
 Pastries
+
 The city and region are also famous for their pasticceria (pastries), (Babà (a sort of rum baba), Zeppole, Sfogliatella, and more; this latter is often filled with ricotta cheese or cream with citrus flavor) among the best are:
 * 
 Gran Bar Riviera. Excellent sweet specialties, including zeppole, sfogliatelle and babà.
@@ -361,6 +380,7 @@ Sfogliatella Mary. A small pastry shop become a sort of "must-see" for tourists,
 Struffoli and Roccocò are typical Christmas sweets. Pastiera is the sweet of Easter: anyway you can find it all year long. It is made basically of ricotta cheese melted with steamed corn and sugar, and then baked.
 
 Drink
+
  
 
 Naples is becoming increasingly popular with a younger generation of Italians and foreigners who flood into the city and lend renewed vitality to its nightlife. The hippest scene is around the bars and cafes on Piazza Bellini, Piazza Santa Maria la Nova and Piazza San Domenico Maggiore, becoming busy after 23:00. Also, Piazza San Pasquale and Mergellina are typical places for the local movida. If you want to venture to the outskirts of the city, there are many bars and clubs near the port and boardwalk of Pozzuoli.
@@ -370,6 +390,7 @@ While Neapolitans (and Vigili Urbani, the town's local police) are largely toler
 Campanian wine has become famous worldwide in the last decade or so, and delicious naturally lightly carbonated mineral water with minerals from Vesuvius is available and worth searching out.
 
 Coffee
+
 Neapolitan coffee is a true specialty, on a par with the world-famous pizza and starting the day drinking a cup of it represents a daily ritual. Preparing an authentic one requires the use of a particular flip coffee pot (locally called cuccumèlla) to obtain the typical intense flavor. Also if not all cafes and bars still use it, the quality of this extraordinary drink is excellent in almost every part of the city.
 * 
 Gran Caffè Gambrinus. Enjoy the special Neapolitan coffee in one of the most prestigious and famous cafes in Italy. Founded in 1860 in the rear of Palazzo delle Prefettura, the cafe was also known for being a meeting site for intellectuals, artists and politicians.
@@ -385,6 +406,7 @@ Bar Salvo. Great coffee and pastries in an informal cafe along a pedestrian area
 
 
 Wines and cocktails
+
 * 
 Enoteca Belledonne. Taste the best Italian wines along with cheeses, hams, sausages and pastries in an elegant wine bar and shop in Chiaia district.
 
@@ -402,6 +424,7 @@ Archeobar. Specialises in Negronis
 
 
 Nightclubs
+
 * 
 Arenile di Bagnoli. Beach club with pool and solarium by day, vibrant disco by night. Various live performances of international DJs.
 
@@ -414,6 +437,6 @@ Riva Club. Seaside disco with an elegant and modern atmosphere, located in front
 * 
 Virgilio Club. Live music and excellent drinks in the enchanting location of Posillipo, overlooking the bay.
 
-===== TOKENS THE MODEL TRAINS ON (3,030) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (3,030) =====
 
 italian napoli neapolitan napule ancient port mediterranean sea short million citizen populous municipality metropolitan largest metropolitan million citizen represent oldest continuously inhabited city world unesco world heritage site unmatched heritage exchange culture reflected structure monument mixture greek roman norman angevin spanish architecture unesco evaluation committee described historic largest europe exceptional value went say setting bay give outstanding universal value profound influence italian thing century view sea beautiful traditional italian saying youve die testimony extraordinary history region host unparalleled concentration unesco world heritage site roman archaeological site pompeii herculaneum cumae pozzuoli liternum oplontis stabiae royal palace caserta royal site leucio aqueduct vanvitelli close vesuvius active volcano european continent unesco biosphere paestum greek temple coast possible trip island capri ischia procida bay literary history favourite destination roman poet virgil wrote roman national epic aeneid eventually buried contemporary neapolitan author pseudonym elena ferrante neapolitan novel follow girl growing poor neighbourhood onward world capital culture hosted universal forum culture history founded century parthenope greek settler nearby cumae founded greek island evvia monte echia island megaride previous millennium settlement named phalero connected argonaut cumaean founded neapolis today piazza municipio century important greek polis magna grecia mediterranean sea conquered roman let maintain greek culture language fall roman empire conquered byzantine capital independent duchy later governed norman swabian angevin capital king king sicilian vesper half century center spanish monarchy populated europe inhabitant tragic event eruption mount vesuvius revolt masaniello spanish government plague killed half population reached glorious period government house bourbon relevant city continent culture economy politic following napoleonic invasion sicily established restoring bourbon dominance making relevant europe present inhabitant economy annexation sicily newborn spelled fact beginning period decline suffered heavy bombing world war deep scar monumental heritage succeeded kicking german occupier revolt orientation historical centro storico amazing maze filled irregular alley exact limit centro storico matter debate inclusive definition set boundary foria corso giuseppe garibaldi waterfront toledo quartieri spagnoli huge section corso umberto duomo likely interest traveler orientation difficult road direct corso umberto cuts centro storico connecting train station major multilane road historical piazza nicola amore cross duomo major road finally dei tribunali spaccanapoli narrow crowded road crossing packed street vendor old church notice spaccanapoli literally splitter unofficial street official name benedetto croce biagio dei librai section crossing duomo lose character continue vicaria vecchia centro storico ferdinando consisting headland bay regal medieval castle castel nuovo castel dellovo old royal palace partenope nazario sauro packed restaurant hotel follow ferdinando waterfront provide beautiful view bay interest chiaia affluent district plenty opportunity shopping directly ferdinando vomero hilly residential chiaia centro storico due elevated provide panoramic view bay vesuvius finally aside beautiful bay mountain vesuvius point orientation location unesco world heritage site historic host huge architectural landmark church religious structure cappella sansevero chapel built contain sculpture work art leading italian artist century extraordinary veiled christ giuseppe sanmartino scientific interest host anatomical machine mysterious experiment raimondo sangro prominent renaissance scientist addition basement human vein model looking plastination size waiting queue longer attraction francesco paola church side piazza plebiscito square planned king joachim murat napoleon brother law tribute emperor napoleon dispatched ferdinand bourbon continued construction converted final product church sees today church reminiscent pantheon facade fronted portico resting column ionic pillar inside church circular side chapel dome metre gesu nuovo church gesu nuovo jesus built palace roberto sanseverino prince salerno jesuit already built church called gesu vecchio political intrigue caused property confiscated eventually sold jesuit construct church architect giuseppe valeriano unusual facade unusually plain baroque style church rusticated ashlar original facade palace church contain masterpiece notable neapolitan artist belisario corenzio paolo matteis francesco solimena giovanni lanfranco massimo stanzione domenico maggiore prominent church gothic church est incorporate smaller original church built site century michele arcangelo morfisa monastery annexed church home prominent name history religion philosophy original seat university thoma aquina former monk domenico maggiore returned teach theology philosopher monk giordano bruno lived sacristy house sery sepulchre member royal aragonese family king ferdinand santa chiara religious complex church santa chiara monastery tomb archaeological museum double monastic complex built queen sancha majorca husband king robert original church traditional provencal gothic style decorated century baroque style domenico antonio vaccaro santa chiara largest clarissan church built clarissan church built nuns choir able view performance mass bell tower separated edifice begun completed renaissance time simple interior house tomb king robert side chapel bourbon king francis consort maria sophie bavaria queen maria christina savoy national hero salvo dacquisto carabiniere sacrificed life save live civilian hostage nazi occupation famous cloister clariss transformed vaccaro addition precious majolica tile rococo style nuns choir house fragment frescoe giotto cathedral built century church widely cattedrale gennaro honour saint januarius patron saint built foundation palaeo christian basilica trace clearly underneath building excavation revealed greek roman artifact cathedral famous miracle blood recurring miracle taking saturday ritual ampule containing old dried blood saint januarius brought stirred miraculously liquefy according legend disaster befall blood fail liquefy service time cathedral website miracle minute early assured seat royal chapel treasure januarius cathedral hold extensive treasure visited oclock gregorio armeno church completed honor saint gregory represent adjacent monastery relevant baroque complex interior decorated frescoe luca giordano characterized single nave side arcade chapel impressive triumph baroque decoration santa maria carmine maggiore church related important historical event masaniello revolt execution happened month existence parthenopean interior true triumph baroque decoration polychrome marble stuccoe magnificent gilded ceiling basilica piazza carmine step piazza mercato marina recognizable bell tower characteristic onion dome sight castel dellovo oldest castle former island megaride peninsula gulf castle come legend roman poet virgil reputation medieval time sorcerer put magical egg foundation support island megaride greek colonist cumae founded nucleus palepolis century century roman patrician lucius licinius lucullus built magnificent villa castellum lucullanum site castle site built norman century castel nuovo called maschio angioino medieval castle symbol architecture begun charle anjou completed later castel nuovo soon nucleus historical site famous event example pope celestine resigned papacy hall castle event depicted dante alighieri masterpiece divina commedia verse colui che viltade fece gran rifiuto castel capuano ancient castle castel dellovo built century norman necropolis royal palace residence distinguished francesco petrarca site royal wedding ceremony seat courthouse half millennium derive proximity road led capua following museum grouped visited combined ticket castel santelmo huge imposing hilltop medieval fortress providing outlook surrounding hosting art watch sunset behind ischia procida certosa museo martino former monastery complex museum visible landmark perched atop vomero hill command gulf carthusian monastery finished inaugurated rule queen joan expanded direction architect cosimo fanzago essentially structure sees today early century rule monastery abandoned religious order today building house museum display spanish bourbon era artifact display presepe nativity scene considered finest world villa floridiana museo nazionale della ceramica duca martina quiet park beautiful panoramic view surround neoclassical villa host ceramic collection part world villa pignatelli former luxurious residence park interesting museum horse carriage vehicle horse equipment posillipo pusilleco neapolitan district northwestern greek named pausilypon meaning respite worry due enchanting calm shore roman ruin water edge remain residence vedius pollio contain notable historical building landmark palazzo donnanna villa rosebery italian president residence stay galleria umberto public shopping directly carlo opera house designed emanuele rocco employed modern architectural element reminiscent galleria vittorio emanuele galleria meant combine business shop cafe social life public space private space apartment floor subterranean archeological excavation sight distinctive name following apart street intersection showing part ancient structure underneath current street level napoli sotteranea show former stone quarry building transformed later water distribution network garbage disposal pits finally war shelter larger smaller connected narrow path beware claustrophobic addition tour show remain nearby greco roman theatre nero supposedly artistic debut neapolis sotterrata present ruin former roman market shop addition entrance surrounding museum chapel included piazza plebiscito another napoli sotterranea show labyrinth tunnel tank cavity take galleria borbonica tour old tunnel connect palace military barrack bomb shelter world war unique early christian underground cemetery catacomb behind former wall capodimonte completely interesting entrance valid enter catacombe gennaro extensive floor catacomb restored maintained dozen patriot misc tomb frescoe mosaic etc shown catacombe gaudioso catacombe macabre ritual draining performed remain skull wall part skeleton wall painting shown history upstair church shortly showcased tomb virgil greatest latin poet author aeneid metro station station contain work contemporary art artist striking architecture interesting ones universita toledo metro building won prize innovative approach station development metro station elected europe impressive british newspaper telegraph remarkable artistic value porta capuana ancient gate built aragonese rule represent visible remain medieval wall consist arch white marble decorated bas relief impressing cylindrical tower igneous rock half century square gate meeting point artist intellectual fontana gigante beautiful fountain beginning century pietro bernini father famous gian lorenzo sit beside royal palace close statue giant moved promenade composed round arch topped coat arms decorated statue fontanelle cemetery cave hillside materdei contain vast ossuary longer renovation opening delayed current prediction possible opening taken grain salt museum national archeological museum important italian archaeological museum roman civilization contain collection roman artifact pompeii stabiae herculaneum collection work highest quality produced greek roman renaissance time royal palace national museum capodimonte host painting century major work simone martini raphael titian caravaggio masaccio sandro botticelli lorenzo lotto giovanni bellini giorgio vasari greco jacob philipp hackert host work important neapolitan painter jusepe ribera luca giordano neapolitan caravaggisti museum contemporary art donnaregina museum contemporary art permanent collection fascinating room installation temporary exhibition museo civico filangieri collection artwork coin book donated prince gaetano filangieri complesso monumentale dei girolamini ecclesiastic complex comprising painting cloister library thousand ancient manuscript baroque church palazzo delle arti civic museum born public exhibition civic collection arts host art culture event organized national railway museum pietrarsa museum housed ancient century bourbon factory route railway napoli portici line possible admire variety rolling stock steam locomotive period carriage museo universitario delle scienze delle arti ancient anatomy museum europe religious complex santa patrizia possible discover fascinating context section anatomy pharmacology stomatology bibliography art guided thank official app mobile lapis museum museo dellacqua napoli catacomb santa maria maggiore della pietrasanta church self proclaimed water museum visited guided tour english group last minute palace royal palace residence bourbon king rule sicily royal palace site earlier building meant host king philip iii trip architect chosen palace domenico fontana building put site older spanish viceroyal residence early century century palace visible today result numerous addition change luigi vanvitelli mid century gaetano genovese albergo dei poveri former public hospital almshouse designed architect ferdinando fuga construction started storey tall popularly palazzo fuga king charle iii house bourbon meant facility house destitute ill provide self sufficient community poor live work building designed courtyard church innermost courtyard built plan complete building according original design finally abandoned longer hospital suffered neglect earthquake behind entrance exhibition conference concert palazzo dello spagnolo late baroque palace built rione sanita famous monumental courtyard staircase arch shifting palazzo zevallo elegant palace built noble spanish family zevallo house rich art comprising sculpture painting century realized artist school posillipo palazzo sangro casacalenda store palace built half century architect mario gioffredo internal courtyard designed luigi vanvitelli feature arch portico doric order lesene palazzo mannajuolo art nouveau residential building built impressive ellipsoidal staircase marble palace condo possible look inside asking doorman theatre enjoy classical music neapolitan temple opera performance musical comedy actor exhibition theatre historic real teatro carlo founded oldest continuously active opera house europe century capital european music foreign composer hasse haydn johann christian bach gluck considered performance composition carlo theatre goal career italian opera composer gioacchino rossini gaetano donizetti artistic director carlo prominent opera composer vincenzo bellini giuseppe verdi giacomo puccini pietro mascagni leoncavallo staged production work example famous lucia lammermoor donizetti teatro bellini built named sicilian composer vincenzo bellini bellini theatre hosted prestigious event opera century period decline started structure sort cheap movie cinema splendor origin theatre restored reopened later starting lucky phase last today teatro augusteo theatre designed pier luigi nervi built inside century noble palace toledo structure world war reopened cinema finally restored resume status elegant theatre seating capacity hosted performance famous actor musician bruce springsteen underwater park gaiola diving snorkelling trip glass bottomed boat aquavision marine protected minor island gaiola posillipo elegant quarter choose favourite discover stretch coastline surprising abundance coloured marine life beneath limpid water gulf option official site centro sub campi flegrei idc diving offering diving snorkelling gulf phlegraean island underwater archaeological park baiae called submerged pompeii accordi disaccordi international short film festival summer experience cinema beneath star warm night amphiteatre equipped widest projection screen rise artificial lake pontile bagnoli walk mile suspended water gulf pozzuoli concrete pier built serve former steel mill dismantled enjoy relaxing stroll surrounded stunning view miseno island nisida ischia procida walk piazza plebiscito castel dellovo balcony cesario console enjoy view royal palace cruise ship docked mount vesuvius sorrento peninsula step chaotic downtown walk path villa comunale public garden front promenade caracciolo decorated statue fountain surrounded palm stone pine lime tree bus reach parco virgiliano panoramic public garden posillipo truly stunning view watch football soccer ssc napoli play serie tier italian football clinched scudetto league title match spare home ground stadio diego armando maradona historically stadio paolo capacity metro cavalleggeri aosta enjoy traditional neapolitan music live napulitanata concert hall galleria principe napoli maintained music association concert last hour cost vibrant market shop sell everything clothe household appliance price lower europe especially porta nolana pignasecca vasto market give grasp neapolitan life dont miss impromptu fish market happen especially sunday morning rotonda diaz square caracciolo fishing boat ashore directly sell fresh alive fish octopuse characteristic joyful scene life chiaia toledo major shopping street spaccanapoli centro storico packed street vendor odd shop street portalba piazza dante home bookstore obviously fake item sold street especially fake fashion firm product purse foulard sunglass huge plainclothe police raid street combat trade counterfeit product seller trouble according italian law caught buying product risk arrested subjected huge fine electronic product iphone ipad camera street normally ones illegal street vendor sell fake show real quick switch sleight hand dont think outsmart scammer support shop business fight extortion racket called pizzo shopping sauce based garlic sauteed extra virgin olive oil tomatoe red wine sauce arrabbiata angry fra diavolo brother devil mean contain hot pepper cuisine fresh mozzarella bufala mozzarella european buffaloe milk typical region pizza pizza traditional neapolitan dish ubiquitous italian cuisine modern time neapolitan pizza listed unesco intangible cultural heritage humanity unesco recognise type pizza margherita original tomato basil oil fresh mozzarella topping pizza marinara tomato garlic oregano oil pizzeria decent pizza neapolitan believe pizza world unlike pizza neapolitan pizza generally thin crusted saucy expected eaten sitting display label vera pizza napoletana true neapolitan pizza pulcinella mask baking pizza stylized vesuvio indicate pizzeria follow standard pizza association regarding pizzeria forcella safest generally seafood neapolitan cuisine general feature seafood befitting status ancient functioning port fish recipe polpo alla luciana consisting octopus cooked terracotta pan tomatoe garlic caper pepper black olive gaeta served chopped parsley derive ancient fishing port borgo santa lucia port close castel dellovo important traditional dish spaghetti alle vongole acqua pazza paccheri fish soup anchovy prepared recipe added pizza budget pizzeria dei tribunali neapolitan particular matteo trattoria don vincenzo matteo presidente sorbillo sister door informally vecchia old lady owner pizzeria table look pizzeria ago hard worth pizza trattoria don vincenzo wide choice dish middle old decumano regional street food street character neapolitan frittini grammi spaghetti takeaway combination street food pasta intense taste choose variety spice cuoppo hole wall spot fried snack eatery seafood mozzarella ball fried zucchini blossom anchovy lantica pizzeria michele pizza margherita crust thin chewy queue numbered ticket waiter door arrive wait outside called pizza cooked quickly expect vacate seat quickly type beer kind soft drink order pizza served queue pizzeria trianon pizza soupy crispier crust drago doro asian cuisine cheap informal chinese restaurant close toledo trattoria peppino ritrovo degli artisti simple family restaurant owner raffaele liguori provide neapolitan dish low price table booking recommended pizzoteca quartiere spagnoli vibe pizza affordable price mid range pizzeria brandi stone tablet displayed outside restaurant explain history pizza margherita allegedly created pizzeria starita close crowning michele pizza casetta rossa orsi francesco seafood easy reach dish mediterranean cuisine pescheria squalo excellent raw cooked seafood neapolitan tradition happy rock cafe mexican fusion cuisine mid range pub specialized fondue neapolis specialita greche typical greek dish old founded greek teranga worldwide pub superb african cuisine lively pub music late night front piazza bellini neapolitan movida zio jack griglieria grill carnivore boardwalk santa lucia splurge honzen japanese restaurant excellent mid range sushi restaurant posillipo district pastry region famous pasticceria pastry baba sort baba zeppole sfogliatella latter filled ricotta cheese cream citrus flavor gran bar riviera excellent sweet specialty zeppole sfogliatelle baba pasticceria poppella incredible choice traditional pastry another arena alla sanita palazzo dello spagnolo pasticceria scaturchio sfogliatella mary pastry shop become sort due quality neapolitan pastry especially sfogliatelle struffoli roccoco typical christma sweet pastiera sweet easter anyway basically ricotta cheese melted steamed corn sugar baked becoming increasingly younger generation italian foreigner flood lend renewed vitality nightlife hippest scene bars cafe piazza bellini piazza santa maria nova piazza domenico maggiore becoming busy piazza pasquale mergellina typical movida want venture outskirt bars club port boardwalk pozzuoli neapolitan vigili urbani police largely tolerant youngster drinking fun making noise late drunk causing damage littering tolerated campanian wine become famous worldwide last decade delicious naturally lightly carbonated mineral water mineral vesuvius worth searching coffee neapolitan coffee true specialty par world famous pizza starting drinking cup represent ritual preparing authentic require particular flip coffee pot locally called cuccumella obtain typical intense flavor cafe bars quality extraordinary excellent gran caffe gambrinus enjoy special neapolitan coffee prestigious famous cafe founded rear palazzo delle prefettura cafe meeting site intellectual artist politician caffe ciorfito taste authentic neapolitan coffee pastry welcoming cafe heart old visited italian actor bar coffee enjoy metre railway station bar salvo coffee pastry informal cafe pedestrian elegant vomero quarter wine cocktail enoteca belledonne taste italian wine cheese hams sausage pastry elegant wine bar shop chiaia district mantegno wine cocktail beer appetizer wine bar historic mosto excellent selection beer cocktail beautiful pub jazz music spuzzule winebar wide choice wine accompanied typical regional dish archeobar specialise negronis nightclub arenile bagnoli beach club pool solarium vibrant disco night live performance international djs disco amour riva club seaside disco elegant modern atmosphere front island nisida virgilio club live music excellent drink enchanting posillipo overlooking bay

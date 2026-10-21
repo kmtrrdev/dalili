@@ -2,17 +2,19 @@ Tallinn, Estonia
 Labels: history, culture | Split: test
 Source: https://en.wikivoyage.org/wiki/Tallinn (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (42,281 characters) =====
+===== CLEANED GUIDE TEXT (42,286 characters) =====
 
 Tallinn is Estonia's capital and largest city. Tallinn is an important port of the Baltic Sea, with the busy passenger section of the port reaching the foothill of the picturesque medieval Old Town, which has been astonishingly well preserved and is a  since 1997. 
 
 Understand
+
 
 On the shore of the Gulf of Finland, it is a city of over 450,000 inhabitants (2023). It is home to a third of the country's population, and is also the capital of Harju County in Northern Estonia.
 
 In a striking contrast to its Old Town, its immediate outskirts are filled with a cluster of modern office towers, with intermittent architectural monuments to the Soviet era. Further out, you will find a bewildering variety of historic and modern neighbourhoods, religious, civic, industrial and maritime heritage. This all provides for the city seeing very sizeable tourist traffic given its size, which in turn means the infrastructure is robust and extensive.
 
 History
+
  
 Tallinn is a historic city dating back to medieval times. The first fortress on Toompea was built around 1050 and Tallinn was possibly first recorded on a world map in 1154. In 1219, the city was conquered by Valdemar II of Denmark and it became a member of the Hanseatic League in 1285. The city, known as Reval at the time, prospered as a trading town in the 14th century, and much of Tallinn's historic centre was built at this time.
 
@@ -21,6 +23,7 @@ Tallinn then became a pawn in the geopolitical games of its big neighbours, pass
 Estonia was occupied by the Soviet Union in 1940, conquered by Nazi Germany (1941–44), and then retaken by the Soviets. In World War II, the city was quite extensively bombed by the Soviets, although luckily the medieval town survived. The Soviet Union undertook a program of massive East Slavic migration, and just over 40% of Tallinn's current inhabitants are Slavic (compared to an average of 28% for the entire country). On 20 August 1991, Estonia declared independence and Tallinn became its capital once again.
 
 Present day
+
  
 Today Tallinn is a bustling, gleaming city. However, among the tall glassy buildings and corporate headquarters, Tallinn retains an inner charm seldom found elsewhere. Estonia considers itself a Northern European/Nordic country, with very close ethnic, linguistic and cultural ties to Finland and cultural ties to Scandinavia, and visiting Tallinn you will find a mix of at least three architectures in this very visual city—old Europe (the city walls with rustic buildings and charming living areas with well-preserved and colourful wooden houses of bourgeois taste of 1920s), Soviet brutalist (concrete apartment blocks), and modern Europe (including McDonald's next to the city walls!)
 
@@ -29,12 +32,15 @@ Tourism is important for Tallinn and this is especially visible in the old town 
 * Visit Tallinn tourist information. 
 
 See
+
  
 
 The Tenet tour is a showcase of sets of the 2020 film Tenet. The Tallinn history tour is a walk through the city's long history.
 
 Kesklinn (city centre)
-==== Toompea Hill ====
+
+Toompea Hill
+
 According to myth, the hill was built on top of the grave of legendary Estonian king Kalev, but more historically, its solid limestone and the site of the Danish castle that founded the city in 1219. Toompea was the home of the Danish and later Baltic German aristocracy and relations between the toffs and the plebs were often inflamed, which is why it's surrounded by thick walls and there's a gate tower (1380) guarding the entrance. Check out the viewpoints, some of which give great views over the city. There's also a cluster of amber (merevaik) shops around here (no Estonian origin but popular among cruise tourists).
 
  
@@ -57,6 +63,7 @@ Estonian Knighthood House. The green Renaissance revival building was erected in
 
 
 Vanalinn (Old Town)
+
 The medieval Old Town (Vanalinn) of Tallinn was built in the 15–17th centuries, and is excellently preserved. It contains a large part of Tallinn's sights and is the only UNESCO world heritage site entirely in Estonia. As clichéd it may sound — you can't say you've been to Tallinn if you haven't visited the old town. This compact area is best explored on foot.
 
  
@@ -102,6 +109,7 @@ Kiek in de Kök. An artillery tower, which is today a museum.
 
 
 Outside the Old Town
+
  
  
  
@@ -126,6 +134,7 @@ Peter the Great's Naval Fortress. In the 18th century, the coastal protection ba
 
 
 Kadriorg quarter
+
 A beautiful and rich seaside resort district with mostly wooden buildings from the 18–20th centuries, and 20th-century Art Deco and Functionalist structures. It also includes the baroque pearl of Estonia, the Kadriorg Palace and Garden.
 
  
@@ -142,6 +151,7 @@ Song Festival Grounds. A huge Modernist structure where the All Estonian Song Fe
 
 
 Pirita
+
 Pirita includes forest parks, Botanic Gardens and Metsakalmistu (the last resting place of well-known Estonians). A few km east of the city centre along the seaside road.
 
  
@@ -160,6 +170,7 @@ Holy Birgitta Monastery. A monastery of Scandinavian female saints, as well as a
 
 
 Põhja-Tallinn
+
  
  
 
@@ -174,6 +185,7 @@ Seaplane Harbour. Lennusadam, literally "air port", was constructed in 1916 for 
 
 
 Haabersti
+
  
 
 * 
@@ -186,6 +198,7 @@ Tallinn Zoo. This is an enormous area. Among its live exhibits, you'll find the 
 Also, check out other sights within North Estonia, which could allow for a day trip from Tallinn.
 
 Do
+
  
 * 
 Medieval Days. Come and experience the medieval atmosphere of the historic Hanseatic City! You can find workshops and market with traders, participate in tours and witness exciting tournaments.
@@ -210,6 +223,7 @@ Vembu-Tembumaa. The oldest and largest amusement park for the whole family.
 
 
 Beaches
+
  
 
 A flag system that regulates swimming. A green flag means it is safe swim, a yellow flag means you can swim, but it isn't recommended and a red flag means swimming is not advised, go in at your own risk.
@@ -232,6 +246,7 @@ Pikakari Beach. The water quality is fairly good and it gets deep quite soon whe
 
 Sports
 
+
 * Football: The men's national soccer team play at Lilleküla Stadium (sponsored as A. Le Coq Arena), capacity 14,300, 2 km south of city centre. City clubs playing soccer in Meistriliiga, the country's top tier, are Levadia, Flora, Nõmme Kalju and Nõmme United. Tallinna Kalev and FC Tallinn play in Esiliiga the second tier. The playing season is March-Nov.  
 * 
 Simpel Session. International skateboarding and BMX event.
@@ -241,11 +256,13 @@ Tallinn International Horseshow. Biggest international horse riding competition 
 
 
 Film festivals
+
 * 
 Tallinn Black Nights Film Festival (PÖFF). The festival combines a feature film festival with the sub-festivals of animated films, student films and children/youth films.
 
 
 Music festivals
+
  
  
 
@@ -269,10 +286,12 @@ Saku Suurhall. Rocca al Mare. Estonia's largest concert and exhibition space, th
 
 
 Buy
+
  
 Tallinn may be cheap compared to other major European cities, but it is no longer the bargain deal it once was. Though not overtly touristy, it is much more expensive than the rest of the country. If you come here for an authentic Estonian and inexpensive experience, this is the wrong place. Prices can be comparable to Munich and Milan.
 
 Department stores & shopping malls
+
 * 
 Viru Keskus. In and around the landmark Viru hotel, it is very busy as the bus terminal is below this mall. It is still in walking distance from the port but serves tourists and locals as well.
 
@@ -304,6 +323,7 @@ Rotermanni Kvartal. Rotermann's Quarter is a downtown shopping area with clothin
 
 
 Boutiques and souvenirs
+
 For boutiques and souvenirs, your best choice is Viru street in the Old Town and its side streets. There are many stalls selling traditional items like woolen pullovers, crystal and amber. Be prepared to bargain in order to get a reasonable price, however bargaining is only accepted at some places. Even though Baltic amber and Russian matryoshka dolls are widely available in souvenir boutiques, neither are related to Estonia or its culture and are sold in Estonian souvenir boutiques mainly because they sell well to tourists.
 
 * 
@@ -319,6 +339,7 @@ Geek Shop Estonia. Pop culture collectibles and gaming store, which sells toy fi
  
 
 Markets
+
 * 
 Jaama Turg. A market place next to the train station. Overrated and overpriced, gourmet food at three times the price of regular market places. For tourist and rich locals.
 
@@ -340,6 +361,7 @@ Sadama Turg. Another market near the ferry terminals, selling quality Estonian h
 
 
 Records
+
 * 
 Biit Record. A music shop covering all major media types, with somewhat of a focus on vinyl. They especially have great indie and electronics offerings, can at the same time help find great local music and also other common genres. Located in an upper floor, the store has a special atmosphere to it. Offering secondhand and a wide variety of new records.
 
@@ -354,6 +376,7 @@ World Clinic record shop. a small but very friendly and diverse record shop
 
 
 Eat
+
  
  
  
@@ -361,7 +384,9 @@ Eat
 The Old Town is packed with restaurants claiming to offer authentic Estonian food, particularly on and around Raekoja plats. Prices at restaurants near the Raekoja Plats are generally more expensive, yet offer the same quality of food, as restaurants off this main square. Prices are steep by Estonian standards, but still much cheaper than neighbouring Helsinki, which explains why on weekends they're always packed with day tripping Finns.
 
 Budget
-====In the Old Town====
+
+In the Old Town
+
 * 
 Maiasmokk. The oldest still operating café in Tallinn, dating back to 1864. Coffee, tea, chocolate and various sweet and savoury pastries at quite cheap prices. Spacious with stylish decor. Next door is the Maiasmokk confectionery shop, which sells good quality Estonian chocolates.
 
@@ -376,6 +401,7 @@ Pizza Grande. Very cozy place. Delicious pizza, affordable prices, pleasant serv
 
 
 Near the Old Town
+
 * 
 Loca. Pizza, falafel, hummus, soup, beer. Fast food joint with wild staff and increasing customer service.
 
@@ -384,11 +410,13 @@ Borsch j Varenyk. Great place to enjoy home-made Ukranian food
 
 
 Around the market Balti Jaama Turg
+
 * 
 F-hoone. Used to be an industrial hall, now made a great bistro/bar which tends to become very busy in the evenings (book if you can, but as it's big you might well be lucky and find the one spare table. Good value for price.
 
 
 East of the old town around the Coca-Cola Plaza
+
 * 
 Kohvik Narva. Cafe Narva long boasted an old-style interior preserved from the Soviet area; today's chic interior seems questionably authentic. Ladies at the counter are somewhat brusque (still) and mostly Russian-speaking, although this should not prevent you from enjoying traditional food of Soviet workers as well as delicious pastries baked on the premises.
 
@@ -397,6 +425,7 @@ Puffid bakery. Puffid bakery offers snacks for every taste, curd pockets, a spec
 
 
 Mid-range
+
  
 
 * 
@@ -458,6 +487,7 @@ Vanaema Juures. Translates as "At Grandma", which gives you an idea of the warm 
 
 
 Splurge
+
  
 
 * 
@@ -486,7 +516,9 @@ Tchaikovsky. As the name suggests, it is a Russian restaurant, but don't expect 
 
 
 Drink
-===Cafés===
+
+Cafés
+
 There are plenty of nice cafés, especially in the centre. Among the interesting ones:
 
 * 
@@ -498,11 +530,14 @@ Wabadus Kohvik. located just next to the freedom square, this café has good dri
 
 
 Nightlife
+
  
 Tallinn's crazy nightlife is out of proportion to the city's small size. The days of armed mafiosos are over and these days any drunken fights tend to involve stag parties. Exercise some caution in choosing your venue, as some strip clubs and regular clubs make their money by fleecing tourists who come in for a drink. In local places, beers cost €2.50-4.
 
 Bars and pubs
-====In old town (Vanalinn)====
+
+In old town (Vanalinn)
+
  
  
  
@@ -548,6 +583,7 @@ Piana Vyshnia. A bar that serves only one kind of drink, so it's easy to decide 
 
 
 Out of old town
+
 These are still quite central; they are just not in the old town.
 
 East:
@@ -564,6 +600,7 @@ Kohvik Nord. At the pier behind Linnahall; you are really at the sea.
 
 
 Nightclubs
+
 
 *
 Arena3. Plays middle of the road pop and disco. Popular with the young crowd. Reasonably priced.
@@ -599,6 +636,6 @@ Teater. Basement club on Vabaduse square. Popular with late twens and smaller gr
 *
 Virgins. Gentlemen's club with erotic shows and luxurious drinks. Popular with business travellers and male tourists.
 
-===== TOKENS THE MODEL TRAINS ON (3,248) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (3,248) =====
 
 capital largest important port baltic sea busy passenger section port reaching foothill picturesque medieval old astonishingly preserved shore gulf inhabitant home country population capital harju county striking contrast old immediate outskirt filled cluster modern office tower intermittent architectural monument soviet era bewildering variety historic modern neighbourhood religious civic industrial maritime heritage provide seeing sizeable traffic given size turn mean infrastructure robust extensive history historic dating medieval time fortress toompea built possibly recorded world map conquered valdemar member hanseatic league reval prospered trading century historic built pawn geopolitical game neighbour passing swedish hand russian empire peter world war ensuing brief estonian independence starting population reached occupied soviet union conquered nazi retaken soviet world war extensively bombed soviet luckily medieval survived soviet union undertook program massive slavic migration current inhabitant slavic compared average entire country declared independence capital present today bustling gleaming tall glassy building corporate headquarter retain inner charm seldom elsewhere consider european nordic country close ethnic linguistic cultural ties cultural ties scandinavia visiting mix architecture visual cityold europe wall rustic building charming living preserved colourful wooden house bourgeois taste soviet brutalist concrete apartment block modern europe mcdonald wall tourism important especially visible old door lead souvenir shop restaurant bar unsurprisingly majority tripper neighbour bay know map already sight couple time enjoy low price practically good service restaurant meal fuel plastic surgery forget alcohol custom regulation allow bring information tenet tour showcase sets film tenet history tour walk history kesklinn toompea hill according myth hill built grave legendary estonian king kalev historically solid limestone site danish castle founded toompea home danish later baltic german aristocracy relation toff pleb inflamed surrounded thick wall gate tower guarding entrance check viewpoint give view cluster amber merevaik shop estonian origin cruise toompea castle seat estonian parliament riigikogu castle complex consist part wall tower tall hermann pilsticker landskrone built dane century classic style building government estonian governorate built russian building riigikogu believed already middle century ancient estonian wooden fortress alexander nevsky cathedral classic onion domed russian orthodox church built russification period russian empire independent argued church symbol oppression architecturally non suitable therefore demolished survived soviet time estonian orthodox church moscow patriarchate mary cathedral oldest church built catholic church renovated expanded time lutheran church stenbock house today stenbock house seat government built courthouse late century behest erstwhile russian authority russian treasury eventually unable pay building count stenbock erected edifice personal residence treasury able century later finally courthouse intended estonian knighthood house green renaissance revival building erected mid century fourth consecutive home estonian knighthood congregation essentially german noble pratically controlled independence played host foreign affair ministry national library art collection display kumu home estonian academy arts building public instruction faculty work vanalinn old medieval old vanalinn built century excellently preserved contain sight unesco world heritage site entirely cliched sound cant say youve havent visited old compact explored foot viru gate section linn lower merchant artisan old lived today viru trendiest shopping street entire linn busiest touristy bit hall square square heart old medieval hall raekoda ringed cafe restaurant square marketplace hall hall built turn century oldest hall nordic country baltic heavy stone structure dominate square nowaday museum smaller concert held weather vane spire called vana tooma old thoma become symbol olaf church built century today baptist church probably visible landmark old soviet union tower radio tower surveillance point nichola church olaf lookalike old heavily damaged world war fire art museum house bernt notke famous danse macabre vabamu educate involve encourage everyone think recent past sense fragility freedom stand freedom justice wall section wall climbed corner suur kloostri vaike kloostri entry tower possible frankly view toompea spiral staircase steep somewhat claustrophobic estonian history museum history museum medieval guild hall permanent exhibition take estonian history mean ranging striking exhibit artifact interactive capsule topic covered surprisingly wide range coinage wine history guild building temporary exhibition serve link present estonian maritime museum maritime museum date housed inside largest wall tower aptly named fat margaret paks margareta visiting museum allow potpourri maritime themed artifact century cannon tower experience view cafe roof museum original meremuuseum absolutely cannot miss seaplane harbour ship airplane stored museum facing sea broken line katkenud liin monument shipwreck kgb prison cell museum interior ministry generally public kgb detained tortured suspected dissident soviet era joke says tallest building basement siberia interrogation indeed conducted basement today window crudely bricked concrete mute sound train kids depart minute take round trip kiek kok artillery tower today museum outside old freedom square freedom square square featuring simple elegant john church contemporary victory column erected commemorate estonian war independence square look especially spectacular night column lit rottermann quarter industrial district port building century motif art nouveau historicism stylish apartment building shopping built widely regarded architectural masterpiece linnahall fine example soviet brutalist architecture designed raine karp riina altmae built moscow summer olympic game sailing event held scale exterior crumbling monumental eulogy mass culture marvel fact beneath crumbling exterior lies seat amphitheatre last held concert seat ice rink public negotiation regarding redevelopment continue maybe last chance overlooked architectural heritage current form estonian firefighting museum contemporary art museum ekkm already entering play museum look enter cafe exhibition room diverse old industrial space show prepared artist hence build bridge upcoming established scene peter naval fortress century coastal protection battery larger peter great sea fortress system built island kadriorg quarter beautiful rich seaside resort district mostly wooden building century century art deco functionalist structure baroque pearl kadriorg palace garden kadriorg palace imperial russian summer residence built italian architect niccolo michetti tsar peter acre park tsar classic mysterious russian soul preferred stay modest house nearby event signified beginning fame summer resort noble rich russian century palace house painting collection art portion complex occupied office president public national art museum kumu opened largest government built building liberation museum architecture enough justify house cyclopic house partly cut limestone rock permanent exhibition obviously focused estonian art wide interval quality piece worth interesting spontaneous turn interest artist socialist theme ussr period exhibition modern art mixed net social application surprising amusing missed overlooked song festival ground huge modernist structure estonian song festival held feature singer dancer addition massive audience festival played important role soviet union fall pirita pirita forest park botanic garden metsakalmistu last resting estonian seaside road tower nbsp standing structure observation deck floor highest europe spectacular view clear botanical garden botanic garden outskirt nbsp nbsp pirita sailing recreation destination nature plant lover greenhouse ticket office house variety plant flower tree cactus family spring temperature maintained inside greenhouse winter season outdoor garden vast varied flower collection metsakalmistu cemetery famous cemetery housing estonia president konstantin pats lennart meri chess player paul kere youre grave estonian celebrity peaceful experience stroll tree holy birgitta monastery monastery scandinavian female saint landmark century catacomb ruin guest house operated nuns pohja kalamaja quarter oldest suburb dating century probably inhabited fishermen kalamaja mean fish house mostly house worker current wooden building century patarei battery prison built tsar nichola fortress protect sea born attack turned notorious kgb prison prison ceased operation seaplane harbour lennusadam literally air port constructed purpose serving seaplane fleet spectacular domed concrete hangar today serve outpost maritime museum serving collection complete ship aeroplane maritime military equipment fit fat margaret inside hangar highlight complete submarine lembit interior visited shipwreck century collection smaller boat seaplane crown collection moored outside harbour steam powered icebreaker suur toll throughout museum state art technology solution employed engaging enjoyable museum wide range activity tour seaplane harbour bit peckish enjoy meal museum restaurant maru inside hangar haabersti estonian air museum museum building estonian vernacular architecture village milieu tsarist rule dark dense forest museum provide picture life hardship old time folklore society leigarid give dancing performance saturday sunday museum organiz special event easter provide insight estonian tradition culture organize party night jaanipaev saint john fire music dancing celebrate shortest night zoo enormous live exhibit youll world collection mountain goat sheep mean zoo defy reality relatively modest feature elephant crocodile expect larger zoo breathtaking maze lake size pond host bird summertime pets children cuddle children petting zoo check sight allow trip medieval experience medieval atmosphere historic hanseatic workshop market trader participate tour witness exciting tournament kultuurikatel creative hub former industrial site creative hub site event website energy discovery proto invention factory indoor amusement park amusement help glass kalev spa largest water park atlantis aquapark water park fun water equipment wave pool flow pool slide longest toddler separate smaller slide climbing deep swimming pool vembu tembumaa oldest largest amusement park family beach flag system regulate swimming green flag mean safe swim yellow flag mean swim isnt recommended red flag mean swimming advised risk pirita beach sandy beach summer local stroomi beach water clean warm gay friendliest beach lake harku lake draw lake dirtier swimming recommended watch viper shore kakumae beach water purest beach pikakari beach water quality fairly deep soon huge wave coming ship break shore joy swimmer historical katariina pier walk sport football men national soccer team play lillekula stadium sponsored coq arena capacity club playing soccer meistriliiga country tier levadia flora nomme kalju nomme tallinna kalev play esiliiga tier playing season simpel session international skateboarding bmx event international horseshow biggest international horse riding competition baltic showjumping dressage take saku suurhall film festival black night film festival poff festival combine feature film festival sub festival animated film student film children youth film music festival estonian song celebration held take choral singer gathered perform audience recognised unesco masterpiece oral intangible heritage humanity ticket sale dance festival performance song festival concert music week showcase festival aiming stage outstanding estonian talent night vibrant live venue networking event music industry professional international festival jazzkaar addition jazz concert tartu parnu old birgitta festival music theatre festival held ruin historical pirita bridget convent saku suurhall rocca mare largest concert exhibition space venue eurovision song contest hall facility excellent shopping easily reached trolleybus cheap compared major european city longer bargain deal overtly touristy expensive rest country authentic estonian inexpensive experience wrong price comparable department store shopping mall viru keskus landmark viru hotel busy bus terminal mall walking distance port serve local foorum keskus kaubamaja opened grand old department store unsurprisingly changed soviet time melon kaubanduskeskus stockmann department store chain close port rocca mare kaubanduskeskus kilometre old paldiski maantee consist prisma hypermarket tens smaller mostly fashion boutique restaurant ulemiste keskus kristiine keskus biggest mall dozen clothing shoe outlet nearly cafe restaurant countless shop service rotermanni kvartal rotermann quarter downtown shopping clothing department store restaurant viru keskus port old walking harbor viru valjak quarter hand side bargain clothe rotermann kaubamaja situated mere puiestee kaubamaja combined cafe restaurant floor seem surprisingly empty reasonable price boutique souvenir boutique souvenir choice viru street old side street stall selling traditional item woolen pullover crystal amber prepared bargain order reasonable price bargaining accepted baltic amber russian matryoshka doll widely souvenir boutique neither related culture sold estonian souvenir boutique mainly sell telliskivi mdash indie shop former industrial creative entrepreneurial district telliskivi home boutique selling good ranging arts clothe interior book shop record shop welcoming shop website ivo nikkolo fashion interested store post soviet designer brand ivo nikkolo geek shop pop culture collectible gaming store sell toy figure board game clothe accessory geek stuff market jaama turg market train station overrated overpriced gourmet food time price regular market rich local keskturg market nbsp bus station sell food clothe jouluturg christma market hall square late early sell knitwear wooden object decoration christma tree decoration gingerbread shopping christma tree middle worth taking photo stage sing carol course occasionally run santa market dont forget mug hot glogg sold stall vana turg translate old market square outside old vana turg clothe decoration item estonian sold maker knitted pullover caps glove belt slipper example sadamarket shopping daytripper arrive viking line eckero line cant bothered walk far terminal indoor market floor clothing bags food souvenir plus restaurant floor course alcoholic beverage price sadama turg another market ferry terminal selling quality estonian handicraft food alcoholic beverage cheap price record biit record music shop covering major media type somewhat focus vinyl especially indie electronic offering help music common genre upper floor store special atmosphere offering secondhand wide variety record rockroad record mainly metal rock pop blue owner know estonian russian rock music carry melodia label record raamatukoi grammofon record selection classical jazz estonian pop rock furthermore sell postcard stamp world clinic record shop friendly diverse record shop old packed restaurant claiming authentic estonian food particularly raekoja plat price restaurant raekoja plat generally expensive quality food restaurant square price steep estonian standard cheaper neighbouring explain weekend theyre packed tripping finn budget old maiasmokk oldest operating cafe dating coffee tea chocolate sweet savoury pastry cheap price spacious stylish decor door maiasmokk confectionery shop sell quality estonian chocolate pub kompressor tasty varied pancake dish fantastic food drink especially kvass iii draakon youd scoop nostalgia interesting special menu typical waitress play character sour waitress humor memorable experience pizza grande cozy delicious pizza affordable price pleasant service environment old loca pizza falafel hummus soup beer fast food joint wild staff increasing customer service borsch varenyk enjoy home ukranian food market balti jaama turg hoone industrial hall bistro bar tend become busy evening book lucky spare table value price old coca cola plaza kohvik narva cafe narva boasted old style interior preserved soviet today chic interior seem questionably authentic lady counter somewhat brusque mostly russian speaking prevent enjoying traditional food soviet worker delicious pastry baked premise puffid bakery puffid bakery snack taste curd pocket special children set croissant baguette salad filling mid range aed excellent organic biodynamic demeter food vegan option beautiful interior charming romantic wonderful service amarillo branch amarillo tex mex restaurant chain serve variety tex mex style food hamburger steak salad menu staff speak estonian english speak cinnamon indian european mix cuisine old serve international cuisine taste dont expect traditional estonian cuisine inside cramped terrace pikk street controvento little italian restaurant stashed side passage old offering genuinely excellent food reasonable price service flaw hard completely season week night want call ahead reservation pizza pasta dish crudo resto italian cuisine pizza pasta variety italian appetizer antipasti salad soup carefully selected wine classic cocktail italian dessert forno italian restaurant easily accessible tram bus line vabaduse valjak square frenchy bistro food bistro hip vintage industrial modern setting cheap guru indian restaurant outside old easy street kalev spa authentic indian cuisine plenty spice indian tea dessert kaja pizza kook pizza baked wood oven choice topping aligned traditional italian pizza table everybody share combining traditional element modern hip atmosphere kohvik moon restaurant minimalistic decor serve traditional estonian food russian influence voted restaurant prior reservation recommended mandatory kompressor assortment huge delicious pancake dont give temptation order portion pancake enough touristic madissoni grill baar kitchen type restaurant serve flame grilled food decent price especially lunch special king club sandwich burger oliver traditional restaurant heart old menu centered kind steak pasta vegetarian dish course ndash restoran peppersack middle ages themed restaurant block raekoja plat name dish medieval themed outdoor seating summer played medieval music outdoor stage seem sword fight oriental dance performance probably competitor olde hansa bit touristy indeed fun pirosmani georgian food thing everyone restaurant menu english sight food value khinkali harcho taverna gallo nero italian restaurant kadriorg park troika generous portion russian food warm summer month dine terrace winter head warm cellar fill zakuski anything appetizer plate enough cost dip pelmeni dumpling costing smetana sauce provided wash shot vodka umami considered restaurant originally mustamae restaurant came threat closing building housing demolished instead closing opened premise kalamaja umami estonian style cuisine international twist diverse wine list restaurant spacious terrace short walk ferry terminal burger worth trying vanaema juure translate grandma give idea warm welcome expect friendly attentive staff happy explain traditional dish excellent value money tiny reservation essential season meatball pork sauerkraut dont miss kama porridge dessert splurge bar fish wine pretty says modern cocktail bar restaurant serving vodka caviar fish dish wide range wine bocca trendiest restaurant feature italian cuisine nicola tanda bar enjoy cocktail snack busiest restaurant reservation highly recommended chedi modern asian kitchen supervised alan yau hakasan modern warm interior give retro asian impression reservation recommended weekend summer holiday kuldse notsu kort traditional estonian restaurant close square house beer vodka fresh buckthorn honey apertif blood sausage famous pork knuckle extra spicy mustard traditional dessert worth live traditional music night musi primarily wine bar light meal outside look cosy oasis think little rustic room display table behind wine bar welcoming staff selection wine glass relaxed meal friend dinner olde hansa ruling king purely touristy restaurant trying copy style simply medieval term food sense performance electricity music except live authentic modern invention house special bear meat marinated rare spice cooked fire honour waldemar brave king costing extraordinary beer honey beer likely meet local restaurant reopened chef martin meika ranno paukson focus modern estonian kitchen view old tchaikovsky suggest russian restaurant dont expect wooden bench traditional food folk music contrary selection russian delicacy ranging pancake caviar pelmeni pork wild mushroom fusion style cuisine rabbit jerusalem artichoke example expect delicious food price looking typical russian fare another dinner cafe plenty cafe especially interesting ones cafe mademoiselle cafe quality confectionery product wabadus kohvik freedom square cafe drink dish interior blend classical style prior decade modern time nightlife crazy nightlife proportion size armed mafioso drunken fight tend involve stag party exercise caution choosing venue strip club regular club money fleecing beer cost bars pubs old vanalinn beer house plenty beer choose authentically styled decorated bavarian beer hall beer site medovar honey beer dubliner irish pub nightlife axes attract younger relatively pub crawler puke front door baar widest selection beer pub quality import brewdog mikkeller english style pub grub featuring award winning fish chip monthly comedy night comedy quiz night hell hunt mean gentle wolf estonian comfortable homey pub old wide selection beer brew pretty decent food dont miss spare ribs karaoke baar legendary gathering finn bar lokaal destination local crave cozy atmosphere music kuku klubi founded art community claiming accessible cuisine former ussr russian occupation lab bar laboratory themed bar shot test tube definitely brain scan levist valja cozy alternative bar old dance floor nimeta baar bar fun olle koht mean beer establishment indeed serve type beer traditional estonian pub snack underground cellar suitable limited mobility texa honky tonk cantina texa style cantina casual corona bud frozen margarita churning electric mixer behind bar serious drinker tequila flight shot tequila give sampling youre likely remember von krahli avant garde theatre bar piana vyshnia bar serve kind easy decide moderately sweet cognac infused spirit cherry mean drunk cherry wont anything anywhere old old lounge floor radisson blu hotel spectacular view old baltic sea trendy indoor setting breathtaking outdoor terrace lounge serve variety light fare dinner menu wide selection beverage general public tsungel terrace bar restaurant railway station kohvik nord pier behind linnahall sea nightclub arena play middle road pop disco young crowd reasonably priced bonbon past strict face control decor chandelier leather seat price match hollywood club young estonian week lady night wednesday general party crowd weekend standard euro trash song started party doesnt rock gentlemen club golden strip club excellent interior design music xclub hall techno music club parlament bubblegum pop live event prive flashiest nightspot run legendary warehouse party organizer vibe foreign djs playing expensive strict face control dress riff russian club music vodka shot vibrant crowd desire base pretty empty fill terrace summer meeting point bus terminal stop wait bus morning club bouncer dont carry weapon start fight passive teater basement club vabaduse square late twen smaller group music focus door policy relaxed dressed start midnight virgin gentlemen club erotic show luxurious drink business traveller male

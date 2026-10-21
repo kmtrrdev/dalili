@@ -33,7 +33,7 @@ what is wrong, and which proposed changes were adopted or rejected — and why.
  engine/: planner (joint flight+hotel under budget, day slots, timelines) · optimizer (OR-Tools VRPTW per day,
           greedy fallback) · ranking (scorers) · validators (8 deterministic checks) · repair (knob ladder)
           · scoring (TripScore) · budget · knobs        journey.py: multi-city (chained single-city plans)
- recommender/: NumPy Doc2Vec (PV-DBOW) over 227 Wikivoyage guides + interaction-weighted taste vector
+ recommender/: MiniLM fine-tuned by distillation (gpt-5-mini) over 227 Wikivoyage guides + interaction-weighted taste vector
  eval/run_eval.py: 26 replayed end-to-end scenarios, 13 metrics
 ```
 
@@ -128,7 +128,7 @@ Rejected or reduced (not convinced):
 | 3 Constraints | typed `Constraint` (priority hard/soft/preference/nice-to-have, source explicit/inferred/learned/default, confidence, flexibility, evidence); "must" vs "if there's time" places; stated priorities | constraints.py, models.py, nlu.py, replanner.py |
 | 4 Conflicts | infeasibility detection, atomic relaxations priced from existing research, combination search, ranking by experience loss + priority of bent constraints + the traveller's priorities, confirmation required | conflicts.py |
 | 5 Trust | verified / calculated / estimated / unknown on every price; budget split by trust with evidence-based confidence; real fetch time and stale flag; price conflicts kept; menu meals labelled calculated | models.py, engine/budget.py, pricing.py, net.py |
-| 6 Personalization | preference memory (stated vs inferred, evidence counts, contradiction, half-life decay; only memory saved to the account); hybrid trip ideas (request fit + Doc2Vec taste) | preferences.py, service.py, suggest.py, recommender/engine.py |
+| 6 Personalization | preference memory (stated vs inferred, evidence counts, contradiction, half-life decay; only memory saved to the account); hybrid trip ideas (request fit + destination-model taste) | preferences.py, service.py, suggest.py, recommender/engine.py |
 | 7 Scoring / critic | hierarchical TripScore (feasible > requirements > preferences > quality; no hard violation above 49); weights follow the plan and the traveller's priorities (also in the flight+hotel objective); multi-objective critic acceptance | engine/scoring.py, engine/planner.py, workflow.py |
 | 8 What-if / repair | one comparison for chat and API (every plan, validity, requirements, constraint changes, incremental vs full replanning); repair before/after tracking with automatic revert | whatif.py, service.py, workflow.py |
 | 9 Evaluation | planner benchmark, ablation A-F, human-evaluation endpoint + statistics, data-quality gate, freshness and unverifiable-dietary checks | eval/*, evaluation.py, data_quality.py, engine/validators.py |

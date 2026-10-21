@@ -2,11 +2,12 @@ Luxor, Egypt
 Labels: history, culture | Split: test
 Source: https://en.wikivoyage.org/wiki/Luxor (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (9,359 characters) =====
+===== CLEANED GUIDE TEXT (9,365 characters) =====
 
 Luxor (Arabic: الأقصر, pronounced in Egyptian Arabic: lo’Sor) is the premier travel destination in Upper (southern) Egypt and the Nile Valley.
 
 Understand
+
  
 The dynastic and religious capital of Middle Kingdom (circa 2050-1710&nbsp;BCE) and New Kingdom (circa 1550-1080&nbsp;BCE) Egypt, Luxor has much to offer the visitor, from vast temples, to ancient royal tombs, via spectacular desert and river scenery and a bustling modern life.
 
@@ -17,6 +18,7 @@ The modern city of Luxor is on the east bank. This area has the train and bus st
 However, Luxor is also known as the hassle capital of Egypt (and therefore a good candidate for the world). You should expect to be on the receiving end of behaviour that would be considered harassment in most countries, including being followed when you leave the hotel by men shouting at you. Instead, Aswan further south is quite the opposite and much more relaxed. It is a good alternative in case you want to skip the Luxor experience altogether but not miss the beauty of the Nile and the nearby attractive sights.
 
 See
+
  
  
 
@@ -37,6 +39,7 @@ West Bank of Luxor:
 *Hot Air Balloon Rides
 
 Do
+
 The Valley of the Kings is one of the most famous archaeological sites in Egypt and a major attraction in Luxor. The valley contains the tombs of many New Kingdom pharaohs, including Tutankhamun, Seti I, and Ramses VI. Most tombs feature colorful wall paintings and hieroglyphic inscriptions that have survived for thousands of years.
 
 Visitors are advised to arrive early in the morning, especially during summer, as temperatures can become extremely high by midday. A standard entrance ticket usually includes access to several tombs, while some special tombs require additional tickets. Photography policies may vary, so checking current regulations before entering is recommended.
@@ -60,6 +63,7 @@ Hot air balloon rides. A tour in the morning for sunrise or evening for sunset. 
 
 
 Buy
+
 There are at least two different markets in Luxor. One is located in an air-conditioned hall, with shops located on either side of the hall. This market hall connects two major streets.
 
 The older market takes up several streets near the Luxor temple. It is a joy to walk through, as it is mostly pedestrian and is a welcome respite from the horse and carriages on the main streets. This market really feels like an old souk and the visitor is taken back in time. It is covered with a wooden trellis, shading people from the sun. Many of the shops offer the same items, so the wise buyer shops around and looks for the best price. One can often bargain better after going to several stores.
@@ -71,6 +75,7 @@ Buying anything may be very frustrating due to constant bargaining if you are no
 The touting in the main Souq in Luxor is so bad that it is an absolute nightmare walking through it. Any desire you had to buy anything will quickly disappear as dozens of men try every possible catch they have on you. These include: "You look lucky", "you look Egyptian", "come see my shop, no hassle," and guessing your nationality. But if you continue straight forward, you will come to the real Souq, where the locals go shopping, and the atmosphere changes completely.
 
 Eat
+
 Luxor is a vegetarian's paradise with lots of fresh seasonal vegetables such as tomato and cucumber.
 
 A meal often begins with pita-bread and mezze such as baba ganoush or taboulé.
@@ -88,6 +93,7 @@ For restaurants by district, see:
 *Luxor, West Bank
 
 Drink
+
 There is something of a social stigma attached to public drunkenness. Although Egyptians themselves sometimes choose to ignore this, for a foreigner to be drunk in public can give a bad impression. Most local pubs tend to be testosterone-filled hard-drinking dens where lone foreigners and especially lone women may feel uncomfortable.
 
 However, there are numerous places in Luxor to buy alcohol. Many restaurants, above the basic on the street places, sell lager and wine. They are generally made obvious by Stella signs outside or by having people drinking inside them.
@@ -98,6 +104,6 @@ There is a duty-free shop close to the north end of the Luxor Temple, slightly t
 
 Drinking in the street or in parks, although fairly widely done by locals, is not recommended for foreigners as it is illegal and alcohol is generally cheap enough in restaurants anyway.
 
-===== TOKENS THE MODEL TRAINS ON (633) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (633) =====
 
 arabic pronounced egyptian arabic losor premier travel destination upper nile valley dynastic religious capital middle circa nbsp bce circa nbsp bce vast temple ancient royal tomb spectacular desert river scenery bustling modern life thebe world heritage listed old capital bank nile ruin tomb modern bank train bus station hotel restaurant museum shop tour group stay bank travel site hotel bank relaxed vibe independent traveller stay hassle capital therefore candidate world expect receiving behaviour considered harassment country followed leave hotel men shouting instead opposite relaxed alternative case want skip experience altogether miss beauty nile nearby attractive sight bank temple complex temple complex karnak mummification museum bank valley king medinet habu tomb noble ramesseum temple deir bahari queen hatshepsut colossi memnon malkata hot air balloon ride valley king famous archaeological site major attraction valley contain tomb pharaoh tutankhamun seti ramse tomb feature colorful wall painting hieroglyphic inscription survived thousand advised arrive early morning especially summer temperature become extremely midday standard entrance ticket access tomb special tomb require additional ticket photography policy vary checking current regulation entering recommended hire bicycle ride ancient thebe take minute felucca ride sunset shouldnt cost person hour felucca cruise nile trip reverse trip recommended due river current book cruise ship night tracking pier noon cruise ship reception entrance walk mind guard barrier protection according price start night cheaper agent booking online hire donkey horse camel ride bank pharaoh stable coach cant horse beginner experienced rider sunset ride nile ride seem swim hotel pool dusty tomb temple iberotel sonesta lotus joseph hotel khaled ebn waled street hot air balloon ride tour morning sunrise evening sunset sure know included sunset tour generally sunset supposedly depending wind say impressive inexpensive ride sunrise flight last minute weather permitting nevertheless pay attention safety record mentioned wikipedia bad supposedly romantic ride cramp basket market air conditioned hall shop side hall market hall connect major street older market take street temple joy walk mostly pedestrian welcome respite horse carriage street market feel old souk taken covered wooden trellis shading shop item wise buyer shop look price bargain store merchant sit tea begin game bargaining feel becoming family buying simple cotton galabeya single galabeya store move item think want rest family buying anything frustrating due constant bargaining trick proven work price hundred time bigger reasonable price decide actually willing pay let say example ask price reply offered instead start price predefined price limit bargaining continue continue dropping pretty soon bargaining comfortable price rid vendor touting souq bad absolute nightmare walking desire anything quickly disappear dozen men possible catch look lucky look egyptian shop hassle guessing nationality continue straight forward real souq local shopping atmosphere change completely vegetarian paradise fresh seasonal vegetable tomato cucumber meal begin pita bread mezze baba ganoush taboule course meat poultry regional dish pigeon rabbit avoid upset stomach prefer stick beef heavily touristed hard reasonably executed food dairy product yoghurt gibna bayda cheese feta creamier accompany meal finally vegetarian dessert seem overly sweet taste specify low medium sweetness evening meal filling meet energy requirement busy advisable hearty breakfast water snack frequently restaurant district bank bank social stigma attached public drunkenness egyptian choose ignore foreigner drunk public give bad impression pubs tend testosterone filled hard drinking dens lone foreigner especially lone women feel uncomfortable numerous alcohol restaurant basic street sell lager wine generally obvious stella sign outside drinking inside air restaurant opposite temple entrance serve stella lager tax beer wine fairly reasonable price huge stella sign outside give somewhere convenient serving alcohol idea ask staff hotel direction cafeteria euphemistic pub pubs hard know exactly duty shop close temple slightly busy junction plastic shutter window guard outside passport arriving bottle spirit beer etc reduced price person bought egyptian equivalent sell electrical product close drinking street park fairly widely local recommended foreigner illegal alcohol generally cheap enough restaurant anyway

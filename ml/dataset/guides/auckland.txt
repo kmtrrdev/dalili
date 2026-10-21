@@ -2,13 +2,14 @@ Auckland, New Zealand
 Labels: culture, nature | Split: validation
 Source: https://en.wikivoyage.org/wiki/Auckland (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (13,089 characters) =====
+===== CLEANED GUIDE TEXT (13,096 characters) =====
 
 Auckland (Maori: Tāmaki Makaurau) is the largest city in New Zealand at 1.7 million citizens, and the main arrival point for visitors to the country. It is a vibrant multicultural city, set around two big natural harbours, and ranked as one of the most liveable cities in the world.  It is in the warm northern part of the North Island, on a narrow isthmus that joins the Northland peninsula to the rest of the island.
 
 For information on the smaller towns, settlements and islands in the wider area around the city, see the Auckland Region article.
 
 Understand
+
  
 Auckland is New Zealand's largest city, home to 1.5 million people, nearly one-third of the country's population and more than that of the entire South Island. It is the main economic and travel hub and home to an international airport. It's lucky enough to have its own beautiful landscapes, waterways, and other attractions to draw tourists in. It is not New Zealand's political capital though – that honour goes to Wellington. Auckland is by some measures the most isolated city of over 1 million people in the world; the nearest city of over 1 million people is Sydney, 2,160 km across the sea in Australia.
 
@@ -22,6 +23,7 @@ Auckland is very multicultural, with strong immigrant cultures. Some 40 percent 
 Tipping is not customary here. Excellent service is the norm, and service charges are often already included in the bill.
 
 See
+
  
 Auckland's many volcanoes offer great vantage points to take in the city and some of them have been turned into parks. Popular ones include Mt. Eden and One Tree Hill in Auckland Central and Mt. Victoria in Devonport.
 
@@ -43,12 +45,14 @@ Auckland's many volcanoes offer great vantage points to take in the city and som
 *The StarDome Observatory on the slopes of One Tree Hill. The park also contains Māori archaeological sites, a kid's playgrounds, two cafes and a working farm.
 
 Do
+
 * Movies. Ticket prices vary around Auckland. The cheapest are in the west, with adult tickets at WestCity in Henderson the lowest at $8.50, and a bit higher at $10 at LynnMall and Westgate. Hoyts Hibiscus Coast in the north on Whangaparaoa Peninsula is also cheap at $10.90. Elsewhere in Auckland prices are in the $18.50 to $19.50 range, except on Tuesdays when there is a $12.50 special (2017 prices).
 * Visit the Waitakere Ranges in West Auckland, replete with impressive waterfalls and rugged but beautiful beaches. Around 45&nbsp;min (peak hours) drive from central Auckland.
 * Eden Park in Central Auckland is the national stadium, hosting rugby union and cricket. 
 * Golf: notable courses are Gulf Harbour, and Formosa at Beachlands. 
 
 Beaches
+
 There are many beaches, due to Auckland's straddling of two harbours. The most popular ones are in three areas:
 
 *North Shore beaches (in North Harbour district) are on the Pacific Ocean and stretch from Long Bay in the north to Devonport in the south. They are almost all sandy beaches with safe swimming, and most have shade provided by pohutukawa trees. Most are accessible by bus. Takapuna Beach is the most centrally located, with a lovely beach-front café at one end. Just north of Long Bay is a family nudist beach. St Leonard's Beach is gay male nudist. Others are conventional.
@@ -63,6 +67,7 @@ There are many beaches, due to Auckland's straddling of two harbours. The most p
 **Muriwai is the second most popular of the west coast beaches. There's a colony of gannets (seabirds) which nest in huge numbers and are worth seeing year round. Muriwai has a café, a golf course, and lifeguards during summer.
 
 Buy
+
 The downtown area of the CBD has a number of souvenir shops for a range of budgets. Check around the lower Queen Street and lower Albert Street area.
 
 Hobson Street (at the top end) has a couple of large shops also stocking honey and health products.
@@ -73,6 +78,7 @@ There are a number of markets in Auckland; perhaps the most famous for Aucklande
 
 Eat
 
+
 There are some good cheap food courts (food halls) offering a variety of usually Asian foods usually priced around $10.  Try next to the Queens' Arcade at the bottom of Queen St (slightly hidden entrance), or the Metro award winning Food Alley (9-11 Albert St).  Very good value and good quality predominantly non-Asian choices are available at Elliott Stables (39 Elliott Street, near Wellesley). Also on the same block is the Atrium on Elliott (21 Elliott Street), a good quality food court of predominantly Asian food. Check out the once-a-week night markets at various locations on different nights.
 
 Britomart Precinct on the waterfront in the city centre is home to an array of popular and diverse bars and eateries.  Cafe Hanoi, Ebisu, Mexico Britomart, Giapo ice cream, to name a few.  A must visit.
@@ -82,9 +88,10 @@ Ponsonby is not far out from the CBD and features delicious restaurants such as 
 Viaduct Harbour provides upmarket dining, starting at $30 for mains. While this area has some very nice bars and restaurants, be wary of restaurants lacking customers and usually very quiet. It may be a sign of below average food or poor service.
 
 Drink
+
  
 You can find neighbourhood pubs in many parts of the city, but the highest concentration of bars and clubs is in Auckland Central — particularly around the Viaduct area, K Road, Ponsonby and Parnell.
 
-===== TOKENS THE MODEL TRAINS ON (935) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (935) =====
 
 maori tamaki makaurau largest million citizen arrival point country vibrant multicultural set natural harbour ranked liveable city world warm island narrow isthmus join northland peninsula rest island information smaller town settlement island wider region article largest home million nearly country population entire island economic travel hub home international airport lucky enough beautiful landscape waterway attraction draw political capital honour wellington measure isolated million world nearest million sea called sail yacht grace waitemata harbour hauraki gulf love sailing yacht launch registered america cup regatta held called volcanoe natural character come built volcanic field consist volcanoe individually extinct rangitoto latest erupt mid late century volcanic field feature urban beach park numerous arts cultural institution event home multitude sporting team frequently ranked highly international quality life poll mercer quality living ranking behind expensive house price alone double triple wellington christchurch hamilton latter nbsp multicultural strong immigrant culture percent population born oversea board puketapapa mount roskill howick oversea born resident born ones largest polynesian population world polynesian island nation expatriate living homeland population native maori population immigrant expat rich cultural mix celebrated wide variety festival event throughout tipping customary excellent service norm service charge already included bill volcanoe vantage point turned park ones eden tree hill devonport art cnr kitchener wellesley street largest collection national international art housed award winning landmark building edge albert park heart regularly host touring international exhibition calendar talk performance film screening children activity complement exhibition programme shop cafe entry permanent exhibition local excluding special exhibition international domain oldest park host weekend sport event historically important winter garden impressive flower bed display tropical plant statue scenic view waitemata harbour island hauraki gulf front museum war memorial museum parnell museum display collection significant importance prominent position domain constructed war memorial fought died theatre war cenotaph ground step leading museum entrance focal point annual anzac remembrance service floor record name stone sobering tomb list war event location museum contain excellent exhibition maori polynesian people arts craft maori cultural performance geography region planetarium cafe entry oversea donation invited resident resident zoo motion spring zoo home largest collection native exotic animal set hectare lush parkland minute kelly tarlton sea life aquarium scenic tamaki drive antarctic encounter underwater world aquarium trip transparent tunnel fish shark swim tank rays feeding talk motat museum transport technology spring situated zoo spring interactive museum item look avro lancaster bomber solent flying boat sir keith park memorial aviation collection national maritime museum cnr quay hobson viaduct harbour interesting exhibit chronicle maritime history entry aucklander sky tower cnr federal nbsp tallest standing tower hemisphere offering view nbsp fine dining orbit revolving restaurant stardome observatory slope tree hill park contain maori archaeological site kid playground cafe working farm movy ticket price vary cheapest adult ticket westcity henderson lowest bit higher lynnmall westgate hoyt hibiscus coast whangaparaoa peninsula cheap elsewhere price range except tuesday special price waitakere range replete impressive waterfall rugged beautiful beach nbsp min peak drive eden park national stadium hosting rugby union cricket golf notable course gulf harbour formosa beachland beach beach due straddling harbour ones shore beach harbour district pacific ocean stretch bay devonport sandy beach safe swimming shade provided pohutukawa tree accessible bus takapuna beach centrally lovely beach front cafe bay family nudist beach leonard beach gay male nudist conventional tamaki drive beach waitemata harbour upmarket suburb mission bay helier crowded family beach range shop lining shore swimming safe mission bay beach equivalent santa monica beach extremely hot summer kohimarama helier beach crowded lady bay helier historically nudist friendly beach frequented regular beachgoer accessible nbsp min walk cliff road coast beach tasman sea expanse sand rolling surf unpredictable rips swim lifeguard flag cover select beach min drive road narrow winding youll transport little shade shop sand beach dark colour due iron content volcanic origin smaller beach accessible foot major beach whatipu southernmost beach isolated last nbsp road unsealed condition track carpark beach conservatively signposted min walk volcanic outcrop surrounding beach native vegetation cabbage tree path manukau harbour beach separated paratutae island paratutae joined beach except tide cave signposted min walk car park track muddy winter cave spectacular theyve partially filled sand dogs permitted karekare beach whatipu considerably lifeguard patrolling beach summer karekare fall waterfall far road piha beach lifeguard summer notable feature lion rock separate side beach steep track partway lion rock decent view kitekite fall pleasant waterfall beach laird thomson track walkway piha isolated white beach anawhata road access beach fairly steep track unsealed road beach given henga bethell beach accessible road lifeguard summer erangi point separate unpatrolled oneill bay reached foot muriwai coast beach colony gannet seabird nest huge number worth seeing round muriwai cafe golf course lifeguard summer downtown cbd souvenir shop range budget check lower queen street lower albert street hobson street couple shop stocking honey health product street vulcan lane oconnell street fashion designer store international brand market famous aucklander otara avondale market serving respectively cheap food court food hall offering variety asian food priced queen arcade bottom queen slightly hidden entrance metro award winning food alley albert value quality predominantly non asian choice elliott stable elliott street wellesley block atrium elliott elliott street quality food court predominantly asian food check week night market location night britomart precinct waterfront home array diverse bars eatery cafe ebisu britomart giapo ice cream ponsonby far cbd feature delicious restaurant night ray ponsonby food court feature famous duck island serving flavour ice cream fairy bread lolly cake apple pie custard far viaduct harbour provide upmarket dining starting main bars restaurant wary restaurant lacking customer quiet sign average food poor service neighbourhood pubs part highest concentration bars club particularly viaduct road ponsonby parnell

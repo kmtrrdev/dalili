@@ -2,13 +2,14 @@ Bodrum, Turkey
 Labels: beach, nightlife | Split: validation
 Source: https://en.wikivoyage.org/wiki/Bodrum (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (13,175 characters) =====
+===== CLEANED GUIDE TEXT (13,184 characters) =====
 
 Bodrum is a tourist resort on the Southern Aegean coast of Turkey. It's a budget, mass-market destination with facilities to match, and in 2020 the Bodrum metropolis had a population of almost 182,000.
 
 The metropolis covers a large peninsula, but in tourist literature "Bodrum" is used to market an even greater area, effectively any resort served by Milas-Bodrum airport. This page describes the city and its westward extension through Gümbet, Bitez and Yahşi, its southeast extension as far as Yalı, and its north coast extension of Torba and along the highway from the airport. Turgutreis describes the west coast of the peninsula from Akyarlar up to Gümüşlük. Yalıkavak describes the villages on the peninsula north coast to Göltürkbükü. Some brochures even include Didim, which lying 100 km north is too far even to hear the discos of Bodrum. 
 
 Understand
+
  
  
 :: "Yokuş başına geldiğinde Bodrum'u göreceksin. Sanma ki sen geldiğin gibi gideceksin."
@@ -23,6 +24,7 @@ Nothing much else happened for 400 years, and Bodrum was just a sleeping fishing
 The climate is typically Mediterranean, with hot sunny summers and mild rainy winters - see the Southern Aegean climate chart. Climate plus popularity add up to a longer holiday season than other Turkish resorts. May is a good time for shore-based activities but the water temperature lags a month behind the land, so June-October is better for water sports, with sea temperatures above 24°C.
 
 See
+
  
 * 
 Bodrum Castle / Museum of Underwater Archaeology. Well-preserved bastion built from 1402 by the Knights Hospitaller, who called it the Castle of St Peter. Its towers are called the English, French, German and Italian for the four nations constructing them, a clue as to why this took most of a century; the Pope guaranteed its builders a place in heaven but failed to set a deadline. It withstood attacks by the Ottomans but fell to them in 1523. They converted the chapel to a mosque but didn't have much use for the castle, which was variously a garrison, a prison, or unoccupied. Since 1962 it's housed the Museum of Underwater Archaeology, displaying remarkable finds from local shipwrecks. The standout is the Uluburun wreck from the 14th century BC, late Bronze Age, laden with copper ingots, a rare insight into trade and travel in that era.
@@ -60,6 +62,7 @@ Zeki Müren Art Museum. Zeki Müren (1931-96) was a prolific, flamboyant and fra
 
 
 Further out
+
  
 * 
 Camel Beach. 
@@ -75,6 +78,7 @@ Uyku Vadisi.
  means "Sleeping Valley" — it's a scenic canyon through limestone bluffs above the village of Gökçeler, 45 km east of Bodrum. You can also explore İncirli Caves here. The hotel may pretend that you have to pay them admission - don't part with a single lira unless you wish to use their facilities.
 
 Do
+
  
 * Beaches in town are pebble but good for swimming. For sandy beaches go further west to Gümbet or Bitez.
 * Hamam or Turkish baths are at Fabrika Sk 48 southeast side of the city bus station. They're segregated by gender with both sides open daily 07:00-23:00.
@@ -95,13 +99,16 @@ Dolphin Park Bodrum. The dolphins are in the sea but in a fenced enclosure. You 
 * Ballet Festival is July / Aug.
 
 Buy
+
 * Lots of little convenience stores, there isn't a big shopping centre. 
 * Always haggle at street markets. For clothing you're aiming for half the quoted price.
 
 Eat
+
   
 : Bodrum catering is aimed at flesh-eating visitors. Most places serve halal as well as alcohol, but vegans and GF-ivores have limited choices. 
 Downtown
+
 * Orfoz at Zeki Müren Cd 13 is extolled in many guide books, but visitors find the food nothing special and the "tasting menu" little more than tapas. 
 * 
 Körfez. Quality seafood restaurant on the marina front, where they ensure you pay for the view.
@@ -127,6 +134,7 @@ Sunger Pizza. Good menu selection besides pizza.
 
 Gümbet
 
+
 * 
 The Windy Bay. Good spot for inexpensive food.
 
@@ -138,6 +146,7 @@ Vira's. Small hotel on Yahsi seafront serving good Turkish cuisine.
 
 
 Drink
+
  
 There is a vivid nightlife scene. Have no truck with ticket touts claiming that a particular pub or club has a special party tonight with some big name presiding. There will be no such thing.
 * Körfez is a long established rock bar on the waterfront at Cumhuriyet Cd 59, open M-F 13:00-01:00, Sa Su 13:00-03:00. 
@@ -147,6 +156,6 @@ There is a vivid nightlife scene. Have no truck with ticket touts claiming that 
 * Club Catamaran east of the castle is on a large catamaran, with a glass deck for the dance floor. At night the boat putters out into the harbour where lights have been set into the ocean floor. Lights plus food scraps thrown overboard draw fish to swim beneath the glass floor. It's open nightly 21:30-03:00.
 * Karnas Vineyards are in the hills 20 km northeast of town and have a restaurant.
 
-===== TOKENS THE MODEL TRAINS ON (1,003) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,003) =====
 
 resort aegean coast budget mass market destination facility match metropolis population metropolis cover peninsula literature market greater effectively resort served mila airport page describe westward extension gumbet bitez yahsi southeast extension far yal coast extension torba highway airport turgutreis describe coast peninsula akyarlar gumusluk yalkavak describe village peninsula coast golturkbuku brochure didim lying far hear disco yokus basna geldiginde bodrumu goreceksin sanma sen geldigin gibi gideceksin reach hill dont think youll leave came blue voyage fisherman halicarnassus put map founded grecian fell persian rule century appointed hereditary provincial regional governor called satrap nowaday word political jibe implying corrupt cruel petty ruler movy satrap killed last act favourite concubine help hero escape cost life satrap able mausolo ruled province caria walled called halikarnasso came rule sufficiently insecure legacy commission vast ornate tomb unfinished death gave word mausoleum halikarnasso fell turn alexander seleucid ruler roman byzantine knight hospitaller arrived rebuilt castle stood islet fused mainland waste want stone mausoleum castle called petronium peter fortress hence scarpered suleiman magnificent approached ottoman nothing happened sleeping fishing sponge diving village exile cevat sakir kabaagacl cretan turkish scholar writer environmental activist fellow already served jail shooting dead father didnt approve wife term seditious writing settled lyrical description traditional life began reach wider readership pen halikarna balkc fisherman halicarnassus boho community collected blue voyage traditional fishing gulet leisure wresting living sea inspired crowd wannabe european flocked search bygone med undiscovered unscathed concrete apartment block spoilt spanish italian coastline guess rapidly evolved another benidorm budget mass destination plus holiday home jaded istanbulite mean facility price competition dont far discover quiet cove ruin antiquity climate typically mediterranean hot sunny summer mild rainy winter aegean climate chart climate plus popularity add longer holiday season turkish resort shore based activity water temperature lags month behind land water sport sea temperature castle museum underwater archaeology preserved bastion built knight hospitaller called castle peter tower called english german italian nation constructing clue took century pope guaranteed builder heaven failed set deadline withstood attack ottoman fell converted chapel mosque didnt castle variously garrison prison unoccupied housed museum underwater archaeology displaying remarkable find shipwreck standout uluburun wreck century late bronze age laden copper ingot rare insight trade travel era maritime museum sailing fishing tradition gulet sponge fishing sea shell kzlhisarl mustafa pasa mosque castle built merkez adliye mosque another block built marina leisure craft shipyard general harbour century spell military work ottoman navy strengthened product traditional gulet masted nowaday run diesel auxiliary sail power tepecik mosque neyzen tevfik midway marina front built kumbahce mosque ataturk richly tiled interior mausoleum halikarnasso mausolo satrap regional governor death commissioned tomb grand accounted wonder ancient world mausoleum term ground tomb richly decorated wife artemisia ruled another interred finished tomb legend icon grieving widowhood supposedly mixing ashe legend seldom pointed sister earthquake shook tomb bits folk said masonry decoration somehow ended mansion prize piece shook british museum today explore foundation exhibit video presentation amphitheatre begun mausolo century took present form roman century restored event space seating myndo gate survivor stump called survivor monumental gate wall halikarnasso short course wall foundation explore myndo destination road lies buried beneath coast resort gumusluk heyday myndo grand gate diogene urged shut entire wisecrack doyen cynic school philosophy ottoman cemetery neyzen tevfik interesting funerary monument windmill degirmenleri dilapidation stand ridge bay line mid century grind corn flour stroll mostly sunset view bay pity trash similar windmill dot peninsula beyond zeki muren art museum zeki muren prolific flamboyant frankly camp singer songwriter born bursa launched career retired health failed house museum memorabilia costume costume camel beach resort strip attraction camel parade strand authentically bad tempered overpriced ride youd encounter waterbus ply marina ideally youd kamil koc camel coach theyve taken flixbus pedasa state territory handed halikarnasso reach dirt road okay dry weather follow step parking ruined acropolis explore kara ada meaning black island wooded uninhabited island visited boat trip pay extra swim hot spring scak suyu emerge cave coast theyre lukewarm theyre smelly sulphur cave sharp rock low ceiling shallow base uyku vadisi mean sleeping valley scenic canyon limestone bluff village gokceler explore incirli cave hotel pretend pay admission dont single lira unless wish facility beach pebble swimming sandy beach gumbet bitez hamam turkish bath fabrika southeast side bus station theyre segregated gender side windsurfing exposed coast turgutreis calm sheltered water selling point scuba diving half dozen dive shack trip qualified diver shipwreck dakota rock formation kara ada deepening cavern eelgrass meadow marine life med scuba training clear calm water advanced specialty course boat trip dozen company trip modern launch traditional gulet theyre based marina pick resort beach aquapark park waterslide wave river wave pool range pool disco food overpriced search keep football bodrumspor relegated play soccer tff league tier sehir stad stadium capacity hwy golf tennis club closest golf course northeast regnum resort vita park dolphin park dolphin sea fenced enclosure watch perform trick swim interact staff seem invent price modern jazz festival competition held ballet festival little convenience store isnt shopping haggle street market clothing youre aiming half quoted price catering aimed flesh eating serve halal alcohol vegan ivore limited choice downtown orfoz zeki muren extolled guide book food nothing special tasting menu little tapa korfez quality seafood restaurant marina front ensure pay view kumru cheap cheerful eatery value curly demeter pool garden restaurant bar garden restaurant mostly roast steak umurca pide salonu sfiha restaurant flatbread topped mincemeat umurca unlu mamulleri bakery dessert baklava berk balik friendly fish restaurant view castle sunger pizza menu selection beside pizza gumbet windy bay spot inexpensive food cafe inexpensive steakhouse late vira hotel yahsi seafront serving turkish cuisine vivid nightlife scene truck ticket tout claiming particular pub club special party tonight presiding thing korfez established rock bar waterfront cumhuriyet funk air club korfez pricey couple nightly adamik another old stager castle kule rock rock bar cumhuriyet couple club catamaran castle catamaran glass deck dance floor night boat putter harbour light set ocean floor light plus food scrap thrown overboard draw fish swim beneath glass floor nightly karna vineyard hill northeast restaurant

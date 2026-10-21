@@ -27,7 +27,7 @@ extend({
     stTrips: "Trips planned", stCountries: "Countries", stDays: "Days of travel", stScore: "Average TripScore",
     tasteT: "Your travel taste", tasteS: "What Dalili has learned from your trips, searches and interests.",
     mapT: "Your taste map", mapS: "Every dot is a destination - similar places sit close together. The star is you.",
-    you: "You", yours: "Places you planned or liked",
+    you: "You",
     coldT: "Tell us what you love", coldS: "Pick a few - your suggestions start right away and get better with every trip.",
     save: "Save", saved: "Saved", planThis: "Plan a trip", notForMe: "Not for me", undo: "Undo",
     dismissed: (c) => `${c} won't be suggested again.`, match: (p) => `${p}% match`,
@@ -36,9 +36,9 @@ extend({
       view: (c) => `Because you looked at ${c}`, interest: (i) => `Matches your love of ${i}`, similar: (c) => `Similar to ${c}`,
     },
     howT: "How your suggestions work",
-    howP: (n, w) => `A Doc2Vec model we trained from scratch reads the travel guides of ${n} destinations (${w} words) and learns what each place feels like. Your taste is the mix of places you planned, searched and liked, and the interests you picked - recent ones count more.`,
+    howP: (n, w) => `A small language model (MiniLM) that we fine-tuned reads the travel guides of ${n} destinations (${w} words) and understands what each place feels like - it learned that from a large AI model that read every guide. Your taste is the mix of places you planned, searched and liked, and the interests you picked - recent ones count more.`,
     howSim: "Finds the same kind of place (Precision@5)", howInt: "Ranks places by interest (MAP)",
-    ours: "Our model", tfidf: "TF-IDF baseline", random: "Random", lossT: "Training loss per epoch", howTest: "Measured on test destinations the model was never tuned on.",
+    ours: "Our model", pre: "Before fine-tuning", tfidf: "TF-IDF baseline", random: "Random", lossT: "Fine-tuning loss", howTest: "Measured on test destinations the model was never tuned on.", teacherT: (v) => `the large model it learned from: ${v}`,
     tAll: "All", tUpcoming: "Upcoming", tPast: "Past", tDrafts: "Drafts", noTrips: "No trips here yet.",
     noTripsP: "Plan your first trip - it will be saved here.", days: (n) => `${n} days`, travellers: (n) => `${n} traveller${n === 1 ? "" : "s"}`,
     stPlanned: "Planned", stDraft: "Draft", stNeeds: "Needs details", totalOf: (a, b) => `${a} of ${b}`, score: "TripScore",
@@ -74,7 +74,7 @@ extend({
     stTrips: "رحلات متخططة", stCountries: "دول", stDays: "أيام سفر", stScore: "متوسط TripScore",
     tasteT: "ذوقك في السفر", tasteS: "اللي دليلي اتعلمه من رحلاتك وبحثك واهتماماتك.",
     mapT: "خريطة ذوقك", mapS: "كل نقطة وجهة - الأماكن الشبه بعض قريبة من بعض. النجمة دي انت.",
-    you: "انت", yours: "أماكن خططتلها أو عجبتك",
+    you: "انت",
     coldT: "قولنا بتحب إيه", coldS: "اختار كام حاجة - الاقتراحات هتبدأ على طول وتتحسن مع كل رحلة.",
     save: "حفظ", saved: "اتحفظ", planThis: "خطّط رحلة", notForMe: "مش لي", undo: "تراجع",
     dismissed: (c) => `مش هنقترح ${c} تاني.`, match: (p) => `تطابق ${p}%`,
@@ -83,9 +83,9 @@ extend({
       view: (c) => `عشان بصّيت على ${c}`, interest: (i) => `تناسب حبك لـ${i}`, similar: (c) => `شبه ${c}`,
     },
     howT: "الاقتراحات بتشتغل إزاي",
-    howP: (n, w) => `موديل Doc2Vec دربناه من الصفر بيقرا أدلة السفر بتاعة ${n} وجهة (${w} كلمة) ويتعلم إحساس كل مكان. ذوقك هو خليط الأماكن اللي خططتلها ودوّرت عليها وعجبتك والاهتمامات اللي اخترتها - والأحدث ليه وزن أكبر.`,
+    howP: (n, w) => `موديل لغة صغير (MiniLM) عملناله fine-tuning بيقرا أدلة السفر بتاعة ${n} وجهة (${w} كلمة) ويفهم إحساس كل مكان - اتعلم الفهم ده من موديل ذكاء اصطناعي كبير قرا كل الأدلة. ذوقك هو خليط الأماكن اللي خططتلها ودوّرت عليها وعجبتك والاهتمامات اللي اخترتها - والأحدث ليه وزن أكبر.`,
     howSim: "بيلاقي أماكن من نفس النوع (Precision@5)", howInt: "بيرتب الأماكن حسب الاهتمام (MAP)",
-    ours: "الموديل بتاعنا", tfidf: "TF-IDF (مرجع)", random: "عشوائي", lossT: "الـ loss في كل epoch", howTest: "متقاس على وجهات اختبار الموديل ماتظبطش عليها.",
+    ours: "الموديل بتاعنا", pre: "قبل الـ fine-tuning", tfidf: "TF-IDF (مرجع)", random: "عشوائي", lossT: "الـ loss أثناء الـ fine-tuning", howTest: "متقاس على وجهات اختبار الموديل ماتظبطش عليها.", teacherT: (v) => `الموديل الكبير اللي اتعلم منه: ${v}`,
     tAll: "الكل", tUpcoming: "الجاية", tPast: "اللي فاتت", tDrafts: "مسودات", noTrips: "مفيش رحلات هنا لسه.",
     noTripsP: "خطّط أول رحلة - هتتحفظ هنا.", days: (n) => `${n} يوم`, travellers: (n) => `${n} ${n === 1 ? "مسافر" : "مسافرين"}`,
     stPlanned: "متخططة", stDraft: "مسودة", stNeeds: "ناقصها تفاصيل", totalOf: (a, b) => `${a} من ${b}`, score: "TripScore",
@@ -100,8 +100,8 @@ extend({
 });
 
 const $ = (id) => document.getElementById(id);
-const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const INTERESTS = [["beach", "🏖️"], ["culture", "🏛️"], ["history", "🏺"], ["nature", "🌿"], ["ski", "⛷️"],
+export const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+export const INTERESTS = [["beach", "🏖️"], ["culture", "🏛️"], ["history", "🏺"], ["nature", "🌿"], ["ski", "⛷️"],
   ["food", "🍽️"], ["nightlife", "🌙"], ["shopping", "🛍️"], ["relax", "🧖"], ["adventure", "🧗"]];
 const EMOJI = Object.fromEntries(INTERESTS);
 export const CURRENCIES = ["USD", "EUR", "EGP", "SAR", "AED", "KWD", "QAR", "GBP"];
@@ -562,20 +562,21 @@ async function loadModelReport() {
     const sim = r.test["similar_places_p@5"];
     const ints = r.test.interests;
     const bar = (v, cls) => `<i class="mb ${cls}"><em style="width:${Math.round(v * 100)}%"></em></i><b>${v.toFixed(2)}</b>`;
-    const row = (label, ours, base, rnd) => `<div class="mrow"><span class="ml">${esc(label)}</span>
-      <span class="mv"><small>${esc(t("ours"))}</small>${bar(ours, "ours")}</span>
-      <span class="mv"><small>${esc(t("tfidf"))}</small>${bar(base, "base")}</span>
-      <span class="mv"><small>${esc(t("random"))}</small>${bar(rnd, "rnd")}</span></div>`;
-    const loss = r.loss_per_epoch || [];
+    const row = (label, v, teacher) => `<div class="mrow"><span class="ml">${esc(label)}</span>
+      ${[["ours", v.model, "ours"], ["pre", v.pretrained, "base"], ["tfidf", v.tfidf, "base"], ["random", v.random, "rnd"]]
+        .map(([k, x, cls]) => `<span class="mv"><small>${esc(t(k))}</small>${bar(x, cls)}</span>`).join("")}
+      <small class="muted">${esc(t("teacherT", teacher.toFixed(2)))}</small></div>`;
+    const loss = r.loss_curve || [];
     const lo = Math.min(...loss), hi = Math.max(...loss);
     const pts = loss.map((v, i) => `${(i / Math.max(loss.length - 1, 1) * 100).toFixed(1)},${(4 + (hi - v) / (hi - lo || 1) * 22).toFixed(1)}`).join(" ");
-    box.innerHTML = `<p>${esc(t("howP", r.data.destinations, n.format(r.data.tokens)))}</p>
-      ${row(t("howSim"), sim.doc2vec, sim.tfidf, sim.random)}
-      ${row(t("howInt"), ints.doc2vec.map, ints.tfidf.map, ints.random.map)}
+    const mapOf = (k) => ints[k].map;
+    box.innerHTML = `<p>${esc(t("howP", r.data.destinations, n.format(r.data.words)))}</p>
+      ${row(t("howSim"), sim, sim.teacher)}
+      ${row(t("howInt"), { model: mapOf("model"), pretrained: mapOf("pretrained"), tfidf: mapOf("tfidf"), random: mapOf("random") }, mapOf("teacher"))}
       <div class="mloss"><small>${esc(t("lossT"))} (${loss.length})</small>
         <svg viewBox="0 0 100 30" preserveAspectRatio="none"><polyline points="${pts}" /></svg>
         <small dir="ltr">${loss[0]?.toFixed(2)} → ${loss[loss.length - 1]?.toFixed(2)}</small></div>
-      <p class="muted small">${esc(t("howTest"))} · dim ${r.config.dim} · ${r.config.epochs} epochs · ${n.format(r.data.vocabulary)} words</p>`;
+      <p class="muted small">${esc(t("howTest"))} · ${esc(r.base_model.split("/").pop())} · ${r.config.steps} steps · ${n.format(r.data.passages)} passages</p>`;
   } catch (_) { box.closest("details").hidden = true; }
 }
 

@@ -2,13 +2,14 @@ Oaxaca, Mexico
 Labels: food, culture | Split: test
 Source: https://en.wikivoyage.org/wiki/Oaxaca_%28city%29 (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (28,820 characters) =====
+===== CLEANED GUIDE TEXT (28,832 characters) =====
 
 Oaxaca (officially Oaxaca de Juárez, pronounced Wa-HAH-ka) is the colorful, delicious, and culturally-rich capital of the Mexican state of Oaxaca. Its historical city center, along with the archeological ruins of Monte Albán overlooking it, is a .
 
 This article also covers nearby villages in the Oaxaca Valley, including Santa María del Tule, Teotitlán del Valle, Tlacolula and Matatlán.
 
 Understand
+
 People have lived here since earliest times; the first settlements were Zapotec and Mixtec. The nearby sites of Monte Albán and Mitla were built by the Zapotecs and Mixtecs, and the former is regarded as a precursor to present-day Oaxaca. The Aztecs arrived around 1440, and the current name derives from Aztec "huax yacac", meaning "in the nose of the squash". In 1521, the Spanish led by Francisco de Orozco, came looking for gold. In the 19th century, it grew rich from the export of cochineal, the red dye.
 
 During the Spanish era, the name of the city was Antequera, but after Mexican independence it was changed to Oaxaca. It was known as "la verde Antequera" (the green Antequera) for the greenish stone that many of its buildings were built from - the city center today still has something of a green cast compared to many other Mexican cities, because of both the stone and the many colorful flowering trees lining the streets. Perhaps the most beloved Mexican president, Benito Juárez (whom the airport in Mexico City is named after) was born in the state and started his political career in the city. After his death in 1872, his family name was added to the city's official name, which since has been Oaxaca de Juárez.
@@ -18,8 +19,10 @@ In 2006, violent unrest began as a teacher's strike. At one occasion police open
 The city is a very-much government-run and tourist-safe area - in fact, it comes across as especially gentrified and tourist-oriented compared to many other historic Mexican cities. A massive 77% of the municipality has employment that is related in some way to tourism.
 
 See
+
  
 Centro Histórico
+
 Oaxaca's streets have a tranquil and organic feel to them. Much of the joy of an Oaxaca trip comes from simply strolling the streets of the Centro Histórico, sitting in a sidewalk cafe on the Zócalo, and soaking up the atmosphere.
 *
 Zócalo. Catch a street act, watch a clown entertain children, buy a souvenir or just people watch from a sidewalk cafe as time passes by. Dozens of vendors have set up booths around the square. This is also a frequent site for political sit-in protests, particularly by teachers protesting government changes to state education, leading to massive demonstrations in 2006 and 2014. As a result, the square often has tents.
@@ -36,6 +39,7 @@ Jardín Etnobotánico. A former army base, converted to a large botanical garden
 
 
 Museums and galleries
+
 * 
 Casa de Benito Juarez. Historic childhood home of former Mexican President Benito Juarez. It's an unassuming home fitting for a man of humble roots.
 
@@ -72,19 +76,23 @@ Museo de Arte Prehispánico de México Rufino Tamayo. Astoundingly large collect
 
 
 Do
-===Monte Albán===
+
+Monte Albán
+
  
 Just west of town is 
 Monte Albán. 
 . Inscribed on the UNESCO World Heritage List, this is one of the most impressive ruins in Latin America. The Zapotec built this site around 500 B.C. Early in its history, it had about 5,000 residents, but by 100 A.D. it had about 17,000 people living there, making it one of the largest cities in Mesoamerica at the time. By the time the Spanish arrived, it had been in decay for a long while. Take a taxi or an hourly shuttle bus. Allow two or three hours to walk around.
 
 Sports
+
 * 
 Estadio Eduardo Vasconcelos. Oaxaca has a popular and successful baseball team, the Guerreros, who play from late March through late August in a modern, well maintained stadium. Good concessions at reasonable prices.
 
 *Rugby is played on Saturdays with the Zinacantli and Jabalies Rugby Clubs, which host the annual Torneo de Dia de los Muertos.
 
 Outdoors
+
 * 
 Benito Juarez National Park. Large natural park with hiking trails, zip lines, and great opportunities for bird watchers.
 
@@ -93,6 +101,7 @@ Hoofing It In Oaxaca. Organizes regular hikes, both day and the occasional overn
 
 
 Events
+
  
 * 
 Guelaguetza festival. The Guelaguetza highlights the traditional practices of the various indigeneous cultures from the state of Oaxaca. The main days are the Mondays following July 16 (Feast Day of Saint Carmen). The term Guelaguetza, the most important custom of the Oaxacan people, derives from the Zapotec term "guendalezaa" which means "offering, present, fulfillment" because, during colonial times, the wealthy Spanish elite had the legal right to receive the first and best of the harvest collected by the indigenous people.
@@ -109,6 +118,7 @@ Noche de Rábanos. If you happen to be in Oaxaca on December 23, you won't want 
 
 
 Nearby villages
+
 Along Macedonio Alcala street are many tour operators with a range of destinations. Prices are from M$150 and offer full day trips to a selection of places such as wool rug makers, mezcal producers, Mitla, Monte Albán and Hierve el Agua. The tour cost doesn't include entrance fees or the often pricey restaurant lunch, so you may want to take your own food.
 
 To the east, down Highway 190 towards Mitla:
@@ -156,7 +166,9 @@ San Sebastian de las Grutas.
 
 
 Buy
-===Money===
+
+Money
+
 Many businesses, restaurants, and hotels in Oaxaca accept major credit cards as payment, but it is still important to have cash on hand for other times, such as for taxis and smaller restaurants and businesses and street vendors. There are two ATMs at the Oaxaca Airport.
 
 The easiest way to access cash in Mexican pesos is to go to a bank and use an ATM to withdraw cash from your own bank account. Alternatively, the currencies of other countries can be exchanged into pesos at banks or various currency exchange booths, both of which are quite common in the central part of the city. It might pay to look around for the best rates of exchange. You may find that the banks offer a better rate but they might be slightly less convenient to deal with. For example, the banks might require a photocopy of your main passport page, which you will have to get at a copying shop for a peso or so, and they might have longer queues. Their better exchange rate might make that worthwhile, especially if you are exchanging larger sums. Again, ATMs are far simpler than any of this.
@@ -168,6 +180,7 @@ ScotiaBank. A fairly busy place close to the Zocalo that seems to have favourabl
 
 
 Artesanias
+
  
 
 Oaxaca is blessed with an abundance of mercados and tianguis, all of which have at least some vendors selling local artesanias, local folk art.
@@ -179,6 +192,7 @@ Barro negro (black pottery) from Oaxaca is distinctive, often being mistaken for
 Weavers in Zapotec villages have been making rugs for almost 500 years. The tradition began in 1535 when Fray Juan Lopez de Zarate arrived in town with sheep, looms, and a mission to spread the gospel to the local Zapotec and Mixtec communities. Every handmade rug is a work of art with a range of designs, some surprisingly modern, many traditional geometric patterns. The village of Teotitlan Del Valle is particularly well known for having several master rug weavers whose workshops often welcome visitors to come learn about the techniques and the history behind the craft of fine rug making.
 
 Markets
+
  
 
 * 
@@ -202,6 +216,7 @@ Mercado de Abastos. One of the largest markets in Mexico, divided into sections 
 
 
 Grocery stores
+
 * Piticó has the largest (though not large) grocery stores within the Centro Historico.
 * 
 Soriana. A large chain which carries all the basics.
@@ -212,11 +227,13 @@ Chedraui. A large hypermarket (supermercado) with better selection and quality t
 
 Eat
 
+
 Foodies regard Oaxaca as having the most fascinating and delicious regional cuisine in Mexico, with ingredients and cooking techniques that have been passed from generation to generation for more than a millennium. The state's agriculture supplies heritage varieties of corn, squash, tomatoes, cacao and other products that are produced locally on very small scale farms. Like most of Mexico, corn is the staple food, with corn tortillas called blandas accompanying most meals.
 
 Oaxaca is known for mole, a diverse set of savory sauces made from fruits, chili peppers and spices, thickened with nuts or seeds. Some moles take days to make involving more than 40 ingredients, featuring chili peppers such as pasillas Oaxaqueños, amarillos, chilhuacles, chilcostles, chile anchos and costeños. You will encounter the famous "seven moles": manchamanteles, chichilo, amarillo, rojo, verde, coloradito and the king of moles: negro. Don't limit yourself to these, as there are as many moles as there are abuelas in kitchens across Oaxaca.
 
 Budget
+
  
 * 
 Mercado de la Merced. There are several excellent eateries in this traditional market. La Güerita, located on the northeast side of the market, is well-known for its memelas and huitlacoche, but has only a few seats. La Florecita (no. 37), with many more seats available, is particularly popular for its tlayudas and hot chocolate.
@@ -232,6 +249,7 @@ Basílica de la Soledad Plaza. The plaza in front of this church is filled with 
 In addition to markets and street food, you can find a few restaurants in Centro offering a comida corrida (set lunch) starting around M$100.
 
 Mid-range
+
  
 * 
 Boulenc. Should you tire of the traditional Oaxacan fare and desire something more familiar, this is the place to go.
@@ -271,6 +289,7 @@ La Capilla. Excellent place to eat, They have mole and various typical meals wor
 
 
 Splurge
+
  
 * 
 Casa Oaxaca El Restaurante. If you're looking to splurge on a meal that you won't be able to find in other restaurants in Oaxaca, Casa Oaxaca fits the bill. Ask for a rooftop table and enjoy the 5-course tasting menu for US$32/person. Treat yourself to corn mushroom soup, fresh fish with tomato marmalade and succulent sorbets. The wine list is decent with some excellent Spanish wines and good local options. There is another Casa Oaxaca restaurant, in the same location as Casa Oaxaca Hotel.
@@ -295,9 +314,11 @@ Levadura de Olla. Astounding restaurant whose menu is a veritable tour through t
 
 
 Drink
+
 Oaxaca is most famous for mezcal and hot chocolate. The state also has a thriving coffee industry. 
 
 Chocolate
+
  
 Chocolate has had special importance here since pre-hispanic times. Aside from being a foodstuff, it was also used as medicine and even money. It is most commonly mixed with hot water, cinnamon, almonds, and sugar into a concoction called chocolate de agua, served in large bowls with a local sweet bread roll.
 
@@ -309,6 +330,7 @@ There are other cocoa-based drinks worth trying:
 The eastern end of Mina Street (2 blocks south of Zócalo) are several chocolate shops where you can taste samples. Some of these also have cafes in the back where you can drink several types of hot chocolates.
 
 Cafés
+
 With a few exceptions, most of the cafes are closed on Sunday.
 *
 Café Kioo. Has Wi-Fi and electrical outlets and is open on Sundays.
@@ -321,6 +343,7 @@ Coffee Beans. A cozy cafe and bar selling various beers and a good selection of 
 
 
 Mezcalerias
+
  
 Mezcal is a distilled alcoholic beverage made from agave that is produced across the state of Oaxaca. (Tequila, the most widely-known agave distillate, can be considered a subtype of mezcal.) The mezcal produced here can come from any number of agave varieties (most commonly espadin), which is then cooked in a pit oven to impart a distinctive smoky note.
 
@@ -344,6 +367,7 @@ Mezcaleria Cuish. Run by a colectivo of rural mezcal producers, Cuish sells thei
 
 
 Bars
+
 Oaxaca is not renowned for its nightlife and, with the exception of the Zócalo and its surroundings, the streets can feel quite empty later at night. There are several rooftop bars around the Templo de Santo Domingo offering gorgeous views, particularly at sunset. Other bars and nightclubs are scattered haphazardly around the city center. 
 *
 Archivo Maguey. A popular bar that borders on a nightclub late at night. Contains a hidden bar and balcony located behind a not-so-secret moving bookcase.
@@ -354,6 +378,6 @@ Cantina Salón de La Fama. An extremely local bar with great service and occasio
 * 
 Oaxaca Brewing Company. Brewery serving several varieties of their own beer. Casual feel. Some food available too. Occasional live music.
 
-===== TOKENS THE MODEL TRAINS ON (2,206) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (2,206) =====
 
 officially juarez pronounced hah colorful delicious culturally rich capital mexican state historical archeological ruin monte alban overlooking article cover nearby village valley santa maria tule teotitlan valle tlacolula matatlan lived earliest time settlement zapotec mixtec nearby site monte alban mitla built zapotec mixtec former regarded precursor present aztec arrived current derive aztec huax yacac meaning nose squash spanish led orozco came looking gold century grew rich export cochineal red dye spanish era antequera mexican independence changed verde antequera green antequera greenish stone building built today green cast compared mexican city stone colorful flowering tree lining street beloved mexican president benito juarez airport named born state started political career death family added official juarez violent unrest began teacher strike occasion police opened fire striker assembled non violent demonstration teacher union member opposed state governor formed assembly people appo wing movement took government building function eventually ran anarchist community month government run safe fact come especially gentrified oriented compared historic mexican city massive municipality employment related tourism centro historico street tranquil organic feel joy trip come simply strolling street centro historico sitting sidewalk cafe zocalo soaking atmosphere zocalo catch street act watch clown entertain children souvenir watch sidewalk cafe pass dozen vendor set booth square frequent site political sit protest particularly teacher protesting government change state education leading massive demonstration result square tent catedral metropolitana largest church date unique interpretation baroque style architecture templo santo domingo spectacular church built subsequent baroque renovation restored particularly noteworthy side elaborate capilla virgen rosario capilla cruz huatulco contain legendary pre hispanic cross huatulco ornate golden interior decoration wedding spot expect celebration weekend jardin etnobotanico former army base converted botanical garden garden designed oaxacan artist toledo led project create largest collection living cacti agave plant path constantly growing collection show rich biodiversity oaxacan plant life entrance garden guided tour limited reservation accepted spanish tour hour english tour museum gallery casa benito juarez historic childhood home former mexican president benito juarez unassuming home fitting man humble root museo textil century mansion restored exhibit featuring design technique creative process production oaxacan textile addition museum regularly runs conference workshop casa ciudad feature exhibition devoted architectural style historical photograph urban art aerial photograph taken embedded underlit floor walk explore change occurred museo cultura museum regional history culture exhibit zapotec mixtec olmec civilization colonial revolutionary era history highlight collection treasure excavated tomb monte alban archaeologist alfonso caso museo occupy room convent santo domingo huge impressive view plaza botanical garden centro fotografico alvarez bravo established mexican photographer manuel alvarez bravo housed beautifully restored colonial building host changing exhibit work mexican international photographer instituto arte grafico smaller venue host rotating exhibit work national international artist museo arte contemporaneo housed building casa corte museum host exhibit nationally recognized modern artist museo pintore oaxaqueno late century building house collection historic modern oaxacan art floor museo palacio century building house mural mexican painter arturo garcia busto host rotating exhibit history museo grana cochinilla museum cochinilla bug nopal plant feed create cochineal dye red museo arte prehispanico rufino tamayo astoundingly collection pre hispanic sculpture work collected rufino tamayo artist involved early modernist movement celebration mexican heritage tamayo eye outstanding depiction face human form desire keep historic art leaving country piece exhibited work art anthropological artifact monte alban monte alban inscribed unesco world heritage list impressive ruin latin america zapotec built site early history resident living making largest city mesoamerica spanish arrived decay taxi hourly shuttle bus allow walk sport estadio eduardo vasconcelo successful baseball team guerrero play late late modern maintained stadium concession reasonable price rugby played saturday zinacantli jabaly rugby club host annual torneo dia muerto outdoor benito juarez national park natural park hiking trail zip line opportunity bird watcher hoofing organiz regular hike occasional overnight location sierra norte event guelaguetza festival guelaguetza highlight traditional practice indigeneous culture state monday following feast saint carmen term guelaguetza important custom oaxacan derive zapotec term guendalezaa mean offering present fulfillment colonial time wealthy spanish elite legal receive harvest collected indigenous dia muerto mexican holiday traditionally take candle lit cemetery today take front church historic involve partying festivity facial costume light possibly firework incredible experience behold moc adventure provide week tour dia muerto tour introduce history dead engaging unique celebration visiting panteon cemetery comprasa important event dia muerto noche rabano happen wont want miss unusual festival competitor create scene carved radish standing tradition started formal competition nearby village macedonio alcala street tour operator range destination price trip selection wool rug maker mezcal producer mitla monte alban hierve agua tour cost doesnt entrance fees pricey restaurant lunch want food highway mitla arbol tule tree largest base tree world legend old outside church lovely garden teotitlan valle village famous weaving book longer stay casa sagrada sure check vida nueva women cooperative teotitlan block square striving instill organic method dyes fundacion non profit microfinance organization runs tour teotitlan valle thursday saturday working fight poverty educate traveler power micro finance teotitlan participant meet group women applying micro loan participant hear live project anything weaving beautiful rugs famous making tortilla raising chicken making pinata selling flower market tour fee given interest micro loan group women trip run thursday saturday tlacolula tlacolula market sunday market oldest mesoamerica region gather sell ware wide selection cuisine yagul frequently overlooked favor extensive ruin mitla monte alban ruin yagul pastoral therefore similar original setting overrun matatlan self proclaimed world capital mezcal fabrica mezcal especially recommended mezcal visited tequila jalisco access vehicle producer rancho zapata restaurant owned man tio uncle pablo won prize mezcal mitla important zapotec religious built famous mesoamerican building intermingled modern zapotec called lyobaam dead inside tomb famous column life embrace live spanish helpful ruin official explain column correctly northeast sierra norte llano grande mountain village sierra norte beside wood industry provide called ecotourism tour phantastic scenic point bookable zocalo range tour depending guest trip providing accommodation village elevation approx altitude hiking exhausting impossible unpracticed participant hint speak spanish tramp instead waiting bus northwest agustin etla site centro arte agustin casa former factory transformed arts arrive shared taxi bus station cost drop block casa cenote sebastian gruta beautiful cenote hidden inside cave entrance impossible guide ask sebastian gruta money business restaurant hotel accept major credit card payment important cash hand time taxis smaller restaurant business street vendor atms airport easiest access cash mexican peso bank atm withdraw cash bank account alternatively currency country exchanged peso bank currency exchange booth common pay look rate exchange bank rate slightly convenient deal example bank require photocopy passport page copying shop peso longer queue exchange rate worthwhile especially exchanging larger sums atms far simpler working business likely speak english shouldnt problem figure process sure passport realize photocopy passport keep scotiabank fairly busy close zocalo seem favourable exchange rate artesania blessed abundance mercado tianguis vendor selling artesania folk art famous colorful fantastical animal carving alebrije alebrije created linare inspired fevered hallucination soon manuel jimenez took native began making fanciful creature carving copal wood town particularly village martin tilcajete oaxacan artist become demand alebrije jacobo martin sandiego julia fuente miguel sandiego inexpensive alebrije peso piece cost thousand peso barro negro black pottery distinctive mistaken modern technique tradition produced lived monte alban older piece gray matte finish newer piece metallic sheen decorative element due process discovered dona rosa commonplace weaver zapotec village making rugs tradition began fray juan lopez zarate arrived sheep loom mission spread gospel zapotec mixtec community handmade rug work art range design surprisingly modern traditional geometric pattern village teotitlan valle particularly master rug weaver workshop welcome learn technique history behind craft fine rug making market mercado artesania colorful handicraft market focusing hand woven textile additional shop selling alebrije wooden carving alfareria pottery mercado benito juarez everything clothing leather good mole fresh fruit flower bulk grain meat price bit unrefrigerated want supermarket instead brown rice ask bulk grain vendor arroz integral cigarette lighter check sidewalk vendor mercado merced traditional market focus food product produce organic specialty bread cheese tortilla food stand restaurant eating pochote xochimilco handmade tortilla tlayuda pastry fresh squeezed juice mezcal vegetable woven good delicious prepared food breakfast lunch sitting enjoy mercado llano park active market sidewalk surrounding park market driven authority relocated pantion mercado abasto largest market divided section food clothing arts craft ware market huge busy particularly saturday watch pickpocket grocery store pitico largest grocery store centro historico soriana chain carry basic chedraui hypermarket supermercado selection quality soriana stocked pharmacy bakery deli foody regard fascinating delicious regional cuisine ingredient cooking technique passed generation generation millennium state agriculture supply heritage variety corn squash tomatoe cacao product produced locally scale farm corn staple food corn tortilla called blanda accompanying meal mole diverse set savory sauce fruit chili pepper spice thickened nuts seed mole involving ingredient featuring chili pepper pasilla oaxaqueno amarillo chilhuacle chilcostle ancho costeno encounter famous mole manchamantele chichilo amarillo rojo verde coloradito king mole negro dont limit mole abuela kitchen budget mercado merced excellent eatery traditional market guerita northeast side market memela huitlacoche seat florecita seat particularly tlayuda hot chocolate mercado benito juarez market block southwest zocalo stall offering ready hot meal mostly wall sit mercado noviembre market size block filled breakfast lunch food stall food stall line street outside market serving hot savory tlayuda tostada women chapuline grasshopper youll countertop inside serve mole soup dessert entrance street surround market side entrance facing cabrera pasillo humo narrow hall filled smoke meat vendor cook purchase arguably deal ready meat basilica soledad plaza plaza front church filled store selling nieve snow frozen sorbet flavored fruit classic flavoring tuna fruit prickly pear cactus addition market street food restaurant centro offering comida corrida set lunch starting mid range boulenc tire traditional oaxacan fare desire familiar cabuche pleasant little restaurant fresh tasting oaxacan cuisine understanding vegetarian vegan requirement quince letra wide selection mole mole combination plate variety easily elsewhere itanoni non gmo corn based quesadilla taco tamale prepared fresh order comal casa abuela selection regional cuisine view balcony casa tio guero typical oaxacan cuisine deal food purified water comala serve selection oaxacan fare international favorite burger sandwich comida corrida restaurante maria bonita serve traditional oaxacan dish cooking class restaurante terranova pleasantly situated outdoor seating downstair indoor seating upstair reliable restaurant range traditional oaxacan dish excellent service red marisqueria serve fabulously fresh seafood lunch fixed dozen style another merced market barbacoa obispo cocina real comfortable outdoor dining room serving authentic mixtec barbacoa familiar unique traditional flavor profile order paquete awarded star michelin guide food affordably priced served everyday humble style making outstanding value cash strapped gourmet capilla excellent mole typical meal worth trip zaachila splurge casa restaurante youre looking splurge meal wont able restaurant casa fits bill ask rooftop table enjoy course tasting menu person treat corn mushroom soup fresh fish tomato marmalade succulent sorbet wine list decent excellent spanish wine option another casa restaurant casa hotel casa reforma traditional oaxacan cuisine chef alejandro ruiz olmedo casa restaurante slightly affordable price biznaga dine covered courtyard surrounded art wireless web surfer price reasonable creative oaxacan cuisine watching bonus toscana taxi restaurant serve martinis delicious seafood italian flair danzante comfortable authentic mix oaxacan modern restaurant food beautifully designed restaurant awarded michelin star bit pricey definitely worth atmosphere food quality night marco polo famous seafood marco polo favorite ceviche beer chile levadura olla astounding restaurant menu veritable tour mountain village century old cooking technique zapotec unusual ingredient harsh climate combine intensely flavorful regional dish vegetarian restaurant vegetable dish chef specialty restaurant awarded michelin star reservation strongly suggested famous mezcal hot chocolate state thriving coffee industry chocolate chocolate special importance pre hispanic time aside foodstuff medicine money commonly mixed hot water cinnamon almond sugar concoction called chocolate agua served bowl sweet bread roll cocoa based drink worth trying champurrado similar chocolate agua addition corn flour thicken breakfast menus tejate formed grinding corn flour cocoa seed mamey seed develop thick creamy foam widely market restaurant serving regional cuisine pozontle cocoa corn based cousin tejate far rarer mina street block zocalo chocolate shop taste sample cafe type hot chocolate cafe exception cafe sunday cafe kioo electrical outlet sunday cafe cuile coffee friendly staff atmosphere cafe oaxaquena slightly sweet cinnamon yum coffee bean cozy cafe bar selling beer selection coffee flavour hot cold decent price beer coffee little flavour doesnt mezcaleria mezcal distilled alcoholic beverage agave produced state tequila widely agave distillate considered subtype mezcal mezcal produced agave variety commonly espadin cooked pit oven impart distinctive smoky note casa mezcal bar serving mezcale bottled beer drink mezcal don agave produce type mezcal premise traditional tour distillery tasting amante mezcaleria quaint pricey mezcaleria tempo santo domingo featuring quality mezcal guitar player mezcaloteca outstanding mezcaleria offering customized tasting presented expert mescalero situ hundred bottle mezcal choose dizzying array producer varietal option young unaged plato complex dark anejo expert mescalero explain mezcal differ glass mezcaleria cuish run colectivo rural mezcal producer cuish sell branded mezcal operate tasting room side side tasting pure varietal espadin tobala tepeztate course cuish bars renowned nightlife exception zocalo surrounding street feel empty later night rooftop bars templo santo domingo offering gorgeous view particularly sunset bars nightclub scattered haphazardly archivo maguey bar border nightclub late night contain hidden bar balcony behind secret moving bookcase cantina salon fama extremely bar service occasionally hilarious artwork live music lucky brewing company brewery serving variety beer casual feel food occasional live music

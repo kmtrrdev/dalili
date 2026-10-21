@@ -2,11 +2,12 @@ Vilnius, Lithuania
 Labels: history, culture | Split: test
 Source: https://en.wikivoyage.org/wiki/Vilnius (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (30,108 characters) =====
+===== CLEANED GUIDE TEXT (30,118 characters) =====
 
 Vilnius is the capital and largest city of Lithuania. It has a beautiful baroque Old Town, listed as a , and excellent tourist facilities in all price ranges.  It stands on the River Neris in the southeast pocket of the country, the Dzūkija region, and in 2023 had a population of 629,000.
 
 Understand
+
  
 Vilnius has been central to the country's life for as long as there has been Lithuania, but that has often been a tragic tale. Its Neolithic people traded in Baltic amber. In the early Middle Ages five petty kingdoms combined into two then one, when Mindaugas in 1253 became Lithuania's first king and noble Christian convert. The country splintered after his assassination but was re-united under Gediminas, who established Vilnius castle — in legend on the site where a wolf in a dream told him to build. But the real wolves were his neighbouring countries, and finding a powerful ally meant adopting their religion. Poland was the best bet and a dynastic marriage in 1486 united the crowns, later the nations, and Lithuania became Roman Catholic. Vilnius Old Town was largely built in the following 150 years. 
 
@@ -17,12 +18,14 @@ Postwar the Soviet iron fist clutched Lithuania, until 1991 when civil unrest an
 Tourist information: Go Vilnius have a kiosk at the airport and another in Cathedral Square, both open daily 10:00-19:00. They speak good English and are helpful with maps, brochures, tours and suggestions, but they don't book accommodation
 
 See
+
  
  
 
 Vilnius Pass is a tourist discount card which in 2023 costs €37 for 24 hours, €47 for 48 hours and €56 for 72 hours. This excludes public transport and is frankly poor value; you'll struggle to break even. 
 
 Old town north
+
 : This starts from the castle and cathedral, and stretches south along Pilies gatve. Halfway down the main street becomes Didžioji, and this area is described below as Old Town south. In 1994 the entire Old Town was added to the UNESCO World Heritage List. 
 
 * 
@@ -67,6 +70,7 @@ Church Heritage Museum. Displays religious art.
 * Pilies gatve is the attractive main thoroughfare leading south from Cathedral Square past the university, to become Didžioji continuing past Town Hall to the Gate of Dawn. Saint Parasceve is a shocking pink Orthodox church at the changeover point. Most buildings along here are worth admiring, though the concrete modern block opposite the church could do with a visit by the Teutonic Knights' wrecking crew. The Šlapelių House Museum has exhibitions and events.
 
 Old Town south
+
  
 : From Saint Parasceve past Town Hall square down to Gate of Dawn
 * 
@@ -126,6 +130,7 @@ Gate of Dawn. The last survivor of the walled city's nine gates, various called 
 
 
 Užupis
+
  
 : "Užupis" means beyond the river - it's in a loop of the small River Vilnia, which flows north to join the bigger Neris. It developed from the 16th century as a Jewish ghetto, most of whose inhabitants were murdered in the Holocaust. Post-war it was a squalid neighbourhood, then from independence it gentrified as property values climbed. In 1997 the residents declared it to be an independent republic, with its own president, anthem, flag, and constitution. They picked April Fool's Day to celebrate independence, and the first article of their constitution sets the tone: "Everyone has the right to live by the River Vilnia, and the River Vilnia has the right to flow by everyone." Its envoys, which have yet to be accredited by any other nation, include an "ambassador for whistling in the streets".
 : Kalnų Park stretches north to the River Neris, and northeast is the district of Antakalnis. Attractions there and further east are also described in this section. 
@@ -175,10 +180,12 @@ Markučiai Park. This green area stretches east of the Pushkin Museum, linking w
 
 
 Elsewhere
+
  
 : The city's walls were destroyed around 1800 and it expanded in all directions, absorbing or replacing the hamlets around. This section describes a roughly-clockwise arc from Gate of Dawn through west then north of Old Town.
 
 Naujamiestis
+
 The "new town", right west of the old town
 * 
 Railway Museum. Presents the history of railways in Lithuania from Prussian times until today. Railway equipment small enough to fit into a room, tickets, staff uniforms and the like are on display in addition to scale models, pictures and videos. Child-friendly.
@@ -231,6 +238,7 @@ Church of St Catherine. Built in the 18th century in Baroque style and dedicated
 
 
 Right bank of Neris
+
 * 
 Vilnius TV tower. The 326.5 m high telecommunications tower was completed in 1980 and is visible from far and wide. You can ride the lift to the restaurant and observation deck. In 2022 / 23 construction work is under way but the place remains open.
 
@@ -249,6 +257,7 @@ Suderve Cemetery. Most of it is Roman Catholic burials but the north end is Jewi
 
 
 South of the railway
+
 * 
 Rasos Cemetery. The main resting place of 20th century notables. It holds the heart of Józef Piłsudski (1867–1935), founder of independent Poland, with the rest of him in Wawel in Kraków.
 
@@ -267,6 +276,7 @@ Verkiai.
  is a village 11 km north of Vilnius and now incorporated into the city: take bus #35 or #36. The extensive Regional Park stretches north along the riverbank. The imposing neoclassical palace was a bishop's residence and is now part of the university, no tours. Verkiai is best known for its Calvary, a reconstruction of the Way of the Cross in Jerusalem. This was established in the 1660s, demolished by the Soviets, and rebuilt in 2002. The Way comprises 22 chapels, 7 wooden and brick gates, and two baroque churches. It's supposed to be a faithful replica, though Jerusalem in 33 AD had few baroque buildings, and you'll struggle to see much resemblance between the bosky River Neris and the brook Kidron.
 
 Do
+
  
 * 
 Lithuanian Opera and Ballet Theatre. Grand ornate opera house with three or four weekly performances.
@@ -294,6 +304,7 @@ Plytinės.
 * Hot air balloons take to the sky above Vilnius and elsewhere in Lithuania. Operators include Oreiviai and Smile. In 2023 you might pay €140 per person.
 
 Buy
+
  
 * Money: ATMs are very common in Vilnius and most shops accept credit cards. 
 * Amber was created some 50 million years ago when Baltic conifer forests were flooded, and the tree resin became fossilised into a hard semi-precious stone. Every souvenir shop sells it.
@@ -331,9 +342,11 @@ CUP. Trading since 1974.
 * Gariunai is a huge market 5 km west of the city by the intersection of A1 and A19. It's open Tu-F 06:30-14:00, Sa Su 05:30-16:00. It scores high on quantity, sucks for quality, and traffic is a major problem: you could easily be queuing an hour to enter the site and an hour to exit.
 
 Eat
+
  
 
 Budget
+
 * 
 Vyno Rūselis. Traditional from-home Lithuanian lunches. Menu is in Lithuanian only; use your phone to translate.
 
@@ -366,6 +379,7 @@ Buga Sotu. Trad food: chicken, dumplings, kibinai, pizzas and carp. Live music o
 
 
 Mid-range
+
   
 * 
 Amatininkų užeiga. Lithuanian and international food.
@@ -401,6 +415,7 @@ Belmontas Cafe. Folk-themed outdoor restaurant by a 19th century mill and waterf
 
 Splurge
 
+
 * 
 Balzac. Traditional French cuisine, well prepared, great atmosphere.
 
@@ -427,11 +442,14 @@ Vanille Lounge. Upmarket seasonal European fare.
 
 
 Drink
-=== Coffee/Tea ===
+
+Coffee/Tea
+
 * 
 Kiras. Café in 1970s style, with happy memories of Soviet days: "chaika" a tea-house is a pun on "cheka" the secret police. They have another café at Pylimo 21b.
 
 Alcohol
+
  
 * Beer: the most popular local brand is Švyturys, meaning lighthouse; "Ekstra" is their lager. Other major brands include Kalnapilis, Tauras and Utenos.
 * Vodka in Lithuanian is degtinė. Popular brands include Auksinė and Gera. The town distillery doesn't offer tours. 
@@ -451,6 +469,6 @@ BIX. Bar founded by BIX rock band. Live rock / metal bands on Friday nights, kar
 * 
 Soho Club. LGBT club, gets very crowded.
 
-===== TOKENS THE MODEL TRAINS ON (2,262) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (2,262) =====
 
 capital largest beautiful baroque old listed excellent facility price range stand river neris southeast pocket country dzukija region population country life tragic tale neolithic traded baltic amber early middle ages petty kingdom combined mindauga king noble christian convert country splintered assassination gedimina established castle legend site wolf dream told build real wolve neighbouring country finding powerful ally meant adopting religion bet dynastic marriage crown later nation roman catholic old largely built following polishlithuanian commonwealth grew black sea power money shifted austro hungarian empire britain poor country cousin fell territory carved prussia russia snatching territory russian empire regained independence world war war russia captured polish exclave lithuanian capital moved kauna run world war russia soviet union seized territory history meant nazi invaded supporter jewish population slaughtered postwar soviet iron fist clutched civil unrest collapse ussr enabled country seize independence looked ally adopting capitalism joining nato european union crucially traveller welcoming budget airline friendly oriented wealth sight reflecting layer history information kiosk airport another cathedral square speak english helpful maps brochure tour suggestion dont book accommodation pass discount card cost exclude public transport frankly poor value youll struggle break old start castle cathedral stretch pily gatve halfway street become didzioji described old entire old added unesco world heritage list gedimina castle upper castle complex built century bashed abandoned lower castle site arsenal palace cathedral crooked castle destroyed ascend cobbled lane enter courtyard view cross hill ducal palace side courtyard shell converted performance space side storey red brick tower museum old arsenal arsenal lower castle built century stored heavy artillery national museum displaying country pre history early history arrival christianity century museum applied arts design arsenal lower castle built century stored heavy artillery national museum displaying country pre history early history arrival christianity century arsenal arsenal established century mostly served barrack national museum displaying history cultural heritage major restructuring work cathedral cathedral built reverting pagan worship fire destroyed fourth part fifth survive notably baroque chapel casimir lost tower collapsed pagan friend mostly neo classical structure completed crypt display ages tour catacomb standing belfry nearby square tile inscribed stebukla miracle mark human chain protest soviet union palace grand duke modern replica original built century ruined demolished merchant house built arsenal independence palace rebuilt original plan somehow deciding outcry blocked vista cathedral square become national museum display palace history reconstruction ceremonial hall presidential palace century palace seat president guided tour weekend palace public house toy museum interactive museum toys ages chid friendly course university university faculty beyond baroque core library courtyard observatory church john plural jono baptist evangelist church courtyard franciszek smuglewicz hall guided tour group prior booking adam mickiewicz museum display university history house signatory neo renaissance mansion act independence signed branch national museum depicting story separate nation independent spirit concession non speaker language literatu gatve literature street junction rusu gatve artwork dedication mounted wall literature linked obliquely dedication wikivoyage overdue street ratty alley nothing special church heritage museum display religious art pily gatve attractive thoroughfare leading cathedral square past university become didzioji continuing past hall gate dawn saint parasceve shocking pink orthodox church changeover point building worth admiring concrete modern block opposite church teutonic knight wrecking crew slapeliu house museum exhibition event old saint parasceve past hall square gate dawn national museum art huge display art century museum information digitisation limis digitisation online curating museum collection want grasp principle ontology youve seek physical exhibit youve listening culinary museum tableware cuisine nichola church russian orthodox church confused nichola mikalojaus kazy varnelis house museum varnelis abstract artist mostly lived usa returning house national museum displaying studio work hall present hall neoclassical built civic event simplest inside attend concert similar square venue fair concert demo contemporary art permanent display fluxus artwork plus rotating exhibition museum independent museum history museum illusion ames room pepper ghost hologram staple children love church casimir baroque church completed held faith spell museum atheism consecrated host organ recital bastion defensive wall wall built gate gate dawn survive artillery position museum military history orthodox church holy spirit built baroque rococo affiliated monastery holy spirit convent saint mary magdalen service russian nichola church roman catholic nick brick gothic oldest church documented holy trinity church ukrainian greek catholic monastery mostly built early century church theresa gate dawn indeed serving entrance gate virgin mary icon roman catholic church worshipper outside mass completed gate dawn last survivor walled gate called medininkai gate street led village sharp gate gate dawn straddled chapel icon virgin mary painted become pilgrimage destination mass held lithuanian polish enter chapel church theresa follow head scarve chapel window opened icon street sins alley gate pedestrianised emerge blinking modern world traffic uzupis uzupis mean beyond river loop river vilnia flow join bigger neris developed century jewish ghetto inhabitant murdered holocaust post war squalid neighbourhood independence gentrified property value climbed resident declared independent president anthem flag constitution picked fool celebrate independence article constitution sets tone everyone live river vilnia river vilnia flow everyone envoy accredited nation ambassador whistling street kalnu park stretch river neris northeast district antakalnis attraction described section anne church flamboyant church gothic style built little altered legend napoleon campaign brought declared hed lift church palm carry obviously untrue given horror retreat hed forced reached anne uzupis back onto river boundary entrance bridge church francis bernard bernadine church anne riverbank sturdy gothic building century incorporated wall loophole toshoot cossack cathedral theotoko anne stand entrance bridge uzupis built grand duke algirda country christian destroyed rebuilt changed time university anatomy department present building sort neoclassical meet byzantine style orthodox call virgin mary theotoko god bearer senior church russian belarusian angel uzupis square statue unveiled gabriel blowing trumpet probably blowing raspberry tartle modern art pre booked guided tour bernadine cemetery established bernardine monk church francis uzupis cemetery burial plot fell disrepair restored cross hill monument franciscan friar supposedly beheaded pagan crucified thrown river story nonsense last european country convert christianity indeed conflict king mindauga baptised country didnt convert duchy wooden cross erected hill early century needed periodic replacement tsarist stamped practice concrete cross built rid soviet built old jewish cemetery called cemetery river neris established century soviet sure destroy plus synagogue remain memorial old tombstone cemetery northwest district seskine church saint peter paul church wooden burned successor wrecked war russia present building commissioned micha kazimierz pac begun completed death exterior fairly plain inside baroque run riot saule cemetery century graveyard peter paul tightly packed funerary art notable atmospheric unkempt chapel poor state mean sunny called adjacent saule gatve pushkin museum alexander pushkin exile edge russia son lived mansion work translated lithuanian museum literary task period decor markuciai park green stretch pushkin museum linking pavilny regional park form greenbelt industrial commuter suburb park bosky walk dotted ancient burial tumuli elsewhere wall destroyed expanded direction absorbing replacing hamlet section describe roughly clockwise arc gate dawn old naujamiestis old railway museum present history railway prussian time today railway equipment enough fit room ticket staff uniform display addition scale model picture video child friendly franciscan monastery founded monk commemorated cross shabby condition access church church vytauta roman catholic redbrick gothic dating century present form church assumption vilna gaon jewish state museum early modern white russia ukraine jewish population russia jews encouraged violently live pale settlement rabbinical scholar elijah ben solomon zalman vilna gaon museum describe community tribulation eventual obliteration museum museum modern contemporary art changing exhibition frank zappa bust frank zappa commemorated bust kalinausko gatve fans erected donating replica baltimore maryland childhood home church constantine michael orthodox church built mark anniversary romanov dynasty dinky onion domed building lithuanian theatre music cinema museum little non speaker lithuanian exhibit transcend language money museum history money collection coin bill world museum occupation freedom fight former kgb headquarter put death spite plural specifically lithuanian experience soviet rule described experience nazism reveal dark corner national history called museum genocide victim entirely omitted genocide jewish population kgb interrogation cell basement describe death dissident version history beaten confessing didnt exist happened church philip jacob red white baroque church order completed house icon virgin mary hodegetria iconography mean show point infant salvation mankind seima palace complex house lithuanian parliament building completed seat lithuanian soviet socialist look parliament hall building opened building added house committee technical service exhibition building public building friday book guided tour vingis park bound wooded easily lose child loop river neris vingis mean bend curve together park woodland downriver create greenbelt side enter ciurlionio gatve span busy ring road multinational military cemetery entrance palace demolished tsar alexander learned napoleon invasion scarpered entourage modern amphitheatre stage rock concert event church catherine built century baroque style dedicated saint catherine benedictine nunnery church elegant facade intricate stucco decoration artwork lost moved lithuanian national museum art bank neris tower telecommunication tower completed visible far wide ride lift restaurant observation deck construction work remain church lady sign built neo byzantine style orthodox church looking gedimino prospekt financed fundraising russian empire modern business district snipiske river century glass steel skyscraper visible afar europa tower energy technology museum power plant opened exhibit electricity generation industrial technology child friendly interaction transformation tesla inspired wizardry enable distance transmission electricity escape room player suderve cemetery roman catholic burial jewish interment destroyed cemetery scholar vilna gaon railway raso cemetery resting century notable hold heart jozef pisudski founder independent rest wawel beresnaki paliepiukai point youre passing hell bent taking shortest possible route hammerfest odesa century struve organised extensive sery cartographic observation geodesic circle arc measure precise size shape earth triangulation point werent straight line roughly followed longitude original point simple marker field road nearby museum europe air sculpture park europa park rest dusk verkiai village incorporated bus extensive regional park stretch riverbank imposing neoclassical palace bishop residence university tour verkiai calvary reconstruction cross jerusalem established demolished soviet rebuilt comprise chapel wooden brick gate baroque church supposed faithful replica jerusalem baroque building youll struggle resemblance bosky river neris brook kidron lithuanian opera ballet theatre grand ornate opera house weekly performance oskara korsunova theatre okt avant garde theatre southwest edge old old theatre creaky atmospheric old theatre performance mostly russian football lff stadium capacity railway bus station host men national soccer team host zalgiris play lyga country tier playing season zalgiris mean green field commemorate battle grunwald smashed teutonic knight playing lyga riteriai relocated trakai stadium european fixture rebuilt hold avia solution group arena siemen arena rebranded multi purpose capacity vary event basketball capacity host ryta country leading team regular event ice hockey game rock concert lindyhop kluba lindy hop swing jazz dance style evolved enjoying revival club lesson retro gear optional kart kartlanda elektrokart dariaus gireno railway station battery powered kiddy affair plytine scale outdoor track northeast hot air balloon sky elsewhere operator oreiviai smile pay person money atms common shop accept credit card amber created million ago baltic conifer forest flooded tree resin fossilised hard semi precious stone souvenir shop sell supermarket chain maxima rimi barbora iki aibe norfa hale turgus market hall built looking railway terminus inside side food stall couple eatery adjacent modern wing clothing household ware akropolis mall multiplex cinema ice rink centro pasaza mall edge old europa opened joined mall branch helio branch iki ozas biggest shopping mall store service plus multikino cinema panorama multi level business district outlet park shopping mall discount store cup trading gariunai huge market intersection score quantity suck quality traffic major problem easily queuing hour enter site hour exit budget vyno ruselis traditional home lithuanian lunch menu lithuanian phone translate vegafe vegan cafe pily kepyklele cafe bakery university building saint john kamikadze japonu virtuve japanese restaurant usual offering plus plus plus gastrobara fast food chain deveti call gastropub bar pizza pita bread sandwich radharane vegetarian indian restaurant menu choice wok walk outlet asian cuisine franchise feju kepyklele bakery cafe pastry snack pizza ice cream infested lithuanian fairy youll adore upchuck buga sotu trad food chicken dumpling kibinai pizza carp live music friday saturday youd likely visited tower baulked restaurant price mid range amatininku uzeiga lithuanian international food cozy named laid restaurant upstair bar downstair serve hearty modern food vegetarian option mint vinetu independent bookstore coffee shop forta original become chain pub style food theme nation cuisine outlet vilniaus old konstitucijo river mano guru mostly vegetarian food alcohol staff former drug misuser vapiano italian style fast casual restaurant german global chain tasty salad carte pasta pizza front guest etno dvara chain serving trad food cepelinai potato pancake ausro vartu gate dawn pily university rustic interior slightly touristy introduction cuisine later medininkai lithuanian food gate dawn review feel trappy sakwa cafe storey building retro styled suburban house lithuanian polish european cuisine fabai doesnt caucasus cuisine worth trip bar grill youll queue peak time styled country tavern grillroom ballroom bar billiard hall belmonta cafe folk themed outdoor restaurant century mill waterfall splurge balzac traditional cuisine prepared atmosphere bistro restaurant wine bar selection european cuisine cagino named architect nikolai chagin designed church led revival byzantine style russian food occasional gimmick dinner dark check ahead date antonio excellent upscale italian food provence grand dining classic interior loky specializ lithuanian traditional cuisine game markus steakhouse music vanille lounge upmarket seasonal european fare coffee tea kira cafe style happy memory soviet chaika tea house pun cheka secret police another cafe pylimo alcohol beer brand svytury meaning lighthouse ekstra lager major brand kalnapilis taura uteno vodka lithuanian degtine brand auksine gera distillery doesnt tour liqueur midus honey trejo devynerio nine written alaus namai saloon offering beer lithuanian brand artistai courtyard relax watch sunset friendly service live music snekutis table beer hall trad beer food bix bar founded bix rock band live rock metal band friday night karaoke thursday rock music dance floor surprisingly food soho club lgbt club crowded

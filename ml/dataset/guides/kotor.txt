@@ -2,12 +2,13 @@ Kotor, Montenegro
 Labels: history, nature | Split: validation
 Source: https://en.wikivoyage.org/wiki/Kotor (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (8,605 characters) =====
+===== CLEANED GUIDE TEXT (8,616 characters) =====
 
 :Not to be confused with Koror in Palau.
 Kotor is a coastal town in Montenegro with a population of 22,000 (2023). It is known for its beautiful architecture and natural setting in the deepest part of the Bay of Kotor. It has developed around Stari Grad ("old town"), the city's old town and best known landmark, which is listed with UNESCO World heritage sites. The city walls are separately listed together with five other Venetian city walls along the Adriatic and in Italy. 
 
 Understand
+
  
 Kotor is in the secluded Boka Kotorska bay, on Montenegro's northern coast. The bay is the deepest natural fjord in the Mediterranean Sea, and the scenery around it (including the steep mountains which come almost to the waterfront) is spectacular.
 
@@ -17,10 +18,12 @@ Kotor and the entire Kotor Bay have long been a vacation and second-home destina
 
 Local information
 
+
 * City government website
 
 
 See
+
 
  
  
@@ -45,6 +48,7 @@ Aquarium Boka. Small aquarium featuring entirely local marine species. Panel des
 
 
 Do
+
 * 
 Stroll on the wall around Kotor. This is a nice evening or day walk. Take a rest, enjoy the view or bring some food and drinks.
 
@@ -57,6 +61,7 @@ Gospa od Skrpijela.
 
 
 Hiking
+
 * 
 Climb up inside the Fortress. The fortifications are some 4.5 km away, directly above the walled city, on almost vertical cliffs. Upon reaching the fortress, you will be rewarded with a view of Kotor and the bay. Entry is advisable only for relatively physically fit people. Pay to use one of several entrances in the old city (near either the north or south gates) to climb up the 1,350 steps along switchbacks. The path is in relatively good shape, although some of the steps are broken. This 365-m ascent may take 30 minutes to 1 hour, depending on your physical capabilities. Ticket gate hours are until 20:00 (earlier in shoulder or off season). They are very strict about the ticket policy. Everyone will be checked, and you must return your ticket stub at a small table upon leaving. If you cannot show a ticket stub or receipt as proof, you will be charged the full price a second time.
 
@@ -69,16 +74,19 @@ Hike to Mausoleum of Njegoš. This is a full-day hike continuing further outside
 
 Buy
 
+
 Old town has many boutiques. There is an open market just outside the old town; there you can buy fresh vegetables, sunglasses and many other things.
 
 There are abundant banks and ATMs throughout the Stari Grad. Banks are closed on Sunday or holidays. Travellers cheques are generally not accepted, not even by banks. Note that not all restaurants or shops accept credit cards, either.
 
 Eat
+
 At the market, try to sample local smoked ham (njeguški pršut) and cheese (njeguški sir) from the nearby village of Njeguši, which are two of the Montenegrin cuisine's most famous products.
 
 Kotor offers a variety ranging from classy restaurants offering fresh seafood and national cuisine to fast food offering pizzas, barbecue, etc. There is a large produce market outside the city walls. Hamburgers there cost €1. Cafes and restaurants line the bay-side promenade, which stretches north through Dobrota.
 
 Budget
+
 * 
 Forza. The most popular pastry shop in Kotor.
 
@@ -94,6 +102,7 @@ Pizzeria "POCUO". Pizzeria attached to hotel serving various other local and Ita
 
 
 Mid-range
+
 * 
 Tanjga. Family-run butcher and restaurant, massive amounts of grilled meats and great service
 
@@ -112,6 +121,7 @@ Babilon restaurant and hotel. Affordable prices, dining on the Boka Kotorska Bay
 
 Drink
 
+
 Again, the old town is the hotspot for relaxed drinking espresso in the shade of the medieval walls. There are many cafes in the old town, but still, it's hard to find a place to sit on a sunny day. Tipping is not necessary although you may leave your change by simply rounding up. Befriending the waitstaff can get you quite far.
 
 Espresso costs €2 or more. Soft drinks and juice cost €3-4
@@ -120,10 +130,11 @@ Sample the Montenegrin wines, "Vranac", "Pro Corde", "Krstac", "Cabernet", "Char
 
 Nightlife
 
+
 A night out in Kotor usually begins in the open bars in the old town. Pubs in the old town are only open until 01:00.
 
 The best club is Maximus, which is located in the old town, and closes at 05:00.
 
-===== TOKENS THE MODEL TRAINS ON (626) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (626) =====
 
 confused koror palau coastal population beautiful architecture natural setting deepest bay developed stari grad old old landmark listed unesco world heritage site wall separately listed together venetian wall adriatic secluded boka kotorska bay coast bay deepest natural fjord mediterranean sea scenery steep mountain waterfront spectacular old stari grad fully walled mountain function rear wall gate access sea gate bay river gate gurdic gate cars allowed stari grad standard road name stari grad building numbered landmark direction generally square named church direction relate closest square closest gate obvious landmark clock tower inside gate square entire bay vacation home destination european british serbian english common language waitstaff hotel staff speak english information government website tryphon cathedral built century reconstructed earthquake romanesque gothic architecture chapel hold remain tryphon patron saint nicola church biggest orthodox church old maritime museum floor photograph uniform weapon painting model ship castle giovanni ruin castle trail running fortification panoramic view walled bay background church lady remedy church slope mountain overlooking built century plague survivor honor holy mother accessed climbing trail fortification old aquarium boka aquarium featuring entirely marine specy panel description montenegrin english stroll wall evening walk rest enjoy view bring food drink boat trip middle bay island sveti djordje george island gospa skrpijela lady rock worth seeing accessible boat leave outside old gate cheaper bus perast water taxi island hiking climb inside fortress fortification directly walled vertical cliff reaching fortress rewarded view bay entry advisable relatively physically fit pay entrance old gate climb step switchback path relatively shape step broken ascent minute hour depending physical capability ticket gate earlier shoulder season strict ticket policy everyone checked return ticket stub table leaving cannot show ticket stub receipt proof charged price climb outside fortress alternatively wish skip rewarded similar view trail behind old power station outside gate runs parallel northeast fortification trail gps starting point exit old walled gate cross bridge continue intersection road turn road continue walking path house road path become trail behind abandoned power station easiest navigate trail osmand google maps reached cafe partially mountain trail turn onto path behind cafe abandoned church george reach church look old opening window fortification ladder opening give entrance fortification nevertheless doesnt hurt checking path strenuous paid option take longer prepared bring plenty water rewarded cafe window fortress hike mausoleum njego hike continuing outside fortification passing zip line little restaurant half lovcen national park elevation old boutique market outside old fresh vegetable sunglass thing abundant bank atms throughout stari grad bank sunday holiday traveller cheque generally accepted bank note restaurant shop accept credit card market sample smoked ham njeguski prsut cheese njeguski sir nearby village njegusi montenegrin cuisine famous product variety ranging classy restaurant offering fresh seafood national cuisine fast food offering pizza barbecue etc produce market outside wall hamburger cost cafe restaurant line bay side promenade stretch dobrota budget forza pastry shop pizzeria pronto youre ready slice fish grill fresh fish seafood cooked order side dish seafood risotto fry chip highly advisable order advance quantity limited show advance order pizzeria pocuo pizzeria attached hotel serving italian dish friendly service pleasant dining mid range tanjga family run butcher restaurant massive amount grilled meat service bastion restaurant busy lunchtime venue fish cesarica serve excellent cheap dalmatian food cuttlefish risotto forza mare seaside restaurant hotel outside babilon restaurant hotel affordable price dining boka kotorska bay class seafood menu old hotspot relaxed drinking espresso shade medieval wall cafe old hard sit sunny tipping necessary leave change simply rounding befriending waitstaff far espresso cost soft drink juice cost sample montenegrin wine vranac pro corde krstac cabernet chardonnay niksicko beer montenegrin brandy called rakija choice warm evening especially grape brandy montenegrin loza prvijenac kruna litre bottle wine supermarket outside stari grad nightlife night begin bars old pubs old club maximus old close

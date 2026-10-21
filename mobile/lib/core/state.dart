@@ -65,7 +65,6 @@ class AppState extends ChangeNotifier {
     return 'http://127.0.0.1:8001';
   }
 
-  bool get signedIn => user != null;
   Map<String, dynamic>? get plan {
     final plans = trip?['plans'] as Map<String, dynamic>?;
     if (plans == null || plans.isEmpty) return null;

@@ -2,15 +2,17 @@ Barcelona, Spain
 Labels: beach, culture, food, nightlife | Split: test
 Source: https://en.wikivoyage.org/wiki/Barcelona (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (27,906 characters) =====
+===== CLEANED GUIDE TEXT (27,928 characters) =====
 
 Barcelona is Spain's second largest city, with a population of nearly two million people, and the capital of Catalonia. A major port on the northeastern Mediterranean coast of Spain, Barcelona has a wide variety of attractions that bring in tourists from around the globe. The many faces of Barcelona include the medieval Old Town, and the unique street grid resulting from 19th-century urban planning. The city has long sandy beaches and green parks on the hills, pretty much side-by-side. It is also famous for a number of prominent buildings, of which the most-known are by the architect Antoni Gaudí, including his Sagrada Família, which became Barcelona's symbol to many.
 
 Founded more than 2,000 years ago as the ancient Roman town Barcino, Barcelona is as historic as it is modern, with a constant flow of projects changing the face of the city and long-standing penchant for design and innovation. Thanks to the wealth of attractions, a very well-developed accommodation base, a lively nightlife and a robust transportation system, Barcelona has become one of Europe's, and pretty much the world's, most popular tourist destinations.
 
 Understand
+
  
 When to visit
+
 
 August is probably the busiest time for tourists in Barcelona.  However, many shops and restaurants are closed from early-August to early September. During this time, you will find the most expensive hotel rates (outside of conference times such as the Mobile World Congress), and the city is devoid of locals, as the vast majority of residents go on vacation in August and leave the heat and humidity to the hordes of arriving tourists. This is also one of the highest periods of home break-ins, as criminals know that many places are unoccupied for an entire month.
 
@@ -19,9 +21,11 @@ While Barcelona has decent, albeit crowded beaches, the locals will be very appr
 Barcelona can be visited off-season and despite the cold weather, is a lovely city even in the winter months of January and February, as long as the possibility of rain is low – if large crowds are a major concern of yours, visiting in the winter is a good way to guarantee they'll be lower than peak season during the summer. Given the high humidity,  is considered comfortable weather, which is usually the temperature from May to June, and from late August to October. These are the best times to visit the city.  Anything warmer than this can feel too hot, and the period from November to April is quite chilly and at times gloomy.
 
 With children
+
 Toddler happiness is considered a public responsibility in Spain. In any public place, people around you will make every effort possible to make your toddler happy: whenever he or she looks bored or is crying, everyone does their best to entertain or to calm them. You will find a great list of things to do with children during your Barcelona visit.
 
 Visitor information
+
 * 
 Tourist office at Plaça de Catalunya. This is the main tourist office in the city.
 
@@ -42,6 +46,7 @@ The Turisme de Barcelona site might be helpful.
 
 Tourist Passes
 
+
 Barcelona Card. This card gives free entry to more than 25 museums and other sites in Barcelona. For over 70 moresites it offers various kinds of discounts. It also includes a travel pass for public transport in Barcelona (for details see Hola BCN! card below). The card is available for purchase for periods of 2 to 5 days. If you don't plan to see lots of museums every day, then it may be cheaper to buy transport-only tickets (see below), and if you spend a lot of time in the largest museums, the Barcelona Art Passport may be better value. This card cannot be used on the cable cars or funiculars (except for Montjuïc). In general, if you plan to see only the famous highlights and don't visit museums, this card is not worth the hefty price or the hassle. Plenty of travel websites recommend and promote these kind of discount cards because they receive a commission. You should also remember that many museums offer free or discounted admission if you are over 65.
 
 
@@ -58,9 +63,11 @@ See
 
 
 
+
  
 
 The old city
+
 Walk around the winding streets and hidden squares, fountains and palaces in the Barri Gòtic (Ciutat Vella). Highlights include the 
 Catedral. 
 , the 
@@ -70,6 +77,7 @@ Plaça Reial.
 .
 
 Modernist architecture
+
  
 
 Since 1984 seven buildings by the architect Antoni Gaudí (1852–1926) in or near Barcelona have been listed as "Works of Antoni Gaudí" on the UNESCO World Heritage List: the basilica of 
@@ -99,6 +107,7 @@ Hospital de Sant Pau.
 The Ruta del Modernisme run by Modernisme Centre (Pl. de Catalunya, 17, subterráneo; phone +34 933 177 652) is a guidebook and discount voucher book that costs €12 + €5 for each accompanying adult (Dec 2024). It takes you to all the best Modernisme (art nouveau) buildings in Barcelona. The main part of the route can be walked in a couple of hours, if you don't stray too far from the main routes. The Tourist Offices offer a pack that includes discounted tickets to many attractions such as La Pedrera and La Casa Batlló. All can be seen from the outside for free.
 
 With children
+
 * Museum of Natural History in the Forum - Museu Blau
 * CosmoCaixa: Museum of Science Amazing museum for kids from 4-5 upwards. Adults will really enjoy it also.
 *Zoo and Parc de la Ciutadella.
@@ -109,6 +118,7 @@ Tibidabo Mountain amusement park. Tibidabo is a popular attraction with stunning
  
 
 Do
+
 
 
  
@@ -157,6 +167,7 @@ Spanish Civil War tours. Walking tour of Barcelona visiting key sites relating t
 
 Sports
 
+
 * Football: the city has two professional soccer teams. Their local Derbi barceloní has political undertones, as FC Barcelona is associated with the Catalan independence movement, while Espanyol is seen as pro-Spanish unity and anti-Catalan independence. These clubs are active also in other sports, such as handball and basketball.
 ** FC Barcelona are the famous club, known for their iconic and politically-charged El Clásico rivalry with Real Madrid, playing in La Liga the top tier at Camp Nou (capacity 99,000), 1 km west of Sants railway station. Nearest Metro is Palau Reial. Their women's team plays in Liga F, their top tier, at Johan Cruyff Stadium west edge of the city. 
 ** RCD Espanyol play in Segunda División the second tier. Their RCDE Stadium (capacity 40,500) is at the western edge of the city. No metro, take a bus towards Ave del Baix Llobregat.
@@ -166,6 +177,7 @@ Circuit de Barcelona-Catalunya.
 * Basketball: FC Barcelona Bèsquet play in the Euroleague and Liga ACB. Their home stadium is Palau Blaugrana, next to Camp Nou.
 
 Festivals and events
+
  
 
 Barcelona hosts a number of annual fiestas, many of which are unique to Catalonia and offer an insight into its distinctive culture.
@@ -206,6 +218,7 @@ Fira de Barcelona. There are trade events all year round in Barcelona.
 
 
 Buy
+
  
 
 
@@ -227,6 +240,7 @@ La Boqueria. In Ciutat Vella. Large public market with a diverse range of goods 
 *Supermarkets are spread across the city. BonÀrea, Bonpreu and Condis are the most popular supermarket chains from Catalonia. Mercadona, Consum, and Dia are other popular chains from the rest of Spain. All of them are a cost-effective way to purchase grocery items. There are also organic/specialty supermarkets like Casa Ametller or Veritas which are pricier. Small corner stores are the most visible on city streets, but tend to mark up prices in exchange for convenience.
 
 Eat
+
 As with all cities which welcome large numbers of tourists, Barcelona's cuisine is inconsistent in quality, but there are plenty of restaurants serving excellent food at very reasonable prices, if you know where to look. The usual rules of thumb apply: to save money and get better food, look for places off the beaten track used by fellow travellers, and seek out cafés and restaurants which the locals frequent. In practice, this usually involves searching out eateries in residential districts away from the main sightseeing attractions. Avoid restaurants with touts outside, and have a basic understanding of the traditional foods served in restaurants, as well as the local drinks. One slightly crafty way of sussing a place's authenticity at a glance is to take note of how they spell a certain word: a menu board advertising tapas, written the Spanish/international way, is likely to be somewhere which primarily caters to tourists, whereas somewhere offering tapes, using Catalan spelling, is in all probability a venue frequented by locals.
 
 Some districts to check out include Gràcia, which is a hub of quality, affordable Catalan cooking of both the traditional and more avant-garde varieties, and the Eixample, whose chic boulevards have upscale restaurants aplenty worthy of your splurge money. The fishing quarter of Barceloneta (in Ciutat Vella) is an example of a neighbourhood where it pays to be picky: closer to the gentrified seafront, a slew of mojito beach bar-style places serve up expensive tourist tapas; for the real thing, head into the backstreets, where many traditional bars are still tucked away. In all cases, be prepared to "promenade" in search of the most attractive-looking menu; that's what the locals do, after all.
@@ -240,6 +254,7 @@ If you're looking for a place where everyone can choose their own meal, ask for 
 Smoking is not permitted inside bars and restaurants since 2011, but it's usually allowed in terraces.
 
 Dishes
+
  
 
 You can get food from any part of the world in Barcelona, but make sure you try some Catalan food.
@@ -256,6 +271,7 @@ Beyond Catalan food, there is no shortage of durum or shawarma stands in Barcelo
 
 Food tours
 
+
 If you feel lost in the variety of food choices there are – Catalan, Basque, Spanish, and beyond – it may be helpful to do a food tour to quickly get oriented. Many independent tour operators run food and wine tours in the city.
 
 * 
@@ -263,6 +279,7 @@ Barcelona Eat Local Food Tours. A family-owned business that showcases the best 
 
 
 Areas to eat
+
 
 Depending on where you are in the city, there may be restaurants galore, or none at all. The following areas tend to be restaurant "hubs", with a large variety of restaurants to choose from:
 * Barceloneta: A popular quarter for locals, where you can try fish based dishes, such as Paella (a name that may hide many different kinds of rice concoctions) or Arròs negre (Black Rice), that takes its colour because it is made using squid ink. Barceloneta is a very good place to eat tapas as well.
@@ -281,9 +298,11 @@ The large cafes that line the Passeig de Gràcia and the Rambla Catalunya, just 
 
 Groceries
 
+
 In several supermarkets you can find a wide stall with a great selection of ready-to-eat dishes. You can get a two-course lunch for less than €5.
 
 Restaurants
+
 
 
 *
@@ -300,12 +319,15 @@ Balordi. Located near Plaça d’Espanya. Casual Italian street-food spot specia
 Drink
 
 
+
 Cafes
+
 Try a "café con hielo" an espresso served with a glass of ice cubes on the side in any local 'cafeteria'. Cafes are found on each corner in Barcelona, and these days a conscious movement in favour of top quality coffee is changing the scene in the Catalan capital with a new trend in terms of coffee houses.
 
 Bars
+
 * Chupitos are found in several locations throughout the city, including one in Barceloneta. Chupitos is Spanish for "shots" and offers hundreds of unique shots including the "Harry Potter" (a shot that sparks as cinnamon is sprinkled over it), and "Monica Lewinsky" (a variety of flaming shots) among others. As much a show as it is a place to get a drink, it's a fun night out.
 
-===== TOKENS THE MODEL TRAINS ON (2,058) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (2,058) =====
 
 largest population nearly million capital catalonia major port northeastern mediterranean coast wide variety attraction bring globe face medieval old unique street grid resulting century urban planning sandy beach green park hill pretty side side famous prominent building architect antoni gaudi sagrada familia symbol founded ago ancient roman barcino historic modern constant flow project changing face standing penchant design innovation thank wealth attraction developed accommodation base lively nightlife robust transportation system become europe pretty world destination probably busiest shop restaurant early early expensive hotel rate outside conference time mobile world congress devoid local vast majority resident vacation leave heat humidity horde arriving highest period home break ins criminal know unoccupied entire month decent albeit crowded beach local appreciative consider beach resort absolutely wear beachwear visiting church restaurant etc want beach beach head daurada brava sea balearic island visited season despite cold weather lovely winter month possibility rain low crowd major concern visiting winter guarantee theyll lower peak season summer given humidity considered comfortable weather temperature late time anything warmer feel hot period chilly time gloomy children toddler happiness considered public responsibility public effort possible toddler happy whenever look bored crying everyone entertain calm list thing children information office placa catalunya office office placa sant jaume office estacio sant office aeroport prat office list information point check link department store corte ingle publish street map pick copy store hotel turisme site helpful pass card card give entry museum site moresite kind discount travel pass public transport detail hola bcn card card purchase period dont plan museum cheaper transport ticket spend largest museum art passport value card cannot cable cars funicular except montjuic general plan famous highlight dont museum card worth hefty price hassle plenty travel website recommend promote kind discount card receive commission remember museum discounted admission artiticket art passport covering art museum namely macba museu picasso cccb fundacio antoni tapy fundacio joan miro museu nacional dart catalunya valid come passport style book public transport pass package combine preferential skip line ticket hop hop bus pass package save money heavily old walk winding street hidden square fountain palace barri gotic ciutat vella highlight catedral museu dhistoria formerly museu dhistoria ciutat placa reial modernist architecture building architect antoni gaudi listed work antoni gaudi unesco world heritage list basilica sagrada familia casa mila pedrera casa batllo eixample palau guell ciutat vella parc guell casa vicen gracia crypt church colonia guell work catalan art nouveau architect lluis domenech montaner listed unesco world heritage list palau musica catalana ciutat vella hospital sant pau border eixample ruta modernisme run modernisme catalunya subterraneo phone guidebook discount voucher book cost accompanying adult take modernisme art nouveau building route walked couple dont stray far route office pack discounted ticket attraction pedrera casa batllo outside children museum natural history forum museu blau cosmocaixa museum science amazing museum kids upward adult enjoy zoo parc ciutadella tibidabo mountain amusement park tibidabo attraction stunning vista historic amusement park iconic sagrat cor church aeri port ride port vell aerial tramway port vell aerial tramway metre harbour aerial tramway red cars connect montjuic barceloneta start barceloneta metre tall torre sebastian tower restaurant accessible elevator intermediate stop torre jaume tower close columbus monument reached elevator ground metre tall tower tallest aerial tramway support tower world final point line miramar slope montjuic hill overall system old built albeit restored couple time car packed daytime particularly sensitive stroller wheelchair start montjuic side fewer waiting stroll following famous street ciutat vella rambla rambla gorgeous tree lined pedestrian walkway busiest lively street mostly occupied expect pay higher price food avoid group supposedly betting game played cardboard table thieve head side street cheaper authentic experience called rambla sery street called rambla section distinct feel closer placa catalunya street performer stunt middle youll street performer costume pier artist pencil drawing painting etc placa catalunya connecting major street placa fountain statue everything favourite meeting spot local portal langel pedestrian walkway stylish shop browse cruise mile beachfront boardwalk starting barceloneta tan beach seafood rice dish barceloneta neighbourhood sit wooden bridge maremagnum ciutat vella cool toes water edge book sandwich short rest wander barri gotic ciutat vella largely intact medieval cathedral wonderful cloister enjoy sangria placa reial ciutat vella rambla street sit relax sangria enjoy anyway walk born neighbourhood ciutat vella former restaurant drink accommodation rambla born enjoy relaxed atmosphere creative shop craftsmen born mean jousting field history story fill huge book stored old library interesting quirky detail uncover walking given street medieval sign brothel remnant secession war century indulge hofman bubo bakery sure santa maria church flamenco show real tablao tablao carmen sant montjuic cheaper alternative jazzclub jazz ciutat vella flamenco mostly touristy activity catalan flamenco dance music andalucia region cable car ride cable sea front montjuic mountain sant montjuic sit sip coffee placa dels angel ciutat vella admiring whiteness macba street skate trick catch performance beautiful teatre liceu palau musica catalana ciutat vella rent bike join bike tour highlight ride magic beach mediterranean gaudi modernist building medieval atmosphere gothic quarter sail sea mail boat serve populated cheapest reach far fastest comfortable government mailboat schedule route online reflect reality sail classic yacht enjoy trip sailing coastline classic yacht walk gracia neighbourhood variety restaurant cafe terrace feel ambiance already lost born view park guell tibidabo montjuic carmel bunker artoba tour tour catalonia led professional archaeologist spanish civil war tour walking tour visiting key site relating spanish civil war covering theme anarchism international brigade george orwell reality life bombing war comedy clubhouse english focused comedy club location born neighbourhood run show week stand comedy english spanish italian russian live music artist week relaxed entertainment option pub quizz karaoke etc sport football professional soccer team derbi barceloni political undertone associated catalan independence movement espanyol pro spanish unity anti catalan independence club active sport handball basketball famous club iconic politically charged clasico rivalry real playing liga tier camp nou capacity sant railway station nearest metro palau reial women team play liga tier johan cruyff stadium edge rcd espanyol play segunda division tier rcde stadium capacity edge metro bus ave baix llobregat circuit catalunya motor racing circuit hosting grand prix formula event suburb montmelo race race basketball besquet play euroleague liga acb home stadium palau blaugrana camp nou festival event host annual fiesta unique catalonia insight distinctive culture sonar annual music festival described officially festival advanced music multimedia art music far aspect festival festival runs night starting thursday week night monegro desert festival famous biggest night electronic music festival desert fraga gather celebrate electronic music djs representing style house electro minimal techno drum bass dubstep hiphop non stop unique desert experience fringe festival arts festival organized comedy clubhouse primarily focuse stand comedy poetry music theatre dance kick boasted show venue show language show geared children specifically plenty option adult slogan alguna cosa totham truly everyone feste merce annual festival encompassing event human tower casteller live music event street firework display procession wooden giant holiday activity fun enjoy fountain firework show base montjuic hill feste gracia feste gracia catalonian celebration held commemorate assumption week festivity mark important fiesta gracia explode fun excitement colour firework street decorated neighbour live music food street party continue night feste sant similar gracia event smaller later cant gracia event festival sant jordi considered valentine give rose book street traditionally men give women rose women give men book interesting celebration catalonia corpus late corpus christi egg shell placed jet water coming fountain egg magically dance water fountain typically beautifully decorated flower mostly church cathedral cloister santa anna casa lardiaca museu frederic mare dozen fountain fira santa llucia commemorate llucia front cathedral christma object sold sell christma tree sell element making pessebre nativity scene sculpture wooden piece moss simulate grass feast santa llucia patron saint fashion designer blind gather santa llucia chapel cathedral pay respect jazz festival brighter celebrate colder autumn annual jazz festival running nearly runs roughly last week revetlla sant joan midsummer solstice celebration celebrated signified firework frequent loud amateur firework night hard sleep permanently display fira trade event round shop shopping mall sunday law restriction ciutat vella plenty fashion shop souvenir shop supermarket sunday souvenir shopping scattered throughout barri gotic rambla trap none sell catalan spanish product typical array chinese general souvenir avoided moreover port vell rambla maremagnum shopping mall stay sunday selling item street blanket product dubious origin low quality result human trafficking secondhand english book gracia design lover head gracia corte ingle spanning floor building location eixample inland suburb couple ciutat vella anything everything department store food pneumatic tax return check separate floor store review chain article boqueria ciutat vella public market diverse range good produce enjoy freshly squeezed organic fruit juice cup closing seller special price sunday stamp actually sold tabac tobacconist know look youll notice block post mail rare yellow letter boxe sidewalk record vinyl record wonderful shop disco revolver carrer dels taller supermarket spread bonarea bonpreu condis supermarket chain catalonia mercadona consum dia chain rest cost effective purchase grocery item organic specialty supermarket casa ametller verita pricier corner store visible street tend mark price exchange convenience city welcome number cuisine inconsistent quality plenty restaurant serving excellent food reasonable price know look usual rule apply save money food look beaten track fellow traveller seek cafe restaurant local frequent practice involve searching eatery residential district sightseeing attraction avoid restaurant tout outside basic understanding traditional food served restaurant drink slightly crafty sussing authenticity glance note spell certain word menu board advertising tapa written spanish international likely somewhere primarily cater wherea somewhere offering tape catalan spelling probability venue frequented local district check gracia hub quality affordable catalan cooking traditional avant garde variety eixample chic boulevard upscale restaurant aplenty worthy splurge money fishing quarter barceloneta ciutat vella example neighbourhood pays picky closer gentrified seafront slew mojito beach bar style serve expensive tapa real thing head backstreet traditional bars tucked case prepared promenade search attractive looking menu local set menus menu migdia menu dia restaurant bars menu migdia menu dia menu mean course meal plate salad rice based pasta based dish plate meat fish plus dessert coffee option course depending restaurant portion generous week smart restaurant lunch special savvy traveller hip fraction price youre looking everyone choose meal ask restaurant serve plato combinado closest thing american european meal smoking permitted inside bars restaurant allowed terrace dish food world sure catalan food catalan cuisine section catalonia article selection seafood consistently mediterranean pretty fished treat travel guide mention waffle sold street stand tempt mouth watering smell taste tapa restaurant tapa originated andalusia spanish region native tapa signature catalonia tapa delicious catalan style course meal appetizer dish dessert likely pre meal beer vermouth snack olive chip etc meal entirely tapa pre meal snack called fer vermut making vermouth travel smaller town catalonia outside likely tapa likely youll restaurant serving traditional catalan food course beyond catalan food shortage durum shawarma stand offering tasty beef chicken salad toasted flatbread gyro delicious consider asian selection chinese japanese indian restaurant anywhere plenty italian restaurant latin american offering particularly argentine mexican represented food tour feel lost variety food choice catalan basque spanish beyond helpful food tour quickly oriented independent tour operator run food wine tour food tour family owned business showcase catalan gastronomy beaten district depending restaurant galore none following tend restaurant hubs variety restaurant choose barceloneta quarter local fish based dish paella hide kind rice concoction arro negre black rice take colour squid ink barceloneta tapa sant antoni addition culinary scene old trendy cuisine mingle eixample esquerra gran barri gotic especially tapa born barri gotic placa catalunya dozen restaurant serving tapa careful trap highly populated budget eating choose menu migdia bars avinguda parallel person aware menu staff spanish cafe line passeig gracia rambla catalunya placa catalunya variety acceptable tapa touristy bit expensive grocery supermarket wide stall selection ready dish course lunch restaurant comer bomba share vegan food juice bars populated bars serve organic vegan food cold pressed juice glop location eixample gracia excellent mid range catalan meal allow person half let price dictate choice dish balordi placa despanya casual italian street food spot specialising panini handmade meatball expect bold flavour quick counter service sidewalk bench eating allow person depending choice cafe cafe con hielo espresso served glass ice cube side cafeteria cafe corner conscious movement favour quality coffee changing scene catalan capital trend term coffee house bars chupito location throughout barceloneta chupito spanish shot hundred unique shot harry potter shot spark cinnamon sprinkled monica lewinsky variety flaming shot show fun night

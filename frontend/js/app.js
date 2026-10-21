@@ -1,9 +1,8 @@
 import { Globe } from "./globe.js";
 import { applyStatic, getLang, locale, setLang, t } from "./i18n.js";
-import { CURRENCIES, closeDash, initAccount, logActivity, onTripPlanned, refreshAccountLanguage } from "./account.js";
+import { CURRENCIES, INTERESTS, closeDash, esc, initAccount, logActivity, onTripPlanned, refreshAccountLanguage } from "./account.js";
 
 const $ = (id) => document.getElementById(id);
-const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 // Links come from third-party data: only http(s) URLs are ever put in an href.
 const safeUrl = (u) => (/^https?:\/\//i.test(String(u || "").trim()) ? esc(String(u).trim()) : "#");
 
@@ -118,7 +117,6 @@ function priceCertainty(plan) {
 const arrow = () => (getLang() === "ar" ? " ← " : " → ");
 const PHONE = () => window.matchMedia("(max-width: 900px)").matches;
 const fmtDate = (iso, opts = { month: "short", day: "numeric" }) => new Date(iso + "T12:00:00").toLocaleDateString(locale(), opts);
-const minutes = (hhmm) => { const [h, m] = hhmm.split(":").map(Number); return h * 60 + m; };
 function md(text) {
   const lines = esc(text).split("\n");
   let out = "", list = false;
@@ -957,8 +955,6 @@ function sources(plan) {
 // ------------------------------------------------------------------ trip ideas for a budget
 const ideasState = { data: null, mode: "flex", occasion: null, interests: new Set(), stops: [] };
 const OCCASIONS = [["solo", "🧍"], ["couple", "💑"], ["honeymoon", "💍"], ["family", "👨‍👩‍👧"], ["friends", "🎉"]];
-const INTERESTS = [["beach", "🏖️"], ["culture", "🏛️"], ["history", "🏺"], ["nature", "🌿"], ["ski", "⛷️"],
-  ["food", "🍽️"], ["nightlife", "🌙"], ["shopping", "🛍️"], ["relax", "🧖"], ["adventure", "🧗"]];
 const isoDay = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 
 /** Month list, flight-time list and preference chips (rebuilt on language change). */

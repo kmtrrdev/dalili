@@ -2,13 +2,14 @@ Prague, Czech Republic
 Labels: history, culture, nightlife | Split: validation
 Source: https://en.wikivoyage.org/wiki/Prague (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (25,579 characters) =====
+===== CLEANED GUIDE TEXT (25,589 characters) =====
 
 Prague (Czech: Praha) is the capital and largest city of the Czech Republic. The city's historic buildings and narrow, winding streets are testament to its centuries-old role as capital of the historic region of Bohemia. Prague lies on the banks of the beautiful, meandering Vltava River that reflects the city's golden spires and 9th century castle that dominates the skyline.
 
 This historic atmosphere is combined with a certain quirkiness that embraces the entire city. From the Museum of Czech Cubism to the technicolour Jubilee Synagogue; the castle to the river, Prague is a Bohemian capital in every sense.
 
 Understand
+
 
 
 This city of bridges, cathedrals, gold-tipped towers and church domes, has mirrored on the surface of the swan-filled Vltava river for more than ten centuries. Almost undamaged by World War II, Prague's compact medieval centre remains a wonderful mixture of cobbled lanes, walled courtyards, cathedrals and countless church spires all in the shadow of her majestic 9th century castle that looks eastward as the sun sets behind her. Prague is also a modern and vibrant city full of energy, music, cultural art, fine dining and special events catering to the independent traveller's thirst for adventure.
@@ -21,6 +22,7 @@ Prague was founded in the later 9th century, and soon became the seat of the Kin
 The Vltava River runs through Prague, which is home to about 1.2 million people. The capital may be beautiful, but smog often accumulates in the Vltava River basin.
 
 See
+
 
 Lesser Town offers beautiful streets leading to the Castle and churches (of which St. Nicholas Church is the most renowned). The Prague Castle is the biggest ancient castle in the world and offers beautiful views of the areas below. Also on site is the St. Vitus Cathedral with its lookout tower, the Castle Picture Gallery, several palaces and museums and the beautiful Royal Garden, among others. Petřín Lookout Tower has an observation platform. Two of the Czech National Gallery's most important collections are in the Sternberg Palace (up to the Baroque), and St George Convent (Czech Baroque and Mannerism) near and in the castle respectively.  The third us in Veletržní Palace on the West bank, which exhibits 19th century and modern art.
 
@@ -41,6 +43,7 @@ There are plenty of smaller museums. Among them are the Museum of Miniatures at 
 New Town was established as an extension of Old Town in the 14th century, though much of the area has now been reconstructed. The main attraction here is Wenceslas Square, a rectangular commercial square with many stalls, shops and restaurants. At the top of the square is the Czech National Museum which is well worth a look (see below). Midway down this historic boulevard, you can find trendy discos and Art Nouveau hotels, as well as quaint parks and arcades, while just off the beaten path are some wonderful panoramic views (Henry Tower), romantic restaurants and the dazzling, Disney-colored Jubilee Synagogue. Prague Dancing Houses is one of the most fascinating architectural expressions of Prague. Prague City Museum has several branches throughout town. An absolute must-see for the incredibly detailed cardboard model of nineteenth century Prague by Anton Langweil. The detail is amazing, even down to the colour of the doorways and the design of the windowsills.
 
 Sightseeing passes
+
 If you are visiting several attractions, you may be able to save money by buying a tourist card. Be discerning, as the passes often list as inclusions destinations that are free to visit anyway, and include lesser attractions. Make sure you will save money on the places you want to visit.
 
 * 
@@ -60,12 +63,15 @@ National Gallery Gift Ticket. If you are an art lover and you are staying in Pra
 Do
 
 
+
  
 
 Strolls
+
 Take a walk along the Royal Way of Prague.
 
 Culture
+
 Opera and ballet have quite a tradition in the city, even though there are often overlooked by young locals and instead frequented by tourists. The main opera and ballet venues are operated by the National Theatre company, which is owned by the government. Tickets can be bought on the company website, the best seats tend to sell out, so it is better to shop in advance. It is customary to wear decent clothing when going to National Theatre venues (black suit), but this is not enforced. 
 
 The National Opera hosts mainly operas and ballets. The Estates Theatre is the oldest theatre building still standing in the city. Mozart's Don Giovanni opera is often on the repertoire, as are other operas, plays and ballets.
@@ -73,6 +79,7 @@ The National Opera hosts mainly operas and ballets. The Estates Theatre is the o
 There are many other theatres in Prague, but they usually only offer plays in Czech language. Classical music concerts are often conducted in numerous churches, especially in the centre.
 
 Festivals
+
 * 
 Prague Spring. The most famous classical music festival in the Czech republic.
 
@@ -84,6 +91,7 @@ Signal Festival. A weekend in October, during which many historic buildings are 
 
 
 River cruises
+
 
  
 
@@ -106,6 +114,7 @@ JazzBoat. Combines cruising and jazz concerts.
 
 
 Sports
+
 * 
 Football. The city's leading soccer team is SK Slavia Praha. They play in the First League, the top tier, and often qualify for European tournaments. They play at the 21,000 capacity Fortuna Arena, which is also the usual venue for international matches; it's 5 km southeast of the old city centre. The city's other First League sides are AC Sparta Prague (at Generali Arena, 1 km north of the centre) and Bohemians at Ďolíček stadium in Vršovice district. FK Dukla Prague (at Stadion Juliska in the northern suburb of Dejvice) play in the National League, the second tier.
 
@@ -123,18 +132,23 @@ Running Tours Prague. Activity for those into running who want to explore the ci
 
 
 Buy
-=== Money ===
+
+Money
+
 The official currency of the Czech Republic is the Czech Crown (koruna), abbreviated as Kč, with the international abbreviation CZK – read more here.
 
 ATMs
+
 These ATMs throughout Prague do not charge a fee for withdrawing money: Fio banka and KB (Komerční banka). All other banks and ATM chains take 99–150 Kč and/or a 6–15% fee for currency conversion for a withdrawal.
 
 In addition, any ATM might trick you into accepting Dynamic currency conversion (see DCC) — Euronet is notorious for this. Always decline DCC, as there is a big markup fee included in the offered exchange rate that will never compensate for any exchange rate insecurity. According to EU law, ATMs must always tell you if there is a fee or markup before confirming the transaction or exchange, so you can always cancel beforehand.
 
 Foreign money
+
 Sometimes it is also possible to pay with euros (hotels in the centre of Prague, McDonalds, KFC, Marks & Spenceralso accepts British pounds, Albert and Billa supermarkets, etc.), but the exchange rate may be slightly unfavourable and change is almost always given only in Kč. Dm-drogerie markt (cosmetics and health food) and New Yorker (clothing) stores accept euros at good rates, while souvenir stores take euros and US dollars at poor rates.
 
 Money exchange
+
 In Prague, especially around tourist sights, there are plenty of exchange offices with very bad rates and misleading advertisements (often advertising 0% commission, but providing only nearly half of the official exchange rate). Good rates are found for example:
 * eXchange sro is the main currency exchange office used by expats in Prague. The VIP rates advertised outside the offices likely aren't available to tourists, but non-VIP rates inside tend to only have 1% spreads. The main office with best rates is located at Štefánikova 203/23 and a second office with worse but also fair rates is close to the Old Town Square (Kaprova 14/13).
 * Banks such as Česká spořitelna have acceptable rates, but charge a commission.
@@ -145,6 +159,7 @@ By law, if you keep your currency exchange receipt, you have 3 hours to return t
 Make sure you do not exchange money with strangers offering good rates on the street. You are likely to end up with worthless currency, such as expired Belarusian rubles or Bulgarian leva, and no way of getting your money back. Although not as common anymore, some smaller stores may attempt to con you by providing similar-looking Belarusian rubles as change.
 
 Shopping
+
  
 
 The streets around the Old Town are full of gift shops geared towards tourists, selling Bohemian crystal, soccer shirts and other mass-produced memorabilia. The thoroughfare between Charles Bridge and Old Town Square is particularly bad, turning off into one of the laneways you can find exactly the same merchandise for half the price. If you are looking for some decent souvenirs, try to get off the beaten path. Street vendors can have some unexpected treasures and there are plenty in the Charles Bridge area. Prints of paintings and good quality photos are very popular, and a really good way to remember Prague. Don't bother buying overpriced furry hats and Matryoshka dolls, though – they have nothing to do with Prague: they are Russian in origin, and their sellers are just trying to capitalize on unknowing tourists. Generally, assume that anything physical that you can buy in Old Town is mass produced somewhere else, and is at best a symbolic reproduction of something that has anything to do with Prague. 
@@ -157,6 +172,7 @@ The other typical (if rather expensive) Czech goods is the garnet jewellery. Typ
 "Pařížská" street goes from Old Town Square towards the river and includes some of the most luxurious (and expensive) boutiques in Prague.
 
 Eat
+
  
 
 
@@ -178,6 +194,7 @@ Another common scam connected to food is charging for food by weight. They, for 
 For specific restaurant suggestions in the popular Old Town neighbourhood, have a look into the dedicated article.
 
 Drink
+
  
 
 
@@ -194,8 +211,9 @@ Prague has also many excellent tearooms (in Czech čajovna) which serve differen
 
 Pubcrawls
 
+
 Save your money and find the bars yourself – you might be surprised at the discoveries you make away from the tourist circus.
 
-===== TOKENS THE MODEL TRAINS ON (1,818) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,818) =====
 
 praha capital largest historic building narrow winding street testament century old role capital historic region bohemia lies bank beautiful meandering vltava river reflect golden spire century castle dominate skyline historic atmosphere combined certain quirkiness embrace entire museum cubism technicolour jubilee synagogue castle river bohemian capital sense bridge cathedral gold tipped tower church dome mirrored surface swan filled vltava river century undamaged world war compact medieval remain wonderful mixture cobbled lane walled courtyard cathedral countless church spire shadow majestic century castle look eastward sets behind modern vibrant energy music cultural art fine dining special event catering independent traveller thirst adventure regarded europe charming beautiful city become travel destination europe million founded later century soon seat king bohemia ruled emperor holy roman empire thrived rule charle ordered building century important attraction date age university remained university claimed oldest europe german language german language shut ending claim oldest german university reasonably held went habsburg rule capital province austro hungarian empire german speaking majority century maintained significant german speaking minority expulsion ethnic german czechoslovakia following world war period give rise prominent german language author notable franz kafka work die verwandlung metamorphosis der process trial world war capital czechoslovakia foreigner especially young moved historic inscribed unesco world heritage list czechoslovakia country capital vltava river runs home million capital beautiful smog accumulate vltava river basin lesser beautiful street leading castle church nichola church renowned castle biggest ancient castle world beautiful view site vitus cathedral lookout tower castle picture palace museum beautiful royal garden petrin lookout tower observation platform national important collection sternberg palace baroque george convent baroque mannerism castle respectively veletrzni palace bank exhibit century modern art charle bridge connect old lesser beautiful structure bustling trade entertainment musician busk artist sell painting jewellery old historic numerous historic building monument notably famed astronomical clock pure gothic tyn church mural covered storch building hus monument nearby estate theatre neoclassical theatre mozart opera don giovanni performed old feature historical church jame church church lady tyn interesting historical building old hall convent agne bohemia museum cubism old old bank josefov historic jewish ghetto interesting preserved synagogue old synagogue staronova synagoga europe oldest active synagogue spanish synagogue ornamental building moorish style attraction old jewish cemetery oldest europe kafka house zoo nearby troja chateau trojsky zamek garden displaying sculpture botanic garden botanicka zahrada troja tropical greenhouse dox contemporary art bank modern arts modern style plenty smaller museum museum miniature stahnov monastery toys museum musical automata museum castle postal museum touristy wax museum torture museum beer museum old established extension old century reconstructed attraction wencesla square rectangular commercial square stall shop restaurant square national museum worth look midway historic boulevard trendy disco art nouveau hotel quaint park arcade beaten path wonderful panoramic view henry tower romantic restaurant dazzling disney colored jubilee synagogue dancing house fascinating architectural expression museum branch throughout absolute incredibly detailed cardboard model nineteenth century langweil detail amazing colour doorway design windowsill sightseeing pass visiting attraction able save money buying card discerning pass list inclusion destination anyway lesser attraction sure save money want pass official pass providing public transport ticket ride vintage tram line entry attraction cool pass unofficial pass bus tour river cruise entry castle vitus cathedral royal palace golden lane george basilica entry jewish museum synagogue famous old jewish cemetery site total entry attraction discount attraction guidebook information attraction language pass unofficial pass providing entry attraction period discount sightseeing tour castle old royal palace vladislav hall george basilica golden lane daliborka tower vitus cathedral ticket valid entry jewish museum maisel synagogue spanish synagogue pinka synagogue old jewish cemetery klausen synagogue ceremonial hall ticket valid entry national gift ticket art lover staying longer darkova vstupenka gift ticket national save money ticket valid valid exhibition permanent non permanent national visit limited gift ticket person cost person person ticket valid old art exhibition national sternberk palace schwarzenberg palace anezka convent basic entry gallery bought separately cost stroll walk royal culture opera ballet tradition overlooked young local instead frequented opera ballet venue operated national theatre company owned government ticket bought company website seat tend sell shop advance customary wear decent clothing national theatre venue black suit enforced national opera host mainly opera ballet estate theatre oldest theatre building standing mozart don giovanni opera repertoire opera play ballet theatre play language classical music concert conducted numerous church especially festival spring famous classical music festival advent choral meeting signal festival weekend historic building lighted spectacular video mapping light sound installation set vinohrady karlin river cruise river cruise varied hour cruise evening cruise dinner music price boat anything tout charle bridge want cruise river smallest price possible public transportation ferry wine boat hour cruise river canal wine tasting wine steam boat hour cruise cruise zoo cruise slapy water dam hour dinner cruise certainly enjoy viewing river savouring dinner cruise wide range regular private cruise evd jazzboat combine cruising jazz concert sport football leading soccer team slavia praha play league tier qualify european tournament play capacity fortuna arena usual venue international match southeast old league side sparta generali arena bohemian dolicek stadium vrsovice district dukla stadion juliska suburb dejvice play national league tier bike bike team easily discover quality bike rent self guided trip multiday trip countryside bike specialized distance bike trip bike pannier maps rented cycling holiday biko adventure biko mountain bike road bike outdoor activity beaten track easy advanced bike rental touring bike hardtail suspension mtb road bike mtb tour tour offering connection charge electric bike segway connected device guarded supervisor meantime walk museum preferred restaurant tour possibility depositing bike together baggage want carry leave street tour facility washing bike borrowing complete bike repair kit running tour activity running want explore stay fit show runner ability must run traveling runner introduce running shoe feel runner take mins running percent customizable date pace distance money official currency crown koruna abbreviated international abbreviation czk read atms atms throughout charge fee withdrawing money fio banka komercni banka bank atm chain fee currency conversion withdrawal addition atm trick accepting dynamic currency conversion dcc euronet notorious decline dcc markup fee included offered exchange rate compensate exchange rate insecurity according law atms tell fee markup confirming transaction exchange cancel beforehand foreign money possible pay euro hotel mcdonald kfc mark spenceralso accept british pound albert billa supermarket etc exchange rate slightly unfavourable change given drogerie markt cosmetic health food yorker clothing store accept euro rate souvenir store euro dollar poor rate money exchange especially sight plenty exchange office bad rate misleading advertisement advertising commission providing nearly half official exchange rate rate example exchange sro currency exchange office expat vip rate advertised outside office likely arent non vip rate inside tend spread office rate stefanikova office worse fair rate close old square kaprova bank ceska sporitelna acceptable rate charge commission railway station hlavni nadrazi exit station park street politickych veznu office mostly owned rate smaller amount negotiable higher actively avoid office inside station exchange rate abysmal law keep currency exchange receipt return exchange office reverse transaction case fell victim bad exchange rate sure exchange money stranger offering rate street likely worthless currency expired belarusian ruble bulgarian leva money common anymore smaller store attempt con providing similar looking belarusian ruble change shopping street old gift shop geared selling bohemian crystal soccer shirt mass produced memorabilia thoroughfare charle bridge old square particularly bad turning laneway exactly merchandise half price looking decent souvenir beaten path street vendor unexpected treasure plenty charle bridge print painting quality photo remember dont bother buying overpriced furry hats matryoshka doll nothing russian origin seller trying capitalize unknowing generally assume anything physical old mass produced somewhere symbolic reproduction anything square host christma market selling mix arts craft food memorabilia market attraction pick unique memento market front palladium mall spring shopping mall prikope street expensive street world measured price property famous shopping arcade cerna ruze black rose palac myslbek shop looking souvenir shop historical mostly old square wencesla square castle shop offering bohemian crystal especially lower wencesla square typical expensive good garnet jewellery typical garnet stone gathered turnov dark red nowaday produced single company granat turnov genuine traditional garnet certificate authenticity parizska street old square river luxurious expensive boutique lunch traditionally meal cuisine typically based pork beef starchy side dish dumpling potatoe fry fish widely svickova beef simmered thick sauce cream variety vegetable probably classic traditionalist meal dessert fruit dumpling ovocne knedliky crepe ice cream trdelnik become bakery selling sweet bread encrusted sugar chopped walnut traditional dish likely originated transylvania started appearing local avoid trdelnik synonym simpleton restaurant become crowded lunch dinner consider making reservation eating earlier local tipping generally expected primarily sign appreciation food service common round bill crown example taxe included price law restaurant heavily touristed river view castle charge cover kovert addition meal charge printed menu recourse restaurant add charge bill front manner printing menu cover anything brought table charge associated bread ketchup etc presented hand scrawled bill meal suggested moment clarify charge server sort questioning shame server removing anything incorrectly added waiter impolite especially europe pay attention simply another restaurant youre look fast food wont able move tripping street vendor serving style hot dogs mulled wine old square wencesla square youre style fast food major chain presence wencesla square immediately beer hall serve light snack meal definitely hot dogs parek rohliku theyre version hollowed baguette bread filled mustard ketchup frankfurter inserted afterward turn bread convenient carry case mean dont ketchup hand sure mustard dont normally unfortunately hot dogs somewhat flavourless extra bit kick price range terrifying looking gigant note size hot dog relate girth length another snack look chlebicek faced sandwich wide variety topping choose supermarket specialist shop careful ordering food looking price charging horrible price look menu charging basic lunch heavy especially restaurant outdoor space old square charging extraordinary price simple meal restaurant tout traditional another sign potential rip truly traditional restaurant advertise traditional outside meal another common scam connected food charging food weight example say price mention price gram leaving pay basic meal especially common old square stall ham request smaller portion generally refused unless specific restaurant suggestion old neighbourhood look dedicated article pubs hospoda abound throughout indeed important culture exact brand beer vary pub pub recommendation difficult give native willing argue length preference internationally recognized beer pilsner urquell plzensky prazdroj budweiser budvar budejovicky budvar brand famous czech svijany looking beer brewed staropramen usual price half liter glass based brand locality certain restaurant old square charge euro sized glass booming craft beer scene brewpub customary especially beer hall sit group table ahead ask join numerous night club difficult local overpriced empty bad local tend club midnight mostly friday saturday wednesday thursday summer week fine foreigner night club bit mostly aimed student nightclub generally expensive pubs beer costing entrance fees pay entrance unless playing common drinking outside forbidden public public park forbidden young predrink park riverside head club forbidden police probably bother disruptive surrounding excellent tearoom cajovna serve kind teas world shisha hooka smoked tearoom smoking ban apply shisha pubcrawl save money bars surprised discovery circus

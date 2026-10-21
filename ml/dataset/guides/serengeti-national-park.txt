@@ -2,17 +2,19 @@ Serengeti National Park, Tanzania
 Labels: nature, adventure | Split: validation
 Source: https://en.wikivoyage.org/wiki/Serengeti_National_Park (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (9,507 characters) =====
+===== CLEANED GUIDE TEXT (9,522 characters) =====
 
 Serengeti National Park is a large conservation area in the north of Tanzania. The park flows over into neighboring Kenya where it's known as the Masai Mara.
 
 Understand
+
 
 The park is but one of several conservation areas within the Serengeti region of East Africa, though a vital one. As well as conserving fauna, flora and iconic landscapes, Serengeti National Park has emerged as a major tourist destination. People from all over come here to engage in safari. The name Serengeti comes from the Maasai language, meaning 'endless plains' while the word safari is the Swahili word for 'journey'.
 
 Serengeti National Park is most famous for its animal migration. Nearly one million wildebeest and 200,000 zebras move from the northern hills to the south every October and November during the short rains. They then move toward the west and north from April to June when the long rains progress. The instinct to migrate is strong. Hence, no drought, gorge, or river infested with crocodiles can prove to be a deterrent.
 
 History
+
 For a long period of time, the Serengeti was uninhabited which allowed the animals to roam freely until the Maasai started to migrate to the area around a hundred years ago. The earliest known professional hunters appeared in 1913. Soon the area became a game reserve and eventually, a national park was established in 1951.
 
 Two World Heritage Sites and two Biosphere Reserves have been established within the 30,000 km² region. Its unique ecosystem has inspired writers from Ernest Hemingway to Peter Mattheissen, filmakers like Hugo von Lawick and Alan Root as well as numerous photographers and scientists.
@@ -24,19 +26,24 @@ It is the migration for which Serengeti is most famous. Over a million wildebees
 Over 300,000 tourists visit the park every year.
 
 Landscape
+
 The southern region of the Serengeti National park is naturally endowed with awe-inspiring terrain made up of nutrient-rich, flattened, open plains and short grasses as well as some granite kopjes spread out. With this type of vegetation, game viewing is guaranteed to be exceptional all throughout the year.
 
 Wildlife
+
 Watching wildlife and the Great Migration in the Serengeti is tremendous! Nowhere on earth is there a sight that can rival the spectacle of 1.5 million hoofed animals on the march. Serengeti has the highest concentration of large mammals in the world and is famous for its 2,500 lions, the highest concentration found anywhere. Unlike in Kenya (with the exception of the Ngorongoro Crater), you rarely see other tourists or vehicles on a game drive in the Serengeti National Park.
 
 Wild animals can be dangerous and you should not wander off on your own while on safari, especially at night. However most animals are frightened by humans and will flee rather than attack unless cornered or provoked. Keep a sensible distance and treat the animals with respect.
 
 Birding
+
 Early and late daylight hours are usually the best times to observe the more than 500 species of birds which have been identified in the Serengeti. Some of them migrate from Eurasia and are present in the Northern Hemisphere winter months from October to April.
 
 See
 
+
 Lake Lagarja and Lake Masak, South Serengeti
+
 
 From December to May, depending on the rains, the large herds are concentrated on the low lying grass steppe between Olduvai, Gol, Naabi and Lagarja. A base on Lake Masak or Lake Lagarja is then ideal because one can travel from there in all directions.
 
@@ -44,13 +51,16 @@ Day excursions take one into areas that are little known so that you can enjoy i
 
 Moru Kopjes and Seronera, Central Serengeti
 
+
 Here the savanna animals are joined by species that have adapted to living in the rocky cliffs. From here, or whilst in transit, you visit Seronera in the centre of the park searching for rare leopards and cheetahs. You can also enjoy the ever changing landscape with gallery forests, kopjes and water holes.
 
 Lobo, North Serengeti
 
+
 The North Serengeti is very different from the grassy plains in the South. As there is always water present the big herds retreat there in the dry season. In addition there are many species that live here permanently and you will also fairly regularly see elephants. A world for itself are the Bologonja Springs on the border to Kenya.
 
 The 'Corridor', West Serengeti
+
 
 This is a special area which is seldom offered on safari tours. Long distances, poor communications (few vehicles are equipped with a radio) and the frequently difficult road conditions still keep away most visitors from this part of the Serengeti which stretches almost as far as Lake Victoria. An important aspect of the Serengeti is therefore lost to them. This area is very different from the other main zones of the park. In the dry season large stretches of the route westward can be practically empty of animals. The last quarter of the route is however ideally suited to be the home for thousands of animals the whole year round. Gnus and zebras who are resident here do not join their migratory relatives who pass through every year on their way northwards.
 
@@ -66,17 +76,21 @@ During your excursions in this least visited part of Serengeti, you can stay at 
 
 Do
 
+
 Take photographs!  A good zoom and a large memory card make the results so good you'll be looking at the photos months and months later.  (Save them on high quality image and you can do amazing things with your photo program when you get home!)
 
 Buy
+
 
 Shopping in the Serengeti naturally is extremely limited due to the absence of human settlements. In Arusha, however, and other major towns you will find curio markets where you can buy all sorts of carvings, masks, Maasai spears, textiles, drums, tinga-tinga paintings, batik work, silk shawls, locally made jewelry, coffee, etc. The Arusha Heritage Centre offers a large variety of souvenirs and crafts. Also, The Sayari Camp had arrangements with locals to supply a little "gift shop" and the money goes right back into local programs.
 
 Tipping
 
+
 Tipping at restaurants (at your discretion) is 10%. It's common to tip US$5 for each traveler per day at lodge based safaris; US$10 per day for your driver guide and US$5 each per day for the camp staff when camping on mobile safaris.
 
 Eat
+
 
 Eat fresh roasted cashews, drink watermelon juice, try the tiny sweet bananas or even the red bananas.
 
@@ -86,8 +100,9 @@ Bottled water can be purchased at all the lodges and camps and is provided by al
 
 Drink
 
+
 Coffee and mbungo juice are common non-alcoholic drinks found in the park. If you want something stronger, you can try tusker lager and Amarula, a cream liqueur made from the marula plant. Boiled or bottled drinks bear less risk of diarrhea.
 
-===== TOKENS THE MODEL TRAINS ON (659) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (659) =====
 
 national park conservation park flow neighboring masai park conservation region vital conserving fauna flora iconic landscape national park emerged major destination engage safari come language meaning endless plain word safari swahili word journey national park famous animal migration nearly million wildebeest zebra move hill short rain move rain progress instinct migrate strong hence drought gorge river infested crocodile prove deterrent history period uninhabited allowed animal roam freely started migrate hundred ago earliest professional hunter appeared soon game eventually national park established world heritage site biosphere reserve established region unique ecosystem inspired writer ernest hemingway peter mattheissen filmaker hugo von lawick alan root numerous photographer scientist ecosystem oldest earth essential feature climate vegetation fauna barely changed past million early man appearance olduvai gorge million ago pattern life death adaptation migration old hill migration famous million wildebeest zebra journey hill plain short rain turn rain park landscape region national park naturally endowed awe inspiring terrain nutrient rich flattened plain short grass granite kopje spread type vegetation game viewing guaranteed exceptional throughout wildlife watching wildlife migration tremendous nowhere earth sight rival spectacle million hoofed animal highest concentration mammal world famous lion highest concentration anywhere unlike exception ngorongoro crater rarely vehicle game drive national park wild animal dangerous wander safari especially night animal frightened human flee attack unless cornered provoked keep sensible distance treat animal respect birding early late daylight time observe specy bird identified migrate eurasia present hemisphere winter month lake lagarja lake masak depending rain herd concentrated low lying grass steppe olduvai gol naabi lagarja base lake masak lake lagarja ideal travel direction excursion little enjoy peace animal paradise example hidden valley soito ngum kopje kakesio plain enjoy freedom travelling cross country order able chance rarer animal honey badger wild cats porcupine season surpassed moru kopje seronera savanna animal joined specy adapted living rocky cliff whilst transit seronera park searching rare leopard cheetah enjoy changing landscape forest kopje water hole lobo grassy plain water present herd retreat dry season addition specy live permanently fairly regularly elephant world bologonja spring border corridor special seldom offered safari tour distance poor communication vehicle equipped radio frequently difficult road condition keep stretch far lake important aspect therefore lost zone park dry season stretch route westward practically empty animal last quarter route ideally suited home thousand animal round gnus zebra resident join migratory relative pass northward herd giraffe buffalo eland topis kongonis impala waterbuck thompson gazelle live together cats hyena present view annual migration zebra wildebeest rut season wildebeest plain noisy male wildebeest defending temporary territory special attraction become famous crocodile population grumeti river particularly kirawira river dry spent life giving water source inter esting crocodile hippo observe variety bird luck able discover black white colobus monkey crown tree wooded savannah ndabaka plain feel peace calm pool mysterious korongo excursion visited stay luxurious exclusive camp kirawira kirawira serena camp conservation corporation grumeti river camp exclusive cheaper charming speke bay lodge shore lake outside park hour drive kirawira mbalageti mbalageti corridor unparalleled view vast plain due stellar photograph zoom memory card result youll looking photo month month later save quality amazing thing photo program home shopping naturally extremely limited due absence human settlement arusha major town curio market sort carving mask spear textile drum tinga tinga painting batik work silk shawl locally jewelry coffee etc arusha heritage variety souvenir craft sayari camp arrangement local supply little gift shop money program tipping tipping restaurant discretion common tip traveler lodge based safaris driver guide camp staff camping mobile safaris fresh roasted cashew watermelon juice tiny sweet banana red banana surprised quality variety food safari matter staying lodge tented camp mobile safari camp served freshly prepared food according international taste standard bottled water purchased lodge camp provided safari operator non alcoholic drink included inclusive rate wise stick bottled drink food salad hand pasta bear risk catching diarrhea coffee mbungo juice common non alcoholic drink park want stronger tusker lager amarula cream liqueur marula plant boiled bottled drink bear risk diarrhea

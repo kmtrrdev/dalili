@@ -59,10 +59,6 @@ class Money(BaseModel):
     price_type: PriceType = "estimated"
     source: str | None = None  # where a verified price comes from, e.g. "Wikivoyage · updated 2025-03"
 
-    def rounded(self) -> "Money":
-        return Money(amount=round(self.amount, 2), currency=self.currency, price_type=self.price_type,
-                     source=self.source)
-
 
 TrustClass = Literal["verified", "calculated", "estimated", "unknown"]
 

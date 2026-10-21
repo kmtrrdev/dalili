@@ -18,7 +18,6 @@ from __future__ import annotations
 
 import hashlib
 import json
-import logging
 from datetime import date, datetime, timedelta, timezone
 from urllib.parse import quote_plus
 from zoneinfo import ZoneInfo
@@ -28,11 +27,10 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 from .. import llm, net
-from ..config import settings, today
+from ..config import today
 from ..models import FlightOption, GeoPoint, HotelOption, Metadata, Money, Place
 from ..utils import haversine_km
 
-log = logging.getLogger(__name__)
 
 SOURCE = "ai_knowledge"
 NOTE = "Live search was unavailable - generated from the AI model's knowledge. Verify before booking."

@@ -2,7 +2,7 @@ Galápagos Islands, Ecuador
 Labels: nature, adventure | Split: validation
 Source: https://en.wikivoyage.org/wiki/Gal%C3%A1pagos_Islands (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (10,987 characters) =====
+===== CLEANED GUIDE TEXT (10,999 characters) =====
 
 The Galapagos Islands are a small archipelago of islands belonging to Ecuador in the eastern Pacific Ocean. The islands are quite remote and isolated, lying some 1000&nbsp;km (620 miles) west of the South American continent, and the archipelago is bisected by the equator. The Galapagos archipelago consists of 13 main islands and 6 smaller isles, which together embrace some 50,000 km 2  (19,500 sq mi) of ocean.
 
@@ -11,6 +11,7 @@ The Galapagos Islands is also one of the world's first UNESCO World Heritage Sit
  
 
 Understand
+
 
  
 
@@ -23,6 +24,7 @@ The Galápagos were claimed by the newly independent Ecuador in 1832, a mere thr
 Strict controls on tourist access are maintained in an effort to protect the natural habitats, and all visitors must be accompanied by a national park-certified naturalist tour guide.
 
 See
+
  
  
  
@@ -32,7 +34,9 @@ The Charles Darwin Foundation administers several research stations throughout t
 
 Do
 
+
 Cruises
+
 
 Cruises are the only option to see the majority of remote islands.  All cruise ships are required to have a certified naturalist guide.  Each cruise ships has a fixed itinerary for the year which is set by the Galapagos National Park, with the purpose being to control the number of tourists arriving at any time on each island. Cruises are available in 2-, 4-, 5-, 8- and 15-day options.  The following is a list of typical sights:
 *Climb the hill on Bartolome for the classic Galapagos view
@@ -42,6 +46,7 @@ Cruises are the only option to see the majority of remote islands.  All cruise s
 *Go snorkeling with sea lions and pacific sea turtles.
 
 Snorkeling and scuba diving
+
 
 Snorkeling and diving are very popular activities as the sea life is so rich and colourful.
 
@@ -59,6 +64,7 @@ Two of the world's premier diving destinations, Darwin Island and Wolf Island, a
 Park regulations may change unexpectedly. In 2007, many divers were caught unaware as the National Park withdrew diving permits from quite a few cruise ships without notice, leaving many divers without dive cruises they had booked far in advance.  For this reason, travellers are advised to get the most up-to-date information possible when planning a dive trip to the Galapagos Islands.  In 2010, the National Park began regulating land-based diving, and few of the many shops operating had the necessary permits.  It is best to ask if an operator has a dive permit, otherwise you may be turned back by Park Rangers and not permitted to dive.  In 2011, the National Park stopped allowing dive live-aboards to offer land visits, except for the Highlands of Santa Cruz, which is on all itineraries.
 
 Fishing
+
 You can fish in the Reserve, for marlin, tuna, wahoo and many other species but only if you are using an operator and boat that have the requisite Artisanal Vivencial Fishing licences issued by the Galapagos National Park. "Sport Fishing", as such, is prohibited. The Galapagos National Park publishes a list of Vivencial Fishing licence-holders and their boats, but they do not keep the list up to date.
 
 When Vivencial Fishing, you can keep a limited quantity of fish for personal consumption but all marlin must be released unharmed.
@@ -66,12 +72,15 @@ When Vivencial Fishing, you can keep a limited quantity of fish for personal con
 Vivencial Fishing was conceived with the purpose of providing local fishermen with an ecologically sustainable alternative to commercial fishing. However, there is constant pressure, both political and commercial, to legalize sport fishing and open the market to better financed and better connected outsiders.
 
 Hiking
+
 Hiking is often included as part of organized cruises or tours of the highlands.  Although you will often see fewer animals during these tours, you will often gain a greater understanding of the difference in terrain and vegetation as well as the formation of the islands.  Hiking is restricted in all National Park land; however, several sights, like the Wall of Tears on Isabela and Cerro Tijeras on San Cristobal can be hiked independently.  The rules are that a guide must accompany all groups of more than eight people in the National Park.
 
 Biking
+
 Biking provides quicker access to far sites from the ports.  Bike rentals are available on Isabela, San Cristobal and Santa Cruz for around $15 per day.
 
 Surfing
+
 The Galapagos provides some good waves and many locals make it a daily activity.  Boards can be rented by the day or month at port towns.  In general sites are marked with a place to rest surf boards as to not damage the land.  The following are beaches that allow surfing:
 * Punta Carola, San Cristobal
 * La Loberia, San Cristobal
@@ -84,6 +93,7 @@ The Galapagos Surf Co. The only surf travel company in the Galapagos. Waves are 
 
 
 Volunteering
+
 To minimize the impact of sightseeing on the unique ecosystem and mitigate issues with introduced species, several organizations provide conservation-based volunteering.
 * Hacienda Tranquila works on environmental, community and social issues.  Volunteers stay on the grounds and cook for themselves.  The hacienda is owned and managed by locals.
 * Hacienda Esperanza  works to conserve the environment and promote sustainable technologies.  Volunteers are provided room and board as part of volunteering.  The hacienda is owned and managed by locals.
@@ -91,11 +101,13 @@ To minimize the impact of sightseeing on the unique ecosystem and mitigate issue
 *Fundacion Bolivar Education has a conservation farm project on San Cristobal, as well as a habitat restoration project.  Teaching programs in the islands include Alejandro Alvear School and Teaching Support at a local school.
 
 Kayaking
+
 Kayaking allows you to navigate more of the water without a boat.  Kayaks can be rented at Tortuga Bay in Santa Cruz and the port at San Cristobal to navigate the nearby beaches.  Fish and sea turtles can often be seen while kayaking; however, conditions should be checked before renting.
 
 Horseback riding
+
 Horseback riding can be organized to allow you to see the highlands in greater detail.  Tours are roughly $50.  Additional tours may be found through taxis or local tour agencies.
 
-===== TOKENS THE MODEL TRAINS ON (814) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (814) =====
 
 island archipelago island belonging pacific ocean island remote isolated lying nbsp mile american continent archipelago bisected equator archipelago consist island smaller isle together embrace ocean island world unesco world heritage site archipelago world renowned unique fearless wildlife inspiration charle darwin theory natural selection island therefore amongst natural historian professional amateur giant tortoise sea lion penguin marine iguana bird specy approached landscape island relatively barren volcanic beautiful nonetheless highest mountain amongst island volcan wolf isla isabela expensive consuming destination due remoteness boat travel archipelago tour attraction take week ship based cruise take travel world mainland especially given travel week cruise night sweet spot cover attraction cruise island week longer visit cover attraction week plenty expensive shorter visit night land based visit cheaper limited risk disappointing budget allow consider longer hard travel week person week reasonable minimum mid range price claimed newly independent mere darwin hms beagle early century island inhabited settler penal colony last island declared national park subsequently listed world heritage site strict control access maintained effort protect natural habitat accompanied national park certified naturalist tour guide national park location uninhabited island limited official landing site follow instruction guide protect wildlife allowed marked path problem animal tame sit path cross caring mere charle darwin foundation administer research station throughout island station puerto ayora worth visiting animal natural history exhibit interpretation puerto baquerizo moreno tortoise breeding interesting breeding center puerto villamil cruise cruise option majority remote island cruise ship required certified naturalist guide cruise ship fixed itinerary set national park purpose control arriving island cruise option following list typical sight climb hill bartolome classic view giant tortoise breeding rearing program charle darwin research santa cruz red neck sack magnificent frigatebird seymour junco cristobal unique specy penguin isabela floreana snorkeling sea lion pacific sea turtle snorkeling scuba diving snorkeling diving activity sea life rich colourful snorkeling equipment tour operator check dont want bring waterproof camera remember wear shirt sunblock snorkeling easy sunburnt strong snorkeling water fish sea turtle sea lion creature option dont scuba certification island older cold temperature wetsuit rented location snorkeling equipment diving incredible noted rodale scuba diving magazine darwin wolf island ranked dive destination world category healthiest marine environment animal dive advanced diving said necessarily beginner novice current surge cold water poor visibility depth challenge certification course santa cruz cristobal looking learn dive site relatively beginner friendly ways dive island dive tour operator santa cruz isabela cristobal liveaboard liveaboard reach darwin wolf site reason diver world premier diving destination darwin island wolf island accessible live aboard cruise island present challenging current suitable beginner amazing opportunity huge school hammerhead shark shark silky shark whale shark season addition pelagic life giant manta eagle rays sting rays huge school jack tuna sea turtle sea lion park regulation change unexpectedly diver caught unaware national park withdrew diving permit cruise ship notice leaving diver dive cruise booked far advance reason traveller advised date information possible planning dive trip island national park began regulating land based diving shop operating necessary permit ask operator dive permit turned park ranger permitted dive national park stopped allowing dive live aboard land visit except highland santa cruz itinerary fishing fish marlin tuna wahoo specy operator boat requisite artisanal vivencial fishing licence issued national park sport fishing prohibited national park publish list vivencial fishing licence holder boat keep list date vivencial fishing keep limited quantity fish personal consumption marlin released unharmed vivencial fishing conceived purpose providing fishermen ecologically sustainable alternative commercial fishing constant pressure political commercial legalize sport fishing market financed connected outsider hiking hiking included organized cruise tour highland fewer animal tour gain greater understanding difference terrain vegetation formation island hiking restricted national park land sight wall tear isabela cerro tijera cristobal hiked independently rule guide accompany group national park biking biking provide quicker access far site port bike rental isabela cristobal santa cruz surfing provide wave local activity board rented month port town general site marked rest surf board damage land following beach allow surfing carola cristobal loberia cristobal tongo reef cristobal tortuga bay santa cruz playa ratonera santa cruz isabela continuous sandy shoreline provide surfing larger wave road follow beach opposite side port surf surf travel company wave cristobal swell santa cruz isabela island volunteering minimize impact sightseeing unique ecosystem mitigate issue introduced specy organization provide conservation based volunteering hacienda tranquila work environmental community social issue volunteer stay ground cook hacienda owned managed local hacienda esperanza work conserve environment promote sustainable technology volunteer provided room board volunteering hacienda owned managed local jatun sachu work conserve cover larger volunteer provided room board volunteering fundacion bolivar education conservation farm project cristobal habitat restoration project teaching program island alejandro alvear school teaching support school kayaking kayaking allow navigate water boat kayak rented tortuga bay santa cruz port cristobal navigate nearby beach fish sea turtle kayaking condition checked renting horseback riding horseback riding organized allow highland greater detail tour roughly additional tour taxis tour agency

@@ -24,7 +24,7 @@ def test_repair_caps_are_in_the_budget_currency(rome_research, rome_contract, pr
     report = ValidationReport(result="FAIL", violations=[Violation(check="budget", severity="error", message="over",
                                                                    fix_hint="hotel")])
     plan.budget.total = plan.budget.limit * 1.04
-    k, _ = repair(plan, report, PlanKnobs(), rome_research, 0, profile)
+    k, _ = repair(plan, report, PlanKnobs(), rome_research, profile)
     h = plan.hotel.price_per_night
     in_usd = h.amount * (1.0 if h.currency == plan.budget.currency else rome_research.fx_rates[h.currency.upper()])
     assert k.hotel_max_price_local is not None and abs(k.hotel_max_price_local - in_usd * 0.85) < 0.01

@@ -2,13 +2,14 @@ Brussels, Belgium
 Labels: food, culture, history | Split: validation
 Source: https://en.wikivoyage.org/wiki/Brussels (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (18,001 characters) =====
+===== CLEANED GUIDE TEXT (18,011 characters) =====
 
 Brussels (French: Bruxelles, Dutch: Brussel) is the capital of Belgium and one of the three administrative regions within the country, together with Flanders and Wallonia. Apart from its role within its country, it is also an internationally important city, hosting numerous international institutions, and in particular the headquarters of NATO and the core institutions of the European Union. Due to that, it is sometimes referred to informally as the capital of the EU, and even used as a metonym for the EU institutions.
 
 Brussels blends the heritage of a medieval Flemish town with the grandiose projects initiated after it became the capital of what was then a French-speaking country, as well as some impressive modern architecture erected in a large part to house the international institutions. Brussels is now bilingual, hosting and officially recognizing the Dutch- and French-speaking communities of Belgium, and has become increasingly international with the influx of people of various origin who came there to work, many of them for the European Union. This all makes Brussels a rather unique blend, sprinkled with a number of Belgian peculiarities, and for the inquisitive tourist a large treasure chest to discover.
 
 Understand
+
  
 
 
@@ -16,6 +17,7 @@ Understand
 When Brussels became the capital city of a new country in the 19th century, large parts of the old town were destroyed to make way for brand new ministries, palaces, schools, army barracks and office blocks constructed between 1880 and 1980. The medieval city walls that once defended and surrounded the city were demolished. Only a small historic centre (one square and four adjacent streets) was preserved. The historic Flemish town centres are better preserved in cities like Antwerp, Bruges, Ghent, Leuven, and Mechelen. This thoughtless treatment of historic buildings has earned past city planners near-universal scorn and even given rise to the term "Brusselization" for cities that similarly tear down old buildings, replacing them with faceless concrete monstrosities.
 
 See
+
 
 
 Brussels' rich history left it dotted with countless landmarks, some of architectural beauty, others of monumental proportions. In the medieval centre, nearly every building has its own story worth exploring! The surrounding Pentagon, roughly corresponding to the outline of Brussels in the Renaissance, adds many more attractions to the list of must-see attractions. When the weather gets unpredictable, over 80 museums in the Brussels-Capital Region offer indoor excitement when rain prevents outdoor activities.
@@ -68,6 +70,7 @@ If you're planning on visiting many attractions and museums, consider the advanc
 Do
 
 
+
  
 
 Brussels has a large variety of activities to offer, regardless of the weather. Strolling through the medieval centre and enjoying waffles or fries on the go is a favorite for locals and tourists. When passing the 
@@ -99,6 +102,7 @@ Enygma.
 Football: the men's national soccer team play at King Baudouin Stadium in Heysel. Three Brussels clubs play in First Division A, the top tier: RSC Anderlecht in Anderlecht district, Union SG in Forest, and R.W.D. Molenbeek in Molenbeek-Saint-Jean.
 
 Buy
+
  
  
 
@@ -108,7 +112,9 @@ Very few shops in Brussels open before 10:00, and most open 10:30–11:00. Many 
 
 Belgian specialities
 
+
 Beer
+
 * 
 Beer Mania. Claims to have a stock of over 400 beers, but has been overrun by beer tourists. The stock is extensive, but quite pricey in comparison to Delhaize, or Carrefour. Beer Mania is a great place to find out of the ordinary beers.
 
@@ -123,6 +129,7 @@ Match. Another store similar to Carrefour, but has more of the unusual Belgian b
 
 
 Chocolate
+
 * 
 Leonidas. very popular with the locals.
 
@@ -155,11 +162,13 @@ Chocolate bars. For the frugal, you can buy 100-200 gram gourmet bars of chocola
 
 
 Lace
+
 * 
 Belgian Lace. Among the best in the world. Several shops are at the Grand' Place-Grote Markt. Beware of some shops that sell Belgian lace even though production was outsourced abroad. Ask for a country of origin if purchasing around Grand-Place.
 
 
 Eat
+
 
 
 
@@ -177,6 +186,7 @@ Also beware of the 'Italian Restaurant Streets' in the tourist and shopping dist
 Brussels' tourist restaurant gauntlet can be found in Rue des Bouchers/Beenhouwerstraat, just to the north of Grand-Place. The place has a bad reputation for waiters imposing themselves on passers-by, trying to lure customers into their restaurant. The authorities are aware of this, and are trying to take measures. Some restaurants may also tempt you with cheap prices for the menus, but when seated, the item on the menu happens to be unavailable, and you're forced to accept another, noticeably more expensive dish. Often, the exaggerated price of the wines will also compensate for the attractive menu. Knowing this however, you may be able to negotiate a better deal before entering.
 
 Drink
+
  
 
 
@@ -187,6 +197,6 @@ Smoking is prohibited in all bars. It is allowed to smoke on the outdoor parts t
 
 A special drink only found in Brussels is the "half-en-half" ("half and half"). It's a mixture of white wine and champagne.
 
-===== TOKENS THE MODEL TRAINS ON (1,276) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,276) =====
 
 bruxelle dutch brussel capital administrative region country together flander wallonia apart role country internationally important hosting numerous international institution particular headquarter nato core institution european union due referred informally capital metonym institution blend heritage medieval flemish grandiose project initiated capital speaking country impressive modern architecture erected house international institution bilingual hosting officially recognizing dutch speaking community become increasingly international influx origin came work european union unique blend sprinkled belgian peculiarity inquisitive treasure chest discover capital country century part old destroyed brand ministry palace school army barrack office block constructed medieval wall defended surrounded demolished historic square adjacent street preserved historic flemish centre preserved city antwerp ghent leuven mechelen thoughtless treatment historic building earned past planner universal scorn given rise term brusselization city similarly tear old building replacing faceless concrete monstrosity rich history dotted countless landmark architectural beauty monumental proportion medieval nearly building story worth exploring surrounding pentagon roughly corresponding outline renaissance adds attraction list attraction weather unpredictable museum capital region indoor excitement rain prevent outdoor activity iconic sight square grand widely regarded beautiful square world famous grand surrounding street last remain medieval unique insight look feel millennium ago hall tower post card landmark orientation point manneken pis famous statue encountered side street overrated attraction insignificant statue easily overlooked mary magdalene chapel nichola church oldest church attraction pole enthusiast religious architecture tour start front hall grand guide important sight flourishing commerce developed outside wall black tower last remnant former dock church catherine converted fountain kept reputation fish restaurant nearby beguinage church tell story development occupation century cathedral date period nearly exact copy notre dame worth unlike famous parisian counterpart entrance waiting line coudenberg museum bruxella underground explore archaeological remain history fascinated early history halle gate museum last surviving gate wall belgian independence onward quickly transformed modern capital envisioned supervision king leopold son leopold architect joseph poelaert initiated monumental construction project stand today example palace justice largest building world construction overlooking old poelaert square church lady laeken pentagon congress column famous work royal palace short climb date period architectural magnificence basilica sacred heart largest church world corner stone art deco architecture atomium tall sculpture billion time magnified iron crystal dominate skyline relic world fair centenary palace sphere public restaurant amazing view youre lucky enough royal greenhouse public dont hesitate pentagon european quarter political power european union serving unofficial capital european union largest democracy world legislation making process european parliament european commission visited tour tend formal lighter experience parlamentarium house european history likely tuned younger audience nearby cinquantenaire park worth detour monumental arc weather doesnt allow outdoor activity district museum natural science host complete herd iguanodon skeleton adult children alike wherea aviary hall museum military history shadow cinquantenaire arc original aircraft display ranging civilian plane jet fighter keep balance political power host nato headquarter powerful military alliance world district nearby cemetery home silent witness called military victory railway museum train world nearby tram museum woluwe district attraction rail enthusiast woluwe architecture lover stoclet palace solvay residence recognized strolling architectural sight museum display case feel overwhelming sonian forest welcomed change scenery vast section nature century old beech tree protected true heaven fans outdoor activity youre planning visiting attraction museum consider advance purchase card discount attraction entrance museum nbsp nbsp nbsp version guidebook public transit metro bus tram discount shop restaurant worth already receive discount children student etc card purchased line advance discount major office museum keep mind attraction severely limited opening planning sight grand atomium enjoyed clock variety activity regardless weather strolling medieval enjoying waffle fry favorite local passing stock exchange sit stair local chat keep eye comic book mural ones discover fascinated comic book consider visiting museum figurine marc sleen museum explored underground sewer museum learning history walking underneath busy traffic weather permit walk ter kameren park sonian forest highly recommended centenary park closer climbing countless step arc entrance museum military history worth effort fantastic view european quarter physically intense alternative exploring monument mini europe heysel plateau park scale model numerous iconic european building feature summer zip line ride atomium unforgettable experience die hard thrill seeker confrontation rain humid climate reason despair none museum interest planetarium watching action movie mega cinema complex kinepolis indoor alternative adventurous water fans nemo diving challenge deepest heated indoor swimming pool world metre nbsp prefer submerged culture themed room escape game enygma puzzle hour fans culinary delicacy following beer brewing waffle baking workshop tasty activity afternoon alone group keep date pick copy newspaper zone another listing paper agenda distributed together dutch language weekly brussel deze week notable advantage published language english dutch cafe restaurant football men national soccer team play king baudouin stadium heysel club play division tier rsc anderlecht anderlecht district union forest molenbeek molenbeek saint jean shop shop sunday monday belgian speciality beer beer mania claim stock beer overrun beer stock extensive pricey comparison delhaize carrefour beer mania ordinary beer carrefour branch carry wide variety beer trappist beer selection vary store carrefour grand selection price approximately price shop delhaize similar carrefour tad expensive match another store similar carrefour unusual belgian beer delirium chocolate leonida local neuhaus bit expensive leonida bit higher quality local possible discount buying directly shop outlet outside factory postweg vlezenbeek outer limit short walk erasme erasmus metro station price low kilo product specifically marked reduced price worth trip product exact price shop mary excellent handmade chocolate store originating passion chocolat delicious chocolate sample chocolate collection marcolini arguably belgian chocolate priced accordingly country specific product difficult worth price wittamer another excellent chocolate maker selection macaron cake insist minimum purchase chocolate chocopolis pick choose favorite type chocolate reasonable price maison renardy boutique shop delicious chocolate friendly service stop cup tea coffee chocolate tea peckish youre able bring box home godiva pricey chocolate bars frugal gram gourmet bars chocolate grocery store brand cote dor jacque belgian lace belgian lace world shop grand grote markt beware shop sell belgian lace production outsourced abroad ask country origin purchasing grand plenty eating concentrate classic mussel moule mosselen dutch fry frite frieten dutch chocolate adventurous bruxellois brusselse dish anguille vert paling groen river eels green sauce meat ball tomato sauce stoemp mashed vegetable potatoe turbot waterzooi turbot fish cream egg sauce dessert belgian waffle wafel dutch gauffre square version dusted powdered sugar choice banana whipped cream topping prefer round caramelized version liege shop sell liege waffle traditionally eaten plain already contain pearl sugar dough topping waffle lighter airier dough topping whipped cream fruit etc matter establishment serve frite locally fritkot dutch friterie remain matter heated debate argue frite served fritkot barriere saint gille defend josse martin saint josse sint joostplein prime purveyor authentic frite claim antoine jourdan jourdanplein remain king fry matter fritkot youre adventurous ketchup mayonnaise fry selection bizarre sauce youve andalouse probably local vegetarian menu item regular restaurant vegan harder veganizer bxl initiative looking widen option head vegetarian vegan restaurant beware italian restaurant street shopping district street lined italian restaurant offering course meal run shop owner serve unappetizing store purchased food service restaurant reported scammed especially paying exact change common practice present menu price arent anything ones advertised window sure ask price difference ordering hesitate leave agree price offered already sipped glass receiving menu case pay leave restaurant gauntlet rue des boucher beenhouwerstraat grand bad reputation waiter imposing passer trying lure customer restaurant authority aware trying measure restaurant tempt cheap price menus seated item menu happen unavailable youre forced accept another noticeably expensive dish exaggerated price wine compensate attractive menu knowing able negotiate deal entering beer wine home greatest beer tradition world sample vast variety typical beer gueuze sour kriek sweet cherry based smoking prohibited bars allowed smoke outdoor part bars install street warmer month special half half half half mixture white wine champagne

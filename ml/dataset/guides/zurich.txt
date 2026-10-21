@@ -2,11 +2,12 @@ Zurich, Switzerland
 Labels: shopping, culture | Split: test
 Source: https://en.wikivoyage.org/wiki/Zurich (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (42,617 characters) =====
+===== CLEANED GUIDE TEXT (42,650 characters) =====
 
 Zurich (German: Zürich, Swiss German: Züri) is the largest city in Switzerland and an international financial centre. Zurich is close to some excellent skiing resorts and many people headed for the Swiss Alps don't spend much time in Zurich itself, but you'd be missing a lot if you don't explore Zurich.
 
 Understand
+
  
 
 While Zurich is Switzerland's biggest city and a cultural centre of German-speaking Switzerland,  Bern is the Swiss capital.  It has a population of some 430,000 (2022) in the city, and 1.8 million (2011) in the metro area.  Zurich is on Lake Zurich, where the lake meets the river Limmat, in the north of Switzerland.  
@@ -20,6 +21,7 @@ Zurich is home to ETH Zurich, one of the world's leading technical universities,
 Most shops and supermarkets are closed on Sundays. Travellers should plan their shopping for Saturday.
 
 History
+
 The city's Latin name, Turicum, was used for a Roman customs station at the Limmat, which has some remnants today. The Alemanni, a Germanic tribe, settled in the 5th century.
 
 While the Church used to rule early Medieval Zurich, the Guilds (Zünfte) took power in 1336, establishing Zurich as an autonomous republic. The Guilds have survived until today, though their role today is mostly ceremonial. Zurich became the fifth canton of the Swiss Confederacy in 1351, and has been its capital at times. However, Switzerland's famous neutrality and stability is a modern thing, as many battles have been fought in and around Zurich. The canton lost the Old Zürich War between 1440 and 1446 against the confederacy, and was re-admitted in 1450.
@@ -31,6 +33,7 @@ The 1830s and 40s saw a series of revolts and war, including the Züriputsch, a 
 The Zurich Stock Exchange was founded in 1877, and the city rose as a financial centre in the 20th century, as Switzerland remained neutral in the World Wars, and could maintain lower taxes on capital than the European great powers. Even though Switzerland has opted out of NATO and the European Union, Zurich is today one of central Europe's most cosmopolitan cities.
 
 See
+
 Most of the interesting sights are in the old town around the river and lakefront.
 
  
@@ -76,6 +79,7 @@ Zurich West. This modern quarter used to be an industrial one, but modern urban 
 
 Museums
 
+
  
 * 
 Landesmuseum. This is the place to go if you want to learn more about the history of Switzerland. There are permanent exhibitions on history, archaeology and art. Changing temporary exhibitions usually revolve around Swiss topics.
@@ -104,6 +108,7 @@ Villa Patumbah. Stunning 19th century villa, which houses an architectural histo
 
 
 Do
+
 * Take the 
 Polybahn. A 19th-century funicular, up the steep hill for a fine view. Starts at tram station Central and goes up to the ETH. Nice terrace up there. During the week, the student cafeteria below the terrace is also open to the public.
 
@@ -126,6 +131,7 @@ Uetliberg. A hill overlooking Zurich. You can hike up, or take a train from the 
 * The Grossmünster sometimes has organ concerts in the evenings. Check the front door for notices.
 
 Events
+
 * 
 Street Parade. The biggest open air techno rave in Europe. It happens one day each year on the second Saturday of August, during which trucks which function as mobile soundsystems ("Love mobiles") start driving along the lake side, starting from the east at Utoquai and ending at the west at Hafen Enge. Every year this event attracts nearly a million visitors who dance in the streets to the music which you can hear from anywhere in the city. After the Street Parade the party doesn't stop, there are open air parties along the route until midnight and club parties at various locations in town until late the next day, to keep the party going. Don't be surprised if the city's cleanliness isn't up to its usual standard the next day. Check out Lethargy festival that happens during the same weekend if you're into less commercial electronic music.
 
@@ -148,6 +154,7 @@ Zürcher Theater Spektakel. A festival for the performing arts. Held along the l
 
 
 Shows and theaters
+
  
 * 
 Opernhaus. The Zurich Opera shows frequently changing productions of world famous operas with top artists. As with the Schauspielhaus, students get a big last-minute discount. The best seats costs Fr.&nbsp;45 for students.
@@ -171,9 +178,11 @@ Cinema Arthouse Le Paris. Frequently changing arthouse movies; students get a di
 
 
 Buy
+
 * Currency: Switzerland is a land of banks and financial institutions, so getting local cash from ATMs at banks, railway stations and within shopping malls should pose no problem. Euros are accepted at many larger stores and places that cater to international visitors, though the exchange rate offered will be much worse than what your bank offers you. Eighth-series Swiss banknotes were withdrawn in April 2021 (10 Fr Le Corbusier, 20 Fr Honegger, 50 Fr Taeuber-Arp) but can be exchanged without time limit at any Swiss National Bank. You want the ninth series.
 
 Shopping districts
+
  
 
 For shopping in Zurich there are three different areas in the centre:
@@ -188,6 +197,7 @@ Löwenstrasse. Runs west of Bahnhofstrasse from the main train station, has shop
 
 
 Swiss clocks and watches
+
 You may be disappointed to know that most of the cheap watches and clocks in Switzerland are imported from China and Japan for their cheap quartz movements (including most of the wall clocks and alarm clocks sold at department stores, for example). Don't purchase a "Migros Budget" clock for Fr. 8 thinking it is a Swiss clock! Nevertheless, real Swiss-made clocks are still well known for their quality and reliability, and intricate mechanics. The following are true Swiss-made watches:
 * Swatch, possibly your best bet for a "cheap" Swiss watch (Fr. 40-100) and perhaps better suited for the younger generation. Available in their stores on Bahnhofstrasse and various other locations, or in department stores.
 * M-Watch, based on both Mondaine and Migros and available in Migros Electronics stores such as the one on the 2nd floor of the Lowenplatz location. Also relatively inexpensive (Fr. 40-100). Do not confuse this with "M-Budget" which is an imported cheap watch.
@@ -197,7 +207,9 @@ You may be disappointed to know that most of the cheap watches and clocks in Swi
 
 Swiss chocolate
 
+
 Brands
+
 
 * Frey is not as well known abroad as other Swiss brands, but with a market share of roughly 35%, it is the most popular brand in Switzerland. It mostly produces for the Migros supermarket chain and is known as good quality chocolate at a cheap price. A big share of the production is also exported, mostly however under store brand labels for chains such as Marks & Spencer, Loblaw, Tesco, Coles. The factory is in Aarau (about 1 hour by train and bus), where there is also a visitor centre.
 * Lindt is available at the Coop and other supermarkets besides Migros for Fr. 2-2.50, but Lindt chocolates are also sold at the Lindt & Sprungli Chocolate Factory Shop, which is accessible by taking the S-Bahn S8 to Kilchberg (12 min) and then bus 165 to the stop "Lindt & Sprüngli" (2-3 min). Hours are limited (M-F 09:00–17:00). The factory store prices are somewhat lower than supermarket prices (on the order of 10-20%), but there are some sale items, including factory rejects (for underweight chocolates, improper packaging, or filling showing through) that are sold for roughly half-price. The Lindt factory used to offer tours and free samples, but this is no longer the case.
@@ -207,6 +219,7 @@ Brands
 The larger Coop supermarkets carry many brands, including Lindt, Camille Bloch, Goldkenn, and others, including all sorts of alcohol-filled chocolates.
 
 Confectioneries
+
 
 * 
 Teuscher. &mdash; An upscale confiserie that specializes in truffles. There are three stores in Zürich.
@@ -228,15 +241,18 @@ St. Jakobs Confiserie. Badenerstrasse 41. The background organisation, Behindert
 
 Swiss handcrafts
 
+
 * 
 Schweizer Heimatwerk. Also branches at the Bahnhofstrasse 2 and the airport. Quality Swiss handicrafts and other Swiss-made products presented in a gallery-like setting. You won't find many cuckoo clocks and the like here (cuckoo clocks are not really Swiss, they are from the Black Forest (Schwarzwald) in Germany!), the emphasis is on real traditional crafts and the work of modern craftspeople. You will find things like sleek modern hand-blown glassware and beautiful hand-carved wooden items from the Appenzell region. A worthwhile visit even if you just browse.
 
 
 Swiss army knives
+
 * Coop City in Bahnhofstrasse sells the Victorinox line at uninflated prices, although you won't get additional bells and whistles like customized faceplates or engraving. Many other department stores also carry them.
 * Any cutlery shop will probably carry both Victorinox and Wenger lines of products. However, do make sure they are not inflating the price. For example, a SwissChamp (possibly the most popular model) should be retailed around Fr. 78.
 
 Markets
+
 * 
 Flohmarkt Bürkliplatz (Fleamarket). Fairly relaxed yet large flea market with many interesting stalls.
 
@@ -245,6 +261,7 @@ Flohmarkt Kanzlei (Fleamarket). A big flea market that hosts up to 400 stalls on
 
 
 Other
+
 
 * 
 Orell Füssli. Largest bookshop in Zürich, including a large "English Bookshop" section on the third floor.
@@ -255,6 +272,7 @@ Sihlcity. A good old fashioned shopping mall, which is a 5-minute S-Bahn ride aw
 
 
 Eat
+
  
 
 The quintessential Zürich dish is Zürcher Geschnetzeltes (Swiss-German: Zürigschnätzlets), sliced veal in a cream and wine sauce. Various kinds of grilled wurst (sausages) are also popular. These are most often accompanied by boiled potatoes, rösti, a Swiss potato pancake (grated potato, formed into a pancake then pan fried until crisp in butter or oil similar to hash browns) or chnöpfli, in German sometimes called Spätzle (small noodle dumplings).
@@ -283,7 +301,9 @@ Supermarkets generally have a very limited selection of spices.
 
 Budget
 
+
 City centre
+
 
 * 
 Rheinfelder Bierhalle. In this huge and boisterous restaurant you get good value food and rich portions (only try the Jumbo Jumbo Cordon-Bleu when really hungry). Cheap beer. Service can range from very good to poor depending who is working that day.
@@ -306,6 +326,7 @@ Sternen Grill. Zurich's most famous sausage stand near Bellevue tram stop. Red o
 
 Neighborhood Langstraße
 
+
 * 
 Gambrinus. A typical Swiss restaurant with good food and cold beer. It is located in the Red Light District (Langstrasse) of Zurich and is not the ideal place to bring children or acquaintances. Gambrinus looks like a pub more than anything else, but the staff are friendly and speak English. Try the Zürigschnätzlets mit Rösti or the fondue (one of the best in town).
 
@@ -318,16 +339,19 @@ Bank. Restaurant, café, bar and bakery in old bank. Mostly organic and Mediterr
 
 Gewerbeschule
 
+
 * 
 Millennium Restaurant. Offers great pizzas, large hamburgers, spicy kebabs and other Italian and Turkish dishes at reasonable prices. Staff is very friendly and service is great. Perfect for lunch or a late-night snack.
 
  
 
 Food courts
+
 * The Migros and Coop supermarkets (several branches all over the city) are good places to assemble an inexpensive and delicious picnic lunch consisting of freshly baked bread, cheese or ham and fresh fruit. Larger branches also feature a takeaway counter, for example the Migros City branch at Löwenstrasse or the Coop Bahnhofbrücke branch near the main station. The Migros branch in the main station is open on Sundays when most other stores are closed, and also until 21:00 on weekdays, whereas the Coop Bahnhofbrücke is open M-Sa 07:00 to 22:00.
 * Coop St. Annahof and Manor department store restaurant for a cheap buffet lunch, good salad and vegetable stands. All located at Bahnhofstrasse and open during the day
 
 Mid-range
+
 
 * 
 Rosalys. Typical Swiss food including Älplermacrone (pasta with apple purée). Excellent cocktail bar, too.
@@ -403,6 +427,7 @@ White Elephant. Original Thai Food. Since 1991 it offers an authentic cuisine wi
 
 
 Splurge
+
  
 *
 Mesa Restaurant. Traditional kitchen with Catalan influences as one of the best restaurants in Zurich
@@ -433,15 +458,18 @@ The restaurants at the top of the Uetliberg are great to combine a nice view of 
 
 Drink
 
+
 Zurich has a lot of places to go out. There are a lot of clubs, restaurants, cafés, bars but also many museums and theatres. Few of them are particularly wild, but there are certainly many options. The most common drinks in Zurich include: Beer, Swiss white wine (e.g. Fendant), Swiss red wine (is delicious), and Spanish red wine (is generally good value here). At apéro time (after work), you will find many people drinking a Cüpli (glass of sparkling wine).Tap water in the city is of high quality and safe to drink. Bring a reusable bottle to save money and reduce plastic waste.
 
 Bars
+
 
 * 
 Bar & Lounge 42. New York in the middle of Zurich. Exclusive whiskey, unique cocktails, premium liquors, snacks, a homemade gin and an elegant smoker's lounge with a broad selection of cigars.
 
 
 Centre
+
  
 * 
 Bierhalle Wolf. A lively beer hall often with live music. In addition to the beer selection, they serve great local food.
@@ -485,11 +513,13 @@ El Lokal. Bar, restaurant, and intimate gig venue attracting alternative crowd, 
 
 Kreis 2 (Wollishofen)
 
+
 * 
 Shamrock Irish Pub. Irish pub with regular events & good crowd (food served).
 
 
 Kreis 4 (Langstrasse)
+
 * 
 Xenix. Small art house cinema with a busy beer garden in summer. There's a mixture of students, bohemians, and bicycle messengers posing with their fixies.
 
@@ -513,6 +543,7 @@ Gotthard Bar. This dive bar exists since forever. It's almost always packed, the
 
 
 Kreis 5 (Zürich West)
+
 * 
 4. Akt. Teens and tweens love this place.
 
@@ -530,6 +561,7 @@ Moods. Jazz club in the Schiffbau complex, concerts on Saturdays.
 
 
 Clubs
+
 Zurich has proportionally more clubs than any other city in Europe. You will find anything from very "fancy" clubs to places you can just chill. If you want, you can go to a club every night. There is always a Club that has a party going and Zurich's young make sure to splash all their income on going out.
 Most of the clubs are located around the Langstrasse and Hardbrücke. The uncommercial platform denkmal.org aggregates published events from all clubs and bars in Zurich and is a good place to look up what's up. Unsere Beweggründe is mostly focused on the club scene. Usgang.ch used to be pretty big but features mostly big commercial parties.
 
@@ -560,6 +592,7 @@ Friedas Büxe. small underground club with techno and house music, beloved by th
 *Kaufleuten, Mascotte and Plaza are the fancier clubs in Zurich where you get champagne, lounges and all that jazz.
 
 Gay and lesbian travellers
+
 * 
 Rathauscafé. Coffee and a croissant in the morning, moving over to sparkling wine in the afternoon and early evening. Nice terrace in the summer. Mixed crowd, friendly service.
 
@@ -572,6 +605,6 @@ Barfüsser. Once Europe's oldest gay bar, it has now been converted into a fancy
 *
 Heldenbar. Heldenbar is the weekly get together of the local LGBTQI scene.
 
-===== TOKENS THE MODEL TRAINS ON (3,211) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (3,211) =====
 
 german swiss german zuri largest international financial close excellent skiing resort headed swiss alps dont spend youd missing dont explore biggest cultural german speaking bern swiss capital population million metro lake lake meet river limmat despite administrative capital kanton punch weight term major media business headquarter due heart excessively punctual meticulously maintained train network home important airport expensive clean efficient blessed standard living together wage explain bear price drawn rest century century begun draw company outside case outside europe mean hear language swiss german overall atmosphere cosmopolitan think home eth world leading technical university produced nobel laureate numerous innovation due history neutrality house headquarter like fifa international ice hockey federation home banking insurance conglomerate grew fabled swiss banking secret enjoy reputation financial sector shop supermarket sunday traveller plan shopping saturday history latin turicum roman custom station limmat remnant today alemanni germanic tribe settled century church rule early medieval guild zunfte took power establishing autonomous guild survived today role today mostly ceremonial fifth canton swiss confederacy capital time famous neutrality stability modern thing battle fought canton lost old war confederacy admitted ulrich zwingli led protestant reformation early century thirty war ended holy roman empire lost grip mostly independent saw sery revolt war zuriputsch revolt conservative landowner canton sonderbund war adopted constitution established country federal government settled bern federal institution polytechnic university eth seat stock exchange founded rose financial century remained neutral world wars maintain lower taxe capital european power opted nato european union today europe cosmopolitan city interesting sight old river lakefront bahnhofstrasse busiest shopping street world highly refined certainly lindenhof hill heart old beautiful view roman fort lake promenade especially summer lake beautiful spend evening weekend starting bellevue boardwalk kilometer lake tiefenbrunnen halfway bellevue meadow thousand sunny grossmunster old romanesque church symbol reformed reformer huldrych zwingli appointed priest tower view stair steep fraumunster old gothic church former convent window painting marc chagall photo video allowed inside schanzengraben canal fortification limmat sihl station gessnerallee stairway tiny creek walk lake langstrasse red light district drug dealer police usual interesting notorious spot clean safe overtly multicultural spot atelier stylish bars sit side side strip club friedhof fluntern cemetery famous notably jame joyce lived writer elia canetti nobel prize winner buried zoo masoala rainforest hall zoo worth garden beautiful chinese garden offered chinese kunming symbol gratitude helped kunming technical knowledge combined stroll lake pavillon corbusier niederdorf old beautiful alley restaurant shopping mainly aimed younger consumer evening niederdorf bars modern quarter industrial modern urban development vibrant night life museum landesmuseum want learn history permanent exhibition history archaeology art changing temporary exhibition revolve swiss topic kunsthaus famous art museum collection work swiss artist sculpture alberto giacometti painting ferdinand hodler major work international artist display museum building extension scheduled part museum given johann jacob museum museum describe complex history global trade route good culture pavillon corbusier last building designed swiss architect corbusier pavillon built death museum dedicated work access building difficult expensive due legal fight former patron initiator building managed public highlight museum course building yearly changing exhibition architecture rietberg museum largest art museum administered focus lies traditional contemporary arts culture asia america oceania complex consist nineteenth century villa coach house twenty century underground extension crowned emerald glass pavilion opened designed architect alfred grazioli adolf krischanitz zoological museum showcase zoological collection university floor fauna wherea lower floor animal world fifa world football museum explore world football fifa villa patumbah stunning century villa house architectural history museum heimatschutzzentrum polybahn century funicular steep hill fine view start tram station eth terrace week student cafeteria terrace public oberer unterer letten summer swimwear clean river public river bath oberer letten mainly youngster unterer letten family local cool hot jump upstream river carry middle wooden floating bath women frauenbad stadthausquai start limmat shower locker provided bring lock skiing train mdash snown rail ticket train skipass hauptbahnhof winter month train morning evening flumserberg closest ski resort range runs beginner intermediate retreat side resort rest busy trip zurichsee old steam ship route choose vary mainly distance journey start burkliplatz steam ship operate mid rent rowboat pedalo limmat river cruise view old lake operate uetliberg hill overlooking hike train szu station take minute enjoy degree view tall viewing tower vertigo sufferer start planetenweg planetary walk mile walk ridge model planet scaled true proportion solar system look hill irchel tram station milchbuck kaferberg bucheggplatz walk hill keep forest football team playing football super league swiss tier grasshopper play letzigrund capacity badenerstrasse railway station hosted match uefa women euro final club hopping mdash proportionately largest club capita europe grossmunster organ concert evening check front door notice event street parade biggest air techno rave europe happen saturday truck function mobile soundsystem love mobile start driving lake side starting utoquai ending hafen enge event attract nearly million dance street music hear anywhere street parade party doesnt stop air party route midnight club party location late keep party dont surprised cleanliness isnt usual standard check lethargy festival happen weekend youre commercial electronic music swiss national mdash celebration carried city evening firework launched night watch lake youre experienced safely launching firework leading national holiday fun display rheinfall hour bahn extremely sechselauten sachsiluute monday guild celebrate traditional spring festival burning snow man boogg procession hundred historical guild costume horse take caliente festival largest latin festival europe held early type latin american food listen samba merengue huge crowd zuri fascht weekend festival celebrating occur last held visited million committee far organized zuri fascht cancelled involvement event partnership another organization unknown zurcher theater spektakel festival performing arts held lake landiwiese rote fabrik feature performance show theater opernhaus opera show frequently changing production world famous opera artist schauspielhaus student last minute discount seat cost nbsp student rote fabrik old silk factory converted youth culture art red factory exciting part cultural life artist coop couple kilometer form bank lake variety event music film theater restaurant schauspielhaus schauspielhaus important theatre german speaking europe schauspielhaus location important pfauen student cheap last minute ticket minute show show student seat cost nbsp theater neumarkt closer downtown tonhalle maag renovation tonhalle concert house internationally renowned classical orchestra tonhalle orchester play intermediately built tonhalle maag concert hall season paavo jarvi lead orchestra cinema arthouse frequently changing arthouse movy student discount currency land bank financial institution cash atms bank railway station shopping mall pose problem euro accepted larger store cater international exchange rate offered worse bank eighth sery swiss banknote withdrawn corbusier honegger taeuber arp exchanged limit swiss national bank want ninth sery shopping district shopping bahnhofstrasse runs train station hauptbahnhof lake bahnhofsstrasse famous exclusive expensive shopping street world anything diamond ring chocolate fur coat globus jelmoli fiercely competitive department store carry item brand niederdorf old expand bellevue lake river train station niederdorf young aside fast food trendy clothe store lowenstrasse runs bahnhofstrasse train station shop selling everyday item branch migro department store chain swiss clock watch disappointed know cheap watch clock imported cheap quartz movement wall clock alarm clock sold department store example dont purchase migro budget clock thinking swiss clock nevertheless real swiss clock quality reliability intricate mechanic following true swiss watch swatch possibly bet cheap swiss watch suited younger generation store bahnhofstrasse location department store watch based mondaine migro migro electronic store floor lowenplatz relatively inexpensive confuse budget imported cheap watch mondaine famous sbb railway clock face replica sbb clock watch wall clock major railway station location replicate hallmark smooth movement hand second followed pause characteristic real sbb railway clock replicate clock face quartz price seem little inflated vast majority sbb railway clock produced mobatime moser baer mondaine mondaine appear larger clock treffpunkt mondaine wall desk clock swiss design manufactured mid range brand clock watch store throughout walk look youre interested upper watch clock rolex sold probably research want stare expensive watch sale look bucherer store window bahnhofstrasse nbsp watch look swiss chocolate brand frey abroad swiss brand market share roughly brand mostly produce migro supermarket chain quality chocolate cheap price share production exported mostly store brand label chain mark spencer loblaw tesco cole factory aarau hour train bus lindt coop supermarket beside migro lindt chocolate sold lindt sprungli chocolate factory shop accessible taking bahn kilchberg min bus stop lindt sprungli min limited factory store price somewhat lower supermarket price order sale item factory reject underweight chocolate improper packaging filling showing sold roughly half price lindt factory tour sample longer case chocolat halba belong coop coop coop produce brand chocolate retailer naturaplan qualite prix prix garantie karma chocolat halba produce customer abroad usa chocolat halba specialise sustainable chocolate overproduction sold outlet shop schoggihusli hinwil zurichstrasse hinwil seasonally adapted low priced example broken chocolate kilo bag franc addition export article cannot bought anywhere laderach produce signature fresh chocolate confectionery sell product chain store multiple store station another entrance bahnhofstrasse larger coop supermarket carry brand lindt camille bloch goldkenn sort alcohol filled chocolate confectionery teuscher mdash upscale confiserie specializ truffle store teuscher teuscher teuscher sprungli mdash institution variety sweet savory goody wide variety chocolate handmade truffle special chocolate bars location throughout bahnhofstrasse inside speciality luxemburgerli sort soft macaroon resembling hamburger look actually completely pastry cream come variety flavor truffe jour chocolate truffle raw cream meant consumed immediately extraordinary grand cru sauvage truffle wild cacao bean item pricey worth flagship store paradeplatz spot breakfast lunch afternoon tea berry filled muesli muesli youve handy store kloten airport last minute gift bring home jakob confiserie badenerstrasse background organisation behindertenwerk jacob aims providing jobs disabled swiss handcraft schweizer heimatwerk branch bahnhofstrasse airport quality swiss handicraft swiss product presented setting wont cuckoo clock cuckoo clock swiss black forest schwarzwald emphasis real traditional craft work modern craftspeople thing sleek modern hand blown glassware beautiful hand carved wooden item appenzell region worthwhile browse swiss army knive coop bahnhofstrasse sell victorinox line uninflated price wont additional bell whistle customized faceplate engraving department store carry cutlery shop probably carry victorinox wenger line product sure inflating price example swisschamp possibly model retailed market flohmarkt burkliplatz fleamarket fairly relaxed flea market interesting stall flohmarkt kanzlei fleamarket flea market host stall busy orell fussli largest bookshop english bookshop section floor sihlcity old fashioned shopping mall minute bahn ride station comprise rental space range facility restaurant shopping multiplex cinema entertainment health fitness wellness nightclub point hotel chapel quintessential dish zurcher geschnetzelte swiss german zurigschnatzlet sliced veal cream wine sauce kind grilled wurst sausage accompanied boiled potatoe rosti swiss potato pancake grated potato formed pancake pan fried crisp butter oil similar hash brown chnopfli german called spatzle noodle dumpling veal meat substitute growing fondue melted cheese pot dip bread raclette cheese melted portion served potatoe pickle commonly restaurant aimed swiss dish home winter bread generally delicious variety bet bakery supermarket morning work shopping bread coming fresh grilled bratwurst street stand served crusty roll sourdough bread mustard sandwich fresh baked bretzeln soft pretzel typically swiss bread zopf braided soft bread commonly served sunday sonntagszopf breakfast bowl muesli invented health food sprungli confectionery store tea room serve deluxe version fiber filled cereal milk crushed berry cream huge variety cheese supermarket specialty store market kind hams dried sausage dairy product generally delicious especially butter miss supermarket thorough look migro coop maybe assemble lunch dinner cheap budget prepackaged dessert supermarket exceed quality sweet tooth huge variety chocolate enjoy cheapest chocolate bar individually handmade truffle shopping section chocolate bar display supermarket overwhelm enjoy pastry cake konditorei scattered pastry shop special pastry famous probably tirggel hard pastry flour honey traditionally eaten winter holiday pastry shop larger supermarket sell throughout theyve sight printed stored month pretty cheap souvenir another famous type pastry luxemburgerli exclusively sold confectionery chain sprungli famous chocolatier lindt sprungli typical cake mandelfisch almond cake shaped fish european city abound cafe enjoy leisurely cup coffee glass wine beverage watch world international dining option current hot trend seem pan asian noodle rice sushi due distance sea lack original trained chinese japanese cook quality cannot live original country instead italian cuisine hold highest popularity foreign restaurant throughout relatively cheap turkish fast food restaurant delicious cheap option vegetarian food easy throughout vegan little trouble cheese generously food fine living supermarket hiltl vegetarian restaurant europe worth choose buffet meal priced weight variety carte menus bit pricey vegetarian vegan version swiss meal zuri gschnatzlet beef stroganoff amongst indian food classic vegetarian plate another vegan friendly restaurant bona dea directly mainstation supermarket generally limited selection spice budget rheinfelder bierhalle huge boisterous restaurant value food rich portion jumbo jumbo cordon bleu hungry cheap beer service range poor depending working pizzeria molino pizza pasta relaxed setting check website location fried chicken baba restaurant pumpstation restaurant pumpstation direct lake promenade banhof stadelhofen apriloctober serve fresh grilled sausage ribs chicken turkish remarkably kebab friendly service possibility seat conveniently inside sternen grill famous sausage stand bellevue tram stop red white sausage piece bread hot mustard included neighborhood langstrae gambrinus typical swiss restaurant food cold beer red light district langstrasse ideal bring children acquaintance gambrinus look pub anything staff friendly speak english zurigschnatzlet mit rosti fondue hua delicious thai dish budget price pit stop langstrasse pub crawl bank restaurant cafe bar bakery old bank mostly organic mediterranean food gewerbeschule millennium restaurant pizza hamburger spicy kebab italian turkish dish reasonable price staff friendly service perfect lunch late night snack food court migro coop supermarket branch assemble inexpensive delicious picnic lunch consisting freshly baked bread cheese ham fresh fruit larger branch feature takeaway counter example migro branch lowenstrasse coop bahnhofbrucke branch station migro branch station sunday store weekday wherea coop bahnhofbrucke coop annahof manor department store restaurant cheap buffet lunch salad vegetable stand bahnhofstrasse mid range rosaly typical swiss food alplermacrone pasta apple puree excellent cocktail bar swiss chuchi kitchy serving classic swiss fare mainly serve fondue round zeughauskeller hearty sausage stew rosti potato etc brauhaus setting touristy portion housed historical building built zum kropf beer hall fare sausage pork shank somewhat refined setting restaurant feature beautiful painted ceiling hiltl oldest vegetarian restaurant europe tibit fast food outlet hiltl europe oldest vegetarian restaurant self service buffet fresh veggy fruit surprising variety freshly squeezed juice restaurant eisenhof warm feel old pub house specialty horse steak served hot stone fry blinde kuh restaurant complete darkness served blind amazing experience echo restaurant traditional swiss cuisine everything prepared according original recipe product originate region commercio excellent pasta busy atmosphere commi halle italian food served late globus bellevue relatively branch globus department store bellevue stadelhofen station totally dedicated food eatery ground floor serve fusion type food decent noodle bowl passable sushi bar ground floor gourmet food market upstair kitchen ware sprungli paradeplatz flagship store sprungli confectionery store chain beautiful turn century style dining room upstair extremely breakfast lunch afternoon tea choose menu gorgeous display case filled beautiful cake tart face regular sandwich muesli watching shopping snack rich lady masala tasty indian cuisine outback lodge unrelated outback steakhouse chain enjoy aussie tucker ostrich kangaroo crocodile conventional fare local expat hopping bar scene section branch winterthur iroquois tex mex food trendiest margarita tiffin asian food crowded lily thai asian food curry particularly huge portion dont want wait manzoni bar authentic italian coffee aperitif bar client coffee specialty vast menu concept created manz brother together francesco illy famous coffee brand nooba pan asian noodle bar short walk hill stadelhofen station stylish setting attentive multilingual service broad selection freshly prepared noodle rice curry dish nooch another pan asian noodle rice curry joint sushi bar ristorante toscano italian restaurant old niederdorf spaghetti bacio bebek breakfast meze dish bar evening white elephant original thai food authentic cuisine scope original spice splurge mesa restaurant traditional kitchen catalan influence restaurant kronenhalle famous restaurant glitterati swiss food heavenly chocolate mousse reason opportunity dine original artwork famous swiss european artist paid painting instead money widder hotel class food cool setting hotel trendy bar piano music cool red leather decor halogen lighting zunfthaus zur waag authentic swiss restaurant ensure meal cold order plate bring dezaley traditional swiss food speaking kanton waadt vaud fondue restaurant blaue ente romantic cuisine beautiful building coco grill bar grill restaurant set menus lunch menu surprise dinner fish meat wine selection summer due garden angela authentic italian food restaurant uetliberg combine view hike summer food cheaper self service club restaurant cafe bars museum theatre particularly wild certainly option common drink beer swiss white wine fendant swiss red wine delicious spanish red wine generally value apero work drinking cupli glass sparkling wine tap water quality safe bring reusable bottle save money reduce plastic waste bars bar lounge middle exclusive whiskey unique cocktail premium liquor snack homemade gin elegant smoker lounge broad selection cigar bierhalle wolf lively beer hall live music addition beer selection serve food edi weinstube wine bar niederdorf cheapest okay wine federal brasserie bar inside station choice swiss beer nachtflug stylish coffee snack choice drink night jame joyce bar writer mostly frequented banker oliver twist irish british pub atmosphere english speaking foreigner english ales draught opfelchammer real pub cafe serve wine water succeed climbing roof beam glass wine hanging upside mark wood afterward widder garage far stocked whiskey bar separate whiskey menu containing single malt famous hotel corazon spanish themed bar selection wine excellent service bohemia trendy coffee nightlife college student barfussbar public bath women night men allowed beautiful spend warm summer night view rimini another air bar men public bath cool atmosphere colored light straw mats pillow lokal bar restaurant intimate gig venue attracting alternative crowd soccer elvis che guevara themed kreis wollishofen shamrock irish pub irish pub regular event crowd food served kreis langstrasse xenix art house cinema busy beer garden summer mixture student bohemian bicycle messenger posing fixy total bar tiny bar serving range microbrew music kasheme bar music feature world famous djs mostly vinyl session funk soul disco course electronic music kanonaegass bar bar langstrasse drink music bar owned electronic music trip hop pioneer richard dorfmeister kruder dorfmeister mars bar bar frequented mostly leftist youth acid hip cafe bar gotthard bar dive bar exist forever packed live music mixed crowd likeable kreis akt teen tween love vineria centrale cool low key italian wine bar aperitivo time frau gerold garten huge air bar urban gardening little shop inside summer couple table inside winter aya bar roof lounge cinemax complex older crowd expensive stylish mood jazz club schiffbau complex concert saturday club proportionally club europe anything fancy club chill want club night club party young sure splash income club langstrasse hardbrucke uncommercial platform denkmal aggregate published event club bars look unsere beweggrunde mostly focused club scene usgang pretty feature mostly commercial party tra club event concert famously weekly goth dark scene party trashy depending party check beforehand hive club room wander listen djs abroad nonstop party weekend focus techno house bar club atmosphere especially summer outdoor live concert night safe haven independent artist gonzo basement club generally play electronic music fun queue door strict wednesday hip hop thursday student klaus member club mostly frequented scene feature mostly djs befriend kauz underground club drink cocktail selection house techno electronic music exil club concert venue kreis look happening beforehand music range trap hiphop indie rock frieda buxe underground club techno house music beloved scene kaufleuten mascotte plaza fancier club champagne lounge jazz gay lesbian traveller rathauscafe coffee croissant morning moving sparkling wine afternoon early evening terrace summer mixed crowd friendly service cranberry crowded friday saturday boys head club barfusser europe oldest gay bar converted fancy lounge sushi relaxed atmosphere mixed crowd heldenbar heldenbar weekly together lgbtqi scene

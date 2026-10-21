@@ -2,24 +2,28 @@ Great Barrier Reef, Australia
 Labels: nature, beach, adventure | Split: test
 Source: https://en.wikivoyage.org/wiki/Great_Barrier_Reef (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (8,022 characters) =====
+===== CLEANED GUIDE TEXT (8,030 characters) =====
 
 The Great Barrier Reef is a coral formation, the largest in the world, and one of the seven natural wonders off the Pacific coast of Queensland, Australia. This UNESCO World Heritage site is home to a spectacular array of marine life and offers awesome diving opportunities.
 
 Understand
+
  
 
 The Great Barrier Reef is the largest coral reef on earth has been a UNESCO World Heritage Site since 1981, one of the earliest world heritage sites. Unfortunately, due to climate change, the reef is extremely endangered and various factors are responsible for this. There's the change in the global climate and the increasing pollution of the sea through shipping and the sewage through the increasing settlement of the east coast are all some factors. Tourism is also a reason to blame for this. Every visitor to this sensitive region should be aware of their responsibility and do their part to preserve this unique natural reef.
 Flora and fauna
+
 The Great Barrier Reef is the largest coral reef system on earth with 359 hard coral species and providing habitat for a variety of species. Among other things, there are 80 species of soft corals and seapens, over 1,500 species of fish, 1,500 species of sponges, 5,000 species of molluscs, 800 species of echinoderms such as starfish, 500 different species of seaweed and 215 species of birds.
 
 Six of the world's seven species of sea turtles are found in the Great Barrier Reef. These include the endangered loggerhead sea turtles and Pacific green turtles that use the reef to lay their eggs. The dugongs (manatees) that live there are also threatened with extinction . In addition, the humpback whales living near Antarctica use the warm waters to give birth to their young, along with other whale species found there.
 
 The jagged and branched coral masses offer ideal conditions for snails and rare mussels such as Arthritica species or spiny snails such as Murex pecten.
 Coral reproduction
+
 A special event is the annual colourful coral bloom, which serves to propagate the corals. This takes place on the Great Barrier Reef during the Australian spring in November and follows a schedule that is strictly set by nature. The factors influencing the time are the water temperature of around 27 °C, the length of the day and the phase of the moon. Only a meticulously coordinated ejection of the egg cells and sperm in large quantities can ensure successful reproduction of the animals under the difficult conditions caused by predators and strong sea currents. 
 
 Do
+
 *
 Pumpkin Island Eco Retreat. Pumpkin Island off the Capricorn Coast near Yeppoon is a sparkling jewel nestled within the Great Barrier Reef Marine Park. Here you will find just five very stylish, eco-friendly self-catering cottages powered by wind and sun, overlooking a crystalline beach. Each accommodates between four and eight guests (with a maximum of 30) and is fully self-contained, very contemporary in flair and nicely separate from each other.
 
@@ -28,6 +32,7 @@ Bedarra Island. Privately owned island between the Great Barrier Reef and South 
 
 
 Reef tours
+
 * Mike Ball Dive Expeditions offers 3,4 and 7 night trips to the Great Barrier Reef, including the Ribbon Reefs and Osprey Reef in the Coral Sea.
 * Cruise Whitsundays offers a reef trip at Queensland's a reef pontoon at Knuckle Reef. Knuckle Reef Pontoon features an underwater viewing chamber and a giant waterslide.
 * Great Barrier Reef Liveaboards. Large range of Great Barrier Reef liveaboards and Coral Sea dive trips. Great Barrier Reef trips from Whitsunday Islands can be found here.
@@ -46,6 +51,7 @@ Cairns Dive Centre. offers a range of daytrips and live aboard packages to suit 
 
 Scuba diving
 
+
  
 
 The Great Barrier Reef is a famed diving destination, although divers with experience of the tropics find parts of it overused and damaged.
@@ -61,11 +67,13 @@ Some of the islands have a fringing reef, and it is possible to dive or snorkel 
 The southern part of the reef off Townsville is known mostly for the wreck of the Yongala, visited on both liveaboards and day trip operators from Townsville, Ayr and Magnetic Island. The Yongala sank in 1911 in about 30 metres (100 feet) of water. As the bottom is otherwise featureless in this area, it is a haven for fish and coral. However, as the site is unprotected many trips have to be cancelled if weather conditions are not favourable.
 
 Eat
+
 * Seafoods at the Great Barrier Reef islands and nearby coastal areas are delicious. There are restricted fishing areas, although it would be better if you go a restaurant.  Reef fish are also available in fish and chip shops.
 
 Drink
+
 Reef day trips sell alcohol on board.    Reef islands nearly always have at least one bar, usually much at the centre of island life.  Some have innovative pool bars.  Some have a young party scene, others have cocktails by the pool, and others close early, targeting the demographic that prefers to wake early to see the dawn, rather seeing it through the haze of the night before.  Check the destination guides.
 
-===== TOKENS THE MODEL TRAINS ON (635) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (635) =====
 
 barrier reef coral formation largest world natural wonder pacific coast queensland unesco world heritage site home spectacular array marine life awesome diving opportunity barrier reef largest coral reef earth unesco world heritage site earliest world heritage site unfortunately due climate change reef extremely endangered factor responsible change global climate increasing pollution sea shipping sewage increasing settlement coast factor tourism reason blame sensitive region aware responsibility preserve unique natural reef flora fauna barrier reef largest coral reef system earth hard coral specy providing habitat variety specy thing specy soft coral seapen specy fish specy sponge specy mollusc specy echinoderm starfish specy seaweed specy bird world specy sea turtle barrier reef endangered loggerhead sea turtle pacific green turtle reef lay eggs dugong manatee live threatened extinction addition humpback whale living antarctica warm water give birth young whale specy jagged branched coral mass ideal condition snail rare mussel arthritica specy spiny snail murex pecten coral reproduction special event annual colourful coral bloom serve propagate coral take barrier reef australian spring follow schedule strictly set nature factor influencing water temperature length phase moon meticulously coordinated ejection egg cell sperm quantity ensure successful reproduction animal difficult condition caused predator strong sea current pumpkin island eco retreat pumpkin island capricorn coast yeppoon sparkling jewel nestled barrier reef marine park stylish eco friendly self catering cottage powered wind overlooking crystalline beach accommodate guest maximum fully self contained contemporary flair nicely separate bedarra island privately owned island barrier reef mission beach mainland island luxury resort consisting villa nestled rain forest maximum guest resort island secret outside world children aged catered barrier reef nearby organized snorkelling scuba diving trip barrier reef arranged reef tour mike ball dive expedition night trip barrier reef ribbon reef osprey reef coral sea cruise whitsunday reef trip queensland reef pontoon knuckle reef knuckle reef pontoon feature underwater viewing chamber giant waterslide barrier reef liveaboard range barrier reef liveaboard coral sea dive trip barrier reef trip whitsunday island cairn tour advice booking cairn travel agency esplanade cairn offering independent cairn tour advice booking barrier reef rainforest tour ocean cairn based tour company taking green island upolu cay passion paradise cairn barrier reef metre custom designed sailing catamaran depart beautiful michaelma cay paradise reef giving choice destination sunbathe snorkel scuba dive glass bottom boat ride simply sail trip suitable ages horizon sail dive classic sailing boat outer barrier reef allow experience reef smaller intimate affair maximum passenger trip lost adventure group diving locally owned operated cairn dive range daytrip live aboard package suit budget scuba diving barrier reef famed diving destination diver experience tropic part overused damaged traveller learn dive townsville cairn port dougla competitive dive industry student prefer pool classroom course followed liveaboard visiting reef cairn possible learn operator travel coral sea check difficulty dive site land based learn dive course cost dive course liveaboard start trip reef cairn port dougla diving operator trip involve boat travel direction cost operator liveaboard reef cairn starting diving night boat meal included snorkeler travel trip reduced price check suitability site snorkelling serious diver generally prefer liveaboard visiting coral sea boat trip particularly liveaboard cheaper booked last possible moment standby rate certain amount risk involved arrive destination hoping booking become able somewhat flexible date departure able travel choice operator diver report able standby trip dive travel agent able advise island fringing reef possible dive snorkel shore reef townsville mostly wreck yongala visited liveaboard trip operator townsville ayr magnetic island yongala sank metre feet water bottom featureless haven fish coral site unprotected trip cancelled weather condition favourable seafood barrier reef island nearby coastal delicious restricted fishing restaurant reef fish fish chip shop reef trip sell alcohol board reef island nearly bar island life innovative pool bars young party scene cocktail pool close early targeting demographic prefer wake early dawn seeing haze night check destination guide

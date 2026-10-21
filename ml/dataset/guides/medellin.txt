@@ -2,7 +2,7 @@ Medellín, Colombia
 Labels: culture, nightlife | Split: validation
 Source: https://en.wikivoyage.org/wiki/Medell%C3%ADn (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (43,139 characters) =====
+===== CLEANED GUIDE TEXT (43,134 characters) =====
 
 Medellín is the second largest city in Colombia. It has 2.62 million residents (2024) and is the capital of the department of Antioquia. It's set in a valley running south to north and just a one-hour flight from Bogotá. For international travelers, Medellín is perhaps most famous for the Antioquia Museum, with its extensive collection of Botero paintings inside and Botero sculptures outside on its main plaza. The city is also known for its perfect climate with its nickname "city of the eternal spring".
 
@@ -10,7 +10,9 @@ Medellín is the second largest city in Colombia. It has 2.62 million residents 
 
 Understand
 
+
 History
+
 
 Let's just get it out of the way up front: throughout the 1980s and 1990s, Medellín  was considered one of the most dangerous cities in the world for its size, and had a highly disproportional homicide and kidnapping rate. It was the home of the drug lord Pablo Escobar and the so-called Medellín Cartel, who virtually took over the city during that time. Since his demise in the mid-1990s, the cartel was disbanded and the city rebounded tremendously. In 1991 there were 6,500 murders in the city, by 2009 the murder rate decreased to 2,900. In 2016, there were a total of 534 homicides reported in Medellín. As of 2022, there were 392 homicides, or 15 per 100,000 people. This rate is similar to the homicide rates in Denver or Dallas. So it is safe to say that the city is better off today than 20 years ago. Paisas, the residents of this region, are proud of their city's progress, and are ready to move forward with vigor.
 
@@ -20,12 +22,15 @@ As a relatively new city, the architecture has a decidedly modernist appeal, whi
 
 Metropolitan area
 
+
 Medellín is surrounded by 9 smaller towns and together they form the Area Metropolitana with almost 3.5 million people. These other towns are: Bello, Itaguí, Envigado, Sabaneta, La Estrella, Caldas, Copacabana, Girardota and Barbosa. It is a true conglomerate of towns and you will find it difficult to tell the borders between these municipalities.
 Located east of Medellín is the valley of Rionegro which is larger and higher in the mountains. This area holds some of the most important factories, recreational grounds and suburbs of the city, as well as the international airport.
 
 See
 
+
 Landmarks
+
 
 * Pueblito Paisa is a reconstruction of a typical but tiny Antioquia village. It's located on top of el Cerro Nutibara and has a pleasant view over the city. Also atop the hill is the Museum of the City (Spanish: Museo de Ciudad)(COP $7000) which houses photos from the city’s past and a large 3D scale model. It's within walking distance from the metrostation "Industriales," but as the walk to the top requires hiking uphill for a while, visitors might find that a taxi ride is a smart choice.
 *Los Alumbrados, the Christmas lights decorating Medellín, make it the most beautiful Latin American city for the holidays. The lights stay put from the beginning of December to mid January. The most impressive parts are centered around the Rio Medellín at the 'puente de Guayaquil' and downtown. Large statues made of lights can be found throughout the city.
@@ -33,6 +38,7 @@ Landmarks
 *The Junin pedestrian street is a cobblestone street in downtown area from Colteger building to Bolivar's park shows the history of city with Astor tea salon and Versalles salon.
 
 Museums and the arts
+
  
 * 
 Museo de Antioquia. A collection of contemporary art including many pieces, paintings and sculptures of Fernando Botero, one of the most important sculptors in the world. The Plaza Botero holds several large sculptures just in front of the museum and is free of charge.
@@ -57,6 +63,7 @@ Museo Etnográfico Miguel Angel Builes. A large display of everyday use articles
 * After the wave of violence in the 1980s and 90s there was a resurgence in the field of education and the construction of modern libraries in poor neighborhoods became a top priority. A few of them are masterpieces of architecture and a couple of them are easy to visit: Biblioteca España is atop the mountain and looks like giant black rocks hanging in the hills: Go to Metrostation Acevedo then take Metrocable to Santo Domingo station. Another library is close to Metrostation San Javier.
 
 Parks
+
  
 
 *The Parque de la bailarina I.C.R.C. (Ballerina's I.C.R.C. Park) Carrera 43 E between 7 and 9 street. Is a park located in El Poblado. You can find art that is made by artistic a cultural corporation [  Alas de mariposa since 2008, every month.
@@ -85,11 +92,13 @@ Zoo. Around 1,000 animals are displayed here.
 
 Buildings
 
+
 * Ferrocarril de Antioquia - Old train station is a fine building at the corner of City Hall and the Governor's Hall.  Has a small exhibit area with free admission.  Cra 52 # 43-31. Metro station Alpujarra.
 * EPM building also called the Intelligent building for its computerized self-control. An icon of contemporary architecture. Cra. 58 calle 42. Metro station Alpujarra.
 * Edificio Coltejer has been the symbol of the city for over 40 years, shaped as a threading needle for this textile company. Calle 52 cra 47 (Crossroads of La Playa Ave and Junín). Metro station Parque Berrio.
 
 Neighborhoods
+
 
  
 
@@ -100,13 +109,16 @@ Neighborhoods
 
 If you only have a day
 
+
 In the morning take the metro to a downtown station, visit some churches - most are open early in the morning -, then head to the park outside Museo de Antioquia to see the sculptures, enter the museum at 10AM and visit until lunchtime.
 
 Have lunch either at the museum's restaurant or cafe, or take the metro to Metrostation Universidad, enter Jardin Botanico (Botanical Gardens) and eat there. Rest a little while strolling the gardens, then  go across the street to Parque Explora or Parque de los Deseos. Before sunset take the metro to Acevedo station, hop on the Metrocable for spectacular views in the way up, and a city of lights upon your return. Take the metro back to any station near El Poblado, go shopping and then for dinner and a bar afterwards.
 
 Do
 
+
 Sightseeing
+
  
 *
 Metrocables. There are two cable car extensions of the Metro: For the line K take a metro train to Acevedo station and from there take the Metrocable up to Santo Domingo for a nice view over the city. The cablecar is included in your metroticket. Go during the day and walk around to see what working-class people live like. The area at the top sees tourists so there are little stands set up and people selling empanadas and other things. You can stop at a little bar and have a beer. Don't stray too far or off the beaten path in this neighborhood, though. For those so inclined, there are young people that give tours waiting at the top wearing t-shirts that said "guia" (guide).  From Santo Domingo you can take the line L to have an even better view over the city and ride some time over a forest to the Parque Arví. Taking this touristic line costs COP$11,150 (December 2022). The last departure from Parque Arví is 18:00.  Also recommended is taking the metrocable located at San Javier up to La Aurora (J line). Although there is nothing special to see or do at the top of the cable car route, the trip itself is longer and more interesting than the cable car that goes to Santo Domingo.
@@ -129,6 +141,7 @@ Biblioteca España.
 
 
 Entertainment
+
  
 *Medellín has a very active cultural life. There are four major theatres in town: Metropolitan Theatre, Pablo Tobon Uribe, Teatro de la Universidad de Medellín and Teatro EAFIT (page not updated since 2014). They offer a variety of Music concerts, Opera, Theater, Ballet and other events with international and local performers.
 *There are several good quality contemporary and classic theater companies, such as Matacandelas, Hora 25, Pequeño Teatro, Oficina Central de los Sueños and Teatro Popular de Medellín. There is an annual Theater Festival held in the last week of August, organized by Medellín en Escena
@@ -141,6 +154,7 @@ Cine Colombia, Royal Films or Cinemark.
 
 Sports
 
+
  
 
 Medellín sports various "unidades deportivas" - "sport units", which are essentially parks with sport facilities: Soccer, basketball, swimming, archery ranges etc. Admission is free for most parts (pools might ask a small fee), but they are popular destinations for locals as early as 6am and thus might require some waiting time until a facility is available. As a historical side note: These places were created to get potential criminals off the streets and the people of Medellín welcomed them very much.
@@ -152,6 +166,7 @@ Medellín sports various "unidades deportivas" - "sport units", which are essent
 * Try the new skateboarding track at Parque Ciudad del Rio. Opened July 2009, this colorful bowl-like ramps allow lots of fun for skaters and spectators. Metro station: Industriales.
 
 Fairs, shows & exhibits
+
 
  
 
@@ -173,19 +188,23 @@ Parque Norte Medellín. amusement park that is almost more like a carnival in te
 
 Outside the city
 
+
 * There are a few coffee farms within 1h drive from Medellín, they can be visited on a guided tour.
 * 
 Camino al Sol. A retreat center located in the Yaogará nature reserve. Offers traditional yagé ceremonies, farm-to-table meals, and eco-lodging in the Colombian Andes.
 
 
 Golf
+
 Medellín lies in a valley at approximately 1,500&nbsp;m, with year-round temperatures of 22–25°C — earning the city the nickname "City of Eternal Spring". Club Campestre de Medellín operates two locations: an in-city 9-hole layout in El Poblado and an 18-hole course in Llano Grande approximately 40 minutes east of the city. Club El Rodeo is the larger 18-hole club in the western Antioquia hills. Both are private; visitor access requires advance arrangement. The Coffee Triangle, including the well-known Pete Dye-designed Club Campestre de Pereira (notable for resident capybaras), is approximately 4 hours by road from Medellín and is sometimes combined into a multi-day golf circuit.
 
 Corporate events and incentives
+
 Medellín has positioned itself as one of Latin America's leading corporate-event destinations following its 2013 designation as the "Most Innovative City of the Year" by the Urban Land Institute / Wall Street Journal. The Plaza Mayor convention center hosts most large-scale meetings, while the city's hotel infrastructure in El Poblado (Hilton, Marriott, Intercontinental, Estelar) supports incentive programs of 100–500 attendees. Notable incentive activities include private cable-car bookings at Parque Arví, helicopter transfers to the coffee region, and partial bookings of the Comuna 13 cultural-tour circuit. The city's altitude is mild enough to avoid the acclimatization issues common to Bogotá-based meetings.
 
 
 Buy
+
 
 Colombia is famous for its coffee and Medellín is only a few hours from the coffee growing centers of Colombia. You can find coffee flavors of everything you can imagine, from ice-cream to arequipe (sweetened milk). The ‘Starbucks’ coffee culture is growing, with the most prominent brand being Juan Valdez coffee shops. The Juan Valdez chain is owned by the National Federation of Coffee Growers of Colombia, and sells a variety of Colombian coffees.
 
@@ -197,10 +216,12 @@ Despite the claim of being the textile capital of Colombia, Medellín is not a s
 
 Handcrafts
 
+
 * On the first Saturday of the month there is the Mercado de San Alejo, an open market right on Parque de Bolívar, hours: 8AM a 6PM A large variety of local handcrafts sold primarily by the artisans themselves. Right in the middle of Parque Lleras from Thursday to Sunday you may as well find some handcraft being sold.
 * Centro Artesanal mi viejo Pueblo. Cr 49 # 53-30. Phone +57 4 513 7563
 
 Shopping malls
+
 
 *
 El Tesoro Parque Comercial. A large shopping mall located in an unusual location: in very steep mountain overriding a creek. Many upscale stores, technology shops and good restaurants. El Tesoro is bilingual; they have an Information Center where tourists can get any information in English, every day from 2PM to 9:30PM. Furthermore, it is possible to access this service calling 321 10 10 ext 111-112. And just for tourists to go shopping without any problem, the mall made a brochure with all the terms and expressions they need, in English and Spanish. Ask for it at the information desks.
@@ -224,11 +245,13 @@ Santa Fe centro comercial. The mall opened May 2010. 5 levels of shopping, enter
 
 Stores
 
+
 * For leather goods for women visit Bon-Bonite with 10 locations in town. Features many handbags in leather and ethnic materials, as well as shoes and accessories. Available In most shopping malls.
 *Shoes, you will find many brands as Calzatodo, Mercedes Campuzano, Mussi or if you are searching for shoes accessories Pura+.
 *Underwear, for men and women, are plentiful and the variety is great. Women: Leonisa. Men: Unico, Punto Blanco, Bronzini, GEF, NrgyBlast. Babies: Baby Fresh, Beybies. In all major shopping malls.
 
 Money
+
 
 The local currency is the Colombian peso (COP$). It is strongly recommended to use the exact change on taxis, because the drivers rarely have the exact amount. US dollars and euros are rarely used, except for tourist oriented stores.
 
@@ -239,6 +262,7 @@ ATM limits: ATMs strictly limit withdrawals on foreign and domestic cards. You m
 When withdrawing money from an ATM it is highly advisable to avoid any located on streets for safety purposes. It is recommended to withdraw from ATMs inside shopping centers. Be sure not to take a taxi straight after withdrawing, it is not unusual for people to be followed out and mugged soon after making a withdrawal. Keep an eye out to be sure you are not followed. If you plan to withdraw a significant amount of money, it is recommended to ask the police to escort you (at no cost).
 
 Eat
+
  
 Colombian cuisine is varied and regional. The more typical dishes are referred to as comida criolla.
 
@@ -255,15 +279,23 @@ Colombia also has an incredible variety of tasty fruits. A few of these are: gua
 Colombia is well known for its coffee, and Medellín is no exception. As with any large city, there are the usual chain restaurants, however the American "fast-food culture" has not made a huge splash in the country. Mc Donald's, Burger King, Domino's Pizza and Hooters can be found there.
 
 Street Food
+
  
 
 Budget
-==== El Poblado ====
-Laureles, Suramericana, Estadio
-====Oriente - eastern suburbs====
-Downtown
-===Mid-range===
+
 El Poblado
+
+Laureles, Suramericana, Estadio
+
+Oriente - eastern suburbs
+
+Downtown
+
+Mid-range
+
+El Poblado
+
 *
 Al Patio. Restaurant and bar. Overlooks town, great outdoors.
 
@@ -284,6 +316,7 @@ El Café de Otraparte. Next door to the museum. Open-air and open-minded café.
 
  
 Laureles, Suramericana, Estadio
+
 *
 Fenicia. Mainly Lebanese dishes in this unpretentious restaurant. Good food.
 
@@ -291,6 +324,7 @@ Fenicia. Mainly Lebanese dishes in this unpretentious restaurant. Good food.
 El Arbol de la Vida. Well served vegan dishes, low in salt - hey, the use of salt shaker is free.
 
 Downtown
+
 *
 Versalles. Restaurant along carrera Junin downtown has basic Argentinean fare at reasonable prices.
 
@@ -301,7 +335,9 @@ Restaurante Vegetariano. Daily menu, burgers.
 Lenteja Espress. Vegetarian burgers (chickpeas and lentils), Mexican vegan, lasagnas. Also features a Poblado location at Carrera 35 # 8A-75
 
 Oriente - eastern suburbs
-====Multiple locations & online - delivery====
+
+Multiple locations & online - delivery
+
 *J y C Delicias offers typical arepas with a variety of toppings, good for lunch or dinner. A few locations: in Laureles neighborhood Carrera 76 # 33 A-62, . In El Poblado Calle 4 Sur # 43 A-8, , and El Tesoro Shopping mall.
 *
 Mondongo's. A famous and traditional local restaurant with tow locations in town, and one additional in Miami for the homesick. Offers a local soup made up with tripe. If not adventurous you can go for regular beans and other delicacies. Additional location in El Poblado Calle 10 # 38 -38, .
@@ -313,7 +349,9 @@ El Astor. Traditional cakes, pastries and desserts. Tea house. Metrostation Parq
 Pasteleria Santa Elena. Great desserts, pastries and the locally famous 'Pastel de Gloria' filled with guava paste and arequipe. Also downtown at Ave. La Playa Carrera 45 # 50-64. Many locations throughout town.
 
 Splurge
-==== El Poblado ====
+
+El Poblado
+
 *
 HatoViejo. Great food for the last 30 years. Mostly meat, regional dishes. Decorated as an old farm. Also outdoor areas
 
@@ -327,15 +365,20 @@ ElCielo. Molecular cooking is a complex science, here you can sit down and enjoy
 La Cafetiere de Anita. Modern cafe with indoor and outdoor seating. Eggs any style, bacon or French toast. Sandwiches (ciabatta or baguette), salads (Caesar, tuna, Thai or Italian), delicious coffee and fruit juices.
 
 Laureles, Suramericana, Estadio
-====Downtown====
+
+Downtown
+
 *
 In situ restaurante. Reservations recommended. Nice restaurant located in the middle of the Botanical Gardens. The menu offers a combination of local food, some organic choices and all plates are well presented. Outside the restaurant there is a little garden with herbs and aromatic plants.
 .
 Oriente - eastern suburbs
 
+
 Drink
 
+
 Local drinks
+
 
 * Aguardiente - A popular alcoholic beverage in Colombia with sweet and licorice-flavored, made-up of sugarcane. The local brand is Aguardiente Antioqueño and it is usually drank straight followed by an ounce of water or slices of mango.
 * Ron - Rum is also popular with locals. The domestic brand is Ron Medellín Añejo aged either 3, 8, 12 or 30 years, typically served mixed with Club Soda, Coca-Cola or lemon juice.
@@ -346,6 +389,7 @@ Local drinks
 Thursdays, Fridays and Saturdays are the main days to party in Medellín; the rest of the week the mainstream nightlife isn't really exciting. Bars close at 2AM, but you will find plenty of clubs that close at 4AM, and if you need to stay up later just look for the techno or electronica clubs.
 
 Dance clubs
+
 *
 El Blue. A popular place with cross-over music (a mix of rock and local music). It's popular with gringos and 'gringo hunters'. Thursday is the night to go.
 
@@ -369,6 +413,7 @@ Viva. Large 2-story dance club with mostly gay clientele
 
 
 Bars
+
 
 There are a few districts for bars. Foreigners prefer Parque Lleras in El Poblado, safer, more upscale, nicer crowds. The middle class also mingle outside Museo de Arte Moderno, near Carlos E Restrepo neighborhood; and the so-called Urban Tribes meet at Parque del Periodista (downtown). Other areas with bars are: Carrera 70 near Estadio, Carretera Las Palmas and Avenida 33 in Laureles.
 
@@ -402,6 +447,6 @@ Bolero Bar. Tangos, boleros.
 *
 Bermellón Restaurante Café Bar. Tango, et al.
 
-===== TOKENS THE MODEL TRAINS ON (3,262) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (3,262) =====
 
 largest million resident capital department antioquia set valley running hour flight bogota international traveler famous antioquia museum extensive collection botero painting inside botero sculpture outside plaza perfect climate nickname eternal spring history let front throughout considered dangerous city world size highly disproportional homicide kidnapping rate home drug lord pablo escobar called cartel virtually took demise mid cartel disbanded rebounded tremendously murder murder rate decreased total homicide reported homicide rate similar homicide rate denver dalla safe say today ago paisa resident region proud progress ready move forward vigor vast built aburra valley surrounded side majestic mountain range wealthier class live protected hillside neighborhood poblado traditional suburban neighborhood laurele envigado far removed action commotion busy market thriving street life charm home half dozen university accounting vibrant cultural nightlife scene fueled thousand young adult country largest industrial home factory making everything designer clothing toyota suvs hill flooded rural refugee ongoing civil war ingenuity making living impressive sell anything crayon guinea pigs garden earth bars order living relatively architecture decidedly modernist appeal hand hand progressiveness resident metro system metropolitan surrounded smaller town together form metropolitana million town bello itagui envigado sabaneta estrella calda copacabana girardota barbosa true conglomerate town difficult tell border municipality valley rionegro larger higher mountain hold important factory recreational ground suburb international airport landmark pueblito paisa reconstruction typical tiny antioquia village cerro nutibara pleasant view atop hill museum spanish museo ciudad cop house photo city past scale model walking distance metrostation industriale walk require hiking uphill taxi ride smart choice alumbrado christma light decorating beautiful latin american holiday light stay put beginning mid impressive part centered puente guayaquil downtown statue light throughout metropolitan cathedral hold record building world brick million bolivar park heart cra calle metro station prado junin pedestrian street cobblestone street downtown colteger building bolivar park show history astor tea salon versalle salon museum arts museo antioquia collection contemporary art piece painting sculpture fernando botero important sculptor world plaza botero hold sculpture front museum charge museo universidad antioquia represent merge collection visual arts natural science university history galileo interactive room human anthropology attraction foreigner anthropology collection largest pre columbian ceramic piece object bloque university campus casa museo fernando gonzalez writer philosopher somewhere otraparte give home opportunity old traditional home garden personal belonging know legacy cra sur avenida fernando gonzalez nearby envigado phone closest metro station envigado cab bus walk nbsp mostly uphill museo nel gomez show artwork artist sunday holiday metro closest station prado hospital museo interactivo epm please touch museum kids monday tuesday holiday monday cra parque pies descalzo door plaza mayor convention phone metro station alpujarra cisnero museo etnografico miguel angel buile display everyday article crafted native country tool textile bijouterie pottery little boat tent cra museum beaten path closest metro station floresta walk nbsp museo arte moderno mamm site original building suramericana carlo restrepo neighborhood hosting traditional exhibit space ciudad old industrial warehouse cafe restaurant premise opened metrostation industriale original site carlo restrepo carrera phone ciudad carrera law mandated building invest budget work art displayed public sculpture legacy monument sculpture scattered throughout nickname sculpture higher concentration sculpture mentioned plaza botero cerro nutibara close pueblito paisa garden suramericana headquarter largest insurance company country wave violence resurgence field education construction modern library poor neighborhood priority masterpiece architecture couple easy biblioteca espana atop mountain look giant black rock hanging hill metrostation acevedo metrocable santo domingo station another library close metrostation javier park parque bailarina ballerina park carrera street park poblado art artistic cultural corporation alas mariposa month parque deseo antioquia university indian context beautifully imbued planetarium display science experiment air movy discussion film director saturday metro station universidad plaza cisnero heart border beautiful building epm library sector drug poverty ago metro station alpujarra parque pies descalzo barefoot park zen experience heart outdoor cafe cultural activity metro station alpujarra cisnero plazuela ignacio depict colonial republican style building little plaza witnessed birthplace largest university lecture hall paraninfo universidad antioquia public view university moved ago campus nbsp cra calle metro station parque berrio walk uphill block parque berrio heart crossroad carrera calle building stock exchange bank candelaria church busiest metro station unofficial meetingplace local sculpture fat woman gorda botero connect directly plaza botero plazuela nutibara metro station parque berrio parque periodista journalist park square bohemian alternative meet bars play music varying reggae old salsa alternative rock hanging outdoor instead inside bars metro station parque berrio parque antonio newer development downtown host handcraft bazaar infamous sculpture fat dove bombed criminal couple decade ago hard time violence request artist piece art repaired metro station antonio parque attractive lead promenade playa gathering night street acts jardin botanico mid size garden vast collection orchid tropical flower plant tree beautiful lake unfortunately information provided plant except bring smartphone lookup information wikipedia botanically curious covered display flower architectural marvel annual orchid exhibit world class month private event check website purportedly restaurant zoo animal displayed parque juane paz limited touristic attraction mostly sport court served neighborhood help world famous singer work began recreational park rehabilitation handicapped facility completed metrostation tricentenario arvi park slope valley close beautiful dam park entrance promote ecotourism guided trail hiker cop foreigner mountain bike picnic butterfly dome cop park metrocable line min take tree tops park santa elena bus cop cra calle close parque berrio safe walk trail guide picnic concrete walkway parque salado beautiful natural setting mountain overlooking envigado path walking attraction short canopy tour zip line stop complete longer additional length reserved member metro envigado connecting bus parque salado bus ride worth trip wind neighborhood mountain view building ferrocarril antioquia old train station fine building corner hall governor hall exhibit admission cra metro station alpujarra epm building called intelligent building computerized self control icon contemporary architecture cra calle metro station alpujarra edificio coltejer symbol shaped threading needle textile company calle cra crossroad playa ave junin metro station parque berrio neighborhood prado neighborhood formerly wealthy neighbourhood huge house built beautiful old house visited caution metro station prado poblado neighborhood upscale built steep hill modern building complement nearby ande forest trendy bars club restaurant neighborhood safe walk recommended metro poblado station walk calle approximately nbsp river middle class neighborhood laurele estadio suramericana modern carrera suramericana salsa club represent excellent break trendiness zona rosa real colombian dancing line metro runs estadio major stadium sport facility commmune comuna javier informal housing brick house constructed owner side section sit steep slope notional street calle carrera actually stair community suffered war government rebel late early century fairly peaceful commune barrio independencia carrera upward intersection calle javier metro station balcon section carrerra calle upper carrera uppermost section carrera formed stair parallel escalator street lined oriented bars restaurant souvenir kiosk morning metro downtown station church early morning head park outside museo antioquia sculpture enter museum lunchtime lunch museum restaurant cafe metro metrostation universidad enter jardin botanico botanical garden rest little strolling garden street parque explora parque deseo sunset metro acevedo station hop metrocable spectacular view light return metro station poblado shopping dinner bar afterward sightseeing metrocable cable car extension metro line metro train acevedo station metrocable santo domingo view cablecar included metroticket walk working class live sees little stand set selling empanada thing stop little bar beer dont stray far beaten path neighborhood inclined young give tour waiting wearing shirt said guia guide santo domingo line view ride forest parque arvi taking touristic line cost cop last departure parque arvi recommended taking metrocable javier aurora line nothing special cable car route trip longer interesting cable car santo domingo stroll lively carabobo street carrera heart downtown pedestrian safer daytime metro station parque berrio antonio alpujarra street plaza botero read museum basilica candelaria built national monument cra carabobo edificio vasquez carre built turn century architect nowaday public store cafeteria etc cra calle veracruz colonial church built cra palacio nacional circa shopping mall styled romantic modern influence cra comuna past javier metro station attract tourism graffiti street art performance medellin dangerous neighborhood received funding community attention boast cultural tour panoramic bars covered outdoor escalator walking tour ones real tour depart pedestrian bridge side alpujarra station monday friday saturday sunday turibus option general overview attraction tour last allow minute stop sight seeing photo turibus depart side parque poblado return bus stop hop hop service spanish advertised language time guide speak english happy translate gtopik paragliding felix excellent paragliding company flying able aburra valley sky experience beautiful scenery waterfall launch point easy paragliding flying farther wish explore nearby town jeronimo santafe antioquia flying bird family vacation learn fly bus milagro terminal caribe metro station ask voladero biblioteca espana entertainment active cultural life major theatre metropolitan theatre pablo tobon uribe teatro universidad teatro eafit page updated variety music concert opera theater ballet event international performer quality contemporary classic theater company matacandela hora pequeno teatro oficina sueno teatro annual theater festival held last week organized escena sits classical music orchestra orquesta filarmonica orquesta eafit annual opera program held organized prolirica antioquia movy movy projected original language spanish subtitle independent flick centro colombo americano downtown poblado location commercial movy shopping mall cine royal film cinemark sport sport unidade deportiva sport unit essentially park sport facility soccer basketball swimming archery range etc admission part pool ask fee destination local early require waiting facility historical side note created potential criminal street welcomed watch soccer game team based atletico nacional independiente attending home game atanasio girardot stadium recommended football soccer fans wanting experience famed american passion futbol game generally wednesday saturday sunday ticket purchased fanki app metro station estadio neighboring envigado professional soccer team metro station envigado neighboring itagui professional soccer team ticket purchased fanki app time juvenile soccer world cup held called fifa venue skateboarding track parque ciudad opened colorful bowl ramp allow fun skater spectator metro station industriale fair show exhibit festival feria flore flower festival kind event week desfile silletero parade flower carrier freshwater aquarium inside parque explora opened depict variety river freshwater wildlife abundant probably largest aquarium latin america certainly specialized freshwater fauna metro station universidad planetario municipal digital equipment outer space planetarium cra parque deseo metro station universidad important poetry festival world poet world nobel priz amazing event moon night old cemetery cementerio former president beautiful sculpted graveyard metro station hospital universidad convention plaza mayor site event fashion textile industry related annual show colombiamoda colombiatex mid international tango festival convene world renowned artist admission event tangovia monthly street fair neighborhood manrique tango performer singer group dancer calle carrera parque norte amusement park carnival term caliber ride boat ride dinosaur statue botanical garden lagoon obtain view valley christma ornamentation given ride line etc worth price outside coffee farm drive visited guided tour camino sol retreat yaogara nature traditional yage ceremony farm table meal eco lodging colombian ande golf lies valley approximately nbsp round temperature earning nickname eternal spring club campestre operate location hole layout poblado hole course llano grande approximately minute club rodeo larger hole club antioquia hill private access require advance arrangement coffee triangle pete dye designed club campestre pereira notable resident capybara approximately road combined multi golf circuit corporate event incentive positioned latin america leading corporate event destination following designation innovative urban land institute wall street journal plaza mayor convention host scale meeting hotel infrastructure poblado hilton marriott intercontinental estelar support incentive program attendee notable incentive activity private cable car booking parque arvi helicopter transfer coffee region partial booking comuna cultural tour circuit altitude mild enough avoid acclimatization issue common bogota based meeting famous coffee coffee growing center coffee flavor everything imagine ice cream arequipe sweetened milk starbuck coffee culture growing prominent brand juan valdez coffee shop juan valdez chain owned national federation coffee grower sell variety colombian coffee aguardiente antioqueno schnap special flavor black licorice ron quality elevated highest standard bottle present despite claim textile capital shopper paradise clothe american price attractive latitude mall sell limited variety clothe especially mens clothe slightly discounted price bargain look hard enough style clothe women revealing sexy suited gift buying shopping planning shopping clothe bear mind weather mild option winter summer clothe limited parque llera primavera little zone young designer shop unique garment surely wont anywhere handcraft saturday month mercado alejo market parque bolivar variety handcraft sold primarily artisan middle parque llera thursday sunday handcraft sold centro artesanal viejo pueblo phone shopping mall tesoro parque comercial shopping mall unusual steep mountain overriding creek upscale store technology shop restaurant tesoro bilingual information information english furthermore possible access service calling ext shopping problem mall brochure term expression english spanish ask information desk oviedo centro comercial shopping nearby hotel restaurant diego centro comercial shopping mall built ago stroll course shop price notch merchandise outlet mayorca directly connected metro station movieplex metro itagui premium plaza premium plaza cell parking shop choose entertainment shopping financial service bank cinema format gym amusement park square meal largest casino synthetic soccer court monterrey block poblado metro station mall anything computer cell phone related shop selling manner electronic equipment accessory screen movie theatre mall salon offering excellent massage store santa centro comercial mall opened level shopping entertainment food store leather good women bon bonite location feature handbag leather ethnic material shoe accessory shopping mall shoe brand calzatodo mercede campuzano mussi searching shoe accessory pura underwear men women plentiful variety women leonisa men unico punto blanco bronzini gef nrgyblast baby baby fresh beyby major shopping mall money currency colombian peso cop strongly recommended exact change taxis driver rarely exact amount dollar euro rarely except oriented store credit debit card frequent prevalent developed country atm limit atms strictly limit withdrawal foreign domestic card able cop million plan atm hunt relaxed limit major international bank office chance hold card bank rate lower citibank hsbc rbs santander bbva largest colombian bank bancolombia atms everywhere withdrawing money atm highly advisable avoid street safety purpose recommended withdraw atms inside shopping center sure taxi straight withdrawing unusual followed mugged soon making withdrawal keep eye sure followed plan withdraw significant amount money recommended ask police escort cost colombian cuisine varied regional typical dish referred comida criolla example sancocho gallina chicken soup carne molida ground beef arepa choclo fresh corn tortilla empanada meat filled fried turnover aji hot sauce ajiaco bogota chicken potato soup bandeja paisa natilla bunuelo fried cheese puff hojuela fried puff square rice coconut antioquian bean sobrebarriga flank steak mantecada bun lard papa chorreada pandeyuca yucca bread carne desmechada shredded meat typical breakfast consist baked corn arepa flat unsweetened corn pancake topped butter fresh white cheese coffee hot chocolate treat leave anyone stuffed tipico antioqueno arepa con queso flatbread cheese bean chicken rice fried eggs chicharron salted fried unsmoked bacon patacon deep fried plantain pancake topping colombian beer cup chocolatte pronounced spanish milky sweet hot chocolate excellent meal excellent typical food hatoviejo variety restaurant throughout especially concentrated zona rosa poblado parque poblado parque llera fine display food desire quality comparatively cheap price compared shortage authentic greek indian thai restaurant sushi increasingly larger mall supermarket international incredible variety tasty fruit guanabana lulo zapote mamoncillo uchuva feijoa granadilla maracuya tomate arbol borojo mamey tamarindo ask salpicon mix fruit marinaded orange watermelon juice michelada beer lime juice salt rimmed glass similar mexican version except amount lime juice coffee exception usual chain restaurant american fast food culture huge splash country donald burger king domino pizza hooter street food budget poblado laurele suramericana estadio oriente suburb downtown mid range poblado patio restaurant bar overlook outdoor mystic restaurante skirt steak option milagro authentic mexican food basic wine list pilon guarceno lunch menu choose side rice salad bar bonuar outdoor easy parking cafe otraparte door museum air minded cafe laurele suramericana estadio fenicia mainly lebanese dish unpretentious restaurant food arbol vida served vegan dish low salt hey salt shaker downtown versalle restaurant carrera junin downtown basic argentinean fare reasonable price restaurante vegetariano menu burger lenteja espress vegetarian burger chickpea lentil mexican vegan lasagna feature poblado carrera oriente suburb multiple location online delivery delicia typical arepa variety topping lunch dinner location laurele neighborhood carrera poblado calle sur tesoro shopping mall mondongo famous traditional restaurant tow location additional homesick soup tripe adventurous regular bean delicacy additional poblado calle astor traditional cake pastry dessert tea house metrostation parque berrio pasteleria santa elena dessert pastry locally famous pastel gloria filled guava paste arequipe downtown ave playa carrera location throughout splurge poblado hatoviejo food last mostly meat regional dish decorated old farm outdoor herbario short exquisite menu elcielo molecular cooking complex science sit enjoy ignorance bliss cafetiere anita modern cafe indoor outdoor seating eggs style bacon toast sandwich ciabatta baguette salad caesar tuna thai italian delicious coffee fruit juice laurele suramericana estadio downtown situ restaurante reservation recommended restaurant middle botanical garden menu combination food organic choice plate presented outside restaurant little garden herb aromatic plant oriente suburb drink aguardiente alcoholic beverage sweet licorice flavored sugarcane brand aguardiente antioqueno drank straight followed ounce water slice mango ron local domestic brand ron anejo aged typically served mixed club soda coca cola lemon juice cerveza beer anywhere enjoyed pilsen light golden color german pilsener lager beer admired local foreigner club finer premium beer malt national beer aguila costena company brew beer locally tres cordillera wheat american pale amber ales bogota brewing company operate restaurant poblado neighborhood craft beer uncompetitive price bottled beer bars restaurant throughout refajo kind cocktail mixing beer soft colombiana refreshing little sweet coctele due variety tropical fruit juice imagination boundless creating cocktail start lulo juice vodka recipe passion fruit spanish maracuya thursday friday saturday party rest week mainstream nightlife isnt exciting bars close plenty club close stay later look techno electronica club dance club blue cross music mix rock music gringo gringo hunter thursday night circus venue view beautiful crowd normally play cross music cuchitril club bar translate hovel thought tearm endearment salsa club actually inside decor somewhere arabesque neon plus chandelier fair amount room dance space wonderful courtyard patio garden sunday night sort salsero salsera converge party eslabon prendido probably famous salsa club live band rest week play word hot burning link instead missing link fairly inside dancing spill street table inside looking watch claimed party started downtown warrant precaution palmaia biggest club capacity standard crossover music boxing ring girl fight red opposite blue electronic music music viva story dance club mostly gay clientele bars district bars foreigner prefer parque llera poblado safer upscale nicer crowd middle class mingle outside museo arte moderno carlo restrepo neighborhood called urban tribe meet parque periodista downtown bars carrera estadio carretera palma avenida laurele parque llera zona rosa concentration restaurant bars watching active night looking colombian nightlife major restaurant corner rojo basilica food drink watching occasionally live music screen important football match played parque llera interesting night week admittedly thursday friday saturday far lively mostly electronic music venue till outside limit laws forbid bar remain gather parque poblado dawn drinking smoking chatting cigarette alcohol anything wish street vendor last man standing upmarket experience strada parque llera aviendo poblado feature numerous bars restaurant club strada become weekend destination affluent resident expect pay drink food zona rosa bars close outside venue neighboring town sabaneta envigado itagui sabaneta caught foreigner making avoiding gringo thing salon amador dark inside neon niagara classic crowd informal beer chat camerata offered classic music costumer occasional live appearance calle carrera calle vinacure incredibly trippy expensive definitely worth seeing entire club designed noted colombian sculptor german owner check naked room interactive art exhibition experienced naked interesting unusual fun art museum bar truly unique taxi beginning calda carrera sur calda bus casa gardeliana meeting tango lover live music dance salon malaga classic bar downtown social class mingle music drink dance half block metrostation antonio line dulce jesus mio replica traditional paisa local village greet host ask dance party together midnight eve fun bolero bar tango bolero bermellon restaurante cafe bar tango

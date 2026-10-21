@@ -2,7 +2,7 @@ Lima, Peru
 Labels: food, culture | Split: validation
 Source: https://en.wikivoyage.org/wiki/Lima (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (10,536 characters) =====
+===== CLEANED GUIDE TEXT (10,548 characters) =====
 
 Lima is the capital of Peru and its largest city. Founded in 1535 by the Spanish conquistador Francisco Pizarro, the modern city is a curious mix of the modern mega city with some 'islands of modernity', large but orderly slum areas and colonial architecture in downtown. Lima was the seat of Spanish rule for 300 years, and as such it has wonderful churches, cloisters and monasteries.
 
@@ -10,11 +10,13 @@ Lima is the best place to try Peruvian cuisine, which has a huge variety of ingr
 
 Understand
 
+
 Lima is a growing metropolis of about 11 million people. Many of these people have migrated from the highlands to find work in Lima, without success, leading to widespread poverty and unemployment, and sprawling shanty towns on the outskirts of the city.
 
 Lima's pre-Hispanic and colonial architecture is beautiful and the city has several museums (such as the Museo Larco) that tells the story of a country with a long history that produced a large number of coastal and Andean civilizations (such as the Moche, Chavin, and the Incas) and many local cultures. There are several archaeological sites in and around the city (locally known as huaca).
 
 See
+
  
 * The historic downtown, which is a UNESCO World Heritage Site.
 * The Circuito Mágico del Agua (Magic Water Tour), a fountain and light display in the Parque de la Reserva and Parque Fermín Tangüis.
@@ -29,6 +31,7 @@ See
 *Huaca Pucllana : Pre-Inca temple of the Lima culture (around 500 AD). This archaeological site is located in the Miraflores district, and is one of the most popular tourist attractions in the city. Open every day except Tuesday and Sunday, from 09:00 to 15:30. Guided tour required. 15 soles / person.
 
 Do
+
  
 
 * 
@@ -54,29 +57,37 @@ Mirabus bus and road train tours. Various themed day and night bus tours of Lima
 
 Buy
 
+
 Exchange
+
 It is very hard to change money other than euros and U.S. dollars in Lima. You can't even change the currency from neighbouring countries (besides Chile) in normal money exchanges and banks. You might find more flexible exchange offices at the airport, but they often charge ridiculous service fees and exchange rates.
 
 Changing money in Miraflores can be done safely with cambistas on the street, but you must follow a few simple rules to avoid being cheated.  First, make sure that the cambista is wearing the vest-uniform indicating that he or she is an authorized, licensed cambista.  Always ask for the exchange rate ("tipo de cambio").  It is worth it to compare with several cambistas, especially if you are changing a significant amount of money. Some scammers do tricks with their calculators in your face and you won't notice, so the best way to know how much you should be getting is to bring a calculator yourself or use the one in your cellphone. Finally, make sure that the bills the cambista gives you have his or her seal ("sello") stamped on them - that way, if by chance one of them turns out to be counterfeit you can come back and complain. It is rare to get counterfeit notes from a cambista, but asking for the seal helps maintain the incentive for honesty and acts as insurance for you.
 
 Withdraw
+
 As anywhere, your best bet is usually to draw soles from an ATM. There are banks dotted all over Lima and some of them have guarded ATMs. Chances are the bank will charge you a fortune every time you withdraw money so it is better value to get as much as possible when making a withdrawal. BCP cajeros generally allow withdrawals up to S/700. Interbank has been known to charge insane fees (around US$18 for a US$50 transaction).
 
 Always be cautious when using an ATM, as you may be followed and targeted for a robbery.
 
 Shop
 
+
 Musical instruments
+
 
 If you are interested in purchasing Peruvian folk musical instruments, there are stores selling charangos, quenas, antaras, etc., on Ca. Cantuarias.  If you have the time, a number of these stores can help you find a teacher to learn how to play your purchase.
 
 Handicrafts
+
 Your best bet is to head for Av. Petit Thouars in Miraflores, which is full of handicrafts stores. Or, go to Av. La Marina in Pueblo Libre.
 
 Supermarkets
+
 The main supermarkets are Wong, Metro, Plaza Vea, Vivanda and Tottus. These can be found all over.
 
 Eat
+
  
 
 Gastronomy has been, since the days of the Spanish vice royalty, an essential aspect of life in Lima. During the last few years, the city's dining reputation has experienced a huge leap in the eyes of the world, due in part to the International Summit of Gastronomy (Madrid Fusión) in 2006, which declared Lima to be the "Gastronomy Capital of the Americas". The offerings in Lima are nowadays more varied and cover a wide range of types and cuisines, both regional and international.
@@ -92,6 +103,7 @@ Travellers longing for a delicious falafel or shwarma sandwich will be pleased t
 There is a heavy presence of fast-food chains such as KFC, Pizza Hut, McDonald's, Subway, Papa John's and local chain Bembos all over the city. Places such as Burger King, Chili's and TGI Friday's are scarce, but can be found around Miraflores. Also, you shouldn't miss Peruvian-style hamburgers at Bembos, and traditional Peruvian sandwiches in if you want to give your everyday fast-food a local twist.
 
 Drink
+
 *Pisco Sour is the national drink of Peru, made with Pisco, a brandy made of grapes. It is highly recommended that all visitors to Peru try this drink at least once. Visitors might be amused to learn that Chileans claim Pisco Sour is their own, but it isn't true. There are some variations that are offered in several bars around town. Just be careful; the fresh and sweet flavour makes it very easy to drink too much, and you can so easily get drunk on it.
 *Inca Kola is the most popular soft drink in Peru, one of few sodas that Coca Cola couldn't defeat (until they bought the company). It's a yellow-fruit flavored drink that tastes like hierba luisa.
 *Jugos You can find great fresh fruit drinks all over Lima. Starting from S/0.50 for a fresh orange juice at the market to some more expensive ones. Surtidos, containing several different fruits, are quite tasty.
@@ -99,6 +111,6 @@ Drink
 *Emoliente is a hot drink prepared with barley, herbs, sugar and lemon juice. It's often sold by street vendors at night for around S/1. It's especially great in winter.
 *Starbucks Coffee is predictably widespread if you really need your daily caffeine fix.
 
-===== TOKENS THE MODEL TRAINS ON (782) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (782) =====
 
 capital largest founded spanish conquistador pizarro modern curious mix modern mega island modernity orderly slum colonial architecture downtown seat spanish rule wonderful church cloister monastery peruvian cuisine huge variety ingredient coast mountain amazon region cold sea current pass coast sea rich fish seafood growing metropolis million migrated highland work success leading widespread poverty unemployment sprawling shanty town outskirt pre hispanic colonial architecture beautiful museum museo larco tell story country history produced coastal andean civilization moche chavin inca culture archaeological site locally huaca historic downtown unesco world heritage site circuito magico agua magic water tour fountain light display parque reserva parque fermin tanguis parque amor lover park miraflore verde impressive green coast stretch miguel chorrillo friendly district barranco miraflore surco historical site pueblo libre cruz viajero monumental christian cross dating era conquistadore shopping mall plaza norte jockey plaza larcomar mall aventura plaza real plaza salaverry historical church cathedral santo domingo martin porre santa rosa santa rosa nazarena senor milagro museum museo nacional arqueologia antropologia historia pueblo libre museo arte paseo colon museo osma barranco museo rafael larco pueblo libre parque kennedy miraflore park entertainment district famous cats live huaca pucllana pre inca temple culture archaeological site miraflore district attraction except tuesday sunday guided tour required sole person bike tour variety public private bicycle walking food tour english speaking guide prior booking required activity tripadvisor gourmet company combined culinary tour traveller market hand cooking class peruvian dish tour district historical point interest dont exquisito explore peruvian gastronomy fun interactive walking food tour part arequipa folkloric dance show live show dance dinner lunch included choose almuerzo lunchtime show noch folclore folklore evening periodic special show mirabus bus road train tour themed night bus tour surrounding region excursion caral pachacamac operate road train sight centro surfing wave pacific ocean miraflore beach paragliding reef miraflore beach pachacamac lurin hour miraflore sacred pre inca citadel mamacona lurin behind pachacamac live emotion live show caballo peruano paso beautiful dance marinera ticket mirabus park miraflore huaca pucllana miraflore pre inca ruin exchange hard change money euro dollar cant change currency neighbouring country beside normal money exchange bank flexible exchange office airport charge ridiculous service fees exchange rate changing money miraflore safely cambista street follow simple rule avoid cheated sure cambista wearing vest uniform indicating authorized licensed cambista ask exchange rate tipo cambio worth compare cambista especially changing significant amount money scammer trick calculator face wont notice know bring calculator cellphone finally sure bill cambista give seal sello stamped chance turn counterfeit complain rare counterfeit note cambista asking seal help maintain incentive honesty acts insurance withdraw anywhere bet draw sole atm bank dotted guarded atms chance bank charge fortune withdraw money value possible making withdrawal bcp cajero generally allow withdrawal interbank charge insane fees transaction cautious atm followed targeted robbery shop musical instrument interested purchasing peruvian folk musical instrument store selling charango quena antara etc cantuaria store help teacher learn play purchase handicraft bet head petit thouar miraflore handicraft store marina pueblo libre supermarket supermarket wong metro plaza vea vivanda tottus gastronomy spanish vice royalty essential aspect life last dining reputation experienced huge leap eyes world due international summit gastronomy fusion declared gastronomy capital america offering nowaday varied cover wide range type cuisine regional international despite wide range choice restaurant ceviche surely list dish know happen peruvian national dish unparalleled delicious taste increasing interest peruvian cuisine ceviche quickly making onto table world want enjoy real thing dont miss stay ceviche mecca cevicheria neighbourhood moreover criollo restaurant ceviche menus indeed dish offered upscale nouvelle cuisine restaurant peruvian food tend spicy heavy ask dish picante spicy mean spicy meal heavy perfectly prepared fresh ingredient chinese japanese cuisine predictably strong peruvian influence chifa chinese restaurant counted hundred thousand earth neighbourhood eatery offering fare rich seafood chicken japanese restaurant contrary widespread upscale expensive forte course round supply freshest varied seafood traveller longing delicious falafel shwarma sandwich pleased learn excellent cafe parque kennedy serve type middle food reasonable price heavy presence fast food chain kfc pizza hut mcdonald subway papa john chain bembo burger king chili tgi friday scarce miraflore shouldnt miss peruvian style hamburger bembo traditional peruvian sandwich want give everyday fast food twist pisco sour national pisco brandy grape highly recommended amused learn chilean claim pisco sour isnt true variation offered bars careful fresh sweet flavour easy easily drunk inca kola soft soda coca cola couldnt defeat bought company yellow fruit flavored taste hierba luisa jugo fresh fruit drink starting fresh orange juice market expensive ones surtido containing fruit tasty chicha morada refreshing purple non alcoholic antioxidant boiling purple corn pineapple cinnamon clove sugar emoliente hot prepared barley herb sugar lemon juice sold street vendor night especially winter starbuck coffee predictably widespread caffeine fix

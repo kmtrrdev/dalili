@@ -2,14 +2,16 @@ Interlaken, Switzerland
 Labels: nature, adventure | Split: validation
 Source: https://en.wikivoyage.org/wiki/Interlaken (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (10,662 characters) =====
+===== CLEANED GUIDE TEXT (10,665 characters) =====
 
 Interlaken is a small city in the Bernese Highlands region of central Switzerland. Located between two alpine lakes (Lake Brienz (Brienzersee) and Lake Thun (Thunersee)), Interlaken is a popular base camp for outdoor sports and travel in the surrounding Bernese Oberland Alps. Interlaken itself is a superb holiday destination.
 
 Understand
+
 * Interlaken Tourism website
 
 See
+
 
  
  
@@ -18,13 +20,16 @@ See
 *Unterseen is a small old town near the Interlaken West train station. It's not as crowded as Interlaken and has several shops and bakeries (including an enormous Coop supermarket in which there is a large selection of groceries and chocolates). To get there, cross the bridge over the water near the train stop, walking in the direction facing away from Interlaken.
 
 Do
-===All year round===
+
+All year round
+
 * Shopping in Interlaken's souvenir shops.
 *
 St. Beatus Caves. This popular cave system features lit pathways leading through tunnels & chambers, plus a museum.
 
 
 Summer activities
+
 *Walks: Take a walk along the shores of the lake of Thun (Thunersee) or the lake of Brienz (Brienzersee). A nice, ca. 2h walk goes from West train station to "Neuhaus". It takes you along the Aare river and through the small but popular nature reserve Neuhaus at the lake of Thun. From Neuhaus, you can take a bus or boat back to Interlaken.
 *Hiking: There are plenty of great hikes in the Interlaken area. Popular nearby hikes include Harder mountain (mountain train 5 min. from Interlaken Ost station) and Schynige Platte (mountain train from Wilderswil). Hiking season runs roughly June through September.
 *Adventure sports: A whole bunch of adrenaline sports are offered through Interlaken guide groups including paragliding, hang gliding, bungee jumping, canyoning, river rafting, and rock climbing. Outdoor Interlaken is on the main street in Matten. Another great option is Alpin Raft Alpin is the original outdoor adventure company in Interlaken; the owner bought a raft in New Zealand in the late 1980s and was the first to bring white water rafting to Switzerland. He also brought canyoning to Interlaken after trying it in France. The canyoning experience with AlpinRaft is amazing.
@@ -38,6 +43,7 @@ Take a boat trip. Boats traveling the Thunersee leave from Interlaken West. If y
  
 
 Winter activities
+
 *Ski/snowboard: Interlaken has good access to several skiing/snowboarding areas. The largest of them is the "Jungfrau winter sport region" which includes Kleine Scheidegg-Männlichen, Grindelwald First and Mürren-Schilthorn. A day-pass costs Fr. 62/39/24 (adults/youth/children). Beatenberg-Niederhorn and Habkern are two smaller, family-friendly ski areas with easy lifts and slopes for beginners. A day-pass is Fr. 35/17 (adults/children). If you need to rent equipment that can be easily arranged at the SwissRentaSport shop.
 *Sledging: The best but also most challenging sledging is from the Faulhorn to Grindelwald. Take the first gondola cableway from Grindelwald and prepare for a beautiful but challenging, 2-2½h uphill hike to the Faulhorn. Enjoy the amazing view of the Alps from the Faulhorn peak before you sledge down to Grindelwald for 15&nbsp;km (!) on the longest sledging run in Europe. Alternatively, several sledging runs are accessible by bus/train: Bussalp-Grindelwald (8&nbsp;km), Eiger Run in Grindelwald (3&nbsp;km), Niederhorn-Beatenberg (7&nbsp;km), Suhlwald-Isenfluh and Habkern (4&nbsp;km).
 * 
@@ -49,6 +55,7 @@ Night sledding. There is a company that makes night sledding trips every night. 
 
 Buy
 
+
 Interlaken has the highest concentration of souvenir shops in Switzerland.
 
 *Swiss Army Knives: Interlaken is a good place to buy Swiss Army Knives. One of the best shops is the "Swiss Knife Center" (Höheweg 125) as it stocks the full range of Victorinox and Wenger Swiss Army Knives. Other knife shops in Interlaken are "ALSCHER", "Bühler Chalet Shop", "Royal St Georges Gift Shop", "Gallerie Metropole". Most of the mentioned shops engrave text on the knife for free. Remember to pack Swiss army knives in your hold luggage when you travel by plane.
@@ -58,6 +65,7 @@ Interlaken has the highest concentration of souvenir shops in Switzerland.
 *Other souvenirs: Other items to purchase in Interlaken's souvenir shops are: Swiss music boxes, leather wallets and purses, cowbells, Swiss embroideries, cuckoo clocks, some inexpensive Swiss-made watches (like Swiss Military or Swatch), Switzerland T-shirts, sweatshirts, backpacks, etc.
 
 Eat
+
 
 * 
 Bebbis Restaurant. A popular but touristy place for traditional Swiss dishes including fondue and raclette. It´s right next to Interlaken West train station.
@@ -81,10 +89,11 @@ Schuh Interlaken. Grand Café Restaurant Schuh.
 
 Drink
 
+
 * Rugenbrau 'lager hell': the local beer and one of the best you'll ever taste as the water in the area is the cleanest in Europe.
 * For a small Swiss town, Interlaken has quite a lot of nightlife options, including one of Switzerland's three Hooters Bar & Restaurant. Most of these bars serve the seasonal tide of tourists, but off the main road, many more mellow local venues can be found. Try the Brasserie 17 (Rosenstr. 17) which has a nice summer terrace, good beer and snacks and sometimes live music.
 * The two best nightlife spots in town are Balmer's hostel and the Funny Farm, which are located fairly close to each other (both at Hauptstrasse, Matten). Balmers has a decent underground bar and dance club and the Funny Farm has great outdoor chill-out areas, including a bonfire. Both hostels have good happy hour specials, and you can kind of bounce back and forth between the two to get your drink for the best price.
 
-===== TOKENS THE MODEL TRAINS ON (805) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (805) =====
 
 bernese highland region alpine lake brienz brienzersee lake thun thunersee base camp outdoor sport travel surrounding bernese oberland alps superb holiday destination tourism website hoheweg street runs ost railway station street souvenir shop look japanese garden old jungfrau grand hotel dont miss beautiful view famous snow covered jungfrau mountain hohematte jungfrau aletsch glaciated unesco world heritage site bernese alps unterseen old train station crowded shop bakery enormous coop supermarket selection grocery chocolate cross bridge water train stop walking direction facing round shopping souvenir shop beatus cave cave system feature lit pathway leading tunnel chamber plus museum summer activity walk walk shore lake thun thunersee lake brienz brienzersee walk train station neuhaus take aare river nature neuhaus lake thun neuhaus bus boat hiking plenty hike nearby hike harder mountain mountain train min ost station schynige platte mountain train wilderswil hiking season runs roughly adventure sport bunch adrenaline sport offered guide group paragliding hang gliding bungee jumping canyoning river rafting rock climbing outdoor street matten another option alpin raft alpin original outdoor adventure company owner bought raft late bring white water rafting brought canyoning trying canyoning experience alpinraft amazing swimming swim brienz thun water lake thun generally warmer swimming shower changing room restaurant etc neuhaus real insider tip beautiful burgseeli ringgenberg goldswil burgseeli nature water temperature reach swim duck water lily natural lido non swimmer pool paddling pool children playground restaurant changing room shower etc sailing lake thun sailing rent sailboat book class neuhaus boat trip boat traveling thunersee leave thun cute town beautiful building castle spiez oberhofen castle thun boat travelling brienzersee leave ost water brienzersee beautiful shade turquoise boat swiss rail pass biking awesome mountain bike ride lake brienz giessbach waterfall alternatively lauterbrunnen bike look inside trummelbach waterfall trummelbachfalle skydiving funrental helicopter plane jump metre second freefall jump winter activity ski snowboard access skiing snowboarding largest jungfrau winter sport region kleine scheidegg mannlichen grindelwald murren schilthorn pass cost adult youth children beatenberg niederhorn habkern smaller family friendly ski easy lift slope beginner pass adult children rent equipment easily arranged swissrentasport shop sledging challenging sledging faulhorn grindelwald gondola cableway grindelwald prepare beautiful challenging uphill hike faulhorn enjoy amazing view alps faulhorn peak sledge grindelwald nbsp longest sledging run europe alternatively sledging runs accessible bus train bussalp grindelwald nbsp eiger run grindelwald nbsp niederhorn beatenberg nbsp suhlwald isenfluh habkern nbsp night sledding company night sledding trip night cost swiss cheese fondue dinner restaurant sled run fitness requirement booking necessary advance cross country skiing beautiful sunny cross country aeschiried spiez train bus view lake thun cross country trail habkern lombach beatenberg ice skating indoor ice rink matten swimming wellness bodelibad indoor pool nbsp swimming pool children pool wellness facility sauna steam bath whirlpool highest concentration souvenir shop swiss army knive swiss army knive shop swiss knife hoheweg stock range victorinox wenger swiss army knive knife shop alscher buhler chalet shop royal george gift shop gallerie metropole mentioned shop engrave text knife remember pack swiss army knive hold luggage travel plane watch watch jewellery shop bucherer kirchhofer stock traditional swiss brand tag heuer omega iwc rolex alternatively souvenir shop sell inexpensive swiss watch swiss military swatch chocolate swiss chocolate coop supermarket ost train station coop supermarket unterseen train station choice lindt cailler chocolate toblerone etc lower price youd pay souvenir shop woodcarving want purchase swiss woodcarving brienz minute train ost swiss woodcarving woodcarving example shop bazar tivoli albert schild souvenir item purchase souvenir shop swiss music boxe leather wallet purse cowbell swiss embroidery cuckoo clock inexpensive swiss watch swiss military swatch shirt sweatshirt backpack etc bebbis restaurant touristy traditional swiss dish fondue raclette train station youre korean food excellent cheap easy restaurant hot basement opposite train station star serve simple korean food hot pots sweet dumpling price average kang chon kang chon serve range delicious korean dish reasonable price range traditional korean accompaniment meal staff friendly helpful explaining menu item familiar ambience restaurant pleasant especially summer evening little thai kept secret fantastic thai food price keep little gem packed night reservation highly recommended evening eating azteca authentic mexican food restaurant owned operated gentleman migrated street level hotel blume street mall side jungfraustr friendly staff beyond help celebrate birthday event group bar seat price youre paying mexican food usa considering everything imported understandable mexican beer notch mexican cuisine coop supermarket want save money meal ingredient making example sandwich coop migro coop opposite ost station coop migro example buying material sandwich cost wherea average entree restaurant cost schuh grand cafe restaurant schuh rugenbrau lager hell beer youll taste water cleanest europe swiss nightlife option hooter bar restaurant bars serve seasonal tide road mellow venue brasserie rosenstr summer terrace beer snack live music nightlife spot balmer hostel funny farm fairly close hauptstrasse matten balmer decent underground bar dance club funny farm outdoor chill bonfire hostel happy hour special kind bounce forth price

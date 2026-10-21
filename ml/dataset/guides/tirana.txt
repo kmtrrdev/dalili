@@ -2,11 +2,12 @@ Tirana, Albania
 Labels: culture | Split: test
 Source: https://en.wikivoyage.org/wiki/Tirana (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (35,025 characters) =====
+===== CLEANED GUIDE TEXT (35,043 characters) =====
 
 Tirana (Albanian: Tiranë) is the bustling and relatively modernised capital of Albania. It is the most important economic, financial, political and trade centre in the country. Tourists often find the city charming, with both cosmopolitan and small town feelings, and a lively nightlife. 
 
 Understand
+
 
  
 Sulejman Pasha Bargjini, a native feudal lord from Mullet, established the city in 1614. His first constructions were a mosque, a bakery and a hamam or Turkish bath. On 8 February 1920, Tirana was made the temporary capital by the Congress of Lushnje, and it was proclaimed the permanent capital on 31 December 1925.
@@ -18,13 +19,16 @@ The main business and entertainment area (not by coincidence) has become "The Bl
 Albanians are very hospitable towards foreigners, despite media frequently portraying them unfairly as thieves and mobsters. Tirana is very approachable if you're the adventurous type. Crime is rarely, if ever, directed towards foreigners and costs are very low by regional standards. The worst experience you may have is with the erratic driving style of Albanians.
 
 Tourist office
+
 * 
 Tourist information office. The English-speaking staff are very helpful and can provide city and public transport maps and directions to hostels and hotels. Also free copies of "Tirana in your Pocket" guide, which includes vital information about bus and furgon schedules.
 
 
 See
+
  
 Holy places
+
  
 
 * 
@@ -51,6 +55,7 @@ Tanners' Mosque. Built in the 17th century in a part of the city where leather w
 
 
 Museums
+
  
 * 
 National History Museum. The largest museum in Albania holds many of the country's archaeological treasures and a replica of Skanderbeg's massive sword (how he held it, rode his horse and fought at the same time, is a mystery). The lighting might be poor but the excellent collection is almost entirely signed in English and takes you chronologically from ancient Illyria to the post-communist era. The collection of statues, mosaics and columns from Greek and Roman times is breathtaking.
@@ -94,6 +99,7 @@ Studio House "Kadare". This apartment was the residence of Kadare, an important 
 
 
 Landmarks
+
  
  
 * 
@@ -145,6 +151,7 @@ Persqopi Archeological Site. Persqopi was an ancient city. It's on the Viles Hil
 
 
 Do
+
  
 
 Go for a walk in the evening along the main streets or at one of the several parks and sit for a coffee or drink. Take part in the vibrant nightlife by visiting one of the numerous nightclubs. If you are adventurous and brave enough, try the peculiar experience of driving in the city's streets by renting a car, or rent a bicycle from a bike renting station. You can also cruise the city with a limousine or venture out in the picturesque suburbs either south or northeast/west of Tirana.
@@ -187,6 +194,7 @@ Dajti Mini Golf. A fun mini-golf course, the only 18-hole course in the country.
 
 
 Coastal retreat
+
 * 
 Lalzi Bay Beach. Popular weekend beach retreat where small seaside resorts can be found. This is also where Albania's wealthy rest. Visit Skanderbeg Castle along the cost, and a small church at Rodon Cape nearby.
 
@@ -195,6 +203,7 @@ General's Beach. A popular seaside weekend retreat. The name stems from an Itali
 
 
 Sports and events
+
  
 
 * Football – The city has two teams playing in Kategoria Superiore, the top tier. KF Tirana play at Selman Stërmasi Stadium, capacity 9500, southwest side of city centre. FK Parizani play at Arena Kombëtare, capacity 22,500. This is also known as Air Albania Stadium and hosts the national team's home games. It's southeast corner of city centre towards the Grand Park.
@@ -207,7 +216,9 @@ Rally Albania. The event features an international competition in the rough Alba
 
 
 Buy
-===Money===
+
+Money
+
 There are plenty of ATMs accepting Cirrus/Maestro and Visa around the city. They charge 500–1,400 lek (abi, UnionBank vs. otpbank) per withdrawal with international cards. 2026: OTP Bank of Albania charged 500 lek, Credins Bank charge 600 lek, Raiffeisen Bank charged 800 lek.
 
 ProCredit Bank on Bulevardi Zogu I north of Skanderbeg dispenses euros and charging €5 for it.
@@ -220,6 +231,7 @@ Iliria’98 Currency Exchange. Very good money changers, fast with excellent rat
 
 
 Markets
+
  
 Locals open-air markets are available in most quarters of the city, and vegetable and fruits are often sold just around the next corner. Proper markets, which sell all sorts of things, tend to be more busy before noon and are barely open late although vegetable and fruits stands are an exception. In the following the larger markets in Tirana:
 * 
@@ -277,6 +289,7 @@ another Popup Market.
 
 
 Shopping
+
 * 
 Adrion International Bookshop. Magazines and newspapers from around the world. English books available.
 
@@ -291,6 +304,7 @@ Tulla Record Store. Independent record shop inside Tulla Culture Center, selling
 
 
 Malls
+
  
 * 
 Citypark Albania. A large shopping centre has some 180 shops, a Mercator hypermarket, food court, skating rink.
@@ -315,10 +329,12 @@ Toptani Shopping Center. Splashy shopping mall in the city centre.
 
 
 Eat
+
 Food is generally inexpensive, even in the more upscale places. The Italian influence is everywhere and most places will offer pizza and/or pasta along more elaborate dishes. A good rule of thumb is that the priciest or fanciest places rarely are the best ones, particularly in the Blloku. Notable dishes that exemplify the local cuisine include fërgesë (baked vegetables and cheese) and tavë dheu (fërgesë with the addition of liver).
 
  
 Budget
+
 Small shops and roadside vendors throughout the city sell foods such as sufllaqe, doner and gjiro for 200–300 lek. Also try the local speciality originally from Turkey, byrek (50–80 lek), barely haut-cuisine but inexpensive.
 
 Many cantina-like local and inexpensive restaurant serve delicious regional dishes for lunch or throughout the day. The following are recommended:
@@ -361,6 +377,7 @@ Birrari Ke Tori. Straightforward traditional Albanian food, with mostly meat dis
 
 
 Mid-range
+
 *
 Oda. This restaurant inside a Tirana traditional house serves delicious traditional cuisine. Note that this is the original one — Oda Garden (aka ODS) south of Pazari is the hostile take-over one.
 
@@ -384,6 +401,7 @@ Sofra e Ariut. Specializing in traditional Albanian cuisine, the interior is dec
 
 
 Splurge
+
 *
 Juvenilja Castelo. Mainly serves Italian and Albanian food. A 5-star restaurant.
 
@@ -395,19 +413,23 @@ Mullixhiu. This Biloku neighborhood eatery is part of Albania's slow-food moveme
 
 
 Drink
+
 * 
 Hotspot Tirana. A coworking space, gallery, and sometimes club with open and friendly people. A very unlike-Albanian place.
 
 
 Café
+
 * 
 Nektar Bookcafe. Supposedly one of the best salep of Albania can be found here.
 
 
 Bars
+
 Blloku is the main nightlife spot in the city.
 
 Budget
+
 * 
 My Way. Young locals and some expats frequent this cosy place.
 
@@ -422,6 +444,7 @@ Miqtë e Muzikës Live. A energetic place with live music (Jazz, regional) and a
 
 
 Mid-range
+
  
 * 
 Hemingway. A cocktail bar with Jazz, Blues, Reggae, etc. They also have inexpensive local beer, but they do not advertise it. Their service is not the quickest though.
@@ -440,11 +463,12 @@ Sky Tower Rotating Bar. A bar in a rotating tower. The rotation is a bit jerky a
 
 
 Clubs
+
 Converse, Charls, Steel Wings (Bikers club), Unit, Mos Fli are clubs in Blloku frequented by die hard rock and metal fans.
 
 * 
 Tunel. Decent bar and club, with sometimes international DJs. In summer rooftop, in winter basement. They won't go longer than 02:00 or 03:00.
 
-===== TOKENS THE MODEL TRAINS ON (2,654) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (2,654) =====
 
 tirane bustling relatively modernised capital important economic financial political trade country charming cosmopolitan feeling lively nightlife sulejman pasha bargjini native feudal lord mullet established construction mosque bakery hamam turkish bath temporary capital congress lushnje proclaimed permanent capital today suffer pollution problem mainly due rapid increase cars continuous construction compounded position valley air pollution blown heavy industry subject power outage noisy lack power lack traffic light cars navigating honking horn situation dramatically improved regarding power outage undergoing major renovation totalitarian ugly dull building repainted crossing work outside english language younger population older resident speaking italian business entertainment coincidence become block blloku past communist leader live strict protection youthful lively resonating constant energy european youth capital local prefer hang cafe park retreat cable car mount dajti panoramic view albanian hospitable foreigner despite media frequently portraying unfairly thieve mobster approachable youre adventurous type crime rarely directed foreigner cost low regional standard worst experience erratic driving style albanian office information office english speaking staff helpful provide public transport maps direction hostel hotel copy pocket guide vital information bus furgon schedule holy ethem bey mosque construction mosque took finished considered beautiful mosque interesting decoration artwork reopened restoration mosque kokonozit finished ottoman rule survived communist rule intact building functioned storehouse tobacco shop returned original saint paul catholic cathedral modern cathedral feature fascinating window mural resurrection christ orthodox cathedral cathedral feature fascinating architecture rich interior iconography church covered dome kapllan pasha tomb built originally mosque destroyed wwii kapllan pasha ottoman ruler buried remain later moved sheh dyrri teqe teqe teqe cemevi turkish meeting house communal worship service home listed cultural monument private property likely outside tanner mosque built century leather worker lived largely destroyed lightning strike quickly rebuilt functioning storehouse communist rule renovated reopened minaret built nearby bridge named tanner bridge ura tabakeve museum national history museum largest museum hold country archaeological treasure replica skanderbeg massive sword held rode horse fought mystery lighting poor excellent collection entirely signed english take chronologically ancient illyria post communist era collection statue mosaic column greek roman time breathtaking national arts tracing relatively brief history painting early century present beautiful space temporary exhibition interesting collection century painting depicting scene life far political dimension truly fabulous example socialist realism ground floor given temporary exhibition far modern challenging kind national archaeological museum feature ancient artifact illyrian roman hellenic time wonderful mosaic roman statue illustrative maps collection comprehensive impressive part minimal labelling none english tour english offered little loss unless field natural science museum museum feature fauna geological composition mosaic mosaic discovered following excavation apartment complex artifact point presence village thousand ago archaeological site bunkart fantastic conversion massive cold war bunker outskirt history contemporary art museum easily highlight space underground spread floor bunker built political elite remained secret existence host exhibit combine modern history piece contemporary art bunkart little cousin bunkart museum communist era bunker underground tunnel system ministry interior affair focuse role police security service turbulent century bunker especially interesting story dictatorial regime internal anti dissident security force executed fascinating journey behind police line house leave grand old building started life maternity hospital focus turned creating live ending live hospital converted interrogation surveillance read torture house remained fall communist regime today house leave museum dedicated surveillance interrogation zeta contemporary art non profit exhibition space founded floor mixed residential commercial building abdyl frasheri street blloku zona libri universitar santa margherita wine shop waikiki store zeta function autonomous cultural venue contemporary visual arts painting sculpture photography video installation sound performance beside exhibition zeta host educational program workshop discursive event cooperation international partner museum bank museum lies floor conceived independent space floor presented rich numismatic collection bank antiquity present floor museum present history bank institution role maintaining price stability ensuring country financial stability constitutional function learn aspect money economy function bank enter building ibrahim rugova street enter museum book online provided identification document bektashism museum museum present document photo original object history bektashism islamic sufistic movement world scale particular bektashism organized stand showcase observing imam important angle devoted religious tolerance harmony contributed contribute greatly bektashi world bishopric bektashi museum environment chimney coffee ashurja pilgrimage important close connection bektashism national renaissance activity patriotic cleric special stand dedicated frasheri brother naim frasheri contribution distinguished historical museum armed force museum contain thousand object middle ages century decorated gold silver range display case rifle type medieval renaissance skanderbeg sword ali pasha tepelena aircraft helicopter tank silhouette ground artillery anti aircraft calibre transport vehicle type pavilion historic era pavilion pavilion floor uniform armed force newest uniform pavilion beside historical value testimony artisanship studio house kadare apartment residence kadare important writer work designed architect maks velo declared category culture monument modernist cubist building called palace cube represent aspiration architecture step particular kadare studio house foster deeper understanding history dictatorship show original document object book furniture landmark fortress justinian castle remain history castle date remnant byzantine era fortress road crossed formed heart fortress ground ottoman era wall covered vine century uncovered wall foundation uncovered incorporated pedestrianised murat toptani street mosaic commemorating anniversary independence unveiled parliament traditional bazaar opened inside castle traditional handicraft shop traditional cuisine restaurant bush street street named president george bush honour piramid completely renovated reopened pyramid built according design enver hoxha daughter opened museum dedicated father president george bush gave speech front building building expensive erected communism empty derelict threatened demolition instead saved rebuilt possible walk stair peak view blloku ish blloku apartment block trendiest cafe shop restaurant villa former dictator enver hoxha communism reserved solely government official allowed entered commoner opened public spot youth night especially weekend night club street especially summer afternoon filled citizen expensive cars cruising block anywhere minute coffee relax taking look parade trendy elegant block perfect block trendy clothing item delicacy taxis tanner bridge century ottoman period stone footbridge bridge shengjergj road linked highland shengjergj road furnished agricultural produce livestock bridge went lane stream adjacent butcher leather worker lane rerouted bridge neglected bridge restored former glory pedestrian tanner bridge composed arch bridge raise shape arch light span built rank sideway arch meter thick height water pavement bridge width constructed river stone placed apparent order side arch arch shape circular segment space national library library hold million book ancient collection clock tower tower become symbol oldest construction built dont forget nearby clock tower museum featuring clock tower traditional costume region stair step spiral fashion tall tallest building sali shijaku traditional house preserved traditional house owned painter sali shijaku feature art display traditional house emnity restaurant zoo visiting zoo odd experience animal remarkably close range nearby botanical garden featuring fauna martyr cemetery cemetery remain partisan fought buried statue mother built monumenti nena shqiperi hoxha buried exhumed moved side petrela castle preserved castle ancient settlement old commanded princess mamica sister national hero skanderbeg preze castle century castle picturesque hill preze village rina airport dajti castle ruin archaeological site comprising remain roman fortification built earlier illyrian castle mountainside mount dajti ndroqi castle ruin pyramid shaped hill cobblestone paved pass lead castle persqopi archeological site persqopi ancient vile hillside malin vile outer wall bastion built stone element stroll hill walk evening street park sit coffee vibrant nightlife visiting numerous nightclub adventurous brave enough peculiar experience driving street renting car rent bicycle bike renting station cruise limousine venture picturesque suburb northeast walking tour starting summer period front opera house start discover learn history art life murat toptani street murat toptani street pedestrian street rinia park constructed stone castle wall traditional house cafe park sheshi skenderbej statue hero skanderbeg stand square flag side renovation square pedestrian public transportation friendly government building featuring italian architecture structure outlined square stroll bulevardi deshmoret kombit panoramic boulevard built italian similar champ elysee extending skanderberg square boulevard feature fascist communist modern architecture government building business centre hotel park street runs skenderbeg square lana river mother teresa square sidewalk crosswalk street wider walkable walk southbound polytechnic university building beautifully framed street night building polytechnic building lit especially early tree building street decorated light holiday street pass landmark park rinia pyramid rogner hotel president office palace congress event complex beautiful heart downtown restaurant casino bars club etc surrounded huge lit water fountain glowing bridge reach restaurant ideal ages children enjoy gourmet ice cream iced european soft drink whilst adult teen enjoy fun casino excellent attraction celebrity mother teresa square side deshmoret kombit boulevard square feature typical fascist architecture building university archaeological institute academy arts national stadium grand park artificial lake picnic fun natural beauty allow huge tree space mountain surrounding artificial lake lies middle park local walk enjoy lunch coffee restaurant cafe type plant swimming pool complex nearby ali demi skate park ali demi skate park family park side skate park market beautiful cafe shop playground children typical swing bench soccer field skate park bike roller skate skate boarder skate park beginner ramp cement coping ramp ramp varietythere ramp ones ramp shaped plateau caching air olly grind experienced skate boarder skate park slightly rest park shouldnt raining fill water quarter pipe side skate park skate park fun skater biker rollerskater mount dajti national park cable car accessible mountain country local escape rush spit roast lamb lunch sky austrian cable car dajti express take minute scenic trip radio tower fushe dajt opened street luna airport bus dajti express blue bus line direction porcelani stop bunkart minute walk alternatively bus line porcelani kinostudio bus stop ikv minibus shuttle dajti ekspre explained detail dajtiekspre hike enjoy scenery porcelani bus stop porcelani thesari stop bunkart start hiking trail upper cable car station dajti brar canyon bridge panoramic canyon ottoman bridge step capital spectacular view surrounding mountain cave beautiful waterfall shengjergj village southeast resort restaurant greenbelt berzhite petrela farke rruga elbasanit locality feature shooting range facility modest golf club horse riding traditional food wooden villa accommodation swimming pool gated community luxury villa amenity additionally farka artificial lake park farka enjoy splendid view mountain range dajti mini golf fun mini golf course hole course country suitable player ages previous experience needed obstacle aim game ball hole amount shot course equipped floodlighting allowing player continue playing sunset course easily accessed dajti ekspre cable car cable car journey dajti mountain minute length coastal retreat lalzi bay beach weekend beach retreat seaside resort wealthy rest skanderbeg castle cost church rodon nearby general beach seaside weekend retreat stem italian general rest beach world war accommodation form wooden villa international resort build nearby kalaja turre nearby bashtova castle shenepremte church sport event football team playing kategoria superiore tier play selman stermasi stadium capacity southwest side parizani play arena kombetare capacity air stadium host national team home game southeast corner grand park summer celebration mid independence festivity international film festival annual film festival held beginning highlight work ethnic artist rally event feature international competition rough countryside road money plenty atms accepting cirrus maestro visa charge lek abi unionbank otpbank withdrawal international card otp bank charged lek credin bank charge lek raiffeisen bank charged lek procredit bank bulevardi zogu skanderbeg dispense euro charging exchange bureaus abundant ones corner cameria ibrahim rugova exchange odd currency bamjust ask guys standing head straight exchange office iliria currency exchange money changer fast excellent rate check live website branch market local air market quarter vegetable fruit sold corner proper market sell sort thing tend busy noon barely late vegetable fruit stand exception following larger market market touristic price inflated fresh fruit vegetable nuts bean flea market stuff traditional cooking utensil tregu dinamo local tend shop cover sell food herb tea cosmetic clothe kitchenware hardware toys ceramic secondhand stuff odd wetsuit collection touristy item souvenir fruit vegetable market produce price stall shop similar variety especially vath koreshi butcher neranxi asian product coconut milk etc produce bought kilogramsnut rice quinoa oats cereal camomille bean herb teas etc little pricey grand bazaar fruit vegetable book ceramic hand kitchen appliance cloth shoe etc bigger market non touristy little track bicycle quarter numerous shop selling cheap bicycle certainly stolen repair furniture quarter sell bicycle hand furniture store variety little limited mobile phone electronic phone shop local phone electronic especially ones household appliance numerous shop selling cheap household appliance mostly hand quarter tool cloth electronic antique household appliance etc probably speak tell exactly looking dig load junk wont anything flea market certainly proper flea market style deter non albanian look dirty spread ground nevertheless bargain properly functioning thing lucky shop quarter meti repair repair computer part garage sale probably largest hand store household electronic appliance tool cable etc fruit vegetable popup market seem exist sponsored market pop real table another popup market hemingway bar shopping adrion international bookshop magazine newspaper world english book kiosque natyral organik shop work directly producer sell organic olive oil raki wine honey dried herb tulla record store independent record shop inside tulla culture selling vinyl record selection ranging jazz hip hop electronic dance classical music cds alternative pop rock artist bar cafe wider cultural venue exhibition concert lecture workshop mall citypark shopping shop mercator hypermarket food court skating rink coin department store galeria mall shop bars cafe kristal shopping conad supermarket cinema complex qtu shopping supermarket electronic store gate toptani shopping splashy shopping mall food generally inexpensive upscale italian influence everywhere pizza pasta elaborate dish rule priciest fanciest rarely ones particularly blloku notable dish exemplify cuisine fergese baked vegetable cheese tave dheu fergese addition liver budget shop roadside vendor throughout sell food sufllaqe doner gjiro lek speciality originally byrek lek barely haut cuisine inexpensive cantina inexpensive restaurant serve delicious regional dish lunch throughout following recommended flower menu carte water bread local muzaka creamy egg plant feel beyond usual gjelltore dibra dish tasty authentic plain cantine restaurant choice inexpensive genuine dish dhuri lunch menu carte simple delicious seem little needed communicate need vjosa serve regular dish supe pule tashqebab tave dheu salate fshati fergese etc meat heavy fast food chicken taste fast food fresh rotisserie chicken gjiro kamara fast food restaurant taste fast food marion restaurant budget self service restaurant campus student qofte tradita met kodra little grill sheshi avni rustemi featuring qofta rissole fish friend temla little fish shop imbiss qyteti studenti decent pasta seafood lek tek zgara tirone traditional cuisine massive serving birrari tori straightforward traditional food mostly meat dish menu restaurant practically basement easy miss mid range oda restaurant inside traditional house serve delicious traditional cuisine note original oda garden aka ods pazari hostile king house restaurant combination excellent italian food expat local yamato restaurant formal restaurant blloku eatery children friendly yamato selection japanese food prepared filipino chef era biloku restaurant featuring italian fare option stuffed aubergine pilau chicken pine nuts spaghetti sit table service restaurant pasta excellent steak blonde ale tap taste home american palate fun kitschy decor homage italian cinema suggest chinese garden sit table service chinese restaurant serving version chinese food occasionally chinese diplomat businesspeople eating food portion dish noodle rice upper level building outdoor dining warm month sofra ariut specializing traditional cuisine interior decorated traditional ornament splurge juvenilja castelo mainly serve italian food star restaurant otium flowering plant sample gallic cuisine seasonal seafood dish mullixhiu biloku neighborhood eatery slow food movement culinary theater presentation experience hotspot coworking space club friendly unlike cafe nektar bookcafe supposedly salep bars blloku nightlife spot budget young local expat frequent cosy old house bar waiter isnt particular helpful beer cocktail raki crowd worth house little smokey inside miqte muzike live energetic live music jazz regional cordial host trap ask price beforehand mid range hemingway cocktail bar jazz blue reggae etc inexpensive beer advertise service quickest komiteti kafe muzeum styled cafe museum little bohemian look flea market spare centimetre crammed communist era relic farming implement pitchfork hanging bar probably warning japanese fans old clock certainly memorable spot coffee variety raki radio named owner collection antique radio deep lamp shade collection communist era propaganda book read cocktail attract young fed crowd sky tower rotating bar bar rotating tower rotation bit jerky leave slightly seasick club converse charl steel wing biker club unit mos fli club blloku frequented die hard rock metal fans tunel decent bar club international djs summer rooftop winter basement wont longer

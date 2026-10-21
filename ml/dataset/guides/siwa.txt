@@ -2,11 +2,12 @@ Siwa, Egypt
 Labels: nature, relax, history | Split: validation
 Source: https://en.wikivoyage.org/wiki/Siwa_Oasis (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (8,432 characters) =====
+===== CLEANED GUIDE TEXT (8,438 characters) =====
 
 Siwa is an oasis and town in the Western Desert of Egypt. It is the most remote of Egypt's five western oases. The oasis is 80 km long by 20 km wide, with a population in 2016 of some 33,000. It has a scattering of villages but only one large settlement, here referred to as "Siwa town" for clarity. Its main sight is the Temple of the Oracle, which even Alexander the Great came to visit.
 
 Understand
+
  
 Siwa is in a great depression in the Sahara, so although it is 300 km from the Mediterranean coast at Marsa Matruh, it lies at sea-level or even a few metres below. This brings it close to a great aquifer of sandstone and limestone, containing "fossil water" - rain that fell 40,000 years ago. All the oasis water comes from this non-renewable resource. The depression was scoured out by wind-blown sand and salt, and the water is only usable if it is not salty. Most of Siwa's water is salty and the town is surrounded by large bitter lakes, which support wildlife (eg migratory birds, which gorge on the insects and grubs) but not agriculture. Wells nowadays have to drill down 300 m to access fresh water, so the area remains fertile but its development is constrained - tourist hotels are notoriously profligate users of water. Siwa's aquifer continues across the border into Libya, where it emerges as the Jaghbub oasis. Some 200 km east of Siwa is the even larger and deeper depression of Qattara, where all the water is saline and useless, so it is not an oasis.
 
@@ -15,6 +16,7 @@ The inhabitants of Siwa are ethnically Berber and their mother tongue is a Berbe
 Like the other western oases, the climate is hot desert, near 40°C summer and 5°C in winter. There is almost zero rainfall.
 
 See
+
  
  
 * Siwa town
@@ -55,6 +57,7 @@ Biʾr Wahid. A lake and garden surrounded by sand dunes, almost a cartoon image 
 * There are other wells and springs at Ain Qureishad, Abu Shuruf, Ez-Zeitun and Ain Safi. Abu el-Auwuf has a necropolis and chapels.
 
 Do
+
 * 
 Cleopatra's Bath. A natural hot spring feeds this rock pool at 29°C. It is a popular swimming hole for locals and visitors alike, with a cafe. The association with Cleopatra is entirely fanciful. Another spring feeds a smaller pool just north, called Ain Gubba.
 
@@ -65,11 +68,13 @@ Fatnas Island. This has become joined to shore as Lake Siwa silted up. Bathe in 
 * Equinox sunrise – Timasirayn temple is a ruin 12 km west of town, accessible by 4x4. On the morning of the equinox (Mar 21 and Sep 23, plus or minus a day in some years) the sunrise viewed from here is over the Temple of the Oracle, prominent on its hill. Tourist entrepreneurs and flaky archaeologists have tried to play this up—there is maybe a secret tunnel to Chichen Itza and Angkor Wat hereabouts—but its significance remains unclear. You cannot see much without powerful binoculars or zoom lenses, and even the ancient Egyptians knew it was unwise to look at the sun through those.
 
 Buy
+
  
 * Popular items are local crafts, jewelry, and baskets woven from date palms.
 * Or splurge on your wedding dress—these have red, orange, green and black embroidery, embellished with shells and beads.
 
 Eat
+
 Siwa Dates are the best in Egypt, and perhaps the whole world. Apart from regular dates, they are also sold stuffed with almonds and chocolate. Shops specialising in dates are found around Market Square, and prices range from LE7-8 for a 500-g box.
 
 * 
@@ -104,8 +109,9 @@ Albabenshal Siwa Restaurant. Good food & dessert (feteer (meat/veg) @ LE15 ½ ch
 
 
 Drink
+
 Siwan Tea – This is a red tea that is commonly found on desert safaris and is available in most restaurants. 500 g boxes of red (or green) tea leaves are sold in date/olive shop and cost about LE15.
 
-===== TOKENS THE MODEL TRAINS ON (648) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (648) =====
 
 oasis desert remote oase oasis wide population scattering village settlement referred clarity sight temple oracle alexander came depression sahara mediterranean coast marsa matruh lies sea level metre bring close aquifer sandstone limestone containing fossil water rain fell ago oasis water come non renewable resource depression scoured wind blown sand salt water usable salty water salty surrounded bitter support wildlife migratory bird gorge insect grub agriculture well nowaday drill access fresh water remain fertile development constrained hotel notoriously profligate user water aquifer continue border libya emerge jaghbub oasis larger deeper depression qattara water saline useless oasis inhabitant ethnically berber mother tongue berber language called siwi speak egyptian arabic speak little english oase climate hot desert summer winter zero rainfall king farooq mosque tomb sidi suleiman museum shali original founded early century remaining chief settlement part old wall gate survive house mosque wander tiny alley climb hill graeco roman rock tomb temple oracle temple built bce dedicated amun deity zeus jupiter jove priestly oracle pronounced proposition put bce alexander came ask son zeus sent everyone room receiving answer afterward enough gold distributed ensure answer yes claimed called leadership legitimised rule intended buried lies unknown site temple undecorated except hall sacrament tiled roof palm trunk overlain built temple lost sight rediscovered temple umm ubeida temple probably built nectanebo bce dedicated amun century decoy explorer looking temple oracle thought detailed sketch layout decoration fortunately ottoman governor decided limestone masonry employed police station blew wall remain fragment origin present temple uncertain baydah mean white gebel mawta limestone hillock rock cut tomb mostly ptolemaic roman period highlight group tomb northeast slope photography tomb amun beautifully colored relief tomb mesu isis little decorated contain mummified skull tomb thot inscription drawing tomb crocodile wall painting deteriorating yellow crocodile probably deity sobek gebel darkur limestone scarp climb view rock tomb theyre plain inscription decoration thing buried hot sand minute supposed rheumatism village festival family reunion event ain duheiba village graeco roman grave undecorated bilad extensive rocktomb ruined doric temple claimed alexander burial site maraqi secondary oasis dotted rock tomb scrap temple ruin prehistoric human footprint fertile lake surround salty close border military curb exploration aquifer continue northwest border emerge jaghbub oasis libya bir wahid lake garden surrounded sand dune cartoon oasis spring feed pool bathe mineral stain costume towel nearby lake cold well spring ain qureishad shuruf zeitun ain safi auwuf necropolis chapel cleopatra bath natural hot spring feed rock pool swimming hole local alike cafe association cleopatra entirely fanciful another spring feed smaller pool called ain gubba fatna island become joined shore lake silted bathe hot smelly spring tea cafe relax amidst greenery watch set lake idyllic bugs pesky excursion outlying sight trip overnight safaris equinox sunrise timasirayn temple ruin accessible morning equinox plus minus sunrise viewed temple oracle prominent hill entrepreneur flaky archaeologist tried play upthere maybe secret tunnel chichen itza angkor wat hereaboutsbut significance remain unclear cannot powerful binocular zoom lense ancient egyptian knew unwise look item craft jewelry basket woven date palm splurge wedding dressthese red orange green black embroidery embellished shell bead date world apart regular date sold stuffed almond chocolate shop specialising date market square price range box abdu restaurant breakfast variety entree pasta vegetable stew couscous meat saladsall freshly prepared wait fresh fish pigeon pizza dune restaurant table set palm tree pancake smoothy stuffed pigeon sheesha live music alexander restaurant pizza vegetable stew chicken curry slow service star restaurant coffee shop set beautiful palm grove usual food sell traditional clothe craft zeytouna cafe bakri cafe sheesha backgammon nour waha restaurant nour waha hang palm grove opposite shali lodge food mixture egyptian cuisine sheesha night enjoy food music traditional tea romantic ambiance abou ayman grilled chicken kofta chicken albabenshal restaurant food dessert feteer meat veg chicken miss konafa date chocolate fluf cake roof siwan tea red tea commonly desert safaris restaurant boxe red green tea leave sold date olive shop cost

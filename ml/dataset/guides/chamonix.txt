@@ -2,11 +2,12 @@ Chamonix, France
 Labels: ski, nature, adventure | Split: test
 Source: https://en.wikivoyage.org/wiki/Chamonix (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (16,562 characters) =====
+===== CLEANED GUIDE TEXT (16,566 characters) =====
 
 Chamonix (officially Chamonix-Mont-Blanc) is a resort in the Haute-Savoie region of France, bordering Italy, at the foot of Mont Blanc. It's regarded as the birthplace of mountaineering and as one of its capitals.
 
 Understand
+
  
 Traditional mountaineering was a practical business of hunting and farming, and of leading travellers over the passes by the safest route, tugging their pack-mules through the sleet. In the 18th, scientific enquired people to climb the highest peaks. In 1760 the scientist Horace Bénédict de Saussure put up a prize for the first ascent of Mont Blanc. In those days the mountain lay in Savoy, an independent country that included Nice, Aosta, Piedmont and Sardinia. Not until 1860 was the territory definitively incorporated into France and Italy, with Mont Blanc marking the border.
 
@@ -18,6 +19,7 @@ Tourist Information Centre.
 .
 
 See
+
  
 * Mountains and glaciers - Chamonix's most impressive sights are free and impossible to miss. To get closer, you'll need to go up in one of the cable-cars, see "Do", or mountain railways, see "Get around". 
 * 
@@ -34,7 +36,9 @@ Mer de Glace. One of the largest glaciers in Europe, 7.5 km long - 12 km if its 
 
 
 Do
-=== Cable cars ===
+
+Cable cars
+
  
  
  
@@ -61,6 +65,7 @@ Le Tour cable car. Near the top of the Chamonix valley, this cable car rises abo
 
 
 Crossing to Italy
+
 It involves five cable cars: the two-stage ascent of Aiguille du Midi, the ride across Vallée Blanche to Punta Helbronner on the Italian border, then the two-stage descent towards Courmayeur:
 
 * 
@@ -74,6 +79,7 @@ Monte Bianco Skyway. From Punta Hellbronner at 2466 m, the upper cable car desce
 
 
 Snow sports
+
 The town is renowned for winter sports, and there is a wide choice of skiing areas. Most pistes are over 2000 m altitude so winter snow is as reliable here as it can be anywhere.
 
 Three ski areas can be accessed directly from Chamonix: Brevent, La Flégère and Vallée Blanche. There are no pistes connecting them, but buses run along the valley between the base cable car stations. Other extensive areas are Les Houches lower down the valley, and Grand Montets and Le Tour / Vallorcine higher up. The "Mont Blanc" ski pass is valid for a total of 700 km of pistes, including the neighbouring valleys as well as Courmayeur in Italy. In increasing order of difficulty they are:
@@ -100,12 +106,14 @@ Vallée Blanche. The easiest descent is "red run" standard, well within the capa
 
 
 Mountaineering
+
 * Mont Blanc is very high and very cold and windy. The ascent is strenuous and hazardous, and involves 3 days and 2 nights on the mountain; so this is proper mountaineering, not just a hike. The most popular ascent route is Voie Royale, reached by the Mont Blanc Tramway from St Gervais. Two routes from Chamonix are 3 Monts and Grands Mulets, both accessed from l'Aiguille du Midi cable car.
 * 
 Compagnie des Guides. Established in 1821, they lead day trips and longer mountain tours.
 
 
 Hiking
+
  
 
 The hiking paths offer splendid views of the highest massif in Europe. Tour du Mont Blanc is a classic hiking trail that takes about ten days to walk. For shorter visits, take the telepherique to the top of a nearby peak and hike down. Or try hikes between two telepheriques, for example between the Brevent and la Flegere or between the Mer de Glace and the Plan de l'Aiguille
@@ -122,17 +130,20 @@ The first three could feasibly be done in one day if you are up early and have a
 
 Events
 
+
 * Alpine Skiing World Cup: in 2018/19 none of the races were held in or near Chamonix. 
 * The Climbing World Cup is often hosted by Chamonix, including in July 2018, however the 2019 event was in Denver.
 * Ultra Trail du Mont Blanco (UTMB) is one of the largest Trail running events in the world held each year in Chamonix. The Main course follows mostly the Tour du Mont Blanc
 
 Buy
+
  
 The town has a lovely collection of sporting, alpine and local shops. (including some fleece shirts for as little as €8). The best place for shopping is the main street, 
 Rue du Docteur Paccard. 
 .
 
 Eat
+
 
 It's France.  The food is all good, though it can be quite expensive in the touristy places.  Open a can of Ravioli from the supermarket and eat it with your freshly purchased Swiss Army Knife.  If you've been hiking all day, it'll be the best meal you've ever had. Other regional specialties (Quand meme!):
 * Fondue
@@ -155,6 +166,7 @@ Le Basilic. Authentic French food, but not typical Savoyard.
 
 
 Drink
+
  
 Drinking in Chamonix is relatively expensive. Expect to pay around €5 in most places for a pint of beer, though most places will sell pitchers which can work out cheaper. There are many happy hours during the late afternoon.
 
@@ -171,6 +183,6 @@ Le Tof. Gay-friendly nightclub in Chamonix Sud. Good place for a boogie.
 * 
 Vagabond. While the walk to 'the Vag' can be a chilly one in winter, you'll probably be met by a roaring fire, football on the TV and a fun crowd of regulars (expats) and backpackers staying in the adjoining hostel. A good place to watch sport or for a low-key midweek chat.
 
-===== TOKENS THE MODEL TRAINS ON (1,260) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,260) =====
 
 officially mont blanc resort haute savoie region bordering foot mont blanc regarded birthplace mountaineering capital traditional mountaineering practical business hunting farming leading traveller pass safest route tugging pack mule sleet scientific enquired climb highest peak scientist horace benedict saussure put prize ascent mont blanc mountain lay savoy independent country included aosta piedmont sardinia territory definitively incorporated mont blanc marking border saussure attempt successful ascent mont blanc jean jacque balmat michel gabriel paccard century alpine summit conquered culminating matterhorn ascent mountaineering opposite pass safely breed paying client wanted climb hard peak climbed spirit railway connection accessible lift took hard slog slope hotel amenity developed hosted winter olympic game century game fashion skiing winter sport preeminence assured especially global warming drive lower resort information mountain glacier impressive sight impossible miss closer youll cable cars mountain railway jacque balmat memorial jacque balmat pair reached peak mont blanc statue erected photo spot looking mont blanc form background climbing companion michel gabriel paccard figure saussure whod put prize ascent balmat later guided summit balmat talented mountaineer overplayed celebrity wrote paccard history paccard earn statue sitting alone alpenstock ave michel croz alpine museum version frost damaged replaced paccard went leading citizen magistrate married balmat sister non personning musee alpin early century hotel show development alpinism region ascent mont blanc modern sport climber mean historical painting photo maps host interesting temporary exhibition musee des cristaux espace tairraz impressive collection crystal mostly smoky rose quartz rest alps worldwide describe geology formative process involved mer glace largest glacier europe tributary included shrinking fast rattling hour admired hotel montenver rack railway museum hotel cave serving crystal museum glacier museum nearby hut ice cave inside glacier descending step short cable car ride cable cars prepared cold windy summer fog blizzard thunderstorm suddenly sweep suppose cable car break youre carry initially wear anorak pullover thermal undy glove sunglass check webcam base station condition point inside cloud drizzle sleet vexing youve ride condition marginal ask worse standing base station wishing youd shivering mountain wishing youd stayed cable cars season consider reserving beforehand price given listing simple return trip youre taking ride cheaper mont blanc multipass instance pass cost pass cable car operator compagnie mont blanc website time price sight hike cable car stop interactive map depicting chair lift valley brevent cable car side valley opposite mont blanc give view massif valley station car ride planpraz car rise facing lower slope lose snow early possible drive walk planpraz valley another car ascend les praz flegere flegere cable car les praz village flegere site altitude chair lift ascending altitude bellevue cable cars cable cars bellevue parion gondola ascend les houch valley larger cable car rise ridge bellevue imply excellent view valley mont blanc side brevent short walk ridge bring gervais sallanch glacier bionnassay view bellevue usual climber ascent mont blanc nid daigle smaller cable car rising prarion price larger grand montet cable cars serve ski argentiere highest stage ascent lognan grand montet lower cable car runs round upper ski season tour cable car valley cable car rise tour village charamillon chairlift continue les autanne another cable car start vallorcine village youll skis snowshoe approach swiss border trail swiss side crossing involve cable cars stage ascent aiguille midi ride vallee blanche helbronner italian border stage descent courmayeur aiguille midi cable car highest cable cars world valley station car ascend plan laiguille car ascend gulf pylon complete ride taking minute restaurant viewing platform elevator summit aiguille midi dress warmly highest point lift system summit mont blanc look temptingly close dont deceived arduous route need ascend return continue vallee blanche cable car listed expert skier descend vallee vallee blanche cable car starting aiguille midi section runs gros rognon technical station cable take corner cant section level glacier geant helbronner border cable car stranded overnight military jet tried fly beneath took cars monte bianco skyway hellbronner upper cable car descend pavillon mont frety alpine garden winery restaurant lower stage descend portal les palud courmayeur skyway runs mins last ascent last descent usual complete circuit savda bus tunnel cable car routinely annual maintenance snow sport renowned winter sport wide choice skiing piste altitude winter snow reliable anywhere ski accessed directly brevent flegere vallee blanche piste connecting buse run valley base cable car station extensive les houch lower valley grand montet tour vallorcine higher mont blanc ski pass valid total piste neighbouring valley courmayeur increasing order difficulty flegere mostly easy piste suitable resort family les houch likely choice family low altitude condition ski treeline poor visibility tour easy slope beginner bound skiing willing hike skis front side tour sunny windy side ridge descend vallorcine brevent skiing level mostly mid extreme ambitious experienced skier grand montet accessed argentiere highest toughest slope signature descent grand montet argentiere glacier descending experienced skier vallee blanche easiest descent red run standard capability confident intermediate difficulty danger changing glacier guide descent need aiguille midi cable car system slither slide icy path glacier route mean piste lead vallee blanche mer glace mountaineering mont blanc cold windy ascent strenuous hazardous involve night mountain proper mountaineering hike ascent route voie royale reached mont blanc tramway gervais route mont grand mulet accessed laiguille midi cable car compagnie des guide established lead trip longer mountain tour hiking hiking path splendid view highest massif europe tour mont blanc classic hiking trail take walk shorter visit telepherique nearby peak hike hike telepherique example brevent flegere mer glace plan laiguille fantastic view mont blanc aiguille range ribbon fiz limestone range brevent telepherique walk crest bel lachat mountain hut walk rocher des gailland slightly courageous aiguillette des houch walk steep lane gailland plan lachat bel lachat crest brevent hot summer start early worth effort glacier hike exist cant glacier touch close enough amazing view glacier des bosson depart les bosson base ski jump foot chair lift drive entrance mont blanc tunnel shorter flatter hike warning attempt touch glacier possibly dangerous valley glacier dtour depart montroc ski resort tour glacier trient depart col forclaz descending martigny hour flat glacier bionnassay depart bellevue cable car feasibly early car bionnassay require half event alpine skiing world cup none race held climbing world cup hosted event denver ultra trail mont blanco utmb largest trail running event world held course follow mostly tour mont blanc lovely collection sporting alpine shop fleece shirt little shopping street rue docteur paccard food expensive touristy ravioli supermarket freshly purchased swiss army knife youve hiking itll meal youve regional specialty quand meme fondue pierrade pierre chaude hot piece slate cook slice meat table raclette fondue multi person event involve melted cheese potatoe cold cuts croute savoyarde toasted piece bread soaked white wine baked melted cheese possibly mushroom tomatoe tartiflette potatoe bacon smothered melted roblochon cheese toasted goat cheese salad nuts satsuki usual japanese fare munchie asian fusion delice wine food vegan basilic authentic food typical savoyard drinking relatively expensive expect pay pint beer sell pitcher work cheaper happy late afternoon microbrasserie mbc kind microbrew american canadian ambiance serve onion ring hot wing example serve standard pilsner heineken ask demi pression tap beer demi panache mix half beer half sprite refreshing alternative alcohol pint called serieux value order pitcher working tourism hospitality industry speak english making effort speak little appreciated throw little bonjour hello merci thank chambre neuf apre ski crowd expat chambre neuf classy tasty reasonably priced lunch bite happy hour cocktail garage largest nightclub bit empty season late night joint fun mingle expat local tof gay friendly nightclub sud boogie vagabond walk vag chilly winter youll probably met roaring fire football fun crowd regular expat backpacker staying adjoining hostel watch sport low key midweek chat

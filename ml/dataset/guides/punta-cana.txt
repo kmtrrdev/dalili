@@ -2,11 +2,12 @@ Punta Cana, Dominican Republic
 Labels: beach, relax | Split: validation
 Source: https://en.wikivoyage.org/wiki/Punta_Cana (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (11,268 characters) =====
+===== CLEANED GUIDE TEXT (11,277 characters) =====
 
 Punta Cana is a town and tourist region at the easternmost tip of the Dominican Republic. The region, covering about , is home to a coastline of sandy white beaches. It is a popular spring break destination.
 
 Understand
+
 
  
  
@@ -19,6 +20,7 @@ Punta Cana has a tropical climate. Although it is mildly windy, the ocean in the
 Punta Cana was founded as a tourist resort and tourism still is 100% of the local economy. Prices are much higher than in the rest of the Dominican Republic and within the area prices in the resorts are higher than outside (up to 300% for postcards, cigars and souvenirs). Therefore lots of resorts employ the tactic of scaring their visitors from venturing outside by propagating stories of robberies, murders and rape. These have to be taken with a grain (or a pound) of salt; people tend to be very friendly and helpful. Still, flashing jewellery, expensive gadgets or lots of money is not recommended.
 
 See
+
  
 * 
 Altos de Chavon. A modern-day artist's village resembling a 16th century Mediterranean town. It is set upon a spectacular hillside cliff overlooking the winding Chavon River. It is home to a 5,000 seat amphitheatre, an archaeological museum, craft workshops, artist's studios and an assortment of galleries and restaurants.
@@ -31,6 +33,7 @@ Saona Island. Take a day trip to this spectacular island set in the natural rese
 
 
 Do
+
  
 * 
 Corales Golf Course. Designed by Tom Fazio, Corales is an 18-hole course with six seaside holes. Designed along the natural cliffs, bays, ocean coves and the inland lakes and coralina quarries. Members and their guests are welcome; additional access available to guests of Tortuga Bay and The Puntacana Hotel through the resort’s "Golf Experience" plans, or those who wish to play à la carte. The à la carte golf rates for the Resort’s guest are USD275 in season and USD195 during the off season. Subject to availability, the Corales Golf Club accepts a limited number of external guest players. All golf rates are inclusive of taxes and include eighteen holes with cart and an expansive practice facility. Also included in the golf rates are yardage books, towels, ice water, and tees are part of the golf cart’s setup. Cold apples are provided on the 10th tee and scented iced towels at the end of your round. There is a Caribbean view Grill and Nineteenth Hole Bar at the clubhouse and an on-course beverage cart. Caddies are mandatory.
@@ -55,6 +58,7 @@ Seaquarium. You are provided with a diving helmet and allowed to walk the bottom
 
 
 Buy
+
 Make sure you spend the remainder of your Dominican pesos. It is next to impossible elsewhere to convert your pesos back to US dollars or euros.
 
 There are a variety of shops along the beachfront of each resort. These shops are owned and operated by the locals. Shopping outside of the resort complex in Punta Cana/Bavaro can be kind of an adventure. In most shopping plazas, you can expect to be approached by one or more friendly, but insistent salespersons. The people of the Dominican Republic love to bargain. You can expect that once in one of their stores you will be taken for a ride. You will initially be quoted ridiculously outrageous prices. It is imperative that you get the item as cheaply as you can. This can become quite an ordeal as the shopkeeper fights with you, insults you for your frugality, etc.
@@ -64,6 +68,7 @@ When walking along the beach vendors will solicit your business. It can be annoy
 Do not buy dried animals (turtle shells, sea shells, etc.) because a) It is illegal, so you will not be allowed to bring them through customs, and may get arrested trying; and b) it encourages the locals to kill these creatures. Reef life should stay in the sea, so help to preserve these endangered animals by buying other types of souvenirs.
 
 Eat
+
 * 
 Capitan Cook. If seafood is your favourite, try what locals have declared the best lobster in town. With a huge open grill and enormous platters, it is hard for seafood lovers not to enjoy this beach-side restaurant. It is on the main beach strip. Captain Cook has an unusual atmosphere, and some may find the peculiar manner of service and ordering your meal intimidating or offensive.
 
@@ -72,15 +77,18 @@ Las Leñas II. Spanish-style coffee shop and bakery with Wi-Fi. Comfortable seat
 
 
 Drink
+
 *Drinking from the tap is not recommended. You should be okay using it to brush your teeth, but don't swallow it.  Most hotels provide bottled water in the rooms; restaurants and bars use purified water and ice for your food and beverages.
 *All-inclusive resorts have an endless supply of liquor. You may also drink at neighboring resorts within your own property, but you may have to pay or let them know your room number and resort name at the very least.
 *With the sun constantly beating down on you (much stronger since it is right next to the Tropic of Cancer) and the endless supply of alcohol, dehydration is a constant danger. Make sure you drink lots of water or you may end up in a doctor's office suffering from dehydration and a fever.
 *Mamajuana is a local concoction of rum, wine, root or tree bark, and honey. However, there may be different recipes for the same beverage that locals say functions like liquid Viagra.
 
 Beer
+
 Presidente is the most popular national brand of beer, and it is readily available anywhere. It is available in both regular and lite versions. For a beer with a bit more taste, you should try Bohemia, made by the same company, but with a fuller flavour. Also available in a lite version.
 
 Rum
+
 You will encounter many different types of rum:
 *White rums are generally light-bodied. They are clear and have a subtle flavour. These are primarily used as mixers and blend particularly well with fruit flavours.
 *Golden rums also known as Amber rums are generally medium-bodied. Most have spent several years ageing in casks, giving them a smooth palate.
@@ -90,8 +98,9 @@ You will encounter many different types of rum:
 Most often, you will be offered Brugal or Barcelo rum. Highly recommended rums are Burmudez Don Armando and Anniversario 1852, as well as Macorix Eight Year.
 
 Coffee
+
 Though in most Latin and Central American countries coffee is produced primarily for export, most of the coffee grown in the Dominican Republic is savored within its borders.  And Dominicans, like Europeans, enjoy their coffee strong and black. One useful phrase for tourists to learn when ordering coffee is "sin azucar" (no sugar) for the simple reason that the locals measure by tablespoon rather than teaspoon.
 
-===== TOKENS THE MODEL TRAINS ON (852) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (852) =====
 
 region easternmost tip region covering home coastline sandy white beach spring break destination province altagracia population estimated region border atlantic ocean border bavaro cortecito border cabeza toro cabo engano juanillo peak season tend run price airfare hotel increase dramatically time dropping summer early fall month tropical climate mildly windy ocean mainly shallow natural marine pool bathe weather fairly constant average temperature hottest season last temperature reach temperature evening little rain fall mostly flat landscape summer month tend warm humid suggested wear loose fitting cotton clothing pack light founded resort tourism economy price higher rest price resort higher outside postcard cigar souvenir therefore resort employ tactic scaring venturing outside propagating story robbery murder rape taken grain pound salt tend friendly helpful flashing jewellery expensive gadget money recommended alto chavon modern artist village resembling century mediterranean set spectacular hillside cliff overlooking winding chavon river home seat amphitheatre archaeological museum craft workshop artist studio assortment gallery restaurant juanillo beautiful beach ago village fishermen mile airport entire village purchased project called cap return giving right occupancy resident offered alternative housing money jobs juanillo accessible public accessible staying cap hotel property owner cap project guest saona island trip spectacular island set natural parque nacional este relax powder white sand palm studded beach meet soft surf caribbean water dolphin swim alongside catamaran corale golf course designed tom fazio corale hole course seaside hole designed natural cliff bays ocean cove inland coralina quarry member guest welcome additional access guest tortuga bay puntacana hotel resort golf experience plan wish play carte carte golf rate resort guest season season subject availability corale golf club accept limited external guest player golf rate inclusive taxe eighteen hole cart expansive practice facility included golf rate yardage book towel ice water tees golf cart setup cold apple provided tee scented iced towel round caribbean view grill nineteenth hole bar clubhouse course beverage cart caddy mandatory dolphin island short boat ride take floating platform swim trained dolphin sea package minute unique creature alps waterfall cascade chasm rock water rich fertile earth youre whitewater fan yasque longest river caribbean challenging kayak rafting course mike tyson feature vertical drop trip due distance horseplay horseback riding zip lining combo adventure tour inclusive package included horse riding zip line cigar demonstration cocoa demonstration culture lunch transportation resort marinarium water park experience snorkeling complete nurse shark sting rays enjoy coco loco cruise coast final stop waist deep natural pool sea ocean adventure kind water excursion bavaro splash combine driving performance boat snorkelling snuba fish ocean spa hour spa excursion offering gentle pilate yoga relaxing massage special massage floating mattress natural pool detox foot treatment pedicure tiny fish called garra rufa gently exfoliate feet removing dead skin creating feeling gentle massage called sailing adventure sailing excursion activity last min bar drink asian lunch buffet final option stingray bay trip double floor pirate ship private exclusive floating aquarium nurse shark stingray safe interaction program followed party seaquarium provided diving helmet allowed walk bottom clear water unforgettable view reef coral life certification required sure spend remainder peso impossible elsewhere convert peso dollar euro variety shop beachfront resort shop owned operated local shopping outside resort complex bavaro kind adventure shopping plaza expect approached friendly insistent salesperson love bargain expect store taken ride initially quoted ridiculously outrageous price imperative item cheaply become ordeal shopkeeper fight insult frugality etc walking beach vendor solicit business annoying keep pestering look tell interested keep walking letting local know interested tell money friendly offended walk past acknowledgement presence simple thank work case answer continue chase harass dried animal turtle shell sea shell etc illegal allowed bring custom arrested trying encourage local kill creature reef life stay sea help preserve endangered animal buying type souvenir capitan cook seafood favourite local declared lobster huge grill enormous platter hard seafood lover enjoy beach side restaurant beach strip captain cook unusual atmosphere peculiar manner service ordering meal intimidating offensive lena spanish style coffee shop bakery comfortable seating urban clientele food rustic decoration give welcoming character bakery provide hotel choicest dessert breakfast drinking tap recommended okay brush teeth dont swallow hotel provide bottled water room restaurant bars purified water ice food beverage inclusive resort endless supply liquor neighboring resort property pay let know room resort constantly beating stronger tropic cancer endless supply alcohol dehydration constant danger sure water doctor office suffering dehydration fever mamajuana concoction wine root tree bark honey recipe beverage local say function liquid viagra beer presidente national brand beer readily anywhere regular lite version beer bit taste bohemia company fuller flavour lite version encounter type white rums generally light bodied clear subtle flavour primarily mixer blend particularly fruit flavour golden rums amber rums generally medium bodied spent ageing cask giving smooth palate dark rums traditionally bodied rich caramel dominated rums richest rums consumed straight anejo age dated rums aged rums vintage batch mixed together youngest blend contain blend rums old offered brugal barcelo highly recommended rums burmudez don armando anniversario macorix coffee latin american country coffee produced primarily export coffee grown savored border dominican european enjoy coffee strong black useful phrase learn ordering coffee sin azucar sugar simple reason local measure tablespoon teaspoon

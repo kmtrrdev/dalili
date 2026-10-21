@@ -17,14 +17,12 @@ from .models import (
     Budget,
     FeedbackItem,
     RequirementDraft,
-    TravelerProfile,
     TripContract,
     TripPlan,
     TripState,
 )
 from .nlu import Action, FeedbackNote, Requirements, RouteStop
 from . import preferences
-from .config import settings
 from .journey import build_stops
 from .providers.geo import country_code
 from .utils import matches_ref, place_key, same_place

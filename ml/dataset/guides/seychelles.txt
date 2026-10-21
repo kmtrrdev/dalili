@@ -2,7 +2,7 @@ Seychelles, Seychelles
 Labels: beach, relax, nature | Split: validation
 Source: https://en.wikivoyage.org/wiki/Seychelles (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (11,465 characters) =====
+===== CLEANED GUIDE TEXT (11,469 characters) =====
 
 The Seychelles (Seychellois Creole: Sesel) is an island nation in the Indian Ocean, northeast of Madagascar and east of Kenya. It consists of 115 islands, of which the largest are Mahe, Praslin, and La Digue. The capital and largest city is Victoria, located on the island of Mahe.
 
@@ -12,11 +12,13 @@ Seychelles is also home to a unique biodiversity, with many species of plants an
 
 Understand
 
+
 The Seychelles' tourism industry offers a wide range of activities for visitors, including snorkeling, diving, fishing, hiking, and island-hopping. The country is home to several stunning natural attractions, such as the Vallée de Mai Nature Reserve, which is a  and home to the iconic coco de mer palm tree. Seychelles also boasts several national parks and marine reserves, such as the Sainte Anne Marine National Park and the Curieuse Marine National Park, which offer opportunities to see a variety of marine life and unique bird species.
 
 In the 1970s, the Seychelles was the place to "see and be seen" among the world's elite, and many famous celebrities of the time holidayed there. While mention of the Seychelles may still evoke an image of a prohibitively expensive private island getaway (and that may be true depending on which islands you visit), the islands are becoming more and more affordable. Prices however remain high compared to similar beachy, tropical destinations like the Canary Islands, the Philippines, Sri Lanka or Zanzibar.
 
 History
+
  
 Maldivian and Arab traders were the first to visit the uninhabited Seychelles. The first European to sight the islands was Portuguese Admiral Vasco da Gama who passed through the Amirantes in 1502 and named them after himself (Islands of the Admiral); later Portuguese expeditions mapped some of the islands. The first Europeans to land on the Seychelles were the crew of a British ship, the Ascension, but the islands were not claimed until French sailors on the Le Cerf visted the islands. Le Cerf 's commander, Nicholas Morphey, laid a Stone of Possession on Mahé, officially claiming the islands for France. During the French Revolutionary Wars, minor sea skirmishes occurred around the Seychelles between Britain and France, but France retained possession.
 
@@ -27,6 +29,7 @@ In 1981, the Seychelles Incident occurred when a group of South African mercenar
 Thanks to a small population, a booming tourism industry, and a legacy of Socialist policies aimed towards racial and economic equality, the Seychelles now has the highest Human Development Index, the highest nominal GDP per capita, and the strongest electoral democracy in Africa. The government of the Seychelles has made environmental protection a cornerstone of its policies, and today a large portion of the islands and the waters surrounding them are protected areas.
 
 See
+
  
 
 * Visit the beaches. Many of the beaches are seemingly untouched by human influence and are refreshingly uncrowded. They offer clear blue skies and a tranquility you will rarely find. A hike along the coastline from Beau Vallon to Anse Major will take about 1.5-2 hours and your reward will be a small deserted beach that's fit for a king. The scenery along the hike is breath-taking. Not all beaches are suitable for swimming depending on the time of year, due to the seasonal winds. Do not ignore warning signs indicating that a beach is hazardous for swimming, no matter how appealing the waters may look.
@@ -36,6 +39,7 @@ See
 * Victoria, the capital on Mahe Island, has several good museums including the Natural History Museum, where you can hold the famed coco-de-mer, and the National Museum of History with good photo displays and a video presentation.
 
 Do
+
  
 Water sports: The warm Indian Ocean waters make Seychelles the perfect place for water enthusiasts. Explore on the board of a yacht, power boat, catamaran or sailboat. Windsurfing is also popular and the best time for this activity is usually around May and October, at the start and end of the trade winds.
 
@@ -46,7 +50,9 @@ Land sports: Golf, tennis, squash, badminton, horseback riding, biking and hikin
 Seychelles also has numerous markets, art galleries and shops, colonial Creole-style plantation houses, and the main island of Mahé has six museums, a botanical garden, and several national monuments. The market downtown Victoria has a good selection of local produce, and spices for sale that are all grown locally and 100% authentic.
 
 Buy
-===Money===
+
+Money
+
 
 
 The islands' currency is the Seychellois rupee, denoted by the symbol "SR" or "SRe" (ISO code: SCR). ATMs usually have the best conversion rates; however, airports and banks also exchange money.
@@ -56,15 +62,18 @@ Coins of the Seychelles are issued in denominations of 1, 5, 10 and 25 cents, 1,
 There is no longer a black market in currency.
 
 Shopping
+
  
 The best place for shopping is Victoria, the capital, and more specifically the market at the city centre, Seychelles Buy and Sell. There are also a few outlets on the island, Praslin, but few shopping areas on the other islands. Larger hotels have boutiques but shopping in Seychelles is not one of the major attractions.
 
 While visiting, be sure to buy the classic and traditional Seychelles souvenir, the coco-de-mer, or the 'nut of the sea,' a nut from trees native to the islands in the Seychelles - but this requires an export licence. Other locally made souvenirs, although not as unique, can be purchased like sea shell and pearl jewellery, textiles and straw hats, in addition to needlework and crochet, paintings by local artists and woodwork.
 
 Tipping
+
 Most service providers already include a service charge of 5–10%. Tipping is not obligatory in the Seychelles; however, any extra change is greatly appreciated.
 
 Eat
+
  
 Seychellois cuisine has been greatly influenced by the islands' rich cultures. Creole cooking, varied seafood dishes, coconuts and curries are the most popular. The main product of the country, fish, is cooked in a variety of ways. The red snapper is very tasty and well known to visitors.
 
@@ -73,6 +82,7 @@ There are restaurants that serve Chinese, Indian and Italian food as well as loc
 Cheapest food: Collect coconuts on the beach and learn how to open them (not the shell, that's easy; they have a thick cover of natural fibres; to open it: hit the coconut very strongly many times on the edges, sooner or later the fibres break up).
 
 Drink
+
 Seychelles offers a fantastic nightlife scene that caters to tourists. The active nightlife is mostly located around the larger hotels and in addition to theatres, cinemas and discos, there are numerous fun and trendy restaurants.
 
 Nightlife: Do not miss most popular nightclub "Lovenut" in the centre of Victoria, 100 metres walk from central taxi station. Also entertaining are "Tequila Boom" at (Bel Ombre) and "Katiolio" (near Anse Royale) night clubs. "Katiolio" was one of the first nightclubs to open on Mahe and is open-air beside the ocean.
@@ -81,6 +91,6 @@ If you enjoy a good beer, try the local Seybrew beer; it tastes similar to a lig
 
 A dark Takamaka rum on the beach under the stars is the best way to end a day on the Seychelles.
 
-===== TOKENS THE MODEL TRAINS ON (836) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (836) =====
 
 seychellois creole sesel island nation indian ocean northeast consist island largest mahe praslin digue capital largest island mahe stunning beach crystal clear water vibrant marine life destination attracting world economy largely based tourism fishing country significant progress developing infrastructure promoting sustainable development home unique biodiversity specy plant animal nowhere world aldabra atoll largest raised coral atoll world home giant tortoise tourism industry wide range activity snorkeling diving fishing hiking island hopping country home stunning natural attraction vallee nature home iconic coco mer palm tree boast national park marine reserve sainte anne marine national park curieuse marine national park opportunity variety marine life unique bird specy world elite famous celebrity holidayed mention evoke prohibitively expensive private island getaway true depending island island becoming affordable price remain compared similar beachy tropical destination canary island history maldivian trader uninhabited european sight island portuguese admiral vasco gama passed amirante named island admiral later portuguese expedition mapped island european land crew british ship ascension island claimed sailor cerf visted island cerf commander nichola morphey laid stone possession mahe officially claiming island revolutionary wars minor sea skirmish occurred britain retained possession enslaved african brought island ship thelemaque british force landed greater war coalition forcing commander capitulate britain gained control island island remained speaking british colony separate colony british empire island independent coup albert rene ended short lived parliamentary democracy rene ruled island benevolent dictator overseeing massive economic social growth horrible human right violation constitution amended declare party socialist state island took relatively neutral stance greater cold war officially non aligned movement incident occurred group african mercenary backed mike hoare masquerading holidaying rugby player engaged gun battle seychellois force airport male attempted overthrow rene government hijacking plane returning mainland majority foreign aid dried dissolution ussr reunification rene pressured holding democratic election ending era party rule rene continued president election progressive front win presidency party founding thank population booming tourism industry legacy socialist policy aimed racial economic equality highest human development index highest nominal gdp capita strongest electoral democracy government environmental protection cornerstone policy today portion island water surrounding protected beach beach seemingly untouched human influence refreshingly uncrowded clear blue sky tranquility rarely hike coastline beau vallon anse major reward deserted beach fit king scenery hike breath taking beach suitable swimming depending due seasonal wind ignore warning sign indicating beach hazardous swimming matter appealing water look vallee national park world heritage site home amazing flora fauna world largest seed coco mer entrance fee resident rupee foreigner aldabra atoll world largest coral atoll stretch enclose huge tidal lagoon aldabra original home giant land tortoise tiger shark manta rays cousin island owned birdlife international non profit purchased island protect endangered warbler capital mahe island museum natural history museum hold famed coco mer national museum history photo display video presentation water sport warm indian ocean water perfect water enthusiast explore board yacht power boat catamaran sailboat windsurfing activity start trade wind scuba diving snorkeling fishing extremely anywhere baie ternay superb easily accessible glass bottom boat tour beau vallon beach leave empty walk beach last minute booking deal bargained snorkeling provided gear hotel lend mask snorkel fins guest spot beach glacis past mouse island anse royale reef port launay ephelia resort spotted wide array tropical fish sea turtle eagle rays land sport golf tennis squash badminton horseback riding biking hiking recreational activity island bike rental walking tour ways sightsee distance relatively short scenery beautiful walking probably smaller island digue praslin walking road intimidating road narrow cars buss drive quickly mahe advised ride bicycle rental shop sight bird watching island home world rarest specy animal cousin island mile diameter home bird unique specy mahe numerous market art gallery shop colonial creole style plantation house island mahe museum botanical garden national monument market downtown selection produce spice sale grown locally authentic money island currency seychellois rupee symbol sre iso code scr atms conversion rate airport bank exchange money coin issued denomination cent rupee banknote issued denomination rupee longer black market currency shopping shopping capital specifically market sell outlet island praslin shopping island larger hotel boutique shopping major attraction visiting sure classic traditional souvenir coco mer nut sea nut tree native island require export licence locally souvenir unique purchased sea shell pearl jewellery textile straw hats addition needlework crochet painting artist woodwork tipping service provider already service charge tipping obligatory extra change greatly appreciated seychellois cuisine greatly influenced island rich culture creole cooking varied seafood dish coconut curry product country fish cooked variety ways red snapper tasty restaurant serve chinese indian italian food cuisine cheapest food collect coconut beach learn shell easy thick cover natural fibre hit coconut strongly time edge sooner later fibre break fantastic nightlife scene cater active nightlife mostly larger hotel addition theatre cinema disco numerous fun trendy restaurant nightlife miss nightclub lovenut metre walk taxi station entertaining tequila boom bel ombre katiolio anse royale night club katiolio nightclub mahe air beside ocean enjoy beer seybrew beer taste similar light bavarian style beer help balmy save packet buying beer store side road local hotel dark takamaka beach star

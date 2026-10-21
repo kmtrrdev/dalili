@@ -33,8 +33,9 @@ A `.../chat/completions` endpoint still works for chat-completion models, and Cl
   shows the cost breakdown, the cheapest possible flights + hotel, a realistic budget and the flight alternatives (cheapest, most time, direct).
 - **Conversation.** The model understands casual requests in any dialect ("ضيف حاجات تانية" = more stops, "I'm active", "walk nearby, transport for far").
   The reply model decides what to ask from the preferences it doesn't know yet. It writes its own 2-4 one-tap suggestions for this trip;
-  there are no fixed quick replies. The rule-based parser only runs when the model is unreachable (offline safety net, and the offline test suite).
-- **Memory.** Short-term: the last 10 messages. Long-term: preferences the traveller states about themselves (pace, transport, diet, interests…) are kept with
+  there are no fixed quick replies. One trip agent reads every message (before the plan, while a route waits for an answer, after planning)
+  and decides whether to answer from live tools or change the trip. The rule-based parser exists only for the offline test suite.
+- **Memory.** Short-term: the last 12 messages. Long-term: preferences the traveller states about themselves (pace, transport, diet, interests…) are kept with
   high confidence and carried into their next trips, alongside preferences learned from feedback.
 
 ## AI agents (`travel_agent/agents/`)
@@ -69,15 +70,15 @@ A `.../chat/completions` endpoint still works for chat-completion models, and Cl
 - *My trips* (all / upcoming / past / drafts; open or delete);
 - *Settings*.
 
-**Recommendation model** (`travel_agent/recommender/`) is a **Doc2Vec (PV-DBOW + skip-gram, negative sampling) written from scratch in NumPy**. No ML library is used.
-- It reads the Wikivoyage guides of 227 destinations and learns one vector per place.
+**Recommendation model** (`travel_agent/recommender/`) is a **pretrained language model (MiniLM) fine-tuned by knowledge distillation**: gpt-5-mini reads the Wikivoyage guides of 227 destinations and describes each one; the small model is fine-tuned to carry that understanding, then exported to ONNX (int8, 23 MB). The website runs it with ONNX Runtime - no PyTorch, no API call.
+- One vector per place; a city outside the catalog is embedded from its guide on the fly.
 - A user's taste is the weighted, time-decayed mix of the places they planned, searched, opened and liked. It also includes the interests they picked; dismissed places count against it.
-- Each suggestion states why it was made ("Because you planned Rome") and the words the model links to the place.
-- It is evaluated against hand labels on a held-out test split and compared with a TF-IDF baseline and random.
-- Everything about the model is in [`ml/`](ml/README.md): the write-up, the notebook (`ml/recommender.ipynb`), the dataset and the trained model. Retrain with:
+- Each suggestion states why it was made ("Because you planned Rome") and what the place is known for.
+- It is evaluated against hand labels (never used in training) on a held-out test split, next to the model before fine-tuning, the teacher, a TF-IDF baseline and random.
+- Everything about the model is in [`ml/`](ml/README.md): the write-up, the notebook (`ml/recommender.ipynb`), the dataset and the trained model. Retrain with (needs `ml/requirements.txt`):
 
 ```powershell
-python -m travel_agent.recommender.train --tune   # compare settings on validation, train, evaluate on test
+python -m travel_agent.recommender.finetune --tune   # teacher (cached) -> fine-tune -> ONNX -> evaluate on test
 ```
 
 ## Real data sources
@@ -169,7 +170,7 @@ Live, Lisbon, 0 SerpApi credits: official 2026 prices for Castelo de São Jorge 
 | Events | Only for travellers into nightlife, music or culture |
 | Hotel reviews | Only for the chosen hotel, after the critic has finished; for noise-sensitive travellers only, also before choosing |
 | Cache lifetimes | Attractions 30 days, restaurants 21 days, directions 30 days |
-| Per-turn cap | 14 |
+| Per-turn cap | 20 |
 
 Measured results:
 - New city: 11 searches, down from 17–21.
@@ -179,7 +180,7 @@ The rest of this section describes the quota mechanics:
 
 - A new trip costs about **10–14 searches**. Replans that don't change dates, city or travelers cost **0** (pure re-planning over cached research). Changing dates costs about 3.
 - Every response is stored in a persistent cache (`.cache/http_cache.sqlite`) with per-source TTLs (flights and hotels 6 h, places 7–14 days, reviews 30 days…). Engines missing from the plan (e.g. `google_events`) are remembered so they aren't retried.
-- `TRAVEL_AGENT_SERPAPI_CALLS_PER_TURN` (default 20) caps live searches per chat turn. The header shows remaining searches via `/api/quota`, which is free.
+- `TRAVEL_AGENT_SERPAPI_CALLS_PER_TURN` (default 20) caps live searches per chat turn; `/api/quota` (operator token) shows what is left this month.
 - API keys are stripped from cache keys and stored rows, redacted from every error message, and kept out of logs.
 
 ## Tests and evaluation, with no quota spent
@@ -187,7 +188,7 @@ The rest of this section describes the quota mechanics:
 Tests and the eval **replay real API responses** recorded in `tests/fixtures/http_cache.sqlite` (Rome, Istanbul, Barcelona sessions). They run offline, deterministically, and never touch the quota.
 
 ```powershell
-.\.venv\Scripts\python -m pytest -q          # 153 tests, replay mode
+.\.venv\Scripts\python -m pytest -q          # the whole suite, replay mode (no live calls)
 .\.venv\Scripts\python eval\run_eval.py      # 26 scenarios + metrics -> eval/REPORT.md
 $env:RECORD="1"; .\.venv\Scripts\python -m pytest   # re-record after changing queries (uses live APIs for misses)
 .\.venv\Scripts\python eval\run_eval.py --record
@@ -300,7 +301,7 @@ When you name countries or a region instead of cities (*"a Europe tour: Spain, I
 
 **Places by name:** at any point you can say *"add the Vatican Museums"*. The place is found (researched data first, then Google Maps), forced into every plan mode on the best day, and marked "★ you asked". Places too far for a day trip are explained, not squeezed in.
 
-**LLM availability:** understanding in any language needs the LLM. If it's unavailable (e.g. the Azure AI key is rejected or its quota is reached), the header shows "offline". A rule-based backup then handles English only, and the route button still works.
+**LLM availability:** understanding in any language needs the LLM. If it's unavailable (e.g. the Azure AI key is rejected or its quota is reached), Dalili says so in the chat instead of guessing with keywords; the route button still works.
 
 ## When a live source runs out: AI knowledge fallback
 

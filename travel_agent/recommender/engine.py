@@ -9,12 +9,14 @@ A user's taste is built from what they did, each signal weighted and fading with
     score(place) = 0.65 · cos(taste of places, place) + 0.35 · mean over picked interests of cos(interest, place)
 
 Places the user already planned or dismissed are never suggested. Each suggestion carries its main reason
-(the signal that contributed most) and the words the model associates most with it ("known for").
-A city outside the catalog is embedded on the fly from its Wikivoyage guide (Doc2Vec inference).
+(the signal that contributed most) and the words its guide is most distinctive for ("known for").
+The vectors come from the fine-tuned encoder (finetune.py); a city outside the catalog is embedded on the fly from
+its Wikivoyage guide by the same encoder (ONNX Runtime).
 """
 
 from __future__ import annotations
 
+import asyncio
 import logging
 import math
 import re
@@ -25,9 +27,10 @@ from datetime import datetime, timezone
 import numpy as np
 
 from . import catalog, corpus
+from . import encoder as encoder_mod
 from .catalog import INTERESTS
-from .model import Doc2Vec, unit
-from .train import MODEL_PATH, REPORT_PATH, interest_matrix
+from .encoder import unit
+from .finetune import MODEL_PATH, REPORT_PATH
 
 log = logging.getLogger(__name__)
 INFERRED_MAX = 2000  # technical limit: cities embedded on the fly kept in memory
@@ -41,9 +44,6 @@ PHOTO_STAND_IN = {"Seychelles": "Mahé", "Cyprus": "Paphos", "Mauritius": "Grand
                   "Bhutan": "Paro", "Jamaica": "Negril", "Costa Rica": "Manuel Antonio National Park",
                   "Hawaii": "Waikiki", "Albanian Riviera": "Himara", "Al-Ula": "Hegra", "Goa": "Palolem",
                   "Mallorca": "Palma de Mallorca", "Jeju": "Seogwipo", "Busan": "Haeundae"}
-# Foreign articles and saint prefixes that read as noise in "known for".
-KEYWORD_SKIP = {"des", "du", "les", "der", "die", "das", "und", "del", "della", "dei", "agio", "agia", "agios", "san",
-                "santa", "sao", "sant", "ville", "calle", "bce", "gods"}
 
 
 def _key(name: str) -> str:
@@ -54,10 +54,8 @@ def _key(name: str) -> str:
 class Recommender:
     def __init__(self):
         a = np.load(MODEL_PATH, allow_pickle=False)
-        self.model = Doc2Vec.from_arrays(a)
-        self.X = a["X"].astype(np.float64)
-        self.Q = a["Q"].astype(np.float64)                          # interest vectors used for ranking
-        self.Q_in = interest_matrix(self.model.W, self.model.w2i)   # interest vectors in the places' space
+        self.X = a["X"].astype(np.float64)   # one unit vector per destination
+        self.Q = a["Q"].astype(np.float64)   # one unit vector per interest, in the same space
         self.ids = a["ids"].tolist()
         self.names = a["names"].tolist()
         self.countries = a["countries"].tolist()
@@ -71,24 +69,18 @@ class Recommender:
         for i, (cid, name) in enumerate(zip(self.ids, self.names)):
             for k in (name, wv.get(cid, name), cid.replace("-", " ")):
                 self.index.setdefault(_key(k), i)
-        self.keywords = self._keywords(a["df"] if "df" in a.files else None)
+        self.keywords = [k.split() for k in a["keywords"].tolist()]
+        self._encoder: encoder_mod.Encoder | None = None   # loaded on the first city outside the catalog
         self._inferred: dict[str, np.ndarray | None] = {}
         self._lock = threading.Lock()
 
     # -- helpers -----------------------------------------------------------------
-    def _keywords(self, df: np.ndarray | None, k: int = 4) -> list[list[str]]:
-        """The words each place predicts far more than an average place does (its distinctive words). Only words
-        found in several guides count, so they describe the place ("volcanic", "caldera") rather than name its
-        streets."""
-        S = self.model.D @ self.model.C.T                      # how strongly each place predicts each word
-        lift = S - S.mean(axis=0, keepdims=True)
-        lift[:, self.model.counts < 8] = -np.inf
-        if df is not None:
-            n = len(self.ids)
-            lift[:, (df < 4) | (df > 0.35 * n)] = -np.inf
-        skip = [self.model.w2i[w] for w in KEYWORD_SKIP if w in self.model.w2i]
-        lift[:, skip] = -np.inf
-        return [[self.model.vocab[j] for j in np.argsort(-row)[:k]] for row in lift]
+    def _embed_guide(self, city: str, text: str) -> np.ndarray | None:
+        """A city's vector from its guide, prepared exactly like the training guides (runs in a worker thread)."""
+        with self._lock:
+            if self._encoder is None:
+                self._encoder = encoder_mod.Encoder()
+        return self._encoder.place(corpus.place_passages(text, [city], catalog.load()))
 
     def find(self, city: str) -> int | None:
         key = _key(city)
@@ -106,9 +98,10 @@ class Recommender:
             return self._inferred[key]
         vec = None
         try:
-            text = await corpus.fetch_guide(city.split(",")[0].strip())
-            v = self.model.infer(corpus.tokens_for_text(text, catalog.load()))
-            vec = unit(v) if v is not None else None
+            name = city.split(",")[0].strip()
+            text = await corpus.fetch_guide(name)
+            if text.strip() and encoder_mod.available():
+                vec = await asyncio.to_thread(self._embed_guide, name, text)
         except Exception as exc:  # a missing guide just means this city adds no signal
             log.info("no vector for %s: %s", city, exc)
         with self._lock:
@@ -256,11 +249,11 @@ class Recommender:
 
     def taste(self, sig: list[dict], interests: list[str]) -> list[dict]:
         """How strongly the user's taste leans to each interest (0-100, relative)."""
-        parts = [s["weight"] * s["vec"] for s in sig] + [INTEREST_WEIGHT * self.Q_in[INTERESTS.index(i)] for i in interests]
+        parts = [s["weight"] * s["vec"] for s in sig] + [INTEREST_WEIGHT * self.Q[INTERESTS.index(i)] for i in interests]
         if not parts:
             return []
         u = unit(sum(parts))
-        raw = self.Q_in @ u
+        raw = self.Q @ u
         lo, hi = raw.min(), raw.max()
         vals = (raw - lo) / (hi - lo) if hi > lo else np.zeros_like(raw)
         return sorted(({"interest": name, "score": int(round(15 + 85 * v))} for name, v in zip(INTERESTS, vals)),
@@ -283,7 +276,7 @@ class Recommender:
         interests = self.interest_list(interests)
         sig = await self.signals(trips, activity)
         parts = [s["weight"] * s["vec"] for s in sig if s["weight"] > 0] + \
-                [INTEREST_WEIGHT * self.Q_in[INTERESTS.index(i)] for i in interests]
+                [INTEREST_WEIGHT * self.Q[INTERESTS.index(i)] for i in interests]
         me = None
         if parts:
             u = unit(sum(parts))
@@ -305,7 +298,7 @@ def get() -> Recommender | None:
     if _instance is None and not _failed:
         if not MODEL_PATH.exists():
             _failed = True
-            log.warning("recommender model not found at %s - run: python -m travel_agent.recommender.train", MODEL_PATH)
+            log.warning("recommender model not found at %s - run: python -m travel_agent.recommender.finetune", MODEL_PATH)
             return None
         _instance = Recommender()
     return _instance

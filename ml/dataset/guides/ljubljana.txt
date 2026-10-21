@@ -2,11 +2,12 @@ Ljubljana, Slovenia
 Labels: culture, nature | Split: test
 Source: https://en.wikivoyage.org/wiki/Ljubljana (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (25,256 characters) =====
+===== CLEANED GUIDE TEXT (25,275 characters) =====
 
 Ljubljana ("lee-oo-blee-AH-nuh") is the small but delightful capital of Slovenia. While the city's population had grown to 295,500 in 2020, the sights and amenities are concentrated in the charming old centre. It's full of artists, museums, and galleries, it's friendly and easy to reach, and it's a good base for exploring the rest of the country.
 
 Understand
+
  
  
 Ljubljana stands at the entrance to a plain in an otherwise mountainous region, the confluence of several river valleys, so it's been a focus for settlement, trade and transport since prehistory. The first known city was the Roman Colonia Iulia Aemona; in medieval times it became Laibach and this name is still used by some German-speakers (as well as modern Slovenia's most notable cultural export, the band of that name). It fell under the gravity of Austria-Hungary and was a duchy or province of the Habsburg Empire until 1918. For much of the 20th century it was part of Yugoslavia until independence in 1991. This means that Ljubljana has simply been a regional capital, and has only been the national capital of a relatively small country for a few decades. The city landscape reflects this: it's compact and walkable, cosy and friendly, rather than grandiose. There are no vast ceremonial boulevards, bling palaces or imperial fists of fortification. It's not a place where you hop around ticking off must-see sights, like a bug with a selfie-stick for antennae. Relax, stroll and enjoy the atmosphere.
@@ -20,6 +21,7 @@ Ljubljana Tourist Information Centre. Also offers three sightseeing tours in the
 
 
 See
+
  
 
 In 2021, seven works in Ljubljana by architect Jože Plečnik were inscribed on the UNESCO World Heritage List. These are the Trnovo Bridge, the green promenade along Vegova Street, the promenade along the embankments and bridges of the Ljubljanica River, the Roman walls in Mirje, the Church of St Michael, the Church of St. Francis of Assisi and the Garden of All Saints (Plečnik’s Žale).
@@ -82,6 +84,7 @@ Ljubljana Cathedral. St. Nicholas's Church (cerkev sv. Nikolaja) was built betwe
 Ljubljana Mosque. An intricate set of buildings, the first mosque in the country.
 
 Museums
+
  
 * 
 Museum of Architecture and Design. Hosts a permanent exhibition of Jože Plečnik's works.
@@ -124,6 +127,7 @@ House of experiments. A hands-on science "playground" for kids.
 
 
 Do
+
  
 * 
 Hot Air Balloon Flights. These launch at sunrise for one-hour flights, weather permitting. The launch spot is chosen on the day so the wind carries you over the historic centre. The whole programme is about 4 hours so reckon on a very early start.
@@ -134,6 +138,7 @@ Olimpija Ljubljana. They play soccer in PrvaLiga, the top tier. Their home groun
 : NK Bravo also play in PrvaLiga, at Park Šiška (capacity 2300) 1 km northwest of the railway station.  
 
 Water parks
+
 * 
 Water City of Atlantis. A water park offering 14 pools, thermal baths, slides and saunas. Special section is dedicated for children.
 
@@ -168,6 +173,7 @@ Ljubljana Summer Festival. Opera, ballet and theatre festival held in July and A
 
 
 Cinema
+
 * 
 Kinoteka. Ljubljana's charming film museum where they have at least two movies a day. The movies range from classics to cult movies, from trash and horror to artistic masterpieces. All movies are presented in the original audio language, and equipped with Slovenian subtitles, sometimes also English. On Saturday mornings they have special projections for children. There are also some special events, round tables, premiers etc. all the time. It's a must visit for every film lover. It has also a nice little cafe with small prices
 
@@ -184,16 +190,19 @@ Cineplexx. A Multiplex.
 Hiking
 
 
+
 * Šmarna gora (662 m) is on the northern edge of the city, so it's popular, indeed crowded on fine weekends. For 30–60 minutes of easy climbing you will be rewarded by a nice views. Take Bus 8 to Tacenski most.
 * Krim (1,107 m) was a military and civilian telecoms centre; the military post has been dismantled and the area is open to the public, with great views. The climb takes 2–3 hours (beware of bears!). Get here by car, which takes 30 min as the last 4 km of road are unpaved and narrow.
 
 Cycling
+
 Ljubljana is an excellent starting point for cycling adventures, offering options for all skill levels. For e-MTB enthusiasts, trails in Golovec, Rašica, and Polhograjsko hribovje provide lush forests and stunning views. Road cyclists can venture as far as Bled, Kamnik, or towards Idrija and Cerkno, enjoying scenic routes and rewarding climbs. Gravel bikers will love the peaceful countryside paths, while bikepacking enthusiasts can tackle the Western Loop of Slovenia, a popular multi-day route starting in Ljubljana that highlights the country’s diverse landscapes.
 * 
 HourAway. Houraway offers high-quality bike rentals, including e-bikes, road bikes, and gravel bikes, along with guided and self-guided cycling tours. Their expertly designed day and multi-day tours cater to all fitness levels, showcasing Slovenia’s scenic landscapes, from peaceful countryside paths to challenging mountain routes.
 
 
 Ski and snowboard
+
 Ljubljana is close to several of Slovenia's most popular ski resorts including Krvavec at the nearby Cerklje na Gorenjskem which is around 40 minutes from the city by car.
 
 Vogel ski center can be reached in around 1.5 hours, which is situated above the beautiful Lake Bohinj.
@@ -203,6 +212,7 @@ Kranjska Gora is another option for budget ski and snowboarding which can be rea
 The mountains in Slovenia are called the Julian Alps and offer some great value skiing throughout the winter. While the snowfall can be unpredictable, as this relatively low altitude mountain terrain, the peak seasons of January to March can offer some great conditions.
 
 Buy
+
 Several department stores such as Maximarket, H&M, Müller, Nama, are located in the city centre. Additionally, Čopova street and the Old town have a dense collection of small shops.
 
 * 
@@ -220,7 +230,9 @@ Central Market. The central, open-air market features a wide array of local prod
 
 Eat
 
+
 Budget
+
  
 * 
 Odprta Kuhna. Odprta Kuhna means "open kitchen". It's a collection of food stalls on Pogačarjev trg, just south of Triple Bridge.
@@ -252,6 +264,7 @@ Roza Slon. Restaurant/takeaway offering tasty & healthy Thai meals with a choice
 
 
 Mid-range
+
 * 
 Gostilna Portal. This is a B&B in the eastern burbs, known as a Serbian restaurant - good for meat lovers. Loud live music at weekends.
 
@@ -303,6 +316,7 @@ Gostilna Pod Vrbo. Huge range of Slovenian fare, generous portions.
 
 Splurge
 
+
 * 
 AS Aperitivo. Trendy spot with two areas, for casual dining or the restaurant. Mostly positive reviews.
 
@@ -326,6 +340,7 @@ Gaudi&Naan. Fine quality vegan restaurant
 
 
 Drink
+
  
 Most of Ljubljana’s bars tend to cluster on the streets running parallel to the river, radiating from Prešernov trg, which is the main square in Ljubljana. The more interesting bars tend to be on the backstreets, rather than directly facing the river. Part of the joy of this city is stumbling across these places, but these are few to start you off.
 
@@ -333,9 +348,11 @@ Cheaper bars can already be found just outside the old town and near university 
 
 Free tap water locations
 
+
 The application Tap Water Ljubljana  is intended for all who wish to quench their thirst and refresh themselves during the spring and summer months with freely available water from fountains found in 17 locations throughout Ljubljana, mostly they are in city centre. Application is available on App Store.
 
 Cafes
+
 
 * 
 Cafe Antico. Great ambiance - bare wooden floors, high tables and stools, and vaulted ceiling.
@@ -354,6 +371,7 @@ Zvezda. Cafe with great ices and pastries.
 
 
 Bars
+
 
 * 
 Cutty Sark. Lively pub with raucous atmosphere. Usually has live music.
@@ -390,6 +408,7 @@ Gas Station. Popular quirky bar with a 1961 Chrysler Newport as part of the seat
 
 
 Clubs
+
 Ljubljana has several good nightclubs (discothèques). The clubs hold special events, they will play a certain syle of music on certain nights, etc. Some will also impose a strict dress code and age limits.
 
 * 
@@ -398,6 +417,6 @@ Metelkova mesto. It's a squat with 6 clubs, each with its own style of music and
 * 
 K4. National and international DJs play electronic music.
 
-===== TOKENS THE MODEL TRAINS ON (1,987) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,987) =====
 
 lee blee nuh delightful capital population grown sight amenity concentrated charming old artist museum gallery friendly easy reach base exploring rest country stand entrance plain mountainous region confluence river valley focus settlement trade transport prehistory roman colonia iulia aemona medieval time laibach german speaker modern notable cultural export band fell gravity duchy province habsburg empire century yugoslavia independence mean simply regional capital national capital relatively country decade landscape reflect compact walkable cosy friendly grandiose vast ceremonial boulevard bling palace imperial fist fortification hop ticking sight bug selfie stick antennae relax stroll enjoy atmosphere know current came resemble ljubljena beloved slovenian seem happy coincidence sits valley ljubljanica river green hill hemming side river angle castle oldest part hill southeast quadrant century street grid extend river modern sprawl natural disaster shaped architecture earthquake caused extensive building renaissance style stone curb fire wooden another earthquake prompted rebuilding secession style flooded river multiple time gruber canal cut southeast quadrant century turning castle hill island therefore flow bypass old protected devastating flood danube catchment region triple dragon bridge stand intact proud symbol round destination dress balkan climate summer warm daytime high public event festival street converted traffic thoroughfare event space afternoon humid thunderstorm downpour early summer autumn enjoy temperature student buzz university session winter zero snow biting wind hill christma approach street decorated thousand light food kiosk pop river bank grey spring bloom flower planted street crossroad information sightseeing tour summer souvenir map work architect joze plecnik inscribed unesco world heritage list trnovo bridge green promenade vegova street promenade embankment bridge ljubljanica river roman wall mirje church michael church francis assisi garden saint plecnik zale triple bridge span bottleneck footbridge added side fanning slightly bank lead preseren square adorned statue national poet preseren obvious rendezvous point pedestrianised tic bridge old old square mestni trg square robba fountain hall behind gornji trg upper square preserved medieval building house designer shop cafe restaurant look creepy perfectly safe narrow lane lead charming little square building dragon bridge completed designed croatian jurij zainovich guarded detailed dragon statue coat arms look dragon motif throughout careful dragon bridge major busy road outside pedestrian zone miss worse inattentive traffic common dragon bridge market block river direction triple bridge castle tower magnificent view sava river kamnik alps distance included movie history pre historic settlement roman empire modern time adult student senior square crowd gathered announced independence yugoslav federation square significant importance slovene history important public gathering demonstration past road slovene parliament facade decorated artistic nude statue slovene work leisure square house international business roman ruin short walk remain roman wall pillar entrance gate krakovo village connecting trnovo suburb metelkova self declared autonomous culture gather alternative artist subculture youth military barrack underground artist bars nightclub metelkova crowded friday saturday minute walk train station home renowned hostel celica tivoli park park pond southwest hill roznik behind zoo beautiful zoos europe university botanic garden botanic garden oldest slovene cultural scientific educational institution founded illyrian province garden native flora section school ecole centrale garden tropical glasshouse tomb national heroe tomb monument national heroe world war resistance struggle created ursuline church holy trinity baroque style church built congress square square built mass demonstration held start slovenian spring leading declaration independence neboticnik storey rise built designed vladimir subic cafe bar floor sts cyril methodius church orthodox church dome golden cross built interior fresco painted franciscan church annunciation built later front facade bell tower cathedral nichola church cerkev nikolaja built site dating fine interior fresco painted giulio quaglio mosque intricate set building mosque country museum museum architecture design host permanent exhibition joze plecnik work plecnik house devoted slovenian architect joze plecnik lived building house contain room artist valuable original furniture personal object archive sketch plan collection clay plaster wooden model library plecnik correspondence photo archive thesis project plecnik student archive academy architecture collection access guided tour booked advance museum modern art prefer contemporary art house national collection century slovene art painting sculpture print drawing photography video electronic media collection collection work former yugoslavia european collection arteast museum contemporary art opened former military barrack complex complementary museum opening price adult combined ticket national definitely worth visiting care art exhibit important permanent collection work renowned slovenian impressionist painter jama grohar jakopic azbe restored original robba fountain monument national cultural heritage national museum presernova oldest largest slovene museum founded existent museum building museum street built building assigned solely culture today store rich collection valuable object oldest spring stone age newer ones everyday life important column museum activity rich museum library unit preservation restoring national museum metelkova building national museum metelkova street exhibited collection applied art heritage permanent exhibition bring together object applied arts century present national museum contemporary history century history museum give real sense country roller coaster ride regime regime immersive exhibit walk world war trench last exhibit show event declaration independence yugoslavia war yugoslav federal army exhibit translated english german slovenian museum natural history feature complete skeleton old mammoth kamnik million old fossil fish skeleton triglav national park skeleton fin whale mineral collection mglc international graphic arts specialised art show collaboration international institution normally nearby site mglc tivoli mansion renovation museum history temporary exhibition railway museum cover aspect railway selection steam loco house experiment hand science playground kids hot air balloon flight launch sunrise hour flight weather permitting launch spot chosen wind carry historic programme reckon early start football olimpija play soccer prvaliga tier home ground capacity ring road bravo play prvaliga park siska capacity northwest railway station water park water atlantis water park offering pool thermal bath slide sauna special section dedicated children laguna fun spa air pool themed party night opera theatre cankarjev dom enormous arts convention concert performance slovenian philharmonic orchestra orchestra dating slovene national theatre narodno gledalisce puppet theatre lutkovno gledalisce opera house krizanke outdoor theatre summer festival theatre summer festival opera ballet theatre festival held cinema kinoteka charming film museum movy movy range classic cult movy trash horror artistic masterpiece movy presented original audio language equipped slovenian subtitle english saturday morning special projection children special event round table premier etc film lover little cafe price kinodvor cool cinema show mostly movy playing blockbuster movie complex special event cafe movy children sunday arena play party spend evening feature bowling pool laser game state art xpand cinema theatre cineplexx multiplex hiking smarna gora edge indeed crowded fine weekend minute easy climbing rewarded view bus tacenski krim military civilian telecom military post dismantled public view climb take beware bear car take min last road unpaved narrow cycling excellent starting point cycling adventure offering option skill level mtb enthusiast trail golovec rasica polhograjsko hribovje provide lush forest stunning view road cyclist venture far kamnik idrija cerkno enjoying scenic route rewarding climb gravel biker love peaceful countryside path bikepacking enthusiast tackle loop multi route starting highlight country diverse landscape houraway houraway quality bike rental bike road bike gravel bike guided self guided cycling tour expertly designed multi tour cater fitness level showcasing slovenia scenic landscape peaceful countryside path challenging mountain route ski snowboard close ski resort krvavec nearby cerklje gorenjskem minute car vogel ski reached situated beautiful lake bohinj kranjska gora another option budget ski snowboarding reached hour mountain called julian alps value skiing throughout winter snowfall unpredictable relatively low altitude mountain terrain peak season condition department store maximarket muller nama additionally copova street old dense collection shop btc shopping district shopping rudnik shopping district major shopping district sunday flea market dozen stall selling overpriced knick knack postcard tito disney memorabilia broken chinese curio rusty military paraphernalia market air market feature wide array produce exact item vary depending season cheese bread meat adjacent building youre lucky seller wheeled vegetable krakovo footalthough dying breed morning early afternoon except sunday lively saturday morning friday kitchen marchoctober budget odprta kuhna odprta kuhna mean kitchen collection food stall pogacarjev trg triple bridge hot horse horse burger chain outlet huge burger dish order pay machine nobel burek non stop late night kind burek leafy dough pie filled mince meat cheese klobasarna hole wall fast food restaurant serving seasonal slovenian soup traditional sausage bread order pay machine govinda self service buffet vegetarian vegan indian food value cafe capri cozy cafe step famous dragon bridge healthy delicious inexpensive breakfast brunch dish scratch prepared fresh bar variety drink fragrant coffee tea fresh squeezed juice homemade lemonade italian slovenian wine beer spirit cocktail restavracija mandala vegan self service restaurant food sold weight falafel clue mezze dish roza slon restaurant takeaway offering tasty healthy thai meal choice beer soft drink location vegan option mid range gostilna portal burb serbian restaurant meat lover loud live music weekend thai food cocktail bar atmosphere figovec serving pony steak horse goulash traditional slovenian food foculus flamboyantly decorated pizzeria salad restaurant cad specialise grilled dish balkan value gostilna sokol authentic slovenian cuisine serving staff traditional costume inevitably touristy food huge portion value money joe pena cantina mexican restaurant julija filling fare italian pasta risotto dish cafe romeo riverside cafe pancake specialty jurman family friendly reliable comfort food burb ljubljanski dvor pizzeria patio overlooking river quality food uneven pri skofu mostly trad med fare vegetarian option sestica serve hearty meat dish sausage horse fillet steak pasta risotto spajza larger look street candlelit room leading outside terrace trad cuisine review quality service zhong hua decent chinese restaurant dragon bridge gostilna pod vrbo huge range slovenian fare generous portion splurge aperitivo trendy spot casual dining restaurant mostly positive review cubo med cuisine earn consistent review modern international fare pricey standard mixed review food quality krpan seafood restaurant manna excellent traditional dish slick friendly service strelec archer tower castle terrace overlooking youre paying food score gaudi naan fine quality vegan restaurant ljubljana bars tend cluster street running parallel river radiating presernov trg square interesting bars tend backstreet directly facing river joy stumbling start cheaper bars already outside old university building tap water location application tap water intended wish quench thirst refresh spring summer month freely water fountain location throughout mostly application app store cafe cafe antico ambiance bare wooden floor table stool vaulted ceiling cajna hisa quirky little coffee tea room offering variation warm beverage basic breakfast lunch background music impeccably cool atmosphere ideal elegant loafing linked cafe teashop selling drinking paraphernalia load fruity flavoured teas petit cafe corner cafe sax hostel sax pub cool colourful spray painted cafe bar canal serve hostel zvezda cafe ices pastry bars cutty sark lively pub raucous atmosphere live music lepa zoga sport cafe bar sport regalia wall mixed crowd night show international rugby sort football game european english italian league live sport coverage ranging sky sport station zmavca sosed brata prjatu market creative urban type burger coffee alcoholic drink pod skalco student pub tradition frequented exclusively local loud music vinoteka movia anyone interest wine cosy candlelit wine bar come knowledgeable barmen recommend wine based taste wine glass huge hard tell stingy simply spread careful asking sample charge price price vary modest remortgage sir william pub art nouveau beer variety choice teas wine vibrant evening particularly host themed event beer tasting coffee house atmosphere offering guest opportunity browse newspaper read book peace staff speak language wireless internet access lajbah beer hall outdoor choice craft beer mainly asian food tozd bar coffee craft beer tektonix craft brewery microbrewery bar close railway station brewery tour union pub pub union brewery food opposite micro brewery gas station quirky bar chrysler newport seating club nightclub discotheque club hold special event play certain syle music certain night etc impose strict dress code age limit metelkova mesto squat club style music programme gala hala biggest music diverse funk night hip hop indie rap strange fun music concert outside garden grill summer gromka smaller admission music differ night night rock alternative hits rockabilly fun music concert menza pri koritu alternative mainly alternative metal punk concert party channel zero electronic concert dub electro house jalla jalla smallest obscure experimental music tiffany gay club electronic party metelkova everybody happening weekend walk another club admission national international djs play electronic music

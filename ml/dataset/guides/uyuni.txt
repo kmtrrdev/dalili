@@ -2,7 +2,7 @@ Uyuni, Bolivia
 Labels: nature, adventure | Split: validation
 Source: https://en.wikivoyage.org/wiki/Uyuni (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (4,601 characters) =====
+===== CLEANED GUIDE TEXT (4,608 characters) =====
 
 Uyuni is a tourist town in Potosí Department, Bolivia, which serves as the main gateway to Salar de Uyuni, the enormous salt flat nearby.
  
@@ -10,17 +10,20 @@ Uyuni is a tourist town in Potosí Department, Bolivia, which serves as the main
  
 
 Understand
+
 Uyuni is a small town in the middle of nowhere. It originally blossomed as a transportation junction and then as a railroad hub, and though this is still an important aspect, tourism is now its main source of prosperity. What would otherwise be a fairly dull stopover en route between Salta, Argentina and La Paz or Potosí, has become absolutely mandatory on this leg of the gringo trail. The sole reason: salt flats, the world's biggest: the Salar de Uyuni.
 
 There's not that much to do in Uyuni itself, so just plan to stay for as long as it takes you to do your salt flat tour. Spending one night in town before the tour and one night after should be enough, and may even be more than you need depending on your transportation plans.
 
 Tourist information
 
+
 There's a helpful 
 tourist map. 
  of the town right across the street from the train station.
 
 See
+
 
 * Despite its modest size and geographical isolation, Uyuni is worth an hour or so walking around. Particularly the Avenida Ferroviaria has many monuments, mostly railroad related.
 * Allegedly Bolivia's first locomotive, stands in the middle of Avenida Ferroviario, by the corner of Calle Santa Cruz. The first locomotive is in Pulacayo almost 20 km on the road to Potosi. Used in the Huanchaco mine.
@@ -30,21 +33,25 @@ Museo Ferrocarril y Museo Arqueologico Antropologico. A rail museum, inconvenien
 
 
 Do
+
 * Salar de Uyuni &ndash; The salt flats can be visited on day trips, or longer trips, up to 4 days, including a swipe down towards the Chilean border and the lagoon and geysers of that area. Be aware that during the longer trips of 3 or 4 days going towards the Chilean border, you will travel up to 5,500 m above sea level. Rising quickly by car could cause altitude sickness. Most tours leave at about 10:00, and it's easy to arrange one at the tour companies' offices around the train station. As of 2018, the best prices from Uyuni for the 3 day tours go for around Bs. 600, plus Bs. 50 if you want onward transport to San Pedro de Atacama. (Make sure that you point out that you only wish to go with a responsible driver; there have been reports of drunkenness among drivers that may be averted with continued pressure on the tour companies before departure.)
 * 
 Secretaria De Turismo. 
 
 
 Buy
+
 * On Thursdays, several blocks of the main street Avenida Potosí turn into an open air market, selling a bit of everything, including loads of handicrafts.
 * Souvenir shops and other stores (including outdoor recreation stores, small supermarkets, and clothing stores) are scattered throughout the downtown area.
 
 Money
+
 * There are several ATMs in Uyuni, on Calle Potosí. WARNING: the Banco Credito ATM will still charge your card if it runs out of cash. You will not get your money and the bank staff will be 'unable' to help you even if you speak Spanish fluently. On weekends the Maestro ATM runs out of cash stranding tourists who counted on that ATM for money. Bring an extra stash of dollars just in case.
 * Prodem gives cash advances on Mastercard or Visa credit cards with a 5% commission.
 * There are several casas de cambio to change travellers' checks or dollars, euros, Chilean pesos or Argentinean pesos. If you are heading to Chile, get rid of your bolivianos, as the exchange rate on the other side is much worse.
 
 Eat
+
 * Western food for tourists is generally overpriced and bad. Stick to Bolivian dishes.
 * For a cheap lunch (Bs. 10 for soup and main) head for any little joint with the sign Almuerzo outside.
 * 
@@ -56,6 +63,6 @@ Restaurant Pizzeria "Jalisco". Centrally located restaurant with a variety of op
 
 Drink
 
-===== TOKENS THE MODEL TRAINS ON (336) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (336) =====
 
 potosi department serve gateway salar enormous salt flat nearby middle nowhere originally blossomed transportation junction railroad hub important aspect tourism source prosperity fairly dull stopover route salta paz potosi become absolutely mandatory leg gringo trail sole reason salt flat world biggest salar plan stay take salt flat tour spending night tour night enough depending transportation plan information helpful map street train station despite modest size geographical isolation worth hour walking particularly avenida ferroviaria monument mostly railroad related allegedly locomotive stand middle avenida ferroviario corner calle santa cruz locomotive pulacayo road potosi huanchaco mine train graveyard couple railway dozen old rusted locomotive wagon antiquated machinery stop salt flat trip museo ferrocarril museo arqueologico antropologico rail museum inconveniently behind train station walk street behind station salar ndash salt flat visited trip longer trip swipe chilean border lagoon geyser aware longer trip chilean border travel sea level rising quickly car cause altitude sickness tour leave easy arrange tour company office train station price tour plus want onward transport sure point wish responsible driver report drunkenness driver averted continued pressure tour company departure secretaria turismo thursday block street avenida potosi turn air market selling bit everything load handicraft souvenir shop store outdoor recreation store supermarket clothing store scattered throughout downtown money atms calle potosi warning banco credito atm charge card runs cash money bank staff unable help speak spanish fluently weekend maestro atm runs cash stranding counted atm money bring extra stash dollar case prodem give cash advance mastercard visa credit card commission casa cambio change traveller check dollar euro chilean peso argentinean peso heading rid boliviano exchange rate side worse food generally overpriced bad stick bolivian dish cheap lunch soup head little joint sign almuerzo outside minuteman pizza construction tonito hotel backpacker congregate evening enter hotel reception keep wandering petty thefter entering variety pizza spicy llama breakfast english speaking owner travel book library dont arrive early dinner running hotel incredibly rude refused let wait minute lobby restaurant pizzeria jalisco centrally restaurant variety option pizza mexican food vegetarian dish wifi

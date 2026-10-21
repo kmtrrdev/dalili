@@ -40,7 +40,7 @@ critic improves without overriding.** No model output is the final authority on 
   respond   ──> narrative (LLM, from a facts JSON: trust split, conflicts, constraints, plan comparison)
                 telemetry: per-turn model calls/tokens/cost, tool calls, live searches, latency    telemetry.py
 
- recommender/  Doc2Vec taste (trips, likes, searches, decay) -> "For you" + hybrid trip ideas (suggest.py)
+ recommender/  fine-tuned MiniLM taste (trips, likes, searches, decay) -> "For you" + hybrid trip ideas (suggest.py)
  evaluation    eval/run_eval.py (scenarios) · eval/benchmark.py (planners) · eval/ablation.py (A-F)
                human ratings: /api/evaluations (anonymous, CI + Welch summary)                 evaluation.py
 ```

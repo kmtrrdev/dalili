@@ -2,21 +2,24 @@ Thessaloniki, Greece
 Labels: food, history, nightlife | Split: test
 Source: https://en.wikivoyage.org/wiki/Thessaloniki (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (12,524 characters) =====
+===== CLEANED GUIDE TEXT (12,533 characters) =====
 
 Thessaloniki (Greek: Θεσσαλονίκη) is the capital of Macedonia, and with one million inhabitants (2025), the second largest city in Greece. It is a city with a continuous 3,000-year history, preserving relics of its Roman, Byzantine and Ottoman past and of its formerly dominant Jewish population. Its Byzantine churches, in particular, are included in UNESCO's world heritage list.
 
 Understand
 
+
  
 Once the biggest port of the Balkans, Thessaloniki is a city that has been conquered by many empires, with each one leaving its mark. One can find Ancient Greek, Roman, Byzantine and Ottoman buildings all throughout the city.
 
 History
+
 King Philip II of Macedon, after a victory in the region of Thessaly, named his next daughter "Thessalonike" (Thessaly Victory). Cassander, a later king of Macedon, married her, and founded the city in her name in 315 BC. The city grew over time, becoming a major metropolis of the Roman Empire, and then the second largest and wealthiest city of the Byzantine Empire after Constantinople.
 
 During the Ottoman years a sizeable Jewish community formed in the city (at times even majority-Jewish), giving it the name 'The Jerusalem of the Balkans'. Muslims, Jews and Christians lived together in Thessaloniki for over 400 years. During the 1923 Greco-Turkish population exchange hundreds of thousands of Christians arrived from Asia Minor and most of the Muslims moved to Turkey. The 55,000 strong Jewish community was eradicated during the 1941-1945 German occupation, with 2,000 remaining after the war.
 
 Orientation
+
  
 Thessaloniki lies on the northern fringe of the Thermaic Gulf on its eastern coast and is bound by Mount Chortiatis to the east.
 
@@ -34,6 +37,7 @@ Ano Poli (Upper City) lies on the hillside up towards Mount Chortiatis from the 
 The metropolitan area, with population of about 1 million, spills out to the northwest and southeast.
 
 Tourist information
+
 * Thessaloniki tourism website
 
 * 
@@ -42,6 +46,7 @@ Tourist Information Center.
 * There are also tourist info booths at the central bus stations.
 
 Eat
+
 Greeks consider Thessaloniki a gourmet city - but bear in mind that this refers to the excellent local specialities and cheap-and-cheerful ouzo taverns rather than to haute cuisine or a range of foreign restaurants. The latter are best avoided in Thessaloniki.
 
 * Try a crepe in one of the numerous crepe shops patronised by the student population at Gounari St, near Navarinou Sq.
@@ -58,6 +63,7 @@ Greeks consider Thessaloniki a gourmet city - but bear in mind that this refers 
 * In the summer, drink frappé coffee, an iced coffee drink generally made from spray-dried instant coffee, water, sugar, and milk, the hallmark of postwar outdoor Greek coffee culture invented in 1957 in Thessaloniki International Fair.
 
 Budget
+
 
  
 
@@ -95,6 +101,7 @@ Villa Luna. Ask to eat in the restaurant terrace - fantastic views at sunset.
 
 
 Mid-range
+
  
 * 
 Agora. Ouzo restaurant (ouzeri) in one of the most interesting old downtown areas.
@@ -149,6 +156,7 @@ Tombourlika. Great traditional ouzeri, with fresh fish and meat dishes and live 
 
 
 Splurge
+
  
 
 * 
@@ -162,6 +170,7 @@ Zythos-Dore. An upmarket brasserie with a wide range of specialties and interest
 
 
 Drink
+
 Thessaloniki is by far the liveliest city in Northern Greece, maybe even the whole country. Most of the trendy bars at the old sea-front (Nikis Ave.) and around, many of the tavernas are either downtown or in the old city (Kastra). You can also find numerous bars and tavernas at Krini, an area in eastern Thessaloniki. If you want to check out what the whole bouzoukia scene is all about, try the clubs Pyli Axiou and Mamounia, at Vilka. You will also find a lot of night clubs, bars and restaurants in Ladadika, the neighbourhood with the old warehouses next to the port. The student area is around Kamara (the Arch of Galerius), with many cheaper cafes and bars.
 
 If you will be in town during summer, take a ride on the floating bars plying the harbour. Every 2 hr or so they leave from the White Tower area for a short evening trip (30 min) in the Gulf of Thessaloniki. They play mostly ethnic and alternative foreign music.
@@ -190,6 +199,6 @@ Vilka.
 * 
 Mylos Club. Hosting concerts, events, exhibitions, music bands, famous Greek artists etc. Venue can change. Check their page on Facebook.
 
-===== TOKENS THE MODEL TRAINS ON (950) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (950) =====
 
 greek capital macedonia million inhabitant largest continuous history preserving relic roman byzantine ottoman past formerly dominant jewish population byzantine church particular included unesco world heritage list biggest port balkan conquered empire leaving mark ancient greek roman byzantine ottoman building throughout history king philip macedon victory region thessaly named daughter thessalonike thessaly victory cassander later king macedon married founded grew becoming major metropolis roman empire largest wealthiest byzantine empire constantinople ottoman sizeable jewish community formed time majority jewish giving jerusalem balkan muslim jews christian lived together greco turkish population exchange hundred thousand christian arrived asia minor muslim moved strong jewish community eradicated german occupation remaining war orientation lies fringe thermaic gulf coast bound mount chortiatis bound waterfront hill olympiado street northeast byzantine era wall side dimokratia square northwest university campus international fair southeast commercial entertainment educational facility remain densely populated residential burned fire rebuilt modern grid plan street parallel perpendicular coastline aristotelous square focal point square cultural event festival annual christma carnival celebration occasional political rally aristotelous promenade lined cafe restaurant start aristotelous square continue uphill roman forum major perpendicular street starting northwest dragoumi venizelou agia sofia ethinikis aminis street downhill lead waterfront biggest parallel street sea starting sea leoforo nikis tsimiski egnatia agiou dimitriou kassandrou ano poli upper lies hillside mount chortiatis survived fire medieval cityscape stone paved street old square home featuring old greek ottoman architecture metropolitan population million spill northwest southeast information tourism website information info booth bus station greek consider gourmet bear mind refer excellent speciality cheap cheerful ouzo tavern haute cuisine range foreign restaurant latter avoided crepe numerous crepe shop patronised student population gounari navarinou plenty shop selling gyro pork chicken gyro calory money option meal healthy keep winter roasted chestnut kastana greek sold cart summer boiled roasted corn cob sold cart cost stafidopsomo bread raisin koulouri donut shaped bread sesame sold bakery cart cost breakfast bougatsa type cream pie famous accompany cacao milk coffee carnivore treat soutzoukakia minced meat pellet grilled market rotissery topped chilli pepper flake cooked tomato cumin sauce smyrna style late night early morning meal patsa tripe soup seafood gemista kalamarakia stuffed squid mydopilafo rice mussel mydia saganaki mussel tomato sauce winter hot sahlep salepi creamy milk beverage summer frappe coffee iced coffee generally spray dried instant coffee water sugar milk hallmark postwar outdoor greek coffee culture invented international fair budget meal ouzo restaurant ouzeri accompany ouzo tsipouro battery dish far salonica particularly fava bean octopus grilled wine sauce mussel fried pilaff hot cheese sauce saganaki boiled vegetable menu wintertime youll amazed taste another typical winter salad politiki combination shredded cabbage pickle fast food option dimitriou gounari street rotonda sea evi evan ancient market cozy nicely decorated personnel friendly helpful eager feel welcome traditional style music plate drink verge lagy reminiscent old tavern helpful staff respect customer charcoal grill food bistro worthwhile quality little money pizza chris nicest pizza dough incredible flavor pizza slice tarantoula vegan food enjoy vegan mezze decently sized menu option choose space alternative outdoor seating expect wait seating arrive peak beet salad fresh delicious nostimo art taste tasty homemade food vegetable garden friendly staff affordable rate clean interior ouzomania tavern oldest ouzory kind staff atmosphere olive oil oregano fine bakery cafe light meal takeaway villa luna ask restaurant terrace fantastic view sunset mid range agora ouzo restaurant ouzeri interesting old downtown manitari mediterranean cuisine emphasis seafood vegetarian option supplied regional greek wine omilo beach club regional greek ingredient nea diagonio pork gyro soutzoukakia executive chef ioannis chantakis pire kai vradiazei taverna unique style food live music toixo toixo wall wall hipster hang atmosphere expensive quality tsaroucha adventurous taste preferably hard night drinking patsa tripe soup delicious prevent hangover ouzo melathron heavy melon traditional greek mediterranean middle recipe selection dessert glykia symoria goody greek fast food chain classic hamburger souvlaki pasta salad apo dyo horia cretan pontian restaurant order raki ouzo tsipouro kamara traditional dish lila cafe bistro traditional pies sweet croissant dish accompany coffee porcelain miniature collective drink original gift myrsini cretan restaurant pizza pepe pizza head tombourlika traditional ouzeri fresh fish meat dish live rembetico music splurge krikela odos aristotelous salonican know lepen zytho dore upmarket brasserie wide range specialty interesting ambiance far liveliest maybe country trendy bars old sea front nikis ave taverna downtown old kastra numerous bars taverna krini want check bouzoukia scene club pyli axiou mamounia vilka night club bars restaurant ladadika neighbourhood old warehouse port student kamara arch galerius cheaper cafe bars summer ride floating bars plying harbour leave white tower short evening trip min gulf play mostly ethnic alternative foreign music beer cost alcohol coffee coffee beer aristotle aristotelous cafe bars lie square homonymous street quiet cafe noisy ones preferred young breakfast served restaurant nikis centre seafront avenue cafeteria crowded clock coffee daytime beer night proxenou kroromila parallel seafront nikis avenue koromila street cafe bars iktinou pedestrian another cafe bars couple restaurant street beer culture created local student beer kiosk hang surrounding bench probably economic ways retsina socialize local ladadika district side lies picturesque neighbourhood ladadika meaning oil store named store selling oil arrived adjacent harbour district notorious renovated stone build warehouse host nightclub sort music traditional greek bouzoukia aretsou aretsou southeast kalamaria district seafront plastira restaurant change bars night featuring loud music hosting young karabournaki kalamaria district hosting delicate bars restaurant pizzeria sofouli street seashore boat bars interesting boat white tower seafront short trip thermaiko gulf enjoy late night view play ethnic alternative foreign music vilka old train station set range cafe bars restaurant disco ouzeris live music city valaoritou syggrou nightlife moved old industrial become entertainment everybody bars club cafe remind english pubs mylo club hosting concert event exhibition music band famous greek artist etc venue change check page facebook

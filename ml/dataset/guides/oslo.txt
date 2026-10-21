@@ -2,7 +2,7 @@ Oslo, Norway
 Labels: culture, nature | Split: validation
 Source: https://en.wikivoyage.org/wiki/Oslo (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (30,414 characters) =====
+===== CLEANED GUIDE TEXT (30,435 characters) =====
 
 Oslo is Norway's capital and largest city, with 700,000 citizens in the city proper and about 1.5 million inhabitants in greater Oslo. It is in the East of the country in the Oslofjorden fjord, extending over an inlet of the Skagerrak strait. It is spaciously laid out and surrounded by green hills and mountains and includes 40 islands and 343 lakes. Oslo offers ski slopes for alpine skiing and ski trails for cross-country skiing in the winter. In the summer, the temperature in Oslo may make it comfortable to swim. There are several well-visited beach resorts. Oslo is one of the world's northernmost capitals and so gets only 6 hours of sunlight in the winter. In high summer, sunlight hours soar to 18, making its climate markedly different between seasons, with cold yet relatively dry winters.
 
@@ -11,12 +11,14 @@ A relatively compact city squeezed into a thin strip of land along the shoreline
 Oslo is Norway's economic and demographic centre, as well as the hub for most domestic and international transport. Despite Oslo's population density there is never more than 300 meters' walk to a park or green area from any residence in the city.
 
 Understand
+
  
 Oslo is the demographic, economic and political centre of Norway. As the capital of Norway, Oslo hosts several national institutions within government, education, culture, sports and transport. The city has a good selection of cultural institutions and a good selection of restaurants, some world class but most ordinary, as well as night life in general. While it is an expensive city for some overseas visitors, many of the best things are free of charge, notably Oslo's proximity to wild nature, inner city parks and variety of outdoor activities.
 
 Metropolitan Oslo also includes most of Akershus county and the line between these is so blurred that the two is seen as one city. Local public transport such as the Oslo metro covers Oslo proper and the surrounding districts. Oslo proper has over 700,000 inhabitants while metropolitan Oslo has well over 1 million inhabitants. Oslo's influence is felt well beyond the metropolitan area and the wider "Oslo region" includes the densely populated lowlands around the inner Oslo fjord and the flatlands around the airport. This region covers only 5% of Norway's area but has 25 to 30% of the population.
 
 Name and history
+
  
  
  
@@ -43,6 +45,7 @@ Since 1947, Oslo has given a big Christmas tree to London in gratitude for the h
 While Oslo has been a safe city in modern times, the government district was hit by a terrorist bomb blast in 2011, killing eight people. The damaged buildings have not been replaced (as of 2020).
 
 Geography
+
  
 Oslo, with its approximately 453 km², is one of the largest capitals in the world by area, but most of it is forest, making Oslo a city in close contact with the nature surrounding it. If major suburbs outside city limits are included, metropolitan Oslo covers an area similar to Greater London but with only one tenth of London's population. The Oslo fjord extends northwards from the Skagerrak sea. Oslo has an impressive archipelago of islands, which in summer becomes the city's favoured playground. The Oslofjord has very little tide, about 50 cm only.
 
@@ -53,15 +56,18 @@ The city centre is bounded by Oslo Central Station (Oslo S) to the east, the Roy
 See
 
 
+
  
 
 Buildings and structures
+
 Architecture in Oslo may at first seem dull. Compared to Stockholm and Copenhagen, downtown Oslo has much less historic architecture. Most of the historic buildings are located along the Parliament-Palace axis (upper part of Karl Johan Street). This central area and the public buildings there were designed after Oslo became the capital of Norway in 1814. The charm of Oslo can also be found in the affluent inner-city suburbs of for instance Frogner and Fagerborg as well as above St.Hanshaugen park. The districts surrounding the very centre is characterised by the city's rapid expansion after 1850. These areas were developed when horses were still the most important transport, and blocks of flats from this period usually have a gate (known as port) from the street into the back yard where horses were kept. Oslo also has many exciting building projects, and the city's whole waterfront is undergoing a thorough change.
 
 The streets of Oslo are famous from films and TV series such as Skam and Beforeigners (see Nordic Noir).
 * Northern Europe has a distinct wooden house tradition. Wooden houses are not allowed downtown, but these charming houses can be found in large numbers in villa suburbs such as Bygdøy and Holmenkollen, or former workers' areas such as Rodeløkka, Kampen, Vålerenga, Damstredet, Hellerud or Telthusbakken. The 1624 fire destroyed much of old Oslo (some churches and Akershus castle remain) and central Oslo is dominated by the city that was designed after the fire.
 
 Museums
+
  
 
 Oslo has an amazing number of museums, among them the Viking Ship Museum, with the Oseberg and Gokstad ships. Many of the museums are located next to each other and don't take long to visit.
@@ -76,9 +82,11 @@ Oslo has many art galleries, of which the National Gallery in the centre and the
 
 Other sights
 
+
 * Wooden housing areas of Oslo like Kampen (bus 60), Vålerenga (bus 37), Rodeløkka (tram 17, bus 31 to Sofienberg) and Telthusbakken (bus 34/54). They are a "must" for lovers of old wooden town houses. These areas were likely to be erased from Oslo in the 1970s by eager town planners who wanted highways for cars rather than living areas for the citizens, but luckily they were stopped by idealists who really loved their city. Their effort made these parts of Oslo into something special, even though other Norwegian cities have bigger wooden areas. Still these areas are a plus for Oslo and their inhabitants as well as for the tourists. They are not a commonly visited by tourists, and may not be mentioned by your guide book, but some of the areas have cafes/restaurants worth a visit. In Kampen you can find a very cozy Elvis café by the church, and in Vålerenga Restaurant Smia is also located by the church.
 
 Do
+
 
 
  
@@ -88,6 +96,7 @@ Do
 * Football: the men's national soccer team plays home games at Ullevaal Stadion, capacity 28,000, five km north of city centre. Oslo has one club playing soccer in Eliteserien, Norway's top tier: Vålerenga. Clubs in the second tier, 1. divisjon, are KFUM and Skeid. The domestic playing season is March-Nov. 
 
 Hiking
+
  
 The easily accessible nature and many trails are just a short boat, metro, or bus ride away from anywhere in the city. Both in the inner city and especially in the forests of southern and northern Oslo there are countless hiking and cycling opportunities.
 
@@ -97,19 +106,24 @@ The easily accessible nature and many trails are just a short boat, metro, or bu
  
 
 Snow activities
+
 The ski season in Oslo is variable, but there may be enough snow and possibilities for good skiing conditions from December to early April.  This is the darkest time of the year, but in Oslo the skiing days are extended by the fact that many ski trails and ski slopes are artificially lit.
 *Skiing. The Oslo forest has a wide network of groomed cross-country trails. Trails begin at where the built-up area ends within metro, bus or tram from downtown Oslo. Cross-country skiing is popular among the people of Oslo and during winter skiers with gear are frequently seen in the streets.
 ** There are also ski-lifts and slopes for alpine skiing in the Oslo forest, such as Oslo Winter Park and Oslo Skisenter (Grefsenkollen) and the Tryvann Ski School for beginners.
 ** There are ski lifts and slopes in Bærum and Nittedal near the city. Within reasonable distance for a day trip, alpine alternatives are Kongsberg and Norefjell.
 
 Festivals
-====Constitution day====
+
+Constitution day
+
 Constitution Day, annually the 17th of May and therefore also known as syttende mai is a folk festival in Oslo. This is a day that is celebrated by the whole population and participation by foreigners is appreciated. Norwegians dress up in their finest clothes or various national dress costumes (bunad). Schoolchildren in Oslo have a parade that ends at the royal palace, where they wave, greeting the Royal Family on the balcony. Sellers of ice cream, kebabs, hot dogs and sausages have their best day. Adults without children continue the celebration.
 
 Sports
+
 * Ekebergsletta (bus 34 or 74) during Norway Cup (beginning of August every year), billed as the world's biggest football tournament (about 25,000 participants). Lots of fun and football. Held annually at the beginning of August.
 
 Music
+
 
 * 
 Øyafestivalen. In the beginning of August every year, Oslo is housing the Øyafestivalen in Tøyenparken, an event which over the years has become a great festival for all kinds of people of all ages who enjoy rock and pop music.
@@ -135,6 +149,7 @@ Musikkfest (National Music Day). Free, mostly outdoors, music festival establish
 
 Other cultural festivals
 
+
 * 
 Oslo Pride. Gay/lesbian pride festival and parade taking place all over, late June.
 
@@ -145,12 +160,15 @@ Films from the South. Film festival presenting movies from Asia, Africa, Middle 
 Markets
 
 
+
 Buy
+
 
 
 Oslo is one of the most expensive cities in the world. Still, there are possibilities for getting bargains in Oslo during the big sales. The prices on famous brands are not higher in Oslo than in London or Paris, often lower even if they are not on sale. The big sales are in January and August, sometimes in between. The Norwegian word for reduced price is "Salg" or "Tilbud".
 
 VAT refund/Tax Free Shopping
+
 In a number of shops you can get a VAT refund cheque when leaving the country. Most of these shops carry a Tax Free logo displayed in the shop window or on their counter, but you are advised to ask the sales assistant whether tax free shopping applies to the shop in question, as not all shops carry the tax free logo.
 
 If you use the tax free shopping service offered in these stores, you may receive a cash refund when leaving Norway. There are refund points at various locations in Norway, such as airports, road borders or onboard ferries and cruise ships. Which refund point you can use depends on how you leave the country.
@@ -160,9 +178,11 @@ The minimum purchase amount in one shop (to get a tax refund check) is 315 kr on
 The tax refund service is not available for Norwegian, Swedish, Danish and Finnish residents.
 
 Shopping districts
+
 If you are out to shop there's plenty to choose from. The main pedestrian street Karl Johans gate has plenty of shops of dubious quality. The street Bygdøy allé (which is locally famous for its chestnut trees) (bus 20, 31) has regained its reputation of being a shopping street the past few years by establishments that focuses on kitchens, kitchenware, interior designs, exclusive Norwegian furniture, light design and others.
 
 Eat
+
   
 
 
@@ -180,26 +200,34 @@ You are also close to most of the restaurants, bars, or nightclubs located withi
 
 Budget
 
+
 Torggata
+
 Torggata is a good area for budget dining (from Hausmanns gate south to Youngstorget). You will find cheap Vietnamese, Thai, and Chinese restaurants and even cheaper kebab-joints and pizzerias, as well as other offerings. It's close to the centre, but you can get bus 34 or 54 to Jacob's church (Jacob kirke), or tram 11-12-13-17/bus 30-31-34-54 to Brugata or Hausmanns gate. The closest T-bane station is Grønland (then walk north along Brugata) or Jernbanetorget (then walk north-east).
 
 Grønland
+
 Grønland is full of cheap eating joints, shops selling fabrics and jewelry, Indian and Pakistani sweet shops, cheap beer and more. Several new restaurants and cafes around the Teaterplassen. Cozy Oslo Mekaniske Verksted sell drinks and you can bring your own food from one of the nearby take away.
 
 Norwegian food
+
 Most cafes and restaurants serving traditional food are upmarket, but there are a couple of good spots to get stuffed on meat cakes and brown gravy, lutefisk and other delicacies
 
 Elsewhere
+
 You can always get your fix of sausage and kiosk-food at reasonable prices, but there are a few restaurants and cafés worth mentioning. The convenience stores and kiosk chains 7-Eleven and Deli de Luca will provide a choice of pastries, cakes, candy, refreshments and alternate 'snacks', many of which are over-priced and can be bought from a Rema, Kiwi or Bunnpris supermarket at a fraction of the price. When opting for the convenience stores, ask the staff how fresh the counter food is – where most produce is delivered in the morning and evening purchases may see the food lying there for up to 12 hours prior.
 
 Splurge
+
 If price is no object, there is some very fine dining to be found. In Bjørvika you will find the only 3 stars Michelin restaurant; Maaemo. You will find other Michelin rated restaurants around Oslo in this list.
 
 Drink
 
+
 :For more information on drinking in Norway, see the section Drink (Norway)
 
 Buying alcohol in stores
+
 Beer at 4.75% or below can be purchased in supermarkets at a price of 30–50 kr for a 0.5L can. Supermarkets stop selling beer after 20:00 each day, 18:00 on Saturdays, and 16:00 on holiday weekends. It is not possible to buy beer in a shop on a Sunday. It is illegal to drink in public areas. You will usually only get a warning if spotted by a police officer, if they even bother to bother you, but if you behave impolitely or they are having a bad day you can get a fine of 1,500 kr. However, in public parks during summer, laws are not enforced much at all. Good places to go for a park beer are Sofienbergparken and Kuba at Grünerløkka, Frognerparken in Majorstua, or the park at St. Hanshaugen, on a hill with great view located between Grünerløkka and Majorstuen.
 
 Hard liquor, wine and beers above 4.75% ABV can only be bought at the state-owned shops called Vinmonopolet or at the international airport terminals. Vinmonopolet outlets are open M–F until 18:00, Sa 16:00, Su closed. Some of the central Vinmonopolet outlets in Oslo are:
@@ -212,6 +240,7 @@ Hard liquor, wine and beers above 4.75% ABV can only be bought at the state-owne
 * Tøyengata 2, Grønland Basar. (All eastern subways, exit at Grønland Torg or bus 37 to Tøyengata)
 
 Pubs and bars
+
 All bars, pubs and restaurants in Oslo are smoke-free, which means you have to go outside to smoke. But since you can't drink on the street, you have to leave your drink inside, unless the bar/pub has a designated drink-area which is still open (they always close earlier than the venues themselves).
 
 Oslo is generally expensive. The price for a half-litre of beer is typically ranging from 58-70 kr. Closing hours are as late as to 03:30 in city centre. National legislation says you can't serve any alcohol after 03:00.
@@ -220,6 +249,6 @@ Areas with notable pub density are Grünerløkka (tram 11-12-13 to Nybrua, Schou
 
 Norwegian beer is worth exploring. In addition to the major breweries in Oslo, Ringnes and Frydenlund, there are a number of local, smaller breweries that brew high-quality craft beers.
 
-===== TOKENS THE MODEL TRAINS ON (2,148) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (2,148) =====
 
 capital largest citizen proper million inhabitant greater country oslofjorden fjord extending inlet skagerrak strait spaciously laid surrounded green hill mountain island ski slope alpine skiing ski trail cross country skiing winter summer temperature comfortable swim visited beach resort world northernmost capital sunlight winter summer sunlight soar making climate markedly season cold relatively dry winter relatively compact squeezed thin strip land shoreline pride world sustainable city part compact relatively spacious hold array historic monument famous modern architecture striking daring project launched turn millennium economy powered maritime industry tech clean energy sector ranked world expensive live swiss wealth management company ubs fallen mercer ranking economic demographic hub domestic international transport despite population density meter walk park green residence demographic economic political capital host national institution government education culture sport transport selection cultural institution selection restaurant world class ordinary night life general expensive oversea thing charge notably proximity wild nature inner park variety outdoor activity metropolitan akershus county line blurred public transport metro cover proper surrounding district proper inhabitant metropolitan million inhabitant influence felt beyond metropolitan wider region densely populated lowland inner fjord flatland airport region cover population history history traced according ancient saga founded king harald hardrade diocese capital lost privilege danish norwegian union fire devastated old moved kilometre gain protection fortress akershus built strict grid plan appear modern downtown akershus fortress cathedral kvadraturen expanding christiania built land aker estate river oldest church aker river church respectively christiania developed aker river old backwater alna river ekeberg hill named christiania danish king christian remained officially named remove danish old retained middle ages renamed gamlebyen old avoid confusion gamlebyen street square hospital original christiania built called kvadraturen oldest trace close ekeberg indicating settlement far fire christiania built exclusively brick stone give clearly appearance compared wooden town stavanger trondheim devastating fire old mouth river aker largely abandoned ruin converted farmland today church ruin visible ekeberg hill water opera house road railway beyond ruin virtually nothing remain medieval christiania established outside border remained surviving settlement outside border christiania rapid expansion century capital state site original old gamlebyen included due rapid inclusion surrounding agricultural century remnant farming history clearly visible name farmhouse remain historical pasture park hanshaugen christiania capital state swedish crown thousand inhabitant notably smaller expanded rapidly become living grown fold inhabitant city largely built wood masonry building expanding modeled major european city notably german city little similarity architecture council masonry mandatory developed compact block level radical departure traditional norwegian style wooden building architect trained danish german craftsmen took boom late masonry building style largely retained preserved largely destruction world war block period give unique character key part dominated style instance grunerlkka frogner majorstua hanshaugen royal palace rapid expansion previous farmland outside gate belonging dweller included enclosed farmland garden called lkke neighborhood kept name instance rodelkka named fredrik rode grunerlkka named friedrich gruner capital building development project began host national institution striking result upper karl johan street parliament building royal palace sits government building complex akersgata added later perpendicular karl johan axis supreme court building door railway age came station current station train run tunnel station building host nobel peace entrance aker brygge rapid expansion late particularly related heavy industry akerselva river river waterfall provided water power factory ship building fjord notably today aker brygge important today heavy industry characteristic red brick factory building largely preserved instance aker river interesting sight instance sagene literally saw mill neighbourhood akerselva middle ages called frysja cascading referring waterfall waterfall modern competitive skiing developed ski jumping cross country skiing downhill slalom race held downhill slalom developed alp region alpine skiing strong tradition visible imposing holmenkollbakken ski jumping venue fine network cross country track throughout forest skiing museum given christma tree gratitude help support world war tree prominently displayed trafalgar square decorated norwegian style safe modern time government district hit terrorist bomb blast killing damaged building replaced geography approximately largest capital world forest making close contact nature surrounding major suburb outside limit included metropolitan cover similar greater tenth population fjord extend northward skagerrak sea impressive archipelago island summer become favoured playground oslofjord little tide situated amphitheatre setting bottom close fjord residential stretching uphill direction relatively stretch sea level meter sea level settlement stretch meter sea level surrounded forested hill marka nordmarka stmarka lillomarka flora fauna extraordinary size moose commonplace easily spotted winter capital wolf rarely bounded station royal palace slottet seafront akershus fortress aker brygge fairly compact easily walkable karl johan gate mostly pedestrian street connecting palace artery downtown neighbourhood close hold interesting sight entertainment offering explore comprehensive public transport system building structure architecture seem dull compared downtown historic architecture historic building parliament palace axis upper karl johan street public building designed capital charm affluent inner suburb instance frogner fagerborg hanshaugen park district surrounding characterised rapid expansion developed horse important transport block flat period gate port street yard horse kept exciting building project waterfront undergoing thorough change street famous film sery skam beforeigner nordic noir europe distinct wooden house tradition wooden house allowed downtown charming house number villa suburb bygdy holmenkollen former worker rodelkka kampen valerenga damstredet hellerud telthusbakken fire destroyed old church akershus castle remain dominated designed fire museum amazing museum viking ship museum oseberg gokstad ship museum dont planning seeing expensive attraction short period cost effective pass unlimited entry museum holmenkollen ski jump royal palace travel expensive public transport ruter ferry bygdy limited discount restaurant attraction hrs student discount pass purchased information office viking ship museum historical museum museum featuring tune oseberg gokstad viking ship burial mound renovation art gallery national munch museum inner probably famous astrup fearnley museet collection modern art worth sculpture park frogner park sculpture sculptor gustav vigeland ekeberg park inner internationally renowned artist sight wooden housing kampen bus valerenga bus rodelkka tram bus sofienberg telthusbakken bus lover old wooden house likely erased eager planner wanted highway cars living citizen luckily stopped idealist loved effort part special norwegian city bigger wooden plus inhabitant commonly visited mentioned guide book cafe restaurant worth kampen cozy elvis cafe church valerenga restaurant smia church district grunerlkka tram nybrua schous plass olaf ryes plass birkelunden tram bus heimdalsgata birkelunden bus sannergata filled cafe bars fashion designer shop park river akerselva runs side selection hidden bars club cafe nearby explore archipelago inner oslofjord island beach hiking trail site cultural heritage waiting discovered summer ferry dock hall island hovedya langyene bleikya nakkholmen gressholmen fishing rod bring picnic basket sunglass possibly swimwear football men national soccer team play home game ullevaal stadion capacity club playing soccer eliteserien tier valerenga club tier divisjon kfum skeid domestic playing season hiking easily accessible nature trail short boat metro bus ride anywhere inner especially forest countless hiking cycling opportunity explore forest marka surrounded wide forested hill reach metro tram pass maintain list route hundred hill summit fine road path forest hiking possible everywhere fine road accessible bicycle baby stroller wheelchair gateway lovely nature bane frognerseteren line sognsvann line romsa line bogerud line skullerud line ellingsrudasen line train movatn snippen train hakadal roa jaren gjvik bus torshov tram bus storo bane solemskogen bus nydalen bus bane maridalen possibility walk rural life everything half hour bring chocolate bar bit planning buse train seldom run hour trail suitable bicycle stroller hiking prepared muddy section trail pretty thickly wooded freshwater fishing trout pike perch etc require fishing license discover major site bike guided tour english viking biking tour snow activity ski season variable enough snow possibility skiing condition early darkest skiing extended fact ski trail ski slope artificially lit skiing forest wide network groomed cross country trail trail begin built ends metro bus tram downtown cross country skiing winter skier gear frequently street ski lift slope alpine skiing forest winter park skisenter grefsenkollen tryvann ski school beginner ski lift slope brum nittedal reasonable distance trip alpine alternative kongsberg norefjell festival constitution constitution annually therefore syttende folk festival celebrated population participation foreigner appreciated norwegian dress finest clothe national dress costume bunad schoolchildren parade ends royal palace wave greeting royal family balcony seller ice cream kebab hot dogs sausage adult children continue celebration sport ekebergsletta bus cup beginning billed world biggest football tournament participant fun football held annually beginning music yafestivalen beginning housing yafestivalen tyenparken event become festival kind ages enjoy rock pop music larm rock festival taking venue downtown mid lineup consist mostly norwegian nordic underground rising artist established name finding edm festival bislet stadion inferno inferno metal festival taking venue downtown late dating mid forming band mayhem norwegian black metal established international stage experience sheer evil energy dark cold world capital black metal jazz festival taking mid venue downtown chamber music festival founded renowned violinist arve tellefsen programme span medieval contemporary music artist particular order barbara hendrick garbarek hilliard ensemble trio medival solveig kringlebotn elisabeth norberg schulz performed musikkfest national music mostly outdoor music festival established spinoff fete musique taking saturday cultural festival pride gay lesbian pride festival parade taking late film film festival presenting movy asia middle latin america established take theatre mid arabian film late market expensive city world possibility bargain sale price famous brand higher lower sale sale norwegian word reduced price salg tilbud vat refund tax shopping shop vat refund cheque leaving country shop carry tax logo displayed shop window counter advised ask sale assistant tax shopping apply shop question shop carry tax logo tax shopping service offered store receive cash refund leaving refund point location airport road border onboard ferry cruise ship refund point depend leave country minimum purchase amount shop tax refund check regular good food sale tax vat included retail price good exported unused condition date purchase approaching refund counter please sure good refund cheque passport card tax refund service norwegian swedish danish resident shopping district shop plenty choose pedestrian street karl johan gate plenty shop dubious quality street bygdy alle locally famous chestnut tree bus regained reputation shopping street past establishment focuse kitchen kitchenware interior design exclusive norwegian furniture light design expensive cheap cheapest restaurant asian restaurant case serve food low price check menus door eyes nose food establishment norwegian food health regulation strict enforced effectively eating safe street snack throughout theyre expensive comparable city elsewhere local vink aftenposten business curated restaurant review theyre worth trial subscription commonly nok month provided remember cancel subscription aker brygge tram bus stop aker brygge vika atrium bryggetorget waterfront hall summer noisy vibrant outdoor restaurant bars everywhere sure tasty seafood enjoy cold beer summer sea breeze expensive dine unless weather stay indoor somewhere close restaurant bars nightclub key reference point stortingsgaten running parallel karl johan gate running eastward royal palace shopping street restaurant nightclub side street running parallel doesnt matter start restaurant bars nightclub anywhere subway station nationaltheatret far beyond railroad station grunerlkka tram nybrua schous plass olaf ryes plass birkelunden majorstuen bane tram bus majorstua grnland bane grnland bus tyengata bus norbygata worth checking nearly bars nightclub close want taxi hotel leave minute rush start budget torggata torggata budget dining hausmann gate youngstorget cheap vietnamese thai chinese restaurant cheaper kebab joint pizzeria offering close bus jacob church jacob kirke tram bus brugata hausmann gate closest bane station grnland walk brugata jernbanetorget walk grnland grnland cheap eating joint shop selling fabric jewelry indian pakistani sweet shop cheap beer restaurant cafe teaterplassen cozy mekaniske verksted sell drink bring food nearby norwegian food cafe restaurant serving traditional food upmarket couple spot stuffed meat cake brown gravy lutefisk delicacy elsewhere fix sausage kiosk food reasonable price restaurant cafe worth mentioning convenience store kiosk chain eleven deli luca provide choice pastry cake candy refreshment alternate snack priced bought rema kiwi bunnpris supermarket fraction price opting convenience store ask staff fresh counter food produce delivered morning evening purchase food lying prior splurge price object fine dining bjrvika star michelin restaurant maaemo michelin rated restaurant list information drinking section buying alcohol store beer purchased supermarket price supermarket stop selling beer saturday holiday weekend possible beer shop sunday illegal public warning spotted police officer bother bother behave impolitely bad fine public park summer laws enforced park beer sofienbergparken kuba grunerlkka frognerparken majorstua park hanshaugen hill view grunerlkka majorstuen hard liquor wine beer abv bought state owned shop called vinmonopolet international airport terminal vinmonopolet outlet vinmonopolet outlet station beneath staircase leading trafikanten basement shopping steen strm shopping close karl johan gate rosenkrantzgate close grand hotel karl johan gate aker brygge bryggegata shop relocated vika selection beer tram buse stop dokkveien vika atrium therese gate bislett bislett stadium tram tyengata grnland basar subway exit grnland torg bus tyengata pubs bars bars pubs restaurant smoke mean outside smoke cant street leave inside unless bar pub designated close earlier venue generally expensive price half litre beer typically ranging closing late national legislation says cant serve alcohol notable pub density grunerlkka tram nybrua schous plass olaf ryes plass birkelunden aker brygge tram aker brygge bus vika atrium bryggetorget solli frogner tram bus solli grnland bane grnland bus tyengata bus norbygata especially youngstorget grensen norwegian beer worth exploring addition major brewery ringne frydenlund smaller brewery brew quality craft beer

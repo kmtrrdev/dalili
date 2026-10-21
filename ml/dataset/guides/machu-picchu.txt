@@ -2,13 +2,15 @@ Machu Picchu, Peru
 Labels: history, nature, adventure | Split: test
 Source: https://en.wikivoyage.org/wiki/Machu_Picchu (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (11,683 characters) =====
+===== CLEANED GUIDE TEXT (11,688 characters) =====
 
 Machu Picchu is the site of an ancient Inca city, high in the Andes of Peru. At 2,430 metres (8,000&nbsp;ft) above sea level, this  is often referred to as “The Lost City of the Incas”, is one of the most familiar symbols of the Incan Empire, and is one of the most famous and spectacular sets of ruins in the world.
 
 Understand
 
+
 History
+
 
 These remarkable ruins were rediscovered by the scientific world in 1911 by the American archaeologist Hiram Bingham, who was led to the site by locals.  Perched dramatically 1000ft above the Urubamba river, Machu Picchu is a . It is also the end point of the most popular hike in South America, the Inca Trail.
 
@@ -21,6 +23,7 @@ Machu Picchu was declared a Peruvian Historical Sanctuary in 1981 and a UNESCO W
 Machu Picchu was built in the classical Inca style, with polished dry-stone walls. Its primary buildings are the Intihuatana, the Temple of the Sun, and the Room of the Three Windows. These are in what is known by archaeologists as the Sacred District of Machu Picchu.
 
 See
+
 All the views from above, but be sure before you do it that there are no clouds (early in the morning is always cloudy, it is recommended to do it at noon).
 
  
@@ -53,6 +56,7 @@ Fountains.
  &ndash; As a testament to Inca workmanship, these 500-year-old spring-fed fountains still function to this day.  It is speculated that these provided drinking water to the city or were for ritual bath purposes.
 
 Do
+
  
 
 If you got some energy in you, there are a few great hikes involving a bit of legwork. Do make sure that you've taken the time to acclimate to the elevation either in Cuzco or Aguas Calientes for a couple days before exerting yourself too much, especially on Huayna Picchu.
@@ -78,6 +82,7 @@ Inca Bridge.
 
 Eat and drink
 
+
  
 You are not allowed to bring any food into the park, and must check it in at the luggage storage at the entrance. In practice, however, bags are rarely searched, and most people have no problem getting a bottle of water and some snacks in with them, which you'll definitely want, especially if you're planning to stray from the central set of ruins. Buy these beforehand, as they're much more expensive at the site itself. Don't even think of leaving a shred of trash behind you. If you are thinking of walking from 06:00 to 17:00, you will need at least 1.5 litres of water.
 
@@ -92,6 +97,6 @@ Tinkuy Buffet Restaurant. A casual lunch buffet.  The food is decent and the res
 * 
 Tampu Restaurant Bar. Open to hotel guests only, also high prices.
 
-===== TOKENS THE MODEL TRAINS ON (773) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (773) =====
 
 site ancient inca ande metre nbsp sea level referred lost inca familiar symbol incan empire famous spectacular sets ruin world history remarkable ruin rediscovered scientific world american archaeologist hiram bingham led site local perched dramatically urubamba river point hike america inca trail story remarkable unknown exactly site term inca life current researcher tend believe country resort elite inca given living far fewer rainy season inca started building abandoned official site inca ruler hundred later spanish conquest inca empire thing clear remarkably hidden protected far mountain travel valley littered inca check point watch tower remarkably spanish conquistador missed site said knowledge ancient referred text century bingham scientifically discovered trip sponsored yale university actually looking last inca capital vilcabamba bingham rediscovered overlooked favor impressive declared peruvian historical sanctuary unesco world heritage site yale university reached agreement regarding return artifact hiram bingham removed early twentieth century plundered spanish conquered inca especially important cultural site considered sacred built classical inca style polished dry stone wall primary building intihuatana temple room window archaeologist sacred district view sure cloud early morning cloudy recommended noon walking site explore required taking guided tour provide deeper insight ancient uses information geography guided tour negotiated depending busy site wish save money team guided tour cheaper alternative guide apps providing virtual audio tour site relatively little history uses ruin story told guide based little imaginative hearsay toilet inside citadel restroom entrance gate passing turnstile gate intipunku ndash youve arrived inca trail experience ruin backtrack ruin trail hill valley offering excellent view cloudy cannot appreciate view avoid wait clearance fairly strenuous hike probably worth temple ndash summit stonework temple incredible look closely variety stone wall throughout rough stone held together mud common stone wall throughout world building part building distinctive impressive closely fit stonework temple absolute pinnacle technology observe side descending stone staircase plaza intihuatana ndash stone carved certain dawn certain shadow working dial quechua inti huatana grab grabbing measuring pronounce intiwatana early riser view sunrise watchtower intihuatana vista youll temple window temple temple condor ndash temple stone arranged kind look condor wing outstretched prison complex behind look closely wing condor chamber groove cut stone secure manacle walkway behind torturer walk whip prisoner back scary looking pit let blood prisoner drain clearly condor symbol cruel justice sanitized version told benefit fountain ndash testament inca workmanship old spring fed fountain function speculated provided drinking water ritual bath purpose energy hike involving bit legwork sure youve taken acclimate elevation cuzco agua caliente couple exerting especially huayna huayna towering steep mountain backdrop photo ruin look bit daunting steep difficult ascent reasonably fit person able minute rough stone step steel cable holding said expect breath care steeper portion especially wet become dangerous quickly tiny cave passed low tight squeeze care peak somewhat precarious afraid height want hang entire walk beautiful landscape view stunning bird eye view site angle give sense layout ruin ticket reserved website tour company month beforehand ticket purchased group later option view leave fog clear check ticket booth start lining half hour start note trail set opening date serious hiker energy sparkle solitude huayna continue extra hike moon temple templo luna built side cave nearby cave gran caverna women pray pachamama mother earth hike bets huayna crowd site quieter allow inca architecture finest feeling youre drowning longer hike loop tiring challenging regular hike peak take twice total youre fast hiker versus peak walk adventurous hike involving ladder site arent rewarding unexpected wildlife wild spectacled bear reported hike interesting partway leave behind mountain terrain enter conventional forest cave reached hiking trail peak huayna semi harrowing fun vertical descent hike temple exhausting sure bring plenty water snack hike mountain mountain walk summit ruin pueblo agua caliente wayna spectacular view cost entrance fee ticket purchased front site ticket purchased advance group path mountain path gate mountain visited site give opportunity crowd round trip plan bring water hike strenuous officially allowed bring food regret snack expect hike similar pueblo site style longer steeper step trail spectacular dont reach summit inca bridge historically path inca trail path inca bridge bridge logs drawbridge built sheer cliff control access walk inca bridge short allowed bring food park check luggage storage entrance practice bags rarely searched problem bottle water snack youll definitely want especially youre planning stray set ruin beforehand theyre expensive site dont think leaving shred trash behind thinking walking litre water site food drink sale possible leave return concession stand entrance site appropriately overpriced given captive audience meal tinkuy buffet restaurant casual lunch buffet food decent restaurant busy peak time discounted train buffet ticket certain train rail lunch circuit restaurant poster size photograph hiram bingham discovery tampu restaurant bar hotel guest price

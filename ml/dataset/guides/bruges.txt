@@ -2,13 +2,15 @@ Bruges, Belgium
 Labels: history, culture | Split: validation
 Source: https://en.wikivoyage.org/wiki/Bruges (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (22,259 characters) =====
+===== CLEANED GUIDE TEXT (22,269 characters) =====
 
 Bruges (Dutch (local name): Brugge) is a picturesque city in Flanders, the northern part of Belgium. Once Europe's richest city, it is now both cosmopolitan and bourgeois in its compact size. It is mainly known for its exceptionally well-preserved historical centre (especially by Belgian standards), which draws over 400,000 tourists annually.
 
 Understand
+
  
 History
+
 In the 2nd century AD there was a Gallo-Roman settlement, but the city got its foundations in the 9th century when the Vikings landed. The name Brugge indeed likely comes from the Old Norse "bryggja", translating to harbor or jetty, and was first mentioned between 850 and 875. During the following centuries there were strong connections to the north, and Bruges became one of the trading points of the Hanseatic League. Interestingly, the historical Hanseatic harbour of Bergen is also known as Bryggen.
 
 Bruges became the capital of Flanders in 1089, and an 1134 storm created the tidal canal Zwin, improving the connection to the sea. As such the city developed into the economic capital of northwestern Europe in the late Middle Ages and early Renaissance, and this was the golden age of the city. This age saw the construction of many of the city's impressive old buildings, and its second city wall. The world's first stock exchange was formed, the Waterhalle was a lively trading place, and the city of 46,000 inhabitants was a home to painters, architects and other artists and the Duke of Burgundy set up one of his courts here.
@@ -20,6 +22,7 @@ The Industrial Revolution didn't bring much industry to Bruges. Ironically, the 
 However, of much greater significance in shaping the town's highly touristic character, is of course the historical architecture found in virtually the entire historic city centre. Although many monuments and other buildings in the town centre have medieval origins, referring to Bruges as a 'medieval' town is inaccurate, considering most of the architecture in the historic centre dates to the 17th century and later, with many buildings (such as the old Town Hall at Burg square) having undergone serious neogothic-style renovations, chiefly under the influence of the architect Louis Delacenserie (1838-1909). Surviving both world wars mostly intact, the old town was listed as a World Heritage Site in 2000 and two years later it held the title as the European Cultural Capital.
 
 See
+
 Bruges was known as a "dead city" for centuries. The sanding of the harbour and the difficulties of digging canals in the sand caused heavy economic burdens on the city between the Middle Ages and the 20th century. The population managed to survive but did not grow as there was no new industrial activity during that period.
 
 As a result, once over the encircling canal and inside the city walls, Bruges closes in around you with street after street of charming historic houses and a canal always nearby. The newly cleaned houses and the small canals should however not confuse you; they are truly centuries old. And if you can get away from the chocolate shops, you can visit some more quiet areas such as St. Anna, and imagine what life in the late Middle Ages must have been like. The historic centre of Bruges and its belfry are s.
@@ -77,6 +80,7 @@ Lucifernum. An amazing (private) art gallery with a Gothic cemetery in a subtrop
 
  
 City gates
+
  
 * 
 Kruispoort. Part of the second city ramparts of 1297. The current gate dates back to the beginning of the 15th century.
@@ -93,9 +97,11 @@ Gentpoort. One of the four remaining city gates of the second city ramparts of 1
 
 More Museums
 
+
 Musea Brugge Card covers Groeninge Museum, Belfort (Belfry), Stadhuis (City Hall), Sint-Janshuis Mill etc.
 
 Do
+
  
 * 
 Grote Markt and Belfry Climb. Climb the 366 steps to the top of the 83-m-high tower. Excellent views of the city, Grote Markt and hear the bells ring up close.
@@ -126,7 +132,9 @@ Jan Breydel stadium. The city has two teams playing soccer in First Division A, 
 
 
 Buy
-===Chocolate===
+
+Chocolate
+
 Chocolate shops are plentiful and the standard is always high. Word on the street is, that you can get anything covered in chocolate and moulded. A few chocolate shops also let you have a seat an order a homemade chocolate milk or other drink. There is a particularly vast number of chocolate shops at the Katelijnestraat.
 
 * 
@@ -149,20 +157,24 @@ The Chocolate Line. Almost always has original and funny chocolate-art in their 
 For those who do not wish to buy chocolate in the chocolate shops, the local supermarkets also sell a good variety of mass-produced chocolate at fairly low prices. For the frugal, you can buy 100-200 g gourmet bars of chocolate for about  each. Good brands to buy are Côte-d'Or and Jacques, both are Belgian.
 
 Beer
+
 If you don't want anything more than a sampling of the most famous Belgian beers, supermarkets (not night shops!) are probably your best choice. They even have gift packs with glasses. There are also many boutique-style beer shops that sell high-quality gift packs of Belgian beer, as well as beer-focused cafés (such as  't Brugs Beertje which has over 300 different types of beer to offer).
 
 Art
+
 There are plenty of arts and crafts shops too, with some excellent local artists. The lacework is risky: if everything sold was produced locally, the entire town would be working in the lace industry! There is a school for lace though, where you can still get "the real thing".
 
 Most European tourists come for the weekend, so shops are open Tuesday through Sunday, but many shops and museums are closed on Mondays. Be sure to plan ahead.
 
 Music
 
+
 * 
 Rombaux. A record, guitar and piano store, run by a friendly family in a landmark building, incredible atmosphere with a huge collection of jazz, classical but also modern records. They further have a guitar and piano instrument department and a good collection of sheet music.
 
 
 Eat
+
 
  
 
@@ -171,6 +183,7 @@ If you are looking for a great place to eat in Bruges, avoid all of the restaura
 You will, however, find great food if you wander off the beaten track. The historical centre of Bruges does have many pleasant and cozy restaurants with affordable and high-quality food to offer if you know the right addresses! Find a street with more locals than tourists and ask somebody about a good place to eat at. The locals will be glad to help (English proficiency in Dutch-speaking Belgium is generally quite good).
 
 Budget
+
 *
 Books & Brunch. An ideal combo of second hand book store and a brunch/dessert-eatery (but you can just have a cup of coffee or a tea too).
 
@@ -191,6 +204,7 @@ Cropains. Not much indoor seating, but delicious "croque monsieurs" (grilled san
 
 
 Mid-range
+
 *
 Brasserie Forestière. Nice and calm restaurant, good food, not too expensive. Good menu for vegetarians. Meal of the day (soup, main dish, dessert or coffee/tea) costs  (May 2019) although this is the cheapest menu it has little choice.
 
@@ -226,6 +240,7 @@ Maximiliaan van Oostenrijk. Midrange restaurant offering plenty to eat including
 
 
 Splurge
+
 *
 In 't Nieuw Museum. Belgian grill restaurant, well off the tourist track. Excellent steaks, reasonable prices.
 
@@ -237,6 +252,7 @@ Den Gouden Harynck. Gastronomic restaurant which offers three course meals.
 
 
 Drink
+
 
 *
 De Garre. Hidden in a backyard, this pub offers a nice atmosphere and about 100 kinds of beer, including localy-brewed ones. The house beer is called 'Triple de Garre' and is 11% strong, a good way to start the night. The pub is very often full, but there's a limit of two drinks per person, which means that new places become available pretty quickly.
@@ -251,6 +267,6 @@ Café Vlissinghe. One of the less touristy bars, with a nice selection of draugh
 * 
 Bruges Beer Festival. Annual beer festival held over two days in the Bruges Meeting & Convention Centre. Over 50 breweries represented. Unlike many other beer festivals, this one is not at a fixed time during the year. (see website)
 
-===== TOKENS THE MODEL TRAINS ON (1,623) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,623) =====
 
 dutch brugge picturesque flander europe richest cosmopolitan bourgeois compact size mainly exceptionally preserved historical especially belgian standard draw annually history century gallo roman settlement foundation century viking landed brugge indeed likely come old norse bryggja translating harbor jetty mentioned following century strong connection trading point hanseatic league interestingly historical hanseatic harbour bryggen capital flander storm created tidal canal zwin improving connection sea developed economic capital northwestern europe late middle ages early renaissance golden age age saw construction impressive old building wall world stock exchange formed waterhalle lively trading inhabitant home painter architect artist duke burgundy set court death mary burgundy marked beginning golden royal family soon nearby antwerp important trading point silting eventually zwin unusable spanish rule wars fought region poorest richest city region changed hand austrian dutch becoming independent industrial revolution didnt bring industry ironically poverty characterized century reason historic architecture preserved simply budget modify scale event revived interest cultural side novel morte george rodenbach economic side construction port zeebrugge europe important freight port today canal zeebrugge boudewijnkanaal finished art exhibition flemish primitive early netherlandish painting helped establish cultural greater significance shaping highly touristic character course historical architecture virtually entire historic monument building medieval origin referring medieval inaccurate considering architecture historic date century later building old hall burg square undergone serious neogothic style renovation chiefly influence architect louis delacenserie surviving world wars mostly intact old listed world heritage site later held title european cultural capital dead century sanding harbour difficulty digging canal sand caused heavy economic burden middle ages century population managed survive grow industrial activity period result encircling canal inside wall close street street charming historic house canal nearby newly cleaned house canal confuse truly century old chocolate shop quiet anna imagine life late middle ages historic belfry youth hostel probably train station information useful map interesting non unique night provide authentic feel whilst avoiding hotspot allow hidden gems highlight grote markt market square heart old cover edge belfry halletoren belfort landmark view tower groeninge museum museum fine arts house collection artwork span century focusing mainly work painter lived worked basilica holy blood heilige bloed basiliek beautiful church burg square house relic vial blood said jesus built gothic style early view chapel quiet filled dont forget chapel underneath heavy romanesque style contrast lovely light gothic brewery halve maan brewery remaining brewing beer inside wall beer museum tour beer making process history brewery provided overview tower tour last min feel belgian beer making tour start exact turn hour minute early maximum join entrance price brugse zot straffe hendrik served tour outside terrace indoor bar longer version tour weekend beer wall bar court former major house belgian beer exposed permanently wall possible beer onze lieve vrouwkerk fascinating church architecture romanesque gothic period church fine tomb charle bold daughter mary burgundy contrasting gothic renaissance style despite superficial similarity church house michelangelo sculpture outside madonna child madonna child entrance fee simbolik studio expo nathalie beelprez house studio thought idea born beelprez mix thought feeling symbolic language form soul calligraphy world language work studio expo anyone want let read form letter immersion text form excite sense selection handmade letterwork wall object light object painted canva letter ceramic writing wall work demand sunday month poeziene poet musician performer bring work simbolik jerusalem church quiet highly unusual church octagonal tower built adorne brother merchant italian extraction fine black tournai marble tomb late gothic stained glass tiny spooky chapel containing effigy dead christ entrance fee cover lace museum former adorne mansion women girl learning traditional craft beguinage begijnhof history women couldnt man men likely die accident war women marry god become beguine beguinage convent offered protection single lady lies station white painted house fine plane tree quiet walk group discouraged hospital john sint janshospitaal contain museum painting hans memling early medieval hospital building choco story museum museum chocolate enthusiast describe chocolate transition cocoa chocolate low cost tasty exhibit worth belcolade gently overt marketing sure stay chocolate making exhibition excellent sampler recommend buying ticket online ahead sunday didnt room walk ins needed ticket ahead diamond museum diamond museum range exhibit ranging mining polishing history everyday live polishing demonstration visited huge become annoying especially markt burg square venture far shopping want peace quiet explore cobbled street square lucifernum amazing private art gothic cemetery subtropical garden old freemason temple art mystery old gate kruispoort rampart current gate date beginning century smedenpoort gate built rebuilt change building gate completely surrounded water renovation gate look shining ezelpoort smedenpoort gate completely surrounded water nowaday gate pedestrian cyclist gate previously called oostendsche poort ostend gate road gate lead ostend gentpoort remaining gate rampart gate building housed museum museum musea brugge card cover groeninge museum belfort belfry stadhuis hall sint janshuis mill etc grote markt belfry climb climb step tower excellent view grote markt hear bell ring close canal tour another perspective ride tour boat canal multilingual guide provide potted history minute euro introduction boat tour show unreachable canal runs street advisable opening avoid crowd cannot reserved online boat tour cost horse drawn cart carriage hired romantic minute trip old cart carry passenger ambassador tour passionate storyteller tour medieval old fashioned tour focussing solely historical detail engaging story bring history life reservation advised tell story operated english night murder mystery dark story selected ballooning hot air balloon flight historic surrounding enjoy romance stunning view hundred metre balloon basket helicopterflight morning afternoon helicopter flight surrending cycle rental shop square shop price rent train station quickly remember return cycle damme picturesque village river windmill excellent pancake optionally follow coast another running runner running circle old walk canal medieval gate control traffic simply stunning compare real depicted movie football breydel stadium team playing soccer division belgian tier club brugge cercle brugge ksv share breydel stadium capacity sint andry district chocolate chocolate shop plentiful standard word street anything covered chocolate moulded chocolate shop let seat order homemade chocolate milk particularly vast chocolate shop katelijnestraat stef fairly cheap option chocolatier van oost willing spend little chocolatier van oost wollestraat quality artisanal chocolate dumon excellent chocolate creation chocolate drink het chocoladehuisje artisan chocolate original chocolate breast piece window special occasion chocolate line original funny chocolate art window run locally famous chocolatier dominique persoone fame come price chocolate line expensive compared chocolate store wish chocolate chocolate shop supermarket sell variety mass produced chocolate fairly low price frugal gourmet bars chocolate brand cote dor jacque belgian beer dont want anything sampling famous belgian beer supermarket night shop probably choice gift pack glass boutique style beer shop sell quality gift pack belgian beer beer focused cafe brug beertje type beer art plenty arts craft shop excellent artist lacework risky everything sold produced locally entire working lace industry school lace real thing european weekend shop tuesday sunday shop museum monday sure plan ahead music rombaux record guitar piano store run friendly family landmark building incredible atmosphere huge collection jazz classical modern record guitar piano instrument department collection sheet music looking avoid restaurant market square grote markt matter pleasant view look low quality overpriced food served waiter rude slow underpaid tactic trap restaurant market present item bread meal charge water charged exorbitant bottle another scheme bilk traveller quote absurdly price single serving fry claim offering discount local food wander beaten track historical pleasant cozy restaurant affordable quality food know address street local ask somebody local glad help english proficiency dutch speaking generally budget book brunch ideal combo hand book store brunch dessert eatery cup coffee tea olive street food authentic greek takeaway minute walking belfry grote markt food seasoned extraordinarily savoury affordable especially compared historical brasserie medard huge deal low budget mountain tasty spaghetti tomato sauce cheese mushroom option menu vegetarian non vegetarian price double size extra cheap beer kriek price table order spaghetti arent welcome sit sure sit impose presence served wait seated likely sent reason pain quotidien sandwich chain founded country food organic sandwich particular tartine bouef basilic delicious somewhat expensive potato bar fry shop frietkoten frituren classic fry mayonnaise burger fry variety topping vegetarian option cropain indoor seating delicious croque monsieur grilled sandwich wrap vegetarian option mid range brasserie forestiere calm restaurant food expensive menu vegetarian meal soup dish dessert coffee tea cost cheapest menu little choice bistrobar borea fish grilled chicken fillet vegan portobello rumpsteak etc lestaminet food terrace cool bartender renowned spaghetti delicious croque monsieur bottelier favourite restaurant resident reasonable price excellent food sunday monday night tom diner fantastic upmarket satisfying home cooked food price reasonable petite aneth table cosy personal touch cambrinus reason selection belgian beer total beer odd name satan lucifer nostradamus brunette primarily restaurant hearty food prepared special kind beer delicious main prix fixe menu van brouwer feature trappist beer reservation advance seat grand cafe passage attached passage hotel hostel atmospheric grand cafe serving traditional belgian cuisine beer price slightly lower trap worth beef stew tender ribs trattoria trium spot dish pasta pizza fully italian sell olive oil pasta sauce authentic product decor warm home feeling antipasto excellent house wine curiosa lunch beer maximiliaan van oostenrijk midrange restaurant offering plenty oyster meat cooked ways plus course frite vegetarian splurge nieuw museum belgian grill restaurant track excellent steak reasonable price kok vin memorable kok vin appetiser restaurant price reasonable quality family owned run reservation recommended den gouden harynck gastronomic restaurant course meal garre hidden backyard pub atmosphere kind beer localy brewed ones house beer called triple garre strong start night pub limit drink person mean become pretty quickly brug beertje excellent pub recommended camra guide benelux region hundred beer authentic beer cafe atmosphere clientele majority front bar crowded look door restroom open another bar annual occurrence cafe vlissinghe touristy bars selection draught bottled beer probably oldest pub dating performing arts cafe sufficient beer selection cafe leffe beer festival annual beer festival held meeting convention brewery represented unlike beer festival fixed website

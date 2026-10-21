@@ -2,15 +2,17 @@ Fethiye, Turkey
 Labels: beach, nature, adventure | Split: validation
 Source: https://en.wikivoyage.org/wiki/Fethiye (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (7,243 characters) =====
+===== CLEANED GUIDE TEXT (7,250 characters) =====
 
 Fethiye is a resort town in Lycia on the Mediterranean coast of Türkiye. It's very much on the international tourist circuit, although nowadays somewhat overshadowed by Ölüdeniz just south. It has ancient sarcophaguses - tombs - in its streets, rock tombs staring down from its cliffs, and an abandoned "ghost village" nearby, but plenty of facilities for the living.
 
 In 2020 the population of Fethiye district was 167,114, although this includes outlying villages such as Ölüdeniz. The town population is about half of that, but greatly boosted in summer by visitors and seasonal workers.
 
 Understand
+
  
 History
+
 This city was first recorded as Kuwalapašša by the Hittites around 1700 BC (or to be precise, as 𒆪𒉿𒆷𒉺𒀸𒊭 in their cuneiform script). A more lasting mark was left by the Lycians, who called it 𐊗𐊁𐊍𐊁𐊂𐊁𐊛𐊆, Telebehi, from maybe 500 BC - they occupied the heights above the modern marina, fortified it as a citadel, and carved tombs into the cliff-face. From around that time, Athens led a confederation of city-states (the Delian League) including Lycia that briefly repulsed the Persians, and Telebehi became the Hellenistic city of Telmessos. Its famous school of diviners prophesied to the likes of King Croesus and Alexander the Great, although never in sufficient military detail to prevent a slew of later conquests. The Romans scooped the lot in the first century AD. 
 
 Not much else happened for almost 2000 years. The harbour escaped the silting that was the downfall of others (such as Ephesus) but lacked a hinterland: there was no great agricultural or mineral wealth, or easy inland trade or pilgrimage route. The town became known as Meğri, or Makri, and passed to the Ottomans. After the Great War carve-up of Ottoman lands, it was for a time assigned to Italy, but returned to Turkey at independence in 1923. It was re-named Fethiye in 1934 commemorating Fethi Bey, the pilot killed attempting the first flight from Istanbul to Cairo. It was air transport that changed the face of this coastline: once direct–package holiday flights from Europe became commonplace, Fethiye, along with nearby Ölüdeniz, initially had long airport transfer times, but this reduced to an hour when Dalaman airport was upgraded in 1989.
@@ -18,6 +20,7 @@ Not much else happened for almost 2000 years. The harbour escaped the silting th
 The spine of town is from the marina east along Atatürk Cd, with the rock tombs set in the cliffs just south. Bars, clubs and budget accommodation are along this strip, with resort hotels further out along the beaches north and west.
 
 See
+
  
 * 
 Amyntas tomb. This is the one in all the brochures, the centrepiece of the group of tombs carved into the cliffs south side of town, the main remnants of ancient Telmessos. It was built around 350 BC for the Lycian noble Amyntas son of Hermagios (not to be confused with Amyntas of Macedon a century earlier). You can see the exterior well enough from outside the paying area, but it's worth going in. Evening has the best city views.
@@ -34,6 +37,7 @@ Fethiye Island.
 , also called Knight Island (Şövalye Adası), shelters the bay. It has accommodation, a couple of restaurants and a shingle beach strip, peaceful compared to the mainland. Water taxis ply from town.
 
 Do
+
  
 * Çalış Plajı (Çalış Beach) is north end of town. It's trash-strewn and mostly shingle, though the northern strip is more sandy. The waves can get rough in the afternoon, as it's not sheltered by Fethiye Island. Most beach activities have migrated south to the calm lagoon of Ölüdeniz. 
 * Hiking: Fethiye is the west terminus of the Lycian Way, a 540-km marked hiking trail. The first section is 9 km to the ghost village of Kayaköy, which has accommodation for the living, or hike the extra 5 km to Ölüdeniz. The trail continues east to Faralya and Kabak, and eventually to Antalya. 
@@ -43,12 +47,14 @@ Do
 * Horse-riding: equestrian centres a few km north of town are Cavalier Ranch, Magic Forest and Desperado Ranch. See Ölüdeniz#do for those south of town.
 
 Buy
+
 * Lots of little convenience stores. Carrefour supermarket next to the bus station is open daily 08:00-23:00.
 * Farmers Market is held Tuesday and Friday 09:00-21:00 in the square facing the football stadium on Pürşahbey Cd.
 * "Antiques" such as Turkish carpets are most likely made in China. At least you hope so, because it's illegal to export genuine antiques.
 * Mudwill Outfitters is a small hiking store in the hills that sells handcrafted, high quality hammocks pretty cheaply (500 lira in 2024) and gives great service. Can also do leather/ropecrafting if custom stuff is needed.
 
 Eat
+
  
 
 * Kar Şerbeti (snow sorbet) is a refreshing local specialty, a slushy of snow and grape molasses. The snow is allegedly collected from the heights of the Taurus Mountains, and not as you might suppose from that big industrial-grade icer humming in the background.
@@ -66,9 +72,10 @@ Sedir. Good choice in the north beach area.
 
 Drink
 
+
 * Ayran is a yogurt drink popular across Turkey. 
 * Midtown has a handful of bars, including 4Corner, Buzz Bar Downtown, Kum Saati, Deep Blue Bar, Ördek Bar and Boğa Pub.
 
-===== TOKENS THE MODEL TRAINS ON (519) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (519) =====
 
 resort lycia mediterranean coast turkiye international circuit nowaday somewhat overshadowed oludeniz ancient sarcophaguse tomb street rock tomb staring cliff abandoned ghost village nearby plenty facility living population district outlying village oludeniz population half greatly boosted summer seasonal worker history recorded kuwalapassa hittite precise cuneiform script lasting mark lycian called telebehi maybe occupied height modern marina fortified citadel carved tomb cliff face led confederation delian league lycia briefly repulsed persian telebehi hellenistic telmesso famous school diviner prophesied like king croesus alexander sufficient military detail prevent slew later conquest roman scooped century happened harbour escaped silting downfall ephesus lacked hinterland agricultural mineral wealth easy inland trade pilgrimage route megri makri passed ottoman war carve ottoman land assigned returned independence named commemorating fethi bey pilot killed attempting flight air transport changed face coastline directpackage holiday flight europe commonplace nearby oludeniz initially airport transfer time reduced hour dalaman airport upgraded spine marina ataturk rock tomb set cliff bars club budget accommodation strip resort hotel beach amynta tomb brochure centrepiece group tomb carved cliff side remnant ancient telmesso built lycian noble amynta son hermagio confused amynta macedon century earlier exterior enough outside paying worth evening view castle straggle hillside tomb mostly built knight john century incorporating older structure rock tomb telmesso citadel probably hereabout crumbling wall earthquake taken toll temporarily hasnt prevented folk trash dump lycian sarcophaguse carved stone tomb example lane post office past governor office seafront another foot kaya street leading rock tomb roman amphitheatre marina incompetently restored neither preserve historic structure work modern performance venue gigs damn merkez eski cami downtown old mosque cars built museum mid remain island called knight island sovalye adas shelter bay accommodation couple restaurant shingle beach strip peaceful compared mainland water taxis ply cals plaj cals beach trash strewn mostly shingle strip sandy wave rough afternoon sheltered island beach activity migrated calm lagoon oludeniz hiking terminus lycian marked hiking trail section ghost village kayakoy accommodation living hike extra oludeniz trail continue faralya kabak eventually boat trip ply marina dozen operator touting waterfront standard offering twelve island cruise hour stop islet swimming snorkelling lunch provided pay adult child check dont play raucous pop music wanted youd instead boat hire trip longer charter operator football fethiyespor promoted play soccer tff league tier home ground ilce stadium capacity mid pursahbey horse riding equestrian centre cavalier ranch magic forest desperado ranch oludeniz little convenience store carrefour supermarket bus station farmer market held tuesday friday square facing football stadium pursahbey antique turkish carpet likely hope illegal export genuine antique mudwill outfitter hiking store hill sell handcrafted quality hammock pretty cheaply lira give service leather ropecrafting custom stuff needed kar serbeti snow sorbet refreshing specialty slushy snow grape molass snow allegedly collected height taurus mountain suppose industrial grade icer humming background keci coffee roastery marina excellent coffee shop roastery pasa kebap deservedly mid restaurant menu selection worth higher price upstair cushion floor seating downstair conventional table inside outside fish market balk pazar mid fish surrounding restaurant cooked megri restaurant reliable bazaar sedir choice beach ayran yogurt midtown handful bars corner buzz bar downtown kum saati deep blue bar ordek bar boga pub

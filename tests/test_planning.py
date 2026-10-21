@@ -28,7 +28,7 @@ def repaired(contract, profile, r, mode):
         plan.validation = validate_plan(plan, contract, profile, r, 0.05)
         if plan.validation.result == "PASS":
             break
-        knobs, _ = repair(plan, plan.validation, knobs, r, i, profile)
+        knobs, _ = repair(plan, plan.validation, knobs, r, profile)
     plan.score = score_plan(plan, contract, profile, r, mode)
     return plan
 

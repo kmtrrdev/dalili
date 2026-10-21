@@ -2,13 +2,14 @@ Lucerne, Switzerland
 Labels: nature, culture | Split: test
 Source: https://en.wikivoyage.org/wiki/Lucerne (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (17,854 characters) =====
+===== CLEANED GUIDE TEXT (17,872 characters) =====
 
 Lucerne (Luzern in German, Lozärn in Swiss-German) is a beautiful small city which sits on the shores of Lake Lucerne in the heartland of Switzerland. Lucerne is a popular destination for the city itself and the accessible outings around the lake and local Alps that it offers.
 
  
 
 Understand
+
 
 The first city to join the Swiss Confederation, today Lucerne is a lovely city of 80,000 people with a thriving tourism industry, owing mainly to its status as a gateway to Central Switzerland. The city is a centre of Swiss history and legend: it's across the lake from Altdorf, where legend has it William Tell shot an apple off of his son's head.
 
@@ -17,6 +18,7 @@ Tourism in Lucerne has a distinguished history dating from the mid-19th century,
 :"The commerce of Lucerne consists mainly in gimcrackery of the souvenir sort; the shops are packed with Alpine crystals, photographs of scenery, and wooden and ivory carvings. I will not conceal the fact that miniature figures of the Lion of Lucerne are to be had in them. Millions of them."  &mdash; Mark Twain 
 
 See
+
  
 
 * 
@@ -47,6 +49,7 @@ Lucerne Culture and Congress Centre. The KKL is a spectacular building that cont
 Piuskirche Meggen. In the nearby town Meggen, there's an unusual Roman Catholic parish church building made of transcluent marble, built in 1966. The building has a form of a 13m high cube and no windows. It looks bluish from the outside, and yellow-orange on the inside - depending on the lighting conditions.
 
 Museums
+
 *
 Swiss Museum of Transport. With its large collection of trains, planes, automobiles, and motorcycles, this museum of means of transport is a great place to spend an afternoon. If you get tired of the real train engines you can check out the model railroad or the miniature working steam train. The air section also features several space travel exhibits, including an unused project Mercury capsule.
 
@@ -61,6 +64,7 @@ The Richard Wagner Museum.
 
 
 Do
+
  
  
 
@@ -79,6 +83,7 @@ Rent a bicycle. Lucerne has an excellent bicycle Network. Rent a bicycle at the 
 * Football: FC Luzern play soccer in Super League, the Swiss top tier. Their home ground is Thermoplan Arena (capacity 17,000) at 91 Horwerstrasse, 1 km south of city centre next to the Trade Centre. In 2025 it hosted games in the UEFA Women's Euro Finals.
 
 Mountains
+
 A number of villages and mountains in the Alps can easily be reached from Lucerne by boat or train as day trips. Rigi, across the lake, is large enough to be covered in its own article.
 
 * 
@@ -106,6 +111,7 @@ Schrattenfluh.
 
 
 Events
+
 * 
 Fasnacht. Some cities of Switzerland, including Lucerne and Basel, celebrate a rousing carnival just before Lent each year. The version celebrated here is famous for its chaotic "march any direction you like" street parades of the so-called Guugemusig (band of wind instruments and drummer, typical to the carnival of Central Switzerland) and elaborate masks. The carnival week of Lucerne starts at the end of February on Fat Tuesday and ends at Ash Wednesday. The programme in short: Fat Tuesday, Urknall (big bang) at 05:00 is the official beginning, music on the streets all the day in the city, mask parade from 14:00 along the lake, music on the streets in the evening; Friday to Sunday music and mask parades in all the towns and villages of the region; Güdis Monday, second Urknall at 06:00, rest ditto Fat Tuesday; Thursday, big street concert in the whole old town and surroundings, end of the official carnival at midnight, but it continues in the bars until the morning of Ash Wednesday. As with carnival elsewhere, the exact date on the calendar is variable according to the phase of the moon. You find the date of the next Fat Tuesday (SchuDo, Schmutziger Donnerstag) here. If you don't want to be recognised as a tourist, put on some colorful clothes. Most of the locals dress in colors or in masks. The cities of Zürich and Berne have started to copy Central Switzerland's carnival.
 
@@ -118,6 +124,7 @@ Luzerner Fest. Music festival in June–July
 
 
 Theatre
+
 * 
 Luzerner Theater. Top end theater and musicals
 
@@ -129,6 +136,7 @@ Kleintheater.
 
 
 Buy
+
 The shopping in Lucerne has improved somewhat since Mark Twain's visit. You'll find several good department stores with acceptable prices for most items, as well as pricey speciality shops.
 
 * Lucerne's old town is full of shops - especially clothing
@@ -141,13 +149,16 @@ Weekly Market. Every Th and Sa, 06:00–13:00 along the Reuss river. The market 
 
 
 Eat
+
 Lucerne's Old Town is full of tourist trap restaurants serving wildly overpriced fondue in the middle of summer. This being Switzerland, eating out isn't cheap anywhere, but you'll get much better value for money even a block or two off the beaten track.
 
 Budget
 
+
 * Migros or Coop. Huge supermarket chains with a lot of budget products. There is a small Migros and a bigger Coop at the train station, near the tourist office. There are other Migros around, ask the people. Farther there are Migros and Coop Restaurants self-service restaurants.
 
 City centre
+
 
 * 
 Parterre. Good, friendly atmosphere. They have different menus every day.
@@ -170,11 +181,13 @@ Erdem Kebap. Said to serve the best kepabs in town. Cheap.
 
 Theaterpavillon
 
+
 * 
 Treibhaus Luzern. They have fine food. 2 menus each day (menu Fr.&nbsp;13, students Fr.&nbsp;7), snacks, donuts and very fine coffee. There are concerts at night.
 
 
 Mid-range
+
 
 * 
 Mövenpick Restaurant. International dishes and English menu on request.
@@ -187,6 +200,7 @@ Rathaus Brauerei. Lurking in the medieval halls below Lucerne's 1600s-vintage ri
 
 
 Splurge
+
 
 * 
 Brasserie Bodu. Exquisite French cuisine.
@@ -203,7 +217,9 @@ Restaurant Schwan.
 
 Drink
 
+
 Bars
+
 *
 Jazzkantine. Quite small but comfortable bar. They have a stage in the basement. Sometimes there are jazz and folk musicians playing (4 to 6 times a month).
 
@@ -233,6 +249,7 @@ Bar Berlin. Small bar with good sound and good drinks, nice and cozy.
 
 
 Clubs
+
 Lucerne has lots of clubs for lots of different tastes. Baselstrasse is a nightlife strip emerging out of a redlight district. There are also raves in industrial buildings that require you to join their "club" as they're not legally allowed to sell alcohol to the public.
 
 *
@@ -267,8 +284,9 @@ Klub Kegelbahn. A small basement club with good electronic music, from techno to
 
 
 Cafés
+
 The three bakery chains, Hug, Heini and Bachmann, have several good cafés spread all over the city.
 
-===== TOKENS THE MODEL TRAINS ON (1,369) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,369) =====
 
 luzern german lozarn swiss german beautiful sits shore lake heartland destination accessible outing lake alps join swiss confederation today lovely thriving tourism industry owing mainly status gateway swiss history legend lake altdorf legend william tell shot apple son head tourism distinguished history dating mid century mark twain tramp abroad recall nascent souvenir business budding example tourism trade commerce consist mainly gimcrackery souvenir sort shop packed alpine crystal photograph scenery wooden ivory carving conceal fact miniature figure lion million mdash mark twain chapel bridge chapel bridge built century aid protection landmark said oldest wooden bridge europe point interest walk painting rafter depicting century life swiss history bridge badly damaged fire rebuilt damage visible original painting lost tower multiple uses dungeon original condition spreuer bridge spreuer bridge chaff bridge surviving wooden footbridge short walk famous chapel bridge built replacing earlier bridge destroyed fire decorative painting depicting dance death studio kaspar meglinger lion monument lion sculpture designed bertel thorvaldsen commemorate swiss guard massacred revolution revolutionary stormed tuilery palace american writer mark twain praised sculpture mortally wounded lion mournful moving piece stone world sculpture sight constant flow tour group arriving early late possible peaceful experience old wall rampart wall built wall entirely intact able walk section rampart tower public schirmer zyt wacht mannli mannliturm allow access rooftop tower give extensive unobstructed view alpineum museum diorama dedicated alps bourbaki panorama circular panoramic painting glacier garden focus dramatic carving rockbed glacier information related feature museum curiosity mirror maze culture congress kkl spectacular building contain concert hall art museum designed jean nouvel major concert hall salle blanche famous acoustic world class orchestra heard regularly host festival classical music piuskirche meggen nearby meggen unusual roman catholic parish church building transcluent marble built building form cube window look bluish outside yellow orange inside depending lighting condition museum swiss museum transport collection train plane automobile motorcycle museum mean transport spend afternoon tired real train engine check model railroad miniature working steam train air section feature space travel exhibit unused project mercury capsule art museum rosengart collection work artist early modernism work paul klee pablo picasso work cezanne chagall miro pissarro collection house photograph previously housed rhyn haus david duncan dougla life magazine world war photo correspondent arrived camera uninvited picasso villa california welcomed picasso family produced intimate portrait artist life picasso living room studio domestic scene ballet lesson picasso drawing children wrapping hat native play backdrop famous work allow artwork floor allow plenty ground floor house interesting work picasso floor outstanding work raoul dufy fernand leger vassily kandinsky george rouault klee basement title klee handwriting hard read put title work ask printed list composition title richard wagner museum explore old reason attract traveler remarkably preserved old lost minute anyhow maze street passage square admiring varied mural painted seem building short walk museggmauer start schirmer turm walk road jazzkantine daytime boat tour boat tour lake traditional steamboat ride length lake fluelen take approximately lake tight bend landscape change dramatically ride mountain fluelen gentler hill village town lake generally relaxed walk swim food lakefront weggis brunnen example fluelen brunnen far lake reached direct train guided tour rent bicycle excellent bicycle network rent bicycle train station explore suburb trip national bicycle network football luzern play soccer super league swiss tier home ground thermoplan arena capacity horwerstrasse trade hosted game uefa women euro final mountain village mountain alps easily reached boat train trip rigi lake enough covered article mount pilatus famous mountain overlooking pilatus definitely give impression wild rocky peak marvelous view real alps peak reached world steepest cogwheel railway alpnachstad operating wintertime round cable car section krien minute trolley bus far linde pilatus alpnachstad krien combined boat ride called golden round trip pleasant cheaper option train alpnachstad roughly cogwheel railway pilatus peak cable car krien roughly rail card hike rest krien approximately course walk entire foot take krien addition hiking activity suspension rope park nbsp toboggan stop cable car krien dont plan hike allow spend pilatus mount titlis mountain mount titlis glacier splendid view mountain addition pilatus rigi titlis mountain region easy reach public transport serviced cable cars stoo stanserhorn included swiss travel pass cable car brienzer rothorn sorenberg reached hour car public transport trekking mountain biking engelberg felsenweg buergerstock beautiful view mittelland hour walk boat kehrsiten funiculaire train bus stansstad burgenstock luxury resort buergerstock possible mountain bike paraglide pilatus rigi paragliding majestic mountain surrounding lake unique experience tandem paragliding possible round pilot certified federal office civil aviation foca entlebuch biosphere unesco biosphere nearly protected moorland mountainous karst region schrattenfluh latter limestone karst massif peak covered fissured rock surface doline underground cave developed dissolution calcium carbonate mildly acidic rainwater event fasnacht city basel celebrate rousing carnival lent version celebrated famous chaotic direction street parade called guugemusig band wind instrument drummer typical carnival elaborate mask carnival week start fat tuesday ends ash wednesday programme short fat tuesday urknall bang official beginning music street mask parade lake music street evening friday sunday music mask parade town village region gudis monday urknall rest ditto fat tuesday thursday street concert old surrounding official carnival midnight continue bars morning ash wednesday carnival elsewhere exact date calendar variable according phase moon date fat tuesday schudo schmutziger donnerstag dont want recognised put colorful clothe local dress color mask city berne started copy carnival blue ball music festival luzerner fest music festival junejuly theatre luzerner theater theater musical theaterpavillon theater bar art work meet inexpensive kleintheater shopping improved somewhat mark twain youll department store acceptable price item pricey speciality shop old shop especially clothing station host store longer opening shop bucherer flagship store watch jewellery dealer weekly market reuss river market product speciality old trap restaurant serving wildly overpriced fondue middle summer eating isnt cheap anywhere youll value money block beaten track budget migro coop huge supermarket chain budget product migro bigger coop train station office migro ask farther migro coop restaurant self service restaurant parterre friendly atmosphere menus fass food charisma friendly staff cafe suisse doorzogli cordon bleu amazing experience friendly service twiny station absolute sandwich excellent vegan option accommodating bread perfect vegan schnitzel highly recommended coop restaurant luzern quiet atmosphere fine schnitzel cosy clean food erdem kebap said serve kepab cheap theaterpavillon treibhaus luzern fine food menus menu nbsp student nbsp snack donut fine coffee concert night mid range movenpick restaurant international dish english menu request bistro theatre centrally radar remarkable facsimile parisian bistro serve seasonal fare entrecote bouillabaisse mussel quirky sideline enormous xxl burger salad bowl thai curry absolutely fondue rosti book ahead rathaus brauerei lurking medieval hall vintage riverside hall rathaus serve range half dozen tasty brew plus locally sausage sauerkraut handle dish guggeli chicken roasting entrance book ahead dont surprised neighboring table burst lusty drinking song splurge brasserie bodu exquisite cuisine restaurant old swiss house famous schnitzel prepare directly table bellini locanda modern upscale eatery specializing cuisine ticino sole italian canton dish polenta burrata carpaccio homemade gelato vegetarian gluten selection restaurant schwan bars jazzkantine comfortable bar stage basement jazz folk musician playing time month metzgerhalle old swiss restaurant cool bar weekend shamrock irish pub selection irish swiss drink home food sport display treibhaus luzern cool alternative club concert cheap food menus schuur concert outdoor bar summer sedel punk rock youth rebellion unfortunately lost bit idealism nevertheless club mother dont want let kids today concert ska britpop postrock gothic building jail women converted music practice room band band rocking practising sets hear noise somewhere building knock door jam session shuttle running club look website bar neighbourhood bar klosterstrasse bar opened former owner bar larger live music venue neighbourhood bar feel industriestrasse hidden basement warehouse looking building bar bar sound drink cozy club club taste baselstrasse nightlife strip emerging redlight district rave industrial building require join club theyre legally allowed sell alcohol public casineum grand casino luzern fancy club casino mainstream music roadhouse bar disco packed afterwork beer beside train station mcdonald das schwarze schaf mainstream bar club das weisse schaf loft rnb reggaeton urban gay friendly host monthly frigay night penthouse fancy rooftop bar rok house electro minimal mash tech house dub madeleine concert mics chillout soul funk disco alternative crowd gewerbehalle cool bar hang downstair club klub kegelbahn basement club electronic music techno experimental stuff check website cafe bakery chain hug heini bachmann cafe spread

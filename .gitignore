@@ -7,3 +7,6 @@ __pycache__/
 .cache/
 eval/results.json
 # tests/fixtures/http_cache.sqlite IS committed: recorded real API responses for offline tests (no keys inside).
+
+# the temporary tunnel URL share_app.ps1 writes
+public_url.txt

@@ -2,11 +2,12 @@ Costa Rica, Costa Rica
 Labels: nature, adventure, beach | Split: test
 Source: https://en.wikivoyage.org/wiki/Costa_Rica (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (35,118 characters) =====
+===== CLEANED GUIDE TEXT (35,135 characters) =====
 
 Costa Rica has bewilderingly diverse culture, climates, flora, and fauna, and landscapes range from rainforests, to dry tropical and temperate forests, to volcanoes, to Caribbean and Pacific beaches, to high mountains, and marshy lowlands. Costa Rica is an exceptionally stable and peaceful country compared to the volatile region it's in, and is one of the world's top destinations for nature and ecotourism. Owing in part to its comparative wealth, it can be a bit more expensive than its northern neighbors in Central America.  
 
 Understand
+
 
  
 Since the late 1980s, Costa Rica has been a popular nature travel destination, and its main competitive advantage is its well-established system of national parks and protected areas, covering almost 28% of the country's land area, the largest in the world as a percentage of the country's territory, and home to a rich variety of flora and fauna, in a country covering only 0.03% of the world's landmass, but containing about 5% of the world's biodiversity. The country also has plenty of world renowned beaches, in the Pacific Ocean and in the Caribbean Sea, within short travel distances between the coasts, and also several active volcanoes that can be visited safely.
@@ -20,6 +21,7 @@ Costa Rica has been home to a large Jamaican diaspora community in Limón Provin
 The name Costa Rica means 'Rich Coast' in Spanish.
 
 History
+
 While Costa Rica shares much of its history well into the 19th century with the other central American states (and gained independence on the same day as Nicaragua, Honduras, El Salvador and Guatemala), which is still visible in the blue white blue basic flag of all these countries (Costa Rica simply added a red stripe in the middle of the white one), there are some notable differences. The most visible today is that in Costa Rica, European settlement mostly occurred in the Central Valley, which led to it becoming the economic and political heart of the country and the ancestry decidedly European.
 
 The historical myth many Ticos (as Costa Ricans like to call themselves) hold onto about the early years of the republic is one of "coffee democracy" where everyone lived in the Central Valley and peacefully shared power unlike the decidedly messier history of other Latin American countries. Of course this simplistic view excludes virtually everyone who wasn't white, male, upper class and connected to central valley elites and even then there were violent power struggles, including Costa Rica's part in defeating the American would-be dictator of Central America William Walker in the 1850s.
@@ -33,6 +35,7 @@ Rio San Juan, which belongs to Nicaragua but runs along the border, became a hot
 The issue is further complicated by a number anywhere from several hundred thousand to a million Nicaraguans living in various states of legality in Costa Rica. They are not always treated all that well. However, signs of reconciliation are also made from both sides and a new bridge was opened in 2015, which crosses the Rio San Juan near San Carlos (Nicaragua), enabling overland transport towards Los Chiles. The countries see each other as pueblos hermanos (brother peoples), if sometimes bothersome and annoying brothers.
 
 Geography
+
 Costa Rica is located on the Central American isthmus, lying between latitudes 8° and 12°N, and longitudes 82° and 86°W. It has a total of 1,290 km (800&nbsp;mi) of coastline, 212&nbsp;km (132&nbsp;mi) on the Caribbean coast and 1,016&nbsp;km (631&nbsp;mi) on the Pacific.
 
 Costa Rica borders Nicaragua to the north (309&nbsp;km or 192&nbsp;mi of border) and Panama to the south-southeast (639&nbsp;km or 397&nbsp;mi of border). In total, Costa Rica comprises 51,100 km² (19,700 sq mi) plus 589 km² (227 sq mi) of territorial waters.
@@ -46,10 +49,13 @@ Nearly 25% of Costa Rica's national territory is protected by SINAC (the Nationa
  
 
 Flora and fauna
+
 Costa Rica is such a popular destination for ecotourists because of its biodiversity. Costa Rica has the greatest density of species in the world, and around 25% of its national territory is protected by a system of conservation areas and national parks. The country may contain as much as 6% of the world's plant and animal species. Tropical plant and animal species are abound in Costa Rica. Some of the more impressive plants range from huge ficus trees with epiphytes abounding on their limbs to approximately 1500 different orchids. The animals are just as majestic, whether it's a jaguar (the largest cat in the New World), the ever-elusive Margay, or the wonderful birds like the green or scarlet macaws (lapas in Costa Rican Spanish). Among the amphibians the poison dart frogs with their bright colors are bound to catch your attention, as will the giant cane toads.
 
 See
-===Wildlife===
+
+Wildlife
+
 
  
 
@@ -60,6 +66,7 @@ With 25% of the country being national parks and protected areas, there are stil
 There is such biodiversity in Costa Rica not only because it's a land bridge between North and South America, but also because the terrain is so varied and there are weather patterns moving in from both the Pacific and Atlantic/Caribbean. There are impressive volcanoes, mountain areas, rivers, lakes, and beaches all throughout the country. There are many beautiful beaches - most of the popular ones are on the Pacific side but the Caribbean has many excellent beaches as well.
 
 Volcanoes
+
  
 
 Costa Rica is a geologically active nation. The most notable volcanoes are:
@@ -69,13 +76,16 @@ Costa Rica is a geologically active nation. The most notable volcanoes are:
 *Turrialba: a very active stratovolcano in the Central Valley near the town of Turrialba. The volcano has had many eruptions since 2016, most recently in 2022.
 
 Sports
+
 Football (soccer) is Costa Rica's national sport, and local passion for the game is very high. The Costa Rican national team (known as Los Ticos) has emerged as a powerhouse in North America since the turn of the millennium, and is increasingly posing a challenge to traditional rivals the United States and Mexico for North American supremacy. It has only missed one World Cup since 2002. Its best ever finish was the quarter-finals in 2014 where it lost in penalties to the Netherlands.  
 
 Domestically, the top division in the Costa Rican league system is the Liga FPD, for which there is no shortage of enthusiasm from local fans. The "big three" teams in Costa Rican football are San José-based Deportivo Saprissa, Alajuela-based Alajuense and Heredia-based Herediano.
 
 Do
 
+
 Beaches
+
 
 The Pacific coast's main beaches are located in the Central Pacific region, the Nicoya Peninsula, and in Guanacaste. Less-visited but no less beautiful beaches are located in the tropical rainforest of the southern Pacific coast near Corcovado National Park, or on the exotic eco-tourism paradise of the Caribbean side in Limón Province.
 
@@ -95,6 +105,7 @@ Here is a quick list of the country's biggest and most popular beach destination
 *Puerto Viejo &mdash; the main hub of Costa Rica's South Caribbean, has a nice laid-back vibe with small hotels and beautiful light sand beaches. Popular with Costa Ricans. Close by you can find Cahuita National Park and Manzanillo Wildlife Refuge, attractive coastal protected areas.
 
 Rafting
+
  
 There is a wide variety of exciting rafting trips offered in Costa Rica. For many years, the rafting Mecca of Costa Rica was Turrialba, a large town embedded in the mountains near the Reventazon and Pacuare Rivers, on the Caribbean slope of Costa Rica.
 
@@ -114,9 +125,11 @@ Most likely, any of these rafting trips will be the highlight of your active vac
 
 Fishing
 
+
 Costa Rica has some of the best sport fishing in the world and is the first country to practice catch and release fishing. The Pacific side has incredible fishing for Sailfish, Marlin, Dorado, Tuna, Wahoo, Roosterfish, Snapper, and more. The Caribbean side and Northern regions of Costa Rica are famous for big Tarpon and big Snook. Over 64 world-record fish have been caught in Costa Rica. Half-day, full-day and multi-day trips are available. They love to eat turtles.
 
 Surf
+
 
 Costa Rica has many surfing hotspots. The best time of year to surf is from November to August.
 
@@ -131,6 +144,7 @@ The southern Costa Rica area has two very good spots for surf: Dominical and Pav
 In the southern tip of the Nicoya Peninsula, Montezuma has one of the most beautiful beach breaks in the area, called Playa Grande. It's a short eastward walk from Montezuma village. The break is great for all surfers.
 
 Biking
+
  
 Costa Rica has great mountain biking routes, particularly near Irazu, Turrialba and Arenal Volcanoes. There is popular dirt road that connects Irazu Volcano and the foothills of Turrialba Volcano that is perfect for mountain biking, as it traverses the mountain and presents great views of the Cartago Valley (weather permitting, of course).
 
@@ -139,11 +153,13 @@ The area around Lake Arenal is also a great spot to bike. You can circle the lak
 The Nicoya Peninsula also has great riding, particularly the stretch between Sámara, Puerto Coyote and Malpais. There is a coastal road that connects these three beach towns.
 
 Hiking
+
 Around most volcanos there can be found a decent amount of half to one-day hiking trails.
 
 For proper mountain hiking head to the mountains near San Isidro de General, which are probably the most alpine mountains all over Costa Rica. If you are a keen hiker interested in a Nepal-like feel, head here for some serious adventure. Check out Chirripo National Park.
 
 Golf
+
 
 Costa Rica is a haven for some of the most lush, tropical golfing environments in the world. At any course, you can expect an ensemble of exotic, indigenous animals, jungle, mountainous terrain, and a surreal, blue ocean painting a brilliant, seclusive experience.
 
@@ -153,6 +169,7 @@ There are many tournaments during the year in which any traveller can participat
 
 Other active and extreme sports
 
+
 Wind surfing in the Tilarán area is some of the best in the world.
 
 "Canopy tours" or ziplines are very popular tourist activities and are found all over Costa Rica. These typically cost between US$30–50 depending on the company and use a series of zip-lines to travel between platforms attached to the trees, through and over the forest canopy and over rivers. The person is secured with harnesses to the metal cords, as some go very high off the ground. Be sure to ask about the zipline certification before booking and be sure to take part in the safety briefing before participating.
@@ -160,31 +177,39 @@ Wind surfing in the Tilarán area is some of the best in the world.
 Another form of canopy tour is via an aerial tram which are ski lifts modified for the rainforest. These trams are slower allowing the visitor to view wildlife in the canopy. Each tram has a guide who will explain the flora and fauna. The trams exist at adventure parks near Jaco Beach and just outside Braulio Carrillo National Park and are appropriate for all ages. The trams may be combined with ziplining and often have other attractions such as medicine gardens or serpentaria so guests may learn more about Costa Rica.
 
 Buy
-===Money===
+
+Money
+
 
 
 The local currency is the Costa Rican colón (plural: colones) CRC named after Christopher Columbus (whose name was Cristobal Colón in Spanish) sometimes shown locally as ₡ and sometimes shown using the more commonly available U.S. cent symbol '¢' or ₵. Banknotes come in denominations of ₡1,000-, ₡2,000-, ₡5,000-, ₡10,000-, ₡20,000 and ₡50,000. Coins come in denominations of ₡10-, ₡25-, ₡50-, ₡100 and ₡500 (solid yellow and yellow rings with silver center and featuring commemorative designs).
 
 Use of U.S. dollars
+
 U.S. dollars are commonly used; in tourist establishments, almost everything is priced in U.S. dollars (but sometimes prices are cheaper in colones). When a price is quoted in "dollars", the speaker may be thinking of a dollar as 500 colones; so it is always worth checking whether this is what is meant. When patronizing shops, restaurants and markets that primarily cater to locals, you will be expected to pay in colones. When paying with U.S. dollars, you may receive change in local currency; thus, if you are about to leave the country and don't need colones any more, make sure to have small-denomination U.S. dollar bills in order to get little or no change in colones.
 
 Be aware that Costa Rica is very strict with accepting torn US dollar bills. Even a small rip can lead to a decline of the acceptance of the bill. Unfortunately, some ATMs dispense such bills; use ATMs with a bank branch in its proximity.
 
 Acceptance of credit/debit cards
+
 It is very common to pay even small amounts by Visa or MasterCard, but much less common with American Express. Most places, except small restaurants, take credit/debit cards and many places including gas stations take American Express.
 
 You might get a discount (such as between 5% and 10%) when paying in cash, but it is not common enough to be expected.
 
 Withdrawing money
+
 You can find ATMs in most places. They normally dispense U.S. dollars and colones. With a Visa credit card, you can get money at almost all ATMs. If you have a MasterCard try the ATMs in the AM/PM supermarkets; they give you up to ₡250,000 (about US$500). Another option are the ATH-ATMs but they just give you up to ₡100,000 (about US$200) each transaction. EC-Cards (European) are accepted at all ATMs. The limit is usually set only by the card. In addition, drawing money with your EC-Card will almost always give you a better exchange rate than changing cash in a bank. Around payday, the 15th of the month, ATMs can be emptied of cash, especially in small towns like La Fortuna or Quepos, and some cards may not work.
 
 Exchange to colones
+
 Money exchange is provided at most banks, however it is recommended to do so at the state banks, especially the Banco Nacional, since they have lower rates. There is also a money exchange service at the airport, but it is outrageously expensive. 
 
 Traveller's checks
+
 Traveller's checks are rarely used. When using them, unless for hotel nights, change them first at a bank. Expect long delays with traveller's checks at the bank, lots of stamping, the higher up the official at the bank the more stamps they have.
 
 Tipping
+
 Tipping is not customary in Costa Rica. Some higher-end establishments add an additional 10% service charge to the bill at the end, but otherwise, you are not expected to pay anything on top of the amount stated on the bill.
 
 Be aware that sometimes waiters/waitresses in tourist areas ask for a tip ("propina"), even though it is already included in the bill.
@@ -192,11 +217,13 @@ Be aware that sometimes waiters/waitresses in tourist areas ask for a tip ("prop
 Shopping
 
 
+
 The most common souvenirs are made from wood. Unless it's marked as responsible (plantation grown wood), it is most likely not, and may be contributing to the deforestation of Costa Rica – or even Nicaragua or Panama.
 
 Most visitors returning home are not allowed to bring back any raw foods or plants. Accordingly, the single most desirable commodity for visitors to take home may be roasted (not green) coffee, considered by many as some of the world's best. Numerous web sites explain the fine qualities of various growing regions, types of beans, types of roasting and sources for purchase. Best prices come by purchasing several (sealed) bags of 12 ounces or so. Experts recommend buying whole beans (entero) in any kind of storage; whole beans last longer, and Costa Rican ground coffee often contains sugar, as it is preferred by locals. The stores in San José airport will sell you excellent coffee, but other good quality blends can be found in local supermarkets and direct from the roasters. It can be an expensive but delicious habit. If you're serious about your coffee, bring at least a partially-empty suitcase and fill it with perhaps a year's supply (web sites explain how to store it that long). Take care with tourist outlets where small quantities cost as much as ordering online from your home country.
 
 On a shoestring
+
 Costa Rica certainly is not the cheapest country in the world. Most national parks and other tourist destinations require entrance fees, and tours can easily cost up to US$100 per day. If you are still keen to travel this country and remain on a low budget, start by solely using buses or hitch-hiking. They are not more convenient or faster, but they are a good way to experience the authentic local side of Costa Rica. Using your thumb, on the other hand, can be very economical and fast, Costa Ricans and even other tourists are happy to take hitch-hikers along the way&mdash;see above. This saves you the expensive car rental that many tourists rely on.
 
 If you will be relying heavily on hitch-hiking, bringing a tent along is a good idea. Otherwise accommodation can be very cheap, especially hostels can be between US$8-16 (April 2022) per bed, the more remote the cheaper. And remote can be good, because you get away from the touristy side of Costa Rica. Also, search for local accommodation on Google Maps and AirBnB, which is often cheaper than commercial guesthouses and hotels. The same is true for food. Costa Rica is a fruit paradise where you can get you daily dose of vitamins for US$1-2. Otherwise, you can easily rely on sodas (local restaurants) and cooking in the hostels, which are usually well-equipped.
@@ -206,6 +233,7 @@ Unfortunately, if you want to see and do something in Costa Rica, everything is 
 For inexpensive hiking checkout the mountains around Orosi and Chirripo National Park. The latter has many local trails that lead into the national park, but it is for experienced hikers. In addition, there many snorkelling and surfing spots along the coasts, which can be for free if your bring your own equipment.
 
 Eat
+
  
 Costa Rican cuisine can be described as simple but wholesome. The spiciness often associated with Latin America has typically originated in Mexico; Costa Rican food is generally subtle, but, as the ingredients simmer in a large pot, the flavors are blended. If you don't like cilantro (coriander), learn to ask for it to be left out. The locals are unaware that it is a divisive issue to some foreigners!
 
@@ -240,6 +268,7 @@ Don't forget to tip tour guides, drivers, bellboys and maids. Restaurant bills i
 Beef cattle are raised on grass, so be prepared for the meat to taste different if you're from the United States, where cattle are fed on corn. The cuts of meat at the local restaurants are also different. The taste of chicken is not discernibly distinct.
 
 Drink
+
 Most places have potable water, so don't worry about drinking tap water, although some beach towns such as Puerto Viejo are said to be an exception. Bottled water is also available at low prices.
 
 Ready-to-drink coffee is excellent and considered to be among the best in the world.
@@ -252,6 +281,6 @@ There are around eight national beers available (and most international), which 
 
 Selling and serving alcoholic beverages is illegal in some parts of Costa Rica on the Thursday and Friday before Easter.
 
-===== TOKENS THE MODEL TRAINS ON (2,543) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (2,543) =====
 
 bewilderingly diverse culture climate flora fauna landscape range rainforest dry tropical temperate forest volcanoe caribbean pacific beach mountain marshy lowland exceptionally stable peaceful country compared volatile region world destination nature ecotourism owing comparative wealth bit expensive neighbor america late nature travel destination competitive advantage established system national park protected covering country land largest world percentage country territory home rich variety flora fauna country covering world landmass containing world biodiversity country plenty world renowned beach pacific ocean caribbean sea short travel distance coast active volcanoe visited safely managed avoid political turmoil violence plaguing region president figuere constitutionally abolished rican army permanently winning civil war last significant political violence country latin america oldest democracy chilean coup detat handful presidential republic world last decade placed latin american country overall human development index frequently perform country higher gdp capita measure plagued stark income wealth inequality problem lesser extent latin american country ranked world america term environmental performance index economic foundation nef ranked happiest nation world nef ranked greenest country world home jamaican diaspora community limon province century english based creole similar jamaican patois continue spoken dont surprised meet local english name football soccer player winston park joel campbell ian lawrence kendall watson despite spanish speaking country recent phenomenon nicaraguan immigration happen political economic reason occasionally cause tension due financial reason rican pick coffee gained accolade undocumented nicaraguan native tribe paid money pick coffee plantation mean rich coast spanish history share history century american gained independence nicaragua hondura guatemala visible blue white blue basic flag country simply added red stripe middle white notable difference visible today european settlement mostly occurred valley led becoming economic political heart country ancestry decidedly european historical myth tico rican call hold onto early coffee democracy everyone lived valley peacefully shared power unlike decidedly messier history latin american country course simplistic view exclude virtually everyone wasnt white male upper class connected valley elite violent power struggle defeating american dictator america william walker political climate short civil war won jose figuere ferer later president separate time influential politician rest america think coup rigged election improved election peaceful international democratic standard reason figuere taking abolished military handful country leading fewer coup money education social program led hugely influenced america closest ally region america embroiled civil wars shaky unpopular government rican president oscar aria sanchez peace proposal side war torn nicaragua sit together talk achieved lasting peaceful solution democratic election nobel peace prize trouble hardest convince sign peace proposal nicaragua relation deteriorated dominated political agenda aria sanchez term ortega government ruling nicaragua given subsequent rican president headach seem side border convenient distraction domestic issue juan belong nicaragua runs border hot button issue point contention nicaraguan drainage operation river nicaragua claim ensure safe shipping claim illegally entered territory nicaragua pointed google maps defense another point contention pay fee excursion river claim old treaty guarantee country navigation river wherea nicaragua maintain thing treaty says rican ship transport good paying fee fact good situation worse aria sanchez successor laura chinchilla insisted building controversial highway river nicaraguan protest nicaragua claim harm rican nature reserve overload river sediment issue complicated anywhere hundred thousand million nicaraguan living legality treated sign reconciliation side bridge opened cross juan carlo nicaragua enabling overland transport chile country pueblo hermano brother people bothersome annoying brother geography american isthmus lying latitude longitude total nbsp coastline nbsp nbsp caribbean coast nbsp nbsp pacific border nicaragua nbsp nbsp border panama southeast nbsp nbsp border total comprise plus territorial water highest point country cerro chirripo metre nbsp fifth highest peak america highest volcano country irazu volcano nbsp largest lake lake arenal comprise island coco island mile stand distance continental landmass nbsp nbsp puntarena calero island largest island country nearly national territory protected sinac national system conservation oversee country protected flora fauna destination ecotourist biodiversity greatest density specy world national territory protected system conservation national park country contain world plant animal specy tropical plant animal specy abound impressive plant range huge ficus tree epiphyte abounding limb approximately orchid animal majestic jaguar largest cat world elusive margay wonderful bird green scarlet macaw lapa rican spanish amphibian poison dart frog bright color bound catch attention giant cane toad wildlife world famous incredibly level biodiversity throughout tropical forest cover hear referred rain forest cloud forest dry forest tropical mammal monkey sloth tapir wild cats amazing assortment insect animal bird migratory resident country national park protected abundant wildlife lush vegetation country anywhere farther beaten path likely wide variety flora fauna biodiversity land bridge america terrain varied weather pattern moving pacific atlantic caribbean impressive volcanoe mountain river beach throughout country beautiful beach ones pacific side caribbean excellent beach volcanoe geologically active nation notable volcanoe arenal spanish volcan arenal active stratovolcano lava dome fortuna active volcano eruption become dormant irazu spanish volcan irazu active complex stratovolcano situated cordillera close cartago last eruption poas spanish volcan poas active stratovolcano poas volcano national park alajuela erupted time last eruption turrialba active stratovolcano valley turrialba volcano eruption recently sport football soccer national sport passion game rican national team tico emerged powerhouse america turn millennium increasingly posing challenge traditional rival american supremacy missed world cup finish quarter final lost penalty domestically division rican league system liga fpd shortage enthusiasm fans team rican football jose based deportivo saprissa alajuela based alajuense heredia based herediano beach pacific coast beach pacific region nicoya peninsula guanacaste visited beautiful beach tropical rainforest pacific coast corcovado national park exotic eco tourism paradise caribbean side limon province overview caribbean region stand variety aquatic ecosystem beautiful white black sand beach providing ideal setting activity sport fishing snorkeling bathing pacific coast concentrate center beach surfing example esterillo jaco hermosa boca barranca golfito region surfer famous lefthander wave pavone quick list country biggest beach destination ask local tiny quiet beach beaten path nearby manuel antonio mdash destination america feature beautiful tiny national park clear water beach wildlife jaco mdash surf hold national international tournament point interest carara national park manuel antonio nightlife prostitution corcovado mdash diverse nature dense spot attraction osa peninsula black sand beach fronted thick rican tropical rainforest dominical mdash surfing destination nightlife scene pacific montezuma mdash bohemian option nicoya peninsula dreadlock surfer expect monte fuma local playa grande mdash tranquil white sand beach home largest nesting site leatherback sea turtle pacific coast surfing wave guanacaste province tamarindo mdash upscale option beautiful beach complemented boutique shopping class dining tortuguero mdash cater eco looking explore rainforest spot manatee monkey bird tortuguero accessible boat national park dubbed amazon america puerto viejo mdash hub caribbean laid vibe hotel beautiful light sand beach rican close cahuita national park manzanillo wildlife refuge attractive coastal protected rafting wide variety exciting rafting trip offered rafting mecca turrialba embedded mountain reventazon pacuare river caribbean slope arenal volcano increasingly whitewater rafting destination close access sarapiqui toro river class iii balsa delight rafting enthusiast slope country pacific slope river largest volume general famous multi adventure incredible playground kayaker coto brus river watershed pacific coast savegre naranjo river opportunity enjoy half trip naranjo river trip savegre river class iii tenorio river cana guanacaste favorite tripper beach guanacaste shuttle tour shuttle service arenal volcano monteverde guanacaste lower section tenorio river widely excellent nature float trip pacuare river class iii list adventure interested similar trip savegre river class iii excellent alternative overnight rafting excursion want adrenaline chorro section class naranjo river manuel antonio quepo exhilarating rafting trip country section run nature oriented trip pena blanca river arenal volcano provide look tremendous biodiversity country likely rafting trip highlight active vacation dont miss chance paddle fishing sport fishing world country practice catch release fishing pacific side incredible fishing sailfish marlin dorado tuna wahoo roosterfish snapper caribbean side region famous tarpon snook world record fish caught half multi trip love turtle surf surfing hotspot surf pacific coast particularly pacific guanacaste surfing america guanacaste region beach choose intend surfing playa negra playa grande stand break playa negra break shallow lava reef producing fast hollow wave advanced surfer playa grande consistent break surfable condition break sandy bottom beginner experienced surfer playa nosara another option beginning intermediate surfer wave little overwhelming complete novice someone beginning grasp technique scene tamarindo beach learn surf whilst playa coco advanced surfer chance surf witch rock ollie point caribbean side beautiful beach limited surfing prospect spot surf dominical pavone beach pavone beach thick heavy wave consistently barrel little picturesque untamed definitely light hearted tip nicoya peninsula montezuma beautiful beach break called playa grande short eastward walk montezuma village break surfer biking mountain biking route particularly irazu turrialba arenal volcanoe dirt road connect irazu volcano foothill turrialba volcano perfect mountain biking traverse mountain present view cartago valley weather permitting course lake arenal spot bike circle lake break ride sleeping tilaran nuevo arenal mountain bike shore lake unpaved nicoya peninsula riding particularly stretch samara puerto coyote malpais coastal road connect beach town hiking volcano decent amount half hiking trail proper mountain hiking head mountain isidro general probably alpine mountain keen hiker interested feel head serious adventure check chirripo national park golf haven lush tropical golfing environment world course expect ensemble exotic indigenous animal jungle mountainous terrain surreal blue ocean painting brilliant seclusive experience course major guanacaste jose mid pacific due road condition check driving time course tournament traveller participate course shoe club rental active extreme sport wind surfing tilaran world canopy tour zipline activity typically cost depending company sery zip line travel platform attached tree forest canopy river person secured harness metal cord ground sure ask zipline certification booking sure safety briefing participating another form canopy tour aerial tram ski lift modified rainforest tram slower allowing view wildlife canopy tram guide explain flora fauna tram exist adventure park jaco beach outside braulio carrillo national park appropriate ages tram combined ziplining attraction medicine garden serpentaria guest learn money currency rican colon plural colone crc named christopher columbus cristobal colon spanish shown locally shown commonly cent symbol banknote denomination coin denomination solid yellow yellow ring silver featuring commemorative design dollar dollar commonly establishment everything priced dollar price cheaper colone price quoted dollar speaker thinking dollar colone worth checking meant patronizing shop restaurant market primarily cater local expected pay colone paying dollar receive change currency leave country dont colone sure denomination dollar bill order little change colone aware strict accepting torn dollar bill rip lead decline acceptance bill unfortunately atms dispense bill atms bank branch proximity acceptance credit debit card common pay amount visa mastercard common american express except restaurant credit debit card gas station american express discount paying cash common enough expected withdrawing money atms normally dispense dollar colone visa credit card money atms mastercard atms supermarket give another option ath atms give transaction card european accepted atms limit set card addition drawing money card give exchange rate changing cash bank payday month atms emptied cash especially town fortuna quepo card work exchange colone money exchange provided bank recommended state bank especially banco nacional lower rate money exchange service airport outrageously expensive traveller check traveller check rarely unless hotel night change bank expect delay traveller check bank stamping higher official bank stamp tipping tipping customary higher establishment add additional service charge bill expected pay anything amount stated bill aware waiter waitress ask tip propina already included bill shopping common souvenir wood unless marked responsible plantation grown wood likely contributing deforestation nicaragua panama returning home allowed bring raw food plant accordingly single desirable commodity home roasted green coffee considered world numerous web site explain fine quality growing region type bean type roasting source purchase price purchasing sealed bags ounce expert recommend buying bean entero kind storage bean last longer rican ground coffee contain sugar preferred local store jose airport sell excellent coffee quality blend supermarket direct roaster expensive delicious habit youre serious coffee bring partially empty suitcase fill supply web site explain store care outlet quantity cost ordering online home country shoestring certainly cheapest country world national park destination require entrance fees tour easily cost keen travel country remain low budget start solely buse hitch hiking convenient faster experience authentic side hand economical fast rican happy hitch hiker mdash save expensive car rental rely relying heavily hitch hiking bringing tent idea accommodation cheap especially hostel bed remote cheaper remote touristy side search accommodation google maps airbnb cheaper commercial guesthouse hotel true food fruit paradise dose vitamin easily rely soda restaurant cooking hostel equipped unfortunately want everything demanded money mdash except maybe cahuita national park nevertheless sight entrance side completely access another side trail route sight thing charge celeste interesting destination beaten track equally interesting commercialised finding rewarded map openstreetmap essential openstreetmap comprehensive map detail trail travel guide mobile apps osmand mapy inexpensive hiking checkout mountain orosi chirripo national park latter trail lead national park experienced hiker addition snorkelling surfing spot coast bring equipment rican cuisine described simple wholesome spiciness associated latin america typically originated rican food generally subtle ingredient simmer pot flavor blended dont cilantro coriander learn ask local unaware divisive issue foreigner gallo pinto mixture rice bean little cilantro onion thrown common breakfast served lunch dinner casado mean married typical lunch containing rice bean meat chicken fish served salad fried plantain plato dia plate casado meat fish selection natural juice sopa negra literally black soup type soup black bean giving color paired rice tres lech literally milk cake serve quintessential rican dessert milk refer condensed milk evaporated milk cream dish suggest rich beware lactose intolerant chicharrone refer fried pork rind unlike mexican counterpart largely uses skin rican chicharrone meat salchichon type pork sausage feature traditional rican dish gallo pinto casado fresh fruit abundant variety low cost mercado market provide excellent sample fruit rican fare sit snack bars encouraged experiment fruit travel bruised easily short shelf life mangoe store america fibrous sweet mangoe fingerling banana creamy tart ones far world leading producer pineapple sample ripe pineapple nearly everywhere pineapple juice likewise frequent accompaniment meal coin extra quintessentially rican meal called soda typically sell rican staple gallo pinto casado fruit juice milkshake drink sure stop rest stop road casado beer cost dont forget salsa lizano surely restaurant mild vegetable sauce hint curry slightly sweet referred rican ketchup recipe suggest substituting worcestershire sauce outside tico anything bring home smaller sized bottle market standard breakfast fare rice bean common rest america unlike nicaragua tico adding cilantro leave vegetarian surprisingly easy rural bit puzzled vegetarianism dont speak spanish bear mind pollo chicken understood form category carne meat dont forget tip tour guide driver bellboy maid restaurant bill mid range voluntary gratuity american service tipping separately necessary beef cattle raised grass prepared meat taste youre cattle fed corn cuts meat restaurant taste chicken discernibly distinct potable water dont worry drinking tap water beach town puerto viejo said exception bottled water low price ready coffee excellent considered world refresco beverage fresh fruit cas guanabana sandia watermelon mora blackberry fresa strawberry granadilla passion fruit sugar water milk cheap diner locally soda serve easily standard international soft drink fresca dry fanta kolita fruit punch recommended national called guaro fermented sugar cane taste similar vodka drunk water lemon state owned brand called cacique national home distilled spirit contain poisonous methanol national beer international sold cans bottle kegs common beer pilsen imperial bars restaurant serve bavaria bavaria negra dark bavaria light considered higher quality expensive rock ice rock ice limon lemon flavor higher alcohol percentage common rural heineken locally license expensive selling serving alcoholic beverage illegal part thursday friday easter

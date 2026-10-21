@@ -335,7 +335,7 @@ def select_core(ctx: PlanContext) -> tuple[Ranked | None, Ranked | None, Ranked 
             weights = (weights[0] * boost, weights[1] * boost, weights[2])
         elif pr == "time_in_city":
             hour_weight *= boost
-    best, best_obj, cheapest, cheapest_total = None, -math.inf, None, math.inf
+    best, best_obj, cheapest_total = None, -math.inf, math.inf
     pressure_share = 1.0 - 0.06 * ctx.knobs.price_pressure
     # Best-scored hotels plus the cheapest ones, so a tight budget can always reach them.
     by_price = sorted(hranked, key=lambda x: x.item.price_per_night.amount * ctx.fx(x.item.price_per_night.currency))
@@ -400,7 +400,7 @@ def select_core(ctx: PlanContext) -> tuple[Ranked | None, Ranked | None, Ranked 
                    + hour_weight * hours / 24 * 4)
             combos.append((total, obj, (o, r, h)))
             if total < cheapest_total:
-                cheapest, cheapest_total = (o, r, h), total
+                cheapest_total = total
             # `total` already carries the safety buffer: a combination that fits it fits the budget.
             if total <= budget * pressure_share and obj > best_obj:
                 best, best_obj = (o, r, h), obj

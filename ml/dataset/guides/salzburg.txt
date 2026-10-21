@@ -2,31 +2,38 @@ Salzburg, Austria
 Labels: culture, history | Split: validation
 Source: https://en.wikivoyage.org/wiki/Salzburg (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (22,963 characters) =====
+===== CLEANED GUIDE TEXT (22,979 characters) =====
 
 Salzburg is a city in Austria, near the border with Germany's Bavaria state, with a population of 157,000 (2020). It was the setting for the 1965 movie The Sound of Music, so you may think you know all there is to see in Salzburg if you have seen the movie. Admittedly, it is difficult not to burst into song when you're walking along the Salzach River, or climbing up to the Hohensalzburg fortress, which looms over the city. But there is a lot more to this compact, courtly city than Julie Andrews and Wolfgang Amadeus Mozart, who was born here.
 
 Understand
+
  
 Salzburg, which has been inhabited since the Neolithic period, is the fourth-largest city in Austria (after Vienna, Graz and Linz) and the capital of the federal state of Salzburg. In 45 AD, it was a Roman establishment. The Bavarians took over in the 6th century. At the end of the 16th century, under Archbishop Wolf Dietrich von Raitenau, the transformation of the medieval town into the "Rome of the North" began, with new buildings following the Italian baroque style. The buildings from this era are mostly in the "Old Town", as it is known today. The old town is one of the best-preserved city centres in the German-speaking world and was listed as a  in 1997. Salzburg became part of the Austrian Empire in 1816. It frequently ranks favourably in quality of life rankings.
 
 Origins of name
+
 The name Salzburg, literally "Salt Castle", is derived from the barges carrying salt on the Salzach river, which were subject to a toll in the 8th century.
 
 Early history and medieval period
+
 Traces of human settlements dating to the Neolithic Age and later a Celt camp have been found in the area. Starting from 15 BC, the small communities were grouped into a single town which was named by the Romans as Juvavum. Little remains of the city from this period.
 
 The Hohensalzburg Fortress was built in 1077 and expanded in the following centuries. Independence from Bavaria was secured in the late 14th century.
 
 Independent state
 
+
 Salzburg was the capital of an independent state from the early 14th century until 1805. It was ruled by prince-archbishops, who became rich by the salt mines in the south of the city. This led to the architectural gem you see today, as materials and architects were imported from Italy and other European countries. This is also why, compared to other Austrian cities, sacral monuments surpass the few secular buildings in every respect. The prince-archbishops were forced to give up their political powers during the French occupation in 1805, when Napoleon Bonaparte introduced the concept of separation of Church and State in all the occupied territories.
 
 Tourist information
+
 * Salzburg tourism website
 
 See
-===Architecture===
+
+Architecture
+
  
 The Salzburg Altstadt is a  celebrated for its well-preserved Baroque architecture and rich cultural heritage. Nestled along the banks of the Salzach River and surrounded by the Mönchsberg and Kapuzinerberg hills, the Altstadt is home to many architectural landmarks. Notable sites include the Hohensalzburg Fortress, one of Europe's largest medieval castles; Salzburg Cathedral; and Getreidegasse, a bustling shopping street known for its high townhouses and as the birthplace of Wolfgang Amadeus Mozart. The area also features charming squares such as Mozartplatz, which hosts a monument to Mozart, and Residenzplatz, known for its impressive fountain. The Altstadt's narrow, winding streets and historic buildings offer visitors a glimpse into Salzburg's past, making it a must-visit destination for those interested in history, architecture, and music. 
 
@@ -65,6 +72,7 @@ Nonnberg Abbey. Founded around 711/712 by Saint Rupert, the Nonnberg Abbey is th
 
 
 Museums
+
  
 * 
 Mozarts Geburtshaus. From 1747 to 1773 the Mozart family lived in this house in the heart of Salzburg, where W.A. Mozart was born on 27 January 1756. The house is now a popular museum devoted to Mozart and his family, with interesting memorabilia and letters. Well worth a quick visit.
@@ -102,6 +110,7 @@ Salzburg open-air museum. The 50-hectare Salzburg Open-Air Museum is located sou
 
 
 Nature
+
  
 * 
 Kapuzinerberg. This steep hill can be accessed through Linzergasse in the old part of town. Once you're in you're in deep forest. There are several paths that bring you to the top (where the Franziskischlössl fortification stands - today it's a restaurant) via either a paved road -no traffic, though- or a forest track with steps. There are several viewpoints along the way. The views of the city, and the Alps, are spectacular, the air is fresh and it makes for a superb little excursion without leaving the city.
@@ -114,6 +123,7 @@ Lammer Gorge. A natural canyon carved by the Lammer River near Scheffau am Tenne
 
 
 Do
+
 * 
 Casino Salzburg. 
 
@@ -131,11 +141,13 @@ Untersberg. The mountain is perennially popular with tourists due to its proximi
 
 Festivals
 
+
 For almost a century, Salzburg has hosted the world-famous Salzburg Festival. Festivals also take place during Easter time (with mostly Baroque music), and in autumn.
 
 * 
 
 Buy
+
  
 
 *Mozartkugeln (Mozart balls) are confections of chocolate, marzipan, pistachio and sometimes hazelnut inspired by the famous composer, Salzburg's most famous son, Mozart. Try the original version by Fürst, which are handmade and cannot be purchased outside Fürst's four shops in Salzburg.  They're expensive, though, at €1.80 a pop (souvenir boxes cost even more), and comparatively simple with only two layers. The cheaper, more widespread and arguably tastier Mirabell brand is available throughout Austria; you'll get the best prices at regular grocery stores, not souvenir shops. The third big name is Reber, which has three chocolate shops in the Old Town with a wide range of chocolates, Kugeln and pastettes (Alter Markt 5; Griesgasse 3; Getreidegasse 26).  Souvenir shops sell other brands too, which tend to cheap out on their ingredients and are best avoided.
@@ -145,10 +157,12 @@ Europark. Indoor shopping mall. Nothing out of the ordinary, but a good place to
 
 
 Eat
+
  
 A typical dessert from Salzburg is the Salzburg Nockerl, a tasty baked soufflé best served with ice cream, berries and whipped cream.  Good places make it to order, which takes at least 30 minutes, and the serving size is huge: one Nockerl is easily enough for four!
 
 Street food
+
 
 * 
 Salzburger Würstelkönigin. Gorgeous hotdogs and great spot to chill by the Salzburg river. The grilled meat sandwich with the Century Sauce (Jahrhundertsoße) is amazing. You can meet the whole world here.
@@ -165,6 +179,7 @@ Würstelstand Alter Markt. The Käsekrainer and the warm sauerkraut are deliciou
 
 Winter season
 
+
 * 
 Maroni-Salzburg. Have roasted chestnuts and a glass of glühwein in the winter season right before you start off to the Christmas Market. Maronibraterei Salzburg
 
@@ -172,6 +187,7 @@ Maroni-Salzburg. Have roasted chestnuts and a glass of glühwein in the winter s
  
 
 Budget
+
 * 
 Wilder Mann. Wilder Mann offers traditional Austrian cuisine. The restaurant provides large portions and friendly-service. Smoking is allowed in the restaurant.
 
@@ -195,6 +211,7 @@ Reyna Kebap. Great kebab and very good pizza until late at night. Super Bosna. V
 
 
 Mid-range
+
 Many of the beer halls listed under Drink are also great mid-range options.
 
 * 
@@ -221,6 +238,7 @@ Zirkel Wirt. Delicious traditional and some not-so-traditional food, vegetarian-
 
 Splurge
 
+
 * 
 Hangar 7 / Ikarus. If you seek a special environment for your dinner this is the place, a top-cuisine restaurant and a great bar close to the airport.
 
@@ -235,13 +253,16 @@ Restaurant Blaue Gans. Traditional and noble. Great 'Schnitzel'.
 
 
 Sweet
+
 * 
 Café Sacher Salzburg. Trying the original Sacher-Torte is a must for all chocolate lovers out there. But there's more to Café Sacher than just cake. They also serve delicious hot food at prices cheaper than other touristy places listed here - plus you enjoy the service and ambiance of the Sacher Hotel.
 
 
 Drink
 
+
 Beer
+
 * 
 Augustiner Bräustübl. Augustine monks have been brewing here since 1621.  Today it's Austria's largest beer hall, with a lovely garden outside when the weather is nice and enormous inside halls when it isn't.  Grab a table, a few ceramic steins of Märzenbier beer straight from the barrel, and pick your favorite Austrian dishes from the market-style shops.  Or you can bring your own food (not drinks!) if you want.
 
@@ -263,6 +284,7 @@ Die Weisse. Located in one of Salzburg's most historic breweries, this is where 
 
 
 Café
+
 
 * 
 Tomaselli. Alter Markt 9. A traditional Viennese coffee house, the oldest in Salzburg. Try the Einspänner and Sacher cake!
@@ -288,6 +310,6 @@ Afro Café. A funky, modern café with decoration inspired by urban African styl
 * 
 Café Sacher Salzburg. Excellent coffee (try the Wiener Melange if you like your cappuccinos) and great cakes and desserts. The Sacher-Torte hardly requires an introduction. But there are more cakes and tortes. The Strudel is great, and if you have a big appetite the Kaiserschmarrn (huge pancake-like dessert with plum confit and lots of sugar!) will not disappoint you. And it's not as expensive as you might imagine given this is a 5-star hotel. In fact, you'll spend the same, if not more, in any other café in the old part of town.
 
-===== TOKENS THE MODEL TRAINS ON (1,738) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,738) =====
 
 border bavaria state population setting movie sound music think know movie admittedly difficult burst song youre walking salzach river climbing hohensalzburg fortress loom compact courtly julie andrew wolfgang amadeus mozart born inhabited neolithic period fourth largest graz linz capital federal state roman establishment bavarian took century century archbishop wolf dietrich von raitenau transformation medieval began building following italian baroque style building era mostly old today old preserved centre german speaking world listed austrian empire frequently rank favourably quality life ranking origin literally salt castle derived barge carrying salt salzach river subject toll century early history medieval period trace human settlement dating neolithic age later celt camp starting community grouped single named roman juvavum little remain period hohensalzburg fortress built expanded following century independence bavaria secured late century independent state capital independent state early century ruled prince archbishop rich salt mine led architectural gem today material architect imported european country compared austrian city sacral monument surpass secular building respect prince archbishop forced give political power occupation napoleon bonaparte introduced concept separation church state occupied territory information tourism website architecture altstadt celebrated preserved baroque architecture rich cultural heritage nestled bank salzach river surrounded monchsberg kapuzinerberg hill altstadt home architectural landmark notable site hohensalzburg fortress europe largest medieval castle cathedral getreidegasse bustling shopping street townhouse birthplace wolfgang amadeus mozart feature charming square mozartplatz host monument mozart residenzplatz impressive fountain altstadt narrow winding street historic building glimpse past making destination interested history architecture music schloss hellbrunn summer palace archbishop clever fountain pretty garden tour stand guide wet hellbrunn surrounded vast garden children playground swing flying fox zip wire cold wading pool perfect picnic walk green steintheater stone theater opera middle europe conducted children adult alike amused excellent substantial zoo ground hohensalzburg fortress mountain festung breathtaking view alps fortress chance look field house executioner residence believed live anywhere executioner bad luck inside fortress museum medieval weapon life fortress torture instrument public concert held evening reservation recommended night concert possible remain wall past dark avoid vertical hike fortress funicular ride fee oldest funicular alter markt square shop old impressive instance look interior pharmacy called fursterzbischofliche apotheke picture pharmacy attraction schloss mirabell salzach river mozarteum university music arts lies beautiful castle garden built archbishop beloved courtesan watch garden dwarf garden rose inside marble stair raffael donner world beautiful wedding hall marble hall plan marry reservation advance wedding english held tuesday friday dont speak german cant married cathedral cathedral excavation museum object excavated roman villa foundation tower romanesque cathedral stood today cathedral getreidegasse narrow street running parallel river shop famous old old style sign profession outside store sebastian cemetery hold grave mozart wife constanze weber nissen mausoleum archbishop wolfdietrich peter church cemetery catacomb remarkable catacomb adult children carved nearby cliff side climb couple chapel overlook hellbrunn trick fountain park trick fountain nonnberg abbey founded saint rupert nonnberg abbey world oldest continuously operating christian convent situated terrace festungsberg significant religious site century abbey church dedicated assumption mary showcase architectural element romanesque gothic period notable frescoe prominent tower explore church surrounding ground insight abbey rich history spiritual significance museum mozart geburtshaus mozart family lived house heart mozart born house museum devoted mozart family interesting memorabilia letter worth quick mozart wohnhaus mozart residence reconstructed destroyed world war opened public museum trying hard tell history blind partner dogs taken museum regular guided tour blind visually impaired deaf hearing impaired call appointment room museum neue residenz wheelchair accessible passenger lift sufficient door width lead floor residence induction loop hearing aid toy museum founded toy museum largest collection european toys kasperltheater puppet show held tuesday wednesday early museum natural history science museum heart interactive exhibit covering wide range topic natural history geology physic astronomy highlight collection exotic wildlife fascinating look universe museum planetarium extensive exhibition history earth museum modern art location wiener philharmonikergasse monchsberg museum modern art cliff overlooking old house contemporary art work century rotating international art display residenzgalerie art showcasing european painting century established revive artistic heritage notable collection czernin collection featuring century dutch italian spanish masterpiece work schonborn buchheim collection highlighting dutch italian artist era famous painter rembrandt carel fabritius carlo saraceni hieronymus francken hangar transportation museum housing historical flying bull fleet historic race cars collection spectacular unless youre race fanatic building glass domed roof worth hallein salt mine ancient underground salt mine durrnberg plateau hallein history spanning instrumental establishing significant trading hub today mine operate museum offering guided tour metre electric train ride mountain wooden slide level boat trip underground salt lake don protective coverall explore tunnel dating century mine provide insight early mining technique live celtic miner stiegl brauwelt brewery museum offering immersive experience world beer explore interactive exhibit detailing brewing process enjoy freshly tapped stiegl beer site restaurant purchase souvenir brewery shop guided tour air museum hectare air museum southwest untersberg air museum consist original building spanning century old farm brewery village school blacksmith shop power station old tractor steam engine work tool historic inn cozy garden especially sunday public holiday artisan demonstrate traditional skill nature kapuzinerberg steep hill accessed linzergasse old youre youre deep forest path bring franziskischlossl fortification stand today restaurant paved road traffic forest track step viewpoint view alps spectacular air fresh superb little excursion leaving untersberg untersberg striking mountain border easily accessible untersbergbahn cable car geiereck peak stunning alpine view hiking climbing winter sport trail suitable level bus connect cable car station making convenient trip lammer gorge natural canyon carved lammer river scheffau tennengebirge gorge feature dramatic limestone formation narrow passage height difference explore trail wind gorge offering stunning view rushing river surrounding cliff trail accessible fee upper lower entrance gorge guest house refreshment casino zoo zoo petting zoo children restaurant site serving traditional austrian dish untersberg mountain perennially due proximity mountain easy reach bus variety path lead cable car lift passenger geiereck peak cable car runs station gartenau station geiereck peak reached taking bus terminus station chess mdash giant chess board painted onto ground past cathedral travelling river youll wait turn worth football red bull play soccer austrian bundesliga tier play red bull arena capacity wals siezenheim northwest breakaway club formed protest red bull takeover play minor league max aicher stadium capacity airport festival century hosted world famous festival festival easter mostly baroque music autumn mozartkugeln mozart ball confection chocolate marzipan pistachio hazelnut inspired famous composer famous son mozart original version furst handmade cannot purchased outside furst shop theyre expensive pop souvenir boxe cost comparatively simple layer cheaper widespread arguably tastier mirabell brand throughout youll price regular grocery store souvenir shop reber chocolate shop old wide range chocolate kugeln pastette alter markt griesgasse getreidegasse souvenir shop sell brand tend cheap ingredient avoided annual christma market christkindlmarkt square dome domplatz kapitelplatz residenzplatz feature traditional fast food hot potatoe doughnut kraut candy christma decoration winter clothe craftmanship open close christma europark indoor shopping mall nothing ordinary refuge weather poor typical dessert nockerl tasty baked souffle served ice cream berry whipped cream order take minute serving size huge nockerl easily enough street food salzburger wurstelkonigin gorgeous hotdog spot chill river grilled meat sandwich century sauce jahrhundertsoe amazing meet world heisse kiste institution recommended leberka kasekrainer real sausage culture tasty address enjoying nightlife grab sausage bread midnight snack lechner wurstelstand want original street food traditional tasty service fast everything delicious wurstelstand alter markt kasekrainer warm sauerkraut delicious tasty fry bosna sausage heart desire queue take winter season maroni roasted chestnut glass gluhwein winter season start christma market maronibraterei budget wilder mann wilder mann traditional austrian cuisine restaurant provide portion friendly service smoking allowed restaurant schmankerl affordable meal support social project friendly staff attended meal paninoteca piccolo mondo lovely selection paninis look lovely taste quality wine tasty pasta recommendation antipasti platter burrito factory feel host family invited dinner table lunchtime restaurant exactly charming friendly service pomme boutique wonderful stop love burger fry vegetarian option outdoor seating uncle van lovely little completely unexpected unremarkable street concept select ingredient wok tasty everyone want vegetarian reyna kebap kebab pizza late night super bosna staff mid range beer hall listed mid range option barenwirt traditional food traditionally furnished restaurant cheap fabulous beer close augustiner brau gabler brau traditional food quality selection salad self service menu gasthof goldgasse seasonal regional highest quality goldener stern choice enjoy salzburger nockerln topfenstrudel middle garden tree flower old austrian stagecoach children play raschhofer rossbrau traditional somewhat updated austrian fare serve excellent kaiserschmnarrn breakfast dessert sternbrau charming venue featuring wood paneled restaurant serving regional fare plus pubs beer garden complete outdoor seating fireplace private dining room zirkel wirt delicious traditional traditional food vegetarian friendly beer atmosphere splurge hangar ikarus seek special environment dinner cuisine restaurant bar close airport koller koller waagplatz restaurant tagesbar excellent austrian fare romantic intimate setting step cathedral mozart plaza course meal bottle wine stiftskeller peter claim opened oldest restaurant world austrian cuisine mediterranean influence grandiose environment restaurant blaue gans traditional noble schnitzel sweet cafe sacher trying original sacher torte chocolate lover cafe sacher cake serve delicious hot food price cheaper touristy listed plus enjoy service ambiance sacher hotel beer augustiner braustubl augustine monk brewing today largest beer hall lovely garden outside weather enormous inside hall isnt grab table ceramic stein marzenbier beer straight barrel pick favorite austrian dish market style shop bring food drink want shamrock guinness cider german austrian beer occasional live music atmosphere university student expect packed weekend night stiegl brauwelt bus stop brauhausstrasse line tour brewery museum stiegl brewery pub beer garden tour cost drink gift stieglkeller stieglkeller choice traditional dish stiegl beer radler drink recommendable fantastic panoramic view lower terrace service expected consume food upper terrace self service omalley everyone bartender late real drinker die weisse historic brewery local hang reservation wednesday saturday crowded serve treat bavaria cafe tomaselli alter markt traditional viennese coffee house oldest einspanner sacher cake cafe bazar legendary viennese coffee house terrace overlooking river salzach artist businessmen alike yes sip kleiner brauner discuss last evening festival performance furst exquisite pastry original mozartkugel invented confectioner paul furst modern cafe breakfast variety cultural event jazz brunch clubbing special theme party night turn night shakespeare art cafe chinese cuisine cheap lunch menu week anifer muhlenbrot tiny bakery tasty selection sweet snack serve cheap breakfast table berger chocolate afro cafe funky modern cafe decoration inspired urban african style variety unconventional food drink cafe sacher excellent coffee wiener melange cappuccino cake dessert sacher torte hardly require introduction cake torte strudel appetite kaiserschmarrn huge pancake dessert plum confit sugar disappoint expensive imagine given star hotel fact youll spend cafe old

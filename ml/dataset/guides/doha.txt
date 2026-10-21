@@ -2,13 +2,14 @@ Doha, Qatar
 Labels: culture, shopping | Split: validation
 Source: https://en.wikivoyage.org/wiki/Doha (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (32,540 characters) =====
+===== CLEANED GUIDE TEXT (32,563 characters) =====
 
 Once little more than a minuscule pearl fishing village, Doha (Arabic: الدوحة ad-Dawḥa), Qatar's capital, with more people than the rest of Qatar combined, has emerged to become one of the pearls of the Middle East. It is one of the most rapidly-developing cities on the Persian Gulf, akin to the development seen in nearby Dubai and Abu Dhabi, and is aiming to become a centre of international trade and travel.
 
 We also cover the neighbouring cities of Al Rayyan and Lusail in this article, as they are effectively part of the Doha urban area.
 
 Understand
+
 
  
 For most of its history, Doha was a poor fishing village dependent on pearl diving, and was regarded as a sleepy backwater until the early 1990s. Following the accession of Sheikh Hamad bin Khalifa Al Thani as Emir in 1995, however, Qatar quickly began to modernize, and Doha is now taking huge strides to catch up with other nearby Gulf cities. Development was accelerated by hosting the Asian Games in 2006 and the FIFA World Cup in 2022. The city is very much a work-in-progress, with a rapidly growing skyline and new buildings sprouting up almost like mushrooms.
@@ -20,14 +21,17 @@ Doha is fairly liberal by the standards of the Islamic world, though less so tha
 If you've visited before, be assured that Doha today is not the same as it was just a couple of years ago, and will be very different again in a few years time.
 
 Read
+
 * Mohanalakshmi Rajakumar, From Dunes to Dior. Written by a resident Indian-American, this is a collection of insightful essays about life as an expatriate in Doha.
 * Mohanalakshmi Rajakumar, Love Comes Later. Set in Doha and London, this novel examines Qatari culture and how young Qataris are now challenging the status quo. The book is not available in Qatar as it has been banned by the Qatari Ministry of Culture.
 
 See
+
  
  
 
 Museums
+
 The National Museum, Museum of Islamic Art, and Museum of Modern Art have a single three-day ticket for QR 85. Alternatively you can visit just one of them for QR 50.
 
 *
@@ -59,6 +63,7 @@ Firestation Artist in Residence. Has an art supply store and cafe on site.
 
 
 Cultural heritage
+
  
  
  
@@ -101,6 +106,7 @@ House of Sheikh Abdullah bin Thani Al-Thani. A traditional Qatari home, remarkab
 
 
 Other sights
+
  
 *
 Corniche. The visual highlight of Doha is Al-Corniche, a long seaside promenade that curves around Doha Bay and affords pretty views of Palm Tree Island and the city's skyscrapers. In the afternoons you will see plenty of locals strolling, often trying to get out of the way of the odd crazy Western ex-pat on rollerblades. It's also a good place for jogging. Cycling is prohibited. If you're looking to have the scenery all to yourself, go on a Friday morning.
@@ -135,6 +141,7 @@ Asian Town. A mall, activity centre, amphitheatre, cricket stadium and accommoda
 
 
 Do
+
  
 
 Doha has a reputation for not being the most exciting place on earth; however, should you find yourself here for a longer visit, there is a variety of activities and events. Start off with a tour of the city, which should take you about 2 hours and from there you will have a good idea of what you would like to see.
@@ -179,11 +186,13 @@ Aspire Park. The largest park in Doha. Lots of grass, trees, playgrounds.
 
 
 Buy
+
 You can buy pretty much anything you want in Doha, apart from pork products and alcohol (except with a licence or in the major hotels). Shopping is a major leisure pursuit of many Qataris and expats; prices however are somewhat higher than in Dubai. As with in most of the Middle East, be prepared to bargain.
 
 Also, be aware that most of the luxury malls and some souks schedule "Family Days", most commonly Fridays, weekends and public holidays, where all single men should in theory be turned away at the door. In practice, however, most Qatari and white men will be allowed in with no issues, but African and non-Qatari Asian men (particularly South Asians in their native dressing) will be turned away.
 
 Souqs
+
  
 The best shopping experiences are undoubtedly to be had in the various souqs (markets).
 
@@ -201,6 +210,7 @@ Omani Souq. Here you can buy things like spices, incense and woven baskets. Next
 
 
 Malls
+
 
 Typically most malls in Doha are open Sa-Th 10:00-22:00. Most will be closed on Friday mornings but will open up during the evening, when they'll be the most crowded.
 
@@ -236,6 +246,7 @@ Place Vendôme. Located in the new development area of Lusail just north of Doha
 
 
 Bookshops
+
 The availability of English-language books in Doha is fairly limited but improving, and there are several shops which offer some current titles as well as regional travel guides. Carrefour, Lulu Hypermarket, and Megamart all sell international magazines and newspapers along with local maps.
 *
 Jarir Bookstore (Salwa). Sells Arabic and English language books, and a good selection of international magazines and newspapers. Also has a Costa coffee bar. There is a second branch near Education City, on Al Rayyan Al Jadeed Rd.
@@ -245,6 +256,7 @@ Virgin Megastore. Stocks books and magazines in Arabic, English, and French. A s
 
 
 Eat
+
  
  
  
@@ -255,6 +267,7 @@ If you are visiting during Ramadan, keep in mind that it is illegal to eat and d
 As Qatar is a Muslim country, nearly all food in Doha is halal. Pork is not served at restaurants, but is available to foreign residents with a liquor license at the two liquor stores run by the Qatar Distribution Company (QDC). This license is not available to tourists.
 
 American
+
 Most major American fast food chains have multiple branches here, including McDonald's, KFC, Hardee's, Arby's, Burger King, Subway, and Dairy Queen.
 
 Pizza places include Pizza Hut, Little Caesars, Pizza Inn, and Papa John's. Many of them are in the major shopping centres, and at Ramada Junction (the intersection of C-Ring and Salwa Rds).
@@ -269,6 +282,7 @@ Yellow Cab Pizza. This is undisputedly the most popular pizza in Doha, surprisin
 
 
 Asian
+
 *
 Noodle House. Offers a number of southeast Asian-style dishes. Their portions are not very large, but the taste makes up for that. Their prawn crackers are particularly good. Delivery available.
 
@@ -295,6 +309,7 @@ Yee Hwa Restaurant. This restaurant specialises in Korean barbecue and Japanese 
 
 
 European
+
 *
 Ciao. Offers thin-crust pizza baked in a traditional oven, along with a good selection of pastas and risottos.
 
@@ -309,6 +324,7 @@ Mykonos. Solid Greek food, outdoor pool-side seating available.
 
 
 Indian
+
 Doha is home to a large Indian population. As such, the city centre is full of small Indian restaurants, with many other excellent Indian restaurants scattered throughout the city.
 
 *
@@ -337,6 +353,7 @@ Spice and Sizzles. A luxurious Pakistani/Indian/Asian restaurant.
 
 
 Middle Eastern
+
 *
 Al Shami Home Restaurant. A Doha institution, featuring traditional Syrian and Lebanese dishes, and sheesha.
 
@@ -373,6 +390,7 @@ Parisa. Excellent Persian cuisine in unique surroundings. Booking advised.
 
 
 Seafood
+
 *
 Best Fish. Popular with Qataris. Cheap local fish dishes: the grilled hammour with garlic butter is recommended. Take away and home delivery available.
 
@@ -384,6 +402,7 @@ L'wzaar Seafood Market. A good selection of seafood, with good views. Reservatio
 
 
 Grocery stores
+
 For self-catering options there are a few hypermarkets as well as a number of smaller neighborhood grocery stores distributed throughout the city.
 
 *
@@ -403,17 +422,21 @@ Quality Hypermarket.
 
 
 Tipping
+
 Tipping at restaurants is not compulsory, although it has become fairly standard to tip about 10% to the waitstaff. Despite being banned, some restaurants still include a 10% service charge in the bill. Should your bill include a service charge, feel free to strike it from the total and leave a tip on the table instead.
 
 Drink
+
  
 
 Alcohol
+
 Alcohol is strictly regulated in Qatar, as it is a Muslim country, and for visitors is only available in bars attached to large 5-star international hotels. Bars are required to see identification (i.e. a passport) at the door, although this is rarely enforced. Residents with a special liquor license may purchase alcohol at the QDC (Qatar Distribution Company) on the outskirts of town. The importation of alcohol is strictly disallowed – all bags are scanned by x-ray upon arrival at Hamad International Airport and customs will confiscate any bottles of alcohol they find. They will issue a claims receipt, which will allow you to pick up your bottles again when you leave Qatar.
 
 Some of the places favoured by local expats are the Crystal Lounge and Waham Poolside Lounge (W Doha Hotel), Sky View Bar (La Cigale Hotel), the Belgian Café  (InterContinental at West Bay Lagoon), and Trader Vic's (Hilton). The Irish Harp (in the basement of the Sheraton near City Center Mall) has frequent live music.
 
 Tea and coffee
+
 Karak is the local specialty, a very sweet concoction made from tea and evaporated milk available from stalls everywhere, some of them drive-through (just park your car outside and honk). A particularly popular place is Chapati & Karak () at Katara Cultural Village.
 
 Most international coffee chains (including the ubiquitous Starbucks) are well-represented here, especially in shopping malls.
@@ -421,6 +444,6 @@ Most international coffee chains (including the ubiquitous Starbucks) are well-r
 * 
 PappaRoti. This branch of the popular Malaysian café chain offers a good selection of coffee and teas, along with special roti buns.
 
-===== TOKENS THE MODEL TRAINS ON (2,488) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (2,488) =====
 
 little minuscule pearl fishing village arabic dawha capital rest combined emerged become pearl middle rapidly developing city persian gulf akin development nearby aiming become international trade travel cover neighbouring city rayyan lusail article effectively urban history poor fishing village dependent pearl diving regarded sleepy backwater early following accession hamad bin khalifa thani emir quickly began modernize taking huge stride catch nearby gulf city development accelerated hosting asian game fifa world cup work progress rapidly growing skyline building sprouting mushroom synonymous vast majority country population reside capital astonishingly diverse population resident qataris arabic official language english lingua franca retail service staff foreigner speak arabic fastest growing city world worker continue pour help build developing economy fairly liberal standard islamic world rival country alcohol pork legal non muslim foreign resident non muslim women required wear hijab dressing skimpy outfit illegal said absolute monarchy criticising emir crime homosexuality crime carry death penalty actively enforced gay discreet possible youve visited assured today couple ago read mohanalakshmi rajakumar dune dior written resident indian american collection insightful essay life expatriate mohanalakshmi rajakumar love come later set novel examine qatari culture young qataris challenging status quo book banned qatari ministry culture museum national museum museum islamic art museum modern art single ticket alternatively museum islamic arts flagship museum housed building designed pei museum host artefact muslim dynasty asia europe present item thani dynasty art part middle gloriously air conditioned cafe gift shop permanent exhibition floor temporary exhibition ground floor museum building dress appropriately hourly shuttle service provide transportation mia mathaf driving museum minute mathaf museum modern art specially designed building housing collection modern art world based personal collection amassed hamad bin khalifa thani museum host occasional exhibit featuring internationally recognized contemporary artist hourly shuttle service provide transportation mia mathaf shuttle driving museum minute national museum opened early original museum housed early century palace extension construction designed architect jean nouvel inspired desert sand rose extension original palace viewed outside orientalist museum orientalist collection state significant collection assembled world approximate painting water colour drawing print trace orientalism early century museum close sporadically difficult appointment postal stamp museum established museum exhibit stamp country faisal bin qassim museum bay branch extension faisal bin qassim museum shahaniyah branch display carpet middle country furniture domestic object gulf region eventually planned collection accessible appointment vcuqatar vcuqatar exhibition change month campus education everyone sign reception ongoing building work education nightmare mathaf tram running easy side trip msheireb museum collection historic house downtown district msheireb mohammed bin jassim house company house bin jelmood house radwani house feature exhibit msheireb community traditional qatari family life history oil industry slavery exploitation firestation artist residence art supply store cafe site cultural heritage koot fort built ottoman period white fort parking souq waqif built fort outskirt ethnographic museum building undergoing renovation photo fanar islamic cultural easily spotted corniche distinctive spiral minaret aims educate non muslim islam offering arabic class art calligraphy exhibit conduct weekly tour mosque followed traditional dinner abaya provided women registration required host weekly coffee morning presentation qatari culture lifestyle registration required clock tower grand mosque old clock tower feature arabic numeral face tower hill wonderful view corniche windtower house last traditional windtower windtower air conditioning functioning sucking cool air house house public viewed outside souq waqif souq waqif renovated arabic market quarter easily wander maze corridor souq organized sold section spice shop another textile quarter falcon sale stable arabian horse far falcon camel kept koot fort parking look souvenir sit smoke sheesha enjoy food restaurant bordering traditionally dressed qatari police occasionally patrol souq morning mounted camel evening horseback souq completely rebuilt site older souq therefore feel somewhat artificial local particularly weekend msheireb enrichment museum photograph artifact illustrating historic development fishing modern exhibit sponsored developer msheireb project souq waqif heritage library book arabic language middle together antique maps manuscript original photograph form arabian islamic heritage library another initiative sheikha mozah bint nasser missned foundation largest research centre middle based collection started hassan bin mohamed thani tour collection offered twice sunday tuesday appointment required national library opened building designed renowned dutch architect rem koolhaa virginia commonwealth university vcu campus education regularly host visiting exhibition work faculty member student occasion general public collection manuscript foreign language section dating century century book art politic heritage village building modeled traditional qatari village expect weaving pearl trading dhow traditional boat village ramadan eid special cultural festival najada glimpse older qatari architecture worthwhile wander older neighborhood surrounding souq waqif particularly neighborhood immediate souq notable old villa mosque predate mostly era building given pace redevelopment unclear longer survive explored foot current inhabitant exclusively male immigrant women feel uncomfortable male companion house abdullah bin thani thani traditional qatari home remarkable instead majlis guest reception built traditional material technique fully restored building public viewed outside sight corniche visual highlight corniche seaside promenade curve bay afford pretty view palm tree island skyscraper afternoon plenty local strolling trying odd crazy pat rollerblade jogging cycling prohibited youre looking scenery friday morning highlight corniche informal morning fish market mia museum islamic art water pots fountain giant oyster pearl sculpture dhow harbour traditional wooden dhow giant orry statue mascot asian game bidda park formerly rumeila park opposite corniche outdoor theatre art water feature children play skateboard rollerblading half pipe metro station shop wave coffee shop public toilet katara cultural village building complex designed resemble traditional qatari village air amphitheater opera house drama theater gallery expensive restaurant featuring international cuisine gallery host changing art photography exhibit festival held throughout public beach entry fee watersport activity modest beach attire required women piece suit jazeera studio claim fame jazeera news network broadcast hundred million world studio attraction able contact office ask tour site museum dedicated journalist died field timeline display network history zoo zoo undergoing major renovation refurbishment mia park modern park built reclaimed land afford view bay skyline rent bicycle paddleboat enjoy coffee ice cream cafe promenade monumental sculpture american sculptor richard serra winter mia park bazaar held saturday month offering eclectic mix food arts craft book souvenir calligraffiti mural tunisian graffiti artist seed commissioned museum authority public work authority paint sery scale mural inspired qatari culture project required month complete showcase seed signature style fusing arabic calligraphy street art mural simply driving tunnel miraculous journey sery monumental bronze sculpture depicting stage development fetus gestation newborn british artist damien hirst sculpture commissioned museum authority reportedly paid million medical women hospital ministry interior building massive actually sinister building resembling fort outside drive asian mall activity amphitheatre cricket stadium accommodation catering migrant worker cricket match truly unique experience mall boast cheapest price controversial alleged usage isolate migrant worker broader society defender argue provide needed housing community migrant worker unfortunately considered zone women reputation exciting earth longer variety activity event start tour idea beach maintained private beach owned hotel permit public access fee hotel beach grand hyatt diplomatic club intercontinental sheraton sharq village season fees ranging weekday pass annual family membership additionally katara cultural village operate public beach entry fee private beach swim wear acceptable public beach women dress modestly water short shirt dhow tour evening dhow cruise arranged dhow docked corniche cruise meal entertainment booked tour informal arrangement film institute showcasing wide range international art film dfi host international film festival film screened museum islamic art katara cultural village ticket booked online golf club golf club general public drag racing drag racing promoted qatari government organized racetrack young driver feel crazy driving street fee race car watch regularly scheduled professional race football hosted fifa world cup asia cup men national soccer team dont fixed stadium international played grand prix formula motor racing held losail circuit jungle zone animal themed children attraction indoor theme park kayaking entalek adventure guided sea kayaking trip afield coastal mangrove secluded beach opportunity birdwatching camping conduct guided snorkeling trip rent fully outfitted kayak racing equestrian club horse racing take winter month race scheduled thursday beginning lasting gambling prohibited attendee enter raffle guess winning horse substantial priz cars race showpiece race amir sword held prestigious race world purebred arabian horse club host arabian horse show detail published press sailing regatta sailing academy sailing course range boat hire funboat dinghy foot yacht sheesha typical middle activity afternoon sheesha cafe smoke fruit flavoured tobacco ras naswa non sheraton corniche picturesque old style building reminiscent colour texture grandeur red mughal structure ras naswa outdoor garden serve decent middle food shaqab horse state art horse riding facility equestrian highlighting importance arabian horse detailing history equestrianism aspire park largest park grass tree playground pretty anything want apart pork product alcohol except licence major hotel shopping major leisure pursuit qataris expat price somewhat higher middle prepared bargain aware luxury mall souk schedule family commonly friday weekend public holiday single men theory turned door practice qatari white men allowed issue african non qatari asian men particularly asian native dressing turned souq shopping experience undoubtedly souq market souq waqif referred old souq pick souvenir rub shoulder local restaurant sheesha cafe falcon shop dealer allow handle photograph worth visiting horse stable falcon shop camel koot fort gold souq gold jewellery purity gold strictly regulated sure quality fabric souq comprise neighboring souq ahmed asiery dira choose selection exotic fabric clothing designed tailored specification complete outfit allow week completion omani souq thing spice incense woven basket door vegetable market mall typically mall friday morning evening theyll crowded largest shopping bay modern corniche diverse shopping experience jewellery perfume store entertainment multiplex cinema bowling alley children arcade indoor ice skating rink eating option food court sit restaurant standard mall dated age remain due size ideal finally mall home carrefour hypermarket ezdan mall greatest mall tenant carrefour supermarket shop gate shopping shop mostly luxury good bistro jone grocer hyatt plaza shopping mall smaller plus crowded sized food court children playland called jungle zone lagoona plaza mostly luxury good carrefour grocery store landmark shopping mall focuse mostly clothing jewellery cosmetic carrefour hypermarket grocery mall aforementioned location wish purchase store good villaggio shopping mall aspire mall designed look term architecture home store carrefour food court home style fast food restaurant sit option entertainment canal offering gondola ride ice skating rink cinema screen imax screen mall newer mall outskirt rayyan numerous luxury brand vendome development lusail luxury shopping mall extraordinarily opulent designed based traditional architectural style bookshop availability english language book fairly limited improving shop current title regional travel guide carrefour lulu hypermarket megamart sell international magazine newspaper maps jarir bookstore salwa sell arabic english language book selection international magazine newspaper coffee bar branch education rayyan jadeed virgin megastore stock book magazine arabic english branch landmark mall smaller selection given population diversity variety type cuisine indian thai chinese italian korean course typical middle food muslim country food certified halal zomato restaurant review site talabat common delivery site visiting ramadan keep mind illegal public daylight restaurant hotel permitted serve dine customer period restaurant remain sell takeaway meal non muslim hotel room consume private iftar breaking fast sunset elaborate event local gather communal meal establishment set tent iftar non muslim welcome partake sure advance due popularity muslim country nearly food halal pork served restaurant foreign resident liquor license liquor store run distribution company qdc license american major american fast food chain multiple branch mcdonald kfc hardee arby burger king subway dairy queen pizza pizza hut little caesar pizza inn papa john major shopping centre ramada junction intersection ring salwa rds upscale american chain tgi friday landmark villaggio shopping mall bin omran opposite civil defense suheem bin hamad street sadd applebee chili fuddrucker bennigan ponderosa steakhouse ric kountry kitchen serve classic american breakfast real bacon pork sausage yellow cab pizza undisputedly pizza surprisingly offered established efficient filipino operation barbequed chicken pizza particularly tasty delivery pick asian noodle house southeast asian style dish portion taste prawn cracker particularly delivery oishi sushi decent sushi sushi train monday tuesday evening reservation recommended royal bafilyon cantonese restaurant favorite chinese singaporean expat community garden favoured chinese expat thai corner tiny table fantastic thai food weather courtyard thai smile casual delicious thai street food outdoor seating thai snack institution authentic thai street food reasonable price yee hwa restaurant restaurant specialise korean barbecue japanese cuisine sushi european ciao thin crust pizza baked traditional oven selection pasta risotto sandwich cellar british cafe english breakfast yorkshire pudding delivery takeout spaghetto classic italian food prepared italian chef solid greek food outdoor pool side seating indian home indian population indian restaurant excellent indian restaurant scattered throughout aalishan recommended friday afternoon buffet zarka asian worker qataris menu feature primarily indian arabian dish anjappar chettinad vegetarian value thali set menu bukhara delicious indian cuisine especially fish tandoori chicken vindaloo chingari expensive indian food live indian music stage garden annapoorna serve indian dish garden village restaurant recommended ambience indian village model interior spice sizzle luxurious pakistani indian asian restaurant middle shami home restaurant institution featuring traditional syrian lebanese dish sheesha hamra family restaurant offering lebanese dish service bit slow group mourjan upscale tasty lebanese dish view ankara pastry restaurant pastry shwarma turkish expat sultan schwarma layali expensive lebanese restaurant rumored former emir eaten occasion shebestan palace restaurant persian food cheap middle fare portion mixed grill shish tawooq appetizer excellent particularly chili labneh delivery shay shoomo breakfast spot serve traditional qatari cuisine street food nothing beat home goodness dished pancake lady souq waqif evening square car park crepe mankouche particularly tasty filled choice labneh cheese zaatar traditional nutella specialty feature meat chicken fish couple vegetarian option restaurant souq waqif worth trying tagine moroccan gourmet particularly sheesha cup tea inexpensive pancake lady ambiance watching parisa excellent persian cuisine unique surrounding booking advised seafood fish qataris cheap fish dish grilled hammour garlic butter recommended home delivery fish market fish upscale price reservation recommended particularly friday brunch lwzaar seafood market selection seafood view reservation recommended grocery store self catering option hypermarket smaller neighborhood grocery store distributed throughout carrefour chain hypermarket landmark mall villaggio mall mall smaller grocery store lagoona plaza family food branch matar mirqab jadeed rayyan lulu uae based chain operate hypermarket ring airport gharrafa landmark mall smaller express store education branch opened messila mega mart expat import product america europe expensive coffee nearby smaller shop stocking card electronic perfume quality hypermarket tipping tipping restaurant compulsory become fairly standard tip waitstaff despite banned restaurant service charge bill bill service charge feel strike total leave tip table instead alcohol alcohol strictly regulated muslim country bars attached star international hotel bars required identification passport door rarely enforced resident special liquor license purchase alcohol qdc distribution company outskirt importation alcohol strictly disallowed bags scanned ray arrival hamad international airport custom confiscate bottle alcohol issue claim receipt allow pick bottle leave favoured expat crystal lounge waham poolside lounge hotel sky view bar cigale hotel belgian cafe intercontinental bay lagoon trader vic hilton irish harp basement sheraton mall frequent live music tea coffee karak specialty sweet concoction tea evaporated milk stall everywhere drive park car outside honk particularly chapati karak katara cultural village international coffee chain ubiquitous starbuck represented especially shopping mall papparoti branch malaysian cafe chain selection coffee teas special roti buns

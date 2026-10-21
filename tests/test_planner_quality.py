@@ -188,7 +188,7 @@ def test_city_without_any_dinner_restaurant_is_a_warning_not_a_reason_to_empty_d
     report = validate_plan(plan, rome_contract, profile, r, 0.05)
     missing = [v for v in report.violations if "has no dinner" in v.message]
     assert missing and all(v.severity == "warning" for v in missing)
-    _, log = repair(plan, report, PlanKnobs(), r, 0, profile)
+    _, log = repair(plan, report, PlanKnobs(), r, profile)
     assert not [m for m in log if m.startswith("Freed up time")]
 
 
@@ -198,7 +198,7 @@ def test_repair_frees_one_stop_per_crowded_day_and_never_empties_an_empty_one(ro
                           DayPlan(day=4, date=d0 + timedelta(days=1), title="Free", activity_count=0)])
     errs = [Violation(check="schedule", severity="error", day=day, message=f"Day {day} has no {m} planned.")
             for day in (3, 4) for m in ("lunch", "dinner")]
-    knobs, log = repair(plan, ValidationReport(result="FAIL", violations=errs), PlanKnobs(), rome_research, 0, profile)
+    knobs, log = repair(plan, ValidationReport(result="FAIL", violations=errs), PlanKnobs(), rome_research, profile)
     # A missing lunch and a missing dinner are one crowded day: one stop less, not two.
     assert knobs.day_capacity_override == {3: 2}
     assert log == ["Freed up time on day 3 to keep the schedule feasible."]

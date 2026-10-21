@@ -2,11 +2,12 @@ Petra, Jordan
 Labels: history, adventure | Split: test
 Source: https://en.wikivoyage.org/wiki/Petra (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (11,450 characters) =====
+===== CLEANED GUIDE TEXT (11,458 characters) =====
 
 Petra (Arabic: , Al-Batrāʾ), the fabled "rose red city, half as old as time", is a well known ancient Nabataean city in the south of Jordan. Due to its breathtaking grandeur and fabulous ruins, Petra was recognised as a World Heritage Site by UNESCO in 1985.
 
 Understand
+
 Petra was the impressive capital of the Nabataean Kingdom from around the 6th century BC. The kingdom was absorbed into the Roman Empire in AD 106 and the Romans continued to expand the city. An important center for trade and commerce, Petra continued to flourish until a catastrophic earthquake destroyed buildings and crippled vital water management systems around AD 663. After Saladin's conquest of the Middle East in 1189, Petra was abandoned and the memory of it was lost to the West.
 
 The ruins remained hidden to most of the world until the Swiss explorer, Johann Ludwig Burckhardt, disguised as an Arab scholar, infiltrated the Bedouin-occupied city in 1812. Burckhardt's accounts of his travels inspired other Western explorers and historians to discover the ancient city further. The most famous of these was David Roberts, a Scottish artist who created a number of accurate and detailed illustrations of the city in 1839.
@@ -16,6 +17,7 @@ The first real excavations of the site were in 1929 after the forming of Trans-J
 Petra is the archaeological site and Wadi Musa is the city nearby.
 
 See
+
  
 
  
@@ -63,6 +65,7 @@ Petra Museum. A small museum with lots of great info and artifacts about Petra.
 
 Do
 
+
  
 For the terminally energetic, there are a number of popular hikes around Petra. Most hikes last about 1-3&nbsp;hr round-trip.
 
@@ -78,6 +81,7 @@ Mountain of Aaron. This is the highest peak in the area. At the top you will fin
 
 
 Buy
+
 Throughout Petra, vendors will offer bottles of decorative sand art (small ones about 1&nbsp;JD bigger ones up to 6&nbsp;JD). While they may appear similar to other such souvenirs found in other Jordanian locations, these are unique in that the sand used to create the art is naturally colored sand scraped from the rock walls of various Petra canyons and not artificially colored. The most common design displays a camel's silhouette against a desert background. Some artists can write a name inside the sand bottle in a surprisingly short amount of time.
 
 Bracelets, necklaces and rings are sold frequently by vendors walking around and presenting their goods. Offers vary extremely in price and often salespersons claim that they are made out of silver, even though they are not (1-5&nbsp;JD is a fair price for most of the offered goods).
@@ -88,11 +92,14 @@ Souvenirs in Petra/Wadi Musa often cost twice or three times the price demanded 
 
 Ancient coin, mister?
 
+
 The Bedouin tradesmen around the area will display artificial "ancient" Roman or Nabatean coins which are rather large in size. If pressed further, they will generally have a hidden stash of small, authentic coins from various periods. However buying these coins encourages the illegal looting of archaeological sites. To supply you with a souvenir the local inhabitants destroy graves, tombs and buildings in searches for coins and other antiquities. The Antiquities Law of 1988 states that individuals who engage in illicit excavations and/or trading in antiquities are criminals.
 
 Eat & drink
+
  
 Petra
+
 There is only one restaurant in all of the Petra site, at the far end of the Roman Highway. It's operated by Crowne Plaza, and it does a roaring trade despite steep pricing.  It also has the valley's monopoly on beer (6.5 JD for a 300 ml can, Oct 2018).
 
 For just snacks and hot & cold drinks however, there are small stores and vendors scattered throughout Petra.  You can also bring your own food and drinks with you.  Some hotels will sell you a boxed lunch if you ask in advance.
@@ -104,6 +111,7 @@ Shade is sparse in Petra, and on a hot summer day you can expect to go through a
 There are several bathrooms along the Main Trail with running water.
 
 Wadi Musa
+
 * 
 Al-Janoub Sweets. Delicious sweets beyond the ordinary stuff sold by many shops around the country. Baklava filled with cheese or pudding, other sweety warm rolls and nuts and almonds specialities.
 
@@ -120,6 +128,6 @@ Wrangler Bar. Cosy bar with alcoholic drinks and oldies but goodies music.
 * Si Wan restaurant has some good local food with fair prices. Also, there's a good and cheap bakery near it.
 * Mountain Pub (at Hidab Hotel). Traditional wood bar with alcoholic beverages, hot and cold drinks, and snacks.
 
-===== TOKENS THE MODEL TRAINS ON (777) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (777) =====
 
 arabic batra fabled rose red half old ancient nabataean due breathtaking grandeur fabulous ruin recognised world heritage site unesco impressive capital nabataean century absorbed roman empire roman continued expand important trade commerce continued flourish catastrophic earthquake destroyed building crippled vital water management system saladin conquest middle abandoned memory lost ruin remained hidden world swiss explorer johann ludwig burckhardt disguised scholar infiltrated bedouin occupied burckhardt account travel inspired explorer historian discover ancient famous david robert artist created accurate detailed illustration real excavation site forming tran become far largest attraction partially due exposure steven spielberg movie indiana jone last crusade due fantastic engineering accomplishment fact preserved archaeological site chosen wonder world archaeological site musa nearby guide hired nbsp depending want born raised gladly share knowledge major hotel rent portable easyguide audio guide nbsp commentary english arabic spanish easyguide mobile phone service jordanian mobile phone network map needed service siq entrance winding sandstone canyon nbsp minor carving spotted throughout siq impressive sight colorful unusual sandstone pattern rock wall remain terracotta pipe built side canyon roman time carry water treasury exiting siq view jaw dropping grandeur sure note urn atop treasury structure rumored urn contained pharaoh hidden treasure urn bear bullet pock mark bedouin traveller throughout tested theory park open depending season treasury fewer vendor street facade past bend called outer siq canyon lined facade tomb nabatean theatre street facade seat roman theater theater created nabatean later enlarged roman occasional performance royal tomb side valley opposite roman theater short walk hill tomb given grand scale compared unclear tomb built byzantine church temple monastery largest carved monument date century interior treasury underwhelming comparison facade step monastery hour donkey walk climb minute desert view follow track monastery reach camp offering tea stuff sell view desert night happen monday wednesday thursday entrance fee nbsp pass order ticket hotel site approach treasury site lit candle musician play min bedouin music youll served tea paper cups sit mats treasury become far impressive already walked treasury daytime amazing nighttime mixed review princess alia clinic brooke hospital animal inside entrance park witness inside donkey horse camel treated overworked carrying overweight excessively whipped brooke charity educate owner treatment equestrian working animal treat animal clinic happy tell condition working animal give donation clinic musa doesnt touristic attraction except panorama uphill museum museum info artifact terminally energetic hike hike last nbsp round trip order spend siq treasury monastery another muthlim treasury jebel khubtha sacrifice enter muthlim turn immediately siq aqueduct tunnel wueira fort return possible route due excess water recommended route guide tomb staircase last tomb side royal tomb lead staircase mountain give view track camp giving view treasury sacrifice site mountain contain elaborate rock altar sacrifice view beautiful scenery cold windy trek side mountain reveal interesting tomb carving missed average round trip generally take nbsp route clear start ask openstreetmap identify track direct track treasury harder official staircase clearly visible treasury mountain aaron highest peak church tomb aaron brother mose route past monastery depending chosen path throughout vendor bottle decorative sand art ones nbsp bigger ones nbsp appear similar souvenir jordanian location unique sand create art naturally colored sand scraped rock wall canyon artificially colored common design display camel silhouette desert background artist write inside sand bottle surprisingly short amount bracelet necklace ring sold frequently vendor walking presenting good vary extremely price salesperson claim silver nbsp fair price offered good fruit vegetable market minibus station musa souvenir musa cost twice time price demanded rest rest shopping ancient coin mister bedouin tradesmen display artificial ancient roman nabatean coin size pressed generally hidden stash authentic coin period buying coin encourage illegal looting archaeological site supply souvenir inhabitant destroy grave tomb building search coin antiquity antiquity law individual engage illicit excavation trading antiquity criminal restaurant site far roman highway operated crowne plaza roaring trade despite steep pricing valley monopoly beer snack hot cold drink store vendor scattered throughout bring food drink hotel sell boxed lunch ask advance shop powered petrol follow electrical cable slope old tomb generator running create sound air pollution old cave tomb become thick soot desecrating beauty please dont vendor shade sparse hot summer expect water afford carry water winter month water shop price bottle cost nbsp soft drink cost warm spring summer freeze bottle youll carrying cooling system cold water later bathroom trail running water musa janoub sweet delicious sweet beyond ordinary stuff sold shop country baklava filled cheese pudding sweety warm roll nuts almond speciality restaurant reasonably priced server extremely friendly cleopetra wrangler bar cosy bar alcoholic drink oldy goody music valentine inn sell alcoholic beverage famous local wan restaurant food fair price cheap bakery mountain pub hidab hotel traditional wood bar alcoholic beverage hot cold drink snack

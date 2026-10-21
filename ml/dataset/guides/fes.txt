@@ -2,11 +2,12 @@ Fes, Morocco
 Labels: history, culture, shopping | Split: validation
 Source: https://en.wikivoyage.org/wiki/Fes (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (14,997 characters) =====
+===== CLEANED GUIDE TEXT (15,006 characters) =====
 
 Fez (فاس) (French: "Fès") is a city in Morocco that is famous for being home to the world's oldest university (Qarawiyyin University), dating to 859, and the world's oldest continuously-operating library, dating to 1359. It has an ancient World Heritage listed walled city, which many compare to the walled city of Jerusalem.
 
 Understand
+
 
  
 Fez is the medieval capital of Morocco, and a great city of high Islamic civilization. Fez has the best-preserved old city in the Arab world, the sprawling, labyrinthine medina of Fes el-Bali, which is incidentally also the world's largest car-free urban zone. Transport of goods is provided by donkeys, carriages, and motorbikes.
@@ -14,6 +15,7 @@ Fez is the medieval capital of Morocco, and a great city of high Islamic civiliz
 The city has just over 1 million inhabitants.
 
 See
+
  
  
 
@@ -72,6 +74,7 @@ Cherratine Madrasa. The last major madrasa built in the medina, dating from 1670
 
 
 Do
+
 One of the most fascinating activities to do in Fez is a trip in the medina (Old City). The medina is so complex to navigate that sometimes it is easier to simply lose yourself in the hustle and bustle of the various markets, and find your way out once you have had enough of all the sights, sounds, and smells that will overwhelm your senses. You will eventually find your way out via lots of dried fruit, leather goods, ceramics, textiles and food stalls!
 
 Get a shave in the medina, nowhere is it cheaper than here, and they really pay attention, even trimming your hair.
@@ -87,6 +90,7 @@ Fez Stadium. This multi-use stadium is primarily used for soccer. Its two home t
  
 
 Buy
+
  
  
 Some may consider Fez to be the handicraft capital of Morocco, but in reality the quality and value of its wares can be hit and miss. Leathergoods, copper and brassware are the bargains, although you may also find good prices on drums and other musical instruments.
@@ -108,9 +112,11 @@ Zellige Backsplash Atelier. A specialized workshop dedicated to authentic Morocc
 
 Eat
 
+
 The markets near the 'main' gate of Bab Boujeloud (near to Hotel Cascades) are full of yummy food. It is worth just wandering through them, buying random bits of food. Street food is very cheap and is often safe. Restaurants, even cheap ones, will often be up to twice the cost of street food, and the quality can be the same. In the medina it is difficult to find cheap food other than in the Bab Boujeloud area. There are only a very few tourist restaurants where you will get ripped off and some food stalls down in the food market near the R'cif place.
 
 Budget
+
 
 * 
 Bouanania. Enjoy lunch on the terrace or a leisurely dinner on the carpet-adorned second floor. The service is very friendly and more than willing to fire up the grill to make you the first brochettes of the day. Tagine, couscous, and other staples are well-done.
@@ -126,6 +132,7 @@ Maison Fassi. Great place for traditional Moroccan food. Owner speaks French and
 
 
 Mid-range
+
 *
 Mezzanine. Set over three floors, with an additional outside patio, Mezzanine offers both a cosy lounge bar for a quiet cocktail tapas as well as a comfortable larger seating area for dinners and parties.
 
@@ -146,6 +153,7 @@ San Remo. Fed up with couscous and tajine? Then you could try this Morocco owned
 
 
 Splurge
+
 *
 Dar Saada Restaurant. A favorite of Travel and Leisure magazine and is worth the indulgence.
 
@@ -154,6 +162,7 @@ L'Ambre. An elegant and superior dining experience in all of Morocco. Serving up
 
 
 Drink
+
 Almost all drinking establishments in Fez are hotel bars. The rest are local bars that women and anyone without a good command of Arabic might be uncomfortable entering. In bars of either type, prostitutes are frequent but mostly ignore western travellers. Fes is a much more traditional town than Casablanca or Marrakesh, and it is illegal to drink in public. Purchasing alcohol or seeming intoxicated are sure to draw stern looks from passersby.
 
 * 
@@ -173,6 +182,6 @@ L'Alcazar Bar. Stylish lounge bar and fumoir feature cocktails, spirits, wines, 
 
 *La Cave at the Centre Commercial Borj Fes. Take a taxi to the Borj shopping centre. Tucked into a small, easily ignored corner near the Carrefour is a small bottle shop called La Cave with a good selection of beer and wine at decent prices.
 
-===== TOKENS THE MODEL TRAINS ON (1,157) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,157) =====
 
 fez famous home world oldest university qarawiyyin university dating world oldest continuously operating library dating ancient world heritage listed walled compare walled jerusalem fez medieval capital islamic civilization fez preserved old world sprawling labyrinthine medina incidentally world largest car urban zone transport good provided donkey carriage motorbike million inhabitant tannery midst maze medina colorful leather dying pits young boys guide listen want tannery tour appropriate dirham guide chance tannery instead prepared physical abuse trying entrance leather shop view tannery charge balcony expect pressured buying good shop return possible tannery hang entrance someone dirham past entrance wander worker word advice wear shoe maybe bring mint leaf sniff weak stomach tannery medina feature leather making technique unchanged middle ages men walk narrow path huge vats lye colorful dyes water wheel creak leather rinsed building facing tannery covered pelt hanging dry early morning hits tannery stench sets note sidi moussa tannery medina smaller southeast chouara tannery bou inania madrasa breathtaking century religious college example islamic architecture non muslim fez wooden wall elaborately carved geometric pattern arabic calligraphy beautiful minaret courtyard portico functioning mosque separated rest courtyard moat attarine madrasa another former religious college smaller richly decorated bou inania madrasa built marinid sultan uthman said andalusian mosque date inception century completion foundation oldest mosque world mosque renovated expanded time today relatively remaining idrisid era establishment landmark limit non muslim borj nord fortress overlooking old contain armament museum view hill surrounding old spectacular fort house museum arms borj sud fortress counterpart borj nord interior merenid tomb spectacular view medina side short walk uphill bab ftouh merenid tomb ruin century tomb hill excellent panoramic view medina wider olive tree lined hill surrounding peace quiet sanctuary bustle rest citythough occasional tout ruin reconstruction possible bribe worker sneak inside evening moulay idriss shrine tomb fez founder entrance limited muslim view outside door worth hunting quaraouiyine mosque library religious complex evolved century famous learning non muslim cannot enter courtyard prayer hall partly visible mosque doorway door likely friday historic library housed annex side mosque seffarine mosque mausoleum sidi ahmad tijani sidi ahmad tijani founder tijaniyya sufi order born berber family ain madhi algeria died fez age nejjarine museum museum wooden arts craft historic item presented beautiful spacious fondouk museum rooftop cafe dar batha museum former royal palace commissioned alaouite sultan hassan successor abdelaziz century converted museum house exhibition mainly craftsmanship garden synagogue ibn danan synagogue dating century jewish cemetery nearby arent set opening time guardian let dirham give brief tour inside berber pharmacy hundred jars twisted root twig neatly lined wall garden jnan sbil oldest garden created sultan moulay abdallah century feature plant specy rare glaoui palace beautiful run palace unfortunately infrequent opening time dont count accessible cherratine madrasa last major madrasa built medina dating ornate older marinid madrasa larger dormitory upper story visited fascinating activity fez trip medina old medina complex navigate easier simply lose hustle bustle market enough sight sound smell overwhelm sense eventually dried fruit leather good ceramic textile food stall shave medina nowhere cheaper pay attention trimming hair sure opportunity escape bustle street medina rooftop shop restaurant rooftop terrace food section useful tips view particularly spectacular sunset dark sofitel palais jamai terrace terrace incredible view medina willing pay dirham glass tea order access particularly worthwhile coincide call prayer hear multiple minaret terrace football fez stadium multi stadium primarily soccer home team maghreb tier wydad tier stadium opened capacity hosted match cup nation consider fez handicraft capital reality quality value ware hit miss leathergood copper brassware bargain price drum musical instrument rough guide expect pay leather satchel dirham depending quality drum dirham depending size quality dirham size tagine dish plus extra dirham glazed decorated interested cobalt blue ceramic pottery interesting shape clay tagine second bab ftouh dirham taxi trip ask driver les pottery fez factory show process want exhibition bargain hard price seem fixed bargaining life survived century show sign changing moroccan bargain everything except utility dont believe anyone hear tell price regulated souk claim government regulated single genuine government regulated fixed price shop ville nouvelle price posted good decent amazing quality single bored cashier stare incredulously attempt bargain ask hotel manager petit taxi driver artisana product sold artisana directly artist product zellige backsplash atelier specialized workshop dedicated authentic moroccan zellige observe traditional menqach hand chiseling process impact kitchen bath backsplash produce hand glazed tile atla clay market gate bab boujeloud hotel cascade yummy food worth wandering buying random bits food street food cheap safe restaurant cheap ones twice cost street food quality medina difficult cheap food bab boujeloud restaurant ripped food stall food market rcif budget bouanania enjoy lunch terrace leisurely dinner carpet adorned floor service friendly willing fire grill brochette tagine couscous staple kasbah friendly service solid selection inexpensive moroccan staple excellent vegetarian tagine couple lovely terrace overlooking gate side medina comfortable atmospheric chat traveller welcome haven bustle crowded street medina street food allowed terrace pay service medina cafe tasty cosy cafe style restaurant touristy food fine specially boricua deep fried thin dough layer wrapping meat chicken rice filling maison fassi traditional moroccan food owner speak english mid range mezzanine set floor additional outside patio mezzanine cosy lounge bar quiet cocktail tapa comfortable larger seating dinner party cafe clock magnificently restored house turned cafe friendly speak english food excellent ask seated terrace listen call prayer coming minaret bring camera especially chez maimonide home maimonide famous jewish philosopher rabbi restaurant run muslim family live non kosher palais rooftop restaurant carpet shop dar tazi fez pastilla traditional dish stair steep narrow food view worth palais des merinide table dhote menus basic moroccan specialty grand setting mediocre quality fabulous surrounding remo fed couscous tajine owned italian restaurant lovely italian deli numerous pasta pizza dish decent price splurge dar saada restaurant favorite travel leisure magazine worth indulgence lambre elegant superior dining experience serving moroccan cuisine innovative twist food served room spectacular terrace drinking establishment fez hotel bars rest bars women anyone command arabic uncomfortable entering bars type prostitute frequent mostly ignore traveller traditional casablanca marrakesh illegal public purchasing alcohol seeming intoxicated sure draw stern look passersby bar hotel batha rear hotel batha bars lounge comfortable leather chair fireplace definitely stately option rear night club type bar mostly empty rarely restaurant international little easy overlook fact outer window mirrored indication route crowd foreigner expect stare side look serve basic selection beer spaghetti pizza story avoid middle band blasting bad synthesizer arabic music avoid basement unless looking prostitute white souk marche centrale alcohol prefer home brick mortar liquor store side souk vendor inside keep discreet stash thirsty foreigner mezzanine set floor additional outside patio mezzanine cosy lounge bar quiet cocktail tapa comfortable larger seating dinner party fully wifi mezzanine transform lounge fez cosmopolitan dinner music venue resident non stop enjoy cocktail beer wine terrace unique lalcazar bar stylish lounge bar fumoir feature cocktail spirit wine selection cigar cave commercial borj taxi borj shopping tucked easily ignored corner carrefour bottle shop called cave selection beer wine decent price

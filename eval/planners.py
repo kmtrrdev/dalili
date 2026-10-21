@@ -114,7 +114,7 @@ def plan_dalili(sc):
         plan.validation = validate_plan(plan, ctx.contract, ctx.profile, ctx.research, 0.05)
         if plan.validation.result == "PASS":
             break
-        knobs, _ = repair(plan, plan.validation, knobs, ctx.research, i, ctx.profile)
+        knobs, _ = repair(plan, plan.validation, knobs, ctx.research, ctx.profile)
     return plan
 
 

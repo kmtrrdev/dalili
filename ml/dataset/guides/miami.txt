@@ -2,14 +2,16 @@ Miami, United States
 Labels: beach, nightlife | Split: test
 Source: https://en.wikivoyage.org/wiki/Miami (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (11,318 characters) =====
+===== CLEANED GUIDE TEXT (11,317 characters) =====
 
 Miami is a major city in the southeastern United States and the second most populous city in Florida. The Greater Miami  metropolitan area is the largest in the state with an estimated population just under 6.1 million (2021), which makes it the 9th most populous metro area in the United States.
 
 Although tourists generally consider Miami Beach to be part of Miami, it is its own municipality. Miami Beach sits on a barrier island east of Miami and Biscayne Bay. It is home to lots of beach resorts, and is one of the most popular spring break party destinations in the world. This article only covers the city of Miami, not Miami Beach. Some other sights associated with Miami, like the Miami Zoo and the Miami Dolphins football team, are in other suburbs within Miami-Dade County, and two other institutions associated with Miami, the Florida Panthers hockey team and Inter Miami CF soccer team, play home games in Broward County.
 
 Understand
-===History===
+
+History
+
 
 Flagler’s railroad sparked a wave of expansion in areas such as Miami Beach, Homestead and Cutler. Soon after the railroad was built, the Overseas Highway was created. This highway connected the Florida Keys to the mainland. Growth and progress in Miami continued through World War I and into the mid-1920s.
 
@@ -20,13 +22,17 @@ When a German U-boat sank a US tanker off Florida’s coast, the majority of Sou
 Following the Cuban revolution, Miami has become a haven for Cuban immigrants. The city has also been the base for cocaine smuggling, as depicted in the 1983 film Scarface, the Miami Vice TV series and the 2002 video game Grand Theft Auto: Vice City.
 
 See
+
  
 
 Do
-===Beaches===
+
+Beaches
+
 Of course, if you're in Miami, you'll want to spend some time on the beach. The only beach inside Miami city limits is Virginia Beach. However, there are many other beaches nearby in South Florida, from Tequesta all the way to Key West. As Miami has pretty temperate weather, the beaches will be active all year round, but the water will usually be too cold for locals to swim in during winter. The city of Miami Beach is closest to Miami, on a barrier island across Biscayne Bay, and is most famous for its South Beach party scene. Topless sunbathing is allowed in Miami Beach, and if you want to take it all off, go to Haulover Beach in North Beach.
 
 Sports
+
 The Miami Marlins (baseball) play in the Little Havana neighborhood, while the Miami Heat (basketball) play in Downtown Miami. Three other major league teams play in the suburbs of Miami - the Miami Dolphins (American football) in Miami Gardens, and the Florida Panthers (hockey) and Inter Miami CF (soccer) in Broward County. Inter plans to open a new stadium near Miami International Airport in 2026.
 
 The Miami area also has three major college sports programs. The Miami Hurricanes (University of Miami) play most sports at the university's campus in Coral Gables, but the football team plays at the Dolphins' stadium in Miami Gardens. The FIU Panthers (Florida International University) are located in the unincorporated area of University Park just to the west of the Miami city limits, and the Florida Atlantic Owls (also FAU Owls; Florida Atlantic University) are in Boca Raton in Palm Beach County.
@@ -36,6 +42,7 @@ Grand Prix: Formula One motor racing is held in May at the Miami International A
 Tennis: Since 2019, Hard Rock Stadium has been the main stadium for the Miami Open, held in late March–early April and one of the biggest events on the ATP (men's) and WTA (women's) tours outside of the four Grand Slam events.
 
 Events
+
 There are very few city-wide events planned during Jul and Aug because of the high temperatures during the summer in Miami.
 
 * 
@@ -55,15 +62,18 @@ King Mango Strut. Held after Christmas, this parade began as a parody of current
 
 
 Buy
+
  
 There are a few shopping malls in the city of Miami, but more spread out across Miami-Dade County, including South Beach.
 
 There is a 7% sales tax in Miami.
 
 Groceries and other basics
+
 The major supermarket chains in Miami are Publix, Walmart, Winn Dixie, Sedanos, Fresco Y Más, and Aldi. In addition many specialty and organic supermarkets such as Whole Foods Market, Trader Joe's, and Fresh Market can also be found in Miami.
 
 Eat
+
  
 
 Foodies and chefs alike herald Miami for its unique American cuisine. Created in the 1990s, the cuisine alternatively known as New World, Nuevo Latino or Florribean cuisine blends local produce, Latin American and Caribbean culinary tradition and the technical skills required in European cooking. Nuevo Latino is said to be the brainchild of four chefs: Allen Susser, Norman Van Aken, Mark Militello and Douglas Rodriguez. All of them still work in Miami and most of them work at the restaurants they created in the 1990s. New World is not restricted to these chefs’ menus. This cuisine influences several restaurants around the city to this day.
@@ -83,9 +93,10 @@ Whatever you're craving, Miami's got it—with the exception of decent Chinese f
 There are several Peruvian restaurants at SW 88th Street and SW 137th Avenue in Kendale Lakes. Take the 88 or 288 buses from Dadeland North train station. This is kind of out of the way, but it is worth it.
 
 Drink
+
  
 Nightlife in Miami consists of upscale hotel clubs, independent bars frequented by locals (including sports bars) and nightclubs. Most hotel bars and independent bars turn the other cheek at your physical appearance, but you have to dress to impress (which does not mean dress like a stripper) to get into a nightclub. Also remember to never, under any circumstances, insult the doormen and/or nightclub employees that will grant you entry or touch the velvet ropes or you may as well be sitting on the opposite side of the clamoring masses trying to get in. Attempting to tip the doormen and claiming that you know employees that work in the nightclubs (unless you actually called and reserved a table or a spot on the VIP list) is also considered an affront. Getting to the club unfashionably early and pushing through the crowd (and not the doormen) also can help make you stand out in the crowd. Finally, most nightclubs won’t admit groups of men unless those men are waiting in front of a gay bar. Bring some women or leave the pack if you’re desperate to get in. And once you get in, remember that the charge to get in these clubs can cost up to $20—cash only (some clubs, however, mercifully have ATMs—that can charge up to $7 for a withdrawal). Popular drinks in Miami include the Cuba Libre and the mojito.
 
-===== TOKENS THE MODEL TRAINS ON (853) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (853) =====
 
 major southeastern populous florida greater metropolitan largest state estimated population million populous metro generally consider beach municipality beach sits barrier island biscayne bay home beach resort spring break party destination world article cover beach sight associated zoo dolphin football team suburb dade county institution associated florida panther hockey team inter soccer team play home game broward county history flagler railroad sparked wave expansion beach homestead cutler soon railroad built oversea highway created highway connected florida keys mainland growth progress continued world war mid devastating hurricane halted miamis growth temporarily put beach recession city support president franklin delano roosevelt deal helped rebuild roosevelt lost life giuseppe zangara attempted assassinate roosevelt came thank support deal german boat sank tanker florida coast majority florida converted military headquarter remainder world war army world war legacy school designed anti boat warfare following cuban revolution become haven cuban immigrant base cocaine smuggling depicted film scarface vice sery video game grand theft auto vice beach course youre youll want spend beach beach inside limit virginia beach beach nearby florida tequesta key pretty temperate weather beach active round water cold local swim winter beach closest barrier island biscayne bay famous beach party scene topless sunbathing allowed beach want haulover beach beach sport marlin baseball play little neighborhood heat basketball play downtown major league team play suburb dolphin american football garden florida panther hockey inter soccer broward county inter plan stadium international airport major college sport program hurricane university play sport university campus coral gable football team play dolphin stadium garden fiu panther florida international university unincorporated university park limit florida atlantic owls fau owls florida atlantic university boca raton palm beach county grand prix formula motor racing held international autodrome temporary street circuit set dolphin home hard rock stadium garden started max verstappen winning grand prix extremely strait strait famous autodrome usa circuit formula annually tennis hard rock stadium stadium held late marchearly biggest event atp men wta women tour outside grand slam event event wide event planned temperature summer ultra music festival street downtown world flock notorious ultra music festival night festival famous djs music industry ticket range festival increase price closer show show sell sure ticket soon possible calle ocho largest hispanic street festival festival feature contest concert food carnival take florida international university entrance carnival calle ocho festival held calle ocho except parking bring car carnaval festival consist event course week late early kiwanis club little little host festival music international food concert sport culinary competition gala upscale latin jazz festival independence wide held skyline illuminated firework birth date key biscayne view firework show bayfront park live music laser show king mango strut held christma parade began parody current event orange bowl parade orange bowl parade unlike famous rose bowl counterpart longer held anymore king mango strut making fun previous folly shopping mall spread dade county beach sale tax grocery basic major supermarket chain publix walmart winn dixie sedano fresco mas aldi addition specialty organic supermarket food market trader joe fresh market foody chef alike herald unique american cuisine created cuisine alternatively world nuevo latino florribean cuisine blend produce latin american caribbean culinary tradition technical skill required european cooking nuevo latino said brainchild chef allen susser norman van aken mark militello dougla rodriguez work work restaurant created world restricted chef menus cuisine influence restaurant latin american cuisine especially cuban cuisine cuisine american country kind restaurant addition stand alone chinese japanese middle italian restaurant cafe steakhouse restaurant operating boutique hotel chain restaurant tgi friday ben jerry nightclub double restaurant throughout restaurant tantra bed pearl restaurant champagne lounge attached nikki beach throughout beach restaurant nightclub grass lounge design district downtown miamis premiere restaurant dont fit budget consider eating restaurant month spice miamis dining scene reflect burgeoning diversity mixing exotic newcomer restaurant standing institution seasoned latin influence hot wind caribbean world cuisine culinary counterpart accompany miamis world symphony provide loose fusion latin asian caribbean flavor utilizing fresh grown ingredient innovative restaurateur chef similarly reel patron floribbean flavored seafood fare keeping true home florida favorite dont fooled plethora super lean model type youre likely posing throughout contrary belief dining sport line skating ocean drive restaurant choose dining become passionate pastime local alike star chef fused californian asian caribbean latin element create world class flavor floribbean think mango chutney splashed fresh swordfish spicy sushi sauce served alongside peruvian ceviche youre craving itwith exception decent chinese food style slice pizza mainlandespecially coral gable recently downtown brickell avenueyou experience fine creative dining pretense peruvian restaurant street avenue kendale buse dadeland train station kind worth nightlife consist upscale hotel club independent bars frequented local sport bars nightclub hotel bars independent bars turn cheek physical appearance dress impress mean dress stripper nightclub remember circumstance insult doormen nightclub employee grant entry touch velvet rope sitting opposite side clamoring mass trying attempting tip doormen claiming know employee work nightclub unless actually called reserved table spot vip list considered affront club unfashionably early pushing crowd doormen help stand crowd finally nightclub wont admit group men unless men waiting front gay bar bring women leave pack youre desperate remember charge club cost cash club mercifully atmsthat charge withdrawal drink libre mojito

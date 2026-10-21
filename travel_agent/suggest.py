@@ -25,6 +25,7 @@ from pydantic import BaseModel
 from . import llm, research
 from .mcp_hub import MCPHub, MCPToolError
 from .providers import ai_fallback
+from .recommender.catalog import INTERESTS  # the same interests the destination model knows
 
 log = logging.getLogger(__name__)
 
@@ -36,8 +37,6 @@ GOOGLE_INTEREST = {"beach": "/m/0b3yr", "culture": "/m/09cmq", "history": "/m/03
 MAX_INTEREST_SEARCHES = 2  # each search costs one SerpApi credit
 MIN_IDEAS = 6  # show at least this many (over-budget ones are marked) so the page is never near-empty
 MIN_TOPIC_RESULTS = 12  # fewer priced interest results than this -> also search the popular list
-INTERESTS = ("beach", "culture", "history", "nature", "ski", "food", "nightlife", "shopping", "relax", "adventure")
-OCCASIONS = ("solo", "couple", "honeymoon", "family", "friends")
 
 
 class IdeaFit(BaseModel):
@@ -218,7 +217,7 @@ async def suggest(hub: MCPHub, budget: float, currency: str, origin: str, travel
     pool = fitting + over[:max(0, MIN_IDEAS - len(fitting))]
     pool += [x for x in out if x["target"] and x not in pool]  # the named city is always shown (marked if over)
 
-    # Hybrid ranking: the model's fit to what was asked now, plus the traveller's long-term taste (Doc2Vec over
+    # Hybrid ranking: the model's fit to what was asked now, plus the traveller's long-term taste (the destination model over
     # their past trips, likes and searches) - each where available, never invented.
     affinity: dict = {}
     if taste is not None:

@@ -2,7 +2,7 @@ Boracay, Philippines
 Labels: beach, nightlife | Split: test
 Source: https://en.wikivoyage.org/wiki/Boracay (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (23,931 characters) =====
+===== CLEANED GUIDE TEXT (23,947 characters) =====
 
 Boracay is a tropical island about an hour's flight from Metro Manila in the Philippines. It has superb long white sand beaches and is one of the country's most developed tourist destinations.
  
@@ -15,12 +15,15 @@ Since reopening in October 2018, there are new rules and regulations, and a limi
 
 Understand
 
+
 Orientation
+
 There are dozens of beaches on the island, and White Beach being the longest and the most popular of them, where all life goes on, it occupies roughly all western part of the island. On the opposite side of the island (eastern) there is a main kitesurfer's beach - Bulabog. Other beaches are much smaller and tranquil. All parts of Boracay are interconnected with the help of the Main Boracay road which runs from South to North through all island.
 
 White Beach is several kilometers long and thus it's divided into three parts (from north to south): Station 1, Station 2, Station 3.
 
 See
+
  
 * 
 White Beach. This is what most people are here for, but there are environmental rules and the beach is a challenge for people with disabilities. It is a lovely stretch of powdery white sand against azure water, it's also the commercial center of the island. The long beach is divided into three sections, Station 1, Station 2, and Station 3. Station 1 is the northernmost and has the widest beachfront, where prime hotels and resorts are located. Accommodations are pricier, but quality is generally the best as well. Station 2 is the commercial and geographical center of white beach. This is the center of it all for shopping, eating, and partying. That said, the beach here is also the most crowded, and the area the nosiest. Station 3 is the southernmost section; quieter than station 2, it is the least developed, and also the lowest priced. All of White Beach from the northernmost tip of Station 1 to the southernmost of Station 3 (~4&nbsp;km) is open to the public, so one can relax and/or swim wherever they like, regardless of hotel location.  In every station, there are two lifeguards patrolling on foot equipped with whistle, life buoy and hand-held radio. The boat station 2 is the lifeguard and rescue command center.
@@ -40,14 +43,18 @@ The Bat Cave. You will see in several tour guides and maps of Boracay something 
 
 
 Do
-===Scuba diving===
+
+Scuba diving
+
 For those interested in scuba diving, there are dozens of dive centers along White Beach. Cost is typically  per dive for certified divers which includes rental of all equipment. The dive centers, under the Boracay Business Administration of Scuba Schools (BBASS), have agreed on standard prices amongst themselves so prices will be the same at all centers. This is to ensure that dive centers could focus on quality and scuba diving safety rather than price wars. There are 25-30 dive sites within 10–20 minutes boat ride from the beach, suitable for beginners up to advanced level. Dives range from 'Angol Point' (10m), through 'Crocodile Island' (22-25m), a straightforward wall dive, up to 'Yapak'- a deep wall dive suitable for only the most experienced divers due to strong currents, although there is the possibility of seeing sharks and stingrays.
 
 Boat tours
+
  
 The best way to see the beauty of Boracay and its various beaches is by Paraw (native outrigger sailboat). You will be constantly asked if you want to take a boat trip, as there are literally dozens of companies offering this service. It is better to go with a reputable and established group such as Allen Fun Tours (motorized banca boat tours) or Red Pirates (paraw sailing) to ensure your safety and avoid being overcharged.
 
 Kiteboarding
+
  
 Boracay's Bulabog beach claims to be the best kitesurfing destination in Asia. The season runs from November through to April with onshore winds varying between 12-30 knots. A small lagoon (2&nbsp;km wide) is protected from waves by a coral reef. The water becomes almost flat at low tide, making it easy to start learning kitesurfing and continue with freestyle tricks. Because of its nice conditions, the spot becomes overcrowded with riders in high season. A serious disadvantage is sewage pollution of the lagoon, so smell from water and infections from even small injuries are common.
 
@@ -65,29 +72,35 @@ Pinas Kite Boarding. Locally owned kite-boarding shop, offers courses from level
 
 
 Skimboarding
+
 Skimboards are available for rent at several places along White Beach. But be sure to hire an expert to teach you the skills; a one-hour lesson from a local rider is usually around .
 
 Massage and spa
 
+
 Budget
+
 * Along White Beach you will be approached frequently by women offering to give you a massage, which they will do on the spot or on a towel laid out on the beach - your choice.
 * A bit more organized, White Beach also has several "Massage Stations": collections of masseurs that have their mats set up. The stations are typically open as long as there are customers around but in general start to shut down just after sunset.
 * For Swedish, Accupressure, Shiatsu, etc., visit Abe (pronounced Abby) the blind masseur who operates outside Cocoloco restaurant in Angol (south of boat station 3). Only  per hour.
 * There is a great outdoor massage station in the beach area of Nigi Nigi Beach Resort, where they have two tables set up. The booth is draped with curtains which they will close if you wish, or leave open if you want to watch the people on the beach. They offer every massage in the book, and charge  for one hour.
 
 Mid-range
+
 * 
 Bella Isa Salon & Spa. A little spot on the beach in Station 3 with upscale decor and professional staff. They provide a full range of services including massage, facials, foot spa, and hair services.
 
 * There are several smaller/mid-range spas in Boracay that offer a menu including massages, scrubs and facials but don't quite have the facilities to be considered a full spa. Most hotels in Boracay offer a limited spa menu that falls into this category.
 
 Splurge
+
 * Caesar's, found along the main road near boat station 3, specializes in Thai massage and uses two masseurs simultaneously to deliver the service. A 90-minute massage is priced at US$50.
 * 
 Tirta SPA. &mdash; found in Sitio Malabunot, Manoc-Manoc, area. Indian treatments in a stunning environment. Friendly and helpful staff. It is a good idea to compare prices between Tirta Spa, Mandala Spa, and Shangri-La Boracay to find the best deal.
 
 
 Other
+
 * 
 Ariel's Point. Ariel’s Point is an affordable eco-adventure destination for Boracay travellers who want to experience the natural splendor of the Philippines and meet fellow travellers. Located 30 minutes away from Station 1 by outrigger boat, Ariel’s Point allows travelers to enjoy a wide array of adventurous activities such as cliff diving (the destination has five different platforms ranging in height from 3 meters to 15 meters), snorkeling, and paddling in an unspoiled setting with volcanic caves, mangrove forests, turquoise coves, and remote beaches. Visitors can reach Ariel’s Point by purchasing tickets at Ariel's House (along the White Beach in front of the Boracay Beach Club) before 11AM on the day of departure.
 
@@ -102,6 +115,7 @@ Horseriding. Horse riding is a fun activity in Boracay. Get off the beaten path 
 
 
 Buy
+
 Along White Beach, especially around Station 2, there is a wide variety of gift shops and boutiques along the beach path. In addition to the crowded stalls that you expect in Asia, Boracay also has several high-end stores including clothing, art and household items. Some places will permit you to haggle, others have a fixed pricing system with price tags. Shop around as prices vary. Outside of White Beach, the shopping becomes sparse or non-existent. D'Mall at Station 2 and D'Talipapa at Station 3, between the main road and White Beach, have many shops. D'Mall is larger but D'Talipapa features a number of shops, vegetable merchants and a large meat market also selling a large selection of live seafood. Prices at D'Talipapa (including those for basic necessities such as milk, vegetables and meat) are about 25% below those of D'Mall.
 
 While walking or laying on the sand, anywhere on Boracay, you'll be approached to buy a variety of items including jewelry made of shells, fresh fruit, ice cream, sunglasses or a nice massage.
@@ -112,11 +126,13 @@ Paulo Collection BodyWear. Variety of beach wear and other souvenir items.
 
 
 Malls and supermarkets
+
 * 
 CityMall Boracay. A new shopping mall with a big Savemore supermarket and many fast food outlets.
 
 
 ATMs
+
 There are about 10 ATMs of the following banks: PNB, Metrobank, BPI, and RCBC, on the entire island for the 16,000 inhabitants plus tourists, and when they run out of cash, they are not refilled until the next business day. On weekends and holidays ATMs might go several days without being refilled. Almost all of them accept Visa, MasterCard, and UnionPay cards. Maximum one time withdrawal is  with compulsory fee for overseas cards of .
 
 Many establishments, including the tricycles, cannot break a bill over , so it pays to always have small bills.
@@ -124,6 +140,7 @@ Many establishments, including the tricycles, cannot break a bill over , so it p
 Foreign money (U.S. dollars, UK pounds, euros, Korean won, Japanese yen, etc.) can be exchanged at several locations around the island. It's worth checking around for the best exchange rate, as all places don't offer the same rate. You're best off heading away from the beach for better rates.
 
 Eat
+
 Because of its wide draw of international travelers, Boracay has a wide variety of places to eat, including a surprising number of bakeries. The majority of the restaurants are located on the White beach and a short pedestrian street called 
 D'Mall. 
 , nearly all of these places are quite expensive (average meal costing ). Cheaper options can be found near D'Talipapa Market, at the 
@@ -133,6 +150,7 @@ D'Mall Palenke.
 As a side note, don't miss the opportunity to enjoy one of the best mangoes in the world. The climate in Philippines is perfect for mangoes, so you always get them mellow and sweet.
 
 Budget
+
 * 
 Kolai Mangyan Fudhaus. Good local cafe serving Filipino cuisine. Excellent value and quality. Good reviews.
 
@@ -142,6 +160,7 @@ Andok's. Andok's, which has 5 locations, sells rotisserie and fried chicken as w
 *Sunset View Restaurant and Hotel, near Station 3, serves a 3-5PM snack buffet (soup, ham and cheese sliders, fried fish, pasta, meatballs, pancit, and macaroons) for ₱189 per person in a relaxed beachfront setting.
 
 Mid-range
+
 
 * 
 D'Talipapa Market. Fresh seafood market with relatively cheap prices. Around the place are a variety of food stores that offer to cook for you. You can buy fresh seafood, etc., right near the stores, then have the stores cook it for you however you like. For example, you can get crabs for  for 1 kg opposed to buying in restaurants that charge  per 100 grams. However, most of the seller are quite pushy and anyone buying needs to be prepared to bargain hard to get a good deal.
@@ -155,6 +174,7 @@ Jammers. Up and running for more than 8 years, amazing burgers, hotdogs, fruit s
 
 
 Splurge
+
 
 * 
 True Food. Offers fiery Indian cuisine that will awaken the tastebuds. The place is cozy with straw mats and over-sized cushions. The staff is polite and very accommodating. For those who enjoy the spicier side of life, try the tandoori chicken.
@@ -219,6 +239,7 @@ Cyma. Excellent food and service at this Greek restaurant. Try the mezedes combi
 
 Coffee shops
 
+
 * 
 Real Coffee. Serves a variety of pancakes, sandwiches, omelettes, baked goods and salads as well as freshly brewed coffee. The mother-and-daughter owners also get repeat customers who have been going there for years. They are also famous for their lemon muffin cupcakes, which are very much in demand.
 
@@ -230,6 +251,7 @@ Jonas Fruitshake.
 
 
 Drink
+
 If you like to party, there are plenty of places to choose from. The livelier bars are situated near Stations 1 and 2. There are plenty of places to party all night! Station 3 has a more laid back and relaxed atmosphere, with small local bars and restaurants popular with backpackers.
 
 * 
@@ -256,6 +278,6 @@ Red Pirates Pub. A native style beach bar (Angol, near boat station 3) with a re
 * 
 Shantal's Resto Bar. Revered, family-owned cantina on the beach with great value homemade food. The menu offers a bit of everything and the friendly staff will go out of their way to make you feel right at home. Has a popular Happy Hour from 2PM-8PM, offers one of the best beachside and sunset views on the island, and bumps a non-stop soundtrack of the best in electronic, hip-hop, R&B/soul, and reggae music.
 
-===== TOKENS THE MODEL TRAINS ON (1,864) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,864) =====
 
 tropical island hour flight metro superb white sand beach country developed destination facility suit level activity facility usual water sport activity sailing wind surfing snorkeling diving jet skiing widely search active pursuit fun doesnt sets nightlife pulsating bars restaurant serving food fun late evening excellent choice anyone want range facility prime tropical pay bet bargain hunter price relatively standard moderate japanese standard lower mediterranean caribbean pacific alternative moalboal cebu province panglao island bohol reopening rule regulation limit allowed island hotel pre booked let boat eating drinking beach smoking fire dancing commercial sandcastle addition chair lounger umbrella allowed beach think carefully disabled elderly want avoid direct sunlight sit beach prepared offered massage boat ride parasailing kite surfing sail boating hair braiding island hopping henna tattoo step beach sidewalk path orientation dozen beach island white beach longest life occupy roughly island opposite side island kitesurfer beach bulabog beach smaller tranquil part interconnected help road runs island white beach kilometer divided part station station station white beach environmental rule beach challenge disability lovely stretch powdery white sand azure water commercial island beach divided section station station station station northernmost widest beachfront prime hotel resort accommodation pricier quality generally station commercial geographical white beach shopping eating partying said beach crowded nosiest station southernmost section quieter station developed lowest priced white beach northernmost tip station southernmost station nbsp public relax swim wherever regardless hotel station lifeguard patrolling foot equipped whistle life buoy hand held radio boat station lifeguard rescue command puka beach quiet stretch white sand tip island puka beach expect tropical island white sand azure water relatively empty local gather puka shell jewelry sold island expect sand coarse white beach water tend little rougher side island quieter similarly fewer servicesthere couple restaurant likely wont problem cold ice cream vendor patrol beach road terminate puka beach therefore youll able hire tricycle minute white beach sure arrange pickup quiet tricycle hanging beach experience puka sailboat banca stop trip spot picnic sure bring trash home baling hai beach quiet little cove diniwid beach enjoy swimming snorkeling dining relaxed peaceful environment fantastic view clifftop restaurant baling hai included stop island boat tour bulabog beach windy kiteboarder jump crazy trick bat cave tour guide maps called bat cave house insectivorous bats larger fruit bats roost tree hillside bunga beach local happy accompany fee tip cave island dirt road guide short hike forest mouth cave drop steep angle mouth cave littered boulder extremely difficult enter walk visible path handrail stone extremely slippery slime bat guano extremely dangerous cave extreme angle air inside cave warm humid addition amount guano difficult breathe additionally snake live inside cave caution taken visiting entering cave bats cave bottom dark unless flashlight dusk wont ceiling cave interesting multiple stalactite nearby another cave called crystal cave stalactite hole opposite site entrance watch sea dare climb pay entry fee cave family owns land addition paying guide visiting cave cost guide rich price bargain scuba diving interested scuba diving dozen dive center white beach cost typically dive certified diver rental equipment dive center business administration scuba school bbass agreed standard price amongst price center ensure dive center focus quality scuba diving safety price wars dive site minute boat ride beach suitable beginner advanced level dive range angol point crocodile island straightforward wall dive yapak deep wall dive suitable experienced diver due strong current possibility seeing shark stingray boat tour beauty beach paraw native outrigger sailboat constantly asked want boat trip literally dozen company offering service reputable established group allen fun tour motorized banca boat tour red pirate paraw sailing ensure safety avoid overcharged kiteboarding bulabog beach claim kitesurfing destination asia season runs onshore wind varying knot lagoon nbsp wide protected wave coral reef water become flat low tide making easy start learning kitesurfing continue freestyle trick condition spot become overcrowded rider season serious disadvantage sewage pollution lagoon smell water infection injury common freestyle academy kitesurfing school lesson beginner advanced instructor iko certified hangin kite island kite lesson beginner advanced instructor iko certified isla kiteboarding school biggest school passionate kitesurfing professional pina kite boarding locally owned kite boarding shop course level instructor iko certified skimboarding skimboard rent white beach sure hire expert teach skill hour lesson rider massage spa budget white beach approached frequently women offering give massage spot towel laid beach choice bit organized white beach massage station collection masseur mats set station typically customer general start shut sunset swedish accupressure shiatsu etc abe pronounced abby blind masseur operate outside cocoloco restaurant angol boat station hour outdoor massage station beach nigi nigi beach resort table set booth draped curtain close wish leave want watch beach massage book charge hour mid range bella isa salon spa little spot beach station upscale decor professional staff provide range service massage facial foot spa hair service smaller mid range spas menu massage scrub facial dont facility considered spa hotel limited spa menu fall category splurge caesar road boat station specializ thai massage uses masseur simultaneously deliver service minute massage priced tirta spa mdash sitio malabunot manoc manoc indian treatment stunning environment friendly helpful staff idea compare price tirta spa mandala spa shangri deal ariel point ariel point affordable eco adventure destination traveller want experience natural splendor meet fellow traveller minute station outrigger boat ariel point allow traveler enjoy wide array adventurous activity cliff diving destination platform ranging height meter meter snorkeling paddling unspoiled setting volcanic cave mangrove forest turquoise cove remote beach reach ariel point purchasing ticket ariel house white beach front beach club departure parasailing parasailing tour island explore quiet beach snorkel site ask crew organize romantic bbq beach fresh grilled seafood cruise sunset experience breathtaking view motorbiking worth hiring motorbike scooter explore island beautiful beach side island snorkeling completely deserted hire couple discount road bit dodgy constructed laugh plunking patch white sand seeing nothing horseriding horse riding fun activity beaten path experience village scenery dont level experience catered ask tricycle horse riding stable white beach especially station wide variety gift shop boutique beach path addition crowded stall expect asia store clothing art household item permit haggle fixed pricing system price tags shop price vary outside white beach shopping become sparse non existent dmall station dtalipapa station road white beach shop dmall larger dtalipapa feature shop vegetable merchant meat market selling selection live seafood price dtalipapa basic necessity milk vegetable meat dmall walking laying sand anywhere youll approached variety item jewelry shell fresh fruit ice cream sunglass massage shell jewelry mdash similar elsewhere world jewelry shell locally shell puka beach paulo collection bodywear variety beach wear souvenir item mall supermarket citymall shopping mall savemore supermarket fast food outlet atms atms following bank pnb metrobank bpi rcbc entire island inhabitant plus run cash refilled business weekend holiday atms refilled accept visa mastercard unionpay card maximum withdrawal compulsory fee oversea card establishment tricycle cannot break bill pays bill foreign money dollar pound euro korean won japanese yen etc exchanged location island worth checking exchange rate dont rate youre heading beach rate wide draw international traveler wide variety surprising bakery majority restaurant white beach short pedestrian street called dmall nearly expensive average meal costing cheaper option dtalipapa market dmall palenke street run parallel dmall half restaurant road side note dont miss opportunity enjoy mangoe world climate perfect mangoe mellow sweet budget kolai mangyan fudhaus cafe serving filipino cuisine excellent value quality review andok andok location sell rotisserie fried chicken favorite filipino dish sunset view restaurant hotel station serve snack buffet soup ham cheese slider fried fish pasta meatball pancit macaroon person relaxed beachfront setting mid range dtalipapa market fresh seafood market relatively cheap price variety food store cook fresh seafood etc store store cook example crab opposed buying restaurant charge gram seller pushy anyone buying need prepared bargain hard deal bamboo bar buffet station serve filipino buffet pineapple juice person relaxed beachfront setting smoke budget eatery dish meat seafood dish omelete excellent sandwich meal cost cooked fresh iced lemon tea rice meal jammer running amazing burger hotdog fruit shake etc negative review say overrated splurge true food fiery indian cuisine awaken tastebud cozy straw mats sized cushion staff polite accommodating enjoy spicier side life tandoori chicken sunny side cafe restaurant breakfast rating rating site lemoni cafe serve variety breakfast lunch light meal service presentation excellent dos mestizo restaurant brainchild respected chef restaurateur binggoy remedio close childhood friend jose ramon valde nieto owner spanish ancestor hence dos mestizo restaurant serve selection excellent tapa station behind aria delicious italian food dont give spicy olive oil bottle side custom pizza sure ask hama japanese restaurant dmall hobbit house friday dining themed dinner friday night buffet seafood grill plus cultural dance show week fire dance heidiland deli plaza dmall phase fully air conditioned european style deli selling kind deli food cheese cold cuts salami yoghurt wine etc locally famous reasonably priced sandwich stuff expensive hobbit tavern food drink live music hobbit house chain draw midget staff valhalla bar restaurant mall refurbished steakhouse varied interesting menu kasbah authentic moroccan cuisine serving exquisite tagine couscous bamboo lounge serve selection chinese food relaxed beachfront setting average review manana serve portion tasty mexican food guacamole avocado season despite menu says average review customer obama grill bar restaurant steak restaurant opened say expensive portion ole spanish tapa specialty beware course enormous tilapia chip beer battered fish chip serve asian style fish dish burger sandwich soup modern airconditioned restaurant tito resto grill serve modern filipino cuisine combine casual comfort home cooked meal relaxed sophistication fine dining drop quick snack delicious meal enjoy live music coming pat creek bom bom bar deparis beach resort european restaurant island fact chocolate mousse italian pizza island electricity early owned infamous eccentric frenchman roger deparis lived island backpacking throwback old island style mismatched decoration heavy foliage cowboy cocina serve tasty steak ribs grilled dish arguably burger cyma excellent food service greek restaurant mezede combination spinach artichoke fondue chicken souvlaki coffee shop real coffee serve variety pancake sandwich omelette baked good salad freshly brewed coffee mother daughter owner repeat customer famous lemon muffin cupcake demand starbuck coffee shop famous chain side extremely cafe seat jona fruitshake party plenty choose livelier bars situated station plenty party night station laid relaxed atmosphere bars restaurant backpacker bom bom bar native style beach bar live music hang artist musician charlie steakhouse diner restaurant bar favorite live band play cover customer invited sing band cocoloco beach resort attractive beach bar restaurant serve tasty food enjoy beach coconut tree pool table bar ago started offering bungalow rent juice bar notch cocktail variety sneaky smoothy wide courtyard opening beach tend fill comfortable crowd mix local foreigner staff charming bartender report bei kurt und magz restaurant run friendly bavarian kurt wife mags spot meet chat island serving draft beer serve german filipino food nigi nigi noos centrally spot cool enjoy little watching manager expat hotel red pirate pub native style beach bar angol boat station relaxed friendly atmosphere selection fruity cocktail affordable ice cold beer meet traveler chat weekend selected weekday moon night live music beach bbq buffet friday shantal resto bar revered family owned cantina beach value homemade food menu bit everything friendly staff feel home happy hour beachside sunset view island bump non stop soundtrack electronic hip hop soul reggae music

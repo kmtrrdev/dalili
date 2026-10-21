@@ -2,11 +2,12 @@ Marseille, France
 Labels: beach, food, culture | Split: test
 Source: https://en.wikivoyage.org/wiki/Marseille (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (22,376 characters) =====
+===== CLEANED GUIDE TEXT (22,398 characters) =====
 
 With 1.6 million people in its urban area (2019), Marseille (Provençal: Marselha) is the second most populated city of France (and third urban area) the biggest Mediterranean port and the economic center of the Provence-Alpes-Côte d'Azur region. In 2013 the city (with its region) was the European Capital of Culture, a large series of cultural events took place, and several new infrastructures were inaugurated.
 
 Understand
+
  
 
 Marseille has a complex history. It was founded by the Phoceans (from the Greek city of Phocea) in 600 BC and is one of the oldest cities in Europe. The town is a far cry from the Cézanne paintings and Provençal clichés of sleepy villages, "pétanque" players and Marcel Pagnol novels. With around one million inhabitants, Marseille is the second largest city in France in terms of population and the largest in terms of area. Its population is a real melting pot of different cultures. It is also said that there are more Comorian people in Marseille than in Comoros! Indeed, the people of Marseille have varying ethnic backgrounds, with a lot of Italians and Spaniards having immigrated to the area after the Second World War.
@@ -20,6 +21,7 @@ Office de Tourisme et des Congrès de Marseille.
 
 
 See
+
  
  
  
@@ -73,6 +75,7 @@ Vallon des Auffes. Small and out of time traditional fishing port, just near the
 Parc Borély. A large and great park containing Château Borély, 300 meters from the sea. After a siesta in the park go have a drink at Escale Borely (a place with numerous restaurants and bars on the beach) to see the sunset.
 
 Museums and places of interest
+
  
  
 * 
@@ -121,6 +124,7 @@ Unité d'Habitation. Designed by Le Corbusier, and one of 17 of his buildings to
 
 
 Outside of town
+
  
 * The Calanques. The Calanques are a series of miniature fjords to the south of Marseille near Cassis. From Marseille these are best accessed from the University campus at Luminy which can be reached by bus #21 departing from Rond Point du Prado opposite the Stade Velodrome or from Vieux Port. The 'fjords' are amazing with wonderful blue sea and spectacular lime stone cliffs. The walk along the coast from Cassis to Marseille is spectacular, it can be done in one day at a fast pace. The trail (GR) is clearly marked (red and white strips). From Luminy, you can turn left to Cassis or right to Callelongue (bus #20 connects you to bus #19, which takes you to  for connections to the centre, or you can use also bus #21, 23). From June to September some of the Calanques can be closed due to high risk of fire. Since 2022, in order to preserve the National Park from erosion due to the large number of visitors, it is now mandatory to make a free reservation to visit Pierres Tombées and Sugiton's calanques during the summer. 
 * There is an app available for Android and iPhone called "Mes Calanques" (App in English) that offers many walks rated by difficulty. The maps are of sufficient quality to assist you in following the marked trails and give you public transport access points and opening information. The App also shows you information about the types of fauna, flora heritage sites you can expect to see. 
@@ -129,6 +133,7 @@ Outside of town
 * L'Estaque and côte bleue L'Estaque is fishing port that is just starting to exploit its tourist potential through its connections to Cézanne. You can get there on the #35 bus from .
 
 Do
+
  
 You can visit the fabulous restaurants and cafes. You can go and do many adventurous things such as diving and hiring boats! The calanques (fjords) between Marseille and La Ciotat are a very popular sports climbing area. And of course, if the weather is fine, you can simply go to the beach!
 
@@ -141,6 +146,7 @@ Cinéma l'Alhambra. Art House Cinema with original 1930s facade out of the city 
 
 
 Events
+
 * The festival Avec le Temps that occurs every spring at the Espace Julien (one of the main concerts halls in town) consists in many concerts of French artists, in many genre (Pop, Chanson, Rock, Folk.)
 * La Fête Bleue, "the Blue Festival" at the end of June. A lot of shows (concerts, movie projections, exhibits) occur in many places in the city, and the theme is the colour blue.
 * La Fête du Panier, at the end of June. During two days, you will be able to see shows, concerts and markets in the oldest area of the town.
@@ -157,6 +163,7 @@ CEPAC Silo. Concert venue/theatre in a former grain silo. The performance space 
 
 
 Beaches
+
  
 Let's be honest, beaches in Marseille are not always great. Moreover, depending on the weather, they can be rather polluted.
 
@@ -166,11 +173,14 @@ There are also good sandy beaches at L'Estaque - take bus #35 from () stop to th
 
 Buy
 
+
 Eat
+
 
 Unsurprisingly, Marseille's cuisine is focused on fish and seafood. Its two flag-bearing specialities being the famous fish broth "bouillabaisse" and "aïoli", a garlic sauce served with vegetables and dried cod.
 
 La Bouillabaisse de Marseille
+
 
 La bouillabaisse is an excellent fish-based soup served with la rouille (a garlic-saffron sauce) and bread similar to crostini. In fact, Bouillabaisse is a 2-course meal: first you get soup from the pot, then you get the rest, i.e. fish.
 
@@ -178,9 +188,11 @@ La bouillabaisse cannot be enjoyed on the cheap. If you are invited to the home 
 
 Budget
 
+
 There are lots of Kebab restaurants along the Canebière. Many cheap, authentic couscous eateries are to be found around the Cours Belsunce, where the local Maghrebic immigrants have their lunch.
 
 Around the Basilique Notre-Dame
+
 
 * 
 Café Cantine. This little place has the best food made fresh onsite! Very kind and friendly staff. Fast service, fresh and good products. Very warm welcome and very good homemade meal.
@@ -202,6 +214,7 @@ Perle d'Asie. A cuisine that makes us rediscover Asian flavors. There is a possi
 
 
 In the city centre
+
 
 * 
 five pizza original. Interesting concept, which is very simple: You create your pizza by choosing all the toppings of your pizza with a lot of choice on an electronic terminal.
@@ -242,6 +255,7 @@ L'Usyne. Small Vietnamese restaurant & tea house. Good choice of veggie dishes.
 
 Mid-range
 
+
 Many affordable restaurants with sunny terraces are to be found on Cours Julien, a pedestrian-only street near the Canebière and the "Plaine".
 
 * 
@@ -264,6 +278,7 @@ Mariposas. Popular and highly regarded Vegan restaurant.
 
 
 Splurge
+
 * 
 Le Glacier du Roi. Perhaps the best ice cream establishment in the city. Yet another member of Gourméditerrannée association.
 
@@ -288,9 +303,11 @@ Le Petit Nice Passédat. A 3-star Michelin restaurant on an idyllic location by 
 
 
 Drink
+
 Lots of new places have opened in Marseille, at night, three main districts are interesting (besides beaches between April and October where people go and spend the night), the Old Port with lots of bars and pubs (particularly on the southern side and on Cours d'Estienne d'Orves, La Plaine/Cours Julien with numerous alternative and underground bars, and La Joliette/J4 with trendy chic new bars and clubs. However La Friche should not be forgotten, particularly during summer when the very large rooftop hosts dj parties for free every Friday and Saturday. For events and concert agenda, see La Nuit Magazine or printed paper Ventilo, particularly during summer as lots of music festivals, boat parties (mini-cruises at night with DJs in the Calanques for €20-40), rooftop parties and concerts take places.
 
 English and Irish pubs
+
 * 
 O'Brady's Irish Pub. 
 
@@ -306,6 +323,7 @@ Red Lion. English pub at La Pointe Rouge, southern Marseille, next to the beach.
 * O'Malleys, 9 Quai de Rive Neuve (less than two minutes away from the aforementioned Shamrock Irish Pub). Often has live music and rugby.
 
 Craft beer
+
 * 
 Le 143 bar à bières. 
 
@@ -326,6 +344,7 @@ Bière Academy. Craft beer bar a few streets away from the old port.
 
 
 Arty bars
+
 *
 Polikarpov. Lively and good value late bar with outside terrace. Does a wide range of cocktails and one of the cheaper places for beer.
 
@@ -339,10 +358,12 @@ Bar des 13 Coins. Next to the Old Port, small bar with terrace which offers a hu
 * le Petit Nice: on La Plaine next to the Cours Julien, nice little cafe.
 
 Theme bars
+
 * Le Barberousse: between the Vieux-Port and l'Opéra, rhum-specialised bar with pirates and boat decoration.
 * Play Bar: small gay bar between the Vieux-Port and Notre Dame de la Garde, rue Breteuil.
 
 Clubs
+
 * 
 Le Trolleybus. This three room cave-like club, is a great place to go if you like to listen to different types of music. One room or cave, plays hit music, another room plays underground techno and house music (room led by La Dame Noir records), and the last room plays jazzy and 1950-60s music. The drink prices range from €5 for a mixed drink or well beer to €10 for more quality alcohol.
 
@@ -355,9 +376,10 @@ Le Baby. The best electronic music club in Marseille. €5 in advance or €10 w
 
 Splurge
 
+
 * 
 Le Palais de la Major. Restaurant and club under the Major cathedral, the place hosts live bands from Corsica playing French and international hits. The place is luxurious and beautiful people fit in.
 
-===== TOKENS THE MODEL TRAINS ON (1,738) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,738) =====
 
 million urban provencal marselha populated urban biggest mediterranean port economic provence alpe cote dazur region region european capital culture sery cultural event took infrastructure inaugurated complex history founded phocean greek phocea oldest city europe far cry cezanne painting provencal clich sleepy village petanque player marcel pagnol novel million inhabitant largest term population largest term population real melting pot culture said comorian comoro indeed varying ethnic background italian spaniard immigrated world war afraid discover real real colourful market noaille market feel calanque natural cliff falling sea calanque mean fjord panier oldest historically newcomer installed vieux port old harbor corniche road sea definitely forget canebiere forget savon soap forget clich ride lestaque les goude forget office tourisme des congre vieux port watching fishermen selling stock auction arriving vieux port summer evening forget watch show frioul island chateau dif late afternoon view harbour palais pharo pharo palace famous canebiere avenue straight harbour canebiere interesting despite reputation basilique notre dame garde church overlook old fishermen boat blessed church boat model hanging church nicest view train vieux port reach church train look board later train port abbey saint victor lhotel ville hall panier panier mean basket historical district characterized narrow steep street office organise guided tour english old saturday begin tour vieux port finish mucem vice versa recommended trail district proposed office cathedral byzantine roman cathedral side panier quarter vieille charite wonderful old monument former charitable housing poor hosting museum exhibition cour belsunce castellane grand fountain column sculpture excellent cinema cafe surrounding another called castellane poor suburb famous footballer zinedine zidane born cour julien hangout bookstore cafe fountain playground ones trendy jean jaure plaine jean jaure close cour julien thursday saturday morning plaine market shop early enough deal youll tombe camion fallen truck says noaille quarter lined arabic indo chinese shop street bazzaar algeria fascinating palais longchamp house musee des beaux arts natural history museum surrounding park parc longchamp listed ministry culture notable garden boulevard longchamp connect fort saint jean fort saint jean fortification old port built louis xiv fort host museum musee des civilisation leurope mediterranee fortification accessible public cost worth walk old fortification stroll park enjoy view old port sea walk hanging bridge museum church saint laurent fort min video show history fort vallon des auffe traditional fishing port parc borely park containing chateau borely meter sea siesta park escale borely numerous restaurant bars beach sunset museum interest musee des civilisation leurope mediterranee national museum outside permanent temporary exhibition architecture mixe contemporary structure dark box old castle footbridge linking part museum musee des beaux arts painting collection work italian spanish flander holland school natural history museum musee cantini museum focusing modern art late century mid late century museum contemporary art mac later work cantini collection situated suburb easily reached metro bus reopened major refurbishment frac provence alpe cote dazur contemporary art building designed architect kengo kuma national network musee des dock romain built preserve archeological find former warehouse old harbour phoenician roman time summer check archaeological museum display egyptian antiquity classical antiquity history museum mhm discover century history archaeology fine arts everyday object architecture mobile app deportation memorial memorial museum relating repression persecution world war run history museum mhm museum decorative arts fashion ceramic chateau borely ground pretty impressive start museum exhibit scattered amongst furniture house motorcycle museum museum former flour mill featuring motorcycle present level bike look press button gate gain admission mazargue war cemetery war cemetery dedicated world war world war martyr ally especially indian chinese gunner runner serene perfect spend sometime thinking laid live give freedom enjoy today corniche walkway road sea provide lovely view sea chateau dif les calanque unite dhabitation designed corbusier building listed world heritage site building called maison fada house foolish local building contain shopping street church children school housing access roof enjoy breathtaking view hill sea bar restaurant hotel floor office guided tour outside calanque calanque sery miniature fjord cassis accessed university campus luminy reached bus departing rond point prado opposite stade velodrome vieux port fjord amazing wonderful blue sea spectacular lime stone cliff walk coast cassis spectacular fast pace trail clearly marked red white strip luminy turn cassis callelongue bus connect bus take connection bus calanque due risk fire order preserve national park erosion due mandatory reservation pierre tombee sugiton calanque summer app android iphone called mes calanque app english walk rated difficulty maps sufficient quality assist following marked trail give public transport access point opening information app show information type fauna flora heritage site expect chateau dif chateau dif built island initially defensive structure later prison famous novel count monte cristo alexandre duma boat leave vieux port allauch plan cuque commune outskirt blessed beautiful countryside metro bus picnic walk hill view mediterranean stunning lestaque cote bleue lestaque fishing port starting exploit potential connection cezanne bus fabulous restaurant cafe adventurous thing diving hiring boat calanque fjord ciotat sport climbing course weather fine simply beach stade velodrome boulevard michelet watch football home olympique play ligue tier football qualify european tournament stadium capacity giniez district metro station rond point prado match ticket online official shop stadium artplexe multi screen cinema showing film combined exhibition space restaurant cinema lalhambra art house cinema original facade show film original language event festival avec temp occur spring espace julien concert hall consist concert artist genre pop chanson rock folk fete bleue blue festival show concert movie projection exhibit occur theme colour blue fete panier able show concert market oldest fdamm festival danse des arts multiple dance festival last summer festival plateau cour julien music festival marsatac occur created ago artist performed example public enemy nouvelle vague deus mogwai peach amon tobin soul laurent garnier aphex twin fiesta des suds dock des suds famous festival dedicated world music attend concert artist asian dub foundation buena vista social club cesaria evora foire aux santon picturesque christma market held late canebiere vieux port provence home santon terracotta figurine nativity scene crech merchant church display impressive crech music music school concert hall diverse musical type cepac silo concert venue theatre former grain silo performance space reconfigurable according type show performed total capacity seat beach let honest beach moreover depending weather polluted beach pointe rouge harbour madrague harbour cleaner nicer slightly crowded sandy beach lestaque bus stop line minute unsurprisingly cuisine focused fish seafood flag bearing speciality famous fish broth bouillabaisse aioli garlic sauce served vegetable dried cod bouillabaisse bouillabaisse excellent fish based soup served rouille garlic saffron sauce bread similar crostini fact bouillabaisse course meal soup pot rest fish bouillabaisse cannot enjoyed cheap invited home someone making bouillabaisse clear cheap bouillabaisse restaurant soupe poisson affordable alternative bouillabaisse advance budget kebab restaurant canebiere cheap authentic couscous eatery cour belsunce maghrebic immigrant lunch basilique notre dame cafe cantine little food fresh onsite kind friendly staff fast service fresh product warm welcome homemade meal sampolo sampolo family dish dessert tasty homemade atmosphere evening brasserie saint victor friendly neighborhood brasserie traditional dish caring fast efficient staff catering excellent wide variety special moon burger quality exceptional product fresh bread homemade meat succulent homemade sauce line staff warm attentive santa pizza pizza pasta hearty topping thin crust tasty ingredient perle dasie cuisine rediscover asian flavor possibility vegetarian spring roll pizza original interesting concept simple create pizza choosing topping pizza choice electronic terminal restaurant palmier tunisian restaurant welcome meal chez tri extraordinary pleasant vietnamese restaurant fresh especially homemade product par azar restaurant libanais lebanese restaurant food homemade fresh terrace pleasant side road school taco super welcoming quality taco exceptionally lheure indian pakanian dish fast food quiet street terrace naan poulet kebab clean comfortable establishment air conditioned room pleasant staff wide variety choice tasty dish sur pouce tasty copious affordable tunisian restaurant cafe lecomotive excellent veggie cafe flower burger multi coloured buns meat house fast food wide choice vegan option poke bowl lusyne vietnamese restaurant tea house choice veggie dish mid range affordable restaurant sunny terrace cour julien pedestrian street canebiere plaine des navette bakery famous navette dry biscuit recipe kept secret century culinary speciality miss bakery boite sardine despite canned fish menu member gourmediterrannee association cercle rouge unusual restaurant excellent corsican tapa figatelli sausage stuffed artichoke panchetta honey red mullet tomato sauce worth booking spot lovely terrace riviera fish restaurant soupe poisson rouille sea food sea view richelieu mariposa highly regarded vegan restaurant splurge glacier roi ice cream establishment another member gourmediterrannee association chez michel bouillabaisse sea food chez fonfon seafood bouillabaisse view lepuisette amazing picturesque vallon des auffe harbour undeniable plus seafood speciality affordable bouillabaisse table fort gastronomical restaurant consistently ranked specialized seafood fish dish petit passedat star michelin restaurant idyllic sea facing island held celebrity chef gerald passedat rank restaurant serve bouillabaisse cost palais classic cuisine quality product historic building chamber commerce old port opened night district interesting beside beach spend night old port bars pubs particularly side cour destienne dorve plaine cour julien numerous alternative underground bars joliette trendy chic bars club friche forgotten particularly summer rooftop host party friday saturday event concert agenda nuit magazine printed paper ventilo particularly summer music festival boat party mini cruise night djs calanque rooftop party concert english irish pubs obrady irish pub shamrock irish pub red lion cour julian pub red lion english pub pointe rouge beach omalley quai rive neuve minute aforementioned shamrock irish pub live music rugby craft beer bar biere beer district beer hall les berthom modern craft beer bar cane biere enormous selection confusingly canebiere brasserie communale microbrewery serving locally brewed beer biere academy craft beer bar street old port arty bars polikarpov lively value late bar outside terrace wide range cocktail cheaper beer marengo panier terrace atmosphere wine cour julien bar terrace house techno djs play bar des coin old port bar terrace huge cocktail petit plaine cour julien little cafe theme bars barberousse vieux port lopera rhum specialised bar pirate boat decoration play bar gay bar vieux port notre dame garde rue breteuil club trolleybus room cave club listen type music room cave play hit music another room play underground techno house music room led dame noir record last room play jazzy music price range mixed beer quality alcohol cosy bar cosy bar club aimed younger demographic multi roomed club play music techno dub step hip hop reggae til cosy bar extravagant theme night moscow beach everyone attire mixed winter wear beach clothe soiree pyjama everyone dressing pajama price night club baby electronic music club advance splurge palais major restaurant club major cathedral host live band corsica playing international hits luxurious beautiful fit

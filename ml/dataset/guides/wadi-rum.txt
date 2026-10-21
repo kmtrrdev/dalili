@@ -2,11 +2,12 @@ Wadi Rum, Jordan
 Labels: nature, adventure | Split: validation
 Source: https://en.wikivoyage.org/wiki/Wadi_Rum (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (6,987 characters) =====
+===== CLEANED GUIDE TEXT (6,991 characters) =====
 
 Wadi Rum is a spectacularly scenic desert valley (wadi in Arabic) in southern Jordan. It is also known as "Valley of the Moon" and inscribed on the UNESCO World Heritage List.
 
 Understand
+
 This area of Jordan is quite isolated and largely inhospitable to settled life. The only permanent inhabitants are several thousand Bedouin nomads and villagers. There is no real infrastructure, leaving the area quite unspoilt. Apart from the Bedouin goat hair tents, the only structures are a few concrete shops and houses and the fort headquarters of the Desert Patrol Corps.
 
 Wadi Rum is less a sandy desert but more a mountain desert. Very good pictures can also be taken from the area north of the Turkish rail track parallel to the road from the Aqaba highway to Wadi Rum. The best time to visit is Spring or Autumn, to avoid the cold winter nights and hot summer days. Photography is most dramatic in Wadi Rum when it is a little clouded, so you can experience the beautiful game of light and shadow in the desert.
@@ -19,6 +20,7 @@ Also see the official site.
  
 
 See
+
  
  
 * 
@@ -59,6 +61,7 @@ Umm Fruth Rock Bridge. A 15-m rock bridge which is featured on many tours and ca
 
 
 Do
+
  
 The genuine attraction of Wadi Rum is the desert itself, best seen by 4x4, on camel or foot. Some visitors only spend a few hours in the Wadi, but it's definitely worth staying overnight in Bedouin camps in the desert and taking a guided trip.
 
@@ -74,6 +77,7 @@ The Distant Heat Festival is held every summer on the last Thursday of July whic
 Hot Air Ballooning is also possible for 100-150&nbsp;JD. Various companies are available, search the Internet or try this one.
 
 Eat & drink
+
  
 * At the entrance to the park, a small tent-restaurant serves simple Jordanian fare of bread, yogurt and such. However, there has been one report of food poisoning here.
 * When you arrive at the Village there are a couple of shops where you can buy water and other soft drinks. Note that almost all the fruit juices are actually labelled as "fruit drinks", with sugar as the main ingredient. You might be able to find some pure fruit juice, such as Tropicana, if you look closely.
@@ -81,6 +85,6 @@ Eat & drink
 * Many camps will provide traditional Bedouin meals. One speciality is chicken or goat cooked under the desert sand, generically known as "zarb" in the same way as we might say "a roast". This has a barbecue flavour, but is very moist and falls off of the bone: try to be nearby when they unearth it as the smell released is gorgeous!
 * You won't be able to avoid the Bedouin tea, which is almost forcibly served in every tent you will visit. It's hot, very sweet and usually flavoured with mint and/or sage. It's surprisingly refreshing on a hot day and you may develop a slight addiction to it.
 
-===== TOKENS THE MODEL TRAINS ON (520) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (520) =====
 
 spectacularly scenic desert valley arabic valley moon inscribed unesco world heritage list isolated largely inhospitable settled life permanent inhabitant thousand bedouin nomad villager real infrastructure leaving unspoilt apart bedouin goat hair tent structure concrete shop house fort headquarter desert patrol corp sandy desert mountain desert picture taken turkish rail track parallel road aqaba highway spring autumn avoid cold winter night hot summer photography dramatic little clouded experience beautiful game light shadow desert lawrence spent significant amount course british inspired revolt ottoman empire world war fans film lawrence familiar landscape sand dune mass soaring cliff sandstone granite mountain jebel arabic recent film transformer revenge fallen stood distinctive reddish orange sand lend otherworldly quality brought science fiction film last mars martian replicate red planet earth producer adaptation frank herbert dune desert planet arrakis bbc documentary face follow british climber pioneered route canyon official site kashaba canyon sandy canyon desert tree guided tour drop walk canyon collected side anfashieh inscription far red sand dune mountain depiction camel caravan nabatean thaumadic period burdah rock bridge highest rock arch protected distance valley multi hour walk close walk bridge jabal kharaz white sandstone natural rock bridge formation span filming setting cave wonder live action adaptation disney film aladdin khazali canyon arguably rums stand alone site narrow canyon contain numerous ancient inscription petroglyphsrock carving animal human lawrence house nobody certain lawrence house story stayed stored weapon current structure built remain nabataean building another beautiful spot desert house bunch rubble impressive climb rock beside lawrence house beautiful viewpoint overlooking valley lawrence spring nbsp village spring short scramblehead fig tree pool largely unprepossessing stagnant puddle view desert truly spectacular mushroom rock standalone rock eroded base form mushroom shape little bridge rock arch accessible easy ascend protected red sand dune white red sand meet commonly visited dune sloping alongside jebel bit tough climb fun run difficult ascending thoseuse step pillar wisdom count remaining opposite side rock impressive rock formation named lawrence booknot umm fruth rock bridge rock bridge featured tour easily scrambled genuine attraction desert camel foot spend definitely worth staying overnight bedouin camp desert taking guided trip quality wheel drive tour depend bedouin driver serve guide knowledge poor english therefore picking guide gate hit miss affair guide rely mainly advance booking guide website arrange tour desert landscape sandstone cliff attraction specific site travelling location highlight tour hiking possible especially colder low season climbing another activity guide trained climber scrambling ancient bedouin route summit another option climbing rewarding simple hike combined climbing abseiling camping peak distant heat festival held summer last thursday feature trance electronic music hot air ballooning possible nbsp company search internet entrance park tent restaurant serve simple jordanian fare bread yogurt report food poisoning arrive village couple shop water soft drink note fruit juice actually labelled fruit drink sugar ingredient able pure fruit juice tropicana look closely village basic cafe falafel coffee basic camp provide traditional bedouin meal speciality chicken goat cooked desert sand generically zarb say roast barbecue flavour moist fall bone nearby unearth smell released gorgeous wont able avoid bedouin tea forcibly served tent hot sweet flavoured mint sage surprisingly refreshing hot develop slight addiction

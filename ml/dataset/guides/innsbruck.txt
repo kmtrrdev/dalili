@@ -2,7 +2,7 @@ Innsbruck, Austria
 Labels: ski, nature, adventure | Split: validation
 Source: https://en.wikivoyage.org/wiki/Innsbruck (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (31,525 characters) =====
+===== CLEANED GUIDE TEXT (31,549 characters) =====
 
 Innsbruck is the fifth-largest city in Austria and the provincial capital of Tyrol, as well as one of the largest cities in the Alps. It is in a valley of the river Inn between mountain ranges of above 2000&nbsp;m above sea level, halfway between Bavaria and northern Italy, and is a hub of a region popular for skiing and other mountain-related activities and a busy tourist destination. Its popularity as a winter sports resort was underscored by its hosting the Winter Olympic Games twice.
 
@@ -10,6 +10,7 @@ Innsbruck offers the traveller an intriguing mix of contemporary and imperialist
 
  
 Understand
+
 
 The first mention of Innsbruck was during the reign of Augustus, when the Romans established the army station Veldidena (the name survives in today's urban district Wilten) at the locality named Oeni Pontum or Oeni Pons, which is Latin for bridge (pons) over the Inn (Oenus), the important crossing point over the Inn river, to protect Via Claudia Augusta, the economically important commercial road from Verona-Brenner-Augsburg.
 
@@ -23,6 +24,7 @@ There are two universities and several colleges in Innsbruck, with over 30,000 s
 Innsbruck has also become one of Austria's most eco-friendly cities, due to a very good public transport system and a partial ban on cars in certain areas of the historic old town.
 
 See
+
  
 
 The Innsbruck-Card offers free entrance to all of Innsbruck's sights, free use of public transportation (including the TS line). It also includes a one-time ascent&descent to Nordkette, Patscherkofel and Axamer Lizum, and a 10% discount to Swarovski Crystal Worlds in nearby Wattens. The Innsbruck-Card is valid for 24/48/72 hours and can be purchased at Innsbruck Information (Burggraben 3), the TI in Hauptbahnhof, and several museums and tourist offices. The latest Innsbruck card fare can be found here. since 1 mRates are €43/€50/€59 for 1/2/3 day cards for adults, and €21.50/€25/€29.50 for children 6-15 years old (2018). And daily or weekly public transport cards are cheap - the "all inclusive" sales pitch is alluring to disoriented travellers, but make sure the discounts are worth the initial price. If you are not seeing these major entrance-fee sites, remember that you may buy more than one daily card at a time, as the 24 hours only starts once validated. Be sure to compare with the price of a weekly ticket too.
@@ -30,6 +32,7 @@ The Innsbruck-Card offers free entrance to all of Innsbruck's sights, free use o
 The bus line Sightseer (TS) connects the major sights in Innsbruck. However, there is always a cheaper public transport line going to the same destination, though it might take you more time.
 
 Churches and cathedrals
+
 *
 Hofkirche. Innsbruck's Hofkirche has the most important emperor's tomb monument (of emperor Maximilian I) in Europe. Especially characteristic are the larger-than-life bronzes ("schwarze Mander") that show members of different dynasties.
 
@@ -46,11 +49,13 @@ Stift Wilten. Premonstratensian monastery with a baroque collegiate church, not 
 
 
 Castles and palaces
+
 *
 Ambras Castle. A castle and palace in Renaissance style that was built in 1563 on behalf of Archduke Ferdinand II of Tyrol in the hills overlooking the city, at an elevation of 587 m above sea level, and served as his private residence from 1563 until his death in 1595. It is widely considered one of the most important Renaissance era buildings of its time in Tyrol, and now among its top tourist attractions. Supplanting an earlier 10th century fortification, the castle became the seat of power for the Counts of Andechs. Hosting Ferdinand's art collection, the castle is considered the oldest museum in the world. Interesting things to see are portrait- and armour collections, art and curiosity cabinets. The Lower Castle is home to armouries featuring numerous masterpieces preserved as evidence of the armourer's art from that era. Only the Renaissance era work has been reserved at its original location, making the Chamber of Art and Curiosities an unrivaled cultural monument. The Spanish Hall will be one of the highlights of any visit, located above the Lower Castle and decorated with a wood-inlay ceiling and walls adorned with 27 portraits of historic Tyrol royals. It remains one of the best examples of German Renaissance architecture. As one of Innsbruck's most popular attractions, waiting lines at the entrance are often long. Try to arrive a bit before it opens at 10:00 to stay ahead of the crowds.
 
 
 Buildings
+
  
 *
 Bergiselschanze. The Bergisel jump is a design by Iraqi architect Zaha Hadid in 2001, replacing the far less glorious jump stadium that hosted the 1964 and 1976 Winter Olympic Games. You can still stand beneath the Olympic rings and flame holder, and either walk 450 steps to the top or take a funicular lift. Because of its design and prominent location (on Bergisel, south of Innsbruck) it is considered a new city landmark. During sporting events, the jumping tower is not accessible, and a ticket is needed to enter the terrain.
@@ -67,6 +72,7 @@ Armoury. Construction of the Armoury between 1500 and 1505 was ordered by Maximi
 
 
 Memorials
+
  
 *
 St. Anna Column. The column, which is made of Tyrolean marble, was created in 1706, in memory of the withdrawal of Bavarian troops.
@@ -76,6 +82,7 @@ Triumphal Arch. It was built in 1765 to mark the marriage of archduke Leopold an
 
 
 Museums
+
 
 A combined ticket for the Tyrolean State Museums is available for €10, or €6 discount, and offers entry to The Ferdinand, Hofkirche, Volkskunst, Zeughaus and Das Tiroler Panorama Museums until the end of the calendar year. The ticket includes a free audio guide (which is worth getting as information is otherwise only in German) at some locations.
 
@@ -124,6 +131,7 @@ Tramway Museum. City transport museum with at least one example of almost every 
 
 
 Parks
+
 *
 Botanical Garden. The garden is operated by the University of Innsbruck and covers an area of 2 ha. It was established around 1911 and replaced an earlier garden, then redesigned after the Second World War from 1948 to 1965. The Alpine rock garden underwent another revision from 1987 to 1990 to update it to the most modern botanical principles. The greenhouses were constructed in 1909, with 3 additional greenhouses added from 1977 to 1979, a succulent house in 1993, and a 6th greenhouse for container plants in 1997. Visitors can view over 5,000 different species in the garden.
 
@@ -135,8 +143,10 @@ Alpenzoo. The alpine zoo is Europe's highest situated zoo (727 m), and is specia
 
 
 Do
+
  
 Winter sports
+
 There are a lot of ski resorts in the mountains surrounding Innsbruck, many of which offer free ski buses from the city center so long as you have ski gear and/or a valid ski pass, making it a great place to base one's self. Discount or combo passes can reduce the costs of skiing or snowboarding. In 2022-2023, a "SKI plus CITY pass" combines winter sports discounts with city sightseeing passes. 
  
 
@@ -176,6 +186,7 @@ Ice skating is a popular winter activity and there are several public outdoor ri
 It's a bit safer and tamer than bobsledding, but it's still plenty fast and exciting...it's called Bobrafting and you can do it on the Olympic bobsled run in Igls.
 
 Games
+
 The Alpine weather can be unpredictable, and with rain likely to fall in every season, having indoor alternatives to outdoor activities is a must when visiting Innsbruck. For those who enjoy puzzles and riddles, there are 11 room escape games to play in the city.
 * 
 Escape Game Innsbruck. Indoor room escape type games, with 5 different scenarios. Each scenario takes 1 hour to complete.
@@ -197,6 +208,7 @@ Casino Innsbruck. Tyrol's largest adult gaming and gambling centre.
 
 
 Nordkettenbahnen
+
  
 The Nordkettenbahnen are 3 alpine vehicles bringing visitors from the historic centre of the city all the way up to the top of the Nordkette mountain, from where the summit at an altitude of 2334 m can be reached by foot. The first section is the Hungerburgbahn , a funicular departing in 
 . 
@@ -225,9 +237,11 @@ Cosmic Radiation Research Station.
 
 
 Spectator sports
+
 * The Tirol Raiders (as of 2015 they bear the sponsored name Swarco Raiders) play American Football in the first division Austrian Football League (that's the actual name). They have been among the top contenders for the championship for most of the 2010s. They played in the big six in 2014 and 2015. The big six is the top American Football competition for club teams in Europe.
 
 Events
+
 
 *  
 Tiroler Abend with the Gundolf Family. For almost half a century this show is visited by travellers and gives good insight on traditional Tyrolean culture— everybody who likes everything stereotypical about the alpine culture will be served the full menu: Yodeling, traditional dances, plays, music and clothing are mixed with typical surroundings.
@@ -240,8 +254,10 @@ Tiroler Abend with the Gundolf Family. For almost half a century this show is vi
 *Note: In the summer season Innsbruck is flooded by tourists from the far east and far west - predominantly older people who are mostly on a European tour - the event calendar adapts to this. The winter season is dominated by younger people, especially students and travellers from all around the world, who provide the city with a vivid nightlife.
 
 Buy
+
 Malls: There are several shopping malls in Innsbruck:
 Inner City
+
 *  
 Rathaus Gallerien. 2 minutes walk from the Old Town, main entrance via Maria-Theresien-Straße
 
@@ -253,6 +269,7 @@ Sillpark. Walk one block, turn right, walk under a railway—and you are looking
 
 
 Outside Downtown
+
 *  
 DEZ. Many stores just right around it, such as Ikea.
 
@@ -267,6 +284,7 @@ Shopping areas: There are numerous shops in central pedestrian areas like Maria-
 Souvenir stores in the Old Town offer souvenirs of varying origin, but the Tiroler Heimatwerk (Meranerstraße 2) offers real Tyrolean handcraft. However most of the shops are real tourist traps and are overpriced by far. You will probably find more authentic and cheaper souvenirs in one of the surrounding villages of Innsbruck.
 
 Clothes and footwear
+
 Buy creative footwear:
 * El Natura Lista in Salamander shop (Maria-Theresien 1; also great choice of Tomy Hilfiger shoes)
 * Think! in Stiefelkater (Marktgraben str. 14, +43 512 583065)
@@ -275,13 +293,16 @@ GEA. "Arts & Crafts" footwear in a funny plain design, not cheap, but very durab
 
 
 For children
+
 *
 Humanic Kids. Also has discounts in early January, with a decent selection.
 
 
 Eat
 
+
 Budget
+
 
 All these are in the city centre:
 
@@ -306,6 +327,7 @@ Piccola casa. The only dürüm in town that is actually spicy, if you order spic
 
 Mid-range
 
+
 *
 Buzzihütte. Traditional cuisine; known for Eiterbeule (identical to Wiener Schnitzel).
 
@@ -323,6 +345,7 @@ Cafe & Pub Hocus Pocus. Small cafe serving a soup and main course for €8.50, o
 
 
 Splurge
+
 * 
 Il Convento. Italian cuisine. Very kind owners. Quality food and professional staff. The black risotto is recommended.
 
@@ -331,6 +354,7 @@ Das Schindler. High—class cuisine with great ambience. The kingfish is tasty.
 
 
 Drink
+
 *
 Zappa Music Bar. Every day of the week has special offers and events. Since it's close to the university, there are a lot of students and you might need to call in and order a table.
 
@@ -346,6 +370,6 @@ The Galway Bay Pub. Authentic Irish pub with two large floors. Pub quizzes every
 *
 Treibhaus. Almost daily events, e.g. concerts, film/tv screenings, comedy shows and dances. Every Friday free concerts. Spacious café with garden, jazz salon and two big event halls. The all-female staff ("Weiberwirtschaft") serves food and snacks (pizza, kebab) in the café till midnight.
 
-===== TOKENS THE MODEL TRAINS ON (2,365) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (2,365) =====
 
 fifth largest provincial capital tyrol largest city alps valley river inn mountain range nbsp sea level halfway bavaria hub region skiing mountain related activity busy destination popularity winter sport resort underscored hosting winter olympic game twice traveller intriguing mix contemporary imperialist history culture architecture variety architectural style waiting discovered street mention reign augustus roman established army station veldidena survive today urban district wilten locality named oeni pontum oeni pons latin bridge pons inn oenus important crossing point inn river protect claudia augusta economically important commercial road verona brenner augsburg capital tyrol century european politic culture emperor maximilian moved imperial court old building middle ages modern time survived heart old sporting opportunity especially alpine sport alps surrounded mountain hosted winter olympic ski resort situated inside territory short distance center snowboard boom derived distinct subculture endured today population skateboarder snowboarder alike therefore average nothing unusual culture celebrated event especially winter season attracting predominantly young world university college student altogether making nightlife lively become eco friendly city due public transport system partial ban cars certain historic old card entrance sight public transportation line ascent descent nordkette patscherkofel axamer lizum discount swarovski crystal world nearby watten card valid purchased information burggraben hauptbahnhof museum office latest card fare mrate card adult children old weekly public transport card cheap inclusive sale pitch alluring disoriented traveller sure discount worth initial price seeing major entrance fee site remember card start validated sure compare price weekly ticket bus line sightseer connect major sight cheaper public transport line destination church cathedral hofkirche hofkirche important emperor tomb monument emperor maximilian europe especially characteristic larger life bronz schwarze mander show member dynasty cathedral jame baroque styled cathedral work luca cranach elder rebuilt damage earthquake according plan johann jakob herkomer johann georg fischer wiltener basilika baroque styled church rokkoko stucco built stift wilten premonstratensian monastery baroque collegiate church far wiltener basilika castle palace ambra castle castle palace renaissance style built behalf archduke ferdinand tyrol hill overlooking elevation sea level served private residence death widely considered important renaissance era building tyrol attraction supplanting earlier century fortification castle seat power count andech hosting ferdinand art collection castle considered oldest museum world interesting thing portrait armour collection art curiosity cabinet lower castle home armoury featuring numerous masterpiece preserved evidence armourer art era renaissance era work reserved original making chamber art curiosity unrivaled cultural monument spanish hall highlight lower castle decorated wood inlay ceiling wall adorned portrait historic tyrol royal remain example german renaissance architecture attraction waiting line entrance arrive bit open stay ahead crowd building bergiselschanze bergisel jump design iraqi architect zaha hadid replacing far glorious jump stadium hosted winter olympic game stand beneath olympic ring flame holder walk step funicular lift design prominent bergisel considered landmark sporting event jumping tower accessible ticket needed enter terrain bergisel sky panorama cafe cafe ski jump view surrounding mountain apfelstrudel apple cake helbling house century house adopted architectural style later century evolved current amalgamation gothic baroque facade rococo stucco decoration look icing cake added early century bows window frame oriel mask sculpture shell building unique architecture help capture maximum sunlight sparse alps last major construction took gigl building renamed sebastian helbling owned armoury construction armoury ordered maximilian strengthen defensive capability illustrated wall entrance gate sill building consist wing narrow gatehouse forming inner courtyard served storage weapon cannon arms training ground guard armoury retained function barrack fall austrian empire tyrolean state sourced fund extensive restoration armoury reopened public tyrolean state history museum branch tyrolean state museum display historical technical collection illustrating history tyrol classic antiquity present summer inner courtyard air cinema concert memorial anna column column tyrolean marble created memory withdrawal bavarian troop triumphal arch built mark marriage archduke leopold spanish princess maria ludovica side display mourning theme occasion franz stephan lothringen museum combined ticket tyrolean state museum discount entry ferdinand hofkirche volkskunst zeughaus das tiroler panorama museum calendar ticket audio guide worth information german location alpinist association museum museum dedicated history alpinism hosted hofburg museum owned operated austrian alpine club oav received numerous priz tyrolean austrian museum priz nominated european museum prize original museum opened former villa isar river side destroyed shelling world war rebuilt reopened current regular exhibition mountaineering related topic collection cover exhibit anatomical museum famous exhibition body world modern version anatomical museum belong university hosted institute anatomy display numerous human specimen skeleton skull model addition jars dissected organ lung heart wet dry sample museum give insight history anatomy development anatomical device aware real body part display suitable young children gramayr bell museum bell foundry existed led gramayr family generation museum unique experience feeling craftsmanship involved generation bell making tradition museum awarded priz austrian museum prize maecena prize imperial palace palace former habsburg palace considered important cultural building hofburg palace schonbrun palace building residential complex habsburg dynasty construction started archduke sigismund medieval fortification rumer gate converted heraldic tower emperor maximilian palace saw numerous expansion century significant alteration empress maria theresia gave baroque outlook palace host themed museum maria theresia room century empress elisabeth apartment century furniture museum ancestral painting museum illustrate aspect political cultural history imperial palace reign habsburg dynasty century tyrol panorama museum construction finished million museum attraction giant panoramic painting transferred building painting depict tyrolean rebellion canva battle tyrolean fought invading bavarian army audio commentary take heart battle imperial hunter museum museum dedicated kaiserjagern imperial hunter emperor franz joseph battalion guard jager hunter german reference light infantry museum opened maintained jager regiment commander oberst knopfler collection feature memorabilia weapon uniform photograph personal belonging former jager garden museum host tomb unknown soldier dedicated jager died world war jager battalion disbanded austrian empire dissolved museum preserved museum hit bomb world war rebuilt expanded chapel room display case containing book name fallen tyrolean soldier recorded maximilianeum museum dedicated emperor maximilian wife significance tyrol living condition early century golden roof famous landmark golden roof late gothic alcove balcony roof decorated fire gilded copper tile built commemorate wedding emperor maximilian bianca maria sforza balcony allowed emperor wife enjoy festival tournament event square jakob hutter founder hutterite sect burnt stake square tower historic tower reaching height climb step fee reach viewing platform reward effort view historic altstadt gothic tower quadrangular substructure consist floor viewing platform sits narrower octagonal structure semicircular bay window dome roof constructed old hall reflect increased self confidence innsbrucker defensive capability watchmen manning tower night documented tower guard took service order council warned townspeople time fire assault danger room ground floor watchmen meeting late middle ages lower tower served prison barred window floor remnant function original gothic tower renovated enhanced rebuilt time notably wrought iron gargoyle added decoration clock added erasmus melchior tiroler landesmuseum ferdinandeum museumstrae scientific collection feldstrae museum zeughaus zeughausgasse folk art museum considered finest regional heritage museum europe hofkirche hofburg collection feature remarkable selection cultural artifact tyrol spread wing former franciscan monastery arcaded renaissance courtyard permanent exhibition handicraft costume household item glass pottery ceramic furniture devoted religious secular folk art architecture museum worth visiting room outfitted wood paneled gothic renaissance baroque style salvaged noble house cable railway museum museum dedicated history cable railway focusing mainly history nordkette cable railway set former classroom museum authentic replica display cable car journey nordkette mountain collection feature picture artifact detailing past present technology involved construction alpine transportation system tramway museum transport museum example type tramcar operate smaller exhibit information minor railway throughout tyrol region housed former workshop stubaitalbahn line fulpme absorbed tramway opening tour vintage tramcar run time possible board alight regular tram stop museum park botanical garden garden operated university cover established replaced earlier garden redesigned world war alpine rock garden underwent another revision update modern botanical principle greenhouse constructed additional greenhouse added succulent house greenhouse container plant view specy garden hofgarten park edge old altstadt covering congress palace imperial palace hofburg tyrolean state theatre initiative park taken archduke ferdinand century completion elaborate garden alps underwent transformation renaissance style garden formal garden english landscape garden garden feature pond playground palm house specy restaurant bars plant park planted austrian empress maria theresa alpenzoo alpine zoo europe highest situated zoo specializing alpine animal animal specy display contain outdoor enclosure terrarium aviary aquarium world biggest collection alpine fish specy barnyard old farm animal race zoo hillside situation certain altitude difference cover founded austrian zoologist hans psenner alpenzoo non profit initiative aimed conservation alpine animal praised effort reintroduce endangered specy bearded vulture alpine ibex bald ibis wild entrance card winter sport ski resort mountain surrounding ski buse ski gear valid ski pass making base self discount combo pass reduce cost skiing snowboarding ski plus pass combine winter sport discount sightseeing pass overview notable ski easily accessible information resort tirol bergfex class wikitable nordpark accessible tram line bus line nordkettenbahn seegrube hafelekar hiking route trip route start nordpark singletrail ambitious mountain bike freeride route europe winter nordpark ski route steep view nearby mountain ascent descent card possible walk hike summit taking cable cars vigorous doesnt require special equipment completely clear hiking patscherkofelbahn accessible bus line destination patscherkofelbahn olympiaexpre tram line igls tram line particularly worth taking beautiful meandering route mountain included zone public transport value hungerburgbahn nordkette patscherkofel skiing region timbered ski runs former olympia route summer region hiking forestline ascent descent card axamer lizum ski resort variety challenging terrain runs terrain piste skiing snowboarding hosted downhill skiing event winter olympic easily accessible ski bus pick hauptbahnof stubaital ski resort winter ice skating winter activity public outdoor rink evening rental skate ask direction nearest eislaufplatz olympiaworld outdoor rink tigl arena ice hockey bit safer tamer bobsledding plenty fast exciting called bobrafting olympic bobsled run igls game alpine weather unpredictable rain likely fall season indoor alternative outdoor activity visiting enjoy puzzle riddle room escape game play escape game indoor room escape type game scenario scenario take hour complete room escape perplexxx indoor room escape type game scenario scenario take hour complete riddle room room escape game scenario healer secret laboratory player contracted mysterious disease bitten rodent tyrolean alps team cure minute secret disposal healer laboratory player game played english german play game indoor room escape game scenario play min game player old player player player player player casino tyrol largest adult gaming gambling nordkettenbahnen nordkettenbahnen alpine vehicle bringing historic nordkette mountain summit altitude reached foot section hungerburgbahn funicular departing middle section seegrubenbahn cable car section hafelekar chairlift buying ticket online code bonalpina give discount ticket nordkettenbahnen hungerburgbahn funicular taking heart hungerburg station foot nordkette mountain section journey underground follow rennweg emerging surface inn metre short proceed elevated track crossing inn bridge final stop tunnel bridge journey take minute covering difference altitude speed funicular replace previous hungerburgbahn operation century hungerburgbahn base station original visited ticket purchased ticket office cheaper online round trip seegrubenbahn seegrubenbahn cable car gondola taking valley station hungerburg nordkette mountain completely reconstructed seegrubenbahn connect hungerburgbahn nordkette ski karwendel nature park hafelekar highest section nordkettenbahn hafelekar chairlift take highest point nordkette mountain hafelekarspitze reached foot approx min halfway summit cosmic radiation research station university amateur radio outpost spectator sport tirol raider bear sponsored swarco raider play american football division austrian football league actual contender championship played american football competition club team europe event tiroler abend gundolf family half century show visited traveller give insight traditional tyrolean culture everybody like everything stereotypical alpine culture served menu yodeling traditional dance play music clothing mixed typical surrounding festival partner festival held summer featuring prominent musician focussing jazz blue gospel style region ski jump contest begisel stadium moment austrian demonstrate true patriotism austrian competitive alpine discipline event follow younger generation air style snowboard contest point snowboarder world compete biggest snowboard event europe event snowboard competition featured straight jump accompanied international band crowd held beginning late spring club pubs participate event sound downtown become network disco shuttle buse circulate bring guest location range international djs play style hafen treibhaus event center downtown little outside concert event party visited young local student traveller note summer season flooded far far predominantly older mostly european tour event calendar adapt winter season dominated younger especially student traveller world provide vivid nightlife mall shopping mall inner rathaus gallerien minute walk old entrance maria theresien strae kaufhaus tyrol shopping mall level inner opposite rathaus gallerien sillpark walk block turn walk railwayand looking major bus tram line outside downtown dez store ikea cyta suburb vols furthermore warehouse especially suburb neu shopping numerous shop pedestrian maria theresien strae old franziskanerplatz sparkassenplatz anichstrae museumstrae shop store quarter center wilten tram line stb pradl tram line souvenir store old souvenir varying origin tiroler heimatwerk meranerstrae real tyrolean handcraft shop real trap overpriced far probably authentic cheaper souvenir surrounding village clothe footwear creative footwear natura lista salamander shop maria theresien choice tomy hilfiger shoe think stiefelkater marktgraben str gea arts craft footwear funny plain design cheap durable anichstrae children humanic kids discount early decent selection budget gasthaus anich real gasthaus tavern austrian cuisine crowded mostly visited local portion separate smoking non smoking magic kebab look american diner populated portion ristorante leonardo vinci italian food veggie risotto tasty culinary point view old pizzeria napoli friendly staff yummy noodle asian restaurant food portion quick service noodle sushi outside look simple diner dont let fool inside cosy simay tasty pizza bread meat vegetable cheese sauce everything vegetarian option tasty kebab shop piccola casa durum actually spicy order spicy garlic soup tasty quickly served tasty veggie durum greasy elsewhere friendly service mid range buzzihutte traditional cuisine eiterbeule identical wiener schnitzel shere punjab indian restaurant portion mamma mia excellent salmon tagliatelli wifi walk floor quiet spacious seating flojo mexican caribbean creole food serving size generous ambiance laidback cafe pub hocus pocus cafe serving soup course course simple food friendly atmosphere board game spend waiting food home ice tea price splurge convento italian cuisine kind owner quality food professional staff black risotto recommended das schindler highclass cuisine ambience kingfish tasty zappa music bar week special event close university student call order table limerick bill irish pub lively crowded student world especially english speaker staff bilingual feel home weekender weekender dance week national international live band indie fans galway bay pub authentic irish pub floor pub quizz monday except summer mic night thursday treibhaus event concert film screening comedy show dance friday concert spacious cafe garden jazz salon event hall female staff weiberwirtschaft serve food snack pizza kebab cafe till midnight

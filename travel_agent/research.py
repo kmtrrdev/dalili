@@ -155,7 +155,7 @@ def _currencies(bundle: ResearchBundle) -> set[str]:
 MAX_PRICE_AGE_YEARS = 3  # a listing price edited longer ago than this is shown as "may have changed"
 
 
-def apply_local_prices(bundle: ResearchBundle, prices: dict, user: str) -> None:
+def apply_local_prices(bundle: ResearchBundle, prices: dict) -> None:
     """Replace estimates with published prices: Wikivoyage entry / restaurant prices (matched by name and
     location) and transport fares quoted from the guide. Records how much of the research is verified."""
     from .config import today
@@ -313,7 +313,7 @@ async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, re
                                       price_type="estimated")
     # Published prices replace the estimates wherever they exist; then the official websites of the likely
     # picks, then AI estimates for what nothing publishes (pricing.py: the full cascade, no SerpApi credits).
-    apply_local_prices(bundle, prices, user)
+    apply_local_prices(bundle, prices)
     from . import pricing
 
     mark("local_prices_fx")

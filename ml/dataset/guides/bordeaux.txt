@@ -2,11 +2,12 @@ Bordeaux, France
 Labels: food, culture | Split: test
 Source: https://en.wikivoyage.org/wiki/Bordeaux (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (13,706 characters) =====
+===== CLEANED GUIDE TEXT (13,717 characters) =====
 
 Bordeaux is a city in the Gironde region of southwest France, standing on the River Garonne. It's the country's fifth largest city, with a population of 259,809 in 2020, and another million living in its associated towns. Bordeaux is famous for its wines and deserves to be equally famous for its magnificent neo-classical waterfront and old town, a UNESCO World Heritage Site.
 
 Understand
+
 
 Bordeaux and the whole province of Aquitaine came under English rule for 300 years from 1154, when Eleanor of Aquitaine married the future King Henry II. The English rulers enjoyed drinking the wines of Bordeaux, but they enjoyed the profits even more – trade with Bordeaux was their largest source of income. Most wine came from the Graves region just upriver from the city, and this was a clear, deep rosé called clairet, still produced today. The English came to call any Bordeaux red wine “claret”.
 
@@ -17,6 +18,7 @@ Bordeaux suffered a human cost in later turmoils: the French Revolution, Napoleo
 Office de Tourisme is the TIC, at 12 Cours du 30 Juillet, southwest corner of Place des Quinconces, tel +33 5 5600 6600. It's open M–Sa 09:00–18:30, Su 09:30–17:00.
 
 See
+
  
 
 * 
@@ -112,11 +114,13 @@ Les Quartiers Modernes Frugès.
 
 Do
 
+
 * National Opera is on Place de la Comédie, 100 m south of Place des Quinconces. As well as opera it hosts ballet and musicals.
 * 
 Jeux Barjo. Bar specialising in board games ancient and modern: you pay for either one long or three short games. Staff assist if you want to try a game you're not familiar with. They also stage tournaments.
 
 Taste wine
+
  
 
  
@@ -128,12 +132,14 @@ The appellation system (AOC) of the Bordeaux area is bewildering, with 50 AOCs i
 You can tour the vineyards independently, but then you need a car, and there's a fraught conversation to be had about who's driving afterwards and how much of a shared holiday experience this is turning out to be. Each area has its own Maison du Vin showcasing local products. Several châteaux are open to drop-in visitors, others are by appointment, ask at the Office de Tourisme. The top châteaux will be snooty if they don't recognise you as a serious buyer: they're fed up with time-wasters seeking a free glug of Grand Cru Kings-Ransom 1896.
 
 Sports
+
  
 * Football: FC Girondins de Bordeaux play football in Ligue 2 the second tier. You should have no difficulty buying tickets on the day. Girondins home ground is Nouveau Stade (or "Matmut Atlantique", capacity 42,000), 10 km north of city centre. Get there on Tram C to Parc des Expositions, or Bus 25 or 37.
 * Rugby union: Union Bordeaux Bègles play in Top 14, the top flight of French rugby. They were formed in 2006 by the merger of Stade Bordelais and Bègles. Their home ground is Stade Chaban-Delmas (capacity 34,400) west of city centre on the inner ring-road. The former Bègles (Andre Moga) stadium is now just a training ground.
 * Ice hockey: Boxers de Bordeaux play in Ligue Magnus, the French top professional league. They play at Meriadeck ice-rink, which also hosts public skating and ice-karting.
 
 Buy
+
 
 Bordeaux has made its wealth out of trade, and the local economic system relies heavily on shops and trading halls. The Pedestrian Centre is full of stores of all kinds, from clothes to art, craftworks, food and wine. For luxury items, head to Gambetta Square and its surroundings.
 
@@ -145,7 +151,9 @@ If you buy wine, do it in town (duty paid) to go in checked baggage; the airport
 
 Eat
 
+
 Budget
+
 
 * 
 Chat Noir Cha Vert. Pleasant place for light bites and views of the basilica.
@@ -165,6 +173,7 @@ L'Autre Petit Bois. Quirky sandwich cafe, generous portions, gets crowded.
 *
 
 Mid-range
+
   
 * 
 Café Populaire. Relaxed restaurant, then it morphs into a dad-dancing arena.
@@ -186,6 +195,7 @@ MAMACAM. Food made with local products. Always vegetarian options.
 
 
 Splurge
+
 * 
 Restaurant Soléna. Outstanding French / Oriental cuisine. The chef is Victor Ostronzec.
 
@@ -197,6 +207,7 @@ L'Estacade. Great food and views in a building jutting over the water on stilts,
 
 
 Drink
+
  
 
 
@@ -219,6 +230,6 @@ Brique House Bordeaux. Originally from Lille this popular Taproom-restaurant is 
 * 
 Space Factory. Craft beer bar
 
-===== TOKENS THE MODEL TRAINS ON (1,081) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,081) =====
 
 gironde region southwest standing river garonne country fifth largest population another million living associated town famous wine deserve equally famous magnificent neo classical waterfront old unesco world heritage site province aquitaine came english rule eleanor aquitaine married future king henry english ruler enjoyed drinking wine enjoyed profit trade largest source income wine came grave region upriver clear deep rose called clairet produced today english came call red wine claret took control aquitaine cut supply england ceased wine turning beer gin caused slump revived century tran atlantic trade prospered century fine building erected provided model baron haussmann century remodelling came eclipse atlantic port bayonne rochelle wealth based triangular slave trade sugar plantation product shipped america caribbean shipped industrial ware whence slave sent work plantation suffered human cost later turmoil revolution napoleonic wars world wars damage building enough repaired needing scale rebuilding century grandeur preserved helped limestone gravel subsoil wouldnt weight rise building credit due mayor former prime minister alain juppe keeping modern intrusion revitalising inner pedestrian precinct revamped transport system office tourisme tic cour juillet southwest corner des quinconce msa des quinconce broad leafy square focus riverbank ornate girondin memorial commemorate guillotined faction lost power struggle montagnard revolution descended reign terror square nowaday transport hub bus tram route pass port moon elegant waterfront crescent centred des quinconce earned unesco citation sublime view opposite riverbank dusk quinconce gambetta upmarket mansion outside former wall porte dijeaux gate madd musee des arts decoratif design cathedrale andre grand church built gothic style trashed revolution restored climb detached bell tower pey berland musee des beaux arts enlightening walk history art start wing runs renaissance flemish master century wing continue major early century art movement exhibition annexe galerie des beaux arts colonel raynal bourse surrounded grand building admire reflection water mirror side boulevard thin skin water warm weather children scamper musee national des douane surprisingly informative museum border control custom smuggler opponent century signage non francophone audioguide parlement elegant pedestrian plaza lined eating eglise saint pierre century flamboyant gothic portal stained glass window gloriously backlit afternoon saint pierre bourse porte cailhau old gate pay euro enter gatehouse limited view porte bourgogne medieval gate present romanesque arch built basilique saint michel flamboyant gothic church built century detached bell tower eglise sainte croix built century benedictine abbey church renovated victoire archway foot rue catherine shopping mall musee daquitaine brilliant museum exhibit old stone age roman time early modern period quinconce chartron riverbank district quartier grand parc inland musee dart contemporain remarkable building entrepot laine huge warehouse food import space given changing exhibition installation price reduced whenever isnt display permanent collection rotate eglise saint louis des chartron stonking century church gothic style rue notre dame contemporary art museum musee vin negoce history old equipment technology wine production region entry fee taste wine grape juice children musee mer marine extensive museum shipping sea base sous marine wartime submarine pens art installation jardin botanique jardin publique started garden medicinal herb present garden date cover original specified jardin publique offshoot garden bastide opened river museum science nature extensive natural history museum floor palais gallien scrappy ruin roman amphitheatre century elsewhere jardin botanique bastide extension botanic garden river parc lermitage pleasant green space strewn trash hermitage dismal crumbling recess villenave dornon suburb mostly modern eglise saint martin century chateau sarcignan mansion derelict chateau sallgourde remain chateau thouare private property park prieure cayac built stopover pilgrimage astride turonensis priory hospital cemetery medieval remedy failed les quartier moderne fruge suburb pessac housing development prototype corbusier idea drew rotten tomatoe quarter condemned live preserved rare surviving example city pleased demolish buse run nearby national opera comedie des quinconce opera host ballet musical jeux barjo bar specialising board game ancient modern pay short game staff assist want game youre familiar stage tournament taste wine bewildered choice supermarket prepare overwhelmed youre sure taste supermarket homework beforehand vineyard start bottle run beyond money drain palate easily organise blind tasting cuts marketing peer pressure posing blind tell claret burgundy indeed white squid ink stuff speak call leave memory palate calling home appellation system aoc bewildering aocs region wine mostly specific aocs applicable dont look aoc start musee vin negoce variety tour tasting organised office tourisme chateaux vineyard route wine cookery class tour vineyard independently car fraught conversation driving afterward shared holiday experience turning maison vin showcasing product chateaux drop appointment ask office tourisme chateaux snooty dont recognise serious buyer theyre fed waster seeking glug grand cru king ransom sport football girondin play football ligue tier difficulty buying ticket girondin home ground nouveau stade matmut atlantique capacity tram parc des exposition bus rugby union union begle play flight rugby formed merger stade bordelais begle home ground stade chaban delma capacity inner ring road former begle andre moga stadium training ground ice hockey boxer play ligue magnus professional league play meriadeck ice rink host public skating ice karting wealth trade economic system rely heavily shop trading hall pedestrian store kind clothe art craftwork food wine luxury item head gambetta square surrounding music kap bambino electronic music duo formed singer caroline martial beat smith boyfriend orion bouvier clothing expensive wear comfortable shoe head rue sainte catherine longest pedestrian precinct europe shopping cheap hand vintage clothe kilochic cour somme amos hand store selection hand vintage stuff wine duty paid checked baggage airport trappy price limited selection carry limit keep receipt handy country probably bigger custom allowance wine duty paid budget chat noir cha vert pleasant light bite view basilica kitchen mezze levantine fare chez mere suggest serve rustic home style cuisine rempart cafe charming bistro step cathedral lautre petit bois quirky sandwich cafe generous portion crowded mid range cafe populaire relaxed restaurant morph dad dancing arena cafe port view pont pierre riverbank dining match host event lentrecote institution reservation youll probably wait line walnut salad piece entrecote steak unlimited fry plus dessert wine customer reckon worth wait couleur cafe mostly positive review bistro cathedral chez faty delicious lunchtime couscous tajine mamacam food product vegetarian option splurge restaurant solena outstanding oriental cuisine chef victor ostronzec tupina regional cuisine friendly service bistro ambiance corn fed lande fowl lestacade food view building jutting water stilt reservation recommended victoire pubs bars night club quais railway station dick turpin english style pub music relaxed friendly vibe chuchumbe latin bar serving inexpensive mojito midnight become salsa dance floor frog rosbif english pub micro brewery century women prison gathering spot live sport cafe brun atmospheric old bar huge selection whisky belgian beer brique house originally lille taproom restaurant space factory craft beer bar

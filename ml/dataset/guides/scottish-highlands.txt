@@ -2,11 +2,12 @@ Scottish Highlands, United Kingdom
 Labels: nature, adventure | Split: test
 Source: https://en.wikivoyage.org/wiki/Scottish_Highlands (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (6,845 characters) =====
+===== CLEANED GUIDE TEXT (6,850 characters) =====
 
 The Scottish Highlands are the rugged northern and northwestern portion of Scotland. This is the Scotland conjured up by visions of tartan, kilts, Bonnie Prince Charlie and all.
 
 Understand
+
 
 The geographical division between Highland and Lowland Scotland is sharply diagonal, so Campbeltown in the far west is further south than Berwick-upon-Tweed in England, while northerly Stonehaven is a continuation of the lowland coastal plain. The Romans marched that far northeast before shrugging at the useless prospect and retrenching south to leave the Picts to their bogs, blizzards and coarse oatmeal. The cultural division is even further north, as lowland farming and industry, the English language and Victorian railways penetrated the valleys and turned the corner above Aberdeen to approach Inverness. The Highlands described on this page largely reflect that cultural boundary.
 
@@ -15,6 +16,7 @@ Alba, the proto-state forerunner to Scotland, arose in the lowlands in the 9th c
 The Victorians brought many innovations to the Highlands, and the most important was tourism, as black sucking peat-bogs were rebranded as romantic scenery of "dreary melancholy". This infused Loch Lomond and the Trossachs, the Tay and Dee valleys, then beyond across the Highlands. The Gaelic language died out in this region, to persist in the Hebrides. The burgeoning lowland cities created a mass leisure market, free time and transport links. The 20th century capitalised on this with winter sports and wildlife, and the 21st created eco-angst, the reindeer, beaver and wildcats being the beneficiaries, while ghosts of extinct wolves lope hopefully in the shadows.
 
 See
+
  
 * Castles for the most part are sternly defensive but tumbledown. Great examples are Eilean Donan at Dornie and Urquhart Castle at Drumnadrochit by Loch Ness. Luxury castles (Victorian gin-palaces with twiddly bits to make them look medieval) are Dunrobin Castle at  Golspie and Castle of Mey near John o'Groats, plus the Georgian Inveraray. McCaig's Tower above Oban is a Victorian folly. 
 * Gardens: every west coast promenade is studded with palm trees shivering in the rain to make a point about the balmy Gulf Stream. What grows better is Himalayan species, and you know you're within five miles of a stately mansion when you encounter their escaped rhododendrons, a riot of colour in May. The standout gardens are Inverewe near Gairloch, Arduaine near Oban and Crarae near Inveraray. 
@@ -23,6 +25,7 @@ See
 * Islands involving a ferry ride are described elsewhere as part of the Hebrides, Orkneys or Shetland, but The Summer Isles are an example of an inshore archipelago, reached by boat trip from Achiltibuie. Unique within the UK are the "mainland islands", settlements and drivable lanes that have no road connection to the mainland network. The most populated is Knoydart, reached by ferry from Mallaig or by a very long hike across the moors. Several others such as Applecross were only connected in the late 20th century.
 
 Do
+
  
 * Long-distance walks include the West Highland Way, 96 miles from Milngavie to Fort William, and the Great Glen Way, 73 miles from Fort William to Inverness. The Lairig Ghru is 19 gruelling miles from Speyside to Deeside. 
 * Mountains, oddly enough, are why this region is called the Highlands. A mountain above 3000 feet / 914.4 m is called a Munro, for the Victorian beard who first catalogued them. There are 282 of these and 226 secondary "tops", and "Munro-bagging" is a popular weekend pastime. A mountain between 2500 and 3000 feet is called a Corbett and there are 222 of these. The principal groups are:
@@ -38,18 +41,20 @@ Do
 * Highland Games are held in each town in turn over summer, sometimes combined with agricultural shows.
 
 Eat
+
   
 Even small places have a takeaway chippy or pizzeria, but sit-down eating opportunities are limited away from the towns. Pub grub or the town hotel may be the best bet; their kitchen may take last orders at 8pm or earlier so don't linger. 
 
 Vegetarian / vegan and GF choices are much easier to find nowadays.
 
 Drink
+
 The towns have traditional pubs, but village stand-alone pubs have withered - try the hotel bar / restaurant. 
 
 There are a few breweries and multiple whisky distilleries in the Highlands. Classic whisky country is the Spey Valley.
 
 Small artisan gin distilleries have popped up all over, probably more than the market can sustain, so sample them now while you can.
 
-===== TOKENS THE MODEL TRAINS ON (547) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (547) =====
 
 highland rugged northwestern portion scotland scotland conjured vision tartan kilt bonnie prince charlie geographical division highland lowland scotland sharply diagonal campbeltown far berwick tweed england northerly stonehaven continuation lowland coastal plain roman marched far northeast shrugging useless prospect retrenching leave pict bogs blizzard coarse oatmeal cultural division lowland farming industry english language victorian railway penetrated valley turned corner aberdeen approach inverness highland described page largely reflect cultural boundary alba proto state forerunner scotland arose lowland century conquering highland moray ruled macbeth gaelic ulster dal riata last viking norse realm far century battle continued ferocity proportion poor rugged land fought final set taking hour culloden shattered jacobite cause samurai feudal life death sword fealty chieftain obsolete england norman time highland militarised wake army base established nairn fort rebuilt victorian brought innovation highland important tourism black sucking peat bogs rebranded romantic scenery dreary melancholy infused loch lomond trossach tay dee valley beyond highland gaelic language died region persist hebride burgeoning lowland city created mass leisure market transport link century capitalised winter sport wildlife created eco angst reindeer beaver wildcat beneficiary ghost extinct wolve lope hopefully shadow castle sternly defensive tumbledown example eilean donan dornie urquhart castle drumnadrochit loch ness luxury castle victorian gin palace twiddly bits look medieval dunrobin castle golspie castle mey john ogroat plus georgian inveraray mccaig tower oban victorian folly garden coast promenade studded palm tree shivering rain point balmy gulf stream grow himalayan specy know youre mile stately mansion encounter escaped rhododendron riot colour standout garden inverewe gairloch arduaine oban crarae inveraray deserted landscape rural highland population greater driven haunting glencoe century example auchendrain inveraray depict farmhouse life exodus century hillside abandoned village helmsdale reverse makeshift village erected evicted croft despaired headed lowland city prehistoric structure mostly obliterated agriculture hebride orkney fine collection wick common duns fortified outcrop coast theyre scrappy mostly sea view island involving ferry ride described elsewhere hebride orkney shetland summer isle example inshore archipelago reached boat trip achiltibuie unique mainland island settlement drivable lane road connection mainland network populated knoydart reached ferry mallaig hike moor applecross connected late century distance walk highland mile milngavie fort william glen mile fort william inverness lairig ghru gruelling mile speyside deeside mountain oddly enough region called highland mountain feet called munro victorian beard catalogued secondary tops munro bagging weekend pastime mountain feet called corbett principal group glencoe fort william ben nevis highest britain ascended glen fort william mamore aonach eagach sister glencoe cairngorm ben macdhui braeriach torridonian ullapool northwest striking sandstone ridge instance teallach slioch bein eigh liathach beinn aligin bein bhann aka applecross far instance ben hope ben loyal foinaven ben stack steam train excursion highland line fort william glenfinnan arisaig mallaig strathspey railway aviemore boat garten ski glencoe braemar cairngorm aviemore nevis range fort william spot dolphin whale moray firth boat trip sail inverness cairngorm national park spot beaver reindeer wildcat coast motoring itinerary mile inverness northwest coast coast john ogroat return inverness highland game held turn summer combined agricultural show takeaway chippy pizzeria sit eating opportunity limited town pub grub hotel bet kitchen last order earlier dont linger vegetarian vegan choice easier nowaday town traditional pubs village stand alone pubs withered hotel bar restaurant brewery multiple whisky distillery highland classic whisky country spey valley artisan gin distillery popped probably market sustain sample

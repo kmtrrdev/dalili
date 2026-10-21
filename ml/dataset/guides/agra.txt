@@ -2,21 +2,24 @@ Agra, India
 Labels: history | Split: test
 Source: https://en.wikivoyage.org/wiki/Agra (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (8,694 characters) =====
+===== CLEANED GUIDE TEXT (8,702 characters) =====
 
 Agra (Hindi: आगरा Āgrā, Urdu: آگرہ Āgrā), a city around 200&nbsp;km from Delhi, is home to two s: the Taj Mahal and the Agra Fort. There are also many other buildings and tombs from Agra's days of glory as the capital of the Mughal Empire, as well as the abandoned city of Fatehpur Sikri outside town, itself a World Heritage Site.
 
 Besides these three World Heritage Sites, the city has little else to recommend it. Similar to Delhi, pollution is rampant in Agra, especially smog and litter. Visitors are pestered by swarms of touts and hawkers at every monument, besides the inner Taj Mahal which, once you are in, is free of scams and touts. The sites are some of the wonders of the world, and no trip to India is complete without at least one visit to the Taj. For the vast majority of visitors, a single day in Agra is more than enough.
 
 Understand
+
  
 
 Name
+
 While the heyday of Agra (AHG-rah) was as the capital of the Mughal Empire between 1526 and 1658, the city was founded much earlier. There has been much debate regarding the origin of the city's name. The most commonly-held theory is that it comes from the Hindi-Urdu word agar (अगर), meaning "salt pan", referring to the region's brackish soil; salt was once made in the area by evaporation. Others derive it from the ancient epic, the Mahabharata, claiming that the name comes from Sanskrit agravana (अग्रवन), meaning "grove forest", indicating the first of the many small forests where Krishna frolicked with the gopis of Vrindavan.
 
 In the Mughal era, Agra was also known as Akbarabad, which was given by emperor Shah Jahan to honour his grandfather Akbar.
 
 History
+
 The recorded history of Agra begins around the 11th century, and over the next 500 years, the city changed hands between various kings, both Hindu and Muslim.
 
 In 1506, Sultan Sikandar Lodi, the ruler of the Delhi Sultanate, moved his capital from Delhi to Agra. His son Ibrahim Lodi was the last ruler of the Lodi dynasty, as he was defeated in 1526 by Babur, the first Mughal ruler, in the battle of Panipat. Agra fell too, and became the capital of the Mughals, whose rule over Agra was uninterrupted except for a brief period between 1540 and 1556. In 1540, Sher Shah Suri overthrew Humayun and became the ruler of much of North India, including Agra. After Sher Shah Suri's death, his descendants proved unequal to the task of ruling the kingdom, and Hemu, a Hindu general of Suri, became the effective ruler who would later crown himself King Hemachandra Vikramaditya just as the kingdom was facing an assault from the reinvigorated Mughals. In 1556, Hemu was defeated and killed in the second battle of Panipat, and the Mughals regained Agra.
@@ -27,14 +30,17 @@ Shah Jahan, in addition to giving Agra its greatest claim to fame, was also resp
 
 See
 
+
  
 Agra's top two sights by far are the incomparable Taj Mahal and Agra Fort.
 
 Do
 
+
 Other than the monuments visits, one can also stroll in the local markets in old city area. It's a nice experience to have a walk in one of the oldest parts of the city.
 
 Buy
+
 
 Agra has many shops selling stone products, from jewellery to small boxes and plaques with inlay work resembling that on the Taj. The best of these are wonderful, and even the run-of-the-mill ones are rather pretty. Agra is also famous for its leather goods. Consider spending time in Sadar Bazaar for some shopping and cheap food. These markets have gemstones, both precious and semi-precious, cut and polished but unset, and finished jewellery. You can also find chic boutiques, classy leather goods, culturally-designed clothing, and marble markets.
 
@@ -48,6 +54,7 @@ Be careful when buying jewels: lots of stones are fake and the price is comparat
 
 Eat
 
+
 Agra specialities are petha, a type of very sweet candy, and Dal Moth, a spicy lentil mix. Both are also popular souvenirs.
 
 * Chaat - Agra is a heaven for any Chaat lover. Chaat can be of various types but there is one thing common among them all is that they are spicy and you will find crowd outside virtually every chaat stall, especially popular places like Double Phatak (near Sikandra) for Mangores. You'll find quality Bhallas and Panipuri at Sadar and Belangunj. Samosa and Kachori are found at every sweet shop that flood the city. Some typical chaat items are Aloo Tikki (made by roasting mess made out of boiled potatoes), paneer tikka (cubes of cottage cheese baked in a tandoor with spices), pani puri or golguppa (small round hollow shells filled with a potato-based filling and a spicy sweet blend of sauces), mangores, Samosaes, Chachori, etc. If you want to savour the typical Agra breakfast have a bite of one of those spicy Berahi and round it off with sweet Jalebies.
@@ -56,8 +63,9 @@ Agra specialities are petha, a type of very sweet candy, and Dal Moth, a spicy l
 
 Drink
 
+
 A bottle of Indian beer costs around ₹70-100 in a hotel, but there is virtually no nightlife in Agra outside of cultural shows at some of the larger hotels and restaurants. After getting off the streets of Agra and into your hotel, you will not want to go back anyway.
 
-===== TOKENS THE MODEL TRAINS ON (646) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (646) =====
 
 hindi urdu nbsp home taj mahal fort building tomb glory capital mughal empire abandoned fatehpur sikri outside world heritage site beside world heritage site little recommend similar pollution rampant especially smog litter pestered swarm tout hawker monument beside inner taj mahal scam tout site wonder world trip complete taj vast majority single enough heyday ahg rah capital mughal empire founded earlier debate regarding origin commonly held theory come hindi urdu word agar meaning salt pan referring region brackish soil salt evaporation derive ancient epic mahabharata claiming come sanskrit agravana meaning grove forest indicating forest krishna frolicked gopis vrindavan mughal era akbarabad given emperor shah jahan honour grandfather akbar history recorded history begin century changed hand king hindu muslim sultan sikandar lodi ruler sultanate moved capital son ibrahim lodi last ruler lodi dynasty defeated babur mughal ruler battle panipat fell capital mughal rule uninterrupted except brief period sher shah suri overthrew humayun ruler sher shah suri death descendant proved unequal task ruling hemu hindu general suri effective ruler later crown king hemachandra vikramaditya facing assault reinvigorated mughal hemu defeated killed battle panipat mughal regained mughal builder babur built aram bagh garden relaxation modelled garden paradise eventually buried death grandson akbar refurbished fort built fatehpur sikri entire outskirt akbar grandson shah jahan give famous monument taj mahal mausoleum beloved wife mumtaz mahal taj constructed white marble took construct universally monument love legend shah jahan wanted replica taj constructed black marble final resting support theory true unlikely undertaken son aurangzeb austere pious inclination ostentation forefather preferring spend money wars case shah jahan reign period mughal empire height construction taj put strain resource empire caused mini famine shah jahan eventually buried white taj beloved begum shah jahan addition giving greatest claim fame responsible beginning decline decided shift capital shahjahanabad aurangzeb ordered move short lived moved headquarter aurangabad present chhatrapati sambhajinagar focus wars declined mughal empire eventually captured maratha renamed came british situated presidency gained independence incorporated state uttar pradesh gain limited honour state capital distinction lucknow taj couple monument sight far incomparable taj mahal fort monument visit stroll market old experience walk oldest part shop selling stone product jewellery boxe plaque inlay work resembling taj wonderful run mill ones pretty famous leather good consider spending sadar bazaar shopping cheap food market gemstone precious semi precious cut polished unset finished jewellery chic boutique classy leather good culturally designed clothing marble market beware overcharged let anyone lead shop lest price cover commission typically wary promise bargain hard prepared walk nearly item another shop order item liked internet return expect encounter petty greedy shopowner resort lie book sale initial markup market sadar bazaar sophisticated market raja mandi market sanjay office shah market electronic market situated road hospital road market subhash bazar clothe situated fort railway station rawatpara market spice beside branded shop road wholesale marble product gokul pura market raja mandi road easily reached auto rickshaw price item nearly retail market careful buying jewel stone fake price comparatively speciality petha type sweet candy dal moth spicy lentil mix souvenir chaat heaven chaat lover chaat type thing common spicy crowd outside virtually chaat stall especially double phatak sikandra mangore youll quality bhalla panipuri sadar belangunj samosa kachori sweet shop flood typical chaat item aloo tikki roasting mess boiled potatoe paneer tikka cube cottage cheese baked tandoor spice pani puri golguppa round hollow shell filled potato based filling spicy sweet blend sauce mangore samosae chachori etc want savour typical breakfast bite spicy berahi round sweet jaleby sweet sweet shop famous petha hari parwat short distance fort amongst shop panchi bhimsain baidyanath pracheen petha store type petha authentic experience plain ivory white angoori flavoured rectangular yellow piece soaked sugar syrup shop bikanervala deviram munnalal petha gopalda ajanta sweet kamla nagar round meal joda pair pan unique abundance korean food bottle indian beer cost hotel virtually nightlife outside cultural show larger hotel restaurant street hotel want anyway

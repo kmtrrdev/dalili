@@ -2,7 +2,7 @@ Cyprus, Cyprus
 Labels: beach, history | Split: validation
 Source: https://en.wikivoyage.org/wiki/Cyprus (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (6,943 characters) =====
+===== CLEANED GUIDE TEXT (6,953 characters) =====
 
 Cyprus (Greek: Κύπρος, Turkish: Kıbrıs) is an island in the eastern Mediterranean Sea, south of Turkey. It is one of the world’s oldest civilisations, with a history of over 11,000 years.  Cyprus offers lots of archaeological sites, hiking trails through cedar forests, kilometres and kilometres of gorgeous beaches, and 300 days of sun a year.
 
@@ -10,10 +10,13 @@ Cyprus (Greek: Κύπρος, Turkish: Kıbrıs) is an island in the eastern Medi
 
 Understand
 
+
 History
 
 
+
 Modern history
+
 Cyprus has a complex political history that has left a lasting impact on the island. 
 
 After gaining independence from the United Kingdom in 1960, the Cypriot Constitution was created to ensure power-sharing between the Greek Cypriot majority and the Turkish Cypriot minority. However, tensions between the two groups escalated in 1974 when Greece and Turkey became involved in the conflict. As a result, Turkey ended up occupying 40% of the island, resulting in the establishment of the "Turkish Republic of Northern Cyprus" (TRNC) in 1983.
@@ -23,6 +26,7 @@ The TRNC is recognised only by Turkey, while all other governments and the Unite
 Whilst hostilities have been absent for some time, the island remains divided. However, the involvement of the European Union has led to increased efforts towards reunification between the two sides.
 
 See
+
  
 *The many archaeological and antiquities sites scattered around the island, dating from the New Stone Age through to the Roman Empire
 *The beautiful coastline of the island, still quite unspoilt in many places, is well worth exploring
@@ -36,22 +40,27 @@ See
 * There are over 60 churches scattered across Cyprus with wall paintings, of which the ten churches in Troodos Mountains are inscribed on the UNESCO World Heritage List as Painted Churches in the Troödos Region.
 
 Do
+
 * Football: the men's national team play at AEK Arena, home ground of AEK Larnaca. 14 clubs play in First Division and 16 in Second.
 * Mixed-religion couples from countries such as Israel, Lebanon and Syria, who do not have access to non-religious marriage ceremonies at home, often choose Cyprus for wedding travel, as they can tie the knot in a same-day civil ceremony.
 * Limassol Carnival is held every year on the Sunday before Ash Monday. Thousands fill the central streets of Limassol in various costumes to join a parade, dance, drink and spray each other with string in a can. Family-friendly event worth a look if in Cyprus at the time.
 
 Buy
 
+
 Costs
+
 Cyprus has always been a relatively expensive destination. Except for some agricultural products, practically everything has to be imported. The cost of living in Cyprus is comparable to Central Europe, especially in the tourist areas. Price examples: National Beer cost €3 to €3.50, a pack of cigarettes €4, a hamburger €5-7, squids about €10, a steak around €20. Away from the tourist hotels and beaches the prices are much more moderate.
 
 Money
 
 
 
+
 Northern Cyprus uses Turkish lira (TRY). Euros are generally also accepted in the tourist centres, but at unfavourable rates. There are many ATMs in the north too. Turkish lira are not generally accepted in the south.
 
 Things to buy
+
 
 *Cypriot wine - the iconic local variety known as Commandaria is strong, sweet and somewhat akin to Porto wine
 *Lacework of an intricate nature - from the village of Lefkara.
@@ -61,6 +70,7 @@ Things to buy
 *Jewellery
 
 Eat
+
  
  
 * Cypriot meze (appetizers akin to Spanish tapas) are an art form, and some restaurants serve nothing but. Meze are available in a meat variety or fish variety but quite often come as a mixed batch, which is rather pleasing.
@@ -73,6 +83,6 @@ Eat
 Palouzes is a pudding made with grape juice, flour and different flavorings.
 Kiofterka are made from any leftover pudding. They cut it into pieces, dehydrate it, and the result is a hard but chewy thing.
 
-===== TOKENS THE MODEL TRAINS ON (521) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (521) =====
 
 greek turkish kbrs island mediterranean sea world oldest civilisation history archaeological site hiking trail cedar forest kilometre kilometre gorgeous beach history modern history complex political history lasting impact island gaining independence cypriot constitution created ensure power sharing greek cypriot majority turkish cypriot minority tension group escalated involved conflict result ended occupying island resulting establishment turkish trnc trnc recognised government nation recognise government island order maintain peace operate peacekeeping force narrow buffer zone cypriot ethnic group whilst hostility absent island remain divided involvement european union led increased effort reunification side archaeological antiquity site scattered island dating stone age roman empire beautiful coastline island unspoilt worth exploring nicosia capital wealth history preserved venetian wall surrounding wonderful bars restaurant old wall course green line dividing line turkish cuts nicosia divided capital troodo mountain rising metre offering beautiful trail walk quaint little village kakopetria platre phini winter chance ski ski resort developed papho harbor archeological park nearby rock aphrodite beautiful scene picnic hamam omerye nicosia century building restored operate hammam enjoy relax rejuvenate dating rule heart nicosia old hamam omerye working example rich culture diversity stone struggle sense freedom flexibility site history date century stood augustinian church mary stone built dome chronologically placed frankish venetian rule approximately acquired venetian wall mustapha pasha converted church mosque believing particular spot prophet omer rested lefkosia original building destroyed ottoman artillery door entrance belong century lusignan building whilst remain later renaissance phase side monument funded communal undp unop project partnership future collaboration nicosia municipality nicosia master plan restore hamam omerye bath revitalising spirit sustaining historical essence hamam restoration project become favourite relaxation lefkosia received europa nostra prize conservation architectural heritage church scattered wall painting church troodo mountain inscribed unesco world heritage list painted church troodo region football men national team play aek arena home ground aek larnaca club play division mixed religion couple country israel syria access non religious marriage ceremony home choose wedding travel tie knot civil ceremony limassol carnival held sunday ash monday thousand fill street limassol costume join parade dance spray string family friendly event worth look cost relatively expensive destination except agricultural product practically everything imported cost living comparable europe especially price example national beer cost pack cigarette hamburger squid steak hotel beach price moderate money uses turkish lira euro generally accepted centre unfavourable rate atms turkish lira generally accepted thing cypriot wine iconic variety commandaria strong sweet somewhat akin wine lacework intricate nature village lefkara zivania strong spirit based alcoholic filfar traditional orange liqueur leather good shoe handbag jewellery cypriot meze appetizer akin spanish tapa art form restaurant serve nothing meze meat variety fish variety mixed batch pleasing kleftiko roasted lamb flavour herb lemon halloumi hellim uniquely cypriot cheese mix goat sheep milk hard salty raw mellow soften cooked hence served grilled taramosalata traditionally tarama salted roe cod carp roe mixed bread crumb mashed potatoe parsley onion lemon juice olive oil vinegar added seasoned salt pepper tahini shoushouko traditional sweet grape juice sery almond threaded needle dipped grape juice time become thick palouz kiofterka traditional sweet grape juice palouz pudding grape juice flour flavoring kiofterka leftover pudding cut piece dehydrate result hard chewy thing

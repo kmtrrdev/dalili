@@ -39,7 +39,6 @@ from pydantic import BaseModel  # noqa: E402
 
 from travel_agent import llm, telemetry  # noqa: E402
 from travel_agent.engine.validators import validate_plan  # noqa: E402
-from travel_agent.research import match_place  # noqa: E402
 
 OUT = Path(__file__).resolve().parent
 

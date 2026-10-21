@@ -1,78 +1,104 @@
 {
-  "trained_at": "2026-09-30T02:06:01+00:00",
-  "seconds": 1226.4,
-  "model": "Doc2Vec PV-DBOW + skip-gram, negative sampling (NumPy, from scratch)",
+  "trained_at": "2026-10-21T22:42:03+00:00",
+  "seconds": 3427.7,
+  "model": "sentence-transformers/all-MiniLM-L6-v2 fine-tuned by distillation from gpt-5-mini (ONNX int8)",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
   "config": {
-    "dim": 64,
-    "window": 3,
-    "negative": 6,
-    "shared_negatives": 64,
-    "epochs": 30,
-    "lr": 0.025,
-    "min_lr": 0.0,
-    "batch": 2048,
-    "min_count": 3,
-    "sample": 0.001,
+    "steps": 500,
+    "lr": 5e-05,
+    "batch": 16,
+    "tau": 0.05,
+    "passage_len": 128,
+    "query": "words",
     "seed": 7
   },
-  "interest_space": "output",
   "data": {
     "source": "Wikivoyage guides (CC BY-SA)",
     "destinations": 227,
     "skipped": [
       "St. Anton am Arlberg"
     ],
-    "tokens": 430333,
-    "vocabulary": 14425,
+    "passages": 5044,
+    "words": 946241,
     "validation": 112,
     "test": 115
   },
-  "loss_per_epoch": [
-    3.7867,
-    2.9164,
-    2.6792,
-    2.5464,
-    2.4579,
-    2.3925,
-    2.3437,
-    2.3013,
-    2.2684,
-    2.2383,
-    2.2152,
-    2.1936,
-    2.1719,
-    2.156,
-    2.1415,
-    2.1253,
-    2.1124,
-    2.0999,
-    2.0862,
-    2.0779,
-    2.0673,
-    2.0587,
-    2.0502,
-    2.0423,
-    2.0324,
-    2.025,
-    2.0185,
-    2.0101,
-    2.0051,
-    2.0004
+  "loss_curve": [
+    12.438,
+    11.01,
+    10.099,
+    9.214,
+    8.85,
+    8.453,
+    8.472,
+    8.242,
+    8.128,
+    8.013,
+    8.338,
+    7.713,
+    7.897,
+    7.854,
+    7.708,
+    7.373,
+    7.326,
+    7.191,
+    7.215,
+    7.105,
+    7.026,
+    7.084,
+    7.082,
+    7.016,
+    7.008,
+    6.862,
+    6.859,
+    6.868,
+    6.706,
+    6.648,
+    6.83,
+    6.861,
+    6.575,
+    6.819,
+    6.689,
+    6.776,
+    6.637,
+    6.679,
+    6.731,
+    6.667,
+    6.635,
+    6.575,
+    6.652,
+    6.76,
+    6.708,
+    6.475,
+    6.552,
+    6.486,
+    6.553,
+    6.579
   ],
   "test": {
     "similar_places_p@5": {
-      "doc2vec": 0.558,
-      "tfidf": 0.52,
+      "model": 0.624,
+      "pretrained": 0.546,
+      "teacher": 0.699,
+      "tfidf": 0.518,
       "random": 0.278
     },
     "interests": {
-      "doc2vec": {
-        "map": 0.631,
+      "model": {
+        "map": 0.738,
+        "p@10": 0.77
+      },
+      "pretrained": {
+        "map": 0.614,
         "p@10": 0.64
+      },
+      "teacher": {
+        "map": 0.776,
+        "p@10": 0.81
       },
       "tfidf": {
         "p@10": 0.6,
-        "map": 0.601
+        "map": 0.599
       },
       "random": {
         "map": 0.248
@@ -80,191 +106,94 @@
     }
   },
   "validation": {
-    "sim_p@5": 0.571,
-    "input_map": 0.643,
-    "input_p@10": 0.67,
-    "output_map": 0.688,
-    "output_p@10": 0.75,
-    "best_space": "output",
-    "objective": 0.63
+    "sim_p@5": 0.643,
+    "map": 0.751,
+    "p@10": 0.77
   },
   "test_per_interest": {
     "beach": {
-      "p@10": 0.9,
-      "ap": 0.895,
+      "p@10": 1.0,
+      "ap": 0.948,
       "random_p": 0.287
     },
     "culture": {
-      "p@10": 0.9,
-      "ap": 0.802,
+      "p@10": 1.0,
+      "ap": 0.909,
       "random_p": 0.504
     },
     "history": {
-      "p@10": 0.9,
-      "ap": 0.785,
+      "p@10": 0.7,
+      "ap": 0.666,
       "random_p": 0.426
     },
     "nature": {
-      "p@10": 0.8,
-      "ap": 0.826,
+      "p@10": 0.7,
+      "ap": 0.673,
       "random_p": 0.296
     },
     "ski": {
-      "p@10": 0.6,
-      "ap": 0.863,
+      "p@10": 0.7,
+      "ap": 1.0,
       "random_p": 0.061
     },
     "food": {
-      "p@10": 0.4,
-      "ap": 0.408,
+      "p@10": 0.8,
+      "ap": 0.756,
       "random_p": 0.278
     },
     "nightlife": {
-      "p@10": 0.5,
-      "ap": 0.366,
+      "p@10": 0.7,
+      "ap": 0.578,
       "random_p": 0.2
     },
     "shopping": {
-      "p@10": 0.4,
-      "ap": 0.486,
+      "p@10": 0.7,
+      "ap": 0.706,
       "random_p": 0.087
     },
     "relax": {
-      "p@10": 0.5,
-      "ap": 0.417,
+      "p@10": 0.8,
+      "ap": 0.656,
       "random_p": 0.165
     },
     "adventure": {
-      "p@10": 0.5,
-      "ap": 0.462,
+      "p@10": 0.6,
+      "ap": 0.486,
       "random_p": 0.174
     }
   },
   "tuning": [
     {
       "config": {
-        "dim": 96,
-        "window": 4,
-        "negative": 6,
-        "shared_negatives": 64,
-        "epochs": 15,
-        "lr": 0.025,
-        "min_lr": 0.0001,
-        "batch": 2048,
-        "min_count": 3,
-        "sample": 0.001,
+        "steps": 300,
+        "lr": 5e-05,
+        "batch": 16,
+        "tau": 0.05,
+        "passage_len": 128,
+        "query": "phrase",
         "seed": 7
       },
       "validation": {
-        "sim_p@5": 0.541,
-        "input_map": 0.607,
-        "input_p@10": 0.64,
-        "output_map": 0.677,
-        "output_p@10": 0.71,
-        "best_space": "output",
-        "objective": 0.609
-      },
-      "seconds": 140
+        "sim_p@5": 0.654,
+        "map": 0.726,
+        "p@10": 0.77
+      }
     },
     {
       "config": {
-        "dim": 96,
-        "window": 4,
-        "negative": 6,
-        "shared_negatives": 64,
-        "epochs": 30,
-        "lr": 0.025,
-        "min_lr": 0.0001,
-        "batch": 2048,
-        "min_count": 3,
-        "sample": 0.001,
+        "steps": 500,
+        "lr": 5e-05,
+        "batch": 16,
+        "tau": 0.05,
+        "passage_len": 128,
+        "query": "words",
         "seed": 7
       },
       "validation": {
-        "sim_p@5": 0.546,
-        "input_map": 0.59,
-        "input_p@10": 0.65,
-        "output_map": 0.663,
-        "output_p@10": 0.71,
-        "best_space": "output",
-        "objective": 0.605
-      },
-      "seconds": 975
-    },
-    {
-      "config": {
-        "dim": 64,
-        "window": 3,
-        "negative": 6,
-        "shared_negatives": 64,
-        "epochs": 30,
-        "lr": 0.025,
-        "min_lr": 0.0001,
-        "batch": 2048,
-        "min_count": 3,
-        "sample": 0.001,
-        "seed": 7
-      },
-      "validation": {
-        "sim_p@5": 0.571,
-        "input_map": 0.643,
-        "input_p@10": 0.67,
-        "output_map": 0.688,
-        "output_p@10": 0.75,
-        "best_space": "output",
-        "objective": 0.63
-      },
-      "seconds": 176
-    },
-    {
-      "config": {
-        "dim": 128,
-        "window": 4,
-        "negative": 8,
-        "shared_negatives": 64,
-        "epochs": 30,
-        "lr": 0.025,
-        "min_lr": 0.0001,
-        "batch": 2048,
-        "min_count": 3,
-        "sample": 0.001,
-        "seed": 7
-      },
-      "validation": {
-        "sim_p@5": 0.529,
-        "input_map": 0.613,
-        "input_p@10": 0.66,
-        "output_map": 0.655,
-        "output_p@10": 0.7,
-        "best_space": "output",
-        "objective": 0.592
-      },
-      "seconds": 1080
-    },
-    {
-      "config": {
-        "dim": 96,
-        "window": 4,
-        "negative": 6,
-        "shared_negatives": 64,
-        "epochs": 30,
-        "lr": 0.025,
-        "min_lr": 0.0001,
-        "batch": 2048,
-        "min_count": 3,
-        "sample": 0.0001,
-        "seed": 7
-      },
-      "validation": {
-        "sim_p@5": 0.486,
-        "input_map": 0.612,
-        "input_p@10": 0.62,
-        "output_map": 0.658,
-        "output_p@10": 0.71,
-        "best_space": "output",
-        "objective": 0.572
-      },
-      "seconds": 959
+        "sim_p@5": 0.643,
+        "map": 0.751,
+        "p@10": 0.77
+      }
     }
   ]
 }

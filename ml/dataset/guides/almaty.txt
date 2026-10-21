@@ -2,13 +2,15 @@ Almaty, Kazakhstan
 Labels: nature, ski | Split: test
 Source: https://en.wikivoyage.org/wiki/Almaty (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (13,566 characters) =====
+===== CLEANED GUIDE TEXT (13,573 characters) =====
 
 Almaty is the largest city and the financial and cultural capital of Kazakhstan. Though short on grand sights, Almaty is relentlessly pleasant, with upmarket shops, bars, and cafes tucked among lush, tree-lined streets and esplanades, while the snow-capped Trans-Ili Alatau mountains to the south give the city a beautifully dramatic backdrop.
 
 Understand
+
  
 History
+
 Although the Silk Road touched the foothills upon which Almaty sits today, it left little of the grandeur found farther south in Central Asia’s great caravan cities. The few inhabitants were nomadic herdsmen, with no substantial towns until the Russians colonised and built a wooden fort in 1854. An industrial town, named Verny, grew around the fort, although it was twice flattened by earthquakes. The Soviets renamed it Alma-Ata ("Alma" may mean "apple" – modern apples originated in this region) and the city became the capital of the Kazakh Soviet Socialist Republic. A railway and highway connected it to Russia. Trotsky lived in exile here for a year before fleeing to Turkey.
 
 The city was laid out on a low-rise grid pattern, with broad boulevards and parks, and has never had an organic "old town". During World War II, Soviet industries relocated here beyond Nazi attack, along with hospitals, universities, cultural institutes and workers from elsewhere (especially Slavs, Uyghurs and Koreans) so the city became quite cosmopolitan. After the collapse of the Soviet Union in 1991, the city became the capital of independent Kazakhstan and was renamed Almaty. 
@@ -16,7 +18,9 @@ The city was laid out on a low-rise grid pattern, with broad boulevards and park
 For a capital city, Almaty was rather off-centre: hard up against lofty Trans-Ili Alatau mountains, the Kyrgyzstan border lies just south. Hence, in 1997, the government shifted the capital north to Astana. Though the capital no more, Almaty remains the country's business centre, its cultural core, as well as its largest city. In 2024 it had a population of 2,250,000.
 
 See
-=== Religious ===
+
+Religious
+
  
 * 
 Ascension Cathedral. Completed in 1907 and renovated in the 2020s - new saints were painted in, though presumably they were known to the hagiographers. The iconostasis is spectacular. At 56 m this among the tallest wooden buildings in the world, which you wouldn't guess from the smoothly-painted exterior hues of custard, icing sugar and coloured marzipan - it's more like a trap for Hansel & Gretel.
@@ -37,6 +41,7 @@ Holy Kazan Cathedral. Small, brightly painted Russian Orthodox Church with a gor
 
 
 Museums
+
 * 
 Museum House of Akhmet Baytursynov. Akhmet Baytursynov (1873-1937) was a Kazakh intellectual active in politics, poetry, linguistics and education, so inevitably he was shot during Stalin's "Great Purge".
 
@@ -73,6 +78,7 @@ M Auezov Literature Memorial House. Mukhtar Auezov (1897-1961) was a distinguish
 
 
 Other
+
 * 
 Heroes Memorial Park. Honors the men and women from Kazakhstan who died in World War II. There's an eternal flame by the war memorial.
 
@@ -81,16 +87,19 @@ Independence Square.
  is the large but unimpressive square outside City Hall. It lost much of its significance when the capital moved to Astana. The Presidential Palace also stood here but was wrecked by riots in 2022, and has since been demolished.
 
 Do
+
   
 * Saunas or banyas are where folk relax and socialise during the miserable cold months. These have different styles eg Moroccan, Nordic or Russian (where half the fun is flagellating yourself with veniki leaves). A two hour session with various extras might be 5000 tenge in 2024. There's some 30 saunas across the city, not including private hotel facilities or seedy "gentlemen's clubs", and many are part of large leisure complexes. A good example is Arasan at Tulebaev 78 near Ascension Cathedral, open daily 07:00-22:30. 
 * Football: FC Kairat play soccer in the Premier League, Kazakhstan's top tier, which plays April-Nov. Their home ground is Central Stadium, capacity 24,000, on Abay Ave (Metro Baikonur / Stadion). International games are played in Astana.
 
 Events
+
 * Nauryz Myrami is the spring festival, on or about 21 March each year. 
 * Indie Film Festival is held in September.
 * Almaty Marathon is run in September. 
 
 Theatre
+
 * Artishock is an experimental theatre at Kunaev 9. 
 * La Boheme is a theatre at Valikhanov 43, Metro Zhibek Zholy. 
 * Abay Kazakh State Academic Opera and Ballet Theater is at Kabanbay Batyr 110, Metro Almaly. 
@@ -100,6 +109,7 @@ Theatre
 * Almaty Theatre is on Halyk Square off Al-Farabi. 
 
 Mountains
+
   
 * 
 Kok-Tobe Park. Small Soviet-esque fun fair perched on a hilltop, where the highlight is getting there on the cable car. (The base station is at Luganskiy 2, east end of Abay.) Up top is a series of overpriced rides, games and attractions, and two restaurants; the wildest beasts in the "mini-zoo" are some hens and goats. The park is fenced in with no access to the nearby mountains, but you can walk to or from town via the service road.
@@ -121,12 +131,14 @@ Medeu Ice Rink.
 ** Ski & snowboard at Chimbulak, Ak-Bulak and Tabagan ski resorts, open Nov-April, lifts closed Tuesday. And hike anytime, beyond the resort up to the dam and then the glacier.
 
 Buy
+
  
 * Payment technology: As of 2026, most businesses process payments using Kaspi Pay or Halyk Pay. Both companies have terminals that display a QR code, which can be scanned through their respective app, Halyk also has payment through biometrics. All Kaspi and Halyk machines have credit/debit card readers - unless you are visiting for an extended period, it is a waste of time to register an account with either. Transaction fees are the same as any western card reader (not including bank fees/conversion fees). You should ask if card is accepted before ordering/browsing - in non touristy places you may have to point out the card reader on their terminalǃ
 * Cash: exchange kiosks give reasonable rates. Those at the airport are open 24 hours, and there's several on Rayimbek Batyr south of the main railway station.
 * Local specialties: Handmade carpets, felted goods such as dolls, rugs, and slippers made with boiled lamb's wool and natural dyes, handcrafted metal jewelry, including a "tumar" (a pendant that opens like a locket) and leather chess sets.
 
 Markets
+
 * 
 Green Bazaar. A city institution, an extensive market in a lime-green concrete building. Fresh vegetables, dairy products, and meat, as well as clothing and other non-food household items. Seasonal prices, relatively expensive by Central Asia standards.
 
@@ -135,6 +147,7 @@ Barakholka.
  is a vast bazaar in ramshackle metal sheds, 5 km northwest of downtown on A350, trading Tu-Su 09:00-17:00. It's mostly daily necessities and not touristy, but locals likewise appreciate occasional luxuries. You want to find a US$500 winter coat for US$50? It's possible after vigorous haggling, and it will be worth most of US$30.
 
 Shopping malls
+
 * 
 Trading House Passage. 
  is a shopping mall on Zhibek Zholy. 
@@ -147,6 +160,7 @@ Mega Alma-Ata.
  is a large mall at Rozybakiev 247A, open daily 10:00-22:00.
 
 Eat
+
  
 : Kazakh cheap places are plentiful, selling shashlik, soup, salad and so on. 
 : Burgers are popular fast food, typically with sliced kebab meat on a hamburger bun with pickles and garlic sauce.
@@ -195,6 +209,7 @@ Namo. Decent South Indian food in an air-conditioned restaurant. Lots of vegetar
 
 
 Drink
+
 * 
 Barmaglot Bar. For evening drinks, gets lively after 23:00. A bit stuffy: there are strict age requirements (21+ for women, 25+ for men) and a dress code.
 
@@ -225,6 +240,6 @@ Munchen pub na Panfilova.
 * 
 Harvey's pub & grill. Kazakh sport bar & pub with a variety of international beers
 
-===== TOKENS THE MODEL TRAINS ON (1,075) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,075) =====
 
 largest financial cultural capital short grand sight relentlessly pleasant upmarket shop bars cafe tucked lush tree lined street esplanade snow capped tran ili alatau mountain give beautifully dramatic backdrop history silk road touched foothill sits today little grandeur farther asia caravan city inhabitant nomadic herdsmen substantial town russian colonised built wooden fort industrial named verny grew fort twice flattened earthquake soviet renamed alma ata alma mean apple modern apple originated region capital kazakh soviet socialist railway highway connected russia trotsky lived exile fleeing laid low rise grid pattern broad boulevard park organic old world war soviet industry relocated beyond nazi attack hospital university cultural institute worker elsewhere especially slav uyghur korean cosmopolitan collapse soviet union capital independent renamed capital hard lofty tran ili alatau mountain kyrgyzstan border lies hence government shifted capital astana capital remain country business cultural core largest population religious ascension cathedral completed renovated saint painted presumably hagiographer iconostasis spectacular tallest wooden building world wouldnt guess smoothly painted exterior hues custard icing sugar coloured marzipan trap hansel gretel nichola cathedral russian orthodox church built stable soviet cavalry horse reopened church entrance side baytursnov little gate park mosque grand mosque marble wall spacious decorated interior sophia cathedral built predecessor destroyed earthquake church centrepiece monastery complex crushed communist restored tranquil monastery compound chapel look holy kazan cathedral brightly painted russian orthodox church gorgeously ornate interior museum museum house akhmet baytursynov akhmet baytursynov kazakh intellectual active politic poetry linguistic education inevitably shot stalin purge museum museum history mountaineering housed former orphanage audioguide mobile device museum archeology museum housing mammoth dinosaur similar kasteyev art museum huge collection spanning oriental russian kazakh arts stakhanovite scene stalin era fascinating abilkhan kasteev prolific highly decorated artist state museum display kazakh history prehistoric time mongol period present guided tour english language call ahead hall anthropology tenge extra museum musical instrument museum fine traditional wooden facade exhibit signage kazakh russian english military history museum military history museum emphasis panfilov division involvement patriotic war wwii soviet war afghanistan signage russian guided tour english kazakh russian entrance unstaffed turn lobby museum railway transport museum railway konaev house museum dinmukhamed kunaev secretary kazakh communist party fell grace death brezhnev apartment memorial museum nurgisa tlendiev nurgisa tlendiev composer lived later auezov literature memorial house mukhtar auezov distinguished soviet kazakh playwright novelist lived last atmospheric youll decent russian glean commemorated boulevard auezov theatre heroe memorial park honor men women died world war eternal flame war memorial independence square unimpressive square outside hall lost significance capital moved astana presidential palace stood wrecked riot demolished sauna banya folk relax socialise miserable cold month style moroccan nordic russian half fun flagellating veniki leave hour session extra tenge sauna private hotel facility seedy gentlemen club leisure complex example arasan tulebaev ascension cathedral football kairat play soccer premier league tier play home ground stadium capacity abay ave metro baikonur stadion international game played astana event nauryz myrami spring festival indie film festival held marathon run theatre artishock experimental theatre kunaev boheme theatre valikhanov metro zhibek zholy abay kazakh state academic opera ballet theater kabanbay batyr metro almaly lermontov state academic russian drama theater abay metro abay kelt english language theatre kimep university metro abay uyghur theatre nauryzbai batyr theatre halyk square farabi mountain kok tobe park soviet esque fun fair perched hilltop highlight cable car base station luganskiy abay sery overpriced ride game attraction restaurant wildest beast mini zoo hens goat park fenced access nearby mountain walk service road route dulati street become svezhest runs valley river bolshaya almatinka route kok tobe hill funfair tau spa alma arasan gorge lake tau spa round mountain spa pool cabin accommodation mixed review lake scenic lake altitude surrounded mountain glisten mirror changing colour season deep turquoise autumn freezing winter towering soviet peak ozerniy southwest peak hiking climbing obviously simplest car bus runs roundabout farabi navoi dulati ends last turn alma arasan taxis lake tenge hike rise altitude think weather coming follow road reach water pipe follow steep trail pipe taxi farabi navoi dostyk become gornaya climb valley river pravy esentai valley medeu ice rink ile alatau national park chimbulak ski resort bus runs valley corner satpaev baitursynuly medeu ice rink chimbulak air rink ski snowboard chimbulak bulak tabagan ski resort lift tuesday hike anytime beyond resort dam glacier payment technology business process payment kaspi pay halyk pay company terminal display code scanned respective app halyk payment biometric kaspi halyk machine credit debit card reader unless visiting extended period waste register account transaction fees card reader bank fees conversion fees ask card accepted ordering browsing non touristy point card reader terminal cash exchange kiosk give reasonable rate airport rayimbek batyr railway station specialty handmade carpet felted good doll rugs slipper boiled lamb wool natural dyes handcrafted metal jewelry tumar pendant open locket leather chess sets market green bazaar institution extensive market lime green concrete building fresh vegetable dairy product meat clothing non food household item seasonal price relatively expensive asia standard barakholka vast bazaar ramshackle metal shed northwest downtown trading mostly necessity touristy local likewise appreciate occasional luxury want winter coat possible vigorous haggling worth shopping mall trading house passage shopping mall zhibek zholy arbat nickname pedestrianised section zhybek zholy artist row tsum department store little corner ablay khan mega park mall makataev corner seyfullin ramstore largest mall built nothing unusual furmanov mega alma ata mall rozybakiev kazakh cheap plentiful selling shashlik soup salad burger fast food typically sliced kebab meat hamburger bun pickle garlic sauce bahandi burger chain location baytursynova block tole alasha uzbeki restaurant brace sung danced horse meat basilic sit canteen english menu low price specialty horsemeat inexpensive chinese eatery serving plenty vegetarian dish tofu crudo steakhouse steakhouse mixed review food quality value money horse mamma mia chain pizzeria filling portion veggy wont starve namaste indian food restaurant princess chinese restaurant tandoor value indian asian food tarih kazakh food interesting modern touch tyubeteika uzbek restaurant food grumpy service outlet abylai khan dostyk ave venezia selection meat veggy struggle grand zina cool restaurant mosaic mimi little canteen lunch selection meal unfortunately meat vegetarian salad samsa mashed potatoe cheap namo decent indian food air conditioned restaurant vegetarian option meat barmaglot bar evening drink lively bit stuffy strict age requirement women men dress code bar irish pub fuller pub pheasant feather english pub yard house pub kazakh pub shakespeare pub beer indian food harat pub irish pub harat irish pub bar kazakh beer munchen pub panfilova harvey pub grill kazakh sport bar pub variety international beer

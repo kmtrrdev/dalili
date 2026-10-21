@@ -16,7 +16,7 @@ from datetime import date
 from typing import Literal
 
 from fastapi import Depends, FastAPI, HTTPException, Request, Response
-from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, PlainTextResponse, StreamingResponse
+from fastapi.responses import HTMLResponse, JSONResponse, PlainTextResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
@@ -249,32 +249,6 @@ async def mcp_tools(request: Request):
         raise HTTPException(404, "Not found")
     hub = get_hub()
     return {name: await hub.list_tools(name) for name in SERVERS}
-
-
-class ParseIn(BaseModel):
-    text: str = Field(max_length=MAX_MESSAGE_CHARS)
-
-
-@app.post("/api/parse")
-async def parse_request(body: ParseIn, request: Request, who: Identity = Depends(identity)):
-    """Understand a free-text trip description (any language) without starting a trip: the home page turns it
-    into editable fields. Model only - no live searches, no trip is created."""
-    from .nlu import interpret
-
-    if not body.text.strip():
-        raise HTTPException(400, "Empty text")
-    limit_expensive(request, who.id)
-    interp, _ = await interpret(body.text[:1000], False, {}, {"has_plan": False})
-    r = interp.requirements
-    dests = r.destinations or ([r.destination] if r.destination else [])
-    return {"source": interp.source, "origin": r.origin_city, "destinations": dests,
-            "nights": r.nights_per_destination if len(r.nights_per_destination) == len(dests) else [],
-            "region": r.region, "start_date": r.start_date, "end_date": r.end_date,
-            "days": r.duration_days or (r.nights + 1 if r.nights else None),  # "3 nights" = 4 days
-            "month": r.travel_month,
-            "travelers": r.travelers, "budget": r.budget_amount, "currency": r.budget_currency,
-            "interests": r.activity_preferences, "must_visit": r.must_visit, "direct_only": r.direct_flights_only,
-            "dietary": r.dietary_restrictions}
 
 
 @app.post("/api/suggest")
@@ -528,20 +502,16 @@ def _start_session(request: Request, response: Response, user: dict) -> dict:
     return {"user": user}
 
 
-def _client_ip(request: Request) -> str:
-    return client_ip(request)  # the proxy-appended address, not a client-supplied one
-
-
 @app.post("/api/auth/signup")
 async def sign_up(body: SignUpIn, request: Request, response: Response):
     user = accounts.sign_up(body.name, body.email, body.password, guest_id=request.state.guest_id,
-                            ip=_client_ip(request))
+                            ip=client_ip(request))
     return _start_session(request, response, user)
 
 
 @app.post("/api/auth/signin")
 async def sign_in(body: SignInIn, request: Request, response: Response):
-    user = accounts.sign_in(body.email, body.password, _client_ip(request), guest_id=request.state.guest_id)
+    user = accounts.sign_in(body.email, body.password, client_ip(request), guest_id=request.state.guest_id)
     return _start_session(request, response, user)
 
 
@@ -662,7 +632,7 @@ async def recommendations(limit: int = 8, who: Identity = Depends(identity)):
 
 
 @app.get("/api/recommendations/similar")
-async def similar_places(city: str, request: Request, limit: int = 6, who: Identity = Depends(identity)):
+async def similar_places(city: str, request: Request, limit: int = 6):
     limit_light(request)  # an unknown city is embedded on the fly (CPU): bounded per client
     return await _recommender().similar(city[:80], max(1, min(limit, 12)))
 

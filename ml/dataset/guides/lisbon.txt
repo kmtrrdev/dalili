@@ -2,19 +2,21 @@ Lisbon, Portugal
 Labels: culture, food, history | Split: test
 Source: https://en.wikivoyage.org/wiki/Lisbon (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (21,720 characters) =====
+===== CLEANED GUIDE TEXT (21,742 characters) =====
 
 Lisbon (Portuguese: Lisboa) is the capital of Portugal situated on seven hills at the wide mouth of the river Tagus (Tejo) where it meets the Atlantic Ocean. With 545,000 residents in the city and 3.0 million in the Lisbon Region (2024) and a thriving mix of Portugal's rich history and vivid contemporary culture, Lisbon enchants travellers with its white bleached limestone buildings, intimate alleyways, and an easy going charm that makes it a popular year round destination.
 
 Greater Lisbon comprises many other splendid tourist destinations such as the  of Sintra, the seaside resorts of Estoril, Cascais, the world class museums, or Almada famous for its hilltop Cristo Rei statue, all of which are connected with Lisbon by excellent public transportation links.
 
 Understand
+
  
 Lisbon is built on seven hills, so getting around Lisbon can be a workout. Many slopes and few really flat areas is one of Lisbon's trademarks. This is also a city of enchanting contrasts: The elegant squares, broad avenues, monumental buildings and rectangular layout of the lower areas quickly gives way to the hilly, narrow, winding, unpredictable and cramped streets of districts such as Alfama and Bairro Alto. The elegant dining rooms and smart rooftop bars of expensive hotels seems like a different world compared to the excellent restaurants disguised behind an inconspicuous façade in a modest Bairro Alto street. Quality patisseries and restaurants thrive side by side with late night bars and noisy discos. The old, tiny squeaky trams (one of the city's trademarks) are no less of a contrast to the efficient metro network.
 
 The Portuguese capital is often perceived as less frantic than other million cities, and traffic and barkers are less aggressive than in many other tourist destinations.
 
 History
+
  
 
 According to legend, Lisbon was founded by the mythical Greek hero Odysseus, during his travels home from Troy. However, most historians believe that the city was founded around 1200 BC by Phoenician settlers, utilizing the calm and fresh waters of Tagus river and the proximity to the sea. The Phoenician name of the city is Alis-Ubo, meaning "safe harbour". Eventually it became part of the Carthaginian Empire. After the Punic Wars, it became the main trading hub of the Roman province Lusitania, under the name Felicitas Julia Olisipo, later Olisipona. During the decline and fall of the western Roman Empire, the Iberian peninsula was invaded by Vandal and Visigothic tribes.
@@ -23,9 +25,11 @@ In 711, Lisbon was captured by Muslim forces. During this period, the Castle of 
 
 Golden Age
 
+
 The Golden Age of Portugal, and consequently Lisbon's history, started in the 15th century. In 1415, the young prince Henry "the Navigator" conquered Ceuta, thereby establishing the first European overseas colony. He later founded the Sagres school of navigation in the Algarve region and thereby sparked the age of discovery. During the reign of King Manuel I "the Fortunate" (1495–1521), Portuguese navigators found a way around the Cape of Good Hope, and Vasco da Gama eventually found the Cape Route to India, thereby ending the Venetian monopoly over European-Far Eastern trade. King Manuel gave his name to the "Manueline" architectural style, of which the Tower of Belém in western Lisbon is probably the most well-known example. On marrying princess Isabella of Aragon, Manuel I ordered the conversion or expulsion of the Jewish and Muslim populations. The Portuguese colonial empire grew steadily through the centuries, and eventually came to include the Azores and Madeira in the Atlantic; Brazil in South America; Angola, Cape Verde, Ceuta, Guinea Bissau, Ivory Coast, Mombasa, Mozambique, São Tomé e Príncipe and Zanzibar in Africa; Ceylon, Timor-Leste, Flores, Formosa, Goa, Hormuz, Macau, Malacca and Moluccas in Asia. The Portuguese Oriental trade led to the establishment of the Japanese port city of Nagasaki in 1571.
 
 Decline
+
 
 With the loss of heirless young King Sebastião in 1578, Portugal entered into a period of succession crisis. By 1580 the Portuguese nobility, keen to avoid a civil war that would disrupt the empire, agreed to enter into an Iberian Union under king Philip II of Spain, cousin of Dom Sebastião which becomes Philip I of Portugal. Due to the Spanish disinterest in Portuguese empire matters and belligerence against the English, the union brings deep discontent within Portugal while the Windsor Treaty with England was suspended due to the Spanish Crown's commissioning of Portuguese maritime assets and resources towards the Great Armada's failed invasion of England. The aftermath caused serious setbacks to Portugal's capacity of maintaining such a vast empire. By 1640 the restoration of Portuguese sovereignty is re-established and the marriage of king Charles II of England with Princess Catherine of Braganza was celebrated as a means of reasserting independence and surety.
 
@@ -37,9 +41,11 @@ In the early 19th century after being invaded by France, Portugal fought in the 
 
 1900 to today
 
+
 In 1908 King Carlos I of Portugal and his heir, Luís Filipe, were assassinated by republicans on Praça do Comércio. The young prince Manuel was also wounded, but survived and assumed the throne. However, only two years later, in 1910, he was dethroned and exiled to England in a republican coup. In 1916 the Portuguese republic entered World War I on the Allied side. The Portuguese democracy didn't last long. In 1926 General Óscar Carmona seized power and imposed a dictatorship. He appointed Prof. António de Oliveira Salazar as finance minister who later became prime minister; he then implemented a corporatist governing style known as Estado Novo (New State), under which the state reorganized all aspects of life from an economic perspective while ignoring civil liberties. During World War II Portugal asserted a neutral position, but ceded the Azores to the Allied cause. After WWII Portugal was one of the NATO founding members. During the Cold War, Portugal enjoyed record levels of economic growth. In 1961 the Indian Union unilaterally annexed Goa and by 1960 the African colonies demanded independence but Salazar refused and plunged Portugal into lengthy anti-independence wars while in metropolitan Portugal, civil discontent rose due to the suppression of democracy and civil liberties. The state security apparatus PIDE/DGS, arrested, tortured, exiled and sometimes killed dissidents and pro-democracy activists. In the early hours of April 25th 1974, a military coup led by leftist junior army officers followed by massive civilian support on the streets of Lisbon, ousted the dictatorial government. Soon after the revolutionary period, Portugal became a democracy and independence was hastily and haphazardly granted to the remaining overseas colonies (except Macau, which was restored to China in 1999). Approximately one million overseas, mostly destitute Portuguese, returned to Portugal and become known as retornados (returnees). Economically, the country faced ruin but international loans kept it afloat. The new "Constituição" enshrined democracy and everyone's human rights. By 1986 Portugal was accepted into the EEC, later EU, and gradually began recovering. In 1998 Lisbon hosted the International World Fair, Expo 98. As part of the fair, the new "Parque das Nações" neighborhood in eastern Lisbon was built, while in the same year the Vasco da Gama Bridge across the Tagus, was inaugurated as the longest bridge in Europe and Lisbon native José Saramago won the Nobel prize in literature.
 
 See
+
  
 
 
@@ -52,24 +58,31 @@ See
 Lisbon is a city on the water—the River Tagus (Rio Tejo)—built on seven hills that are traversed by trams. This has led to comparisons with San Francisco. To provide access from the southern suburbs, Lisbon has two spectacular bridges. The 25th of April Bridge (Ponte 25 de Abril) combines the design of the San Francisco–Oakland Bay Bridge with the color of the Golden Gate Bridge, and it's often mistaken for the latter. The Vasco da Gama Bridge (Ponte Vasco da Gama), Europe's longest, was built in the 1990s for Expo '98. One of Lisbon's great landmarks, Cristo Rei, a  statue of Christ the King on an  pedestal, isn't even in Lisbon itself, but across the river in Almada, big enough to be easily seen from the capital.
 
 Alfama
+
 Built on the hills east of the Baixa, Alfama survived the Great 1755 Earthquake largely intact. Climbing the narrow ancient lanes provides an excellent workout. You can spare your legs by taking the little historic yellow trams that serve the neighborhood. Major sights include Lisbon Cathedral and St. George's Castle.
 
 Bairro Alto
+
 The Bairro Alto, or "Upper District" (dare we say "High Neighbourhood"), has become Lisbon's youthful, trendy quarter. The district includes the Chiado neighbourhood, known for its numerous historic landmarks and theatres. Among the district's many sights are the São Bento Palace (where the Portuguese parliament meets), the Museu Nacional de Arte Antiga (a museum of antique art), and the Lisbon Botanical Gardens.
 
 Baixa
+
 Lisbon's "downtown" was rebuilt in a grid street pattern following the destruction of a 1755 earthquake. The magnificent Praça do Comércio lies on the river, has a tall equestrian statue and is surrounded by lovely yellow buildings. The Baixa has several other noteworthy squares: Praça dos Restauradores, Praça Dom Pedro IV, and Praça da Figueira. The Santa Justa Lift connects the Baixa with Chiado.
 
 Belém
+
 Lisbon's western district is packed with famous monuments, especially along the riverbank. These include the Torre de Belém, the Monument to the Discoveries, and Jerónimos Monastery. Museums include the Navy Museum, the Museu Colecção Berardo, and the National Coach Museum.
 
 Northern Lisbon
+
 This large expanse of Lisbon has a few sights of interest, including Parque Eduardo VII, the Calouste Gulbenkian Museum, and the zoo.
 
 Parque das Nações
+
 The Expo '98 site and its surroundings are now modern residential and commercial areas, maintaining many of the sights from the World Exposition. The Oceanarium is a huge aquarium popular with both kids and adults. The Pavilion of Knowledge features many fun and educational exhibits. The riverside esplanade makes for a lovely stroll, or hop on the aerial cable cars for magnificent views.
 
 Do
+
  
 
 
@@ -77,11 +90,13 @@ Do
 Go out at night to the central Bairro Alto, or 'High Neighbourhood'. Just up the hill from Chiado, this is the place to go out in town. In the early evening, go to a fado-themed restaurant near the Praca Camoes, and head upwards as the evening goes on. If you're in Lisbon on the night preceding a Feriado or public holiday, you have to check this out. Tiny little streets which are empty in the daytime become crammed walkways which are difficult to get through. For more of a clubbing or disco experience, try the Docas district along the marina overlooking the Ponte 25 de Abril.
 
 Stages
+
 The Lisbon stage events calendar is a full one all year round. The city presents good quality productions in ballet, modern dance, chamber music, opera and theatre. The Teatro Nacional de São Carlos is a magnificent opera house in the La Scala tradition.
 
 On a light note, there's also "Teatro de Revista", a kind of social/political satire theatre that was born in Lisbon. English-language productions are staged. It's one of the local culture favourite live entertainment shows to see when you visit the city but you can only find it in the Parque Mayer. Due to high demand, you should buy tickets in advance. To do so for any of the shows, ABEP "Agência de Bilhetes para Espétaculos Públicos" (Ticket Agency) is the place to contact.
 
 Recurring events
+
 * 
 Moda Lisboa. Lisbon Fashion Week.
 
@@ -109,6 +124,7 @@ Jazz em Agosto. A annual jazz festival organized by the Gulbenkian Foundation.
 
 Sport
 
+
 Football: three city teams play soccer in Primeira Liga, the men's top tier: 
 : SL Benfica play in Estádio da Luz, capacity 64,600, 3 km north of the centre, metro Luz.
 : - the women's team play in their top tier at Benfica Campus, the training complex at Seixal south of the river. 
@@ -121,6 +137,7 @@ Autódromo do Estoril hosts motor racing. For details contact the ACP Automóvel
 Estoril Open is an ATP sanctioned tennis event played every April/May.
 
 Buy
+
  
 
  
@@ -130,21 +147,25 @@ Shops are open a little later than other places in Europe, usually around 09:30-
 You can buy a Lisbon Shopping Card, which gives you 5% to 20% discounts at about 200 major stores in Baixa, Chiado and Av. Liberdade for a period of 24 hours (card costs €3.70) or 72 hours (card costs €5.70).
 
 Shopping streets
+
 * Baixa: From Praça do Comércio (aka Terreiro do Paço) to the Restauradores, the Baixa is the old shopping district in the city. It includes pedestrian Rua Augusta which has the most boring and mass-visitor tourist stores, and several European chain clothing stores like Zara, H&M, Campers.
 * Chiado: a number of independent shops and services and well known brands such as Hugo Boss, Vista Alegre, Tony & Guy, Benetton, Sisley, Pepe Jeans, Levi's and Colcci, which makes Chiado, together with Avenida da Liberdade, one of the Top 10 places to shop in the world. Some informal brands like Crumpler are also there. The Portuguese perfume and beauty products house Claus Porto has a shop in Rua da Misericórdia, well worth it dropping by.
 * Avenida da Liberdade: Louis Vuitton, Calvin Klein, Timberland, Massimo Dutti, Armani, Burberrys and Adolfo Dominguez are just some of the shops you'll find across this avenue, which is not just one of the most beautiful and wide in the city, but also one of the fanciest with splurge hotels and restaurants.
 
 Malls and markets
+
  
 
 While most stores are closed on Sundays, many malls are open 7 days a week. They usually open around 09:30 and close by 23:00 or 24:00, although the film theaters within them usually run a late session starting after 24:00. From January to October, large grocery stores are closed on Sundays after 13:00, but smaller ones can remain open for the whole day.
 
 Souvenirs and notable stores
+
 Portugal is the largest producer of cork in the world, and there is a vast range of souvenir cork items for sale in Lisbon. Another typical Lisbon item is the "Azulejo" glazed tile, which clad the exterior of many local buildings to protect them from fires.
 
 Do not buy old azulejo tiles at flea markets, as they have been chiselled off buildings without permission, i.e. stolen.
 
 Eat
+
  
 
  
@@ -162,6 +183,7 @@ Never ask a taxi driver about which restaurant you should go to – they will ta
 You will find traditional meals served in small coffee shops and restaurants, especially in the old parts of town. Some will be better than others, just check if there are a lot of locals eating there! They will be very cheap (as little as €5 for a full meal) and home-style cooking. The owners probably won't speak English and the menu will probably be in Portuguese only!
 
 Drink
+
  
 
  
@@ -175,6 +197,6 @@ Alcântara, Santos, Parque das Nações, and the castle area are all neighborhoo
 
 Fado (fate) is a type of folk music which developed in Lisbon during the 19th century. The music is often melancholic, capturing the nostalgic feeling of "Saudade". In 2011 fado was added to UNESCO's list of Intangible Cultural Heritages. It's usually sung by a woman in a black dress, accompanied by mandolin and guitar. However, it is not uncommon with male singers or additional instruments. There are plenty of fado bars around Lisbon, offering foods and drinks. They are especially common in the Bairro Alto and Alfama districts, and in Alfama you can also find a Fado museum. Beware that you'll pay more than in normal restaurants, and the food and drink quality may not be up to the price, you're paying for the music experience.
 
-===== TOKENS THE MODEL TRAINS ON (1,677) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,677) =====
 
 portuguese lisboa capital situated hill wide mouth river tagus tejo meet atlantic ocean resident million region thriving mix rich history vivid contemporary culture enchant traveller white bleached limestone building intimate alleyway easy charm round destination greater comprise splendid destination sintra seaside resort estoril cascais world class museum almada famous hilltop cristo rei statue connected excellent public transportation link built hill workout slope flat trademark enchanting contrast elegant square broad avenue monumental building rectangular layout lower quickly give hilly narrow winding unpredictable cramped street district alfama bairro alto elegant dining room smart rooftop bars expensive hotel seem world compared excellent restaurant disguised behind inconspicuous facade modest bairro alto street quality patissery restaurant thrive side side late night bars noisy disco old tiny squeaky tram trademark contrast efficient metro network portuguese capital perceived frantic million city traffic barker aggressive destination history according legend founded mythical greek hero odysseus travel home troy historian believe founded phoenician settler utilizing calm fresh water tagus river proximity sea phoenician alis ubo meaning safe harbour eventually carthaginian empire punic wars trading hub roman province lusitania felicita julia olisipo later olisipona decline fall roman empire iberian peninsula invaded vandal visigothic tribe captured muslim force period castle sao jorge expanded moorish heritage preserved nearby alfama oldest standing district crusader army route holy land helped king afonso conquer return christian rule completion portuguese reconquista hundred later capital golden age golden age consequently history started century young prince henry navigator conquered ceuta thereby establishing european oversea colony later founded sagre school navigation region thereby sparked age discovery reign king manuel fortunate portuguese navigator hope vasco gama eventually route thereby ending venetian monopoly european far trade king manuel gave manueline architectural style tower belem probably example marrying princess isabella aragon manuel ordered conversion expulsion jewish muslim population portuguese colonial empire grew steadily century eventually came azore atlantic america angola verde ceuta guinea bissau ivory coast mombasa mozambique sao tome principe ceylon timor leste flore formosa hormuz macau malacca molucca asia portuguese oriental trade led establishment japanese port nagasaki decline loss heirless young king sebastiao entered period succession crisis portuguese nobility keen avoid civil war disrupt empire agreed enter iberian union king philip cousin dom sebastiao become philip due spanish disinterest portuguese empire matter belligerence english union bring deep discontent windsor treaty england suspended due spanish crown commissioning portuguese maritime asset resource armada failed invasion england aftermath caused serious setback capacity maintaining vast empire restoration portuguese sovereignty established marriage king charle england princess catherine braganza celebrated mean reasserting independence surety darkest natural catastrophe history occurred saint powerful earthquake history destroyed third earthquake powerful enough break window far killed catastrophe led disillusion optimism contemporary enlightenment thought inspiring philosopher voltaire write poem disaster candide reconstruction organised prime minister marquis pombal expression enlightenment architectural ideal broad street rectangular street pattern reconstructed baixa therefore called baixa pombalina building designed innovative built earthquake resistance framework system alfama survived destruction consequently preserved medieval irregular street pattern early century invaded fought napoleonic wars anti napoleonic coalition side winning side war exiled king joao government decided set permanent court declared independence later sons joao vied rule hook crook eventually civil war brother autocratic prince miguel liberal brother won war died month victory thereby leaving throne teenage daughter maria gloria reign nearby palace sintra constructed era fado music developed region today king carlo heir luis filipe assassinated republican praca comercio young prince manuel wounded survived assumed throne later dethroned exiled england republican coup portuguese entered world war allied side portuguese democracy didnt last general oscar carmona seized power imposed dictatorship appointed prof antonio oliveira salazar finance minister later prime minister implemented corporatist governing style estado novo state state reorganized aspect life economic perspective ignoring civil liberty world war asserted neutral position ceded azore allied cause wwii nato founding member cold war enjoyed record level economic growth indian union unilaterally annexed african colony demanded independence salazar refused plunged lengthy anti independence wars metropolitan civil discontent rose due suppression democracy civil liberty state security apparatus pide dgs arrested tortured exiled killed dissident pro democracy activist early military coup led leftist junior army officer followed massive civilian support street ousted dictatorial government soon revolutionary period democracy independence hastily haphazardly granted remaining oversea colony except macau restored approximately million oversea mostly destitute portuguese returned become retornado returnee economically country faced ruin international loan kept afloat constituicao enshrined democracy everyone human right accepted eec later gradually began recovering hosted international world fair expo fair parque das nacoe neighborhood built vasco gama bridge tagus inaugurated longest bridge europe native jose saramago won nobel prize literature waterthe river tagus tejo built hill traversed tram led comparison provide access suburb spectacular bridge bridge ponte abril combine design franciscooakland bay bridge color golden gate bridge mistaken latter vasco gama bridge ponte vasco gama europe longest built expo landmark cristo rei statue christ king pedestal isnt river almada enough easily capital alfama built hill baixa alfama survived earthquake largely intact climbing narrow ancient lane provide excellent workout spare legs taking little historic yellow tram serve neighborhood major sight cathedral george castle bairro alto bairro alto upper district dare say neighbourhood become youthful trendy quarter district chiado neighbourhood numerous historic landmark theatre district sight sao bento palace portuguese parliament meet museu nacional arte antiga museum antique art botanical garden baixa downtown rebuilt grid street pattern following destruction earthquake magnificent praca comercio lies river tall equestrian statue surrounded lovely yellow building baixa noteworthy square praca dos restauradore praca dom praca figueira santa justa lift connect baixa chiado belem district packed famous monument especially riverbank torre belem monument discovery jeronimo monastery museum navy museum museu coleccao berardo national coach museum expanse sight interest parque eduardo vii calouste gulbenkian museum zoo parque das nacoe expo site surrounding modern residential commercial maintaining sight world exposition oceanarium huge aquarium kids adult pavilion knowledge feature fun educational exhibit riverside esplanade lovely stroll hop aerial cable cars magnificent view night bairro alto neighbourhood hill chiado early evening fado themed restaurant praca camoe head upward evening youre night preceding feriado public holiday check tiny little street empty daytime become crammed walkway difficult clubbing disco experience doca district marina overlooking ponte abril stage stage event calendar round present quality production ballet modern dance chamber music opera theatre teatro nacional sao carlo magnificent opera house scala tradition light note teatro revista kind social political satire theatre born english language production staged culture favourite live entertainment show parque mayer due demand ticket advance show abep agencia bilhete para espetaculo publico ticket agency contact recurring event moda lisboa fashion week english comedy showcase featuring portuguese international acts sets english deep cultural insight life laughter entry donation based peixe lisboa food festival focus fish dish dias musica belem music festival held belem indielisboa independent film festival addition screening lecture seminar rock lisboa major rock music festival branched famous rock festa dos santo fiesta celebrating catholic saint parade fire work show night largest fiesta celebrate saint anthony followed celebration saint john baptist saint peter jazz agosto annual jazz festival organized gulbenkian foundation sport football team play soccer primeira liga men tier benfica play estadio luz capacity metro luz women team play tier benfica campus training complex seixal river sporting play estadio jose alvalade capacity airport metro campo grande women team play tier casa pia play estadio pina manique capacity northwest autodromo estoril host motor racing detail contact acp automovel clube auto club estoril atp sanctioned tennis event played shop little later europe lunch break shopping card give discount major store baixa chiado liberdade period card cost card cost shopping street baixa praca comercio aka terreiro paco restauradore baixa old shopping district pedestrian rua augusta boring mass store european chain clothing store zara camper chiado independent shop service brand hugo boss vista alegre tony guy benetton sisley pepe jean levi colcci chiado together avenida liberdade shop world informal brand crumpler portuguese perfume beauty product house claus shop rua misericordia worth dropping avenida liberdade louis vuitton calvin klein timberland massimo dutti armani burberry adolfo dominguez shop youll avenue beautiful wide fanciest splurge hotel restaurant mall market store sunday mall week close film theater run late session starting grocery store sunday smaller ones remain souvenir notable store largest producer cork world vast range souvenir cork item sale another typical item azulejo glazed tile clad exterior building protect fire old azulejo tile flea market chiselled building permission stolen portuguese dining ritual tend follow mediterranean siesta body clock restaurant family run generally inexpensive sheet door prato dia dish written dish cheaper fresher rest menu unless youre looking specific theyre choice dinner waiter probably bring unrequested starter dish called couvert dont feel obliged touch charged bill check traditional portuguese restaurant bairro alto scattered abundantly quirky narrow street portuguese traditional cuisine finest head chiado tour group primarily feel home alfama trap laminated menus meal deal mostly concentrated baixa exception rua das porta santo antao seafood strip northeast parallel praca dos restauradore feel eating castelo neighborhood smaller family run serve fixed menu expensive foot appetite eletrico familiar taste chain eatery head doca santo amaro train tram station alcantara parque das nacoe metro oriental culinary clubbing kudo concentrated doca jardim tabaco piece river waterfront castelo sao jorge quality dish price lapa pastel nata food delightful custard egg tart belem magnificent pasteis nata pastry shop ask taxi driver restaurant expensive oriented restaurant receive commission traditional meal served coffee shop restaurant especially old part check local eating cheap little meal home style cooking owner probably wont speak english menu probably portuguese lively nightlife stroll old neighborhood bairro alto dinner caipirinha ginjinha watching street packed variety bars weeknight bars close weekend party continue night club follow horde hill hundred alcantara santo parque das nacoe castle neighborhood thriving nightlife river atlantic doca huge hub nightlife lost ties sea fado fate type folk music developed century music melancholic capturing nostalgic feeling saudade fado added unesco list intangible cultural heritage sung woman black dress accompanied mandolin guitar uncommon male singer additional instrument plenty fado bars offering food drink especially common bairro alto alfama district alfama fado museum beware youll pay normal restaurant food quality price youre paying music experience

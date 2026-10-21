@@ -311,11 +311,6 @@ export class Globe {
     this.markers.push({ group, ring, pos, label: el, phase: Math.random() * Math.PI, born: performance.now() });
   }
 
-  // Backwards-compatible single destination.
-  setRoute(origin, dest) {
-    this.setJourney(origin, dest ? [dest] : []);
-  }
-
   /**
    * origin: {lat, lon, name} | null; stops: [{lat, lon, name}] in visit order.
    * Draws origin -> stop 1 -> ... -> stop n -> origin and frames all of it.

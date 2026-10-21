@@ -2,17 +2,19 @@ Varanasi, India
 Labels: culture, history | Split: validation
 Source: https://en.wikivoyage.org/wiki/Varanasi (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (31,046 characters) =====
+===== CLEANED GUIDE TEXT (31,071 characters) =====
 
 Varanasi (वाराणसी Vārāṇasī), also known as Banaras (बनारस Banāras) or Kashi (काशी Kāshī), is a holy city at the banks of the Ganges River in Uttar Pradesh, India. Being the most sacred city in Hinduism and Jainism, and important in the history of Buddhism, Varanasi is India's most important pilgrimage destination. It was home to 1.2 million people as of 2011.
 
 Understand
+
  
 
  
 Varanasi (vah-RAH-nuh-see) or Banaras (buh-NAH-ruhss) is one of the oldest continuously inhabited cities in the world, with settlements dating back to the 11th century BCE. Many Hindus believe that dying in Varanasi brings salvation (variously termed as moksha, mukti or nirvāṇa) and so they make the trip to the city when they realise that they are close to death. For some, the culture shock of the burning corpses in plain view can be a bit overwhelming. However, the scene of pilgrims doing their devotions in the River Ganges at sunrise set against the backdrop of the centuries-old temples is probably one of the most impressive sights in the world.
 
 History
+
 Varanasi’s history spans several thousand years, making it one of the world’s longest‑inhabited cities. Early references in Vedic literature describe it as a centre of learning and ritual, already known for its connection to the Ganges. By the first millennium BCE, the city had begun to develop its identity as a spiritual and intellectual hub, attracting scholars, priests and traders.
 
 From around the 6th century BCE, Varanasi’s region became significant in the life of the Buddha, with nearby Sarnath marking the site of his first sermon. Under the Mauryan Empire in the 3rd century BCE, the city grew as a centre of trade and scholarship, and during the Gupta period (4th–6th centuries CE) it flourished as a major seat of Sanskrit learning, philosophy and classical arts.
@@ -22,6 +24,7 @@ Medieval centuries brought both decline and revival. Islamic invasions damaged t
 By the 18th and 19th centuries, weaving, trade and scholarship shaped the city’s economy, while its riverfront became the iconic landscape seen today. After independence, Varanasi continued to grow while preserving its ancient character.
 
 Religion and spirituality
+
 The entire riverfront is a living expression of Hindu belief: pilgrims bathe at dawn on the ghats, families perform rites for ancestors, and priests conduct ceremonies that have been repeated for centuries. The city is especially associated with Shiva, who is believed to reside eternally here, and many visitors come specifically to honour him at places like Kashi Vishwanath Temple. The narrow lanes are lined with shrines dedicated to countless deities, from household gods to major temples, creating a sense that devotion is woven into everyday life. Rituals unfold continuously: morning prayers, midday offerings, and the famous evening aarti at Dashashwamedh Ghat, where fire, music and chanting merge into one of the city’s most iconic experiences. Festivals intensify this atmosphere, with processions, lamps, music and crowds transforming the city into a moving celebration of Hindu culture. 
 
 Varanasi is also a centre of learning, with long traditions of Sanskrit scholarship, philosophy and classical arts that reinforce its role as a spiritual capital. In Varanasi, Hinduism is not confined to temples; it is present in the river, the streets, the sounds and the daily routines that define the city.
@@ -29,6 +32,7 @@ Varanasi is also a centre of learning, with long traditions of Sanskrit scholars
 Jainism also has deep roots in the area, with several tirthankaras believed to have been born in or near Varanasi.
 
 See
+
  
 Varanasi is not a city with distinct tourist destinations; the experience is in watching the spectacle of life and death on the river and meandering through the alleys of the old city.
 
@@ -43,6 +47,7 @@ Rani Laxmibai Janmasthali. Birthplace of Rani Laxmibai. It has been converted in
 
 
 Ghats and the Ganges
+
 
  
  
@@ -87,8 +92,10 @@ Assi Ghat. A popular place for tourists, long-term students and researchers to s
 
 
 Religious buildings
+
  
 Mosques and tombs
+
 * 
 Lal Khan Tomb. Lal Khan was the minister and commander of Balwant Singh (reign: 1740 – 70) the King of Varanasi (then Banaras). His last wish was to be buried in such a place so that he could keep an eye on the gateway of the royal palace. The king kept his last wish by building him a magnificent tomb on the northern edge of Varanasi. The tomb stands at the centre of a Mughal garden, marked with four chhatris on four corners out of which three stand to this day. The tomb stands on an elevated square plinth, which also houses several graves. so that he could keep an eye on the gateway of the royal palace. The tomb is crowned with a single dome flanked with chhatris on four corners. Each side has three arches with the central arches slightly higher than the side ones. The highlight of the tomb is the decorative multi-coloured tile work. Sadly, the colours have faded, robbing the tomb of its elegant look.
 
@@ -100,6 +107,7 @@ Gyanvapi Mosque. A rather controversial mosque built during the rule of Mughal E
 
 
 Temples
+
  
  
 
@@ -131,6 +139,7 @@ Sankat Mochan Hanuman Temple. Sankat Mochan Temple is dedicated to the Lord Hanu
 
 
 Do
+
  
  
  
@@ -141,14 +150,17 @@ Do
 * Explore the alleyways  - The network of historical lanes and alleys behind Dasaswamedh, Man Mandir, Tripura Bhairavi, and Meer Ghat are not to be missed. In the main alley behind Dasaswamedh Ghat (entrance to the left at the top of the stairs), there are hole in the wall chai and lassi shops, silk merchants, western-style cafes, a small perfumery, a traditional instrument store, and a number of handicraft stalls. Sadly, though, other than the notable exceptions of Gangtok and Shimla, Indian cities refuse to ban bikes, regardless of how narrow an alley may be, and Varanasi is no exception. So the opportunity to savour the unique atmosphere of an ancient Indian city is somewhat destroyed by having to avoid bikes and listen to the sound of constant honking of horns. Still, despite this drawback, the lanes are a must for any traveller visiting Varanasi.
 
 Festivals
+
 * Chhath Pooja (November) - The four day festival for the sun god, Dala aka Surya. Rituals include holy bathing, fasting and abstaining from drinking water (Vratta), standing in water for long periods of time, and offering prashad (prayer offerings) and aragh (water) to the setting and rising sun.
 * Deepavali, or Diwali (October–November) - The five day festival of lights. The special decorations, ceremonies at the temples, and aarti ceremony at the ghats are spectacular. After Diwali there is a day known as Dev Deepavali. On this day all the ghats have oil lamps lit on the ghat steps which is a very pleasant sight to watch. Use the boat ride if you are not with any local. Avoid walking through the ghat on that day.
 * Maha Shivaratri (February) - A Hindu festival celebrating Lord Shiva, who lived in Varanasi according to Hindu mythology. On this day, the streets of Varanasi are filled with pilgrims and parades dedicated to Shiva occur all day. Entrance to temples will require long queue and the temples will be extremely crowded. The day of Shivaratri is also the last day of the Dhrupad Mela, a festival of "Hindustani" (a form of Indian classical music) that goes on night and day for about 72 hours.
 
 Buy
 
+
 Varanasi is famous for its fine silk - it's on offer everywhere, but shop around and haggle!
 Markets
+
 * 
 Gowdalia Chowk. One of the most busy shopping areas in Varanasi. Products that are available here include silk and zari sarees, salwar suits, garments, bags and handicrafts.
 
@@ -157,6 +169,7 @@ Shri Khatu Ji wholesale Bazar. Banarasi Silk Sarees At Wholesale Rates.
 
 
 Books
+
 * 
 Harmony Books. A bookshop with a real bookshop feel. The owner is very knowledgeable about his stock.
 
@@ -165,6 +178,7 @@ Kashi Annapoorna Book House. A small bookshop with books on subjects related to 
 
 
 Clothes and handicrafts
+
 
 *
 Dirty Laundry. A traveller's secondhand shop, Dirty Laundry sells used clothing, electronics, books and other travel essentials. They will take your old goods on exchange.
@@ -189,6 +203,7 @@ Wow India. A large collection of handicrafts from all over the country, a good h
 
 
 Eat
+
  
 
 Banarasi Khana, or local delicacies, are known for their flavours. Many dishes here are flavoured with asafoetida, ginger, bay leaves, cloves, cardamom, cinnamon, and/or dried fenugreek leaves.
@@ -206,12 +221,14 @@ Rabri Malai Balai is a popular dessert in Varanasi that includes milk, sugar, al
 There are plenty of food outlets with a very dynamic range in quality. The restaurants closer to the ghats cater more to foreign tourists, with variable success.
 
 Local delicacies
+
 * Deena Nath Chaat Bhandar: (near PDR Mall) Good assortment of exotic chats. Try out the Aloo Tikia Chat.
 * Lotus lounge: (at mansoravor ghat) through the alleys, great food a must for every visitors.
 *Madhur Jalpan: The best place for laddoos and other famous sweet delicacies is 'Madhur Jalpan', a shop that has been frequented by more than two prime ministers of India! Madhur Jalpan is on Baradev - next to the Kainiya Chitra Mandir. Again, on a small alleyway, but the sweets are to die for.
 * Shiv Lassi Bhandar: (near the main gate of RamNagar Fort) Lassi with layers of Malai and Rabri. Superb Stuff.
 
 Budget
+
 * A C Shahi Restaurant & Kesari Restaurant near Dasashwmedh ghat in Godaulia and Shahi Restaurant near Rathyatra crossing serve very good vegetarian north and south Indian dishes.
 * Cozy Corner Restaurant (CCR) Homely, healthy and hygienic is the motto of CCR. They specialise in Indian, South Indian and Chinese and serve fantastic dosas and chole bhature. It's a nice cozy place to hang out and the service is superb. Located just down the street from Assi Ghat. Turn left on Dumrao Bagh (first street when walking from the ghat) and walk about 50 m, just past Open Hand. Phone +91 9369305877.
 *Diamond Hotel and Jaika Restaurant near Vijaya Talkies Crossing in Bhelupur serve very good north Indian dishes.
@@ -235,6 +252,7 @@ Yogik's Cafe. Warm and inviting interior. Smoothies and fresh juices. Set breakf
 
 
 Mid-range
+
 * 
 Brown Bread Bakery. A good bakery run by a German baker in Varanasi. Be wary of the Indian run bakery on the opposite side of the road who claims to be charitable but is just fake. Breads and pastries made from organically grown ingredients. Also a nice range of cheeses. The restaurant has a large menu including Continental, Italian, German and Indian classics, has a great rooftop and offers a breakfast buffet from 7AM to noon. Quality is pretty good and a part of the proceeds supports the Learn For Life society which operates a free school for disadvantaged children in Aurangabad, Varanasi.
 
@@ -253,12 +271,14 @@ Madhur Milan Cafe. A nice place for Indian snacks and meals at cheap prices. Caf
 * Zaika restaurant - in Shivala, opposite Hotel Broadway. Good Indian / Chinese dishes; try the sweet-corn-pakoras.
 
 Middle-Eastern food
+
 Possibly due to a high influx of tourists from Israel, a number of Middle Eastern restaurants have opened in Varanasi, all of which serve very similar food, cater to a predominantly tourist clientèle, and charge a little over ₹100 for a thali.
 * Haifa Cafe: Assi Ghat, (in Hotel Haifa). Most popular for its Middle-Eastern cuisine such as the thali (delicious!), but has a wide range of Indian and continental dishes and is also popular at breakfast. The Jordanian brothers aren't here anymore. Now it is just a regular hotel. The food is awful too with the Jordanians gone.
 * Hayat mediterreian: near Assi (new location= behind dumraon bag colony park), managed by middle-easterners from Jordan. Try the labanha (dry yoghurt), or the baba ghanSoush (aubergine / eggplant) with pita. The feta is a tad high in salt. The restaurant has a tent-like lounge atmosphere that gives it a cult presence. Ask for "hello to the queen" and see smiles. Very good quality, pleasant open air magnetosphere.
 * Phulwari / Sami Cafe: near the Vishwanath Temple crossing, you sit beside a religiously near-defunct but architecturally gorgeous Mahadev temple, and sip on iced teas and nanas. Some locals still consider this a holy site and aren't too happy about the cafe being so close. This temple has been usurped by thugs who sponsor this restaurant. Perhaps avoid on ethical grounds. No other heritage Indian temple has a restaurant in its courtyard.
 
 Splurge
+
 * 
 Hotel Clarks. 
 
@@ -271,7 +291,9 @@ Varuna. And Chowk, Taj Ganges Hotel, Nadesar Palace Grounds. - Two restaurants r
 
 Drink
 
+
 Coffee
+
 Coffee is not as common in Varanasi as it is in the bigger and more cosmopolitan cities, and is often just available as the instant variety, served black or white. Even in those cafes that serve real coffee, it is still hit or miss whether it is of standard taste. All the cafes listed here at least sell the real stuff.
 
 * 
@@ -294,6 +316,7 @@ The Mark Cafe. Coffee, pizza, pasta. Backstreet atmosphere. Experienced barista 
 
 
 Tea
+
 While chai shops are found throughout the city, a few are worthy of special note:
 	
 * 
@@ -301,6 +324,7 @@ Engineer Chai Wala. Run by a guy with an engineer's degree in solar energy who h
 
 
 Alcohol
+
 Alcohol is available at a few restaurants and hotels, such as the Radisson and Taj. There are several wine shops in the old city but they don't offer any sitting arrangement. You can buy whatever you want and bring it to your hotel room.
 
 * 
@@ -308,10 +332,11 @@ Radisson Hotel Varanasi. Alcoholic drinks are available in the bar.
 
 
 Other drinks
+
 Bhang is a potent, powdered form of marijuana often mixed into "special" lassis, simply called bhang lassi. The drink is especially popular on holidays as Varanasi is a major centre of Shiva worship as it is offered to the lord in form of Prashad. Caution should be taken as it can be quite intoxicating and the effects last hours; tourists have been known to be robbed after consuming bhang.
 
 Thandai is a cool, milk-based drink made with pistachios, almonds and saffron, topped off with a large dollop of malai (cream). Bhang is often added to thicken the concoction, though it can be made without it. Many Thandai stores are located near the main Godowlia, and most also serve lassi.
 
-===== TOKENS THE MODEL TRAINS ON (2,477) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (2,477) =====
 
 banara banara kashi kashi holy bank gange river uttar pradesh sacred hinduism jainism important history buddhism important pilgrimage destination home million vah rah nuh banara buh nah ruhss oldest continuously inhabited city world settlement dating century bce hindus believe dying bring salvation variously termed moksha mukti nirvana trip realise close death culture shock burning corpse plain view bit overwhelming scene pilgrim devotion river gange sunrise set backdrop century old temple probably impressive sight world history varanasis history span thousand making world longestinhabited city early reference vedic literature describe learning ritual already connection gange millennium bce begun develop identity spiritual intellectual hub attracting scholar priest trader century bce varanasis region significant life buddha nearby sarnath marking site sermon mauryan empire century bce grew trade scholarship gupta period century flourished major seat sanskrit learning philosophy classical arts medieval century brought decline revival islamic invasion damaged temple institution ruler merchant guild repeatedly rebuilt city religious cultural foundation century regained prominence following century saw expansion ghat temple neighbourhood regional ruler later british recognised importance pilgrimage century weaving trade scholarship shaped city economy riverfront iconic landscape today independence continued grow preserving ancient character religion spirituality entire riverfront living expression hindu belief pilgrim bathe dawn ghat family perform rite ancestor priest conduct ceremony repeated century especially associated shiva believed reside eternally specifically honour kashi vishwanath temple narrow lane lined shrine dedicated countless deity household gods major temple creating sense devotion woven everyday life ritual unfold continuously morning prayer midday offering famous evening aarti dashashwamedh ghat fire music chanting merge city iconic experience festival intensify atmosphere procession lamp music crowd transforming moving celebration hindu culture learning tradition sanskrit scholarship philosophy classical arts reinforce role spiritual capital hinduism confined temple present river street sound routine define jainism deep root tirthankara believed born distinct destination experience watching spectacle life death river meandering alley old jantar mantar jantar mantar literally mean combination instrument formula jantar instrument mantar formula observatory consisting sery masonry architecture unique form specialized function astronomical measurement jai singh king amber built observatory apart ujjain mathura mathura longer exist jantar mantar smaller compared ones observatory house instrument type samrat yantra dial apart observatory man mahal house virtual experiential museum showing sery light sound show show mythology gange course model depicting life model pan shop interactive musical rajghat archaeological site result chance discovery kashi railway station extended couple excavation structure unearthed dating century bce archaeological evidence suggested continuously inhabited century bce today consist scattered brick structure rising height rani laxmibai janmasthali birthplace rani laxmibai converted statue laxmibai riding galloping horse welcome wall behind side statue converted complete writeup depict life rani laxmibai writing hindi ghat gange gange sacred river world hindus traditional ritual bathing occurring time bank gange flanked wide sand belt beyond lies green belt protected reserved turtle breeding crescent shaped bank river ganga flanked continuous stretch ghat sery step leading river stretching ghat built hindu king wanted die gange built lofty palace river hotel spend final walk river ghat option viewing ghat charter boat river hindus consider auspicious die ghat burning ghat corpse cremated view ashe eased gange ghat panchganga ghat meeting river manikarnika ghat cremation ghat remain quiet avoid taking photograph scam plentiful stay safe section temple ghat called ratneshwar temple leaning leaning tower pisa sanctum generally underwater except summer dashashwamedh ghat ghat site evening aarti ceremony ceremony start sunset last minute rana ghat ghat bank gange help religious ceremony difficulty kedar ghat brightly painted stripe busy bather photogenic narad ghat ghat bathing spouse advised myth contention harishchandra ghat cremation raja harishchandra last ritual son hanuman ghat ramesvaram ghat holy spot juna akhara believe ghat constructed lord rama hence dedicated favourite disciple lord hanuman shivala ghat ghat constructed king balwant singh played important role middle ages come suggest disciple connected ghat lord shiva tulsi ghat site water purification plant assi ghat term student researcher stay hotel restaurant internet cafe nearby morning aarti subah banar held assi ghat religious building mosque tomb lal khan tomb lal khan minister commander balwant singh reign king banara last wish buried keep eye gateway royal palace king kept last wish building magnificent tomb edge tomb stand mughal garden marked chhatris corner stand tomb stand elevated square plinth house grave keep eye gateway royal palace tomb crowned single dome flanked chhatris corner side arch arch slightly higher side ones highlight tomb decorative multi coloured tile work sadly colour faded robbing tomb elegant look alamagir mosque overlooking panchganga ghat bird eye view gyanvapi mosque controversial mosque built rule mughal emperor aurangzeb believed hindus gyanvapi mosque original site kashi vishwanath temple photography prohibited temple temple limit non hindus bharat mata temple bharat mata temple temple dedicated mother mahatma gandhi kashi vidyapeeth campus bharat mata temple built babu shiv prasad gupt inaugurated mahatma gandhi statute bharat mata built marble model undivided depicting mountain plain ocean peculiar thing bharat mata temple instead customary gods goddess house relief map carved marble durga mandir built century durga temple tribute goddess durga temple gauri matha temple devi temple supposed sister lord kashi vishwanath tradition leave kashi sea shell god saying virtue donating shell keep virtue visited holy shrine kashi bathing gange trip kashi expected yield result completing custom kaal bhairav temple temple kaal bhairav dreadful form lord shiva symbolising death tradition black thread cost thread keep shrine wear arm wrist neck protection evil force nepali hindu temple golden temple built century exiled king rana bahadur shah shaped typical nepali pagoda architectural style kashi vishwanath temple famous temple dedicated lord shiva jyotirlinga shaivism temple destroyed multiple time mughal invader reconstructed hindu king followed gate enter temple gate called ganga dwar accessible manikarnika ghat wide corridor leading temple security tight making entrance temple difficult completely limit foreigner bags mobile phone pens allowed inside temple allowed corridor deposit mobile locker corridor enter temple gate deposit prohibited item nearby shop tulsi mana temple durga temple marvellous temple dedicated lord rama tulsi mana temple established form white marble structure sankat mochan hanuman temple sankat mochan temple dedicated lord hanuman temple called monkey temple presence monkey inside premise holy temple lord hanuman hindus religious cultural festival durga mandir vishwanath temple bhu meaning sankat mochan relief problem sankat mean problem mochan mean relief giver sankat mochan temple constructed educationist freedom fighter madan mohan malviya founder bhu early hanuman jayanti birthday lord hanuman celebrated organising special shobha yatra parade durga temple durga kund sankat mochan temple bathe gange ghat dip sacred water ganga notably sunrise fantastic sight sunken corpse cremation risk infection numerous disease hepatitis bacteria coli therefore recommended bathe upstream rishikesh choose bathe barricade men women established government walking tour operated company walking tour harder sight flower market ayurvedic herb market boat ride especially sunrise sunset boat rowboat motorboat sunset ride start dasaswamedh ghat ghat river head manikarnika ghat cremation dasaswamedh sunset watch evening aarti ceremony boat sunrise another magical ride ghat filled hindus bathing starting famous sight bargain price boat ride person hour boat ride boat manned children float boat sell bowl flower candle offered river masala chai trinket overpriced recommended avoid polluting river offering non biodegradable object river explore alleyway network historical lane alley behind dasaswamedh man mandir tripura bhairavi meer ghat missed alley behind dasaswamedh ghat entrance stair hole wall chai lassi shop silk merchant style cafe perfumery traditional instrument store handicraft stall sadly notable exception gangtok shimla indian city refuse ban bike regardless narrow alley exception opportunity savour unique atmosphere ancient indian somewhat destroyed avoid bike listen sound constant honking horn despite drawback lane traveller visiting festival chhath pooja festival god dala aka surya ritual holy bathing fasting abstaining drinking water vratta standing water period offering prashad prayer offering aragh water setting rising deepavali diwali octobernovember festival light special decoration ceremony temple aarti ceremony ghat spectacular diwali dev deepavali ghat oil lamp lit ghat step pleasant sight watch boat ride avoid walking ghat maha shivaratri hindu festival celebrating lord shiva lived according hindu mythology street filled pilgrim parade dedicated shiva occur entrance temple require queue temple extremely crowded shivaratri last dhrupad mela festival hindustani form indian classical music night famous fine silk everywhere shop haggle market gowdalia chowk busy shopping product silk zari saree salwar suit garment bags handicraft shri khatu wholesale bazar banarasi silk saree wholesale rate book harmony book bookshop real bookshop feel owner knowledgeable stock kashi annapoorna book house bookshop book subject related hinduism buddhism clothe handicraft dirty laundry traveller secondhand shop dirty laundry sell clothing electronic book travel essential old good exchange loan arts craft silk carpet hand hand knotted oriental persian carpet silk product silk pashmina hand embroidered hand stitched cashmere wool papier mache handicraft mehrotra factory pratha shop corner showcasing hand block printed cotton kurty suit accessory store commission guide guru perfumer selection perfume natural oils family owner shankar roy homemade incense bed silk pasmina shop selection hand machine woven silk item pashmina shawl wow collection handicraft country herbal teas incense plenty price moderate fixed banarasi khana delicacy flavour dish flavoured asafoetida ginger bay leave clove cardamom cinnamon dried fenugreek leave benare dum aloo dum aloo cooked elsewhere potatoe stuffed cooked gravy jaggery fennel chilli paste street food chaat vendor aloo chaat common paan famous paan assortment flavour wrapped betel leaf version tobacco sweet flavour exact ingredient depend little sweet version shove entire leaf mouth chew swallow lassi pahalwan lassi ravida gate age old shop delicacy lassi malaiyyo rabri rabri malai balai dessert milk sugar almond pistachio nuts served hole wall sweet shop plenty food outlet dynamic range quality restaurant closer ghat cater foreign variable success delicacy deena nath chaat bhandar pdr mall assortment exotic chat aloo tikia chat lotus lounge mansoravor ghat alley food madhur jalpan laddoo famous sweet delicacy madhur jalpan shop frequented prime minister madhur jalpan baradev kainiya chitra mandir alleyway sweet die shiv lassi bhandar gate ramnagar fort lassi layer malai rabri superb stuff budget shahi restaurant kesari restaurant dasashwmedh ghat godaulia shahi restaurant rathyatra crossing serve vegetarian indian dish cozy corner restaurant ccr homely healthy hygienic motto ccr specialise indian indian chinese serve fantastic dosa chole bhature cozy hang service superb street assi ghat turn dumrao bagh street walking ghat walk past hand phone diamond hotel jaika restaurant vijaya talky crossing bhelupur serve indian dish dosa cafe alley behind ghat ghat serve delicious indian dish price leela paying guest house river gange middle close river gange golden temple food take little beautiful view spend sitting food ganga view myriad guest house rooftop restaurant particularly memorable serve indian continental food non veg rooftop enclosed cage keep monkey human detract view karki restaurant youre assi ghat oasis rooftop restaurant serve cheap quality nepalese italian food highly recommended nepalese thali fresh basil pesto pasta saturday sunday road assi ghat look green roof upstair entrance say karki gorgeous daughter love poke face guest mona lisa cafe opposite shiva cafe another cheapie range thing notably thali japanese korean dish thrown measure cafe food cooked mum family home kitchen clean friendly helpful owner reasonable price except festival hot chocolate poured everyone fixed price person check garlic cheese nan pancake shiva cafe german bakery narad ghat himalaya lodge little alleyway runs parallel river dasaswamedh ghat assi ghat deservedly food take prepared fresh youll happy waited food arrive staffed enterprising nepalis authentic pasta sandwich etc healthy food favourite stay resident spicy bite restaurant bangali tola breakfast espresso machine serve food wifi suryoday alley behind ghat minute walk kedar ghat delicious menu clean little spot kedar ghat yogik cafe warm inviting interior smoothy fresh juice set breakfast salad bread roll fruit salad thali indian dish instant coffee severely understaffed slow service wifi mid range brown bread bakery bakery run german baker wary indian run bakery opposite side road claim charitable fake bread pastry organically grown ingredient range cheese restaurant menu continental italian german indian classic rooftop breakfast buffet noon quality pretty proceed support learn life society operate school disadvantaged children aurangabad dolphin restaurant food service real reason rooftop overlooking ghat river fast wifi filocafe space study read network converse experiment think equipped electric outlet filocafe variety type teas italian espresso coffee yes coming italian machine creative variety fresh juice munchy flavour cafe axis bank coffee dessert strong filter coffee lightly accented latte quiet ambiance needed break wireless plus madhur cafe indian snack meal cheap price cafe primarily famous fried hot samosa dosa kachori sabji megu cafe kalika gali meer ghat excellent vegetarian japanese food japanese woman settled ago dish sunday menu price item increased expect pay vegetarian non vegetarian meal moti mahal delux restaurant sigra floor mall heart indian mughlai restaurant unique fine dining experience provide delivery meal serve authentic chinese continental zaika restaurant shivala opposite hotel broadway indian chinese dish sweet corn pakora middle food possibly due influx israel middle restaurant opened serve similar food cater predominantly clientele charge little thali haifa cafe assi ghat hotel haifa middle cuisine thali delicious wide range indian continental dish breakfast jordanian brother arent anymore regular hotel food awful jordanian hayat mediterreian assi behind dumraon bag colony park managed middle easterner labanha dry yoghurt baba ghansoush aubergine eggplant pita feta tad salt restaurant tent lounge atmosphere give cult presence ask hello queen smile quality pleasant air magnetosphere phulwari sami cafe vishwanath temple crossing sit beside religiously defunct architecturally gorgeous mahadev temple sip iced teas nana local consider holy site arent happy cafe close temple usurped thug sponsor restaurant avoid ethical ground heritage indian temple restaurant courtyard splurge hotel clark radisson hotel varuna chowk taj gange hotel nadesar palace ground restaurant respectively offering indian cuisine taj excellent usual coffee coffee common bigger cosmopolitan city instant variety served black white cafe serve real coffee hit miss standard taste cafe listed sell real stuff aum cafe crystal yoga type cafe coffee healthy tasty meal wide range herbal tea fresh juice option bright interior gift shop early opening convenient breakfast option limited brown bread bakery simple cafe excellent pastry bread indian dish coffee selection organic cheese multi grain bread sold loaf cafe coffee pizza pasta indian dish indian breakfast cosy atmosphere floor cushion seating table seat imok corner cafe painting dalai lama lord shiva wall probably coffee lane watching balcony mona lisa cafe bright cool interior rooftop seating friendly service mediocre coffee pastry mark cafe coffee pizza pasta backstreet atmosphere experienced barista touted coffee food reasonable price cafe early serve breakfast tea chai shop throughout worthy special note engineer chai wala run guy engineer degree solar energy passion chai variety tea sold clay cups fast service thick delicious chai variety lassi plain flavoured alcohol alcohol restaurant hotel radisson taj wine shop old dont sitting arrangement want bring hotel room radisson hotel alcoholic drink bar drink bhang potent powdered form marijuana mixed special lassis simply called bhang lassi especially holiday major shiva worship offered lord form prashad caution taken intoxicating effect last robbed consuming bhang thandai cool milk based pistachio almond saffron topped dollop malai cream bhang added thicken concoction thandai store godowlia serve lassi

@@ -2,12 +2,13 @@ Antalya, Turkey
 Labels: beach, history, relax | Split: test
 Source: https://en.wikivoyage.org/wiki/Antalya (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (11,936 characters) =====
+===== CLEANED GUIDE TEXT (11,945 characters) =====
 
 : Not to be confused with Alanya, a resort 130 km further east, or with Antakya a historic city in Hatay province of eastern Turkey.
 Antalya is a city in Pamphylia on the Turkish Mediterranean coast, and the chief resort of the "Turkish Riviera". It's a metropolis with a population of  2.7 million in 2022, the fifth largest city in the country. 
 
 Understand
+
  
 
 The city was named after its first documented ruler Attalos II (220-138 BC), king of Pergamon, though it was obviously settled much earlier. Attalos' life and wife resembles soap opera, and his epiphet Philadelphos - "brother-loving" - hints at insecurity over how his relationship with back-from-the-dead brother and co-ruler Eumenes II might be portrayed. He based his fleet here - there were few alternatives along this exposed coast, and Attaleia (Ἀττάλεια) grew up around what's now called the Roman harbour. It never grew large as it lacked a hinterland - it's hemmed in by mountains with difficult routes to get inland, although a fertile coastal plain extends up to the east. Early visitors included St Paul the Apostle (Acts 14: 25-26) and Ibn Battuta, who in 1331 AD recorded how Christians, Greeks, Jews, and royal court each inhabited their own walled enclave, while the Muslims lived in the main body of town all within an enclosing wall. 
@@ -21,6 +22,7 @@ Climate is of course Mediterranean. Summers are hot, sunny and humid yet rainles
 Winters are mostly mild, punctuated by storms, downpours and strong winds. April-May and Oct-Nov are optimum conditions for sight-seeing, and the sea remains warm late into Autumn.
 
 See
+
  
  
  
@@ -110,6 +112,7 @@ Zeytintaşı Cave.
  is a small show-cave near Akbaş in the mountains above Aspendos, visited by guided tour.
 
 Do
+
  
 
 * Boat trips leave from the harbour. Never believe their first price offer or departure time. 
@@ -122,6 +125,7 @@ Do
 * Hot air ballooning – While Cappadocia is Turkey's most famous ballooning destination, Antalya also offers certified balloon flights near the ancient city of Aspendos. From the sky, you can admire the well-preserved Roman theater, aqueducts, and the stunning Mediterranean coastline. Flights typically operate at sunrise and last about one hour. Prices vary by season, but expect to pay 9000-11000 TL per person. Book in advance through a local tour operator, such as Minister Tours, as weather conditions can affect availability. All commercial balloon operators are licensed and regulated by the Turkish Ministry of Culture and Tourism, and up-to-date information can be found on the official GoTürkiye tourism portal.
 
 Buy
+
 : Useful to know: AVM (short for "alışveriş merkezi") means shopping centre, and pazarı means bazaar or farmers' market. 
 * MarkAntalya AVM - The main shopping centre, 200 m east of Murat Paşa Mosque, open daily 10:00-23:00.
 * Migros - Supermarket chain, commonly found around town.
@@ -133,10 +137,12 @@ TerraCity. - A shopping center, in the east side of the city towards Lara beach 
 * Agora and Deepo Outlet Center / Mall of Antalya are two shopping centers on D400 two km west of the airport entrance.
 
 Eat
+
  
  
 
 Budget
+
 : The downtown streets around Muratpaşa Mosque have many cheap eating places. 
 * 
 Piyazcı Sami. Antalya-style piyaz (bean salad), kofte and other authentic fare.
@@ -167,6 +173,7 @@ Bolero Büfe. Serving lamb, chicken and other meat kebabs. Garlic mayo is availa
 
 
 Mid-range
+
 * 
 Rokka Pizza Falafel. Good eating place with lots of veggie / vegan choices.
 
@@ -187,11 +194,13 @@ Hasanağa. Long-established family-run restaurant, pleasant garden setting and g
 
 
 Splurge
+
 * 
 Seraser. Fine dining which they mostly deliver, but at these prices they need to be more consistent.
 
 
 Drink
+
  
 Lots in old town and town centre. Names like Sheffield Pub, Edinburgh Social House and Dubh Linn tell you which demographic they're aiming for. 
 
@@ -201,6 +210,6 @@ Lara town centre has Lucky Sports Bar and Patrick Irish Pub, but on the beach st
 
 Doluca Vineyard is next to the airport entrance.
 
-===== TOKENS THE MODEL TRAINS ON (921) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (921) =====
 
 confused alanya resort antakya historic hatay province pamphylia turkish mediterranean coast chief resort turkish riviera metropolis population million fifth largest country named documented ruler attalo king pergamon obviously settled earlier attalo life wife resemble soap opera epiphet philadelpho brother loving hint insecurity relationship dead brother ruler eumene portrayed based fleet alternative exposed coast attaleia grew called roman harbour grew lacked hinterland hemmed mountain difficult route inland fertile coastal plain extend early included paul apostle acts ibn battuta recorded christian greek jews royal court inhabited walled enclave muslim lived body enclosing wall relative isolation meant little fighting prize handed conquest elsewhere seljuk ottoman defeat world war harsh treaty sevre handed tract country ally gained reversed gained present border treaty lausanne access improved road building century game changer commercial airliner jet non stop europe political environment boosted infrastructure burgeoned development side kaleici old especially sandy lara beach effectively strip extend mountain terminate coastal plain called literature guide easterly town belek manavgat side alanya described separately climate course mediterranean summer hot sunny humid rainless average surpass night muggy sticky want air con winter mostly mild punctuated storm downpour strong wind optimum condition sight seeing sea remain warm late autumn hadrian gate turkish uckaplar gate starting point exploring kaleici old quarter built emperor hadrian ceremonial practical thoroughfare bricked wall preserved rediscovered wall crumbled fluted minaret mosque elegant domed mosque built seljuk rule rebuilt hamidid minaret tall dervish lodge museum opposite mosque home mevlevihane whirling dervish clocktower saat kulesi fluted minaret mosque century tekeli mehmet pasa mosque facing clocktower built century named military commander appointed grand vizier prime minister died later karatay medresi southwest clocktower religious school built become populated cafe shop worth brief look sehzade korkut mosque built roman temple century later century went forth religion minaret added early conversion survive fire mosque lay ruin rebuilt opening toy museum oyuncak muzesi harbour iskele mosque harbour compact kiosk harbour pier pleasant view old sunset ethnographic museum exhibit traditional arts craft hdrlk tower built roman century square base circular upper storey bastion lighthouse present indicate site hdrellez religious spring festival ataturk house museum ataturk stayed rebuilt mansion show memorabilia time musellim mosque fluted minaret mosque built balibey mosque corner ismet pasa built murat pasa mosque milli egemenlik commissioned dome beautiful seljuk calligraphy sheik sinan mosque degirmenonu windmill street built museum largest museum item illustrating history mediterranean pamphylia region repository item display aquarium huge aquarium display tank viewing tunnel duden lower waterfall lara duden river plunge sea sandland sand sculpture park round lit night aksu dolphinarium sea lion dolphin splashy stuff extra charge swim dolphin photo wish consider ethic attraction visiting duden upper waterfall duden river emerge karstic tunnel fall zoo spacious zoo park tunek tepe hilltop view coast reached gondola cable car drive hike food station silly price cable car collapsed perge extensive ruin heyday century roman site colonnaded agora theatre stadium temple artemis church kursunlu waterfall woodland park waterfall impressive flow dry trickle summer firm path lead past view suitable restricted mobility refreshment stall cafe restaurant king pool attractive pool canyon sillyon fortified heyday byzantine era ruin scrappy tumbling hillside aspendo graeco roman centrepiece preserved amphitheatre seating aqueduct siphoned water rise stadium bath basilica agora nymphaeum downstream modern highway eurymedon bridge rebuilt wonky fashion century roman original washed zeytinta cave show cave akba mountain aspendo visited guided tour boat trip leave harbour believe price departure aqua park waterhill opposite aquarium park aqua wet wild trendy lara lara beach strip funfair ndash akturpark aquarium pay ride overall admission charge football antalyaspor relegated play tff lig tier home ground stadium capacity museum ismail baha surelsan sponsored corendon airline park golf ndash head resort belek pitching med cinema golden orange film festival held hiking lycian stretch lycian coast approach ends village climbing geyikbayr mountain hot air ballooning famous ballooning destination certified balloon flight ancient aspendo sky admire preserved roman theater aqueduct stunning mediterranean coastline flight typically operate sunrise last hour price vary season expect pay person book advance tour operator minister tour weather condition affect availability commercial balloon operator licensed regulated turkish ministry culture tourism date information official goturkiye tourism portal useful know avm short alsveris merkezi mean shopping pazar mean bazaar farmer market markantalya avm shopping murat pasa mosque migro supermarket chain commonly migro avm commonly migro ataturk blv aquarium shopping migro alongside store farmer market numerous farmer market especially konyaalt terracity shopping side lara beach strip store restaurant agora deepo outlet mall shopping center airport entrance budget downtown street muratpasa mosque cheap eating piyazc sami style piyaz bean salad kofte authentic fare urfali cigerci apo simple food ozkan kebap menu selection budget local cigkofteci omer usta friendly cig kofte raw meatball gizem cafe fast food inexpensive trad shawarma durum kofteci authentically shabby turkish trad food public konyaalt square konyaalti beach strip serve burger thin crust pizza filling food yamacoba quality inexpensive food beach strip bolero bufe serving lamb chicken meat kebab garlic mayo request mid range rokka pizza falafel eating veggie vegan choice ayar meyhanesi friendly restaurant selection fresh fish swimming pool puzzle vivarium lobster choose human bather paradise restaurant sport bar decent food grand friend fish steak standard friendly service karaf bistro kaleici pleasant relaxing pizza wine owner cat wont steal wine claim share everything hasanaga established family run restaurant pleasant garden setting trad food splurge seraser fine dining mostly deliver price consistent old name sheffield pub social house dubh linn tell demographic theyre aiming konyaalti beach strip jame joyce barrel lara lucky sport bar patrick irish pub beach strip hotel bars doluca vineyard airport entrance

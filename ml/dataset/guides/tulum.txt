@@ -2,7 +2,7 @@ Tulum, Mexico
 Labels: beach, history, relax | Split: validation
 Source: https://en.wikivoyage.org/wiki/Tulum (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (21,225 characters) =====
+===== CLEANED GUIDE TEXT (21,231 characters) =====
 
 Tulum is on the Yucatán Peninsula, in Mexico. It is one of the earliest resorts in Mexico, offering a place of worship and solitude for the Mayan kings, clergy and gods in early times. The tropical beach backdrop is the main attraction of this picturesque, much-visited small ruin on the shore of the Caribbean Sea. Shortly after your arrival, you will understand why early Mayans picked this beautiful place to relax.
 
@@ -13,6 +13,7 @@ The Tulum town and beaches are heavily featured on social media by travel influe
 The hotel zone in particular has been incredibly built up with luxury shops and feels more like Los Angeles than Mexico City, providing comfort to those looking for a beach destination without losing access to high end shopping and dining. 
 
 Understand
+
 
 There are really three different areas referred to as Tulum. There are only minutes away from each other, not close enough though to walk to and from.
 
@@ -30,11 +31,13 @@ Tulum Ruinas is the archaeological site where the Maya ruins of Tulum stand. It 
 
 Archaeology
 
+
  
 
 Tulum is mostly known for its ruins, which strike an impressive image next to the sea. They were mainly constructed during the waning period of Maya culture, with the site occupied until the Spanish arrived. The site is notable for a small cenote, beautiful beaches below the ruin laden cliffs and some well preserved stellae in one of structure. After visiting other ruins in the area such as Coba, Chichen Itza and Ek Balam, Tulum's main claim is the sea-side setting. Some of the ruins used to be in poor condition and littered, but they are now well maintained (Dec 2018). Unlike many Mayan sites it is not possible to enter or walk on the structures. It is the third most popular archeological site in Mexico, so expect it to be extremely busy. Most of the tour groups from Cancun and Playa del Carmen arrive around 10:00 so the site is best visited just after it opens at 08:00.  The ruins close at 3:00 PM. Note that the ruins are located in the Tulum National Park (Parque del Jaguar), a fee is required to purchase a CONAP bracelet granting access. The ticket booth can be found to the right of the park entrance. In the park you can take a paid shuttle to the entrance or go on foot. Near the entrance is another ticket booth where tickets granting access to the ruins can be purchased.
 
 See
+
 
 
 * 
@@ -61,6 +64,7 @@ Sfer Ik. Uniquely designed art museum and restaurant that is best experienced as
 Museo Frida Kahlo. Immersive interactive museum that showcases the life of Frida Kahlo and her enduring inspiration to women artists.
 
 Cenotes
+
  
 : See also: Cenotes of the Yucatán
 
@@ -90,7 +94,9 @@ Cenote Aldea Zamá. Small public cenote in town with free access. Can get crowde
 
 
 Do
-===Beaches===
+
+Beaches
+
 * 
 Playa Ruinas. Beach connected right to the ruins at Tulum.
 
@@ -105,11 +111,13 @@ Playa Paraiso. Maybe the most popular public beach in Tulum with many beach club
 
 
 Natural areas
+
 * 
 Jaguar Park. Jaguar Park is a conservation area for the protection of jaguars. The area opened in 2024. It comprises two federally protected areas, Jaguar National Park (Parque Nacional Jaguar) and the Jaguar Protected Area for Flora and Fauna (Area Protegida de Flora y Fauna). Dubious environmental value and locals complain that government is simply regulating what has always been free and open beach access.
 
 
 Wellness
+
 Tulum is a popular destination for travelers seeking relaxation and wellness with a number of yoga instructors, and spas providing massages, temazcal, and a range of traditional and modern therapies. Spas are found throughout the town of Tulum and at palapas on the beaches.
 * 
 Maya Therapy Spa. Holistic spa specializing in Mayan treatments.
@@ -125,6 +133,7 @@ Quinto Elemento Spa. Massages and holistic spa services that include aromatherap
 
 
 Further activities
+
 * Kayaking
 * Standup paddleboarding
 * Snorkel. Guided snorkel tours from the public beach near the ruins.
@@ -147,6 +156,7 @@ Infinity 2 diving. British-owned dive shop specializing in cenote diving.
 
 
 Out of town trips
+
 * 
 Coba. – 50 km. A beautiful site; it was one of the largest Maya cities in ancient times. It boasts the tallest pyramid of the Yucatan Peninsula, the Nohoch Mul. You can still climb it, and the view from the top overlooking the forest for miles around is impressive. A fun and efficient way of exploring the ruins is renting a bike (M$50); just go to the rental place inside the ruins.
 
@@ -164,6 +174,7 @@ Punta Laguna Spider Monkey and Nature Reserve. – 60 km. It's serene and authen
 
 
 Buy
+
 
 ATMs with low withdrawal fees in the center are: 
 • Banco Azteca in the west 
@@ -184,6 +195,7 @@ Tulum Craft Center. More artisan crafts and souvenirs.
 
 
 Eat
+
  
 If you are staying on the beach, it is wise to stock up on food and drinks in the pueblo. There are not too many restaurant options on the beach, and the ones that are operational are quite expensive.
 
@@ -192,6 +204,7 @@ Most of the restaurants in town are infinitely cheaper than those at the resorts
 If you want non-perishable items, grab some snacks to supplement your meals at the Super San Francisco Food Mart. You can buy a cooler here which is great for having cold drinks on the beach each day. Just pick up ice in the morning and the cooler will stay cold until night time. This supermarket however is run by locals and hardly anyone speaks English, so if you don't know Spanish, be prepared to shop around to find what you need.
 
 Street food
+
 
 All these are in the city center:
 
@@ -206,7 +219,9 @@ Food stalls. On the Av. Satélite. They are open in the evening starting at 18:0
 
 
 Budget
-====City center====
+
+City center
+
 
 * 
 Burrito Amor. Healthy and clean amazing food
@@ -227,11 +242,13 @@ El Pollo Bronco. Offers chicken that is roasted to perfection that can be ordere
 Taqueria La Rivera Costena. Taqueria specializing in Al Pastor tacos, great for a cheap meal and drinks.
 
 Elsewhere
+
 * 
 Pozoleria La Mexicaita. Small establishment serving authentic pozole (both red and green) and traditional Mexican fare.
 
 
 Mid-range
+
 
 * 
 Don Cafeto. features authentic Mexican and is one of the most popular restaurants on the pueblo strip.
@@ -248,6 +265,7 @@ Lymbo. A simple beach club with delicious beach food, fresh juices and smoothies
 
 Outside Tulum
 
+
 *
 Oscar & Lalo Restaurant, Bar & Grill. Seafood, Mexican and Yucatecan cuisine.
 
@@ -256,6 +274,7 @@ Cetli. The food is somewhat expensive (but well worth the price!), keeping local
 
 
 Splurge
+
 * 
 Casa Jaguar. 
 
@@ -270,6 +289,7 @@ Arca. Tapas-style small plate dishes and cocktails all inspired by local Riviera
 
 
 Drink
+
 Try some of the cool spots in Tulum that offer fun drink specials with a hip tropical flair:
 * 
 Santino Nightclub. Lively nightclub with 3 floors of dancing and music with different DJs on each floor. Drinks are overpriced and scams have been reported, so keep your eyes open.
@@ -280,6 +300,6 @@ Teetotum. It's actually a hotel but offers weekend rooftop movies, a cool lounge
 * 
 Batey's. Lively open-air bar with the best live music and mojitos and guarapo in town.
 
-===== TOKENS THE MODEL TRAINS ON (1,630) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,630) =====
 
 yucatan peninsula earliest resort offering worship solitude mayan king clergy gods early time tropical beach backdrop attraction picturesque visited ruin shore caribbean sea shortly arrival early mayan picked beautiful relax prepared tour group archaeological site avoid crowd stay overnight ruin early morning buse arrive morning recommended catch spectacular vista rising caribbean beach heavily featured social media travel influencer providing certain crowd catered experience mexican taqueria focused appliance store youll holistic attraction vegan food option come original identity beaten path destination riviera maya said secret experienced massive growth past decade resulting increased traffic growing presence price increase hotel zone particular incredibly built luxury shop feel providing comfort looking beach destination losing access shopping dining referred minute close enough walk pueblo sits highway running pueblo referred local home worker industry store supermarket bus station budget inns hostel hotel digs cheap beach came isnt section definite feel existing mostly cater ruin pueblo indeed destination shopping restaurant modest night life studying language instituto chac mool spanish school booking tour banking shopping food vegetable fruit cafe flavor miss playa nest coastline lead sian kaan biosphere caribbean white sandy beach impressive mangrove wetland playa embrace fancier ecological boutique spa hotel decent excellent selection restaurant world famous nightlife spot playa quieter low key playa restaurant nightlife action become restaurant bars store afternoon become extremely busy crowded night party world affordable beach front cabana type lodging location walk beach step inquire accommodation rate surprised delighted establishment eco friendly provide electricity past midnight toilet paper flushed asked water resource sparingly hotel aim keep stop ecological problem already taken hold playa carmen constant growth regional tourism difficult goal achieve staying beach trying save money wise stock food drink pueblo restaurant option beach ones operational comparatively expensive taxis monopoly transport playa buse hitchhiking ruina archaeological site maya ruin stand reached mile road leading ruin highway road flanked restaurant commercial geared huge parking bus station operate handful middle range hotel archaeology mostly ruin strike impressive sea mainly constructed waning period maya culture site occupied spanish arrived site notable cenote beautiful beach ruin laden cliff preserved stellae structure visiting ruin coba chichen itza balam claim sea side setting ruin poor condition littered maintained unlike mayan site possible enter walk structure archeological site expect extremely busy tour group playa carmen arrive site visited open ruin close note ruin national park parque jaguar fee required purchase conap bracelet granting access ticket booth park entrance park paid shuttle entrance foot entrance another ticket booth ticket granting access ruin purchased archaeological site attraction mayan ruin sea access beach directly temple stairway restricted certain price vendor ruin entrance boat tour view ruin water ruin collectivo bus stop street ado bus terminal simply ask driver ruina cost payable cash bill wait side street collectivo dropped flag passing collectivo bag check entrance ruin allowed enter kind disposable plastic smoking supply line bag check take hour ruin bring bag allow skip line eleven corner street collectivo drop water seeing ruin entrance procedure bit complicated bracelet enter national park ticket office street bag check pass bag check walk shuttle entrance ruin inah ticket office entrance ticket ruin crowded tour cruise ship passenger arrive early late afternoon laguna kaan luum lagoon swimming hammock deep colored water street art street behind road filled street art interesting piece block mystika immersive sort immersive psychedelic mayan art museum ruin ground tower rotating observatory tower ride affording degree view ruin sfer uniquely designed art museum restaurant experienced architectural jewel take influence nearby seascape jungle landscape create meandering path building arch doorway architectural detail resemble jungle growth casual walk outside feel spending money admission minute casual curious architect want door avoid crowd spend space museo frida kahlo immersive interactive museum showcase life frida kahlo enduring inspiration women artist cenote cenote yucatan yucatan rainwater collect system underground cave tunnel tunnel reach surface cenote pronounced seh noh teh cenote allow swimming diving rent related equipment fresh water cold casa cenote cenote underground yard beach emerge underwater water spring yard beach ocean tanka iii bay mile intersection ruin cab stay scuba ways sure dive arrange taking diving course total cenote cristal cenote escondido cenote cristal platform jump water opposite side road cenote escondido swimming rope jump water maybe diving snorkeling spot cool fun close gran cenote limestone cave cenote offering snorkling swimming provide life vest fins mask extra charge fish iguana tropical bird cenote dos ojos cenote region offering activity set aside total entrance snorkeling restaurant dish intersection highway road cenote minimarket ticket booth serve lunch cenote sac actun cool mostly cave underground cenote cenote calavera clean cenote short walk platform jumping cold water hammock provide life jacket fins mask extra charge clean restroom shower cenote aldea zama public cenote access crowded local afternoon beach playa ruina beach connected ruin playa santa crowded beach smaller beach club playa pescadore lively beach seafood option option ocean activity playa paraiso maybe public beach beach club relaxing atmosphere natural jaguar park jaguar park conservation protection jaguar opened comprise federally protected jaguar national park parque nacional jaguar jaguar protected flora fauna protegida flora fauna dubious environmental value local complain government simply regulating beach access wellness destination traveler seeking relaxation wellness yoga instructor spas providing massage temazcal range traditional modern therapy spas throughout palapa beach maya therapy spa holistic spa specializing mayan treatment yaan wellness spa peaceful tranquil spot healing water holistic massage treatment cacao spa massage facial package couple massage comfortable facility quinto elemento spa massage holistic spa service aromatherapy sound therapy steam vapor activity kayaking standup paddleboarding snorkel guided snorkel tour public beach ruin self guided tour reef beach hotel zone barrier reef largest world stretching isla contoy tip yucatan hondura specy fish spectacular coral guided tour cheapest zama hotel zama establishment beginning hotel zone cenote diving kitesurfing jungle gym unique tropical beach themed gym custom equipment wood stone definitely instagram focused clientele fun workout location beach hidden treasure cenote park hidden world extensive system underwater cave cavern earth park home incredible cenote yucatan peninsula featured imax movie journey amazing cave bbc planet earth sery extreme control beach playa paraiso certified instructor level facility rental ocean pro kite kiteboarding school beach provide kitesurf lesson following professional method teaching iko international kitesurfing organisation hour lesson ready package koox diving adventure learning scuba dive exploring cenote admiring wildlife kite surfing paddle boarding lesson trip sian kaan isla blanca practice ground tour laguna coba sian kaan muyil ruin reservation shop padi certified dive master instructor senior level iko kiss pasa ibo kitesurfing instructor guide speaking english spanish italian diving tour start private kite surfing paddle boarding trip following duration gear equipment transportation provided infinity diving british owned dive shop specializing cenote diving trip coba beautiful site largest maya city ancient time boast tallest pyramid yucatan peninsula nohoch mul climb view overlooking forest mile impressive fun efficient exploring ruin renting bike rental inside ruin muyil archaeological site adjacent sian kaan steep walled watch tower climb sian kaan biosphere wonderful nature preserve park feature acre acre pristine mangrove swamp wetland sea kayak explore lagoon side fishermen dock willing tour cheaper organized tour offered fishermen hour boat tour anytime expect pay organized boat tour xcaret ecopark eco archaeological park playa carmen admire tropical flora fauna typical region expression mayan culture facility archaeological site snorkeling underground river beach butterfly pavilion orchid greenhouse regional fauna breeding farm mayan village jaguar island additional cost swim captive dolphin enjoy temascal spa service night admire unique night show xcaret espectacular feature variety performance ancient mayan culture traditional mexican music dance laguna spider monkey nature serene authentic entrance fee person hour guided tour atms low withdrawal fees banco azteca banamex inside super aki santander inside bus terminal banco middle buying grocery oxxo minimarket tienda bigger variety product dunosusa super willy waldo supermarket called super aki market catering mainly bus load situated road leading entrance archaeological site market stretch cater sure give look anyway beautiful hand crafted mexican pottery fabric turn vere strip discover tons tiny establishment feel truly sleepy mexicarte gift shop focusing variety souvenir artisan craft region craft artisan craft souvenir staying beach wise stock food drink pueblo restaurant option beach ones operational expensive restaurant infinitely cheaper resort exception italian japanese restaurant feature entree countless little cafe establishment bite cheap want non perishable item grab snack supplement meal super food mart cooler cold drink beach pick ice morning cooler stay cold night supermarket run local hardly anyone speak english dont know spanish prepared shop street food street food market evening calle sol ote parque dos agua variety fancy street food street geminis nte vegan food food stall satelite evening starting budget burrito amor healthy clean amazing food antoriko incredibly generous portion seafood taco burrito format serve ceviche marinated marlin taco antojito chiapaneca delicious pastor taco service restaurant massively somehow incredibly quick service watch orange habanero salsa heat sneak taqueria tio delicious simple taqueria focusing pastor incredibly torta pollo bronco chicken roasted perfection ordered taqueria rivera costena taqueria specializing pastor taco cheap meal drink elsewhere pozoleria mexicaita establishment serving authentic pozole red green traditional mexican fare mid range don cafeto feature authentic mexican restaurant pueblo strip mezzanine cliff feet overlooking playa paraiso thai food ambiance super view hows friday saturday night camello cheap seafood crowded mainly local lymbo simple beach club delicious beach food fresh juice smoothy outside oscar lalo restaurant bar grill seafood mexican yucatecan cuisine cetli food somewhat expensive worth price keeping local notice excellent restaurant strip owned young chef claudia trained premier culinary academy splurge casa jaguar gitano rosanegra latin american restaurant arca tapa style plate dish cocktail inspired riviera maya flair cool spot fun special hip tropical flair santino nightclub lively nightclub floor dancing music djs floor drink overpriced scam reported keep eyes teetotum actually hotel weekend rooftop movy cool lounge special razzleberry daiquiri batey lively air bar live music mojito guarapo

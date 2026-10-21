@@ -2,14 +2,16 @@ Djerba, Tunisia
 Labels: beach, relax | Split: test
 Source: https://en.wikivoyage.org/wiki/Djerba (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (7,448 characters) =====
+===== CLEANED GUIDE TEXT (7,454 characters) =====
 
 Djerba is an island and a cultural  in south Tunisia with beautiful sandy beaches and beautiful, peaceful and silent countryside. One from the best ecological destinations in the world, this island preserves its traditions and its unique architectural theme.
 
 Understand
+
 Djerba is known for its beautiful beaches and dramatic sunsets and therefore a popular tourist destination, particularly with French, German and Italian tourists. It is one of the few remaining places in Tunisia where a Berber language is still spoken. It is the largest island of North Africa with a total population of around 160,000. It is also notable for being home to one of the last remaining Jewish communities in the Arab world.
 
 See
+
  
 
 * 
@@ -74,6 +76,7 @@ Djerbahood. A collection of street art by international artists scattered around
 
 
 Do
+
 Enjoy the sandy beaches. One of the best is at the 
 Lagoon. 
 , near Djerba Explore, which has incredibly clear and blue-green waters. Here you can do water sports, and locals propose camel or horse rides (DT10 for a ride up and down the beach, possible to negotiate, possible to do longer rides). A restaurant on the beach (the only one) serves grilled fish and other dishes for about DT10-15 per person. A ride from Houmt Souk costs about DT10.
@@ -87,11 +90,13 @@ Djerba Golf Club.
 
 
 Buy
+
 Textiles, spices, dates, loofahs, traditional clothes, drums and pottery.
 
 In the souks, bargain and don't be afraid to ask for even a quarter of the starting price.
 
 Eat
+
 
 Eat fresh grilled fish, couscous with fish and lamb meat, try "brik à l'oeuf", Tunisian sandwich (casse-croute tunisien), lablabi (a chick-peas soup), salade mechouia (mixed grilled vegetables), tastira (mixed fried vegetables). Fricasse (sandwich bread fried in oil and topped with various toppings). Gelato and pizzas from the souk. Look for the smaller shops with signs in Arabic, the owners are friendly and will explain what you can get, and the prices are much lower!
 
@@ -103,8 +108,9 @@ Fast Food Abdou. A street food eatery serving local and national specialties lik
 
 
 Drink
+
 Drink only bottled water; if you feel adventurous, try fresh orange juice, mint tea, Turkish coffee, boukha (local liquor made of figs), celtia (local beer), l'ban (liquid yogurt; try the fresh l'ban from the milkman, rather than the bottled one).
 
-===== TOKENS THE MODEL TRAINS ON (591) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (591) =====
 
 island cultural beautiful sandy beach beautiful peaceful silent countryside ecological destination world island preserve tradition unique architectural theme beautiful beach dramatic sunset therefore destination particularly german italian remaining berber language spoken largest island total population notable home last remaining jewish community world houmt souk colorful market especially dalgerie borj kebir fort sign building explanation room pop boat ride kids run marina port habib bourguiba street charming replica giant marche find traditional fish crier men seated blue stool auctioning line freshly caught fish crowd guellala village pottery time ancient roman watch wonderful sunset museum patrimony entrance fee photo right nicest museum housed beautiful traditional complex worth detailed explanation english tunisian djerban custom cafe door reasonable price mint tea view hill highest spot star wars shooting film star wars filmed infamous mos eisley cantina moisture farm luke skywalker grew standing residence case cantina ben kenobi hut coast half hour walk ajim inconspicuous today fishermen hut little seaside cafe peopled local coastal road touristic walk half hour running taxi delightful walk sunset sidi jmour mosque another filming beach tiny cliff local row fish ride horse sea children play sand fantastic watch sunset far gimmick touristy coast gps location saved phone taxi driver know exact location star wars film fadhloun mosque ghriba synagogue synagogue bit old serve jewish community possibly synagogue site ago synagogue traditional pilgrimage jews throughout lag bomer holiday start passover hara seghira synagogue synagogue kohanim djirt explore host biggest mediterranean crocodile farm creature imported nile river impressive lalla hadhria museum interesting interactive traditional village person entrance section ras rmel called flamingo pirate island peninsula flamingoe present colder month starting ship cruise costing person walk ons person hotel group houmt souk marina port crew energetic passionate fun buffet lunch peninsula wonderful package runs loud dancing music boat water delightful trip worth price non dancer mosque turk mosque stranger borj kebir ancient castle dating century borj kastil ruin century castle built control lalla hadria museum traditional heritage museum guellala museum nichola greek orthodox church whitewashed church built early century serving greek orthodox community djerbahood collection street art international artist scattered laneway hara sghira nothing partiularly earth shattering fun instagram opportunity nonetheless enjoy sandy beach lagoon explore incredibly clear blue green water water sport local propose camel horse ride ride beach possible negotiate possible longer ride restaurant beach serve grilled fish dish person ride houmt souk cost ras rmel peninsula rent bicycle impossible village enjoy simple typical architecture silent countryside beautiful sunset sunrise fresh tasty fish typical fish market miss turkish bath jeweler admire bedouin silver jewelry watch beautiful sunset northwest side island borj djillidj turning ajim quiet little port lighthouse host traditional fishermen catch octopus clay pots sunset wins quiet serene sure inspire golf club textile spice date loofah traditional clothe drum pottery souk bargain dont afraid ask quarter starting price fresh grilled fish couscous fish lamb meat brik loeuf tunisian sandwich casse croute tunisien lablabi chick peas soup salade mechouia mixed grilled vegetable tastira mixed fried vegetable fricasse sandwich bread fried oil topped topping gelato pizza souk look smaller shop sign arabic owner friendly explain price lower petit crustace ajim excellent fresh fish dish genuinely friendly staff choose fish want watch grilled front relatively expensive price depending fish choose contain starter dish fresh fruit dessert wont leave hungry ferry dock fast food abdou street food eatery serving national specialty brik mlawi fricasse sweet treat despite facing market souvenir local trap bottled water feel adventurous fresh orange juice mint tea turkish coffee boukha liquor figs celtia beer lban liquid yogurt fresh lban milkman bottled

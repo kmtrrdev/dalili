@@ -2,11 +2,12 @@ Hoi An, Vietnam
 Labels: history, culture, food, beach | Split: test
 Source: https://en.wikivoyage.org/wiki/Hoi_An (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (25,782 characters) =====
+===== CLEANED GUIDE TEXT (25,799 characters) =====
 
 Hoi An (Vietnamese: Hội An) is a beautiful city in Vietnam about 30&nbsp;km to the south of Da Nang. The Old Town of Hoi An is listed as a UNESCO World Heritage Site. Hoi An is also commonly used as the base for half-day trips to a cluster of abandoned and partially ruins of My Son, another UNESCO World Heritage Site in the west of the Central Highlands.
 
 Understand
+
  
 Hoi An, once known as Faifo, with more than 2,000 years of history, was the principal port of the Cham Kingdom, which controlled the strategic spice trade with Indonesia from the 7th-10th centuries and was a major international port in the 16th and 17th centuries. The foreign influences are discernible to this day.
 
@@ -21,16 +22,20 @@ While the serious shipping business has long since moved to Da Nang, the heart o
 Alas, since 1999, when UNESCO status was awarded, there has been a massive increase in mass tourism, with the result that most houses have been sold to speculators and shop owners to be used for commercial purposes. So while the shell of the town remains (and a pretty shell it is), the community that created it is long gone and in their place are shops, restaurants, art galleries, etc. Domestic Vietnamese tourists have also discovered Hoi An, with the result that particularly on holidays and weekend evenings the Old Town gets packed with standing-room-only crowds.
 
 Orientation
+
 The main thoroughfare in the Old Town is Tran Phu. Just south of the Old Town, across the Thu Bon River, are the islands of An Hoi to the west, reached via Hai Ba Trung, and Cam Nam to the east, reached via Hoang Dieu.
 
 See
+
  
 Old Town
+
 The Old Town, with its historical architecture and very walkable streets filled with shops and restaurants, is at its best at night, when the activity along the river front is lit by the soft light of silk lanterns.
 
 Entry to Old Town is free, however entry to all historical sites is handled via a coupon system, where 120,000 dong (2016) gets a ticket that can be used to enter any five attractions. Tickets are sold at various entry points into the Old Town, including Hai Ba Trung St, and also at some of the attractions, including the Cantonese Assembly Hall.
 
 Landmarks
+
 *
 Japanese Covered Bridge. The bridge was constructed in the early 1600s by the Japanese community, roughly 40 years before they left the city to return to Japan under the strict policy of sakoku enforced by the Tokugawa Shogunate, and renovated in 1986. Today, it's the symbol of Hoi An. Entry is one coupon, but it's possible to cross back and forth several times without meeting a ticket-checker. If your scruples bother you, leave a tribute for the pig statue or the dog statue standing guard at opposite ends of the bridge.
 
@@ -43,6 +48,7 @@ Thanh Ha pottery village. Formed in the sixteenth century, Thanh Ha Pottery Vill
 
 
 Museums
+
 * 
 Museum of Hoi An History and Culture. The museum contains some old black and white photos of Hoi An taken in the early 20th century. It also houses an old cannon, some two-thousand year old pots from the Sa Huynh period, and a case full of 9th-century bricks and tiles from the Champa period.
 
@@ -57,6 +63,7 @@ Museum of Trade Ceramics. The dusty, unlabeled displays of broken pottery are em
 
 
 Traditional old houses
+
  
 There are four old houses that exist in an awkward halfway state between museum showpiece and somewhat shabby residence for the family that lives there.
 
@@ -74,6 +81,7 @@ Old house of Tan Ky. As above, a younger member of the family will provide a cup
 
 
 Congregation halls
+
  
 Numerous congregation halls, where Chinese expatriate residents socialized and held meetings, are dotted about the town. They are typically named after the home region of their members, such as Fujian and Canton. Some attractions do not have ticket-takers.
 * 
@@ -99,6 +107,7 @@ Minh Huong Communal House. Built by the Minh Huong, Chinese Ming Dynasty loyalis
 
 
 Performances
+
 *
 Hoi An Art Craft Manufacturing Workshop. Folk music performances are offered Tu-Su at 10:15 and 15:15.
 
@@ -113,6 +122,7 @@ Hoi An memories show. A big musical-esque show on the history of Hoi An, from ea
 
 
 Do
+
  
 *
 * Diving – Cham Islands is popular for scuba diving and snorkelling.
@@ -125,6 +135,7 @@ Hoi An Silk Village. Revived 300-year-old Champa silk traditions. Half day tours
 * Hoi An Lantern Boat, Thu Bon River, Hoi An Ancient Town (☎ +84 986 605 612, hoianlanternboat.vn).  Daily 16:00–22:00. Float along the Thu Bon River on a traditional  lantern boat past the ancient Japanese Covered Bridge. Release a  lantern for good luck. Optional paper lantern making workshop.  From $6 per person.
 
 Day trips
+
 * 
 An Bang Beach. An Bang Beach is a relaxed stretch of coastline just a few kilometres north of Hoi An’s ancient town. Known for its soft white sand and relatively calm waters, it offers a quieter alternative to the busier nearby beaches, with a laid-back village atmosphere.
 
@@ -150,8 +161,10 @@ Tháp Khương Mỹ. Three Cham towers, contemporaneous with Bagan in Burma. Sma
 
 
 Buy
+
  
 Money
+
 There are many ATMs around Hoi An. 
 VP Bank. 
  is on the way to the center along the parallel S-roads, and 
@@ -161,6 +174,7 @@ TP Bank.
 For changing money the best places are the gold shops near the market.
 
 Shopping
+
 * Brass gongs and bells – There are many foundries on the road to My Son. Items can be made to order. This is the origin of the souvenirs sold in Hoi An tourist shops.
 * Hand made silks and lanterns – Old Town tourist shops.
 
@@ -169,6 +183,7 @@ Moon Milk Supermarket. The have a great variety, generally quite competitive pri
 
 
 Markets
+
 * 
 Central Market. Produce and other stuff. Beware of the more touristy prices.
 
@@ -183,6 +198,7 @@ Night Market. Selling what night markets sell, overpriced finger food and local 
 
 
 Bespoke clothing
+
 Hoi An is known as the centre for affordable custom-made clothing. There are around 400 tailor shops in the city, some better than others. Most can complete something in one day, so you may wish to make an order on arrival so there will be time to complete the work. The principle of caveat emptor is definitely relevant. You will probably need to leave a deposit of about 25% the finished price before the work is started. If there are problems, shops may or may not be willing to make adjustments; you will not get a refund. Some strategies to minimise your risk:
 
 * Do not use recommendations from your accommodation or motorcycle drivers (both the hotel and drivers get a kickback), check TripAdvisor/Google Maps, and go to multiple shops for quotes. Do not go with shops that hurry through the design process or are pushy.
@@ -214,7 +230,9 @@ Yaly Couture. Tourist trap. Read the bad reviews on TripAdvisor before consideri
 
 
 Eat
-===What===
+
+What
+
  
  
 In addition to the usual suspects, there are dishes that Hoi An is particularly famous for:
@@ -225,6 +243,7 @@ In addition to the usual suspects, there are dishes that Hoi An is particularly 
 * Hoành Thánh Mỳ (Wonton dumplings) – Essentially the same as the Chinese kind, served up in soup or deep-fried.
 
 Where
+
 Meals at restaurants in the touristy center of Hoi An are generally more expensive than outside at a more local place (depending on the dish and the location) and portions served are smaller, but most dishes are still inexpensive and delicious. A few touristy places can actually be more convincing than the local ones, like Madam Khanh — still running strong and fairly priced as of Nov 2023.
 
 However, street snacks, bakeries, coffee places, and beverages in restaurants are often double the common local price.
@@ -237,6 +256,7 @@ Banana fritters stall. Delicious banana fritters in dough. They squish the banan
 
 
 Budget
+
 * 
 Thiên Bảo Quán. Serves the probably most inexpensive Bánh Xèo in all Vietnam, and is very authentic in addition. It actually seems to be vegan, but they also serve meat sticks if you are looking for additional taste. You won't find any fancy lighting or comfortable Western sized chairs here, just the regular tiny plastic chairs and tables. But the experience rolling the wrap parts, and dipping it into the delicious gravy is well worth the trip here.
 
@@ -264,6 +284,7 @@ Quán Cô Mai. They offer Mì Quảng and Mì Ga. Watch out though, they might c
 
 
 Mid-range
+
 * 
 Bale Well Restaurant. Set menu: bánh xèo, pork savoury pancakes; barbecued satay pork loin, wrapped in a lettuce leaf, with side salad. Steep price for a few rice pancakes.
 
@@ -290,11 +311,13 @@ Thanh Restaurant. Great Vietnamese and Western food. Excellent grilled fished in
 
 
 Splurge
+
 * 
 Madam Kieu. You're definitely paying a premium for the location, but this atmospheric restaurant serves excellent renditions of Hoi An and central Vietnamese favorites, and the river views and people watching from the wraparound balcony on the 2nd floor are hard to beat. Air-con seating available as well. Live music on the 1st floor on weekends.
 
 
 Drink
+
 Walking along the river at night, you will find a lot of pubs. Beer is around 30,000 dong. Cocktails are 20,000-50,000 dong. There are some bar foods available, such as fried prawn crackers for around 15,000 dong a plate. Hoi An is not a real party destination and has a rather limited number of nightlife locations.
 *
 BB Lounge. The new bar, lounge and club in town, located on the third floor above Bamboo Buddha restaurant. Nice selection of cocktails, rum shooters and tapas. Live music and regular DJs, dance floor. Sky balcony, open late.
@@ -308,6 +331,6 @@ Rosie's cafe. A lovely cafe tucked in a peaceful alley of Nguyen Thi Minh Khai. 
 *
 Why Not Bar. Late night bar near old town. Not to be confused with the much different bar/club of the same name in Nha Trang. This very small 3-storey bar advertises free drinks and cheap all-you-can drink specials. Patrons do not come to this bar until at least midnight, when the rest of the town has closed down. Open until late.
 
-===== TOKENS THE MODEL TRAINS ON (2,058) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (2,058) =====
 
 vietnamese beautiful nbsp old listed unesco world heritage site commonly base half trip cluster abandoned partially ruin son another unesco world heritage site highland faifo history principal port cham controlled strategic spice trade century major international port century foreign influence discernible culture heritage mostly cham originally stretched hue phan thiet nha trang champa likely originally java original cham political capital tra kieu commercial capital spiritual capital son hindu cham hindu century influence trader resulted conversion islam major influence chinese trader escaping ming dynasty army settling moved created saigon major trading port last major influence culture heritage vietnamese fairly recent came cham lost control wanting vietnamese culture heritage hue destination serious shipping business moved heart old winding lane chinese styled shophouse particularly atmospheric evening shop cater trade largely preserved unusual renovation proceeded slowly carefully mercifully absent towering concrete block karaoke parlour alas unesco status awarded massive increase mass tourism result house sold speculator shop owner commercial purpose shell remain pretty shell community created shop restaurant art gallery etc domestic vietnamese discovered result particularly holiday weekend evening old packed standing room crowd orientation thoroughfare old tran phu old bon river island reached hai trung cam nam reached hoang dieu old old historical architecture walkable street filled shop restaurant night activity river front lit soft light silk lantern entry old entry historical site handled coupon system dong ticket enter attraction ticket sold entry point old hai trung attraction cantonese assembly hall landmark japanese covered bridge bridge constructed early japanese community roughly return strict policy sakoku enforced tokugawa shogunate renovated today symbol entry coupon possible cross forth time meeting ticket checker scruple bother leave tribute pig statue dog statue standing guard opposite ends bridge quan cong temple founded century temple dedicated quan cong chinese general remembered worshipped quality loyalty integrity justice statue inside temple thanh pottery village formed sixteenth century thanh pottery village oldest pottery village village bank bon river ancient century thanh pottery village preserve traditional pottery making process manually shape pottery hand foot pedal mold method create unique feature village ceramic product nowaday thanh ceramic product mainly decoration display purpose museum museum history culture museum contain old black white photo taken early century house old cannon thousand old pots huynh period case century brick tile champa period museum folk culture put bizarre looking plaster sculpture vietnamese peasant museum document dress culture rural museum huynh culture museum collection consist pottery urns century upstair another museum museum revolution collection consist picture war heroe collection weapon grenade launcher machine guns museum trade ceramic dusty unlabeled display broken pottery eminently forgettable house enough provide opportunity explore shape layout old home traditional old house old house exist awkward halfway state museum showpiece somewhat shabby residence family live old house phung hung traditional story wooden house inhabited generation current guide hope tip old house quan thang old house duc old house tan younger member family provide cup tea tour doesnt stray front room house youd step sleeping member older generation anywhere design house show architecture incorporated japanese chinese influence japanese element crab shell shaped ceiling supported beam living room chinese poem written mother pearl hanging column hold roof congregation hall numerous congregation hall chinese expatriate resident socialized held meeting dotted typically named home region member fujian canton attraction ticket taker cam pho communal house chinese assembly hall pan chinese assembly hall jointly built cantonese teochew hokkien fujian hainanese hakka community quang trieu assembly hall built cantonese community calm courtyard ornate statuary peek half hidden yard kitschy pastel dragon statue phuc kien meeting hall hokien fujian meeting hall built trieu chau meeting hall teochew community meeting hall built fujian hall occupying block hai nam assembly hall hainanese community meeting hall built huong communal house built huong chinese ming dynasty loyalist given refuge refusing submit manchu qing ruler descendant today assimilated ethnic vietnamese longer identify ethnic chinese performance art craft manufacturing workshop folk music performance offered traditional art performance house bamboo circus scale cirque soleil style show acrobatic dance traditional modern vietnamese theme seat theatre excellent visual choreography enthusiastic young performer ticket online theatre hotel theatre cheap seat view memory show musical esque show history early settler golden era important trading port huge stage lighting effect hundred actor active situated island river island surrounding stage renaissance theme park topic history leading show mini show reenactment dance performance theme park ticket bought entering island bridge online cheaper getyourguide klook due promotion eco seat perfectly view higher class possible arrive stage queue choosing seat diving cham island scuba diving snorkelling cooking lesson offered restaurant enjoyed meal cant hurt enquire established cooking school reputation variety course school learn mechanic vietnamese cooking chop vegetable roll spring roll etc rest closely guarded secret making sauce technique frying spring roll grilling beef instructor local english pronunciation speak fast cycling interesting nearby sight easily explored bicycle stunning rural scene rice paddy picturesque fishing village field water buffalo buddhist pagoda quiet road mention beach explore numerous picturesque pathway bamboo bridged tour company private guide cycling tour openstreetmap app osmand mapy organic maps mapsme search attraction silk village revived old champa silk tradition half tour encompassing entire silk process silkworm dressmaking showroom converted quang nam style house dai representing minority group spacious colonial style restaurant serving dish silk showroom professional tailor custom design garment basket boat thon van lang cam thanh hoianbasketboat authentic coconut basket boat tour bay mau coconut forest experience spinning show crab catching traditional fishing net throwing guide vnd person entrance fee life jacket lantern boat bon river ancient hoianlanternboat float bon river traditional lantern boat past ancient japanese covered bridge release lantern luck optional paper lantern making workshop person trip bang beach bang beach relaxed stretch coastline kilometre ans ancient soft white sand relatively calm water quieter alternative busier nearby beach laid village atmosphere cham island unesco biosphere lao cham nautical mile offshore slow boat speedboat trip arrange hotel tour operator non nuoc beach opposite marble mountain accessible motorbike beach closer accessible bicycle motorbike parking beach grab dong dong duong ruined cham tower sole major remnant buddhist cham period century indravarman temple complex originally minor remnant visible lang fishing village mountain river lagoon island nbsp beach hue marble mountain nbsp worth morning afternoon trip largest mountain temple cave grab cost dong hotel arrange taxi wait couple dong entry time appear fee worth paying extra map tell overlook fire mountain trail accessible wclook handrail upanother nearby temple complex arch trail accessibility elevator fee dong broken lead platform overlook water stairway temple advantage elevator stair entrance problem rest stair cave floor trail wet slippery khanh rare seaside ruin cham tower dating century son early morning half trip motorbike private car organized tour return boat arranged trail slippery rainy weather thap bang twelfth century cham octagonal tower dedicated shiva motorbike minute northwest someone site sell ticket dong combined trip thap khuong thap khuong cham tower contemporaneous bagan burma museum premise someone site sell ticket dong motorbike half hour combined trip thap bang dong money atms bank parallel road bank touristy charging fees acb charge changing money gold shop market shopping brass gong bell foundry road son item order origin souvenir sold shop hand silk lantern old shop moon milk supermarket variety generally competitive price reduced item cashier beer dong market market produce stuff beware touristy price textile market morning market produce fish meat price night market selling night market sell overpriced finger food handiwork bespoke clothing affordable custom clothing tailor shop complete wish order arrival complete work principle caveat emptor definitely relevant probably leave deposit finished price work started problem shop willing adjustment refund strategy minimise risk recommendation accommodation motorcycle driver hotel driver kickback check tripadvisor google maps multiple shop quote shop hurry design process pushy avoid yaly trap hotel earn commission recommending order thing wrong item lose money hand negotiate discount order multiple item fits work copy sure special instruction pocket shortening etc language barrier friend price thing shop material price vary order shop eggs basket tailor shop nathan tailor owner operated linda trained blue eye tailor opening shop men women tailoring handle measurement fitting personally suit shirt walk ins accepted shirt suit accept remote order customer want order returning home len silk owner generation family business grandmother learned silk hand young girl continued mass produced imported silk norm village women mostly dropped craft reasoning traditional technique making hand produced silk resulted superior product kept business worn technique nearly garment store method women clothing hand crafted fabric song trang moon river men lady tailoring piece suit start similar nearby loi vanda tailor older gentleman measurement fitting everything carried precision piece suit yaly couture trap read bad review tripadvisor considering hotel earn commission recommending shop addition usual suspect dish particularly famous banh xeo crispy fried stuffed rice pancake wrap similar taco half roll eatable paper additional vegetable dip delicious sauce cao lau dish rice noodle soaked lye tinting light brown giving firmer chewier texture unlike pasta japanese udon noodle topped slice roast pork dough fritter fresh herb veggy quang wide rice noodle atop bed fresh herb bowl vice versa amount warm lukewarm broth generally strongly flavored infused turmeric enough partially cover vegetable meat added banh bao banh vac white rose type shrimp dumpling translucent white dough bunched look rose hoanh thanh wonton dumpling essentially chinese kind served soup deep fried meal restaurant touristy generally expensive outside depending dish portion served smaller dish inexpensive delicious touristy actually convincing ones madam khanh running strong fairly priced street snack bakery coffee beverage restaurant double common price market food court stand serving speciality typical vietnamese food pho spring roll stand catering english speaking staff menus stand catering mostly vietnamese serve rice side dish banana fritter stall delicious banana fritter dough squish banana dip liquid dough finally fry freshly lying local stop motorbike constantly making ones budget thien bao quan serve probably inexpensive banh xeo authentic addition actually seem vegan serve meat stick looking additional taste wont fancy lighting comfortable sized chair regular tiny plastic chair table experience rolling wrap part dipping delicious gravy worth trip cao lau khong gian xanh serve cao lau hoanh thanh wonton banh bao banh vac white rose portion size disappointing pushy ordering drink dam vegetarian restaurant vegan vietnamese food selection option choose vegetarian pho amazing family restaurant hidden alley friendly staff pho tung serve super pho know side dish vegetable boss teach blend sauce prepared owner super lovely madam khanh banh queen prepared meat elsewhere chili sauce pate unique delicious fresh vegetarian option fire white rose shop white rose dumpling served quang following inexpensive restaurant close quan muoi beside quang serve delicious cao lau quan quang watch claim eggs extra point picture menu mid range bale restaurant set menu banh xeo pork savoury pancake barbecued satay pork loin wrapped lettuce leaf side salad steep price rice pancake bazar cafe restaurant serve vietnamese mediterranean barbeque garden comfortable lounge cocktail shisha inside traditional wooden house dingo deli delicatessen extensive selection gourmet food restaurant european grocery store attractive ambience aroma freshly brewed coffee wooden constructed adventure play ground children play overlook paddock buffalo bon river red bridge restaurant cooking school bon river acre tropical garden wide range vietnamese food air restaurant cooking class begin hai scout cafe italian style coffee tour market shop fruit veg booking dinner essential close early customer cocktail usual beer wine list son hoian stopping point cycling beach temari authentic japanese cuisine kobe quality ingredient thanh nam quan tiny vietnamese restaurant everything delicious thanh restaurant vietnamese food excellent grilled fished banana leaf river view splurge madam kieu youre definitely paying premium atmospheric restaurant serve excellent rendition vietnamese favorite river view watching wraparound balcony floor hard beat air con seating live music floor weekend walking river night pubs beer dong cocktail dong bar food fried prawn cracker dong plate real party destination limited nightlife location lounge bar lounge club floor bamboo buddha restaurant selection cocktail shooter tapa live music regular djs dance floor sky balcony late dive bar restaurant bar traditional house garden pool table play kind music request music week choice cocktail beer wine bottle glass food tapa vietnamese salad pasta lasagne hamburger seafood rice salad rosie cafe lovely cafe tucked peaceful alley nguyen thi khai signature cold brew coffee acid hot brewing cold pressed juice food space relax enjoy atmosphere old townal bar late night bar old confused bar club nha trang storey bar advertise drink cheap special patron bar midnight rest late

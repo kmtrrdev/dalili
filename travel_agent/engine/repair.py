@@ -25,7 +25,7 @@ FIRST_RUNG = {"flights": "cheaper_flights", "hotel": "cheaper_hotel", "food": "c
 
 
 def repair(plan: TripPlan, report: ValidationReport, knobs: PlanKnobs, research: ResearchBundle,
-           iteration: int, profile: TravelerProfile | None = None) -> tuple[PlanKnobs, list[str]]:
+           profile: TravelerProfile | None = None) -> tuple[PlanKnobs, list[str]]:
     k = knobs.model_copy(deep=True)
     log: list[str] = []
     errors = report.errors

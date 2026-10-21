@@ -14,6 +14,7 @@ import asyncio
 import hashlib
 import json
 import logging
+import os
 import sqlite3
 import threading
 import time
@@ -128,6 +129,11 @@ def cache() -> _Cache:
 _clients: dict[int, httpx.AsyncClient] = {}
 
 
+# Wikimedia (Wikivoyage, Wikipedia) refuses API calls whose User-Agent gives no way to reach the operator (HTTP 403):
+# the site's address (PUBLIC_URL in production) or, failing that, the project's page.
+USER_AGENT = f"Dalili/2.0 (+{os.getenv('PUBLIC_URL') or 'https://github.com/kmtrrdev/dalili'}; AI travel planner)"
+
+
 def _http() -> httpx.AsyncClient:
     """One client per event loop (an httpx client cannot be shared across loops)."""
     if _client is not None:  # injected by tests
@@ -136,7 +142,7 @@ def _http() -> httpx.AsyncClient:
     client = _clients.get(loop_id)
     if client is None or client.is_closed:
         client = httpx.AsyncClient(timeout=settings.http_timeout, follow_redirects=True,
-                                   headers={"User-Agent": "ai-travel-agent/0.2 (graduation project)"})
+                                   headers={"User-Agent": USER_AGENT})
         _clients[loop_id] = client
     return client
 

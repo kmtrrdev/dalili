@@ -2,7 +2,7 @@ Busan, South Korea
 Labels: beach, food | Split: validation
 Source: https://en.wikivoyage.org/wiki/Busan (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (10,572 characters) =====
+===== CLEANED GUIDE TEXT (10,588 characters) =====
 
 Busan (부산, 釜山; formerly romanized as Pusan) is a large port city located in the south-eastern province of South Gyeongsang, South Korea. It is the country's second city with beautiful beaches, mountains, spas, and renowned seafood.
 
@@ -10,16 +10,19 @@ Busan has become a key tourist destination, especially during the summer when th
 
 Understand
 
+
 Located at the southern tip of the Korean peninsula and with over 3.6 million people, Busan is South Korea's second largest city. It is known for its beaches, seafood, and events such as the city's international film festival and the yearly polar bear festival. It appeals to those seeking a more laid-back atmosphere than Seoul. It has an international flair, with sailors from around the world trooping through, and a growing number of tourists.
 
 The Haeundae area of Busan that contains a large amount of the city's attractions is described in a separate article.
 
 See
+
 See the Districts articles for more listings.
 
 
 
 East Busan
+
 
 * The Haeundae area in East Busan is the main tourist destination of the city and is described in its own article.
 * The Suyeong (Gwangalli) area in East Busan is another noteworthy destination of the city and is described in its own article.
@@ -30,26 +33,32 @@ East Busan
 Central Busan
 
 
+
 This is the old town of Busan with a lot of post-war buildings, large docks and atmosphere. This is the place to go see the heritage of the city.
 The Central Busan is described in its own article.
 
 The Hwangryeong mountain Observatory is one of the most famous spot for local people. If we go there we can see Gwangan Bridege for front and Seomyeon for the back. They provide wonderful view for visitors.
  
 North Busan
+
 Easy to overlook, the north part of the city has few tourist attractions. Nevertheless, it offers excellent hiking opportunities, the famous Beomeosa Temple as well as vibrant student life around the PNU university.
  
 West Busan
 
+
 The western part of the city is full of industrial parks leading to docks and the airport. There are however some nature areas preserved, such as the Nakdong River Estuary Migratory Bird Sanctuary and Taejongdae Park.
 
 Address system
+
 Busan has 16 city districts and 207 towns/villages. See Busan Addresses for details. The postal system is very fast. The road name address system is used in the same way as Seoul. (This is the same as the United States)
 
 Do
 
+
 See the Districts articles for more listings.
 
 Events
+
 
 As Korea's second largest city, there are a large number of events.
  
@@ -65,6 +74,7 @@ Sea Art Festival 2013. An art festival held on the beach every year from mid-Sep
 
 
 Hiking
+
  
  
 
@@ -78,11 +88,13 @@ Hiking clothes are a must have fashion item in Korea these days, even if they on
 
 Cinemas
 
+
 Busan has a strong reputation for film, holding the Busan International Film Festival every year. There are cinemas in every area of the city, although unfortunately it is hard to find Korean films with English subtitles. The film festival being an exception to this.
 
 It is really hard to get tickets to the Busan International Film Festival. People wait outside festival ticket offices for hours hoping to get something, so do some planning before traveling to Busan just for this. Haeundae beach has a public red carpet event at the beginning of the festival where you can see Korean film stars and hear them being interviewed.
 
 Sports
+
  
 * Baseball Busan is home to the 'Lotte Giants' team, and home games are held at Sajik Baseball Stadium. Baseball is by far the most passionately followed sport in this city. Also, Lotte Giants has very very big fandom in Korea. So, If travelers who wants to experience a Korean stadium full of cheering, Sajik Baseball Stadium will be the best choice. 
 * Basketball KT Sonic Boom moved to Suwon. Busan KCC Egis is based in Busan.[ 
@@ -103,11 +115,13 @@ Busan Bandits Rugby Football Club. An expat rugby club open to all residents of 
 
 
 Buy
+
 See the Districts articles for more listings.
 
 Currency exchange is possible near Nampo-dong and Hauendae at banks such as KB (Korea Bank of Exchange), BS Bank (Busan Bank) and NH Bank. Withdrawing cash at an ATM with your foreign MasterCard or Visa is usually simple, with most cash machines have an English language option. American Express cards are more difficult to use.
 
 Eat
+
 See the Districts articles for more listings.
 
 Korea is justly renowned for its great seafood tradition, and Busan as Korea's main coastal city provides possibly the best opportunity to try fresh seafood caught locally.
@@ -122,6 +136,7 @@ Sister rice soup It is a restaurant that sells pork and rice soup, one of the mu
 
 Local specialties
 
+
 There are dishes you should try in Busan that are not typically available in other parts of Korea.
  
  
@@ -131,6 +146,7 @@ There are dishes you should try in Busan that are not typically available in oth
 *Eomuk (어묵) is a fishcake made out of fish or other seafood and mixed with starch. It's usually fried or boiled, and collectively called nerimono in Japan. Busan is famous for eomuk, and there are many sellers and chains throughout the city, especially around Jagalchi, Ggangtong market, and Busan station.
 
 Drink
+
 See the Districts articles for more listings.
 
  
@@ -145,6 +161,6 @@ Gwangalli beach in Suyeong is a great place for a drink, especially at night tim
 
 In Haeundae, most of the bars that appeal to westerners are on the main street (Gunam-ro) between Haeundae metro station (exit 5) and the beach. Refer to the main Haeundae article for a full list.
 
-===== TOKENS THE MODEL TRAINS ON (715) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (715) =====
 
 formerly romanized pusan port province gyeongsang country beautiful beach mountain spas renowned seafood become key destination especially summer beach packed vibrant seafood market jagalchi famous seafood market walking older part gamcheon village sense past contrast luxury skyscraper beach home event festival international film festival international comedy festival bicf held tip korean peninsula million largest beach seafood event international film festival yearly polar bear festival appeal seeking laid atmosphere international flair sailor world trooping growing haeundae contain amount attraction described separate article district article listing haeundae destination described article suyeong gwangalli another noteworthy destination described article old post war building dock atmosphere heritage described article hwangryeong mountain observatory famous spot gwangan bridege front seomyeon provide wonderful view easy overlook attraction nevertheless excellent hiking opportunity famous beomeosa temple vibrant student life pnu university industrial park leading dock airport nature preserved nakdong river estuary migratory bird sanctuary taejongdae park address system district town village address detail postal system fast road address system district article listing event largest event international film festival based haeundae take showcasing international film significant premiere korean film event held haeundae beach tent promoting industry public interview star polar bear swim famous beach swim week temperature hundred brave participant compete cold sea event run annually choseon beach hotel international rock festival holding annual rock festival mostly korean asian rock band band appear sea art festival art festival held beach mid mid hiking mountain hiking trail hiking trail marked read korean script definitely research hike hiking clothe fashion item mall price extremely purchase coming geumjeong fortress mountain head gate nammun geumjeong fortress gate bukmun beomeosa temple distance nbsp seokbulsa temple another impressive temple minute hike cable car station magnificent statue carved mountain view peaceful jangsan mountain haeundae provide hiking military base summit minefield clearly marked fenced view clear cinema strong reputation film holding international film festival cinema unfortunately hard korean film english subtitle film festival exception hard ticket international film festival wait outside festival ticket office hoping planning traveling haeundae beach public red carpet event beginning festival korean film star hear interviewed sport baseball home lotte giant team home game held sajik baseball stadium baseball far passionately followed sport lotte giant fandom traveler want experience korean stadium cheering sajik baseball stadium choice basketball sonic boom moved suwon kcc egis based football soccer league ipark football soccer team based gudeok stadium national league transportation corporation football team based gudeok stadium dongdaesin dedicated regular foreigner following sailing haeundae largest leisure marina minute beach walking direction chosun beach hotel fitness club train wide range cardio equipment weight dumbbell machine golf practice facility floor milligore shopping seomyeon bandit rugby football club expat rugby club resident surrounding province play mainly rugby compete korean expat rugby league kera previous experience required district article listing currency exchange possible nampo dong hauendae bank bank exchange bank bank bank withdrawing cash atm foreign mastercard visa simple cash machine english language option american express card difficult district article listing justly renowned seafood tradition coastal provide possibly opportunity fresh seafood caught locally jagalchi fish market seafood landed turn delicious grilled fish variation korean hangover soup experience low throughout international market everything cheap price spicy glass noodle chungmu style gimbap ssiat hotteok sweet korean pancake stuffed seed restaurant close frequently establishment listed another option likely close korean restaurant serve specialty dish check party beforehand vegetarian elsewhere mindful limited option sister rice soup restaurant sell pork rice soup food taste rice soup filled pork low price gwangalli characteristic allow sea eating specialty dish typically part dong nae pajeon seafood green onion pancake affordable dish daegu tang delicious flaky cod soup vegetable dedicated restaurant side haeundae beach bokguk soup pufferfish type extremely poisonous japanese fugu licensed prepare pufferfish want know typically cartoon picture fish looking balloon outside easy spot eomuk fishcake fish seafood mixed starch fried boiled collectively called nerimono famous eomuk seller chain throughout especially jagalchi ggangtong market station district article listing thousand tens thousand drinking scattered throughout spot nampodong pusan national university look look street looking bar tall commercial building likely inside english word displayed german word hof indicated eating drinking kyeongseong university selection term density sheer drinking establishment kyeongseong university nearby gwangalli beach gwangalli beach suyeong especially night gwangan bridge lit bay haeundae bars appeal westerner street gunam haeundae metro station exit beach refer haeundae article list

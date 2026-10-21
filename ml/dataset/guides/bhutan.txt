@@ -2,11 +2,12 @@ Bhutan, Bhutan
 Labels: nature, culture | Split: test
 Source: https://en.wikivoyage.org/wiki/Bhutan (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (21,981 characters) =====
+===== CLEANED GUIDE TEXT (21,992 characters) =====
 
 The Kingdom of Bhutan (Dzongkha:  འབྲུག་ཡུལ་ , Druk Yul) is a small country in the Himalayas between Tibet and India. Besides the stunning natural scenery, the enduring image of the country for most visitors is the strong sense of culture and tradition that binds the kingdom and clearly distinguishes it from its larger neighbours. Bhutan is a bastion of Vajrayana Buddhism, and the profound teachings of this tradition remain well preserved and exert a strong influence in all aspects of life.
 
 Understand
+
 
 
 Perched high in the Himalayas, Bhutan is the world's only Vajrayana Buddhist country. Furthermore, as an initiative of the fourth king, it has developed the philosophy of Gross National Happiness, whereby development is measured using a holistic approach of well-being, not just based on gross domestic product. As part of this philosophy, all citizens receive free education and medical care.
@@ -20,11 +21,13 @@ Culturally, Bhutan is predominantly Buddhist with Dzongkha as a national languag
 The Druk is the Thunder Dragon of Tibetan and Bhutanese mythology. As the national symbol of Bhutan, it appears on the national flag holding jewels in its claws. In Dzongkha, Bhutan is called Druk Yul ("Land of Druk"), and Bhutanese leaders are called Druk Gyalpo, "Thunder Dragon Kings".
 
 Gross National Happiness
+
 The ideology of Gross National Happiness was the brainchild of King Jigme Singye Wangchuck who, having gained a modern education in India and the UK, realised that mere economic success did not necessarily translate into a content and happy society. Consequently, soon after his coronation in 1974, the young king began to float the idea of developing a new set of guidelines by which to govern the country. Slowly these ideas took shape, and in 1998 the GNH indicator was established. GNH stands for "Gross National Happiness" and is defined by the following four objectives: to increase economic growth and development, preserve and promote the cultural heritage, encourage sustainable use of the environment, and establish good governance. While the concept of GNH receives much international praise and is a major draw for tourists, the idea is very much in its incubation stage, and there is very little evidence of GNH in the country.
 
 On 19 July 2011, 68 countries joined the Kingdom of Bhutan in co-sponsoring a resolution titled “Happiness: Towards a holistic approach to development,” which was adopted by consensus by the 193-member UN General Assembly. In follow up to the resolution, the Royal Government of Bhutan convened a High Level Meeting on “Happiness and Well Being: Defining a New Economic Paradigm” on 2 April 2012 at the United Nations headquarters in New York. This meeting initiated the next steps towards realizing the vision of a new wellbeing- and sustainability-based economic paradigm that effectively integrates economic, social, and environmental objectives. Bhutan continues to be a champion of the resolution and actively promotes the concept internationally.
 
 History
+
 The first humans probably arrived some time after the Ice Age, and little is known about Bhutan's prehistory. Historical records began with the arrival of Buddhism in the 7th century, when Guru Rinpoche (Padmasambhava) visited Bhutan and established monasteries.
 
 In 1865, Britain and Bhutan signed the Treaty of Sinchulu, under which Bhutan would receive an annual subsidy in exchange for ceding some border land. Under British influence, a monarchy was set up in 1907; three years later, a treaty was signed whereby the British agreed not to interfere in Bhutanese internal affairs and Bhutan allowed Britain to direct its foreign affairs. This role was assumed by independent India after 1947. Two years later, a formal Indo-Bhutanese accord returned the areas of Bhutan annexed by the British, formalised the annual subsidies the country received, and defined India's responsibilities in defense and foreign relations.
@@ -36,9 +39,11 @@ In December 2006, King Jigme Singye Wangchuck transferred power to his oldest so
 
 
 See
+
 The majority of tourists do "cultural tours" where they visit important destinations. Paro, Thimphu, Punakha, Phobjikha, and Jakar are popular destinations. Further afield, the unexplored region of Zhemgang (birders paradise, excellent wildlife viewing) and Eastern Bhutan have just been opened up to tourism. All foreigners are expected to pay a fee to enter certain religious sites or buildings of national significance, and the price can range from Nu500 to Nu1,000 - even foreigners who are working in Bhutan or who are paying the daily US$100 government sustainable development levy are subject to these fees.
 
 Monasteries
+
  
 
 Taktsang Monastery (Tiger's Nest), Paro. This is one of the most important Buddhist sites in the world, and Guru Rinpoche visited here in the 8th century on his second visit to Bhutan. It is the most recognised and visited monument in Bhutan. It is believed that he arrived on the back of a winged tigress, hence the name, Tiger's Nest. The temple is built on a 1,200-metre cliff and was built in 1692.
@@ -50,6 +55,7 @@ Kurje Lhakhang, Jakar. A temple built around a cave with a body print of Guru Ri
 Buddha Dordenma is a gigantic Shakyamuni Buddha statue in Thimphu. The statue houses over one hundred thousand smaller Buddha statues, each of which, like the Buddha Dordenma itself, are made of bronze and gilded in gold. The Buddha Dordenma is among the ruins of Kuensel Phodrang, the palace of Sherab Wangchuck, the thirteenth Desi Druk, overlooking the southern approach to Thimphu. At a height of , it is one of the largest Buddha rupas in the world.
 
 Dzongs (fortresses)
+
  
  
 The dzongs are ancient fortresses that now serve as the civil and monastic administration headquarters of each district. Apart from the architecture, which in itself makes a dzong worth visiting, they also hold many art treasures.
@@ -72,6 +78,7 @@ Dzongs dot the countryside and were built without the use of cement, nails or pl
 * Singye Dzong
 
 Scenery
+
  
 
 Bhutan's pristine environment offers ecosystems which are rich and diverse. Due to its location and great geographical and climatic variations, Bhutan's high, rugged mountains and valleys boast spectacular biodiversity, earning it a name as one of the world's ten most important biodiversity hotspots.
@@ -81,6 +88,7 @@ Recognizing the importance of environment, conservation of its rich biodiversity
 35% of Bhutan is made up of protected national parks. Namely, Jigme Singye Wangchuck National Park (1,300&nbsp;km 2 ), TrumshingLa National Park (768&nbsp;km 2 ), Royal Manas National Park (9,938.54&nbsp;km 2 ), Jigme Dorji National Park (4,349&nbsp;km 2 ), Bumdeling Wildlife Sanctuary (1,545&nbsp;km 2 ) and Sakteng Wildlife Sanctuary (650&nbsp;km 2 ).
 
 Do
+
  
  
 
@@ -91,6 +99,7 @@ Hot Stone Bath: The hot stone bath is a ritual in itself, riverside rocks are he
 Week end Market in Thimphu: Every weekend, a market is held near the vegetable market (sabji bazaar), where artisans from all over the region come to sell their wares. On one side of the river, farmers sell their produce, while on the other, there is Bhutanese handcraft market selling colourful masks, religious artifacts, dresses, tools, swords and other curios.
 
 Trekking
+
 
 
 Trekking is extremely popular, though the walks are generally quite tough as there are no places to stay or eat in the higher regions, and so all food and camping equipment must be carried in. Autumn and spring are the best seasons for undertaking a trek. In the summer, the paths are too muddy, while in winter they are snow-covered. However, despite the difficulties of the treks, all efforts and discomforts are more than compensated for by the stunning scenery and extremely friendly, gentle and hospitable people that are met along the way.
@@ -174,6 +183,7 @@ Wild East Rodungla Trek.
 
 
 Festivals
+
 Tshechu is the largest religious festival in Bhutan and is celebrated in the late summer and autumn throughout the country (see city articles for local information), though Thimphu Tshechu is the most famous and attracts around 30,000 people. The highlight of the tshechu ceremonies is the masked dances by monks, which were developed according to precise instructions given by past Buddhist masters. According to Buddhist philosophy, all experiences leave an imprint in the mind stream that  produces a corresponding result in the future, and so viewing these dances, which are imbued with sacred symbolism, is considered to be a very auspicious and sanctifying experience. While the event is not held in a solemn atmosphere and there is much merriment, visitors are reminded that it is still a religious festival that is of great importance to Bhutanese people, and so appropriate behavior is expected.
 
 Festivals or Tshechu (“tenth day”) are a major draw card to Bhutan and are held every year in various temples, monasteries and dzongs across the country. The Tshechu is mainly a religious event celebrated on the tenth day of the lunar calendar month corresponding to the birth day of Guru Rinpoche (Guru Padmasambhava). However the month of Tshechu depends place to place and temple to temple.
@@ -253,7 +263,9 @@ Wangdue Phodrang Festival.
 
 
 Buy
-===Money===
+
+Money
+
  
 
 
@@ -269,12 +281,14 @@ The currency of the country is the Bhutanese Ngultrum, denoted by the symbol "Nu
 
 Shopping
 
+
 * Woven cloth. Bhutanese handwoven fabric is prized around the world, and is available stitched into clothing, wall hangings, table mats and rugs.
 * Yathra. A brightly colored woven material made from wool and dyed with natural colors. It is sold in pieces or sewn into jackets, bags, rugs  and wall hangings. Yathra is available in Thimphu and other cold areas, but is a specialty of the Jakar area.
 * Dappa. Hand made wooden bowls. The halves of the bowl fit tightly together so they can be used to carry cooked food, which is their function in Bhutan. However, they also make excellent salad or cookie bowls. Dappa are a specialty of the Trashi Yangtse region, but can be purchased throughout the country.
 * Bangchung. Small bamboo woven baskets with two tightly fitting halves. They are a specialty of southern Bhutan, but available throughout the country.
 
 Eat
+
  
 
 
@@ -295,6 +309,7 @@ The following is a list of some of the most popular Bhutanese dishes:
 * Goep (tripe): Though the popularity of tripe has diminished in many countries it is still enjoyed in Bhutan. Like most other meat dishes, it is cooked with plenty of spicy chillies and chilli powder.
 
 Vegetarian dishes
+
  
 
 Most datshi (cheese) dishes are vegetarian, although some versions use meat instead of vegetables.
@@ -310,17 +325,19 @@ Kewa-datsi and shamu-datsi tend to be less hot than ema-datsi; all three dishes 
 * Puta. A dish of buckwheat noodles usually served with curd - a specialty of Bumthang
 
 Where to eat
+
 Hotels, resorts and restaurants offer Bhutanese,  Chinese, European and Indian cuisine.
 
 Imtrat, the Indian military mission to Bhutan, run canteens that sell excellent Indian dishes along with tea from 9:30AM–4:30PM. The quality of the food is very good, while the price is low. The canteens are located throughout the country, especially along main highways.
 
 Drink
+
 * Ara. A local spirit brewed from rice or corn. It is popular in rural areas, and often served in restaurants, particularly at the start of meals, poured from a special vessel. Ara is more commonly drunk in the east of the country, particularly in and around Lhuentse.
 * Tea. Located next to the tea growing regions of Assam and Darjeeling, a steaming cuppa remains the popular drink in Bhutan, with both the butter variety (suja) and sweet milk kind (cha) readily available throughout the country. The butter tea is very traditional but has quite a strong flavor and is similar to Tibetan tea, while the sweet milk kind is very drinkable and is like Indian chai.
 * Coffee. The coffee culture that has swept most of the planet has taken root in the country, and there are a number of good cafes in Thimphu, Paro, and Jakar. However, outside these three towns, coffee means the instant variety and it is served simply white or black.
 * Beer. The main local beers are from Bhutan Brewery (founded 2006), part of the Tashi Group conglomerate, and are sold in 650 ml bottles: Druk 11000 (8%) is cheapest and high in alcohol; slightly higher quality and lower alcohol are Druk Lager Premium (5%) and Druk Supreme (6%); but none of these are particularly good. There is also sometimes Red Panda Weissbeer (wheat beer), which is rather good. Imported beers may not be available, as importing these is sometimes banned.
 * Whisky. There is some "Bhutanese whisky", though it is neither Bhutanese nor straight whisky. Rather, it is blended whisky, made of imported Scotch malt whisky blended with grain neutral spirits: it is blended and bottled in Bhutan, but not distilled locally. These are produced by the Army Welfare Project in Gelephu, and the main brand is Special Courier, which is surprisingly drinkable.
 
-===== TOKENS THE MODEL TRAINS ON (1,744) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,744) =====
 
 dzongkha druk yul country himalaya tibet beside stunning natural scenery enduring country strong sense culture tradition bind clearly distinguish larger neighbour bastion vajrayana buddhism profound teaching tradition remain preserved exert strong influence aspect life perched himalaya world vajrayana buddhist country furthermore initiative fourth king developed philosophy gross national happiness whereby development measured holistic approach based gross domestic product philosophy citizen receive education medical care major source income tourism hydroelectric power agriculture culturally predominantly buddhist dzongkha national language regional variation sharchopkha predominant language common dress code architectural style bhutanese primarily consist ngalop sharchop called bhutanese bhutanese lhotshampha bhutanese nepalese origin respectively ngalop primarily consist bhutanese living country culture closely related neighbour tibet druk thunder dragon tibetan bhutanese mythology national symbol appear national flag holding jewel claw dzongkha called druk yul land druk bhutanese leader called druk gyalpo thunder dragon king gross national happiness ideology gross national happiness brainchild king jigme singye wangchuck gained modern education realised mere economic success necessarily translate content happy society consequently soon coronation young king began float idea developing set guideline govern country slowly idea took shape gnh indicator established gnh stand gross national happiness defined following objective increase economic growth development preserve promote cultural heritage encourage sustainable environment establish governance concept gnh receive international praise major draw idea incubation stage little evidence gnh country country joined sponsoring resolution titled happiness holistic approach development adopted consensus member general assembly follow resolution royal government convened level meeting happiness defining economic paradigm nation headquarter meeting initiated step realizing vision wellbeing sustainability based economic paradigm effectively integrate economic social environmental objective continue champion resolution actively promote concept internationally history human probably arrived ice age little prehistory historical record began arrival buddhism century guru rinpoche padmasambhava visited established monastery britain signed treaty sinchulu receive annual subsidy exchange ceding border land british influence monarchy set later treaty signed whereby british agreed interfere bhutanese internal affair allowed britain direct foreign affair role assumed independent later formal indo bhutanese accord returned annexed british formalised annual subsidy country received defined responsibility defense foreign relation relation neighbour tense due ongoing border dispute diplomatic relation country king jigme singye wangchuck transferred power oldest son crown prince jigme khesar namgyel wangchuck bestowing title fifth druk gyalpo coronation took fifth king educated oxford held esteem throughout country majority cultural tour important destination paro thimphu punakha phobjikha jakar destination afield unexplored region zhemgang birder paradise excellent wildlife viewing opened tourism foreigner expected pay fee enter certain religious site building national significance price range foreigner working paying government sustainable development levy subject fees monastery taktsang monastery tiger nest paro important buddhist site world guru rinpoche visited century recognised visited monument believed arrived winged tigress hence tiger nest temple built metre cliff built hundred monastery dot landscape pristine remote kurje lhakhang jakar temple built cave body print guru rinpoche embedded wall guru rinpoche practiced meditation earliest buddhist relic country buddha dordenma gigantic shakyamuni buddha statue thimphu statue house hundred thousand smaller buddha statue buddha dordenma bronze gilded gold buddha dordenma ruin kuensel phodrang palace sherab wangchuck thirteenth desi druk overlooking approach thimphu height largest buddha rupa world dzong fortress dzong ancient fortress serve civil monastic administration headquarter district apart architecture dzong worth visiting hold art treasure dzong dot countryside built cement nail plan dzong punakha dzong trongsa dzong jakar dzong lhuentse dzong simtokha dzong gasa dzong rinpung dzong tashichho dzong buddhist monastery fortress edge thimpu traditional seat druk desi dharma raja head civil government synonymous king summer capital kagyu dzong lingzhi yugyal dzong drukgyal dzong built ruin paro district changchukha dzong tsechen monastery dzong shongar dzong singye dzong scenery pristine environment ecosystem rich diverse due geographical climatic variation rugged mountain valley boast spectacular biodiversity earning world important biodiversity hotspot recognizing importance environment conservation rich biodiversity development paradigm government decreed forest resource maintained law today total land forest cover protected park protected national park namely jigme singye wangchuck national park nbsp trumshingla national park nbsp royal mana national park nbsp jigme dorji national park nbsp bumdeling wildlife sanctuary nbsp sakteng wildlife sanctuary nbsp archery national sport competition held throughout country weekend welcome watch add voice boisterous cheering accompany event hot stone bath hot stone bath ritual riverside rock heated till red hot gradually dropped wooden tub filled water scattered artemisia leave burning rock heat water gradually release mineral water traditionally bath river bed plenty supply stone water preferably dark air week market thimphu weekend market held vegetable market sabji bazaar artisan region sell ware side river farmer sell produce bhutanese handcraft market selling colourful mask religious artifact dress tool sword curio trekking trekking extremely walk generally tough stay higher region food camping equipment carried autumn spring season undertaking trek summer path muddy winter snow covered despite difficulty trek effort discomfort compensated stunning scenery extremely friendly gentle hospitable met druk path commonly trekked paro capital thimphu jomolhari laya gasa trek snowman trek reported toughest trek world taking approximately trek impressive bumthang cultural trek bumthang owl trek dongla trek chelela trek dagala thousand trek druk path trek dur hot spring trek gangjula trek gangkar puensum gantey trek jomolhari trek laya gasa trek lingmithangzhemgang trek meraksakteng nabji korphu community based trek nubtsona pata trek punakha winter trek rigsum goenpa trek royal heritage trek sagala trek samtengang trek sinchula trek gantey trek snowman trek reported toughest trek world taking approximately recommended season mid mid wild rodungla trek festival tshechu largest religious festival celebrated late summer autumn throughout country article information thimphu tshechu famous attract highlight tshechu ceremony masked dance monk developed according precise instruction given past buddhist master according buddhist philosophy experience leave imprint mind stream produce corresponding result future viewing dance imbued sacred symbolism considered auspicious sanctifying experience event held solemn atmosphere merriment reminded religious festival importance bhutanese appropriate behavior expected festival tshechu tenth major draw card held temple monastery dzong country tshechu mainly religious event celebrated tenth lunar calendar month corresponding birth guru rinpoche guru padmasambhava month tshechu depend temple temple tshechus social gathering village together witness religious mask dance based incident ago century life guru padmasambhava receive blessing lama event consist colourful bhutanese dance entertainment said everyone attend tshechu witness mask dance receive blessing wash sins mask dance performed tshechu meaning story behind monastery mask dance performed monk remote village performed jointly monk village men tshechus country paro thimphu tshechus term participation audience beside local world attracted unique colourful exciting culture traditionally paro thimphu fast realizing smaller rural festival intimate festival happen throughout black necked crane festival phobjikha bird festival bird festival bbf held tingtibi zhemgang bbf intend encourage community zhemgang protect rich forest conserve diversity wildlife zhemgang birding destination chorten kora festival gomphu kora festival haa summer festival jampa lhakhang festival kurjey festival lhuentse festival merak tshechu mongar festival nimalung festival nomad festival paro tsechu pema gatshel festival punakha festival sakten tshechu takin festival thimphu festival trashigang festival trongsa festival ura yakchoe wangdue phodrang festival money currency country bhutanese ngultrum symbol iso code btn fixed indian rupee exchange rate indian rupee bill interchangeably ngultrum accepted banknote denomination ngultrum dollar dollar widely accepted bhutanese currency needed expense personal nature buying souvenir item credit debit card visa mastercard visa maestro compatible atms concentrated thimphu paro money exchange bank major hotel change major currency atms bank operate atms accept international card visa mastercard service overly reliable fund hand union money transfer thimphu post office facility receive transfer fund oversea cannot payment customer personal account shopping woven cloth bhutanese handwoven fabric prized world stitched clothing wall hanging table mats rugs yathra brightly colored woven material wool dyed natural color sold piece sewn jacket bags rugs wall hanging yathra thimphu cold specialty jakar dappa hand wooden bowl halve bowl fit tightly together carry cooked food function excellent salad cookie bowl dappa specialty trashi yangtse region purchased throughout country bangchung bamboo woven basket tightly fitting halve specialty throughout country rice staple meal traditionally red rice white rice common vegetable meat dish cooked chilli cheese comprise accompanying cuisine bhutanese food predominant flavour chilli red condiment added dish eaten raw dont spicy hot food abundantly clear ordering meal youll spending hour dousing mouth cold yoghurt milk rice form body bhutanese meal accompanied side dish consisting meat vegetable pork beef chicken meat eaten vegetable commonly eaten spinach pumpkin turnip radish tomatoe river weed onion green bean grain rice buckwheat barley cultivated region country depending climate following list bhutanese dish ema datshi national dish spicy mix chilly delicious cheese datsi dish staple nearly meal throughout country variation adding green bean fern potatoe mushroom swapping regular cheese yak cheese momo tibetan style dumpling stuffed pork beef cabbage cheese traditionally eaten special occasion tasty treat bhutanese favourite phaksha paa pork cooked spicy red chilly dish radish spinach variation uses dried sicaam hoentoe aromatic buckwheat dumpling stuffed turnip green datshi cheese spinach ingredient jasha maru spicy minced chicken tomatoe ingredient served rice red rice rice similar brown rice extremely nutritious filling cooked pale pink soft slightly sticky goep tripe popularity tripe diminished country enjoyed meat dish cooked plenty spicy chilly chilli powder vegetarian dish datshi cheese dish vegetarian version meat instead vegetable kewa datsi potato cheese chilli dish shamu datsi mushroom cheese chilli dish kewa datsi shamu datsi tend hot ema datsi dish generally served rice mutter paneer bhutanese dish indian staple curried peas cheese readily throughout therefore additional choice vegetarian cheese momo steamed bun traditionally contained cheese cabbage onion vegetable green papaya substituted cabbage khuli buckwheat pancake specialty bumthang served ema datsi alternative rice puta dish buckwheat noodle served curd specialty bumthang hotel resort restaurant bhutanese chinese european indian cuisine imtrat indian military mission run canteen sell excellent indian dish tea quality food price low canteen throughout country especially highway ara spirit brewed rice corn rural served restaurant particularly start meal poured special vessel ara commonly drunk country particularly lhuentse tea tea growing region assam darjeeling steaming cuppa remain butter variety suja sweet milk kind cha readily throughout country butter tea traditional strong flavor similar tibetan tea sweet milk kind drinkable indian chai coffee coffee culture swept planet taken root country cafe thimphu paro jakar outside town coffee mean instant variety served simply white black beer beer brewery founded tashi group conglomerate sold bottle druk cheapest alcohol slightly higher quality lower alcohol druk lager premium druk supreme none particularly red panda weissbeer wheat beer imported beer importing banned whisky bhutanese whisky neither bhutanese straight whisky blended whisky imported scotch malt whisky blended grain neutral spirit blended bottled distilled locally produced army welfare project gelephu brand special courier surprisingly drinkable

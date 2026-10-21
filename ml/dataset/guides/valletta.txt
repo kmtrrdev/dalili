@@ -2,11 +2,12 @@ Valletta, Malta
 Labels: history, culture | Split: test
 Source: https://en.wikivoyage.org/wiki/Valletta (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (16,463 characters) =====
+===== CLEANED GUIDE TEXT (16,472 characters) =====
 
 Valletta or Il-Belt is the capital of Malta. Historically built as harbour city to first capital, Valletta preserves much of its 16th-century architectural heritage built under the Hospitallers. Valletta was one of the earliest sites inscribed on the UNESCO World Heritage List.
 
 Understand
+
 Referred to colloquially as Il-Belt ("The City") in Maltese, it takes its name from its founder, Grandmaster Jean Parisot de Valette.
 
 With a population of less than 5,200 in 2021, it is the least populated national capital in the European Union. The population of the urban area is 480,000 (2020), so Valletta doesn't feel like a small town. It is also the southernmost capital in the union, and one of only two without rail-based public transit (the other being Nicosia in Cyprus).
@@ -14,6 +15,7 @@ With a population of less than 5,200 in 2021, it is the least populated national
 Valletta was a "European Capital of Culture" for 2018, an honour it shared with Leeuwarden.
 
 See
+
  
 
 * 
@@ -80,6 +82,7 @@ Parliament House. Malta Parliament building built between 2011 and 2015 at a cos
 
 
 Do
+
  
  
  
@@ -119,6 +122,7 @@ Hibernians F.C..
 
 
 Buy
+
 The main street of Valletta is Republic Street (Triq Ir-Repubblika), a busy pedestrianised zone leading down the middle of the Peninsula from the main gate down to Republic Square (Misrah ir-Repubblika). This is where many of the better shops are located, although it cannot quite compete with Sliema for clothing.
 
 The best souvenir shop (the least worthless trinkets etc.) can be found at the Malta Experience, but there are many other reasonable souvenir shops in Valletta. At the beginning of Republic Street, there are several reasonable souvenir shops, but prices are far cheaper if you walk 20 meters down South Street (turn left if you have the bus station behind you,) which crosses Republic Street very soon after you have entered through the city gates.
@@ -147,10 +151,12 @@ Malta Government's Crafts Centre. At Malta Government's Crafts Centre local hand
 
 
 Eat
+
  
 Valletta has a good selection of decent restaurants, especially along the waterfront. Since most tourists stay in Sliema or on the north coast of the island there are fewer of the trashy variety, although it does have the usual fast-food chains. Look out for traditional bakeries, with steaming fresh bread for mere cents.
 
 Budget
+
 At almost every corner you can find pastizzerie selling pies stuffed with cheese or peas, for just 30-50 cents each and are a popular late-night snack.
 * 
 No.43. Café with fresh sandwiches, soups, salads and home made cakes. At the counter you can choose salads to eat in or take out.
@@ -172,6 +178,7 @@ The Circle's Bar And Coffe Shop. The interior is charming and the food is homely
 
 
 Mid-range
+
 
 *
 De Robertis. Great view and tasty food.
@@ -199,6 +206,7 @@ Luciano Restaurant. Good food for reasonable prices in a charming location near 
 
 
 Splurge
+
 Often upscale Asian restaurants don't live up to the expectations, at least when it comes to the food. Many such disappointing restaurants are in big upscale hotels.
 * 
 Legligin. A set menu of Maltese dishes. Food varies each day depending on what they buy at market. Vegetarian options. No à la carte menu. Wine pairing for €40 extra.
@@ -208,6 +216,7 @@ Café Deux Baronnes. Expensive even by local standards, but the cafe has a relax
 
 
 Drink
+
  
 *
 Trabuxu Wine Bar. A charming wine bar in an ancient cellar serving light meals. It's at the beginning of a small alley parallel to Republic street, look for the wooden sign with the corkscrew. The bistro is opposite, on South Street.
@@ -221,6 +230,6 @@ The Pub. A place where actor Oliver Reed died in a drinking match against a grou
 * 
 Cafe Society. The only queer bar in Malta. Great drinks. Guests spill out into the street in warmer months.
 
-===== TOKENS THE MODEL TRAINS ON (1,244) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (1,244) =====
 
 belt capital historically built harbour capital preserve century architectural heritage built hospitaller earliest site inscribed unesco world heritage list referred colloquially belt maltese take founder grandmaster jean parisot valette population populated national capital european union population urban doesnt feel southernmost capital union rail based public transit nicosia european capital culture honour shared leeuwarden john cathedral unremarkable outside incredibly ornate inside langue knight particular nationality langue chapel lined side nave tried outdo splendour barrel shaped ceiling single huge fresco lifework famed artist mattia preti floor entirely taken knight grave intricately inlaid marble colour book subject describe beautiful floor world lesser cathedral impressive europe entrance carappechia annex street john street lucy street directly opposite law court audioguide included entrance fee provide detailed historical information belfrey tour take spectacular view cathedral roof okay view timed ticket cathedral enquire work caravaggio hold work caravaggio briefly knight huge beheading john baptist miss explanatory light show staircase modest saint jerome writing sophisticated version earlier work villa borghese palace grand master president office maltese parliament stateroom accessible impressive house knight armoury part palace limited entrance receive audio guide included entrance fee provide historical information armoury eras beginning medieval chain mail century armour experience despite cheap interest culture history havent exhaustively read country coming starting excellent introduction country give impression major event shaped country min meant dont expect dry scholarly treatment subject upper barrakka garden garden jaw dropping view grand harbour sunny bring champagne national museum archaeology impressive unique ancient history museum housed former auberge provence street disappointment museum partially renovated hopefully bringing worthy fort elmo built tip peninsula knight dragut raid siege turk mistake choosing fort planned week instead knight soldier present fought desperately month buying essential knight fort knew fighting death taken rampart wounded knight fight seated chair couldnt lift arms anymore today fort house national war museum police academy national war museum mainly focussed world wars cover period bronze age onward fortification imposing defence wall rampart entrance built knight late century interesting explore national library evocative old library square grandmaster palace public passport photo entire archive knight john crusade century napoleon took kept true maltese style rickety wooden filing cabinet sacra infermeria hospital built knight century hospital highest level healthcare europe men rich poor non contagious disease contagious disease patient placed elsewhere manoel island originally corridor private curtain covered beds placed angle ventilation hole leading courtyard garden filled citrus tree herbal plant floor mostly destroyed world war upper ward courtyard garden replaced seat theatre theatre reporter receive ask question peace treaty signing gorbachev george bush rebuilding function conference event summit extravagant wedding rarely public guided tour ticket purchased alongside experience casa rocca piccola maltese noble family house triq republika hundred metre past grand master palace hand side enjoyable jame cavalier fortress opposite auberge castille today prime minister office built elaborate defence system today house creativity theatre cinema music room exhibition hall twin john cavalier embassy knight john vatican recognised country sovereign entity hal saflieni hypogeum hal saflieni hypogeum subterranean structure excavated thought built sanctuary necropolis prehistoric time prehistoric underground temple world ensure conservation site microclimate strictly regulated reason site maximum tour limited tour site start brief introductory exhibition multilingual audio visual film focusing temple building people hypogeum relationship malta temple site booking advance heritage website strongly advised unable book advance ticket tour sold museum fine arts prior sold serve basis depending season lining prior opening museum necessity purchasing ticket plan lining anywhere half hour hour half advance ensure ticket purchase tarxien temple site dating complex temple site consist megalithic structure lascaris war room underground complex british defence world war paul pro cathedral anglican cathedral built memorial world war defence postal museum museum run maltapost working post office gate fifth incarnation entrance built design italian architect renzo piano gate site built parliament house parliament building built cost million design renzo piano building design stone block stilt controversial low emission solar panel roof public access building restricted coastal walk spectacular walk sea outside wall mooring ferry sliema leave possibility walk rock tip peninsula coming experience walk take minute virtually part walk bare rock recommended wear proper shoe dry weather george square night george square lovely water fountain coloured spout water pop fantastic play opportunity children wet dont let wearing clothing fun kids audio guide historical information numerous interest useful audio guide language archeology museum street choose independently stop necessary follow given order stop easily skipped visited another sequence tired information saluting battery gun fired twice manoel theatre scala miniature beautiful century theatre original state oldest active theater europe classical music performance instance hilarious christma panto pjazza teatru rjal theatre site former royal opera house destroyed bomb outdoor theatre designed renzo piano opened international baroque festival festival baroque music concert opera football team playing soccer maltese premier league international game played national stadium qali mdina floriana hibernian street street triq repubblika busy pedestrianised zone leading middle peninsula gate square misrah repubblika shop cannot compete sliema clothing souvenir shop worthless trinket etc experience reasonable souvenir shop beginning street reasonable souvenir shop price far cheaper walk meter street turn bus station behind cross street soon entered gate lokal locally art design product agenda bookshop bookshop definitely formerly sapienza street bit expensive another branch embassy hotel lucia street meli bookshop independent bookshop varied selection book old book priced lira market selling cheap clothing parallel street street called merchant street triq merkanti iconic family owned wembley store street farmer market sunday market front jame cavalier food product textile fish market morning fresh fish castillan curtain government craft government craft handicraft presented cant inform individual object bought selection decent restaurant especially waterfront stay sliema coast island fewer trashy variety usual fast food chain look traditional bakery steaming fresh bread mere cent budget corner pastizzerie selling pies stuffed cheese peas cent late night snack cafe fresh sandwich soup salad home cake counter choose salad submarine kind sandwich porchetta sublime humble ftira salad vegan vegetarian friendly croce bonaci caterer secluded site wery breakfast tremendous sandwich little cafe friendly helpful staff authentic maltese food excellent welcome museum cafe cosy little cafe impressive interior amazing food old maltese bars ought enjoy original maltese ftira owner super accommodating old bakery pizza pasta size pizza restaurant fresh ingredient pizza cooked wood oven pizza tasteful italian pizza circle bar coffe shop interior charming food homely air conditioned break mid range robertis view tasty food pippo trattoria local lunch seafood caffe cordina venerable cafe lunch pastry coffee coffee bar mixed review food malata restaurant looking dinner terrace slightly later evening square front grand master palace emptied parked cars rubino maltese traditional cuisine served restaurant opened prior reservation recommended scoglitti fish restaurant sea serve freshly caught fish lobster oyster nenu artisan baker bakery famous ftira traditional maltese ring formed bread serve maltese dish dessert luciano restaurant food reasonable price charming cathedral portion floor luciano hotel splurge upscale asian restaurant dont live expectation come food disappointing restaurant upscale hotel legligin set menu maltese dish food vary depending market vegetarian option carte menu wine pairing extra cafe deux baronne expensive standard cafe relaxed atmosphere view grand harbour fort santangelo trabuxu wine bar charming wine bar ancient cellar serving light meal beginning alley parallel street look wooden sign corkscrew bistro opposite street rampila restaurant wine bar maltese mediterranean fusion restaurant wine bar impressive bastion enjoy fine plate fresh seafood meat game pasta risotto enjoy platter dips accompanied wine extensive selection pub actor oliver reed died drinking match group sailor cafe society queer bar drink guest spill street warmer month

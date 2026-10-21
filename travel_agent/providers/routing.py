@@ -144,11 +144,6 @@ def best_leg(a: GeoPoint, b: GeoPoint, walking_tolerance: str, travelers: int, f
     return transit
 
 
-def travel_minutes(a: GeoPoint, b: GeoPoint, walking_tolerance: str, travelers: int, fares: dict[str, float],
-                   currency: str, prefer_taxi: bool = False) -> int:
-    return best_leg(a, b, walking_tolerance, travelers, fares, currency, prefer_taxi).minutes
-
-
 # ---------------------------------------------------------------------------
 # Google Maps Directions (SerpApi): airport <-> city centre
 # ---------------------------------------------------------------------------

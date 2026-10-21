@@ -2,7 +2,7 @@ Zermatt, Switzerland
 Labels: ski, nature, adventure | Split: test
 Source: https://en.wikivoyage.org/wiki/Zermatt (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (12,227 characters) =====
+===== CLEANED GUIDE TEXT (12,234 characters) =====
 
 Zermatt is one of the most famous mountain resorts in Switzerland, and attracts people from around the world. Located in the German-speaking part of Valais, its most popular sight is the iconic Matterhorn, one of Switzerland's most famous mountains. It comes at no surprise then that the town of Zermatt caters mostly towards skiing, hiking and mountaineering. Though its fame has also a downside; the town is busier and much more expensive than other destinations in the region.
 
@@ -10,6 +10,7 @@ Zermatt is one of the most famous mountain resorts in Switzerland, and attracts 
  
 
 Understand
+
 
 
 Zermatt is surrounded by a range of fabulous mountains, including the highest of Switzerland, Monte Rosa. However the most famous of them is Matterhorn. It was one of the last alpine mountains to be conquered (in 1865), and the first expedition that reached the top ended dramatically (only 3 of the 7 climbers survived).
@@ -27,15 +28,18 @@ The name "Zermatt" is a contraction of the local dialect words "zer", which mean
 The Matterhorn was one of the last of the main Alpine mountains to be ascended, not because of its technical difficulty, but because of the fear it inspired in early mountaineers. The first serious attempts began around 1857, mostly from the Italian side; but despite appearances, the southern routes are harder, and parties repeatedly found themselves having to turn back. However, on July 14, 1865, in what is considered the last ascent of the golden age of alpinism, the party of Edward Whymper, Charles Hudson, Lord Francis Douglas, Douglas Robert Hadow, Michel Croz and the two Peter Taugwalders (father and son) was able to reach the summit by an ascent of the Hörnli ridge in Switzerland. Upon descent, Hadow, Croz, Hudson and Douglas fell to their deaths on the Matterhorn Glacier, and all but Douglas (whose body was never found) are buried in the Zermatt churchyard.
 
 Visitor information
+
 * Official website
 
 See and do
+
 
 Zermatt and the surrounding area is full of things to do. For sporty people, there are many activities such as hiking, skiing and mountain biking for you to enjoy. For the more laid-back tourist, there are many easy walks, spas, scenic train and cable car trips, a museum and much more to enjoy. For social people, there are also pubs and clubs in the village centre.
 
 For more information on activities, a good place to visit is the Visitor Information Center near the main train station.
 
 Mountaineering
+
  
 
 * 
@@ -49,6 +53,7 @@ Monte Rosa. The 4634 m high culminating point of Switzerland. The starting point
 
 
 Skiing
+
 
 * 
 Breuil-Cervinia Valtournenche Zermatt ski area. Zermatt has a huge ski area, which connects to the Italian ski resort of Cervinia. A part of the ski area is on the Theodul glacier and the highest point is at the Klein Matterhorn at 3880 metres altitude. There are two cablecars, a funicular as well as the Gornergrat railway which give access to the ski area:
@@ -64,6 +69,7 @@ Sunnega-Rothorn area.
  is an almost totally separated area which can be accessed via a funicular.
 
 Cycling and mountain-biking
+
 Zermatt is a great place to mountain bike although it doesn't appear to have really become popular there yet. Bikes can be hired from several shops around Zermatt from about Fr.&nbsp;38 for a hard tail and Fr.&nbsp;50 for a full suspension per day. Downhill rigs are Fr.&nbsp;100 per day and helmets are included.
 
 For bike hire, search for Bayardzermatt or Salom sport, Bayards is closer to the train station but you can get a mountain bike guide from salom sport for Fr.&nbsp;180 in the afternoon or Fr.&nbsp;240 in the morning and Fr.&nbsp;350 for a full day.
@@ -102,6 +108,7 @@ The restaurant at Fluhalp is a pleasant first ride from the Blauhard lift statio
 Make sure that you take some good quality cycling gloves since you can expect significant vibration from cycling along rocky tracks!
 
 Eat
+
 *
 Restaurant du pont. Restaurant which offers very good traditional Swiss dishes like fondue or raclette. Does not accept debit or credit cards.
 
@@ -111,6 +118,6 @@ Manud. Mix of Swiss and Asian food. Many vegetarian, vegan, and gluten free choi
 
 Drink
 
-===== TOKENS THE MODEL TRAINS ON (845) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (845) =====
 
 famous mountain resort attract world german speaking valais sight iconic matterhorn famous mountain come surprise cater mostly skiing hiking mountaineering fame downside busier expensive destination region surrounded range fabulous mountain highest monte rosa famous matterhorn last alpine mountain conquered expedition reached ended dramatically climber survived youve experienced car size bit surprise season nearly living street significantly internal combustion vehicle except occasional outside delivery specialist service mean leave noisy bar party minute later foot utter tranquillity sit hotel balcony listen dozen variety songbird watching set striking mountain world wake star room canva tent sound aforementioned bird cricket church bell children laughter vehicle battery driven completely silent taxi driver habit assuming pedestrian eyes back head occasional alarming seldom injurious consequence horse drawn vehicle equipped bell startled pedestrian wish taxis similarly provided cycle stroll complete safety incidentally version standard ski map summer walking map english reason lift station seem hand german version ticket map generally stand lift station information contraction dialect word zer mean matta mean field meadow therefore field field hotel apartment house built matterhorn last alpine mountain ascended technical difficulty fear inspired early mountaineer serious attempt began mostly italian side despite appearance route harder party repeatedly turn considered last ascent golden age alpinism party edward whymper charle hudson lord francis dougla dougla robert hadow michel croz peter taugwalder father son able reach summit ascent hornli ridge descent hadow croz hudson dougla fell death matterhorn glacier dougla body buried churchyard information official website surrounding thing sporty activity hiking skiing mountain biking enjoy laid easy walk spas scenic train cable car trip museum enjoy social pubs club village information activity information train station mountaineering breithorn easiest alps lift furri trockener steg kleine matterhorn reach little matterhorn theodul gletscher follow trail breithorn breithorn reached walking climbing rope necessary mountain guide recommended start tour little matterhorn morning snow weak reach last lift glacier paradise klein matterhorn ski additional summer season drag lift matterhorn tallest mountain alps straddling border matterhorn pyramidal shape face facing compass point face overlook face overlook resort breuil cervinia face look mountain dent dheren straddle border face meet summit form short ridge matterhorn face steep patch snow ice cling regular avalanch send snow accumulate glacier base face largest zmutt glacier mountain climbed experienced mountaineer usual pattern ascent schwarzsee cable car hike hornli hut elev nbsp stone building base ridge spend night climber rise reach summit descend regular afternoon cloud storm cost approx nbsp mountain guide monte rosa culminating point starting point monte rosa hut climb require excellent physical condition experience climbing crampon prior acclimatisation altitude cost approx nbsp guide skiing breuil cervinia valtournenche ski huge ski connect italian ski resort cervinia ski theodul glacier highest point klein matterhorn metre altitude cablecar funicular gornergrat railway give access ski klein matterhorn access biggest ski parallel cable cars leading furi pick onward destination want access italian fastest route rack railway lead gornergrat another skiing sunnega rothorn totally separated accessed funicular cycling mountain biking mountain bike doesnt appear become bike hired shop nbsp hard tail nbsp suspension downhill rigs nbsp helmet included bike hire search bayardzermatt salom sport bayard closer train station mountain bike guide salom sport nbsp afternoon nbsp morning nbsp mountain bike route route website download gps printed bike school eager give interested biker possible experience alpine environment ages level adapted program stay unforgettable playful skill training scheme kids epic freeride tour alpine surrounding info bikeschulezermatt plan cycling note street bahnhofstrasse bicycle unless pushed train station church afternoon police quick fine anyone anyway mountain bike carried ski lift summer charged extra lift pass valid appear bike transport standard pay individual journey wish note gornegrat train included summer lift pass pass basis lift particular peak rothorn schwarzsee pass mountain bike version extra following lift allow bike sunnegga funicular wheel bike tunnel bottom funicular bottom compartment train carry step stage mountain dont follow crowd step exit lower exit wheel bike straight onto slightly lower path alternatively elevator lift metre nbsp exit sunnegga blauherd cable car arrive ticket barrier attendant notice bike barrier dont fit cabin bike carried cargo cable car wait appear cable shouldnt minute attendant load bike fasten whilst standard cabin radio station unload arrival blauherd rothorn telecabin stage rothorn route huge telecabin carry summer wheel bike gornergrat mountain railway bike carried gornergrat railway summit special cars hang bike vertically schwarzsee lift biking lift pass route marked mountain information train station sell mountain biking map route peak map cycling policy track wider metre nbsp valid cycling route numerous road run mountain summer carry cyclist safety remember generally car rarely powered vehicle rothorn particularly suitable cyclist regardless fitness skill level possible cycle summit following wide occasionally steep rocky path mountain bring blauhard lift station follow quiet mountain road route excellent cross mountain route present stunning view gournergrat rifflealp unfortunately cycling route official map point gournergrat train turn lower point rothorn restaurant fluhalp pleasant ride blauhard lift station familiarising hire bike sure quality cycling glove expect significant vibration cycling rocky track restaurant pont restaurant traditional swiss dish fondue raclette accept debit credit card manud mix swiss asian food vegetarian vegan gluten choice

@@ -2,13 +2,14 @@ Yerevan, Armenia
 Labels: history, culture | Split: validation
 Source: https://en.wikivoyage.org/wiki/Yerevan (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (41,555 characters) =====
+===== CLEANED GUIDE TEXT (41,570 characters) =====
 
 Yerevan (Armenian: Երեւան, Երևան) is the capital of the Republic of Armenia, one of the three hubs of the South Caucasus and is home to over a million people (2022) — the largest Armenian community in the world. 
 
 Central Yerevan is a true jewel of early Soviet architecture. A grid within a circular road, it is also home to many large scale Modern and Post-Modern marvels which are mostly the result of Soviet-Armenian hybridization. In Soviet days Yerevan had already become known as the Pink City as much due to the color of the tufa stone used for building as for the flamboyant spirit of its young population.
 
 Understand
+
  
 Even though the history of Yerevan dates back to the Erebuni fortress, making it at least 2,800 years old, little remains of what was small settlement saving the excavations at Hrazdan river gorge, Erebuni, Karmir Berd and Avan. These sites have been excavated, and the artifacts found are in museums today. Being on a strategically important place Yerevan was a constant war stage for rival Ottoman, Persian and Russian Empires. It has been repeatedly ruined by those wars or natural disasters (e.g. an earthquake in 17th century almost entirely destroyed the town). Few buildings of the old Erivan survived to the present-day Yerevan.
 
@@ -19,9 +20,11 @@ In Soviet years, Yerevan underwent massive reconstruction, following architect A
 People
 
 
+
 Yerevan is a very ethnically homogeneous city, though tiny Yezidi and Molokan (Russian) minorities exist. Because the population of the city was only 20,000 a century ago, the vast majority of the Armenians are immigrants themselves, from all over the world. From the villages and towns of Armenia, from Tbilisi which was the centre of Eastern Armenian culture before 1918, from Western Armenia as genocide survivors poured in, and even from the Middle East and Europe in a large, post-World War II wave of immigration. Since independence, the city has become the heart of the entire Armenian world, as the divisive communist governments demise has allowed the Diaspora – larger in number than the population of Armenia itself, to embrace the city as its own.
 
 Religion
+
 Many visitors will be surprised to know that Armenia is not just an outcrop of Christianity in the Caucasus, but it is the first country in the world to adopt Christianity as a state religion. The king declared Christianity the state religion in 301 AD. Christianity has been uninterruptedly practiced in Armenia ever since in its own traditions.
 
 The Armenian Apostolic Church, or just Apostolic Church, is the National Church of Armenia. It is very traditional; in practices (but not history) is similar to Orthodox and Catholic movements, and to the Reformed Churches, e.g. the Church of England. At the same time the Armenian Apostolic Church has some strikingly different practices, like allowing animal sacrifices or celebrating Christmas on January 6 along with Theophany.
@@ -41,7 +44,9 @@ Muslims are steadily growing in numbers since the collapse of the Soviet Union, 
 Many Christian sects are also present in Yerevan, and they congregate in schools, sport clubs, concert halls and the like.
 
 See
-===Churches===
+
+Churches
+
  
 Churches in Yerevan are open from early morning till very late evening. There is no entrance fee ever charged. If you manage to find the priest you can ask him to bless you and any object (of non-violent usage) that belongs to you (including friendship and other relationships).
 * 
@@ -64,6 +69,7 @@ St John The Baptist Church. A church with three naves, built in 1710 and renovat
 
 
 Landmarks
+
  
 * 
 Erebuni Fortress. The excavations, recreations and museum of the nearly 3,000-year-old fortress that established Yerevan. Fairly well- (and maybe the best-) preserved fortress of Urartian Period in Armenia.
@@ -100,6 +106,7 @@ Cascade Memorial to the Victims of Soviet Repression. Monument dedicated to the 
 
 
 Museums
+
  
 * 
 Aram Khachaturyan House Museum. The home of late composer Aram Khachaturyan (1903-1978) has been turned into a museum. Things like his manuscripts and piano are on display here, and the building also has a concert hall.
@@ -152,6 +159,7 @@ Soviet Club. Combination museum and restaurant with numerous Soviet-era househol
 
 
 Fountains
+
 * 
 Fountain of David of Sasun. Built in 1948, around 460 m².
 
@@ -172,6 +180,7 @@ Sunken Fountain. At the foot of the Cascade complex, which itself has many fount
 
 
 Other
+
  
 * 
 The Ararat Cognac Factory. The oldest factory in Armenia. Offers tours and tasting, but the people there are very uptight and the place is overrun by tourists.
@@ -193,6 +202,7 @@ Walk of Fame. Stars, embedded in the pavement, commemorating twelve Armenian act
 
 
 Do
+
 
 * 
 Hrazdan Gorge partying. Visit one of the themed restaurants in the Hrazdan Gorge to see the locals partying. The food does not tend to venture far from barbecue and crayfish, but it is usually good barbecue, and the prices range from very reasonable to the unreasonable. Check the prices on the hard liquor and wines before ordering a bottle if you’re price sensitive.
@@ -217,6 +227,7 @@ Spartak Stadium. This is a mixed-use sports & athletics stadium just south of ci
 
 
 Parks
+
 * 
 Botanical garden of Yerevan. The collection includes more than 200 species of endemic, rare and declining plants. However, after the collapse of the Soviet Union due to insufficient funds the condition of the park started declining and now it needs a lot of improvements.
 
@@ -269,6 +280,7 @@ Victory Park. - Amusement park. Features a huge monument of Mother Armenia as we
 
 
 Theaters
+
  
 * 
 The Opera House. The building is perhaps modeled after SemperOper of Dresden, however it is supposed to be double as beautiful as the Yerevan building is two sided: One side (entrance from the Theatrical/Freedom square) is home to Opera and Ballet Theatre, while the street side houses the Khachaturian Concert Hall. For music fans, attend cheap and excellent performances at the Opera or the Chamber Music Orchestra. If a national dance group is performing, don’t miss it.
@@ -287,6 +299,7 @@ Yerevan Circus. A new circus building finished in 2018, on the place of a former
 
 
 Events
+
 *Vardavar is the pagan holiday of water (now a church holiday). It is a summertime movable feast that is mostly enjoyed by virtually everyone, grown and child alike: litres of water is poured on everyone by everyone. Some parks have administered events.
 *Tyarnndarach, often called Trndez, is the pagan holiday of fire (now a church holiday). It is observed on February 13. A huge bonfire can be found in each courtyard with people merrily singing around, youngsters jumping over and the like.
 * 
@@ -300,10 +313,13 @@ ReAnimania. An emerging international animated film festival held in autumn.
 
 
 Itineraries
+
 Most of the sights in Yerevan are concentrated in the centre, which is very walkable. Spending a few days visiting the major sights should be enough time, and try to get in a trip to Vernissage flea market on the weekend. Also there are a number of day trips can be done from Yerevan.
 
 Buy
-=== Markets ===
+
+Markets
+
  
 * 
 Covered Market. Yerevan's largest food market.
@@ -314,6 +330,7 @@ Vernissage. A walk through the weekend Vernissage open air market through the pa
 
 
 Malls
+
  
 * 
 Dalma Garden Mall. Western-style indoor mall with food court and movie theater.
@@ -329,12 +346,14 @@ RIO Mall. Newer mall in the Arabkir/Komitas neighborhood.
 
 
 Souvenirs
+
  
 * Armenian brandy (locally called Cognac as well) is considered one of the world's finest brandies and is accordingly a popular gift to take home for tourists. It was actually Winston Churchill's brandy of choice. There are many stores within central Yerevan centre devoted solely to brandy from the Ararat Cognac Factory; the airport is also a good place to stock up at duty free. As a rule, the more aged the brandy, the more refined the taste and the more expensive. But regardless the series of brandy, in Yerevan it will be an excellent value.
 * Armenian rugs, new and old are popular. New carpets can be purchased at the Mergeryan Rug Factory for a good price. More upscale is the international brand “Tufenkian Carpets”, with a shop on Tumanyan near Abovyan. Both will add your name or inscription request into an existing rug, or do a custom rug for you. There is no problem with exporting these. Old rugs are found in stores all over town, or in Vernissage. Be sure the seller obtains an export certificate from the ministry of culture for you – or you’re taking a chance that it may be confiscated. Negotiate to have the certificate delivered to you as part of the purchase price, and buy your rug a week before you go to give them time to obtain this certificate. New rugs do not require certification, but keep your factory certificate as proof that it is new.
 * More fragile, but maybe worth the effort are some of the more exotic jams and preserves made in Armenia. From walnut preserves, to sea buckthorn (Chichkhan) - a berry growing in Eastern and Northern Europe and parts of Asia, virtually everything that grows in Armenia is canned!
 
 Stores
+
 * 
 General Market. A supermarket.
 
@@ -343,14 +362,17 @@ SAS supermarket. A chain. More units: 35 Isahakyan St ( : Yeritasardakan), 18 Ma
 
 
 Currency
+
 Exchange kiosks at Zvartnots Airport have only a 3% spread between "buy" and "sell" for major currencies, so these are very good value, and downtown is similar. (Western high-street exchanges have about 15% spread, and airports 30% or worse.) However, for less common currencies e.g. Turkish lira the spread is much wider: exchange only the minimum at the airport then shop around for better rates downtown. Stores and restaurants will frequently accept US dollars, euros or western credit cards.
 
 Cash in Armenian dram can be withdrawn from numerous ATMs in the city, but you may have to try several machines before getting money. You can also withdraw money from your card at a bank, but it may take visits to several before you find one that will let you do so.
 
 Eat
+
  
 
 Budget
+
 
 Stands selling Armenian-style "pizzas" called "lamehjun" or "lahmajoun" are prevalent throughout Yerevan. This cheap snack consists of a thin layer of dough topped with an herb and meat paste.
 
@@ -386,6 +408,7 @@ Grand Candy Ponchikanots. Ponchiks are a regional type of donut. Fried dough stu
 
 
 Mid-range
+
 
 * 
 Tumanyan Khinkali. Khinkali (sturdy soup dumplings, similar to xiao long bao that came to Caucasus over the Silk Road) with meat or cheese filling is the name of the game here. You can have them boiled or fried; they are priced per dumpling, and 6-8 should be enough for an average appetite. If you try using knife and fork, you'll end up with a pool of soup on your plate; grab the dumpling by the bunched top, bite out a notch in the side and slurp in the liquid, then eat the rest (tops are not for eating, and the dough in them may even come out undercooked). Appetizers (soups, salads and a variety of homemade pickles) are delightful too. There are two bronze figures at the entrance welcoming you to step down, and a giddily over-the-top interior in plush and chintz, with televisions playing Armenian music programs of the Soviet era.
@@ -425,6 +448,7 @@ Gini Pig. Wine, beer and pizza in a small, rustic space, run by an Australian-Ar
 
 
 Splurge
+
 * 
 Dolmama. Fusion Armenian-World cuisine. Excellent food, service and ambience. The outdoor seating out back is a way to experience the old courtyards that filled central Yerevan in the past.
 
@@ -442,11 +466,13 @@ Asador. Surf and turf. Steaks from around the world, and fresh seafood flown in.
 
 
 Drink
+
 Cafés, bars, restaurants, clubs and the countryside on a picnic are all popular places for vodka, the usual drink of choice, with wine, beer, champagne and brandy all popular as well. Most restaurants only sell pilsner-style beers, of middling quality, but some brew pubs and craft beer outlets can be found. Restaurant wine is usually very good.
 
 Drinking in public may be legal, but doing so as a foreigner will get you stopped by the police (and earn you plenty of dirty looks from the locals). You can drink in a car, as long as you’re not driving. Drivers cannot have a drop of alcohol in them, with zero being the legal threshold – and the penalties for violating this are stiff.
 
 Places for a drink
+
 The most popular places to drink in the summer tend to be outdoor cafés and café/restaurants. The cafés by Cascade and the wine bars along Saryan are always packed.
 
 The following bars are popular spots with visitors.
@@ -464,6 +490,7 @@ Jack's Pub. Good spot for a drink, the bloody mary is legendary and the basil gi
 
 
 Drinks to try
+
 *Cognac – see the buy section above.
 *Homemade fruit vodkas – these are not flavoured from fruit like most of the western vodkas but made from pure fruit. The most popular is the Tutti Oghi (Mulberry Vodka), but just as impressive if you can find them are the Cornelian Cherry (Hon), Pear, Apricot and Peach.
 *Wine – Areni grapes are only grown in Armenia, which is in the oldest grape and wine producing part of the world. Old Yerevan is the best brand.
@@ -471,12 +498,14 @@ Drinks to try
 *Tan – blended plain yoghurt with water and a dash of salt, this drink is often an acquired taste, and very refreshing. You can sometimes find bottled fizzy tan, which is an even more acquired taste.
 
 Cafés
+
 Yerevan has a serious café culture, and it can be hard to tell where one outdoor café ends and the next begins as they run into each other.
 * 
 Mirzoyan Library. Started out as a space in a traditional courtyard with a collection of photography books, it's now a café with very nice drinks and creative and excellent bites and sweets. Free wifi.
 
 
 Nightclubs
+
 In Yerevan there are plenty of nightclubs, pubs, karaoke and strip clubs. Popular nightclubs are mainly in the centre, with longtime standbys usually full on the weekends.
 
 * 
@@ -485,6 +514,6 @@ Kami Club. Live music on many nights.
 * 
 Stop Club. Rock club. Live music on many nights.
 
-===== TOKENS THE MODEL TRAINS ON (3,187) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (3,187) =====
 
 armenian capital hubs caucasus home million largest armenian community world true jewel early soviet architecture grid circular road home scale modern post modern marvel mostly result soviet armenian hybridization soviet already become pink due color tufa stone building flamboyant spirit young population history date erebuni fortress making old little remain settlement saving excavation hrazdan river gorge erebuni karmir berd avan site excavated artifact museum today strategically important constant war stage rival ottoman persian russian empire repeatedly ruined wars natural disaster earthquake century entirely destroyed building old erivan survived present independence capital independent scale construction began took holistic approach plan laid alexander tamanyan plan involved demolition existed favor concentric circle park taller structure planned become metropolis soviet underwent massive reconstruction following architect alexander tamanyan plan perfect neo classical wide avenue resembling saint petersburg result easily accessible foot boast dense assortment park gallery museum public institution ethnically homogeneous tiny yezidi molokan russian minority exist population century ago vast majority armenian immigrant world village town armenian culture genocide survivor poured middle europe post world war wave immigration independence become heart entire armenian world divisive communist government demise allowed diaspora larger population embrace religion surprised know outcrop christianity caucasus country world adopt christianity state religion king declared christianity state religion christianity uninterruptedly practiced tradition armenian apostolic church apostolic church national church traditional practice history similar orthodox catholic movement reformed church church england armenian apostolic church strikingly practice allowing animal sacrifice celebrating christma theophany majority armenian identify apostolic christian catholico religious leader pope catholic today vast majority armenian attend church sunday visit revolving wedding baptism occasionally dropping light candle soviet restructuring church ones built old ones rehabilitated independence protestant evangelical armenian church nar dos street anglican episcopal christian congregate armenian apostolic surb zoravor church sunday eucharist orthodox christian maintain church kanaker district scale onion domed orthodox cathedral holy cross construction lake district visible highway coming airport mostly symbolic structure orthodox christian yezidi religious ethnic minority religious ritual religion kept secret practice cannot observed outsider largest yezidi temple world quba mere diwane stand aknalich village outside muslim steadily growing number collapse soviet union fueled iranian immigration mosque mashtot avenue christian sect present congregate school sport club concert hall church church early morning till late evening entrance fee charged manage priest ask bless object non violent usage belong friendship relationship katoghike tiny structure constructed typical armenian style katoghike mean cathedral reason incongruity original century church larger basilica attached century addition demolished larger separate church built kathoghike cream colored anna church katoghike tsiranavor church avan oldest surviving church completed century gregory illuminator cathedral completed commemorate anniversary christian nation holy relic gregory armenian given armenian church vatican placed cathedral building megalomaniacal exaggeration traditional armenian church architecture opposed church cathedral light carry stand candle candle house separate structure door complex vastly visibly unfinished saint sarkis cathedral victory bridge alternatively brandy factory building beautiful view church surrounding structure shade constructed immediate proximity church soviet forced secularisation church crowded young sargis sergius church patron saint young lover astvatsatsin nork replica beautiful century holy mother god astvatsatsin armenian church destroyed soviet forced secularisation sudden death benefactor church complex finished john baptist church church nave built renovated expanded landmark erebuni fortress excavation recreation museum nearly old fortress established fairly maybe preserved fortress urartian period square square grand example soviet public architecture early building house government ministry communication marriott hotel neo classical armenian hint later building foreign ministry art modernist imitation square singing fountain perform evening dancing frothing classical contemporary music mourned passing charle aznavour impromptu shrine sound track elsewhere singing fountain danced pretty tune theyd previously rossini sinatra avenue impossible miss pedestrian avenue opened connecting opera square hubs post modern response post world war soviet architecture emerging shopping district together sayat nova ave terian tumanian abovian abovian street home remaining belle epoque period structure republican gems art nouveau early modern constructivist moorish revival style backyard abovian nalbandian hanrapetutian street poor condition due neglect hanrapetutian special attention constrained freedom theatrical square square bordered opera house followed park lake air cafe border avenue mashtot avenue lane highway somehow accommodate pedestrian zone side result standard soviet planning prospekt overly noisy heavy traffic mostly unorganised public transportation part close opera favourite hangout local building avenue worth attention matenadaran covered market interior modern supermarket mall highly decorated original exterior survive blue mosque matenadaran house world largest collection armenian illuminated manuscript largest collection kind world display room sampling finest work additional cost guided tour worthwhile building dug hill withstand nuclear attack white stone statue front mesrop mashtot teaching armenian alphabet invention rapt disciple koryun historian biographer looking street blue mosque century shia islamic mosque surviving structure soviet secularisation prospering muslim community cascade sculpture park cafesjian museum sculpture park green zone immediate opera sculpture botero artist international fame decorate park park cafesjian museum armenian version guggenheim museum cascade art deco version hanging garden babylon stretching nearly height empire state building massive white stairway hillside decorated green stretch fountain waterfall higher level cascade give spectacular view mount ararat panorama hilariously multi colour roof floor bookstore museum indoor escalator cascade charge train station sasuntsi david statue beautiful square train station soviet classical architecture famous monument soaring statue sasuntsi david david sasun symbol cascade memorial victim soviet repression monument dedicated memory victim soviet era murder deportation atop cascade obelisk commemorate soviet cascade memorial designed jim torosyan chief architect constructed late completed inside concrete structure memorial slab inscription soul fire frenzied mass poem yeghishe charent fell victim repression far monument neglected connect major recent history museum aram khachaturyan house museum home late composer aram khachaturyan turned museum thing manuscript piano display building concert hall national art founded preserve work armenian international fine art decorative applied arts collection masterpiece world renowned artist hovhanne aivazovsky vardge sureniant arshile gorky marc chagall wassily kandinsky donatello tintoretto preserv unique fragment medieval armenian church frescoe armenian cultural center abroad feature floor mostly painting organized country origin armenian collection quality russian art lover enjoy european collection history museum roundup nation history early settlement century archaeological exhibit piece art give impression period move timeline start building early period amply annotated english russian tags thin considerably mid century reappear exhibit dedicated catastrophe disturbing single word missing completely soviet era youre interested modern history country dont speak armenian guided tour advisable strictly photography policy apply majority exhibition renovation according staff hopefully finished price reduced dram cafesjian museum modern art modern art museum housing collection gerard cafesjian arshile gorky andy warhol marc chagall name display collection rich glass art piece libensky brychtova couple specially sery special gallery display monumental tryptichon relief focusing armenian history entry level information desk shop study facility bottom front cascade sculpture park botero plastic history museum present period life starting paleolithic settlement modern ancient maps picture lost pre soviet erivan special interest lift sloping floor wheelchair modern art museum house selection contemporary art mostly armenian artist opposite side street newly opened hayart cultural eduard isabekyan erebuni museum history museum stand foot arin berd hill urartian fortress erebouni stood bce fortress excavated part structure reinforced restored fortress turned outdoor museum built argishti king urartu bce temple god khaldi occupied important fortress wall temple decorated numerous fresco museum house exhibit branch shengavit karmir blur exhibit respectively stock parajanov museum house museum sergei parajanov famous soviet film director museum special parajanov collage art everybody love enjoy equally highly appreciated children teenager demanding art critic highest level official informal meeting conducted martiro saryan house museum lover bright colour enjoy impressionist art house museum martiro saryan floor structure designed artist built lifetime home house heritage death armenian genocide memorial genocide museum tsitsernakaberd monument austere monument museum commemorating victim armenian genocide permanent collection document community ruthless destruction circa hand ottoman empire tsitsernakaberd meaning fortress swallow probably reached taxi walking follow past hrazdan stadium square roundabout little lane branch hill museum woodwork house artifact armenian historical wood carving culture door furniture wood based sculpture modern artist hovhanne tumanyan museum dedicated renowned prominent thinker writer poet fabulist humanist hovhanne toumanian exhibited item room apartment study room guest room dining room children room nvard toumanian room balcony olga room armenian railway museum present history armenian railway exhibit labelled armenian russian english exhibit adjacent garden accessible museum steam locomotive carriage stand station accessed crossing track platform eduard isabekyan art museum commemorating eponymous artist housed interesting round building brutalist style ervand kochar museum museum dedicated eponymous sculptor artist soviet club combination museum restaurant numerous soviet era household exhibit cars appliance arcade game poster actually play arcade game dance music enjoy food era fountain fountain david sasun built zodiac fountain aznavour square fountain saryan post park tons fountain huge splash pad kids love run summer fountain shahumyan park celebrated birthday park opened water feature fountain history singing fountain fountain square music light course dancing water show evening sunken fountain foot cascade complex fountain sunken fountain seating coolest spot escape heat summer ararat cognac factory oldest factory tour tasting uptight overrun levon divine underground levon arakelyan wife asked dig potato storage cellar instead created complex structure stair corridor room inside rock took died wife organise excursion showing underground mother erected replacing monumental statue joseph stalin national assembly yellow brick building finished house supreme soviet today serve parliament building hall administration housed massive story building construction started soviet time halted decade building finally completed history museum attached walk fame star embedded pavement commemorating twelve armenian actor musician hrazdan gorge partying themed restaurant hrazdan gorge local partying food tend venture far barbecue crayfish barbecue price range reasonable unreasonable check price hard liquor wine ordering bottle youre price sensitive climb cascade escalator inside art stepping outside level evening view ararat head street amusement park inside victory park cotton candy ride rickety ferris wheel catch concert cascade lover park art exhibition swan lake park lover park water world water park local summer consist air water park smaller indoor anybody cool total outdoor indoor pool wall climbing facility winter largest pool park turned ice skating rink zoo zoo home animal mainly representing caucasus bear goat snake armenian mouflon black vulture part world lion tiger hyena asian elephant upgraded renovated modern standard football national men soccer team play vazgen sargsyan republican stadium capacity southeast corner home team premier league tier sure game playing season likeliest involved european fixture alashkert play capacity alashkert stadium road airport tier club ararat play republican stadium ararat pyunik urartu noah formerly artsakh bkma spartak stadium mixed sport athletic stadium park botanical garden collection specy endemic rare declining plant collapse soviet union due insufficient fund condition park started declining need improvement children railway park miniature railway children ride established children park another beautiful remnant soviet urban planning park opened situated gorgeous canyon hrazdan river feature children railway park railway function infrastructure horribly deteriorated hand deterioration give feeling ghost park fairy tale populated missak manouchian park northwest kond pedestrian tunnel creepy seem safe circular park despite park shape semi circular monument important armenian russian imperial figure english park oldest park smaller size couple wedding photograph park komita pantheon cemetery double park lover park oldest park renovated tradition japanese landscaping armenian spirit host air art exhibition concert reached metro station marshal baghramian underused building allegedly modernist style park surrounding artificial vardarvar lake park renamed park honor friendship funded renovation park early oghakadzev park feature luna park amusement park couple cafe opera park spend late night cafe opera park outside melody cafe watching paplavok park chill green belt saryan park triangular park statue painter martiro saryan painter gather sell work weekend weekday swan lake park ends statue composer arno babajanyan bring attention famous nose finger swan lake park host air art exhibition ice skate local swan lake opera house winter month tumanyan park tumo creative technology reservoir built total victory park amusement park feature huge monument mother soviet military equipment display view theater opera house building modeled semperoper dresden supposed double beautiful building sided side entrance theatrical freedom square home opera ballet theatre street side house khachaturian concert hall music fans attend cheap excellent performance opera chamber music orchestra national dance group performing dont miss moscow theatre opened theatre hall sundukyan state academic theatre oldest modern theatre famous actor country perform arten theatre independent chamber theatre founded former house culture seat performance play reading labs lecture programme website circus circus building finished former demolished opening circus planned postponed pandemic event vardavar pagan holiday water church holiday summertime movable feast mostly enjoyed virtually everyone grown child alike litre water poured everyone everyone park administered event tyarnndarach called trndez pagan holiday fire church holiday observed huge bonfire courtyard merrily singing youngster jumping birthday birthday celebrated saturday huge event pedestrian stage theatrical music thematic ethnic minority folk jazz rock pop classic performance culmination square festival centered erebuni fortress cradle hard exact date festival golden apricot fairly established international film festival held armenian pride reanimania emerging international animated film festival held autumn itinerary sight concentrated walkable spending visiting major sight enough trip vernissage flea market weekend trip market covered market largest food market vernissage walk weekend vernissage air market park aram buzand street rugs souvenir instrument painting pets chemistry supply outdoor market seemingly everything mall dalma garden mall style indoor mall food court movie theater mall style indoor mall food court movie theater play anchored carrefour metronome shopping pretty underground mall mall newer mall arabkir komita neighborhood souvenir armenian brandy locally called cognac considered world finest brandy accordingly gift home actually winston churchill brandy choice store devoted solely brandy ararat cognac factory airport stock duty rule aged brandy refined taste expensive regardless sery brandy excellent value armenian rugs old carpet purchased mergeryan rug factory price upscale international brand tufenkian carpet shop tumanyan abovyan add inscription request existing rug custom rug problem exporting old rugs store vernissage sure seller obtain export certificate ministry culture youre taking chance confiscated negotiate certificate delivered purchase price rug week give obtain certificate rugs require certification keep factory certificate proof fragile maybe worth effort exotic jams preserve walnut preserve sea buckthorn chichkhan berry growing europe part asia virtually everything grow canned store general market supermarket sas supermarket chain unit isahakyan yeritasardakan mashtot hanrapetutian hraparak square tumanyan close armenian opera theater baghramyan barekamutyun qajaznuni kievyan currency exchange kiosk zvartnot airport spread sell major currency value downtown similar street exchange spread airport worse common currency turkish lira spread wider exchange minimum airport shop rate downtown store restaurant frequently accept dollar euro credit card cash armenian dram withdrawn numerous atms machine money withdraw money card bank visit let budget stand selling armenian style pizza called lamehjun lahmajoun prevalent throughout cheap snack consist thin layer dough topped herb meat paste master class angus beef kebab sandwich dram item focused menu mer taghe lahmejun joint tumanyan lahmejun following extra want splurge manti dumpling norahar kind regional lasagna ost cheap cafe food option drink ajarakan khachapuri lahmejun meghedi cheap cafe food option drink opera freedom square tumanyan shaurma style shawarma chain dozen restaurant artashi mot cheap shaurma soup kebab upstair fancier priced sit restaurant underground bbq meet traditional fast food craving fancier considered finest khorovat bbq judge trying horti beef sunki mushroom barbeque delicious alternative fish barbeque piti soup whichever barbeque tomato sauce mix artash put meat dip bread jengyalov hac bakery excellent armenian zhangyalov hats lahmajun gaidz cheap armenian fast food run kind hard working syrian armenian woman tun lahmajo uper affordable lahmajo armenian pizza packed local grand candy ponchikanot ponchik regional type donut fried dough stuffed custard topped powdered sugar grand candy took old space former soviet ponchikanot ponchik spot fresh hot cheap treat locally candy chocolate sale grand candy competition ponchik realm came gyumri opened block want ponchik chocolate custard filling head ponchik monchik mid range tumanyan khinkali khinkali sturdy soup dumpling similar xiao bao came caucasus silk road meat cheese filling game boiled fried priced dumpling enough average appetite knife fork youll pool soup plate grab dumpling bunched bite notch side slurp liquid rest tops eating dough undercooked appetizer soup salad variety homemade pickle delightful bronze figure entrance welcoming step giddily interior plush chintz television playing armenian music program soviet era anteb family run cafe serve huge variety kebab casual cafe type setting adana urfa bargain dram iskender slightly expensive dram rival rice pudding pricey tasty cheap drink fresh hot pocket bread caucasus tavern extensive menu caucasian dish language plus photo order fish straight aquarium old erivan traditional food song dance decor think disney tavern traditional armenian cuisine youll rub shoulder occasional government function wedding shower busful food real thing scared name dish unpronounceable tastier tzhvzhik example fegata alla veneziana offal fried onion delicious english menu helpful description picture dram entire baked veal shoulder main dram range miss putuk lamb soup individual crock sealed baked dough tolma homemade native wine selection live music quieter nook problem smaller branch amiryan paronyan khorenatsi twelve table cozy spot table smoke menu salad soup comfort food dessert teas non smoking lavash menu traditional armenian cuisine room upstair refined white tablecloth experience price busy weekend night ahead absolutely meal famous millefeuille cake layer fillo pastry custard trying save space lost cause serving slab enormous bring entire foot creation fresh oven carve table ktoor typical armenian menu reasonably priced outdoor patio front far saryan street ridiculously dish perfect group coast international food menu cascade breakfast lunch dinner option soviet club museum classic soviet restaurant fare authentic soviet setting dinner gata tavern hearty portion feel homestyle kitchen gini pig wine beer pizza rustic space run australian armenian fellow favorite food vibe splurge dolmama fusion armenian world cuisine excellent food service ambience outdoor seating experience old courtyard filled past club excellent armenian dish manti borek amazing midia dolma underground space hip tea room smoky sit bean bag chat voskevaz menu meat salad starter wine limone napolitano pizza salad sandwich fancy drink dessert cascade asador surf turf steak world fresh seafood flown excellent wine selection cafe bars restaurant club countryside picnic vodka usual choice wine beer champagne brandy restaurant sell pilsner style beer middling quality brew pubs craft beer outlet restaurant wine drinking public legal foreigner stopped police earn plenty dirty look local car youre driving driver cannot drop alcohol zero legal threshold penalty violating stiff summer tend outdoor cafe cafe restaurant cafe cascade wine bars saryan packed following bars spot calumet bohemian friendly alternative crowd insanely smokey seriously outdoor section youre fan cigarette smoke english speaking staff solid drink selection kill night roza bar ambiance old building fantastic drink tutovni house cocktail famous mulberry vodka vino wine bar saryan street led transformation entire neighborhood jack pub spot bloody mary legendary basil gin cocktail summer youll likely meet repat drink cognac section homemade fruit vodka flavoured fruit vodka pure fruit tutti oghi mulberry vodka impressive cornelian cherry hon pear apricot peach wine areni grape grown oldest grape wine producing world old brand compote home fruit juice fantastic ask local home drag tan blended plain yoghurt water dash salt acquired taste refreshing bottled fizzy tan acquired taste cafe serious cafe culture hard tell outdoor cafe ends begin run mirzoyan library started space traditional courtyard collection photography book cafe drink creative excellent bite sweet wifi nightclub plenty nightclub pubs karaoke strip club nightclub mainly longtime standby weekend kami club live music night stop club rock club live music night

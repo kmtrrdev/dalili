@@ -870,8 +870,7 @@ async def repair_node(state: GraphState) -> GraphState:
     stalled = set(state.get("repair_stalled") or [])
     for mode, p in state["candidates"].items():
         if p.validation and p.validation.result == "FAIL" and mode not in stalled:
-            new_knobs, log_lines = repair(p, p.validation, knobs[mode], trip.research, state.get("iteration", 0),
-                                          trip.traveler_profile)
+            new_knobs, log_lines = repair(p, p.validation, knobs[mode], trip.research, trip.traveler_profile)
             knobs[mode] = new_knobs
             p.repair_log.extend(log_lines)
             progressed = progressed or bool(log_lines)

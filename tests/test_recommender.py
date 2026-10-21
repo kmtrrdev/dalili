@@ -4,22 +4,9 @@ from fastapi.testclient import TestClient
 
 from travel_agent.recommender import corpus, evaluate
 from travel_agent.recommender.catalog import INTERESTS, load
-from travel_agent.recommender.model import Config, Doc2Vec, TfIdf, scatter_add, sigmoid, unit
-from travel_agent.recommender.train import MODEL_PATH
-
-
-def test_scatter_add_sums_repeated_rows():
-    M = np.zeros((5, 3), dtype=np.float32)
-    idx = np.array([1, 3, 1, 1])
-    rows = np.arange(12, dtype=np.float32).reshape(4, 3)
-    scatter_add(M, idx, rows)
-    expected = np.zeros((5, 3), dtype=np.float32)
-    np.add.at(expected, idx, rows)
-    assert np.allclose(M, expected)
-
-
-def test_sigmoid_is_stable():
-    assert np.allclose(sigmoid(np.array([-1000.0, 0.0, 1000.0])), [0.0, 0.5, 1.0])
+from travel_agent.recommender import encoder
+from travel_agent.recommender.finetune import MODEL_PATH
+from travel_agent.recommender.model import TfIdf, distinctive_words
 
 
 def test_tokenizer_cleans_text():
@@ -33,28 +20,19 @@ def test_wikitext_keeps_listing_descriptions():
     assert "Old Fort. A huge fortress by the sea." in text and "pagebanner" not in text
 
 
-def test_doc2vec_learns_topics_from_scratch():
-    """Two kinds of place written in different words: the trained vectors must group them apart."""
-    rng = np.random.default_rng(0)
-    beach = "beach sand swim coral snorkel lagoon island surf sea sunset".split()
-    ski = "ski slope piste snow lift chalet snowboard winter alpine glacier".split()
-    common = "hotel restaurant museum street market cafe".split()
+def test_passages_mask_place_and_country_names():
+    dests = load()
+    text = "Understand\nSantorini is the jewel of Greece, with a caldera and white villages. " + "Beaches and wine. " * 30
+    ps = corpus.place_passages(text, ["Santorini"], dests)
+    assert ps and "Santorini" not in ps[0] and "Greece" not in ps[0]
+    assert "the place" in ps[0] and "the country" in ps[0] and "caldera" in ps[0]
 
-    def doc(words):
-        return list(rng.choice(words + common, 400))
 
-    docs = [doc(beach) for _ in range(6)] + [doc(ski) for _ in range(6)]
-    m = Doc2Vec(Config(dim=24, epochs=12, batch=256, min_count=1, window=3)).fit(docs, log=lambda *_: None)
-    assert m.history[-1] < m.history[0]  # the loss goes down
-    X = unit(m.D)
-    S = X @ X.T
-    same = np.mean([S[i, j] for i in range(12) for j in range(12) if i != j and (i < 6) == (j < 6)])
-    other = np.mean([S[i, j] for i in range(6) for j in range(6, 12)])
-    assert same > other + 0.2
-    # a new guide about skiing lands next to the ski places
-    v = unit(m.infer(doc(ski)))
-    assert (X[6:] @ v).mean() > (X[:6] @ v).mean()
-
+def test_known_for_words_are_distinctive():
+    docs = [["caldera", "volcanic", "beach"] * 5 + ["town", "hotel"]] + \
+           [["beach", "town", "hotel", f"w{i}"] for i in range(9)] + [["caldera", "volcanic", "town"]] * 3  # in 4 of 13 guides: distinctive, not common
+    words = distinctive_words(TfIdf(min_df=1).fit(docs), docs, k=2)
+    assert set(words[0]) == {"caldera", "volcanic"}
 
 def test_tfidf_baseline():
     b = TfIdf(min_df=1).fit([["beach", "sand"], ["ski", "snow"], ["beach", "sea"]])
@@ -137,3 +115,24 @@ def test_suggestions_blend_long_term_taste(monkeypatch):
     beta = next(i for i in out["ideas"] if i["name"] == "Beta")
     assert beta["taste_match"] == 95 and beta["taste_because"]["city"] == "Rome"
     assert out["ideas"][0]["name"] == "Beta"  # same price and request fit: the traveller's taste breaks the tie
+
+
+@pytest.mark.skipif(not (MODEL_PATH.exists() and encoder.available()), reason="model not trained")
+def test_the_served_encoder_reproduces_the_saved_vectors_and_reads_new_guides():
+    """The website's ONNX encoder gives the vectors that were evaluated (same text preparation, same pooling), and
+    a guide it never saw lands next to places of its kind."""
+    import json
+
+    a = np.load(MODEL_PATH, allow_pickle=False)
+    ids, X = a["ids"].tolist(), a["X"]
+    dests = {d.id: d for d in load()}
+    zermatt = dests["zermatt"]
+    guides = MODEL_PATH.parent.parent / "dataset" / "guides.jsonl"  # the exported training text: no network in tests
+    text = next(r["text"] for r in map(json.loads, guides.read_text(encoding="utf-8").splitlines()) if r["id"] == "zermatt")
+    enc = encoder.Encoder()
+    v = enc.place(corpus.place_passages(text, [zermatt.name, zermatt.wikivoyage], list(dests.values())))
+    assert float(v @ X[ids.index("zermatt")]) > 0.99
+    ski = enc.place(["Ski slopes and pistes above the village, chairlifts, snowboarding, apres-ski in the chalets, "
+                     "glacier skiing in winter and alpine hiking in summer. " * 4])
+    near = [dests[ids[i]] for i in np.argsort(-(X @ ski))[:5]]
+    assert sum("ski" in d.tags for d in near) >= 3, [d.name for d in near]

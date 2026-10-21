@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import os
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from pathlib import Path
 
 try:
@@ -73,7 +73,6 @@ class Settings:
     # behaviour fades. Fallback values, configurable.
     preference_apply_threshold: float = float(os.getenv("TRAVEL_AGENT_PREF_THRESHOLD", "0.5"))
     preference_half_life_days: float = float(os.getenv("TRAVEL_AGENT_PREF_HALF_LIFE_DAYS", "180"))
-    extra: dict = field(default_factory=dict)
 
 
 settings = Settings()

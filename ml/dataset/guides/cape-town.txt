@@ -2,14 +2,16 @@ Cape Town, South Africa
 Labels: nature, food, beach, adventure | Split: test
 Source: https://en.wikivoyage.org/wiki/Cape_Town (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (46,086 characters) =====
+===== CLEANED GUIDE TEXT (46,120 characters) =====
 
 Cape Town (Afrikaans: Kaapstad, Xhosa: iKapa) is the second most populous city in South Africa. The capital of Western Cape Province, it is also the legislative capital of the nation. Cape Town is on South Africa's southwestern coast close to the Cape of Good Hope, and is the southernmost city on the African continent. It is the gateway to the globally renowned Cape Winelands which includes the towns of Franschhoek, Stellenbosch and Paarl.
 
 Understand
+
 Cape Town is nicknamed the Mother City within South Africa. Compared to the more business oriented Johannesburg it is known for its relaxed and leisurely atmosphere. Compared to other parts of South Africa, Cape Town is also distinctly more "western".
 
 Geography
+
  
 
 The metropolis of Cape Town is spread over a wide area, from Somerset West and Durbanville in the east to Atlantis in the north and Cape Point in the south. The city centre is situated in a fairly small area between Table Bay and Table Mountain.
@@ -17,6 +19,7 @@ The metropolis of Cape Town is spread over a wide area, from Somerset West and D
 The original Dutch settlement, and the heart of the current city, is southwest of Strand St, "Beach street" in Afrikaans, since it followed the original waterfront during the 17th century. Since then, centuries of landfills have successively moved the shoreline some  northeast to its current position. The old city centre is intersected by avenues like Long St, St Georges Mall and Adderley St, and is approximately bounded by the Company Gardens in the southwest, the Castle of Good Hope in the east, and the slopes of Signal Hill in the northwest. During the 19th century, these slopes were settled by Cape Town's Malay Muslim population, creating the area Bo-Kaap, which translates into "Above the Cape" or "Upper Cape".
 
 History
+
 Before the European colonial era what is now the Western Cape was inhabited by Khoikhoi and San groups, whom the Dutch called "Hottentots", "Strandlopers" and "Bushmen" (terms that are now considered racist and offensive). From the late 15th century, European ships (primarily Portuguese) started to visit the area, firstly for fresh food and water, then later for whaling and trading with the locals. Cape Town's colonial history started in 1652, when founder Jan van Riebeeck established a trading post there for the Dutch East Indies Company (VOC), as a stopping point on the Cape Route. Even though South Africa is the part of Africa located furthest from Europe, it was the first, and up until the 19th century, only place which was substantially colonized by Europeans since the Roman Empire in North Africa. The reason is that the Cape, while being furthest from Europe, is also relatively far from the equator. The Europeans therefore found the climate temperate enough to grow European crops, and the Cape was in a strategically important position for intercontinental trade.
 
 The earliest European settlers were predominantly Dutch along with some Protestant Huguenots from northern France fleeing from being persecuted by the Catholics. These settlers over time explored the adjacent hinterland and founded the cities of Paarl and Stellenbosch in what is today the Cape Winelands. They were known as Voortrekkers ("Pioneers") when they ventured from the Cape region to explore, conquer and settle other parts of Southern Africa. The first people from Asia to arrive in Cape Town were the Malays from Java and other islands of the Dutch East Indies, brought in by the Dutch as slaves in 1654. Their descendants are today known as the Cape Malays. Soon the various ethnic groups intermingled leading to the emergence of the unique, mixed-race Cape Coloured community.
@@ -26,6 +29,7 @@ Political control of Cape Town ping ponged between the Dutch and British during 
 Cape Town, as the seat of parliament, is South Africa's legislative capital. The city was ahead of its time as it developed into a global, multicultural metropolis much earlier than most other major cities of the world. Cape Town has many fascinating points of interest, a thriving nightlife, and a sizable LGBT presence.
 
 See
+
 
  
 Although the legislative capital of South Africa, Cape Town doesn't seem like part of Africa, in fact, the city provides a natural backdrop and Cape Dutch architecture.
@@ -67,6 +71,7 @@ Nobel Square. Along the Victoria and Alfred Waterfront. Features sculptures of S
 
 Museums and galleries
 
+
 * 
 Bo-Kaap Museum. Located in a home dating from the 1760s, the museum offers an insight into the cultural life of the Muslim community of the Bo-Kaap area in Cape Town.
 
@@ -99,6 +104,7 @@ Zeitz Museum of Contemporary African Art. Established in 2017 as the largest mus
 
 Performing arts
 
+
 * 
 Artscape Theatre. 
 
@@ -110,6 +116,7 @@ Labia Theatre. Has an African screen showing African-made and African-oriented f
 
 
 Do
+
  
 
 The easiest way to get an overview on things to do, nice restaurants, clubs, tours etc. is to walk into one of the visitors centres which are in several areas (V&A Waterfront, City Bowl, Green Point, etc.)
@@ -132,6 +139,7 @@ Sunset cruise. On visiting Cape Town take the opportunity for a sunset cruise fr
 
 
 Water sports
+
 * 
 Swimming. Beaches on the False Bay side of the peninsula are the most popular with swimmers as the water is warmer. St James has the most picturesque tidal pool on the stretch between Muizenberg and Kalk Bay, while Clovelly and Fish Hoek beaches wrap around a sheltered bay with soft, white sands. Fishing boats, hobie cats and kayaks launch from here too. Brave hearts can sun-worship and swim naked in the freezing water of the isolated and breathtaking nudist beach Sandy Bay near Llandudno. Major spot for gay tourists as well. There's a 1½&nbsp;km walk down from the parking lot. Camps Bay and Clifton also have great beaches to visit if you want to try the chillier waters of the west coast.
 
@@ -143,6 +151,7 @@ Kite surfing. Cape Town is one of the most popular kite surfing destinations in 
 
 
 Ball sports
+
 * Rugby Union: Stormers play in the United Rugby Championship, the European professional league, with a playing season Oct-March. Their home ground is Cape Town Stadium, capacity 58,300. 
 * Cricket: 
 Newlands. Overlooked by Table Mountain and Devil's Peak, this scenic ground hosts Test matches and is home to Western Province and MI Cape Town teams. Its capacity is 20,000.
@@ -150,6 +159,7 @@ Newlands. Overlooked by Table Mountain and Devil's Peak, this scenic ground host
 * Golf: there's over a dozen courses around the city. Two notable examples are Steenberg GC in Tokai to the south, and Clovelly in Fish Hoek further south.
 
 Deep sea fishing
+
 * 
 Ama Feesh Charters. 
 
@@ -164,11 +174,13 @@ Hooked on Africa. Tuna fishing charter that also offers boating excursions. If i
 
 
 Shark cage diving
+
 * 
 SABP Tours. SABP Tours offers a diving opportunity to witness the great white shark.
 
 
 Diving
+
 
  
  
@@ -190,6 +202,7 @@ Diving at Two Oceans Aquarium. You must hold a recognised diving certification, 
 
 
 Events
+
 There are many organized events in Cape Town throughout the year. An official calendar of events is available from Cape Town Tourism.
 
 * 
@@ -216,9 +229,11 @@ First Thursdays. On the first Thursday of every month, walk between the gallerie
 
 
 Safari
+
 Big Five Cape Town safaris are becoming increasingly popular. There are many safari game reserves with in 2 hours drive from Cape Town which is a great option if you don’t want to venture too far from the city.
 
 Hiking
+
 There are many hiking trails in and around the city, from short walks to multi day hikes.
 * 
 The Cape of Good Hope Trail. Cape of Good Hope in the Table Mountain National Park, 34&nbsp;km, 2 Days.
@@ -251,6 +266,7 @@ Meridian Hiking Club. This club organizes hikes ranging from easy day walks to s
 
 
 In the air
+
 * 
 Cape Town Helicopter Tours. Helicopter Wine Tours Western Cape, visit, Stellenbosch, Franschhoek and or Paarl from Cape Town.
 
@@ -272,6 +288,7 @@ Para-Taxi. Paraglide over the Cape while being securely strapped to a profession
 
 Kayaking
 
+
 * 
 Gravity Adventure Group. Provides training (African Paddling Association approved) as well sea kayaking in the West Coast National Park.
 
@@ -280,6 +297,7 @@ Kaskazi Kayaks. Guided sea kayak trips, twice a day from Seapoint.
 
 
 Sunset cruises
+
 * 
 Waterfront Boat Company. Take a relaxing sunset cruise on the Condor to Greenpoint and back or do the champagne cruise. One to one and a half hours.
 
@@ -291,6 +309,7 @@ Jolly Roger Pirate Ship. The Jolly Roger is the only authentic pirate ship in So
 
 
 Townships tours
+
 The townships are the places where people were forced to live (based on race) under the apartheid regime. To some extent townships continue to retain their apartheid-era racial make-up, for a variety of reasons. Townships have also grown to cover far larger areas of land than in the apartheid days. This is a result of urbanization, especially over the past 10–15 years. Touring a township may seem strange, even inappropriate, but it is a good way to learn about South Africa's history, and the poverty that many people continue to live in. People in the townships are friendly and the children love visitors. Some townships however can be dangerous (see the warning on the South Africa page) so don't go alone unless you know what you're doing. The townships tours are safe. If you want to bring sweets or gifts for the children, it is best not to give it directly to them, but to give it to the tour guide who will distribute them later.
 
 Tours can be booked directly or through one of Cape Town's many booking agencies. Tours run once or twice per day. Be aware that if you're given the chance to try some township food, that a 'walkie-talkie' is often made from the feet and beaks of poultry. The very best way to see a township is by foot and to stay overnight at one of the many township B&Bs.
@@ -326,12 +345,14 @@ Daytrippers.
 
 
 Wildlife
+
 There are a number of small nature reserves in and around Cape Town.
 
 * Koeberg Nuclear Power Station and Nature Reserve, Melkbos, consists of 3000-hectare buffer zone around the power station has been converted to a nature reserve with Bontebok, Genet, Steenbok and many other antelope.
 * Table Mountain National Park forms part of the Cape Floristic Region UNESCO World Heritage Site. The park covers a large area of the Cape and incorporates a number of park areas. Most of it is free access; the only places you need to pay are at the Cape of Good Hope, Silvermine and Boulders.
 
 Wine tasting and tours
+
 Cape Town has some of the world's best wine producing vineyards and maybe the world's most scenically stunning on its doorstep. The wine regions of Stellenbosch, Franschhoek and Paarl are all with in an easy hours drive, these historic and lush regions offer stunning views and world class wine tastings. You can self-drive but this come with limitations, often the best farms are closed to the public and then there is the drinking and driving issue. The best value and safest way to see the winelands is to trust your day to a dedicated wine tour company.
 
 With South African wines becoming more and more popular worldwide, the number of tourists who visit Cape Town to learn more about the local wines is growing. The impressive variety of vineyards in Cape Town and the surrounding Cape Winelands make the choice which one to visit and which wine to taste very difficult. It is always a good idea to rely on one of the established wine tour operators. Guests should insist on a specialised guide with a thorough knowledge of South African wines.
@@ -341,6 +362,7 @@ Taste the Cape Travel and Tours cc. A tour company specialising in wine and food
 
 
 Whale watching
+
 
 Mostly you will see Southern right whales, but on occasion you might also spot humpback and killer whales. Bottlenose and dusky dolphins also frequent False Bay.
 The Southern Right whales visit each year between June & November to mate and calve.
@@ -361,11 +383,13 @@ Dyer Island Cruises.
 
 
 Cinema
+
 * 
 Labia Theatre. An old-school cinema which has been open for more than 65 years.
 
 
 Buy
+
  
 
 The V&A Waterfront is the prime tourist destination for souvenirs, though these tend to be typically touristy (i.e. expensive and not necessarily authentic). More authentic curios for better prices can be found every Sunday at the Green Point market outside the Green Point
@@ -376,6 +400,7 @@ Green Market Square. Originally a Farmers' Market dating back to 1710, Green Mar
 
 
 Wine
+
 
 If you like South African wine, buy it here (or anywhere in South Africa) before you leave, because it is much cheaper and there is more availability than overseas. Top guide to wines is the John Platter's Guide, with a few others around too, and with thousands of wines available from the region, you will need a guide (see below for shops that have knowledgeable staff). Read Wine magazine (or the iconoclastic Grape) for the latest information.
 
@@ -394,11 +419,13 @@ Ultra. A large South African liquor chain. Several locations around the city, th
 
 Arts and crafts
 
+
 Distinctively Capetonian in character—are everywhere, from chickens made of plastic bags to bead and wire work to pottery, glass and embroidery. If you don't buy a chicken from a Rastafarian at a street corner (the authentic experience—about  depending on the size), then try Heartworks (Kloof Street or in Gardens Centre mall) or the Red Shed at the V&A Waterfront. There is also a high-end craft boutique in the Cape Quarter in De Waterkant.
 
 Contemporary South African art has been riding a big wave in the international art world. It is on par with the best in the world and undervalued (unless you buy a William Kentridge). If you like real art as opposed to curios, crafts or posters, and you have the budget for it, there are several serious galleries in town. Try Michael Stevenson Gallery first, then Joao Ferreira Gallery, AVA Gallery or Bell-Roberts Gallery, and there are several others worth seeing. Artvark in Kalkbay is a treasure trove of modern local art at a variety of price points. Art South Africa is the art magazine to read if you want to know about the artists, and the adverts list the shows and the galleries.
 
 Shopping malls
+
 As in any large city you will find a number of major shopping malls with the requisite department sized stores and chain labels:
 
 * 
@@ -433,6 +460,7 @@ Canal Walk Shopping Centre. Cape Town’s largest shopping centre has over 400 s
 
 
 Supermarkets
+
 * 
 Pick N Pay. 
 
@@ -451,6 +479,7 @@ Pep stores. low cost clothing and shoes.
 
 Eat
 
+
  
 
 Food in Cape Town is generally of high quality. The wines are much celebrated, but the surrounding region is also a major fruit producer, and the Karoo lamb is widely regarded. Seafood caught locally is superlative, but ironically much of it goes internationally (e.g., tuna for sushi) because of the prices that can be achieved. Ask about the local linefish—yellowtail, cape salmon, kingklip, cod and others are great eating. Oysters in season are also exceptional, farmed and wild from Knysna or wild flown in from Namibia.
@@ -468,6 +497,7 @@ Cape Town is a notably vegan and vegetarian friendly city. Most restaurants in C
 Naturally, Cape Town is a great place to sample the unique Cape Malay cuisine. There are a few restaurants in Bo Kaap serving this cuisine; a must-try dish is bobotie, the signature dish of the community.
 
 Budget
+
 *
 Eastern Food Bazaar. South Asian food court offering high quality meals for a fair price. 100% Halal.
 
@@ -497,6 +527,7 @@ NY Slice Pizza Kloof Street.
 
 
 Mid-range
+
 * 
 The Charles. The Charles can accommodate 25–30 people seated.
 
@@ -535,6 +566,7 @@ Table Mountain Restaurant. Temporarily closed as of August 2022. A 120 seat, sel
 
 
 Splurge
+
 * 
 Tide. Serving with steamed seasonal vegetables, new potatoes and lemon butter.
 
@@ -558,6 +590,7 @@ The Test Kitchen. Luke Dale-Roberts’ The Test Kitchen, which opened in 2010, h
 
 
 Drink
+
 
 Long Street, which can be easily reached from St. George's Cathedral and the Greenmarket Square, is famous for its bars, restaurants and clubs. This is the ideal place if you want to end the day with a drink. It is also one of the few truly multi-ethnic, multi-racial nightspots in the city. See the new South Africa, not just other tourists.
 
@@ -590,12 +623,13 @@ Zanzi-Bar. Run by the Carnival Court Backpackers hostel. Good meeting place for 
 
 
 Clubs
+
 * 
 Fiction Bar. Renowned club with weekly indie-, drum'n'bass- and minimal-electro-nights
 
 * 
 Mercury Live & Lounge. World-class live music, with students nights.
 
-===== TOKENS THE MODEL TRAINS ON (3,439) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (3,439) =====
 
 afrikaan kaapstad xhosa ikapa populous capital province legislative capital nation southwestern coast close hope southernmost african continent gateway globally renowned wineland town franschhoek stellenbosch paarl nicknamed mother compared business oriented johannesburg relaxed leisurely atmosphere compared part distinctly geography metropolis spread wide somerset durbanville atlantis point situated fairly table bay table mountain original dutch settlement heart current southwest strand beach street afrikaan followed original waterfront century century landfill successively moved shoreline northeast current position old intersected avenue george mall adderley approximately bounded company garden southwest castle hope slope signal hill northwest century slope settled malay muslim population creating kaap translate upper history european colonial era inhabited khoikhoi group dutch called hottentot strandloper bushmen term considered racist offensive late century european ship primarily portuguese started firstly fresh food water later whaling trading local colonial history started founder van riebeeck established trading post dutch indy company voc stopping point route furthest europe century substantially colonized european roman empire reason furthest europe relatively far equator european therefore climate temperate enough grow european crop strategically important position intercontinental trade earliest european settler predominantly dutch protestant huguenot fleeing persecuted catholic settler explored adjacent hinterland founded city paarl stellenbosch today wineland voortrekker pioneer ventured region explore conquer settle part asia arrive malay java island dutch indy brought dutch slave descendant today malay soon ethnic group intermingled leading emergence unique mixed race coloured community political control ping ponged dutch british late early century ceded british self governing dominion british empire union seat parliament legislative capital ahead developed global multicultural metropolis earlier major city world fascinating point interest thriving nightlife sizable lgbt presence legislative capital doesnt seem fact provide natural backdrop dutch architecture kaap neighbourhood hilly southwest historically malay muslim descendant slave lived shoot film bright colourful building mosque quaint street stunning view delicious street food sold side worth exploring quarter hour visiting kaap museum showing wealthy malay family lived century quarter atla trading old fashioned spice shop ask manager mix spice making meal want kaap noon gun cannon signal monday saturday cannon fired ceasing amaze crowd watching brief ceremony occur shooting castle hope popularly called castle local oldest surviving building built castle display vast range historical military equipment tool art collection william fehr collection antique dutch furniture wine cafe restaurant castle hall beautiful edwardian building completed nelson mandela speech release prison longer host municipal office instead function venue exhibition performance philharmonic orchestra kirstenbosch national botanical garden beautiful highly diverse flower plant stunning botanical garden world plant african bioregion displayed huge baobab tree rare succulent richtersveld fascinating medicinal specy path meander throughout garden restaurant indigenous nursery gift shop certain time concert performance air amphitheatre art frequently display shona stone sculpture garden home national biodiversity institute garden special change dramatically season bird flower etc summer sunset concert feature excellent international music acts genre enter early spot grass amphitheatre picnic revel music philharmonic orchestra artist rock band memorial built lower slope devil peak memorial designed recognition imperialist politician business magnate cecil wooden bench placed memorial memorial wonderful spot picnic starting point bike hiking trail head devil peak become eager explore nature beauty sure alone carry valuable african house parliament legislative seat presidential seat pretoria judicial seat bloemfontein tour house parliament acquaint modern history political system tour visit national assembly national council province old apartheid era assembly caucus committee meeting tour offered time language ocean aquarium decent sized aquarium showcasing biodiversity indian atlantic ocean display clownfish seahorse turtle shark penguin feature live kelp forest microscope exhibit extensive sery event calendar month event schedule live feeding scuba diving shark offered walk aquarium take hour viewing platform fur seal waterfront alfred waterfront huge shopping entertainment harbour density shop restaurant amusement possibility aquarium marine museum harbour tour trip robben island start helicopter flight peninsula waterfront wheelchair access science world discovery roof expect wide variety interactive display exciting activity enjoyment build house exclusive kids building site challenge mind puzzling thing experience weightlessness similar space spin human gyroscope play mindball game control ball brain wave hear science audio kinetic sculpture nobel square alfred waterfront feature sculpture nobel peace prize winner albert luthuli desmond tutu klerk nelson mandela museum gallery kaap museum home dating museum insight cultural life muslim community kaap district museum district downtown remained multiracial attempt government declare white eventually resident evicted building bulldozed remain uninhabited museum provide information eviction group act live director museum former resident bookstore excellent selection book history district apartheid groot constantia oldest wine estate worth fee internal tour wine tasting slave lodge oldest building house social history museum african jewish museum museum community contribution african society bringing apartheid museum jews non jews interesting informative maritime museum document live early seafarer voyaging hope craft locally maritime artifact showcased huge model ship highlight museum african national garden government ave minute walk downtown contain extensive display african art information history censorship art apartheid galleria gibello galleria gibello photo filled visually captivating moment life african continent zeitz museum contemporary african art established largest museum contemporary african art world built old grain silo decommissioned performing arts artscape theatre baxter theatre theatre performance comedy jazz labia theatre african screen showing african african oriented film round easiest overview thing restaurant club tour etc walk centre waterfront bowl green point etc cable car table mountain return cable car ticket wheelchair accessible throughout separate lift entrance friendly staff help accessibility weather condition mountain bottom warm wear mountain toasty bottom mountain wear sunblock carry water bottle drinking fountain cable station cafe limited range snack coffee beer wine table mountain home animal rock rabbit locally dassie closest relative dna wise elephant running rock mountain want sunset last car range winter summer climbing table mountain platteklip gorge accessible therefore route climbing table mountain start tafelberg road proceed steep gully table mountain steep worth effort jump cable car spare knee cable car operate strong wind check departing remember water sunblock hat jacket climbing mountain heat grueling task cloud appear unannounced temperature plummet poorly equipped hiker rescued steep route extremely guaranteed meet gorge shaded afternoon earlier extremely hot little shade route involve rock step challenging coming harder dont underestimate energy required downward section hike wear appropriate hiking shoe leave plenty dark route easy accessible inexperienced hiker attempt climb care consider guide meridian hiking club welcome organized hike led experienced climber peninsula hope simon african penguin colony boulder point table mountain national park maybe lunch taking hike quieter immerse essence landscape scenic drive chapman peak drive hout bay atlantic seaboard llandudno camp bay stopping clifton famous beach wineland tour beautiful constantia valley wine estate groot constantia buitenverwagting klein constantia constantia uitsig checking wineland stellenbosch paarl franschhoek stellenbosch added attraction historical university franschhoek established food capital home country restaurant view extraordinary snack dieu donne estate unsurpassable vista entire valley picnic little hill parking winery charge tasting session refund purchase botanical garden sunset cruise visiting opportunity sunset cruise service lined dockside worth seeing sunset view table mountain sea tour wine drink downer youre lucky dolphin water sport swimming beach false bay side peninsula swimmer water warmer jame picturesque tidal pool stretch muizenberg kalk bay clovelly fish hoek beach wrap sheltered bay soft white sand fishing boat hobie cats kayak launch brave heart worship swim naked freezing water isolated breathtaking nudist beach sandy bay llandudno major spot gay nbsp walk parking camp bay clifton beach want chillier water coast surfing surf muizenberg beginner learn surf gary reasonably priced lesson shop facing beach dont forget false bay muizenberg addition kalk bay fish hoek shark youre experienced surfer reef break kalk bay outer kom kommetjie misty cliff coast road scarborough head coast sample milnerton table view bay bay crowded kitesurfing due windy condition swell cranking wave surfer gather dungeon hout bay biggest surfable wave world kite surfing kite surfing destination world ocean combined windy condition kite surfing experience kite surfing hot spot dolphin beach blouberg strand muizenberg langebaan lagoon ball sport rugby union stormer play rugby championship european professional league playing season home ground stadium capacity cricket newland overlooked table mountain devil peak scenic ground host test match home province team capacity golf dozen course notable example steenberg tokai clovelly fish hoek deep sea fishing ama feesh charter charter hooked tuna fishing charter boating excursion lucky youll catch yellowfin contact rob naysmith shark cage diving sabp tour sabp tour diving opportunity witness white shark diving meeting spot atlantic indian ocean benguela current atlantic ocean relatively cold indian ocean warmer colourful fish official border ocean agulha current eddy warmer water water reach side peninsula false bay diving point view peninsula considered interface marine biological region notable difference character water coast peninsula manifest range marine life coast region inshore bioregion point agulha inshore bioregion point permit water peninsula declared marine protected mpa permit required scuba dive marine protected politically controversial issue due dispute due process followed government department exceeded authority consequence tax imposed scuba diver dive mpa permit valid purchased branch post office temporary permit valid month purchased dive shop failure present permit requested official mcm lead harassment possible arrest dive site detailed information suggestion condition service provider dive site provided guide diving peninsula false bay ocean appeal ocean aquarium diving opportunity million litre tank diving ocean aquarium hold recognised diving certification specifically minimum water qualification present arrive swim shark guitar fish bass bull rays turtle dive master kind knowledgeable accompany aquarium ready fend shark broomstick become cuddly dive minute advanced diver kelp forest tank puts water bigger reef fish sea event organized event throughout official calendar event tourism argus cycle tour total distance start downtown cycle side peninsula past simon side peninsula involved interested cycling avoid weekend impossible anywhere road ocean marathon ultra marathon nbsp half marathon nbsp fun runs ranging nappy dash nbsp walk run maximum entrance accepted race distance fun runs excluded jazz festival minstrel carnival kaapse klopse brightly dressed singer dancer spend month preparing annual event kirstenbosch summer sunset concert picnic style concert bring blanket picnic basket children require ticket concert irrespective rain regret refund issued kirstenbosch concert completely non smoking event designated smoking gate concert eve gate mother queer project biggest gay lesbian party thursday thursday month walk gallery restaurant shop johannesburg late discover thing thursday thursday started johannesburg inspired similar initiative city world monthly event taking thursday month centred primary programme art gallery cultural attraction public late initiative equally access arts injecting life urban space walk street gallery restaurant special night safari safaris becoming increasingly safari game reserve drive option dont want venture far hiking hiking trail short walk multi hike hope trail hope table mountain national park nbsp hoerikwaggo table mountain trail non strenuous luxury trail botanical garden table mountain national park orangekloof hiking trail point table mountain table mountain nbsp uphill platteklip gorge upper cable station chapman peak noordhoek non strenuous breathtaking view hout bay noordhoek rich flora especially protea amphitheatre kalk bay mountain start sign scenic boye drive climb rock peppered score cave recommended novice caver careful torch follow fork trail youll rewarded increasingly spectacular view false bay head straight echo valley ancient milkwood grove dont detailed direction permit required network trail suit level fitness trace contour mountain wander protea bush fynbo breathtaking view require permit reserve entrance fees hiking group strongly recommended outdoor store union mart hiking club organized group hike weekend pick programme store phone hike leader pay paradise touring guided walk mountain botanical guide eco tour twitcher member bird life trax tour guided hiking cycle tour franschoek stellenbosch wine tasting meridian hiking club club organiz hike ranging easy walk strenuous rock scramble mountain multi hike look calendar web site detail current hike air helicopter tour helicopter wine tour stellenbosch franschhoek paarl nac helicopter chartered private chopper ride sport helicopter scenic flight mountain huey flight wine farm transfer thundercity supersonic fighter jet skydive scenic dropzone world minute drive melkbo para taxi paraglide securely strapped professional pilot lover height blown flight provided disabled kayaking gravity adventure group provide training african paddling association approved sea kayaking coast national park kaskazi kayak guided sea kayak trip twice seapoint sunset cruise waterfront boat company relaxing sunset cruise condor greenpoint champagne cruise half tigger charter jolly roger pirate ship jolly roger authentic pirate ship depart waterfront time jolly roger able sail weather condition normally weekend arrive early boarding booking online direct arrival township tour township forced live based race apartheid regime extent township continue retain apartheid era racial variety reason township grown cover far larger land apartheid result urbanization especially past touring township seem strange inappropriate learn history poverty continue live township friendly children love township dangerous warning page dont alone unless know youre township tour safe want bring sweet gift children give directly give tour guide distribute later tour booked directly booking agency tour run twice aware youre given chance township food walkie talkie feet beak poultry township foot stay overnight township tour company tour african experience andulela tour variety tour jazz soccer poetry culinary tour emphasis meeting looking fusion tour hand african cooking experience langa cooking school give insight culture cuisine kwathabeng tour township tavern tour langa heritage walk luhambo tour specialised township tour gugulethu khayelitsha wine tour sam cultural tour sipunzi black cultural township tour daytripper wildlife nature reserve koeberg nuclear power station nature melkbo consist hectare buffer zone power station converted nature bontebok genet steenbok antelope table mountain national park form floristic region unesco world heritage site park cover incorporate park access pay hope silvermine boulder wine tasting tour world wine producing vineyard maybe world scenically stunning doorstep wine region stellenbosch franschhoek paarl easy drive historic lush region stunning view world class wine tasting self drive limitation farm public drinking driving issue value safest wineland trust dedicated wine tour company african wine becoming worldwide learn wine growing impressive variety vineyard surrounding wineland choice wine taste difficult idea rely established wine tour operator guest insist specialised guide thorough knowledge african wine taste travel tour tour company specialising wine food tour registered tour guide whale watching mostly whale occasion spot humpback killer whale bottlenose dusky dolphin frequent false bay whale mate calve viewpoint coastal road fish hoek sunny cove railway station glen cairn simon spot whale shore point whale passing operator whale watching cruise simon boat company sole permit holder boat based whale watching false bay permit operate sightseeing cruise seal island whale season waterfront boat company hour cruise bay guaranteed spot whale dyer island cruise cinema labia theatre old school cinema waterfront prime destination souvenir tend typically touristy expensive necessarily authentic authentic curio price sunday green point market outside green point stadium sunday walking distance waterfront curio purchased week multi story shop lower street real deal authentic artifact complete provenance ethnographic background church street couple shop prepared sticker shock buying african curio price market negotiable seldom item price sticker attached foreign accent quoted twice time price sell local negotiate green market square originally farmer market dating green market today flea market range arts craft curio vendor expect bargain ware wine african wine anywhere leave cheaper availability oversea guide wine john platter guide thousand wine region guide shop knowledgeable staff read wine magazine iconoclastic grape latest information caroline fine wine selection knowledgeable staff recommended excellent foam insert boxe international shipping checking luggage safe cheap compared supermarket winery vaughan johnson wine shop quality selection exhaustive knowledgeable staff generally substantial markup winery price course convenient wine concept another wine shop certainly outside bowl franchised kloof street lifestyle ultra african liquor chain location green point accessible warehouse bottle store remarkable wine selection price range case discount mixed case want stock road trip stash bottle amarula cream backpack youre price fact cheaper wine farm arts craft distinctively capetonian characterare everywhere chicken plastic bags bead wire work pottery glass embroidery dont chicken rastafarian street corner authentic experienceabout depending size heartwork kloof street garden mall red shed waterfront craft boutique quarter waterkant contemporary african art riding wave international art world par world undervalued unless william kentridge real art opposed curio craft poster budget serious gallery michael stevenson joao ferreira ava bell robert worth seeing artvark kalkbay treasure trove modern art variety price point art art magazine read want know artist advert list show gallery shopping mall major shopping mall requisite department sized store chain label blue route mall cavendish square constantia village kenilworth maynard mall tyger valley alfred waterfront pick pay supermarket golden acre shopping low price shop pep clothing shoe store canal walk shopping town largest shopping store supermarket pick pay shoprite spar checker pep store low cost clothing shoe food generally quality wine celebrated surrounding region major fruit producer karoo lamb widely regarded seafood caught locally superlative ironically internationally tuna sushi price achieved ask linefishyellowtail salmon kingklip cod eating oyster season exceptional farmed wild knysna wild flown namibia spot waterfront broad range restaurant crowded expensive kloof cafe restaurant street frequented multi ethnic clientele trendy waterkant kaap green point somerset road boast food vibe dine supermodel beautiful camp bay hip eatery nightspot overlooking beach road farther afield hout bay side peninsula fresh crayfish lobster become expensive kalk bay side peninsula variety fresh fish check brass bell restaurant nearby simon neglect wineland food car stellenbosch spier restaurant fun afro chic moyo wine estate food type quality village franschhoek culinary navel wine region quartier francais perennial star winner excellent restaurant constantia valley restaurant pastis brasserie wasabi river cafe colombe constantia uitsig restaurant sure know price order rare delicacy restaurant rare profile case heinous overcharging price menu particularly perlemoen abalone crayfish similar lobster notably vegan vegetarian friendly restaurant vegetarian item menu offering vegan option vegan option menu happy serve vegan ask waiter naturally sample unique malay cuisine restaurant kaap serving cuisine dish bobotie signature dish community budget food bazaar asian food court offering quality meal fair price halal asia green point sushi randy warthog bar grill vasco gama taverna lusitania fishery meeting point tanzanian african cuisine chicken licken asia kloof street slice pizza kloof street mid range charle charle accommodate seated cafe affordable maybe restaurant african cuisine lower medium price range serve fixed menu dish biesmiellah oldest restaurant malay kitchen alcoholic drink colcacchio pizzeria italian dish order keerom class italian restaurant modern decor trendy atmosphere lola vegetarian food colour karma conversation meal mingle dreadlock artsy type brooding poet street cafe european kitchen serve tasty drink mama african style restaurant offering african meal bobotie potjieko springbok kudu crocodile steak range wine affordable price live marimba music night memorial restaurant situated table mountain national park directly behind famous memorial restaurant stunning view suburb hottentot holland mountain range menu diverse cater taste dessert rate mention sure tuck scone ritz hotel revolving restaurant floor hotel food view soft background live piano bar smoking room floor restaurant resident hotel booking restaurant floor non revolving ledge wall put valuable table half building realize separated belonging willoughby seafood excellent sushi price table mountain restaurant temporarily seat self service restaurant booking required quality variable splurge tide serving steamed seasonal vegetable potatoe lemon butter stardust theatrical dining eating delicious mediterranean cuisine customer entertained talented waitron perform throughout evening serving table greek fisherman choose authentic mediterranean tapa wide range seafood meat flame grill grill steakhouse enjoy delicious selection traditional african steak grill venison meloncino choose variety homemade pasta wood fired pizza authentic dish colombe colombe loved awarded restaurant achieved impressive pellegrino restaurant world award moved hallowed bastion contemporary meet asian fine dining thereby clinched acqua panna restaurant middle award winner chef restaurant prudential award honoured prestigious restaurant title colombe achieved highest star rating issue acclaimed rossouw restaurant guide book month advance test kitchen luke dale robert test kitchen opened celebrated chef cooking creative distinctive contemporary space prestigious world restaurant award test kitchen impressive leap list climbing significantly test kitchen singled winner cacao barry watch award book month advance street easily reached george cathedral greenmarket square famous bars restaurant club ideal want truly multi ethnic multi racial nightspot live entertainment normally jazz kwaito music bars pay observatory obz rondebosch suburb student residence uct obz street lower road vibrant nightlife restaurant bar pool hall pubs destination local camp bay vibrant night life bars restaurant club bobs bar british owned run bar beer breakfast club dance club cigar bar focusing hip hop rnb music forester arms nestled foot majestic mountain leafy suburb newland forester arms restaurant pub fondly referred local forry oldest pubs provide retreat hustle bustle life selection draught beer marco african gay bar serve speciality ulwimi steamed tongue mustard sauce live african music mitchell ale house fun atmosphere friendly staff famous craft beer amazing view harbour table mountain karaoke sandy public bay hotel summer sandy unique cocktail venue accentuated glorious view camp bay beachfront zanzi bar run carnival court backpacker hostel meeting traveler visiting live jazz sunday friday saturday night entry night club fiction bar renowned club weekly indie drumn bass minimal electro night mercury live lounge world class live music student night

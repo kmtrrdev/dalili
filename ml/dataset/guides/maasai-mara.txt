@@ -2,11 +2,12 @@ Maasai Mara, Kenya
 Labels: nature, adventure | Split: validation
 Source: https://en.wikivoyage.org/wiki/Maasai_Mara_National_Reserve (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (8,926 characters) =====
+===== CLEANED GUIDE TEXT (8,935 characters) =====
 
 Maasai Mara National Reserve is in the southwest of Kenya. The Maasai Mara is a national reserve belonging to the Maasai people and administered by the local county councils. It is one of the best known and most popular reserves in Africa.
 
 Understand
+
 
  
  
@@ -23,18 +24,22 @@ It is advisable to avoid booking safaris that have too many destinations or park
 Check “hot offers” particularly intensely because their program might be completely firm and the accommodations often outside the parks. A good location of the lodge is very important in the Mara.  They often use mini buses instead of Jeeps packed with 6 persons, which is the maximum number of seats in a mini bus. You can imagine how packed you are if everyone has a small bag plus photo equipment.
 
 History
+
 Arrowheads and pottery discarded by Neolithic man 2,000 years ago have been found in the Maasai Mara National Reserve. Since the 17th century the Masai people have occupied the area - of course together with the wildlife, who are the true landlords here. The Maasai Mara National Reserve as it appears today was established in 1961, and covers 1,510 km² (583 sq miles).
 
 Landscape
+
  
 The Maasai Mara is characterized by four different kinds of topography: sandy soil and small bushes to the east, the Siria Escarpment forming a spectacular plateau as the western boundary of the reserve, lush grasslands and woodlands around the Mara River and open plains with scattered bushes making up the largest part of the reserve. The landscape is very varied and has a romantic feeling to it, as can be witnessed in the film Out of Africa, which was filmed here in 1985.
 
 Flora and fauna
+
 When visiting the Maasai Mara you are likely to see the famous Big Five: lion, leopard, elephant, rhino and buffalo. Especially lions are common here, and have grown relatively accustomed to their two-legged visitors, which makes them easier to spot. The Mara Plains are teeming with wildebeest, zebra, giraffe, impala and Thomson's gazelle. Also cheetahs, hyenas and jackals are seen regularly in the reserve. In the Mara River large amounts of hippos and crocodiles are enjoying their lives - the crocodiles are especially happy in July and November when thousands of wildebeest migrate across the river causing a sumptuous feast for the hungry crocodiles.
 
 Birdlife in Maasai Mara are abundant and diverse. Species such as eagles, ostriches, storks and vultures are among the more than 50 different birds of prey.
 
 See
+
 The main attraction of this game reserve is, not surprisingly, game viewing. Go on morning, afternoon and night drives over several days in order to see as many as possible of the resident animals, such as lion, leopard, elephant, zebra, giraffe, Thomson's gazelle, hyena, rhino, hippo and the thousands of migrating wildebeest that makes this park so famous.
 
 Many camp sites and lodges offer game drives with experienced drivers and skilled, well-informed guides. These are well worth your money, as they will provide you with priceless knowledge and help you spot animals you wouldn't see on your own.
@@ -45,6 +50,7 @@ Maasai Mara's most famous sight is the Great Migration, a great animal migration
 There is a Maasai village near Oloolaimutiek gate of this game park. It is a good experience and will help you to deepen your understanding of the Maasai's culture and simple way of life.
 
 Do
+
  
 * 
 Game viewing. Go game viewing till you drop! You can bring your own car (with or without private driver), take a tour, or some of the lodges provide game drives.
@@ -57,11 +63,13 @@ Maasai Village Visit. Your guide should be able to arrange a visit to the local 
 
 
 Buy
+
 You can buy strings of beads or beads already made up into necklaces and other pieces of jewellery at the gate and outside the entry to the park.
 
 If you want to support local communities do not buy trinkets from the camps and lodges and instead buy them from a local village - 'manyatta'.
 
 Eat
+
 There are no public restaurants inside the Maasai Mara National Reserve.
 Food is provided almost entirely by lodges and tented camps, many of which operate on full-board (three meals per day) or all-inclusive packages.
 
@@ -80,6 +88,7 @@ Some high-end camps offer:
 If staying outside the reserve (e.g., Talek, Sekenani, or Mara Rianta), basic local eateries (“hotels”) offer simple Kenyan fare at very affordable prices.
 
 Drink
+
 All drinking options inside the reserve are located within lodges and camps.
 
 Most camps offer:
@@ -101,6 +110,6 @@ Water safety
 Always drink bottled or filtered water.
 Most camps provide refillable bottles to reduce plastic waste.
 
-===== TOKENS THE MODEL TRAINS ON (616) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (616) =====
 
 national southwest national belonging administered county council reserve national masai visited thousand watch wildlife birdlife specy especially famous amount predator lion cheetah leopard million wildebeest migrate cross crocodile infested river masai wildlife reserve possible animal game drive lion panthera leo african elephant loxodonta africana leopard panthera pardus african buffalo syncerus caffer white rhino ceratotherium simum cheetah acinonyx jubatus giraffe giraffa camelopardalis zebra equus quagga hippo hippopotamus amphibius kept secret triangle managed conservancy behalf tran county council rest fall narok county council triangle property boundary compared numerous camp lodge narok side maintained weather gravel road camp lie outside close oloololo gate triangle mean turn guest staying camp normally brought triangle game drive conservancy ranger patrol regularly mean poaching therefore excellent game viewing strict control vehicle number animal sighting mean authentic experience game drive number wildlife lively annual wildebeest migration estimated close million plus animal migrate national park migration start exactly typically start early begin tail mid splinter group wildebeest herd crossed masai animal difficult due rainy season muddy path advisable avoid booking safaris destination park single itinerary case week safaris offered major international tour operator park little little fully explore observe amazing wildlife park reserve lost traveling check hot particularly intensely program completely firm accommodation outside park lodge important mini buse instead jeep packed person maximum seat mini bus imagine packed everyone bag plus photo equipment history arrowhead pottery discarded neolithic man ago national century masai occupied course together wildlife true landlord national appear today established cover mile landscape characterized kind topography sandy soil bush siria escarpment forming spectacular plateau boundary lush grassland woodland river plain scattered bush making largest landscape varied romantic feeling witnessed film filmed flora fauna visiting likely famous lion leopard elephant rhino buffalo especially lion common grown relatively accustomed legged easier spot plain teeming wildebeest zebra giraffe impala thomson gazelle cheetah hyena jackal regularly river amount hippo crocodile enjoying live crocodile especially happy thousand wildebeest migrate river causing sumptuous feast hungry crocodile birdlife abundant diverse specy eagle ostrich stork vulture bird prey attraction game surprisingly game viewing morning afternoon night drive order possible resident animal lion leopard elephant zebra giraffe thomson gazelle hyena rhino hippo thousand migrating wildebeest park famous camp site lodge game drive experienced driver skilled informed guide worth money provide priceless knowledge help spot animal wouldnt please catch sunupper downer famous sight migration animal migration event take village oloolaimutiek gate game park experience help deepen understanding culture simple life game viewing game viewing till drop bring car private driver tour lodge provide game drive wellness lodge camp massage wellness treatment making able combine wildlife watching luxury village guide able arrange village actual living village historical relic probably charge village plus conveyance cost incur village expect opportunity handicraft etc market string bead bead already necklace piece jewellery gate outside entry park want support community trinket camp lodge instead village manyatta public restaurant inside national food provided entirely lodge tented camp operate board meal inclusive package typical lodge meal buffet plated breakfast eggs fruit pastry kenyan tea coffee packed picnic lunch game drive multi course dinner featuring mix international cuisine kenyan dish ugali sukuma wiki chapati nyama choma stew camp gourmet bush dinner barbecue evening outdoor breakfast setup overlooking plain staying outside talek sekenani rianta basic eatery hotel simple kenyan fare affordable price drinking option inside lodge camp camp beer tusker white cap african international wine spirit cocktail gin tonic classic safari fresh fruit juice soft drink bottled water unlimited coffee kenyan chai remote imported alcohol expensive selection vary lodge sundowner camp arrange evening sundownersdrink light snack scenic viewpointusually included stay highlight safari restricted inside certain zone allowed private conservancy water safety bottled filtered water camp provide refillable bottle reduce plastic waste

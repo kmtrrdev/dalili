@@ -2,17 +2,19 @@ Sarajevo, Bosnia and Herzegovina
 Labels: history, culture | Split: test
 Source: https://en.wikivoyage.org/wiki/Sarajevo (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (67,067 characters) =====
+===== CLEANED GUIDE TEXT (67,101 characters) =====
 
 Sarajevo is the capital of Bosnia and Herzegovina, and its largest city. Sarajevo is very tourist friendly, especially pedestrian area in the Old Town in the centre of the city. Sarajevo is a cosmopolitan European capital with a unique Eastern twist that is a delight to explore. The people are very friendly, be they Bosniaks, Croats, Serbs or anyone else.
 
 Understand
+
  
 Sarajevo has 420,000 citizens in its urban area (2013). Sarajevo metropolitan area has a population of 555,000 and includes some neighbourhoods of "East Sarajevo" that are a part of Republika Srpska.
 
 The city is commonly nicknamed "Jerusalem of Europe" or "Jerusalem of the Balkans" due to its long history of religious and cultural diversity, where mosques, synagogues, Catholic, and Orthodox churches have lived together for centuries.
 
 History
+
 Sarajevo is one of the most historically interesting and diverse cities in this part of Europe. It is a place where the Western and Eastern Roman Empire split; where the people of the Roman Catholic west, Eastern Orthodox east and the Ottoman south, met, lived and warred. It is both an example of historical turbulence and the clash of civilizations, as well as a beacon of hope for peace through multicultural tolerance. The city is traditionally known for its religious diversity, with Muslims, Orthodox Christians, Catholics and Jews coexisting here for centuries. Additionally, the city's vast historic diversity is strongly reflected in its architecture. Parts of the city have a very Central-European look, while other parts of the city, often blocks away, have a completely distinct Ottoman, some Soviet-like or Socialist modernism feel.
 
 Some important events in Sarajevo's history include the 1914 assassination of Austrian Archduke Franz Ferdinand, which led to World War I; the 1984 Winter Olympics; and the 1992-1996 siege.
@@ -20,6 +22,7 @@ Some important events in Sarajevo's history include the 1914 assassination of Au
 The city has physically recovered from most of the damage caused by the Yugoslav Wars of 1992–1995, although bullet holes can still be found in some buildings. There is little street crime, with the city ranking as one of the safest in Southeastern Europe.
 
 Orientation
+
  
 
 The city of Sarajevo stretches west–east along the river Miljacka; the main arterial road and tram routes tend to follow the west–east orientation. It is set in a narrow valley, surrounded by mountains on three sides.
@@ -33,6 +36,7 @@ Tourist Information Centre.
 * "Sarajevo Navigator" is an online guide magazine in English and Bosnian, the latest issue being March 2019.
 
 See
+
 With the exception of the Tunnel Museum and the Bosna spring, all landmarks are in or within walking distance of Old Town. Several walking tours are available, a free/tip based walking tour starts every day at 10:30 at the crossing of Gazi Husrev begova street and Mula Mustafa Baseskija street (address: Velika Avlija 14) and covers most of the Baščaršija (takes two hours).
 
 The municipality of Sarajevo provides an app called "Guide2Sarajevo" (Android, ios). It contains a map with sights and restaurants as well as several themed routes to walk in the city (ranging from 2 to 6 hours) on which you use your phone as audio guide (works even without mobile internet, because the files are downloaded on installation). It's remarkably well made.
@@ -42,6 +46,7 @@ Avaz Twist Tower. The easiest way to orient yourself in the city is to look for 
 
 
 Baščaršija
+
  
  
  
@@ -71,12 +76,14 @@ Officers’ Casino. The Officers’ Casino was built in 1881 according to Karl P
 
 
 Museums
+
  
 
 
 Sarajevo has numerous museums on a variety of topics. The museums can offer an air-conditioned refuge from heat during Sarajevo's hot summers, or a place to warm up in the chilly winter months.
 
 History and archeology
+
 
 * 
 Brusa Bezistan. Small museum in a 1551 Ottoman silk shop, tracing Sarajevo's development from prehistory through Roman, Ottoman, Austro-Hungarian and modern times. Its centrepiece is a model of the Old Town on the ground floor, made by Husein Karišik on the first floor there is a famous blue garment with golden threads and fine yataghan (short Turkish sword).
@@ -95,6 +102,7 @@ Gazi Husrev-Bey's Library Museum. In a modern building opened in 2014, the museu
 
 
 War memorials
+
 
 
  
@@ -139,6 +147,7 @@ Museum of the 105th Motorized Brigade. A memorial dedicated to the 105th Motoriz
 
 
 Art
+
 * 
 National Gallery. Established in 1946 after the Second World War, the National Gallery contains over 6,000 pieces of art, with a focus on works of Bosnian interest. Interestingly, the gallery remained open and held exhibitions during the Siege of Sarajevo. It was closed in 2011 and reopened to the public in 2012. The permanent exhibition, Intimacies of Space, highlights Bosnian life from all angles.
 
@@ -160,6 +169,7 @@ Bosniak Institute. The institute is a cultural centre focusing on Bosniak cultur
 
 
 Administrative buildings
+
  
  
 
@@ -178,7 +188,9 @@ Central Post Office. Austro-Hungarian era post office, designed by Czech archite
 
 Religious buildings
 
+
 Islamic
+
  
 
 * 
@@ -204,6 +216,7 @@ Hajji Sinan's Tekke. The tekke was built by Hadzi Sinan Aga, a wealthy merchant 
 
 
 Christian
+
  
  
  
@@ -229,6 +242,7 @@ Mausoleum of Gavrilo Princip. Cemetery of St. Mark, with a chapel doubling as th
 
 
 Jewish
+
 The Jewish population was first established in 1492-97 when Sephardic Jews fled the Inquisition in Spain and Portugal, and settled here and in other Ottoman cities. The Ashkenazi Jews mostly arrived during Austro-Hungarian rule in the late 19th century. Inter-community relations were mostly amicable and the population was relatively unharmed by the First World War, collapse of Austria-Hungary and formation of the Kingdom of Yugoslavia. By 1940, their numbers peaked at around 14,000, 20% of the city population. In 1941 the Nazis invaded, placing the country under the control of the Croatian Ustaše, who vigorously set about the deportation and extermination of minority groups. Those who could, fled to the west, and after the war most exiles remained abroad. Some 2000 Jews did remain or return, but when the 1990s civil wars broke out, there was a mass evacuation to Israel of Jews living in former Yugoslavia. Fewer than 1000 remain in Bosnia and Herzegovina today, perhaps half of them in Sarajevo.
 * 
 Jewish Museum. This is housed in the Old Temple (Il kal vjezu) or Grand Temple (Il kal Grandi) built in 1581 for the Sephardic settlers. It's a three-nave building with the front area used for preaching and the upper floors for the women's section. It's mostly a story of harmony and prosperity, but the third floor relates events of 1941-45. The building was badly damaged then and in the 1990s civil wars but has been well restored.
@@ -242,6 +256,7 @@ Jewish Cemetery. The cemetery lies on the slopes of Trebević mountain in the Ko
 
 
 Ottoman bridges
+
  
  
 
@@ -259,6 +274,7 @@ Roman Bridge. Crossing the Bosna River at the historic Western entrance into the
 
 Goat's Bridge
 
+
 Goat’s Bridge. Architecturally interesting bridge at the historic Eastern entrance into the city.
  
 
@@ -271,6 +287,7 @@ top of the hill.
 From there follow many stairs and narrow streets down to Alifakovac which ends at the city hall.
 
 Vratnik
+
  
  
 
@@ -296,6 +313,7 @@ White Fortress. This natural bastion had a fort at least from 1550, the nucleus 
 
 
 Olympics
+
 Sarajevo hosted the 1984 Winter Olympic Games. These (officially the XIV Olympic Winter Games) were the first held in a socialist state, although Moscow had hosted the 1980 Summer Olympics. Some structures remaining from that era are in a sorry state.
 
 * 
@@ -306,6 +324,7 @@ Skenderija. Tito-era cultural and sports centre on the south bank of the river, 
 
 
 Do
+
 * 
 Cable car. Restored in 2018, this cable car runs up to the former 
 Ski Station. 
@@ -328,6 +347,7 @@ Dariva Canyon. An 8 km long promenade from the historic centre of Sarajevo to th
 
 
 Recreation parks
+
  
  
 
@@ -343,6 +363,7 @@ Sunnyland. A newly constructed bobsleigh track on Mount Trebevic overlooking Sar
 
 
 Sports
+
 * Watch football (ie soccer) at 
 Olympic Stadium. Multi-purpose arena built for the 1984 Winter Olympics, capacity 34,500, it's now the home ground of FK Sarajevo. They play in the top tier of national football, the Premier League of Bosnia and Herzegovina or "Liga 12". The national team also play home matches here.
 
@@ -360,6 +381,7 @@ Isa-begov Hamam. Renovated hamam in the Isa-begov Hotel with traditional Ottoman
 * See Sarajevo Region for the ski resorts of Jahorina, Bjelašnica and Igman, all about 35&nbsp;km away.
 
 Events
+
 
 Sonar compiles the city's regular calendar of events.
 * 
@@ -381,6 +403,7 @@ Sarajevo Jazz Festival. Large eclectic jazz festival.
 
 
 Buy
+
  
 
 Most shopping centres and upscale restaurants accept credit cards. Small cafés, clubs and souvenir shops mostly require cash, but might jib at notes larger than 20&nbsp;KM.
@@ -397,6 +420,7 @@ Pijaca "Ciglane". Interesting local market where you won't find any tourist.
 
 
 Baščaršija
+
 
 In addition to the usual types of souvenirs, such as key rings, are more distinctive carpets and copperware, not all of which are locally made. Over a century ago, each street in this area hawked a specific ware: for example, one street had all the coppersmiths, shoes were on another, jewellery on another. An underground souk (open 08:00–20:00) stretches along the west side of Gazi Husrev-begova street. Prices are generally fixed, and so whilst haggling for a 4 KM keyring is pointless it may be possible for bulk purchases or the odd 2,000 USD carpet.
 
@@ -419,6 +443,7 @@ Kazandžiluk Street. The street is named after Sarajevo’s master coppersmiths,
 
 
 Shopping malls
+
 Sarajevo offers numerous shopping malls, the most notable being the Sarajevo City Center in the commercial district. Most shopping malls in Sarajevo have been newly constructed or renovated, and offer a modern shopping experience comparable to that in malls in other European countries. Annoying pop music plays all day long.
 
 * 
@@ -446,6 +471,7 @@ Grand Centar Ilidža. Ilidža shopping centre with 33 stores.
 Eat
 
 
+
  
  
 
@@ -453,9 +479,11 @@ It is said in Bosnia that some people eat to be able to drink, others eat to be 
 
 Budget
 
+
 Cheap food on the go, from a myriad small shops and cafés, is burek, ćevapi or pita. Burek is meat pie. Ćevapi are grilled meats; the word derives from "kebab" and the traditional Sarajevo style is minced beef and mutton in a somun flatbread. Pita is a filo pasty or pie, typical varieties being meat (meso), cheese (sirnica, similar to ricotta), cheese and spinach (zeljanica), pumpkin (tikvenica) and spicy potato (krompirusa).
 
 City centre around the Gazi Husrev-beg Mosque
+
 
 * 
 Buregdžinica Bosna. Pita & burek café, sandwiched between Mrkva and Bosnian House.
@@ -478,6 +506,7 @@ The Epicentrum. Excellent homemade food, paradise tomato soup.
 
 City centre around the Vječna vatra memorial
 
+
 * 
 Pizzeria Ago. Good value pizzas, and pancakes at only 2 KM. Excellent pizzeria, great service and staff.
 
@@ -498,6 +527,7 @@ Cakum-Pakum. A little restaurant with great crepes. There is kind of a hype abou
 
 
 Mid-range
+
 * 
 Pizzeria Maslina. Affordable with a diversity of cuisines, from Italian to Bosnian traditional food.
 
@@ -519,6 +549,7 @@ A P Ǝ T I T. An "open kitchen" and a daily menu prepared from ingredients; meat
 
 Splurge
 
+
 * 
 Dveri. Homestyle restaurant in heart of old Sarajevo. Very cosy feel, with strands of garlic, lots of delicious warm bread, hearty soups, meats, etc.
 
@@ -537,9 +568,11 @@ Sarajevo Brewery. A large bar and restaurant near the Latin Bridge. Serves 'west
 
 Drink
 
+
 Sarajevo has a vibrant night life with plenty of small thematic bars. Clubs are usually opened until early morning. Although many venues are open all week, Thursday, Friday and Saturday are the most frequented. There are numerous cafés in the city, centred primarily around the old town. Look out for the traditional Bosnian-style coffee!
 
 Cafés
+
 
 * 
 Cafe Slastičarna "Palma". Coffee and pastry shop, located in the part of town called Hrasno, started in 1970. In 1985 "Palma" received the CD -Diplomatic Consular Code.
@@ -562,12 +595,13 @@ Opera Bar/Café. Fast WiFi connection, but the staff can be unfriendly and inatt
 
 Bars
 
+
 * 
 Café de Paris. You might not have expected to find an IPA in the Balkans, but Café de Paris serves a selection of craft beers from Sarajevo microbreweries. They also have a range of very smooth local rakijas (try the quince). Riverside, outdoor seating looks out upon impressive architecture from the Austro-Hungarian times.
 
 * 
 Tre Bicchieri Wine Store & Tasting Bar. Long list of Italian wines. Very cozy and comfortable place. Good music & relaxing atmosphere.
 
-===== TOKENS THE MODEL TRAINS ON (5,092) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (5,092) =====
 
 capital largest friendly especially pedestrian old cosmopolitan european capital unique twist delight explore friendly bosniak croat serb anyone citizen urban metropolitan population neighbourhood republika srpska commonly nicknamed jerusalem europe jerusalem balkan due history religious cultural diversity mosque synagogue catholic orthodox church lived together century history historically interesting diverse city europe roman empire roman catholic orthodox ottoman met lived warred example historical turbulence clash civilization beacon hope peace multicultural tolerance traditionally religious diversity muslim orthodox christian catholic jews coexisting century additionally vast historic diversity strongly reflected architecture part european look part block completely distinct ottoman soviet socialist modernism feel important event history assassination austrian archduke franz ferdinand led world war winter olympic siege physically recovered damage caused yugoslav wars bullet hole building little street crime ranking safest southeastern europe orientation stretch westeast river miljacka arterial road tram route tend follow westeast orientation set narrow valley surrounded mountain side spend old stari grad half old consist ottoman influenced bascarsija bahs char etymologically bas head carsija bazaar trading turkish half showcase architecture culture arrived symbolically representing meeting information navigator online guide magazine english bosnian latest issue exception tunnel museum bosna spring landmark walking distance old walking tour tip based walking tour start crossing gazi husrev begova street mula mustafa baseskija street address velika avlija cover bascarsija take municipality provide app called guide android ios contain map sight restaurant themed route walk ranging phone audio guide work mobile internet file downloaded installation remarkably avaz twist tower easiest orient look distinctive twisted tower completed hosting media company dnevni avaz cafe bar restaurant level reached lift access pay coin pass turnstile walk upstair level observation deck outside walkway cafe bar restaurant smoky food service arent bascarsija bascarsija historic district cobbled street mosque oriental style shop heart feel world europe call prayer start walking catholic church orthodox church synagogue hear islamic call prayer old bazaar dozen shop selling copperware woodwork sweet historic monument situated gazi husrev begova street sebilj pseudo ottoman wooden fountain middle square old built mehmed pasha kukavica austro hungarian rule moved current austrian architect alexander wittek replica fountain exist respectively novi pazar louis fountain shadow drinkable water surrounded pigeon square countless pigeon swarming feeding pigeon allowed seller trolley sell corn feed bird sacred heart cathedral largest christian cathedral seat archbishop vrhbosna built honour sacred heart jesus neo gothic style romanesque revival element modelled notre dame dijon construction cathedral began austro hungarian reign carried viennese contractor baron karl schwarz supervised architect josip vanca cathedral scene peace demonstration bosnian war broke subsequently damaged siege design door entrance flag seal administrative canton romanesque tower featured flag coat arms making building symbol niche portal feature octagonal rosette statue sacred heart interior cathedral designed architect josip vanca altar grisignano marble rest column red tyrolean marble frescoe commissioned alexander maximilian seitz due deteriorating health completed died afterward actual work undertaken assistant alberto rohden prominent feature grave archbishop stadler archbishop vrhbosna sculpture hand marin studin stained glass window ornamenting cathedral manufactured viennese workshop tiroler glasmalerei german glass painting artisan english language mass held sunday candle ask information desk entrance photography allowed morica inn preserved ottoman inn han literally mean roadside inn built benevolence gazi husrev beg endowment vakuf served caravanserai able accommodate guest horse offered room traveller spend night inn scene protest movement austro hungarian occupation council narodni odbor founded building damaged destroyed fire numerous time rebuilt notably entire complex burned ground reconstruction took persian calligraphic inscription poem written omar khayyam century persian poet added decoration property ownership inn returned gazi husrev beg endowment house carpet shop traditional restaurant occasionally host exhibition business space purpose match historical context purpose building stair side inner patio allow reach floor room clock tower clock tower metre tallest date century constructed gazi husrev beg mosque bear tower staircase wooden step arranged square display side eugene savoy austrian army laid siege looted tower set fire restored austro hungarian occupation upper tower upgraded decaying turkish clock mechanism replaced gillet johnston original clock mechanism moved vratnik mosque remain display today last upgrade date dial gold plated peculiarity clock tower appear remaining clock tower world display lunar clock turca lunar reckoning method measuring count till moment astronomical sunset instead midnight contemporary calculation hand oclock position sunset begin setting uneven throughout need manually controlled recalibrated task recalibrating clock assigned muvekit timekeeper astronomical instrument special room called muvekithana calculate position current muvekit mensur zlatar work nearby jewellery shop assigned responsibility exact timing sunset important moment local schedule prayer original religious purpose behind lunar meaning forgotten causing think clock simply bad proper keeping commission preservation national monument proclaimed clock tower national monument tower cannot visited possible stand base following tunnel leading pekara imaret tower taslihan taslihan served stone caravanserais morica han kolobara han literally translate stone han believed taslihan largest representative inn kind region built craftsmen equipped building lead cupola unlike inns square foundation side guest room level fountain courtyard fire damaged building last completely destroyed last remaining bits rubble removed except shared wall bezestan archaeological research carried renovation adjacent hotel europe remain taslihan uncovered hotel garden site declared national monument committee preservation national monument hall iconic pseudo moorish revival style building constructed austro hungarian occupation designed architect karel parik disagreement ministry alexander wittek continued work project fell ill died graz work completed ciril ivekovic total cost crown hall formally commissioned authority occupied building national university library building set ablaze serbian shelling beginning siege causing destruction million volume library collection rare book manuscript lost fire despite civilian effort save vijecnica restored financial aid european commission total cost million national monument reopened designated cultural building protocol event concert exhibition officer casino officer casino built according karl parik design core sarajevo social life late early century army hall military establishment purpose art exhibition public lecture hold grand hall reception cultural event venue military music concert held museum numerous museum variety topic museum air conditioned refuge heat hot summer warm chilly winter month history archeology brusa bezistan museum ottoman silk shop tracing development prehistory roman ottoman austro hungarian modern time centrepiece model old ground floor husein karisik floor famous blue garment golden thread fine yataghan short turkish sword national museum static display natural human history exhibition traditional turkish style home prevalent nineteenth century extensive collection insect stuffed mammal geology section sample world meteorite museum access botanical garden middle building archaeology roman period nineteenth century library ethnology natural science museum museum dedicated austro hungarian occupation started congress ended world war exhibition portray life austro hungarian era perspective theme line ends assassination archduke franz ferdinand wife sophie front building artifact photograph wax figure archduke wife claimed clothe gun assassin tasteless photo opportunity replica car archduke assisinated outside cost far notable svrzo house museum svrzo house show living condition muslim family century house built eminent family gloo ottoman occupation ownership transferred svrzo family gloo family male successor interior divided section public selamuk family haremluk turn traditionally separated living quarter men women servant despite constructed entirely wood building surprisingly preserved siege sustained heavy damage rebuilt siege reopened renovated gazi husrev bey library museum modern building opened museum collection item displaying islamic calligraphy keeping everyday object muslim life library hold historic manuscript printed book periodical archive document accessible registered user war memorial scar bosnian war part bullet hole wall abandoned building unresolved conflict box yugoslav wars traumatic memory museum memorial associated bosnian war scattered rose scar concrete mortar blast siege filled red resin throughout icar canned beef monument vicinity national museum bosnian historical museum giant beef meant sarcastic sneer inadequate help european community siege infamous canned beef inedible according legend refused stray cats dogs supplied date ration war pork muslim majority population tunnel hope besieged bombarded blockade total serb force seized airport handed peacekeeping force avert international intervention airport bring humanitarian aid wouldnt allow military support defender severed bosnian controlled secret tunnel therefore dug dobrinja airport butmir true tunnel plus covered trench side totalling enabled arms munition oil food brought served evacuation route official civilian later equipped rail track oil pipe electricity telecom cable museum built butmir entrance tunnel accessible plus display siege tour museum war childhood museum opened museum personal belonging display illustrate experience childhood siege audio guide reveal story behind item complementing exhibit additional picture audio video video testimony inhabitant grew war shown throughout permanent collection book war childhood compilation book sale museum consulted library section eternal flame memorial site designed architect juraj neidhardt commemorating victim world war eternal flame inscription memorial dedicated anniversary liberation occupation nazi fascist independent state museum crime humanity genocide important museum genocide bosnian civil war human side conflict portrayed shocking picture personal testimony video complementary focuse srebrenica massacre particular warning photograph video indeed shocking parental advisory discretion advised compelling exhibition srebrenica massacre killed event described perspective investigative journalist visiting site genocide audio guide highly recommended sign allow minute screening shown last half hour combined watching complete military history event computer take photo video footage personal testimony shocking discretion advised especially youngster cemetery died war buried pre existing cemetery old ottoman turbe austro hungarian dignitary casualty world wars yugoslav citizen row row aching row simple white marble stone twenty slain latest conflict example alifacovac alifakovac grobljanska cjelina headland river emerge canyon martyr memorial cemetery vratnik mark groblje sveti marko edge mausoleum gavril princip sniper alley sniper alley informal primarily street zmaja bosne street dragon street mesa selimovic boulevard boulevard bosnian war lined sniper post infamous dangerous civilian traverse road connect industrial airport old cultural historic site boulevard rise building giving sniper shooter extensive field fire sign reading pazi snajper watch sniper common run fast street wait nation armored vehicle walk behind shield according data gathered sniper wounded killed children memorial children monument erected sculptor mensud keco dedicated children killed siege monument veliki park consist glass sculpture constructed stacking individually cut layer green glass total height diameter base name children inscribed cylinder anodised aluminium placed concrete plinth sculpture bosnian historical museum museum founded ago heavily damaged shelling war perpetual state disrepair exhibition primarily focus war presentation artifact outdated museum lack content overall display worth able cope graphic picture war childhood museum similar content value museum motorized brigade memorial dedicated motorized brigade bosnian army took defense siege member passed brigade killed action wounded museum housed renovated fortified tower pointy rock art national established world war national contain piece art focus work bosnian interest interestingly remained held exhibition siege reopened public permanent exhibition intimacy space highlight bosnian life angle museum literature performing arts museum dedicated importance literature expressive arts attention prominent writer poet worth interested arts literature modern art museum museum contemporary art formed war resistance culture work notable artist italian painter art theorist michelangelo pistoletto greek artist jannis kounellis german performance artist sculptor joseph beuy conceptual artist joseph kosuth tatty concrete building hope museum building renzo piano someday despic house dependency museum constructed stage period oldest part dating century property belonged wealthy serb orthodox christian despic family donated house turned museum literature performing arts gained fame venue theater performance regarded precursor modern theater together svrzo house despic house present lifestyle wealthy merchant family contributed growth prosperity festina lente bridge pedestrian bridge miljacka opened unusual loop middle seat loop invite traveller sit enjoy view haste slowly grandiose academy bank facing festina lente bridge originally church built karl parik design academy performing arts university longer fit purpose plan move elsewhere admire facade bosniak institute institute cultural focusing bosniak culture established former bosnian vice president adil zulfikarpasic institute housed renovated sixteenth century turkish bath library art administrative building presidency building territorial government building today official residence presidency designed josip vanca opened building modeled florentine medici ricardi palace reflect florentine early renaissance style house constitutional court ustavni sud bosne hercegovine archive parliamentary assembly building building bosnian parliamentary assembly commenced designed architect juraj neidhard close associate corbusier finally built finished building assembly srbih building purpose europe designed modern style house council minister directorate european integration building icon siege shelled serb artillery photographed fire konak konak built ottoman governor residence late baroque style rule topal osman pasha ottoman vizier built site former konak official residence ottoman empire austro hungarian occupation konak residence habsburg family austro hungarian emperor franz josef resided konak yugoslav konak hosted general governor district prefect politician world today state residence member presidency post office austro hungarian era post office designed architect josip vanca opened monumental building tall door leading classic caged foyer secession style decorative element resembling post office damaged siege restored supervision architect ferhat mulabegovic religious building islamic gazi husrev beg mosque beautiful medieval mosque heart old non muslim welcome dress appropriately respect prayer time built called classical ottoman early style badly damaged wars targeted besieger restored opened hanikah khanaqah sufi lodge study islamic mysticism replica original built study room simahana room dervish religious ritual mihrab niche indicate direction mecca sadrvan fountain inner courtyard nowaday art emperor mosque oldest mosque built ottoman occupied largest single subdome mosque country constructed supervision isakovic hranusic dedicated sultan mehmed conqueror destroyed century rebuilt dedicated suleyman magnificent mosque damaged world war civil war restoration work painted decoration interior pending adjacent cemetery host grave former vizier mullah muftis sheikh prominent historical figure cafe inside wall mosque muslim non muslim visiting woman cover hair wear skirt dress mosque ali pasha mosque mosque constructed vakf legacy perpetual endowment sofu hadm ali pasha ottoman former governor eyalet ottoman empire death built according classical architectural style dome cover prayer dome cover cloister noble proportion stand scale sub dome mosque constructed framework complex domed burial site turbe sarcophagus avdo sumbul behdzet mutevelic gajret activist died dungeon arad mosque heavily damaged serbian force conflict early especially dome recent renovation mosque occurred commission preserve national monument issued decision add ali pasha mosque list national monument ferhadija mosque mosque named ferhad bey vukovic desisalic bosnian sanyak bey mosque built archaeological research painted decoration inside mosque carried revealed paint layer dating period oldest valuable layer dome belong group rumi ornament date century mosque cemetery member janissary order old sarajevan aristocratic family buried tomb brother history tomb date founding assumed certain sheik arrived army sultan mehmed fatih buried spot sheik built house current tomb asked buried base garden remaining muslim cemetery later dervish buried falsely accused stealing gold treasury century later army commander accused collaboration prince eugene savoy raid buried tomb according legend heavenly light descended grave evidence innocence tomb unite individual brother faith brother birth wall window built tomb room tomb keeper added property demolished wall tomb stand today hajji sinan tekke tekke built hadzi sinan aga wealthy merchant son mustafa pasha silahdar officer charge weapon murad sultan court tekke comprised room room zikr dervish prayer performed sheik residence musafirhana inn coffee making addition regular dervish ritual tekke gathered sufis mystic practiced tesavuf mysticism studied work persian turkish arabic hundred inscription preserved site sinan tekke greatest visual attraction calligraphy design wall courtyard suleiman seal rosette design nearly meter wide word god god muhammad messenger painted time fresco style asylum psychiatric patient opened hajji sinan tekke marking beginning organized health care bih christian anthony church roman catholic church gothic revival style built site previous version current interior date work leading artist mestrovic church serve adjacent monastery franciscan monastery franjevacki samostan bistriku church built gothic revival style designed karel parik monastery therefore seldom collection painting sculpture organ manuscript book occasionally put view cathedral church nativity theotoko cathedral largest serbian orthodox church largest balkan dedicated nativity theotoko erected request orthodox parish construction taking church constructed section basilica inscribed cross shaped plan dome dome built beam larger side dome church arched round element gilded baroque style belfry built front entrance interior wall decorated painted ornament lower zone wall painted ornament simulating marble stone construction look arch vault decorated ornament orthodox metropolitan palace built cathedral old orthodox church church holy archangel michael gabriel cyrillic serbian orthodox church mentioned ottoman source dating church built older foundation oldest sacred building region built medieval serbian byzantine architectural style interior outstanding woodcarving art painting contain fifth largest collection religious icon world total icon present dating century collection historic book liturgical garment item bell tower constructed renovated site declared national monument church joseph roman catholic church bell designed karel parik romanesque revival style funded pope pius construction began building consecrated early month world war triple aisled basilica built sanctuary crypt containing tomb archbishop ivan saric altar joseph terracotta station cross gifted pope pius xii total tomb wall church hand carved sculptor franjo rebhan stained glass window designed ivan marinkocic destroyed war subsequently restored damaged bosnian civil war restored early classified national monument church holy transfiguration orthodox church designed alexander deroko built byzantine revival style originally planned built owning resemblance similar building adriatic coast eventually constructed instead consecrated serbian patriarch gravillo primary worship orthodox christian region church target numerous attack throughout history heavily damaged siege renovated reworking valuable frescoe began church set fire pyromaniac injury targeted looter rare icon stolen mausoleum gavrilo princip cemetery mark chapel doubling mausoleum gavrilo princip assassin archduke franz ferdinand wife sofie latin bridge gavrilo princip buried together serb revolutionary beneath chapel plaque wall chapel commemorate eternity serb heroe jewish jewish population established sephardic jews fled inquisition settled ottoman city ashkenazi jews mostly arrived austro hungarian rule late century inter community relation mostly amicable population relatively unharmed world war collapse formation yugoslavia number peaked population nazis invaded placing country control croatian ustase vigorously set deportation extermination minority group fled war exile remained abroad jews remain return civil wars broke mass evacuation israel jews living former yugoslavia fewer remain today half jewish museum housed old temple kal vjezu grand temple kal grandi built sephardic settler nave building front preaching upper floor women section mostly story harmony prosperity floor relate event building badly damaged civil wars restored jewish temple kal muevus door built exhibition space ashkenazi synagogue old temple sephardic congregation ashkenazi synagogue nowaday functioning synagogue built community designed karl parik moorish revival style escaped nazi destruction feature arch painted decoration ornate ceiling highlighted pointed star stone menorah entrance commemorate anniversary jews tour english request jewish cemetery cemetery lies slope trebevic mountain kovacici district largest jewish cemetery europe established sephardic jews ottoman period burial ground ashkenazi jews arrived late century contain tombstone stecci monument dedicated victim fascism began medieval necropolis stecak tombstone exist jablanica elsewhere sephardi created tombstone unique morphology symbolic motif jewish monument elsewhere world cemetery front line bosnian war artillery position bosnian serb tombstone severely damaged bullet explosion heavily mined completely cleared cemetery declared national monument ottoman bridge ottoman rule bridge built miljacka river bosna river stone bridge remain latin bridge seher cehajina bridge goat bridge roman bridge latin bridge archduke austro hungarian empire franz ferdinand assassinated bridge sparking beginning world war plaque commemorate event bridge memorial assassin gavrilo princip removed war seher cehajina bridge built survived major damage flooding repaired miljacka river dammed regulate water flow riverbed altered original arch bridge bank buried subtle change observer keen eye according legend vizier hadzi husein ordered erect bridge embed diamond pillar finance future repair night diamond disappeared poor young man confessed stolen gift girl fell love swayed love return diamond man released prison diamond embedded bridge commission preservation national monument declared bridge national monument roman bridge crossing bosna river historic entrance preserved stone bridge bosna river considered authentic ottoman bridge country built carved stone lime mortar stone ancient neolithic illyrian roman settlement bridge vicinity importantly roman village aquae sulphurae latin sulfur water served region cultural administrative numerous archaeological artifact period jewelry coin ceramic etc roman period bridge stone tile kaldrma shallow engraving roman origin bridge derived goat bridge goat bridge architecturally interesting bridge historic entrance bridge important ceremonial function served ottoman vizier welcomed previous vizier citizen bridge constructed white marble single arc circular aperture wide span arc according legend bridge existence poor shepherd noticed goat sniffing shrub miljacka river inspecting shrub treasure golden coin finance education wealthy influential bridge constructed shrub goat treasure gave bridge truth legend lost history bridge certainly built road network underwent major infrastructure upgrade reign mehmed pasa sokolovic came bridge cycle pedestrian path river foot continue road goat bridge uphill vakuf isa bega ishakovica view point hundred meter cycle path pale turn jarcedoli reached hill youll majestic view especially hill ruin opposite site follow stair narrow street alifakovac ends hall vratnik century conflict ottoman empire decisive battle came zenta ottoman routed grip europe broken austro hungarian force devastated marching home attack likely fortified built old bascarsija later suburb surrounded vratnik probably meaning gate apply wider district sight interest vratnik redoubt bascarsija walk kovaci past war cemetery onto jekovac carina buse run follow river upstream taking fork road tunnel ascend white fortress yellow fortress martyr memorial cemetery kovaci lie victim civil war centrepiece tomb alija izetbegovic president independent tomb dome suspended marble pillar military honour guard museum alija izetbegovic museum ploca sirokac gate vratnik dedicated alija izetbegovic president independent served nominally besieged early overshadowed representative war museum library alija work personal item floor exhibit life passage ploca gate sirokac gate exhibit role commander army tomb nearby kovaci cemetery yellow fortress bastion cannon fortress regularly smashed rebuilt latest renovation pleasant picnic gaze cafe kamarija adjacent pod bedemom price reflect view jajce kasarna austro hungarian barrack yellow fortress theyre derelict unsafe enter visegrad gate gate tower vratnik controlling road visegrad built limestone bosnian stone hresa roof shingle white fortress natural bastion fort nucleus later fortification vratnik extended rebuilt austro hungarian period nowaday shattered ruin entirely safe stealing masonry building damage later bombardment view especially sunrise sunset dont caught darkness olympic hosted winter olympic game officially xiv olympic winter game held socialist state moscow hosted summer olympic structure remaining era sorry state olympic museum museum aimed preservation memory organization winter olympic museum mansion owned nikola mandic former citizen later president nazi occupation wwii declared enemy state war nikola mandic lost life property mansion donated museum council start civil war building shelled serb force damaged beyond repair significant museum collection went flame remaining collection salvaged transferred zetra olmypic complex museum current opened celebrate anniversary olympic game skenderija tito era cultural sport bank river constructed opened premiere film battle neretva later expanded winter olympic game feature market shopping mall concrete construction sustained minor damage war gradually decayed afterward due neglect record snowfall roof hall collapsed snow pressure estimated building subsequently restored returned service receive cable car restored cable car runs former ski station boast view hilltop stroll decent cafe ride considered bit overpriced forest path lead pino hotel accessible road taxi pictureque instagram heavy trebevic bobsled track mad road biker hurtle restored winter sport walk direction bobsled track cable car direction slide pretty ski station national theatre national theatre regular programme play concert opera built gentlemen club architect karel parik contributed building fox box escape room game fox secret study escape office solving riddle bank job steal diamond bank safe dark torch bunker avert accidental nuclear war inside siege story survival guided historical tour focused siege longest siege capital modern european history experience explore important wartime location connected life siege sniper alley viewpoint tunnel hope site related civilian survival learn history conflict blockade perspective post war recovery transportation selected location outside included skakavac waterfall waterfall nahorevo village height tallest waterfall europe exceptional natural beauty surrounded lush forest spruce beech fir forest waterfall worth trip weather permit wooden pedestrian bridge take waterfall dariva canyon promenade historic goat bridge following canyon miljacka promenade picturesque pedestrian route magnificent natural view appreciated austro hungarian built railway miljacka valley linden tree lining promenade planted diplomat residing invitation mayor tree plaque bearing name planted recreation park mall play children bbi centar smaller mall slightly road spring bosna river beginning river bosna pure ice cold water surge mountain walk kept park picnic spend bored festival public holiday country held zoo zoo recreation park outskirt primarily aimed children oldest zoo austro hungarian period ilidza specy animal world display lion donated zoo little train attraction playground entertainment children additional charge sunnyland newly constructed bobsleigh track mount trebevic overlooking adjacent restaurant bars selling food drink excellent entertainment children indoor playground facility sport watch football soccer olympic stadium multi purpose arena built winter olympic capacity home ground play tier national football premier league liga national team play home match watch football stadium grbavica home ground capacity zeljeznicar likewise play tier liga ilidza thermal riviera water park indoor outdoor swimming pool wave pool massage amenity water slide slightly outdated infrastructure natural sulphur rich water hot summer sauna fitness adjacent hotel hill isa begov hamam renovated hamam isa begov hotel traditional ottoman steam room water pool massage facility white water rafting trip river neretva usual base trip konjic midway mostar operator package trip funky tour insider meet travel balkland cost nbsp transport lunch region ski resort jahorina bjelasnica igman nbsp event sonar compile regular calendar event winter international festival winter counterpart film festival music visual arts film video performing arts literature plus program children international guitar festival eminent guitar player lead concert workshop competition night bascarsija throughout old theatre performance classic rock music concert folklore dance location concentrated cemalusa ramadan celebrated cannon shot yellow fortress film festival summer film festival venue outdoor summer screen culture box office book online mess international theatre festival festival expressive arts special attention youth alternative subject jazz festival eclectic jazz festival shopping centre upscale restaurant accept credit card cafe club souvenir shop mostly require cash jib note larger nbsp bank marsala tita boundary old money exchanged post office currency exchange booth stay till care check exchange rate level commission addition konvertibilna marka restaurant accept euro nbsp odd rate marka pegged deutsche mark replaced euro rate markale market market hall opened home meat cheese vegetable merchant walnut speciality market bombed loss life attack single mortar responsibility disputed round undeniably bosnian serb position precipitated nato military intervention conflict pijaca ciglane interesting market wont bascarsija addition usual type souvenir key ring distinctive carpet copperware locally century ago street hawked specific ware example street coppersmith shoe another jewellery another underground souk stretch side gazi husrev begova street price generally fixed whilst haggling keyring pointless possible bulk purchase odd carpet gazi husrev beg bezistan covered market haberdashery craftsmanship built ottoman empire period design based design mosque bedesten serve building historic commercial origin greco roman basilica kaiserion served similar purpose ottoman time bedesten economic importance city classified category bedesten focus low tat knock watch handbag isfahan persian carpet seller inside morica inn handcrafted carpet pricey setting inside reconstructed inn worth sahinpasic decent collection historical literature baklava shop wide selection baklava flavour walnut almond hazelnut pistachio etc baklava containing orah walnut considered traditional ones kazandziluk street street named sarajevo master coppersmith featuring shop sakib bascausevic aganovic shopping mall numerous shopping mall notable commercial district shopping mall newly constructed renovated modern shopping experience comparable mall european country annoying pop music play landmark commercial district centrally boulevard connecting airport historic house largest shopping store countless restaurant bars luxury hotel alta shopping shopping commercial district store famous lego store inside bbi largest shopping store won icsc european shopping award bosmal shopping bank river store importanne smaller shopping mall store mercator oldest shopping mall store grand centar ilidza ilidza shopping store said able able live work true bosnian work live attention devoted preparation consumption food gastronomy developed influence bosnian cuisine focuse produce meat vegetable fruit dairy product information typical bosnian food budget cheap food myriad shop cafe burek cevapi pita burek meat pie cevapi grilled meat word derive kebab traditional style minced beef mutton somun flatbread pita filo pasty pie typical variety meat meso cheese sirnica similar ricotta cheese spinach zeljanica pumpkin tikvenica spicy potato krompirusa gazi husrev beg mosque buregdzinica bosna pita burek cafe sandwiched mrkva bosnian house fan ferhatovic pleasant ambience bazaar food friendly staff cevabdzinica zeljo traditional bosnian barbecue food atmosphere sac authentic bosnian cuisine yummy burek excellent pies teraza pizza bosnian sandwich excellent heart unique retro design feel calm relax food service epicentrum excellent homemade food paradise tomato soup vjecna vatra memorial pizzeria ago value pizza pancake excellent pizzeria service staff srebrena skoljka traditional bosnian cuisine fabulous atmosphere staff stepping youre looking break hustle bustle summer heat upstair dining room character view market owner warm friendly restaurant work market doesnt cevabdzinica nune little restaurant backyard street ferhadija super cute father son shop cevapci definitely recommendation quick meal chipa excellent food fast service cultured friendly waiter everything clean tidy selection food drink decent price sedef traditional dish comfortable quiet alley beautiful restaurant food delicious clean service amazing cakum pakum little restaurant crepe kind hype cozy wonderful interior design mid range pizzeria maslina affordable diversity cuisine italian bosnian traditional food petica ferhatovic spacious serving fresh beef cevapi waitress wear traditional bosnian dress ascinica asdz sick greasy meat asdz serve bosnian home cooking vegetable based dish dont expect vegetarian flavoured little meat order cafeteria style counter pay plate mix match food onto plate cappuccino delicious bosnian meal pasta pizza region meal snack coffee house spite history restaurant date austro hungarian occupation underwent scale infrastructure project resulted post office national museum faculty law hall constructed austro hungarian faced stubbornness old bosnian man named benderija lived house refused house demolished construction hall negotiation agreed give property condition wanted bag golden coin compensation house moved brick brick side river building house spite symbol bosnian stubbornness resistance government house converted lovely restaurant selling hearty stew meal bosnian speciality terrace view river hall replace house decorated oriental style worth visiting ambient alone kitchen menu prepared ingredient meat dish fish dish risotto pasta imaginative salad fragrant woks delicious sweet pleasure dish vegan vegetarian gluten offering splurge dveri homestyle restaurant heart old cosy feel strand garlic delicious warm bread hearty soup meat etc mala kuhinja tiny restaurant seat owned bosnian celebrity chef muamer kurtagic menu prepare fresh preference watch work progress restaurant kibe stunning panoramic view kibe mahala selection national dish spit roasted lamb wide assortment wine region restoran brajlovic water front zeljeznica scale selection bosnian speciality cevapcici brewery bar restaurant latin bridge serve food quality amount price plus variety beer brewed premise smoky lacking ventilation quality service variable brewery souvenir shop museum vibrant night life plenty thematic bars club opened early morning venue week thursday friday saturday frequented numerous cafe centred primarily old look traditional bosnian style coffee cafe cafe slasticarna palma coffee pastry shop called hrasno started palma received diplomatic consular code ministry cejf espresso trained barista karak cake miris dunja coffee bosnian coffee fruit juice typical bosnian coffee extraordinary mrvica coffee brunch lunch mrvica old coffee type cake dessert bosnian coffee served modern coffee style opera bar cafe fast wifi connection staff unfriendly inattentive attract community casual actor musician bars cafe expected ipa balkan cafe serve selection craft beer microbrewery range smooth rakija quince riverside outdoor seating look impressive architecture austro hungarian time tre bicchieri wine store tasting bar list italian wine cozy comfortable music relaxing atmosphere

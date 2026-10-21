@@ -2,11 +2,12 @@ Mallorca, Spain
 Labels: beach, relax | Split: validation
 Source: https://en.wikivoyage.org/wiki/Mallorca (CC BY-SA 4.0)
 
-===== CLEANED GUIDE TEXT (8,674 characters) =====
+===== CLEANED GUIDE TEXT (8,682 characters) =====
 
 Mallorca or Majorca is the largest of the Balearic Islands in the Mediterranean, all governed by Spain. It's an easy-to-reach destination well-developed for tourism, with sunny beaches, fascinating old towns, mountain scenery and great food and wine. 
 
 Understand
+
 
 
 200 years ago this was the undiscovered Mediterranean, and Frédéric Chopin came to stay. The main thing that lay undiscovered was the whereabouts of his grand piano, which the baggage handlers lost in transit, setting the bar very high for their future colleagues. 
@@ -19,6 +20,7 @@ The principal tourist areas are along the coast for 30 km either side of Palma t
 You can come any time of year, but the main tourist season is April to October: many businesses close up for winter. A good time to visit is September, when the hottest days and peak of overcrowding are past, but the sea is warm and calm.
 
 See
+
 * Palma old town is centred on its cathedral. Medieval city walls still stand, with narrow streets within. There are several museums. 
 * Churches are the centrepiece of many other towns, often 17th century Baroque. The oddest is in Sa Servera near Cala Millor: the shell of an uncompleted Gothic church. 
 * Valldemossa Charterhouse was originally a royal palace then a monastery, then accommodation where Frédéric Chopin once stayed with George Sand.
@@ -26,6 +28,7 @@ See
 * Caves: several are open to the public, such as the Dragon Caves near Cala Millor.
 
 Do
+
  
 * Hiking: the principal trail is Ruta de Pedra (GR221, taking eight days along the northwest coast from Andratx to Port de Pollença. 
 * Cycling: the main roads are ratty, get off into the lanes, and the gradients of Serra de Tramuntana will get your attention. Vuelta Ciclista a Mallorca is four days of racing in Jan / Feb, which pro teams use as a warm-up for their coming season.
@@ -41,6 +44,7 @@ Do
 * Sailing and yachting: there are marinas at all the main coastal towns. Boat charter may be available.
 
 Buy
+
 All the towns have supermarkets around their fringes, open M-Sa and part of Sunday.
 
 See individual towns for details of their weekly Farmers Market.
@@ -48,6 +52,7 @@ See individual towns for details of their weekly Farmers Market.
 Petrol, diesel and EV charging are widely available, at a 5%-10% price premium to mainland Spain.
 
 Eat
+
 
 Mallorcan cuisine is typically Mediterranean, based on bread, vegetables and meat (especially pork), with olive oil for cooking or garnish. A simple summer meal is Pa amb Oli, bread with olive oil, tomato, and maybe cheese and tunafish. Trampó is similar but with vegetables instead of bread.
  
@@ -62,6 +67,7 @@ Bunyols, sweet pastries, are an autumn dish. They're made with boiled potatoes, 
 See individual towns for restaurants and cafe-bars. Palma has the best selection.
 
 Drink
+
 Water from the tap is safe to drink, but tastes flat and lukewarm, as it comes from desalination. You might prefer bottled. 
 
 Drinking alcohol is allowed if you are 18 or older, as in the rest of Spain. Only bars, restaurants, discos and the like may serve it after 10 pm.
@@ -71,6 +77,7 @@ You are seldom more than 5 metres from a beer, but it's all imported except for 
 Magaluf and Palma's Paseo Maritime are the main late-night strips, but even the small resorts are buzzing well after midnight. Drinking in the streets is tolerated except where prohibited by local order, and resorts want to avoid the reputation that descended on Magaluf through idiotic drinking. Police will act against unruly revellers and dish out fines for property damage, litter or violence.
 
 Wine
+
   
 
 Mallorca's climate and soil are similar to mainland Spain so it produces wine, but little is exported. Indeed both quality and quantity were low, and Mallorca had to import wine, until the industry was revitalised in the 1990s. There are nowadays some 70 vineyards. Two areas have Denominació d'Origen (DO) status, Binissalem and Pla i Llevant, but none qualify for the exalted DOP / DOC / DOQ rankings. 
@@ -78,10 +85,11 @@ Mallorca's climate and soil are similar to mainland Spain so it produces wine, b
 Binissalem DO is the best known, a strip in Raiguer approximately bounded to the east by Inca, to the west by Santa Maria del Camí on the edge of Palma city, to the south by Highway Ma-13 and to the north by the uplands of Serra de Tramuntana. Pla i Llevant DO covers almost half the island, almost everything south of Ma-13 except the arid south tip near Santanyí. IGP – indicación geográfica protegida - is the next quality tier, also known as Vino de la Tierra. The two IGP areas are Serra de Tramuntana, and "Mallorca" for all other vineyards. 
 
 Spirits
+
 Imported brands are widely available, and travellers from outside the EU (such as Britain) can buy duty-free on arrival at Palma airport. 
 
 Four Mallorca distilleries produce gin, and one produces liqueurs and mixers. On the mainland some wine is converted to brandy, but island production is too small for this.
 
-===== TOKENS THE MODEL TRAINS ON (674) =====
+===== TOKENS (TF-IDF BASELINE, KNOWN-FOR WORDS) (674) =====
 
 majorca largest balearic island mediterranean governed easy reach destination developed tourism sunny beach fascinating old town mountain scenery food wine ago undiscovered mediterranean frederic chopin came stay thing lay undiscovered whereabout grand piano baggage handler lost transit setting bar future colleague mass tourism took franco death ended spanish dictatorship century presented friendly modern face world balearic easy flying range britain somehow foreign enough especially attracted conservative clientele stomach paella yearned cup tea enjoy island warmth bars beach low income remain attraction preceded army cement mixer festooned coastline hotel block cost aviation dropped joined motley crowd young party goer together million principal coast side palma capital magaluf past airport sarenal northwest coast mountain range serra tramuntana andratx pollenca cap formentor northeast coast another strip alcudia picafort smaller resort dot coast agricultural plain lower range hill southeast coast travelling distance short traversing island palma alcudia congenial accommodation base exploring island season business close winter hottest peak overcrowding past sea warm calm palma old centred cathedral medieval wall stand narrow street museum church centrepiece town century baroque oddest servera cala millor shell uncompleted gothic church valldemossa charterhouse originally royal palace monastery accommodation frederic chopin stayed george sand salbufera salt marsh alcudia bird specy bird life spot coast cliff formentor cave public dragon cave cala millor hiking principal trail ruta pedra taking northwest coast andratx port pollenca cycling road ratty lane gradient serra tramuntana attention vuelta ciclista racing pro team warm coming season golf course mainly andratx calvia magaluf resort palma cala ratjada servera strip coast tennis nadal tennis academy manacor beach coast rocky sandy stretch attract scrummage boxy hotel crowded compromise secluded cove gradient access exit deter crowd scuba diving ideal beginner occasional diver river outflow water clear warm especially late summer non tidal convoluted coast mean sheltered cove wind wave pick afternoon island suffer usual med problem stripped coral fished unregulated coastal development cabrera island diving national park protected habitat non diver cabrera boat trip music classical concert especially summer held air climbing limestone bluff serra tramuntana plenty climbing route psicobloc specialty rock climbing deep water fiesta mostly religious root madonna teetering pomp ancient street secular soller firo involve pirate enraged women treacle catapult correfoc sees soller invaded hellfire demon doused fire brigade sailing yachting marina coastal town boat charter town supermarket fringe sunday individual town detail weekly farmer market petrol diesel charging widely price premium mainland mallorcan cuisine typically mediterranean based bread vegetable meat especially pork olive oil cooking garnish simple summer meal amb oli bread olive oil tomato maybe cheese tunafish trampo similar vegetable instead bread dish frit mallorqui diced meat veg sope mallorquine simple dish bread vegetable optionally meat eggs wild mushroom seafood paella favourite authentically sobrassada sausage pork paprika condiment eaten plain toasted slice bread preparing dish normally spicy breakfast ensaimada spiral airy bun dough pork fat sprinkled powdered sugar traditionally eaten dipped hot chocolate filling cream apricot chocolate sobrassada famous joan saigo dessert gato cake almond almond ice cream bunyol sweet pastry autumn dish theyre boiled potatoe flour eggs butter lard yeast sugar fried hot oil sprinkled sugar individual town restaurant cafe bars palma selection water tap safe taste flat lukewarm come desalination prefer bottled drinking alcohol allowed older rest bars restaurant disco serve seldom metre beer imported except micro brew miguel brewery island folded magaluf palma paseo maritime late night strip resort buzzing midnight drinking street tolerated except prohibited order resort want avoid reputation descended magaluf idiotic drinking police act unruly reveller dish fine property damage litter violence wine climate soil similar mainland produce wine little exported indeed quality quantity low import wine industry revitalised nowaday vineyard denominacio dorigen status binissalem pla llevant none qualify exalted dop doc doq ranking binissalem strip raiguer approximately bounded inca santa maria cami edge palma highway upland serra tramuntana pla llevant cover half island everything except arid tip santanyi igp indicacion geografica protegida quality tier vino tierra igp serra tramuntana vineyard spirit imported brand widely traveller outside britain duty arrival palma airport distillery produce gin produce liqueur mixer mainland wine converted brandy island production
