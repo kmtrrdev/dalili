@@ -158,6 +158,12 @@ MAX_PRICE_AGE_YEARS = 3  # a listing price edited longer ago than this is shown 
 def apply_local_prices(bundle: ResearchBundle, prices: dict) -> None:
     """Replace estimates with published prices: Wikivoyage entry / restaurant prices (matched by name and
     location) and transport fares quoted from the guide. Records how much of the research is verified."""
+    apply_listings(bundle, prices)
+    apply_tariffs(bundle, prices.get("tariffs") or {}, prices.get("listings_total", 0))
+
+
+def apply_listings(bundle: ResearchBundle, prices: dict) -> None:
+    """Wikivoyage entry / restaurant prices, matched to the researched places by name and location."""
     from .config import today
     from .providers import local_prices
 
@@ -195,9 +201,10 @@ def apply_local_prices(bundle: ResearchBundle, prices: dict) -> None:
                                       source=f"Wikivoyage · updated {it['lastedit'][:7]}: {it['price_text'][:80]}")
             p.price_known = True
 
-    # Transport fares quoted verbatim from the guide (converted to the traveller's currency).
-    t = prices.get("tariffs") or {}
 
+def apply_tariffs(bundle: ResearchBundle, t: dict, listings_total: int) -> None:
+    """Transport fares quoted verbatim from the guide (converted to the traveller's currency): they replace the
+    AI's typical fares. Records how much of the research is verified."""
     def to_user(q: dict) -> float | None:
         rate = bundle.fx_rates.get(str(q["currency"]).upper())
         return round(q["amount"] * rate, 2) if rate else None
@@ -210,10 +217,12 @@ def apply_local_prices(bundle: ResearchBundle, prices: dict) -> None:
         single = None
     if single and (v := to_user(single)) is not None:
         bundle.fares["transit"], bundle.fares["transit_verified"] = v, 1.0
+        bundle.fares.pop("transit_ai", None)
         bundle.fare_sources["transit"] = f'Wikivoyage: "{single["quote"]}"'
     flag, per_km = t.get("taxi_flag_fall"), t.get("taxi_per_km")
     if flag and per_km and (a := to_user(flag)) is not None and (b := to_user(per_km)) is not None:
         bundle.fares.update({"taxi_base": a, "taxi_per_km": b, "taxi_verified": 1.0})
+        bundle.fares.pop("taxi_ai", None)
         bundle.fare_sources["taxi"] = f'Wikivoyage: "{flag["quote"]}" / "{per_km["quote"]}"'
     if t.get("airport_fares"):
         bundle.fare_sources["airport"] = "; ".join(f'"{f["quote"]}"' for f in t["airport_fares"][:3])
@@ -225,7 +234,7 @@ def apply_local_prices(bundle: ResearchBundle, prices: dict) -> None:
 
     bundle.price_coverage = {"attractions": share(bundle.attractions), "restaurants": share(bundle.restaurants),
                              "transit": "transit" in bundle.fare_sources, "taxi": "taxi" in bundle.fare_sources,
-                             "listings_found": prices.get("listings_total", 0)}
+                             "listings_found": listings_total}
 
 
 async def _best_times(bundle: ResearchBundle) -> None:
@@ -247,8 +256,8 @@ async def _best_times(bundle: ResearchBundle) -> None:
 
 
 async def fetch_local_prices(hub: MCPHub, contract: TripContract, local_currency: str) -> dict:
-    """The city's published prices (Wikivoyage listings and tariffs): needs only the city, so it can start with the
-    rest of the research. {"error": ...} instead of raising."""
+    """The city's published prices (Wikivoyage listings): needs only the city, so it can start with the rest of the
+    research. {"error": ...} instead of raising."""
     d = contract.destination_ref
     try:
         return await hub.call("knowledge", "get_local_prices", {"city": d.name if d else contract.destination,
@@ -258,8 +267,25 @@ async def fetch_local_prices(hub: MCPHub, contract: TripContract, local_currency
         return {"error": str(exc)}
 
 
+async def fetch_transport_fares(hub: MCPHub, contract: TripContract) -> dict:
+    """The transport fares quoted in the city's guide (a model reads them: the slowest free source, so nothing waits
+    for it until the fares are needed). {"error": ...} instead of raising."""
+    d = contract.destination_ref
+    try:
+        return await hub.call("knowledge", "get_transport_fares", {"city": d.name if d else contract.destination,
+                                                                    "country": d.country if d else ""})
+    except MCPToolError as exc:
+        return {"error": str(exc)}
+
+
+def start_local_prices(hub: MCPHub, contract: TripContract, local_currency: str) -> tuple[asyncio.Task, asyncio.Task]:
+    """Both free price sources of a city, started now and collected by enrich()."""
+    return (asyncio.create_task(fetch_local_prices(hub, contract, local_currency)),
+            asyncio.create_task(fetch_transport_fares(hub, contract)))
+
+
 async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, review_lookups: int | None = None,
-                 price_scale: float = 1.0, local_prices: "asyncio.Future[dict] | None" = None) -> None:
+                 price_scale: float = 1.0, local_prices: "tuple[asyncio.Task, asyncio.Task] | None" = None) -> None:
     user = contract.budget.currency.upper()
     bundle.errors = list(bundle.errors)
     from . import data_quality
@@ -277,16 +303,15 @@ async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, re
         now = _time.perf_counter()
         marks[step] = round(now - t0, 2)
         t0 = now
-    # 0) Published local prices (free): Wikivoyage listings + transport fares quoted from the guide - usually started
-    #    with the other research (workflow.research_setup) and only collected here.
-    prices = await (local_prices if local_prices is not None else
-                    fetch_local_prices(hub, contract, bundle.destination_info.get("currency", "USD")))
+    # 0) Published local prices (free): Wikivoyage listings, and transport fares quoted from the guide - usually
+    #    started with the other research (workflow.research_setup). The listings price places, so they are collected
+    #    now; the fares (a model reads the guide) only when the transfers need them.
+    listings_task, fares_task = local_prices or start_local_prices(hub, contract,
+                                                                   bundle.destination_info.get("currency", "USD"))
+    prices = await listings_task
     if prices.get("error"):
         bundle.errors.append(f"local prices: {prices['error']}")
     extra_cur = {x["currency"] for x in prices.get("listings") or [] if x.get("currency")}
-    t = prices.get("tariffs") or {}
-    extra_cur |= {q["currency"] for q in [t.get(k) for k in ("transit_single_ticket", "taxi_flag_fall", "taxi_per_km")]
-                  + list(t.get("airport_fares") or []) if q}
 
     # 1) Exchange rates (user currency multipliers) for every currency present.
     try:
@@ -321,21 +346,28 @@ async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, re
                                       price_type="estimated")
     # Published prices replace the estimates wherever they exist; then the official websites of the likely
     # picks, then AI estimates for what nothing publishes (pricing.py: the full cascade, no SerpApi credits).
-    apply_local_prices(bundle, prices)
+    apply_listings(bundle, prices)
     from . import pricing
 
     mark("local_prices_fx")
     await pricing.research_prices(hub, bundle, contract, scale=price_scale)
     await timed
-    # Prices found just now (menus, official sites) can be in a currency the first rates didn't cover: fetch those
-    # too, so they are converted instead of being counted one-to-one.
-    missing = sorted(c for c in _currencies(bundle) if c not in bundle.fx_rates and len(c) == 3 and c.isalpha())
+    fares = await fares_task
+    if fares.get("error"):
+        bundle.errors.append(f"transport fares: {fares['error']}")
+    t = fares.get("tariffs") or {}
+    quoted = {q["currency"].upper() for q in [t.get(k) for k in ("transit_single_ticket", "taxi_flag_fall", "taxi_per_km")]
+              + list(t.get("airport_fares") or []) if q}
+    # Prices found just now (menus, official sites, the guide's fares) can be in a currency the first rates didn't
+    # cover: fetch those too, so they are converted instead of being counted one-to-one.
+    missing = sorted(c for c in _currencies(bundle) | quoted if c not in bundle.fx_rates and len(c) == 3 and c.isalpha())
     if missing and user in bundle.fx_rates:
         try:
             res = await hub.call("currency", "get_exchange_rates", {"base": user, "quotes": missing})
             bundle.fx_rates.update({c: 1.0 / v for c, v in res["rates"].items() if v and c != user})
         except (MCPToolError, KeyError, TypeError) as exc:
             bundle.errors.append(f"currency: {exc}")
+    apply_tariffs(bundle, t, prices.get("listings_total", 0))  # published fares replace the AI's typical ones
     mark("pricing")
 
     # 3) Airport transfers for the airports the best flights actually land at.
@@ -351,8 +383,8 @@ async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, re
             res = await hub.call("transport", "get_airport_transfers", {
                 "airport_code": code, "airport_name": names.get(code, f"{code} airport"), "lat": center["lat"],
                 "lon": center["lon"], "currency": user, "fares": bundle.fares,
-                "fixed_fares": (prices.get("tariffs") or {}).get("airport_fares") or []})
-            transfers += [TransferOption.model_validate(t) for t in res["results"]]
+                "fixed_fares": t.get("airport_fares") or []})
+            transfers += [TransferOption.model_validate(x) for x in res["results"]]
         except MCPToolError as exc:
             bundle.errors.append(f"transfers {code}: {exc}")
     bundle.airport_transfers = transfers
@@ -384,24 +416,42 @@ async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, re
 MAX_NEW_INSIGHTS = 3  # each is one (30-day cached) review search + one model call
 
 
-async def plan_hotel_insights(hub: MCPHub, trip, plans: dict) -> None:
-    """Run the review-analyst agent on the hotels the plans actually chose (the research-time lookups only
-    cover the most popular hotels). Results are written to every copy of the hotel (research and plans)."""
+def reviews_todo(trip, plans: dict) -> list:
+    """The hotels of the plan the traveller sees (one, or one per city) that have no guest-review insights yet."""
     from . import llm
 
     if not llm.available() or trip.research is None:
-        return
-    # Only the plan the traveller sees (one hotel, or one per city): each review lookup costs a credit.
+        return []
+    # Only the plan shown: each review lookup costs a credit.
     shown = plans.get(trip.selected_mode) or next(iter(plans.values()), None)
     if shown is None:
-        return
+        return []
     chosen = ([shown.hotel] if shown.hotel else []) + [s.hotel for s in shown.stops if getattr(s, "hotel", None)]
+    known = {h.id for b in [trip.research] + list(trip.research.stops) for h in b.hotels if h.review_insights}
+    return list({h.id: h for h in chosen if h.property_token and h.id not in known}.values())[:MAX_NEW_INSIGHTS]
+
+
+async def fetch_hotel_reviews(hub: MCPHub, hotels: list) -> dict:
+    """Hotel id -> the review-analyst's result (or the exception). Nothing is written to the trip, so the reviews
+    can be fetched ahead (while the expert reviews the plan) without changing what the planner reads."""
+    results = await hub.call_many([("hotels", "get_hotel_reviews", {"property_token": h.property_token,
+                                                                     "hotel_name": h.name}) for h in hotels])
+    return {h.id: res for h, res in zip(hotels, results)}
+
+
+async def plan_hotel_insights(hub: MCPHub, trip, plans: dict, prefetched: dict | None = None) -> None:
+    """Run the review-analyst agent on the hotels the plans actually chose (the research-time lookups only
+    cover the most popular hotels). Results are written to every copy of the hotel (research and plans).
+    prefetched: fetch_hotel_reviews results already in for some of these hotels."""
+    if trip.research is None:
+        return
     bundles = [trip.research] + list(trip.research.stops)
     known = {h.id: h for b in bundles for h in b.hotels if h.review_insights}
-    todo = list({h.id: h for h in chosen if h.property_token and h.id not in known}.values())[:MAX_NEW_INSIGHTS]
-    results = await hub.call_many([("hotels", "get_hotel_reviews", {"property_token": h.property_token,
-                                                                     "hotel_name": h.name}) for h in todo])
-    for h, res in zip(todo, results):
+    todo = reviews_todo(trip, plans)
+    got = {h.id: prefetched[h.id] for h in todo if prefetched and h.id in prefetched}
+    got |= await fetch_hotel_reviews(hub, [h for h in todo if h.id not in got])
+    for h in todo:
+        res = got[h.id]
         if isinstance(res, Exception):
             log.warning("hotel reviews for %s failed: %s", h.name, res)
             continue
@@ -577,9 +627,30 @@ async def find_places(hub: MCPHub, trip, names: list[str], stop: int | None = No
     info = r.destination_info
     center = info.get("center") or {"lat": ref.lat, "lon": ref.lon}
     cache: dict[str, str] = trip.metadata.setdefault("place_lookup", {})
+
+    def key_of(name: str) -> str:
+        return f"{ref.name}|{name}" if c.is_multi else f"{c.route_name}|{name}"
+
+    def known(name: str) -> bool:  # looked up before (found or not), or already in the research
+        pid = cache.get(key_of(name))
+        return pid == "" or bool(pid and r.place(pid)) or match_place(name, r.attractions) is not None
+
+    async def lookup(name: str) -> Place | None:
+        try:
+            res = await hub.call("activities", "find_place", {
+                "name": name, "city": info.get("name", c.destination), "lat": center["lat"], "lon": center["lon"],
+                "local_currency": info.get("currency", "USD"), "zoom": 11})
+            return Place.model_validate(res["result"]) if res.get("result") else None
+        except MCPToolError as exc:
+            log.warning("find_place %s failed: %s", name, exc)
+            return None
+
+    # The Google Maps lookups run together; the results are then taken in the strategist's order.
+    todo = [n for n in names[:4] if not known(n)]
+    looked_up = dict(zip(todo, await asyncio.gather(*(lookup(n) for n in todo))))
     ids: list[str] = []
     for name in names[:4]:
-        key = f"{ref.name}|{name}" if c.is_multi else f"{c.route_name}|{name}"
+        key = key_of(name)
         pid = cache.get(key)
         if pid and r.place(pid):
             ids.append(pid)
@@ -588,14 +659,7 @@ async def find_places(hub: MCPHub, trip, names: list[str], stop: int | None = No
             continue  # looked up before, nothing usable
         hit = match_place(name, r.attractions)
         if hit is None:
-            try:
-                res = await hub.call("activities", "find_place", {
-                    "name": name, "city": info.get("name", c.destination), "lat": center["lat"], "lon": center["lon"],
-                    "local_currency": info.get("currency", "USD"), "zoom": 11})
-                p = Place.model_validate(res["result"]) if res.get("result") else None
-            except MCPToolError as exc:
-                log.warning("find_place %s failed: %s", name, exc)
-                p = None
+            p = looked_up.get(name)
             if p is not None:
                 places_provider.tag_distance(p, GeoPoint(lat=center["lat"], lon=center["lon"]), info.get("name", c.destination))
                 if "overnight_trip" not in p.categories and p.kind not in ("restaurant", "cafe"):

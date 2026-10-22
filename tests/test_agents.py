@@ -159,3 +159,40 @@ def test_critic_refines_a_new_plan_and_verifies_it(monkeypatch):
         assert not trip.selected_plan.requested.get(chosen["name"])
     assert trip.selected_plan.validation.result == "PASS"
     assert "Make day 3 lighter" in trip.metadata["suggestions"]  # the unapplied idea becomes a one-tap reply
+    # The reply written during the review is used only for the plan it was written for.
+    replies = [p for c, p in calls if c == "PlanReply"]
+    assert len(replies) == (2 if any(t.startswith("Refinement kept") for t in trace) else 1)
+
+
+def test_the_reply_is_written_while_the_expert_reviews(monkeypatch):
+    def handler(system, payload, schema):
+        if schema is critic.Critique:
+            return critic.Critique(quality=85, verdict="A well-paced plan.", issues=[
+                critic.Issue(severity="medium", problem="Day 3 is long", suggestion="Make day 3 lighter")])
+        if schema.__name__ == "PlanReply":
+            return schema(reply="Here is your Rome trip.", suggestions=["Add a day in Rome"])
+        return None
+
+    calls = scripted(monkeypatch, handler)
+    trip, reply = anyio.run(run_turn, TripState(), ROME_REQUEST)
+    replies = [p for c, p in calls if c == "PlanReply"]
+    assert len(replies) == 1  # nothing was changed by the review: no second reply
+    assert "self_review" not in replies[0]  # written alongside the review, not after it
+    assert reply.startswith("Here is your Rome trip.")
+    assert reply.endswith("**I double-checked the plan like an expert:** A well-paced plan. "
+                          "My ideas are in the suggestions below.")
+    assert trip.metadata["suggestions"] == ["Make day 3 lighter", "Add a day in Rome"]
+
+
+def test_the_plan_is_streamed_before_the_review_and_the_reply():
+    from travel_agent.workflow import run_turn_stream
+
+    async def events():
+        return [ev async for ev in run_turn_stream(TripState(), ROME_REQUEST)]
+
+    evs = anyio.run(events)
+    kinds = [ev["type"] if ev["type"] != "node" else ev["node"] for ev in evs]
+    preview, done = evs[kinds.index("preview")], evs[-1]
+    assert kinds.index("finalize") < kinds.index("preview") < kinds.index("respond") < len(kinds) - 1
+    assert done["type"] == "done" and preview["trip"] is not done["trip"]  # a snapshot, not the live trip
+    assert preview["trip"].plans and preview["trip"].selected_mode == done["trip"].selected_mode

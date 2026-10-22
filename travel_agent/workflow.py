@@ -350,19 +350,38 @@ def _wrong_country(text: str, ref) -> bool:
     return bool(cc and ref.country_code and cc != ref.country_code.upper())
 
 
+async def _try_resolve(text: str):
+    """The place, or the MCPToolError that says it wasn't found (so lookups can run together)."""
+    try:
+        return await research.resolve_place(get_hub(), text)
+    except MCPToolError as exc:
+        return exc
+
+
 async def _resolve(trip: TripState) -> str | None:
     """Resolve destination/origin text against real geocoding. Returns a question if something is unclear."""
     d = trip.draft
-    hub = get_hub()
     if not d.route_confirmed:
         texts = d.destinations or ([d.destination] if d.destination else [])
         d.countries = [x for x in texts if geo.country_code(x)]
+    origin_text = d.origin_city or d.origin or trip.metadata.get("home_city") or settings.default_origin
+    # Where they fly from is looked up alongside the destination(s); it is used once the destination is known.
+    origin = (asyncio.create_task(_try_resolve(origin_text))
+              if d.origin_ref is None and (d.destination_ref is not None or d.region or d.destination) else None)
+    try:
+        return await _resolve_places(trip, origin_text, origin)
+    finally:
+        if origin is not None and not origin.done():
+            origin.cancel()  # the turn asks a question instead
+
+
+async def _resolve_places(trip: TripState, origin_text: str, origin: "asyncio.Task | None") -> str | None:
+    d = trip.draft
     if len(d.destinations) >= 2 and len(d.destination_refs) < 2:
         refs, kept, missing = [], [], []
-        for text in d.destinations:
-            try:
-                ref = await research.resolve_place(hub, text)
-            except MCPToolError:
+        found = await asyncio.gather(*(_try_resolve(text) for text in d.destinations))
+        for text, ref in zip(d.destinations, found):
+            if isinstance(ref, MCPToolError):
                 missing.append(text)
                 continue
             if _wrong_country(text, ref):
@@ -382,9 +401,8 @@ async def _resolve(trip: TripState) -> str | None:
         if len(refs) < 2:  # e.g. "Paris and France" are the same place
             d.destinations, d.destination_refs, d.stop_nights = [], [], []
     if d.destination and d.destination_ref is None:
-        try:
-            ref = await research.resolve_place(hub, d.destination)
-        except MCPToolError:
+        ref = await _try_resolve(d.destination)
+        if isinstance(ref, MCPToolError):
             bad, d.destination = d.destination, None
             return f"I couldn't find a city with an airport called '{bad}'. Which city do you mean?"
         if _wrong_country(d.destination, ref):
@@ -395,20 +413,19 @@ async def _resolve(trip: TripState) -> str | None:
         d.destination_ref = ref
         trip.emit("place.resolved", role="destination", name=ref.name, country=ref.country)
     if d.origin_ref is None and (d.destination_ref is not None or d.region):  # no lookup before we know where
-        text = d.origin_city or d.origin or trip.metadata.get("home_city") or settings.default_origin
-        try:
-            d.origin_ref = await research.resolve_place(hub, text)
-        except MCPToolError:
+        ref = await (origin if origin is not None else _try_resolve(origin_text))
+        if isinstance(ref, MCPToolError):
             d.origin_city = None
-            return f"I couldn't find '{text}'. Which city are you flying from?"
+            return f"I couldn't find '{origin_text}'. Which city are you flying from?"
+        d.origin_ref = ref
     if d.return_to and d.return_ref is None and d.origin_ref is not None:
         # Open-jaw: the city to fly home to.
-        try:
-            d.return_ref = await research.resolve_place(hub, d.return_to)
-            trip.emit("place.resolved", role="return", name=d.return_ref.name, country=d.return_ref.country)
-        except MCPToolError:
+        ref = await _try_resolve(d.return_to)
+        if isinstance(ref, MCPToolError):
             bad, d.return_to = d.return_to, None
             return f"I couldn't find a city with an airport called '{bad}'. Which city do you want to fly home to?"
+        d.return_ref = ref
+        trip.emit("place.resolved", role="return", name=d.return_ref.name, country=d.return_ref.country)
         if d.return_ref.name == d.origin_ref.name and d.return_ref.country_code == d.origin_ref.country_code:
             d.return_to, d.return_ref = None, None  # that's home anyway
     # Never build a trip on a wrong assumption about where it starts.
@@ -549,6 +566,10 @@ async def research_setup(state: GraphState) -> GraphState:
     fresh = _dirty(state, "destination")  # also true when there is no research yet
     if c.is_multi:
         net.allow_extra_calls(journey.SERPAPI_PER_EXTRA_STOP * (len(c.stops) - 1))
+    if _dirty(state, "flights"):
+        # Flights need only the route and dates, and are the slowest search: started before the destination facts.
+        _EARLY_FLIGHTS[trip.trip_id] = asyncio.create_task(_journeys(get_hub(), trip, None))
+    if c.is_multi:
         old_infos = trip.research.destination_info.get("stops") if trip.research else None
         if fresh or not old_infos or len(old_infos) != len(c.stops):
             infos = list(await asyncio.gather(*(research.research_destination(get_hub(), journey.stop_contract(c, i))
@@ -563,15 +584,19 @@ async def research_setup(state: GraphState) -> GraphState:
     # The city's published prices need only the city: fetched alongside flights, hotels and places instead of after
     # them (collect hands them to enrichment).
     places = [(journey.stop_contract(c, i), x) for i, x in enumerate(info["stops"])] if c.is_multi else [(c, info)]
-    _LOCAL_PRICES[trip.trip_id] = [asyncio.create_task(research.fetch_local_prices(get_hub(), sc, x.get("currency", "USD")))
+    _LOCAL_PRICES[trip.trip_id] = [research.start_local_prices(get_hub(), sc, x.get("currency", "USD"))
                                    for sc, x in places]
     return {"r_info": info}
 
 
-# Work started early for a later step (trip id -> task): strategy designs (awaited by plan()) and each city's
-# published prices (awaited by collect()).
+# Work started early for a later step (trip id -> task): the flight search (awaited by its research branch), strategy
+# designs (awaited by plan()), each city's published prices (awaited by collect()), and the reply and hotel reviews
+# written while the expert reviews the plan (awaited by respond()).
+_EARLY_FLIGHTS: dict[str, "asyncio.Task"] = {}
 _EARLY_STRATEGY: dict[str, "asyncio.Task"] = {}
-_LOCAL_PRICES: dict[str, list["asyncio.Task"]] = {}
+_LOCAL_PRICES: dict[str, list[tuple["asyncio.Task", "asyncio.Task"]]] = {}
+_EARLY_REPLY: dict[str, "asyncio.Task"] = {}
+_EARLY_REVIEWS: dict[str, "asyncio.Task"] = {}
 
 
 def _branch(domain: str, key: str, call):
@@ -1021,6 +1046,9 @@ async def critic_node(state: GraphState) -> GraphState:
             trace.step(trip, "critic", "decision",
                        "Refinement rejected (" + "; ".join(why_not) + "). Kept the original plan.")
         else:
+            early = _EARLY_REPLY.pop(trip.trip_id, None)
+            if early is not None:
+                early.cancel()  # written for the plan before the refinement: respond() writes a new one
             crit["changes"] = diff_plans(before, after)
             # A place the critic added that didn't fit into any day (e.g. a far day trip at a relaxed pace) was not
             # applied: it is offered as a suggestion, and not forced into later replans.
@@ -1049,6 +1077,11 @@ async def critic_node(state: GraphState) -> GraphState:
     # Only new plans are reviewed: on feedback turns the traveller is steering, and replans stay ~1 s.
     if state.get("previous_plan") is not None or not trip.selected_plan:
         return {"critic_next": "respond"}
+    # While the expert reviews: the reply for this plan and its hotel's guest reviews. Most reviews keep the plan as
+    # it is (no safe fix, or the refinement isn't better), and then both are ready when respond() needs them.
+    _EARLY_REPLY[trip.trip_id] = asyncio.create_task(narrative.write_plan_reply(trip, narrative.plan_reply_facts(trip)))
+    _EARLY_REVIEWS[trip.trip_id] = asyncio.create_task(research.fetch_hotel_reviews(
+        get_hub(), research.reviews_todo(trip, trip.plans)))
     critique = await critic.review(trip)
     if critique is None:
         return {"critic_next": "respond"}
@@ -1094,13 +1127,38 @@ async def respond(state: GraphState) -> GraphState:
     trip = state["trip"]
     if not trip.selected_plan:
         return {"reply": "I couldn't build a plan yet. " + "; ".join(trip.research.errors if trip.research else [])}
-    # What guests say about the hotel of the plan shown (review-analyst agent). Once per turn - after the critic -
-    # so a refined plan doesn't cost a second review search; hotels already analysed cost nothing. The reply doesn't
-    # read the reviews (the hotel card does), so both run at the same time.
-    _, out = await asyncio.gather(research.plan_hotel_insights(get_hub(), trip, trip.plans),
-                                  narrative.compose_plan_reply(trip))
-    # The reply model's own next steps for this trip; the critic's open ideas fill any space left.
+    # Started while the expert reviewed this plan (critic_node); gone when the refinement changed the plan.
+    early, reviews = _EARLY_REPLY.pop(trip.trip_id, None), _EARLY_REVIEWS.pop(trip.trip_id, None)
+
+    async def insights() -> None:
+        # What guests say about the hotel of the plan shown (review-analyst agent). Once per turn - after the critic
+        # - so a refined plan doesn't cost a second review search; hotels already analysed cost nothing. The reply
+        # doesn't read the reviews (the hotel card does), so both run at the same time.
+        prefetched = None
+        if reviews is not None:
+            try:
+                prefetched = await reviews
+            except Exception as exc:  # noqa: BLE001 - fetched again below
+                log.info("hotel reviews prefetch failed: %s", exc)
+        await research.plan_hotel_insights(get_hub(), trip, trip.plans, prefetched)
+
+    async def reply() -> tuple[narrative.PlanReply, bool]:
+        if early is not None:
+            try:
+                return await early, True
+            except Exception as exc:  # noqa: BLE001 - written now instead
+                log.info("early reply failed: %s", exc)
+        return await narrative.compose_plan_reply(trip), False
+
+    _, (out, ahead) = await asyncio.gather(insights(), reply())
     critic_ideas = [s for s in trip.metadata.get("suggestions", []) if s not in out.suggestions]
+    if ahead:
+        # Written while the expert reviewed (nothing it proposed was applied): its verdict closes the reply and its
+        # ideas come first among the one-tap suggestions.
+        line = narrative.review_line(trip, bool(critic_ideas))
+        trip.metadata["suggestions"] = (critic_ideas[:2] + out.suggestions)[:4]
+        return {"reply": out.reply + (f"\n\n{line}" if line else "")}
+    # The reply model's own next steps for this trip; the critic's open ideas fill any space left.
     trip.metadata["suggestions"] = (out.suggestions + critic_ideas)[:4]
     return {"reply": out.reply}
 
@@ -1124,8 +1182,13 @@ async def _journeys(hub, trip, info):
     return await (journey.research_legs(hub, c) if c.is_multi else research.research_flights(hub, c))
 
 
+async def _flights(hub, trip, info):
+    early = _EARLY_FLIGHTS.pop(trip.trip_id, None)  # started by research_setup
+    return await (early if early is not None else _journeys(hub, trip, info))
+
+
 BRANCHES = [
-    ("flights", "r_flights", _journeys),
+    ("flights", "r_flights", _flights),
     ("hotels", "r_hotels", _per_city(lambda hub, trip, c, info: research.research_hotels(hub, c))),
     ("restaurants", "r_restaurants", _per_city(lambda hub, trip, c, info: research.research_restaurants(
         hub, c, info["currency"], trip.traveler_profile.dietary_restrictions))),
@@ -1229,6 +1292,7 @@ async def run_turn_stream(trip: TripState, message: str = "", preset_actions: li
     """Same as run_turn, but yields live progress: every graph node and every MCP tool call as it completes.
 
     Yields dicts: {"type": "node", "node": ...}, {"type": "tool", "server", "tool", "ok", "ms"},
+    {"type": "preview", "trip": TripState} once the new plan is built (before the expert review and the reply),
     and finally {"type": "done", "trip": TripState, "reply": str} - or {"type": "error"} and no "done" when the turn
     failed (nothing half-processed is saved).
     """
@@ -1246,14 +1310,20 @@ async def run_turn_stream(trip: TripState, message: str = "", preset_actions: li
 
     final: dict = {}
     failed = False
+    previewed = False
 
     async def runner() -> None:
-        nonlocal failed
+        nonlocal failed, previewed
         try:
             async for mode, chunk in get_graph().astream(inputs, _GRAPH_CONFIG, stream_mode=["updates", "values"]):
                 if mode == "updates":
                     for node in chunk:
                         queue.put_nowait({"type": "node", "node": node, "ms": round((time.perf_counter() - started) * 1000)})
+                        if node == "finalize" and not previewed and not _what_if(trip):
+                            # The plan is ready: shown now, while the expert reviews it and the reply is written
+                            # (a copy - the turn goes on changing the trip). A what-if is never shown as the plan.
+                            previewed = True
+                            queue.put_nowait({"type": "preview", "trip": trip.model_copy(deep=True)})
                 else:
                     final.update(chunk)
         except Exception as exc:  # surfaced to the UI instead of a silent hang
@@ -1285,6 +1355,11 @@ async def run_turn_stream(trip: TripState, message: str = "", preset_actions: li
     _finish_turn(trip, usage, started)
     trip.conversation.append(ChatMessage(role="assistant", content=reply))
     yield {"type": "done", "trip": trip, "reply": reply}
+
+
+def _what_if(trip: TripState) -> bool:
+    """A turn whose plan is only compared (a what-if), or that switches to the compared version (service._settle)."""
+    return bool(trip.metadata.get("hypothetical") or trip.metadata.get("apply_whatif"))
 
 
 def _finish_turn(trip: TripState, usage: dict, started: float) -> None:

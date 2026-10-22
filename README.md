@@ -208,7 +208,7 @@ $env:RECORD="1"; .\.venv\Scripts\python -m pytest   # re-record after changing q
 | Cost backed by published prices | ~52 % |
 | Scheduled places with verified hours | ~87 % |
 
-Live, uncached (measured): a new trip takes about 60–90 s end to end (live searches, price research and an expert review); a change to a plan about 20–30 s; a question about 10–15 s. Under every reply, **How I answered** shows the route the message took and where the time went.
+Live, uncached (measured): a new trip's plan is on screen after about 55 s and the whole answer takes about 70 s (live searches, price research and an expert review; the same trip took 88 s before the slow steps were overlapped); a change to a plan about 20–30 s; a question about 10–15 s. The plan is shown as soon as it is built, while the expert reviews it and the reply is written alongside the review. Under every reply, **How I answered** shows the route the message took and where the time went.
 
 ## Architecture
 
@@ -255,7 +255,7 @@ START → understand ─┬→ answer (Wikivoyage RAG) ────────�
 | transport_mcp | `get_directions`, `get_airport_transfers`, `get_intercity_journeys` |
 | weather_mcp | `get_weather_forecast` |
 | currency_mcp | `get_exchange_rates`, `convert_currency` |
-| knowledge_mcp | `resolve_place`, `resolve_destination`, `get_destination_info`, `get_local_prices`, `get_menu_price`, `get_official_price` |
+| knowledge_mcp | `resolve_place`, `resolve_destination`, `get_destination_info`, `get_local_prices`, `get_transport_fares`, `get_menu_price`, `get_official_price` |
 
 Each server runs standalone over stdio (`python -m travel_agent.mcp_servers.flights`), or in-process. Set `TRAVEL_AGENT_MCP_TRANSPORT=stdio` to spawn them as separate processes.
 

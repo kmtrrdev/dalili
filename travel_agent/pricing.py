@@ -29,7 +29,7 @@ log = logging.getLogger(__name__)
 OFFICIAL_ATTRACTIONS = 12   # likely picks checked on their own website (per city)
 OFFICIAL_RESTAURANTS = 8
 MENU_SEARCHES = 10          # likely restaurant picks whose menu is searched on the web (SerpApi, per city)
-CONCURRENCY = 6
+CONCURRENCY = 12           # all the likely picks at once: the checks wait on websites and the model, not on us
 AI_BATCH = 20               # places per AI price-estimate call (batches run in parallel)
 TIME_LIMIT_S = 18           # official-site / menu checks stop here; whatever is found by then is used (cached for later)
 

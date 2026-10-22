@@ -164,6 +164,7 @@ class ChatIn(BaseModel):
     message: str = Field(max_length=MAX_MESSAGE_CHARS)
     trip_id: str | None = None
     route_decision: Literal["accept"] | None = None  # the "Plan this route" button
+    preview: bool = False  # stream the new plan as soon as it is built, before the expert review and the reply
 
 
 class SuggestIn(BaseModel):
@@ -380,7 +381,11 @@ async def chat_stream(body: ChatIn, request: Request, who: Identity = Depends(id
 
     async def events():
         async for ev in service.chat_stream(body.message, trip_id, who.id, body.route_decision, _prefs(who)):
-            if ev["type"] == "done":
+            if ev["type"] == "preview":
+                if not body.preview:
+                    continue
+                ev = {"type": "preview", "trip": public(ev["trip"])}
+            elif ev["type"] == "done":
                 ev = {"type": "done", "trip_id": ev["trip"].trip_id, "reply": ev["reply"],
                       "trip": public(ev["trip"])}
             yield f"data: {json.dumps(ev, default=str)}\n\n"

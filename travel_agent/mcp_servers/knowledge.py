@@ -51,11 +51,10 @@ async def get_destination_info(city: str, country: str, country_code: str) -> di
 @server.tool()
 async def get_local_prices(city: str, country: str, local_currency: str) -> dict:
     """Published local prices from Wikivoyage (free): entry / restaurant prices from the city's listings (with
-    their edit date) and public-transport, taxi and airport fares quoted verbatim from the guide."""
+    their edit date)."""
     q = {"city": city, "country": country}
     try:
         items = await local_prices.listings(city, country)
-        text = await local_prices.guide_transport_text(city, country)
     except net.ProviderError as exc:
         return error("local_prices", "knowledge_mcp", q, str(exc))
     priced = []
@@ -63,8 +62,19 @@ async def get_local_prices(city: str, country: str, local_currency: str) -> dict
         amount, cur, free = local_prices.parse_price(it["price_text"], local_currency)
         if amount is not None:
             priced.append({**it, "amount": amount, "currency": cur, "free": free})
-    return envelope("local_prices", "knowledge_mcp", q, listings=priced, listings_total=len(items),
-                    tariffs=await local_prices.tariffs(city, text))
+    return envelope("local_prices", "knowledge_mcp", q, listings=priced, listings_total=len(items))
+
+
+@server.tool()
+async def get_transport_fares(city: str, country: str) -> dict:
+    """Public-transport, taxi and airport fares quoted verbatim from the Wikivoyage guide (free; read by the model,
+    every quote checked against the text). tariffs=None when the guide states none."""
+    q = {"city": city, "country": country}
+    try:
+        text = await local_prices.guide_transport_text(city, country)
+    except net.ProviderError as exc:
+        return error("transport_fares", "knowledge_mcp", q, str(exc))
+    return envelope("transport_fares", "knowledge_mcp", q, tariffs=await local_prices.tariffs(city, text))
 
 
 @server.tool()

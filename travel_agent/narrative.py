@@ -422,6 +422,11 @@ def latest_user_message(trip: TripState) -> str:
 
 async def compose_plan_reply(trip: TripState) -> PlanReply:
     """The reply and the next-step suggestions, both written by the model from the facts (template without one)."""
+    return await write_plan_reply(trip, plan_reply_facts(trip))
+
+
+def plan_reply_facts(trip: TripState) -> dict[str, Any]:
+    """Everything the reply is written from, read now (a reply can be written while the trip goes on changing)."""
     facts = plan_facts(trip)
     if facts:
         said = latest_user_message(trip)
@@ -439,6 +444,11 @@ async def compose_plan_reply(trip: TripState) -> PlanReply:
             facts["self_review"] = {"improved": [i["problem"] for i in crit["issues"] if i.get("applied")],
                                     "ideas": [i["suggestion"] or i["problem"] for i in crit["issues"]
                                               if not i.get("applied")][:2]}
+    return facts
+
+
+async def write_plan_reply(trip: TripState, facts: dict[str, Any]) -> PlanReply:
+    """The reply written by the model from these facts (template without one)."""
     if llm.available() and facts:
         # Empty facts only invite filler ("nothing changed"): leave them out.
         facts = {k: v for k, v in facts.items() if v not in (None, [], {}, "")}
@@ -447,6 +457,23 @@ async def compose_plan_reply(trip: TripState) -> PlanReply:
             out.suggestions = [s.strip() for s in out.suggestions if s.strip()][:4]
             return out
     return PlanReply(reply=_template_plan(trip))
+
+
+def review_line(trip: TripState, has_ideas: bool) -> str:
+    """The expert review's verdict in one line, for a reply written while the expert was still reviewing (the
+    review changed nothing; its ideas are offered as one-tap suggestions)."""
+    crit = trip.metadata.get("critique") or {}
+    if not crit.get("fresh"):
+        return ""
+    if is_arabic(latest_user_message(trip)):
+        verdict = crit.get("verdict_ar")
+        head, tail = "🧐 **راجعت الخطة كخبير:**", " لو حابب تطبّق أفكاري، هتلاقيها في الاقتراحات تحت."
+    else:
+        verdict = crit.get("verdict")
+        head, tail = "🧐 **I double-checked the plan like an expert:**", " My ideas are in the suggestions below."
+    if not verdict:
+        return ""
+    return f"{head} {verdict.strip()}" + (tail if has_ideas else "")
 
 
 QUESTIONS_SYSTEM = """You are a friendly travel agent. The traveller's request is missing some details.

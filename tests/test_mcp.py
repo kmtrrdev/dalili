@@ -11,7 +11,7 @@ EXPECTED_TOOLS = {
     "transport": {"get_directions", "get_airport_transfers", "get_intercity_journeys"},
     "weather": {"get_weather_forecast"},
     "currency": {"get_exchange_rates", "convert_currency"},
-    "knowledge": {"resolve_place", "resolve_destination", "get_destination_info", "get_local_prices", "get_menu_price",
+    "knowledge": {"resolve_place", "resolve_destination", "get_destination_info", "get_local_prices", "get_transport_fares", "get_menu_price",
                   "get_official_price"},
 }
 

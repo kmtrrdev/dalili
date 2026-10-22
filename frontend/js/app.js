@@ -207,7 +207,7 @@ async function send(text, extra = {}) {
   try {
     const res = await fetch("/api/chat/stream", {
       method: "POST", headers: { "Content-Type": "application/json" }, signal: ctrl.signal,
-      body: JSON.stringify({ message: text, trip_id: state.tripId, ...extra }),
+      body: JSON.stringify({ message: text, trip_id: state.tripId, preview: true, ...extra }),
     });
     if (!res.ok || !res.body) throw await httpError(res);
     const reader = res.body.getReader();
@@ -248,20 +248,26 @@ function handleEvent(ev, ctx) {
     ctx.failed = true;
     console.error(ev.message);
     addMessage("assistant", t("errPlan"), "error");
+  } else if (ev.type === "preview" && !ctx.failed) {
+    // The new plan, shown while the expert reviews it and the reply is written (the reply then updates it).
+    showPlan(ev.trip);
   } else if (ev.type === "done" && !ctx.failed) {
     ctx.dots.remove();
-    const firstPlan = !Object.keys(state.trip?.plans || {}).length;
     state.tripId = ev.trip_id;
     try { localStorage.setItem("tripId", ev.trip_id); } catch (_) { /* ignore */ }
     const msg = ev.reply ? addMessage("assistant", ev.reply) : null;
     pathButton(msg, ev.trip.metadata);
-    setTrip(ev.trip);
+    showPlan(ev.trip);
     const pr = ev.trip.draft && ev.trip.draft.route_proposal;
     if (msg && pr && pr.stops.length && !ev.trip.draft.route_confirmed) routeActions(msg, pr);
-    // Phones: the first plan appears below the chat - bring it into view.
-    if (PHONE() && firstPlan && Object.keys(ev.trip.plans || {}).length) {
-      requestAnimationFrame(() => $("board").scrollIntoView({ behavior: "smooth", block: "start" }));
-    }
+  }
+}
+function showPlan(trip) {
+  const firstPlan = !Object.keys(state.trip?.plans || {}).length;
+  setTrip(trip);
+  // Phones: the first plan appears below the chat - bring it into view.
+  if (PHONE() && firstPlan && Object.keys(trip.plans || {}).length) {
+    requestAnimationFrame(() => $("board").scrollIntoView({ behavior: "smooth", block: "start" }));
   }
 }
 
@@ -554,7 +560,7 @@ function wireItinerary(plan) {
   const centre = stop ? stop.location : state.trip.trip_contract.destination_ref;
   if (pts.length) map.fitBounds(pts, { padding: [28, 28], maxZoom: 15 });
   else map.setView([centre.lat, centre.lon], 12);
-  setTimeout(() => map.invalidateSize(), 60);
+  setTimeout(() => { if (state.map === map) map.invalidateSize(); }, 60);  // unless it was redrawn meanwhile
 }
 
 // ------------------------------------------------------------------ reference links (every place is checkable)
@@ -603,6 +609,7 @@ function closeModal() {
 }
 
 async function openOffers(hotelId) {
+  if (state.busy) return addMessage("assistant", t("busyWait"));  // the plan shown may not be saved yet
   const box = modal(`<div class="offers-loading"><div class="spinner"></div>${t("loadingOffers")}</div>`);
   let d;
   try {
