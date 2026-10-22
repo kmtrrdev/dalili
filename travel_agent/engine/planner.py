@@ -811,6 +811,7 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
         return 0.15 * km + 0.25 * len(slot.activities) / max(slot.max_count, 1) + (0.5 if slot.kind != "full" else 0) \
             + (1.5 if slot.high_rain and not a.indoor else 0)
 
+    asked_ids = set(ctx.knobs.must_include) - set(ctx.knobs.expert_picks)  # named by the traveller themselves
     for pid in list(dict.fromkeys(ctx.knobs.must_include + ctx.knobs.signature_picks)):
         r = by_id.get(pid)
         if r is None or pid in used:
@@ -824,13 +825,16 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
                 used.add(pid)
             continue
         options = [s for s in slots if allowed(s, r)]
-        if not options and pid not in ctx.knobs.expert_picks:  # only the traveller's own requests clear room
+        if not options and pid not in ctx.knobs.expert_picks:  # the critic's ideas never clear room
+            # What the traveller asked for outranks the planner's own picks (signature experiences included).
+            protected = asked_ids if pid in asked_ids else must_ids
             for slot in sorted(slots, key=lambda s: (s.kind != "full", spread_cost(s, a))):
                 if not _fits_day(a, slot, tz) or (a.day_trip and slot.kind != "full"):
                     continue
                 removed = []
                 while not allowed(slot, r):
-                    weakest = min((x for x in slot.activities if x.item.id not in must_ids), key=lambda x: x.score, default=None)
+                    weakest = min((x for x in slot.activities if x.item.id not in protected), key=lambda x: x.score,
+                                  default=None)
                     if weakest is None:
                         break
                     slot.activities.remove(weakest)

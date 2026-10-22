@@ -91,6 +91,25 @@ def test_requested_places_survive_packed_days(rome_contract, rome_research, prof
         assert {a.id for a in wanted} <= placed
 
 
+def test_a_request_outranks_the_plans_own_signature_picks(rome_contract, rome_research, profile):
+    """A place the traveller named, possible on one day only (an event), takes room from the planner's own picks -
+    signature experiences included - when that day is full of them."""
+    from travel_agent.utils import weekday_key
+
+    base = build(rome_contract, profile, rome_research)
+    pins = {d.day: [i.place_id for i in d.items if i.kind == "activity"] for d in base.days}
+    picks = [pid for ids in pins.values() for pid in ids]
+    day = max(base.days[1:-1], key=lambda d: len(pins[d.day]))  # the fullest full day
+    r = rome_research.model_copy(deep=True)
+    wanted = next(a for a in sorted(r.attractions, key=lambda a: -a.duration_minutes)
+                  if a.id not in picks and not a.day_trip and not a.dates and "overnight_trip" not in a.categories
+                  and a.opening_hours.get(weekday_key(day.date)))
+    wanted.dates = [day.date]
+    knobs = PlanKnobs(must_include=[wanted.id], signature_picks=picks)
+    plan = build_plan(PlanContext(rome_contract, profile, r, "balanced", knobs, pinned_days=pins))
+    assert any(i.place_id == wanted.id for d in plan.days if d.date == day.date for i in d.items)
+
+
 def errors(report, check):
     return [v for v in report.violations if v.check == check and v.severity == "error"]
 
