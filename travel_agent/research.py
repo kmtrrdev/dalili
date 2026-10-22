@@ -682,6 +682,7 @@ async def find_places(hub: MCPHub, trip, names: list[str], stop: int | None = No
 
 MAJOR_EVENT = "major_event"  # category of an offered event: the planner schedules it only when it is asked for
 EVENT_MINUTES = 240
+EVENT_OUTING_KM = 60  # a few hours at a circuit or stadium out of town is an outing, not a day trip owning the day
 
 
 async def fetch_major_events(hub: MCPHub, contract: TripContract) -> list[world_events.WorldEvent]:
@@ -729,11 +730,14 @@ def _event_place(e: world_events.WorldEvent, days: list, bundle: ResearchBundle)
               price_checked=True, opening_hours=hours, hours_verified=False, dates=list(days),
               duration_minutes=EVENT_MINUTES, indoor=False, popularity="must_see", description=e.why or e.description,
               website=e.website or e.wikipedia,
-              notes=f"{e.name}: {e.start:%d %b} - {e.end:%d %b %Y} ({when}). Exact times and tickets on the official "
-                    "site.",
               metadata=Metadata(source="activities_mcp", provider="Wikipedia · Wikidata · official site",
                                 confidence=0.9 if e.dates_source != "usual dates" else 0.6, source_url=e.wikipedia))
     places_provider.tag_distance(p, center, info.get("name", ""))
+    if p.day_trip and p.distance_km <= EVENT_OUTING_KM:
+        p.day_trip = False  # the ride there is planned like any other leg
+        p.categories = [c for c in p.categories if c != "day_trip"]
+    p.notes = f"{e.name}: {e.start:%d %b} - {e.end:%d %b %Y} ({when}). Exact times and tickets on the official site." \
+        + (f" About {p.distance_km:.0f} km from the centre." if p.distance_km >= 10 else "")
     return p
 
 

@@ -15,9 +15,10 @@ from travel_agent.workflow import run_turn
 from .conftest import ROME_REQUEST
 
 WINDOW = (date(2026, 9, 27), date(2027, 10, 31))
+# Out of town (~29 km, like a circuit or a stadium): an outing on the day, not a day trip that owns it.
 FILM_FEST = we.WorldEvent(
     id="Q1", name="Rome Film Fest", name_ar="مهرجان روما السينمائي", category="music", city="Rome", country_code="IT",
-    lat=41.929, lon=12.466, start=date(2026, 10, 15), end=date(2026, 10, 25), dates_source="official site",
+    lat=41.70, lon=12.25, start=date(2026, 10, 15), end=date(2026, 10, 25), dates_source="official site",
     why="Premieres and stars at the Auditorium", wikipedia="https://en.wikipedia.org/wiki/Rome_Film_Fest",
     website="https://www.romacinemafest.it", fame=30,
     ticket=we.Ticket(amount=20, currency="EUR", source="official site", quote="Biglietti da 20 €"))
@@ -122,7 +123,7 @@ def test_events_are_matched_to_the_trips_countries_and_days():
     found = we.during([FILM_FEST, OKTOBERFEST], date(2026, 10, 12), date(2026, 10, 18), {"IT"}, [(41.9, 12.5)])
     assert [(e.name, days[0], days[-1]) for e, days, _ in found] == [("Rome Film Fest", date(2026, 10, 15),
                                                                        date(2026, 10, 18))]
-    assert found[0][2] < 10  # km from Rome
+    assert found[0][2] < 40  # km from Rome
 
 
 @pytest.fixture(scope="module")
@@ -143,6 +144,7 @@ def test_an_event_is_offered_but_only_added_when_the_traveller_says_yes(rome):
     assert facts[0]["can_be_added"] and facts[0]["in_plan_on_day"] is None and facts[0]["dates"] == "confirmed"
     assert facts[0]["ticket"] == "from 20 EUR (official site)"
 
+    assert film["place"]["distance_km"] > 25 and not film["place"]["day_trip"]
     trip, _ = anyio.run(run_turn, trip, "", [Action(action="add_place", text="Rome Film Fest")])
     day = next(d for d in trip.selected_plan.days for i in d.items if i.place_id == "wev_Q1")
     assert str(day.date) in film["trip_days"]

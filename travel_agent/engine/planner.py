@@ -653,6 +653,11 @@ def day_bounds(a: Place, slot: DaySlot) -> tuple[int, int]:
     return slot.start, slot.end
 
 
+def _covers_lunch(a: Place) -> bool:
+    """A long food experience, or a big event: lunch happens there."""
+    return a.kind == "activity" and a.duration_minutes >= 120 and bool({"food", "major_event"} & set(a.categories))
+
+
 def _fits_day(a: Place, slot: DaySlot, tz: ZoneInfo) -> bool:
     if a.dates and slot.date not in a.dates:
         return False  # one-off event on another day
@@ -1199,9 +1204,9 @@ class DayBuilder:
         stops = [Stop(r.item.id, r.item.location, r.item.duration_minutes,
                       [(o, min(c, own_end[r.item.id])) for o, c in self.windows(r.item) if min(c, own_end[r.item.id]) > o],
                       max(r.score, 0.05)) for r in activities]
-        # A long food experience (cooking class, food tour) doubles as lunch.
-        meal_experience = any(r.item.kind == "activity" and "food" in r.item.categories and r.item.duration_minutes >= 120
-                              for r in activities)
+        # A long food experience (cooking class, food tour) doubles as lunch - so does a big event (people eat at the
+        # festival, the circuit or the stadium).
+        meal_experience = any(_covers_lunch(r.item) for r in activities)
         lunch_window = None if (self.lunch_done or meal_experience) else (12 * 60, 13 * 60 + 45)
 
         def travel(a: GeoPoint, b: GeoPoint) -> int:
@@ -1218,11 +1223,12 @@ class DayBuilder:
                 self.lunch_done = self.meal("lunch", max(self.t, lunch_at))
             # Real travel times can differ from the optimizer's; never run past the window.
             ok = self.activity(r, deadline=own_end[r.item.id] + 20)
-            if ok and "food" in r.item.categories and r.item.kind == "activity":
+            if ok and _covers_lunch(r.item):
                 s, e = to_min(self.items[-1].start), to_min(self.items[-1].end)
                 if s <= 13 * 60 + 30 and e >= 12 * 60 + 30:
                     self.lunch_done = True
-                    self.items[-1].notes += " Lunch is part of this experience."
+                    self.items[-1].notes += " Lunch is part of this experience." if "food" in r.item.categories \
+                        else " Lunch at the venue."
         lunch_start = max(self.t, 12 * 60 + 15)
         if not self.lunch_done and lunch_start <= 14 * 60 + 30 and lunch_start + LUNCH_DURATION <= end + 30:
             self.lunch_done = self.meal("lunch", lunch_start)
