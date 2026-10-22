@@ -39,24 +39,5 @@ async def search_places(query: str, lat: float, lon: float, zoom: int = 14) -> d
         return error("place_search_result", "places_mcp", q, str(exc))
 
 
-@server.tool()
-async def search_local(query: str, location: str) -> dict:
-    """Google Local results for a query in a named area (e.g. 'bakery', 'Trastevere, Rome')."""
-    try:
-        return envelope("local_search_result", "places_mcp", {"query": query, "location": location},
-                        results=await places.local_search(query, location))
-    except net.ProviderError as exc:
-        return error("local_search_result", "places_mcp", {"query": query, "location": location}, str(exc))
-
-
-@server.tool()
-async def get_place_reviews(data_id: str) -> dict:
-    """Google Maps reviews and review topics for a place (data_id from a search result)."""
-    try:
-        return envelope("place_reviews", "places_mcp", {"data_id": data_id}, **(await places.place_reviews(data_id)))
-    except net.ProviderError as exc:
-        return error("place_reviews", "places_mcp", {"data_id": data_id}, str(exc))
-
-
 if __name__ == "__main__":
     server.run("stdio")

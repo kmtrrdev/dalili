@@ -23,16 +23,11 @@ def test_end_to_end_api(monkeypatch):
     assert body["budget"] == 3000 and not body["applied"]
     assert client.get(f"/api/trips/{trip_id}").json()["trip_contract"]["budget"]["amount"] == 3500
 
-    r = client.post(f"/api/trips/{trip_id}/replan", json={"actions": [{"action": "more_food"}]})
-    assert r.status_code == 200 and r.json()["trip"]["user_knobs"]["food_focus"] is True
-
     book = client.get(f"/api/trips/{trip_id}/book")
     assert book.status_code == 200
     for title in tripbook.SECTIONS:
         assert title in book.text.replace("&#x2F;", "/")
     assert "Google Flights" in book.text and "Wikivoyage" in book.text
-    assert client.get(f"/api/trips/{trip_id}/book.md").text.startswith("# Trip Book")
-    assert client.get(f"/api/trips/{trip_id}/events").json()
 
 
 def test_unknown_trip_404():

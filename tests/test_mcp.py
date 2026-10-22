@@ -4,32 +4,28 @@ import pytest
 from travel_agent.mcp_hub import SERVERS, MCPHub
 
 EXPECTED_TOOLS = {
-    "flights": {"search_flights", "autocomplete_airports", "find_flight_deals"},
-    "hotels": {"search_hotels", "get_hotel_reviews", "get_hotel_photos", "autocomplete_hotels"},
-    "places": {"search_restaurants", "search_places", "search_local", "get_place_reviews"},
-    "activities": {"search_attractions", "search_events", "explore_destinations"},
-    "transport": {"get_directions", "travel_time_matrix", "get_airport_transfers"},
-    "weather": {"get_weather_forecast", "get_weather_risk"},
+    "flights": {"search_flights", "search_one_way_flights"},
+    "hotels": {"search_hotels", "get_hotel_reviews", "get_hotel_offers"},
+    "places": {"search_restaurants", "search_places"},
+    "activities": {"search_attractions", "search_events", "explore_destinations", "find_place"},
+    "transport": {"get_directions", "get_airport_transfers", "get_intercity_journeys"},
+    "weather": {"get_weather_forecast"},
     "currency": {"get_exchange_rates", "convert_currency"},
-    "knowledge": {"resolve_place", "get_destination_info", "search_travel_knowledge"},
+    "knowledge": {"resolve_place", "resolve_destination", "get_destination_info", "get_local_prices", "get_menu_price",
+                  "get_official_price"},
 }
 
 
 @pytest.mark.parametrize("server", list(SERVERS))
 def test_servers_expose_expected_tools(server):
-    assert EXPECTED_TOOLS[server] <= set(anyio.run(MCPHub("inmemory").list_tools, server))
+    # Exactly the tools Dalili uses: a tool nothing calls is dead code, not a feature.
+    assert EXPECTED_TOOLS[server] == set(anyio.run(MCPHub("inmemory").list_tools, server))
 
 
 def test_resolve_place_real_data():
     res = anyio.run(lambda: MCPHub("inmemory").call("knowledge", "resolve_place", {"query": "Rome"}))
     place = res["place"]
     assert place["country_code"] == "IT" and place["timezone"] == "Europe/Rome" and "FCO" in place["airports"]
-
-
-def test_guide_search_returns_passages():
-    res = anyio.run(lambda: MCPHub("inmemory").call("knowledge", "search_travel_knowledge", {
-        "city": "Rome", "country": "Italy", "country_code": "IT", "query": "tipping in restaurants"}))
-    assert res["source"] == "knowledge_mcp" and isinstance(res["results"], list)
 
 
 def test_research_is_real_and_grounded(rome_research):

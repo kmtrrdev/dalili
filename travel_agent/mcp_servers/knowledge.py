@@ -49,18 +49,6 @@ async def get_destination_info(city: str, country: str, country_code: str) -> di
 
 
 @server.tool()
-async def search_travel_knowledge(city: str, country: str, country_code: str, query: str, top_k: int = 4) -> dict:
-    """Retrieve relevant guide passages (customs, safety, transport, food...) for a question."""
-    meta = geo.country_meta(country_code)
-    try:
-        guide = await knowledge.destination_guide(city, country, meta["languages"])
-    except net.ProviderError as exc:
-        return error("knowledge_search", "knowledge_mcp", {"query": query}, str(exc))
-    return envelope("knowledge_search", "knowledge_mcp", {"city": city, "query": query},
-                    results=knowledge.search(guide, query, top_k), source_url=guide.get("source_url"))
-
-
-@server.tool()
 async def get_local_prices(city: str, country: str, local_currency: str) -> dict:
     """Published local prices from Wikivoyage (free): entry / restaurant prices from the city's listings (with
     their edit date) and public-transport, taxi and airport fares quoted verbatim from the guide."""

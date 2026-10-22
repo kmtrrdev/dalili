@@ -560,11 +560,18 @@ async def research_setup(state: GraphState) -> GraphState:
         info = await research.research_destination(get_hub(), c)
     else:
         info = trip.research.destination_info
+    # The city's published prices need only the city: fetched alongside flights, hotels and places instead of after
+    # them (collect hands them to enrichment).
+    places = [(journey.stop_contract(c, i), x) for i, x in enumerate(info["stops"])] if c.is_multi else [(c, info)]
+    _LOCAL_PRICES[trip.trip_id] = [asyncio.create_task(research.fetch_local_prices(get_hub(), sc, x.get("currency", "USD")))
+                                   for sc, x in places]
     return {"r_info": info}
 
 
-# Strategy designs started while research is still being enriched (trip id -> task), awaited by plan().
+# Work started early for a later step (trip id -> task): strategy designs (awaited by plan()) and each city's
+# published prices (awaited by collect()).
 _EARLY_STRATEGY: dict[str, "asyncio.Task"] = {}
+_LOCAL_PRICES: dict[str, list["asyncio.Task"]] = {}
 
 
 def _branch(domain: str, key: str, call):
@@ -608,6 +615,7 @@ async def collect(state: GraphState) -> GraphState:
         fl = {"outbound": [], "return": [], "round_trips": [], "insights": {}, "legs": [[] for _ in range(len(c.stops) + 1)]
               if (c := trip.trip_contract) and c.is_multi else []}
     c = trip.trip_contract
+    early = _LOCAL_PRICES.pop(trip.trip_id, None) or []  # each city's published prices, already on their way
     if c.is_multi:
         k = len(c.stops)
         old_stops = old.stops if len(old.stops) == k else []
@@ -627,7 +635,8 @@ async def collect(state: GraphState) -> GraphState:
                                 attractions=per("r_activities", "attractions", i), weather=per("r_weather", "weather", i))
                  for i in range(k)]
         await asyncio.gather(*(research.enrich(get_hub(), b, journey.stop_contract(c, i),
-                                               review_lookups=min(1, _review_lookups(trip)), price_scale=0.6)
+                                               review_lookups=min(1, _review_lookups(trip)), price_scale=0.6,
+                                               local_prices=early[i] if len(early) == k else None)
                                for i, b in enumerate(stops)))
         bundle = journey.merge_research(stops, legs, list(state.get("r_errors") or []) + (fl.get("errors", []) if fl else []))
         trip.research = bundle
@@ -650,7 +659,8 @@ async def collect(state: GraphState) -> GraphState:
     # prices places and reads guides, instead of waiting for planning (enrich cleans the data before its first await).
     trip.research = bundle
     _EARLY_STRATEGY[trip.trip_id] = asyncio.create_task(strategist.design(trip))
-    await research.enrich(get_hub(), bundle, trip.trip_contract, review_lookups=_review_lookups(trip))
+    await research.enrich(get_hub(), bundle, trip.trip_contract, review_lookups=_review_lookups(trip),
+                          local_prices=early[0] if len(early) == 1 else None)
     for domain, n in (("flight", len(bundle.flights_outbound) + len(bundle.flights_return)), ("hotel", len(bundle.hotels)),
                       ("restaurant", len(bundle.restaurants)), ("activity", len(bundle.attractions)),
                       ("transfer", len(bundle.airport_transfers))):
@@ -1085,9 +1095,10 @@ async def respond(state: GraphState) -> GraphState:
     if not trip.selected_plan:
         return {"reply": "I couldn't build a plan yet. " + "; ".join(trip.research.errors if trip.research else [])}
     # What guests say about the hotel of the plan shown (review-analyst agent). Once per turn - after the critic -
-    # so a refined plan doesn't cost a second review search; hotels already analysed cost nothing.
-    await research.plan_hotel_insights(get_hub(), trip, trip.plans)
-    out = await narrative.compose_plan_reply(trip)
+    # so a refined plan doesn't cost a second review search; hotels already analysed cost nothing. The reply doesn't
+    # read the reviews (the hotel card does), so both run at the same time.
+    _, out = await asyncio.gather(research.plan_hotel_insights(get_hub(), trip, trip.plans),
+                                  narrative.compose_plan_reply(trip))
     # The reply model's own next steps for this trip; the critic's open ideas fill any space left.
     critic_ideas = [s for s in trip.metadata.get("suggestions", []) if s not in out.suggestions]
     trip.metadata["suggestions"] = (out.suggestions + critic_ideas)[:4]
@@ -1124,24 +1135,27 @@ BRANCHES = [
 ]
 
 
+def _timed(name: str, fn):
+    """A graph step that records how long it ran (the turn's path, drawn in the UI as the message's route)."""
+    async def node(state: GraphState) -> GraphState:
+        started = time.perf_counter()
+        try:
+            return await fn(state)
+        finally:
+            telemetry.record_node(name, (time.perf_counter() - started) * 1000)
+    node.__name__ = name
+    return node
+
+
 def build_graph():
     g = StateGraph(GraphState)
-    g.add_node("understand", understand)
-    g.add_node("answer", answer)
-    g.add_node("check_requirements", check_requirements)
-    g.add_node("ask", ask)
-    g.add_node("propose_route", propose_route)
-    g.add_node("apply_feedback", apply_feedback)
-    g.add_node("research_setup", research_setup)
-    for domain, key, fn in BRANCHES:
-        g.add_node(f"research_{domain}", _branch(domain, key, fn))
-    g.add_node("collect", collect)
-    g.add_node("plan", plan)
-    g.add_node("validate", validate)
-    g.add_node("repair", repair_node)
-    g.add_node("finalize", finalize)
-    g.add_node("critic", critic_node)
-    g.add_node("respond", respond)
+    steps = {"understand": understand, "answer": answer, "check_requirements": check_requirements, "ask": ask,
+             "propose_route": propose_route, "apply_feedback": apply_feedback, "research_setup": research_setup,
+             **{f"research_{domain}": _branch(domain, key, fn) for domain, key, fn in BRANCHES},
+             "collect": collect, "plan": plan, "validate": validate, "repair": repair_node, "finalize": finalize,
+             "critic": critic_node, "respond": respond}
+    for name, fn in steps.items():
+        g.add_node(name, _timed(name, fn))
 
     g.add_edge(START, "understand")
     g.add_conditional_edges("understand", lambda s: s["route"],
@@ -1279,6 +1293,7 @@ def _finish_turn(trip: TripState, usage: dict, started: float) -> None:
     ms = (time.perf_counter() - started) * 1000
     trip.metadata["last_turn_ms"] = round(ms)
     trip.metadata["usage"] = telemetry.finish(usage, net.serpapi_calls_this_turn(), ms)
+    trip.metadata["turn_path"] = telemetry.path(usage, ms)  # the route this message took (the UI draws it)
     plan = trip.selected_plan
     telemetry.event("turn", trip=trip.trip_id, mode=trip.selected_mode,
                     validation=plan.validation.result if plan and plan.validation else None,

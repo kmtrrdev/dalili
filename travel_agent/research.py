@@ -246,13 +246,26 @@ async def _best_times(bundle: ResearchBundle) -> None:
         a.best_time = times.get(a.name.strip().lower())  # type: ignore[assignment]
 
 
+async def fetch_local_prices(hub: MCPHub, contract: TripContract, local_currency: str) -> dict:
+    """The city's published prices (Wikivoyage listings and tariffs): needs only the city, so it can start with the
+    rest of the research. {"error": ...} instead of raising."""
+    d = contract.destination_ref
+    try:
+        return await hub.call("knowledge", "get_local_prices", {"city": d.name if d else contract.destination,
+                                                                 "country": d.country if d else "",
+                                                                 "local_currency": local_currency})
+    except MCPToolError as exc:
+        return {"error": str(exc)}
+
+
 async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, review_lookups: int | None = None,
-                 price_scale: float = 1.0) -> None:
+                 price_scale: float = 1.0, local_prices: "asyncio.Future[dict] | None" = None) -> None:
     user = contract.budget.currency.upper()
     bundle.errors = list(bundle.errors)
     from . import data_quality
 
     data_quality.check(bundle)  # impossible coordinates, duplicates, implausible prices never reach the plan
+    timed = asyncio.create_task(_best_times(bundle))  # the model's call runs while everything below does
     import time as _time
 
     from . import telemetry
@@ -264,17 +277,12 @@ async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, re
         now = _time.perf_counter()
         marks[step] = round(now - t0, 2)
         t0 = now
-    local = bundle.destination_info.get("currency", "USD")
-    d = contract.destination_ref
-
-    # 0) Published local prices (free): Wikivoyage listings + transport fares quoted from the guide.
-    prices: dict = {}
-    try:
-        prices = await hub.call("knowledge", "get_local_prices", {"city": d.name if d else contract.destination,
-                                                                   "country": d.country if d else "",
-                                                                   "local_currency": local})
-    except MCPToolError as exc:
-        bundle.errors.append(f"local prices: {exc}")
+    # 0) Published local prices (free): Wikivoyage listings + transport fares quoted from the guide - usually started
+    #    with the other research (workflow.research_setup) and only collected here.
+    prices = await (local_prices if local_prices is not None else
+                    fetch_local_prices(hub, contract, bundle.destination_info.get("currency", "USD")))
+    if prices.get("error"):
+        bundle.errors.append(f"local prices: {prices['error']}")
     extra_cur = {x["currency"] for x in prices.get("listings") or [] if x.get("currency")}
     t = prices.get("tariffs") or {}
     extra_cur |= {q["currency"] for q in [t.get(k) for k in ("transit_single_ticket", "taxi_flag_fall", "taxi_per_km")]
@@ -317,7 +325,6 @@ async def enrich(hub: MCPHub, bundle: ResearchBundle, contract: TripContract, re
     from . import pricing
 
     mark("local_prices_fx")
-    timed = asyncio.create_task(_best_times(bundle))  # the model's call runs while prices are researched
     await pricing.research_prices(hub, bundle, contract, scale=price_scale)
     await timed
     # Prices found just now (menus, official sites) can be in a currency the first rates didn't cover: fetch those

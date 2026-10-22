@@ -35,6 +35,7 @@ from .context import anchor, km, plan_summary, profile_summary
 
 
 MAX_STEPS = 5
+STEP_TIMEOUT_S = 30  # one reasoning step normally takes 5-15 s; past this the provider is struggling (see converse)
 ToolName = Literal["plan_lookup", "search_nearby", "find_place", "weather", "directions", "convert_currency",
                    "travel_guide", "flight_options", "final_answer", "change_plan", "apply_what_if"]
 
@@ -117,7 +118,10 @@ class PlanChange(Lenient):
         "English. Flying home to another city with no stay there is requirements.return_to, not a route change."))
     route_decision: Literal["accept", "change"] | None = Field(default=None, description=(
         "Only at stage 'route_proposal': 'accept' (agrees / lets you decide) or 'change'"))
-    hypothetical: bool = Field(default=False, description="True for a what-if to compare, not to apply yet")
+    hypothetical: bool = Field(default=False, description=(
+        "True when the message asks what WOULD happen or cost ('what if...', 'how much would it be with...', "
+        "'لو ... هيبقى إيه / بكام؟'): the change is planned on a copy and compared, and nothing changes until they "
+        "accept. False when they ask for the change itself."))
 
 
 class Step(Lenient):
@@ -386,7 +390,11 @@ async def converse(trip: TripState, message: str, allow_changes: bool = True) ->
         payload = {"traveller_message": message, "context": context, "steps_so_far": scratch,
                    "mode": None if allow_changes else "answer only: change_plan is unavailable",
                    "instruction": finish if last else None}
-        step = await llm.parse(SYSTEM, _fit(payload), Step, effort=settings.agent_reasoning_effort)
+        text = _fit(payload)
+        step = await llm.parse(SYSTEM, text, Step, effort=settings.agent_reasoning_effort, timeout=STEP_TIMEOUT_S)
+        if step is None and "exceeded" in (llm.last_error or ""):
+            # The provider is slow right now: answer with less deliberation rather than keep the traveller waiting.
+            step = await llm.parse(SYSTEM, text, Step, effort="low", timeout=STEP_TIMEOUT_S)
         if step is None:
             return None
         trace.step(trip, "concierge", "thought", step.thought)

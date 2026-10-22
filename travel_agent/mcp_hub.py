@@ -56,7 +56,7 @@ class MCPHub:
         self.listeners: list = []
 
     def _notify(self, event: dict[str, Any]) -> None:
-        telemetry.record_tool(bool(event.get("ok")), float(event.get("ms") or 0))
+        telemetry.record_tool(bool(event.get("ok")), float(event.get("ms") or 0), f"{event['server']}.{event['tool']}")
         event = {**event, "turn": CURRENT_TURN.get()}
         for fn in list(self.listeners):
             try:

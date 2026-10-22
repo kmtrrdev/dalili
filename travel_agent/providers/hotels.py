@@ -52,14 +52,12 @@ def _to_option(p: dict, currency: str, nights: int, center: GeoPoint) -> HotelOp
         free_cancellation=free_cxl,
         style=_style(p, stars),
         reviews_count=int(p.get("reviews") or 0),
-        location_rating=p.get("location_rating"),
         check_in_time=p.get("check_in_time"),
         check_out_time=p.get("check_out_time"),
         property_token=p.get("property_token"),
         link=p.get("link"),
         images=[i.get("thumbnail") for i in (p.get("images") or [])[:6] if i.get("thumbnail")],
         amenities=amenities,
-        room_types=[x for x in p.get("essential_info") or []][:4],
         metadata=Metadata(source="hotel_mcp", provider=PROVIDER, confidence=0.9, source_url=p.get("link"),
                           notes=f"Lowest rate found on Google Hotels for {nights} nights at search time."),
     )
@@ -142,16 +140,3 @@ def noise_from_reviews(items: list[dict]) -> tuple[str, list[str]]:
         return "quiet", quiet[:2]
     return "unknown", []
 
-
-async def photos(property_token: str) -> list[dict]:
-    data = await net.serpapi("google_hotels_photos", 30 * net.DAY, property_token=property_token, hl=settings.language)
-    out = []
-    for section in data.get("sections", []):
-        for ph in section.get("photos", [])[:6]:
-            out.append({"section": section.get("title"), "thumbnail": ph.get("thumbnail_url"), "source": ph.get("source")})
-    return out
-
-
-async def autocomplete(q: str) -> list[dict]:
-    data = await net.serpapi("google_hotels_autocomplete", 30 * net.DAY, q=q, hl=settings.language)
-    return [{"value": s.get("value"), "type": s.get("type")} for s in data.get("suggestions", [])]

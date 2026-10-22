@@ -54,7 +54,6 @@ def _parse_itinerary(it: dict, direction: str, dep_tz: str, arr_tz: str, currenc
         via=", ".join(l.get("id", "") for l in it.get("layovers") or []) or None,
         price_per_person=Money(amount=float(it["price"]), currency=currency, price_type="known"),
         baggage=baggage,
-        cabin=(first.get("travel_class") or "Economy").lower(),
         segments=[f"{s.get('flight_number')} {s['departure_airport']['id']} {s['departure_airport']['time'][11:]} -> "
                   f"{s['arrival_airport']['id']} {s['arrival_airport']['time'][11:]} ({s.get('airplane', 'aircraft n/a')})" for s in segs],
         layovers=layovers,
@@ -139,14 +138,6 @@ async def search_round_trip(departure_id: str, arrival_id: str, out_date: date, 
     if not tickets and answers and all(isinstance(a, BaseException) for a in answers):
         raise answers[0]  # every follow failed: the caller reports it like any provider error
     return sorted(tickets, key=lambda t: t[2])
-
-
-async def deals(departure_id: str, currency: str = "USD") -> list[dict]:
-    data = await net.serpapi("google_flights_deals", 12 * net.HOUR, departure_id=departure_id,
-                             currency=currency.upper(), hl=settings.language)
-    return [{k: d.get(k) for k in ("name", "country", "price", "average_price", "discount_percentage", "start_date",
-                                   "end_date", "arrival_airport_code", "airline", "stops", "flight_duration", "flight_link")}
-            for d in data.get("deals", [])]
 
 
 async def explore(departure_id: str, currency: str = "USD", month: int | None = None,

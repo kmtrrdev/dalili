@@ -134,7 +134,6 @@ class Requirements(Lenient):
 
 class FeedbackNote(Lenient):
     feedback_type: Literal["hotel", "flight", "restaurant", "activity", "itinerary", "budget", "general"]
-    entity_name: str | None = None
     sentiment: Literal["positive", "negative", "neutral"] = "neutral"
     attribute: str | None = None
     severity: float = 0.5
@@ -145,8 +144,8 @@ reduce_density / increase_density (fewer / more stops; day = one day if named) -
 HH:MM) - cheaper / upgrade (cheaper or nicer choices overall) - more_food - fewer_category / more_category (category in
 lowercase: museums, history, art, food, nature, shopping, nightlife, landmarks...; amount = how many) - avoid_noise -
 change_hotel - change_flight (a different flight, none named) - choose_flight (text = flight id from the options; once
-per leg, both ids for a round-trip ticket) - extend_trip / shorten_trip (amount = days, RELATIVE changes only: 'one
-more day') - set_budget (new total) / adjust_budget (signed difference) - less_walking - more_nightlife -
+per leg, both ids for a round-trip ticket) - extend_trip / shorten_trip (amount = days, only when the traveller states
+a DIFFERENCE: 'one more day'; a new total like 'make it 5 nights' is requirements.nights instead) - set_budget (new total) / adjust_budget (signed difference) - less_walking - more_nightlife -
 prefer_hidden_gems - add_place (text = the place's usual English name) - replace_item (text = exact plan item title) -
 weather_adjust - select_mode (text = balanced | budget | comfort | experience)."""
 
@@ -341,7 +340,7 @@ def named_places(text: str, exclude: list[str] | None = None) -> list[str]:
     skip = {x.lower() for x in (exclude or []) if x}
     out: list[str] = []
     for m in re.finditer(VISIT_TRIGGER + rf"({PLACE_NAME})", text):
-        name = re.sub(rf"\s+(?:and|&)$", "", m.group(1)).strip(" .,!?")
+        name = re.sub(r"\s+(?:and|&)$", "", m.group(1)).strip(" .,!?")
         # A list: "see the Louvre and the Eiffel Tower"
         parts = re.split(r"\s*,\s*|\s+and\s+(?:the\s+)?|\s*&\s*", name)
         for part in parts:

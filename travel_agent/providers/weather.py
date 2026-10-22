@@ -46,7 +46,7 @@ async def forecast(lat: float, lon: float, start: date, end: date) -> list[Weath
         cond = WMO.get(d["weather_code"][i] or 0, "Mixed")
         prob, mm = int(d["precipitation_probability_max"][i] or 0), float(d["precipitation_sum"][i] or 0)
         out.append(WeatherDay(date=date.fromisoformat(day), condition=cond, temp_min_c=d["temperature_2m_min"][i],
-                              temp_max_c=d["temperature_2m_max"][i], precipitation_probability=prob, precipitation_mm=mm,
+                              temp_max_c=d["temperature_2m_max"][i], precipitation_probability=prob,
                               risk=classify_risk(prob, mm, cond),  # type: ignore[arg-type]
                               metadata=Metadata(source="weather_mcp", provider="Open-Meteo forecast", confidence=0.8,
                                                 source_url="https://open-meteo.com/")))
@@ -71,7 +71,7 @@ async def last_year(lat: float, lon: float, start: date, end: date) -> list[Weat
         mm = float(d["precipitation_sum"][i] or 0)
         prob = 80 if mm >= 5 else (50 if mm >= 1 else 10)  # derived from what actually happened
         out.append(WeatherDay(date=start + timedelta(days=i), condition=cond, temp_min_c=d["temperature_2m_min"][i],
-                              temp_max_c=d["temperature_2m_max"][i], precipitation_probability=prob, precipitation_mm=mm,
+                              temp_max_c=d["temperature_2m_max"][i], precipitation_probability=prob,
                               risk=classify_risk(prob, mm, cond),  # type: ignore[arg-type]
                               metadata=Metadata(source="weather_mcp", provider="Open-Meteo archive (same dates last year)",
                                                 confidence=0.35, source_url="https://open-meteo.com/",

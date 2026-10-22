@@ -243,7 +243,7 @@ def _google_attraction(r: dict, local_currency: str) -> Place | None:
         price_known=price is not None, opening_hours=hours, hours_verified=verified, duration_minutes=minutes,
         indoor=indoor, popularity=_popularity(reviews, rating), description=r.get("description") or ", ".join(types),
         reviews_count=reviews, address=r.get("address", ""), website=r.get("website"),
-        google_place_id=r.get("place_id"), google_data_id=r.get("data_id"), thumbnail=r.get("thumbnail"),
+        google_place_id=r.get("place_id"), thumbnail=r.get("thumbnail"),
         notes=None if price is not None else ("Free to visit." if not ticket else "Entry price is an estimate - check the official site."),
         metadata=Metadata(source="activities_mcp", provider=GOOGLE, confidence=0.85 if verified else 0.6,
                           source_url=f"https://www.google.com/maps/place/?q=place_id:{r.get('place_id')}" if r.get("place_id") else None),
@@ -307,7 +307,7 @@ def _google_restaurant(r: dict, local_currency: str) -> Place | None:
         requires_reservation=bool(r.get("reserve_a_table")), description=r.get("type") or "",
         reviews_count=reviews, address=r.get("address", ""), website=r.get("website"),
         booking_url=_link(r.get("reserve_a_table")) or _link(r.get("order_online")),
-        google_place_id=r.get("place_id"), google_data_id=r.get("data_id"), thumbnail=r.get("thumbnail"),
+        google_place_id=r.get("place_id"), thumbnail=r.get("thumbnail"),
         metadata=Metadata(source="places_mcp", provider=GOOGLE, confidence=0.85 if verified else 0.6),
     )
 
@@ -431,7 +431,7 @@ async def find_place(name: str, city: str, center: GeoPoint, local_currency: str
                           rating=float(r.get("rating") or 4.0), cost_per_person=Money(amount=ticket, currency="USD"),
                           opening_hours=_assumed_hours(cats, ""), hours_verified=False, duration_minutes=minutes,
                           indoor=indoor, reviews_count=int(r.get("reviews") or 0), address=r.get("address", ""),
-                          google_place_id=r.get("place_id"), google_data_id=r.get("data_id"),
+                          google_place_id=r.get("place_id"),
                           metadata=Metadata(source="activities_mcp", provider=GOOGLE, confidence=0.6))
         p.reviews_count = int(r.get("reviews") or 0)
         p.popularity = "must_see"
@@ -476,20 +476,6 @@ async def restaurants(city: str, center: GeoPoint, local_currency: str, dietary:
     if not out and far:
         raise net.ProviderError(f"Google Maps found no restaurants within {MAX_RESTAURANT_KM} km of {city}")
     return list(out.values())
-
-
-async def local_search(q: str, location: str) -> list[dict]:
-    data = await net.serpapi("google_local", 7 * net.DAY, q=q, location=location, hl=settings.language)
-    return [{k: r.get(k) for k in ("title", "type", "rating", "reviews", "address", "hours", "description", "place_id")}
-            for r in data.get("local_results", [])]
-
-
-async def place_reviews(data_id: str) -> dict:
-    data = await net.serpapi("google_maps_reviews", 30 * net.DAY, data_id=data_id, hl=settings.language)
-    return {"place_info": data.get("place_info"),
-            "topics": [{"keyword": t.get("keyword"), "mentions": t.get("mentions")} for t in data.get("topics", [])[:10]],
-            "reviews": [{"rating": r.get("rating"), "date": r.get("date"), "snippet": (r.get("snippet") or "")[:400]}
-                        for r in data.get("reviews", [])[:8]]}
 
 
 # ---------------------------------------------------------------------------

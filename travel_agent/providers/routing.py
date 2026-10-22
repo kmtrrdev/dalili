@@ -230,7 +230,7 @@ async def intercity_journeys(from_name: str, from_pt: GeoPoint, to_name: str, to
             out.append(FlightOption(
                 id=fid, direction="outbound", mode=mode, airline=label, flight_number=f"{label} {hhmm}",
                 origin=from_name, destination=to_name, depart_at=dep, arrive_at=arr, duration_minutes=minutes, stops=0,
-                price_per_person=price, baggage="Luggage travels with you", cabin="standard",
+                price_per_person=price, baggage="Luggage travels with you",
                 segments=[f"{label} {from_name} {hhmm} -> {to_name} {arr:%H:%M} (~{road_km:.0f} km)"],
                 metadata=Metadata(source="transport_mcp", provider=provider, confidence=conf,
                                   notes=f"{note}. Departure time is a typical slot and {fare_note} - "

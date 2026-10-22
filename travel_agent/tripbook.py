@@ -680,33 +680,3 @@ def render_html(trip: TripState) -> str:
 <script type="module" src="/static/js/book.js"></script>
 </body></html>"""
 
-
-def render_markdown(trip: TripState) -> str:
-    c, plan = trip.trip_contract, trip.selected_plan
-    assert c is not None and plan is not None
-    lines = [f"# Trip Book - {c.destination_name}", "",
-             f"{c.start_date:%d %b} - {c.end_date:%d %b %Y} | {c.travelers} traveler(s) | {plan.mode} plan | "
-             f"TripScore {plan.score.total if plan.score else '-'}", ""]
-    if plan.budget:
-        b = plan.budget
-        lines += ["## Budget", "", "| Item | Amount |", "|---|---|"] + [
-            f"| {k} | {money(getattr(b, k), b.currency)} |" for k in ("flights", "hotel", "food", "activities", "transport", "buffer", "total")] + [""]
-    if plan.stops:
-        lines += ["## Route", ""] + [f"{n}. {x.name}, {x.country} - {x.nights} night(s), {x.start_date:%d %b} to {x.end_date:%d %b}"
-                                     + (f" - {x.hotel.name}" if x.hotel else "") for n, x in enumerate(plan.stops, 1)] + [""]
-        lines += ["## Journey", ""] + [f"- {f.origin} -> {f.destination}: {f.airline} {f.flight_number} {f.depart_at:%a %d %b %H:%M}"
-                                       + ("" if f.mode == "flight" else " (estimated schedule and fare)") for f in plan.legs] + [""]
-    elif plan.outbound_flight and plan.return_flight:
-        lines += ["## Flights", "", f"- Outbound: {plan.outbound_flight.airline} {plan.outbound_flight.flight_number} {plan.outbound_flight.depart_at:%a %d %b %H:%M}",
-                  f"- Return: {plan.return_flight.airline} {plan.return_flight.flight_number} {plan.return_flight.depart_at:%a %d %b %H:%M}", ""]
-    if plan.hotel and not plan.stops:
-        lines += ["## Hotel", "", f"{plan.hotel.name} ({plan.hotel.neighborhood})", ""]
-    lines += ["## Daily itinerary", ""]
-    for d in plan.days:
-        lines += [f"### Day {d.day} - {d.date:%A %d %B} - {d.title}", ""]
-        for i in d.items:
-            leg = f" _(+{i.transport_from_previous.minutes} min {i.transport_from_previous.mode})_" if i.transport_from_previous and i.kind != "transfer" else ""
-            lines.append(f"- **{i.start}-{i.end}** {i.title}{leg}")
-        lines.append("")
-    lines += ["## Important", "", "- Nothing has been booked; prices were retrieved at planning time and may change.", ""]
-    return "\n".join(lines)

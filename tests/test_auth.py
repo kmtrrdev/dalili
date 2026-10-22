@@ -87,7 +87,7 @@ def test_trips_are_private_and_move_with_the_guest():
     stranger = _client()
     assert stranger.get(f"/api/trips/{trip.trip_id}").status_code == 404
     assert stranger.delete(f"/api/trips/{trip.trip_id}").status_code == 404
-    assert stranger.get(f"/api/trips/{trip.trip_id}/events").status_code == 404
+    assert stranger.get(f"/api/trips/{trip.trip_id}/book").status_code == 404
 
     user = _signup(guest)  # signing up keeps the trips planned as a guest
     assert service.store.owner(trip.trip_id) == user["id"]

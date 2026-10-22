@@ -49,12 +49,10 @@ class Option(BaseModel):
 
 class Conflict(BaseModel):
     kind: str
-    constraint_ids: list[str]
     explanation: str
     gap: float | None = None
     currency: str | None = None
     options: list[Option] = Field(default_factory=list)
-    needs_confirmation: bool = True
 
 
 def _money(v: float, cur: str) -> str:
@@ -228,7 +226,7 @@ def analyze(trip: TripState) -> list[Conflict]:
         gap = plan.budget.total - c.budget.amount
         relax = _budget_relaxations(trip, gap)
         out.append(Conflict(
-            kind="budget", constraint_ids=[b.id for b in budget], gap=round(gap, 2), currency=cur,
+            kind="budget", gap=round(gap, 2), currency=cur,
             explanation=f"The {plan.mode} plan costs {_money(plan.budget.total, cur)}, {_money(gap, cur)} over the "
                         f"{budget[0].priority} budget of {_money(c.budget.amount, cur)}.",
             options=_search(relax, gap, trip, cur)))
@@ -247,8 +245,7 @@ def analyze(trip: TripState) -> list[Conflict]:
         for s in steps:
             s.penalty = _penalty(s, trip)
         out.append(Conflict(
-            kind="must_visit", constraint_ids=[f"visit:{n.lower()}" for n in unmet],
-            explanation="Couldn't fit: " + ", ".join(unmet) + " (closed on your dates or no room left).",
+            kind="must_visit", explanation="Couldn't fit: " + ", ".join(unmet) + " (closed on your dates or no room left).",
             options=[Option(steps=[s], saving=s.saving, closes_gap=True, penalty=s.penalty, summary=s.label)
                      for s in sorted(steps, key=lambda s: s.penalty)]))
     return out

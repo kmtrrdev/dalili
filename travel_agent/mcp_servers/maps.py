@@ -24,17 +24,6 @@ async def get_directions(start: str, end_lat: float, end_lon: float, travel_mode
 
 
 @server.tool()
-async def travel_time_matrix(points: list[list[float]]) -> dict:
-    """Walking and driving times between all [lat, lon] points (openrouteservice)."""
-    pts = [GeoPoint(lat=p[0], lon=p[1]) for p in points]
-    known = await routing.prepare(pts)
-    legs = [[routing.lookup(a, b)[:4] for b in pts] for a in pts]
-    return envelope("travel_time_matrix", "transport_mcp", {"points": len(pts)}, pairs_known=known,
-                    minutes_walk=[[round(x[0], 1) for x in row] for row in legs],
-                    minutes_drive=[[round(x[2], 1) for x in row] for row in legs])
-
-
-@server.tool()
 async def get_airport_transfers(airport_code: str, airport_name: str, lat: float, lon: float, currency: str,
                                 fares: dict[str, float] | None = None, fixed_fares: list[dict] | None = None) -> dict:
     """Airport -> centre by public transport and by taxi (Google Maps times). Fares: Google's transit fare when

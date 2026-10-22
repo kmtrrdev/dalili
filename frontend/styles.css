@@ -383,6 +383,41 @@ body.busy .agent-avatar { animation: breathe 1.2s ease-in-out infinite; }
 .tr-kind { margin-inline-start: 8px; font-size: 11.5px; color: var(--muted); }
 .tr-text { margin-top: 4px; font-size: 13px; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
 .trace ul { margin: 6px 0 0; padding-inline-start: 18px; font-size: 12.5px; color: var(--muted); }
+/* "How I answered": the route a message took through the system */
+.path-btn { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; margin: -4px 0 4px; padding: 4px 10px;
+  border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--muted); font: 600 12px var(--font);
+  cursor: pointer; transition: border-color .2s, color .2s; }
+.path-btn span { color: var(--faint); font-weight: 500; }
+.path-btn:hover { border-color: var(--teal); color: var(--ink); }
+.path h3 { margin: 0 0 4px; font: 700 19px var(--display); }
+.path > h3, .path > .muted { padding-inline-end: 40px; }  /* clear of the close button */
+.path > .muted { margin: 0 0 12px; font-size: 13px; }
+.p-bar { display: flex; height: 22px; border-radius: 8px; overflow: hidden; gap: 2px; margin-bottom: 16px; }
+.p-bar i { min-width: 3px; display: grid; place-items: center; font-size: 11px; font-style: normal;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--teal) 70%, transparent), color-mix(in srgb, var(--violet) 60%, transparent)); }
+.p-bar i:nth-child(even) { background: linear-gradient(135deg, color-mix(in srgb, #36b7ff 65%, transparent), color-mix(in srgb, var(--teal) 50%, transparent)); }
+.p-flow { display: flex; flex-direction: column; gap: 14px; position: relative; }
+.p-flow > * { position: relative; }
+.p-flow > * + *::before { content: ""; position: absolute; inset-inline-start: 22px; top: -14px; height: 14px; width: 2px;
+  background: linear-gradient(var(--teal), color-mix(in srgb, var(--teal) 30%, transparent)); }
+.p-node { padding: 10px 12px; border-radius: 14px; border: 1px solid var(--line-strong); background: var(--card); }
+.p-node p { margin: 4px 0 0; font-size: 12.5px; color: var(--muted); line-height: 1.45; }
+.p-head { display: flex; align-items: center; gap: 8px; }
+.p-head b { font: 700 14px var(--display); }
+.p-ic { width: 26px; height: 26px; border-radius: 8px; display: grid; place-items: center; font-size: 14px; flex: none;
+  background: color-mix(in srgb, var(--teal) 14%, transparent); }
+.p-ms { margin-inline-start: auto; font: 700 12px var(--display); color: var(--teal); font-variant-numeric: tabular-nums; }
+.p-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 7px; }
+.pc { font-size: 11.5px; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.pc.ai { border-color: color-mix(in srgb, var(--violet) 45%, transparent); color: var(--ink); }
+.pc.bad { border-color: var(--rose); color: var(--rose); }
+.p-par { padding: 8px; border-radius: 16px; border: 1px dashed var(--line-strong); }
+.p-par > small { display: block; margin: 0 0 6px 4px; font-size: 11px; color: var(--faint); text-transform: uppercase; letter-spacing: .06em; }
+.p-par > div { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
+.p-node.small { padding: 8px 10px; }
+.p-think { margin-top: 8px; font-size: 12.5px; }
+.p-think summary { cursor: pointer; color: var(--muted); font-weight: 600; }
+.p-think .trace { margin-top: 8px; }
 .composer { display: flex; gap: 8px; align-items: flex-end; padding: 12px 14px 14px; border-top: 1px solid var(--line); }
 .composer textarea { flex: 1; resize: none; min-height: 44px; max-height: 140px; border: 1px solid var(--line-strong); border-radius: 14px;
   padding: 10px 12px; background: var(--field); outline: none; transition: border-color .2s; }

@@ -289,9 +289,12 @@ async def parse(system: str, user: str, schema: type[T], max_tokens: int = 16000
     hit = _PARSE_CACHE.get(key)
     if hit and time.time() - hit[0] < PARSE_CACHE_TTL_S:
         _PARSE_CACHE.move_to_end(key)
+        telemetry.record_model_call(schema.__name__, 0, True, cached=True)
         return hit[1].model_copy(deep=True)  # type: ignore[return-value]
+    started = time.perf_counter()
     out = await _bounded(_azure_parse(system, user, schema, effort) if p == "azure" else
                          _claude_parse(system, user, schema, max_tokens), timeout)
+    telemetry.record_model_call(schema.__name__, (time.perf_counter() - started) * 1000, out is not None)
     if out is not None:
         _PARSE_CACHE[key] = (time.time(), out.model_copy(deep=True))
         while len(_PARSE_CACHE) > PARSE_CACHE_MAX:
@@ -303,9 +306,13 @@ async def text(system: str, user: str, max_tokens: int = 4000, effort: str | Non
                timeout: float | None = None) -> str | None:
     """Free-text generation (conversational summary, grounded answers)."""
     p = provider()
+    if p is None:
+        return None
+    started = time.perf_counter()
     if p == "azure":
-        return await _bounded(_azure_chat([{"role": "system", "content": system}, {"role": "user", "content": user}],
-                                          max_tokens=max_tokens, effort=effort), timeout)
-    if p == "anthropic":
-        return await _bounded(_claude_text(system, user, max_tokens), timeout)
-    return None
+        out = await _bounded(_azure_chat([{"role": "system", "content": system}, {"role": "user", "content": user}],
+                                         max_tokens=max_tokens, effort=effort), timeout)
+    else:
+        out = await _bounded(_claude_text(system, user, max_tokens), timeout)
+    telemetry.record_model_call("text", (time.perf_counter() - started) * 1000, out is not None)
+    return out

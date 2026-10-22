@@ -66,23 +66,5 @@ async def get_hotel_reviews(property_token: str, hotel_name: str = "") -> dict:
                     insights=insights.model_dump() if insights else None)
 
 
-@server.tool()
-async def get_hotel_photos(property_token: str) -> dict:
-    """Photo gallery of a hotel."""
-    try:
-        return envelope("hotel_photos", "hotel_mcp", {"property_token": property_token}, photos=await hotels.photos(property_token))
-    except net.ProviderError as exc:
-        return error("hotel_photos", "hotel_mcp", {"property_token": property_token}, str(exc))
-
-
-@server.tool()
-async def autocomplete_hotels(query: str) -> dict:
-    """Hotel / area name suggestions."""
-    try:
-        return envelope("hotel_autocomplete", "hotel_mcp", {"query": query}, suggestions=await hotels.autocomplete(query))
-    except net.ProviderError as exc:
-        return error("hotel_autocomplete", "hotel_mcp", {"query": query}, str(exc))
-
-
 if __name__ == "__main__":
     server.run("stdio")

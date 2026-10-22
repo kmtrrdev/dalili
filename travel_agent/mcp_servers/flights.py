@@ -7,7 +7,7 @@ from datetime import date
 from mcp.server.mcpserver import MCPServer
 
 from .. import net
-from ..providers import ai_fallback, flights, geo
+from ..providers import ai_fallback, flights
 from . import envelope, error
 
 server = MCPServer("flight_mcp", instructions="Real flight search via Google Flights. Planning only - never books.")
@@ -105,24 +105,6 @@ async def search_one_way_flights(origin: str, destination: str, departure_date: 
             return envelope("flight_search_result", "flight_mcp", q, results=est, price_insights={},
                             fallback="ai_knowledge", live_error="no flights returned by the live search")
     return envelope("flight_search_result", "flight_mcp", q, results=res, price_insights=ins)
-
-
-@server.tool()
-async def autocomplete_airports(query: str) -> dict:
-    """Resolve a city/country/airport name to Google city ids and IATA airport codes."""
-    try:
-        return envelope("airport_autocomplete", "flight_mcp", {"query": query}, suggestions=await geo.autocomplete(query))
-    except net.ProviderError as exc:
-        return error("airport_autocomplete", "flight_mcp", {"query": query}, str(exc))
-
-
-@server.tool()
-async def find_flight_deals(departure_id: str, currency: str = "USD") -> dict:
-    """Current discounted fares from an airport/city (Google Flights Deals)."""
-    try:
-        return envelope("flight_deals", "flight_mcp", {"departure_id": departure_id}, deals=await flights.deals(departure_id, currency))
-    except net.ProviderError as exc:
-        return error("flight_deals", "flight_mcp", {"departure_id": departure_id}, str(exc))
 
 
 if __name__ == "__main__":

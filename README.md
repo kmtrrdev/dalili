@@ -178,7 +178,7 @@ Measured results:
 
 The rest of this section describes the quota mechanics:
 
-- A new trip costs about **10–14 searches**. Replans that don't change dates, city or travelers cost **0** (pure re-planning over cached research). Changing dates costs about 3.
+- A new trip costs about **25–30 searches**. Replans that don't change dates, city or travelers cost **0** (pure re-planning over cached research). Changing dates costs about 3.
 - Every response is stored in a persistent cache (`.cache/http_cache.sqlite`) with per-source TTLs (flights and hotels 6 h, places 7–14 days, reviews 30 days…). Engines missing from the plan (e.g. `google_events`) are remembered so they aren't retried.
 - `TRAVEL_AGENT_SERPAPI_CALLS_PER_TURN` (default 20) caps live searches per chat turn; `/api/quota` (operator token) shows what is left this month.
 - API keys are stripped from cache keys and stored rows, redacted from every error message, and kept out of logs.
@@ -208,7 +208,7 @@ $env:RECORD="1"; .\.venv\Scripts\python -m pytest   # re-record after changing q
 | Cost backed by published prices | ~52 % |
 | Scheduled places with verified hours | ~87 % |
 
-Live, uncached: a new trip takes about 20–35 s end to end. Replans take about 1 s.
+Live, uncached (measured): a new trip takes about 60–90 s end to end (live searches, price research and an expert review); a change to a plan about 20–30 s; a question about 10–15 s. Under every reply, **How I answered** shows the route the message took and where the time went.
 
 ## Architecture
 
@@ -248,14 +248,14 @@ START → understand ─┬→ answer (Wikivoyage RAG) ────────�
 
 | Server | Tools |
 |---|---|
-| flight_mcp | `search_flights`, `search_one_way_flights`, `autocomplete_airports`, `find_flight_deals` |
-| hotel_mcp | `search_hotels`, `get_hotel_reviews`, `get_hotel_photos`, `autocomplete_hotels` |
-| places_mcp | `search_restaurants`, `search_places`, `search_local`, `get_place_reviews` |
-| activities_mcp | `search_attractions`, `search_events`, `explore_destinations` |
-| transport_mcp | `get_directions`, `travel_time_matrix`, `get_airport_transfers`, `get_intercity_journeys` |
-| weather_mcp | `get_weather_forecast`, `get_weather_risk` |
+| flight_mcp | `search_flights`, `search_one_way_flights` |
+| hotel_mcp | `search_hotels`, `get_hotel_reviews`, `get_hotel_offers` |
+| places_mcp | `search_restaurants`, `search_places` |
+| activities_mcp | `search_attractions`, `search_events`, `explore_destinations`, `find_place` |
+| transport_mcp | `get_directions`, `get_airport_transfers`, `get_intercity_journeys` |
+| weather_mcp | `get_weather_forecast` |
 | currency_mcp | `get_exchange_rates`, `convert_currency` |
-| knowledge_mcp | `resolve_place`, `get_destination_info`, `search_travel_knowledge` |
+| knowledge_mcp | `resolve_place`, `resolve_destination`, `get_destination_info`, `get_local_prices`, `get_menu_price`, `get_official_price` |
 
 Each server runs standalone over stdio (`python -m travel_agent.mcp_servers.flights`), or in-process. Set `TRAVEL_AGENT_MCP_TRANSPORT=stdio` to spawn them as separate processes.
 
@@ -267,9 +267,7 @@ Each server runs standalone over stdio (`python -m travel_agent.mcp_servers.flig
 | GET | `/api/trips/{id}` | Trip State |
 | POST | `/api/trips/{id}/select` | balanced / budget / comfort / experience |
 | POST | `/api/trips/{id}/whatif` | `{budget_delta \| budget, apply}` → comparison on a copy |
-| POST | `/api/trips/{id}/replan` | structured actions, e.g. `[{"action": "more_food"}]` |
-| GET | `/api/trips/{id}/book`, `book.md` | Trip Book |
-| GET | `/api/trips/{id}/events` | event log |
+| GET | `/api/trips/{id}/book` | Trip Book |
 | GET | `/api/health`, `/api/quota`, `/api/mcp/tools` | status, SerpApi usage, tool discovery |
 | POST | `/api/auth/signup`, `/api/auth/signin`, `/api/auth/signout` | accounts (session cookie) |
 | GET | `/api/auth/me` | the signed-in user, or `null` for a guest |

@@ -8,7 +8,7 @@ from travel_agent.engine.validators import validate_plan
 from travel_agent.journey import build_stops, merge_research, plan_journey, split_nights
 from travel_agent.models import FlightOption, Metadata, Money, TripState
 from travel_agent.nlu import extract_destination_list, extract_requirements
-from travel_agent.tripbook import render_html, render_markdown
+from travel_agent.tripbook import render_html
 
 
 def test_destination_lists():
@@ -103,5 +103,3 @@ def test_plan_journey_merges_stops_and_travel_day(rome_contract, rome_research, 
     html = render_html(trip)
     assert "Journey" in html and "Hotels" in html and "Rome B" in html and "travel day" in html
     assert '"stops": [' in html
-    md = render_markdown(trip)
-    assert "## Route" in md and "(estimated schedule and fare)" in md

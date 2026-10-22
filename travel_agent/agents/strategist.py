@@ -196,9 +196,14 @@ async def design(trip: TripState) -> Strategies:
     c, r, p = trip.trip_contract, trip.research, trip.traveler_profile
     if c is None or r is None:
         return DEFAULTS
-    # Not the dates: moving them does not change what each plan stands for (its hotel shortlist falls back to the
-    # normal ranking if a shortlisted hotel is not offered on the new dates) - saves a model call per date change.
-    key = f"{c.route_name}|{c.travelers}|{c.budget.currency}|{p.model_dump_json(exclude={'learned'})}"
+    # What the model reads about the traveller - and only that is in the cache key. Not the pace, walking or
+    # transport: each plan's pace is relative to the traveller's (pace_delta), and the planner applies walking and
+    # transport to every day itself - so "make it calmer, less walking" re-plans without re-designing. Not the dates
+    # either: moving them does not change what each plan stands for (a shortlisted hotel missing on the new dates
+    # falls back to the normal ranking). Each such change saves a ~13 s model call.
+    traveller = p.model_dump(include={"activity_preferences", "food_preferences", "dietary_restrictions",
+                                      "flight_preference", "avoid_early_flights", "hotel_style"})
+    key = f"{c.route_name}|{c.travelers}|{c.budget.currency}|{json.dumps(traveller, sort_keys=True, default=str)}"
     cached = trip.metadata.get("strategies")
     # During the critic's refinement the strategies stay as they were (its edits must not re-design the plans).
     if cached and (cached.get("key") == key or trip.metadata.get("strategies_locked")):
@@ -208,10 +213,7 @@ async def design(trip: TripState) -> Strategies:
             pass
     if not llm.available():
         return DEFAULTS
-    payload = {"trip": _research_summary(trip),
-               "traveller": p.model_dump(include={"travel_style", "walking_tolerance", "transport_preference",
-                                                   "activity_preferences", "food_preferences", "dietary_restrictions",
-                                                   "flight_preference", "avoid_early_flights", "hotel_style"})}
+    payload = {"trip": _research_summary(trip), "traveller": traveller}
     out = await llm.parse(SYSTEM, json.dumps(payload, ensure_ascii=False, default=str), Strategies, effort="low",
                           timeout=40)  # DEFAULTS if the model is slow
     if out is None:

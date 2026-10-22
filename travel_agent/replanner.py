@@ -445,12 +445,8 @@ def contract_dirty_domains(old: TripContract | None, new: TripContract) -> set[s
 def learn_from_feedback(trip: TripState, notes: list[FeedbackNote], raw: str) -> None:
     """Store structured feedback and update learned preferences (explicit prefs always win)."""
     p = trip.traveler_profile
-    plan = trip.selected_plan
     for n in notes:
-        entity = None
-        if n.feedback_type == "hotel" and plan and plan.hotel:
-            entity = plan.hotel.id
-        trip.feedback.append(FeedbackItem(feedback_type=n.feedback_type, entity_id=entity, sentiment=n.sentiment,
+        trip.feedback.append(FeedbackItem(feedback_type=n.feedback_type, sentiment=n.sentiment,
                                           attribute=n.attribute, severity=n.severity, raw_text=raw))
         key = None
         value = None

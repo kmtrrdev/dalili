@@ -254,6 +254,7 @@ function handleEvent(ev, ctx) {
     state.tripId = ev.trip_id;
     try { localStorage.setItem("tripId", ev.trip_id); } catch (_) { /* ignore */ }
     const msg = ev.reply ? addMessage("assistant", ev.reply) : null;
+    pathButton(msg, ev.trip.metadata);
     setTrip(ev.trip);
     const pr = ev.trip.draft && ev.trip.draft.route_proposal;
     if (msg && pr && pr.stops.length && !ev.trip.draft.route_confirmed) routeActions(msg, pr);
@@ -440,7 +441,7 @@ function renderTab() {
   revealInStrip($("tabs"), document.querySelector('#tabs [aria-selected="true"]'));
   const plan = state.trip.plans[state.trip.selected_mode];
   if (state.map) { state.map.remove(); state.map = null; }
-  const views = { itinerary, stay, budget, checks, weather, profile, sources, ai };
+  const views = { itinerary, stay, budget, checks, weather, profile, sources };
   $("panel").innerHTML = views[state.tab](plan);
   $("panel").scrollTop = 0;
   $("panel").querySelectorAll("[data-offers]").forEach((b) => b.addEventListener("click", () => openOffers(b.dataset.offers)));
@@ -854,25 +855,89 @@ function expertReview() {
       : `<p class="muted" style="font-size:13px;margin:8px 0 0">${t("noIssues")}</p>`}</div>`;
 }
 
-// ------------------------------------------------------------------ AI view (?ai=1): how the agents worked this turn
-const AI_VIEW = new URLSearchParams(location.search).has("ai");
-const AGENT_ICON = { concierge: "🧭", critic: "🧐" };
+// ------------------------------------------------------------------ the message's route through the system
+// Every reply carries the path its message took (recorded by the server: telemetry + workflow._timed): each step of
+// the agent graph, the tools and AI models each step called, and how long everything took. Drawn as a diagram.
+const AGENT_ICON = { concierge: "🧭", critic: "🧐", strategist: "♟️", planner: "🧩" };
 const KIND_LABEL = { thought: "💭", tool: "🛠️", observation: "👁️", decision: "⚖️", fix: "🔧", answer: "💬" };
-function ai() {
-  const steps = state.trip.metadata?.agent_trace || [];
-  if (!steps.length) return `<p class="muted">${t("aiEmpty")}</p>`;
-  return `<p class="muted" style="font-size:13px;margin-top:0">${t("aiIntro")}</p><ol class="trace">${steps.map((s, i) => `
-    <li class="k-${s.kind}" style="animation-delay:${i * 30}ms"><span class="tr-agent">${AGENT_ICON[s.agent] || "🤖"} ${esc(s.agent)}</span>
-      <span class="tr-kind">${KIND_LABEL[s.kind] || ""} ${esc(s.kind)}</span><div class="tr-text">${esc(s.text)}</div>
-      ${s.issues ? `<ul>${s.issues.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
-      ${s.follow_ups?.length ? `<ul>${s.follow_ups.map((x) => `<li>↳ ${esc(x)}</li>`).join("")}</ul>` : ""}</li>`).join("")}</ol>`;
-}
-if (AI_VIEW) {
+const STAGE_ICON = { understand: "🧠", answer: "💬", check_requirements: "📋", ask: "❓", propose_route: "🗺️",
+  apply_feedback: "🔧", research_setup: "🔎", research_flights: "✈️", research_hotels: "🏨", research_restaurants: "🍽️",
+  research_activities: "🏛️", research_weather: "🌦️", collect: "💰", plan: "🧩", validate: "✅", repair: "🛠️",
+  finalize: "🏁", critic: "🧐", respond: "✍️" };
+// The research branch each tool server belongs to (they run side by side, so time alone can't tell).
+const BRANCH_OF = { flights: "research_flights", hotels: "research_hotels", places: "research_restaurants",
+  activities: "research_activities", weather: "research_weather" };
+const BRANCH_STEPS = new Set(Object.values(BRANCH_OF));
+// Which steps' thinking each agent's trace belongs under.
+const TRACE_AT = { concierge: "understand", critic: "critic", strategist: "plan", planner: "plan" };
+const secs = (ms) => `${(ms / 1000).toFixed(ms < 10000 ? 1 : 0)}s`;
+
+/** A "how I answered" button under a reply (only when the server recorded the turn's path). */
+const lastReply = () => [...document.querySelectorAll("#messages .msg.assistant")].pop();
+function pathButton(after, meta) {
+  if (!after || !meta?.turn_path?.nodes?.length) return;
   const b = document.createElement("button");
-  b.setAttribute("role", "tab");
-  b.dataset.tab = "ai";
-  b.textContent = "✨ AI";
-  $("tabs").appendChild(b);
+  b.type = "button";
+  b.className = "path-btn";
+  b.innerHTML = `🧭 ${esc(t("pathBtn"))} <span>${secs(meta.turn_path.total_ms)}</span>`;
+  b.addEventListener("click", () => openPath(meta));
+  after.after(b);
+}
+
+function openPath(meta) {
+  const p = meta.turn_path;
+  const nodes = p.nodes.map((n) => ({ ...n, start: n.end - n.ms, tools: [], llm: [], steps: [] }));
+  // Each tool / model call belongs to the step that was running when it finished (a research branch by its server).
+  const owner = (x, server) => {
+    const live = nodes.filter((n) => x.end >= n.start - 30 && x.end <= n.end + 30);
+    return (server && live.find((n) => n.name === BRANCH_OF[server])) || live.find((n) => !BRANCH_STEPS.has(n.name)) || live[0];
+  };
+  p.tools.forEach((x) => owner(x, x.name.split(".")[0])?.tools.push(x));
+  p.llm.forEach((x) => owner(x)?.llm.push(x));
+  (meta.agent_trace || []).forEach((s) => {
+    const at = TRACE_AT[s.agent];
+    const n = at && [...nodes].reverse().find((x) => x.name === at);
+    if (n) n.steps.push(s);
+  });
+  const total = Math.max(p.total_ms, 1);
+  const label = (n) => (t("stage")[n.name] || [n.name, ""]);
+
+  const chips = (n) => {
+    const byTool = {};
+    n.tools.forEach((x) => { const k = x.name.split(".")[0]; byTool[k] = byTool[k] || { n: 0, ms: 0, bad: 0 };
+      byTool[k].n += 1; byTool[k].ms = Math.max(byTool[k].ms, x.ms); byTool[k].bad += x.ok ? 0 : 1; });
+    const tools = Object.entries(byTool).map(([k, v]) => `<span class="pc tool${v.bad ? " bad" : ""}">🛠️ ${esc(t("toolName")[k] || k)}${v.n > 1 ? ` ×${v.n}` : ""} · ${secs(v.ms)}</span>`);
+    const models = n.llm.map((x) => `<span class="pc ai${x.ok ? "" : " bad"}">✨ ${esc(t("model")[x.what] || x.what)} · ${x.cached ? esc(t("pathMemory")) : secs(x.ms)}</span>`);
+    return tools.length || models.length ? `<div class="p-chips">${models.join("")}${tools.join("")}</div>` : "";
+  };
+  const thinking = (n) => n.steps.length ? `<details class="p-think"><summary>${esc(t("pathAgent"))} (${n.steps.length})</summary>
+      <ol class="trace">${n.steps.map((s) => `<li class="k-${s.kind}"><span class="tr-agent">${AGENT_ICON[s.agent] || "🤖"} ${esc(s.agent)}</span>
+        <span class="tr-kind">${KIND_LABEL[s.kind] || ""} ${esc(s.kind)}</span><div class="tr-text" dir="auto">${esc(s.text)}</div></li>`).join("")}</ol></details>` : "";
+  const card = (n, small) => `<div class="p-node${small ? " small" : ""}">
+      <div class="p-head"><span class="p-ic">${STAGE_ICON[n.name] || "•"}</span><b>${esc(label(n)[0])}</b><span class="p-ms">${secs(n.ms)}</span></div>
+      ${small ? "" : `<p>${esc(label(n)[1])}</p>`}${chips(n)}${thinking(n)}</div>`;
+  // Consecutive research branches ran side by side: one row (and one stretch of the time bar, as long as the slowest).
+  const rows = [];
+  nodes.forEach((n) => {
+    const branch = BRANCH_STEPS.has(n.name);
+    const prev = rows[rows.length - 1];
+    if (branch && prev && prev.parallel) prev.nodes.push(n);
+    else rows.push({ parallel: branch, nodes: [n] });
+  });
+  const bar = rows.map((r) => {
+    const ms = Math.max(...r.nodes.map((n) => n.ms));
+    const name = r.parallel ? t("pathParallel") : label(r.nodes[0])[0];
+    const ic = r.parallel ? "🔎" : STAGE_ICON[r.nodes[0].name] || "•";
+    return ms >= total * 0.01 ? `<i style="flex:${ms}" title="${esc(name)} · ${secs(ms)}">${ms > total * 0.08 ? ic : ""}</i>` : "";
+  }).join("");
+  const u = meta.usage || {};
+  modal(`<div class="path">
+    <h3>${esc(t("pathTitle"))}</h3>
+    <p class="muted">${esc(t("pathSum", secs(p.total_ms), p.llm.length, p.tools.length, u.serpapi_calls ?? 0))}</p>
+    <div class="p-bar">${bar}</div>
+    <div class="p-flow">${rows.map((r) => r.parallel
+      ? `<div class="p-par"><small>${esc(t("pathParallel"))}</small><div>${r.nodes.map((n) => card(n, true)).join("")}</div></div>`
+      : card(r.nodes[0], false)).join("")}</div></div>`);
 }
 
 function checks(plan) {
@@ -1596,6 +1661,7 @@ async function openTrip(id) {
   try { localStorage.setItem("tripId", trip.trip_id); } catch (_) { /* ignore */ }
   $("messages").innerHTML = "";
   trip.conversation.forEach((m) => addMessage(m.role, m.content));
+  pathButton(lastReply(), trip.metadata);  // the latest turn's route
   if (!trip.conversation.length) greet();
   setTrip(trip);
   setChatOpen(true);
@@ -1648,6 +1714,7 @@ function applyPrefs(prefs, force = false) {
     if (res.ok) {
       const t = await res.json();
       t.conversation.forEach((m) => addMessage(m.role, m.content));
+      pathButton(lastReply(), t.metadata);
       setTrip(t);
       return;
     }

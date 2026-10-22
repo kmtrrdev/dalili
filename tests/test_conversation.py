@@ -167,5 +167,21 @@ def test_the_arrival_day_stays_when_they_leave_a_day_earlier():
     assert d.arrive_by == date(2026, 11, 10)
 
 
+def test_a_slow_model_step_is_retried_quickly_instead_of_waited_for(monkeypatch):
+    efforts = []
+
+    async def parse(system, user, schema, max_tokens=16000, effort=None, timeout=None):
+        efforts.append((effort, timeout))
+        if effort != "low":
+            llm.last_error = f"model call exceeded {timeout:.0f}s"
+            return None
+        return concierge.Step(thought="Hi.", tool="final_answer", answer="Hello!")
+
+    monkeypatch.setattr(llm, "available", lambda: True)
+    monkeypatch.setattr(llm, "parse", parse)
+    res = anyio.run(concierge.converse, TripState(), "hi")
+    assert res.answer == "Hello!" and efforts == [("medium", 30), ("low", 30)]
+
+
 def test_saying_the_same_route_again_changes_nothing(rome):
     assert not set_route(rome, [RouteStop(place="Rome, Italy")])

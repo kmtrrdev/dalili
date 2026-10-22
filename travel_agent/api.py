@@ -25,7 +25,6 @@ from .auth import GUEST_COOKIE, GUEST_RE, SESSION_COOKIE, SESSION_DAYS, Accounts
 from .config import PROJECT_DIR, settings, today
 from .mcp_hub import SERVERS, get_hub
 from .models import PlanningMode
-from .nlu import Action
 import httpx
 
 from .security import MAX_MESSAGE_CHARS, client_ip, is_admin, limit_expensive, limit_light, limit_offers
@@ -193,10 +192,6 @@ class WhatIfIn(BaseModel):
 
 class SelectIn(BaseModel):
     mode: PlanningMode
-
-
-class ReplanIn(BaseModel):
-    actions: list[Action]
 
 
 def public(trip) -> dict:
@@ -429,34 +424,12 @@ async def what_if(trip_id: str, body: WhatIfIn, request: Request, who: Identity 
     return await service.what_if(trip_id, body.budget_delta, body.budget, body.apply)
 
 
-@app.post("/api/trips/{trip_id}/replan")
-async def replan(trip_id: str, body: ReplanIn, request: Request, who: Identity = Depends(identity)):
-    _trip_or_404(trip_id, who)
-    limit_expensive(request, who.id)
-    trip, reply = await service.replan(trip_id, body.actions)
-    return {"trip_id": trip.trip_id, "reply": reply, "trip": public(trip)}
-
-
-@app.get("/api/trips/{trip_id}/events")
-async def events(trip_id: str, who: Identity = Depends(identity)):
-    _trip_or_404(trip_id, who)
-    return service.store.events(trip_id)
-
-
 @app.get("/api/trips/{trip_id}/book", response_class=HTMLResponse)
 async def book(trip_id: str, who: Identity = Depends(identity)):
     trip = _trip_or_404(trip_id, who)
     if not trip.selected_plan:
         raise HTTPException(409, "No plan yet")
     return HTMLResponse(tripbook.render_html(trip))
-
-
-@app.get("/api/trips/{trip_id}/book.md", response_class=PlainTextResponse)
-async def book_md(trip_id: str, who: Identity = Depends(identity)):
-    trip = _trip_or_404(trip_id, who)
-    if not trip.selected_plan:
-        raise HTTPException(409, "No plan yet")
-    return PlainTextResponse(tripbook.render_markdown(trip), media_type="text/markdown")
 
 
 # ---------------------------------------------------------------------------

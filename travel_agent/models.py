@@ -91,7 +91,6 @@ class Metadata(BaseModel):
     stale: bool = Field(default_factory=lambda: SERVED_STALE.get())  # served from an expired cache (provider down)
     confidence: float = 1.0
     source_url: WebUrl = None
-    is_demo_data: bool = False
     notes: str | None = None
 
 
@@ -192,7 +191,6 @@ class Constraint(BaseModel):
     reason: str = ""
     evidence: list[str] = Field(default_factory=list)  # what the traveller said / the behaviour it was learned from
     created_from: str = ""         # requirements | profile | learned_preferences | defaults
-    last_updated: datetime = Field(default_factory=utcnow)
 
 
 class TripContract(BaseModel):
@@ -306,7 +304,6 @@ class RequirementDraft(BaseModel):
     priorities: list[str] = Field(default_factory=list)  # what the traveller said matters most, most important first
     # Evidence: the words each requirement came from (field -> the traveller's message), for explanations.
     stated: dict[str, str] = Field(default_factory=dict)
-    profile_updates: dict[str, Any] = Field(default_factory=dict)
     planning_mode: PlanningMode | None = None
 
 
@@ -333,7 +330,6 @@ class FlightOption(BaseModel):
     via: str | None = None
     price_per_person: Money
     baggage: str = "See airline fare rules"
-    cabin: str = "economy"
     segments: list[str] = Field(default_factory=list)
     layovers: list[str] = Field(default_factory=list)
     carbon_kg: float | None = None
@@ -375,13 +371,11 @@ class HotelOption(BaseModel):
     review_insights: ReviewInsights | None = None
     style: str = "hotel"
     reviews_count: int = 0
-    location_rating: float | None = None
     check_in_time: str | None = None
     check_out_time: str | None = None
     property_token: str | None = None
     link: WebUrl = None
     images: list[str] = Field(default_factory=list)
-    room_types: list[str] = Field(default_factory=list)
     amenities: list[str] = Field(default_factory=list)
     metadata: Metadata
 
@@ -425,7 +419,6 @@ class Place(BaseModel):
     booking_url: WebUrl = None   # reserve a table / buy tickets, when the provider lists one
     menu_url: WebUrl = None      # the restaurant's menu (found by web search) - where its meal price comes from
     google_place_id: str | None = None
-    google_data_id: str | None = None
     thumbnail: str | None = None
     metadata: Metadata
 
@@ -436,7 +429,6 @@ class WeatherDay(BaseModel):
     temp_min_c: float
     temp_max_c: float
     precipitation_probability: int
-    precipitation_mm: float = 0.0
     risk: Level = "low"
     metadata: Metadata
 
@@ -642,7 +634,6 @@ class StopPlan(BaseModel):
 
 
 class TripPlan(BaseModel):
-    plan_id: str = Field(default_factory=lambda: new_id("plan"))
     mode: PlanningMode = "balanced"
     pitch: str = ""       # what this plan optimises for this trip (from the strategist), English
     pitch_ar: str = ""    # the same in Arabic
@@ -661,7 +652,6 @@ class TripPlan(BaseModel):
     alternatives: dict[str, list[str]] = Field(default_factory=dict)
     repair_log: list[str] = Field(default_factory=list)
     within_budget: bool = True
-    generated_at: datetime = Field(default_factory=utcnow)
     # Places the traveller asked for by name -> the day they are on (None: could not be fitted).
     requested: dict[str, int | None] = Field(default_factory=dict)
     # Multi-city: the cities in order and the chosen journey for every leg (first = outbound, last = return).
@@ -684,7 +674,6 @@ class TripPlan(BaseModel):
 
 class FeedbackItem(BaseModel):
     feedback_type: Literal["hotel", "flight", "restaurant", "activity", "itinerary", "budget", "general"]
-    entity_id: str | None = None
     sentiment: Literal["positive", "negative", "neutral"] = "neutral"
     attribute: str | None = None
     severity: float = 0.5

@@ -24,17 +24,5 @@ async def get_weather_forecast(lat: float, lon: float, start_date: str, end_date
     return envelope("weather_forecast", "weather_mcp", q, days=days)
 
 
-@server.tool()
-async def get_weather_risk(lat: float, lon: float, on_date: str) -> dict:
-    """Weather risk (low/medium/high) for outdoor plans on one date."""
-    d = date.fromisoformat(on_date)
-    try:
-        day = (await get_weather(lat, lon, d, d))[0]
-    except (net.ProviderError, IndexError) as exc:
-        return error("weather_risk", "weather_mcp", {"on_date": on_date}, str(exc))
-    return envelope("weather_risk", "weather_mcp", {"on_date": on_date}, risk=day.risk, condition=day.condition,
-                    precipitation_probability=day.precipitation_probability, provider=day.metadata.provider)
-
-
 if __name__ == "__main__":
     server.run("stdio")
