@@ -145,9 +145,11 @@ def test_an_event_is_offered_but_only_added_when_the_traveller_says_yes(rome):
     assert facts[0]["ticket"] == "from 20 EUR (official site)"
 
     assert film["place"]["distance_km"] > 25 and not film["place"]["day_trip"]
-    trip, _ = anyio.run(run_turn, trip, "", [Action(action="add_place", text="Rome Film Fest")])
-    day = next(d for d in trip.selected_plan.days for i in d.items if i.place_id == "wev_Q1")
+    # The agent may add the venue to the name: it is still the event (with its ticket and dates), never the venue.
+    trip, _ = anyio.run(run_turn, trip, "", [Action(action="add_place", text="Rome Film Fest (Auditorium Parco della Musica)")])
+    day, item = next((d, i) for d in trip.selected_plan.days for i in d.items if i.place_id == "wev_Q1")
     assert str(day.date) in film["trip_days"]
+    assert (item.cost.amount, item.cost.currency, item.cost.price_type) == (40, "EUR", "known")  # 2 tickets
     assert narrative.event_offers(trip)[0]["in_plan_on_day"] == day.day
 
 

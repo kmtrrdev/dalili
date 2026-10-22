@@ -527,7 +527,7 @@ async def ensure_must_visit(hub: MCPHub, trip) -> list[str]:
     if not names or r is None or c is None:
         trip.user_knobs.must_include = []
         return []
-    admit_offered_events(trip, names)  # "I'll go to Oktoberfest": the offered event, on its own dates
+    events = admit_offered_events(trip, names)  # "I'll go to Oktoberfest": the offered event, on its own dates
     resolved: dict[str, str] = trip.metadata.setdefault("must_visit", {})
     bundles = r.stops or [r]
     notes, ids = [], []
@@ -536,6 +536,10 @@ async def ensure_must_visit(hub: MCPHub, trip) -> list[str]:
         if any(_tokens(name) and _tokens(name) <= _tokens(city) | {"el", "al"} for city in cities):
             continue  # a city of the route itself (e.g. "Sharm El Sheikh"), not a sight to schedule
         key = f"{c.route_name}|{name}"  # a lookup is only valid for the destination it was made for
+        if name in events:
+            resolved[key] = events[name]
+            ids.append(events[name])
+            continue
         pid = resolved.get(key)
         if pid and r.place(pid):
             ids.append(pid)
@@ -775,23 +779,30 @@ def offer_major_events(trip, events: list[world_events.WorldEvent]) -> list[dict
     return offers
 
 
-def admit_offered_events(trip, names: list[str]) -> None:
-    """Offered events the traveller asked for (by name, in any wording the trip agent turned into the event's name)
-    join the research of their city, so the must-visit lookup finds them on their dates - no search needed."""
+def admit_offered_events(trip, names: list[str]) -> dict[str, str]:
+    """Offered events the traveller asked for join the research of their city, on their dates - no search needed.
+    A name matches an event when it names it, with or without more words ("Abu Dhabi Grand Prix (Yas Marina
+    Circuit)"): the venue alone is not the event, so it must never be looked up on its own instead.
+    Returns name asked -> the event's place id."""
     r = trip.research
     offers = [o for o in trip.metadata.get("event_offers") or [] if o.get("place")]
     if r is None or not offers:
-        return
+        return {}
     bundles = r.stops or [r]
+    admitted: dict[str, str] = {}
     for name in names:
         for o in offers:
             place = Place.model_validate(o["place"])
-            if match_place(name, [place]) is None:
+            own = _tokens(place.name)
+            if not (own and own <= _tokens(name)) and match_place(name, [place]) is None:
                 continue
             home = bundles[o["stop"]] if o["stop"] is not None and o["stop"] < len(bundles) else bundles[0]
             for b in {id(home): home, id(r): r}.values():  # the stop, and a tour's merged research
                 if not any(x.id == place.id for x in b.attractions):
                     b.attractions.append(place)
+            admitted[name] = place.id
+            break
+    return admitted
 
 
 ROUTING_RADIUS_KM = 45  # day-trip sites further out use intercity estimates; far points break walking matrices
