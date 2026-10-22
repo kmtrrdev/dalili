@@ -1,6 +1,7 @@
 import { Globe } from "./globe.js";
 import { applyStatic, getLang, locale, setLang, t } from "./i18n.js";
 import { CURRENCIES, INTERESTS, closeDash, esc, initAccount, logActivity, onTripPlanned, refreshAccountLanguage } from "./account.js";
+import { closeEvents, initEvents, refreshEventsLanguage } from "./events.js";
 
 const $ = (id) => document.getElementById(id);
 // Links come from third-party data: only http(s) URLs are ever put in an href.
@@ -1609,6 +1610,7 @@ function refreshLanguage() {
   if (state.trip && state.trip.plans && Object.keys(state.trip.plans).length) renderBoard();
   if (!state.tripId && $("messages").children.length <= 1) { $("messages").innerHTML = ""; greet(); }
   refreshAccountLanguage();
+  refreshEventsLanguage();
   requestAnimationFrame(layoutGlobe);
 }
 $("langToggle").addEventListener("click", () => { setLang(getLang() === "ar" ? "en" : "ar"); refreshLanguage(); });
@@ -1650,6 +1652,7 @@ function resetTrip() {
 }
 function newTrip() {
   closeDash();
+  closeEvents();
   resetTrip();
   greet();
   setChatOpen(false);  // back to the two ways to start
@@ -1715,6 +1718,17 @@ function applyPrefs(prefs, force = false) {
   initAccount({
     openTrip, newTrip, openWizard, wikiImage, placeLabel, money, applyPrefs,
     tripDeleted: (id) => { if (state.tripId === id) newTrip(); },
+  });
+  $("acctBtn").addEventListener("click", closeEvents);  // the dashboard replaces the Events page
+  initEvents({
+    beforeOpen: closeDash,
+    // A trip around an event is a new trip: the open one stays saved in "My trips".
+    send: (message) => {
+      if (state.busy) return;
+      resetTrip();
+      greet();
+      send(message);
+    },
   });
   if (state.tripId) {
     const res = await fetch(`/api/trips/${state.tripId}`);

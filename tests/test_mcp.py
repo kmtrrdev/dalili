@@ -7,7 +7,7 @@ EXPECTED_TOOLS = {
     "flights": {"search_flights", "search_one_way_flights"},
     "hotels": {"search_hotels", "get_hotel_reviews", "get_hotel_offers"},
     "places": {"search_restaurants", "search_places"},
-    "activities": {"search_attractions", "search_events", "explore_destinations", "find_place"},
+    "activities": {"search_attractions", "search_events", "get_major_events", "explore_destinations", "find_place"},
     "transport": {"get_directions", "get_airport_transfers", "get_intercity_journeys"},
     "weather": {"get_weather_forecast"},
     "currency": {"get_exchange_rates", "convert_currency"},

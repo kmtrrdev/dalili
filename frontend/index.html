@@ -42,6 +42,9 @@
       <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" /></svg>
     </button>
     <button class="btn ghost lang" id="langToggle" type="button" data-i18n="langToggle">العربية</button>
+    <button class="btn ghost" id="eventsBtn" type="button" data-i18n-title="evNav">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8.5a2 2 0 0 0 0 4V17h18v-4.5a2 2 0 0 0 0-4V5H3zM9 5v2M9 10v2M9 15v2" /></svg><span data-i18n="evNav">Events</span>
+    </button>
     <button class="btn ghost" id="newTrip" type="button">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg><span data-i18n="newTrip">New trip</span>
     </button>
@@ -180,6 +183,14 @@
           <p id="forYouSub"></p></div>
           <button class="btn ghost small" type="button" id="forYouAll" data-i18n="fyAll">See all</button></div>
         <div class="recs" id="forYouRecs"></div>
+      </section>
+
+      <!-- World-famous events coming up (the Events page's soonest highlights). -->
+      <section class="home-sec ev-home" id="evHome" aria-labelledby="evHomeTitle" hidden>
+        <div class="sec-head row"><div><h2 id="evHomeTitle" data-i18n="evHomeTitle">Big events coming up</h2>
+          <p data-i18n="evHomeSub">Plan a trip around a championship, a festival or a celebration.</p></div>
+          <button class="btn ghost small" type="button" id="evHomeAll" data-i18n="fyAll">See all</button></div>
+        <div class="ev-grid ev-strip" id="evHomeList"></div>
       </section>
 
       <!-- Inspiration: more to do on the home page (all optional shortcuts into the search). -->
@@ -332,6 +343,21 @@
         </nav>
       </div>
       <div class="dash-body" id="dashBody"></div>
+    </div>
+  </section>
+
+  <!-- World-famous events in the coming months (events.js) -->
+  <section class="dash events-page" id="events" hidden aria-labelledby="evTitle">
+    <div class="dash-inner">
+      <div class="dash-top">
+        <button class="btn ghost" type="button" id="eventsBack">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" /></svg><span data-i18n="dashBack">Back to planning</span></button>
+        <select id="evCountry" class="ev-country" data-i18n-title="evAnyCountry"></select>
+      </div>
+      <div class="sec-head ev-head"><h2 id="evTitle" data-i18n="evTitle">Big events around the world</h2>
+        <p data-i18n="evSub"></p></div>
+      <nav class="seg dash-tabs ev-tabs" id="evTabs" role="tablist"></nav>
+      <div id="evBody"></div>
     </div>
   </section>
 

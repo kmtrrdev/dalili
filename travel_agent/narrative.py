@@ -100,6 +100,9 @@ def plan_facts(trip: TripState) -> dict[str, Any]:
     missing = famous_not_in_plan(trip)
     if missing:
         facts["famous_places_not_in_plan"] = missing
+    big = event_offers(trip)
+    if big:
+        facts["big_events_during_trip"] = big
     if trip.draft.find_cheapest and trip.metadata.get("found_budget"):
         for k in ("budget", "remaining", "within_budget"):  # the traveller gave no budget: nothing is "left over"
             facts.pop(k, None)
@@ -268,6 +271,27 @@ def _leg_text(f) -> str:
     return f"{f.origin} -> {f.destination} {f.depart_at:%a %d %b %H:%M}, {what}"
 
 
+def event_offers(trip: TripState) -> list[dict[str, Any]]:
+    """The world-famous events on during the trip (research.offer_major_events), as the reply and the trip agent
+    see them: where, when, how sure the dates are, the ticket, and whether it is in the plan already."""
+    plan = trip.selected_plan
+    in_plan = {i.place_id: d.day for d in plan.days for i in d.items if i.place_id} if plan else {}
+    out = []
+    for o in trip.metadata.get("event_offers") or []:
+        pid = (o.get("place") or {}).get("id")
+        t = o.get("ticket")
+        days = o.get("trip_days") or []
+        out.append({
+            "event": o["name"], "arabic_name": o.get("name_ar") or None, "where": o.get("city") or o["country_code"],
+            "on_your_trip": f"{days[0]} to {days[-1]}" if len(days) > 1 else (days[0] if days else None),
+            "dates": "usual dates (to confirm)" if o.get("dates_source") == "usual dates" else "confirmed",
+            "ticket": (f"from {t['amount']:g} {t['currency']} ({t['source']})" if t else "free or not published"),
+            "why": o.get("why"), "can_be_added": bool(pid),
+            "km_from_your_trip": o.get("km_from_trip"),
+            "in_plan_on_day": in_plan.get(pid) if pid else None})
+    return out
+
+
 def overnight_ideas(trip: TripState) -> list[str]:
     """Famous places too far for a day trip (e.g. Luxor from Cairo), best first."""
     if not trip.research:
@@ -390,6 +414,11 @@ Structure (short markdown, roughly 150-250 words - tight, no filler, never repea
    covers and what a bit more would buy, without pushing. Open the whole reply with 'selected_plan_idea'.
 6. If 'famous_places_not_in_plan' is non-empty, mention them as what an extra day (or a fuller pace) would add.
 7. If 'places_you_asked_for' is non-empty, say on which day each one is, or that it couldn't fit and why.
+8. If 'big_events_during_trip' is non-empty: an event already in the plan - say on which day. Otherwise mention the
+   one or two most relevant in a short line each (what, when, ticket) and ASK whether they'd like to attend; offer
+   'I want to attend <event>' as a suggestion in their language. One with can_be_added=false is elsewhere in the
+   country: say where (it would need a stop there). Call 'usual dates' usual dates, never confirmed. Never add one
+   yourself.
 If 'ai_estimated_data' is non-empty, say near the top that live search was unavailable for those parts, so they are AI
 estimates to double-check before booking. If 'multi_city_route' is present, show the route city by city first.
 If 'overnight_side_trip_ideas' is non-empty, add one line suggesting them as an optional overnight side trip.

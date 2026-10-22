@@ -50,8 +50,25 @@ A `.../chat/completions` endpoint still works for chat-completion models, and Cl
 - **Memory.**
   - *Short term:* the Trip State (draft, contract, plan, pending question) plus the last 6 chat messages (`memory.py`). The model sees both, so "the second one" or "التاني" resolves to the option just offered.
   - *Long term:* per-user learned preferences with confidence and evidence (`profile.learned`, inherited by new trips), account preferences, and the activity log the recommender learns from.
-- Every step is recorded in `trip.metadata["agent_trace"]`. Open `http://127.0.0.1:8000/?ai=1` for the **AI** tab that replays it.
+- Every step is recorded in `trip.metadata["agent_trace"]`; **How I answered**, under every reply, shows what each agent thought.
 - Tests (`tests/test_agents.py`) drive the agents with a scripted model over recorded real data.
+
+## World events (`providers/world_events.py`, the **Events** page)
+
+Championships, Grands Prix, world-famous festivals, carnivals and celebrations in the next ~13 months - one tap
+("Plan a trip for this") plans a trip around one. Free sources only, and nothing is shown unchecked:
+
+1. The model proposes the events (six areas in parallel, one of them the Arab world).
+2. Wikipedia must have the article (a redirect or search hit counts only when it is the same event and edition),
+   or the event is dropped. Wikidata says how famous it is (articles in other languages), and gives the dates when
+   the edition has them, the Arabic name and the official site.
+3. Otherwise the official website: the next edition's dates and cheapest ticket, each with a verbatim quote.
+   Dates nobody publishes are shown as **usual dates · confirm**, an unpublished ticket as an AI estimate.
+
+The catalogue is rebuilt in the background twice a day (~1 min). During a trip, the big events in its countries on
+its dates are **offered** in the reply ("Oktoberfest is on during your stay - from 25 EUR - want to go?"). A "yes" in
+any words makes the trip agent add it, and the planner puts it on one of its dates with its ticket in the budget.
+An event that wasn't accepted never enters a day, a cost estimate or the expert review.
 
 ## Accounts, dashboard and personal recommendations
 
@@ -253,7 +270,7 @@ START → understand ─┬→ answer (Wikivoyage RAG) ────────�
 | flight_mcp | `search_flights`, `search_one_way_flights` |
 | hotel_mcp | `search_hotels`, `get_hotel_reviews`, `get_hotel_offers` |
 | places_mcp | `search_restaurants`, `search_places` |
-| activities_mcp | `search_attractions`, `search_events`, `explore_destinations`, `find_place` |
+| activities_mcp | `search_attractions`, `search_events`, `get_major_events`, `explore_destinations`, `find_place` |
 | transport_mcp | `get_directions`, `get_airport_transfers`, `get_intercity_journeys` |
 | weather_mcp | `get_weather_forecast` |
 | currency_mcp | `get_exchange_rates`, `convert_currency` |
@@ -280,6 +297,7 @@ Each server runs standalone over stdio (`python -m travel_agent.mcp_servers.flig
 | GET | `/api/recommendations`, `/api/recommendations/similar?city=`, `/api/recommendations/map` | personal picks, similar places, taste map |
 | POST | `/api/activity` | `{kind: search \| view \| like \| dismiss, city}`: what the recommender learns from |
 | GET | `/api/recommendations/model` | the model's evaluation report |
+| GET | `/api/events?category=&country=` | world-famous events in the coming months (`complete=false` while still being checked) |
 
 ## Known limits
 

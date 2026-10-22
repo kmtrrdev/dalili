@@ -12,6 +12,7 @@ import logging
 import re
 import time
 import uuid
+from contextlib import asynccontextmanager
 from datetime import date
 from typing import Literal
 
@@ -25,6 +26,7 @@ from .auth import GUEST_COOKIE, GUEST_RE, SESSION_COOKIE, SESSION_DAYS, Accounts
 from .config import PROJECT_DIR, settings, today
 from .mcp_hub import SERVERS, get_hub
 from .models import PlanningMode
+from .providers import world_events
 import httpx
 
 from .security import MAX_MESSAGE_CHARS, client_ip, is_admin, limit_expensive, limit_light, limit_offers
@@ -36,7 +38,13 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(messag
 for noisy in ("httpx", "httpcore"):
     logging.getLogger(noisy).setLevel(logging.WARNING)
 
-app = FastAPI(title="Dalili", version="0.1.0",
+@asynccontextmanager
+async def _lifespan(_app: FastAPI):
+    world_events.refresh()  # the Events page's catalogue is checked in the background (~1 min), not on first visit
+    yield
+
+
+app = FastAPI(title="Dalili", version="0.1.0", lifespan=_lifespan,
               description="Plans, researches, optimizes and validates complete trips. It never books anything.")
 service = TravelAgentService()
 accounts = Accounts(service.store)
@@ -613,6 +621,19 @@ async def recommendations(limit: int = 8, who: Identity = Depends(identity)):
 async def similar_places(city: str, request: Request, limit: int = 6):
     limit_light(request)  # an unknown city is embedded on the fly (CPU): bounded per client
     return await _recommender().similar(city[:80], max(1, min(limit, 12)))
+
+
+@app.get("/api/events")
+async def major_events(request: Request, category: str | None = None, country: str | None = None):
+    """The Events page: world-famous events in the coming months (checked against Wikipedia, Wikidata and their
+    official sites). complete=false while the catalogue is still being checked."""
+    limit_light(request)
+    found, building = world_events.catalogue()
+    if category:
+        found = [e for e in found if e.category == category]
+    if country:
+        found = [e for e in found if e.country_code == country.upper()[:2]]
+    return {"complete": not building, "events": [e.model_dump(mode="json") for e in found]}
 
 
 @app.get("/api/recommendations/map")

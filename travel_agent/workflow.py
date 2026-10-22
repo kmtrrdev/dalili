@@ -586,13 +586,15 @@ async def research_setup(state: GraphState) -> GraphState:
     places = [(journey.stop_contract(c, i), x) for i, x in enumerate(info["stops"])] if c.is_multi else [(c, info)]
     _LOCAL_PRICES[trip.trip_id] = [research.start_local_prices(get_hub(), sc, x.get("currency", "USD"))
                                    for sc, x in places]
+    _EARLY_EVENTS[trip.trip_id] = asyncio.create_task(research.fetch_major_events(get_hub(), c))
     return {"r_info": info}
 
 
 # Work started early for a later step (trip id -> task): the flight search (awaited by its research branch), strategy
-# designs (awaited by plan()), each city's published prices (awaited by collect()), and the reply and hotel reviews
-# written while the expert reviews the plan (awaited by respond()).
+# designs (awaited by plan()), each city's published prices and the world-famous events during the trip (awaited by
+# collect()), and the reply and hotel reviews written while the expert reviews the plan (awaited by respond()).
 _EARLY_FLIGHTS: dict[str, "asyncio.Task"] = {}
+_EARLY_EVENTS: dict[str, "asyncio.Task"] = {}
 _EARLY_STRATEGY: dict[str, "asyncio.Task"] = {}
 _LOCAL_PRICES: dict[str, list[tuple["asyncio.Task", "asyncio.Task"]]] = {}
 _EARLY_REPLY: dict[str, "asyncio.Task"] = {}
@@ -617,6 +619,21 @@ def _review_lookups(trip: TripState) -> int:
     """Guest-review searches before choosing a hotel (each costs a credit): only for noise-sensitive travellers,
     where noise changes the choice. Everyone else gets reviews for the chosen hotel only (finalize)."""
     return settings.hotel_review_lookups if trip.traveler_profile.noise_tolerance == "low" else 0
+
+
+async def _offer_events(trip: TripState) -> None:
+    """The world-famous events on during the trip (fetched since research_setup) become offers for the reply."""
+    task = _EARLY_EVENTS.pop(trip.trip_id, None)
+    if task is None:
+        return
+    try:
+        found = await task
+    except Exception as exc:  # noqa: BLE001 - an offer is optional: never fail the research over it
+        log.info("major events skipped: %s", exc)
+        return
+    offers = research.offer_major_events(trip, found)
+    if offers:
+        trip.emit("events.offered", events=[o["name"] for o in offers])
 
 
 async def collect(state: GraphState) -> GraphState:
@@ -665,6 +682,7 @@ async def collect(state: GraphState) -> GraphState:
                                for i, b in enumerate(stops)))
         bundle = journey.merge_research(stops, legs, list(state.get("r_errors") or []) + (fl.get("errors", []) if fl else []))
         trip.research = bundle
+        await _offer_events(trip)
         trip.emit("journey.researched", stops=[s.name for s in c.stops],
                   legs=[len(x) for x in legs], errors=bundle.errors)
         return {}
@@ -686,6 +704,7 @@ async def collect(state: GraphState) -> GraphState:
     _EARLY_STRATEGY[trip.trip_id] = asyncio.create_task(strategist.design(trip))
     await research.enrich(get_hub(), bundle, trip.trip_contract, review_lookups=_review_lookups(trip),
                           local_prices=early[0] if len(early) == 1 else None)
+    await _offer_events(trip)
     for domain, n in (("flight", len(bundle.flights_outbound) + len(bundle.flights_return)), ("hotel", len(bundle.hotels)),
                       ("restaurant", len(bundle.restaurants)), ("activity", len(bundle.attractions)),
                       ("transfer", len(bundle.airport_transfers))):

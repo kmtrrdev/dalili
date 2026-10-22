@@ -75,6 +75,9 @@ The trip's stage (context.stage):
   -> change_plan with route_decision 'accept'. Anything else -> route_decision 'change', with `route` set to exactly
   the places they want when they say which, else route_change_request (in English) describing what to change.
 - "planned": the plan is in context (trip, plan_cards, money, day_titles). Answer about it, or change it.
+  context.big_events_during_trip lists world-famous events on during the trip, offered to the traveller in your
+  replies (never added on your own). Wanting to go -> change_plan, add_place with the event's exact name; one with
+  can_be_added=false is in another city of the country, reached by adding that city to the `route`.
 
 Answering:
 - Ground facts in tool observations or the context. Never invent places, prices, opening hours or times. General
@@ -260,6 +263,10 @@ def build_context(trip: TripState) -> dict[str, Any]:
         ctx["places_the_traveller_asked_for"] = asked
     if expert:
         ctx["places_your_expert_review_added"] = expert  # your picks, not the traveller's request
+    events = narrative.event_offers(trip)
+    if events:
+        # Offered in the replies, never added on our own: "yes, the festival" is an add_place with the event's name.
+        ctx["big_events_during_trip"] = events
     ctx["traveller"] = profile_summary(trip)
     if trip.metadata.get("pending_whatif_summary"):
         ctx["pending_what_if"] = trip.metadata["pending_whatif_summary"]

@@ -33,8 +33,8 @@ from .models import (
 )
 from .models import GeoPoint, ReviewInsights, RoundTrip
 from .providers import places as places_provider
-from .providers import routing
-from .utils import haversine_km
+from .providers import routing, world_events
+from .utils import WEEKDAYS, haversine_km, weekday_key
 
 log = logging.getLogger(__name__)
 
@@ -527,6 +527,7 @@ async def ensure_must_visit(hub: MCPHub, trip) -> list[str]:
     if not names or r is None or c is None:
         trip.user_knobs.must_include = []
         return []
+    admit_offered_events(trip, names)  # "I'll go to Oktoberfest": the offered event, on its own dates
     resolved: dict[str, str] = trip.metadata.setdefault("must_visit", {})
     bundles = r.stops or [r]
     notes, ids = [], []
@@ -673,6 +674,120 @@ async def find_places(hub: MCPHub, trip, names: list[str], stop: int | None = No
         if hit:
             ids.append(hit.id)
     return ids
+
+
+# ---------------------------------------------------------------------------
+# World-famous events during the trip: offered, never added without the traveller's yes
+# ---------------------------------------------------------------------------
+
+MAJOR_EVENT = "major_event"  # category of an offered event: the planner schedules it only when it is asked for
+EVENT_MINUTES = 240
+
+
+async def fetch_major_events(hub: MCPHub, contract: TripContract) -> list[world_events.WorldEvent]:
+    """The world-famous events in the trip's countries during its dates (empty on any failure)."""
+    refs = [s.ref for s in contract.stops] or ([contract.destination_ref] if contract.destination_ref else [])
+    codes = sorted({r.country_code.upper() for r in refs if r.country_code})
+    if not codes:
+        return []
+    try:
+        res = await hub.call("activities", "get_major_events", {"start_date": str(contract.start_date),
+                                                                 "end_date": str(contract.end_date),
+                                                                 "country_codes": codes})
+    except MCPToolError as exc:
+        log.info("major events unavailable: %s", exc)
+        return []
+    return [world_events.WorldEvent.model_validate(x) for x in res.get("results") or []]
+
+
+def _same_city(a: str, b: str) -> bool:
+    a, b = a.strip().lower(), b.strip().lower()
+    return bool(a and b) and (a in b or b in a)
+
+
+def _event_place(e: world_events.WorldEvent, days: list, bundle: ResearchBundle) -> Place:
+    """The event as a place on its own dates (the planner keeps it out of the days until the traveller asks)."""
+    info = bundle.destination_info
+    center = GeoPoint(lat=info["center"]["lat"], lon=info["center"]["lon"])
+    where = GeoPoint(lat=e.lat, lon=e.lon) if e.lat is not None and e.lon is not None else center
+    hours = {w: [] for w in WEEKDAYS}
+    for d in days:
+        hours[weekday_key(d)] = [["10:00", "22:00"]]
+    if e.ticket and e.ticket.source == "official site":
+        cost = Money(amount=e.ticket.amount, currency=e.ticket.currency, price_type="known",
+                     source=f"Official website · from {e.ticket.amount:g} {e.ticket.currency}")
+    elif e.ticket:
+        cost = Money(amount=e.ticket.amount, currency=e.ticket.currency, price_type="estimated",
+                     source="AI estimate · typical cheapest ticket")
+    else:
+        cost = Money(amount=0.0, currency=info.get("currency", "USD"), price_type="estimated",
+                     source="Free to attend, or price not published")
+    when = "dates from the official website" if e.dates_source == "official site" else \
+        "dates from Wikidata" if e.dates_source == "wikidata" else "usual dates - confirm them before booking"
+    p = Place(id=f"wev_{e.id}", name=e.name, kind="activity", categories=["event", MAJOR_EVENT, e.category],
+              location=where, rating=4.8, price_level=3, cost_per_person=cost, price_known=cost.price_type == "known",
+              price_checked=True, opening_hours=hours, hours_verified=False, dates=list(days),
+              duration_minutes=EVENT_MINUTES, indoor=False, popularity="must_see", description=e.why or e.description,
+              website=e.website or e.wikipedia,
+              notes=f"{e.name}: {e.start:%d %b} - {e.end:%d %b %Y} ({when}). Exact times and tickets on the official "
+                    "site.",
+              metadata=Metadata(source="activities_mcp", provider="Wikipedia · Wikidata · official site",
+                                confidence=0.9 if e.dates_source != "usual dates" else 0.6, source_url=e.wikipedia))
+    places_provider.tag_distance(p, center, info.get("name", ""))
+    return p
+
+
+def offer_major_events(trip, events: list[world_events.WorldEvent]) -> list[dict]:
+    """Big events during the trip, remembered as offers: the reply asks, the trip agent understands the answer.
+    One near a stop, on that stop's days, carries the dated place it becomes when the traveller says yes - it joins
+    the research only then (admit_offered_events), so an offer never changes the plan, its costs or the review."""
+    c, r = trip.trip_contract, trip.research
+    if c is None or r is None:
+        return []
+    bundles = r.stops or [r]
+    stops = [(s.ref, s.start_date, s.end_date) for s in c.stops] or [(c.destination_ref, c.start_date, c.end_date)]
+    stops = [(ref, a, b) for ref, a, b in stops if ref is not None]
+    offers = []
+    matches = world_events.during(events, c.start_date, c.end_date, {ref.country_code.upper() for ref, _, _ in stops},
+                                  [(ref.lat, ref.lon) for ref, _, _ in stops])
+    for e, days, km in matches[:6]:
+        offer = {"name": e.name, "name_ar": e.name_ar, "category": e.category, "city": e.city,
+                 "country_code": e.country_code, "event_dates": [str(e.start), str(e.end)],
+                 "dates_source": e.dates_source, "trip_days": [str(d) for d in days],
+                 "km_from_trip": round(km) if km is not None else None, "why": e.why, "why_ar": e.why_ar,
+                 "ticket": e.ticket.model_dump() if e.ticket else None, "url": e.website or e.wikipedia,
+                 "image": e.image, "stop": None, "place": None}
+        for i, (ref, a, b) in enumerate(stops):
+            near = (e.lat is not None and haversine_km(e.lat, e.lon, ref.lat, ref.lon) <= world_events.NEAR_KM) or \
+                (e.lat is None and _same_city(e.city, ref.name))
+            here = [d for d in days if a <= d <= b]
+            if near and here:
+                place = _event_place(e, here, bundles[i] if i < len(bundles) else bundles[0])
+                offer.update(stop=i, place=place.model_dump(mode="json"), trip_days=[str(d) for d in here],
+                             city=e.city or ref.name)
+                break
+        offers.append(offer)
+    trip.metadata["event_offers"] = offers
+    return offers
+
+
+def admit_offered_events(trip, names: list[str]) -> None:
+    """Offered events the traveller asked for (by name, in any wording the trip agent turned into the event's name)
+    join the research of their city, so the must-visit lookup finds them on their dates - no search needed."""
+    r = trip.research
+    offers = [o for o in trip.metadata.get("event_offers") or [] if o.get("place")]
+    if r is None or not offers:
+        return
+    bundles = r.stops or [r]
+    for name in names:
+        for o in offers:
+            place = Place.model_validate(o["place"])
+            if match_place(name, [place]) is None:
+                continue
+            home = bundles[o["stop"]] if o["stop"] is not None and o["stop"] < len(bundles) else bundles[0]
+            for b in {id(home): home, id(r): r}.values():  # the stop, and a tour's merged research
+                if not any(x.id == place.id for x in b.attractions):
+                    b.attractions.append(place)
 
 
 ROUTING_RADIUS_KM = 45  # day-trip sites further out use intercity estimates; far points break walking matrices

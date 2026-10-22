@@ -709,6 +709,8 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
             continue
         if "overnight_trip" in a.categories:
             continue  # suggested in the reply / Trip Book, never squeezed into a day
+        if "major_event" in a.categories and not forced:
+            continue  # a world-famous event (often a big ticket) is offered in the reply, added only when asked for
         ranked = score_attraction(a, ctx.profile, ctx.contract, ctx.mode, boosts)
         if a.day_trip:
             # Worth the journey only if it is famous; the further, the more it must earn its day.

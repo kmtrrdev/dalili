@@ -8,10 +8,11 @@ from mcp.server.mcpserver import MCPServer
 
 from .. import net
 from ..models import GeoPoint
-from ..providers import ai_fallback, events, flights, places
+from ..providers import ai_fallback, events, flights, places, world_events
 from . import envelope, error
 
-server = MCPServer("activities_mcp", instructions="Attractions, hidden gems, local events and destination ideas.")
+server = MCPServer("activities_mcp", instructions="Attractions, hidden gems, local and world-famous events, "
+                                                  "destination ideas.")
 
 
 @server.tool()
@@ -59,6 +60,23 @@ async def search_events(city: str, lat: float, lon: float, start_date: str, end_
     except net.ProviderError as exc:
         return error("event_search_result", "activities_mcp", q, str(exc))
     return envelope("event_search_result", "activities_mcp", q, results=res)
+
+
+@server.tool()
+async def get_major_events(start_date: str, end_date: str, country_codes: list[str] | None = None) -> dict:
+    """World-famous events people travel for (championships, Grands Prix, festivals, carnivals, celebrations) between
+    two dates, checked against Wikipedia, Wikidata and their official sites; country_codes (ISO alpha-2) keeps those
+    countries only. complete=false while the catalogue is still being checked."""
+    q = {"start_date": start_date, "end_date": end_date, "country_codes": country_codes}
+    try:
+        start, end = date.fromisoformat(start_date), date.fromisoformat(end_date)
+    except ValueError as exc:
+        return error("major_events_result", "activities_mcp", q, str(exc))
+    found, building = world_events.catalogue()
+    codes = {c.upper() for c in country_codes or []}
+    return envelope("major_events_result", "activities_mcp", q, complete=not building,
+                    results=[e.model_dump(mode="json") for e in found
+                             if e.end >= start and e.start <= end and (not codes or e.country_code in codes)])
 
 
 @server.tool()
