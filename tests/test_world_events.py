@@ -150,6 +150,8 @@ def test_an_event_is_offered_but_only_added_when_the_traveller_says_yes(rome):
     day, item = next((d, i) for d in trip.selected_plan.days for i in d.items if i.place_id == "wev_Q1")
     assert str(day.date) in film["trip_days"]
     assert (item.cost.amount, item.cost.currency, item.cost.price_type) == (40, "EUR", "known")  # 2 tickets
+    assert any(i.kind == "meal" and i.meal_type == "lunch" for i in day.items) or "Lunch at the venue" in item.notes
+    assert narrative.event_offers(trip)[0]["status"].startswith("IN THE PLAN")
     assert narrative.event_offers(trip)[0]["in_plan_on_day"] == day.day
 
 

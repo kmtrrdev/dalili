@@ -281,14 +281,17 @@ def event_offers(trip: TripState) -> list[dict[str, Any]]:
         pid = (o.get("place") or {}).get("id")
         t = o.get("ticket")
         days = o.get("trip_days") or []
+        day = in_plan.get(pid) if pid else None
         out.append({
             "event": o["name"], "arabic_name": o.get("name_ar") or None, "where": o.get("city") or o["country_code"],
+            "status": (f"IN THE PLAN on day {day} - never offer it again" if day else
+                       "offered, not in the plan" if pid else "offered, in another city of the country"),
             "on_your_trip": f"{days[0]} to {days[-1]}" if len(days) > 1 else (days[0] if days else None),
             "dates": "usual dates (to confirm)" if o.get("dates_source") == "usual dates" else "confirmed",
             "ticket": (f"from {t['amount']:g} {t['currency']} ({t['source']})" if t else "free or not published"),
             "why": o.get("why"), "can_be_added": bool(pid),
             "km_from_your_trip": o.get("km_from_trip"),
-            "in_plan_on_day": in_plan.get(pid) if pid else None})
+            "in_plan_on_day": day})
     return out
 
 
@@ -414,11 +417,11 @@ Structure (short markdown, roughly 150-250 words - tight, no filler, never repea
    covers and what a bit more would buy, without pushing. Open the whole reply with 'selected_plan_idea'.
 6. If 'famous_places_not_in_plan' is non-empty, mention them as what an extra day (or a fuller pace) would add.
 7. If 'places_you_asked_for' is non-empty, say on which day each one is, or that it couldn't fit and why.
-8. If 'big_events_during_trip' is non-empty: an event already in the plan - say on which day. Otherwise mention the
-   one or two most relevant in a short line each (what, when, ticket) and ASK whether they'd like to attend; offer
-   'I want to attend <event>' as a suggestion in their language. One with can_be_added=false is elsewhere in the
-   country: say where (it would need a stop there). Call 'usual dates' usual dates, never confirmed. Never add one
-   yourself.
+8. If 'big_events_during_trip' is non-empty, follow each event's 'status'. IN THE PLAN: say on which day (and its
+   ticket) - never ask about it or suggest it again. Offered: mention the one or two most relevant in a short line
+   each (what, when, ticket) and ASK whether they'd like to attend; offer 'I want to attend <event>' as a suggestion
+   in their language; one in another city would need a stop there. Call 'usual dates' usual dates, never confirmed.
+   Never add one yourself.
 If 'ai_estimated_data' is non-empty, say near the top that live search was unavailable for those parts, so they are AI
 estimates to double-check before booking. If 'multi_city_route' is present, show the route city by city first.
 If 'overnight_side_trip_ideas' is non-empty, add one line suggesting them as an optional overnight side trip.

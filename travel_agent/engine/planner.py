@@ -648,13 +648,14 @@ def day_bounds(a: Place, slot: DaySlot) -> tuple[int, int]:
     kind = time_of_day(a)
     if kind == "sunrise" and slot.kind == "full":
         return 0, slot.end
-    if kind == "sunset" and slot.kind in ("full", "arrival"):
-        return slot.start, max(slot.end, 22 * 60)
+    if (kind == "sunset" or "major_event" in a.categories) and slot.kind in ("full", "arrival"):
+        return slot.start, max(slot.end, 22 * 60)  # a race, a final or a festival runs into the evening
     return slot.start, slot.end
 
 
 def _covers_lunch(a: Place) -> bool:
-    """A long food experience, or a big event: lunch happens there."""
+    """A long food experience, or a big event (people eat at the festival, the circuit or the stadium): when it runs
+    over lunchtime, lunch happens there."""
     return a.kind == "activity" and a.duration_minutes >= 120 and bool({"food", "major_event"} & set(a.categories))
 
 
@@ -1204,9 +1205,9 @@ class DayBuilder:
         stops = [Stop(r.item.id, r.item.location, r.item.duration_minutes,
                       [(o, min(c, own_end[r.item.id])) for o, c in self.windows(r.item) if min(c, own_end[r.item.id]) > o],
                       max(r.score, 0.05)) for r in activities]
-        # A long food experience (cooking class, food tour) doubles as lunch - so does a big event (people eat at the
-        # festival, the circuit or the stadium).
-        meal_experience = any(_covers_lunch(r.item) for r in activities)
+        # A long food experience (cooking class, food tour) doubles as lunch.
+        meal_experience = any(r.item.kind == "activity" and "food" in r.item.categories and r.item.duration_minutes >= 120
+                              for r in activities)
         lunch_window = None if (self.lunch_done or meal_experience) else (12 * 60, 13 * 60 + 45)
 
         def travel(a: GeoPoint, b: GeoPoint) -> int:
