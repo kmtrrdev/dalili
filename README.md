@@ -85,9 +85,9 @@ python -m travel_agent.recommender.finetune --tune   # teacher (cached) -> fine-
 
 | Domain | Source | Used for |
 |---|---|---|
-| Flights | **SerpApi** Google Flights, Flights Autocomplete, Flights Deals | real fares & schedules, airport/city ids, deal ideas |
-| Hotels | **SerpApi** Google Hotels, Hotels Reviews, Hotels Photos, Hotels Autocomplete | real nightly prices, ratings, amenities, noise from guest reviews, photos |
-| Places / food | **SerpApi** Google Maps, Google Local, Maps Reviews | restaurants & sights with real opening hours, ratings, review counts, price ranges |
+| Flights | **SerpApi** Google Flights, Flights Autocomplete | real fares & schedules, airport/city ids |
+| Hotels | **SerpApi** Google Hotels, Hotels Reviews | real nightly prices, ratings, amenities, noise from guest reviews |
+| Places / food | **SerpApi** Google Maps (+ web search for menus) | restaurants & sights with real opening hours, ratings, review counts, price ranges |
 | Activities | **SerpApi** Google Maps + Google Events (falls back to Google Search events) + Travel Explore; **OpenTripMap** | top sights, less-visited places with Wikipedia descriptions, local events, destination ideas |
 | Transport | **SerpApi** Google Maps Directions; **openrouteservice** matrices | airport transfer times (transit / driving); real walking & driving times between every stop |
 | Geocoding | **Geoapify** + Google Flights autocomplete | coordinates, country, timezone, airports |
@@ -211,6 +211,8 @@ $env:RECORD="1"; .\.venv\Scripts\python -m pytest   # re-record after changing q
 Live, uncached (measured): a new trip's plan is on screen after about 55 s and the whole answer takes about 70 s (live searches, price research and an expert review; the same trip took 88 s before the slow steps were overlapped); a change to a plan about 20–30 s; a question about 10–15 s. The plan is shown as soon as it is built, while the expert reviews it and the reply is written alongside the review. Under every reply, **How I answered** shows the route the message took and where the time went.
 
 ## Architecture
+
+![Dalili 2.0 system architecture](docs/architecture.svg)
 
 ```text
             chat UI + live trip board (frontend/)  ──  FastAPI (api.py)  ──  service.py (sessions, what-if, SQLite)
