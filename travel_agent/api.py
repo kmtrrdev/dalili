@@ -25,6 +25,7 @@ from . import llm, seo, telemetry, tripbook
 from .auth import GUEST_COOKIE, GUEST_RE, SESSION_COOKIE, SESSION_DAYS, Accounts, AuthError, Identity, new_guest_id
 from .config import PROJECT_DIR, settings, today
 from .mcp_hub import SERVERS, get_hub
+from .agents import landmark
 from .models import PlanningMode
 from .providers import world_events
 import httpx
@@ -634,6 +635,36 @@ async def major_events(request: Request, category: str | None = None, country: s
     if country:
         found = [e for e in found if e.country_code == country.upper()[:2]]
     return {"complete": not building, "events": [e.model_dump(mode="json") for e in found]}
+
+
+class LandmarkIn(BaseModel):
+    # A photo resized by the page (~1280 px JPEG, a few hundred KB): read once, never stored.
+    image: str = Field(max_length=3_000_000, pattern=r"^data:image/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+$")
+    lang: Literal["en", "ar"] = "en"
+
+
+class LandmarkAskIn(BaseModel):
+    title: str = Field(min_length=1, max_length=200)
+    question: str = Field(min_length=1, max_length=500)
+    history: list[dict] = Field(default_factory=list, max_length=12)
+    lang: Literal["en", "ar"] = "en"
+
+
+@app.post("/api/landmarks/identify")
+async def identify_landmark(body: LandmarkIn, request: Request, who: Identity = Depends(identity)):
+    """The landmark in a photo, checked against Wikipedia, with a guide written from its article."""
+    limit_expensive(request, who.id)
+    return await landmark.identify(body.image, body.lang)
+
+
+@app.post("/api/landmarks/ask")
+async def ask_landmark(body: LandmarkAskIn, request: Request, who: Identity = Depends(identity)):
+    """A question about a recognised landmark, answered from its Wikipedia article."""
+    limit_expensive(request, who.id)
+    out = await landmark.ask(body.title, body.question, body.history, body.lang)
+    if out is None:
+        raise HTTPException(503, "The guide is unavailable right now")
+    return out
 
 
 @app.get("/api/recommendations/map")

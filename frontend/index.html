@@ -68,6 +68,9 @@
       <div class="messages" id="messages" role="log" aria-live="polite"></div>
       <div class="chips" id="chips"></div>
       <form class="composer" id="composer">
+        <button class="cam-btn" type="button" data-landmark data-i18n-title="lmOpen">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3.2l1.8-2.6h6l1.8 2.6H20v11H4z" /><circle cx="12" cy="13.2" r="3.6" /></svg>
+        </button>
         <textarea id="input" rows="1" dir="auto" maxlength="4000" data-i18n-ph="inputPh" aria-label="Message" required></textarea>
         <button class="send" id="send" type="submit" aria-label="Send">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-2.5-6.5z" /></svg>
@@ -94,6 +97,7 @@
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-2.5-6.5z" /></svg></button>
             </form>
             <div class="examples" id="examples"></div>
+            <button class="lm-home" type="button" data-landmark><span aria-hidden="true">📷</span><span data-i18n="lmOpen">What's this place? Recognise it from a photo</span></button>
           </div>
 
           <div class="or"><span data-i18n="or">or</span></div>

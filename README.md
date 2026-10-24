@@ -53,6 +53,19 @@ A `.../chat/completions` endpoint still works for chat-completion models, and Cl
 - Every step is recorded in `trip.metadata["agent_trace"]`; **How I answered**, under every reply, shows what each agent thought.
 - Tests (`tests/test_agents.py`) drive the agents with a scripted model over recorded real data.
 
+## Landmark camera (`agents/landmark.py`)
+
+📷 in the chat box (or "What's this place?" on the home page): a photo of a monument, a mosque, a bridge… becomes
+the place it shows and a guide to it you can question, then "Plan a trip here".
+
+1. The photo is resized on the device (~1280 px) and read by gpt-5-mini (it sees images); it is never stored.
+2. The model names the landmark (its English Wikipedia title, up to two alternatives) or says it can't tell.
+3. Wikipedia must have the article, about the same subject, with coordinates - and Wikidata's country must agree
+   with the model's. Otherwise the next alternative is tried (then shown only as a best guess), then "not sure".
+4. The guide (what it is, history, visiting tips) and every answer afterwards are written from the article's text,
+   in the traveller's language. Live: the Treasury at Petra, the Sagrada Família and the Trevi Fountain recognised
+   in 6-15 s; a cat photo is "not a landmark".
+
 ## World events (`providers/world_events.py`, the **Events** page)
 
 Championships, Grands Prix, world-famous festivals, carnivals and celebrations in the next ~13 months - one tap

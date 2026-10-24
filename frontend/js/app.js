@@ -2,6 +2,7 @@ import { Globe } from "./globe.js";
 import { applyStatic, getLang, locale, setLang, t } from "./i18n.js";
 import { CURRENCIES, INTERESTS, closeDash, esc, initAccount, logActivity, onTripPlanned, refreshAccountLanguage } from "./account.js";
 import { closeEvents, initEvents, refreshEventsLanguage } from "./events.js";
+import { initLandmarks } from "./landmark.js";
 
 const $ = (id) => document.getElementById(id);
 // Links come from third-party data: only http(s) URLs are ever put in an href.
@@ -1720,16 +1721,15 @@ function applyPrefs(prefs, force = false) {
     tripDeleted: (id) => { if (state.tripId === id) newTrip(); },
   });
   $("acctBtn").addEventListener("click", closeEvents);  // the dashboard replaces the Events page
-  initEvents({
-    beforeOpen: closeDash,
-    // A trip around an event is a new trip: the open one stays saved in "My trips".
-    send: (message) => {
-      if (state.busy) return;
-      resetTrip();
-      greet();
-      send(message);
-    },
-  });
+  // A trip around an event or a photographed landmark is a new trip: the open one stays saved in "My trips".
+  const startTrip = (message) => {
+    if (state.busy) return;
+    resetTrip();
+    greet();
+    send(message);
+  };
+  initEvents({ beforeOpen: closeDash, send: startTrip });
+  initLandmarks({ modal, closeModal, md, send: startTrip });
   if (state.tripId) {
     const res = await fetch(`/api/trips/${state.tripId}`);
     if (res.ok) {

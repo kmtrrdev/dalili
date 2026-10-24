@@ -20,7 +20,6 @@ import re
 import time
 from datetime import date, timedelta
 from typing import Literal
-from urllib.parse import quote
 
 from pydantic import BaseModel, Field
 
@@ -28,6 +27,7 @@ from .. import llm, net
 from ..config import today
 from ..utils import haversine_km
 from .local_prices import _squash
+from . import wiki
 from .official_prices import _num_in, page_text, price_links
 
 log = logging.getLogger(__name__)
@@ -124,77 +124,6 @@ async def _propose(group: str, start: date, end: date) -> list[Proposed]:
     return out.events if out else []
 
 
-# ---------------------------------------------------------------------------------------------- 2-3. Wikipedia and Wikidata
-
-WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/"
-WIKIDATA = "https://www.wikidata.org/w/api.php"
-
-
-async def _summary(title: str) -> dict | None:
-    try:
-        data = await net.fetch_json("wikipedia", WIKI_SUMMARY + quote(title.replace(" ", "_"), safe=""), ttl_s=7 * net.DAY)
-    except net.ProviderError:
-        return None
-    if not isinstance(data, dict) or data.get("type") != "standard" or not data.get("wikibase_item"):
-        return None  # missing, a disambiguation page, or no Wikidata item
-    return data
-
-
-def _words(s: str) -> set[str]:
-    return {w for w in re.findall(r"[a-z0-9]+", _squash(s)) if w not in {"the", "of", "in", "and", "de", "s", "festival"}}
-
-
-def same_subject(asked: str, found: str) -> bool:
-    """An article found for a title (by redirect or search) is about it: most of the article's name is in the title,
-    and it is the same edition - never "Derry" for "Halloween in Derry", "2026 Giro d'Italia" for the 2027 one, or
-    the whole season for "2027 Monaco Grand Prix"."""
-    a, f = _words(asked), _words(found)
-    if not f or len(f & a) < max(1, (2 * len(f) + 2) // 3):
-        return False
-    years = lambda s: set(re.findall(r"\b(?:19|20)\d\d\b", s))  # noqa: E731
-    return not years(found) or years(found) == years(asked)
-
-
-async def _wikipedia(title: str) -> dict | None:
-    """The article about this title: the page itself (or where it redirects, when that is still the same subject),
-    else Wikipedia's search under the same condition."""
-    hit = await _summary(title)
-    if hit is not None:
-        return hit if same_subject(title, hit.get("title", "")) else None
-    try:
-        res = await net.fetch_json("wikipedia", "https://en.wikipedia.org/w/api.php", {
-            "action": "query", "list": "search", "srsearch": title, "srlimit": 1, "format": "json"}, ttl_s=7 * net.DAY)
-        found = ((res.get("query") or {}).get("search") or [{}])[0].get("title")
-    except (net.ProviderError, AttributeError, IndexError):
-        return None
-    return await _summary(found) if found and same_subject(title, found) else None
-
-
-def _claim(entity: dict, prop: str) -> list:
-    return [c["mainsnak"].get("datavalue", {}).get("value") for c in entity.get("claims", {}).get(prop, [])
-            if c.get("mainsnak", {}).get("snaktype") == "value"]
-
-
-def _day(value) -> date | None:
-    """A Wikidata time known to the day ('+2027-06-24T00:00:00Z', precision 11)."""
-    if not isinstance(value, dict) or value.get("precision", 0) < 11:
-        return None
-    try:
-        return date.fromisoformat(value["time"][1:11])
-    except (KeyError, ValueError):
-        return None
-
-
-async def _wikidata(qid: str) -> dict | None:
-    try:
-        data = await net.fetch_json("wikidata", WIKIDATA, {"action": "wbgetentities", "ids": qid, "format": "json",
-                                                          "props": "claims|sitelinks|labels", "languages": "en|ar"},
-                                    ttl_s=7 * net.DAY)
-    except net.ProviderError:
-        return None
-    return (data.get("entities") or {}).get(qid) if isinstance(data, dict) else None
-
-
 # ---------------------------------------------------------------------------------------------- 4. the official website
 
 class Edition(BaseModel):
@@ -256,18 +185,19 @@ def _iso(s: str | None) -> date | None:
 
 async def verify(p: Proposed, window: tuple[date, date], min_fame: int = MIN_FAME) -> WorldEvent | None:
     """The proposed event as the sources confirm it, or None (no article, not famous enough, outside the window)."""
-    wiki = await _wikipedia(p.title)
+    article = await wiki.find_article(p.title)
     edition = re.match(r"^(?:19|20)\d\d\s+(.+)$", p.title)
-    if wiki is None and edition:
-        wiki = await _wikipedia(edition.group(1))  # no article for this year's edition yet: the event's own
-    if wiki is None:
+    if article is None and edition:
+        article = await wiki.find_article(edition.group(1))  # no article for this year's edition yet: the event's own
+    if article is None:
         return None
-    qid = wiki["wikibase_item"]
-    entity = await _wikidata(qid) or {}
-    fame = len(entity.get("sitelinks") or {})
+    qid = article["wikibase_item"]
+    item = await wiki.entity(qid) or {}
+    fame = len(item.get("sitelinks") or {})
     if fame < min_fame:
         return None
-    start, end = _day(next(iter(_claim(entity, "P580")), None)), _day(next(iter(_claim(entity, "P582")), None))
+    start = wiki.day(next(iter(wiki.claim(item, "P580")), None))
+    end = wiki.day(next(iter(wiki.claim(item, "P582")), None))
     source, dates_quote = "wikidata", None
     if not (start and window[0] <= start <= window[1]):
         start, end, source = None, None, "usual dates"
@@ -275,14 +205,14 @@ async def verify(p: Proposed, window: tuple[date, date], min_fame: int = MIN_FAM
     if start is None and year.isdigit() and not edition:
         # A recurring event (a Grand Prix, a Grand Slam): this year's edition often has its own article with the
         # exact dates on Wikidata ("2026 Qatar Grand Prix").
-        asked = f"{year} {wiki.get('title') or p.title}"
-        this_year = await _summary(asked)
-        dated = await _wikidata(this_year["wikibase_item"]) \
-            if this_year and same_subject(asked, this_year.get("title", "")) else None
-        s = _day(next(iter(_claim(dated or {}, "P580")), None))
+        asked = f"{year} {article.get('title') or p.title}"
+        this_year = await wiki.summary(asked)
+        dated = await wiki.entity(this_year["wikibase_item"]) \
+            if this_year and wiki.same_subject(asked, this_year.get("title", "")) else None
+        s = wiki.day(next(iter(wiki.claim(dated or {}, "P580")), None))
         if s and window[0] <= s <= window[1]:
-            start, end, source = s, _day(next(iter(_claim(dated, "P582")), None)) or s, "wikidata"
-    site = next((s for s in _claim(entity, "P856") if isinstance(s, str)), None)
+            start, end, source = s, wiki.day(next(iter(wiki.claim(dated, "P582")), None)) or s, "wikidata"
+    site = next((s for s in wiki.claim(item, "P856") if isinstance(s, str)), None)
     ticket = None
     if site:
         ed, text, url = await _official(p.title, site, window)
@@ -303,17 +233,18 @@ async def verify(p: Proposed, window: tuple[date, date], min_fame: int = MIN_FAM
         return None
     if ticket is None and p.ticket_from and p.ticket_currency and not p.free:
         ticket = Ticket(amount=p.ticket_from, currency=p.ticket_currency.upper(), source="AI estimate")
-    coords = wiki.get("coordinates") or {}
-    point = next((c for c in _claim(entity, "P625") if isinstance(c, dict)), None)
+    coords = article.get("coordinates") or {}
+    point = next((c for c in wiki.claim(item, "P625") if isinstance(c, dict)), None)
     lat = coords.get("lat") if coords else (point or {}).get("latitude")
     lon = coords.get("lon") if coords else (point or {}).get("longitude")
-    labels = entity.get("labels") or {}
+    labels = item.get("labels") or {}
     return WorldEvent(
-        id=qid, name=wiki.get("title") or p.title, name_ar=(labels.get("ar") or {}).get("value", ""),
-        category=p.category, city=p.city, city_ar=p.city_ar, country_code=p.country_code.upper()[:2], lat=lat, lon=lon, start=start, end=end,
+        id=qid, name=article.get("title") or p.title, name_ar=(labels.get("ar") or {}).get("value", ""),
+        category=p.category, city=p.city, city_ar=p.city_ar, country_code=p.country_code.upper()[:2], lat=lat, lon=lon,
+        start=start, end=end,
         dates_source=source, dates_quote=dates_quote, why=p.why, why_ar=p.why_ar,
-        description=(wiki.get("extract") or "")[:420], image=(wiki.get("thumbnail") or {}).get("source"),
-        wikipedia=((wiki.get("content_urls") or {}).get("desktop") or {}).get("page") or "",
+        description=(article.get("extract") or "")[:420], image=(article.get("thumbnail") or {}).get("source"),
+        wikipedia=((article.get("content_urls") or {}).get("desktop") or {}).get("page") or "",
         website=site, fame=fame, ticket=ticket)
 
 

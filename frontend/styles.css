@@ -1286,6 +1286,37 @@ html[data-theme="light"] .tm-me text { fill: #9a6200; }
   .ev-country { max-width: none; width: 100%; }
 }
 
+/* ================================================================ the landmark camera (landmark.js) */
+.cam-btn { flex: none; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 14px; cursor: pointer;
+  border: 1px solid var(--line-strong); background: var(--surface-2); color: var(--muted); transition: all .2s; }
+.cam-btn:hover { color: var(--teal); border-color: var(--teal); }
+.cam-btn svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
+.lm-home { display: flex; align-items: center; gap: 8px; width: 100%; margin-top: 10px; padding: 10px 12px; border-radius: 12px;
+  cursor: pointer; text-align: start; color: var(--ink); font: 600 13px var(--font); border: 1px dashed var(--line-strong);
+  background: color-mix(in srgb, var(--teal) 6%, transparent); transition: border-color .2s; }
+.lm-home:hover { border-color: var(--teal); }
+.lm-photo { position: relative; height: 230px; background: #0c1426 center / cover no-repeat; overflow: hidden; }
+.lm-scan { position: absolute; inset-inline: 0; height: 3px; top: 0; background: linear-gradient(90deg, transparent, var(--teal), transparent);
+  box-shadow: 0 0 18px var(--teal); animation: lmScan 1.8s ease-in-out infinite alternate; }
+@keyframes lmScan { to { top: calc(100% - 3px); } }
+@media (prefers-reduced-motion: reduce) { .lm-scan { animation: none; } }
+.lm-wait { display: grid; justify-items: center; gap: 8px; text-align: center; }
+.lm-wait b { font: 700 16px var(--display); }
+.lm-conf { position: absolute; top: 12px; inset-inline-start: 12px; padding: 4px 11px; border-radius: 999px; font: 700 12px var(--display);
+  background: rgba(6, 12, 24, .8); color: #fff; backdrop-filter: blur(6px); }
+.lm-conf.high { background: linear-gradient(135deg, var(--teal), #36b7ff); color: var(--teal-ink); }
+.lm-yours { position: absolute; bottom: 10px; inset-inline-end: 10px; width: 74px; height: 74px; object-fit: cover; border-radius: 12px;
+  border: 2px solid #fff; box-shadow: 0 6px 18px rgba(0, 0, 0, .4); }
+.lm h4 { margin: 14px 0 6px; font: 700 14px var(--display); color: var(--teal); }
+.lm-list { margin: 0; padding-inline-start: 18px; display: grid; gap: 4px; font-size: 13.5px; line-height: 1.45; }
+.lm-chat { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line); display: grid; gap: 8px; }
+.lm-msgs { display: flex; flex-direction: column; gap: 8px; }
+.lm-msgs .msg { max-width: 92%; }
+.lm-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.lm-chips .chip { flex: 0 1 auto; max-width: 100%; white-space: normal; text-align: start; }
+.lm .msg.user { color: #fff; }
+.lm-fail { font-size: 15px; line-height: 1.5; }
+
 /* Link to the travel guides (crawlable internal link from the home page) */
 .guides-link { text-decoration: none; }
 @media (max-width: 720px) { .guides-link { display: none; } }

@@ -47,9 +47,9 @@ def _sources(monkeypatch, entity: dict, edition: we.Edition | None = None, page:
     async def no_edition_article(title):
         return None
 
-    monkeypatch.setattr(we, "_wikipedia", wikipedia)
-    monkeypatch.setattr(we, "_summary", no_edition_article)
-    monkeypatch.setattr(we, "_wikidata", wikidata)
+    monkeypatch.setattr(we.wiki, "find_article", wikipedia)
+    monkeypatch.setattr(we.wiki, "summary", no_edition_article)
+    monkeypatch.setattr(we.wiki, "entity", wikidata)
     monkeypatch.setattr(we, "_official", official)
 
 
@@ -98,8 +98,8 @@ def test_this_years_edition_article_gives_exact_dates(monkeypatch):
     async def wikidata(qid):
         return edition if qid == "Q2027" else _entity(80)
 
-    monkeypatch.setattr(we, "_summary", summary)
-    monkeypatch.setattr(we, "_wikidata", wikidata)
+    monkeypatch.setattr(we.wiki, "summary", summary)
+    monkeypatch.setattr(we.wiki, "entity", wikidata)
     ev = anyio.run(we.verify, _proposed(start="2027-09-20", end="2027-10-05"), WINDOW)
     assert (ev.start, ev.end, ev.dates_source) == (date(2027, 9, 18), date(2027, 10, 3), "wikidata")
 
@@ -111,12 +111,12 @@ def test_a_search_hit_for_another_edition_is_refused(monkeypatch):
     async def search(service, url, params=None, **kw):
         return {"query": {"search": [{"title": "2026 Giro d'Italia"}]}}
 
-    monkeypatch.setattr(we, "_summary", summary)
-    monkeypatch.setattr(we.net, "fetch_json", search)
-    assert anyio.run(we._wikipedia, "2027 Giro d'Italia") is None
+    monkeypatch.setattr(we.wiki, "summary", summary)
+    monkeypatch.setattr(we.wiki.net, "fetch_json", search)
+    assert anyio.run(we.wiki.find_article, "2027 Giro d'Italia") is None
     # Wikipedia redirects an edition without its own page to the season: that's not the race.
-    assert not we.same_subject("2027 Monaco Grand Prix", "2027 Formula One World Championship")
-    assert we.same_subject("Mardi Gras (New Orleans)", "Mardi Gras in New Orleans")
+    assert not we.wiki.same_subject("2027 Monaco Grand Prix", "2027 Formula One World Championship")
+    assert we.wiki.same_subject("Mardi Gras (New Orleans)", "Mardi Gras in New Orleans")
 
 
 def test_events_are_matched_to_the_trips_countries_and_days():

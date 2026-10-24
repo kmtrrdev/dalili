@@ -175,12 +175,22 @@ def _json_block(text: str) -> str:
     return text[start:end + 1] if start >= 0 and end > start else text
 
 
-async def _azure_parse(system: str, user: str, schema: type[T], effort: str | None = None) -> T | None:
+def _azure_user(user: str, images: list[str] | None) -> str | list[dict]:
+    """The user turn: text, plus pictures (data: URLs) in the shape the endpoint's API expects."""
+    if not images:
+        return user
+    if _uses_responses_api():
+        return [{"type": "input_text", "text": user}] + [{"type": "input_image", "image_url": i} for i in images]
+    return [{"type": "text", "text": user}] + [{"type": "image_url", "image_url": {"url": i}} for i in images]
+
+
+async def _azure_parse(system: str, user: str, schema: type[T], effort: str | None = None,
+                       images: list[str] | None = None) -> T | None:
     js = schema.model_json_schema()
     content = await _azure_chat(
         [{"role": "system", "content": system + "\n\nAnswer with a single JSON object that matches this JSON schema:\n"
                                                   + json.dumps(js)},
-         {"role": "user", "content": user}],
+         {"role": "user", "content": _azure_user(user, images)}],
         max_tokens=6000,
         response_format={"type": "json_schema", "json_schema": {"name": schema.__name__, "schema": js, "strict": False}},
         effort=effort,
@@ -206,11 +216,23 @@ def _get_client():
     return _client
 
 
-async def _claude_parse(system: str, user: str, schema: type[T], max_tokens: int) -> T | None:
+def _claude_user(user: str, images: list[str] | None) -> str | list[dict]:
+    if not images:
+        return user
+    blocks = []
+    for i in images:  # data:image/jpeg;base64,....
+        head, _, data = i.partition(",")
+        blocks.append({"type": "image", "source": {"type": "base64", "data": data,
+                                                    "media_type": head.removeprefix("data:").split(";")[0]}})
+    return blocks + [{"type": "text", "text": user}]
+
+
+async def _claude_parse(system: str, user: str, schema: type[T], max_tokens: int,
+                        images: list[str] | None = None) -> T | None:
     try:
         response = await _get_client().beta.messages.parse(
             model=settings.model, max_tokens=max_tokens, system=system,
-            messages=[{"role": "user", "content": user}], thinking={"type": "adaptive"},
+            messages=[{"role": "user", "content": _claude_user(user, images)}], thinking={"type": "adaptive"},
             output_config={"effort": settings.effort}, output_format=schema,
             betas=[FALLBACK_BETA], fallbacks="default",
         )
@@ -277,23 +299,25 @@ async def _bounded(coro, timeout: float | None):
 
 
 async def parse(system: str, user: str, schema: type[T], max_tokens: int = 16000, effort: str | None = None,
-                timeout: float | None = None) -> T | None:
+                timeout: float | None = None, images: list[str] | None = None) -> T | None:
     """Structured output call. Returns None on any failure so callers can fall back.
     `effort` (minimal / low / medium / high) applies to reasoning models; None uses the configured default.
+    `images`: pictures as data: URLs (a traveller's photo), read with the text.
     The same request within a few hours is answered from memory (research extraction - guide tariffs, menus, price
     estimates - repeats across turns of one trip); only successful answers are kept, and each hit is a fresh copy."""
     p = provider()
     if p is None:
         return None
-    key = _cache_key(p, system, user, schema, effort)
+    key = _cache_key(p, system, user + "".join(hashlib.sha256(i.encode()).hexdigest() for i in images or []),
+                     schema, effort)
     hit = _PARSE_CACHE.get(key)
     if hit and time.time() - hit[0] < PARSE_CACHE_TTL_S:
         _PARSE_CACHE.move_to_end(key)
         telemetry.record_model_call(schema.__name__, 0, True, cached=True)
         return hit[1].model_copy(deep=True)  # type: ignore[return-value]
     started = time.perf_counter()
-    out = await _bounded(_azure_parse(system, user, schema, effort) if p == "azure" else
-                         _claude_parse(system, user, schema, max_tokens), timeout)
+    out = await _bounded(_azure_parse(system, user, schema, effort, images) if p == "azure" else
+                         _claude_parse(system, user, schema, max_tokens, images), timeout)
     telemetry.record_model_call(schema.__name__, (time.perf_counter() - started) * 1000, out is not None)
     if out is not None:
         _PARSE_CACHE[key] = (time.time(), out.model_copy(deep=True))
