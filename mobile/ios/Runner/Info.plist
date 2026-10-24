@@ -77,5 +77,10 @@
 		<string>en</string>
 		<string>ar</string>
 	</array>
+	<!-- The landmark camera: a photo of a place, read once to recognise it (never stored). -->
+	<key>NSCameraUsageDescription</key>
+	<string>Take a photo of a landmark and Dalili tells you what it is.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Choose a photo of a landmark and Dalili tells you what it is.</string>
 </dict>
 </plist>
