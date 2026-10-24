@@ -189,6 +189,13 @@
         <div class="recs" id="forYouRecs"></div>
       </section>
 
+      <!-- Hajj & Umrah: the guide and an Umrah planned around the prayers. -->
+      <button class="home-sec pg-home" type="button" data-pilgrimage>
+        <span class="pg-home-ic" aria-hidden="true">🕋</span>
+        <span class="pg-home-t"><b data-i18n="pgHomeT">Hajj &amp; Umrah</b><small data-i18n="pgHomeS"></small></span>
+        <span class="btn primary small" data-i18n="pgOpen">Open the guide</span>
+      </button>
+
       <!-- World-famous events coming up (the Events page's soonest highlights). -->
       <section class="home-sec ev-home" id="evHome" aria-labelledby="evHomeTitle" hidden>
         <div class="sec-head row"><div><h2 id="evHomeTitle" data-i18n="evHomeTitle">Big events coming up</h2>
@@ -347,6 +354,26 @@
         </nav>
       </div>
       <div class="dash-body" id="dashBody"></div>
+    </div>
+  </section>
+
+  <!-- Hajj & Umrah: the guide, prayer times and an Umrah handed to the planner (pilgrimage.js) -->
+  <section class="dash pilgrimage-page" id="pilgrimage" hidden aria-labelledby="pgTitle">
+    <div class="dash-inner">
+      <div class="dash-top">
+        <button class="btn ghost" type="button" id="pgBack">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" /></svg><span data-i18n="dashBack">Back to planning</span></button>
+      </div>
+      <div class="sec-head ev-head"><h2 id="pgTitle"><span aria-hidden="true">🕋</span> <span data-i18n="pgTitle">Hajj &amp; Umrah</span></h2>
+        <p data-i18n="pgSub"></p></div>
+      <div class="pg-layout">
+        <div>
+          <p class="pg-note" data-i18n="pgNote"></p>
+          <nav class="seg dash-tabs ev-tabs" id="pgTabs" role="tablist"></nav>
+          <div id="pgBody"></div>
+        </div>
+        <aside id="pgPlanBox"></aside>
+      </div>
     </div>
   </section>
 

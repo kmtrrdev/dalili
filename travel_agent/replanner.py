@@ -243,6 +243,7 @@ def apply_requirements(trip: TripState, req: Requirements) -> list[str]:
         d.priorities = list(dict.fromkeys(req.priorities))
     d.avoid = sorted(set(d.avoid) | set(req.avoid))
     setd("planning_mode", req.planning_mode)
+    setd("pilgrimage", req.pilgrimage)
     # Evidence for every requirement this message set (shown when explaining a constraint or a choice).
     said = next((m.content for m in reversed(trip.conversation) if m.role == "user"), "")[:200]
     if said:
@@ -401,6 +402,7 @@ def build_contract(trip: TripState) -> tuple[TripContract, list[str]]:
                       hard_limit=False if d.find_cheapest else (True if d.budget_hard_limit is None else d.budget_hard_limit)),
         must_have=d.must_have, avoid=d.avoid, travel_style=p.travel_style,
         planning_mode=d.planning_mode or "balanced", stops=stops,
+        pilgrimage="umrah" if d.pilgrimage == "umrah" else None,  # Hajj is never planned here (official channels)
     )
     if stops:
         contract.destination_name = contract.route_name

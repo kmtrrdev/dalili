@@ -17,6 +17,7 @@ import statistics
 import unicodedata
 from typing import Any
 
+from . import pilgrimage
 from .config import settings
 from .mcp_hub import MCPHub, MCPToolError
 from .models import (
@@ -63,6 +64,17 @@ async def research_destination(hub: MCPHub, contract: TripContract) -> dict[str,
                 "dinner_time": geo.dinner_time(ref.country_code or ""), "knowledge": {}}
     info.update({"center": {"lat": ref.lat, "lon": ref.lon}, "timezone": ref.timezone, "airports": ref.airports,
                  "airport_names": ref.airport_names, "city_id": ref.city_id})
+    holy = pilgrimage.holy_city(ref.lat, ref.lon)
+    if holy:
+        # Makkah / Madinah: the Holy Mosque anchors the hotel choice, and every day shows the prayer times.
+        info["holy"] = {"key": holy, **pilgrimage.HOLY[holy]}
+        try:
+            res = await hub.call("knowledge", "get_prayer_times", {
+                "lat": pilgrimage.HOLY[holy]["lat"], "lon": pilgrimage.HOLY[holy]["lon"],
+                "start_date": contract.start_date.isoformat(), "end_date": contract.end_date.isoformat()})
+            info["prayer_times"] = res["days"]
+        except MCPToolError as exc:
+            log.warning("prayer times for %s unavailable: %s", holy, exc)
     return info
 
 
@@ -115,10 +127,21 @@ EVENT_INTERESTS = {"nightlife", "music", "culture", "art", "events", "festival",
 
 async def research_activities(hub: MCPHub, contract: TripContract, local_currency: str, interests: list[str]) -> list[Place]:
     d = contract.destination_ref
+    holy = pilgrimage.holy_city(d.lat, d.lon)
+    sacred: list[Place] = []
+    if holy:
+        try:
+            res = await hub.call("knowledge", "get_sacred_sites", {"city": holy})
+            sacred = [Place.model_validate(p) for p in res["results"]]
+        except MCPToolError as exc:
+            log.warning("sacred sites of %s unavailable: %s", holy, exc)
+        pilgrimage.umrah_days(sacred, contract.start_date)
+        if contract.pilgrimage and sacred:
+            return sacred  # an Umrah: the sacred sites are the plan (no tourist search, no search credit spent)
     sights = await hub.call("activities", "search_attractions", {"city": d.name, "lat": d.lat, "lon": d.lon,
                                                                  "local_currency": local_currency, "interests": interests,
                                                                  "country": d.country or None, "days": contract.num_days})
-    out = [Place.model_validate(p) for p in sights["results"]]
+    out = sacred + [Place.model_validate(p) for p in sights["results"]]
     # Local events cost a search and are only worth it for travellers who go out (music, nightlife, culture).
     if not EVENT_INTERESTS & set(interests):
         return out
@@ -474,9 +497,15 @@ async def plan_hotel_insights(hub: MCPHub, trip, plans: dict, prefetched: dict |
 # ---------------------------------------------------------------------------
 
 
+# Arabic place words and their English equivalents: "Masjid Quba" is "Quba Mosque", "Jabal Uhud" is "Mount Uhud".
+SAME_WORD = {"masjid": "mosque", "masjed": "mosque", "jami": "mosque", "jabal": "mount", "jebel": "mount",
+             "qasr": "palace", "souq": "market", "souk": "market", "bab": "gate", "wadi": "valley"}
+
+
 def _tokens(s: str) -> set[str]:
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
-    return {t for t in re.findall(r"[a-z0-9]+", s) if len(t) > 2 and t not in ("the", "and", "del", "della")}
+    return {SAME_WORD.get(t, t) for t in re.findall(r"[a-z0-9]+", s)
+            if len(t) > 2 and t not in ("the", "and", "del", "della")}
 
 
 def match_place(name: str, places: list[Place]) -> Place | None:

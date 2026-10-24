@@ -53,6 +53,22 @@ A `.../chat/completions` endpoint still works for chat-completion models, and Cl
 - Every step is recorded in `trip.metadata["agent_trace"]`; **How I answered**, under every reply, shows what each agent thought.
 - Tests (`tests/test_agents.py`) drive the agents with a scripted model over recorded real data.
 
+## Hajj & Umrah (`pilgrimage.py`, the **Hajj & Umrah** page)
+
+- **An Umrah is planned like any trip, around the prayers.** "عايز أعمل عمرة…" → Makkah then Madinah (about two thirds
+  of the nights in Makkah unless the traveller chooses), flights to Jeddah / Madinah, the Haramain train between them.
+  - Makkah and Madinah are recognised by where they are (near the two Holy Mosques). A city with no airport of its
+    own (Makkah, Petra…) is flown to through its nearest airports, each confirmed by Google Flights and Wikipedia.
+  - The hotel's walk to the Holy Mosque leads the choice ("About 6 min walk to Masjid al-Haram"), within the budget.
+  - The sacred sites are a fixed list placed with Wikipedia's coordinates (no tourist search, no search credit). The
+    Umrah itself is planned on the first days in Makkah and the visit to the Prophet's Mosque in Madinah, never
+    squeezed out; then Quba, al-Qiblatayn, Uhud, Jabal al-Nour, Arafat…
+  - Every day shows the five prayer times (Aladhan, Umm al-Qura); Ramadan and the Hajj season are flagged.
+- **Hajj is never planned** (permits only through official channels): the reply explains the channels.
+- **The page:** the Umrah and Hajj rituals step by step, the miqat, prayer times for Makkah / Madinah, the expected
+  dates of the next Hajj, a checklist, and a short form that hands an Umrah to the planner. The guidance is fixed text
+  following the widely published practice (never written by the model), and points to a scholar for rulings.
+
 ## Landmark camera (`agents/landmark.py`)
 
 📷 in the chat box (or "What's this place?" on the home page): a photo of a monument, a mosque, a bridge… becomes

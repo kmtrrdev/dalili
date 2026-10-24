@@ -253,6 +253,9 @@ def _rank_flights(pool: list[FlightOption], ctx: PlanContext, leaving: bool = Fa
 
 
 def _anchor_points(ctx: PlanContext) -> list[GeoPoint]:
+    holy = ctx.research.destination_info.get("holy")
+    if holy:
+        return [GeoPoint(lat=holy["lat"], lon=holy["lon"])]  # Makkah / Madinah: the walk to the Holy Mosque
     # In-city sights only: a day trip or an overnight idea (Milan from Rome) would drag the "centre" out of town.
     city_sights = [a for a in ctx.research.attractions if not a.day_trip and "overnight_trip" not in a.categories]
     ranked = sorted((score_attraction(a, ctx.profile, ctx.contract, ctx.mode) for a in city_sights),
@@ -313,8 +316,9 @@ def select_core(ctx: PlanContext) -> tuple[Ranked | None, Ranked | None, Ranked 
         if len(good) < 3:
             good = [h for h in hotels if (h.rating or 0) >= hprefs.min_rating]
         hotels = good if len(good) >= 3 else hotels
+    holy = (ctx.research.destination_info.get("holy") or {}).get("name")
     hranked = sorted((score_hotel(h, anchors, ctx.profile, ctx.mode, nightly_user / max(ctx.fx(h.price_per_night.currency), 1e-9),
-                                  hprefs) for h in hotels), key=lambda r: -r.score)
+                                  hprefs, anchor_name=holy) for h in hotels), key=lambda r: -r.score)
     if not (outs and rets and hranked):
         notes.append("Missing flight or hotel candidates - the plan is partial.")
         return (outs[0] if outs else None, rets[0] if rets else None, hranked[0] if hranked else None, notes, {})
@@ -715,8 +719,10 @@ def assign_activities(ctx: PlanContext, slots: list[DaySlot], hotel: HotelOption
             continue
         if "overnight_trip" in a.categories:
             continue  # suggested in the reply / Trip Book, never squeezed into a day
-        if "major_event" in a.categories and not forced:
-            continue  # a world-famous event (often a big ticket) is offered in the reply, added only when asked for
+        if ("major_event" in a.categories or "ritual" in a.categories) and not forced:
+            # A world-famous event (often a big ticket) is offered in the reply, added only when asked for; the Umrah
+            # is planned only on an Umrah trip (where it is forced in).
+            continue
         ranked = score_attraction(a, ctx.profile, ctx.contract, ctx.mode, boosts)
         if a.day_trip:
             # Worth the journey only if it is famous; the further, the more it must earn its day.

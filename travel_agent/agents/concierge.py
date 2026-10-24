@@ -79,6 +79,12 @@ The trip's stage (context.stage):
   replies (never added on your own). Wanting to go -> change_plan, add_place with the event's exact name; one with
   can_be_added=false is in another city of the country, reached by adding that city to the `route`.
 
+Pilgrimage: an Umrah - or any trip to Makkah, unless they say otherwise - is change_plan with requirements.pilgrimage
+'umrah'; unless they choose, the route is Makkah then Madinah ('Mecca, Saudi Arabia', 'Medina, Saudi Arabia') with
+about two thirds of the nights in Makkah. Hajj is never planned here (permits come only through official channels):
+requirements.pilgrimage 'hajj', and the planner explains the channels. Never give religious rulings yourself - point
+to the Hajj & Umrah guide on the site.
+
 Answering:
 - Ground facts in tool observations or the context. Never invent places, prices, opening hours or times. General
   travel knowledge (seasons, customs, what a place is like) is fine, but never as a live price or schedule.

@@ -4,11 +4,35 @@ from __future__ import annotations
 
 from mcp.server.mcpserver import MCPServer
 
-from .. import knowledge, net
-from ..providers import geo, local_prices, menus, official_prices
+from datetime import date
+
+from .. import knowledge, net, pilgrimage
+from ..providers import aladhan, geo, local_prices, menus, official_prices
 from . import envelope, error
 
-server = MCPServer("knowledge_mcp", instructions="Resolve places; stable destination knowledge from Wikivoyage.")
+server = MCPServer("knowledge_mcp", instructions="Resolve places; stable destination knowledge from Wikivoyage; "
+                                                 "prayer times and the sacred sites of Makkah and Madinah.")
+
+
+@server.tool()
+async def get_prayer_times(lat: float, lon: float, start_date: str, end_date: str) -> dict:
+    """The five daily prayer times (Umm al-Qura method) and the Hijri date for each day, from Aladhan."""
+    q = {"lat": lat, "lon": lon, "start_date": start_date, "end_date": end_date}
+    try:
+        days = await aladhan.prayer_times(lat, lon, date.fromisoformat(start_date), date.fromisoformat(end_date))
+    except (net.ProviderError, ValueError, KeyError) as exc:
+        return error("prayer_times", "knowledge_mcp", q, str(exc))
+    return envelope("prayer_times", "knowledge_mcp", q, days=days, method="Umm al-Qura")
+
+
+@server.tool()
+async def get_sacred_sites(city: str) -> dict:
+    """The sacred sites of 'makkah' or 'madinah' as places (Wikipedia's coordinates); the Umrah and the visit to the
+    Prophet's Mosque are marked as rituals."""
+    q = {"city": city}
+    if city not in pilgrimage.SITES:
+        return error("sacred_sites", "knowledge_mcp", q, "city must be makkah or madinah")
+    return envelope("sacred_sites", "knowledge_mcp", q, results=await pilgrimage.sacred_sites(city))
 
 
 @server.tool()

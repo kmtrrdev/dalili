@@ -126,8 +126,14 @@ def _rank(r: dict) -> tuple[bool, float]:
 
 def _label_country(label: str) -> str | None:
     """ISO code of the country a "Place, Country" label ends with ("Bali, Indonesia" -> ID,
-    "New York, NY, United States" -> US)."""
-    return country_code(label.rsplit(",", 1)[-1]) if label else None
+    "New York, NY, United States" -> US) - Google sometimes leaves out the comma ("Makkah Saudi Arabia")."""
+    if not label:
+        return None
+    code = country_code(label.rsplit(",", 1)[-1])
+    if code or "," in label:
+        return code
+    words = label.split()
+    return next((c for n in (3, 2, 1) if len(words) > n and (c := country_code(" ".join(words[-n:])))), None)
 
 
 def _distance_km(text) -> float:
@@ -266,6 +272,12 @@ async def resolve_place(text: str) -> PlaceRef:
         except net.ProviderError as exc:
             return await _resolve_without_serpapi(text, exc)
         best = _pick_suggestion([s for s in retry if _label_country(s.get("name", "")) == want], want) or best
+    if best is None or (want and _label_country(best.get("name", "")) != want):
+        # Google doesn't know the place by this name, or it has no airport ("Medina" is only Ohio and Spain to it;
+        # Petra has no airport): the place itself, flown to through its nearest airports.
+        ref = await _through_nearest_airports(text, want)
+        if ref is not None:
+            return ref
     if best is None:
         raise PlaceNotFound(f"Could not find a city with an airport for '{text}'")
     # The suggestion is the place's identity: its country, its airports, its Google id.
@@ -293,6 +305,43 @@ async def resolve_place(text: str) -> PlaceRef:
         airports=airports,
         airport_names={a["id"]: a["name"] for a in city.get("airports", []) if a.get("id") in airports},
     )
+
+
+NEAREST_AIRPORT_KM = 200
+
+
+async def _through_nearest_airports(text: str, want: str | None) -> PlaceRef | None:
+    """A place Google Flights doesn't list (no airport of its own, or another spelling): located by the geocoder in
+    the stated country, with the airports the AI names as its nearest - each confirmed by Google Flights and placed by
+    Wikipedia within NEAREST_AIRPORT_KM. None when anything doesn't hold."""
+    from . import ai_fallback
+
+    if not want or not ai_fallback.available():
+        return None
+    name = text.split(",")[0].strip()
+    try:
+        geo, point = await _locate(text, name, want, None)
+    except (PlaceNotFound, net.ProviderError):
+        return None
+    country, cc = _country_of(geo, want)
+    codes, names = [], {}
+    for a in await ai_fallback.airports(name, country):
+        code = a.iata.upper()
+        try:
+            listed = await autocomplete(code)
+        except net.ProviderError:
+            continue
+        ap = next((x for s in listed for x in s.get("airports") or [] if x.get("id") == code), None)
+        if ap is None and listed and "airport" in (listed[0].get("description") or "").lower():
+            ap = {"name": listed[0].get("name", "")}  # the code's own result is the airport ("International airport in…")
+        anchor = await _airport_anchor([ap]) if ap else None
+        if anchor and _km(point, anchor[0]) <= NEAREST_AIRPORT_KM:
+            codes.append(code)
+            names[code] = ap.get("name", code)
+    if not codes:
+        return None
+    return PlaceRef(name=geo.get("city") or name, country=country, country_code=cc, lat=point[0], lon=point[1],
+                    timezone=(geo.get("timezone") or {}).get("name", "UTC"), airports=codes, airport_names=names)
 
 
 async def _resolve_without_serpapi(text: str, live_error: Exception) -> PlaceRef:

@@ -22,7 +22,7 @@ from typing import Annotated, Any, TypedDict
 
 from langgraph.graph import END, START, StateGraph
 
-from . import conflicts, constraints, journey, narrative, net, research, route_design, telemetry
+from . import conflicts, constraints, journey, narrative, net, pilgrimage, research, route_design, telemetry
 from .agents import concierge, critic, strategist, trace
 from .providers import geo
 from .config import settings
@@ -450,6 +450,11 @@ async def check_requirements(state: GraphState) -> GraphState:
     if trip.selected_plan:
         trip.assumptions = trip.assumptions + req_notes
     trip.emit("requirements.updated", draft=trip.draft.model_dump(mode="json", exclude_defaults=True, exclude={"destination_ref", "origin_ref"}))
+    if trip.draft.pilgrimage == "hajj":
+        # Hajj permits come only through official channels: never planned as a trip here.
+        trip.pending_questions = [pilgrimage.HAJJ_NOTE]
+        trip.status = "needs_input"
+        return {"route": "ask"}
     question = await _resolve(trip)
     if question:
         trip.pending_questions.append(question)
@@ -776,6 +781,10 @@ async def plan(state: GraphState) -> GraphState:
         if mode == "budget":
             mode_knobs.skip_snacks = True  # no optional coffee / dessert stops on the money-saving plan
         mode_knobs.signature_picks = list((trip.metadata.get("signature_ids") or {}).get(mode, []))
+        if trip.trip_contract.pilgrimage:
+            # The Umrah and the visit to the Prophet's Mosque are the trip's purpose: in every plan, never squeezed out.
+            sites = [p for b in trip.research.stops or [trip.research] for p in b.attractions]
+            mode_knobs.must_include = list(dict.fromkeys(mode_knobs.must_include + pilgrimage.ritual_ids(sites)))
         if trip.trip_contract.is_multi:
             plan_ = journey.plan_journey(trip.trip_contract, trip.traveler_profile, trip.research, mode,
                                          mode_knobs, settings.budget_buffer_ratio, pins, strat)
@@ -784,6 +793,9 @@ async def plan(state: GraphState) -> GraphState:
                 contract=trip.trip_contract, profile=trip.traveler_profile, research=trip.research, mode=mode,
                 knobs=mode_knobs, buffer_ratio=settings.budget_buffer_ratio, pinned_days=pins, strategy=strat))
         plan_.pitch, plan_.pitch_ar = strat.headline, strat.headline_ar
+        c_ = trip.trip_contract
+        pilgrimage.add_prayer_notes(plan_, trip.research.stops or [trip.research],
+                                    [(s.start_date, s.end_date) for s in c_.stops] or [(c_.start_date, c_.end_date)])
         return plan_
 
     c = trip.trip_contract

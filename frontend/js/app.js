@@ -3,6 +3,7 @@ import { applyStatic, getLang, locale, setLang, t } from "./i18n.js";
 import { CURRENCIES, INTERESTS, closeDash, esc, initAccount, logActivity, onTripPlanned, refreshAccountLanguage } from "./account.js";
 import { closeEvents, initEvents, refreshEventsLanguage } from "./events.js";
 import { initLandmarks } from "./landmark.js";
+import { closePilgrimage, initPilgrimage, refreshPilgrimageLanguage } from "./pilgrimage.js";
 
 const $ = (id) => document.getElementById(id);
 // Links come from third-party data: only http(s) URLs are ever put in an href.
@@ -1612,6 +1613,7 @@ function refreshLanguage() {
   if (!state.tripId && $("messages").children.length <= 1) { $("messages").innerHTML = ""; greet(); }
   refreshAccountLanguage();
   refreshEventsLanguage();
+  refreshPilgrimageLanguage();
   requestAnimationFrame(layoutGlobe);
 }
 $("langToggle").addEventListener("click", () => { setLang(getLang() === "ar" ? "en" : "ar"); refreshLanguage(); });
@@ -1654,6 +1656,7 @@ function resetTrip() {
 function newTrip() {
   closeDash();
   closeEvents();
+  closePilgrimage();
   resetTrip();
   greet();
   setChatOpen(false);  // back to the two ways to start
@@ -1728,8 +1731,10 @@ function applyPrefs(prefs, force = false) {
     greet();
     send(message);
   };
-  initEvents({ beforeOpen: closeDash, send: startTrip });
+  initEvents({ beforeOpen: () => { closeDash(); closePilgrimage(); }, send: startTrip });
   initLandmarks({ modal, closeModal, md, send: startTrip });
+  initPilgrimage({ beforeOpen: () => { closeDash(); closeEvents(); }, send: startTrip });
+  $("acctBtn").addEventListener("click", closePilgrimage);
   if (state.tripId) {
     const res = await fetch(`/api/trips/${state.tripId}`);
     if (res.ok) {

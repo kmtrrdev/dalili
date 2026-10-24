@@ -219,6 +219,7 @@ class TripContract(BaseModel):
     room_count: int | None = None       # rooms the traveller asked for ("all three in one room"); None = 2 per room
     constraints: list[Constraint] = Field(default_factory=list)  # typed view of every requirement (constraints.py)
     priorities: list[str] = Field(default_factory=list)          # what the traveller said matters most, in order
+    pilgrimage: Literal["umrah"] | None = None  # an Umrah trip (pilgrimage.py): the rituals and prayers lead the plan
 
     @property
     def end_ref(self) -> PlaceRef | None:
@@ -305,6 +306,7 @@ class RequirementDraft(BaseModel):
     # Evidence: the words each requirement came from (field -> the traveller's message), for explanations.
     stated: dict[str, str] = Field(default_factory=dict)
     planning_mode: PlanningMode | None = None
+    pilgrimage: Literal["umrah", "hajj"] | None = None  # Umrah is planned; Hajj gets the official channels instead
 
 
 # ---------------------------------------------------------------------------

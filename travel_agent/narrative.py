@@ -103,6 +103,8 @@ def plan_facts(trip: TripState) -> dict[str, Any]:
     big = event_offers(trip)
     if big:
         facts["big_events_during_trip"] = big
+    if c.pilgrimage:
+        facts["umrah"] = umrah_facts(trip)
     if trip.draft.find_cheapest and trip.metadata.get("found_budget"):
         for k in ("budget", "remaining", "within_budget"):  # the traveller gave no budget: nothing is "left over"
             facts.pop(k, None)
@@ -271,6 +273,25 @@ def _leg_text(f) -> str:
     return f"{f.origin} -> {f.destination} {f.depart_at:%a %d %b %H:%M}, {what}"
 
 
+def umrah_facts(trip: TripState) -> dict[str, Any]:
+    """An Umrah trip as the reply sees it: when the Umrah and the Prophet's Mosque are planned, the hotels' walk to the
+    Holy Mosques, the season, and that every day shows the prayer times."""
+    from . import pilgrimage
+
+    plan, r = trip.selected_plan, trip.research
+    bundles = (r.stops or [r]) if r else []
+
+    def ritual(pid: str | None) -> bool:
+        p = r.place(pid) if r and pid else None
+        return p is not None and pilgrimage.RITUAL in p.categories
+
+    rituals = {i.title: f"Day {d.day}" for d in plan.days for i in d.items if ritual(i.place_id)} if plan else {}
+    walks = [x for x in (plan.explanations.get("hotel", []) if plan else []) if "walk to" in x or "shuttle" in x]
+    return {"rituals_in_plan": rituals, "hotel_and_the_haram": walks[:2], "season": pilgrimage.season_notes(bundles),
+            "prayer_times": "shown on every day of the plan (Umm al-Qura)",
+            "guide": "the Hajj & Umrah page has the rituals step by step, the miqat and a checklist"}
+
+
 def event_offers(trip: TripState) -> list[dict[str, Any]]:
     """The world-famous events on during the trip (research.offer_major_events), as the reply and the trip agent
     see them: where, when, how sure the dates are, the ticket, and whether it is in the plan already."""
@@ -422,6 +443,9 @@ Structure (short markdown, roughly 150-250 words - tight, no filler, never repea
    each (what, when, ticket) and ASK whether they'd like to attend; offer 'I want to attend <event>' as a suggestion
    in their language; one in another city would need a stop there. Call 'usual dates' usual dates, never confirmed.
    Never add one yourself.
+9. If 'umrah' is present, this is an Umrah: warm and respectful. Say on which day the Umrah and the visit to the
+   Prophet's Mosque are, the hotel's walk to the Haram ('hotel_and_the_haram'), every note in 'season', that each day
+   shows the prayer times, and point to the Hajj & Umrah guide for the rituals. Never state religious rulings.
 If 'ai_estimated_data' is non-empty, say near the top that live search was unavailable for those parts, so they are AI
 estimates to double-check before booking. If 'multi_city_route' is present, show the route city by city first.
 If 'overnight_side_trip_ideas' is non-empty, add one line suggesting them as an optional overnight side trip.

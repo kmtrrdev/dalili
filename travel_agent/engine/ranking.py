@@ -118,13 +118,25 @@ def score_flight(f: FlightOption, pool: list[FlightOption], profile: TravelerPro
 
 
 def score_hotel(h: HotelOption, anchors: list[GeoPoint], profile: TravelerProfile, mode: PlanningMode,
-                nightly_budget_local: float, prefs=None) -> Ranked:
-    """prefs: the strategist's HotelPrefs (how much price / location / rating matter); None = mode defaults."""
+                nightly_budget_local: float, prefs=None, anchor_name: str | None = None) -> Ranked:
+    """prefs: the strategist's HotelPrefs (how much price / location / rating matter); None = mode defaults.
+    anchor_name: the one place every day revolves around (the Holy Mosque in Makkah / Madinah): the walk to it."""
     reasons, trade = [], []
     rating_s = clamp((h.rating - 3.4) / 1.5)
     avg_km = sum(distance_km(h.location, a) for a in anchors) / max(len(anchors), 1)
     loc_s = clamp(1 - (avg_km - 1.0) / 4.0)
-    if avg_km <= 2.0:
+    holy_bonus = 0.0
+    if anchor_name:
+        # Five prayers a day: every 100 m counts. Within ~1.5 km is walkable; beyond, a shuttle or taxi five times a
+        # day - the walk outweighs a cheaper room whenever the budget allows (select_core still keeps the budget).
+        loc_s = clamp(1 - (avg_km - 0.3) / 1.5)
+        holy_bonus = 0.45 * loc_s - (0.35 if avg_km > 1.5 else 0.0)
+        walk = max(1, round(avg_km * 1000 / 80))  # ~80 m a minute, in crowds
+        if avg_km <= 1.5:
+            reasons.append(f"About {walk} min walk to {anchor_name}")
+        else:
+            trade.append(f"~{avg_km:.1f} km from {anchor_name}: a shuttle or taxi for the prayers")
+    elif avg_km <= 2.0:
         reasons.append(f"Central: about {avg_km:.1f} km from your top sights")
     elif avg_km > 3.5:
         trade.append(f"Farther from the main sights (~{avg_km:.1f} km)")
@@ -167,7 +179,7 @@ def score_hotel(h: HotelOption, anchors: list[GeoPoint], profile: TravelerProfil
     else:
         w = {"balanced": (0.3, 0.3, 0.3), "budget": (0.2, 0.25, 0.55),
              "comfort": (0.45, 0.35, 0.1), "experience": (0.3, 0.4, 0.25)}[mode]
-    score = w[0] * rating_s + w[1] * loc_s + w[2] * price_s + 0.08 * extras + style_s - noise_pen - far_pen
+    score = w[0] * rating_s + w[1] * loc_s + w[2] * price_s + 0.08 * extras + style_s - noise_pen - far_pen + holy_bonus
     if prefs is not None and getattr(prefs, "shortlist", None):
         names = {n.strip().lower() for n in prefs.shortlist if n}
         if h.name.strip().lower() in names:

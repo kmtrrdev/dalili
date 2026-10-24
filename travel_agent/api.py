@@ -13,7 +13,7 @@ import re
 import time
 import uuid
 from contextlib import asynccontextmanager
-from datetime import date
+from datetime import date, timedelta
 from typing import Literal
 
 from fastapi import Depends, FastAPI, HTTPException, Request, Response
@@ -25,9 +25,10 @@ from . import llm, seo, telemetry, tripbook
 from .auth import GUEST_COOKIE, GUEST_RE, SESSION_COOKIE, SESSION_DAYS, Accounts, AuthError, Identity, new_guest_id
 from .config import PROJECT_DIR, settings, today
 from .mcp_hub import SERVERS, get_hub
+from . import net, pilgrimage
 from .agents import landmark
 from .models import PlanningMode
-from .providers import world_events
+from .providers import aladhan, world_events
 import httpx
 
 from .security import MAX_MESSAGE_CHARS, client_ip, is_admin, limit_expensive, limit_light, limit_offers
@@ -635,6 +636,29 @@ async def major_events(request: Request, category: str | None = None, country: s
     if country:
         found = [e for e in found if e.country_code == country.upper()[:2]]
     return {"complete": not building, "events": [e.model_dump(mode="json") for e in found]}
+
+
+@app.get("/api/pilgrimage/prayer-times")
+async def pilgrimage_prayer_times(request: Request, city: Literal["makkah", "madinah"] = "makkah",
+                                  start: date | None = None, days: int = 7):
+    """The Hajj & Umrah page: the five prayers in Makkah or Madinah (Umm al-Qura), with the Hijri dates."""
+    limit_light(request)
+    first = start or today()
+    holy = pilgrimage.HOLY[city]
+    res = await get_hub().call("knowledge", "get_prayer_times", {
+        "lat": holy["lat"], "lon": holy["lon"], "start_date": first.isoformat(),
+        "end_date": (first + timedelta(days=max(1, min(days, 14)) - 1)).isoformat()})
+    return {"city": city, "method": res.get("method"), "days": res["days"]}
+
+
+@app.get("/api/pilgrimage/hajj-dates")
+async def next_hajj(request: Request):
+    """The next Hajj's expected days (8-13 Dhu al-Hijjah) as Gregorian dates."""
+    limit_light(request)
+    try:
+        return await aladhan.hajj_dates(today())
+    except (net.ProviderError, KeyError, ValueError) as exc:
+        raise HTTPException(503, "Hijri calendar unavailable") from exc
 
 
 class LandmarkIn(BaseModel):

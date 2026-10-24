@@ -130,6 +130,8 @@ class Requirements(Lenient):
     noise_tolerance: Literal["low", "medium", "high"] | None = None
     prefer_hidden_gems: bool | None = None
     planning_mode: Literal["balanced", "budget", "comfort", "experience"] | None = None
+    pilgrimage: Literal["umrah", "hajj"] | None = Field(default=None, description=(
+        "The trip is a pilgrimage: 'umrah' (عمرة; also any trip to Makkah unless they say otherwise) or 'hajj' (حج)"))
 
 
 class FeedbackNote(Lenient):
