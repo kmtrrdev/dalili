@@ -3,6 +3,7 @@ import { applyStatic, getLang, locale, setLang, t } from "./i18n.js";
 import { CURRENCIES, INTERESTS, closeDash, esc, initAccount, logActivity, onTripPlanned, refreshAccountLanguage } from "./account.js";
 import { closeEvents, initEvents, refreshEventsLanguage } from "./events.js";
 import { initLandmarks } from "./landmark.js";
+import { mountBuddies } from "./buddies.js";
 import { closePilgrimage, initPilgrimage, refreshPilgrimageLanguage } from "./pilgrimage.js";
 
 const $ = (id) => document.getElementById(id);
@@ -450,9 +451,10 @@ function renderTab() {
   revealInStrip($("tabs"), document.querySelector('#tabs [aria-selected="true"]'));
   const plan = state.trip.plans[state.trip.selected_mode];
   if (state.map) { state.map.remove(); state.map = null; }
-  const views = { itinerary, stay, budget, checks, weather, profile, sources };
+  const views = { itinerary, stay, budget, checks, weather, profile, sources, buddies: () => "" };
   $("panel").innerHTML = views[state.tab](plan);
   $("panel").scrollTop = 0;
+  if (state.tab === "buddies") mountBuddies($("panel"), state.trip);
   $("panel").querySelectorAll("[data-offers]").forEach((b) => b.addEventListener("click", () => openOffers(b.dataset.offers)));
   $("panel").querySelectorAll("[data-suggest]").forEach((b) => b.addEventListener("click", () => send(b.dataset.suggest)));
   if (state.tab === "itinerary") {

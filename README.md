@@ -53,6 +53,21 @@ A `.../chat/completions` endpoint still works for chat-completion models, and Cl
 - Every step is recorded in `trip.metadata["agent_trace"]`; **How I answered**, under every reply, shows what each agent thought.
 - Tests (`tests/test_agents.py`) drive the agents with a scripted model over recorded real data.
 
+## Travel buddies (`buddies.py`, the **Travel buddies** tab of a trip)
+
+Travellers who'll be in the same city at the same time meet in a small group chat (up to 12, signed-in accounts).
+
+- **Matching:** the trip's city and dates join the open group in the same place with the most overlap (at least two
+  days, or the whole stay if shorter), ranked with shared interests, the same pace and the same language. Women-only
+  groups for those who choose them (self-declared). No match yet: a new group waits for the next traveller.
+- **Worth opening:** on every join the group gets a welcome written from what its members share, and ideas to meet
+  from the members' own plans - the same sights on the same day ("both at the Pantheon and Trevi on Tue 13 Oct"),
+  dinner at a well-rated place for food lovers.
+- **Safe by default:** members see a first name and an initial, their days together and interests - never a hotel, a
+  flight or an email. Every message is checked in the background (harassment, scams, spam…) and hidden if needed;
+  two reports hide a message; blocking hides a member's messages for you; 8 messages a minute at most. The chat is
+  polled every 3 s while open, so it works the same across several server instances.
+
 ## Hajj & Umrah (`pilgrimage.py`, the **Hajj & Umrah** page)
 
 - **An Umrah is planned like any trip, around the prayers.** "عايز أعمل عمرة…" → Makkah then Madinah (about two thirds

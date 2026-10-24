@@ -25,9 +25,10 @@ from . import llm, seo, telemetry, tripbook
 from .auth import GUEST_COOKIE, GUEST_RE, SESSION_COOKIE, SESSION_DAYS, Accounts, AuthError, Identity, new_guest_id
 from .config import PROJECT_DIR, settings, today
 from .mcp_hub import SERVERS, get_hub
-from . import net, pilgrimage
+from . import buddies, net, pilgrimage
 from .agents import landmark
-from .models import PlanningMode
+from .buddies import Buddies, BuddyError
+from .models import PlanningMode, TripState
 from .providers import aladhan, world_events
 import httpx
 
@@ -659,6 +660,98 @@ async def next_hajj(request: Request):
         return await aladhan.hajj_dates(today())
     except (net.ProviderError, KeyError, ValueError) as exc:
         raise HTTPException(503, "Hijri calendar unavailable") from exc
+
+
+# ---------------------------------------------------------------------------
+# Travel buddies (buddies.py): signed-in travellers in the same city at the same time
+# ---------------------------------------------------------------------------
+
+buddy_groups = Buddies(service.store)
+
+
+def _buddy(fn):
+    try:
+        return fn()
+    except BuddyError as exc:
+        raise HTTPException(exc.status, str(exc)) from exc
+
+
+class BuddyJoinIn(BaseModel):
+    trip_id: str = Field(max_length=64)
+    stop: int = Field(0, ge=0, le=20)
+    women_only: bool = False
+
+
+class BuddyMessageIn(BaseModel):
+    text: str = Field(min_length=1, max_length=1000)
+
+
+class BuddyReportIn(BaseModel):
+    reason: str = Field("", max_length=200)
+
+
+class BuddyBlockIn(BaseModel):
+    user_id: str = Field(max_length=64)
+
+
+@app.get("/api/buddies/preview")
+async def buddies_preview(trip_id: str, who: Identity = Depends(identity)):
+    """Per city of the trip: how many travellers overlap and what they share (guests see it too; joining needs an
+    account)."""
+    return {"signed_in": who.signed_in, "cities": buddy_groups.preview(_trip_or_404(trip_id, who), who.id)}
+
+
+@app.post("/api/buddies/join")
+async def buddies_join(body: BuddyJoinIn, who: Identity = Depends(signed_in)):
+    trip = _trip_or_404(body.trip_id, who)
+    gid, created = _buddy(lambda: buddy_groups.join(trip, body.stop, who.user, body.women_only))
+    buddies.spawn(buddy_groups.welcome(gid, who.id, _buddy_trips(gid)))
+    return {"group_id": gid, "created": created}
+
+
+def _buddy_trips(group_id: str) -> dict[str, TripState]:
+    """The group members' trips (their plans give the meet-up ideas; nothing else of them is shown)."""
+    trips = {tid: service.get(tid) for tid in buddy_groups.trip_ids(group_id)}
+    return {tid: t for tid, t in trips.items() if t is not None}
+
+
+@app.get("/api/buddies/groups")
+async def buddies_groups(who: Identity = Depends(signed_in)):
+    return buddy_groups.groups(who.id)
+
+
+@app.get("/api/buddies/groups/{group_id}")
+async def buddies_group(group_id: str, after: int = 0, who: Identity = Depends(signed_in)):
+    """The group and its new messages (polled every few seconds while open; meet-up ideas on the first load)."""
+    if after:
+        return _buddy(lambda: buddy_groups.group(group_id, who.id, after))
+    if not buddy_groups.member_of(group_id, who.id):
+        raise HTTPException(403, "Not a member of this group.")
+    return _buddy(lambda: buddy_groups.group(group_id, who.id, 0, _buddy_trips(group_id)))
+
+
+@app.post("/api/buddies/groups/{group_id}/messages")
+async def buddies_post(group_id: str, body: BuddyMessageIn, who: Identity = Depends(signed_in)):
+    mid = _buddy(lambda: buddy_groups.post(group_id, who.id, body.text))
+    buddies.spawn(buddy_groups.moderate(mid, body.text))  # checked after sending: the chat stays instant
+    return {"id": mid}
+
+
+@app.post("/api/buddies/groups/{group_id}/leave")
+async def buddies_leave(group_id: str, who: Identity = Depends(signed_in)):
+    buddy_groups.leave(group_id, who.id)
+    return {"ok": True}
+
+
+@app.post("/api/buddies/messages/{message_id}/report")
+async def buddies_report(message_id: int, body: BuddyReportIn, who: Identity = Depends(signed_in)):
+    return {"hidden": _buddy(lambda: buddy_groups.report(message_id, who.id, body.reason))}
+
+
+@app.post("/api/buddies/block")
+async def buddies_block(body: BuddyBlockIn, who: Identity = Depends(signed_in)):
+    _buddy(lambda: buddy_groups.block(who.id, body.user_id))
+    return {"ok": True}
 
 
 class LandmarkIn(BaseModel):
