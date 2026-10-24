@@ -395,6 +395,15 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
+  <!-- Phones: one screen at a time and a bottom bar, like an app (app.js setView). Hidden on wider screens. -->
+  <nav class="mnav" id="mnav" aria-label="Main">
+    <button type="button" data-view="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" /></svg><span data-i18n="navHome">Home</span></button>
+    <button type="button" data-view="chat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" /></svg><span data-i18n="navChat">Chat</span><i class="mnav-dot" hidden></i></button>
+    <button type="button" data-view="trip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M4 7h16v13H4zM4 12h16" /></svg><span data-i18n="navTrip">My trip</span><i class="mnav-dot" hidden></i></button>
+    <button type="button" data-view="events"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8.5a2 2 0 0 0 0 4V17h18v-4.5a2 2 0 0 0 0-4V5H3zM9 5v2M9 10v2M9 15v2" /></svg><span data-i18n="evNav">Events</span></button>
+    <button type="button" data-view="account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" /><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" /></svg><span data-i18n="navAccount">Account</span></button>
+  </nav>
+
   <!-- Reopen the chat -->
   <button class="chat-fab" id="chatFab" type="button" data-i18n-title="openChat" hidden>
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" /></svg><span data-i18n="chat">Chat</span>

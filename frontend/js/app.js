@@ -1,7 +1,7 @@
 import { Globe } from "./globe.js";
 import { applyStatic, getLang, locale, setLang, t } from "./i18n.js";
 import { CURRENCIES, INTERESTS, closeDash, esc, initAccount, logActivity, onTripPlanned, refreshAccountLanguage } from "./account.js";
-import { closeEvents, initEvents, refreshEventsLanguage } from "./events.js";
+import { closeEvents, initEvents, openEvents, refreshEventsLanguage } from "./events.js";
 import { initLandmarks } from "./landmark.js";
 import { mountBuddies } from "./buddies.js";
 import { closePilgrimage, initPilgrimage, refreshPilgrimageLanguage } from "./pilgrimage.js";
@@ -201,7 +201,6 @@ async function send(text, extra = {}) {
   if (state.busy || !text.trim()) return false;
   document.querySelectorAll(".route-actions").forEach((el) => el.remove());
   openChat();
-  if (PHONE()) requestAnimationFrame(() => $("chatPanel").scrollIntoView({ behavior: "smooth", block: "start" }));
   addMessage("user", text);
   const ctx = { dots: typing(), failed: false };
   setBusy(true, t("understanding"));
@@ -260,6 +259,7 @@ function handleEvent(ev, ctx) {
     state.tripId = ev.trip_id;
     try { localStorage.setItem("tripId", ev.trip_id); } catch (_) { /* ignore */ }
     const msg = ev.reply ? addMessage("assistant", ev.reply) : null;
+    if (msg) notify("chat");
     pathButton(msg, ev.trip.metadata);
     showPlan(ev.trip);
     const pr = ev.trip.draft && ev.trip.draft.route_proposal;
@@ -269,10 +269,9 @@ function handleEvent(ev, ctx) {
 function showPlan(trip) {
   const firstPlan = !Object.keys(state.trip?.plans || {}).length;
   setTrip(trip);
-  // Phones: the first plan appears below the chat - bring it into view.
-  if (PHONE() && firstPlan && Object.keys(trip.plans || {}).length) {
-    requestAnimationFrame(() => $("board").scrollIntoView({ behavior: "smooth", block: "start" }));
-  }
+  // Phones: the first plan opens on its own screen (the reply then lands in the chat, with a dot on its tab).
+  if (PHONE() && firstPlan && Object.keys(trip.plans || {}).length) setView("trip");
+  else if (Object.keys(trip.plans || {}).length) notify("trip");
 }
 
 // A proposed route: one click to accept it (language-independent), or type any change in your own words.
@@ -1592,13 +1591,53 @@ function setChatOpen(open) {
   try { localStorage.setItem("chatOpen", open ? "1" : "0"); } catch (_) { /* storage unavailable */ }
   requestAnimationFrame(layoutGlobe);
 }
-function openChat() { if (document.body.classList.contains("chat-closed")) setChatOpen(true); }
-$("chatClose").addEventListener("click", () => setChatOpen(false));
+function openChat() {
+  if (document.body.classList.contains("chat-closed")) setChatOpen(true);
+  setView("chat");
+}
+$("chatClose").addEventListener("click", () => { setChatOpen(false); setView("home"); });
 $("chatFab").addEventListener("click", () => {
   setChatOpen(true);
-  if (PHONE()) $("chatPanel").scrollIntoView({ behavior: "smooth", block: "start" });
   $("input").focus({ preventScroll: true });
 });
+
+// ------------------------------------------------------------------ phones: one screen at a time and a bottom bar
+// Home, Chat and My trip are screens of the page (body[data-mview], styles.css); Events and Account are the pages that
+// open over them. Wider screens show everything side by side and ignore all of this.
+function markNav() {
+  const over = !$("events").hidden ? "events" : !$("dash").hidden ? "account" : null;
+  const active = over || document.body.dataset.mview || "home";
+  $("mnav").querySelectorAll("[data-view]").forEach((b) => b.setAttribute("aria-current", String(b.dataset.view === active)));
+}
+function setView(view) {
+  if (!PHONE()) return;
+  if (view === "trip" && !document.body.classList.contains("has-trip")) view = "chat";
+  if (view !== "events") closeEvents();
+  if (view !== "account") closeDash();
+  closePilgrimage();
+  if (view === "events") openEvents();
+  else if (view === "account") $("acctBtn").click();
+  else {
+    document.body.dataset.mview = view;
+    window.scrollTo({ top: 0 });
+    if (view === "chat") {
+      $("mnav").querySelector('[data-view="chat"] .mnav-dot').hidden = true;
+      requestAnimationFrame(() => { $("messages").scrollTop = $("messages").scrollHeight; });
+    }
+    if (view === "trip") $("mnav").querySelector('[data-view="trip"] .mnav-dot').hidden = true;
+  }
+  markNav();
+}
+$("mnav").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-view]");
+  if (b) setView(b.dataset.view);
+});
+// A page opened or closed by its own buttons (Back, the account menu) keeps the bar in step.
+new MutationObserver(markNav).observe(document.body, { subtree: true, attributes: true, attributeFilter: ["hidden"] });
+/** A reply or a plan that arrives on another screen leaves a dot on its tab. */
+function notify(view) {
+  if (PHONE() && document.body.dataset.mview !== view) $("mnav").querySelector(`[data-view="${view}"] .mnav-dot`).hidden = false;
+}
 
 // ------------------------------------------------------------------ language
 function greet() { addMessage("assistant", t("greeting")); }
@@ -1662,6 +1701,7 @@ function newTrip() {
   resetTrip();
   greet();
   setChatOpen(false);  // back to the two ways to start
+  setView("home");
   $("hero").scrollTo({ top: 0 });
   setTimeout(() => $("qcInput").focus(), 50);
 }
@@ -1681,6 +1721,7 @@ async function openTrip(id) {
   if (!trip.conversation.length) greet();
   setTrip(trip);
   setChatOpen(true);
+  setView(Object.keys(trip.plans || {}).length ? "trip" : "chat");
 }
 
 /** Account preferences fill the form defaults (a saved "flying from" and currency). `force` after a settings change. */
@@ -1702,6 +1743,7 @@ function applyPrefs(prefs, force = false) {
   let chatOpen = !!state.tripId;
   try { if (state.tripId) chatOpen = localStorage.getItem("chatOpen") !== "0"; } catch (_) { /* storage unavailable */ }
   setChatOpen(chatOpen);
+  setView("home");  // phones: no stacked page while the trip loads
   try {
     const f = JSON.parse(localStorage.getItem("ideasForm") || "null");
     renderIdeaControls();
@@ -1744,6 +1786,9 @@ function applyPrefs(prefs, force = false) {
       t.conversation.forEach((m) => addMessage(m.role, m.content));
       pathButton(lastReply(), t.metadata);
       setTrip(t);
+      if (location.hash !== "#events" && location.hash !== "#hajj-umrah") {
+        setView(Object.keys(t.plans || {}).length ? "trip" : chatOpen ? "chat" : "home");
+      }
       return;
     }
     // Not ours any more (signed out, or deleted): start fresh.

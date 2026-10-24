@@ -154,10 +154,12 @@ export function logActivity(kind, city) {
 let toastTimer = null;
 export function toast(msg, action = null) {
   const el = $("toast");
-  el.innerHTML = `<span>${esc(msg)}</span>` + (action ? `<button type="button" class="toast-act">${esc(action.label)}</button>` : "");
+  el.innerHTML = `<span>${esc(msg)}</span>` + (action ? `<button type="button" class="toast-act">${esc(action.label)}</button>` : "") +
+    `<button type="button" class="toast-x" aria-label="${esc(t("close"))}">✕</button>`;
   el.hidden = false;
   el.classList.remove("show"); void el.offsetWidth; el.classList.add("show");
   if (action) el.querySelector(".toast-act").onclick = () => { el.hidden = true; action.run(); };
+  el.querySelector(".toast-x").onclick = () => { el.hidden = true; };
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => { el.hidden = true; }, action ? 7000 : 3500);
 }

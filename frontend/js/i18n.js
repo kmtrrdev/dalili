@@ -3,6 +3,7 @@
 const DICT = {
   en: {
     brandSub: "your travel guide · plan · explore · you book",
+    navHome: "Home", navChat: "Chat", navTrip: "My trip", navAccount: "Account",
     newTrip: "New trip", langToggle: "العربية", chat: "Chat", closeChat: "Close chat", openChat: "Open chat",
     chatTitle: "Dalili", ready: "Ready to plan", working: "Working…", inputPh: "Where, when, budget, what you love…",
     heroTitle1: "Where to", heroTitle2: "next?",
@@ -193,6 +194,7 @@ const DICT = {
   },
   ar: {
     brandSub: "دليلك في السفر · خطط · استكشف · احجز بنفسك",
+    navHome: "الرئيسية", navChat: "الشات", navTrip: "رحلتي", navAccount: "حسابي",
     newTrip: "رحلة جديدة", langToggle: "English", chat: "المحادثة", closeChat: "إغلاق المحادثة", openChat: "فتح المحادثة",
     chatTitle: "دليلي", ready: "جاهز للتخطيط", working: "جاري العمل…", inputPh: "رايح فين، إمتى، ميزانيتك، وبتحب إيه…",
     heroTitle1: "رايح فين", heroTitle2: "المرة الجاية؟",
