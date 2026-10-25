@@ -9,6 +9,8 @@
 #          APPSTORE_API_KEY_ID, APPSTORE_API_ISSUER_ID, APPSTORE_API_PRIVATE_KEY, IOS_DIST_CERT_P12_BASE64,
 #          IOS_DIST_CERT_PASSWORD, IOS_PROFILE_BASE64
 # Variables: DALILI_SERVER (https URL of the backend)
+# Icons are not tree-shaken (--no-tree-shake-icons) in releases AND patches, so a patch may use any Material icon
+# (a tree-shaken release only carries the icons it used, and a patch can't add glyphs to its font).
 name: Mobile
 
 on:
@@ -50,10 +52,10 @@ jobs:
           printf 'storePassword=%s\nkeyPassword=%s\nkeyAlias=upload\nstoreFile=upload-keystore.jks\n' "$PW" "$PW" > android/key.properties
       - name: Patch (over the air)
         if: github.event_name == 'push' || inputs.kind == 'patch'
-        run: shorebird patch android --release-version latest -- --dart-define=DALILI_SERVER=${{ vars.DALILI_SERVER }}
+        run: shorebird patch android --release-version latest -- --dart-define=DALILI_SERVER=${{ vars.DALILI_SERVER }} --no-tree-shake-icons
       - name: Release (store build)
         if: github.event_name == 'workflow_dispatch' && inputs.kind == 'release'
-        run: shorebird release android -- --dart-define=DALILI_SERVER=${{ vars.DALILI_SERVER }}
+        run: shorebird release android -- --dart-define=DALILI_SERVER=${{ vars.DALILI_SERVER }} --no-tree-shake-icons
       - uses: actions/upload-artifact@v4
         if: github.event_name == 'workflow_dispatch' && inputs.kind == 'release'
         with:
@@ -61,7 +63,7 @@ jobs:
           path: mobile/build/app/outputs/bundle/release/app-release.aab
       - name: Release (direct-install APK)
         if: github.event_name == 'workflow_dispatch' && inputs.kind == 'release-apk'
-        run: shorebird release android --artifact apk -- --dart-define=DALILI_SERVER=${{ vars.DALILI_SERVER }}
+        run: shorebird release android --artifact apk -- --dart-define=DALILI_SERVER=${{ vars.DALILI_SERVER }} --no-tree-shake-icons
       - uses: actions/upload-artifact@v4
         if: github.event_name == 'workflow_dispatch' && inputs.kind == 'release-apk'
         with:
@@ -95,7 +97,7 @@ jobs:
           echo "$PROFILE" | base64 -d > ~/Library/MobileDevice/Provisioning\ Profiles/dalili.mobileprovision
       - name: Patch (over the air)
         if: github.event_name == 'push' || inputs.kind == 'patch'
-        run: shorebird patch ios --release-version latest -- --dart-define=DALILI_SERVER=${{ vars.DALILI_SERVER }}
+        run: shorebird patch ios --release-version latest -- --dart-define=DALILI_SERVER=${{ vars.DALILI_SERVER }} --no-tree-shake-icons
       - name: Release (store build) and upload to TestFlight
         if: github.event_name == 'workflow_dispatch' && inputs.kind == 'release'
         env:
@@ -103,7 +105,7 @@ jobs:
           API_ISSUER: ${{ secrets.APPSTORE_API_ISSUER_ID }}
           API_KEY: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
         run: |
-          shorebird release ios -- --dart-define=DALILI_SERVER=${{ vars.DALILI_SERVER }}
+          shorebird release ios -- --dart-define=DALILI_SERVER=${{ vars.DALILI_SERVER }} --no-tree-shake-icons
           mkdir -p ~/.appstoreconnect/private_keys
           echo "$API_KEY" > ~/.appstoreconnect/private_keys/AuthKey_$API_KEY_ID.p8
           xcrun altool --upload-app --type ios -f build/ios/ipa/*.ipa --apiKey "$API_KEY_ID" --apiIssuer "$API_ISSUER"
