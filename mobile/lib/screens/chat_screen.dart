@@ -343,6 +343,10 @@ class _FlightStatus extends StatelessWidget {
               Expanded(
                 child: AnimatedSwitcher(
                   duration: const Duration(milliseconds: 300),
+                  layoutBuilder: (current, previous) => Stack(
+                    alignment: AlignmentDirectional.centerStart,
+                    children: [...previous, ?current],
+                  ),
                   transitionBuilder: (c, a) => FadeTransition(
                     opacity: a,
                     child: SlideTransition(position: Tween(begin: const Offset(0, .5), end: Offset.zero).animate(a), child: c),
@@ -462,9 +466,10 @@ class _PrintedPass extends StatelessWidget {
                 ]),
                 const SizedBox(height: 12),
                 Row(children: [
-                  Flexible(child: Text(_code(from), maxLines: 1, overflow: TextOverflow.ellipsis, style: mono(size: 30, color: context.ink, weight: FontWeight.w800))),
+                  // Codes keep their width (a long city name is already shortened by _code); the arc takes the rest.
+                  Text(_code(from), maxLines: 1, style: mono(size: 30, color: context.ink, weight: FontWeight.w800)),
                   const Expanded(child: Padding(padding: EdgeInsets.symmetric(horizontal: 10), child: FlyingRoute(height: 34))),
-                  Flexible(child: Text(_code(to), maxLines: 1, overflow: TextOverflow.ellipsis, style: mono(size: 30, color: DC.teal, weight: FontWeight.w800))),
+                  Text(_code(to), maxLines: 1, style: mono(size: 30, color: DC.teal, weight: FontWeight.w800)),
                 ]),
                 const SizedBox(height: 4),
                 Text(routeText(cities), maxLines: 1, overflow: TextOverflow.ellipsis, style: TextStyle(color: context.muted, fontSize: 12.5)),
