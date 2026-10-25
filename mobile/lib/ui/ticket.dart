@@ -182,7 +182,7 @@ class _RenderTicket extends RenderBox
   @override
   void paint(PaintingContext context, Offset offset) {
     final path = _shape(offset);
-    final canvas = context.canvas;
+    var canvas = context.canvas;
     if (_elevation > 0) canvas.drawShadow(path, _shadow.withValues(alpha: .55), _elevation, false);
     final fill = Paint()..color = _color;
     if (_gradient != null) fill.shader = _gradient!.createShader(offset & size);
@@ -190,6 +190,8 @@ class _RenderTicket extends RenderBox
     context.pushClipPath(needsCompositing, offset, Offset.zero & size, _shape(Offset.zero), (ctx, o) {
       defaultPaint(ctx, o);
     });
+    // A child with its own layer (a photo fading in, an Opacity) closes the canvas we had: take the current one.
+    canvas = context.canvas;
     // The perforation: short dashes between the two notches.
     final dash = Paint()
       ..color = _dash

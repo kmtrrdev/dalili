@@ -66,7 +66,7 @@ class _Tilt3DState extends State<Tilt3D> with SingleTickerProviderStateMixin {
           child: Transform(
             alignment: Alignment.center,
             transform: m,
-            child: Stack(children: [
+            child: Stack(fit: StackFit.passthrough, children: [ // the child keeps the space it was given
               widget.child,
               if (widget.glare && _tilt != Offset.zero)
                 Positioned.fill(

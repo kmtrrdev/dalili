@@ -72,6 +72,11 @@
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
+	<!-- The landmark camera: a photo of a place is read once to recognise it, never stored. -->
+	<key>NSCameraUsageDescription</key>
+	<string>Dalili uses the camera so you can photograph a landmark and learn what it is.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Dalili lets you choose a photo of a landmark from your library to recognise the place.</string>
 	<key>CFBundleLocalizations</key>
 	<array>
 		<string>en</string>
