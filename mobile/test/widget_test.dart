@@ -16,4 +16,10 @@ void main() {
     expect(startPage(server, 'en', 'ar').path, '/');
     expect(startPage(server, null, 'en').toString(), 'https://dalili.example.app/');
   });
+
+  test('on Android the site is told how tall the gesture strip is; iOS reports its own', () {
+    expect(bottomInsetScript(true, 24), contains("'--sab-app', '24.0px'"));
+    expect(bottomInsetScript(true, 0), isEmpty);
+    expect(bottomInsetScript(false, 34), isEmpty);
+  });
 }

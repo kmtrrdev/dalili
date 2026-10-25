@@ -17,6 +17,12 @@ bool isExternal(Uri link, Uri server) =>
 Uri startPage(Uri server, String? lang, String deviceLang) =>
     server.replace(path: (lang ?? deviceLang) == 'ar' ? '/ar' : '/');
 
+/// Android's web view reports no safe area, so the site's bottom bar would sit under the gesture line: the app tells the
+/// site how tall that strip is (the bar keeps its colour down to the edge, its buttons sit above it). iOS reports its own.
+String bottomInsetScript(bool android, double bottom) => android && bottom > 0
+    ? "document.documentElement.style.setProperty('--sab-app', '${bottom.toStringAsFixed(1)}px');"
+    : '';
+
 /// The native part of the app around the website: the back button, the camera and the gallery for the landmark
 /// camera, links out to the browser, a screen when there is no connection - and, on the first start after the update,
 /// the traveller's trips and sign-in carried over from the previous version of the app.
@@ -101,6 +107,8 @@ class _ShellState extends State<Shell> {
 
   Future<void> _finished() async {
     setState(() => _loading = false);
+    final inset = bottomInsetScript(_web.platform is AndroidWebViewController, MediaQuery.viewPaddingOf(context).bottom);
+    if (inset.isNotEmpty) await _web.runJavaScript(inset);
     final script = _carryOver;
     if (script != null) {
       _carryOver = null;
