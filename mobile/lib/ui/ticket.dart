@@ -141,9 +141,14 @@ class _RenderTicket extends RenderBox
     } else {
       // The stub keeps its natural width; the main part takes the rest. Both get the taller one's height.
       b.layout(BoxConstraints(maxHeight: constraints.maxHeight), parentUsesSize: true);
-      final mainW = math.max(0.0, constraints.maxWidth - b.size.width - _gap);
-      a.layout(BoxConstraints(minWidth: mainW, maxWidth: mainW, maxHeight: constraints.maxHeight), parentUsesSize: true);
-      final h = math.max(a.size.height, b.size.height);
+      if (constraints.maxWidth.isFinite) {
+        final w = math.max(0.0, constraints.maxWidth - b.size.width - _gap);
+        a.layout(BoxConstraints(minWidth: w, maxWidth: w, maxHeight: constraints.maxHeight), parentUsesSize: true);
+      } else {
+        a.layout(BoxConstraints(maxHeight: constraints.maxHeight), parentUsesSize: true); // in a horizontal list
+      }
+      final mainW = a.size.width;
+      final h = math.max(math.max(a.size.height, b.size.height), constraints.minHeight);
       a.layout(BoxConstraints.tightFor(width: mainW, height: h), parentUsesSize: true);
       b.layout(BoxConstraints.tightFor(width: b.size.width, height: h), parentUsesSize: true);
       final total = mainW + _gap + b.size.width;

@@ -1,10 +1,17 @@
+import 'dart:async';
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../core/i18n.dart';
 import '../core/state.dart';
 import '../core/theme.dart';
+import '../ui/motion.dart';
+import '../ui/ticket.dart';
 import '../widgets/common.dart';
-import 'trip_screen.dart';
+import 'landmark_screen.dart';
+import 'pilgrimage_screen.dart';
 import 'wizard_screen.dart';
 
 const _vibes = [
@@ -16,103 +23,103 @@ const _vibes = [
   ('snow', '⛷️', ['ski', 'nature'], null),
 ];
 
-// name shown, Wikipedia page with a real photo
+// name shown, Wikipedia page with a real photo, country
 const _dests = [
-  ('Istanbul', 'Istanbul'), ('Paris', 'Paris'), ('Rome', 'Rome'), ('Dubai', 'Dubai'), ('Santorini', 'Oia,_Greece'),
-  ('Barcelona', 'Barcelona'), ('Marrakesh', 'Marrakesh'), ('Maldives', 'Tourism_in_the_Maldives'), ('Tokyo', 'Tokyo'),
-  ('Sharm El Sheikh', 'Sharm_El_Sheikh'),
+  ('Istanbul', 'Istanbul', 'Türkiye'), ('Paris', 'Paris', 'France'), ('Rome', 'Rome', 'Italy'),
+  ('Dubai', 'Dubai', 'UAE'), ('Santorini', 'Oia,_Greece', 'Greece'), ('Barcelona', 'Barcelona', 'Spain'),
+  ('Marrakesh', 'Marrakesh', 'Morocco'), ('Maldives', 'Tourism_in_the_Maldives', 'Maldives'), ('Tokyo', 'Tokyo', 'Japan'),
+  ('Sharm El Sheikh', 'Sharm_El_Sheikh', 'Egypt'),
 ];
 
+/// Home: the boarding pass to start a trip, the side doors (camera, Hajj & Umrah, events, the quick form), the trip
+/// in progress, suggestions on a departures board, vibes and postcards of popular places.
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key, required this.state});
   final AppState state;
 
   void _wizard(BuildContext context, WizardPrefill p) =>
-      Navigator.of(context).push(MaterialPageRoute(builder: (_) => WizardScreen(state: state, prefill: p)));
+      Navigator.of(context).push(passRoute(WizardScreen(state: state, prefill: p)));
 
   @override
   Widget build(BuildContext context) {
-    final recs = state.recs;
-    final items = (recs?['items'] as List?) ?? [];
-    final plan = state.plan;
+    final items = ((state.recs?['items'] as List?) ?? []).cast<Map<String, dynamic>>();
     return RefreshIndicator(
       onRefresh: state.refreshHome,
+      edgeOffset: MediaQuery.paddingOf(context).top,
       child: CustomScrollView(slivers: [
-        SliverSafeArea(
-          bottom: false,
-          sliver: SliverToBoxAdapter(child: _TopBar(state: state)),
+        SliverSafeArea(bottom: false, sliver: SliverToBoxAdapter(child: _TopBar(state: state))),
+        SliverToBoxAdapter(
+          child: Reveal(child: _HeroPass(state: state, onForm: () => _wizard(context, const WizardPrefill()))),
         ),
-        SliverToBoxAdapter(child: _Hero(state: state, onForm: () => _wizard(context, const WizardPrefill()))),
-        if (plan != null) SliverToBoxAdapter(child: _ContinueCard(state: state)),
-        if (items.isNotEmpty) ...[
-          SliverToBoxAdapter(child: SectionHeader(tr('forYou'), subtitle: tr('forYouSub'))),
-          SliverToBoxAdapter(
-            child: SizedBox(
-              height: 372,
-              child: ListView.separated(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                scrollDirection: Axis.horizontal,
-                itemCount: items.length,
-                separatorBuilder: (_, _) => const SizedBox(width: 12),
-                itemBuilder: (_, i) => RecCard(
-                  rec: items[i] as Map<String, dynamic>,
-                  onPlan: (city) {
-                    state.logActivity('like', city);
-                    _wizard(context, WizardPrefill(stops: [city]));
-                  },
-                  onDismiss: (city) {
-                    state.logActivity('dismiss', city);
-                    toast(context, tr('dismissed', [city]), action: tr('undo'), onAction: () => state.undoDismiss(city));
-                    Future.delayed(const Duration(milliseconds: 300), state.refreshHome);
-                  },
-                ),
-              ),
+        SliverToBoxAdapter(
+          child: Reveal(delay: const Duration(milliseconds: 120), child: _Doors(state: state, onForm: () => _wizard(context, const WizardPrefill()))),
+        ),
+        if (state.plan != null)
+          SliverToBoxAdapter(child: Reveal(delay: const Duration(milliseconds: 200), child: _ContinuePass(state: state))),
+        SliverToBoxAdapter(
+          child: Reveal(
+            delay: const Duration(milliseconds: 260),
+            child: _DeparturesBoard(
+              recs: items,
+              onPick: (rec) => _showRec(context, rec),
+              onPopular: (name) {
+                state.logActivity('view', name);
+                _wizard(context, WizardPrefill(stops: [name]));
+              },
             ),
           ),
-        ],
-        SliverToBoxAdapter(child: SectionHeader(tr('vibes'), subtitle: tr('vibesSub'))),
-        SliverPadding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
-          sliver: SliverGrid.count(
-            crossAxisCount: 2,
-            mainAxisSpacing: 10,
-            crossAxisSpacing: 10,
-            childAspectRatio: 2.6,
-            children: [
-              for (final v in _vibes)
-                _VibeTile(
+        ),
+        SliverToBoxAdapter(child: _Heading(tr('vibes'), tr('vibesSub'))),
+        SliverToBoxAdapter(
+          child: SizedBox(
+            height: 92,
+            child: ListView.separated(
+              padding: const EdgeInsets.symmetric(horizontal: 18),
+              scrollDirection: Axis.horizontal,
+              itemCount: _vibes.length,
+              separatorBuilder: (_, _) => const SizedBox(width: 10),
+              itemBuilder: (_, i) {
+                final v = _vibes[i];
+                return _VibePass(
+                  group: String.fromCharCode(65 + i),
                   emoji: v.$2,
                   label: tr('vibe.${v.$1}'),
                   onTap: () => _wizard(context, WizardPrefill(suggest: true, interests: v.$3, occasion: v.$4)),
-                ),
-            ],
-          ),
-        ),
-        SliverToBoxAdapter(child: SectionHeader(tr('popular'))),
-        SliverToBoxAdapter(
-          child: SizedBox(
-            height: 190,
-            child: ListView.separated(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              scrollDirection: Axis.horizontal,
-              itemCount: _dests.length,
-              separatorBuilder: (_, _) => const SizedBox(width: 12),
-              itemBuilder: (_, i) {
-                final (name, wiki) = _dests[i];
-                return _DestCard(
-                  name: name,
-                  wiki: wiki,
-                  onTap: () {
-                    state.logActivity('view', name);
-                    _wizard(context, WizardPrefill(stops: [name]));
-                  },
                 );
               },
             ),
           ),
         ),
-        const SliverToBoxAdapter(child: SizedBox(height: 28)),
+        SliverToBoxAdapter(child: _Heading(tr('popular'), null)),
+        SliverToBoxAdapter(
+          child: _Postcards(onTap: (name) {
+            state.logActivity('view', name);
+            _wizard(context, WizardPrefill(stops: [name]));
+          }),
+        ),
+        SliverToBoxAdapter(child: SizedBox(height: context.dockSpace + 8)),
       ]),
+    );
+  }
+
+  void _showRec(BuildContext context, Map<String, dynamic> rec) {
+    showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      builder: (sheet) => _RecSheet(
+        rec: rec,
+        onPlan: (city) {
+          Navigator.pop(sheet);
+          state.logActivity('like', city);
+          _wizard(context, WizardPrefill(stops: [city]));
+        },
+        onDismiss: (city) {
+          Navigator.pop(sheet);
+          state.logActivity('dismiss', city);
+          toast(context, tr('dismissed', [city]), action: tr('undo'), onAction: () => state.undoDismiss(city));
+          Future.delayed(const Duration(milliseconds: 300), state.refreshHome);
+        },
+      ),
     );
   }
 }
@@ -120,45 +127,44 @@ class HomeScreen extends StatelessWidget {
 class _TopBar extends StatelessWidget {
   const _TopBar({required this.state});
   final AppState state;
+
   @override
   Widget build(BuildContext context) {
     final u = state.user;
+    final first = u == null ? null : (u['name'] as String).trim().split(' ').first;
     return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 10, 16, 6),
+      padding: const EdgeInsets.fromLTRB(20, 10, 16, 4),
       child: Row(children: [
         Container(
-          width: 40, height: 40,
-          decoration: BoxDecoration(gradient: const SweepGradient(colors: [DC.teal, DC.violet, DC.amber, DC.teal]),
-              borderRadius: BorderRadius.circular(13)),
-          padding: const EdgeInsets.all(1.6),
-          child: Container(
-            decoration: BoxDecoration(color: context.dark ? const Color(0xFF070B16) : Colors.white, borderRadius: BorderRadius.circular(12)),
-            child: Transform.rotate(angle: .785, child: const Icon(Icons.flight_rounded, color: DC.teal, size: 22)),
-          ),
+          width: 42,
+          height: 42,
+          decoration: BoxDecoration(gradient: DC.brand, borderRadius: BorderRadius.circular(14),
+              boxShadow: [BoxShadow(color: DC.teal.withValues(alpha: .35), blurRadius: 16)]),
+          child: Transform.rotate(angle: isArabic ? -math.pi / 4 : math.pi / 4, child: const Icon(Icons.flight_rounded, color: DC.onBrand, size: 22)),
         ),
-        const SizedBox(width: 10),
+        const SizedBox(width: 12),
         Expanded(
           child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Text(u != null ? tr('hello', [(u['name'] as String).split(' ').first]) : tr('helloGuest'),
-                style: TextStyle(color: context.muted, fontSize: 13)),
-            Text(tr('appName'), style: Theme.of(context).textTheme.titleLarge?.copyWith(height: 1.1)),
+            Text(first != null ? tr('hello', [first]) : tr('helloGuest'), style: TextStyle(color: context.muted, fontSize: 13)),
+            Text(tr('appName'), style: display(size: 22, color: context.ink, height: 1.1)),
           ]),
         ),
-        InkWell(
-          borderRadius: BorderRadius.circular(999),
-          onTap: () => state.goTab(3),
+        Pressable(
+          onTap: () => state.goTab(Tabs.me),
           child: Container(
-            width: 42, height: 42,
+            width: 44,
+            height: 44,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               gradient: u != null ? const SweepGradient(colors: [DC.teal, DC.violet, DC.amber, DC.teal]) : null,
-              color: u == null ? context.card2 : null,
+              color: u == null ? context.card : null,
+              border: u == null ? Border.all(color: context.line) : null,
             ),
             alignment: Alignment.center,
             child: u != null
-                ? Text((u['name'] as String).trim().characters.first.toUpperCase(),
-                    style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 18, color: Color(0xFF06101C)))
-                : Icon(Icons.person_outline_rounded, color: context.muted),
+                ? Text(first!.characters.first.toUpperCase(),
+                    style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18, color: Color(0xFF06101C)))
+                : Icon(Icons.badge_outlined, color: context.muted),
           ),
         ),
       ]),
@@ -166,204 +172,602 @@ class _TopBar extends StatelessWidget {
   }
 }
 
-class _Hero extends StatefulWidget {
-  const _Hero({required this.state, required this.onForm});
+/// The hero: a blank boarding pass - "Where to next?" - whose destination line is where you type. Tilt it with your
+/// finger; the plane button takes off when you send.
+class _HeroPass extends StatefulWidget {
+  const _HeroPass({required this.state, required this.onForm});
   final AppState state;
   final VoidCallback onForm;
+
   @override
-  State<_Hero> createState() => _HeroState();
+  State<_HeroPass> createState() => _HeroPassState();
 }
 
-class _HeroState extends State<_Hero> {
+class _HeroPassState extends State<_HeroPass> with SingleTickerProviderStateMixin {
   final _c = TextEditingController();
+  late final AnimationController _takeoff = AnimationController(vsync: this, duration: const Duration(milliseconds: 700));
 
-  void _go() {
+  @override
+  void dispose() {
+    _c.dispose();
+    _takeoff.dispose();
+    super.dispose();
+  }
+
+  Future<void> _go() async {
     final text = _c.text.trim();
-    if (text.isNotEmpty && widget.state.busy) {
+    final st = widget.state;
+    if (text.isEmpty) {
+      st.goTab(Tabs.chat);
+      return;
+    }
+    if (st.busy) {
       toast(context, tr('busyWait')); // the text stays in the box
       return;
     }
-    widget.state.goTab(1);
-    if (text.isNotEmpty) {
-      _c.clear();
-      FocusScope.of(context).unfocus();
-      widget.state.send(text);
-    }
+    HapticFeedback.mediumImpact();
+    FocusScope.of(context).unfocus();
+    await _takeoff.forward(from: 0);
+    _c.clear();
+    _takeoff.value = 0;
+    st.goTab(Tabs.chat);
+    st.send(text);
   }
 
   @override
   Widget build(BuildContext context) {
+    final home = (widget.state.user?['prefs'] as Map?)?['home_city'] as String?;
     return Padding(
-      padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(28),
+      padding: const EdgeInsets.fromLTRB(16, 14, 16, 0),
+      child: Tilt3D(
+        maxAngle: .12,
+        child: Ticket(
           gradient: context.dark
-              ? DC.aurora
-              : const LinearGradient(colors: [Color(0xFFCFF5F0), Color(0xFFDCE4FF), Color(0xFFFBE7D3)],
+              ? const LinearGradient(colors: [Color(0xFF12223A), Color(0xFF151A3A), Color(0xFF221A3C)],
+                  begin: Alignment.topLeft, end: Alignment.bottomRight)
+              : const LinearGradient(colors: [Color(0xFFFFFCF5), Color(0xFFF2FBF9), Color(0xFFFFF4E6)],
                   begin: Alignment.topLeft, end: Alignment.bottomRight),
-        ),
-        padding: const EdgeInsets.fromLTRB(20, 24, 20, 18),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          ShaderMask(
-            shaderCallback: (r) => (context.dark ? DC.brand : const LinearGradient(colors: [Color(0xFF0B7F74), Color(0xFF2266C4)])).createShader(r),
-            child: Text(tr('whereTo'), style: Theme.of(context).textTheme.headlineLarge?.copyWith(color: Colors.white, fontSize: 34)),
-          ),
-          const SizedBox(height: 8),
-          Text(tr('heroSub'), style: TextStyle(color: context.dark ? const Color(0xFFB9C6E0) : const Color(0xFF33425D), height: 1.4)),
-          const SizedBox(height: 18),
-          TextField(
-            controller: _c,
-            minLines: 1,
-            maxLines: 4,  // a long request wraps and stays readable
-            textInputAction: TextInputAction.send,
-            onSubmitted: (_) => _go(),
-            decoration: InputDecoration(
-              hintText: tr('askPh'),
-              prefixIcon: const Icon(Icons.auto_awesome_rounded, color: DC.teal),
-              suffixIcon: Padding(
-                padding: const EdgeInsets.all(6),
-                child: IconButton.filled(
-                  onPressed: _go,
-                  style: IconButton.styleFrom(backgroundColor: DC.teal, foregroundColor: const Color(0xFF04110F)),
-                  icon: Transform.flip(flipX: isArabic, child: const Icon(Icons.send_rounded, size: 20)),
-                ),
+          main: Padding(
+            padding: const EdgeInsets.fromLTRB(20, 18, 20, 16),
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Row(children: [
+                Text(L('BOARDING PASS', 'بطاقة صعود'),
+                    style: mono(size: 11, color: DC.teal, spacing: 2, weight: FontWeight.w800)),
+                const Spacer(),
+                Text('DLL · 2026', style: mono(size: 11, color: context.faint, spacing: 1.5)),
+              ]),
+              const SizedBox(height: 12),
+              ShaderMask(
+                shaderCallback: (r) => (context.dark ? DC.brand : const LinearGradient(colors: [Color(0xFF0B7F74), Color(0xFF2266C4)])).createShader(r),
+                child: Text(tr('whereTo'), style: display(size: 32, color: Colors.white, height: 1.1)),
               ),
-            ),
-          ),
-          const SizedBox(height: 12),
-          IntrinsicHeight(  // both choices always the same height
-            child: Row(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-              Expanded(child: _ChoiceTile(icon: '💬', title: tr('chatWith'), sub: tr('chatWithSub'), onTap: () => widget.state.goTab(1))),
-              const SizedBox(width: 10),
-              Expanded(child: _ChoiceTile(icon: '📝', title: tr('quickForm'), sub: tr('quickFormSub'), onTap: widget.onForm)),
+              const SizedBox(height: 16),
+              Row(crossAxisAlignment: CrossAxisAlignment.end, children: [
+                PassField(L('From', 'من'), (home == null || home.isEmpty) ? '···' : home),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    child: AnimatedBuilder(
+                      animation: _takeoff,
+                      builder: (_, _) => _MiniRoute(progress: .5 + _takeoff.value * .5),
+                    ),
+                  ),
+                ),
+                PassField(L('To', 'إلى'), L('Anywhere', 'أي مكان'), end: true, valueColor: DC.teal),
+              ]),
+              const SizedBox(height: 14),
+              Container(
+                decoration: BoxDecoration(
+                  color: context.dark ? Colors.white.withValues(alpha: .05) : Colors.white,
+                  borderRadius: BorderRadius.circular(18),
+                  border: Border.all(color: context.line),
+                ),
+                padding: const EdgeInsetsDirectional.fromSTEB(14, 4, 6, 4),
+                child: Row(children: [
+                  Expanded(
+                    child: TextField(
+                      controller: _c,
+                      minLines: 1,
+                      maxLines: 4, // a long request wraps and stays readable
+                      textInputAction: TextInputAction.send,
+                      onSubmitted: (_) => _go(),
+                      decoration: InputDecoration(
+                        hintText: tr('askPh'),
+                        filled: false,
+                        border: InputBorder.none,
+                        enabledBorder: InputBorder.none,
+                        focusedBorder: InputBorder.none,
+                        contentPadding: const EdgeInsets.symmetric(vertical: 12),
+                      ),
+                    ),
+                  ),
+                  _TakeoffButton(anim: _takeoff, onTap: _go),
+                ]),
+              ),
             ]),
           ),
-        ]),
+          stub: Padding(
+            padding: const EdgeInsets.fromLTRB(16, 4, 16, 16),
+            child: Column(children: [
+              Row(children: [
+                Expanded(child: _StubAction(icon: Icons.chat_bubble_rounded, title: tr('chatWith'), sub: tr('chatWithSub'),
+                    onTap: () => widget.state.goTab(Tabs.chat))),
+                const SizedBox(width: 10),
+                Expanded(child: _StubAction(icon: Icons.edit_note_rounded, title: tr('quickForm'), sub: tr('quickFormSub'), onTap: widget.onForm)),
+              ]),
+              const SizedBox(height: 12),
+              Opacity(opacity: .55, child: Barcode('DALILI-${widget.state.tripId ?? 'NEW'}', height: 26)),
+            ]),
+          ),
+        ),
       ),
     );
   }
 }
 
-class _ChoiceTile extends StatelessWidget {
-  const _ChoiceTile({required this.icon, required this.title, required this.sub, required this.onTap});
-  final String icon, title, sub;
-  final VoidCallback onTap;
+class _MiniRoute extends StatelessWidget {
+  const _MiniRoute({required this.progress});
+  final double progress;
+
   @override
-  Widget build(BuildContext context) => Material(
-        color: context.dark ? Colors.white.withValues(alpha: .06) : Colors.white.withValues(alpha: .75),
-        borderRadius: BorderRadius.circular(18),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(18),
+  Widget build(BuildContext context) {
+    final rtl = Directionality.of(context) == TextDirection.rtl;
+    return SizedBox(
+      height: 26,
+      child: LayoutBuilder(builder: (context, c) {
+        final x = c.maxWidth * progress.clamp(0, 1);
+        return Stack(clipBehavior: Clip.none, children: [
+          Positioned.fill(
+            child: CustomPaint(painter: _DashPainter(context.dark ? Colors.white24 : const Color(0x441C3460))),
+          ),
+          PositionedDirectional(
+            start: x - 11,
+            top: 1,
+            child: Transform.rotate(
+              angle: rtl ? -math.pi / 2 : math.pi / 2,
+              child: const Icon(Icons.flight_rounded, color: DC.teal, size: 22),
+            ),
+          ),
+        ]);
+      }),
+    );
+  }
+}
+
+class _DashPainter extends CustomPainter {
+  _DashPainter(this.color);
+  final Color color;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final p = Paint()
+      ..color = color
+      ..strokeWidth = 1.6
+      ..strokeCap = StrokeCap.round;
+    final y = size.height / 2;
+    for (var x = 0.0; x < size.width; x += 8) {
+      canvas.drawLine(Offset(x, y), Offset(math.min(x + 4, size.width), y), p);
+    }
+  }
+
+  @override
+  bool shouldRepaint(_DashPainter old) => old.color != color;
+}
+
+/// The send button: a plane that climbs away when you send.
+class _TakeoffButton extends StatelessWidget {
+  const _TakeoffButton({required this.anim, required this.onTap});
+  final Animation<double> anim;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => Semantics(
+        button: true,
+        label: tr('chatWith'),
+        child: Pressable(
           onTap: onTap,
-          child: Padding(
-            padding: const EdgeInsets.all(14),
-            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text(icon, style: const TextStyle(fontSize: 24)),
-              const SizedBox(height: 6),
-              Text(title, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 14.5)),
-              Text(sub, maxLines: 2, overflow: TextOverflow.ellipsis, style: TextStyle(color: context.muted, fontSize: 12)),
-            ]),
+          child: Container(
+            width: 48,
+            height: 48,
+            decoration: BoxDecoration(
+              gradient: DC.brand,
+              borderRadius: BorderRadius.circular(15),
+              boxShadow: [BoxShadow(color: DC.teal.withValues(alpha: .35), blurRadius: 14, offset: const Offset(0, 5))],
+            ),
+            clipBehavior: Clip.antiAlias,
+            child: AnimatedBuilder(
+              animation: anim,
+              builder: (_, _) {
+                final v = Curves.easeInCubic.transform(anim.value);
+                final dir = isArabic ? -1.0 : 1.0;
+                return Transform.translate(
+                  offset: Offset(dir * v * 40, -v * 40),
+                  child: Transform.rotate(angle: dir * math.pi / 4, child: const Icon(Icons.flight_rounded, color: DC.onBrand, size: 24)),
+                );
+              },
+            ),
           ),
         ),
       );
 }
 
-class _ContinueCard extends StatelessWidget {
-  const _ContinueCard({required this.state});
+class _StubAction extends StatelessWidget {
+  const _StubAction({required this.icon, required this.title, required this.sub, required this.onTap});
+  final IconData icon;
+  final String title, sub;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => Pressable(
+        onTap: onTap,
+        child: Container(
+          padding: const EdgeInsets.all(12),
+          decoration: BoxDecoration(
+            color: context.dark ? Colors.white.withValues(alpha: .04) : const Color(0xFFF6F2E8),
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(color: context.line),
+          ),
+          child: Row(children: [
+            Icon(icon, color: DC.teal, size: 22),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                Text(title, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 13)),
+                Text(sub, maxLines: 1, overflow: TextOverflow.ellipsis, style: TextStyle(color: context.muted, fontSize: 11)),
+              ]),
+            ),
+          ]),
+        ),
+      );
+}
+
+/// The side doors: four 3D tiles.
+class _Doors extends StatelessWidget {
+  const _Doors({required this.state, required this.onForm});
   final AppState state;
+  final VoidCallback onForm;
+
+  @override
+  Widget build(BuildContext context) {
+    final doors = [
+      ('📷', L('What\'s this place?', 'إيه المكان ده؟'), DC.sky, () => Navigator.of(context).push(passRoute(LandmarkScreen(state: state)))),
+      ('🕋', L('Hajj & Umrah', 'الحج والعمرة'), const Color(0xFFC9A84A), () => Navigator.of(context).push(passRoute(PilgrimageScreen(state: state)))),
+      ('🎟️', L('Big events', 'إيفنتات عالمية'), DC.amber, () => state.goTab(Tabs.events)),
+      ('🧭', tr('quickForm'), DC.violet, onForm),
+    ];
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+      child: Row(children: [
+        for (var i = 0; i < doors.length; i++) ...[
+          if (i > 0) const SizedBox(width: 10),
+          Expanded(
+            child: Reveal(
+              delay: Duration(milliseconds: 160 + i * 70),
+              child: Tilt3D(
+                maxAngle: .3,
+                radius: 20,
+                child: Pressable(
+                  onTap: doors[i].$4,
+                  child: Container(
+                    height: 96,
+                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 10),
+                    decoration: BoxDecoration(
+                      color: context.card,
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(color: doors[i].$3.withValues(alpha: .35)),
+                      gradient: LinearGradient(
+                        colors: [doors[i].$3.withValues(alpha: context.dark ? .18 : .14), context.card],
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                      ),
+                    ),
+                    child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+                      Text(doors[i].$1, style: const TextStyle(fontSize: 26)),
+                      const SizedBox(height: 6),
+                      Text(doors[i].$2, maxLines: 2, textAlign: TextAlign.center, overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(fontSize: 11.5, fontWeight: FontWeight.w800, height: 1.2)),
+                    ]),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ]),
+    );
+  }
+}
+
+/// The trip in progress, as a small horizontal pass.
+class _ContinuePass extends StatelessWidget {
+  const _ContinuePass({required this.state});
+  final AppState state;
+
   @override
   Widget build(BuildContext context) {
     final c = state.trip!['trip_contract'] as Map<String, dynamic>? ?? {};
     final stops = (c['stops'] as List?) ?? [];
     final cities = stops.isNotEmpty ? stops.map((s) => (s['ref'] as Map)['name']).toList() : [c['destination_name'] ?? c['destination']];
-    final budget = state.plan!['budget'] as Map<String, dynamic>?;
+    final b = state.plan!['budget'] as Map<String, dynamic>?;
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
-      child: Card(
-        clipBehavior: Clip.antiAlias,
-        child: InkWell(
-          onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => TripScreen(state: state))),
-          child: Row(children: [
-            SizedBox(width: 104, height: 92, child: PlacePhoto(title: '${cities.first}')),
-            const SizedBox(width: 14),
-            Expanded(
-              child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                Text(tr('continueTrip').toUpperCase(),
-                    style: const TextStyle(color: DC.teal, fontWeight: FontWeight.w800, fontSize: 11, letterSpacing: .8)),
-                const SizedBox(height: 2),
-                Text(routeText(cities), maxLines: 1, overflow: TextOverflow.ellipsis, style: Theme.of(context).textTheme.titleMedium),
-                Text('${fmtDate(c['start_date'])} – ${fmtDate(c['end_date'])} · ${money(budget?['total'], budget?['currency'])}',
-                    style: TextStyle(color: context.muted, fontSize: 12.5)),
-              ]),
+      child: Pressable(
+        onTap: () => state.goTab(Tabs.trip),
+        child: Ticket(
+          axis: Axis.horizontal,
+          notch: 10,
+          main: Row(children: [
+            ClipRRect(
+              borderRadius: const BorderRadiusDirectional.horizontal(start: Radius.circular(22)).resolve(Directionality.of(context)),
+              child: SizedBox(width: 84, height: 96, child: PlacePhoto(title: '${cities.first}')),
             ),
-            Padding(padding: const EdgeInsets.all(12), child: Icon(isArabic ? Icons.chevron_left : Icons.chevron_right, color: context.muted)),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 12),
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Text(tr('continueTrip').toUpperCase(), style: mono(size: 10.5, color: DC.teal, spacing: 1.4)),
+                  const SizedBox(height: 3),
+                  Text(routeText(cities), maxLines: 1, overflow: TextOverflow.ellipsis, style: display(size: 17, color: context.ink)),
+                  const SizedBox(height: 2),
+                  Text('${fmtDate(c['start_date'])} – ${fmtDate(c['end_date'])}', style: TextStyle(color: context.muted, fontSize: 12)),
+                ]),
+              ),
+            ),
           ]),
+          stub: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 14),
+            child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Text(money(b?['total'] as num?, b?['currency'] as String?), style: display(size: 15, color: context.ink)),
+              const SizedBox(height: 6),
+              Icon(isArabic ? Icons.arrow_back_rounded : Icons.arrow_forward_rounded, color: DC.teal),
+            ]),
+          ),
         ),
       ),
     );
   }
 }
 
-class _VibeTile extends StatelessWidget {
-  const _VibeTile({required this.emoji, required this.label, required this.onTap});
-  final String emoji, label;
-  final VoidCallback onTap;
+/// Suggestions on an airport departures board: split-flap city names, the match as the "gate", a live clock.
+/// With no suggestions yet, the board shows popular places.
+class _DeparturesBoard extends StatefulWidget {
+  const _DeparturesBoard({required this.recs, required this.onPick, required this.onPopular});
+  final List<Map<String, dynamic>> recs;
+  final ValueChanged<Map<String, dynamic>> onPick;
+  final ValueChanged<String> onPopular;
+
   @override
-  Widget build(BuildContext context) => Card(
-        child: InkWell(
-          borderRadius: BorderRadius.circular(20),
-          onTap: onTap,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12),
-            child: Row(children: [
-              Container(
-                width: 38, height: 38, alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  gradient: LinearGradient(colors: [DC.teal.withValues(alpha: .18), DC.amber.withValues(alpha: .22)]),
-                ),
-                child: Text(emoji, style: const TextStyle(fontSize: 19)),
+  State<_DeparturesBoard> createState() => _DeparturesBoardState();
+}
+
+class _DeparturesBoardState extends State<_DeparturesBoard> {
+  late Timer _clock;
+  DateTime _now = DateTime.now();
+
+  @override
+  void initState() {
+    super.initState();
+    _clock = Timer.periodic(const Duration(seconds: 20), (_) => setState(() => _now = DateTime.now()));
+  }
+
+  @override
+  void dispose() {
+    _clock.cancel();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    const amber = Color(0xFFFFC56B);
+    final personal = widget.recs.isNotEmpty;
+    final rows = personal
+        ? [for (final r in widget.recs.take(6)) (r['name'] as String, r['country'] as String? ?? '', '${r['match']}%', r)]
+        : [for (final d in _dests.take(6)) (d.$1, d.$3, L('ON TIME', 'في الميعاد'), null)];
+    final hh = _now.hour.toString().padLeft(2, '0'), mm = _now.minute.toString().padLeft(2, '0');
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 22, 16, 0),
+      child: Container(
+        decoration: BoxDecoration(
+          color: const Color(0xFF0B101D),
+          borderRadius: BorderRadius.circular(24),
+          border: Border.all(color: Colors.white.withValues(alpha: .07)),
+          boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: context.dark ? .5 : .25), blurRadius: 24, offset: const Offset(0, 10))],
+        ),
+        padding: const EdgeInsets.fromLTRB(16, 14, 16, 10),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+          Row(children: [
+            const Icon(Icons.flight_takeoff_rounded, color: amber, size: 20),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                Text(personal ? tr('forYou') : tr('popular'), style: display(size: 17, color: Colors.white)),
+                Text(personal ? tr('forYouSub') : L('Tap a flight to plan it', 'دوس على أي رحلة تخططها'),
+                    maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(color: Color(0xFF8C98B4), fontSize: 11.5)),
+              ]),
+            ),
+            Text('$hh:$mm', style: mono(size: 18, color: amber)),
+          ]),
+          const SizedBox(height: 10),
+          Row(children: [
+            Expanded(flex: 6, child: Text(L('DESTINATION', 'الوجهة'), style: mono(size: 9.5, color: const Color(0xFF6E7A96), spacing: 1.2))),
+            Expanded(flex: 3, child: Text(personal ? L('MATCH', 'تطابق') : L('STATUS', 'الحالة'),
+                textAlign: TextAlign.end, style: mono(size: 9.5, color: const Color(0xFF6E7A96), spacing: 1.2))),
+          ]),
+          const Divider(color: Color(0x22FFFFFF), height: 14),
+          for (var i = 0; i < rows.length; i++)
+            InkWell(
+              borderRadius: BorderRadius.circular(10),
+              onTap: () {
+                HapticFeedback.selectionClick();
+                final rec = rows[i].$4;
+                rec != null ? widget.onPick(rec) : widget.onPopular(rows[i].$1);
+              },
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 7),
+                child: Row(children: [
+                  Expanded(
+                    flex: 6,
+                    child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                      FittedBox(
+                        fit: BoxFit.scaleDown,
+                        alignment: AlignmentDirectional.centerStart,
+                        child: Directionality(
+                          textDirection: TextDirection.ltr,
+                          child: SplitFlap(
+                            _boardText(rows[i].$1),
+                            delay: Duration(milliseconds: 300 + i * 140),
+                            style: mono(size: 15, color: Colors.white, weight: FontWeight.w800),
+                            tileColor: const Color(0xFF161D2E),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(rows[i].$2, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(color: Color(0xFF8C98B4), fontSize: 11)),
+                    ]),
+                  ),
+                  Expanded(
+                    flex: 3,
+                    child: Text(rows[i].$3, textAlign: TextAlign.end,
+                        style: personal ? mono(size: 16, color: amber) : mono(size: 11, color: DC.green, spacing: .8)),
+                  ),
+                ]),
               ),
-              const SizedBox(width: 10),
-              Expanded(child: Text(label, maxLines: 2, style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 13.5))),
-            ]),
+            ),
+        ]),
+      ),
+    );
+  }
+
+  /// Board text: Latin capitals, at most 12 letters (the board's width).
+  static String _boardText(String name) {
+    final up = name.toUpperCase();
+    return up.length > 12 ? '${up.substring(0, 11)}.' : up;
+  }
+}
+
+class _Heading extends StatelessWidget {
+  const _Heading(this.title, this.sub);
+  final String title;
+  final String? sub;
+
+  @override
+  Widget build(BuildContext context) => Padding(
+        padding: const EdgeInsets.fromLTRB(20, 26, 20, 12),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Text(title, style: display(size: 20, color: context.ink)),
+          if (sub != null) Text(sub!, style: TextStyle(color: context.muted, fontSize: 13)),
+        ]),
+      );
+}
+
+/// A vibe as a small boarding-group pass ("GROUP A").
+class _VibePass extends StatelessWidget {
+  const _VibePass({required this.group, required this.emoji, required this.label, required this.onTap});
+  final String group, emoji, label;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => Pressable(
+        onTap: onTap,
+        child: SizedBox(
+          width: 190,
+          child: Ticket(
+            axis: Axis.horizontal,
+            notch: 9,
+            gap: 16,
+            elevation: 4,
+            main: Padding(
+              padding: const EdgeInsetsDirectional.fromSTEB(14, 12, 6, 12),
+              child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.center, children: [
+                Text('${L('GROUP', 'مجموعة')} $group', style: mono(size: 9.5, color: context.faint, spacing: 1.2)),
+                const SizedBox(height: 4),
+                Text(label, maxLines: 2, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 13.5, height: 1.2)),
+              ]),
+            ),
+            stub: SizedBox(width: 50, child: Center(child: Text(emoji, style: const TextStyle(fontSize: 24)))),
           ),
         ),
       );
 }
 
-class _DestCard extends StatelessWidget {
-  const _DestCard({required this.name, required this.wiki, required this.onTap});
-  final String name, wiki;
-  final VoidCallback onTap;
+/// Popular places as postcards in a 3D coverflow, each with a round stamp.
+class _Postcards extends StatefulWidget {
+  const _Postcards({required this.onTap});
+  final ValueChanged<String> onTap;
+
+  @override
+  State<_Postcards> createState() => _PostcardsState();
+}
+
+class _PostcardsState extends State<_Postcards> {
+  final _page = PageController(viewportFraction: .7);
+
+  @override
+  void dispose() {
+    _page.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) => SizedBox(
-        width: 150,
-        child: Card(
-          clipBehavior: Clip.antiAlias,
-          child: InkWell(
-            onTap: onTap,
-            child: Stack(fit: StackFit.expand, children: [
-              PlacePhoto(title: wiki),
-              const DecoratedBox(decoration: BoxDecoration(gradient: LinearGradient(
-                  colors: [Colors.transparent, Color(0xCC000000)], begin: Alignment.center, end: Alignment.bottomCenter))),
-              Positioned(
-                left: 12, right: 12, bottom: 12,
-                child: Text(name, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w800, fontSize: 15)),
+        height: 250,
+        child: PageView.builder(
+          controller: _page,
+          itemCount: _dests.length,
+          padEnds: true,
+          itemBuilder: (_, i) {
+            final (name, wiki, country) = _dests[i];
+            return Coverflow(
+              controller: _page,
+              index: i,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 8),
+                child: Pressable(
+                  onTap: () => widget.onTap(name),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(22),
+                      boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: context.dark ? .5 : .18), blurRadius: 18, offset: const Offset(0, 8))],
+                    ),
+                    clipBehavior: Clip.antiAlias,
+                    child: Stack(fit: StackFit.expand, children: [
+                      PlacePhoto(title: wiki),
+                      const DecoratedBox(
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(colors: [Colors.transparent, Color(0xD0000000)], begin: Alignment.center, end: Alignment.bottomCenter),
+                        ),
+                      ),
+                      PositionedDirectional(
+                        top: 10,
+                        end: 10,
+                        child: Stamp(label: country, center: name.characters.first, color: Colors.white.withValues(alpha: .9), size: 62),
+                      ),
+                      PositionedDirectional(
+                        start: 16,
+                        end: 16,
+                        bottom: 14,
+                        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                          Text(L('GREETINGS FROM', 'تحياتي من'), style: mono(size: 9.5, color: Colors.white70, spacing: 1.5)),
+                          Text(name, style: display(size: 24, color: Colors.white)),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                ),
               ),
-            ]),
-          ),
+            );
+          },
         ),
       );
 }
 
-/// A personal suggestion from the recommendation model.
-class RecCard extends StatelessWidget {
-  const RecCard({super.key, required this.rec, required this.onPlan, required this.onDismiss});
+/// A suggestion opened from the board: photo, why it fits, tags - plan it or hide it.
+class _RecSheet extends StatelessWidget {
+  const _RecSheet({required this.rec, required this.onPlan, required this.onDismiss});
   final Map<String, dynamic> rec;
-  final void Function(String city) onPlan;
-  final void Function(String city) onDismiss;
+  final ValueChanged<String> onPlan;
+  final ValueChanged<String> onDismiss;
 
   String _reason() {
     final r = rec['reason'] as Map<String, dynamic>?;
@@ -374,67 +778,52 @@ class RecCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final tags = (rec['tags'] as List).cast<String>();
-    final tint = DC.tag[tags.first] ?? DC.teal;
+    final tags = ((rec['tags'] as List?) ?? []).cast<String>();
+    final tint = tags.isEmpty ? DC.teal : (DC.tag[tags.first] ?? DC.teal);
     final name = rec['name'] as String;
-    return SizedBox(
-      width: 250,
-      child: Card(
-        clipBehavior: Clip.antiAlias,
-        child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-          SizedBox(
-            height: 136,
-            child: Stack(fit: StackFit.expand, children: [
-              PlacePhoto(url: rec['image'] as String?, title: rec['image'] == null ? name : null,
-                  emoji: DC.emoji[tags.first] ?? '✈️', tint: tint),
-              Positioned(
-                top: 10, left: 10,
-                child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 4),
-                  decoration: BoxDecoration(color: const Color(0xC8060C18), borderRadius: BorderRadius.circular(999),
-                      border: Border.all(color: tint.withValues(alpha: .8))),
-                  child: Text(tr('match', [rec['match']]), style: const TextStyle(color: Colors.white, fontSize: 11.5, fontWeight: FontWeight.w800)),
-                ),
-              ),
-              Positioned(
-                top: 6, right: 6,
-                child: IconButton(
-                  tooltip: tr('notForMe'),
-                  style: IconButton.styleFrom(backgroundColor: const Color(0xAA060C18), foregroundColor: Colors.white,
-                      minimumSize: const Size(32, 32), padding: EdgeInsets.zero),
-                  onPressed: () => onDismiss(name),
-                  icon: const Icon(Icons.close_rounded, size: 18),
-                ),
-              ),
-            ]),
-          ),
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
-              child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                Text(name, maxLines: 1, overflow: TextOverflow.ellipsis, style: Theme.of(context).textTheme.titleMedium),
-                Text(rec['country'] as String? ?? '', style: TextStyle(color: context.muted, fontSize: 12)),
-                const SizedBox(height: 8),
-                Text('✨ ${_reason()}', maxLines: 2, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 12.5, height: 1.3)),
-                const SizedBox(height: 8),
-                Wrap(spacing: 6, runSpacing: 6, children: [
-                  for (final t in tags.take(2)) Pill('${DC.emoji[t] ?? ''} ${tr('int.$t')}', color: DC.tag[t]),
-                ]),
-                const SizedBox(height: 6),
-                Text('${tr('knownFor')}: ${(rec['keywords'] as List).join(' · ')}',
-                    maxLines: 1, overflow: TextOverflow.ellipsis, style: TextStyle(color: context.faint, fontSize: 11.5)),
-                const Spacer(),
-                SizedBox(
-                  width: double.infinity,
-                  child: FilledButton(
-                    style: FilledButton.styleFrom(minimumSize: const Size(40, 42)),
-                    onPressed: () => onPlan(name),
-                    child: Text(tr('planThis')),
+    return SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(18, 0, 18, 18),
+        child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+          ClipRRect(
+            borderRadius: BorderRadius.circular(22),
+            child: SizedBox(
+              height: 180,
+              child: Stack(fit: StackFit.expand, children: [
+                PlacePhoto(url: rec['image'] as String?, title: rec['image'] == null ? name : null,
+                    emoji: tags.isEmpty ? '✈️' : (DC.emoji[tags.first] ?? '✈️'), tint: tint),
+                PositionedDirectional(
+                  top: 12,
+                  start: 12,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    decoration: BoxDecoration(color: const Color(0xC8060C18), borderRadius: BorderRadius.circular(999),
+                        border: Border.all(color: tint.withValues(alpha: .8))),
+                    child: Text(tr('match', [rec['match']]), style: const TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.w800)),
                   ),
                 ),
               ]),
             ),
           ),
+          const SizedBox(height: 14),
+          Text(name, style: display(size: 24, color: context.ink)),
+          Text(rec['country'] as String? ?? '', style: TextStyle(color: context.muted)),
+          const SizedBox(height: 10),
+          if (_reason().isNotEmpty) Text('✨ ${_reason()}', style: const TextStyle(fontSize: 14, height: 1.35)),
+          const SizedBox(height: 10),
+          Wrap(spacing: 6, runSpacing: 6, children: [
+            for (final t in tags.take(3)) Pill('${DC.emoji[t] ?? ''} ${tr('int.$t')}', color: DC.tag[t]),
+          ]),
+          if ((rec['keywords'] as List?)?.isNotEmpty ?? false) ...[
+            const SizedBox(height: 8),
+            Text('${tr('knownFor')}: ${(rec['keywords'] as List).join(' · ')}', style: TextStyle(color: context.faint, fontSize: 12)),
+          ],
+          const SizedBox(height: 18),
+          Row(children: [
+            OutlinedButton(onPressed: () => onDismiss(name), child: Text(tr('notForMe'))),
+            const SizedBox(width: 10),
+            Expanded(child: BrandButton(label: tr('planThis'), icon: Icons.flight_takeoff_rounded, onTap: () => onPlan(name))),
+          ]),
         ]),
       ),
     );
