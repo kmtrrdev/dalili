@@ -3,6 +3,7 @@ const Map<String, Map<String, String>> _strings = {
   'en': {
     'appName': 'Dalili',
     'tabExplore': 'Explore', 'tabChat': 'Chat', 'tabTrips': 'My trips', 'tabProfile': 'Profile',
+    'tabHome': 'Home', 'tabTrip': 'My trip', 'tabEvents': 'Events', 'tabMe': 'Passport',
     'hello': 'Hi, {0}', 'helloGuest': 'Hello, traveller', 'whereTo': 'Where to next?',
     'heroSub': 'Real flights, hotels and places - planned day by day. You book when you\'re ready.',
     'askPh': 'Tell Dalili about your trip…', 'chatWith': 'Chat with Dalili', 'chatWithSub': 'In your own words, Arabic or English',
@@ -83,6 +84,7 @@ const Map<String, Map<String, String>> _strings = {
   'ar': {
     'appName': 'دليلي',
     'tabExplore': 'استكشف', 'tabChat': 'الشات', 'tabTrips': 'رحلاتي', 'tabProfile': 'حسابي',
+    'tabHome': 'الرئيسية', 'tabTrip': 'رحلتي', 'tabEvents': 'إيفنتات', 'tabMe': 'باسبوري',
     'hello': 'أهلاً يا {0}', 'helloGuest': 'أهلاً يا مسافر', 'whereTo': 'رايح فين المرة الجاية؟',
     'heroSub': 'طيران وفنادق وأماكن حقيقية - متخططة يوم بيوم. وانت تحجز لما تكون جاهز.',
     'askPh': 'احكي لدليلي عن رحلتك…', 'chatWith': 'اتكلم مع دليلي', 'chatWithSub': 'بكلامك، عربي أو إنجليزي',
@@ -167,3 +169,6 @@ String tr(String key, [List<Object?> args = const []]) {
 }
 
 bool get isArabic => currentLang == 'ar';
+
+/// An inline string in both languages - for screen-specific text (the shared words stay in the table above).
+String L(String en, String ar) => isArabic ? ar : en;

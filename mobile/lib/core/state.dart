@@ -1,7 +1,9 @@
+import 'dart:convert';
 import 'dart:math';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -31,8 +33,18 @@ const _toolSteps = {
 };
 const _nodeSteps = {'understand': 'understand', 'plan': 'plan', 'critic': 'review'};
 
+/// The dock's tabs, in order.
+abstract final class Tabs {
+  static const home = 0, trip = 1, chat = 2, events = 3, me = 4;
+}
+
 /// Everything the app knows: settings, the signed-in user, the open trip and its conversation.
 class AppState extends ChangeNotifier {
+  /// Tabs with something new the traveller hasn't seen (a reply in the chat, a plan on My trip): a dot on the dock.
+  final Set<int> unread = {};
+
+  /// Goes up each time a new plan lands, so screens can replay their "new pass" animation.
+  int planVersion = 0;
   late SharedPreferences _prefs;
   final _secure = const FlutterSecureStorage();
   late Api api;
@@ -243,6 +255,7 @@ class AppState extends ChangeNotifier {
       final t = await api.get('/api/trips/$id') as Map<String, dynamic>;
       if (id != tripId) _retireTurn();
       _setTrip(t);
+      planVersion++;
       messages.clear();
       final conv = (t['conversation'] as List? ?? []);
       for (var i = 0; i < conv.length; i++) {
@@ -286,11 +299,25 @@ class AppState extends ChangeNotifier {
       } else if (ev.type == 'tool') {
         final k = _toolSteps[ev.data['server']];
         if (k != null) progress!.add(k);
+      } else if (ev.type == 'preview' && !gotReply) {
+        // The plan is built: show it now; the review and the reply follow.
+        _setTrip(ev.data['trip'] as Map<String, dynamic>);
+        planVersion++;
+        if (tab != Tabs.trip) unread.add(Tabs.trip);
+        HapticFeedback.mediumImpact();
       } else if (ev.type == 'done' && !gotReply) {
         final t = ev.data['trip'] as Map<String, dynamic>;
+        final hadPlan = plan != null;
+        final before = jsonEncode(trip?['plans']);
         _setTrip(t);
+        if (plan != null && (!hadPlan || jsonEncode(t['plans']) != before)) {
+          planVersion++;
+          if (tab != Tabs.trip) unread.add(Tabs.trip);
+        }
         final reply = ev.data['reply'] as String? ?? '';
         if (reply.isNotEmpty) messages.add(ChatLine('assistant', reply, tripCard: plan != null));
+        if (tab != Tabs.chat) unread.add(Tabs.chat);
+        HapticFeedback.lightImpact();
         gotReply = true;
       } else if (ev.type == 'error') {
         messages.add(ChatLine('assistant', _errorText(ev.data)));
@@ -331,6 +358,7 @@ class AppState extends ChangeNotifier {
 
   void goTab(int i) {
     tab = i;
+    unread.remove(i);
     notifyListeners();
   }
 }

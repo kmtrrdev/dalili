@@ -2,7 +2,7 @@ name: dalili
 description: "Dalili - your AI travel planner (iOS + Android). Talks to the Dalili backend in ../travel_agent."
 publish_to: 'none'
 
-version: 1.0.1+2
+version: 2.0.0+3
 
 environment:
   sdk: ^3.13.4
@@ -19,6 +19,9 @@ dependencies:
   url_launcher: any             # booking links
   google_fonts: ">=6.2.0 <9.0.0"  # Space Grotesk / Inter / Cairo, like the website (9.x moved to package:material_ui)
   intl: any                     # dates in Arabic and English
+  image_picker: ^1.2.4
+  flutter_map: ^8.3.2
+  latlong2: ^0.10.1
 
 dev_dependencies:
   flutter_test:

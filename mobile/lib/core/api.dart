@@ -16,7 +16,7 @@ class ApiException implements Exception {
 /// One live step of a chat turn (from the server-sent events of /api/chat/stream).
 class StreamEvent {
   StreamEvent(this.type, this.data);
-  final String type; // node | tool | done | error
+  final String type; // node | tool | preview | done | error
   final Map<String, dynamic> data;
 }
 
@@ -66,6 +66,15 @@ class Api {
     return data;
   }
 
+  /// The headers the server needs to know the caller (for a page opened in the in-app browser, e.g. the trip book).
+  Map<String, String> get identityHeaders => {
+        'X-Client': 'mobile',
+        'X-Guest-Id': guestId,
+        if (token != null) 'Authorization': 'Bearer $token',
+      };
+
+  Uri url(String path, [Map<String, String>? query]) => _uri(path, query);
+
   Future<dynamic> get(String path, {Map<String, String>? query}) => _send('GET', path, query: query);
   Future<dynamic> post(String path, [Object? body, Duration timeout = const Duration(seconds: 40)]) =>
       _send('POST', path, body: body ?? {}, timeout: timeout);
@@ -74,10 +83,11 @@ class Api {
       _send('DELETE', path, body: body, query: query);
 
   /// A chat turn with live progress: node / tool events, then `done` with the reply and the full trip.
-  Stream<StreamEvent> chatStream(String message, {String? tripId}) async* {
+  /// With [preview], the new plan also arrives as soon as it is built (`preview`), before the review and the reply.
+  Stream<StreamEvent> chatStream(String message, {String? tripId, bool preview = true}) async* {
     final req = http.Request('POST', _uri('/api/chat/stream'))
       ..headers.addAll(_headers)
-      ..body = jsonEncode({'message': message, 'trip_id': ?tripId});
+      ..body = jsonEncode({'message': message, 'trip_id': ?tripId, 'preview': preview});
     http.StreamedResponse res;
     try {
       res = await _client.send(req).timeout(const Duration(seconds: 30));
