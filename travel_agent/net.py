@@ -175,7 +175,7 @@ def _served(data: Any, fetched: float, stale: bool = False) -> Any:
 
 
 async def fetch_json(service: str, url: str, params: dict | None = None, *, ttl_s: float, method: str = "GET",
-                     json_body: Any = None, headers: dict | None = None) -> Any:
+                     json_body: Any = None, headers: dict | None = None, timeout: float | None = None) -> Any:
     params = {k: v for k, v in (params or {}).items() if v is not None}
     key = cache_key(method, url, params, json_body)
     mode = settings.http_mode
@@ -199,7 +199,8 @@ async def fetch_json(service: str, url: str, params: dict | None = None, *, ttl_
         quota.calls += 1
     started = time.perf_counter()
     try:
-        resp = await _http().request(method, url, params=params, json=json_body, headers=headers)
+        resp = await _http().request(method, url, params=params, json=json_body, headers=headers,
+                                     **({"timeout": timeout} if timeout else {}))  # a slow source's own limit
     except httpx.HTTPError as exc:
         if hit is not None:
             log.warning("%s unreachable, serving stale cache: %s", service, redact(str(exc)))

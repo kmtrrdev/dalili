@@ -18,7 +18,7 @@ WINDOW = (date(2026, 9, 27), date(2027, 10, 31))
 # Out of town (~29 km, like a circuit or a stadium): an outing on the day, not a day trip that owns it.
 FILM_FEST = we.WorldEvent(
     id="Q1", name="Rome Film Fest", name_ar="مهرجان روما السينمائي", category="music", city="Rome", country_code="IT",
-    lat=41.70, lon=12.25, start=date(2026, 10, 15), end=date(2026, 10, 25), dates_source="official site",
+    lat=41.70, lon=12.25, start=date(2026, 10, 15), end=date(2026, 10, 25), dates_source="wikidata",
     why="Premieres and stars at the Auditorium", wikipedia="https://en.wikipedia.org/wiki/Rome_Film_Fest",
     website="https://www.romacinemafest.it", fame=30,
     ticket=we.Ticket(amount=20, currency="EUR", source="official site", quote="Biglietti da 20 €"))
@@ -27,81 +27,138 @@ MILAN_DESIGN = FILM_FEST.model_copy(update={"id": "Q2", "name": "Milan Design We
 OKTOBERFEST = FILM_FEST.model_copy(update={"id": "Q3", "name": "Oktoberfest", "city": "Munich", "country_code": "DE"})
 
 
-def _proposed(**kw) -> we.Proposed:
-    base = {"title": "Oktoberfest", "category": "festival", "city": "Munich", "country_code": "DE",
-            "start": "2027-09-18", "end": "2027-10-03", "why": "Beer tents", "why_ar": "خيم البيرة"}
-    return we.Proposed(**{**base, **kw})
+def test_fixed_rules_give_the_real_dates():
+    assert we.easter(2027) == date(2027, 3, 28) and we.easter(2025) == date(2025, 4, 20)
+    okt = next(f for f in we.FIXED if f.title == "Oktoberfest").rule
+    assert okt(2026) == (date(2026, 9, 19), date(2026, 10, 4))
+    assert okt(2023) == (date(2023, 9, 16), date(2023, 10, 3))  # 3 October is later than the first Sunday
+    assert okt(2018)[0] == date(2018, 9, 22)  # 15 September was a Saturday: the next one
+    rio = next(f for f in we.FIXED if f.title == "Rio Carnival").rule
+    assert rio(2027) == (date(2027, 2, 5), date(2027, 2, 10))  # Friday to Ash Wednesday
+    market = next(f for f in we.FIXED if f.title.startswith("Christkindlesmarkt")).rule
+    assert market(2026) == (date(2026, 11, 27), date(2026, 12, 24))
+    fringe = next(f for f in we.FIXED if f.title == "Edinburgh Festival Fringe").rule
+    assert fringe(2025) == (date(2025, 8, 1), date(2025, 8, 25))
+    hogmanay = [c for c in we.fixed_candidates(WINDOW) if c.title == "Hogmanay"]
+    assert [(c.start, c.end) for c in hogmanay] == [(date(2026, 12, 30), date(2027, 1, 1))]
 
 
-def _sources(monkeypatch, entity: dict, edition: we.Edition | None = None, page: str = ""):
-    async def wikipedia(title):
-        return {"title": "Oktoberfest", "wikibase_item": "Q32", "extract": "The world's largest Volksfest.",
-                "coordinates": {"lat": 48.13, "lon": 11.55}, "content_urls": {"desktop": {"page": "https://w/Oktoberfest"}}}
-
-    async def wikidata(qid):
-        return entity
-
-    async def official(name, site, window):
-        return edition, page, "https://www.oktoberfest.de"
-
-    async def no_edition_article(title):
-        return None
-
-    monkeypatch.setattr(we.wiki, "find_article", wikipedia)
-    monkeypatch.setattr(we.wiki, "summary", no_edition_article)
-    monkeypatch.setattr(we.wiki, "entity", wikidata)
-    monkeypatch.setattr(we, "_official", official)
+@pytest.mark.parametrize("raw,year,span", [
+    ("23 December 2027 – 21 January 2028", 2027, ((2027, 12, 23), (2028, 1, 21))),
+    ("19 June – 17 July", 2027, ((2027, 6, 19), (2027, 7, 17))),
+    ("5–20 June 2027<ref>{{cite web|url=x}}</ref>", 2027, ((2027, 6, 5), (2027, 6, 20))),
+    ("June 5{{ndash}}20, 2027", 2027, ((2027, 6, 5), (2027, 6, 20))),
+    ("{{start date|2027|1|13}} – {{end date|2027|1|31}}", 2027, ((2027, 1, 13), (2027, 1, 31))),
+    ("[[28 December]] 2026 to 5 January 2027<br />Final: 5 January", 2026, ((2026, 12, 28), (2027, 1, 5))),
+    ("October–November 2027", 2027, None),  # no days: nothing to plan around
+    ("TBA", 2027, None),
+])
+def test_infobox_dates_are_read_or_refused(raw, year, span):
+    expect = (date(*span[0]), date(*span[1])) if span else None
+    assert we.parse_span(raw, year) == expect
 
 
-def _entity(fame: int, **claims) -> dict:
-    return {"sitelinks": {f"w{i}": {} for i in range(fame)}, "labels": {"ar": {"value": "أكتوبرفست"}},
-            "claims": {p: [{"mainsnak": {"snaktype": "value", "datavalue": {"value": v}}}] for p, v in claims.items()}}
+def _row(**kw) -> dict:
+    return {k: {"value": v} for k, v in kw.items()}
 
 
-def test_dates_from_the_official_site_must_be_quoted_from_the_page():
-    page = "Oktoberfest 2027: 18. September bis 3. Oktober 2027 auf der Theresienwiese"
-    assert we.dates_quoted("18. September bis 3. Oktober 2027", page, date(2027, 9, 18))
-    assert not we.dates_quoted("19. September bis 3. Oktober 2027", page, date(2027, 9, 19))  # not on the page
-    assert not we.dates_quoted("auf der Theresienwiese", page, date(2027, 9, 18))  # no date in it
+def test_wikidata_rows_become_dated_famous_events_only():
+    rows = [
+        _row(item="http://www.wikidata.org/entity/Q1", n="20", start="2027-07-02T00:00:00Z", prec="11"),
+        _row(item="http://www.wikidata.org/entity/Q1", root="http://www.wikidata.org/entity/Q16510064", cc="fr",
+             end="2027-07-25T00:00:00Z", endPrec="11", locLabel="Stade X", upLabel="Lyon"),
+        # Known to the year only: the infobox has to give the days.
+        _row(item="http://www.wikidata.org/entity/Q2", n="20", start="2027-01-01T00:00:00Z", prec="9"),
+        _row(item="http://www.wikidata.org/entity/Q2", root="http://www.wikidata.org/entity/Q13406554", cc="KE"),
+        # An election: dated and famous, but not something people travel to.
+        _row(item="http://www.wikidata.org/entity/Q3", n="40", start="2027-04-18T00:00:00Z", prec="11"),
+        # Famous only in the region: kept in Saudi Arabia, dropped elsewhere.
+        _row(item="http://www.wikidata.org/entity/Q4", n="5", start="2026-12-05T00:00:00Z", prec="11"),
+        _row(item="http://www.wikidata.org/entity/Q4", root="http://www.wikidata.org/entity/Q16510064", cc="SA",
+             locLabel="Riyadh", locTown="true"),
+        _row(item="http://www.wikidata.org/entity/Q5", n="5", start="2026-12-05T00:00:00Z", prec="11"),
+        _row(item="http://www.wikidata.org/entity/Q5", root="http://www.wikidata.org/entity/Q16510064", cc="US"),
+    ]
+    got = {c.qid: c for c in we.wikidata_candidates(rows)}
+    assert set(got) == {"Q1", "Q2", "Q4"}
+    assert (got["Q1"].start, got["Q1"].end, got["Q1"].country_code, got["Q1"].city) == \
+        (date(2027, 7, 2), date(2027, 7, 25), "FR", "Lyon")
+    assert got["Q2"].start is None and got["Q2"].approx == (2027, None)
+    assert got["Q4"].city == "Riyadh"
 
 
-def test_official_dates_and_ticket_win_over_the_models_guess(monkeypatch):
-    page = "Tickets ab 25 EUR. Oktoberfest 2027: 18. September bis 3. Oktober 2027"
-    _sources(monkeypatch, _entity(80, P856="https://www.oktoberfest.de"), we.Edition(
-        found_dates=True, start="2027-09-18", end="2027-10-03", dates_quote="18. September bis 3. Oktober 2027",
-        ticket_from=25, currency="EUR", ticket_quote="Tickets ab 25 EUR"), page)
-    ev = anyio.run(we.verify, _proposed(start="2027-09-20", end="2027-10-05"), WINDOW)
-    assert (ev.start, ev.end, ev.dates_source) == (date(2027, 9, 18), date(2027, 10, 3), "official site")
-    assert ev.ticket.source == "official site" and ev.ticket.amount == 25 and ev.name_ar == "أكتوبرفست"
+def test_formula_1_weekends_run_from_practice_to_the_race():
+    races = [{"season": "2026", "raceName": "Qatar Grand Prix", "date": "2026-11-29",
+              "url": "https://en.wikipedia.org/wiki/2026_Qatar_Grand_Prix", "FirstPractice": {"date": "2026-11-27"},
+              "Circuit": {"Location": {"lat": "25.49", "long": "51.45", "locality": "Lusail", "country": "Qatar"}}}]
+    c, = we.f1_candidates(races)
+    assert (c.title, c.fallback_title, c.start, c.end, c.country_code, c.city) == \
+        ("2026 Qatar Grand Prix", "Qatar Grand Prix", date(2026, 11, 27), date(2026, 11, 29), "QA", "Lusail")
 
 
-def test_unconfirmed_dates_stay_labelled_and_obscure_events_are_dropped(monkeypatch):
-    _sources(monkeypatch, _entity(80))
-    ev = anyio.run(we.verify, _proposed(ticket_from=15, ticket_currency="eur"), WINDOW)
-    assert ev.dates_source == "usual dates" and ev.ticket.source == "AI estimate" and ev.ticket.currency == "EUR"
-    _sources(monkeypatch, _entity(3))
-    assert anyio.run(we.verify, _proposed(), WINDOW) is None  # three articles: not world-famous
-    assert anyio.run(we.verify, _proposed(), WINDOW, 3) is not None  # a regional event's lower bar
-    _sources(monkeypatch, _entity(80, P580={"time": "+2027-03-14T00:00:00Z", "precision": 11},
-                                  P582={"time": "+2027-12-12T00:00:00Z", "precision": 11}))
-    assert anyio.run(we.verify, _proposed(), WINDOW) is None  # a nine-month season is not an event
+def _wiki(monkeypatch, articles: dict, infobox: tuple | None = None):
+    async def summary(title, lang="en"):
+        return articles.get((lang, title))
 
+    async def entity(qid):
+        return {"sitelinks": {f"w{i}": {} for i in range(30)} | {"arwiki": {"title": "أكتوبرفست"}},
+                "labels": {"ar": {"value": "أكتوبرفست"}}, "claims": {}}
 
-def test_this_years_edition_article_gives_exact_dates(monkeypatch):
-    _sources(monkeypatch, _entity(80))
-    edition = _entity(20, P580={"time": "+2027-09-18T00:00:00Z", "precision": 11},
-                      P582={"time": "+2027-10-03T00:00:00Z", "precision": 11})
-
-    async def summary(title):
-        return {"title": title, "wikibase_item": "Q2027"} if title == "2027 Oktoberfest" else None
-
-    async def wikidata(qid):
-        return edition if qid == "Q2027" else _entity(80)
+    async def box(title, year):
+        return infobox
 
     monkeypatch.setattr(we.wiki, "summary", summary)
-    monkeypatch.setattr(we.wiki, "entity", wikidata)
-    ev = anyio.run(we.verify, _proposed(start="2027-09-20", end="2027-10-05"), WINDOW)
-    assert (ev.start, ev.end, ev.dates_source) == (date(2027, 9, 18), date(2027, 10, 3), "wikidata")
+    monkeypatch.setattr(we.wiki, "entity", entity)
+    monkeypatch.setattr(we, "infobox_dates", box)
+
+
+OKT_ARTICLE = {"title": "Oktoberfest", "wikibase_item": "Q32", "extract": "Oktoberfest is the world's largest Volksfest. "
+               "It is held in Munich.", "content_urls": {"desktop": {"page": "https://w/Oktoberfest"}}}
+
+
+def test_a_described_event_carries_its_article_in_both_languages(monkeypatch):
+    _wiki(monkeypatch, {("en", "Oktoberfest"): OKT_ARTICLE,
+                        ("ar", "أكتوبرفست"): {"title": "أكتوبرفست", "wikibase_item": "Q32",
+                                              "extract": "أكتوبرفست هو أكبر مهرجان شعبي في العالم. يقام في ميونخ."}})
+    c, = [c for c in we.fixed_candidates(WINDOW) if c.title == "Oktoberfest" and c.start.year == 2027]
+    ev = anyio.run(we.describe, c, WINDOW)
+    assert (ev.id, ev.start, ev.end, ev.dates_source) == ("Q32@2027-09-18", date(2027, 9, 18), date(2027, 10, 3),
+                                                          "fixed date")
+    assert ev.why == "Oktoberfest is the world's largest Volksfest." and ev.why_ar.startswith("أكتوبرفست هو")
+    assert ev.name_ar == "أكتوبرفست" and ev.fame == 31 and ev.ticket is None
+
+
+def test_dates_known_to_the_year_need_the_infobox(monkeypatch):
+    art = {("en", "2027 Africa Cup of Nations"): {"title": "2027 Africa Cup of Nations", "wikibase_item": "Q2",
+                                                   "extract": "The 2027 Africa Cup of Nations will be the 36th edition."}}
+    c = we.Candidate(title="2027 Africa Cup of Nations", qid="Q2", category="sports", country_code="KE",
+                     approx=(2027, None), dates_source="wikidata")
+    _wiki(monkeypatch, art, (date(2027, 6, 19), date(2027, 7, 17)))
+    ev = anyio.run(we.describe, c, WINDOW)
+    assert (ev.start, ev.end, ev.dates_source) == (date(2027, 6, 19), date(2027, 7, 17), "wikipedia")
+    _wiki(monkeypatch, art, None)
+    assert anyio.run(we.describe, c, WINDOW) is None  # no days anywhere: left out, never guessed
+    _wiki(monkeypatch, art, (date(2028, 6, 19), date(2028, 7, 17)))
+    assert anyio.run(we.describe, c, WINDOW) is None  # the infobox speaks of another year
+
+
+def test_a_grand_prix_redirected_to_the_season_takes_the_races_own_article(monkeypatch):
+    season = {"title": "2026 Formula One World Championship", "wikibase_item": "Q9", "extract": "The season."}
+    race = {"title": "Qatar Grand Prix", "wikibase_item": "Q7", "extract": "The Qatar Grand Prix is a race."}
+    _wiki(monkeypatch, {("en", "2026 Qatar Grand Prix"): season, ("en", "Qatar Grand Prix"): race})
+    c = we.Candidate(title="2026 Qatar Grand Prix", fallback_title="Qatar Grand Prix", name="2026 Qatar Grand Prix",
+                     category="sports", country_code="QA", start=date(2026, 11, 27), end=date(2026, 11, 29),
+                     dates_source="official calendar")
+    ev = anyio.run(we.describe, c, WINDOW)
+    assert (ev.id, ev.name, ev.why) == ("Q7@2026-11-27", "2026 Qatar Grand Prix", "The Qatar Grand Prix is a race.")
+
+
+def test_a_season_is_not_an_event(monkeypatch):
+    _wiki(monkeypatch, {("en", "2027 Formula One World Championship"): {
+        "title": "2027 Formula One World Championship", "wikibase_item": "Q9", "extract": "The season."}})
+    c = we.Candidate(title="2027 Formula One World Championship", category="sports", country_code="GB",
+                     start=date(2027, 3, 14), end=date(2027, 12, 12), dates_source="wikidata")
+    assert anyio.run(we.describe, c, WINDOW) is None
 
 
 def test_a_search_hit_for_another_edition_is_refused(monkeypatch):

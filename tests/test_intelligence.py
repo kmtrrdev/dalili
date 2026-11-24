@@ -446,6 +446,8 @@ def test_responses_api_text_and_json(monkeypatch):
     monkeypatch.setattr(settings, "azure_key", "k")
     monkeypatch.setattr(settings, "llm_enabled", True)
     monkeypatch.setattr(settings, "llm_provider", "azure")
+    monkeypatch.setattr(settings, "azure_model", "gpt-5-mini")
+    monkeypatch.setattr(settings, "azure_reasoning_effort", "low")
     sent = []
 
     async def fake_post(body):
@@ -461,6 +463,10 @@ def test_responses_api_text_and_json(monkeypatch):
     assert parsed is not None and parsed.intent == "smalltalk"
     assert sent[0]["input"][0]["role"] == "system" and "reasoning" in sent[0]
     assert sent[1]["text"]["format"]["type"] == "json_schema"
+    # gpt-4.1 has no reasoning: the parameter would be an HTTP 400, so it isn't sent.
+    monkeypatch.setattr(settings, "azure_model", "gpt-4.1-mini")
+    assert anyio.run(llm.text, "sys", "hi") == "اهلا بيك"
+    assert "reasoning" not in sent[2] and sent[2]["max_output_tokens"] < sent[0]["max_output_tokens"]
 
 
 def test_responses_api_incomplete_falls_back(monkeypatch):

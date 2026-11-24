@@ -100,14 +100,19 @@ the place it shows and a guide to it you can question, then "Plan a trip here".
 ## World events (`providers/world_events.py`, the **Events** page)
 
 Championships, Grands Prix, world-famous festivals, carnivals and celebrations in the next ~13 months - one tap
-("Plan a trip for this") plans a trip around one. Free sources only, and nothing is shown unchecked:
+("Plan a trip for this") plans a trip around one. Free, deterministic sources only - no model decides what exists or
+when it happens:
 
-1. The model proposes the events (six areas in parallel, one of them the Arab world).
-2. Wikipedia must have the article (a redirect or search hit counts only when it is the same event and edition),
-   or the event is dropped. Wikidata says how famous it is (articles in other languages), and gives the dates when
-   the edition has them, the Arabic name and the official site.
-3. Otherwise the official website: the next edition's dates and cheapest ticket, each with a verbatim quote.
-   Dates nobody publishes are shown as **usual dates · confirm**, an unpublished ticket as an AI estimate.
+1. **Wikidata** (SPARQL): every famous edition (articles in 6+ languages, 4+ in the Arab world) of a sporting event,
+   festival, carnival or solar eclipse that starts in the window. When Wikidata knows only the month or year, the days
+   come from the edition's Wikipedia infobox, in that month / year - or the edition is left out.
+2. **The Formula 1 calendar** ([Jolpica](https://api.jolpi.ca/ergast/f1/)): every Grand Prix, practice to race.
+3. **Fixed annual dates**: festivals held on a rule (San Fermín 6-14 July, Oktoberfest from the Saturday after
+   15 September, carnivals from Easter, the Abu Simbel sun festival on 22 February and 22 October...).
+
+Each is described from its Wikipedia article in English and Arabic (picture, first sentence, coordinates); a
+redirect counts only when it is the same event and edition. A ticket price is shown only when the event's official
+site states it, quoted verbatim.
 
 The catalogue is rebuilt in the background twice a day (~1 min). During a trip, the big events in its countries on
 its dates are **offered** in the reply ("Oktoberfest is on during your stay - from 25 EUR - want to go?"). A "yes" in

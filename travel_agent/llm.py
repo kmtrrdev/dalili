@@ -125,12 +125,19 @@ async def _azure_post(body: dict):
     return resp
 
 
+def _reasoning_model() -> bool:
+    """gpt-4.x / gpt-3.5 (and AZURE_AI_REASONING_EFFORT=none) take no reasoning parameter: sending one is an HTTP 400."""
+    model = settings.azure_model.lower()
+    return settings.azure_reasoning_effort.lower() != "none" and not model.startswith(("gpt-4", "gpt-35", "gpt-3.5"))
+
+
 async def _azure_responses(messages: list[dict], max_tokens: int, text_format: dict | None = None,
                            effort: str | None = None) -> str | None:
-    # Reasoning tokens count against max_output_tokens: leave room for them on top of the visible answer.
-    body: dict = {"model": settings.azure_model, "input": messages,
-                  "max_output_tokens": max_tokens + settings.azure_reasoning_budget,
-                  "reasoning": {"effort": effort or settings.azure_reasoning_effort}}
+    body: dict = {"model": settings.azure_model, "input": messages, "max_output_tokens": max_tokens}
+    if _reasoning_model():
+        # Reasoning tokens count against max_output_tokens: leave room for them on top of the visible answer.
+        body["max_output_tokens"] = max_tokens + settings.azure_reasoning_budget
+        body["reasoning"] = {"effort": effort or settings.azure_reasoning_effort}
     if text_format:
         body["text"] = {"format": text_format}
     resp = await _azure_post(body)

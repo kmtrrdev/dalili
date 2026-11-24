@@ -65,8 +65,8 @@ async def search_events(city: str, lat: float, lon: float, start_date: str, end_
 @server.tool()
 async def get_major_events(start_date: str, end_date: str, country_codes: list[str] | None = None) -> dict:
     """World-famous events people travel for (championships, Grands Prix, festivals, carnivals, celebrations) between
-    two dates, checked against Wikipedia, Wikidata and their official sites; country_codes (ISO alpha-2) keeps those
-    countries only. complete=false while the catalogue is still being checked."""
+    two dates, from Wikidata, Wikipedia, the Formula 1 calendar and fixed annual dates (never guessed);
+    country_codes (ISO alpha-2) keeps those countries only. complete=false while the catalogue is still being built."""
     q = {"start_date": start_date, "end_date": end_date, "country_codes": country_codes}
     try:
         start, end = date.fromisoformat(start_date), date.fromisoformat(end_date)

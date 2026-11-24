@@ -756,15 +756,16 @@ def _event_place(e: world_events.WorldEvent, days: list, bundle: ResearchBundle)
     else:
         cost = Money(amount=0.0, currency=info.get("currency", "USD"), price_type="estimated",
                      source="Free to attend, or price not published")
-    when = "dates from the official website" if e.dates_source == "official site" else \
-        "dates from Wikidata" if e.dates_source == "wikidata" else "usual dates - confirm them before booking"
+    when = {"wikidata": "dates from Wikidata", "wikipedia": "dates from Wikipedia",
+            "official calendar": "dates from the official calendar",
+            "fixed date": "held on these dates every year"}.get(e.dates_source, "dates to confirm before booking")
     p = Place(id=f"wev_{e.id}", name=e.name, kind="activity", categories=["event", MAJOR_EVENT, e.category],
               location=where, rating=4.8, price_level=3, cost_per_person=cost, price_known=cost.price_type == "known",
               price_checked=True, opening_hours=hours, hours_verified=False, dates=list(days),
               duration_minutes=EVENT_MINUTES, indoor=False, popularity="must_see", description=e.why or e.description,
               website=e.website or e.wikipedia,
               metadata=Metadata(source="activities_mcp", provider="Wikipedia · Wikidata · official site",
-                                confidence=0.9 if e.dates_source != "usual dates" else 0.6, source_url=e.wikipedia))
+                                confidence=0.9, source_url=e.wikipedia))
     places_provider.tag_distance(p, center, info.get("name", ""))
     if p.day_trip and p.distance_km <= EVENT_OUTING_KM:
         p.day_trip = False  # the ride there is planned like any other leg

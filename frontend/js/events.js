@@ -1,5 +1,5 @@
 // The Events page: world-famous events in the coming months (championships, Grands Prix, festivals, carnivals,
-// celebrations), each checked against Wikipedia, Wikidata and its official site - and one tap to plan a trip around it.
+// celebrations) from Wikidata, Wikipedia, the F1 calendar and fixed annual dates - and one tap to plan a trip around it.
 // Data: GET /api/events (built in the background on the server; complete=false while it is still being checked).
 import { extend, getLang, locale, t } from "./i18n.js";
 import { esc } from "./account.js";
@@ -7,12 +7,13 @@ import { esc } from "./account.js";
 extend({
   en: {
     evNav: "Events", evTitle: "Big events around the world",
-    evSub: "Championships, Grands Prix, festivals and celebrations in the coming months - every one checked against Wikipedia and its official site. Pick one and Dalili plans the trip around it.",
+    evSub: "Championships, Grands Prix, festivals and celebrations in the coming months - dates from Wikidata, Wikipedia and the official calendars, never guessed. Pick one and Dalili plans the trip around it.",
     evAll: "All", evCat: { sports: "Sports", festival: "Festivals", music: "Music, film & arts", culture: "Culture & seasons" },
     evAnyCountry: "Every country", evPlan: "Plan a trip for this", evDetails: "Details",
     evConfirmed: "Confirmed dates", evUsual: "Usual dates · confirm", evFree: "Free or see the site",
     evFrom: (p) => `From ${p}`, evOfficial: "official site", evAi: "AI estimate",
-    evLoading: "Checking the world's big events with Wikipedia and official sites…",
+    evLoading: "Collecting the world's big events from Wikidata, Wikipedia and the official calendars…",
+    evSrc: { wikidata: "Dates from Wikidata", wikipedia: "Dates from Wikipedia", "official calendar": "Dates from the official calendar", "fixed date": "Held on these dates every year" },
     evMore: "More events are still being checked - they appear here in a moment.",
     evEmpty: "No events here for now.", evHomeTitle: "Big events coming up",
     evHomeSub: "Plan a trip around a championship, a festival or a celebration.",
@@ -21,12 +22,13 @@ extend({
   },
   ar: {
     evNav: "الإيفنتات", evTitle: "أكبر الإيفنتات حوالين العالم",
-    evSub: "بطولات وسباقات ومهرجانات واحتفالات في الشهور الجاية - كل واحدة متأكدين منها من ويكيبيديا وموقعها الرسمي. اختار واحدة ودليلي يخطط الرحلة حواليها.",
+    evSub: "بطولات وسباقات ومهرجانات واحتفالات في الشهور الجاية - المواعيد من ويكي بيانات وويكيبيديا والجداول الرسمية، مش تخمين. اختار واحدة ودليلي يخطط الرحلة حواليها.",
     evAll: "الكل", evCat: { sports: "رياضة", festival: "مهرجانات", music: "موسيقى وسينما وفنون", culture: "ثقافة ومواسم" },
     evAnyCountry: "كل الدول", evPlan: "خطّطلي رحلة ليها", evDetails: "التفاصيل",
     evConfirmed: "مواعيد مؤكدة", evUsual: "مواعيدها المعتادة · اتأكد", evFree: "ببلاش أو شوف الموقع",
     evFrom: (p) => `من ${p}`, evOfficial: "الموقع الرسمي", evAi: "تقدير AI",
-    evLoading: "بنراجع أكبر إيفنتات العالم مع ويكيبيديا والمواقع الرسمية…",
+    evLoading: "بنجمع أكبر إيفنتات العالم من ويكي بيانات وويكيبيديا والجداول الرسمية…",
+    evSrc: { wikidata: "المواعيد من ويكي بيانات", wikipedia: "المواعيد من ويكيبيديا", "official calendar": "المواعيد من الجدول الرسمي", "fixed date": "بيتعمل في المواعيد دي كل سنة" },
     evMore: "لسه في إيفنتات بتتراجع - هتظهر هنا كمان شوية.",
     evEmpty: "مفيش إيفنتات هنا دلوقتي.", evHomeTitle: "إيفنتات كبيرة جاية",
     evHomeSub: "خطّط رحلتك حوالين بطولة أو مهرجان أو احتفال.",
@@ -76,7 +78,7 @@ function card(e) {
     <div class="ev-body">
       <b dir="auto">${esc(nameOf(e))}</b>
       <small>${esc(placeOf(e))}</small>
-      <div class="ev-when">${esc(span(e))} <span class="badge ${e.dates_source === "usual dates" ? "warn" : "ok"}">${e.dates_source === "usual dates" ? t("evUsual") : t("evConfirmed")}</span></div>
+      <div class="ev-when">${esc(span(e))} <span class="badge ok" title="${esc(t("evSrc")[e.dates_source] || "")}">${t("evConfirmed")}</span></div>
       <p class="ev-why" dir="auto">${esc(ar() && e.why_ar ? e.why_ar : (e.why || e.description))}</p>
       <div class="ev-ticket">🎟 ${esc(ticket(e))}</div>
       <div class="ev-actions"><button class="btn primary small" type="button" data-plan="${esc(e.id)}">${t("evPlan")}</button>

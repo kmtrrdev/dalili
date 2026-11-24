@@ -13,16 +13,17 @@ from urllib.parse import quote
 from .. import net
 from .local_prices import _squash
 
-SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/"
+SUMMARY = "https://{lang}.wikipedia.org/api/rest_v1/page/summary/"
 API = "https://en.wikipedia.org/w/api.php"
 WIKIDATA = "https://www.wikidata.org/w/api.php"
 
 
-async def summary(title: str) -> dict | None:
+async def summary(title: str, lang: str = "en") -> dict | None:
     """The article's summary (title, extract, picture, coordinates, Wikidata id), or None for a missing page, a
-    disambiguation page or one without a Wikidata item."""
+    disambiguation page or one without a Wikidata item. lang: that language's Wikipedia ('ar')."""
     try:
-        data = await net.fetch_json("wikipedia", SUMMARY + quote(title.replace(" ", "_"), safe=""), ttl_s=7 * net.DAY)
+        data = await net.fetch_json("wikipedia", SUMMARY.format(lang=lang) + quote(title.replace(" ", "_"), safe=""),
+                                    ttl_s=7 * net.DAY)
     except net.ProviderError:
         return None
     if not isinstance(data, dict) or data.get("type") != "standard" or not data.get("wikibase_item"):
